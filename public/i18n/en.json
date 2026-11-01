@@ -44,11 +44,6 @@
     "reload": "Reload",
     "later": "Later"
   },
-  "comingSoon": {
-    "title": "Coming soon",
-    "text": "This part of LocalATSCV is under construction. It will ship in an upcoming version",
-    "back": "Back to home"
-  },
   "landing": {
     "hero": {
       "badge": "100% local · Free · Open source",
@@ -248,7 +243,7 @@
       "newBlankHint": "Start from an empty page",
       "newSample": "Start from an example",
       "newSampleHint": "A pre-filled fictional resume to explore the editor",
-      "import": "Import",
+      "import": "Restore a backup",
       "exportAll": "Export all",
       "emptyTitle": "No resumes yet",
       "emptyText": "Create your Master resume: all your experience in one place, ready to tailor for every job",
@@ -272,7 +267,11 @@
         "invalidJson": "This file is not valid JSON",
         "notABackup": "This file is not a LocalATSCV backup",
         "newerVersion": "This backup comes from a newer version of LocalATSCV: update the app first"
-      }
+      },
+      "importPdf": "Import a resume (PDF)",
+      "importPdfHint": "Bring an existing resume into our templates",
+      "importLinkedin": "Import from LinkedIn",
+      "importLinkedinHint": "From your profile PDF"
     },
     "toolbar": {
       "back": "My resumes",
@@ -283,7 +282,8 @@
       "saving": "Saving…",
       "saveError": "Save failed",
       "edit": "Edit",
-      "preview": "Preview"
+      "preview": "Preview",
+      "exportPdf": "Export to PDF"
     },
     "versions": {
       "label": "Displayed version",
@@ -419,6 +419,241 @@
     "notFound": {
       "title": "Resume not found",
       "text": "This resume doesn't exist or was deleted from this browser"
+    },
+    "templates": {
+      "button": "Template",
+      "title": "Choose a template",
+      "subtitle": "Your resume in every layout. The accent color applies to all templates",
+      "close": "Close",
+      "ats": "ATS compatibility",
+      "levels": {
+        "excellent": "excellent",
+        "good": "good",
+        "fair": "fair"
+      },
+      "atsHint": "Every template prints real text. Column layouts are sometimes read out of order by ATS software: for online applications, prefer a single-column template",
+      "names": {
+        "classic": {
+          "name": "Classic",
+          "description": "Clean and effective: one column, underlined headings, no distractions"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Color banner, bold headings and skills as tags"
+        },
+        "elegant": {
+          "name": "Elegant",
+          "description": "Centered header and serif typography for a refined look"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Colored edge, monospace details and code-style skills"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Swiss style: oversized name, headings in the margin, lots of white space"
+        },
+        "sidebar": {
+          "name": "Columns",
+          "description": "Colored sidebar with photo, contact details and skills"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Photo banner, icons, timeline and language gauges, while staying perfectly readable by ATS software"
+        }
+      }
+    },
+    "print": {
+      "title": "Export to PDF",
+      "text": "Your browser's print window is about to open. For a perfect PDF:",
+      "tips": {
+        "destination": "Destination: “Save as PDF”",
+        "margins": "Margins: “None”",
+        "headers": "Untick “Headers and footers”",
+        "background": "Tick “Background graphics” to keep the colors"
+      },
+      "dontShow": "Don't show this again",
+      "cancel": "Cancel",
+      "print": "Open print window"
+    },
+    "job": {
+      "title": "Tailor to a job ad",
+      "sources": "LinkedIn, Indeed, Glassdoor, Welcome to the Jungle, Monster…",
+      "placeholder": "Paste the full text of the job ad here: title, duties, requirements",
+      "urlWarning": "Paste the text of the ad rather than its link: LocalATSCV never contacts any website, so your data stays with you",
+      "empty": "No keywords found: paste a more complete job ad",
+      "score": "Match with the job ad",
+      "summary": "{{found}} of {{total}} keywords present",
+      "found": "Keywords in your resume",
+      "missing": "Missing keywords",
+      "missingHint": "Click a keyword to add it to your skills, or work it into an experience",
+      "addToSkills": "Add to skills",
+      "added": "“{{keyword}}” added to your skills",
+      "keywordsGroup": "Keywords",
+      "createVersion": "Create a tailored version for this job",
+      "createVersionHint": "Experience and bullet points unrelated to the job will be unticked: you can adjust them",
+      "savedInVersion": "Job ad saved with the version “{{name}}”"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” describes a duty: start with an action verb"
     }
+  },
+  "changelog": {
+    "eyebrow": "What's new",
+    "title": "Changelog",
+    "subtitle": "Every LocalATSCV release, with its new features and fixes",
+    "current": "Current version",
+    "frenchOnly": "The changelog is written in French",
+    "error": "The changelog could not be loaded",
+    "types": {
+      "added": "Added",
+      "changed": "Changed",
+      "fixed": "Fixed",
+      "removed": "Removed",
+      "deprecated": "Deprecated",
+      "security": "Security",
+      "other": "Other"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyzer",
+    "title": "Does your resume get past the bots?",
+    "subtitle": "Drop in a PDF resume made with any tool: LocalATSCV reads it like an ATS and tells you what to fix",
+    "drop": "Drag your resume here",
+    "dropActive": "Drop the file to start the analysis",
+    "hint": "PDF only, 15 MB max",
+    "choose": "Choose a file",
+    "reading": "Reading the PDF…",
+    "privacy": "The file is analyzed in your browser: it is never sent anywhere",
+    "another": "Analyze another resume",
+    "errors": {
+      "notPdf": "This file is not a PDF",
+      "tooLarge": "This file is larger than 15 MB",
+      "encrypted": "This PDF is password-protected: an ATS cannot read it either",
+      "unreadable": "This PDF could not be read: it may be damaged"
+    },
+    "stats": "{{pages}} page(s) · {{words}} words",
+    "verdict": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "fair": "Needs work",
+      "poor": "Critical"
+    },
+    "verdictText": {
+      "excellent": "Bots read your resume very well",
+      "good": "A few tweaks will make it even more effective",
+      "fair": "Several issues slow down how ATS software reads it",
+      "poor": "An ATS is likely to miss the essentials"
+    },
+    "categories": {
+      "readability": "Machine readability",
+      "structure": "Structure",
+      "content": "Content"
+    },
+    "sectionNames": {
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Machine-readable text",
+        "pass": "All the text in your resume can be extracted",
+        "warn": "Some pages contain no readable text: probably images or a scan",
+        "fail": "No readable text: this resume is probably an image or a scan, and an ATS will get nothing out of it. Export it to PDF from your word processor"
+      },
+      "columns": {
+        "title": "Layout",
+        "pass": "Linear reading order, no columns getting mixed up",
+        "warn": "Column layout detected: the text may be read out of order. Check “What the bot reads” below"
+      },
+      "unreadable": {
+        "title": "Icons and skill gauges",
+        "pass": "No icons or unreadable characters",
+        "warn": "Icons or gauges detected ({{count}}): an ATS reads them as gibberish. Replace them with text",
+        "fail": "Icons or gauges detected ({{count}}): replace them with text, for example “English: C1” instead of dots"
+      },
+      "contact": {
+        "title": "Contact details",
+        "pass": "Email address and phone number found",
+        "warnNoPhone": "No phone number found",
+        "warnNoEmail": "No email address found",
+        "fail": "No email or phone number found: write them as text, not in an image"
+      },
+      "sections": {
+        "title": "Standard sections",
+        "pass": "Experience, education and skills are clearly identified",
+        "warn": "These sections were not recognized: use standard headings",
+        "fail": "No standard section recognized: ATS software relies on headings such as “Experience” or “Education”"
+      },
+      "length": {
+        "title": "Length",
+        "pass": "{{pages}} page(s), {{words}} words: ideal length",
+        "warn": "{{pages}} page(s), {{words}} words: aim for 1 to 2 pages and 250 to 1,000 words",
+        "fail": "{{pages}} page(s), {{words}} words: too short or too long to be assessed well"
+      },
+      "quantified": {
+        "title": "Quantified results",
+        "pass": "{{percent}}% of your bullet points contain a number, well done",
+        "warn": "Only {{percent}}% of bullet points are quantified: add measurable results (percentages, amounts, volumes)",
+        "fail": "No quantified results: recruiters and ATS software value measurable achievements"
+      },
+      "weakPhrases": {
+        "title": "Action verbs",
+        "pass": "No weak phrasing at the start of bullet points",
+        "warn": "These openings describe a duty rather than a result: start with an action verb",
+        "fail": "These openings describe a duty rather than a result: start with an action verb"
+      },
+      "dates": {
+        "title": "Dates",
+        "pass": "Your experience is dated",
+        "warn": "Only one year found: date every position, ATS software uses dates to compute your years of experience",
+        "fail": "No dates found: ATS software uses them to compute your years of experience"
+      }
+    },
+    "robot": {
+      "title": "What the bot reads",
+      "text": "The text rebuilt line by line, the way most ATS software does it. If it is jumbled or incomplete here, it is for the recruiter too",
+      "empty": "No text could be extracted"
+    },
+    "cta": {
+      "title": "Start from a clean slate",
+      "text": "Build an ATS-friendly resume in the editor, then tailor it for every job",
+      "button": "Open the editor",
+      "import": "Bring this resume into our templates"
+    },
+    "live": {
+      "title": "Live ATS check",
+      "issues": "{{count}} point(s) to check on this template",
+      "allGood": "No issues found on this template",
+      "hint": "Computed on the displayed layout, with the same engine as the resume analyzer"
+    }
+  },
+  "import": {
+    "title": "Import a resume",
+    "linkedinTitle": "Import from LinkedIn",
+    "text": "Choose a PDF resume: its content is extracted in your browser and sorted into the editor sections. You can then pick a template",
+    "linkedinSteps": {
+      "step1": "Open your LinkedIn profile on a computer",
+      "step2": "Click “More” under your photo, then “Save to PDF”",
+      "step3": "Choose the downloaded file below"
+    },
+    "choose": "Choose a PDF",
+    "hint": "PDF only, 15 MB max",
+    "reading": "Importing…",
+    "privacy": "The file is read in your browser: it is never sent anywhere",
+    "close": "Close",
+    "done": "Resume imported ({{items}} items): review each section",
+    "errors": {
+      "notPdf": "This file is not a PDF",
+      "tooLarge": "This file is larger than 15 MB",
+      "encrypted": "This PDF is password-protected",
+      "unreadable": "This PDF could not be read: it may be damaged",
+      "empty": "No usable text: this PDF is probably an image or a scan"
+    }
+  },
+  "legal": {
+    "translationNote": "This document is a translation. Only the French version is legally binding.",
+    "error": "This document could not be loaded."
   }
 }

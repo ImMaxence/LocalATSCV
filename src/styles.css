@@ -2,6 +2,7 @@
 @import '@fontsource-variable/inter/wght.css';
 @import '@fontsource-variable/fraunces/wght.css';
 @import '@fontsource-variable/fraunces/wght-italic.css';
+@import '@fontsource-variable/space-grotesk/wght.css';
 @import '@angular/cdk/overlay-prebuilt.css';
 
 /* Le mode sombre est piloté par la classe .dark posée sur <html> (voir ThemeService). */
@@ -54,6 +55,7 @@
 @theme inline {
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+  --font-grotesk: 'Space Grotesk Variable', 'Inter Variable', ui-sans-serif, sans-serif;
   --font-mono: ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace;
 
   --color-paper: var(--paper);
@@ -245,5 +247,50 @@ app-header > header {
   from {
     opacity: 0;
     transform: translateY(12px);
+  }
+}
+
+/*
+ * Export PDF : la fenêtre d'impression ne garde que le CV (.print-only).
+ * Les modèles demandent l'impression exacte des couleurs (print-color-adjust).
+ */
+.print-only {
+  display: none;
+}
+
+@media print {
+  /*
+   * La première page est imprimée bord à bord, exactement comme l'aperçu (bandeaux de couleur,
+   * coupure de page au même endroit). Les pages suivantes ont 12 mm de marge haute et basse.
+   */
+  @page {
+    size: A4;
+    margin: 12mm 0;
+  }
+
+  @page :first {
+    margin: 0;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  app-header > header,
+  app-footer,
+  app-update-toast,
+  app-toast-outlet,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  /* 297 mm = 1122,5 px : sans cette marge d'arrondi, une page blanche peut apparaître. */
+  .print-only .cv {
+    min-height: 296mm !important;
   }
 }

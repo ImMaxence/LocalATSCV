@@ -17,7 +17,7 @@
     @default {
       @if (store.cv(); as cv) {
         <!-- Barre d'outils -->
-        <div class="sticky top-16 z-30 border-b border-line bg-paper/90 backdrop-blur-md">
+        <div class="no-print sticky top-16 z-30 border-b border-line bg-paper/90 backdrop-blur-md">
           <div
             class="mx-auto flex max-w-[1600px] flex-wrap items-center gap-2 px-4 py-2 sm:px-6 lg:h-14 lg:flex-nowrap lg:py-0"
           >
@@ -36,8 +36,19 @@
               (input)="store.rename($any($event.target).value)"
             />
             <app-version-switcher (select)="selectVersion($event)" />
+            <button
+              type="button"
+              class="flex h-9 shrink-0 items-center gap-2 rounded-full border border-line bg-surface px-3 text-sm font-medium transition-colors hover:border-ink/25"
+              (click)="openTemplates()"
+            >
+              <app-icon class="size-4 text-accent" name="layout" />
+              <span class="hidden sm:inline">{{
+                t('templates.names.' + cv.template + '.name')
+              }}</span>
+              <span class="sm:hidden">{{ t('templates.button') }}</span>
+            </button>
 
-            <div class="flex w-full items-center gap-2 lg:ml-auto lg:w-auto">
+            <div class="flex w-full flex-wrap items-center gap-2 lg:ml-auto lg:w-auto lg:flex-nowrap">
               <div
                 role="radiogroup"
                 class="flex h-9 items-center rounded-full border border-line bg-surface p-0.5"
@@ -94,9 +105,8 @@
               >
                 @switch (store.saveState()) {
                   @case ('saving') {
-                    <app-icon class="size-3.5 animate-spin" name="loader" />{{
-                      t('toolbar.saving')
-                    }}
+                    <app-icon class="size-3.5 animate-spin" name="loader" />
+                    <span class="hidden sm:inline">{{ t('toolbar.saving') }}</span>
                   }
                   @case ('error') {
                     <span class="flex items-center gap-1.5 text-danger">
@@ -104,19 +114,27 @@
                     </span>
                   }
                   @default {
-                    <app-icon class="size-3.5 text-accent" name="check" [strokeWidth]="2.5" />{{
-                      t('toolbar.saved')
-                    }}
+                    <app-icon class="size-3.5 text-accent" name="check" [strokeWidth]="2.5" />
+                    <span class="hidden sm:inline">{{ t('toolbar.saved') }}</span>
                   }
                 }
               </p>
+              <button
+                type="button"
+                class="btn btn-primary shrink-0 px-4! py-2!"
+                (click)="exportPdf()"
+              >
+                <app-icon class="size-4" name="printer" />
+                <span class="hidden sm:inline">{{ t('toolbar.exportPdf') }}</span>
+                <span class="sm:hidden">PDF</span>
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Onglets mobiles -->
         <div
-          class="mx-4 mt-4 grid grid-cols-2 rounded-full border border-line bg-surface p-1 lg:hidden"
+          class="no-print mx-4 mt-4 grid grid-cols-2 rounded-full border border-line bg-surface p-1 lg:hidden"
           role="tablist"
         >
           @for (tab of ['edit', 'preview']; track tab) {
@@ -133,7 +151,7 @@
         </div>
 
         <div
-          class="mx-auto grid max-w-[1600px] grid-cols-1 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]"
+          class="no-print mx-auto grid max-w-[1600px] grid-cols-1 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]"
         >
           <!-- Formulaire -->
           <div class="space-y-4 lg:block!" [class.hidden]="mobileTab() !== 'edit'">
@@ -153,6 +171,8 @@
                 <span>{{ t('enRule') }}</span>
               </p>
             }
+
+            <app-job-panel (versionCreated)="selectVersion($event)" />
 
             <app-profile-panel />
 
@@ -198,7 +218,9 @@
               class="rounded-2xl border border-line bg-surface-2 p-3 sm:p-5 lg:sticky lg:top-[8.5rem] lg:max-h-[calc(100dvh-10rem)] lg:overflow-y-auto"
             >
               @if (store.resolved(); as resolved) {
+                <app-ats-check [preview]="preview" [cv]="resolved" />
                 <app-cv-preview
+                  #preview
                   class="mx-auto max-w-[794px] shadow-[0_20px_50px_-25px_rgb(0_0_0/0.45)]"
                   [cv]="resolved"
                   [photoUrl]="resolved.profile.photoId ? store.photoUrl() : null"
@@ -207,6 +229,16 @@
             </div>
           </div>
         </div>
+
+        <!-- Version imprimable : le CV seul, en taille réelle (voir @media print dans styles.css) -->
+        @if (store.resolved(); as resolved) {
+          <div class="print-only">
+            <app-cv-document
+              [cv]="resolved"
+              [photoUrl]="resolved.profile.photoId ? store.photoUrl() : null"
+            />
+          </div>
+        }
       }
     }
   }

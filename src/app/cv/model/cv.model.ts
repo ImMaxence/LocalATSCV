@@ -106,6 +106,7 @@ export interface MasterCv {
   id: string;
   name: string;
   language: CvLanguage;
+  template: CvTemplateId;
   accentColor: string;
   profile: Profile;
   sections: CvSection[];
@@ -125,6 +126,27 @@ export interface CvVersion {
   jobAd: string;
   createdAt: string;
   updatedAt: string;
+}
+
+/**
+ * Modèles de mise en page. Tous impriment du vrai texte ; seul « Colonnes » répartit
+ * le contenu sur deux colonnes, ce que certains ATS lisent dans le désordre.
+ */
+export const CV_TEMPLATES = [
+  { id: 'impact', ats: 'excellent' },
+  { id: 'classic', ats: 'excellent' },
+  { id: 'modern', ats: 'excellent' },
+  { id: 'elegant', ats: 'excellent' },
+  { id: 'tech', ats: 'excellent' },
+  { id: 'minimal', ats: 'good' },
+  { id: 'sidebar', ats: 'fair' },
+] as const;
+export type CvTemplateId = (typeof CV_TEMPLATES)[number]['id'];
+export type AtsCompatibility = (typeof CV_TEMPLATES)[number]['ats'];
+export const DEFAULT_TEMPLATE: CvTemplateId = 'classic';
+
+export function isTemplateId(value: unknown): value is CvTemplateId {
+  return CV_TEMPLATES.some((template) => template.id === value);
 }
 
 /** Couleurs sobres, lisibles à l'impression en couleur comme en niveaux de gris. */
@@ -198,6 +220,7 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     id: newId(),
     name,
     language,
+    template: 'impact',
     accentColor: ACCENT_COLORS[0],
     profile: createProfile(),
     sections: (['experience', 'education', 'skills', 'languages'] as const).map(createSection),

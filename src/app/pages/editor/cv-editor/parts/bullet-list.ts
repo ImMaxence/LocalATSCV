@@ -5,10 +5,13 @@ import {
   ElementRef,
   Injector,
   afterNextRender,
+  computed,
   inject,
   input,
 } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { ACTION_VERBS } from '../../../../cv/analysis/action-verbs';
+import { findWeakOpener } from '../../../../cv/analysis/weak-phrases';
 import { Entry } from '../../../../cv/model/cv.model';
 import { Icon } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
@@ -39,16 +42,35 @@ import { IncludeToggle } from './editor-controls';
               <app-icon class="size-4" name="grip" />
             </button>
             <span class="mt-2.5 flex"><app-include-toggle [itemId]="bullet.id" /></span>
-            <textarea
-              rows="1"
-              class="field-input field-auto min-h-9 flex-1 resize-none py-1.5 leading-snug"
-              [attr.data-bullet]="bullet.id"
-              [attr.aria-label]="t('entry.bullets') + ' ' + (i + 1)"
-              [value]="bullet.text"
-              [placeholder]="i === 0 ? t('entry.bulletPlaceholder') : ''"
-              (input)="update(bullet.id, $event)"
-              (keydown)="onKeydown($event, i, bullet.id, bullet.text)"
-            ></textarea>
+            <div class="min-w-0 flex-1">
+              <textarea
+                rows="1"
+                class="field-input field-auto min-h-9 resize-none py-1.5 leading-snug"
+                [class.border-amber-500!]="weakOpener(bullet.text)"
+                [attr.data-bullet]="bullet.id"
+                [attr.aria-label]="t('entry.bullets') + ' ' + (i + 1)"
+                [value]="bullet.text"
+                [placeholder]="i === 0 ? t('entry.bulletPlaceholder') : ''"
+                (input)="update(bullet.id, $event)"
+                (keydown)="onKeydown($event, i, bullet.id, bullet.text)"
+              ></textarea>
+              @if (weakOpener(bullet.text); as phrase) {
+                <div class="mt-1 flex flex-wrap items-center gap-1.5 text-xs">
+                  <span class="text-amber-700 dark:text-amber-300">
+                    {{ t('weak.hint', { phrase }) }}
+                  </span>
+                  @for (verb of verbs(); track verb) {
+                    <button
+                      type="button"
+                      class="rounded-full border border-line bg-surface px-2 py-0.5 font-medium hover:border-accent hover:text-accent"
+                      (click)="replaceOpener(bullet.id, bullet.text, phrase, verb)"
+                    >
+                      {{ verb }}
+                    </button>
+                  }
+                </div>
+              }
+            </div>
             <button
               type="button"
               class="icon-btn mt-0.5 sm:opacity-0 sm:group-hover:opacity-100 sm:focus:opacity-100"
@@ -76,6 +98,22 @@ export class BulletList {
   protected readonly store = inject(CvEditorStore);
   private readonly host = inject<ElementRef<HTMLElement>>(ElementRef);
   private readonly injector = inject(Injector);
+
+  /** Verbes d'action proposés, dans la langue du CV. */
+  protected readonly verbs = computed(() =>
+    ACTION_VERBS[this.store.cv()?.language ?? 'fr'].slice(0, 5),
+  );
+
+  protected weakOpener(text: string): string | null {
+    return findWeakOpener(text);
+  }
+
+  /** « En charge de la stratégie » → « Piloté la stratégie ». */
+  protected replaceOpener(bulletId: string, text: string, phrase: string, verb: string): void {
+    const start = text.indexOf(phrase);
+    const updated = text.slice(0, start) + verb + text.slice(start + phrase.length);
+    this.store.updateBullet(this.sectionId(), this.entry().id, bulletId, updated);
+  }
 
   protected update(bulletId: string, event: Event): void {
     const text = (event.target as HTMLTextAreaElement).value.replace(/\n/g, ' ');

@@ -63,7 +63,7 @@ export class CvPreview {
   private readonly frame = viewChild.required<ElementRef<HTMLElement>>('frame');
   private readonly paper = viewChild.required<ElementRef<HTMLElement>>('paper');
 
-  protected readonly scale = signal(0.5);
+  readonly scale = signal(0.5);
   private readonly paperHeight = signal(PAGE_HEIGHT);
 
   protected readonly frameHeight = computed(
@@ -72,6 +72,11 @@ export class CvPreview {
   protected readonly pageBreaks = computed(() =>
     Array.from({ length: Math.ceil(this.paperHeight() / PAGE_HEIGHT) - 1 }, (_, i) => i + 1),
   );
+
+  /** Élément racine du CV rendu (sans les repères de pages), pour le contrôle ATS en direct. */
+  documentElement(): HTMLElement | null {
+    return this.paper().nativeElement.querySelector('app-cv-document');
+  }
 
   constructor() {
     const destroyRef = inject(DestroyRef);

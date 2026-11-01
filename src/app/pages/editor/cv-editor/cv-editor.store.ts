@@ -5,6 +5,7 @@ import { prepareProfilePhoto } from '../../../cv/data/photo';
 import {
   CvLanguage,
   CvSection,
+  CvTemplateId,
   CvVersion,
   Entry,
   MasterCv,
@@ -12,6 +13,7 @@ import {
   ProfileLink,
   SectionItem,
   SectionKind,
+  SkillGroup,
   createBullet,
   createItem,
   createSection,
@@ -19,6 +21,7 @@ import {
   newId,
 } from '../../../cv/model/cv.model';
 import { resolveCv } from '../../../cv/model/resolve-cv';
+import { extractKeywords, hiddenIdsForJob, matchCv } from '../../../cv/analysis/job-match';
 
 const SAVE_DELAY_MS = 400;
 
@@ -111,6 +114,10 @@ export class CvEditorStore {
 
   setLanguage(language: CvLanguage): void {
     this.mutate((cv) => (cv.language = language));
+  }
+
+  setTemplate(template: CvTemplateId): void {
+    this.mutate((cv) => (cv.template = template));
   }
 
   setAccent(color: string): void {
@@ -292,10 +299,10 @@ export class CvEditorStore {
 
   // --- Versions ciblées ---
 
-  async createVersion(name: string): Promise<void> {
+  async createVersion(name: string, preset: Partial<CvVersion> = {}): Promise<void> {
     const cv = this.cv();
     if (!cv) return;
-    const version = createVersion(cv.id, name);
+    const version = { ...createVersion(cv.id, name), ...preset };
     await this.repository.saveVersion(version);
     this.versions.update((versions) => [...versions, version]);
     this.activeVersionId.set(version.id);
@@ -322,6 +329,52 @@ export class CvEditorStore {
       draft.hiddenIds = draft.hiddenIds.includes(id)
         ? draft.hiddenIds.filter((hiddenId) => hiddenId !== id)
         : [...draft.hiddenIds, id];
+    });
+  }
+
+  // --- Adaptation à une offre d'emploi ---
+
+  /** Annonce du Master (non enregistrée) ; une version ciblée garde la sienne. */
+  private readonly masterJobAd = signal('');
+
+  readonly jobAd = computed(() => this.activeVersion()?.jobAd ?? this.masterJobAd());
+  readonly jobKeywords = computed(() => extractKeywords(this.jobAd()));
+  readonly jobMatch = computed(() => {
+    const resolved = this.resolved();
+    const keywords = this.jobKeywords();
+    return resolved && keywords.length ? matchCv(resolved, keywords) : null;
+  });
+
+  setJobAd(text: string): void {
+    const version = this.activeVersion();
+    if (version) void this.updateVersion(version.id, (draft) => (draft.jobAd = text));
+    else this.masterJobAd.set(text);
+  }
+
+  /** Version ciblée pré-remplie : l'annonce y est enregistrée, le hors-sujet est décoché. */
+  async createVersionForJob(name: string): Promise<void> {
+    const cv = this.cv();
+    if (!cv) return;
+    const jobAd = this.jobAd();
+    await this.createVersion(name, {
+      jobAd,
+      hiddenIds: hiddenIdsForJob(cv, extractKeywords(jobAd)),
+    });
+    this.masterJobAd.set('');
+  }
+
+  /** Ajoute un mot-clé manquant à la première section Compétences (créée au besoin). */
+  addKeywordToSkills(keyword: string, groupLabel: string): void {
+    this.mutate((cv) => {
+      let section: CvSection | undefined = cv.sections.find((s) => s.kind === 'skills');
+      if (!section) {
+        section = createSection('skills');
+        cv.sections.push(section);
+      }
+      const groups = section.items as SkillGroup[];
+      const group = groups.at(-1) ?? { id: newId(), label: groupLabel, keywords: '' };
+      if (!groups.includes(group)) groups.push(group);
+      group.keywords = group.keywords.trim() ? `${group.keywords.trim()}, ${keyword}` : keyword;
     });
   }
 

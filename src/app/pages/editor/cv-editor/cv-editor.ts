@@ -1,3 +1,4 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
 import { CdkMenu, CdkMenuItem, CdkMenuItemRadio, CdkMenuTrigger } from '@angular/cdk/menu';
 import {
@@ -11,14 +12,25 @@ import {
 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { CvDocument } from '../../../cv/document/cv-document';
 import { CvPreview } from '../../../cv/document/cv-preview';
-import { ACCENT_COLORS, CV_LANGUAGES, SECTION_KINDS } from '../../../cv/model/cv.model';
+import { readSetting } from '../../../core/storage/local-settings';
+import {
+  ACCENT_COLORS,
+  CV_LANGUAGES,
+  CvTemplateId,
+  SECTION_KINDS,
+} from '../../../cv/model/cv.model';
 import { hidesPersonalDetails } from '../../../cv/model/resolve-cv';
 import { Icon } from '../../../shared/icon/icon';
 import { CvEditorStore } from './cv-editor.store';
+import { AtsCheck } from './parts/ats-check';
 import { SECTION_ICONS } from './parts/editor-controls';
+import { JobPanel } from './parts/job-panel';
+import { PRINT_TIPS_SETTING, PrintTips } from './parts/print-tips';
 import { ProfilePanel } from './parts/profile-panel';
 import { SectionPanel } from './parts/section-panel';
+import { TemplatePicker, TemplatePickerData } from './parts/template-picker';
 import { VersionSwitcher } from './parts/version-switcher';
 
 const NATIVE_NAMES: Record<string, string> = {
@@ -39,6 +51,9 @@ const NATIVE_NAMES: Record<string, string> = {
     TranslocoDirective,
     Icon,
     CvPreview,
+    CvDocument,
+    AtsCheck,
+    JobPanel,
     ProfilePanel,
     SectionPanel,
     VersionSwitcher,
@@ -58,6 +73,7 @@ export class CvEditor {
 
   protected readonly store = inject(CvEditorStore);
   private readonly router = inject(Router);
+  private readonly dialog = inject(Dialog);
 
   protected readonly mobileTab = signal<'edit' | 'preview'>('edit');
   protected readonly languages = CV_LANGUAGES;
@@ -81,6 +97,38 @@ export class CvEditor {
       queryParamsHandling: 'merge',
       replaceUrl: true,
     });
+  }
+
+  /** Le PDF est produit par la fenêtre d'impression du navigateur (texte réel, sélectionnable). */
+  protected exportPdf(): void {
+    if (readSetting(PRINT_TIPS_SETTING) === '1') return this.print();
+    const ref = this.dialog.open<boolean>(PrintTips, {
+      backdropClass: ['cdk-overlay-dark-backdrop', 'backdrop-blur-[2px]'],
+      panelClass: 'dialog-in',
+    });
+    ref.closed.subscribe((confirmed) => confirmed && this.print());
+  }
+
+  private print(): void {
+    const cv = this.store.cv();
+    if (!cv) return;
+    const name = [cv.profile.firstName, cv.profile.lastName].join(' ').trim() || cv.name;
+    const previousTitle = document.title;
+    // Le titre de la page devient le nom de fichier proposé par le navigateur.
+    document.title = ['CV', name, this.store.activeVersion()?.name].filter(Boolean).join(' - ');
+    addEventListener('afterprint', () => (document.title = previousTitle), { once: true });
+    requestAnimationFrame(() => window.print());
+  }
+
+  protected openTemplates(): void {
+    const cv = this.store.resolved();
+    if (!cv) return;
+    const ref = this.dialog.open<CvTemplateId, TemplatePickerData>(TemplatePicker, {
+      data: { cv, photoUrl: cv.profile.photoId ? this.store.photoUrl() : null },
+      backdropClass: ['cdk-overlay-dark-backdrop', 'backdrop-blur-[2px]'],
+      panelClass: 'dialog-in',
+    });
+    ref.closed.subscribe((template) => template && this.store.setTemplate(template));
   }
 
   protected moveSection(event: CdkDragDrop<unknown>): void {

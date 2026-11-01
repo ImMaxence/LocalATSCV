@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { liveQuery } from 'dexie';
 import { Observable, from } from 'rxjs';
 import { CvVersion, MasterCv, newId } from '../model/cv.model';
-import { Backup, BackupPhoto, createBackup } from './backup';
+import { Backup, BackupPhoto, createBackup, normalizeCv } from './backup';
 import { LocalAtsCvDb } from './db';
 import { blobToDataUrl, dataUrlToBlob } from './photo';
 
@@ -13,7 +13,10 @@ export class CvRepository {
 
   /** Liste des CV, la plus récemment modifiée en premier, mise à jour en direct. */
   readonly cvs$: Observable<MasterCv[]> = from(
-    liveQuery(() => this.db.cvs.orderBy('updatedAt').reverse().toArray()),
+    liveQuery(async () => {
+      const cvs = await this.db.cvs.orderBy('updatedAt').reverse().toArray();
+      return cvs.map(normalizeCv).filter((cv) => cv !== null);
+    }),
   );
 
   readonly versionCounts$: Observable<Record<string, number>> = from(
@@ -26,8 +29,9 @@ export class CvRepository {
     }),
   );
 
-  getCv(id: string): Promise<MasterCv | undefined> {
-    return this.db.cvs.get(id);
+  /** Les CV enregistrés par une version antérieure sont complétés à la lecture. */
+  async getCv(id: string): Promise<MasterCv | undefined> {
+    return normalizeCv(await this.db.cvs.get(id)) ?? undefined;
   }
 
   async saveCv(cv: MasterCv): Promise<void> {

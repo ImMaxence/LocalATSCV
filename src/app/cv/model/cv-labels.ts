@@ -7,6 +7,7 @@ import { CvLanguage, SectionKind } from './cv.model';
 export interface CvLabels {
   sections: Record<SectionKind | 'summary', string>;
   present: string;
+  contact: string;
   birthDate: string;
   nationality: string;
 }
@@ -25,6 +26,7 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
       interests: "Centres d'intérêt",
     },
     present: 'aujourd’hui',
+    contact: 'Contact',
     birthDate: 'Date de naissance',
     nationality: 'Nationalité',
   },
@@ -41,6 +43,7 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
       interests: 'Interests',
     },
     present: 'Present',
+    contact: 'Contact',
     birthDate: 'Date of birth',
     nationality: 'Nationality',
   },
@@ -57,6 +60,7 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
       interests: 'Interessi',
     },
     present: 'oggi',
+    contact: 'Contatti',
     birthDate: 'Data di nascita',
     nationality: 'Nazionalità',
   },
@@ -73,6 +77,7 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
       interests: 'Intereses',
     },
     present: 'actualidad',
+    contact: 'Contacto',
     birthDate: 'Fecha de nacimiento',
     nationality: 'Nacionalidad',
   },
@@ -89,6 +94,7 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
       interests: 'Interessen',
     },
     present: 'heute',
+    contact: 'Kontakt',
     birthDate: 'Geburtsdatum',
     nationality: 'Staatsangehörigkeit',
   },

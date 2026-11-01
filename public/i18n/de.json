@@ -44,11 +44,6 @@
     "reload": "Neu laden",
     "later": "Später"
   },
-  "comingSoon": {
-    "title": "Bald verfügbar",
-    "text": "Dieser Bereich von LocalATSCV ist noch im Aufbau. Er kommt mit einer der nächsten Versionen",
-    "back": "Zurück zur Startseite"
-  },
   "landing": {
     "hero": {
       "badge": "100 % lokal · Kostenlos · Open Source",
@@ -248,7 +243,7 @@
       "newBlankHint": "Mit einer leeren Seite beginnen",
       "newSample": "Mit einem Beispiel beginnen",
       "newSampleHint": "Ein ausgefüllter fiktiver Lebenslauf zum Kennenlernen des Editors",
-      "import": "Importieren",
+      "import": "Backup wiederherstellen",
       "exportAll": "Alles exportieren",
       "emptyTitle": "Noch keine Lebensläufe",
       "emptyText": "Erstelle deinen Master-Lebenslauf: alle deine Erfahrungen an einem Ort, für jede Stelle anpassbar",
@@ -272,7 +267,11 @@
         "invalidJson": "Diese Datei ist kein gültiges JSON",
         "notABackup": "Diese Datei ist kein LocalATSCV-Backup",
         "newerVersion": "Dieses Backup stammt aus einer neueren Version von LocalATSCV: Aktualisiere zuerst die Anwendung"
-      }
+      },
+      "importPdf": "Lebenslauf importieren (PDF)",
+      "importPdfHint": "Einen bestehenden Lebenslauf in unsere Vorlagen übernehmen",
+      "importLinkedin": "Von LinkedIn importieren",
+      "importLinkedinHint": "Aus dem PDF deines Profils"
     },
     "toolbar": {
       "back": "Meine Lebensläufe",
@@ -283,7 +282,8 @@
       "saving": "Wird gespeichert…",
       "saveError": "Speichern fehlgeschlagen",
       "edit": "Bearbeiten",
-      "preview": "Vorschau"
+      "preview": "Vorschau",
+      "exportPdf": "Als PDF exportieren"
     },
     "versions": {
       "label": "Angezeigte Version",
@@ -419,6 +419,241 @@
     "notFound": {
       "title": "Lebenslauf nicht gefunden",
       "text": "Dieser Lebenslauf existiert nicht oder wurde aus diesem Browser gelöscht"
+    },
+    "templates": {
+      "button": "Vorlage",
+      "title": "Vorlage wählen",
+      "subtitle": "Dein Lebenslauf in jedem Layout. Die Akzentfarbe gilt für alle Vorlagen",
+      "close": "Schließen",
+      "ats": "ATS-Kompatibilität",
+      "levels": {
+        "excellent": "sehr gut",
+        "good": "gut",
+        "fair": "mittel"
+      },
+      "atsHint": "Alle Vorlagen drucken echten Text. Mehrspaltige Layouts werden von ATS manchmal in falscher Reihenfolge gelesen: Für Online-Bewerbungen ist eine einspaltige Vorlage die bessere Wahl",
+      "names": {
+        "classic": {
+          "name": "Klassisch",
+          "description": "Schlicht und wirkungsvoll: eine Spalte, unterstrichene Titel, keine Ablenkung"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Farbiges Band, kräftige Titel und Kenntnisse als Tags"
+        },
+        "elegant": {
+          "name": "Elegant",
+          "description": "Zentrierter Kopf und Serifenschrift für einen edlen Auftritt"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Farbiger Rand, Details in Festbreitenschrift und Kenntnisse im Code-Stil"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Schweizer Stil: sehr großer Name, Titel am Rand, viel Weißraum"
+        },
+        "sidebar": {
+          "name": "Spalten",
+          "description": "Farbige Seitenspalte mit Foto, Kontakt und Kenntnissen"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Fotoband, Icons, Zeitleiste und Sprachbalken, dabei perfekt lesbar für ATS"
+        }
+      }
+    },
+    "print": {
+      "title": "Als PDF exportieren",
+      "text": "Das Druckfenster deines Browsers öffnet sich gleich. Für ein perfektes PDF:",
+      "tips": {
+        "destination": "Ziel: „Als PDF speichern“",
+        "margins": "Ränder: „Keine“",
+        "headers": "Deaktiviere „Kopf- und Fußzeilen“",
+        "background": "Aktiviere „Hintergrundgrafiken“, damit die Farben erhalten bleiben"
+      },
+      "dontShow": "Diesen Hinweis nicht mehr anzeigen",
+      "cancel": "Abbrechen",
+      "print": "Druckfenster öffnen"
+    },
+    "job": {
+      "title": "An eine Stelle anpassen",
+      "sources": "LinkedIn, Indeed, StepStone, XING, Bundesagentur für Arbeit…",
+      "placeholder": "Füge hier den vollständigen Text der Stellenanzeige ein: Titel, Aufgaben, Anforderungen",
+      "urlWarning": "Füge den Text der Anzeige ein, nicht den Link: LocalATSCV kontaktiert keine Website, damit deine Daten bei dir bleiben",
+      "empty": "Keine Schlüsselwörter gefunden: Füge eine vollständigere Anzeige ein",
+      "score": "Übereinstimmung mit der Anzeige",
+      "summary": "{{found}} von {{total}} Schlüsselwörtern vorhanden",
+      "found": "Schlüsselwörter in deinem Lebenslauf",
+      "missing": "Fehlende Schlüsselwörter",
+      "missingHint": "Klicke auf ein Schlüsselwort, um es deinen Kenntnissen hinzuzufügen, oder baue es in eine Erfahrung ein",
+      "addToSkills": "Zu den Kenntnissen hinzufügen",
+      "added": "„{{keyword}}“ zu den Kenntnissen hinzugefügt",
+      "keywordsGroup": "Schlüsselwörter",
+      "createVersion": "Gezielte Version für diese Stelle erstellen",
+      "createVersionHint": "Erfahrungen und Stichpunkte ohne Bezug zur Stelle werden abgewählt: Du kannst sie anpassen",
+      "savedInVersion": "Anzeige mit der Version „{{name}}“ gespeichert"
+    },
+    "weak": {
+      "hint": "„{{phrase}}“ beschreibt eine Aufgabe: Beginne mit einem Aktionsverb"
     }
+  },
+  "changelog": {
+    "eyebrow": "Neuigkeiten",
+    "title": "Änderungsprotokoll",
+    "subtitle": "Jede Version von LocalATSCV mit ihren Neuerungen und Korrekturen",
+    "current": "Aktuelle Version",
+    "frenchOnly": "Das Änderungsprotokoll ist auf Französisch verfasst",
+    "error": "Das Änderungsprotokoll konnte nicht geladen werden",
+    "types": {
+      "added": "Hinzugefügt",
+      "changed": "Geändert",
+      "fixed": "Behoben",
+      "removed": "Entfernt",
+      "deprecated": "Veraltet",
+      "security": "Sicherheit",
+      "other": "Sonstiges"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyse",
+    "title": "Kommt dein Lebenslauf an den Robotern vorbei?",
+    "subtitle": "Lade einen Lebenslauf als PDF hoch, egal mit welchem Programm erstellt: LocalATSCV liest ihn wie ein ATS und zeigt dir, was du verbessern solltest",
+    "drop": "Lebenslauf hierher ziehen",
+    "dropActive": "Datei loslassen, um die Analyse zu starten",
+    "hint": "Nur PDF, maximal 15 MB",
+    "choose": "Datei auswählen",
+    "reading": "PDF wird gelesen…",
+    "privacy": "Die Datei wird in deinem Browser analysiert und nirgendwohin gesendet",
+    "another": "Anderen Lebenslauf analysieren",
+    "errors": {
+      "notPdf": "Diese Datei ist kein PDF",
+      "tooLarge": "Diese Datei ist größer als 15 MB",
+      "encrypted": "Dieses PDF ist passwortgeschützt: Auch ein ATS kann es nicht lesen",
+      "unreadable": "Dieses PDF kann nicht gelesen werden: Es ist möglicherweise beschädigt"
+    },
+    "stats": "{{pages}} Seite(n) · {{words}} Wörter",
+    "verdict": {
+      "excellent": "Sehr gut",
+      "good": "Gut",
+      "fair": "Verbesserungsfähig",
+      "poor": "Kritisch"
+    },
+    "verdictText": {
+      "excellent": "Roboter lesen deinen Lebenslauf sehr gut",
+      "good": "Ein paar Anpassungen machen ihn noch wirkungsvoller",
+      "fair": "Mehrere Punkte erschweren das Lesen durch ATS",
+      "poor": "Ein ATS könnte das Wesentliche übersehen"
+    },
+    "categories": {
+      "readability": "Lesbarkeit für Roboter",
+      "structure": "Struktur",
+      "content": "Inhalt"
+    },
+    "sectionNames": {
+      "experience": "Berufserfahrung",
+      "education": "Ausbildung",
+      "skills": "Kenntnisse"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Maschinenlesbarer Text",
+        "pass": "Der gesamte Text des Lebenslaufs kann extrahiert werden",
+        "warn": "Einige Seiten enthalten keinen lesbaren Text: vermutlich Bilder oder ein Scan",
+        "fail": "Kein lesbarer Text: Dieser Lebenslauf ist vermutlich ein Bild oder ein Scan, ein ATS kann nichts damit anfangen. Exportiere ihn aus deinem Textprogramm als PDF"
+      },
+      "columns": {
+        "title": "Layout",
+        "pass": "Lineare Lesereihenfolge, keine Spalten, die sich vermischen",
+        "warn": "Mehrspaltiges Layout erkannt: Der Text wird womöglich in falscher Reihenfolge gelesen. Prüfe unten „Was der Roboter liest“"
+      },
+      "unreadable": {
+        "title": "Symbole und Skill-Balken",
+        "pass": "Keine Symbole oder unlesbaren Zeichen",
+        "warn": "Symbole oder Balken erkannt ({{count}}): Ein ATS liest sie als unverständliche Zeichen. Ersetze sie durch Text",
+        "fail": "Symbole oder Balken erkannt ({{count}}): Ersetze sie durch Text, zum Beispiel „Englisch: C1“ statt Punkten"
+      },
+      "contact": {
+        "title": "Kontaktdaten",
+        "pass": "E-Mail-Adresse und Telefonnummer gefunden",
+        "warnNoPhone": "Keine Telefonnummer gefunden",
+        "warnNoEmail": "Keine E-Mail-Adresse gefunden",
+        "fail": "Weder E-Mail noch Telefon gefunden: Schreibe sie als Text, nicht in ein Bild"
+      },
+      "sections": {
+        "title": "Standardabschnitte",
+        "pass": "Berufserfahrung, Ausbildung und Kenntnisse sind klar erkennbar",
+        "warn": "Diese Abschnitte wurden nicht erkannt: Verwende Standardtitel",
+        "fail": "Kein Standardabschnitt erkannt: ATS orientieren sich an Titeln wie „Berufserfahrung“ oder „Ausbildung“"
+      },
+      "length": {
+        "title": "Länge",
+        "pass": "{{pages}} Seite(n), {{words}} Wörter: ideale Länge",
+        "warn": "{{pages}} Seite(n), {{words}} Wörter: Ziel sind 1 bis 2 Seiten und 250 bis 1000 Wörter",
+        "fail": "{{pages}} Seite(n), {{words}} Wörter: zu kurz oder zu lang für eine gute Bewertung"
+      },
+      "quantified": {
+        "title": "Bezifferte Ergebnisse",
+        "pass": "{{percent}} % deiner Stichpunkte enthalten eine Zahl, sehr gut",
+        "warn": "Nur {{percent}} % der Stichpunkte sind beziffert: Ergänze messbare Ergebnisse (Prozente, Beträge, Mengen)",
+        "fail": "Keine bezifferten Ergebnisse: Recruiter und ATS schätzen messbare Erfolge"
+      },
+      "weakPhrases": {
+        "title": "Aktionsverben",
+        "pass": "Keine schwachen Formulierungen am Anfang der Stichpunkte",
+        "warn": "Diese Satzanfänge beschreiben eine Aufgabe statt eines Ergebnisses: Beginne mit einem Aktionsverb",
+        "fail": "Diese Satzanfänge beschreiben eine Aufgabe statt eines Ergebnisses: Beginne mit einem Aktionsverb"
+      },
+      "dates": {
+        "title": "Daten",
+        "pass": "Deine Erfahrungen sind datiert",
+        "warn": "Nur ein Jahr gefunden: Datiere jede Station, damit ATS deine Berufsjahre berechnen können",
+        "fail": "Keine Daten gefunden: ATS berechnen damit deine Berufsjahre"
+      }
+    },
+    "robot": {
+      "title": "Was der Roboter liest",
+      "text": "Der Text Zeile für Zeile rekonstruiert, wie es die meisten ATS tun. Ist er hier durcheinander oder unvollständig, sieht ihn auch der Recruiter so",
+      "empty": "Es konnte kein Text extrahiert werden"
+    },
+    "cta": {
+      "title": "Starte auf einer soliden Basis",
+      "text": "Erstelle im Editor einen ATS-optimierten Lebenslauf und passe ihn dann an jede Stelle an",
+      "button": "Editor öffnen",
+      "import": "Diesen Lebenslauf in unsere Vorlagen übernehmen"
+    },
+    "live": {
+      "title": "ATS-Prüfung in Echtzeit",
+      "issues": "{{count}} Punkt(e) bei dieser Vorlage zu prüfen",
+      "allGood": "Bei dieser Vorlage wurde kein Problem gefunden",
+      "hint": "Berechnet auf dem angezeigten Layout, mit derselben Engine wie die Lebenslauf-Analyse"
+    }
+  },
+  "import": {
+    "title": "Lebenslauf importieren",
+    "linkedinTitle": "Von LinkedIn importieren",
+    "text": "Wähle einen Lebenslauf als PDF: Der Inhalt wird in deinem Browser extrahiert und den Abschnitten des Editors zugeordnet. Danach kannst du eine Vorlage wählen",
+    "linkedinSteps": {
+      "step1": "Öffne dein LinkedIn-Profil an einem Computer",
+      "step2": "Klicke unter deinem Foto auf „Mehr“ und dann auf „Als PDF speichern“",
+      "step3": "Wähle unten die heruntergeladene Datei"
+    },
+    "choose": "PDF auswählen",
+    "hint": "Nur PDF, maximal 15 MB",
+    "reading": "Import läuft…",
+    "privacy": "Die Datei wird in deinem Browser gelesen und nirgendwohin gesendet",
+    "close": "Schließen",
+    "done": "Lebenslauf importiert ({{items}} Einträge): Prüfe jeden Abschnitt",
+    "errors": {
+      "notPdf": "Diese Datei ist kein PDF",
+      "tooLarge": "Diese Datei ist größer als 15 MB",
+      "encrypted": "Dieses PDF ist passwortgeschützt",
+      "unreadable": "Dieses PDF kann nicht gelesen werden: Es ist möglicherweise beschädigt",
+      "empty": "Kein verwertbarer Text: Dieses PDF ist vermutlich ein Bild oder ein Scan"
+    }
+  },
+  "legal": {
+    "translationNote": "Dieses Dokument wird auf Englisch angezeigt. Rechtsverbindlich ist nur die französische Fassung.",
+    "error": "Dieses Dokument konnte nicht geladen werden."
   }
 }

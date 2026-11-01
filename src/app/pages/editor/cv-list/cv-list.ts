@@ -1,3 +1,4 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { CdkMenu, CdkMenuItem, CdkMenuTrigger } from '@angular/cdk/menu';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -14,6 +15,7 @@ import { DialogService } from '../../../shared/dialog/dialog.service';
 import { downloadFile, slugify, today } from '../../../shared/download';
 import { Icon } from '../../../shared/icon/icon';
 import { ToastService } from '../../../shared/toast/toast';
+import { ImportDialog, ImportDialogData, ImportDialogResult } from './import-dialog';
 
 /** « Mes CV » : liste des Master CV stockés dans ce navigateur, import et export des sauvegardes. */
 @Component({
@@ -29,6 +31,7 @@ export class CvList {
   private readonly toast = inject(ToastService);
   private readonly transloco = inject(TranslocoService);
   private readonly language = inject(LanguageService);
+  private readonly cdkDialog = inject(Dialog);
 
   protected readonly cvs = toSignal(this.repository.cvs$);
   protected readonly versionCounts = toSignal(this.repository.versionCounts$, {
@@ -56,6 +59,19 @@ export class CvList {
 
   protected async createBlank(): Promise<void> {
     await this.createAndOpen(createEmptyCv(this.t('defaultName'), this.uiAsCvLanguage()));
+  }
+
+  protected openImport(mode: ImportDialogData['mode']): void {
+    const ref = this.cdkDialog.open<ImportDialogResult, ImportDialogData>(ImportDialog, {
+      data: { mode },
+      backdropClass: ['cdk-overlay-dark-backdrop', 'backdrop-blur-[2px]'],
+      panelClass: 'dialog-in',
+    });
+    ref.closed.subscribe((result) => {
+      if (!result) return;
+      this.toast.success(this.transloco.translate('import.done', { items: result.items }));
+      void this.router.navigate(['/editor', result.id]);
+    });
   }
 
   protected async createSample(): Promise<void> {

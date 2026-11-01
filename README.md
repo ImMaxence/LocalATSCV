@@ -8,13 +8,17 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
 
 ## Aperçu
 
-| Version ciblée (Master CV)                                   | Mes CV                                           |
-| ------------------------------------------------------------ | ------------------------------------------------ |
-| ![Version ciblée](docs/screenshots/editor-version.png)       | ![Liste des CV](docs/screenshots/cv-list.png)    |
-| **Thème sombre**                                             | **Page d'accueil**                               |
-| ![Éditeur en thème sombre](docs/screenshots/editor-dark.png) | ![Accueil](docs/screenshots/landing-light.png)   |
-| **Ce que lit un ATS**                                        | **Confidentialité**                              |
-| ![Vue robot](docs/screenshots/ats-robot-view.png)            | ![Confidentialité](docs/screenshots/privacy.png) |
+| Version ciblée (Master CV)                                   | Mes CV                                                   |
+| ------------------------------------------------------------ | -------------------------------------------------------- |
+| ![Version ciblée](docs/screenshots/editor-version.png)       | ![Liste des CV](docs/screenshots/cv-list.png)            |
+| **Adapter à une offre**                                      | **Import depuis LinkedIn**                               |
+| ![Adapter à une offre](docs/screenshots/job-match.png)       | ![Import LinkedIn](docs/screenshots/import-linkedin.png) |
+| **Galerie de modèles**                                       | **Analyseur de CV existant**                             |
+| ![Galerie de modèles](docs/screenshots/templates.png)        | ![Analyseur](docs/screenshots/analyze.png)               |
+| **Thème sombre**                                             | **Page d'accueil**                                       |
+| ![Éditeur en thème sombre](docs/screenshots/editor-dark.png) | ![Accueil](docs/screenshots/landing-light.png)           |
+| **Ce que lit un ATS**                                        | **Confidentialité**                                      |
+| ![Vue robot](docs/screenshots/ats-robot-view.png)            | ![Confidentialité](docs/screenshots/privacy.png)         |
 
 <p align="center">
   <img src="docs/screenshots/mobile-light.png" alt="Version mobile, thème clair" width="260" />
@@ -33,10 +37,14 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 - [x] Glisser-déposer des sections, des entrées et des puces (avec alternative au clavier)
 - [x] Versions ciblées : cases à cocher pour composer un CV sur mesure sans rien supprimer
 - [x] Langue du CV (FR, EN, IT, ES, DE) avec masquage automatique de la photo, de la date de naissance et de la nationalité en anglais
-- [ ] Export PDF textuel compatible ATS
-- [ ] Score de correspondance avec une offre et détecteur de phrases faibles
-- [ ] Analyseur de CV existant et import du PDF LinkedIn
-- [ ] Pages Nouveautés et légales
+- [x] 7 modèles de CV, dont **Impact** (bandeau photo, icônes, frise, jauges) : visuels pour le recruteur, lisibles par les ATS
+- [x] **Contrôle ATS en direct** dans l'éditeur, avec le même moteur que l'analyseur
+- [x] **Export PDF** textuel (fenêtre d'impression du navigateur), première page identique à l'aperçu
+- [x] **Adapter à une offre** (LinkedIn, Indeed, HelloWork…) : mots-clés, score de correspondance, ajout des mots manquants, version ciblée générée
+- [x] **Détecteur de phrases faibles** avec suggestions de verbes d'action, dans la langue du CV
+- [x] **Import d'un CV PDF existant** et du **PDF de profil LinkedIn** dans l'éditeur
+- [x] Analyseur de CV existant (PDF lu dans le navigateur) : score sur 100, points à corriger, texte tel que le lit un ATS
+- [x] Pages Nouveautés (générée à partir de `CHANGELOG.md`), mentions légales, CGU et confidentialité
 
 ## Principes
 
@@ -51,6 +59,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 - Transloco pour la traduction de l'interface (FR, EN, IT, ES, DE)
 - Angular CDK (menus accessibles, puis glisser-déposer)
 - Dexie (IndexedDB) pour le stockage local
+- pdf.js pour lire les PDF dans l'analyseur (chargé uniquement sur cette page)
 - Vitest pour les tests unitaires
 - nginx (Docker) pour le service des fichiers
 

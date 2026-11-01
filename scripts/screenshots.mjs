@@ -7,6 +7,8 @@
 //   npm run screenshots -- http://localhost:4200
 
 import { mkdir } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { chromium } from 'playwright-core';
 
 const baseUrl = process.argv[2] ?? 'http://localhost:8090';
@@ -26,12 +28,39 @@ async function launchBrowser() {
 const desktop = { viewport: { width: 1440, height: 900 } };
 const mobile = { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true };
 
+/** Annonce fictive utilisée pour illustrer « Adapter à une offre ». */
+const SAMPLE_JOB_AD = `Développeur Front-end Angular H/F
+Rejoignez notre équipe produit à Lyon.
+Missions : développer des interfaces en Angular et TypeScript, écrire des tests unitaires,
+participer aux cérémonies Scrum. Vous maîtrisez Docker et la CI/CD (GitLab CI).
+Profil : anglais courant, sens de l'accessibilité. Stack : Angular, TypeScript, RxJS, Kubernetes.`;
+
 /** Crée le CV d'exemple via l'interface et ouvre l'éditeur (chaque capture part d'un navigateur vierge). */
 async function openSampleCv(page) {
   await page.goto(`${baseUrl}/editor`, { waitUntil: 'networkidle' });
   await page.getByRole('button', { name: "Partir d'un exemple" }).click();
-  await page.locator('app-cv-preview app-cv-document').waitFor();
+  await page.waitForURL((url) => url.pathname.startsWith('/editor/'));
+  await page.locator('app-cv-editor app-cv-preview').waitFor();
   await page.waitForTimeout(300);
+}
+
+/** Imprime le CV d'exemple en PDF (comme le fera l'export) pour alimenter l'analyseur. */
+async function samplePdf(page) {
+  await openSampleCv(page);
+  await page.evaluate(() => {
+    const doc = document.querySelector('app-cv-preview app-cv-document');
+    document.body.innerHTML = '';
+    document.body.style.cssText = 'margin:0;background:#fff';
+    document.body.appendChild(doc);
+  });
+  const path = join(tmpdir(), 'localatscv-exemple.pdf');
+  await page.pdf({
+    path,
+    format: 'A4',
+    printBackground: true,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+  });
+  return path;
 }
 
 /** Chaque capture : contexte (thème, taille) + ce qu'il faut photographier. */
@@ -73,6 +102,35 @@ const shots = [
   },
   { file: 'editor-dark.png', context: { ...desktop, colorScheme: 'dark' }, prepare: openSampleCv },
   {
+    file: 'templates.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      await page.locator('button:has(app-icon[name=layout])').click();
+      await page.getByRole('dialog').waitFor();
+      await page.waitForTimeout(400);
+    },
+  },
+  {
+    file: 'analyze.png',
+    context: { viewport: { width: 1440, height: 1250 }, colorScheme: 'light' },
+    prepare: async (page) => {
+      const pdf = await samplePdf(page);
+      await page.goto(`${baseUrl}/analyze`, { waitUntil: 'networkidle' });
+      await page.locator('app-analyze input[type=file]').setInputFiles(pdf);
+      await page.locator('app-analyze aside').waitFor();
+      await page.waitForTimeout(400);
+    },
+  },
+  {
+    file: 'changelog.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await page.goto(`${baseUrl}/changelog`, { waitUntil: 'networkidle' });
+      await page.locator('app-changelog ol').waitFor();
+    },
+  },
+  {
     file: 'editor-version.png',
     context: { ...desktop, colorScheme: 'light' },
     prepare: async (page) => {
@@ -91,6 +149,26 @@ const shots = [
         .first()
         .evaluate((el) => el.scrollIntoView({ block: 'start' }));
       await page.mouse.wheel(0, -130);
+      await page.waitForTimeout(300);
+    },
+  },
+  {
+    file: 'job-match.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      await page.locator('app-job-panel > section > button').click();
+      await page.locator('app-job-panel textarea').fill(SAMPLE_JOB_AD);
+      await page.waitForTimeout(1200);
+    },
+  },
+  {
+    file: 'import-linkedin.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await page.goto(`${baseUrl}/editor`, { waitUntil: 'networkidle' });
+      await page.getByRole('button', { name: 'Importer depuis LinkedIn' }).click();
+      await page.getByRole('dialog').waitFor();
       await page.waitForTimeout(300);
     },
   },

@@ -2,6 +2,7 @@ import {
   ACCENT_COLORS,
   CV_LANGUAGES,
   CvLanguage,
+  DEFAULT_TEMPLATE,
   CvSection,
   CvVersion,
   Entry,
@@ -10,6 +11,7 @@ import {
   SECTION_KINDS,
   SectionKind,
   isEntryKind,
+  isTemplateId,
   newId,
 } from '../model/cv.model';
 
@@ -180,6 +182,7 @@ export function normalizeCv(raw: unknown): MasterCv | null {
     id: string(raw['id']),
     name: string(raw['name']) || 'CV',
     language,
+    template: isTemplateId(raw['template']) ? raw['template'] : DEFAULT_TEMPLATE,
     accentColor: /^#[0-9a-f]{6}$/i.test(string(raw['accentColor']))
       ? string(raw['accentColor'])
       : ACCENT_COLORS[0],

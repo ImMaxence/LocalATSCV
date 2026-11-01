@@ -50,6 +50,31 @@
               <span class="block text-xs text-muted">{{ t('newSampleHint') }}</span>
             </span>
           </button>
+          <div class="my-1.5 border-t border-line"></div>
+          <button
+            cdkMenuItem
+            type="button"
+            class="menu-item"
+            (cdkMenuItemTriggered)="openImport('pdf')"
+          >
+            <app-icon class="size-4 text-accent" name="import" />
+            <span>
+              <span class="block font-semibold">{{ t('importPdf') }}</span>
+              <span class="block text-xs text-muted">{{ t('importPdfHint') }}</span>
+            </span>
+          </button>
+          <button
+            cdkMenuItem
+            type="button"
+            class="menu-item"
+            (cdkMenuItemTriggered)="openImport('linkedin')"
+          >
+            <app-icon class="size-4 text-accent" name="link" />
+            <span>
+              <span class="block font-semibold">{{ t('importLinkedin') }}</span>
+              <span class="block text-xs text-muted">{{ t('importLinkedinHint') }}</span>
+            </span>
+          </button>
         </div>
       </ng-template>
     </div>
@@ -74,6 +99,12 @@
         </button>
         <button type="button" class="btn btn-ghost" (click)="createSample()">
           <app-icon class="size-4" name="sparkles" />{{ t('newSample') }}
+        </button>
+        <button type="button" class="btn btn-ghost" (click)="openImport('pdf')">
+          <app-icon class="size-4" name="import" />{{ t('importPdf') }}
+        </button>
+        <button type="button" class="btn btn-ghost" (click)="openImport('linkedin')">
+          <app-icon class="size-4" name="link" />{{ t('importLinkedin') }}
         </button>
       </div>
     </div>

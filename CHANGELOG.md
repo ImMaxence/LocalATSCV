@@ -4,10 +4,22 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
-## [Non publié]
+## [0.2.0] - 2026-11-01
 
 ### Ajouté
 
+- Export PDF depuis l'éditeur, avec un CV en texte réel et une première page identique à l'aperçu
+- Modèle Impact : bandeau photo, icônes, frise chronologique et jauges de langue, en restant lisible par les ATS
+- Icônes de contact et jauges de niveau de langue dans les modèles Moderne et Colonnes (dessins, invisibles pour les ATS)
+- Contrôle ATS en direct dans l'éditeur : la mise en page affichée est notée avec le même moteur que l'analyseur
+- Adapter un CV à une offre (LinkedIn, Indeed, HelloWork…) : mots-clés de l'annonce, score de correspondance, ajout des mots-clés manquants et création d'une version ciblée pré-remplie
+- Détection des formulations faibles dans les puces, avec des verbes d'action proposés dans la langue du CV
+- Import d'un CV PDF existant dans l'éditeur, y compris le PDF de profil exporté depuis LinkedIn
+- Bouton « Reprendre ce CV dans nos modèles » dans l'analyseur
+- Pages Mentions légales, Conditions d'utilisation et Politique de confidentialité
+- Six modèles de CV : Classique, Moderne, Élégant, Tech, Minimal et Colonnes, avec un aperçu de son propre CV dans chacun et leur compatibilité ATS
+- Analyseur de CV existant : un PDF créé avec n'importe quel outil est lu dans le navigateur, noté sur 100, avec les points à corriger et le texte tel que le lit un ATS
+- Page Nouveautés générée à partir de ce journal des modifications
 - Éditeur de CV : formulaire à gauche, aperçu A4 en direct à droite avec repères de sauts de page
 - Page « Mes CV » avec vignettes, création d'un CV vierge ou à partir d'un exemple, duplication et suppression
 - Enregistrement automatique dans IndexedDB, photo de profil comprise (redimensionnée dans le navigateur)
@@ -23,6 +35,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 
 ### Corrigé
 
+- Page Nouveautés : affichage de la version en cours au lieu de « Prochaine version »
 - En-tête du site qui ne restait pas affiché en haut de l'écran pendant le défilement
 - Texte coupé et léger défilement horizontal sur les petits écrans
 - Navigation de l'en-tête qui débordait sur tablette
@@ -41,4 +54,5 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.2.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.2.0
 [0.1.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.1.0

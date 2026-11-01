@@ -1,0 +1,214 @@
+<section *transloco="let t; prefix: 'analyze'" class="container-page py-12 sm:py-16">
+  <div class="max-w-2xl">
+    <p class="eyebrow">{{ t('eyebrow') }}</p>
+    <h1 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+      {{ t('title') }}
+    </h1>
+    <p class="mt-4 text-muted">{{ t('subtitle') }}</p>
+  </div>
+
+  @if (state() !== 'done') {
+    <label
+      class="mt-10 flex cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-dashed px-6 py-16 text-center transition-colors"
+      [class]="
+        dragging()
+          ? 'border-accent bg-accent-soft/50'
+          : 'border-line bg-surface hover:border-accent/60'
+      "
+      (dragover)="onDragOver($event)"
+      (dragleave)="dragging.set(false)"
+      (drop)="onDrop($event)"
+    >
+      @if (state() === 'reading') {
+        <app-icon class="size-8 animate-spin text-accent" name="loader" />
+        <p class="mt-4 font-semibold">{{ t('reading') }}</p>
+        <p class="mt-1 text-sm text-muted">{{ fileName() }}</p>
+      } @else {
+        <span class="grid size-14 place-items-center rounded-2xl bg-accent-soft text-accent">
+          <app-icon class="size-7" name="upload" />
+        </span>
+        <p class="mt-5 text-lg font-semibold">{{ dragging() ? t('dropActive') : t('drop') }}</p>
+        <p class="mt-1 text-sm text-muted">{{ t('hint') }}</p>
+        <span class="btn btn-primary mt-6">{{ t('choose') }}</span>
+      }
+      <input
+        type="file"
+        accept="application/pdf,.pdf"
+        class="sr-only"
+        [disabled]="state() === 'reading'"
+        (change)="onFileInput($event)"
+      />
+    </label>
+    @if (error(); as code) {
+      <p
+        class="mt-4 flex items-center gap-2 rounded-2xl bg-danger/10 p-4 text-sm text-danger"
+        role="alert"
+      >
+        <app-icon class="size-4 shrink-0" name="alert" />{{ t('errors.' + code) }}
+      </p>
+    }
+    <p class="mt-6 flex items-center gap-2 text-sm text-muted">
+      <app-icon class="size-4 text-accent" name="lock" />{{ t('privacy') }}
+    </p>
+  }
+
+  @if (state() === 'done' && analysis(); as result) {
+    <div class="mt-10 grid gap-6 lg:grid-cols-[22rem_minmax(0,1fr)]">
+      <!-- Score -->
+      <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
+        <div class="panel p-6 text-center">
+          <p class="truncate text-sm text-muted" [title]="fileName()">{{ fileName() }}</p>
+          <div class="relative mx-auto mt-4 size-40">
+            <svg viewBox="0 0 120 120" class="size-full -rotate-90">
+              <circle
+                cx="60"
+                cy="60"
+                [attr.r]="ringRadius"
+                class="fill-none stroke-line"
+                stroke-width="10"
+              />
+              <circle
+                cx="60"
+                cy="60"
+                class="fill-none transition-[stroke-dashoffset] duration-700"
+                stroke-width="10"
+                stroke-linecap="round"
+                [attr.r]="ringRadius"
+                [attr.stroke]="ringColor()"
+                [attr.stroke-dasharray]="ringCircumference"
+                [attr.stroke-dashoffset]="ringCircumference * (1 - score() / 100)"
+              />
+            </svg>
+            <span class="absolute inset-0 grid place-items-center">
+              <span>
+                <span class="block text-4xl font-bold tabular-nums">{{ score() }}</span>
+                <span class="block text-xs text-muted">/ 100</span>
+              </span>
+            </span>
+          </div>
+          <p class="mt-4 font-display text-xl font-semibold">{{ t('verdict.' + verdict()) }}</p>
+          <p class="mt-1 text-sm text-muted">{{ t('verdictText.' + verdict()) }}</p>
+          <p class="mt-4 text-xs text-muted">
+            {{ t('stats', { pages: result.stats.pages, words: result.stats.words }) }}
+          </p>
+        </div>
+
+        <div class="panel space-y-4 p-6">
+          @for (category of result.categories; track category.id) {
+            <div>
+              <div class="flex justify-between text-sm">
+                <span class="font-medium">{{ t('categories.' + category.id) }}</span>
+                <span class="text-muted tabular-nums"
+                  >{{ category.points }} / {{ category.max }}</span
+                >
+              </div>
+              <div class="mt-1.5 h-2 overflow-hidden rounded-full bg-surface-2">
+                <div
+                  class="h-full rounded-full bg-accent transition-[width] duration-700"
+                  [style.width.%]="(category.points / category.max) * 100"
+                ></div>
+              </div>
+            </div>
+          }
+        </div>
+
+        <button type="button" class="btn btn-ghost w-full" (click)="reset()">
+          <app-icon class="size-4" name="refresh" />{{ t('another') }}
+        </button>
+      </aside>
+
+      <div class="min-w-0 space-y-6">
+        <!-- Contrôles -->
+        @for (category of categories; track category) {
+          @if (checksOf(category).length) {
+            <section class="panel">
+              <h2 class="border-b border-line px-5 py-3.5 font-semibold">
+                {{ t('categories.' + category) }}
+              </h2>
+              <ul class="divide-y divide-line">
+                @for (check of checksOf(category); track check.id) {
+                  <li class="flex gap-3.5 px-5 py-4">
+                    <span
+                      class="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full"
+                      [class]="statusIcons[check.status].classes"
+                    >
+                      <app-icon
+                        class="size-4"
+                        [name]="statusIcons[check.status].icon"
+                        [strokeWidth]="2.5"
+                      />
+                    </span>
+                    <div class="min-w-0 flex-1">
+                      <div class="flex flex-wrap items-baseline justify-between gap-x-3">
+                        <h3 class="font-semibold">{{ t('checks.' + check.id + '.title') }}</h3>
+                        <span class="text-xs text-muted tabular-nums"
+                          >{{ check.points }} / {{ check.max }}</span
+                        >
+                      </div>
+                      <p class="mt-1 text-sm leading-relaxed text-muted">
+                        {{ t('checks.' + check.id + '.' + check.message, check.params) }}
+                      </p>
+                      @if (check.items.length) {
+                        <ul class="mt-2 flex flex-wrap gap-1.5">
+                          @for (item of check.items; track item) {
+                            <li class="rounded-full bg-surface-2 px-2.5 py-0.5 text-xs font-medium">
+                              {{
+                                check.id === 'sections'
+                                  ? t('sectionNames.' + item)
+                                  : '« ' + item + ' »'
+                              }}
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </div>
+                  </li>
+                }
+              </ul>
+            </section>
+          }
+        }
+
+        <!-- Ce que lit le robot -->
+        <section class="panel">
+          <div class="flex items-center gap-2 border-b border-line px-5 py-3.5">
+            <app-icon class="size-4 text-muted" name="bot" />
+            <h2 class="font-semibold">{{ t('robot.title') }}</h2>
+          </div>
+          <p class="px-5 pt-4 text-sm text-muted">{{ t('robot.text') }}</p>
+          @if (result.lines.length) {
+            <pre
+              class="m-5 max-h-96 overflow-auto rounded-xl border border-line bg-paper p-4 font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted"
+              >{{ result.lines.join('\n') }}</pre>
+          } @else {
+            <p class="m-5 rounded-xl border border-dashed border-line p-4 text-sm text-muted">
+              {{ t('robot.empty') }}
+            </p>
+          }
+        </section>
+
+        <div
+          class="flex flex-col items-start gap-4 rounded-2xl bg-accent px-6 py-6 text-accent-ink sm:flex-row sm:items-center"
+        >
+          <div class="flex-1">
+            <p class="font-semibold">{{ t('cta.title') }}</p>
+            <p class="mt-1 text-sm opacity-85">{{ t('cta.text') }}</p>
+          </div>
+          <button
+            type="button"
+            class="btn bg-accent-ink text-accent hover:opacity-90"
+            (click)="importToEditor()"
+          >
+            <app-icon class="size-4" name="import" />{{ t('cta.import') }}
+          </button>
+          <a
+            routerLink="/editor"
+            class="btn border border-accent-ink/30 text-accent-ink hover:bg-accent-ink/10"
+          >
+            {{ t('cta.button') }}<app-icon class="size-4" name="arrowRight" />
+          </a>
+        </div>
+      </div>
+    </div>
+  }
+</section>

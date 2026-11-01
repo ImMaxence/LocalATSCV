@@ -12,7 +12,8 @@
           "/favicon.svg",
           "/*.css",
           "/*.js",
-          "/i18n/*.json"
+          "/i18n/*.json",
+          "/CHANGELOG.md"
         ]
       }
     },
@@ -21,7 +22,11 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
-        "files": ["/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"]
+        "files": [
+          "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)",
+          "/pdfjs/*.mjs",
+          "/legal/**/*.md"
+        ]
       }
     }
   ]

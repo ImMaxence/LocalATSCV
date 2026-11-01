@@ -44,11 +44,6 @@
     "reload": "Recharger",
     "later": "Plus tard"
   },
-  "comingSoon": {
-    "title": "Bientôt disponible",
-    "text": "Cette partie de LocalATSCV est en cours de construction. Elle arrive dans une prochaine version",
-    "back": "Retour à l'accueil"
-  },
   "landing": {
     "hero": {
       "badge": "100 % local · Gratuit · Open source",
@@ -248,7 +243,7 @@
       "newBlankHint": "Partir d'une page blanche",
       "newSample": "Partir d'un exemple",
       "newSampleHint": "Un CV fictif pré-rempli pour découvrir l'éditeur",
-      "import": "Importer",
+      "import": "Restaurer une sauvegarde",
       "exportAll": "Tout exporter",
       "emptyTitle": "Aucun CV pour l'instant",
       "emptyText": "Créez votre Master CV : toutes vos expériences au même endroit, à décliner pour chaque offre",
@@ -272,7 +267,11 @@
         "invalidJson": "Ce fichier n'est pas un JSON valide",
         "notABackup": "Ce fichier n'est pas une sauvegarde LocalATSCV",
         "newerVersion": "Cette sauvegarde vient d'une version plus récente de LocalATSCV : mettez l'application à jour"
-      }
+      },
+      "importPdf": "Importer un CV (PDF)",
+      "importPdfHint": "Reprendre un CV existant dans nos modèles",
+      "importLinkedin": "Importer depuis LinkedIn",
+      "importLinkedinHint": "À partir du PDF de votre profil"
     },
     "toolbar": {
       "back": "Mes CV",
@@ -283,7 +282,8 @@
       "saving": "Enregistrement…",
       "saveError": "Échec de l'enregistrement",
       "edit": "Édition",
-      "preview": "Aperçu"
+      "preview": "Aperçu",
+      "exportPdf": "Exporter en PDF"
     },
     "versions": {
       "label": "Version affichée",
@@ -419,6 +419,241 @@
     "notFound": {
       "title": "CV introuvable",
       "text": "Ce CV n'existe pas ou a été supprimé de ce navigateur"
+    },
+    "templates": {
+      "button": "Modèle",
+      "title": "Choisir un modèle",
+      "subtitle": "Votre CV dans chaque mise en page. La couleur d'accent s'applique à tous les modèles",
+      "close": "Fermer",
+      "ats": "Compatibilité ATS",
+      "levels": {
+        "excellent": "excellente",
+        "good": "bonne",
+        "fair": "moyenne"
+      },
+      "atsHint": "Tous les modèles impriment du vrai texte. Les mises en page en colonnes sont parfois lues dans le désordre par les ATS : pour une candidature en ligne, préférez un modèle à une colonne",
+      "names": {
+        "classic": {
+          "name": "Classique",
+          "description": "Sobre et efficace : une colonne, des titres soulignés, rien qui distrait"
+        },
+        "modern": {
+          "name": "Moderne",
+          "description": "Bandeau de couleur, titres affirmés et compétences en pastilles"
+        },
+        "elegant": {
+          "name": "Élégant",
+          "description": "En-tête centré et typographie à empattements, pour un rendu raffiné"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Liseré coloré, détails en chasse fixe et compétences façon code"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Style suisse : nom en très grand, titres dans la marge, beaucoup d'air"
+        },
+        "sidebar": {
+          "name": "Colonnes",
+          "description": "Colonne latérale colorée avec photo, contact et compétences"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Bandeau photo, icônes, frise chronologique et jauges de langue, en restant parfaitement lisible par les ATS"
+        }
+      }
+    },
+    "print": {
+      "title": "Exporter en PDF",
+      "text": "La fenêtre d'impression de votre navigateur va s'ouvrir. Pour un PDF parfait :",
+      "tips": {
+        "destination": "Destination : « Enregistrer au format PDF »",
+        "margins": "Marges : « Aucune »",
+        "headers": "Décochez « En-têtes et pieds de page »",
+        "background": "Cochez « Graphiques d’arrière-plan » pour garder les couleurs"
+      },
+      "dontShow": "Ne plus afficher ce message",
+      "cancel": "Annuler",
+      "print": "Ouvrir l'impression"
+    },
+    "job": {
+      "title": "Adapter à une offre",
+      "sources": "LinkedIn, Indeed, HelloWork, Welcome to the Jungle, APEC, France Travail…",
+      "placeholder": "Collez ici le texte complet de l'annonce : intitulé, missions, profil recherché",
+      "urlWarning": "Collez le texte de l'annonce plutôt que son lien : LocalATSCV ne contacte aucun site, pour que vos données restent chez vous",
+      "empty": "Aucun mot-clé repéré : collez une annonce plus complète",
+      "score": "Correspondance avec l’offre",
+      "summary": "{{found}} mots-clés présents sur {{total}}",
+      "found": "Mots-clés présents dans votre CV",
+      "missing": "Mots-clés absents",
+      "missingHint": "Cliquez sur un mot-clé pour l’ajouter à vos compétences, ou intégrez-le dans une expérience",
+      "addToSkills": "Ajouter aux compétences",
+      "added": "« {{keyword}} » ajouté aux compétences",
+      "keywordsGroup": "Mots-clés",
+      "createVersion": "Créer une version ciblée pour cette offre",
+      "createVersionHint": "Les expériences et les puces sans lien avec l’offre seront décochées : vous pourrez ajuster",
+      "savedInVersion": "Annonce enregistrée avec la version « {{name}} »"
+    },
+    "weak": {
+      "hint": "« {{phrase}} » décrit une tâche : commencez par un verbe d’action"
     }
+  },
+  "changelog": {
+    "eyebrow": "Nouveautés",
+    "title": "Journal des modifications",
+    "subtitle": "Chaque version de LocalATSCV, ses nouveautés et ses corrections",
+    "current": "Version actuelle",
+    "frenchOnly": "Le journal des modifications est rédigé en français",
+    "error": "Impossible de charger le journal des modifications",
+    "types": {
+      "added": "Ajouté",
+      "changed": "Modifié",
+      "fixed": "Corrigé",
+      "removed": "Supprimé",
+      "deprecated": "Obsolète",
+      "security": "Sécurité",
+      "other": "Divers"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyseur",
+    "title": "Votre CV passe-t-il les robots ?",
+    "subtitle": "Déposez un CV au format PDF, créé avec n'importe quel outil : LocalATSCV le lit comme un ATS et vous dit quoi corriger",
+    "drop": "Glissez votre CV ici",
+    "dropActive": "Déposez le fichier pour lancer l'analyse",
+    "hint": "PDF uniquement, 15 Mo maximum",
+    "choose": "Choisir un fichier",
+    "reading": "Lecture du PDF en cours…",
+    "privacy": "Le fichier est analysé dans votre navigateur : il n'est envoyé nulle part",
+    "another": "Analyser un autre CV",
+    "errors": {
+      "notPdf": "Ce fichier n'est pas un PDF",
+      "tooLarge": "Ce fichier dépasse 15 Mo",
+      "encrypted": "Ce PDF est protégé par un mot de passe : un ATS ne pourra pas le lire non plus",
+      "unreadable": "Impossible de lire ce PDF : il est peut-être endommagé"
+    },
+    "stats": "{{pages}} page(s) · {{words}} mots",
+    "verdict": {
+      "excellent": "Excellent",
+      "good": "Bon",
+      "fair": "À améliorer",
+      "poor": "Critique"
+    },
+    "verdictText": {
+      "excellent": "Votre CV est très bien lu par les robots",
+      "good": "Quelques ajustements le rendront encore plus efficace",
+      "fair": "Plusieurs points freinent sa lecture par les ATS",
+      "poor": "Un ATS risque de passer à côté de l'essentiel"
+    },
+    "categories": {
+      "readability": "Lisibilité par les robots",
+      "structure": "Structure",
+      "content": "Contenu"
+    },
+    "sectionNames": {
+      "experience": "Expérience",
+      "education": "Formation",
+      "skills": "Compétences"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Texte lisible par une machine",
+        "pass": "Tout le texte du CV peut être extrait",
+        "warn": "Certaines pages ne contiennent pas de texte lisible : sans doute des images ou un scan",
+        "fail": "Aucun texte lisible : ce CV est probablement une image ou un scan, un ATS n'en tirera rien. Exportez-le en PDF depuis votre traitement de texte"
+      },
+      "columns": {
+        "title": "Mise en page",
+        "pass": "Lecture linéaire, sans colonnes qui se mélangent",
+        "warn": "Mise en page en colonnes détectée : le texte risque d'être lu dans le désordre. Vérifiez « Ce que lit le robot » ci-dessous"
+      },
+      "unreadable": {
+        "title": "Pictogrammes et jauges",
+        "pass": "Aucun pictogramme ni caractère illisible",
+        "warn": "Pictogrammes ou jauges détectés ({{count}}) : un ATS les lit comme des caractères incompréhensibles. Remplacez-les par du texte",
+        "fail": "Pictogrammes ou jauges détectés ({{count}}) : remplacez-les par du texte, par exemple « Anglais : C1 » plutôt que des points"
+      },
+      "contact": {
+        "title": "Coordonnées",
+        "pass": "Adresse e-mail et téléphone trouvés",
+        "warnNoPhone": "Aucun numéro de téléphone trouvé",
+        "warnNoEmail": "Aucune adresse e-mail trouvée",
+        "fail": "Ni e-mail ni téléphone trouvés : écrivez-les en texte, pas dans une image"
+      },
+      "sections": {
+        "title": "Sections standards",
+        "pass": "Expérience, formation et compétences sont clairement identifiées",
+        "warn": "Ces sections ne sont pas reconnues : utilisez des titres standards",
+        "fail": "Aucune section standard reconnue : les ATS s'appuient sur des titres comme « Expérience » ou « Formation »"
+      },
+      "length": {
+        "title": "Longueur",
+        "pass": "{{pages}} page(s), {{words}} mots : longueur idéale",
+        "warn": "{{pages}} page(s), {{words}} mots : visez 1 à 2 pages et 250 à 1 000 mots",
+        "fail": "{{pages}} page(s), {{words}} mots : CV trop court ou trop long pour être bien évalué"
+      },
+      "quantified": {
+        "title": "Résultats chiffrés",
+        "pass": "{{percent}} % de vos puces contiennent un chiffre, bravo",
+        "warn": "Seulement {{percent}} % de puces chiffrées : ajoutez des résultats mesurables (pourcentages, montants, volumes)",
+        "fail": "Aucun résultat chiffré : recruteurs et ATS valorisent les réalisations mesurables"
+      },
+      "weakPhrases": {
+        "title": "Verbes d'action",
+        "pass": "Aucune formulation faible en début de puce",
+        "warn": "Ces débuts de phrase décrivent une tâche plutôt qu'un résultat : commencez par un verbe d'action",
+        "fail": "Ces débuts de phrase décrivent une tâche plutôt qu'un résultat : commencez par un verbe d'action"
+      },
+      "dates": {
+        "title": "Dates",
+        "pass": "Vos expériences sont datées",
+        "warn": "Une seule année trouvée : datez chaque expérience, les ATS calculent ainsi vos années d'expérience",
+        "fail": "Aucune date trouvée : les ATS s'en servent pour calculer vos années d'expérience"
+      }
+    },
+    "robot": {
+      "title": "Ce que lit le robot",
+      "text": "Le texte reconstitué ligne par ligne, comme le font la plupart des ATS. S'il est dans le désordre ou incomplet ici, il l'est aussi pour le recruteur",
+      "empty": "Aucun texte n'a pu être extrait"
+    },
+    "cta": {
+      "title": "Repartez sur une base saine",
+      "text": "Créez un CV optimisé pour les ATS dans l'éditeur, puis déclinez-le pour chaque offre",
+      "button": "Ouvrir l'éditeur",
+      "import": "Reprendre ce CV dans nos modèles"
+    },
+    "live": {
+      "title": "Contrôle ATS en direct",
+      "issues": "{{count}} point(s) à vérifier sur ce modèle",
+      "allGood": "Aucun problème détecté sur ce modèle",
+      "hint": "Calculé sur la mise en page affichée, avec le même moteur que l’analyseur de CV"
+    }
+  },
+  "import": {
+    "title": "Importer un CV",
+    "linkedinTitle": "Importer depuis LinkedIn",
+    "text": "Choisissez un CV au format PDF : son contenu est extrait dans votre navigateur et rangé dans les sections de l’éditeur. Vous pourrez ensuite choisir un modèle",
+    "linkedinSteps": {
+      "step1": "Ouvrez votre profil LinkedIn sur un ordinateur",
+      "step2": "Cliquez sur « Plus » sous votre photo, puis sur « Enregistrer au format PDF »",
+      "step3": "Choisissez ci-dessous le fichier téléchargé"
+    },
+    "choose": "Choisir un PDF",
+    "hint": "PDF uniquement, 15 Mo maximum",
+    "reading": "Import en cours…",
+    "privacy": "Le fichier est lu dans votre navigateur : il n'est envoyé nulle part",
+    "close": "Fermer",
+    "done": "CV importé ({{items}} éléments repris) : relisez chaque section",
+    "errors": {
+      "notPdf": "Ce fichier n'est pas un PDF",
+      "tooLarge": "Ce fichier dépasse 15 Mo",
+      "encrypted": "Ce PDF est protégé par un mot de passe",
+      "unreadable": "Impossible de lire ce PDF : il est peut-être endommagé",
+      "empty": "Aucun texte exploitable : ce PDF est sans doute une image ou un scan"
+    }
+  },
+  "legal": {
+    "translationNote": "Ce document est affiché en anglais. Seule la version française fait foi.",
+    "error": "Impossible de charger ce document."
   }
 }

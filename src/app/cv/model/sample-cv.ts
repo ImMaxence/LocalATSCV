@@ -205,5 +205,5 @@ export function createSampleCv(language: CvLanguage): MasterCv {
     },
   ];
 
-  return { ...cv, sections };
+  return { ...cv, template: 'impact', sections };
 }

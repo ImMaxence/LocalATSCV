@@ -1,0 +1,202 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CvTemplateBase } from '../cv-template-base';
+
+/** Minimal : style suisse, nom très grand, titres de sections dans une marge à gauche. */
+@Component({
+  selector: 'app-cv-minimal',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
+      <header>
+        <div class="min-w-0 flex-1">
+          @if (fullName()) {
+            <h1 class="name">{{ fullName() }}</h1>
+          }
+          @if (cv().profile.title.trim()) {
+            <p class="headline">{{ cv().profile.title }}</p>
+          }
+        </div>
+        @if (contact().length) {
+          <ul class="contact">
+            @for (item of contact(); track $index) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        }
+        @if (photoUrl()) {
+          <img class="photo" [src]="photoUrl()" alt="" />
+        }
+      </header>
+
+      @if (summary()) {
+        <section class="row">
+          <h2>{{ labels().sections.summary }}</h2>
+          <p class="whitespace-pre-line">{{ summary() }}</p>
+        </section>
+      }
+      @for (section of cv().sections; track section.id) {
+        <section class="row">
+          <h2>{{ sectionTitle(section) }}</h2>
+          <div class="min-w-0">
+            @switch (section.kind) {
+              @case ('skills') {
+                <ul class="plain">
+                  @for (group of skills(section); track group.id) {
+                    <li>
+                      @if (group.label.trim()) {
+                        <strong>{{ group.label }}{{ separator() }}</strong>
+                      }
+                      {{ group.keywords }}
+                    </li>
+                  }
+                </ul>
+              }
+              @case ('languages') {
+                <p>{{ languageLine(languages(section)) }}</p>
+              }
+              @case ('interests') {
+                <p>{{ interestLine(interests(section)) }}</p>
+              }
+              @default {
+                @for (entry of entries(section); track entry.id) {
+                  <div class="entry">
+                    <h3>{{ entry.title }}</h3>
+                    @if (entry.subtitle.trim() || dates(entry)) {
+                      <p class="org">
+                        {{ entry.subtitle }}
+                        @if (entry.subtitle.trim() && dates(entry)) {
+                          <span class="sep"> — </span>
+                        }
+                        <span class="dates">{{ dates(entry) }}</span>
+                      </p>
+                    }
+                    @if (meta(entry)) {
+                      <p class="meta">{{ meta(entry) }}</p>
+                    }
+                    @if (entry.bullets.length) {
+                      <ul class="bullets">
+                        @for (bullet of entry.bullets; track bullet.id) {
+                          <li>{{ bullet.text }}</li>
+                        }
+                      </ul>
+                    }
+                  </div>
+                }
+              }
+            }
+          </div>
+        </section>
+      }
+    </article>
+  `,
+  styles: `
+    :host {
+      display: block;
+    }
+    .cv {
+      box-sizing: border-box;
+      width: 794px;
+      min-height: 1123px;
+      padding: 62px 64px;
+      background: #fff;
+      color: #161616;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    header {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 34px;
+    }
+    .name {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      line-height: 0.95;
+    }
+    .name::after {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-left: 4px;
+      background: var(--cv-accent);
+    }
+    .headline {
+      margin-top: 10px;
+      color: #6b6b6b;
+      font-size: 16px;
+    }
+    .contact {
+      color: #444;
+      font-size: 11px;
+      line-height: 1.6;
+      text-align: right;
+    }
+    .photo {
+      width: 84px;
+      height: 84px;
+      flex-shrink: 0;
+      object-fit: cover;
+      filter: grayscale(0.15);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 26px;
+      padding-top: 16px;
+      margin-top: 16px;
+      border-top: 1px solid #ececec;
+    }
+    h2 {
+      padding-top: 2px;
+      color: var(--cv-accent);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    /* Le contenu démarre sous le titre de marge : à l'extraction, le titre reste seul sur sa ligne. */
+    .row > :last-child {
+      padding-top: 20px;
+    }
+    .entry {
+      break-inside: avoid;
+    }
+    .entry + .entry {
+      margin-top: 13px;
+    }
+    h3 {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .org {
+      color: #444;
+    }
+    .sep,
+    .dates,
+    .meta {
+      color: #8a8a8a;
+    }
+    .meta {
+      font-size: 11px;
+    }
+    .bullets {
+      margin-top: 4px;
+      padding-left: 14px;
+      list-style: '·  ';
+    }
+    .bullets > li + li {
+      margin-top: 2px;
+    }
+    .plain > li + li {
+      margin-top: 3px;
+    }
+    strong {
+      font-weight: 650;
+    }
+  `,
+})
+export class CvMinimal extends CvTemplateBase {}

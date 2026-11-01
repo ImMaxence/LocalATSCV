@@ -3,7 +3,9 @@ import { DestroyRef, Injectable, computed, inject, signal } from '@angular/core'
 import { CvRepository } from '../../../cv/data/cv-repository';
 import { prepareProfilePhoto } from '../../../cv/data/photo';
 import {
+  CoverLetter,
   CvLanguage,
+  CvLayout,
   CvSection,
   CvTemplateId,
   CvVersion,
@@ -14,7 +16,9 @@ import {
   SectionItem,
   SectionKind,
   SkillGroup,
+  DEFAULT_LAYOUT,
   createBullet,
+  createLetter,
   createItem,
   createSection,
   createVersion,
@@ -25,8 +29,17 @@ import { CvFontId } from '../../../cv/model/cv-fonts';
 import { extractKeywords, hiddenIdsForJob, matchCv } from '../../../cv/analysis/job-match';
 
 const SAVE_DELAY_MS = 400;
+/** Modifications rapprochées (frappe continue) regroupées en une seule étape d'annulation. */
+const HISTORY_GROUP_MS = 1000;
+const HISTORY_LIMIT = 100;
 
 type SaveState = 'saved' | 'saving' | 'error';
+
+/** État restauré par Annuler / Rétablir : le Master et la version alors affichée. */
+interface Snapshot {
+  cv: MasterCv;
+  version: CvVersion | null;
+}
 
 /**
  * État de l'éditeur d'un CV. Chaque modification produit une nouvelle copie du CV
@@ -45,6 +58,16 @@ export class CvEditorStore {
   readonly photoUrl = signal<string | null>(null);
   /** Dernier élément ajouté : l'interface l'ouvre et place le curseur dedans. */
   readonly lastAddedId = signal<string | null>(null);
+  /** Document édité et affiché : le CV ou la lettre de motivation. */
+  readonly mode = signal<'cv' | 'letter'>('cv');
+  /** Aperçu en niveaux de gris, pour juger d'une impression en noir et blanc (le PDF garde ses couleurs). */
+  readonly grayscale = signal(false);
+
+  private readonly past = signal<Snapshot[]>([]);
+  private readonly future = signal<Snapshot[]>([]);
+  private lastRecordAt = 0;
+  readonly canUndo = computed(() => this.past().length > 0);
+  readonly canRedo = computed(() => this.future().length > 0);
 
   readonly activeVersion = computed(
     () => this.versions().find((version) => version.id === this.activeVersionId()) ?? null,
@@ -75,22 +98,83 @@ export class CvEditorStore {
     }
     this.cv.set(cv);
     this.versions.set(await this.repository.getVersions(id));
+    this.past.set([]);
+    this.future.set([]);
     await this.refreshPhoto();
     this.status.set('ready');
   }
 
   // --- Enregistrement ---
 
-  private mutate(change: (draft: MasterCv) => void): void {
+  private mutate(change: (draft: MasterCv) => void, record = true): void {
     const current = this.cv();
     if (!current) return;
+    if (record) this.record();
     const draft = structuredClone(current);
     change(draft);
-    draft.updatedAt = new Date().toISOString();
-    this.cv.set(draft);
+    this.schedule(draft);
+  }
+
+  private schedule(cv: MasterCv): void {
+    cv.updatedAt = new Date().toISOString();
+    this.cv.set(cv);
     this.saveState.set('saving');
     clearTimeout(this.saveTimer);
     this.saveTimer = setTimeout(() => void this.flush(), SAVE_DELAY_MS);
+  }
+
+  // --- Annuler / Rétablir ---
+
+  /** Mémorise l'état avant une modification ; une frappe continue ne crée qu'une étape. */
+  private record(): void {
+    const now = Date.now();
+    if (now - this.lastRecordAt > HISTORY_GROUP_MS && this.cv()) {
+      this.past.update((past) => [...past.slice(1 - HISTORY_LIMIT), this.snapshot()]);
+      this.future.set([]);
+    }
+    this.lastRecordAt = now;
+  }
+
+  undo(): void {
+    const previous = this.past().at(-1);
+    if (!previous) return;
+    this.future.update((future) => [...future, this.snapshot(previous.version?.id ?? null)]);
+    this.past.update((past) => past.slice(0, -1));
+    this.restore(previous);
+  }
+
+  redo(): void {
+    const next = this.future().at(-1);
+    if (!next) return;
+    this.past.update((past) => [...past, this.snapshot(next.version?.id ?? null)]);
+    this.future.update((future) => future.slice(0, -1));
+    this.restore(next);
+  }
+
+  private snapshot(versionId = this.activeVersionId()): Snapshot {
+    const version = this.versions().find((v) => v.id === versionId) ?? null;
+    return {
+      cv: structuredClone(this.cv() as MasterCv),
+      version: version ? structuredClone(version) : null,
+    };
+  }
+
+  private restore(snapshot: Snapshot): void {
+    const current = this.cv();
+    if (!current) return;
+    this.lastRecordAt = 0;
+    // La photo n'est pas rejouée : l'image remplacée a déjà été supprimée du navigateur.
+    const cv = structuredClone(snapshot.cv);
+    cv.profile.photoId = current.profile.photoId;
+    this.schedule(cv);
+    const version = snapshot.version;
+    if (version && this.versions().some((v) => v.id === version.id)) {
+      const restored = { ...structuredClone(version), updatedAt: new Date().toISOString() };
+      this.versions.update((versions) =>
+        versions.map((v) => (v.id === restored.id ? restored : v)),
+      );
+      void this.repository.saveVersion(restored);
+    }
   }
 
   async flush(): Promise<void> {
@@ -127,6 +211,47 @@ export class CvEditorStore {
 
   setAccent(color: string): void {
     this.mutate((cv) => (cv.accentColor = color));
+  }
+
+  /** `record: false` pour les étapes intermédiaires de l'ajustement automatique. */
+  setLayout(patch: Partial<CvLayout>, record = true): void {
+    this.mutate((cv) => (cv.layout = { ...(cv.layout ?? DEFAULT_LAYOUT), ...patch }), record);
+  }
+
+  /** Point de retour unique avant une série de modifications non enregistrées dans l'historique. */
+  checkpoint(): void {
+    this.lastRecordAt = 0;
+    this.record();
+  }
+
+  // --- Lettre de motivation ---
+
+  /** Lettre de la version affichée, sinon celle du Master. */
+  readonly letter = computed(() => this.activeVersion()?.letter ?? this.cv()?.letter ?? null);
+  /** Lettre affichée : à défaut, une lettre vierge (formules d'usage de la langue du CV). */
+  readonly shownLetter = computed(
+    () => this.letter() ?? createLetter(this.cv()?.profile.location ?? ''),
+  );
+  /** La version affichée a sa propre lettre (sinon elle montre celle du Master). */
+  readonly versionHasLetter = computed(() => !!this.activeVersion()?.letter);
+
+  /** Une version qui modifie la lettre en prend d'abord une copie : le Master reste intact. */
+  updateLetter(patch: Partial<CoverLetter>): void {
+    const base = this.shownLetter();
+    const version = this.activeVersion();
+    if (version) {
+      void this.updateVersion(version.id, (draft) => {
+        draft.letter = { ...(draft.letter ?? base), ...patch };
+      });
+    } else {
+      this.mutate((cv) => (cv.letter = { ...(cv.letter ?? base), ...patch }));
+    }
+  }
+
+  /** La version abandonne sa lettre et reprend celle du Master. */
+  useMasterLetter(): void {
+    const version = this.activeVersion();
+    if (version) void this.updateVersion(version.id, (draft) => (draft.letter = null));
   }
 
   // --- Profil ---
@@ -314,7 +439,7 @@ export class CvEditorStore {
   }
 
   async renameVersion(id: string, name: string): Promise<void> {
-    await this.updateVersion(id, (version) => (version.name = name));
+    await this.updateVersion(id, (version) => (version.name = name), false);
   }
 
   async deleteVersion(id: string): Promise<void> {
@@ -383,9 +508,14 @@ export class CvEditorStore {
     });
   }
 
-  private async updateVersion(id: string, change: (version: CvVersion) => void): Promise<void> {
+  private async updateVersion(
+    id: string,
+    change: (version: CvVersion) => void,
+    record = true,
+  ): Promise<void> {
     const current = this.versions().find((version) => version.id === id);
     if (!current) return;
+    if (record) this.record();
     const draft = structuredClone(current);
     change(draft);
     draft.updatedAt = new Date().toISOString();

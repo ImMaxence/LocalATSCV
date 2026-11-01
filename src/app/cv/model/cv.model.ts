@@ -107,6 +107,37 @@ export interface Profile {
   links: ProfileLink[];
 }
 
+/**
+ * Réglages pour faire tenir le CV sur moins de pages : `spacing` réduit les espacements verticaux,
+ * `scale` la taille de tout le contenu. 1 = mise en page prévue par le modèle.
+ */
+export interface CvLayout {
+  spacing: number;
+  scale: number;
+}
+
+export const DEFAULT_LAYOUT: CvLayout = { spacing: 1, scale: 1 };
+/** Bornes des réglages : au-delà, le CV devient trop serré ou trop petit pour être lu. */
+export const LAYOUT_LIMITS = { spacing: { min: 0.5, max: 1 }, scale: { min: 0.85, max: 1 } };
+
+/** Lettre de motivation, imprimée avec le design du CV. Champs vides = valeurs par défaut. */
+export interface CoverLetter {
+  /** Destinataire sur plusieurs lignes (entreprise, service, adresse). */
+  recipient: string;
+  place: string;
+  /** Format ISO `AAAA-MM-JJ` ; vide = date du jour. */
+  date: string;
+  subject: string;
+  greeting: string;
+  /** Paragraphes séparés par une ligne vide ; `**gras**` accepté. */
+  body: string;
+  closing: string;
+}
+
+export function createLetter(place = ''): CoverLetter {
+  return { recipient: '', place, date: '', subject: '', greeting: '', body: '', closing: '' };
+}
+
 /** Le Master CV : toutes les données, jamais filtrées. */
 export interface MasterCv {
   id: string;
@@ -116,8 +147,11 @@ export interface MasterCv {
   /** Polices choisies ; `null` = police prévue par le modèle. */
   fonts: { heading: CvFontId | null; body: CvFontId | null };
   accentColor: string;
+  layout: CvLayout;
   profile: Profile;
   sections: CvSection[];
+  /** Lettre de motivation du Master ; une version ciblée peut avoir la sienne. */
+  letter: CoverLetter | null;
   createdAt: string;
   updatedAt: string;
 }
@@ -132,27 +166,51 @@ export interface CvVersion {
   name: string;
   hiddenIds: string[];
   jobAd: string;
+  /** Lettre propre à cette version ; `null` = celle du Master. */
+  letter: CoverLetter | null;
   createdAt: string;
   updatedAt: string;
 }
 
 /**
- * Modèles de mise en page. Tous impriment du vrai texte ; seul « Colonnes » répartit
- * le contenu sur deux colonnes, ce que certains ATS lisent dans le désordre.
+ * Modèles de mise en page, dans l'ordre de la galerie. Tous impriment du vrai texte ;
+ * seuls Signature et Colonnes répartissent le contenu sur deux colonnes, ce que certains
+ * ATS lisent dans le désordre. `family` sert au filtre de la galerie.
  */
 export const CV_TEMPLATES = [
-  { id: 'signature', ats: 'good' },
-  { id: 'aurora', ats: 'excellent' },
-  { id: 'pulse', ats: 'excellent' },
-  { id: 'impact', ats: 'excellent' },
-  { id: 'classic', ats: 'excellent' },
-  { id: 'modern', ats: 'excellent' },
-  { id: 'elegant', ats: 'excellent' },
-  { id: 'tech', ats: 'excellent' },
-  { id: 'minimal', ats: 'good' },
-  { id: 'sidebar', ats: 'good' },
+  { id: 'aurora', ats: 'excellent', family: 'graphic' },
+  { id: 'signature', ats: 'good', family: 'graphic' },
+  { id: 'bento', ats: 'excellent', family: 'graphic' },
+  { id: 'pulse', ats: 'excellent', family: 'graphic' },
+  { id: 'memphis', ats: 'excellent', family: 'graphic' },
+  { id: 'bauhaus', ats: 'excellent', family: 'graphic' },
+  { id: 'brutal', ats: 'excellent', family: 'graphic' },
+  { id: 'duotone', ats: 'excellent', family: 'graphic' },
+  { id: 'editorial', ats: 'excellent', family: 'graphic' },
+  { id: 'prism', ats: 'excellent', family: 'graphic' },
+  { id: 'nocturne', ats: 'excellent', family: 'graphic' },
+  { id: 'sorbet', ats: 'excellent', family: 'graphic' },
+  { id: 'wave', ats: 'excellent', family: 'graphic' },
+  { id: 'origami', ats: 'excellent', family: 'graphic' },
+  { id: 'hexa', ats: 'excellent', family: 'graphic' },
+  { id: 'blueprint', ats: 'excellent', family: 'graphic' },
+  { id: 'typo', ats: 'excellent', family: 'graphic' },
+  { id: 'swiss', ats: 'excellent', family: 'graphic' },
+  { id: 'thread', ats: 'excellent', family: 'graphic' },
+  { id: 'ribbon', ats: 'excellent', family: 'graphic' },
+  { id: 'zen', ats: 'excellent', family: 'graphic' },
+  { id: 'prestige', ats: 'excellent', family: 'graphic' },
+  { id: 'impact', ats: 'excellent', family: 'graphic' },
+  { id: 'executive', ats: 'excellent', family: 'sober' },
+  { id: 'modern', ats: 'excellent', family: 'sober' },
+  { id: 'classic', ats: 'excellent', family: 'sober' },
+  { id: 'elegant', ats: 'excellent', family: 'sober' },
+  { id: 'tech', ats: 'excellent', family: 'sober' },
+  { id: 'minimal', ats: 'good', family: 'sober' },
+  { id: 'sidebar', ats: 'good', family: 'sober' },
 ] as const;
 export type CvTemplateId = (typeof CV_TEMPLATES)[number]['id'];
+export type CvTemplateFamily = (typeof CV_TEMPLATES)[number]['family'];
 /** Note de compatibilité ATS d'un modèle, d'après les risques de lecture connus (colonnes, etc.). */
 export type AtsCompatibility = 'excellent' | 'good' | 'fair';
 export const DEFAULT_TEMPLATE: CvTemplateId = 'classic';
@@ -161,8 +219,29 @@ export function isTemplateId(value: unknown): value is CvTemplateId {
   return CV_TEMPLATES.some((template) => template.id === value);
 }
 
-/** Couleurs sobres, lisibles à l'impression en couleur comme en niveaux de gris. */
-export const ACCENT_COLORS = ['#11795a', '#1d4ed8', '#9f1239', '#334155', '#6d28d9', '#b45309'];
+/**
+ * Couleurs d'accent proposées, rangées par teinte. Toutes assez foncées pour du texte blanc
+ * (contraste AA) et lisibles à l'impression en couleur comme en niveaux de gris. Toute autre
+ * couleur reste possible avec le sélecteur libre.
+ */
+export const ACCENT_COLORS = [
+  '#11795a',
+  '#0f766e',
+  '#0369a1',
+  '#1d4ed8',
+  '#1e3a8a',
+  '#4338ca',
+  '#6d28d9',
+  '#a21caf',
+  '#be185d',
+  '#9f1239',
+  '#b91c1c',
+  '#c2410c',
+  '#b45309',
+  '#a16207',
+  '#334155',
+  '#18181b',
+];
 
 export function isEntryKind(kind: SectionKind): kind is EntryKind {
   return (ENTRY_KINDS as readonly string[]).includes(kind);
@@ -237,8 +316,10 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     template: 'aurora',
     fonts: { heading: null, body: null },
     accentColor: ACCENT_COLORS[0],
+    layout: { ...DEFAULT_LAYOUT },
     profile: createProfile(),
     sections: (['experience', 'education', 'skills', 'languages'] as const).map(createSection),
+    letter: null,
     createdAt: timestamp,
     updatedAt: timestamp,
   };
@@ -252,6 +333,7 @@ export function createVersion(masterId: string, name: string): CvVersion {
     name,
     hiddenIds: [],
     jobAd: '',
+    letter: null,
     createdAt: timestamp,
     updatedAt: timestamp,
   };

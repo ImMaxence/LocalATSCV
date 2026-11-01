@@ -1,5 +1,6 @@
 import { Directive, computed, input } from '@angular/core';
 import {
+  CoverLetter,
   CvSection,
   Entry,
   Interest,
@@ -10,7 +11,7 @@ import {
 } from '../../model/cv.model';
 import { CV_LABELS, formatBirthDate, formatDateRange, labelSeparator } from '../../model/cv-labels';
 import { ResolvedCv } from '../../model/resolve-cv';
-import { normalizeText } from '../../analysis/weak-phrases';
+import { languageLevel } from '../../model/language-level';
 import { IconName } from '../../../shared/icon/icon';
 
 const stripProtocol = (url: string): string =>
@@ -47,19 +48,6 @@ export function linkIcon(url: string): IconName {
   return 'globe';
 }
 
-/** Indices de niveau reconnus dans le texte saisi (CECRL et mots usuels des 5 langues). */
-const LEVEL_HINTS: [RegExp, number][] = [
-  [/\bc2\b|natif|native|maternelle|mother|madrelingua|nativ|muttersprache|bilingu/, 5],
-  [
-    /\bc1\b|courant|fluent|fluente|fluido|flie(ss|ß)end|avance|advanced|avanzat|verhandlungssicher/,
-    4,
-  ],
-  [/\bb2\b|professionnel|professional|professionale|profesional|intermediaire.?superieur|upper/, 3],
-  [/\bb1\b|intermediaire|intermediate|intermedio|mittel|conversation/, 2.5],
-  [/\ba2\b|scolaire|basic|elementaire|elementary|base|grundkenntnisse/, 2],
-  [/\ba1\b|debutant|beginner|principiante|anfanger|notions/, 1],
-];
-
 /**
  * Données et formatage communs à tous les modèles de CV : chaque modèle ne décrit
  * que sa mise en page. Règle commune : tout ce qui est imprimé est du vrai texte,
@@ -69,6 +57,8 @@ const LEVEL_HINTS: [RegExp, number][] = [
 export abstract class CvTemplateBase {
   readonly cv = input.required<ResolvedCv>();
   readonly photoUrl = input<string | null>(null);
+  /** Lettre de motivation à afficher à la place des sections (voir CvDocument). */
+  readonly letter = input<CoverLetter | null>(null);
 
   protected readonly labels = computed(() => CV_LABELS[this.cv().language]);
   protected readonly separator = computed(() => labelSeparator(this.cv().language));
@@ -179,13 +169,9 @@ export abstract class CvTemplateBase {
     return item.level.trim() ? `${item.name}${this.separator()}${item.level}` : item.name;
   }
 
-  /**
-   * Niveau sur 5 déduit du texte (« C1 », « courant », « native »…), pour une jauge purement
-   * graphique : le niveau reste écrit en toutes lettres pour les ATS. `null` si inconnu.
-   */
+  /** Niveau sur 5 pour une jauge purement graphique (le niveau reste écrit pour les ATS). */
   protected languageLevel(item: SpokenLanguage): number | null {
-    const level = normalizeText(item.level);
-    return LEVEL_HINTS.find(([pattern]) => pattern.test(level))?.[1] ?? null;
+    return languageLevel(item.level);
   }
 
   protected readonly levelSteps = [1, 2, 3, 4, 5];

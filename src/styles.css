@@ -3,21 +3,6 @@
 @import '@fontsource-variable/fraunces/wght.css';
 @import '@fontsource-variable/fraunces/wght-italic.css';
 @import '@fontsource-variable/space-grotesk/wght.css';
-/* Polices proposées pour les CV (téléchargées uniquement si elles sont utilisées). */
-@import '@fontsource/poppins/latin-400.css';
-@import '@fontsource/poppins/latin-ext-400.css';
-@import '@fontsource/poppins/latin-500.css';
-@import '@fontsource/poppins/latin-ext-500.css';
-@import '@fontsource/poppins/latin-600.css';
-@import '@fontsource/poppins/latin-ext-600.css';
-@import '@fontsource/poppins/latin-700.css';
-@import '@fontsource/poppins/latin-ext-700.css';
-@import '@fontsource-variable/montserrat/wght.css';
-@import '@fontsource-variable/dm-sans/wght.css';
-@import '@fontsource-variable/manrope/wght.css';
-@import '@fontsource-variable/lora/wght.css';
-@import '@fontsource-variable/playfair-display/wght.css';
-@import '@fontsource-variable/jetbrains-mono/wght.css';
 @import '@angular/cdk/overlay-prebuilt.css';
 
 /* Le mode sombre est piloté par la classe .dark posée sur <html> (voir ThemeService). */
@@ -289,15 +274,18 @@ app-header > header {
   @page {
     size: A4;
     margin: 12mm 0;
+    /* Remplit aussi les marges des pages suivantes avec le fond du modèle. */
+    background: var(--print-page-bg, #fff);
   }
 
   @page :first {
     margin: 0;
   }
 
+  /* Fond du modèle imprimé (--print-page-bg), défini au moment de l'export (voir CvEditor.print). */
   html,
   body {
-    background: #fff !important;
+    background: var(--print-page-bg, #fff) !important;
   }
 
   app-header > header,
@@ -312,8 +300,26 @@ app-header > header {
     display: block !important;
   }
 
-  /* 297 mm = 1122,5 px : sans cette marge d'arrondi, une page blanche peut apparaître. */
+  /*
+   * 297 mm = 1122,5 px : sans cette marge d'arrondi, une page blanche peut apparaître.
+   * Divisé par le réglage de taille, puisque le CV est agrandi ou réduit avec zoom.
+   */
   .print-only .cv {
-    min-height: 296mm !important;
+    min-height: calc(296mm / var(--cv-zoom, 1)) !important;
+  }
+
+  /* Un titre de section ne reste jamais seul en bas de page : il part avec son contenu. */
+  .print-only app-cv-document :is(h2, h3) {
+    break-inside: avoid;
+    break-after: avoid;
+  }
+
+  .print-only app-cv-document :is(h2, h3) + * {
+    break-before: avoid;
+  }
+
+  .print-only app-cv-document :is(p, li) {
+    orphans: 2;
+    widows: 2;
   }
 }

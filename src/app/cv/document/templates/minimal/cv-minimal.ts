@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Minimal : style suisse, nom très grand, titres de sections dans une marge à gauche. */
 @Component({
   selector: 'app-cv-minimal',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RichText],
+  imports: [RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -35,6 +36,9 @@ import { CvTemplateBase } from '../cv-template-base';
           <h2>{{ labels().sections.summary }}</h2>
           <p class="whitespace-pre-line">{{ summary() }}</p>
         </section>
+      }
+      @if (letter(); as body) {
+        <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
       }
       @for (section of cv().sections; track section.id) {
         <section class="row">
@@ -97,27 +101,28 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
-      padding: 62px 64px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
+      padding: calc(62px * var(--cv-space, 1)) 64px;
       background: #fff;
       color: #161616;
       font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12px;
-      line-height: 1.55;
+      line-height: calc(1.55 * var(--cv-leading, 1));
     }
     header {
       display: flex;
       align-items: flex-end;
-      gap: 24px;
-      margin-bottom: 34px;
+      gap: calc(24px * var(--cv-space, 1)) 24px;
+      margin-bottom: calc(34px * var(--cv-space, 1));
     }
     .name {
       font-family: var(--cv-heading-font, inherit);
       font-size: 44px;
       font-weight: 800;
       letter-spacing: -0.045em;
-      line-height: 0.95;
+      line-height: calc(0.95 * var(--cv-leading, 1));
     }
     .name::after {
       content: '';
@@ -128,14 +133,14 @@ import { CvTemplateBase } from '../cv-template-base';
       background: var(--cv-accent);
     }
     .headline {
-      margin-top: 10px;
+      margin-top: calc(10px * var(--cv-space, 1));
       color: #6b6b6b;
       font-size: 16px;
     }
     .contact {
       color: #444;
       font-size: 11px;
-      line-height: 1.6;
+      line-height: calc(1.6 * var(--cv-leading, 1));
       text-align: right;
     }
     .photo {
@@ -148,13 +153,13 @@ import { CvTemplateBase } from '../cv-template-base';
     .row {
       display: grid;
       grid-template-columns: 124px minmax(0, 1fr);
-      gap: 26px;
-      padding-top: 16px;
-      margin-top: 16px;
+      gap: calc(26px * var(--cv-space, 1)) 26px;
+      padding-top: calc(16px * var(--cv-space, 1));
+      margin-top: calc(16px * var(--cv-space, 1));
       border-top: 1px solid #ececec;
     }
     h2 {
-      padding-top: 2px;
+      padding-top: calc(2px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-size: 10.5px;
       font-weight: 700;
@@ -163,13 +168,13 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     /* Le contenu démarre sous le titre de marge : à l'extraction, le titre reste seul sur sa ligne. */
     .row > :last-child {
-      padding-top: 20px;
+      padding-top: calc(20px * var(--cv-space, 1));
     }
     .entry {
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 13px;
+      margin-top: calc(13px * var(--cv-space, 1));
     }
     h3 {
       font-size: 13px;
@@ -187,18 +192,21 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 11px;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 14px;
       list-style: '·  ';
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .plain > li + li {
-      margin-top: 3px;
+      margin-top: calc(3px * var(--cv-space, 1));
     }
     strong {
       font-weight: 650;
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

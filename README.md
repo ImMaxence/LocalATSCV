@@ -8,11 +8,13 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
 
 ## Aperçu
 
-![Modèles Signature, Aurore et Pulse : graphiques et lisibles par les ATS](docs/screenshots/templates-showcase.png)
+![Huit des modèles graphiques : Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo et Ruban](docs/screenshots/templates-showcase.png)
 
 | Version ciblée (Master CV)                                   | Mes CV                                                   |
 | ------------------------------------------------------------ | -------------------------------------------------------- |
 | ![Version ciblée](docs/screenshots/editor-version.png)       | ![Liste des CV](docs/screenshots/cv-list.png)            |
+| **Lettre de motivation**                                     | **Tenir sur une page**                                   |
+| ![Lettre de motivation](docs/screenshots/letter.png)         | ![Tenir sur une page](docs/screenshots/page-fit.png)     |
 | **Adapter à une offre**                                      | **Import depuis LinkedIn**                               |
 | ![Adapter à une offre](docs/screenshots/job-match.png)       | ![Import LinkedIn](docs/screenshots/import-linkedin.png) |
 | **Galerie de modèles**                                       | **Analyseur de CV existant**                             |
@@ -28,7 +30,7 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
   <img src="docs/screenshots/mobile-dark.png" alt="Version mobile, thème sombre" width="260" />
 </p>
 
-Les captures se régénèrent avec `npm run screenshots` (application lancée via `npm run docker:local`, Edge ou Chrome installé).
+Les captures se régénèrent avec `npm run screenshots` (application lancée via `npm run docker:local`, Edge ou Chrome installé), ainsi que l'image d'aperçu des liens `public/og-image.png`.
 
 ## Fonctionnalités
 
@@ -39,15 +41,20 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 - [x] Glisser-déposer des sections, des entrées et des puces (avec alternative au clavier)
 - [x] Versions ciblées : cases à cocher pour composer un CV sur mesure sans rien supprimer
 - [x] Langue du CV (FR, EN, IT, ES, DE) avec masquage automatique de la photo, de la date de naissance et de la nationalité en anglais
-- [x] 10 modèles de CV, dont **Signature**, **Aurore**, **Pulse** et **Impact** : graphiques pour le recruteur, lisibles par les ATS
-- [x] Choix des polices (titres et texte), logos des liens, **QR code** vers le lien de son choix, permis de conduire
+- [x] **30 modèles de CV**, dont 23 graphiques (Bento, Memphis, Bauhaus, Brutal, Duotone, Éditorial, Prisme, Nocturne, Sorbet, Origami, Hexa, Typo, Fil, Ruban, Zen…) : visuels pour le recruteur, lisibles par les ATS (vrai texte, dans l'ordre de lecture)
+- [x] **Lettre de motivation** reprenant le design du CV, propre à chaque version ciblée
+- [x] **Tenir sur une page** : espacements et taille du texte ajustés automatiquement ou à la main, sans titre orphelin en bas de page
+- [x] **Annuler / Rétablir** (Ctrl+Z / Ctrl+Y) dans tout l'éditeur
+- [x] 16 couleurs d'accent et couleur libre, 15 polices au choix, logos des liens, **QR code** vers le lien de son choix, permis de conduire
+- [x] Niveau de langue guidé (A1 à C2, courant, natif…) avec aperçu de la jauge des modèles
 - [x] **Contrôle ATS en direct** dans l'éditeur, avec le même moteur que l'analyseur
 - [x] **Export PDF** textuel (fenêtre d'impression du navigateur), première page identique à l'aperçu
 - [x] **Adapter à une offre** (LinkedIn, Indeed, HelloWork…) : mots-clés, score de correspondance, ajout des mots manquants, version ciblée générée
 - [x] **Détecteur de phrases faibles** avec suggestions de verbes d'action, dans la langue du CV
-- [x] **Import d'un CV PDF existant**, du **PDF de profil LinkedIn** (ordinateur) ou de l'**archive de données LinkedIn** (application mobile)
-- [x] Analyseur de CV existant (PDF lu dans le navigateur) : score sur 100 avec une méthode de calcul expliquée, points à corriger, texte tel que le lit un ATS
+- [x] **Import d'un CV existant (PDF ou Word .docx)**, du **PDF de profil LinkedIn** (ordinateur) ou de l'**archive de données LinkedIn** (application mobile)
+- [x] Analyseur de CV existant (PDF lu dans le navigateur) : score sur 100 avec une méthode de calcul expliquée, points à corriger, texte tel que le lit un ATS, et détection des PDF dont le texte est écrit dans le désordre (piège des CV faits avec des blocs libres, type Canva)
 - [x] Pages Nouveautés (générée à partir de `CHANGELOG.md`), mentions légales, CGU et confidentialité
+- [x] **SEO et référencement IA** : pages publiques pré-générées en HTML, balises propres à chaque page, image d'aperçu, données structurées, sitemap, `robots.txt` et `llms.txt`
 
 ## Principes
 
@@ -57,7 +64,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 
 ## Stack
 
-- Angular 22 (standalone, signals, zoneless), build statique sans SSR
+- Angular 22 (standalone, signals, zoneless), build statique : les pages publiques sont pré-générées au build (SSG), l'éditeur est rendu dans le navigateur, aucun serveur applicatif
 - Tailwind CSS 4, polices auto-hébergées via Fontsource (Inter, Fraunces, Poppins, Montserrat…)
 - Transloco pour la traduction de l'interface (FR, EN, IT, ES, DE)
 - Angular CDK (menus accessibles, puis glisser-déposer)
@@ -72,7 +79,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 npm install
 npm start          # http://localhost:4200
 npm run test:ci    # tests unitaires (dont la cohérence des 5 fichiers de traduction)
-npm run build      # build de production dans dist/localatscv/browser
+npm run build      # build de production (pages publiques pré-générées) dans dist/localatscv/browser
 ```
 
 Le service worker n'est actif qu'en build de production.

@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Élégant : en-tête centré, typographie à empattements (Fraunces), filets fins. */
 @Component({
   selector: 'app-cv-elegant',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RichText],
+  imports: [RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -36,6 +37,9 @@ import { CvTemplateBase } from '../cv-template-base';
           <h2>{{ labels().sections.summary }}</h2>
           <p class="summary">{{ summary() }}</p>
         </section>
+      }
+      @if (letter(); as body) {
+        <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
       }
       @for (section of cv().sections; track section.id) {
         <section class="section">
@@ -92,24 +96,25 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
-      padding: 54px 66px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
+      padding: calc(54px * var(--cv-space, 1)) 66px;
       background: #fff;
       color: #2a2a2a;
       font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
-      line-height: 1.5;
+      line-height: calc(1.5 * var(--cv-leading, 1));
     }
     header {
-      padding-bottom: 18px;
+      padding-bottom: calc(18px * var(--cv-space, 1));
       border-bottom: 3px double #2f2f2f;
       text-align: center;
     }
     .photo {
       width: 92px;
       height: 92px;
-      margin: 0 auto 14px;
+      margin: 0 auto calc(14px * var(--cv-space, 1));
       border-radius: 9999px;
       object-fit: cover;
     }
@@ -119,17 +124,17 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 36px;
       font-weight: 500;
       letter-spacing: 0.01em;
-      line-height: 1.1;
+      line-height: calc(1.1 * var(--cv-leading, 1));
     }
     .headline {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-family: var(--cv-heading-font, var(--font-display));
       font-size: 16px;
       font-style: italic;
     }
     .contact {
-      margin-top: 10px;
+      margin-top: calc(10px * var(--cv-space, 1));
       color: #555;
       font-size: 11.5px;
     }
@@ -137,13 +142,13 @@ import { CvTemplateBase } from '../cv-template-base';
       color: #aaa;
     }
     .section {
-      margin-top: 22px;
+      margin-top: calc(22px * var(--cv-space, 1));
     }
     h2 {
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 12px;
+      gap: calc(14px * var(--cv-space, 1)) 14px;
+      margin-bottom: calc(12px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-family: var(--cv-heading-font, var(--font-display));
       font-size: 12.5px;
@@ -173,13 +178,13 @@ import { CvTemplateBase } from '../cv-template-base';
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 13px;
+      margin-top: calc(13px * var(--cv-space, 1));
     }
     .entry-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     h3 {
       color: #151515;
@@ -199,19 +204,22 @@ import { CvTemplateBase } from '../cv-template-base';
       font-style: italic;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 18px;
       list-style: '–  ';
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .plain > li + li {
-      margin-top: 3px;
+      margin-top: calc(3px * var(--cv-space, 1));
     }
     strong {
       color: #151515;
       font-weight: 600;
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

@@ -4,6 +4,56 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.5.0] - 2026-11-01
+
+### Ajouté
+
+- Dix nouveaux modèles : Memphis, Duotone, Typo, Sorbet, Exécutif, Zen, Ruban, Hexa, Origami et Fil, soit 30 modèles au total
+- Lettre de motivation reprenant le design du CV choisi : destinataire, objet, formules d'usage dans la langue du CV, trame à compléter, export PDF dédié ; chaque version ciblée peut avoir sa propre lettre
+- Bouton « Tenir sur une page » : les espacements puis la taille du texte sont réduits juste assez, avec des réglages manuels et un retour à la mise en page du modèle
+- Annuler et rétablir dans tout l'éditeur (Ctrl+Z, Ctrl+Y), avec des boutons dans la barre d'outils
+- Import d'un CV Word (.docx), lu dans le navigateur comme les PDF : paragraphes, tableaux, zones de texte et en-têtes de page
+- Bouton « Voir en noir et blanc » au-dessus de l'aperçu, pour juger d'une impression en niveaux de gris (le PDF garde ses couleurs)
+- Analyseur : nouveau critère « Ordre de lecture du fichier », qui repère les PDF dont le texte est écrit dans le désordre (piège des CV faits avec des blocs libres, type Canva), et vue « Ordre du fichier » du texte lu par le robot
+
+### Modifié
+
+- Galerie de modèles : vignettes montrées avec un CV d'exemple complet (photo d'illustration comprise) ou avec son propre CV, rendues au fil du défilement, et indicateur de chargement sur le bouton
+- Modèle Origami : coordonnées dans le bandeau et couches de papier en bande séparée, sans rien recouvrir
+- Modèle Zen : le sceau carré est remplacé par un ensō (cercle zen tracé au pinceau)
+- Barème de l'analyseur rééquilibré pour faire place au nouveau critère (lisibilité toujours sur 40 points)
+- Détection des colonnes plus fiable sur les PDF découpés mot par mot
+- Pages légales complétées : éditeur particulier (adresse et téléphone sur demande), hébergement personnel à Aix-en-Provence derrière Cloudflare, crédits (polices, icônes, bibliothèques), cookies et droits des utilisateurs
+
+### Corrigé
+
+- Un titre de section ne reste plus seul en bas de page sur les CV de plusieurs pages
+- Modèle Zen : un titre en capitales espacées pouvait être lu en deux mots par les ATS
+- Modèle Pulse : fin liseré gris sous le bandeau dans l'aperçu
+
+## [0.4.0] - 2026-11-01
+
+### Ajouté
+
+- Dix nouveaux modèles graphiques et lisibles par les ATS : Bento, Bauhaus, Brutal, Éditorial, Prisme, Nocturne (mode sombre), Vague, Blueprint, Suisse et Prestige, soit 20 modèles au total
+- Filtre Tous / Graphiques / Sobres dans la galerie de modèles
+- 16 couleurs d'accent et un sélecteur de couleur libre
+- Cinq nouvelles polices : Jost, Bricolage Grotesque, Archivo, Syne et Cormorant Garamond
+- Niveau de langue : suggestions (A1 à C2, courant, langue maternelle…), explication et aperçu en direct de la jauge affichée par les modèles
+- Pages publiques pré-générées en HTML (accueil, analyseur, nouveautés, pages légales) : leur contenu est lisible par les moteurs de recherche et par les robots des IA, qui n'exécutent pas JavaScript
+- Référencement : description et adresse canonique propres à chaque page, image d'aperçu des liens, données structurées (application web et FAQ), sitemap, robots.txt et llms.txt
+- Trois nouvelles questions dans la FAQ : modèles graphiques et ATS, import d'un CV ou du profil LinkedIn, fonctionnement hors ligne
+
+### Modifié
+
+- Polices des CV chargées seulement quand un CV s'affiche : la page d'accueil est plus légère
+- Le contrôle ATS en direct attend le chargement des polices avant de mesurer la mise en page
+- Export PDF : le fond du modèle (sombre, ivoire, quadrillé…) remplit aussi les marges des pages suivantes
+
+### Corrigé
+
+- Ordre du texte dans les PDF exportés avec Aurore, Signature, Pulse, Impact et Moderne : l'en-tête ou les expériences étaient écrits dans le fichier après le reste, et les ATS qui lisent le PDF dans l'ordre du fichier les retrouvaient à la fin
+
 ## [0.3.0] - 2026-11-01
 
 ### Ajouté
@@ -80,6 +130,8 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.5.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.5.0
+[0.4.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.3.0
 [0.2.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.2.0
 [0.1.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.1.0

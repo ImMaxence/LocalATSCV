@@ -4,7 +4,7 @@ Dernière mise à jour : 1er novembre 2026.
 
 ## Objet
 
-Les présentes conditions encadrent l'utilisation de LocalATSCV, un outil gratuit de création, d'analyse et d'adaptation de CV qui fonctionne entièrement dans le navigateur.
+Les présentes conditions encadrent l'utilisation de LocalATSCV, un outil gratuit de création, d'analyse et d'adaptation de CV et de lettres de motivation, qui fonctionne entièrement dans le navigateur.
 
 ## Accès au service
 
@@ -12,7 +12,7 @@ Le service est gratuit et sans inscription. Il est fourni en l'état : l'éditeu
 
 ## Vos données et vos sauvegardes
 
-Vos CV sont enregistrés uniquement dans votre navigateur. Vous êtes seul responsable de leur conservation : effacer les données du navigateur, changer d'appareil ou utiliser la navigation privée peut les faire disparaître. Exportez régulièrement une sauvegarde au format JSON.
+Vos CV et lettres sont enregistrés uniquement dans votre navigateur. Vous êtes seul responsable de leur conservation : effacer les données du navigateur, changer d'appareil ou utiliser la navigation privée peut les faire disparaître. Exportez régulièrement une sauvegarde au format JSON.
 
 ## Contenus
 
@@ -28,7 +28,7 @@ Le logiciel est fourni sans garantie d'aucune sorte. Dans les limites permises p
 
 ## Licence
 
-Le code source est distribué sous licence MIT : vous pouvez le consulter, le modifier et le redistribuer selon ses termes, disponibles sur [GitHub](https://github.com/ImMaxence/LocalATSCV/blob/main/LICENSE).
+Le code source est distribué sous licence MIT : vous pouvez le consulter, le modifier et le redistribuer selon ses termes, disponibles sur [GitHub](https://github.com/ImMaxence/LocalATSCV/blob/main/LICENSE). Les CV et lettres que vous créez vous appartiennent.
 
 ## Droit applicable
 

@@ -1,4 +1,5 @@
-import { DOCUMENT, Injectable, inject, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, Injectable, PLATFORM_ID, inject, signal } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 import { firstValueFrom } from 'rxjs';
 import { readSetting, writeSetting } from '../storage/local-settings';
@@ -32,8 +33,13 @@ export class LanguageService {
   private readonly transloco = inject(TranslocoService);
   private readonly document = inject(DOCUMENT);
 
+  /** Au build (pages pré-générées), toujours la langue par défaut : Node a aussi un `navigator`. */
+  private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
+
   readonly current = signal<UiLanguage>(
-    detectInitialLanguage(readSetting(STORAGE_KEY), globalThis.navigator?.languages ?? []),
+    this.browser
+      ? detectInitialLanguage(readSetting(STORAGE_KEY), navigator.languages ?? [])
+      : DEFAULT_UI_LANGUAGE,
   );
 
   /** Charge les traductions de la langue initiale avant le premier rendu. */

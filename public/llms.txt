@@ -1,0 +1,35 @@
+# LocalATSCV
+
+> Générateur de CV gratuit et open source (licence MIT), optimisé pour les ATS (logiciels de suivi des candidatures). Tout fonctionne dans le navigateur : les CV, la photo et les offres d'emploi ne sont jamais envoyés à un serveur.
+> Free, open source resume builder optimized for applicant tracking systems (ATS). It runs entirely in the browser: no resume data is ever sent to a server. Interface in French, English, Italian, Spanish and German.
+
+LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible par les robots de recrutement. Points clés :
+
+- 30 modèles de CV, dont 23 graphiques (Bento, Memphis, Bauhaus, Brutal, Duotone, Éditorial, Prisme, Nocturne, Sorbet, Vague, Origami, Hexa, Blueprint, Typo, Suisse, Fil, Ruban, Zen, Prestige…) : tous impriment du vrai texte, dans l'ordre de lecture, avec des titres de sections standards
+- Lettre de motivation reprenant le design du CV choisi, propre à chaque version ciblée
+- Bouton « Tenir sur une page » : espacements puis taille du texte ajustés automatiquement
+- Master CV : toutes les expériences au même endroit, puis des versions ciblées par offre à l'aide de cases à cocher, sans rien supprimer
+- Adaptation à une offre (LinkedIn, Indeed, HelloWork…) : mots-clés de l'annonce, score de correspondance, ajout des mots-clés manquants
+- Contrôle ATS en direct dans l'éditeur et analyseur de CV PDF existants : note sur 100 selon une méthode publiée (texte extractible, colonnes, ordre du texte dans le fichier, sections reconnues, coordonnées, dates, résultats chiffrés, verbes d'action)
+- Import d'un CV PDF ou Word (.docx), du PDF de profil LinkedIn ou de l'archive de données LinkedIn
+- Export PDF en texte réel, couleurs et polices au choix, QR code vers un lien, permis de conduire
+- Langue du CV (français, anglais, italien, espagnol, allemand) ; en anglais, photo, date de naissance et nationalité sont masquées
+- Application web installable qui fonctionne hors ligne ; stockage local (IndexedDB) et sauvegarde JSON
+
+## Pages
+
+- [Accueil](https://localatscv.mbonnici.fr/) : présentation, fonctionnement, confidentialité et questions fréquentes
+- [Analyseur de CV](https://localatscv.mbonnici.fr/analyze) : note ATS d'un CV PDF créé avec n'importe quel outil, points à corriger et texte tel que le lit un ATS
+- [Nouveautés](https://localatscv.mbonnici.fr/changelog) : historique des versions, aussi disponible en [Markdown](https://localatscv.mbonnici.fr/CHANGELOG.md)
+- [Éditeur](https://localatscv.mbonnici.fr/editor) : création et modification des CV (application, nécessite JavaScript)
+
+## Confidentialité
+
+- [Politique de confidentialité](https://localatscv.mbonnici.fr/legal/privacy) : aucune donnée personnelle collectée, aucun cookie de suivi, aucune statistique de visite
+- La politique de sécurité du site interdit toute connexion vers un autre domaine (`connect-src 'self'`), ce qui rend la promesse vérifiable
+
+## Optional
+
+- [Code source sur GitHub](https://github.com/ImMaxence/LocalATSCV)
+- [Conditions d'utilisation](https://localatscv.mbonnici.fr/legal/terms)
+- [Mentions légales](https://localatscv.mbonnici.fr/legal/notice)

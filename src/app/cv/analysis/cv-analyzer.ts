@@ -6,6 +6,7 @@ export type CheckStatus = 'pass' | 'warn' | 'fail';
 export type CheckId =
   | 'textLayer'
   | 'columns'
+  | 'order'
   | 'unreadable'
   | 'contact'
   | 'sections'
@@ -33,6 +34,8 @@ export interface CvAnalysis {
   checks: CvCheck[];
   /** Le texte reconstitué ligne par ligne, tel qu'un ATS le lit. */
   lines: string[];
+  /** Le texte dans l'ordre où il est écrit dans le fichier (ATS qui ne trient pas par position). */
+  fileLines: string[];
   stats: { pages: number; words: number; characters: number };
 }
 
@@ -149,11 +152,34 @@ export function buildLines(pdf: ExtractedPdf): Line[] {
 const chars = (items: PdfTextItem[]) => items.reduce((sum, item) => sum + item.text.length, 0);
 
 /**
+ * Fragments voisins d'une même ligne fusionnés en segments continus. Certains outils (et le
+ * contrôle en direct) découpent le texte mot par mot : sans cette fusion, les blancs entre les
+ * mots passeraient pour des gouttières de colonnes.
+ */
+function segments(page: ExtractedPdf['pages'][number]): PdfTextItem[] {
+  const result: PdfTextItem[] = [];
+  for (const line of buildLines({ pages: [page] })) {
+    let current: PdfTextItem | null = null;
+    for (const item of line.items) {
+      const gap = current ? item.x - (current.x + current.width) : Infinity;
+      if (current && gap < Math.max(4, item.height * 0.9)) {
+        current.width = item.x + item.width - current.x;
+        current.text += ` ${item.text}`;
+      } else {
+        current = { ...item };
+        result.push(current);
+      }
+    }
+  }
+  return result;
+}
+
+/**
  * Gouttière verticale entre deux colonnes : une abscisse qu'aucun fragment de texte ne traverse,
  * avec assez de texte de chaque côté. Un CV à une colonne n'en a pas : ses lignes la traversent.
  */
 export function findGutter(page: ExtractedPdf['pages'][number]): number | null {
-  const items = page.items.filter((item) => item.text.trim().length >= 2);
+  const items = segments(page).filter((item) => item.text.trim().length >= 2);
   const total = chars(items);
   for (let x = page.width * 0.2; x <= page.width * 0.55; x += 2) {
     const crossing = items.filter((item) => item.x < x - 1 && item.x + item.width > x + 1).length;
@@ -268,6 +294,74 @@ function hasStackedColumns(lines: Line[], pdf: ExtractedPdf): boolean {
   });
 }
 
+/**
+ * Ordre du texte dans le fichier, comparé à l'ordre de lecture (colonne par colonne, de haut
+ * en bas). Les ATS qui lisent le PDF dans l'ordre du fichier, sans trier par position, reçoivent
+ * les blocs dans l'ordre où l'outil de mise en page les a écrits : c'est le piège classique des
+ * CV faits avec des blocs de texte libres (Canva, PowerPoint…).
+ */
+export function readingOrder(pdf: ExtractedPdf): { displaced: number; headerLate: boolean } {
+  const rank = new Map<PdfTextItem, number>();
+  pdf.pages.forEach((page, pageIndex) =>
+    page.items.forEach((item, index) => rank.set(item, pageIndex * 1e6 + index)),
+  );
+  // Rang d'une ligne : celui de son plus long fragment (une puce dessinée à part ne compte pas).
+  const lineRank = (line: Line) =>
+    rank.get(line.items.reduce((a, b) => (b.text.length > a.text.length ? b : a))) ?? 0;
+  const jumpsOf = (ranks: number[]) =>
+    ranks.filter((value, index) => index > 0 && value < ranks[index - 1]).length;
+  /** Plus longue sous-suite croissante : les lignes déjà dans l'ordre, les autres sont déplacées. */
+  const inOrder = (ranks: number[]) => {
+    const tails: number[] = [];
+    for (const value of ranks) {
+      let low = 0;
+      let high = tails.length;
+      while (low < high) {
+        const middle = (low + high) >> 1;
+        if (tails[middle] < value) low = middle + 1;
+        else high = middle;
+      }
+      tails[low] = value;
+    }
+    return tails.length;
+  };
+
+  // Une colonne latérale peut être écrite avant ou après la principale : on garde, page par
+  // page, l'enchaînement le plus fidèle au fichier.
+  const { main, side } = readingColumns(pdf);
+  const sequence: number[] = [];
+  pdf.pages.forEach((_, pageIndex) => {
+    const mainRanks = main.filter((line) => line.page === pageIndex).map(lineRank);
+    const sideRanks = side.filter((line) => line.page === pageIndex).map(lineRank);
+    const mainFirst = [...mainRanks, ...sideRanks];
+    const sideFirst = [...sideRanks, ...mainRanks];
+    sequence.push(...(jumpsOf(sideFirst) < jumpsOf(mainFirst) ? sideFirst : mainFirst));
+  });
+  if (sequence.length < 2) return { displaced: 0, headerLate: false };
+  // En-tête (souvent le nom) écrit après une bonne partie du CV.
+  const writtenBefore = sequence.filter((value) => value < sequence[0]).length;
+  return {
+    displaced: 1 - inOrder(sequence) / sequence.length,
+    headerLate: writtenBefore > sequence.length * 0.2,
+  };
+}
+
+/** Texte dans l'ordre du fichier, une ligne à chaque changement de hauteur. */
+function fileOrderLines(pdf: ExtractedPdf): string[] {
+  const lines: string[] = [];
+  for (const page of pdf.pages) {
+    let previous: PdfTextItem | null = null;
+    for (const item of page.items) {
+      if (!item.text.trim()) continue;
+      const sameLine = previous && Math.abs(item.y - previous.y) <= Math.max(2, item.height * 0.45);
+      if (sameLine) lines[lines.length - 1] += ` ${item.text}`;
+      else lines.push(item.text);
+      previous = item;
+    }
+  }
+  return lines.map((line) => line.replace(/\s+/g, ' ').trim()).filter(Boolean);
+}
+
 const check = (
   id: CheckId,
   category: CheckCategory,
@@ -296,26 +390,43 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     (page) => page.items.reduce((sum, item) => sum + item.text.trim().length, 0) >= 40,
   ).length;
   if (characters < 200) {
-    const textLayer = check('textLayer', 'readability', 20, 'fail', 0);
+    const textLayer = check('textLayer', 'readability', 15, 'fail', 0);
     return {
       score: 0,
       categories: summarize([textLayer]),
       checks: [textLayer],
       lines: lines.map((line) => line.text),
+      fileLines: fileOrderLines(pdf),
       stats,
     };
   }
   const checks: CvCheck[] = [
     pagesWithText < pages
-      ? check('textLayer', 'readability', 20, 'warn', 10)
-      : check('textLayer', 'readability', 20, 'pass', 20),
+      ? check('textLayer', 'readability', 15, 'warn', 8)
+      : check('textLayer', 'readability', 15, 'pass', 15),
   ];
 
   const columnLines = countColumnLines(lines, pdf);
   checks.push(
     (columnLines >= 4 && columnLines / lines.length >= 0.12) || hasStackedColumns(lines, pdf)
-      ? check('columns', 'readability', 10, 'warn', 3)
-      : check('columns', 'readability', 10, 'pass', 10),
+      ? check('columns', 'readability', 8, 'warn', 3)
+      : check('columns', 'readability', 8, 'pass', 8),
+  );
+
+  const order = readingOrder(pdf);
+  const displaced = Math.round(order.displaced * 100);
+  const orderStatus: CheckStatus =
+    displaced > 25 ? 'fail' : displaced > 5 || order.headerLate ? 'warn' : 'pass';
+  checks.push(
+    check(
+      'order',
+      'readability',
+      10,
+      orderStatus,
+      { pass: 10, warn: 5, fail: 0 }[orderStatus],
+      orderStatus === 'warn' && order.headerLate ? 'warnHeader' : orderStatus,
+      { percent: displaced },
+    ),
   );
 
   const unreadable =
@@ -324,13 +435,13 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     (text.match(RATING_GLYPHS)?.length ?? 0);
   checks.push(
     unreadable === 0
-      ? check('unreadable', 'readability', 10, 'pass', 10)
+      ? check('unreadable', 'readability', 7, 'pass', 7)
       : check(
           'unreadable',
           'readability',
-          10,
+          7,
           unreadable > 5 ? 'fail' : 'warn',
-          unreadable > 5 ? 0 : 5,
+          unreadable > 5 ? 0 : 3,
           unreadable > 5 ? 'fail' : 'warn',
           { count: unreadable },
         ),
@@ -449,6 +560,7 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     categories: summarize(checks),
     checks,
     lines: lines.map((line) => line.text),
+    fileLines: fileOrderLines(pdf),
     stats,
   };
 }

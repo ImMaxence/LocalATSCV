@@ -1,4 +1,12 @@
-import { CvLanguage, CvSection, MasterCv, createBullet, createEmptyCv, newId } from './cv.model';
+import {
+  CoverLetter,
+  CvLanguage,
+  CvSection,
+  MasterCv,
+  createBullet,
+  createEmptyCv,
+  newId,
+} from './cv.model';
 
 interface SampleContent {
   name: string;
@@ -213,5 +221,67 @@ export function createSampleCv(language: CvLanguage): MasterCv {
     },
   ];
 
-  return { ...cv, template: 'aurora', sections };
+  return { ...cv, template: 'aurora', sections, letter: SAMPLE_LETTERS[cvLanguage] };
 }
+
+/** Photo d'exemple (une illustration, pas une vraie personne) pour la galerie de modèles. */
+export const SAMPLE_PHOTO_URL = '/images/photo-exemple.svg';
+
+const SHOWCASE_EXTRAS = {
+  fr: {
+    bullet: "Création d'une bibliothèque de **30 composants** partagée par 4 projets",
+    language: ['Espagnol', 'B1, intermédiaire'],
+    interest: 'Course à pied',
+  },
+  en: {
+    bullet: 'Built a shared library of **30 components** used across 4 projects',
+    language: ['Spanish', 'B1, intermediate'],
+    interest: 'Running',
+  },
+} as const;
+
+/**
+ * CV d'exemple plus fourni pour la galerie de modèles : chaque modèle y est montré sur une page
+ * bien remplie (trois langues, une puce de plus…), quel que soit l'avancement du CV en cours.
+ */
+export function createShowcaseCv(language: CvLanguage): MasterCv {
+  const cv = createSampleCv(language);
+  const extras = SHOWCASE_EXTRAS[cv.language === 'fr' ? 'fr' : 'en'];
+  for (const section of cv.sections) {
+    if (section.kind === 'experience') section.items[1]?.bullets.push(createBullet(extras.bullet));
+    if (section.kind === 'languages') {
+      section.items.push({ id: newId(), name: extras.language[0], level: extras.language[1] });
+    }
+    if (section.kind === 'interests') section.items.push({ id: newId(), label: extras.interest });
+  }
+  return cv;
+}
+
+const SAMPLE_LETTERS: Record<'fr' | 'en', CoverLetter> = {
+  fr: {
+    recipient: 'Société Exemple\nService recrutement\n10 rue de la République\n69002 Lyon',
+    place: 'Lyon',
+    date: '',
+    subject: 'Candidature au poste de développeuse front-end senior',
+    greeting: '',
+    body: [
+      "Votre application de réservation est utilisée chaque jour par des milliers de personnes, et votre équipe produit a fait de l'accessibilité une priorité : c'est exactement le type de projet sur lequel je veux m'investir.",
+      "Depuis cinq ans, je développe des applications Angular à fort trafic. Chez Société Exemple, j'ai mené la migration de **40 écrans** vers Angular et TypeScript, avec un temps de chargement réduit de **35 %**, et mis en place des tests de bout en bout qui n'ont laissé passer aucune régression en production depuis un an.",
+      "Je serais ravie d'échanger avec vous sur vos prochains chantiers et sur la façon dont je pourrais y contribuer. Je suis disponible pour un entretien à votre convenance.",
+    ].join('\n\n'),
+    closing: '',
+  },
+  en: {
+    recipient: 'Example Company\nTalent Acquisition\n10 Market Street\nLondon',
+    place: 'Lyon',
+    date: '',
+    subject: 'Application for the Senior Front-end Developer position',
+    greeting: '',
+    body: [
+      'Your booking app is used every day by thousands of people, and your product team has made accessibility a priority: this is exactly the kind of project I want to commit to.',
+      'For five years I have built high-traffic Angular applications. At Example Company, I led the migration of **40 screens** to Angular and TypeScript, cutting load time by **35%**, and set up end-to-end tests that have let no regression reach production for a year.',
+      'I would be glad to discuss your upcoming projects and how I could contribute. I am available for an interview at your convenience.',
+    ].join('\n\n'),
+    closing: '',
+  },
+};

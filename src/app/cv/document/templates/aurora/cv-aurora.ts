@@ -3,6 +3,7 @@ import { Icon } from '../../../../shared/icon/icon';
 import { BLOBS } from '../../parts/blobs';
 import { QrCode } from '../../parts/qr-code';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /**
@@ -12,7 +13,7 @@ import { CvTemplateBase } from '../cv-template-base';
 @Component({
   selector: 'app-cv-aurora',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon, QrCode, RichText],
+  imports: [Icon, QrCode, RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <svg class="blob blob-a" viewBox="0 0 200 200" aria-hidden="true">
@@ -60,6 +61,9 @@ import { CvTemplateBase } from '../cv-template-base';
           }
         </div>
 
+        @if (letter(); as body) {
+          <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
+        }
         @for (section of cv().sections; track section.id) {
           <section class="section">
             <h2>
@@ -148,15 +152,18 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       position: relative;
+      /* Formes décoratives sous le texte (z-index négatif) : le texte reste hors de tout calque. */
+      isolation: isolate;
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
       overflow: hidden;
       background: #fff;
       color: #1d2433;
       font-family: var(--cv-body-font, 'Poppins', sans-serif);
       font-size: 12px;
-      line-height: 1.5;
+      line-height: calc(1.5 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
       --mint: color-mix(in oklab, var(--cv-accent) 12%, white);
@@ -165,7 +172,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .blob {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       pointer-events: none;
     }
     .blob-a {
@@ -187,14 +194,12 @@ import { CvTemplateBase } from '../cv-template-base';
       fill: var(--mint);
     }
     .content {
-      position: relative;
-      z-index: 1;
-      padding: 44px 54px 46px;
+      padding: calc(44px * var(--cv-space, 1)) 54px calc(46px * var(--cv-space, 1));
     }
     header {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: calc(30px * var(--cv-space, 1)) 30px;
     }
     .photo {
       width: 150px;
@@ -216,10 +221,10 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 33px;
       font-weight: 700;
       letter-spacing: 0.05em;
-      line-height: 1.15;
+      line-height: calc(1.15 * var(--cv-leading, 1));
     }
     .headline {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-family: var(--cv-heading-font, 'Poppins', sans-serif);
       font-size: 18px;
@@ -227,7 +232,7 @@ import { CvTemplateBase } from '../cv-template-base';
       letter-spacing: 0.04em;
     }
     .summary {
-      margin-top: 10px;
+      margin-top: calc(10px * var(--cv-space, 1));
       color: #2b2f38;
       font-size: 12px;
       white-space: pre-line;
@@ -235,9 +240,9 @@ import { CvTemplateBase } from '../cv-template-base';
     .contact-row {
       display: flex;
       align-items: center;
-      gap: 20px;
-      margin-top: 22px;
-      padding: 12px 16px;
+      gap: calc(20px * var(--cv-space, 1)) 20px;
+      margin-top: calc(22px * var(--cv-space, 1));
+      padding: calc(12px * var(--cv-space, 1)) 16px;
       border-radius: 14px;
       background: rgb(255 255 255 / 0.75);
       box-shadow: 0 0 0 1px rgb(0 0 0 / 0.05);
@@ -246,12 +251,12 @@ import { CvTemplateBase } from '../cv-template-base';
       display: flex;
       flex: 1;
       flex-wrap: wrap;
-      gap: 6px 20px;
+      gap: calc(6px * var(--cv-space, 1)) 20px;
     }
     .contact > li {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: calc(6px * var(--cv-space, 1)) 6px;
     }
     .contact-icon {
       width: 14px;
@@ -269,19 +274,19 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .qr p {
       max-width: 90px;
-      margin-top: 3px;
+      margin-top: calc(3px * var(--cv-space, 1));
       color: #6b7280;
       font-size: 9.5px;
       overflow-wrap: anywhere;
     }
     .section {
-      margin-top: 20px;
+      margin-top: calc(20px * var(--cv-space, 1));
     }
     h2 {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 9px;
+      gap: calc(10px * var(--cv-space, 1)) 10px;
+      margin-bottom: calc(9px * var(--cv-space, 1));
       color: #111;
       font-family: var(--cv-heading-font, 'Poppins', sans-serif);
       font-size: 18px;
@@ -299,17 +304,16 @@ import { CvTemplateBase } from '../cv-template-base';
       border-left: 1.5px solid #2b2f38;
     }
     .entry {
-      position: relative;
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 12px;
+      margin-top: calc(12px * var(--cv-space, 1));
     }
+    /* Pastille en flottant, pas en absolu : dans le PDF, le texte garde l'ordre du document. */
     .entry::before {
       content: '';
-      position: absolute;
-      top: 5px;
-      left: -27.5px;
+      float: left;
+      margin: 5px 0 0 -27.5px;
       width: 9px;
       height: 9px;
       border-radius: 9999px;
@@ -331,20 +335,20 @@ import { CvTemplateBase } from '../cv-template-base';
       color: #1d2433;
     }
     .bullets {
-      margin-top: 3px;
+      margin-top: calc(3px * var(--cv-space, 1));
       padding-left: 17px;
       list-style: disc;
     }
     .bullets > li + li {
-      margin-top: 1px;
+      margin-top: calc(1px * var(--cv-space, 1));
     }
     .skill-row {
       display: flex;
       align-items: baseline;
-      gap: 12px;
+      gap: calc(12px * var(--cv-space, 1)) 12px;
     }
     .skill-row + .skill-row {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .skill-label {
       width: 92px;
@@ -355,10 +359,10 @@ import { CvTemplateBase } from '../cv-template-base';
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .chips > li {
-      padding: 1px 10px;
+      padding: calc(1px * var(--cv-space, 1)) 10px;
       border-radius: 9999px;
       background: var(--mint);
       font-size: 11.5px;
@@ -368,17 +372,17 @@ import { CvTemplateBase } from '../cv-template-base';
       align-items: center;
       justify-content: space-between;
       max-width: 430px;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     .languages > li + li {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
     }
     .level {
       color: #6b7280;
     }
     .meter {
       display: flex;
-      gap: 4px;
+      gap: calc(4px * var(--cv-space, 1)) 4px;
     }
     .step {
       width: 9px;
@@ -388,6 +392,9 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .step.on {
       background: var(--cv-accent);
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

@@ -1,15 +1,20 @@
 import {
   ACCENT_COLORS,
   CV_LANGUAGES,
+  CoverLetter,
   CvLanguage,
+  CvLayout,
+  DEFAULT_LAYOUT,
   DEFAULT_TEMPLATE,
   CvSection,
   CvVersion,
+  LAYOUT_LIMITS,
   Entry,
   MasterCv,
   Profile,
   SECTION_KINDS,
   SectionKind,
+  createLetter,
   isEntryKind,
   isTemplateId,
   newId,
@@ -184,6 +189,22 @@ function normalizeFonts(raw: unknown): MasterCv['fonts'] {
   };
 }
 
+function normalizeLayout(raw: unknown): CvLayout {
+  const value = (key: keyof CvLayout) => {
+    const number = isRecord(raw) ? Number(raw[key]) : NaN;
+    const { min, max } = LAYOUT_LIMITS[key];
+    return Number.isFinite(number) ? Math.min(max, Math.max(min, number)) : DEFAULT_LAYOUT[key];
+  };
+  return { spacing: value('spacing'), scale: value('scale') };
+}
+
+export function normalizeLetter(raw: unknown): CoverLetter | null {
+  if (!isRecord(raw)) return null;
+  const letter = createLetter();
+  for (const key of Object.keys(letter) as (keyof CoverLetter)[]) letter[key] = string(raw[key]);
+  return letter;
+}
+
 export function normalizeCv(raw: unknown): MasterCv | null {
   if (!isRecord(raw) || !string(raw['id'])) return null;
   const language = CV_LANGUAGES.includes(raw['language'] as CvLanguage)
@@ -198,10 +219,12 @@ export function normalizeCv(raw: unknown): MasterCv | null {
     accentColor: /^#[0-9a-f]{6}$/i.test(string(raw['accentColor']))
       ? string(raw['accentColor'])
       : ACCENT_COLORS[0],
+    layout: normalizeLayout(raw['layout']),
     profile: normalizeProfile(raw['profile']),
     sections: array(raw['sections'])
       .map(normalizeSection)
       .filter((section) => section !== null),
+    letter: normalizeLetter(raw['letter']),
     createdAt: date(raw['createdAt']),
     updatedAt: date(raw['updatedAt']),
   };
@@ -215,6 +238,7 @@ function normalizeVersion(raw: unknown): CvVersion | null {
     name: string(raw['name']) || 'Version',
     hiddenIds: array(raw['hiddenIds']).map(string).filter(Boolean),
     jobAd: string(raw['jobAd']),
+    letter: normalizeLetter(raw['letter']),
     createdAt: date(raw['createdAt']),
     updatedAt: date(raw['updatedAt']),
   };

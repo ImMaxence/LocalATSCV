@@ -26,6 +26,15 @@
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung"
   },
+  "seo": {
+    "home": "Kostenloser ATS-optimierter Lebenslauf: 30 grafische Vorlagen, passendes Anschreiben, Anpassung an jede Stellenanzeige und ATS-Score. Open Source, deine Daten bleiben in deinem Browser",
+    "editor": "Lebenslauf-Editor mit Live-Vorschau, Master-CV und gezielten Versionen, ATS-Prüfung und PDF-Export mit echtem Text. Alles bleibt in deinem Browser",
+    "analyze": "Analysiere einen PDF-Lebenslauf kostenlos: ATS-Score von 100, Verbesserungspunkte und der Text, wie ihn ein Bewerbermanagementsystem liest. Die Datei verlässt deinen Browser nie",
+    "changelog": "Die Neuerungen von LocalATSCV, Version für Version: neue Lebenslauf-Vorlagen, Funktionen und Korrekturen",
+    "legalNotice": "Impressum von LocalATSCV: Herausgeber, Hosting und Kontakt",
+    "terms": "Nutzungsbedingungen von LocalATSCV, dem kostenlosen Open-Source-Lebenslaufgenerator",
+    "privacy": "Datenschutzerklärung von LocalATSCV: keine Datenerhebung, deine Lebensläufe bleiben in deinem Browser"
+  },
   "footer": {
     "tagline": "Der Generator für ATS-optimierte Lebensläufe, der deine Daten nie zu sehen bekommt",
     "product": "Produkt",
@@ -140,7 +149,7 @@
         },
         "trackers": {
           "title": "Keine Tracker",
-          "text": "Keine Statistiken, keine Werbung, keine Cookies. Sogar die Schriften werden selbst gehostet"
+          "text": "Keine Statistiken, keine Werbung, keine Tracking-Cookies. Sogar die Schriften werden selbst gehostet"
         },
         "csp": {
           "title": "Technisch abgesichert",
@@ -218,6 +227,18 @@
         "free": {
           "q": "Ist das wirklich kostenlos?",
           "a": "Ja. LocalATSCV ist ein Open-Source-Projekt unter MIT-Lizenz, ohne Werbung und ohne Abo. Das Hosting kostet fast nichts, da dein Browser die ganze Arbeit erledigt"
+        },
+        "templates": {
+          "q": "Bestehen die grafischen Vorlagen ATS-Systeme?",
+          "a": "Ja. Alle Vorlagen drucken echten Text in Lesereihenfolge mit Standard-Abschnittstiteln: Formen, Anzeigen und Icons sind Zeichnungen, die Roboter ignorieren. Einspaltige Vorlagen bleiben die sicherste Wahl, und die ATS-Prüfung im Editor testet dein Layout live"
+        },
+        "import": {
+          "q": "Kann ich meinen aktuellen Lebenslauf oder mein LinkedIn-Profil übernehmen?",
+          "a": "Ja. Importiere einen Lebenslauf als PDF oder Word (.docx), das PDF deines LinkedIn-Profils (am Computer) oder das Archiv deiner LinkedIn-Daten (aus der mobilen App): Der Inhalt wird in deinem Browser gelesen und im Editor eingeordnet"
+        },
+        "offline": {
+          "q": "Funktioniert LocalATSCV offline?",
+          "a": "Ja. Es ist eine installierbare Web-App: Nach dem ersten Besuch funktioniert alles ohne Verbindung, auch der PDF-Export"
         }
       }
     },
@@ -268,7 +289,7 @@
         "notABackup": "Diese Datei ist kein LocalATSCV-Backup",
         "newerVersion": "Dieses Backup stammt aus einer neueren Version von LocalATSCV: Aktualisiere zuerst die Anwendung"
       },
-      "importPdf": "Lebenslauf importieren (PDF)",
+      "importPdf": "Lebenslauf importieren (PDF oder Word)",
       "importPdfHint": "Einen bestehenden Lebenslauf in unsere Vorlagen übernehmen",
       "importLinkedin": "Von LinkedIn importieren",
       "importLinkedinHint": "Aus dem PDF deines Profils"
@@ -278,12 +299,55 @@
       "name": "Name des Lebenslaufs",
       "cvLanguage": "Sprache des Lebenslaufs",
       "accent": "Akzentfarbe",
+      "customAccent": "Eigene Farbe",
       "saved": "Gespeichert",
       "saving": "Wird gespeichert…",
       "saveError": "Speichern fehlgeschlagen",
       "edit": "Bearbeiten",
       "preview": "Vorschau",
-      "exportPdf": "Als PDF exportieren"
+      "exportPdf": "Als PDF exportieren",
+      "undo": "Rückgängig (Strg+Z)",
+      "redo": "Wiederholen (Strg+Y)"
+    },
+    "modes": {
+      "label": "Zu bearbeitendes Dokument",
+      "cv": "Lebenslauf",
+      "letter": "Anschreiben"
+    },
+    "letter": {
+      "title": "Anschreiben",
+      "versionOwn": "Diese Version hat ein eigenes Anschreiben",
+      "versionShared": "Diese Version nutzt das Anschreiben des Masters: Eine Änderung hier erstellt eine eigene Kopie",
+      "useMaster": "Anschreiben des Masters übernehmen",
+      "recipient": "Empfänger",
+      "recipientPlaceholder": "Beispiel GmbH\nPersonalabteilung\nHauptstraße 10, 10115 Berlin",
+      "place": "Ort",
+      "date": "Datum",
+      "dateHint": "Leer: Tagesdatum beim Drucken",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Bewerbung als…",
+      "greeting": "Anrede",
+      "body": "Anschreiben",
+      "bodyPlaceholder": "Drei kurze Absätze: was dich am Unternehmen reizt, was du mitbringst, welchen nächsten Schritt du vorschlägst",
+      "bodyHint": "Eine Leerzeile trennt zwei Absätze · **fett** für ein Schlüsselwort",
+      "outline": "Gliederung einfügen",
+      "closing": "Grußformel",
+      "fileName": "Anschreiben"
+    },
+    "fit": {
+      "pages": "{{count}} Seiten",
+      "onePage": "Passt auf eine Seite",
+      "hintMany": "Die meisten Personaler erwarten einen einseitigen Lebenslauf",
+      "hintOne": "Ideales Format für die meisten Bewerbungen",
+      "stillTooLong": "Immer noch zu lang, selbst verdichtet: Kürze einige Punkte oder blende Elemente in einer Version aus",
+      "fit": "Auf eine Seite bringen",
+      "settings": "Layout-Einstellungen",
+      "spacing": "Abstände",
+      "scale": "Textgröße",
+      "settingsHint": "Der Text bleibt echter Text: Nur das Layout ändert sich",
+      "reset": "Layout der Vorlage",
+      "grayscale": "In Schwarz-Weiß ansehen",
+      "grayscaleHint": "Simulation eines Schwarz-Weiß-Drucks: Das exportierte PDF behält seine Farben"
     },
     "versions": {
       "label": "Angezeigte Version",
@@ -331,7 +395,7 @@
       "drivingLicense": "Führerschein",
       "drivingLicensePlaceholder": "z. B. Führerschein Klasse B, eigenes Auto",
       "qrToggle": "Diesen Link als QR-Code anzeigen",
-      "linksHint": "Das Logo (LinkedIn, GitHub, YouTube…) wird automatisch ergänzt. Die QR-Schaltfläche zeigt den Link in den Vorlagen Signature, Aurora und Pulse als QR-Code an"
+      "linksHint": "Das Logo (LinkedIn, GitHub, YouTube…) wird automatisch ergänzt. Die QR-Schaltfläche zeigt den Link in den meisten grafischen Vorlagen als QR-Code an"
     },
     "sections": {
       "kinds": {
@@ -405,7 +469,11 @@
       "languageLevel": "Niveau",
       "languageLevelPlaceholder": "z. B. C1, fließend",
       "interest": "Interesse",
-      "interestPlaceholder": "z. B. Klettern"
+      "interestPlaceholder": "z. B. Klettern",
+      "levelDetected": "Niveau erkannt: Vorlagen mit Anzeige stellen es grafisch dar",
+      "levelUnknown": "Niveau nicht erkannt, keine Anzeige: nutze A1 bis C2 oder einen Vorschlag aus der Liste",
+      "levelEmpty": "Gib ein Niveau an, um eine Anzeige zu erhalten",
+      "levelHint": "Gib das europäische Niveau (A1 bis C2) oder ein Wort wie „fließend“ oder „Muttersprache“ an: manche Vorlagen zeigen es auch als Anzeige, Vorschau über die Punkte rechts"
     },
     "actions": {
       "menu": "Aktionen",
@@ -428,8 +496,14 @@
     "templates": {
       "button": "Vorlage",
       "title": "Vorlage wählen",
-      "subtitle": "Dein Lebenslauf in jedem Layout. Die Akzentfarbe gilt für alle Vorlagen",
+      "subtitle": "Jede Vorlage mit einem vollständigen Beispiel-Lebenslauf oder mit deinem. Die Akzentfarbe gilt für alle Vorlagen",
       "close": "Schließen",
+      "filter": "Vorlagen filtern",
+      "filters": {
+        "all": "Alle",
+        "graphic": "Grafisch",
+        "sober": "Schlicht"
+      },
       "ats": "ATS-Kompatibilität",
       "levels": {
         "excellent": "sehr gut",
@@ -477,7 +551,92 @@
         "pulse": {
           "name": "Pulse",
           "description": "Dunkles diagonales Band, Farbverläufe, Erfahrungen als Karten und Kenntnisse als Tags"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrische Komposition in Primärfarben rund um das Foto, geometrische Schrift und Formen vor den Überschriften"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Magazin-Layout: großer Name in Serifenschrift, kursiver Vorspann, nummerierte Rubriken und versetztes Porträt"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-Brutalismus: dicke schwarze Konturen, harte Schatten, kräftige Farbflächen und schwarze Etiketten"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Mesh-Verlauf in deinen Akzentfarben, Kontaktkarte im Glas-Look und Karten mit Verlaufsrahmen"
+        },
+        "swiss": {
+          "name": "Schweiz",
+          "description": "Schweizer Plakatstil: riesiger Name, Farbband, kräftige schwarze Linien und nummerierte Rubriken"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Elfenbeinpapier, feiner Doppelrahmen, Rautenornamente und Garamond-Typografie"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Dunkelmodus: Nachthintergrund, Neonakzente und leuchtende Zeitleiste, ideal für digitale Bewerbungen"
+        },
+        "wave": {
+          "name": "Welle",
+          "description": "Farbbanner mit Wellenabschluss, rundes Foto und gewellte Überschriften, sanft und freundlich"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Abgerundete Bento-Kacheln: Foto, Name und QR-Code im Raster, eine Kachel pro Abschnitt"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Technische Zeichnung: Rasterpapier, Eckmarken, Maßlinie und Beschriftungen in Monospace"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrisches 80er-Konfetti, kräftige Farben und Überschriften mit Zickzack"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Großes geteiltes Banner: Text auf Farbfläche und zweifarbiges Foto"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografie als einziger Schmuck: riesiger, teils konturierter Name, sehr große Überschriften"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Eine Pastellfarbe pro Abschnitt, Überschriften als Pillen und ein bunter Schein"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Nachtblaues Banner, goldene Linie und Serifenname, für Führungspositionen"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japanischer Minimalismus: Washi-Papier, Ensō (Zen-Kreis) in deiner Akzentfarbe und Pinselstrich"
+        },
+        "ribbon": {
+          "name": "Band",
+          "description": "Abschnittstitel auf Bändern mit Schwalbenschwanz, zentrierter Kopf"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Sechseckiges Foto, Wabenmuster in der Ecke und Sechsecke vor den Überschriften"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Kopfbereich aus geschichtetem Scherenschnitt, Abschnitte als Papierkarten"
+        },
+        "thread": {
+          "name": "Faden",
+          "description": "Ein durchgehender Faden verbindet Kopf und jeden Abschnitt, mit einem Punkt pro Station"
         }
+      },
+      "preview": {
+        "label": "Inhalt der Vorschaubilder",
+        "sample": "Vollständiges Beispiel",
+        "mine": "Mein Lebenslauf"
       }
     },
     "print": {
@@ -591,6 +750,13 @@
         "pass": "Lineare Lesereihenfolge, keine Spalten, die sich vermischen",
         "warn": "Mehrspaltiges Layout erkannt: Der Text wird womöglich in falscher Reihenfolge gelesen. Prüfe unten „Was der Roboter liest“"
       },
+      "order": {
+        "title": "Lesereihenfolge der Datei",
+        "pass": "Der Text steht in der Datei in Lesereihenfolge",
+        "warnHeader": "Name und Kopfbereich stehen in der Datei hinter dem restlichen Lebenslauf: Ein ATS, das die Datei der Reihe nach liest, findet deinen Namen womöglich nicht",
+        "warn": "{{percent}} % des Textes stehen in der Datei außerhalb der Lesereihenfolge: Manche ATS lesen diese Stellen durcheinander",
+        "fail": "{{percent}} % des Textes stehen in der Datei durcheinander, typisch für Lebensläufe aus freien Textfeldern (Canva, PowerPoint…): Viele ATS lesen deinen Lebenslauf wirr. Vergleiche die beiden Lesarten unten"
+      },
       "unreadable": {
         "title": "Symbole und Skill-Balken",
         "pass": "Keine Symbole oder unlesbaren Zeichen",
@@ -638,7 +804,10 @@
     "robot": {
       "title": "Was der Roboter liest",
       "text": "Der Text Zeile für Zeile rekonstruiert, wie es die meisten ATS tun. Ist er hier durcheinander oder unvollständig, sieht ihn auch der Recruiter so",
-      "empty": "Es konnte kein Text extrahiert werden"
+      "empty": "Es konnte kein Text extrahiert werden",
+      "position": "Nach Position",
+      "file": "Dateireihenfolge",
+      "fileText": "Der Text in der Reihenfolge, in der er in der Datei steht: So lesen ihn ATS, die das Layout nicht rekonstruieren. Er sollte der Lesereihenfolge deines Lebenslaufs folgen"
     },
     "cta": {
       "title": "Starte auf einer soliden Basis",
@@ -661,10 +830,10 @@
   "import": {
     "title": "Lebenslauf importieren",
     "linkedinTitle": "Von LinkedIn importieren",
-    "text": "Wähle einen Lebenslauf als PDF: Der Inhalt wird in deinem Browser extrahiert und den Abschnitten des Editors zugeordnet. Danach kannst du eine Vorlage wählen",
-    "choose": "PDF auswählen",
+    "text": "Wähle einen Lebenslauf als PDF oder Word (.docx): Der Inhalt wird in deinem Browser ausgelesen und in die Abschnitte des Editors einsortiert. Danach kannst du eine Vorlage wählen",
+    "choose": "Datei auswählen",
     "chooseFile": "Datei auswählen",
-    "hint": "Nur PDF, maximal 15 MB",
+    "hint": "PDF oder Word (.docx), maximal 15 MB",
     "reading": "Import läuft…",
     "privacy": "Die Datei wird in deinem Browser gelesen und nirgendwohin gesendet",
     "close": "Schließen",
@@ -672,9 +841,9 @@
     "errors": {
       "tooLarge": "Diese Datei ist größer als 15 MB",
       "encrypted": "Dieses PDF ist passwortgeschützt",
-      "unreadable": "Dieses PDF kann nicht gelesen werden: Es ist möglicherweise beschädigt",
+      "unreadable": "Diese Datei kann nicht gelesen werden: Sie ist womöglich beschädigt",
       "empty": "Kein verwertbarer Text: Dieses PDF ist vermutlich ein Bild oder ein Scan",
-      "unsupported": "Wähle eine PDF-Datei oder ein LinkedIn-ZIP-Archiv",
+      "unsupported": "Wähle eine PDF-, Word-Datei (.docx) oder ein LinkedIn-ZIP-Archiv",
       "archiveEmpty": "Dieses Archiv enthält keine verwertbaren LinkedIn-Profildaten"
     },
     "hintArchive": "PDF (Computer) oder ZIP-Archiv (Mobile App)",

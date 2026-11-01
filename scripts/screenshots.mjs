@@ -13,6 +13,7 @@ import { chromium } from 'playwright-core';
 
 const baseUrl = process.argv[2] ?? 'http://localhost:8090';
 const outDir = new URL('../docs/screenshots/', import.meta.url);
+const publicDir = new URL('../public/', import.meta.url);
 
 async function launchBrowser() {
   for (const channel of ['msedge', 'chrome']) {
@@ -61,6 +62,33 @@ async function samplePdf(page) {
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
   return path;
+}
+
+/**
+ * Rend le CV d'exemple dans plusieurs modèles et renvoie leur HTML avec les styles nécessaires
+ * (Angular retire les styles d'un modèle dès qu'il n'est plus affiché).
+ */
+async function renderTemplates(page, names) {
+  await openSampleCv(page);
+  const styles = new Set();
+  const cvs = [];
+  for (const name of names) {
+    await page.locator('button:has(app-icon[name=layout])').click();
+    await page
+      .getByRole('dialog')
+      .getByRole('button', { name: new RegExp(`^${name}`) })
+      .click();
+    await page.getByRole('dialog').waitFor({ state: 'detached' });
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(300);
+    const rendered = await page.evaluate(() => ({
+      html: document.querySelector('app-cv-preview app-cv-document').outerHTML,
+      styles: [...document.querySelectorAll('head style')].map((s) => s.textContent),
+    }));
+    rendered.styles.forEach((css) => styles.add(css));
+    cvs.push(rendered.html);
+  }
+  return { css: [...styles].join('\n'), cvs };
 }
 
 /** Chaque capture : contexte (thème, taille) + ce qu'il faut photographier. */
@@ -113,40 +141,94 @@ const shots = [
   },
   {
     file: 'templates-showcase.png',
-    context: { viewport: { width: 1440, height: 760 }, colorScheme: 'light' },
+    context: { viewport: { width: 1440, height: 1010 }, colorScheme: 'light' },
     prepare: async (page) => {
-      await openSampleCv(page);
-      const pages = [];
-      for (const name of ['Signature', 'Aurore', 'Pulse']) {
-        await page.locator('button:has(app-icon[name=layout])').click();
-        await page
-          .getByRole('dialog')
-          .getByRole('button', { name: new RegExp(`^${name}`) })
-          .click();
-        await page.getByRole('dialog').waitFor({ state: 'detached' });
-        await page.waitForTimeout(300);
-        // Angular retire les styles d'un modèle qui n'est plus affiché : on les garde avec le CV.
-        pages.push(
-          await page.evaluate(() => {
-            const styles = [...document.querySelectorAll('head style')].map((s) => s.textContent);
-            return {
-              html: document.querySelector('app-cv-preview app-cv-document').outerHTML,
-              styles,
-            };
-          }),
-        );
-      }
-      await page.evaluate((pages) => {
-        const css = [...new Set(pages.flatMap((p) => p.styles))].join('\n');
-        document.body.innerHTML = `<style>${css}
-          .showcase { display: flex; justify-content: center; gap: 32px; padding: 40px; background: #f3f1ec; }
-          .showcase > div { width: 397px; height: 562px; overflow: hidden; border-radius: 6px; box-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.35); }
-          .showcase > div > * { transform: scale(0.5); transform-origin: top left; }
-        </style><div class="showcase">${pages.map((p) => `<div>${p.html}</div>`).join('')}</div>`;
-      }, pages);
-      await page.waitForTimeout(300);
+      const { css, cvs } = await renderTemplates(page, [
+        'Memphis',
+        'Duotone',
+        'Nocturne',
+        'Origami',
+        'Sorbet',
+        'Hexa',
+        'Typo',
+        'Ruban',
+      ]);
+      await page.evaluate(
+        ({ css, cvs }) => {
+          document.body.innerHTML = `<style>${css}
+          .showcase { display: grid; grid-template-columns: repeat(4, 318px); justify-content: center; gap: 24px; padding: 40px; background: #f3f1ec; }
+          .showcase > div { width: 318px; height: 449px; overflow: hidden; border-radius: 6px; box-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.35); }
+          .showcase > div > * { transform: scale(0.4); transform-origin: top left; }
+        </style><div class="showcase">${cvs.map((html) => `<div>${html}</div>`).join('')}</div>`;
+        },
+        { css, cvs },
+      );
+      await page.waitForTimeout(400);
     },
     target: (page) => page.locator('.showcase'),
+  },
+  {
+    // Image des aperçus de liens (Open Graph) : public/og-image.png, 1200 × 630.
+    file: 'og-image.png',
+    dir: publicDir,
+    context: { viewport: { width: 1200, height: 630 }, colorScheme: 'light' },
+    prepare: async (page) => {
+      const { css, cvs } = await renderTemplates(page, ['Nocturne', 'Bento', 'Bauhaus']);
+      await page.evaluate(
+        ({ css, cvs }) => {
+          document.body.innerHTML = `<style>${css}
+          .og { position: relative; display: flex; width: 1200px; height: 630px; overflow: hidden; background: radial-gradient(circle at 85% 20%, #d9efe5, transparent 45%), #f6f4ee; font-family: 'Inter Variable', sans-serif; color: #17181b; }
+          .og .text { width: 560px; padding: 64px 0 0 64px; }
+          .og .text .brand { display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: -0.02em; }
+          .og .text .brand img { width: 52px; height: 52px; }
+          .og .text .brand b { color: #11795a; }
+          .og .text h1 { margin-top: 44px; font-family: 'Fraunces Variable', serif; font-size: 50px; font-weight: 600; line-height: 1.08; letter-spacing: -0.02em; }
+          .og .text ul { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 38px; }
+          .og .text li { padding: 8px 16px; border-radius: 9999px; background: #11795a; color: #fff; font-size: 19px; font-weight: 600; }
+          .og .text li + li { background: #fff; color: #17181b; box-shadow: inset 0 0 0 1.5px #d8d4cc; }
+          .og .card { position: absolute; width: 318px; height: 449px; overflow: hidden; border-radius: 8px; box-shadow: 0 24px 48px -16px rgb(0 0 0 / 0.45); }
+          .og .card > * { transform: scale(0.4); transform-origin: top left; }
+          .og .card-1 { top: 120px; left: 620px; transform: rotate(-7deg); }
+          .og .card-2 { top: 70px; left: 760px; transform: rotate(2deg); z-index: 1; }
+          .og .card-3 { top: 140px; left: 900px; transform: rotate(9deg); z-index: 2; }
+        </style><div class="og"><div class="text">
+          <div class="brand"><img src="/favicon.svg" alt="" /><span>Local<b>ATS</b>CV</span></div>
+          <h1>Un CV qui passe les robots, des données qui restent chez vous</h1>
+          <ul><li>Gratuit et open source</li><li>30 modèles</li><li>Score ATS</li><li>100 % local</li></ul>
+        </div>${cvs.map((html, i) => `<div class="card card-${i + 1}">${html}</div>`).join('')}</div>`;
+        },
+        { css, cvs },
+      );
+      await page.evaluate(() => document.fonts.ready);
+      await page.waitForTimeout(400);
+    },
+    target: (page) => page.locator('.og'),
+  },
+  {
+    file: 'letter.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      await page.getByRole('tab', { name: 'Lettre de motivation' }).click();
+      await page.waitForTimeout(500);
+    },
+  },
+  {
+    file: 'page-fit.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      for (let i = 0; i < 3; i++) {
+        await page
+          .locator('app-entry-editor')
+          .first()
+          .getByRole('button', { name: 'Actions' })
+          .click();
+        await page.getByRole('menuitem', { name: 'Dupliquer' }).click();
+      }
+      await page.locator('app-page-fit button[aria-expanded]').click();
+      await page.waitForTimeout(500);
+    },
   },
   {
     file: 'analyze.png',
@@ -229,13 +311,13 @@ for (const shot of shots) {
   await page.evaluate(() => document.fonts.ready);
   await shot.prepare?.(page);
 
-  const path = new URL(shot.file, outDir).pathname.replace(/^\/([A-Za-z]:)/, '$1');
+  const path = new URL(shot.file, shot.dir ?? outDir).pathname.replace(/^\/([A-Za-z]:)/, '$1');
   if (shot.target) {
     await shot.target(page).screenshot({ path });
   } else {
     await page.screenshot({ path, clip: shot.clip });
   }
-  console.log(`✓ docs/screenshots/${shot.file}`);
+  console.log(`✓ ${shot.dir ? 'public' : 'docs/screenshots'}/${shot.file}`);
   await context.close();
 }
 

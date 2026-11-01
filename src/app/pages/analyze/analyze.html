@@ -201,11 +201,32 @@
             <app-icon class="size-4 text-muted" name="bot" />
             <h2 class="font-semibold">{{ t('robot.title') }}</h2>
           </div>
-          <p class="px-5 pt-4 text-sm text-muted">{{ t('robot.text') }}</p>
+          <div class="px-5 pt-4">
+            <div
+              role="radiogroup"
+              class="inline-flex rounded-full border border-line bg-surface p-0.5 text-xs font-semibold"
+              [attr.aria-label]="t('robot.title')"
+            >
+              @for (mode of robotModes; track mode) {
+                <button
+                  type="button"
+                  role="radio"
+                  class="rounded-full px-3 py-1 text-muted transition-colors hover:text-ink aria-checked:bg-accent aria-checked:text-accent-ink"
+                  [attr.aria-checked]="robotMode() === mode"
+                  (click)="robotMode.set(mode)"
+                >
+                  {{ t('robot.' + mode) }}
+                </button>
+              }
+            </div>
+          </div>
+          <p class="px-5 pt-3 text-sm text-muted">
+            {{ robotMode() === 'position' ? t('robot.text') : t('robot.fileText') }}
+          </p>
           @if (result.lines.length) {
             <pre
               class="m-5 max-h-96 overflow-auto rounded-xl border border-line bg-paper p-4 font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted"
-              >{{ result.lines.join('\n') }}</pre>
+              >{{ (robotMode() === 'position' ? result.lines : result.fileLines).join('\n') }}</pre>
           } @else {
             <p class="m-5 rounded-xl border border-dashed border-line p-4 text-sm text-muted">
               {{ t('robot.empty') }}

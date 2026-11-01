@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon } from '../../../../shared/icon/icon';
 import { QrCode } from '../../parts/qr-code';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /**
@@ -11,7 +12,7 @@ import { CvTemplateBase } from '../cv-template-base';
 @Component({
   selector: 'app-cv-pulse',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon, QrCode, RichText],
+  imports: [Icon, QrCode, RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header class="hero">
@@ -43,6 +44,9 @@ import { CvTemplateBase } from '../cv-template-base';
             }
           </ul>
         }
+        <svg class="bevel" viewBox="0 0 794 44" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 44 L794 0 L794 46 L0 46 Z" />
+        </svg>
       </header>
 
       <div class="body">
@@ -51,6 +55,9 @@ import { CvTemplateBase } from '../cv-template-base';
             <h2>{{ labels().sections.summary }}</h2>
             <p class="summary">{{ summary() }}</p>
           </section>
+        }
+        @if (letter(); as body) {
+          <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
         }
         @for (section of cv().sections; track section.id) {
           <section class="section">
@@ -121,20 +128,23 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
       background: #fff;
       color: #1c2230;
       font-family: var(--cv-body-font, 'Inter Variable', sans-serif);
       font-size: 12px;
-      line-height: 1.45;
+      line-height: calc(1.45 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
       --night: oklch(from var(--cv-accent) 0.22 0.04 h);
       --glow: oklch(from var(--cv-accent) 0.8 0.13 h);
     }
     .hero {
-      padding: 36px 54px 50px;
+      /* flow-root : la marge négative du biseau le fait dépasser au lieu de remonter le bandeau. */
+      display: flow-root;
+      padding: calc(36px * var(--cv-space, 1)) 54px 0;
       background:
         radial-gradient(
           circle at 88% 10%,
@@ -147,13 +157,25 @@ import { CvTemplateBase } from '../cv-template-base';
           transparent 40%
         ),
         var(--night);
-      clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
       color: #fff;
+    }
+    /*
+     * Biseau du bas : un dessin dans le flux (un clip-path ferait passer l'en-tête après le reste
+     * dans le PDF). Il déborde de 2 px sous le bandeau : dans l'aperçu réduit, le bord du fond
+     * sombre ne laisse ainsi aucun liseré.
+     */
+    .bevel {
+      display: block;
+      width: calc(100% + 108px);
+      height: 44px;
+      margin: calc(6px * var(--cv-space, 1)) -54px -2px;
+      overflow: visible;
+      fill: #fff;
     }
     .hero-main {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: calc(24px * var(--cv-space, 1)) 24px;
     }
     .photo {
       width: 104px;
@@ -169,10 +191,10 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 38px;
       font-weight: 800;
       letter-spacing: -0.02em;
-      line-height: 1.05;
+      line-height: calc(1.05 * var(--cv-leading, 1));
     }
     .headline {
-      margin-top: 8px;
+      margin-top: calc(8px * var(--cv-space, 1));
       color: var(--glow);
       font-family: var(--cv-heading-font, 'Montserrat Variable', sans-serif);
       font-size: 15px;
@@ -180,7 +202,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .qr {
       flex-shrink: 0;
-      padding: 7px;
+      padding: calc(7px * var(--cv-space, 1)) 7px;
       border-radius: 12px;
       background: #fff;
     }
@@ -192,14 +214,14 @@ import { CvTemplateBase } from '../cv-template-base';
     .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 16px;
+      gap: calc(7px * var(--cv-space, 1)) 7px;
+      margin-top: calc(16px * var(--cv-space, 1));
     }
     .contact > li {
       display: flex;
       align-items: center;
-      gap: 6px;
-      padding: 3px 11px;
+      gap: calc(6px * var(--cv-space, 1)) 6px;
+      padding: calc(3px * var(--cv-space, 1)) 11px;
       border-radius: 9999px;
       background: rgb(255 255 255 / 0.1);
       font-size: 11.5px;
@@ -210,13 +232,13 @@ import { CvTemplateBase } from '../cv-template-base';
       color: var(--glow);
     }
     .body {
-      padding: 0 54px 40px;
+      padding: 0 54px calc(40px * var(--cv-space, 1));
     }
     .section {
-      margin-top: 15px;
+      margin-top: calc(15px * var(--cv-space, 1));
     }
     h2 {
-      margin-bottom: 8px;
+      margin-bottom: calc(8px * var(--cv-space, 1));
       color: var(--night);
       font-family: var(--cv-heading-font, 'Montserrat Variable', sans-serif);
       font-size: 13px;
@@ -237,20 +259,20 @@ import { CvTemplateBase } from '../cv-template-base';
       white-space: pre-line;
     }
     .card {
-      padding: 10px 14px;
+      padding: calc(10px * var(--cv-space, 1)) 14px;
       border-left: 3px solid var(--cv-accent);
       border-radius: 0 10px 10px 0;
       background: #f5f7fa;
       break-inside: avoid;
     }
     .card + .card {
-      margin-top: 9px;
+      margin-top: calc(9px * var(--cv-space, 1));
     }
     .card-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     h3 {
       color: #10141c;
@@ -268,21 +290,21 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 12px;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 16px;
       list-style: disc;
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     /* Libellé en ligne, juste avant les pastilles : l'ordre de lecture reste « Libellé mot-clé… ». */
     .skill-row {
       display: flex;
       align-items: baseline;
-      gap: 10px;
+      gap: calc(10px * var(--cv-space, 1)) 10px;
     }
     .skill-row + .skill-row {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .skill-label {
       flex-shrink: 0;
@@ -295,10 +317,10 @@ import { CvTemplateBase } from '../cv-template-base';
       min-width: 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .chips > li {
-      padding: 1px 10px;
+      padding: calc(1px * var(--cv-space, 1)) 10px;
       border: 1.5px solid var(--cv-accent);
       border-radius: 9999px;
       color: var(--night);
@@ -313,11 +335,11 @@ import { CvTemplateBase } from '../cv-template-base';
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
       max-width: 420px;
     }
     .languages > li + li {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .bar {
       width: 120px;
@@ -332,6 +354,9 @@ import { CvTemplateBase } from '../cv-template-base';
       height: 100%;
       border-radius: 9999px;
       background: linear-gradient(90deg, var(--cv-accent), var(--glow));
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

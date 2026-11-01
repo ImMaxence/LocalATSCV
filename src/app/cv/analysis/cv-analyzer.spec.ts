@@ -1,4 +1,4 @@
-import { analyzeCv, buildLines } from './cv-analyzer';
+import { analyzeCv, buildLines, readingOrder } from './cv-analyzer';
 import { ExtractedPdf, PdfTextItem } from './pdf-text';
 import { findWeakOpener } from './weak-phrases';
 
@@ -54,6 +54,7 @@ describe('analyzeCv', () => {
     expect(status).toMatchObject({
       textLayer: 'pass',
       columns: 'pass',
+      order: 'pass',
       unreadable: 'pass',
       contact: 'pass',
       sections: 'pass',
@@ -163,5 +164,54 @@ describe('findWeakOpener', () => {
   it('ignore un intitulé de poste au milieu d’une phrase', () => {
     expect(findWeakOpener('Promu responsable de projet en 2021')).toBeNull();
     expect(findWeakOpener('Helpdesk niveau 2')).toBeNull();
+  });
+});
+
+describe('readingOrder', () => {
+  /** Réécrit les fragments du PDF dans un autre ordre (positions inchangées). */
+  const reorder = (pdf: ExtractedPdf, order: (items: PdfTextItem[]) => PdfTextItem[]) => ({
+    pages: pdf.pages.map((page) => ({ ...page, items: order(page.items) })),
+  });
+  const orderCheck = (pdf: ExtractedPdf) => analyzeCv(pdf).checks.find((c) => c.id === 'order');
+
+  it("accepte un fichier écrit dans l'ordre de lecture", () => {
+    expect(readingOrder(pdfFrom(GOOD_CV))).toEqual({ displaced: 0, headerLate: false });
+    expect(orderCheck(pdfFrom(GOOD_CV))?.status).toBe('pass');
+  });
+
+  it('signale un en-tête écrit après le reste du CV', () => {
+    const pdf = reorder(pdfFrom(GOOD_CV), (items) => [...items.slice(3), ...items.slice(0, 3)]);
+    expect(readingOrder(pdf).headerLate).toBe(true);
+    expect(orderCheck(pdf)?.message).toBe('warnHeader');
+  });
+
+  it('pénalise des blocs écrits dans le désordre (blocs de texte libres)', () => {
+    const pdf = reorder(pdfFrom(GOOD_CV), (items) => {
+      const blocks = [0, 6, 12, 18, 24, 30].map((start) => items.slice(start, start + 6));
+      return [blocks[3], blocks[0], blocks[5], blocks[1], blocks[4], blocks[2]].flat();
+    });
+    expect(readingOrder(pdf).displaced).toBeGreaterThan(0.25);
+    expect(orderCheck(pdf)?.status).toBe('fail');
+  });
+
+  it('accepte une colonne latérale écrite avant la colonne principale', () => {
+    const side = Array.from({ length: 12 }, (_, i): PdfTextItem => ({
+      text: `Compétence latérale numéro ${i} · Angular`,
+      x: 40,
+      y: 300 + i * 30,
+      width: 150,
+      height: 10,
+    }));
+    const mainColumn = Array.from({ length: 30 }, (_, i): PdfTextItem => ({
+      text: `Ligne de la colonne principale numéro ${i}, assez longue pour peser`,
+      x: 230,
+      y: 60 + i * 24,
+      width: 320,
+      height: 10,
+    }));
+    expect(readingOrder({ pages: [{ ...A4, items: [...side, ...mainColumn] }] })).toEqual({
+      displaced: 0,
+      headerLate: false,
+    });
   });
 });

@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon, IconName } from '../../../../shared/icon/icon';
 import { SectionKind } from '../../../model/cv.model';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
@@ -24,7 +25,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
 @Component({
   selector: 'app-cv-impact',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RichText, Icon],
+  imports: [RichText, Icon, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header class="hero">
@@ -63,6 +64,9 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
           </section>
         }
 
+        @if (letter(); as body) {
+          <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
+        }
         @for (section of cv().sections; track section.id) {
           <section class="section">
             <h2>
@@ -149,21 +153,22 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
       background: #fff;
       color: #1f2328;
       font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
-      line-height: 1.45;
+      line-height: calc(1.45 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
     .hero {
       display: flex;
       align-items: center;
-      gap: 26px;
-      padding: 34px 56px 28px;
+      gap: calc(26px * var(--cv-space, 1)) 26px;
+      padding: calc(34px * var(--cv-space, 1)) 56px calc(28px * var(--cv-space, 1));
       background:
         radial-gradient(circle at 92% 0%, rgb(255 255 255 / 0.18), transparent 45%),
         linear-gradient(135deg, var(--cv-accent), color-mix(in srgb, var(--cv-accent) 70%, black));
@@ -183,12 +188,12 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       font-size: 38px;
       font-weight: 700;
       letter-spacing: -0.025em;
-      line-height: 1.02;
+      line-height: calc(1.02 * var(--cv-leading, 1));
     }
     .headline {
       display: inline-block;
-      margin-top: 10px;
-      padding: 3px 12px;
+      margin-top: calc(10px * var(--cv-space, 1));
+      padding: calc(3px * var(--cv-space, 1)) 12px;
       border-radius: 9999px;
       background: rgb(255 255 255 / 0.16);
       font-size: 14px;
@@ -197,8 +202,8 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 22px;
-      padding: 12px 56px;
+      gap: calc(6px * var(--cv-space, 1)) 22px;
+      padding: calc(12px * var(--cv-space, 1)) 56px;
       background: color-mix(in srgb, var(--cv-accent) 8%, white);
       color: #333;
       font-size: 11.5px;
@@ -206,7 +211,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     .contact > li {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: calc(6px * var(--cv-space, 1)) 6px;
     }
     .contact-icon {
       width: 13px;
@@ -214,16 +219,16 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       color: var(--cv-accent);
     }
     .body {
-      padding: 4px 56px 40px;
+      padding: calc(4px * var(--cv-space, 1)) 56px calc(40px * var(--cv-space, 1));
     }
     .section {
-      margin-top: 17px;
+      margin-top: calc(17px * var(--cv-space, 1));
     }
     h2 {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 11px;
+      gap: calc(10px * var(--cv-space, 1)) 10px;
+      margin-bottom: calc(11px * var(--cv-space, 1));
       color: #111;
       font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 16px;
@@ -244,7 +249,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       height: 14px;
     }
     .summary {
-      padding: 10px 14px;
+      padding: calc(10px * var(--cv-space, 1)) 14px;
       border-left: 3px solid var(--cv-accent);
       border-radius: 0 8px 8px 0;
       background: #f7f7f8;
@@ -256,17 +261,16 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       border-left: 2px solid color-mix(in srgb, var(--cv-accent) 25%, white);
     }
     .entry {
-      position: relative;
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 11px;
+      margin-top: calc(11px * var(--cv-space, 1));
     }
+    /* Pastille en flottant, pas en absolu : dans le PDF, le texte garde l'ordre du document. */
     .entry::before {
       content: '';
-      position: absolute;
-      top: 4px;
-      left: -29px;
+      float: left;
+      margin: 4px 0 0 -29px;
       width: 12px;
       height: 12px;
       box-sizing: border-box;
@@ -278,7 +282,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     h3 {
       color: #111;
@@ -287,7 +291,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     }
     .dates {
       flex-shrink: 0;
-      padding: 1px 10px;
+      padding: calc(1px * var(--cv-space, 1)) 10px;
       border-radius: 9999px;
       background: color-mix(in srgb, var(--cv-accent) 11%, white);
       color: var(--cv-accent);
@@ -304,12 +308,12 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       font-weight: 600;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 16px;
       list-style: disc;
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .bullets > li::marker {
       color: var(--cv-accent);
@@ -318,10 +322,10 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     .skill-row {
       display: flex;
       align-items: baseline;
-      gap: 10px;
+      gap: calc(10px * var(--cv-space, 1)) 10px;
     }
     .skill-row + .skill-row {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .skill-label {
       flex-shrink: 0;
@@ -336,10 +340,10 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       min-width: 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .chips > li {
-      padding: 1px 10px;
+      padding: calc(1px * var(--cv-space, 1)) 10px;
       border: 1px solid color-mix(in srgb, var(--cv-accent) 22%, white);
       border-radius: 9999px;
       background: color-mix(in srgb, var(--cv-accent) 6%, white);
@@ -349,15 +353,15 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
       max-width: 420px;
     }
     .languages > li + li {
-      margin-top: 5px;
+      margin-top: calc(5px * var(--cv-space, 1));
     }
     .meter {
       display: flex;
-      gap: 3px;
+      gap: calc(3px * var(--cv-space, 1)) 3px;
     }
     .step {
       width: 18px;
@@ -367,6 +371,9 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     }
     .step.on {
       background: var(--cv-accent);
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

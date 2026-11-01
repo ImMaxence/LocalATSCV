@@ -26,6 +26,15 @@
     "terms": "Condizioni d'uso",
     "privacy": "Informativa sulla privacy"
   },
+  "seo": {
+    "home": "CV gratuito ottimizzato per gli ATS: 30 modelli grafici, lettera di presentazione abbinata, adattamento a ogni annuncio e punteggio ATS. Open source, i tuoi dati restano nel browser",
+    "editor": "Editor di CV con anteprima dal vivo, CV master e versioni mirate, controllo ATS ed esportazione PDF in testo reale. Tutto resta nel tuo browser",
+    "analyze": "Analizza gratis un CV in PDF: punteggio ATS su 100, punti da correggere e testo come lo legge un software di selezione. Il file non lascia il tuo browser",
+    "changelog": "Le novità di LocalATSCV, versione per versione: nuovi modelli di CV, funzionalità e correzioni",
+    "legalNotice": "Note legali di LocalATSCV: editore, hosting e contatti",
+    "terms": "Condizioni d'uso di LocalATSCV, generatore di CV gratuito e open source",
+    "privacy": "Informativa sulla privacy di LocalATSCV: nessun dato raccolto, i tuoi CV restano nel browser"
+  },
   "footer": {
     "tagline": "Il generatore di CV ottimizzati per gli ATS che non vede mai i tuoi dati",
     "product": "Prodotto",
@@ -140,7 +149,7 @@
         },
         "trackers": {
           "title": "Nessun tracciamento",
-          "text": "Niente statistiche, niente pubblicità, niente cookie. Anche i font sono ospitati sul sito stesso"
+          "text": "Niente statistiche, niente pubblicità, niente cookie di tracciamento. Anche i font sono ospitati sul sito stesso"
         },
         "csp": {
           "title": "Bloccato tecnicamente",
@@ -218,6 +227,18 @@
         "free": {
           "q": "È davvero gratuito?",
           "a": "Sì. LocalATSCV è un progetto open source con licenza MIT, senza pubblicità né abbonamento. Ospitarlo non costa quasi nulla, perché tutto il lavoro lo fa il tuo browser"
+        },
+        "templates": {
+          "q": "I modelli grafici superano gli ATS?",
+          "a": "Sì. Tutti i modelli stampano testo reale, nell'ordine di lettura, con titoli di sezione standard: forme, indicatori e icone sono disegni che i robot ignorano. I modelli a una colonna restano i più sicuri e il controllo ATS dell'editor verifica la tua impaginazione dal vivo"
+        },
+        "import": {
+          "q": "Posso riprendere il mio CV attuale o il mio profilo LinkedIn?",
+          "a": "Sì. Importa un CV in PDF o Word (.docx), il PDF del tuo profilo LinkedIn (da computer) o l'archivio dei tuoi dati LinkedIn (dall'app mobile): il contenuto viene letto nel browser e sistemato nell'editor"
+        },
+        "offline": {
+          "q": "LocalATSCV funziona offline?",
+          "a": "Sì. È un'app web installabile: dopo la prima visita tutto funziona senza connessione, esportazione PDF compresa"
         }
       }
     },
@@ -268,7 +289,7 @@
         "notABackup": "Questo file non è un backup di LocalATSCV",
         "newerVersion": "Questo backup proviene da una versione più recente di LocalATSCV: aggiorna prima l'applicazione"
       },
-      "importPdf": "Importa un CV (PDF)",
+      "importPdf": "Importa un CV (PDF o Word)",
       "importPdfHint": "Porta un CV esistente nei nostri modelli",
       "importLinkedin": "Importa da LinkedIn",
       "importLinkedinHint": "Dal PDF del tuo profilo"
@@ -278,12 +299,55 @@
       "name": "Nome del CV",
       "cvLanguage": "Lingua del CV",
       "accent": "Colore d'accento",
+      "customAccent": "Altro colore",
       "saved": "Salvato",
       "saving": "Salvataggio…",
       "saveError": "Salvataggio non riuscito",
       "edit": "Modifica",
       "preview": "Anteprima",
-      "exportPdf": "Esporta in PDF"
+      "exportPdf": "Esporta in PDF",
+      "undo": "Annulla (Ctrl+Z)",
+      "redo": "Ripristina (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Documento da modificare",
+      "cv": "CV",
+      "letter": "Lettera di presentazione"
+    },
+    "letter": {
+      "title": "Lettera di presentazione",
+      "versionOwn": "Questa versione ha la sua lettera",
+      "versionShared": "Questa versione usa la lettera del Master: modificarla qui crea una copia per questa versione",
+      "useMaster": "Riprendi la lettera del Master",
+      "recipient": "Destinatario",
+      "recipientPlaceholder": "Azienda Esempio\nUfficio selezione\nVia Roma 10, 20121 Milano",
+      "place": "Luogo",
+      "date": "Data",
+      "dateHint": "Vuoto: data del giorno alla stampa",
+      "subject": "Oggetto",
+      "subjectPlaceholder": "Candidatura per la posizione di…",
+      "greeting": "Formula di apertura",
+      "body": "Lettera",
+      "bodyPlaceholder": "Tre paragrafi brevi: cosa ti attira dell'azienda, cosa porti, il passo successivo che proponi",
+      "bodyHint": "Una riga vuota separa due paragrafi · **grassetto** per una parola chiave",
+      "outline": "Inserisci una traccia",
+      "closing": "Formula di chiusura",
+      "fileName": "Lettera di presentazione"
+    },
+    "fit": {
+      "pages": "{{count}} pagine",
+      "onePage": "Sta in una pagina",
+      "hintMany": "La maggior parte dei selezionatori si aspetta un CV di una pagina",
+      "hintOne": "Formato ideale per la maggior parte delle candidature",
+      "stillTooLong": "Ancora troppo lungo, anche compattato: accorcia qualche punto o nascondi elementi in una versione",
+      "fit": "Stare in una pagina",
+      "settings": "Impostazioni di impaginazione",
+      "spacing": "Spaziature",
+      "scale": "Dimensione del testo",
+      "settingsHint": "Il testo resta testo reale: cambia solo l'impaginazione",
+      "reset": "Impaginazione del modello",
+      "grayscale": "Vedi in bianco e nero",
+      "grayscaleHint": "Simulazione di una stampa in bianco e nero: il PDF esportato mantiene i colori"
     },
     "versions": {
       "label": "Versione visualizzata",
@@ -331,7 +395,7 @@
       "drivingLicense": "Patente di guida",
       "drivingLicensePlaceholder": "Es. Patente B, automunito",
       "qrToggle": "Mostra questo link come codice QR",
-      "linksHint": "Il logo (LinkedIn, GitHub, YouTube…) viene aggiunto automaticamente. Il pulsante QR mostra il link come codice QR nei modelli Signature, Aurora e Pulse"
+      "linksHint": "Il logo (LinkedIn, GitHub, YouTube…) viene aggiunto automaticamente. Il pulsante QR mostra il link come codice QR nella maggior parte dei modelli grafici"
     },
     "sections": {
       "kinds": {
@@ -405,7 +469,11 @@
       "languageLevel": "Livello",
       "languageLevelPlaceholder": "Es. C1, fluente",
       "interest": "Interesse",
-      "interestPlaceholder": "Es. Arrampicata"
+      "interestPlaceholder": "Es. Arrampicata",
+      "levelDetected": "Livello riconosciuto: i modelli con indicatore lo mostreranno",
+      "levelUnknown": "Livello non riconosciuto, nessun indicatore: usa da A1 a C2 o un suggerimento dell'elenco",
+      "levelEmpty": "Indica un livello per mostrare un indicatore",
+      "levelHint": "Indica il livello europeo (da A1 a C2) o una parola come «fluente» o «madrelingua»: alcuni modelli lo mostrano anche come indicatore, in anteprima nei punti a destra"
     },
     "actions": {
       "menu": "Azioni",
@@ -428,8 +496,14 @@
     "templates": {
       "button": "Modello",
       "title": "Scegli un modello",
-      "subtitle": "Il tuo CV in ogni impaginazione. Il colore d'accento vale per tutti i modelli",
+      "subtitle": "Ogni modello con un CV di esempio completo, o con il tuo. Il colore d'accento si applica a tutti i modelli",
       "close": "Chiudi",
+      "filter": "Filtra i modelli",
+      "filters": {
+        "all": "Tutti",
+        "graphic": "Grafici",
+        "sober": "Sobri"
+      },
       "ats": "Compatibilità ATS",
       "levels": {
         "excellent": "ottima",
@@ -477,7 +551,92 @@
         "pulse": {
           "name": "Pulse",
           "description": "Fascia scura in diagonale, aloni di colore, esperienze in schede e competenze in etichette"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Composizione geometrica in colori primari attorno alla foto, tipografia geometrica e forme davanti ai titoli"
+        },
+        "editorial": {
+          "name": "Editoriale",
+          "description": "Impaginazione da rivista: grande nome serif, occhiello in corsivo, rubriche numerate e ritratto sfalsato"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brutalismo: contorni neri spessi, ombre nette, campiture vivaci ed etichette nere"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Sfumatura mesh nei colori d'accento, scheda contatti effetto vetro e riquadri con bordo sfumato"
+        },
+        "swiss": {
+          "name": "Svizzero",
+          "description": "Stile manifesto svizzero: nome enorme, banda di colore, filetti neri spessi e rubriche numerate"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Carta avorio, doppia cornice sottile, ornamenti a rombo e tipografia Garamond"
+        },
+        "nocturne": {
+          "name": "Notturno",
+          "description": "Modalità scura: sfondo notte, accenti neon e linea del tempo luminosa, ideale per l'invio digitale"
+        },
+        "wave": {
+          "name": "Onda",
+          "description": "Fascia colorata che termina in onde, foto rotonda e titoli ondulati, morbido e accogliente"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Riquadri arrotondati stile bento: foto, nome e codice QR in griglia, un riquadro per sezione"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Disegno tecnico: carta quadrettata, crocini d'angolo, linea di quota ed etichette monospaziate"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Coriandoli geometrici anni 80, colori decisi e titoli sottolineati a zigzag"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Grande fascia divisa: testo su campitura di colore e foto bicromatica"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "La tipografia come unico decoro: nome enorme in parte scontornato, titoli molto grandi"
+        },
+        "sorbet": {
+          "name": "Sorbetto",
+          "description": "Un colore pastello per sezione, titoli a pastiglia e alone multicolore"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Fascia blu notte, filetto dorato e nome serif, per ruoli dirigenziali"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Minimalismo giapponese: carta washi, ensō (cerchio zen) nel colore d'accento e pennellata"
+        },
+        "ribbon": {
+          "name": "Nastro",
+          "description": "Titoli di sezione su nastri a coda di rondine, intestazione centrata"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Foto esagonale, nido d'ape nell'angolo ed esagoni davanti ai titoli"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Intestazione in carta ritagliata a più strati, sezioni come fogli"
+        },
+        "thread": {
+          "name": "Filo",
+          "description": "Un filo continuo collega l'intestazione e ogni sezione, con un punto per esperienza"
         }
+      },
+      "preview": {
+        "label": "Contenuto delle anteprime",
+        "sample": "Esempio completo",
+        "mine": "Il mio CV"
       }
     },
     "print": {
@@ -591,6 +750,13 @@
         "pass": "Lettura lineare, senza colonne che si mescolano",
         "warn": "Impaginazione a colonne rilevata: il testo rischia di essere letto in disordine. Controlla «Quello che legge il robot» qui sotto"
       },
+      "order": {
+        "title": "Ordine di lettura del file",
+        "pass": "Il testo è scritto nel file nell'ordine di lettura",
+        "warnHeader": "Il nome e l'intestazione sono scritti nel file dopo il resto del CV: un ATS che legge il file in ordine potrebbe non trovare il tuo nome",
+        "warn": "Il {{percent}} % del testo è scritto nel file fuori dall'ordine di lettura: alcuni ATS leggeranno questi passaggi in disordine",
+        "fail": "Il {{percent}} % del testo è scritto nel file in disordine, tipico dei CV fatti di caselle di testo libere (Canva, PowerPoint…): molti ATS leggeranno il tuo CV alla rinfusa. Confronta le due letture qui sotto"
+      },
       "unreadable": {
         "title": "Icone e indicatori di livello",
         "pass": "Nessuna icona né carattere illeggibile",
@@ -638,7 +804,10 @@
     "robot": {
       "title": "Quello che legge il robot",
       "text": "Il testo ricostruito riga per riga, come fa la maggior parte degli ATS. Se qui è in disordine o incompleto, lo è anche per il selezionatore",
-      "empty": "Non è stato possibile estrarre alcun testo"
+      "empty": "Non è stato possibile estrarre alcun testo",
+      "position": "Per posizione",
+      "file": "Ordine del file",
+      "fileText": "Il testo nell'ordine in cui è scritto nel file: è così che lo leggono gli ATS che non ricostruiscono l'impaginazione. Deve seguire l'ordine di lettura del tuo CV"
     },
     "cta": {
       "title": "Riparti con basi solide",
@@ -661,10 +830,10 @@
   "import": {
     "title": "Importa un CV",
     "linkedinTitle": "Importa da LinkedIn",
-    "text": "Scegli un CV in PDF: il contenuto viene estratto nel browser e ordinato nelle sezioni dell'editor. Poi potrai scegliere un modello",
-    "choose": "Scegli un PDF",
+    "text": "Scegli un CV in PDF o Word (.docx): il contenuto viene estratto nel browser e sistemato nelle sezioni dell'editor. Potrai poi scegliere un modello",
+    "choose": "Scegli un file",
     "chooseFile": "Scegli un file",
-    "hint": "Solo PDF, massimo 15 MB",
+    "hint": "PDF o Word (.docx), massimo 15 MB",
     "reading": "Importazione in corso…",
     "privacy": "Il file viene letto nel browser: non viene inviato da nessuna parte",
     "close": "Chiudi",
@@ -672,9 +841,9 @@
     "errors": {
       "tooLarge": "Questo file supera i 15 MB",
       "encrypted": "Questo PDF è protetto da password",
-      "unreadable": "Impossibile leggere questo PDF: potrebbe essere danneggiato",
+      "unreadable": "Impossibile leggere questo file: potrebbe essere danneggiato",
       "empty": "Nessun testo utilizzabile: questo PDF è probabilmente un'immagine o una scansione",
-      "unsupported": "Scegli un file PDF o un archivio ZIP di LinkedIn",
+      "unsupported": "Scegli un file PDF, Word (.docx) o un archivio ZIP di LinkedIn",
       "archiveEmpty": "Questo archivio non contiene dati di profilo LinkedIn utilizzabili"
     },
     "hintArchive": "PDF (computer) o archivio ZIP (app mobile)",

@@ -3,6 +3,7 @@ import { Icon } from '../../../../shared/icon/icon';
 import { BLOBS } from '../../parts/blobs';
 import { QrCode } from '../../parts/qr-code';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /**
@@ -13,7 +14,7 @@ import { CvTemplateBase } from '../cv-template-base';
 @Component({
   selector: 'app-cv-signature',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon, QrCode, RichText],
+  imports: [Icon, QrCode, RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <svg class="blob blob-a" viewBox="0 0 200 200" aria-hidden="true">
@@ -39,6 +40,9 @@ import { CvTemplateBase } from '../cv-template-base';
           }
         </header>
 
+        @if (letter(); as body) {
+          <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
+        }
         @for (section of mainSections(); track section.id) {
           <section class="section">
             <h2>{{ sectionTitle(section) }}</h2>
@@ -138,18 +142,21 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       position: relative;
+      /* Formes décoratives sous le texte (z-index négatif) : le texte reste hors de tout calque. */
+      isolation: isolate;
       box-sizing: border-box;
       display: grid;
       grid-template-areas: 'side main';
       grid-template-columns: 268px minmax(0, 1fr);
-      width: 794px;
-      min-height: 1123px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
       overflow: hidden;
       background: #fff;
       color: #1d2433;
       font-family: var(--cv-body-font, 'Poppins', sans-serif);
       font-size: 12px;
-      line-height: 1.5;
+      line-height: calc(1.5 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
       --mint: color-mix(in oklab, var(--cv-accent) 12%, white);
@@ -158,7 +165,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .blob {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       pointer-events: none;
     }
     .blob-a {
@@ -179,18 +186,13 @@ import { CvTemplateBase } from '../cv-template-base';
       width: 520px;
       fill: var(--mint);
     }
-    .main,
-    aside {
-      position: relative;
-      z-index: 1;
-    }
     .main {
       grid-area: main;
-      padding: 56px 52px 48px 22px;
+      padding: calc(56px * var(--cv-space, 1)) 52px calc(48px * var(--cv-space, 1)) 22px;
     }
     aside {
       grid-area: side;
-      padding: 52px 18px 48px 42px;
+      padding: calc(52px * var(--cv-space, 1)) 18px calc(48px * var(--cv-space, 1)) 42px;
     }
     header {
       text-align: right;
@@ -201,10 +203,10 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 34px;
       font-weight: 700;
       letter-spacing: 0.05em;
-      line-height: 1.15;
+      line-height: calc(1.15 * var(--cv-leading, 1));
     }
     .headline {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-family: var(--cv-heading-font, 'Poppins', sans-serif);
       font-size: 19px;
@@ -212,14 +214,14 @@ import { CvTemplateBase } from '../cv-template-base';
       letter-spacing: 0.04em;
     }
     .summary {
-      margin-top: 14px;
+      margin-top: calc(14px * var(--cv-space, 1));
       margin-left: 40px;
       color: #222;
       font-size: 12.5px;
       white-space: pre-line;
     }
     .section {
-      margin-top: 26px;
+      margin-top: calc(26px * var(--cv-space, 1));
     }
     h2 {
       color: #111;
@@ -228,22 +230,21 @@ import { CvTemplateBase } from '../cv-template-base';
       font-weight: 600;
     }
     .timeline {
-      margin-top: 10px;
+      margin-top: calc(10px * var(--cv-space, 1));
       padding-left: 22px;
       border-left: 1.5px solid #2b2f38;
     }
     .entry {
-      position: relative;
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 13px;
+      margin-top: calc(13px * var(--cv-space, 1));
     }
+    /* Pastille en flottant, pas en absolu : dans le PDF, le texte garde l'ordre du document. */
     .entry::before {
       content: '';
-      position: absolute;
-      top: 5px;
-      left: -27.5px;
+      float: left;
+      margin: 5px 0 0 -27.5px;
       width: 9px;
       height: 9px;
       border-radius: 9999px;
@@ -255,7 +256,7 @@ import { CvTemplateBase } from '../cv-template-base';
       font-weight: 600;
     }
     .meta {
-      margin-top: 1px;
+      margin-top: calc(1px * var(--cv-space, 1));
       color: #8a8f99;
     }
     .meta > span + span {
@@ -265,44 +266,44 @@ import { CvTemplateBase } from '../cv-template-base';
       color: #1d2433;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 18px;
       list-style: disc;
     }
     .bullets > li + li {
-      margin-top: 1px;
+      margin-top: calc(1px * var(--cv-space, 1));
     }
     .photo {
       width: 168px;
       height: 168px;
-      margin: 0 auto 26px 0;
+      margin: 0 auto calc(26px * var(--cv-space, 1)) 0;
       border-radius: 9999px;
       object-fit: cover;
     }
     .contact > li {
       display: flex;
       align-items: flex-start;
-      gap: 9px;
+      gap: calc(9px * var(--cv-space, 1)) 9px;
       overflow-wrap: anywhere;
     }
     .contact > li + li {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .contact-icon {
       width: 15px;
       height: 15px;
-      margin-top: 1px;
+      margin-top: calc(1px * var(--cv-space, 1));
       color: var(--cv-accent);
     }
     .side-section {
-      margin-top: 24px;
+      margin-top: calc(24px * var(--cv-space, 1));
     }
     aside h2 {
-      margin-bottom: 10px;
+      margin-bottom: calc(10px * var(--cv-space, 1));
       font-size: 17px;
     }
     .side-label {
-      margin: 8px 0 4px;
+      margin: calc(8px * var(--cv-space, 1)) 0 calc(4px * var(--cv-space, 1));
       font-size: 12px;
       font-weight: 600;
     }
@@ -311,12 +312,12 @@ import { CvTemplateBase } from '../cv-template-base';
       flex-direction: column;
     }
     .languages > li + li {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
     }
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
+      gap: calc(4px * var(--cv-space, 1)) 4px;
     }
     .chips > li {
       padding: 0 8px;
@@ -330,10 +331,10 @@ import { CvTemplateBase } from '../cv-template-base';
       list-style: disc;
     }
     .dots > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .qr {
-      margin-top: 24px;
+      margin-top: calc(24px * var(--cv-space, 1));
     }
     .qr-code {
       width: 118px;
@@ -341,9 +342,12 @@ import { CvTemplateBase } from '../cv-template-base';
       color: #111;
     }
     .qr p {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
       color: #6b7280;
       font-size: 11.5px;
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

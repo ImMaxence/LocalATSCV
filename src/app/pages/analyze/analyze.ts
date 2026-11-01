@@ -32,6 +32,9 @@ export class Analyze {
   protected readonly analysis = signal<CvAnalysis | null>(null);
   protected readonly fileName = signal('');
   protected readonly dragging = signal(false);
+  /** Texte lu par position (la plupart des ATS) ou dans l'ordre du fichier (les autres). */
+  protected readonly robotModes = ['position', 'file'] as const;
+  protected readonly robotMode = signal<'position' | 'file'>('position');
   private readonly pdf = signal<ExtractedPdf | null>(null);
 
   private readonly router = inject(Router);

@@ -20,6 +20,15 @@ export const CV_FONTS = [
     stack: "'Space Grotesk Variable', sans-serif",
     kind: 'sans',
   },
+  { id: 'jost', label: 'Jost', stack: "'Jost Variable', sans-serif", kind: 'sans' },
+  {
+    id: 'bricolage',
+    label: 'Bricolage Grotesque',
+    stack: "'Bricolage Grotesque Variable', sans-serif",
+    kind: 'sans',
+  },
+  { id: 'archivo', label: 'Archivo', stack: "'Archivo Variable', sans-serif", kind: 'sans' },
+  { id: 'syne', label: 'Syne', stack: "'Syne Variable', sans-serif", kind: 'sans' },
   { id: 'lora', label: 'Lora', stack: "'Lora Variable', serif", kind: 'serif' },
   {
     id: 'playfair',
@@ -28,6 +37,12 @@ export const CV_FONTS = [
     kind: 'serif',
   },
   { id: 'fraunces', label: 'Fraunces', stack: "'Fraunces Variable', serif", kind: 'serif' },
+  {
+    id: 'cormorant',
+    label: 'Cormorant Garamond',
+    stack: "'Cormorant Garamond Variable', serif",
+    kind: 'serif',
+  },
   {
     id: 'jetbrains-mono',
     label: 'JetBrains Mono',

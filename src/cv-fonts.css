@@ -1,0 +1,25 @@
+/*
+ * Polices proposées pour les CV, dans une feuille à part chargée au premier CV affiché
+ * (voir loadCvFonts) : la page d'accueil n'a pas à les déclarer. Chaque fichier de police
+ * n'est téléchargé que si un modèle ou l'utilisateur l'emploie.
+ */
+@import '@fontsource/poppins/latin-400.css';
+@import '@fontsource/poppins/latin-ext-400.css';
+@import '@fontsource/poppins/latin-500.css';
+@import '@fontsource/poppins/latin-ext-500.css';
+@import '@fontsource/poppins/latin-600.css';
+@import '@fontsource/poppins/latin-ext-600.css';
+@import '@fontsource/poppins/latin-700.css';
+@import '@fontsource/poppins/latin-ext-700.css';
+@import '@fontsource-variable/montserrat/wght.css';
+@import '@fontsource-variable/dm-sans/wght.css';
+@import '@fontsource-variable/manrope/wght.css';
+@import '@fontsource-variable/lora/wght.css';
+@import '@fontsource-variable/playfair-display/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+@import '@fontsource-variable/jost/wght.css';
+@import '@fontsource-variable/cormorant-garamond/wght.css';
+@import '@fontsource-variable/cormorant-garamond/wght-italic.css';
+@import '@fontsource-variable/bricolage-grotesque/wght.css';
+@import '@fontsource-variable/archivo/wght.css';
+@import '@fontsource-variable/syne/wght.css';

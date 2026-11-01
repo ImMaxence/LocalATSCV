@@ -3,6 +3,7 @@ import {
   CvSection,
   CvTemplateId,
   CvVersion,
+  DEFAULT_LAYOUT,
   Entry,
   MasterCv,
   Profile,
@@ -16,6 +17,7 @@ export interface ResolvedCv {
   template: CvTemplateId;
   fonts: MasterCv['fonts'];
   accentColor: string;
+  layout: MasterCv['layout'];
   profile: Profile;
   sections: CvSection[];
 }
@@ -68,6 +70,7 @@ export function resolveCv(cv: MasterCv, version: CvVersion | null): ResolvedCv {
     template: cv.template,
     fonts: cv.fonts,
     accentColor: cv.accentColor,
+    layout: cv.layout ?? DEFAULT_LAYOUT,
     profile: { ...profile, links: profile.links.filter((link) => filled(link.url)) },
     sections,
   };

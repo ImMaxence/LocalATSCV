@@ -1,13 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon } from '../../../../shared/icon/icon';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Moderne : bandeau de couleur, titres en Space Grotesk, compétences en pastilles. */
 @Component({
   selector: 'app-cv-modern',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RichText, Icon],
+  imports: [RichText, Icon, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header class="band">
@@ -40,6 +41,9 @@ import { CvTemplateBase } from '../cv-template-base';
             <h2>{{ labels().sections.summary }}</h2>
             <p class="whitespace-pre-line">{{ summary() }}</p>
           </section>
+        }
+        @if (letter(); as body) {
+          <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
         }
         @for (section of cv().sections; track section.id) {
           <section class="section">
@@ -109,21 +113,22 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
       background: #fff;
       color: #1f2328;
       font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
-      line-height: 1.45;
+      line-height: calc(1.45 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
     .band {
       display: flex;
       align-items: center;
-      gap: 26px;
-      padding: 44px 58px 30px;
+      gap: calc(26px * var(--cv-space, 1)) 26px;
+      padding: calc(44px * var(--cv-space, 1)) 58px calc(30px * var(--cv-space, 1));
       background: var(--cv-accent);
       color: #fff;
     }
@@ -132,26 +137,26 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 34px;
       font-weight: 700;
       letter-spacing: -0.02em;
-      line-height: 1.05;
+      line-height: calc(1.05 * var(--cv-leading, 1));
     }
     .headline {
-      margin-top: 6px;
+      margin-top: calc(6px * var(--cv-space, 1));
       font-size: 15px;
       font-weight: 500;
-      opacity: 0.92;
+      color: rgb(255 255 255 / 0.92);
     }
     .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px 16px;
-      margin-top: 12px;
+      gap: calc(4px * var(--cv-space, 1)) 16px;
+      margin-top: calc(12px * var(--cv-space, 1));
       font-size: 11.5px;
-      opacity: 0.92;
+      color: rgb(255 255 255 / 0.92);
     }
     .contact > li {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .contact-icon {
       width: 12px;
@@ -159,7 +164,7 @@ import { CvTemplateBase } from '../cv-template-base';
       opacity: 0.85;
     }
     .band .sep {
-      opacity: 0.5;
+      color: rgb(255 255 255 / 0.5);
     }
     .photo {
       width: 108px;
@@ -170,16 +175,16 @@ import { CvTemplateBase } from '../cv-template-base';
       object-fit: cover;
     }
     .body {
-      padding: 22px 58px 48px;
+      padding: calc(22px * var(--cv-space, 1)) 58px calc(48px * var(--cv-space, 1));
     }
     .section {
-      margin-top: 18px;
+      margin-top: calc(18px * var(--cv-space, 1));
     }
     h2 {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: calc(10px * var(--cv-space, 1)) 10px;
+      margin-bottom: calc(10px * var(--cv-space, 1));
       color: #111;
       font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 15px;
@@ -203,13 +208,13 @@ import { CvTemplateBase } from '../cv-template-base';
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 12px;
+      margin-top: calc(12px * var(--cv-space, 1));
     }
     .entry-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     h3 {
       color: #111;
@@ -218,7 +223,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .dates {
       flex-shrink: 0;
-      padding: 1px 10px;
+      padding: calc(1px * var(--cv-space, 1)) 10px;
       border-radius: 9999px;
       background: color-mix(in srgb, var(--cv-accent) 11%, white);
       color: var(--cv-accent);
@@ -235,21 +240,21 @@ import { CvTemplateBase } from '../cv-template-base';
       font-weight: 600;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 16px;
       list-style: disc;
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .bullets > li::marker {
       color: var(--cv-accent);
     }
     .skill-row + .skill-row {
-      margin-top: 8px;
+      margin-top: calc(8px * var(--cv-space, 1));
     }
     .skill-label {
-      margin-bottom: 4px;
+      margin-bottom: calc(4px * var(--cv-space, 1));
       color: #666;
       font-size: 10.5px;
       font-weight: 600;
@@ -259,14 +264,17 @@ import { CvTemplateBase } from '../cv-template-base';
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .chips > li {
-      padding: 2px 10px;
+      padding: calc(2px * var(--cv-space, 1)) 10px;
       border-radius: 9999px;
       background: #f2f3f5;
       color: #222;
       font-size: 11.5px;
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

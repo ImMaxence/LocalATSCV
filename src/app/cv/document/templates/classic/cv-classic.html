@@ -30,6 +30,9 @@
     </section>
   }
 
+  @if (letter(); as body) {
+    <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
+  }
   @for (section of cv().sections; track section.id) {
     <section class="cv-section">
       <h2 class="cv-heading">{{ sectionTitle(section) }}</h2>

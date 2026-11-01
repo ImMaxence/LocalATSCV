@@ -4,24 +4,37 @@ Last updated: November 1, 2026. This is a translation: only the French version i
 
 ## In short
 
-LocalATSCV collects no personal data. Your resumes, photo, the job ads you paste and your preferences are stored only in your browser and are never sent to the publisher.
+LocalATSCV collects no personal data. Your resumes, cover letters, photo, job ads and preferences are stored only in your browser and are never sent to the publisher. No account, no advertising, no analytics.
+
+## Data controller
+
+Maxence Bonnici, publisher of the site, reachable at [maxence.bonnici@outlook.fr](mailto:maxence.bonnici@outlook.fr).
 
 ## Data stored on your device
 
-- **Resumes, tailored versions, job ads and photo**: stored in IndexedDB, the database built into your browser.
-- **Preferences** (theme, interface language, print tips): stored in your browser's local storage (localStorage).
+- **Resumes, tailored versions, cover letters, job ads and photo**: stored in IndexedDB, the database built into your browser.
+- **Preferences** (theme, interface language, print tips): stored in your browser's local storage, under keys starting with "localatscv.". Requested by you, they require no consent.
+- **Installed app**: the application files are cached so the app works offline. This cache contains no personal data.
 
 This data only leaves your device if you export it yourself (JSON backup, PDF). You can delete it at any time from the app or by clearing the site data in your browser.
 
-## PDF analysis and import
+## Files you analyze or import
 
-The PDF files you analyze or import are read in your browser. They are neither sent to nor kept by the publisher.
+The files you analyze or import (PDF, Word, LinkedIn archive) are read in your browser. They are neither sent to nor kept by the publisher.
 
 ## What the server sees
 
-The server only delivers the application files. No visitor logs are kept: your IP address is not recorded. The site uses no cookies, no analytics and no advertising. Fonts are hosted on the site itself.
+The server only delivers the application files and keeps no visitor logs. Fonts are hosted on the site itself.
 
 The site's Content Security Policy technically prevents your browser from sending data to any other domain.
+
+## Cloudflare
+
+The site is protected by Cloudflare, Inc., which filters attacks and caches static files. To do so, Cloudflare processes technical request data, including your IP address, as a processor. Transfers to the United States rely on the EU–US Data Privacy Framework.
+
+## Cookies
+
+LocalATSCV sets no analytics or advertising cookies. Only Cloudflare may set, when needed, a technical cookie named "__cf_bm" (30 minutes) that tells visitors apart from bots. Strictly necessary for the site's security, it is exempt from consent.
 
 ## External links
 
@@ -29,4 +42,6 @@ The "Report an issue" link opens GitHub, a third-party service with its own priv
 
 ## Your rights
 
-Since the publisher collects no personal data, there is no data to access, correct or delete on its side. For any question, write to [maxence.bonnici@outlook.fr](mailto:maxence.bonnici@outlook.fr). You may also contact the French data protection authority, the CNIL ([cnil.fr](https://www.cnil.fr)).
+You have the right to access, correct, erase, restrict and object to the processing of your data. Since the publisher holds no personal data about you, there is nothing to access or delete on its side: your data stays under your control, in your browser.
+
+For any question, write to [maxence.bonnici@outlook.fr](mailto:maxence.bonnici@outlook.fr): you will receive an answer within one month. If you believe your rights are not respected, you may lodge a complaint with the French data protection authority, the CNIL ([cnil.fr](https://www.cnil.fr)).

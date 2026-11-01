@@ -1,0 +1,6 @@
+# LocalATSCV : toutes les pages publiques sont indexables, y compris par les robots des IA
+# (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…). Les pages de l'éditeur portent noindex.
+User-agent: *
+Allow: /
+
+Sitemap: https://localatscv.mbonnici.fr/sitemap.xml

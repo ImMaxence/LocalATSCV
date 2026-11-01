@@ -26,6 +26,15 @@
     "terms": "Terms of use",
     "privacy": "Privacy policy"
   },
+  "seo": {
+    "home": "Free ATS-friendly resume builder: 30 graphic templates, matching cover letter, tailoring to each job ad and ATS score. Open source, your data stays in your browser",
+    "editor": "Resume editor with live preview, Master CV and tailored versions, ATS check and real-text PDF export. Everything stays in your browser",
+    "analyze": "Analyze a PDF resume for free: ATS score out of 100, issues to fix and the text as an applicant tracking system reads it. The file never leaves your browser",
+    "changelog": "What's new in LocalATSCV, release by release: new resume templates, features and fixes",
+    "legalNotice": "LocalATSCV legal notice: publisher, hosting and contact",
+    "terms": "Terms of use of LocalATSCV, the free and open source resume builder",
+    "privacy": "LocalATSCV privacy policy: no data collected, your resumes stay in your browser"
+  },
   "footer": {
     "tagline": "The ATS-friendly resume builder that never sees your data",
     "product": "Product",
@@ -140,7 +149,7 @@
         },
         "trackers": {
           "title": "No trackers",
-          "text": "No analytics, no ads, no cookies. Even the fonts are self-hosted"
+          "text": "No analytics, no ads, no tracking cookies. Even the fonts are self-hosted"
         },
         "csp": {
           "title": "Technically locked down",
@@ -218,6 +227,18 @@
         "free": {
           "q": "Is it really free?",
           "a": "Yes. LocalATSCV is an open source project under the MIT license, with no ads or subscription. It costs almost nothing to host, since your browser does all the work"
+        },
+        "templates": {
+          "q": "Do the graphic templates pass ATS?",
+          "a": "Yes. Every template prints real text, in reading order, with standard section headings: shapes, gauges and icons are drawings that robots ignore. Single-column templates remain the safest, and the editor's ATS check tests your layout live"
+        },
+        "import": {
+          "q": "Can I reuse my current resume or my LinkedIn profile?",
+          "a": "Yes. Import a PDF or Word (.docx) resume, your LinkedIn profile PDF (on a computer) or your LinkedIn data archive (from the mobile app): the content is read in your browser and sorted into the editor"
+        },
+        "offline": {
+          "q": "Does LocalATSCV work offline?",
+          "a": "Yes. It's an installable web app: after the first visit, everything works without a connection, including PDF export"
         }
       }
     },
@@ -268,7 +289,7 @@
         "notABackup": "This file is not a LocalATSCV backup",
         "newerVersion": "This backup comes from a newer version of LocalATSCV: update the app first"
       },
-      "importPdf": "Import a resume (PDF)",
+      "importPdf": "Import a resume (PDF or Word)",
       "importPdfHint": "Bring an existing resume into our templates",
       "importLinkedin": "Import from LinkedIn",
       "importLinkedinHint": "From your profile PDF"
@@ -278,12 +299,55 @@
       "name": "Resume name",
       "cvLanguage": "Resume language",
       "accent": "Accent color",
+      "customAccent": "Custom color",
       "saved": "Saved",
       "saving": "Saving…",
       "saveError": "Save failed",
       "edit": "Edit",
       "preview": "Preview",
-      "exportPdf": "Export to PDF"
+      "exportPdf": "Export to PDF",
+      "undo": "Undo (Ctrl+Z)",
+      "redo": "Redo (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Document to edit",
+      "cv": "Resume",
+      "letter": "Cover letter"
+    },
+    "letter": {
+      "title": "Cover letter",
+      "versionOwn": "This version has its own letter",
+      "versionShared": "This version uses the Master's letter: editing it here creates a copy for this version",
+      "useMaster": "Use the Master's letter",
+      "recipient": "Recipient",
+      "recipientPlaceholder": "Example Company\nTalent Acquisition\n10 Market Street, London",
+      "place": "Place",
+      "date": "Date",
+      "dateHint": "Empty: today's date when printing",
+      "subject": "Subject",
+      "subjectPlaceholder": "Application for the position of…",
+      "greeting": "Greeting",
+      "body": "Letter",
+      "bodyPlaceholder": "Three short paragraphs: what draws you to the company, what you bring, the next step you suggest",
+      "bodyHint": "A blank line separates two paragraphs · **bold** for a keyword",
+      "outline": "Insert an outline",
+      "closing": "Closing",
+      "fileName": "Cover letter"
+    },
+    "fit": {
+      "pages": "{{count}} pages",
+      "onePage": "Fits on one page",
+      "hintMany": "Most recruiters expect a one-page resume",
+      "hintOne": "Ideal format for most applications",
+      "stillTooLong": "Still too long, even tightened: shorten a few bullets or hide items in a version",
+      "fit": "Fit on one page",
+      "settings": "Layout settings",
+      "spacing": "Spacing",
+      "scale": "Text size",
+      "settingsHint": "The text stays real text: only its layout changes",
+      "reset": "Template layout",
+      "grayscale": "View in black and white",
+      "grayscaleHint": "Simulates a black and white print: the exported PDF keeps its colors"
     },
     "versions": {
       "label": "Displayed version",
@@ -331,7 +395,7 @@
       "drivingLicense": "Driver's license",
       "drivingLicensePlaceholder": "E.g. Full driving licence, own car",
       "qrToggle": "Show this link as a QR code",
-      "linksHint": "The logo (LinkedIn, GitHub, YouTube…) is added automatically. The QR button shows the link as a QR code in the Signature, Aurora and Pulse templates"
+      "linksHint": "The logo (LinkedIn, GitHub, YouTube…) is added automatically. The QR button shows the link as a QR code in most graphic templates"
     },
     "sections": {
       "kinds": {
@@ -405,7 +469,11 @@
       "languageLevel": "Level",
       "languageLevelPlaceholder": "E.g. C1, fluent",
       "interest": "Interest",
-      "interestPlaceholder": "E.g. Climbing"
+      "interestPlaceholder": "E.g. Climbing",
+      "levelDetected": "Level recognized: templates with a gauge will show it",
+      "levelUnknown": "Level not recognized, no gauge: use A1 to C2 or a suggestion from the list",
+      "levelEmpty": "Enter a level to show a gauge",
+      "levelHint": "Use the European level (A1 to C2) or a word such as “fluent” or “native”: some templates also show it as a gauge, previewed by the dots on the right"
     },
     "actions": {
       "menu": "Actions",
@@ -428,8 +496,14 @@
     "templates": {
       "button": "Template",
       "title": "Choose a template",
-      "subtitle": "Your resume in every layout. The accent color applies to all templates",
+      "subtitle": "Every template with a full example resume, or with yours. The accent color applies to all templates",
       "close": "Close",
+      "filter": "Filter templates",
+      "filters": {
+        "all": "All",
+        "graphic": "Graphic",
+        "sober": "Understated"
+      },
       "ats": "ATS compatibility",
       "levels": {
         "excellent": "excellent",
@@ -477,7 +551,92 @@
         "pulse": {
           "name": "Pulse",
           "description": "Dark diagonal banner, color glows, experience cards and solid skill tags"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometric composition in primary colors around the photo, geometric type and shapes before each heading"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Magazine layout: large serif name, italic standfirst, numbered sections and an offset portrait"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brutalism: thick black outlines, hard shadows, bold color blocks and black labels"
+        },
+        "prism": {
+          "name": "Prism",
+          "description": "Mesh gradient in your accent colors, glass-style contact card and gradient-bordered cards"
+        },
+        "swiss": {
+          "name": "Swiss",
+          "description": "Swiss poster style: huge name, color band, heavy black rules and numbered sections"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Ivory paper, fine double frame, diamond ornaments and Garamond typography"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Dark mode: night background, neon accents and a glowing timeline, ideal for digital applications"
+        },
+        "wave": {
+          "name": "Wave",
+          "description": "Color banner ending in waves, round photo and wavy headings, soft and friendly"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Rounded bento tiles: photo, name and QR code in a grid, one tile per section"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Technical drawing: grid paper, corner marks, dimension line and monospace labels"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80s geometric confetti, bold colors and headings underlined with a zigzag"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Large split banner: text on a color block and a two-tone photo"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typography as the only decoration: huge partly outlined name, very large headings"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "One pastel color per section, pill headings and a multicolor glow"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Navy banner, gold rule and serif name, for leadership roles"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japanese minimalism: washi paper, an ensō circle in your accent color and a brush stroke"
+        },
+        "ribbon": {
+          "name": "Ribbon",
+          "description": "Section headings on swallowtail ribbons, centered header"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Hexagonal photo, honeycomb in the corner and hexagons before headings"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Layered paper-cut header, sections as paper sheets"
+        },
+        "thread": {
+          "name": "Thread",
+          "description": "A continuous thread links the header and every section, with a dot per job"
         }
+      },
+      "preview": {
+        "label": "Thumbnail content",
+        "sample": "Full example",
+        "mine": "My resume"
       }
     },
     "print": {
@@ -591,6 +750,13 @@
         "pass": "Linear reading order, no columns getting mixed up",
         "warn": "Column layout detected: the text may be read out of order. Check “What the bot reads” below"
       },
+      "order": {
+        "title": "File reading order",
+        "pass": "The text is written in the file in reading order",
+        "warnHeader": "Your name and header are written in the file after the rest of the resume: an ATS that reads the file in order may not find your name",
+        "warn": "{{percent}}% of the text is written in the file out of reading order: some ATS will read these passages in the wrong order",
+        "fail": "{{percent}}% of the text is written in the file out of order, typical of resumes made of free text boxes (Canva, PowerPoint…): many ATS will read your resume jumbled. Compare the two readings below"
+      },
       "unreadable": {
         "title": "Icons and skill gauges",
         "pass": "No icons or unreadable characters",
@@ -638,7 +804,10 @@
     "robot": {
       "title": "What the bot reads",
       "text": "The text rebuilt line by line, the way most ATS software does it. If it is jumbled or incomplete here, it is for the recruiter too",
-      "empty": "No text could be extracted"
+      "empty": "No text could be extracted",
+      "position": "By position",
+      "file": "File order",
+      "fileText": "The text in the order it is written in the file: this is how ATS that don't rebuild the layout read it. It should follow your resume's reading order"
     },
     "cta": {
       "title": "Start from a clean slate",
@@ -661,10 +830,10 @@
   "import": {
     "title": "Import a resume",
     "linkedinTitle": "Import from LinkedIn",
-    "text": "Choose a PDF resume: its content is extracted in your browser and sorted into the editor sections. You can then pick a template",
-    "choose": "Choose a PDF",
+    "text": "Choose a PDF or Word (.docx) resume: its content is extracted in your browser and sorted into the editor sections. You can then pick a template",
+    "choose": "Choose a file",
     "chooseFile": "Choose a file",
-    "hint": "PDF only, 15 MB max",
+    "hint": "PDF or Word (.docx), 15 MB maximum",
     "reading": "Importing…",
     "privacy": "The file is read in your browser: it is never sent anywhere",
     "close": "Close",
@@ -672,9 +841,9 @@
     "errors": {
       "tooLarge": "This file is larger than 15 MB",
       "encrypted": "This PDF is password-protected",
-      "unreadable": "This PDF could not be read: it may be damaged",
+      "unreadable": "Unable to read this file: it may be damaged",
       "empty": "No usable text: this PDF is probably an image or a scan",
-      "unsupported": "Choose a PDF file or a LinkedIn ZIP archive",
+      "unsupported": "Choose a PDF, Word (.docx) file or a LinkedIn ZIP archive",
       "archiveEmpty": "This archive contains no usable LinkedIn profile data"
     },
     "hintArchive": "PDF (computer) or ZIP archive (mobile app)",

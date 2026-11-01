@@ -10,6 +10,8 @@ export interface CvLabels {
   contact: string;
   birthDate: string;
   nationality: string;
+  /** Niveaux proposés à la saisie, tous reconnus par `languageLevel` (jauges des modèles). */
+  levelSuggestions: string[];
 }
 
 export const CV_LABELS: Record<CvLanguage, CvLabels> = {
@@ -29,6 +31,15 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
     contact: 'Contact',
     birthDate: 'Date de naissance',
     nationality: 'Nationalité',
+    levelSuggestions: [
+      'Langue maternelle',
+      'C2, bilingue',
+      'C1, courant',
+      'B2, professionnel',
+      'B1, intermédiaire',
+      'A2, élémentaire',
+      'A1, débutant',
+    ],
   },
   en: {
     sections: {
@@ -46,6 +57,15 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
     contact: 'Contact',
     birthDate: 'Date of birth',
     nationality: 'Nationality',
+    levelSuggestions: [
+      'Native',
+      'C2, bilingual',
+      'C1, fluent',
+      'B2, professional',
+      'B1, intermediate',
+      'A2, elementary',
+      'A1, beginner',
+    ],
   },
   it: {
     sections: {
@@ -63,6 +83,15 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
     contact: 'Contatti',
     birthDate: 'Data di nascita',
     nationality: 'Nazionalità',
+    levelSuggestions: [
+      'Madrelingua',
+      'C2, bilingue',
+      'C1, fluente',
+      'B2, professionale',
+      'B1, intermedio',
+      'A2, elementare',
+      'A1, principiante',
+    ],
   },
   es: {
     sections: {
@@ -80,6 +109,15 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
     contact: 'Contacto',
     birthDate: 'Fecha de nacimiento',
     nationality: 'Nacionalidad',
+    levelSuggestions: [
+      'Lengua materna',
+      'C2, bilingüe',
+      'C1, fluido',
+      'B2, profesional',
+      'B1, intermedio',
+      'A2, básico',
+      'A1, principiante',
+    ],
   },
   de: {
     sections: {
@@ -97,6 +135,15 @@ export const CV_LABELS: Record<CvLanguage, CvLabels> = {
     contact: 'Kontakt',
     birthDate: 'Geburtsdatum',
     nationality: 'Staatsangehörigkeit',
+    levelSuggestions: [
+      'Muttersprache',
+      'C2, zweisprachig',
+      'C1, verhandlungssicher',
+      'B2, sehr gute Kenntnisse',
+      'B1, gute Kenntnisse',
+      'A2, Grundkenntnisse',
+      'A1, Anfänger',
+    ],
   },
 };
 

@@ -16,9 +16,10 @@ export interface ImportDialogResult {
 }
 
 const MAX_SIZE = 15 * 1024 * 1024;
+const DOCX_TYPE = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 const MAX_ARCHIVE_SIZE = 60 * 1024 * 1024;
 
-/** Import d'un CV PDF existant (ou du PDF de profil LinkedIn) dans l'éditeur. */
+/** Import d'un CV existant (PDF ou Word) ou d'un profil LinkedIn (PDF ou archive ZIP) dans l'éditeur. */
 @Component({
   selector: 'app-import-dialog',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -84,12 +85,7 @@ const MAX_ARCHIVE_SIZE = 60 * 1024 * 1024;
             {{ data.mode === 'linkedin' ? t('hintArchive') : t('hint') }}
           </span>
         }
-        <input
-          type="file"
-          accept="application/pdf,.pdf,application/zip,.zip"
-          class="sr-only"
-          (change)="onFile($event)"
-        />
+        <input type="file" [accept]="accept" class="sr-only" (change)="onFile($event)" />
       </label>
 
       @if (error(); as code) {
@@ -111,6 +107,7 @@ export class ImportDialog {
   protected readonly ref = inject<DialogRef<ImportDialogResult>>(DialogRef);
   private readonly repository = inject(CvRepository);
 
+  protected readonly accept = `application/pdf,.pdf,application/zip,.zip,${DOCX_TYPE},.docx`;
   protected readonly reading = signal(false);
   protected readonly error = signal<string | null>(null);
 
@@ -127,9 +124,10 @@ export class ImportDialog {
     if (!file) return;
     this.error.set(null);
     const name = file.name.toLowerCase();
-    const isZip = name.endsWith('.zip') || file.type.includes('zip');
+    const isDocx = name.endsWith('.docx') || file.type === DOCX_TYPE;
+    const isZip = !isDocx && (name.endsWith('.zip') || file.type.includes('zip'));
     const isPdf = name.endsWith('.pdf') || file.type === 'application/pdf';
-    if (!isZip && !isPdf) {
+    if (!isZip && !isPdf && !isDocx) {
       this.error.set('unsupported');
       return;
     }
@@ -139,10 +137,12 @@ export class ImportDialog {
     }
     this.reading.set(true);
     try {
-      const fallbackName = file.name.replace(/\.(pdf|zip)$/i, '');
+      const fallbackName = file.name.replace(/\.(pdf|zip|docx)$/i, '');
       const { cv, items } = isZip
         ? await this.importArchive(file, fallbackName)
-        : importCv(await extractPdfText(await file.arrayBuffer()), fallbackName);
+        : isDocx
+          ? await this.importWord(file, fallbackName)
+          : importCv(await extractPdfText(await file.arrayBuffer()), fallbackName);
       if (!items && !cv.profile.firstName) {
         this.error.set(isZip ? 'archiveEmpty' : 'empty');
         return;
@@ -154,6 +154,12 @@ export class ImportDialog {
     } finally {
       this.reading.set(false);
     }
+  }
+
+  /** Lecture d'un document Word (.docx), chargée seulement si besoin. */
+  private async importWord(file: File, fallbackName: string) {
+    const { importDocx } = await import('../../../cv/import/docx');
+    return importDocx(new Uint8Array(await file.arrayBuffer()), fallbackName);
   }
 
   /** Lecture de l'archive LinkedIn, chargée seulement si besoin. */

@@ -327,7 +327,8 @@ function headingKind(text: string, size = 0, bodySize = 0): HeadingKind | null {
   return null;
 }
 
-interface SourceLine {
+/** Ligne de texte à interpréter, avec sa taille de police (un titre est plus grand). */
+export interface SourceLine {
   text: string;
   size: number;
 }
@@ -470,7 +471,11 @@ const splitList = (lines: string[]) =>
  * en Master CV éditable. L'import est indicatif : l'utilisateur relit chaque section.
  */
 export function importCv(pdf: ExtractedPdf, fallbackName: string): ImportResult {
-  const lines = readingLines(pdf);
+  return importLines(readingLines(pdf), fallbackName);
+}
+
+/** Range des lignes de texte (PDF ou document Word) dans un nouveau CV. */
+export function importLines(lines: SourceLine[], fallbackName: string): ImportResult {
   const fullText = lines.map((line) => line.text).join('\n');
   const linkedin =
     /linkedin\.com\/in\//i.test(fullText) &&

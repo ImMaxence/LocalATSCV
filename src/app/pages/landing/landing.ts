@@ -5,6 +5,7 @@ import { CONTACT_EMAIL } from '../../core/app-info';
 import { LanguageService } from '../../core/i18n/language.service';
 import { Icon, IconName } from '../../shared/icon/icon';
 import { LANDING_DEMO } from './landing-demo';
+import { FAQ_ITEMS } from './faq';
 
 interface IconItem {
   key: string;
@@ -68,5 +69,5 @@ export class Landing {
     { key: 'offline', icon: 'device' },
   ];
 
-  protected readonly faq = ['ats', 'storage', 'clear', 'score', 'photo', 'free'];
+  protected readonly faq = FAQ_ITEMS;
 }

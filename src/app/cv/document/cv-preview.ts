@@ -11,8 +11,11 @@ import {
   viewChild,
 } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { CoverLetter } from '../model/cv.model';
 import { ResolvedCv } from '../model/resolve-cv';
 import { CvDocument, PAGE_HEIGHT, PAGE_WIDTH } from './cv-document';
+
+const pagesFor = (height: number) => Math.max(1, Math.ceil((height - 2) / PAGE_HEIGHT));
 
 /**
  * Affiche le CV réduit à la largeur disponible. En mode aperçu, des repères
@@ -31,7 +34,7 @@ import { CvDocument, PAGE_HEIGHT, PAGE_WIDTH } from './cv-document';
         [style.width.px]="pageWidth"
         [style.transform]="'scale(' + scale() + ')'"
       >
-        <app-cv-document [cv]="cv()" [photoUrl]="photoUrl()" />
+        <app-cv-document [cv]="cv()" [photoUrl]="photoUrl()" [letter]="letter()" />
         @if (!thumbnail()) {
           @for (page of pageBreaks(); track page) {
             <div
@@ -56,6 +59,8 @@ export class CvPreview {
   readonly cv = input.required<ResolvedCv>();
   readonly photoUrl = input<string | null>(null);
   readonly thumbnail = input(false);
+  /** Lettre de motivation à afficher avec le design du CV (voir CvDocument). */
+  readonly letter = input<CoverLetter | null>(null);
 
   protected readonly pageWidth = PAGE_WIDTH;
   protected readonly pageHeight = PAGE_HEIGHT;
@@ -69,9 +74,16 @@ export class CvPreview {
   protected readonly frameHeight = computed(
     () => (this.thumbnail() ? PAGE_HEIGHT : this.paperHeight()) * this.scale(),
   );
+  /** Nombre de pages A4 occupées (une marge de 2 px absorbe les arrondis). */
+  readonly pageCount = computed(() => pagesFor(this.paperHeight()));
   protected readonly pageBreaks = computed(() =>
-    Array.from({ length: Math.ceil(this.paperHeight() / PAGE_HEIGHT) - 1 }, (_, i) => i + 1),
+    Array.from({ length: this.pageCount() - 1 }, (_, i) => i + 1),
   );
+
+  /** Nombre de pages mesuré tout de suite, sans attendre l'observateur de redimensionnement. */
+  measurePages(): number {
+    return pagesFor(this.paper().nativeElement.offsetHeight);
+  }
 
   /** Élément racine du CV rendu (sans les repères de pages), pour le contrôle ATS en direct. */
   documentElement(): HTMLElement | null {

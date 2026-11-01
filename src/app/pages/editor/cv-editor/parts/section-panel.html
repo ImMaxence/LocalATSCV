@@ -116,9 +116,32 @@
                   class="field-input min-w-0 flex-1"
                   [attr.aria-label]="t('items.languageLevel')"
                   [placeholder]="t('items.languageLevelPlaceholder')"
+                  [attr.list]="levelListId()"
                   [value]="item.level"
                   (input)="updateItem(item.id, 'level', $event)"
                 />
+                @let level = levelOf(item);
+                <span
+                  class="flex w-12 shrink-0 items-center justify-center gap-0.5"
+                  [title]="
+                    level
+                      ? t('items.levelDetected', { level: level })
+                      : item.level.trim()
+                        ? t('items.levelUnknown')
+                        : t('items.levelEmpty')
+                  "
+                >
+                  @if (level || !item.level.trim()) {
+                    @for (step of levelSteps; track step) {
+                      <span
+                        class="size-1.5 rounded-full"
+                        [class]="level && step <= level ? 'bg-accent' : 'bg-line'"
+                      ></span>
+                    }
+                  } @else {
+                    <app-icon class="size-4 text-amber-600 dark:text-amber-400" name="alert" />
+                  }
+                </span>
                 <ng-container
                   [ngTemplateOutlet]="removeButton"
                   [ngTemplateOutletContext]="{ id: item.id }"
@@ -159,6 +182,16 @@
           }
         }
       </ul>
+      @if (section().kind === 'languages') {
+        <datalist [id]="levelListId()">
+          @for (suggestion of levelSuggestions(); track suggestion) {
+            <option [value]="suggestion"></option>
+          }
+        </datalist>
+        <p class="mt-2 flex items-start gap-1.5 px-1 text-xs text-muted">
+          <app-icon class="mt-px size-3.5 shrink-0" name="info" />{{ t('items.levelHint') }}
+        </p>
+      }
     }
 
     @if (!section().items.length) {

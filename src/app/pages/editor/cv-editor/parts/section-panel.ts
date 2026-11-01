@@ -12,6 +12,7 @@ import {
   isEntrySection,
 } from '../../../../cv/model/cv.model';
 import { CV_LABELS } from '../../../../cv/model/cv-labels';
+import { languageLevel } from '../../../../cv/model/language-level';
 import { DialogService } from '../../../../shared/dialog/dialog.service';
 import { Icon } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
@@ -48,6 +49,18 @@ export class SectionPanel {
   protected readonly defaultTitle = computed(
     () => CV_LABELS[this.store.cv()?.language ?? 'fr'].sections[this.section().kind],
   );
+
+  /** Niveaux proposés à la saisie, dans la langue du CV. */
+  protected readonly levelSuggestions = computed(
+    () => CV_LABELS[this.store.cv()?.language ?? 'fr'].levelSuggestions,
+  );
+  protected readonly levelListId = computed(() => `levels-${this.section().id}`);
+  protected readonly levelSteps = [1, 2, 3, 4, 5];
+
+  /** Niveau tel que le comprennent les jauges des modèles (null : pas de jauge). */
+  protected levelOf(item: SpokenLanguage): number | null {
+    return languageLevel(item.level);
+  }
 
   protected entryKind(): EntryKind | null {
     const section = this.section();

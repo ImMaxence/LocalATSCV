@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RichText } from '../../parts/rich-text';
+import { CvLetter } from '../../parts/cv-letter';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Tech : liseré latéral, titres et dates en chasse fixe, compétences façon `code`. */
 @Component({
   selector: 'app-cv-tech',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RichText],
+  imports: [RichText, CvLetter],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -38,6 +39,9 @@ import { CvTemplateBase } from '../cv-template-base';
           <h2>{{ labels().sections.summary }}</h2>
           <p class="whitespace-pre-line">{{ summary() }}</p>
         </section>
+      }
+      @if (letter(); as body) {
+        <app-cv-letter class="letter" [letter]="body" [cv]="cv()" />
       }
       @for (section of cv().sections; track section.id) {
         <section class="section">
@@ -101,23 +105,24 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .cv {
       box-sizing: border-box;
-      width: 794px;
-      min-height: 1123px;
-      padding: 50px 56px 50px 60px;
+      width: calc(794px / var(--cv-zoom, 1));
+      zoom: var(--cv-zoom, 1);
+      min-height: calc(1123px / var(--cv-zoom, 1));
+      padding: calc(50px * var(--cv-space, 1)) 56px calc(50px * var(--cv-space, 1)) 60px;
       border-left: 7px solid var(--cv-accent);
       background: #fff;
       color: #1f2328;
       font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
-      line-height: 1.5;
+      line-height: calc(1.5 * var(--cv-leading, 1));
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
     header {
       display: flex;
       align-items: flex-start;
-      gap: 24px;
-      padding-bottom: 18px;
+      gap: calc(24px * var(--cv-space, 1)) 24px;
+      padding-bottom: calc(18px * var(--cv-space, 1));
       border-bottom: 1px dashed #cfd4da;
     }
     .name {
@@ -126,13 +131,13 @@ import { CvTemplateBase } from '../cv-template-base';
       font-size: 31px;
       font-weight: 700;
       letter-spacing: -0.02em;
-      line-height: 1.1;
+      line-height: calc(1.1 * var(--cv-leading, 1));
     }
     .headline {
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin-top: 6px;
+      gap: calc(8px * var(--cv-space, 1)) 8px;
+      margin-top: calc(6px * var(--cv-space, 1));
       color: var(--cv-accent);
       font-family: var(--font-mono);
       font-size: 13px;
@@ -145,7 +150,7 @@ import { CvTemplateBase } from '../cv-template-base';
       background: var(--cv-accent);
     }
     .contact {
-      margin-top: 10px;
+      margin-top: calc(10px * var(--cv-space, 1));
       color: #57606a;
       font-family: var(--font-mono);
       font-size: 10.5px;
@@ -161,10 +166,10 @@ import { CvTemplateBase } from '../cv-template-base';
       object-fit: cover;
     }
     .section {
-      margin-top: 20px;
+      margin-top: calc(20px * var(--cv-space, 1));
     }
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: calc(10px * var(--cv-space, 1));
       color: #0d1117;
       font-family: var(--font-mono);
       font-size: 12.5px;
@@ -184,13 +189,13 @@ import { CvTemplateBase } from '../cv-template-base';
       break-inside: avoid;
     }
     .entry + .entry {
-      margin-top: 12px;
+      margin-top: calc(12px * var(--cv-space, 1));
     }
     .entry-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
+      gap: calc(16px * var(--cv-space, 1)) 16px;
     }
     h3 {
       color: #0d1117;
@@ -211,21 +216,21 @@ import { CvTemplateBase } from '../cv-template-base';
       flex-shrink: 0;
     }
     .bullets {
-      margin-top: 4px;
+      margin-top: calc(4px * var(--cv-space, 1));
       padding-left: 16px;
       list-style: square;
     }
     .bullets > li + li {
-      margin-top: 2px;
+      margin-top: calc(2px * var(--cv-space, 1));
     }
     .bullets > li::marker {
       color: var(--cv-accent);
     }
     .skill-row + .skill-row {
-      margin-top: 7px;
+      margin-top: calc(7px * var(--cv-space, 1));
     }
     .skill-label {
-      margin-bottom: 4px;
+      margin-bottom: calc(4px * var(--cv-space, 1));
       color: #57606a;
       font-family: var(--font-mono);
       font-size: 10.5px;
@@ -233,15 +238,18 @@ import { CvTemplateBase } from '../cv-template-base';
     .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: calc(5px * var(--cv-space, 1)) 5px;
     }
     .tags > li {
-      padding: 1px 7px;
+      padding: calc(1px * var(--cv-space, 1)) 7px;
       border: 1px solid #d8dee4;
       border-radius: 5px;
       background: #f6f8fa;
       font-family: var(--font-mono);
       font-size: 11px;
+    }
+    .letter {
+      margin-top: calc(22px * var(--cv-space, 1));
     }
   `,
 })

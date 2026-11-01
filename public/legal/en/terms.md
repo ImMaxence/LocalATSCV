@@ -4,7 +4,7 @@ Last updated: November 1, 2026. This is a translation: only the French version i
 
 ## Purpose
 
-These terms govern the use of LocalATSCV, a free tool for creating, analyzing and tailoring resumes that runs entirely in your browser.
+These terms govern the use of LocalATSCV, a free tool for creating, analyzing and tailoring resumes and cover letters that runs entirely in your browser.
 
 ## Access to the service
 
@@ -12,7 +12,7 @@ The service is free and requires no sign-up. It is provided as is: the publisher
 
 ## Your data and backups
 
-Your resumes are stored only in your browser. You alone are responsible for keeping them: clearing browser data, switching devices or using private browsing may erase them. Export a JSON backup regularly.
+Your resumes and letters are stored only in your browser. You alone are responsible for keeping them: clearing browser data, switching devices or using private browsing may erase them. Export a JSON backup regularly.
 
 ## Content
 
@@ -28,7 +28,7 @@ The software is provided without warranty of any kind. To the extent permitted b
 
 ## License
 
-The source code is distributed under the MIT license: you may read, modify and redistribute it under its terms, available on [GitHub](https://github.com/ImMaxence/LocalATSCV/blob/main/LICENSE).
+The source code is distributed under the MIT license: you may read, modify and redistribute it under its terms, available on [GitHub](https://github.com/ImMaxence/LocalATSCV/blob/main/LICENSE). The resumes and letters you create belong to you.
 
 ## Governing law
 

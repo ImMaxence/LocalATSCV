@@ -136,15 +136,23 @@ export class AtsCheck {
 
   constructor() {
     let timer: ReturnType<typeof setTimeout> | undefined;
+    let destroyed = false;
     effect(() => {
       this.cv();
       clearTimeout(timer);
+      // Mesure une fois les polices du modèle chargées : sinon la mise en page est provisoire.
       timer = setTimeout(
-        () => afterNextRender(() => this.measure(), { injector: this.injector }),
+        () =>
+          void document.fonts.ready.then(
+            () => !destroyed && afterNextRender(() => this.measure(), { injector: this.injector }),
+          ),
         DELAY_MS,
       );
     });
-    inject(DestroyRef).onDestroy(() => clearTimeout(timer));
+    inject(DestroyRef).onDestroy(() => {
+      destroyed = true;
+      clearTimeout(timer);
+    });
   }
 
   private measure(): void {

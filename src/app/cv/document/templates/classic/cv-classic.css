@@ -5,20 +5,21 @@
 /* Page A4 (794 × 1123 px à 96 ppp), marges d'environ 15 mm. */
 .cv {
   box-sizing: border-box;
-  width: 794px;
-  min-height: 1123px;
-  padding: 54px 58px;
+  width: calc(794px / var(--cv-zoom, 1));
+  zoom: var(--cv-zoom, 1);
+  min-height: calc(1123px / var(--cv-zoom, 1));
+  padding: calc(54px * var(--cv-space, 1)) 58px;
   background: #fff;
   color: #1f2328;
   font-family: var(--cv-body-font, var(--font-sans));
   font-size: 12.5px;
-  line-height: 1.45;
+  line-height: calc(1.45 * var(--cv-leading, 1));
 }
 
 .cv-header {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: calc(24px * var(--cv-space, 1)) 24px;
 }
 
 .cv-name {
@@ -27,18 +28,18 @@
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 1.15;
+  line-height: calc(1.15 * var(--cv-leading, 1));
 }
 
 .cv-headline {
-  margin-top: 3px;
+  margin-top: calc(3px * var(--cv-space, 1));
   color: var(--cv-accent);
   font-size: 14.5px;
   font-weight: 600;
 }
 
 .cv-contact {
-  margin-top: 8px;
+  margin-top: calc(8px * var(--cv-space, 1));
   color: #444;
   font-size: 12px;
 }
@@ -56,13 +57,13 @@
 }
 
 .cv-section {
-  margin-top: 18px;
+  margin-top: calc(18px * var(--cv-space, 1));
 }
 
 .cv-heading {
   font-family: var(--cv-heading-font, inherit);
-  margin-bottom: 8px;
-  padding-bottom: 3px;
+  margin-bottom: calc(8px * var(--cv-space, 1));
+  padding-bottom: calc(3px * var(--cv-space, 1));
   border-bottom: 1.5px solid var(--cv-accent);
   color: var(--cv-accent);
   font-size: 11.5px;
@@ -77,7 +78,7 @@
 }
 
 .cv-plain-list > li + li {
-  margin-top: 2px;
+  margin-top: calc(2px * var(--cv-space, 1));
 }
 
 .cv-entry {
@@ -85,14 +86,14 @@
 }
 
 .cv-entry + .cv-entry {
-  margin-top: 11px;
+  margin-top: calc(11px * var(--cv-space, 1));
 }
 
 .cv-entry-head {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 16px;
+  gap: calc(16px * var(--cv-space, 1)) 16px;
 }
 
 .cv-entry-title {
@@ -119,15 +120,19 @@
 }
 
 .cv-bullets {
-  margin-top: 3px;
+  margin-top: calc(3px * var(--cv-space, 1));
   padding-left: 17px;
   list-style: disc;
 }
 
 .cv-bullets > li + li {
-  margin-top: 2px;
+  margin-top: calc(2px * var(--cv-space, 1));
 }
 
 .cv-bullets > li::marker {
   color: #888;
+}
+
+.letter {
+  margin-top: calc(22px * var(--cv-space, 1));
 }

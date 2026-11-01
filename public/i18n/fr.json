@@ -15,9 +15,7 @@
     "dark": "Sombre"
   },
   "lang": {
-    "label": "Langue de l'interface",
-    "fr": "Français",
-    "en": "English"
+    "label": "Langue de l'interface"
   },
   "pages": {
     "home": "CV optimisé ATS, 100 % local",
@@ -29,7 +27,7 @@
     "privacy": "Politique de confidentialité"
   },
   "footer": {
-    "tagline": "Le générateur de CV optimisé ATS qui ne voit jamais vos données.",
+    "tagline": "Le générateur de CV optimisé ATS qui ne voit jamais vos données",
     "product": "Produit",
     "legal": "Légal",
     "project": "Projet",
@@ -41,22 +39,22 @@
   },
   "update": {
     "title": "Nouvelle version disponible",
-    "text": "Rechargez la page pour en profiter.",
+    "text": "Rechargez la page pour en profiter",
     "changelog": "Voir les nouveautés",
     "reload": "Recharger",
     "later": "Plus tard"
   },
   "comingSoon": {
     "title": "Bientôt disponible",
-    "text": "Cette partie de LocalATSCV est en cours de construction. Elle arrive dans une prochaine version.",
+    "text": "Cette partie de LocalATSCV est en cours de construction. Elle arrive dans une prochaine version",
     "back": "Retour à l'accueil"
   },
   "landing": {
     "hero": {
       "badge": "100 % local · Gratuit · Open source",
-      "titleLine1": "Un CV qui passe les robots.",
-      "titleLine2": "Des données qui restent chez vous.",
-      "subtitle": "LocalATSCV vous aide à créer un CV optimisé pour les logiciels de recrutement (ATS) et à l'adapter à chaque offre en quelques clics. Tout se passe dans votre navigateur : aucun compte, aucune donnée envoyée.",
+      "titleLine1": "Un CV qui passe les robots",
+      "titleLine2": "Des données qui restent chez vous",
+      "subtitle": "LocalATSCV vous aide à créer un CV optimisé pour les logiciels de recrutement (ATS) et à l'adapter à chaque offre en quelques clics. Tout se passe dans votre navigateur : aucun compte, aucune donnée envoyée",
       "ctaPrimary": "Créer mon CV",
       "ctaSecondary": "Analyser un CV existant",
       "points": {
@@ -68,52 +66,52 @@
     "ats": {
       "eyebrow": "Le constat",
       "title": "Votre CV est d'abord lu par une machine",
-      "text": "La plupart des grandes entreprises et des cabinets de recrutement trient les candidatures avec un ATS (Applicant Tracking System). Ce logiciel extrait le texte de votre CV, le range dans une base de données et permet aux recruteurs de chercher les profils par mots-clés.",
+      "text": "La plupart des grandes entreprises et des cabinets de recrutement trient les candidatures avec un ATS (Applicant Tracking System). Ce logiciel extrait le texte de votre CV, le range dans une base de données et permet aux recruteurs de chercher les profils par mots-clés",
       "pitfalls": {
         "layout": {
           "title": "Mise en page complexe",
-          "text": "Colonnes, tableaux et zones de texte mélangent l'ordre de lecture : vos informations arrivent dans le désordre."
+          "text": "Colonnes, tableaux et zones de texte mélangent l'ordre de lecture : vos informations arrivent dans le désordre"
         },
         "image": {
           "title": "Texte illisible",
-          "text": "Icônes, jauges de niveau et certains exports d'outils de design produisent des caractères incompréhensibles, voire aucun texte du tout."
+          "text": "Icônes, jauges de niveau et certains exports d'outils de design produisent des caractères incompréhensibles, voire aucun texte du tout"
         },
         "keywords": {
           "title": "Mots-clés absents",
-          "text": "Si le vocabulaire de l'annonce n'apparaît pas dans votre CV, votre profil ne remonte pas dans les recherches des recruteurs."
+          "text": "Si le vocabulaire de l'annonce n'apparaît pas dans votre CV, votre profil ne remonte pas dans les recherches des recruteurs"
         }
       },
       "seen": "Ce que vous voyez",
       "read": "Ce que lit le robot",
-      "fix": "LocalATSCV produit l'inverse : une seule colonne, du vrai texte et des titres de sections standards, que les robots lisent dans le bon ordre."
+      "fix": "LocalATSCV produit l'inverse : une seule colonne, du vrai texte et des titres de sections standards, que les robots lisent dans le bon ordre"
     },
     "how": {
       "eyebrow": "Comment ça marche",
       "title": "Saisissez une fois, déclinez à l'infini",
-      "text": "Quatre étapes, et votre Master CV devient une candidature sur mesure pour chaque offre.",
+      "text": "Quatre étapes, et votre Master CV devient une candidature sur mesure pour chaque offre",
       "steps": {
         "profile": {
           "title": "Remplissez votre Master CV",
-          "text": "Saisissez toutes vos expériences une bonne fois pour toutes, ou importez le PDF de votre profil LinkedIn pour gagner du temps."
+          "text": "Saisissez toutes vos expériences une bonne fois pour toutes, ou importez le PDF de votre profil LinkedIn pour gagner du temps"
         },
         "offer": {
           "title": "Collez l'offre d'emploi",
-          "text": "LocalATSCV en extrait les mots-clés et calcule un score de correspondance sur 100, mis à jour pendant que vous écrivez."
+          "text": "LocalATSCV en extrait les mots-clés et calcule un score de correspondance sur 100, mis à jour pendant que vous écrivez"
         },
         "compose": {
           "title": "Composez une version ciblée",
-          "text": "Cochez les expériences et les puces pertinentes, réorganisez-les par glisser-déposer. Rien n'est supprimé de votre Master."
+          "text": "Cochez les expériences et les puces pertinentes, réorganisez-les par glisser-déposer. Rien n'est supprimé de votre Master"
         },
         "export": {
           "title": "Exportez en PDF",
-          "text": "Un PDF textuel et structuré sur une colonne, aussi lisible pour les robots que pour les recruteurs."
+          "text": "Un PDF textuel et structuré sur une colonne, aussi lisible pour les robots que pour les recruteurs"
         }
       }
     },
     "privacy": {
       "eyebrow": "Confidentialité",
-      "title": "Zéro donnée sur nos serveurs. Littéralement.",
-      "text": "Il n'y a aucune base de données à pirater : notre serveur se contente de vous envoyer l'application. Ensuite, tout se passe dans votre navigateur, même sans connexion.",
+      "title": "Zéro donnée sur nos serveurs. Littéralement",
+      "text": "Il n'y a aucune base de données à pirater : notre serveur se contente de vous envoyer l'application. Ensuite, tout se passe dans votre navigateur, même sans connexion",
       "browser": {
         "title": "Votre navigateur",
         "tag": "Votre appareil",
@@ -123,7 +121,7 @@
           "versions": "Versions ciblées",
           "settings": "Préférences"
         },
-        "note": "Stocké dans IndexedDB, uniquement sur cet appareil."
+        "note": "Stocké dans IndexedDB, uniquement sur cet appareil"
       },
       "flow": {
         "app": "L'application, au premier chargement",
@@ -133,7 +131,7 @@
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Serveur",
-        "text": "Distribue les fichiers de l'application (HTML, CSS, JavaScript), rien de plus.",
+        "text": "Distribue les fichiers de l'application (HTML, CSS, JavaScript), rien de plus",
         "items": {
           "noDb": "Aucune base de données",
           "noAccount": "Aucun compte utilisateur",
@@ -143,19 +141,19 @@
       "points": {
         "account": {
           "title": "Aucun compte",
-          "text": "Pas d'inscription, pas d'e-mail, pas de mot de passe. Vous ouvrez la page et vous commencez."
+          "text": "Pas d'inscription, pas d'e-mail, pas de mot de passe. Vous ouvrez la page et vous commencez"
         },
         "trackers": {
           "title": "Aucun traceur",
-          "text": "Pas de statistiques, pas de publicité, pas de cookies. Même les polices sont hébergées sur place."
+          "text": "Pas de statistiques, pas de publicité, pas de cookies. Même les polices sont hébergées sur place"
         },
         "csp": {
           "title": "Verrouillé techniquement",
-          "text": "La politique de sécurité du site (CSP) interdit au navigateur de contacter un autre domaine. Le code est open source : vérifiez par vous-même."
+          "text": "La politique de sécurité du site (CSP) interdit au navigateur de contacter un autre domaine. Le code est open source : vérifiez par vous-même"
         },
         "backup": {
           "title": "Vos sauvegardes, vos fichiers",
-          "text": "Exportez toutes vos données dans un fichier JSON et réimportez-les sur n'importe quel appareil."
+          "text": "Exportez toutes vos données dans un fichier JSON et réimportez-les sur n'importe quel appareil"
         }
       }
     },
@@ -165,35 +163,35 @@
       "items": {
         "master": {
           "title": "Master CV et versions ciblées",
-          "text": "Un CV complet, autant de déclinaisons que de candidatures. Cochez, décochez : rien n'est jamais perdu."
+          "text": "Un CV complet, autant de déclinaisons que de candidatures. Cochez, décochez : rien n'est jamais perdu"
         },
         "score": {
           "title": "Score de correspondance",
-          "text": "Collez l'annonce : mots-clés trouvés, mots-clés manquants et score sur 100 en temps réel."
+          "text": "Collez l'annonce : mots-clés trouvés, mots-clés manquants et score sur 100 en temps réel"
         },
         "weak": {
           "title": "Détecteur de phrases faibles",
-          "text": "« En charge de », « participé à »… sont repérés automatiquement, avec une banque de verbes d'action pour les remplacer."
+          "text": "« En charge de », « participé à »… sont repérés automatiquement, avec une banque de verbes d'action pour les remplacer"
         },
         "analyzer": {
           "title": "Analyseur de CV existant",
-          "text": "Déposez un CV créé ailleurs : découvrez ce que le robot en lit vraiment et ce qu'il faut corriger."
+          "text": "Déposez un CV créé ailleurs : découvrez ce que le robot en lit vraiment et ce qu'il faut corriger"
         },
         "linkedin": {
           "title": "Import LinkedIn",
-          "text": "Pré-remplissez votre Master CV à partir du PDF gratuit exporté depuis votre profil LinkedIn."
+          "text": "Pré-remplissez votre Master CV à partir du PDF gratuit exporté depuis votre profil LinkedIn"
         },
         "languages": {
           "title": "5 langues de CV",
-          "text": "Français, anglais, italien, espagnol et allemand. En anglais, photo et date de naissance sont masquées, selon les usages anglo-saxons."
+          "text": "Français, anglais, italien, espagnol et allemand. En anglais, photo et date de naissance sont masquées, selon les usages anglo-saxons"
         },
         "pdf": {
           "title": "Export PDF compatible ATS",
-          "text": "Du vrai texte et une structure claire : lisible par les robots, agréable pour les recruteurs."
+          "text": "Du vrai texte et une structure claire : lisible par les robots, agréable pour les recruteurs"
         },
         "offline": {
           "title": "Installable et hors ligne",
-          "text": "Ajoutez LocalATSCV à votre écran d'accueil et continuez à travailler sans connexion."
+          "text": "Ajoutez LocalATSCV à votre écran d'accueil et continuez à travailler sans connexion"
         }
       }
     },
@@ -204,34 +202,223 @@
       "items": {
         "ats": {
           "q": "Qu'est-ce qu'un ATS ?",
-          "a": "Un Applicant Tracking System est le logiciel qu'utilisent les recruteurs pour recevoir, trier et rechercher les candidatures. Il convertit votre CV en texte et l'indexe : si le texte est mal extrait ou si les bons mots-clés manquent, votre candidature devient difficile à trouver."
+          "a": "Un Applicant Tracking System est le logiciel qu'utilisent les recruteurs pour recevoir, trier et rechercher les candidatures. Il convertit votre CV en texte et l'indexe : si le texte est mal extrait ou si les bons mots-clés manquent, votre candidature devient difficile à trouver"
         },
         "storage": {
           "q": "Où sont stockées mes données ?",
-          "a": "Uniquement dans votre navigateur, grâce à IndexedDB, une base de données intégrée à tous les navigateurs modernes. Elles ne transitent jamais par nos serveurs, qui ne savent que distribuer les fichiers de l'application."
+          "a": "Uniquement dans votre navigateur, grâce à IndexedDB, une base de données intégrée à tous les navigateurs modernes. Elles ne transitent jamais par nos serveurs, qui ne savent que distribuer les fichiers de l'application"
         },
         "clear": {
           "q": "Que se passe-t-il si je vide les données de mon navigateur ?",
-          "a": "Vos CV sont effacés, puisqu'ils n'existent nulle part ailleurs. Exportez régulièrement une sauvegarde au format JSON : vous pourrez la réimporter à tout moment, sur n'importe quel appareil."
+          "a": "Vos CV sont effacés, puisqu'ils n'existent nulle part ailleurs. Exportez régulièrement une sauvegarde au format JSON : vous pourrez la réimporter à tout moment, sur n'importe quel appareil"
         },
         "score": {
           "q": "Le score garantit-il que mon CV sera retenu ?",
-          "a": "Non. Chaque ATS a ses propres règles et la décision finale reste humaine. Le score est un indicateur : il vérifie que votre CV reprend le vocabulaire de l'annonce et qu'une machine peut le lire correctement."
+          "a": "Non. Chaque ATS a ses propres règles et la décision finale reste humaine. Le score est un indicateur : il vérifie que votre CV reprend le vocabulaire de l'annonce et qu'une machine peut le lire correctement"
         },
         "photo": {
           "q": "Pourquoi la photo disparaît-elle en anglais ?",
-          "a": "Au Royaume-Uni, aux États-Unis et dans de nombreux pays anglophones, la photo et la date de naissance sont déconseillées pour limiter les discriminations à l'embauche. Certains recruteurs écartent même les CV qui en contiennent."
+          "a": "Au Royaume-Uni, aux États-Unis et dans de nombreux pays anglophones, la photo et la date de naissance sont déconseillées pour limiter les discriminations à l'embauche. Certains recruteurs écartent même les CV qui en contiennent"
         },
         "free": {
           "q": "C'est vraiment gratuit ?",
-          "a": "Oui. LocalATSCV est un projet open source sous licence MIT, sans publicité ni abonnement. Il ne coûte presque rien à héberger, puisque tout le travail est fait par votre navigateur."
+          "a": "Oui. LocalATSCV est un projet open source sous licence MIT, sans publicité ni abonnement. Il ne coûte presque rien à héberger, puisque tout le travail est fait par votre navigateur"
         }
       }
     },
     "cta": {
       "title": "Prêt à passer le filtre ?",
-      "text": "Créez votre Master CV en quelques minutes. Rien ne quittera cet appareil.",
+      "text": "Créez votre Master CV en quelques minutes. Rien ne quittera cet appareil",
       "button": "Commencer maintenant"
+    }
+  },
+  "dialog": {
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "create": "Créer",
+    "save": "Enregistrer",
+    "import": "Importer"
+  },
+  "editor": {
+    "list": {
+      "title": "Mes CV",
+      "subtitle": "Enregistrés uniquement dans ce navigateur",
+      "new": "Nouveau CV",
+      "newBlank": "CV vierge",
+      "newBlankHint": "Partir d'une page blanche",
+      "newSample": "Partir d'un exemple",
+      "newSampleHint": "Un CV fictif pré-rempli pour découvrir l'éditeur",
+      "import": "Importer",
+      "exportAll": "Tout exporter",
+      "emptyTitle": "Aucun CV pour l'instant",
+      "emptyText": "Créez votre Master CV : toutes vos expériences au même endroit, à décliner pour chaque offre",
+      "open": "Ouvrir",
+      "actions": "Actions",
+      "duplicate": "Dupliquer",
+      "export": "Exporter (JSON)",
+      "delete": "Supprimer",
+      "updated": "Modifié le {{date}}",
+      "versions": "Versions : {{count}}",
+      "backupHint": "Vos CV n'existent que dans ce navigateur. Exportez régulièrement une sauvegarde JSON : si vous videz les données du navigateur, elle vous permettra de tout récupérer",
+      "defaultName": "Mon CV",
+      "copySuffix": "(copie)",
+      "deleteTitle": "Supprimer « {{name}} » ?",
+      "deleteText": "Le CV et toutes ses versions seront définitivement supprimés de ce navigateur",
+      "exportDone": "Sauvegarde téléchargée",
+      "importConfirmTitle": "Importer cette sauvegarde ?",
+      "importConfirmText": "Elle contient {{count}} CV. Si l'un d'eux existe déjà dans ce navigateur, il sera remplacé",
+      "importDone": "Sauvegarde importée : {{count}} CV",
+      "importError": {
+        "invalidJson": "Ce fichier n'est pas un JSON valide",
+        "notABackup": "Ce fichier n'est pas une sauvegarde LocalATSCV",
+        "newerVersion": "Cette sauvegarde vient d'une version plus récente de LocalATSCV : mettez l'application à jour"
+      }
+    },
+    "toolbar": {
+      "back": "Mes CV",
+      "name": "Nom du CV",
+      "cvLanguage": "Langue du CV",
+      "accent": "Couleur d'accent",
+      "saved": "Enregistré",
+      "saving": "Enregistrement…",
+      "saveError": "Échec de l'enregistrement",
+      "edit": "Édition",
+      "preview": "Aperçu"
+    },
+    "versions": {
+      "label": "Version affichée",
+      "master": "Master CV",
+      "masterHint": "Tout le contenu, sans filtre",
+      "new": "Nouvelle version",
+      "newText": "Une version ciblée part de tout votre Master CV : décochez ensuite ce qui ne sert pas pour cette candidature",
+      "nameLabel": "Nom de la version",
+      "namePlaceholder": "Ex. Dev Front – Société X",
+      "rename": "Renommer la version",
+      "delete": "Supprimer la version",
+      "deleteTitle": "Supprimer la version « {{name}} » ?",
+      "deleteText": "Seule la sélection est supprimée : tout le contenu reste dans votre Master CV",
+      "banner": "Version « {{name}} » : décochez ce qui ne doit pas apparaître. Rien n'est supprimé de votre Master CV",
+      "include": "Inclure dans cette version"
+    },
+    "enRule": "CV en anglais : la photo, la date de naissance et la nationalité sont masquées, selon les usages anglo-saxons",
+    "profile": {
+      "title": "Profil",
+      "photo": "Photo",
+      "photoAdd": "Ajouter une photo",
+      "photoChange": "Changer",
+      "photoRemove": "Retirer",
+      "photoHint": "Redimensionnée et enregistrée sur cet appareil uniquement",
+      "photoError": "Impossible de lire cette image",
+      "hiddenInEnglish": "Masqué en anglais",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "headline": "Titre du CV",
+      "headlinePlaceholder": "Ex. Développeuse Front-end",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "location": "Ville",
+      "birthDate": "Date de naissance",
+      "nationality": "Nationalité",
+      "summary": "Résumé",
+      "summaryPlaceholder": "Deux ou trois phrases qui résument votre profil et ce que vous recherchez",
+      "links": "Liens",
+      "linkLabel": "Libellé du lien",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adresse du lien",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Ajouter un lien",
+      "removeLink": "Retirer le lien"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Expériences",
+        "education": "Formation",
+        "projects": "Projets",
+        "certifications": "Certifications",
+        "custom": "Section libre",
+        "skills": "Compétences",
+        "languages": "Langues",
+        "interests": "Centres d'intérêt"
+      },
+      "add": "Ajouter une section",
+      "titleLabel": "Titre de la section",
+      "empty": "Section vide : elle n'apparaît pas sur le CV",
+      "addItem": {
+        "experience": "Ajouter une expérience",
+        "education": "Ajouter une formation",
+        "projects": "Ajouter un projet",
+        "certifications": "Ajouter une certification",
+        "custom": "Ajouter un élément",
+        "skills": "Ajouter des compétences",
+        "languages": "Ajouter une langue",
+        "interests": "Ajouter un centre d'intérêt"
+      },
+      "deleteTitle": "Supprimer la section « {{name}} » ?",
+      "deleteText": "Son contenu sera supprimé du Master CV et de toutes ses versions"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Poste",
+          "subtitle": "Entreprise"
+        },
+        "education": {
+          "title": "Diplôme",
+          "subtitle": "École ou université"
+        },
+        "projects": {
+          "title": "Nom du projet",
+          "subtitle": "Rôle ou technologies"
+        },
+        "certifications": {
+          "title": "Certification",
+          "subtitle": "Organisme"
+        },
+        "custom": {
+          "title": "Titre",
+          "subtitle": "Sous-titre"
+        }
+      },
+      "location": "Lieu",
+      "url": "Lien",
+      "start": "Début",
+      "end": "Fin",
+      "date": "Date d'obtention",
+      "current": "En cours",
+      "untitled": "Sans titre",
+      "bullets": "Réalisations",
+      "bulletPlaceholder": "Commencez par un verbe d'action et chiffrez le résultat",
+      "addBullet": "Ajouter une puce",
+      "bulletHint": "Entrée : nouvelle puce"
+    },
+    "items": {
+      "skillLabel": "Catégorie",
+      "skillLabelPlaceholder": "Ex. Front-end",
+      "skillKeywords": "Compétences",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Langue",
+      "languageLevel": "Niveau",
+      "languageLevelPlaceholder": "Ex. C1, courant",
+      "interest": "Centre d'intérêt",
+      "interestPlaceholder": "Ex. Escalade"
+    },
+    "actions": {
+      "menu": "Actions",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "duplicate": "Dupliquer",
+      "delete": "Supprimer",
+      "drag": "Glisser pour réorganiser"
+    },
+    "month": "Mois",
+    "year": "Année",
+    "noMonth": "Mois",
+    "preview": {
+      "page": "Page {{n}}"
+    },
+    "notFound": {
+      "title": "CV introuvable",
+      "text": "Ce CV n'existe pas ou a été supprimé de ce navigateur"
     }
   }
 }

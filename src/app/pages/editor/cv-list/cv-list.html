@@ -1,0 +1,173 @@
+<section *transloco="let t; prefix: 'editor.list'" class="container-page py-10 sm:py-14">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h1 class="font-display text-4xl font-semibold tracking-tight">{{ t('title') }}</h1>
+      <p class="mt-2 flex items-center gap-2 text-sm text-muted">
+        <app-icon class="size-4 text-accent" name="lock" />{{ t('subtitle') }}
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <label class="btn btn-ghost cursor-pointer">
+        <app-icon class="size-4" name="upload" />{{ t('import') }}
+        <input
+          type="file"
+          accept="application/json,.json"
+          class="sr-only"
+          (change)="import($event)"
+        />
+      </label>
+      @if (cards().length) {
+        <button type="button" class="btn btn-ghost" (click)="exportAll()">
+          <app-icon class="size-4" name="download" />{{ t('exportAll') }}
+        </button>
+      }
+      <button type="button" class="btn btn-primary" [cdkMenuTriggerFor]="newMenu">
+        <app-icon class="size-4" name="plus" />{{ t('new') }}
+      </button>
+      <ng-template #newMenu>
+        <div cdkMenu class="menu-panel menu-in w-64">
+          <button
+            cdkMenuItem
+            type="button"
+            class="menu-item"
+            (cdkMenuItemTriggered)="createBlank()"
+          >
+            <app-icon class="size-4 text-accent" name="file" />
+            <span>
+              <span class="block font-semibold">{{ t('newBlank') }}</span>
+              <span class="block text-xs text-muted">{{ t('newBlankHint') }}</span>
+            </span>
+          </button>
+          <button
+            cdkMenuItem
+            type="button"
+            class="menu-item"
+            (cdkMenuItemTriggered)="createSample()"
+          >
+            <app-icon class="size-4 text-accent" name="sparkles" />
+            <span>
+              <span class="block font-semibold">{{ t('newSample') }}</span>
+              <span class="block text-xs text-muted">{{ t('newSampleHint') }}</span>
+            </span>
+          </button>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+  @if (cvs() === undefined) {
+    <div class="grid place-items-center py-24 text-muted">
+      <app-icon class="size-6 animate-spin" name="loader" />
+    </div>
+  } @else if (!cards().length) {
+    <div
+      class="mt-10 grid place-items-center rounded-3xl border-2 border-dashed border-line px-6 py-16 text-center"
+    >
+      <div class="grid size-14 place-items-center rounded-2xl bg-accent-soft text-accent">
+        <app-icon class="size-7" name="file" />
+      </div>
+      <h2 class="mt-5 font-display text-2xl font-semibold">{{ t('emptyTitle') }}</h2>
+      <p class="mt-2 max-w-md text-muted">{{ t('emptyText') }}</p>
+      <div class="mt-7 flex flex-wrap justify-center gap-3">
+        <button type="button" class="btn btn-primary" (click)="createBlank()">
+          <app-icon class="size-4" name="plus" />{{ t('newBlank') }}
+        </button>
+        <button type="button" class="btn btn-ghost" (click)="createSample()">
+          <app-icon class="size-4" name="sparkles" />{{ t('newSample') }}
+        </button>
+      </div>
+    </div>
+  } @else {
+    <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      @for (card of cards(); track card.cv.id) {
+        <li
+          class="group panel relative flex flex-col overflow-hidden transition-shadow hover:shadow-lg"
+        >
+          <a
+            [routerLink]="['/editor', card.cv.id]"
+            class="block border-b border-line bg-surface-2 px-6 pt-6"
+            [attr.aria-label]="t('open') + ' : ' + card.cv.name"
+          >
+            <div
+              class="overflow-hidden rounded-t-md shadow-md transition-transform group-hover:-translate-y-1"
+            >
+              <app-cv-preview
+                [cv]="card.resolved"
+                [thumbnail]="true"
+                aria-hidden="true"
+                class="pointer-events-none"
+              />
+            </div>
+          </a>
+          <div class="flex items-start gap-2 p-4">
+            <div class="min-w-0 flex-1">
+              <a
+                [routerLink]="['/editor', card.cv.id]"
+                class="block truncate font-semibold hover:text-accent"
+              >
+                {{ card.cv.name }}
+              </a>
+              <p class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
+                <span class="rounded bg-surface-2 px-1.5 py-px font-mono font-semibold uppercase">{{
+                  card.cv.language
+                }}</span>
+                <span>{{ t('updated', { date: formatDate(card.cv.updatedAt) }) }}</span>
+                @if (versionCounts()[card.cv.id]; as count) {
+                  <span class="inline-flex items-center gap-1">
+                    <app-icon class="size-3" name="layers" />{{ t('versions', { count }) }}
+                  </span>
+                }
+              </p>
+            </div>
+            <button
+              type="button"
+              class="icon-btn"
+              [cdkMenuTriggerFor]="cardMenu"
+              [attr.aria-label]="t('actions')"
+            >
+              <app-icon class="size-4" name="more" />
+            </button>
+            <ng-template #cardMenu>
+              <div cdkMenu class="menu-panel menu-in">
+                <a cdkMenuItem class="menu-item" [routerLink]="['/editor', card.cv.id]">
+                  <app-icon class="size-4 text-muted" name="pencil" />{{ t('open') }}
+                </a>
+                <button
+                  cdkMenuItem
+                  type="button"
+                  class="menu-item"
+                  (cdkMenuItemTriggered)="duplicate(card.cv)"
+                >
+                  <app-icon class="size-4 text-muted" name="copy" />{{ t('duplicate') }}
+                </button>
+                <button
+                  cdkMenuItem
+                  type="button"
+                  class="menu-item"
+                  (cdkMenuItemTriggered)="exportOne(card.cv)"
+                >
+                  <app-icon class="size-4 text-muted" name="download" />{{ t('export') }}
+                </button>
+                <button
+                  cdkMenuItem
+                  type="button"
+                  class="menu-item text-danger!"
+                  (cdkMenuItemTriggered)="remove(card.cv)"
+                >
+                  <app-icon class="size-4" name="trash" />{{ t('delete') }}
+                </button>
+              </div>
+            </ng-template>
+          </div>
+        </li>
+      }
+    </ul>
+  }
+
+  <p
+    class="mt-10 flex items-start gap-2.5 rounded-2xl border border-line bg-surface p-4 text-sm text-muted"
+  >
+    <app-icon class="mt-0.5 size-4 shrink-0 text-accent" name="info" />
+    <span>{{ t('backupHint') }}</span>
+  </p>
+</section>

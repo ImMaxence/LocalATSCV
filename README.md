@@ -4,6 +4,40 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
 
 🌐 [localatscv.mbonnici.fr](https://localatscv.mbonnici.fr)
 
+![Éditeur de LocalATSCV : formulaire à gauche, aperçu du CV en direct à droite](docs/screenshots/editor-light.png)
+
+## Aperçu
+
+| Version ciblée (Master CV)                                   | Mes CV                                           |
+| ------------------------------------------------------------ | ------------------------------------------------ |
+| ![Version ciblée](docs/screenshots/editor-version.png)       | ![Liste des CV](docs/screenshots/cv-list.png)    |
+| **Thème sombre**                                             | **Page d'accueil**                               |
+| ![Éditeur en thème sombre](docs/screenshots/editor-dark.png) | ![Accueil](docs/screenshots/landing-light.png)   |
+| **Ce que lit un ATS**                                        | **Confidentialité**                              |
+| ![Vue robot](docs/screenshots/ats-robot-view.png)            | ![Confidentialité](docs/screenshots/privacy.png) |
+
+<p align="center">
+  <img src="docs/screenshots/mobile-light.png" alt="Version mobile, thème clair" width="260" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/mobile-dark.png" alt="Version mobile, thème sombre" width="260" />
+</p>
+
+Les captures se régénèrent avec `npm run screenshots` (application lancée via `npm run docker:local`, Edge ou Chrome installé).
+
+## Fonctionnalités
+
+- [x] Landing page, thème clair/sombre, interface en 5 langues (FR, EN, IT, ES, DE)
+- [x] Master CV stocké dans IndexedDB, photo comprise, enregistrement automatique
+- [x] Sauvegarde et restauration au format JSON
+- [x] Éditeur avec aperçu A4 en direct, repères de sauts de page
+- [x] Glisser-déposer des sections, des entrées et des puces (avec alternative au clavier)
+- [x] Versions ciblées : cases à cocher pour composer un CV sur mesure sans rien supprimer
+- [x] Langue du CV (FR, EN, IT, ES, DE) avec masquage automatique de la photo, de la date de naissance et de la nationalité en anglais
+- [ ] Export PDF textuel compatible ATS
+- [ ] Score de correspondance avec une offre et détecteur de phrases faibles
+- [ ] Analyseur de CV existant et import du PDF LinkedIn
+- [ ] Pages Nouveautés et légales
+
 ## Principes
 
 - **Aucun backend** : le serveur ne fait que distribuer des fichiers statiques. Les CV et la photo sont stockés dans IndexedDB, sur l'appareil de l'utilisateur.
@@ -14,7 +48,8 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
 
 - Angular 22 (standalone, signals, zoneless), build statique sans SSR
 - Tailwind CSS 4, polices Inter et Fraunces via Fontsource
-- Transloco pour la traduction de l'interface (FR, EN)
+- Transloco pour la traduction de l'interface (FR, EN, IT, ES, DE)
+- Angular CDK (menus accessibles, puis glisser-déposer)
 - Dexie (IndexedDB) pour le stockage local
 - Vitest pour les tests unitaires
 - nginx (Docker) pour le service des fichiers
@@ -24,7 +59,7 @@ Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % lo
 ```bash
 npm install
 npm start          # http://localhost:4200
-npm run test:ci    # tests unitaires
+npm run test:ci    # tests unitaires (dont la cohérence des 5 fichiers de traduction)
 npm run build      # build de production dans dist/localatscv/browser
 ```
 

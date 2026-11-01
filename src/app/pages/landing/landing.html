@@ -2,7 +2,7 @@
   <!-- Hero -->
   <section class="overflow-x-clip">
     <div
-      class="container-page grid items-center gap-16 pt-14 pb-24 lg:grid-cols-[1.05fr_1fr] lg:pt-24"
+      class="container-page grid grid-cols-1 items-center gap-16 pt-14 pb-24 lg:grid-cols-[1.05fr_1fr] lg:pt-24"
     >
       <div class="hero-in">
         <p
@@ -18,10 +18,16 @@
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">{{ t('hero.subtitle') }}</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a routerLink="/editor" class="btn btn-primary px-6 py-3 text-base">
+          <a
+            routerLink="/editor"
+            class="btn btn-primary px-6 py-3 text-center text-base whitespace-normal"
+          >
             {{ t('hero.ctaPrimary') }}<app-icon class="size-4" name="arrowRight" />
           </a>
-          <a routerLink="/analyze" class="btn btn-ghost px-6 py-3 text-base">
+          <a
+            routerLink="/analyze"
+            class="btn btn-ghost px-6 py-3 text-center text-base whitespace-normal"
+          >
             <app-icon class="size-4" name="scan" />{{ t('hero.ctaSecondary') }}
           </a>
         </div>
@@ -76,7 +82,7 @@
                       class="suggest mt-1.5 flex w-fit items-center gap-1 rounded-full bg-marker px-2 py-0.5 text-[10px] font-semibold text-marker-ink"
                     >
                       <app-icon class="size-3" name="sparkles" />
-                      {{ demo().cv.weakLabel }} → « {{ demo().cv.weakReplacement }} »
+                      {{ demo().cv.weakLabel }} → {{ demo().cv.weakReplacement }}
                     </span>
                   }
                 </span>
@@ -309,8 +315,8 @@
         <p class="mt-4 leading-relaxed opacity-75">{{ t('privacy.text') }}</p>
       </div>
 
-      <div class="mt-12 grid items-stretch gap-4 lg:grid-cols-[1fr_auto_1fr]">
-        <div class="rounded-2xl border border-inverse-ink/15 bg-inverse-ink/5 p-6">
+      <div class="mt-12 grid grid-cols-1 items-stretch gap-4 lg:grid-cols-[1fr_auto_1fr]">
+        <div class="rounded-2xl border border-inverse-ink/15 bg-inverse-ink/5 p-5 sm:p-6">
           <div class="flex items-center justify-between gap-3">
             <p class="flex items-center gap-2 font-semibold">
               <app-icon class="size-5 text-inverse-accent" name="monitor" />
@@ -322,7 +328,7 @@
               {{ t('privacy.browser.tag') }}
             </span>
           </div>
-          <ul class="mt-5 grid grid-cols-2 gap-2 text-sm">
+          <ul class="mt-5 grid grid-cols-1 gap-2 text-sm min-[400px]:grid-cols-2">
             @for (item of storedItems; track item) {
               <li
                 class="flex items-center gap-2 rounded-lg border border-inverse-ink/10 bg-inverse-ink/5 px-3 py-2"
@@ -358,7 +364,7 @@
           </p>
         </div>
 
-        <div class="rounded-2xl border border-inverse-ink/15 bg-inverse-ink/5 p-6">
+        <div class="rounded-2xl border border-inverse-ink/15 bg-inverse-ink/5 p-5 sm:p-6">
           <div class="flex items-center justify-between gap-3">
             <p class="flex min-w-0 items-center gap-2 font-semibold">
               <app-icon class="size-5 text-inverse-accent" name="server" />

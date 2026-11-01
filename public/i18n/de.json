@@ -1,0 +1,424 @@
+{
+  "nav": {
+    "home": "LocalATSCV Startseite",
+    "main": "Hauptnavigation",
+    "how": "So funktioniert's",
+    "privacy": "Datenschutz",
+    "analyze": "Lebenslauf analysieren",
+    "editor": "Lebenslauf erstellen",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "theme": {
+    "label": "Design",
+    "light": "Hell",
+    "system": "System",
+    "dark": "Dunkel"
+  },
+  "lang": {
+    "label": "Sprache der Oberfläche"
+  },
+  "pages": {
+    "home": "ATS-optimierte Lebensläufe, 100 % lokal",
+    "editor": "Editor",
+    "analyze": "Lebenslauf-Analyse",
+    "changelog": "Neuigkeiten",
+    "legalNotice": "Impressum",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung"
+  },
+  "footer": {
+    "tagline": "Der Generator für ATS-optimierte Lebensläufe, der deine Daten nie zu sehen bekommt",
+    "product": "Produkt",
+    "legal": "Rechtliches",
+    "project": "Projekt",
+    "changelog": "Neuigkeiten",
+    "sourceCode": "Quellcode",
+    "reportIssue": "Problem melden",
+    "license": "MIT-Lizenz",
+    "versionLabel": "Version {{version}}, Neuigkeiten ansehen"
+  },
+  "update": {
+    "title": "Neue Version verfügbar",
+    "text": "Lade die Seite neu, um sie zu nutzen",
+    "changelog": "Neuigkeiten ansehen",
+    "reload": "Neu laden",
+    "later": "Später"
+  },
+  "comingSoon": {
+    "title": "Bald verfügbar",
+    "text": "Dieser Bereich von LocalATSCV ist noch im Aufbau. Er kommt mit einer der nächsten Versionen",
+    "back": "Zurück zur Startseite"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % lokal · Kostenlos · Open Source",
+      "titleLine1": "Ein Lebenslauf, der an den Robotern vorbeikommt",
+      "titleLine2": "Daten, die bei dir bleiben",
+      "subtitle": "LocalATSCV hilft dir, einen Lebenslauf für Bewerbermanagementsysteme (ATS) zu optimieren und ihn mit wenigen Klicks an jede Stelle anzupassen. Alles passiert in deinem Browser: kein Konto, keine Datenübertragung",
+      "ctaPrimary": "Lebenslauf erstellen",
+      "ctaSecondary": "Bestehenden Lebenslauf analysieren",
+      "points": {
+        "noAccount": "Ohne Anmeldung",
+        "offline": "Funktioniert offline",
+        "atsPdf": "ATS-lesbares PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "Das Problem",
+      "title": "Dein Lebenslauf wird zuerst von einer Maschine gelesen",
+      "text": "Die meisten großen Unternehmen und Personalagenturen sortieren Bewerbungen mit einem ATS (Applicant Tracking System). Die Software extrahiert den Text deines Lebenslaufs, speichert ihn in einer Datenbank und ermöglicht es Recruitern, Profile nach Schlüsselwörtern zu durchsuchen",
+      "pitfalls": {
+        "layout": {
+          "title": "Komplexes Layout",
+          "text": "Spalten, Tabellen und Textfelder bringen die Lesereihenfolge durcheinander: Deine Angaben kommen ungeordnet an"
+        },
+        "image": {
+          "title": "Unlesbarer Text",
+          "text": "Icons, Skill-Balken und manche Exporte aus Designtools erzeugen unverständliche Zeichen oder gar keinen Text"
+        },
+        "keywords": {
+          "title": "Fehlende Schlüsselwörter",
+          "text": "Wenn das Vokabular der Stellenanzeige nicht in deinem Lebenslauf vorkommt, taucht dein Profil in den Suchen der Recruiter nicht auf"
+        }
+      },
+      "seen": "Was du siehst",
+      "read": "Was der Roboter liest",
+      "fix": "LocalATSCV macht es umgekehrt: eine Spalte, echter Text und Standard-Abschnittstitel, die Roboter in der richtigen Reihenfolge lesen"
+    },
+    "how": {
+      "eyebrow": "So funktioniert's",
+      "title": "Einmal schreiben, beliebig oft anpassen",
+      "text": "Vier Schritte, und dein Master-Lebenslauf wird zur maßgeschneiderten Bewerbung für jede Stelle",
+      "steps": {
+        "profile": {
+          "title": "Fülle deinen Master-Lebenslauf aus",
+          "text": "Erfasse alle deine Erfahrungen ein einziges Mal oder importiere das PDF deines LinkedIn-Profils, um Zeit zu sparen"
+        },
+        "offer": {
+          "title": "Füge die Stellenanzeige ein",
+          "text": "LocalATSCV extrahiert die Schlüsselwörter und berechnet einen Übereinstimmungswert von 0 bis 100, der sich beim Schreiben aktualisiert"
+        },
+        "compose": {
+          "title": "Stelle eine gezielte Version zusammen",
+          "text": "Hake die passenden Erfahrungen und Stichpunkte an und ordne sie per Drag-and-drop. Aus deinem Master wird nichts gelöscht"
+        },
+        "export": {
+          "title": "Als PDF exportieren",
+          "text": "Ein textbasiertes, strukturiertes, einspaltiges PDF, das für Roboter genauso gut lesbar ist wie für Recruiter"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Datenschutz",
+      "title": "Null Daten auf unseren Servern. Buchstäblich",
+      "text": "Es gibt keine Datenbank, die gehackt werden könnte: Unser Server schickt dir nur die Anwendung. Danach läuft alles in deinem Browser, sogar offline",
+      "browser": {
+        "title": "Dein Browser",
+        "tag": "Dein Gerät",
+        "items": {
+          "master": "Master-Lebenslauf",
+          "photo": "Profilfoto",
+          "versions": "Gezielte Versionen",
+          "settings": "Einstellungen"
+        },
+        "note": "Gespeichert in IndexedDB, nur auf diesem Gerät"
+      },
+      "flow": {
+        "app": "Die Anwendung, beim ersten Laden",
+        "data": "Deine Daten",
+        "never": "niemals"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Liefert die Dateien der Anwendung aus (HTML, CSS, JavaScript), sonst nichts",
+        "items": {
+          "noDb": "Keine Datenbank",
+          "noAccount": "Keine Benutzerkonten",
+          "noLogs": "Keine Besucherprotokolle"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Kein Konto",
+          "text": "Keine Registrierung, keine E-Mail, kein Passwort. Seite öffnen und loslegen"
+        },
+        "trackers": {
+          "title": "Keine Tracker",
+          "text": "Keine Statistiken, keine Werbung, keine Cookies. Sogar die Schriften werden selbst gehostet"
+        },
+        "csp": {
+          "title": "Technisch abgesichert",
+          "text": "Die Sicherheitsrichtlinie der Website (CSP) verbietet dem Browser, eine andere Domain zu kontaktieren. Der Code ist Open Source: Überprüfe es selbst"
+        },
+        "backup": {
+          "title": "Deine Backups, deine Dateien",
+          "text": "Exportiere alle deine Daten in eine JSON-Datei und importiere sie auf jedem beliebigen Gerät wieder"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funktionen",
+      "title": "Alles, was du für das Vorstellungsgespräch brauchst",
+      "items": {
+        "master": {
+          "title": "Master-Lebenslauf und gezielte Versionen",
+          "text": "Ein vollständiger Lebenslauf, so viele Varianten wie Bewerbungen. An- und abhaken: Es geht nie etwas verloren"
+        },
+        "score": {
+          "title": "Übereinstimmungswert",
+          "text": "Füge die Anzeige ein: gefundene und fehlende Schlüsselwörter sowie ein Wert von 0 bis 100 in Echtzeit"
+        },
+        "weak": {
+          "title": "Erkennung schwacher Formulierungen",
+          "text": "„Zuständig für“, „mitgewirkt bei“ … werden automatisch erkannt, mit einer Sammlung von Aktionsverben als Ersatz"
+        },
+        "analyzer": {
+          "title": "Analyse bestehender Lebensläufe",
+          "text": "Lade einen anderswo erstellten Lebenslauf hoch: Sieh, was der Roboter wirklich liest und was du korrigieren solltest"
+        },
+        "linkedin": {
+          "title": "LinkedIn-Import",
+          "text": "Fülle deinen Master-Lebenslauf mit dem kostenlosen PDF vor, das du aus deinem LinkedIn-Profil exportieren kannst"
+        },
+        "languages": {
+          "title": "5 Sprachen für den Lebenslauf",
+          "text": "Französisch, Englisch, Italienisch, Spanisch und Deutsch. Auf Englisch werden Foto und Geburtsdatum ausgeblendet, wie im angelsächsischen Raum üblich"
+        },
+        "pdf": {
+          "title": "ATS-kompatibler PDF-Export",
+          "text": "Echter Text und eine klare Struktur: lesbar für Roboter, angenehm für Recruiter"
+        },
+        "offline": {
+          "title": "Installierbar und offline",
+          "text": "Füge LocalATSCV zu deinem Startbildschirm hinzu und arbeite ohne Verbindung weiter"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen",
+      "text": "Deine Frage ist nicht dabei? Schreib uns:",
+      "items": {
+        "ats": {
+          "q": "Was ist ein ATS?",
+          "a": "Ein Applicant Tracking System ist die Software, mit der Recruiter Bewerbungen empfangen, sortieren und durchsuchen. Es wandelt deinen Lebenslauf in Text um und indexiert ihn: Wird der Text schlecht extrahiert oder fehlen die richtigen Schlüsselwörter, ist deine Bewerbung schwer zu finden"
+        },
+        "storage": {
+          "q": "Wo werden meine Daten gespeichert?",
+          "a": "Nur in deinem Browser, mithilfe von IndexedDB, einer Datenbank, die in alle modernen Browser integriert ist. Sie laufen nie über unsere Server, die nur die Dateien der Anwendung ausliefern"
+        },
+        "clear": {
+          "q": "Was passiert, wenn ich meine Browserdaten lösche?",
+          "a": "Deine Lebensläufe werden gelöscht, da sie nirgendwo sonst existieren. Exportiere regelmäßig ein Backup im JSON-Format: Du kannst es jederzeit und auf jedem Gerät wieder importieren"
+        },
+        "score": {
+          "q": "Garantiert der Wert, dass mein Lebenslauf ausgewählt wird?",
+          "a": "Nein. Jedes ATS hat eigene Regeln, und die endgültige Entscheidung trifft ein Mensch. Der Wert ist ein Indikator: Er prüft, ob dein Lebenslauf das Vokabular der Anzeige aufgreift und von einer Maschine korrekt gelesen werden kann"
+        },
+        "photo": {
+          "q": "Warum verschwindet das Foto auf Englisch?",
+          "a": "In Großbritannien, den USA und vielen englischsprachigen Ländern wird von Foto und Geburtsdatum abgeraten, um Diskriminierung bei der Einstellung zu vermeiden. Manche Recruiter sortieren Lebensläufe mit Foto sogar aus"
+        },
+        "free": {
+          "q": "Ist das wirklich kostenlos?",
+          "a": "Ja. LocalATSCV ist ein Open-Source-Projekt unter MIT-Lizenz, ohne Werbung und ohne Abo. Das Hosting kostet fast nichts, da dein Browser die ganze Arbeit erledigt"
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, den Filter zu passieren?",
+      "text": "Erstelle deinen Master-Lebenslauf in wenigen Minuten. Nichts verlässt dieses Gerät",
+      "button": "Jetzt starten"
+    }
+  },
+  "dialog": {
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "create": "Erstellen",
+    "save": "Speichern",
+    "import": "Importieren"
+  },
+  "editor": {
+    "list": {
+      "title": "Meine Lebensläufe",
+      "subtitle": "Nur in diesem Browser gespeichert",
+      "new": "Neuer Lebenslauf",
+      "newBlank": "Leerer Lebenslauf",
+      "newBlankHint": "Mit einer leeren Seite beginnen",
+      "newSample": "Mit einem Beispiel beginnen",
+      "newSampleHint": "Ein ausgefüllter fiktiver Lebenslauf zum Kennenlernen des Editors",
+      "import": "Importieren",
+      "exportAll": "Alles exportieren",
+      "emptyTitle": "Noch keine Lebensläufe",
+      "emptyText": "Erstelle deinen Master-Lebenslauf: alle deine Erfahrungen an einem Ort, für jede Stelle anpassbar",
+      "open": "Öffnen",
+      "actions": "Aktionen",
+      "duplicate": "Duplizieren",
+      "export": "Exportieren (JSON)",
+      "delete": "Löschen",
+      "updated": "Geändert am {{date}}",
+      "versions": "Versionen: {{count}}",
+      "backupHint": "Deine Lebensläufe existieren nur in diesem Browser. Exportiere regelmäßig ein JSON-Backup: Wenn du deine Browserdaten löschst, kannst du damit alles wiederherstellen",
+      "defaultName": "Mein Lebenslauf",
+      "copySuffix": "(Kopie)",
+      "deleteTitle": "„{{name}}“ löschen?",
+      "deleteText": "Der Lebenslauf und alle seine Versionen werden endgültig aus diesem Browser gelöscht",
+      "exportDone": "Backup heruntergeladen",
+      "importConfirmTitle": "Dieses Backup importieren?",
+      "importConfirmText": "Lebensläufe in diesem Backup: {{count}}. Bereits vorhandene Lebensläufe werden ersetzt",
+      "importDone": "Backup importiert ({{count}})",
+      "importError": {
+        "invalidJson": "Diese Datei ist kein gültiges JSON",
+        "notABackup": "Diese Datei ist kein LocalATSCV-Backup",
+        "newerVersion": "Dieses Backup stammt aus einer neueren Version von LocalATSCV: Aktualisiere zuerst die Anwendung"
+      }
+    },
+    "toolbar": {
+      "back": "Meine Lebensläufe",
+      "name": "Name des Lebenslaufs",
+      "cvLanguage": "Sprache des Lebenslaufs",
+      "accent": "Akzentfarbe",
+      "saved": "Gespeichert",
+      "saving": "Wird gespeichert…",
+      "saveError": "Speichern fehlgeschlagen",
+      "edit": "Bearbeiten",
+      "preview": "Vorschau"
+    },
+    "versions": {
+      "label": "Angezeigte Version",
+      "master": "Master-Lebenslauf",
+      "masterHint": "Gesamter Inhalt, ungefiltert",
+      "new": "Neue Version",
+      "newText": "Eine gezielte Version enthält zunächst deinen gesamten Master-Lebenslauf: Entferne danach die Häkchen bei allem, was du für diese Bewerbung nicht brauchst",
+      "nameLabel": "Name der Version",
+      "namePlaceholder": "z. B. Front-End – Firma X",
+      "rename": "Version umbenennen",
+      "delete": "Version löschen",
+      "deleteTitle": "Version „{{name}}“ löschen?",
+      "deleteText": "Nur die Auswahl wird gelöscht: Der gesamte Inhalt bleibt in deinem Master-Lebenslauf",
+      "banner": "Version „{{name}}“: Entferne die Häkchen bei allem, was nicht erscheinen soll. Aus deinem Master-Lebenslauf wird nichts gelöscht",
+      "include": "In diese Version aufnehmen"
+    },
+    "enRule": "Englischer Lebenslauf: Foto, Geburtsdatum und Staatsangehörigkeit werden ausgeblendet, wie im angelsächsischen Raum üblich",
+    "profile": {
+      "title": "Profil",
+      "photo": "Foto",
+      "photoAdd": "Foto hinzufügen",
+      "photoChange": "Ändern",
+      "photoRemove": "Entfernen",
+      "photoHint": "Verkleinert und nur auf diesem Gerät gespeichert",
+      "photoError": "Dieses Bild kann nicht gelesen werden",
+      "hiddenInEnglish": "Auf Englisch ausgeblendet",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "headline": "Titel des Lebenslaufs",
+      "headlinePlaceholder": "z. B. Front-End-Entwicklerin",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "location": "Wohnort",
+      "birthDate": "Geburtsdatum",
+      "nationality": "Staatsangehörigkeit",
+      "summary": "Kurzprofil",
+      "summaryPlaceholder": "Zwei oder drei Sätze, die dein Profil und deine Ziele zusammenfassen",
+      "links": "Links",
+      "linkLabel": "Linktext",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Linkadresse",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Link hinzufügen",
+      "removeLink": "Link entfernen"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Berufserfahrung",
+        "education": "Ausbildung",
+        "projects": "Projekte",
+        "certifications": "Zertifikate",
+        "custom": "Freier Abschnitt",
+        "skills": "Kenntnisse",
+        "languages": "Sprachen",
+        "interests": "Interessen"
+      },
+      "add": "Abschnitt hinzufügen",
+      "titleLabel": "Abschnittstitel",
+      "empty": "Leerer Abschnitt: Er erscheint nicht im Lebenslauf",
+      "addItem": {
+        "experience": "Erfahrung hinzufügen",
+        "education": "Ausbildung hinzufügen",
+        "projects": "Projekt hinzufügen",
+        "certifications": "Zertifikat hinzufügen",
+        "custom": "Eintrag hinzufügen",
+        "skills": "Kenntnisse hinzufügen",
+        "languages": "Sprache hinzufügen",
+        "interests": "Interesse hinzufügen"
+      },
+      "deleteTitle": "Abschnitt „{{name}}“ löschen?",
+      "deleteText": "Sein Inhalt wird aus dem Master-Lebenslauf und allen Versionen gelöscht"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Position",
+          "subtitle": "Unternehmen"
+        },
+        "education": {
+          "title": "Abschluss",
+          "subtitle": "Schule oder Hochschule"
+        },
+        "projects": {
+          "title": "Projektname",
+          "subtitle": "Rolle oder Technologien"
+        },
+        "certifications": {
+          "title": "Zertifikat",
+          "subtitle": "Aussteller"
+        },
+        "custom": {
+          "title": "Titel",
+          "subtitle": "Untertitel"
+        }
+      },
+      "location": "Ort",
+      "url": "Link",
+      "start": "Beginn",
+      "end": "Ende",
+      "date": "Erworben am",
+      "current": "Aktuell",
+      "untitled": "Ohne Titel",
+      "bullets": "Erfolge",
+      "bulletPlaceholder": "Beginne mit einem Aktionsverb und beziffere das Ergebnis",
+      "addBullet": "Stichpunkt hinzufügen",
+      "bulletHint": "Eingabetaste: neuer Stichpunkt"
+    },
+    "items": {
+      "skillLabel": "Kategorie",
+      "skillLabelPlaceholder": "z. B. Front-End",
+      "skillKeywords": "Kenntnisse",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Sprache",
+      "languageLevel": "Niveau",
+      "languageLevelPlaceholder": "z. B. C1, fließend",
+      "interest": "Interesse",
+      "interestPlaceholder": "z. B. Klettern"
+    },
+    "actions": {
+      "menu": "Aktionen",
+      "moveUp": "Nach oben",
+      "moveDown": "Nach unten",
+      "duplicate": "Duplizieren",
+      "delete": "Löschen",
+      "drag": "Zum Neuordnen ziehen"
+    },
+    "month": "Monat",
+    "year": "Jahr",
+    "noMonth": "Monat",
+    "preview": {
+      "page": "Seite {{n}}"
+    },
+    "notFound": {
+      "title": "Lebenslauf nicht gefunden",
+      "text": "Dieser Lebenslauf existiert nicht oder wurde aus diesem Browser gelöscht"
+    }
+  }
+}

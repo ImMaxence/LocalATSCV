@@ -10,11 +10,12 @@ describe('detectInitialLanguage', () => {
   });
 
   it('prend la première langue du navigateur prise en charge', () => {
-    expect(detectInitialLanguage(null, ['de-DE', 'en-GB', 'fr'])).toBe('en');
+    expect(detectInitialLanguage(null, ['ja-JP', 'de-DE', 'en-GB'])).toBe('de');
+    expect(detectInitialLanguage(null, ['es-419'])).toBe('es');
   });
 
   it('se rabat sur le français par défaut', () => {
-    expect(detectInitialLanguage(null, ['ja-JP'])).toBe('fr');
+    expect(detectInitialLanguage(null, ['ja-JP', 'pt-BR'])).toBe('fr');
     expect(detectInitialLanguage(null, [])).toBe('fr');
   });
 });

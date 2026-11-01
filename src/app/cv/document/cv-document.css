@@ -1,0 +1,131 @@
+:host {
+  display: block;
+}
+
+/* Page A4 (794 × 1123 px à 96 ppp), marges d'environ 15 mm. */
+.cv {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  padding: 54px 58px;
+  background: #fff;
+  color: #1f2328;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.cv-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cv-name {
+  color: #111;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.cv-headline {
+  margin-top: 3px;
+  color: var(--cv-accent);
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.cv-contact {
+  margin-top: 8px;
+  color: #444;
+  font-size: 12px;
+}
+
+.cv-dot {
+  color: #999;
+}
+
+.cv-photo {
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cv-section {
+  margin-top: 18px;
+}
+
+.cv-heading {
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid var(--cv-accent);
+  color: var(--cv-accent);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cv-strong {
+  color: #111;
+  font-weight: 600;
+}
+
+.cv-plain-list > li + li {
+  margin-top: 2px;
+}
+
+.cv-entry {
+  break-inside: avoid;
+}
+
+.cv-entry + .cv-entry {
+  margin-top: 11px;
+}
+
+.cv-entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cv-entry-title {
+  color: #111;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cv-entry-subtitle {
+  color: #444;
+  font-weight: 400;
+}
+
+.cv-dates {
+  flex-shrink: 0;
+  color: #555;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-meta {
+  color: #666;
+  font-size: 12px;
+}
+
+.cv-bullets {
+  margin-top: 3px;
+  padding-left: 17px;
+  list-style: disc;
+}
+
+.cv-bullets > li + li {
+  margin-top: 2px;
+}
+
+.cv-bullets > li::marker {
+  color: #888;
+}

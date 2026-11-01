@@ -1,0 +1,183 @@
+<section
+  *transloco="let t; prefix: 'editor'"
+  class="panel transition-opacity"
+  [class.opacity-50]="store.isHidden(section().id)"
+>
+  <header class="flex items-center gap-1.5 border-b border-line px-2.5 py-2">
+    <button cdkDragHandle type="button" class="drag-handle" [attr.aria-label]="t('actions.drag')">
+      <app-icon class="size-4" name="grip" />
+    </button>
+    <app-include-toggle [itemId]="section().id" />
+    <span class="grid size-7 shrink-0 place-items-center rounded-lg bg-accent-soft text-accent">
+      <app-icon class="size-4" [name]="icon()" />
+    </span>
+    <label class="min-w-0 flex-1">
+      <span class="sr-only">{{ t('sections.titleLabel') }}</span>
+      <input
+        class="w-full rounded-md bg-transparent px-1.5 py-1 font-semibold outline-none placeholder:text-ink hover:bg-surface-2 focus:bg-surface-2"
+        [value]="section().title"
+        [placeholder]="defaultTitle()"
+        (input)="store.renameSection(section().id, $any($event.target).value)"
+      />
+    </label>
+    <span class="hidden text-xs text-muted sm:inline">{{
+      t('sections.kinds.' + section().kind)
+    }}</span>
+    <app-item-menu
+      [canMoveUp]="index() > 0"
+      [canMoveDown]="!isLast()"
+      (moveUp)="store.moveSection(index(), index() - 1)"
+      (moveDown)="store.moveSection(index(), index() + 1)"
+      (remove)="remove()"
+    />
+  </header>
+
+  <div class="p-2.5 sm:p-3">
+    @if (entryKind(); as kind) {
+      <div cdkDropList class="space-y-2" (cdkDropListDropped)="moveItem($event)">
+        @for (entry of entries(); track entry.id; let i = $index, last = $last) {
+          <app-entry-editor
+            cdkDrag
+            cdkDragLockAxis="y"
+            [sectionId]="section().id"
+            [kind]="kind"
+            [entry]="entry"
+            [index]="i"
+            [isLast]="last"
+          />
+        }
+      </div>
+    } @else {
+      <ul cdkDropList class="space-y-1.5" (cdkDropListDropped)="moveItem($event)">
+        @switch (section().kind) {
+          @case ('skills') {
+            @for (item of skills(); track item.id) {
+              <li
+                cdkDrag
+                cdkDragLockAxis="y"
+                class="group flex items-center gap-1.5 rounded-lg bg-surface"
+                [class.opacity-45]="store.isHidden(item.id)"
+              >
+                <button
+                  cdkDragHandle
+                  type="button"
+                  class="drag-handle"
+                  [attr.aria-label]="t('actions.drag')"
+                >
+                  <app-icon class="size-4" name="grip" />
+                </button>
+                <app-include-toggle [itemId]="item.id" />
+                <input
+                  class="field-input w-[38%] shrink-0"
+                  [attr.aria-label]="t('items.skillLabel')"
+                  [placeholder]="t('items.skillLabelPlaceholder')"
+                  [value]="item.label"
+                  (input)="updateItem(item.id, 'label', $event)"
+                />
+                <input
+                  class="field-input min-w-0 flex-1"
+                  [attr.aria-label]="t('items.skillKeywords')"
+                  [placeholder]="t('items.skillKeywordsPlaceholder')"
+                  [value]="item.keywords"
+                  (input)="updateItem(item.id, 'keywords', $event)"
+                />
+                <ng-container
+                  [ngTemplateOutlet]="removeButton"
+                  [ngTemplateOutletContext]="{ id: item.id }"
+                />
+              </li>
+            }
+          }
+          @case ('languages') {
+            @for (item of languages(); track item.id) {
+              <li
+                cdkDrag
+                cdkDragLockAxis="y"
+                class="group flex items-center gap-1.5 rounded-lg bg-surface"
+                [class.opacity-45]="store.isHidden(item.id)"
+              >
+                <button
+                  cdkDragHandle
+                  type="button"
+                  class="drag-handle"
+                  [attr.aria-label]="t('actions.drag')"
+                >
+                  <app-icon class="size-4" name="grip" />
+                </button>
+                <app-include-toggle [itemId]="item.id" />
+                <input
+                  class="field-input min-w-0 flex-1"
+                  [attr.aria-label]="t('items.languageName')"
+                  [placeholder]="t('items.languageName')"
+                  [value]="item.name"
+                  (input)="updateItem(item.id, 'name', $event)"
+                />
+                <input
+                  class="field-input min-w-0 flex-1"
+                  [attr.aria-label]="t('items.languageLevel')"
+                  [placeholder]="t('items.languageLevelPlaceholder')"
+                  [value]="item.level"
+                  (input)="updateItem(item.id, 'level', $event)"
+                />
+                <ng-container
+                  [ngTemplateOutlet]="removeButton"
+                  [ngTemplateOutletContext]="{ id: item.id }"
+                />
+              </li>
+            }
+          }
+          @default {
+            @for (item of interests(); track item.id) {
+              <li
+                cdkDrag
+                cdkDragLockAxis="y"
+                class="group flex items-center gap-1.5 rounded-lg bg-surface"
+                [class.opacity-45]="store.isHidden(item.id)"
+              >
+                <button
+                  cdkDragHandle
+                  type="button"
+                  class="drag-handle"
+                  [attr.aria-label]="t('actions.drag')"
+                >
+                  <app-icon class="size-4" name="grip" />
+                </button>
+                <app-include-toggle [itemId]="item.id" />
+                <input
+                  class="field-input min-w-0 flex-1"
+                  [attr.aria-label]="t('items.interest')"
+                  [placeholder]="t('items.interestPlaceholder')"
+                  [value]="item.label"
+                  (input)="updateItem(item.id, 'label', $event)"
+                />
+                <ng-container
+                  [ngTemplateOutlet]="removeButton"
+                  [ngTemplateOutletContext]="{ id: item.id }"
+                />
+              </li>
+            }
+          }
+        }
+      </ul>
+    }
+
+    @if (!section().items.length) {
+      <p class="px-1 py-2 text-sm text-muted">{{ t('sections.empty') }}</p>
+    }
+
+    <button type="button" class="add-btn mt-2" (click)="store.addItem(section().id)">
+      <app-icon class="size-4" name="plus" />{{ t('sections.addItem.' + section().kind) }}
+    </button>
+  </div>
+
+  <ng-template #removeButton let-id="id">
+    <button
+      type="button"
+      class="icon-btn sm:opacity-0 sm:group-hover:opacity-100 sm:focus:opacity-100"
+      [attr.aria-label]="t('actions.delete')"
+      (click)="store.removeItem(section().id, id)"
+    >
+      <app-icon class="size-4" name="x" />
+    </button>
+  </ng-template>
+</section>

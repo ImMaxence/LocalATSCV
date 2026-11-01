@@ -19,9 +19,11 @@
     "test": "ng test",
     "test:ci": "ng test --watch=false",
     "docker:local": "docker compose -f docker-compose.yml -f docker-compose.local.yml up --build -d",
-    "docker:down": "docker compose -f docker-compose.yml -f docker-compose.local.yml down"
+    "docker:down": "docker compose -f docker-compose.yml -f docker-compose.local.yml down",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "dependencies": {
+    "@angular/cdk": "^22.2.5",
     "@angular/common": "^22.2.0",
     "@angular/compiler": "^22.2.0",
     "@angular/core": "^22.2.0",
@@ -42,6 +44,7 @@
     "@angular/compiler-cli": "^22.2.0",
     "@tailwindcss/postcss": "^4.3.3",
     "jsdom": "^30.0.0",
+    "playwright-core": "^1.64.1",
     "postcss": "^8.5.32",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.3.3",

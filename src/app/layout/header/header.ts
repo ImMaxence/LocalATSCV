@@ -7,6 +7,8 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
 @Component({
   selector: 'app-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  // L'hôte ne crée pas de boîte : le sticky de <header> s'applique à toute la hauteur de la page.
+  host: { class: 'contents' },
   imports: [RouterLink, RouterLinkActive, TranslocoDirective, LanguageSelect, ThemeToggle],
   template: `
     <header
@@ -26,7 +28,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
         </a>
 
         <nav
-          class="ml-6 hidden items-center gap-1 text-sm md:flex"
+          class="ml-6 hidden items-center gap-1 text-sm lg:flex"
           [attr.aria-label]="t('nav.main')"
         >
           <a routerLink="/" fragment="how" class="nav-link">{{ t('nav.how') }}</a>

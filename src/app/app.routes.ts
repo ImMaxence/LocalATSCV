@@ -9,7 +9,16 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/landing/landing').then((m) => m.Landing),
     title: 'pages.home',
   },
-  { path: 'editor', loadComponent: comingSoon, title: 'pages.editor' },
+  {
+    path: 'editor',
+    loadComponent: () => import('./pages/editor/cv-list/cv-list').then((m) => m.CvList),
+    title: 'pages.editor',
+  },
+  {
+    path: 'editor/:id',
+    loadComponent: () => import('./pages/editor/cv-editor/cv-editor').then((m) => m.CvEditor),
+    title: 'pages.editor',
+  },
   { path: 'analyze', loadComponent: comingSoon, title: 'pages.analyze' },
   { path: 'changelog', loadComponent: comingSoon, title: 'pages.changelog' },
   { path: 'legal/notice', loadComponent: comingSoon, title: 'pages.legalNotice' },

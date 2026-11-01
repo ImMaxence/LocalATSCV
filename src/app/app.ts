@@ -5,10 +5,11 @@ import { ThemeService } from './core/theme/theme.service';
 import { Footer } from './layout/footer/footer';
 import { Header } from './layout/header/header';
 import { UpdateToast } from './layout/update-toast/update-toast';
+import { ToastOutlet } from './shared/toast/toast';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TranslocoDirective, Header, Footer, UpdateToast],
+  imports: [RouterOutlet, TranslocoDirective, Header, Footer, UpdateToast, ToastOutlet],
   template: `
     <ng-container *transloco="let t">
       <a
@@ -26,6 +27,7 @@ import { UpdateToast } from './layout/update-toast/update-toast';
       <app-footer />
     </div>
     <app-update-toast />
+    <app-toast-outlet />
   `,
 })
 export class App {

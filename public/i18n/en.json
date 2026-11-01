@@ -15,9 +15,7 @@
     "dark": "Dark"
   },
   "lang": {
-    "label": "Interface language",
-    "fr": "Français",
-    "en": "English"
+    "label": "Interface language"
   },
   "pages": {
     "home": "ATS-friendly resumes, 100% local",
@@ -29,7 +27,7 @@
     "privacy": "Privacy policy"
   },
   "footer": {
-    "tagline": "The ATS-friendly resume builder that never sees your data.",
+    "tagline": "The ATS-friendly resume builder that never sees your data",
     "product": "Product",
     "legal": "Legal",
     "project": "Project",
@@ -41,22 +39,22 @@
   },
   "update": {
     "title": "New version available",
-    "text": "Reload the page to get it.",
+    "text": "Reload the page to get it",
     "changelog": "See what's new",
     "reload": "Reload",
     "later": "Later"
   },
   "comingSoon": {
     "title": "Coming soon",
-    "text": "This part of LocalATSCV is under construction. It will ship in an upcoming version.",
+    "text": "This part of LocalATSCV is under construction. It will ship in an upcoming version",
     "back": "Back to home"
   },
   "landing": {
     "hero": {
       "badge": "100% local · Free · Open source",
-      "titleLine1": "A resume that gets past the bots.",
-      "titleLine2": "Data that stays with you.",
-      "subtitle": "LocalATSCV helps you build a resume optimized for applicant tracking systems (ATS) and tailor it to every job in a few clicks. Everything happens in your browser: no account, no data sent anywhere.",
+      "titleLine1": "A resume that gets past the bots",
+      "titleLine2": "Data that stays with you",
+      "subtitle": "LocalATSCV helps you build a resume optimized for applicant tracking systems (ATS) and tailor it to every job in a few clicks. Everything happens in your browser: no account, no data sent anywhere",
       "ctaPrimary": "Build my resume",
       "ctaSecondary": "Analyze an existing resume",
       "points": {
@@ -68,52 +66,52 @@
     "ats": {
       "eyebrow": "The problem",
       "title": "Your resume is read by a machine first",
-      "text": "Most large companies and recruiting agencies sort applications with an ATS (Applicant Tracking System). It extracts the text of your resume, stores it in a database and lets recruiters search candidates by keyword.",
+      "text": "Most large companies and recruiting agencies sort applications with an ATS (Applicant Tracking System). It extracts the text of your resume, stores it in a database and lets recruiters search candidates by keyword",
       "pitfalls": {
         "layout": {
           "title": "Complex layouts",
-          "text": "Columns, tables and text boxes scramble the reading order: your information comes out jumbled."
+          "text": "Columns, tables and text boxes scramble the reading order: your information comes out jumbled"
         },
         "image": {
           "title": "Unreadable text",
-          "text": "Icons, skill gauges and some design-tool exports turn into gibberish characters, or no text at all."
+          "text": "Icons, skill gauges and some design-tool exports turn into gibberish characters, or no text at all"
         },
         "keywords": {
           "title": "Missing keywords",
-          "text": "If the job ad's vocabulary doesn't appear in your resume, your profile won't show up in recruiters' searches."
+          "text": "If the job ad's vocabulary doesn't appear in your resume, your profile won't show up in recruiters' searches"
         }
       },
       "seen": "What you see",
       "read": "What the bot reads",
-      "fix": "LocalATSCV does the opposite: a single column, real text and standard section headings that bots read in the right order."
+      "fix": "LocalATSCV does the opposite: a single column, real text and standard section headings that bots read in the right order"
     },
     "how": {
       "eyebrow": "How it works",
       "title": "Write it once, tailor it endlessly",
-      "text": "Four steps turn your Master resume into a tailored application for every job.",
+      "text": "Four steps turn your Master resume into a tailored application for every job",
       "steps": {
         "profile": {
           "title": "Fill in your Master resume",
-          "text": "Enter all your experience once and for all, or import your LinkedIn profile PDF to save time."
+          "text": "Enter all your experience once and for all, or import your LinkedIn profile PDF to save time"
         },
         "offer": {
           "title": "Paste the job ad",
-          "text": "LocalATSCV extracts its keywords and computes a match score out of 100, updated as you type."
+          "text": "LocalATSCV extracts its keywords and computes a match score out of 100, updated as you type"
         },
         "compose": {
           "title": "Build a tailored version",
-          "text": "Tick the relevant experiences and bullet points, reorder them with drag and drop. Nothing is deleted from your Master."
+          "text": "Tick the relevant experiences and bullet points, reorder them with drag and drop. Nothing is deleted from your Master"
         },
         "export": {
           "title": "Export to PDF",
-          "text": "A text-based, structured, single-column PDF that reads as well for bots as it does for recruiters."
+          "text": "A text-based, structured, single-column PDF that reads as well for bots as it does for recruiters"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacy",
-      "title": "Zero data on our servers. Literally.",
-      "text": "There is no database to hack: our server only sends you the application. After that, everything happens in your browser, even offline.",
+      "title": "Zero data on our servers. Literally",
+      "text": "There is no database to hack: our server only sends you the application. After that, everything happens in your browser, even offline",
       "browser": {
         "title": "Your browser",
         "tag": "Your device",
@@ -123,7 +121,7 @@
           "versions": "Tailored versions",
           "settings": "Preferences"
         },
-        "note": "Stored in IndexedDB, on this device only."
+        "note": "Stored in IndexedDB, on this device only"
       },
       "flow": {
         "app": "The application, on first load",
@@ -133,7 +131,7 @@
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Serves the application files (HTML, CSS, JavaScript), nothing more.",
+        "text": "Serves the application files (HTML, CSS, JavaScript), nothing more",
         "items": {
           "noDb": "No database",
           "noAccount": "No user accounts",
@@ -143,19 +141,19 @@
       "points": {
         "account": {
           "title": "No account",
-          "text": "No sign-up, no email, no password. Open the page and get started."
+          "text": "No sign-up, no email, no password. Open the page and get started"
         },
         "trackers": {
           "title": "No trackers",
-          "text": "No analytics, no ads, no cookies. Even the fonts are self-hosted."
+          "text": "No analytics, no ads, no cookies. Even the fonts are self-hosted"
         },
         "csp": {
           "title": "Technically locked down",
-          "text": "The site's security policy (CSP) forbids the browser from contacting any other domain. The code is open source: check it yourself."
+          "text": "The site's security policy (CSP) forbids the browser from contacting any other domain. The code is open source: check it yourself"
         },
         "backup": {
           "title": "Your backups, your files",
-          "text": "Export all your data to a JSON file and import it back on any device."
+          "text": "Export all your data to a JSON file and import it back on any device"
         }
       }
     },
@@ -165,35 +163,35 @@
       "items": {
         "master": {
           "title": "Master resume and tailored versions",
-          "text": "One complete resume, as many variants as applications. Tick, untick: nothing is ever lost."
+          "text": "One complete resume, as many variants as applications. Tick, untick: nothing is ever lost"
         },
         "score": {
           "title": "Match score",
-          "text": "Paste the job ad: matched keywords, missing keywords and a score out of 100 in real time."
+          "text": "Paste the job ad: matched keywords, missing keywords and a score out of 100 in real time"
         },
         "weak": {
           "title": "Weak phrase detector",
-          "text": "“Responsible for”, “helped with”… are flagged automatically, with a bank of action verbs to replace them."
+          "text": "“Responsible for”, “helped with”… are flagged automatically, with a bank of action verbs to replace them"
         },
         "analyzer": {
           "title": "Existing resume analyzer",
-          "text": "Drop in a resume made elsewhere: see what the bot actually reads and what to fix."
+          "text": "Drop in a resume made elsewhere: see what the bot actually reads and what to fix"
         },
         "linkedin": {
           "title": "LinkedIn import",
-          "text": "Pre-fill your Master resume from the free PDF you can export from your LinkedIn profile."
+          "text": "Pre-fill your Master resume from the free PDF you can export from your LinkedIn profile"
         },
         "languages": {
           "title": "5 resume languages",
-          "text": "French, English, Italian, Spanish and German. In English, photo and date of birth are hidden, following English-speaking norms."
+          "text": "French, English, Italian, Spanish and German. In English, photo and date of birth are hidden, following English-speaking norms"
         },
         "pdf": {
           "title": "ATS-friendly PDF export",
-          "text": "Real text and a clear structure: readable by bots, pleasant for recruiters."
+          "text": "Real text and a clear structure: readable by bots, pleasant for recruiters"
         },
         "offline": {
           "title": "Installable and offline",
-          "text": "Add LocalATSCV to your home screen and keep working without a connection."
+          "text": "Add LocalATSCV to your home screen and keep working without a connection"
         }
       }
     },
@@ -204,34 +202,223 @@
       "items": {
         "ats": {
           "q": "What is an ATS?",
-          "a": "An Applicant Tracking System is the software recruiters use to receive, sort and search applications. It converts your resume to text and indexes it: if the text is badly extracted or the right keywords are missing, your application becomes hard to find."
+          "a": "An Applicant Tracking System is the software recruiters use to receive, sort and search applications. It converts your resume to text and indexes it: if the text is badly extracted or the right keywords are missing, your application becomes hard to find"
         },
         "storage": {
           "q": "Where is my data stored?",
-          "a": "Only in your browser, using IndexedDB, a database built into every modern browser. It never goes through our servers, which only know how to serve the application files."
+          "a": "Only in your browser, using IndexedDB, a database built into every modern browser. It never goes through our servers, which only know how to serve the application files"
         },
         "clear": {
           "q": "What happens if I clear my browser data?",
-          "a": "Your resumes are erased, since they exist nowhere else. Export a JSON backup regularly: you can import it back at any time, on any device."
+          "a": "Your resumes are erased, since they exist nowhere else. Export a JSON backup regularly: you can import it back at any time, on any device"
         },
         "score": {
           "q": "Does the score guarantee my resume will be shortlisted?",
-          "a": "No. Every ATS has its own rules and the final decision is made by a human. The score is an indicator: it checks that your resume uses the job ad's vocabulary and that a machine can read it correctly."
+          "a": "No. Every ATS has its own rules and the final decision is made by a human. The score is an indicator: it checks that your resume uses the job ad's vocabulary and that a machine can read it correctly"
         },
         "photo": {
           "q": "Why does the photo disappear in English?",
-          "a": "In the UK, the US and many English-speaking countries, photos and dates of birth are discouraged to limit hiring discrimination. Some recruiters even reject resumes that include them."
+          "a": "In the UK, the US and many English-speaking countries, photos and dates of birth are discouraged to limit hiring discrimination. Some recruiters even reject resumes that include them"
         },
         "free": {
           "q": "Is it really free?",
-          "a": "Yes. LocalATSCV is an open source project under the MIT license, with no ads or subscription. It costs almost nothing to host, since your browser does all the work."
+          "a": "Yes. LocalATSCV is an open source project under the MIT license, with no ads or subscription. It costs almost nothing to host, since your browser does all the work"
         }
       }
     },
     "cta": {
       "title": "Ready to get past the filter?",
-      "text": "Create your Master resume in minutes. Nothing will leave this device.",
+      "text": "Create your Master resume in minutes. Nothing will leave this device",
       "button": "Get started"
+    }
+  },
+  "dialog": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "create": "Create",
+    "save": "Save",
+    "import": "Import"
+  },
+  "editor": {
+    "list": {
+      "title": "My resumes",
+      "subtitle": "Stored in this browser only",
+      "new": "New resume",
+      "newBlank": "Blank resume",
+      "newBlankHint": "Start from an empty page",
+      "newSample": "Start from an example",
+      "newSampleHint": "A pre-filled fictional resume to explore the editor",
+      "import": "Import",
+      "exportAll": "Export all",
+      "emptyTitle": "No resumes yet",
+      "emptyText": "Create your Master resume: all your experience in one place, ready to tailor for every job",
+      "open": "Open",
+      "actions": "Actions",
+      "duplicate": "Duplicate",
+      "export": "Export (JSON)",
+      "delete": "Delete",
+      "updated": "Edited {{date}}",
+      "versions": "Versions: {{count}}",
+      "backupHint": "Your resumes only exist in this browser. Export a JSON backup regularly: if you clear your browser data, it lets you recover everything",
+      "defaultName": "My resume",
+      "copySuffix": "(copy)",
+      "deleteTitle": "Delete “{{name}}”?",
+      "deleteText": "The resume and all its versions will be permanently deleted from this browser",
+      "exportDone": "Backup downloaded",
+      "importConfirmTitle": "Import this backup?",
+      "importConfirmText": "Resumes in this backup: {{count}}. Any resume that already exists in this browser will be replaced",
+      "importDone": "Backup imported: {{count}} resume(s)",
+      "importError": {
+        "invalidJson": "This file is not valid JSON",
+        "notABackup": "This file is not a LocalATSCV backup",
+        "newerVersion": "This backup comes from a newer version of LocalATSCV: update the app first"
+      }
+    },
+    "toolbar": {
+      "back": "My resumes",
+      "name": "Resume name",
+      "cvLanguage": "Resume language",
+      "accent": "Accent color",
+      "saved": "Saved",
+      "saving": "Saving…",
+      "saveError": "Save failed",
+      "edit": "Edit",
+      "preview": "Preview"
+    },
+    "versions": {
+      "label": "Displayed version",
+      "master": "Master resume",
+      "masterHint": "All content, unfiltered",
+      "new": "New version",
+      "newText": "A tailored version starts from your whole Master resume: then untick what this application doesn't need",
+      "nameLabel": "Version name",
+      "namePlaceholder": "E.g. Front-end Dev – Company X",
+      "rename": "Rename version",
+      "delete": "Delete version",
+      "deleteTitle": "Delete the version “{{name}}”?",
+      "deleteText": "Only the selection is deleted: all content stays in your Master resume",
+      "banner": "Version “{{name}}”: untick what shouldn't appear. Nothing is deleted from your Master resume",
+      "include": "Include in this version"
+    },
+    "enRule": "English resume: photo, date of birth and nationality are hidden, following English-speaking norms",
+    "profile": {
+      "title": "Profile",
+      "photo": "Photo",
+      "photoAdd": "Add a photo",
+      "photoChange": "Change",
+      "photoRemove": "Remove",
+      "photoHint": "Resized and stored on this device only",
+      "photoError": "This image could not be read",
+      "hiddenInEnglish": "Hidden in English",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "headline": "Resume headline",
+      "headlinePlaceholder": "E.g. Front-end Developer",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "City",
+      "birthDate": "Date of birth",
+      "nationality": "Nationality",
+      "summary": "Summary",
+      "summaryPlaceholder": "Two or three sentences summarizing your profile and what you are looking for",
+      "links": "Links",
+      "linkLabel": "Link label",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Link address",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Add a link",
+      "removeLink": "Remove link"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Experience",
+        "education": "Education",
+        "projects": "Projects",
+        "certifications": "Certifications",
+        "custom": "Custom section",
+        "skills": "Skills",
+        "languages": "Languages",
+        "interests": "Interests"
+      },
+      "add": "Add a section",
+      "titleLabel": "Section title",
+      "empty": "Empty section: it won't appear on the resume",
+      "addItem": {
+        "experience": "Add an experience",
+        "education": "Add a degree",
+        "projects": "Add a project",
+        "certifications": "Add a certification",
+        "custom": "Add an item",
+        "skills": "Add skills",
+        "languages": "Add a language",
+        "interests": "Add an interest"
+      },
+      "deleteTitle": "Delete the section “{{name}}”?",
+      "deleteText": "Its content will be removed from the Master resume and all its versions"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Job title",
+          "subtitle": "Company"
+        },
+        "education": {
+          "title": "Degree",
+          "subtitle": "School or university"
+        },
+        "projects": {
+          "title": "Project name",
+          "subtitle": "Role or technologies"
+        },
+        "certifications": {
+          "title": "Certification",
+          "subtitle": "Issuer"
+        },
+        "custom": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      },
+      "location": "Location",
+      "url": "Link",
+      "start": "Start",
+      "end": "End",
+      "date": "Date obtained",
+      "current": "Ongoing",
+      "untitled": "Untitled",
+      "bullets": "Achievements",
+      "bulletPlaceholder": "Start with an action verb and quantify the result",
+      "addBullet": "Add a bullet",
+      "bulletHint": "Enter: new bullet"
+    },
+    "items": {
+      "skillLabel": "Category",
+      "skillLabelPlaceholder": "E.g. Front-end",
+      "skillKeywords": "Skills",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Language",
+      "languageLevel": "Level",
+      "languageLevelPlaceholder": "E.g. C1, fluent",
+      "interest": "Interest",
+      "interestPlaceholder": "E.g. Climbing"
+    },
+    "actions": {
+      "menu": "Actions",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "drag": "Drag to reorder"
+    },
+    "month": "Month",
+    "year": "Year",
+    "noMonth": "Month",
+    "preview": {
+      "page": "Page {{n}}"
+    },
+    "notFound": {
+      "title": "Resume not found",
+      "text": "This resume doesn't exist or was deleted from this browser"
     }
   }
 }

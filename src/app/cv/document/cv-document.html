@@ -1,0 +1,90 @@
+<article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
+  <header class="cv-header">
+    <div class="min-w-0 flex-1">
+      @if (fullName()) {
+        <h1 class="cv-name">{{ fullName() }}</h1>
+      }
+      @if (cv().profile.title.trim()) {
+        <p class="cv-headline">{{ cv().profile.title }}</p>
+      }
+      @if (contact().length) {
+        <p class="cv-contact">
+          @for (item of contact(); track $index) {
+            @if (!$first) {
+              <span class="cv-dot" aria-hidden="true"> · </span>
+            }
+            <span>{{ item }}</span>
+          }
+        </p>
+      }
+    </div>
+    @if (photoUrl()) {
+      <img class="cv-photo" [src]="photoUrl()" alt="" />
+    }
+  </header>
+
+  @if (cv().profile.summary.trim()) {
+    <section class="cv-section">
+      <h2 class="cv-heading">{{ labels().sections.summary }}</h2>
+      <p class="whitespace-pre-line">{{ cv().profile.summary }}</p>
+    </section>
+  }
+
+  @for (section of cv().sections; track section.id) {
+    <section class="cv-section">
+      <h2 class="cv-heading">{{ sectionTitle(section) }}</h2>
+      @switch (section.kind) {
+        @case ('skills') {
+          <ul class="cv-plain-list">
+            @for (group of skills(section); track group.id) {
+              <li>
+                @if (group.label.trim()) {
+                  <strong class="cv-strong">{{ group.label }}{{ separator() }}</strong>
+                }
+                {{ group.keywords }}
+              </li>
+            }
+          </ul>
+        }
+        @case ('languages') {
+          <p>{{ languageLine(languages(section)) }}</p>
+        }
+        @case ('interests') {
+          <p>{{ interestLine(interests(section)) }}</p>
+        }
+        @default {
+          @for (entry of entries(section); track entry.id) {
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <h3 class="cv-entry-title">
+                  {{ entry.title }}
+                  @if (entry.subtitle.trim()) {
+                    <span class="cv-entry-subtitle">
+                      @if (entry.title.trim()) {
+                        —
+                      }
+                      {{ entry.subtitle }}
+                    </span>
+                  }
+                </h3>
+                @if (dates(entry)) {
+                  <p class="cv-dates">{{ dates(entry) }}</p>
+                }
+              </div>
+              @if (meta(entry)) {
+                <p class="cv-meta">{{ meta(entry) }}</p>
+              }
+              @if (entry.bullets.length) {
+                <ul class="cv-bullets">
+                  @for (bullet of entry.bullets; track bullet.id) {
+                    <li>{{ bullet.text }}</li>
+                  }
+                </ul>
+              }
+            </div>
+          }
+        }
+      }
+    </section>
+  }
+</article>

@@ -3,8 +3,8 @@ import { TranslocoService } from '@jsverse/transloco';
 import { firstValueFrom } from 'rxjs';
 import { readSetting, writeSetting } from '../storage/local-settings';
 
-/** Langues de l'interface. Les langues du CV (FR, EN, IT, ES, DE) sont gérées à part. */
-export const UI_LANGUAGES = ['fr', 'en'] as const;
+/** Langues de l'interface. La langue de chaque CV est choisie séparément. */
+export const UI_LANGUAGES = ['fr', 'en', 'it', 'es', 'de'] as const;
 export type UiLanguage = (typeof UI_LANGUAGES)[number];
 
 export const DEFAULT_UI_LANGUAGE: UiLanguage = 'fr';

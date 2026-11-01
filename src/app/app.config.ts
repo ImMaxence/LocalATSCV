@@ -6,13 +6,20 @@ import {
   provideBrowserGlobalErrorListeners,
 } from '@angular/core';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { TitleStrategy, provideRouter, withInMemoryScrolling } from '@angular/router';
+import {
+  TitleStrategy,
+  provideRouter,
+  withComponentInputBinding,
+  withInMemoryScrolling,
+  withViewTransitions,
+} from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
 import { provideTransloco } from '@jsverse/transloco';
 import { routes } from './app.routes';
 import { DEFAULT_UI_LANGUAGE, LanguageService, UI_LANGUAGES } from './core/i18n/language.service';
 import { TranslatedTitleStrategy } from './core/i18n/translated-title-strategy';
 import { TranslocoHttpLoader } from './core/i18n/transloco-loader';
+import { skipSamePageTransitions } from './core/view-transitions';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,6 +27,11 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+      withComponentInputBinding(),
+      withViewTransitions({
+        skipInitialTransition: true,
+        onViewTransitionCreated: skipSamePageTransitions,
+      }),
     ),
     { provide: TitleStrategy, useClass: TranslatedTitleStrategy },
     provideHttpClient(withFetch()),

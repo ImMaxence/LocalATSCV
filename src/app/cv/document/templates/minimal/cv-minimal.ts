@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Minimal : style suisse, nom très grand, titres de sections dans une marge à gauche. */
 @Component({
   selector: 'app-cv-minimal',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RichText],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -76,7 +78,7 @@ import { CvTemplateBase } from '../cv-template-base';
                     @if (entry.bullets.length) {
                       <ul class="bullets">
                         @for (bullet of entry.bullets; track bullet.id) {
-                          <li>{{ bullet.text }}</li>
+                          <li><app-cv-rich [text]="bullet.text" /></li>
                         }
                       </ul>
                     }
@@ -100,7 +102,7 @@ import { CvTemplateBase } from '../cv-template-base';
       padding: 62px 64px;
       background: #fff;
       color: #161616;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12px;
       line-height: 1.55;
     }
@@ -111,6 +113,7 @@ import { CvTemplateBase } from '../cv-template-base';
       margin-bottom: 34px;
     }
     .name {
+      font-family: var(--cv-heading-font, inherit);
       font-size: 44px;
       font-weight: 800;
       letter-spacing: -0.045em;

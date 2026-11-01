@@ -47,8 +47,66 @@
               }}</span>
               <span class="sm:hidden">{{ t('templates.button') }}</span>
             </button>
+            <button
+              type="button"
+              class="flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-sm font-medium transition-colors hover:border-ink/25"
+              [cdkMenuTriggerFor]="fontMenu"
+              [attr.aria-label]="t('fonts.title')"
+              [title]="t('fonts.title')"
+            >
+              <app-icon class="size-4 text-accent" name="type" />
+              <span class="hidden xl:inline">{{ fontLabel(cv.fonts.heading) }}</span>
+            </button>
+            <ng-template #fontMenu>
+              <div
+                cdkMenu
+                class="menu-panel menu-in grid w-[min(30rem,calc(100vw-2rem))] grid-cols-2 gap-1"
+              >
+                @for (role of fontRoles; track role) {
+                  <div cdkMenuGroup>
+                    <p
+                      class="px-2.5 pt-1.5 pb-1 text-[11px] font-semibold tracking-wider text-muted uppercase"
+                    >
+                      {{ t('fonts.' + role) }}
+                    </p>
+                    <button
+                      cdkMenuItemRadio
+                      type="button"
+                      class="menu-item py-1.5!"
+                      [cdkMenuItemChecked]="!cv.fonts[role]"
+                      (cdkMenuItemTriggered)="store.setFont(role, null)"
+                    >
+                      <span class="flex-1">{{ t('fonts.default') }}</span>
+                      @if (!cv.fonts[role]) {
+                        <app-icon class="size-4 text-accent" name="check" [strokeWidth]="2.5" />
+                      }
+                    </button>
+                    @for (font of fonts; track font.id) {
+                      <button
+                        cdkMenuItemRadio
+                        type="button"
+                        class="menu-item py-1.5!"
+                        [style.font-family]="font.stack"
+                        [cdkMenuItemChecked]="cv.fonts[role] === font.id"
+                        (cdkMenuItemTriggered)="store.setFont(role, font.id)"
+                      >
+                        <span class="flex-1">{{ font.label }}</span>
+                        @if (cv.fonts[role] === font.id) {
+                          <app-icon class="size-4 text-accent" name="check" [strokeWidth]="2.5" />
+                        }
+                      </button>
+                    }
+                  </div>
+                }
+                <p class="col-span-2 border-t border-line px-2.5 pt-2 pb-1 text-xs text-muted">
+                  {{ t('fonts.hint') }}
+                </p>
+              </div>
+            </ng-template>
 
-            <div class="flex w-full flex-wrap items-center gap-2 lg:ml-auto lg:w-auto lg:flex-nowrap">
+            <div
+              class="flex w-full flex-wrap items-center gap-2 lg:ml-auto lg:w-auto lg:flex-nowrap"
+            >
               <div
                 role="radiogroup"
                 class="flex h-9 items-center rounded-full border border-line bg-surface p-0.5"

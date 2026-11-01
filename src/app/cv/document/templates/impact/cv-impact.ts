@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon, IconName } from '../../../../shared/icon/icon';
 import { SectionKind } from '../../../model/cv.model';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
@@ -23,7 +24,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
 @Component({
   selector: 'app-cv-impact',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon],
+  imports: [RichText, Icon],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header class="hero">
@@ -44,7 +45,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
         <ul class="contact">
           @for (item of contactItems(); track $index) {
             <li>
-              <app-icon class="contact-icon" [name]="contactIcons[item.kind]" [strokeWidth]="2" />
+              <app-icon class="contact-icon" [name]="item.icon" [strokeWidth]="2" />
               <span>{{ item.text }}</span>
             </li>
           }
@@ -128,7 +129,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
                       @if (entry.bullets.length) {
                         <ul class="bullets">
                           @for (bullet of entry.bullets; track bullet.id) {
-                            <li>{{ bullet.text }}</li>
+                            <li><app-cv-rich [text]="bullet.text" /></li>
                           }
                         </ul>
                       }
@@ -152,7 +153,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       min-height: 1123px;
       background: #fff;
       color: #1f2328;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
       line-height: 1.45;
       print-color-adjust: exact;
@@ -178,7 +179,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       box-shadow: 0 10px 24px -8px rgb(0 0 0 / 0.45);
     }
     .name {
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 38px;
       font-weight: 700;
       letter-spacing: -0.025em;
@@ -224,7 +225,7 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       gap: 10px;
       margin-bottom: 11px;
       color: #111;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 16px;
       font-weight: 700;
     }
@@ -313,11 +314,18 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
     .bullets > li::marker {
       color: var(--cv-accent);
     }
+    /* Libellé en ligne, juste avant les pastilles : l'ordre de lecture reste « Libellé mot-clé… ». */
+    .skill-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
     .skill-row + .skill-row {
-      margin-top: 8px;
+      margin-top: 6px;
     }
     .skill-label {
-      margin-bottom: 4px;
+      flex-shrink: 0;
+      max-width: 40%;
       color: #666;
       font-size: 10.5px;
       font-weight: 700;
@@ -325,12 +333,13 @@ const SECTION_ICONS: Record<SectionKind | 'summary', IconName> = {
       text-transform: uppercase;
     }
     .chips {
+      min-width: 0;
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
     }
     .chips > li {
-      padding: 2px 10px;
+      padding: 1px 10px;
       border: 1px solid color-mix(in srgb, var(--cv-accent) 22%, white);
       border-radius: 9999px;
       background: color-mix(in srgb, var(--cv-accent) 6%, white);

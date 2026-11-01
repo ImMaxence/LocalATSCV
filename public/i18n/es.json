@@ -327,7 +327,11 @@
       "linkUrl": "Dirección del enlace",
       "linkUrlPlaceholder": "linkedin.com/in/…",
       "addLink": "Añadir un enlace",
-      "removeLink": "Quitar el enlace"
+      "removeLink": "Quitar el enlace",
+      "drivingLicense": "Carné de conducir",
+      "drivingLicensePlaceholder": "Ej. Carné B, vehículo propio",
+      "qrToggle": "Mostrar este enlace como código QR",
+      "linksHint": "El logotipo (LinkedIn, GitHub, YouTube…) se añade automáticamente. El botón QR muestra el enlace como código QR en las plantillas Signature, Aurora y Pulse"
     },
     "sections": {
       "kinds": {
@@ -389,7 +393,8 @@
       "bullets": "Logros",
       "bulletPlaceholder": "Empieza con un verbo de acción y cuantifica el resultado",
       "addBullet": "Añadir un punto",
-      "bulletHint": "Intro: nuevo punto"
+      "bulletHint": "Intro: nuevo punto",
+      "boldHint": "**palabra** para ponerla en negrita"
     },
     "items": {
       "skillLabel": "Categoría",
@@ -431,7 +436,7 @@
         "good": "buena",
         "fair": "media"
       },
-      "atsHint": "Todas las plantillas imprimen texto real. Los diseños en columnas a veces se leen desordenados en los ATS: para candidaturas en línea, mejor una plantilla de una columna",
+      "atsHint": "Todas las plantillas imprimen texto real. La mayoría de los ATS recientes leen bien los diseños a dos columnas, pero algunos programas antiguos mezclan las columnas: en caso de duda, elige una plantilla de una columna",
       "names": {
         "classic": {
           "name": "Clásica",
@@ -460,6 +465,18 @@
         "impact": {
           "name": "Impact",
           "description": "Franja con foto, iconos, cronología y niveles de idioma visuales, perfectamente legible por los ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Formas orgánicas pastel, foto redonda grande, cronología y código QR, a dos columnas"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "El estilo de Signature en una sola columna: gráfico y perfectamente legible por los ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Franja oscura en diagonal, halos de color, experiencias en tarjetas y competencias en etiquetas"
         }
       }
     },
@@ -496,6 +513,13 @@
     },
     "weak": {
       "hint": "«{{phrase}}» describe una tarea: empieza con un verbo de acción"
+    },
+    "fonts": {
+      "title": "Tipografía",
+      "heading": "Títulos",
+      "body": "Texto",
+      "default": "La de la plantilla",
+      "hint": "Los ATS leen bien todas estas fuentes: el texto sigue siendo texto real"
     }
   },
   "changelog": {
@@ -627,29 +651,47 @@
       "issues": "{{count}} punto(s) que revisar en esta plantilla",
       "allGood": "No se ha detectado ningún problema en esta plantilla",
       "hint": "Calculado sobre el diseño mostrado, con el mismo motor que el analizador de CV"
+    },
+    "method": {
+      "title": "¿Cómo se calcula esta puntuación?",
+      "intro": "No existe una puntuación ATS oficial: cada programa de selección (Workday, Taleo, Greenhouse, Lever…) tiene sus propias reglas, a menudo confidenciales. Este índice comprueba lo que suele causar problemas a la mayoría, con esta escala:",
+      "disclaimer": "Estos criterios proceden de las recomendaciones públicas de los proveedores de ATS y de los errores de lectura más frecuentes (texto en imagen, columnas, iconos, títulos no estándar). La puntuación sirve para mejorar tu CV: no predice la selección"
     }
   },
   "import": {
     "title": "Importar un CV",
     "linkedinTitle": "Importar desde LinkedIn",
     "text": "Elige un CV en PDF: su contenido se extrae en tu navegador y se ordena en las secciones del editor. Después podrás elegir una plantilla",
-    "linkedinSteps": {
-      "step1": "Abre tu perfil de LinkedIn en un ordenador",
-      "step2": "Haz clic en «Más» bajo tu foto y luego en «Guardar como PDF»",
-      "step3": "Elige abajo el archivo descargado"
-    },
     "choose": "Elegir un PDF",
+    "chooseFile": "Elegir un archivo",
     "hint": "Solo PDF, 15 MB como máximo",
     "reading": "Importando…",
     "privacy": "El archivo se lee en tu navegador: no se envía a ningún sitio",
     "close": "Cerrar",
     "done": "CV importado ({{items}} elementos): revisa cada sección",
     "errors": {
-      "notPdf": "Este archivo no es un PDF",
       "tooLarge": "Este archivo supera los 15 MB",
       "encrypted": "Este PDF está protegido con contraseña",
       "unreadable": "No se puede leer este PDF: puede que esté dañado",
-      "empty": "Ningún texto aprovechable: este PDF es probablemente una imagen o un escaneo"
+      "empty": "Ningún texto aprovechable: este PDF es probablemente una imagen o un escaneo",
+      "unsupported": "Elige un archivo PDF o un archivo ZIP de LinkedIn",
+      "archiveEmpty": "Este archivo no contiene datos de perfil de LinkedIn aprovechables"
+    },
+    "hintArchive": "PDF (ordenador) o archivo ZIP (aplicación móvil)",
+    "linkedin": {
+      "computer": {
+        "title": "Desde un ordenador: el PDF de tu perfil",
+        "step1": "Abre linkedin.com en un navegador, en un ordenador (la opción no existe en la aplicación)",
+        "step2": "En tu perfil, haz clic en «Recursos» (o «Más») y luego en «Guardar como PDF»",
+        "step3": "Elige ese PDF aquí abajo"
+      },
+      "archive": {
+        "title": "Desde la aplicación móvil: el archivo de tus datos",
+        "step1": "En la aplicación, toca tu foto y luego Ajustes y Privacidad de datos",
+        "step2": "Elige «Obtener una copia de tus datos» y marca Perfil, Empleos, Educación, Aptitudes e Idiomas",
+        "step3": "LinkedIn te envía un correo en pocos minutos: descarga el archivo ZIP",
+        "step4": "Elige ese archivo ZIP aquí abajo, sin descomprimirlo"
+      }
     }
   },
   "legal": {

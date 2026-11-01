@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Élégant : en-tête centré, typographie à empattements (Fraunces), filets fins. */
 @Component({
   selector: 'app-cv-elegant',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RichText],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -72,7 +74,7 @@ import { CvTemplateBase } from '../cv-template-base';
                   @if (entry.bullets.length) {
                     <ul class="bullets">
                       @for (bullet of entry.bullets; track bullet.id) {
-                        <li>{{ bullet.text }}</li>
+                        <li><app-cv-rich [text]="bullet.text" /></li>
                       }
                     </ul>
                   }
@@ -95,7 +97,7 @@ import { CvTemplateBase } from '../cv-template-base';
       padding: 54px 66px;
       background: #fff;
       color: #2a2a2a;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
       line-height: 1.5;
     }
@@ -113,7 +115,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .name {
       color: #151515;
-      font-family: var(--font-display);
+      font-family: var(--cv-heading-font, var(--font-display));
       font-size: 36px;
       font-weight: 500;
       letter-spacing: 0.01em;
@@ -122,7 +124,7 @@ import { CvTemplateBase } from '../cv-template-base';
     .headline {
       margin-top: 4px;
       color: var(--cv-accent);
-      font-family: var(--font-display);
+      font-family: var(--cv-heading-font, var(--font-display));
       font-size: 16px;
       font-style: italic;
     }
@@ -143,7 +145,7 @@ import { CvTemplateBase } from '../cv-template-base';
       gap: 14px;
       margin-bottom: 12px;
       color: var(--cv-accent);
-      font-family: var(--font-display);
+      font-family: var(--cv-heading-font, var(--font-display));
       font-size: 12.5px;
       font-weight: 600;
       letter-spacing: 0.06em;
@@ -158,7 +160,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .summary {
       color: #333;
-      font-family: var(--font-display);
+      font-family: var(--cv-heading-font, var(--font-display));
       font-size: 13.5px;
       font-style: italic;
       text-align: center;
@@ -181,7 +183,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     h3 {
       color: #151515;
-      font-family: var(--font-display);
+      font-family: var(--cv-heading-font, var(--font-display));
       font-size: 14.5px;
       font-weight: 600;
     }

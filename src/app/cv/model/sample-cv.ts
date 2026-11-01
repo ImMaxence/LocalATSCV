@@ -44,9 +44,9 @@ const FR: SampleContent = {
       end: '',
       current: true,
       bullets: [
-        'Migration de 40 écrans vers Angular et TypeScript, temps de chargement réduit de 35 %',
-        'Mise en place de la stratégie de tests de bout en bout (Playwright), 0 régression en production depuis 12 mois',
-        'Déploiement continu avec GitLab CI pour 3 équipes produit',
+        'Migration de 40 écrans vers **Angular** et **TypeScript**, temps de chargement réduit de 35 %',
+        'Mise en place de la stratégie de tests de bout en bout (**Playwright**), 0 régression en production depuis 12 mois',
+        'Déploiement continu avec **GitLab CI** pour 3 équipes produit',
       ],
     },
     {
@@ -98,9 +98,9 @@ const EN: SampleContent = {
       end: '',
       current: true,
       bullets: [
-        'Migrated 40 screens to Angular and TypeScript, cutting load time by 35%',
-        'Set up the end-to-end testing strategy (Playwright), with zero production regressions in 12 months',
-        'Built continuous delivery with GitLab CI for 3 product teams',
+        'Migrated 40 screens to **Angular** and **TypeScript**, cutting load time by 35%',
+        'Set up the end-to-end testing strategy (**Playwright**), with zero production regressions in 12 months',
+        'Built continuous delivery with **GitLab CI** for 3 product teams',
       ],
     },
     {
@@ -141,6 +141,12 @@ export function createSampleCv(language: CvLanguage): MasterCv {
   const cvLanguage = language === 'fr' ? 'fr' : 'en';
   const content = cvLanguage === 'fr' ? FR : EN;
   const cv = createEmptyCv(content.name, cvLanguage);
+  const linkedin = {
+    id: newId(),
+    label: 'LinkedIn',
+    url: 'linkedin.com/in/camille-martin-exemple',
+  };
+  const github = { id: newId(), label: '@camille-exemple', url: 'github.com/camille-exemple' };
 
   cv.profile = {
     ...cv.profile,
@@ -151,7 +157,9 @@ export function createSampleCv(language: CvLanguage): MasterCv {
     phone: '+33 6 12 34 56 78',
     location: content.location,
     summary: content.summary,
-    links: [{ id: newId(), label: 'LinkedIn', url: 'linkedin.com/in/camille-martin-exemple' }],
+    drivingLicense: cvLanguage === 'fr' ? 'Permis B' : 'Driving licence',
+    links: [linkedin, github],
+    qrLinkId: github.id,
   };
 
   const sections: CvSection[] = [
@@ -205,5 +213,5 @@ export function createSampleCv(language: CvLanguage): MasterCv {
     },
   ];
 
-  return { ...cv, template: 'impact', sections };
+  return { ...cv, template: 'aurora', sections };
 }

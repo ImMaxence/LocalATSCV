@@ -41,7 +41,8 @@ export function extractLayoutText(
   }
   range.detach();
 
-  const pageCount = Math.max(1, Math.ceil((origin.height / scale - 1) / pageHeight));
+  // Pages réellement occupées par du texte : une marge basse qui déborde ne compte pas.
+  const pageCount = Math.max(1, ...items.map((item) => item.page + 1));
   const pages: PdfPage[] = Array.from({ length: pageCount }, () => ({
     width: pageWidth,
     height: pageHeight,

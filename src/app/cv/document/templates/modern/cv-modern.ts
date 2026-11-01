@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon } from '../../../../shared/icon/icon';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Moderne : bandeau de couleur, titres en Space Grotesk, compétences en pastilles. */
 @Component({
   selector: 'app-cv-modern',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon],
+  imports: [RichText, Icon],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header class="band">
@@ -21,11 +22,7 @@ import { CvTemplateBase } from '../cv-template-base';
             <ul class="contact">
               @for (item of contactItems(); track $index) {
                 <li>
-                  <app-icon
-                    class="contact-icon"
-                    [name]="contactIcons[item.kind]"
-                    [strokeWidth]="2"
-                  />
+                  <app-icon class="contact-icon" [name]="item.icon" [strokeWidth]="2" />
                   <span>{{ item.text }}</span>
                 </li>
               }
@@ -93,7 +90,7 @@ import { CvTemplateBase } from '../cv-template-base';
                     @if (entry.bullets.length) {
                       <ul class="bullets">
                         @for (bullet of entry.bullets; track bullet.id) {
-                          <li>{{ bullet.text }}</li>
+                          <li><app-cv-rich [text]="bullet.text" /></li>
                         }
                       </ul>
                     }
@@ -116,7 +113,7 @@ import { CvTemplateBase } from '../cv-template-base';
       min-height: 1123px;
       background: #fff;
       color: #1f2328;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
       line-height: 1.45;
       print-color-adjust: exact;
@@ -131,7 +128,7 @@ import { CvTemplateBase } from '../cv-template-base';
       color: #fff;
     }
     .name {
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 34px;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -184,7 +181,7 @@ import { CvTemplateBase } from '../cv-template-base';
       gap: 10px;
       margin-bottom: 10px;
       color: #111;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 15px;
       font-weight: 700;
     }

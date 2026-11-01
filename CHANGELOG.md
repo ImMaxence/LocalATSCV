@@ -4,6 +4,32 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.3.0] - 2026-11-01
+
+### Ajouté
+
+- Trois modèles graphiques pensés pour les ATS : Signature (formes organiques, grande photo ronde, frise chronologique), Aurore (une colonne, formes pastel) et Pulse (bandeau sombre en biais, cartes, pastilles)
+- QR code dessiné dans le CV vers le lien de son choix (LinkedIn, GitHub, portfolio…), avec le logo du lien au centre
+- Logos LinkedIn, GitHub, YouTube et Instagram devant les liens, globe pour les autres sites
+- Permis de conduire dans le profil, affiché avec une icône de voiture
+- Choix de la police des titres et du texte parmi 10 polices auto-hébergées (Poppins, Montserrat, Lora, Playfair Display…)
+- Mise en gras de mots-clés dans les puces avec `**mot**`
+- Import LinkedIn depuis l'application mobile : l'archive de données (ZIP) se lit directement dans le navigateur
+- Section « Comment est calculée la note » dans l'analyseur, avec le détail des points de chaque critère
+
+### Modifié
+
+- Les CV en deux colonnes sont lus colonne par colonne pour les critères de contenu : seule la mise en page en colonnes est signalée
+- Ligatures désactivées dans les CV pour que « fi » ou « ff » restent lisibles par tous les ATS
+- Nouveau CV et exemple créés avec le modèle Aurore
+- Modèles Impact et Pulse plus compacts : un CV d'une page tient sur une page à l'export
+
+### Corrigé
+
+- En-tête qui glissait sur le côté en allant vers une section de l'accueil (Confidentialité, Comment ça marche) depuis une autre page
+- Sections de l'accueil en partie cachées sous l'en-tête après un clic dans le menu
+- Libellé « Choisir un fichier » dans l'import LinkedIn, qui accepte aussi l'archive ZIP
+
 ## [0.2.0] - 2026-11-01
 
 ### Ajouté
@@ -54,5 +80,6 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.3.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.3.0
 [0.2.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.2.0
 [0.1.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.1.0

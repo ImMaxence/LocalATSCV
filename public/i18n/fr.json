@@ -327,7 +327,11 @@
       "linkUrl": "Adresse du lien",
       "linkUrlPlaceholder": "linkedin.com/in/…",
       "addLink": "Ajouter un lien",
-      "removeLink": "Retirer le lien"
+      "removeLink": "Retirer le lien",
+      "drivingLicense": "Permis de conduire",
+      "drivingLicensePlaceholder": "Ex. Permis B, véhiculé",
+      "qrToggle": "Afficher ce lien en QR code",
+      "linksHint": "Le logo (LinkedIn, GitHub, YouTube…) est ajouté automatiquement. Le bouton QR affiche le lien en QR code dans les modèles Signature, Aurore et Pulse"
     },
     "sections": {
       "kinds": {
@@ -389,7 +393,8 @@
       "bullets": "Réalisations",
       "bulletPlaceholder": "Commencez par un verbe d'action et chiffrez le résultat",
       "addBullet": "Ajouter une puce",
-      "bulletHint": "Entrée : nouvelle puce"
+      "bulletHint": "Entrée : nouvelle puce",
+      "boldHint": "**mot** pour le mettre en gras"
     },
     "items": {
       "skillLabel": "Catégorie",
@@ -431,7 +436,7 @@
         "good": "bonne",
         "fair": "moyenne"
       },
-      "atsHint": "Tous les modèles impriment du vrai texte. Les mises en page en colonnes sont parfois lues dans le désordre par les ATS : pour une candidature en ligne, préférez un modèle à une colonne",
+      "atsHint": "Tous les modèles impriment du vrai texte. Les mises en page à deux colonnes sont bien lues par la plupart des ATS récents, mais certains logiciels plus anciens mélangent les colonnes : en cas de doute, choisissez un modèle à une colonne",
       "names": {
         "classic": {
           "name": "Classique",
@@ -460,6 +465,18 @@
         "impact": {
           "name": "Impact",
           "description": "Bandeau photo, icônes, frise chronologique et jauges de langue, en restant parfaitement lisible par les ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Formes organiques pastel, grande photo ronde, frise et QR code, sur deux colonnes"
+        },
+        "aurora": {
+          "name": "Aurore",
+          "description": "L’ambiance de Signature sur une seule colonne : graphique et parfaitement lisible par les ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Bandeau sombre en diagonale, halos de couleur, expériences en cartes et compétences en pastilles"
         }
       }
     },
@@ -496,6 +513,13 @@
     },
     "weak": {
       "hint": "« {{phrase}} » décrit une tâche : commencez par un verbe d’action"
+    },
+    "fonts": {
+      "title": "Typographie",
+      "heading": "Titres",
+      "body": "Texte",
+      "default": "Celle du modèle",
+      "hint": "Toutes ces polices sont bien lues par les ATS : le texte reste du vrai texte"
     }
   },
   "changelog": {
@@ -627,29 +651,47 @@
       "issues": "{{count}} point(s) à vérifier sur ce modèle",
       "allGood": "Aucun problème détecté sur ce modèle",
       "hint": "Calculé sur la mise en page affichée, avec le même moteur que l’analyseur de CV"
+    },
+    "method": {
+      "title": "Comment ce score est-il calculé ?",
+      "intro": "Il n’existe pas de score ATS officiel : chaque logiciel de recrutement (Workday, Taleo, Greenhouse, Lever…) a ses propres règles, souvent confidentielles. Cet indice vérifie les points qui posent problème à la plupart d’entre eux, avec ce barème :",
+      "disclaimer": "Ces critères viennent des recommandations publiques des éditeurs d’ATS et des erreurs de lecture les plus fréquentes (texte en image, colonnes, pictogrammes, titres non standards). Le score sert à améliorer votre CV : ce n’est pas une prédiction de sélection"
     }
   },
   "import": {
     "title": "Importer un CV",
     "linkedinTitle": "Importer depuis LinkedIn",
     "text": "Choisissez un CV au format PDF : son contenu est extrait dans votre navigateur et rangé dans les sections de l’éditeur. Vous pourrez ensuite choisir un modèle",
-    "linkedinSteps": {
-      "step1": "Ouvrez votre profil LinkedIn sur un ordinateur",
-      "step2": "Cliquez sur « Plus » sous votre photo, puis sur « Enregistrer au format PDF »",
-      "step3": "Choisissez ci-dessous le fichier téléchargé"
-    },
     "choose": "Choisir un PDF",
+    "chooseFile": "Choisir un fichier",
     "hint": "PDF uniquement, 15 Mo maximum",
     "reading": "Import en cours…",
     "privacy": "Le fichier est lu dans votre navigateur : il n'est envoyé nulle part",
     "close": "Fermer",
     "done": "CV importé ({{items}} éléments repris) : relisez chaque section",
     "errors": {
-      "notPdf": "Ce fichier n'est pas un PDF",
       "tooLarge": "Ce fichier dépasse 15 Mo",
       "encrypted": "Ce PDF est protégé par un mot de passe",
       "unreadable": "Impossible de lire ce PDF : il est peut-être endommagé",
-      "empty": "Aucun texte exploitable : ce PDF est sans doute une image ou un scan"
+      "empty": "Aucun texte exploitable : ce PDF est sans doute une image ou un scan",
+      "unsupported": "Choisissez un fichier PDF ou une archive ZIP LinkedIn",
+      "archiveEmpty": "Cette archive ne contient aucune donnée de profil LinkedIn exploitable"
+    },
+    "hintArchive": "PDF (ordinateur) ou archive ZIP (application mobile)",
+    "linkedin": {
+      "computer": {
+        "title": "Depuis un ordinateur : le PDF de votre profil",
+        "step1": "Ouvrez linkedin.com dans un navigateur, sur ordinateur (l’option n’existe pas dans l’application)",
+        "step2": "Sur votre profil, cliquez sur « Ressources » (ou « Plus »), puis sur « Enregistrer au format PDF »",
+        "step3": "Choisissez ce PDF ci-dessous"
+      },
+      "archive": {
+        "title": "Depuis l’application mobile : l’archive de vos données",
+        "step1": "Dans l’application, touchez votre photo, puis Paramètres et Confidentialité des données",
+        "step2": "Choisissez « Obtenir une copie de vos données » et cochez Profil, Postes, Formation, Compétences et Langues",
+        "step3": "LinkedIn vous envoie un e-mail sous quelques minutes : téléchargez l’archive ZIP",
+        "step4": "Choisissez ce fichier ZIP ci-dessous, sans le décompresser"
+      }
     }
   },
   "legal": {

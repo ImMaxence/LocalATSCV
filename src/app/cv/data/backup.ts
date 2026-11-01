@@ -14,6 +14,7 @@ import {
   isTemplateId,
   newId,
 } from '../model/cv.model';
+import { isFontId } from '../model/cv-fonts';
 
 /**
  * Format du fichier de sauvegarde JSON. Incrémenter BACKUP_SCHEMA_VERSION à chaque
@@ -108,8 +109,10 @@ function normalizeProfile(raw: unknown): Profile {
     location: string(profile['location']),
     birthDate: string(profile['birthDate']),
     nationality: string(profile['nationality']),
+    drivingLicense: string(profile['drivingLicense']),
     summary: string(profile['summary']),
     photoId: string(profile['photoId']) || null,
+    qrLinkId: string(profile['qrLinkId']) || null,
     links: array(profile['links'])
       .filter(isRecord)
       .map((link) => ({
@@ -173,6 +176,14 @@ function normalizeSection(raw: unknown): CvSection | null {
   }
 }
 
+function normalizeFonts(raw: unknown): MasterCv['fonts'] {
+  const fonts = isRecord(raw) ? raw : {};
+  return {
+    heading: isFontId(fonts['heading']) ? fonts['heading'] : null,
+    body: isFontId(fonts['body']) ? fonts['body'] : null,
+  };
+}
+
 export function normalizeCv(raw: unknown): MasterCv | null {
   if (!isRecord(raw) || !string(raw['id'])) return null;
   const language = CV_LANGUAGES.includes(raw['language'] as CvLanguage)
@@ -183,6 +194,7 @@ export function normalizeCv(raw: unknown): MasterCv | null {
     name: string(raw['name']) || 'CV',
     language,
     template: isTemplateId(raw['template']) ? raw['template'] : DEFAULT_TEMPLATE,
+    fonts: normalizeFonts(raw['fonts']),
     accentColor: /^#[0-9a-f]{6}$/i.test(string(raw['accentColor']))
       ? string(raw['accentColor'])
       : ACCENT_COLORS[0],

@@ -1,6 +1,12 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
-import { CdkMenu, CdkMenuItem, CdkMenuItemRadio, CdkMenuTrigger } from '@angular/cdk/menu';
+import {
+  CdkMenu,
+  CdkMenuGroup,
+  CdkMenuItem,
+  CdkMenuItemRadio,
+  CdkMenuTrigger,
+} from '@angular/cdk/menu';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -22,6 +28,7 @@ import {
   SECTION_KINDS,
 } from '../../../cv/model/cv.model';
 import { hidesPersonalDetails } from '../../../cv/model/resolve-cv';
+import { CV_FONTS, CvFontId } from '../../../cv/model/cv-fonts';
 import { Icon } from '../../../shared/icon/icon';
 import { CvEditorStore } from './cv-editor.store';
 import { AtsCheck } from './parts/ats-check';
@@ -63,6 +70,7 @@ const NATIVE_NAMES: Record<string, string> = {
     CdkMenu,
     CdkMenuItem,
     CdkMenuItemRadio,
+    CdkMenuGroup,
   ],
   templateUrl: './cv-editor.html',
 })
@@ -82,6 +90,12 @@ export class CvEditor {
   protected readonly sectionKinds = SECTION_KINDS;
   protected readonly sectionIcons = SECTION_ICONS;
   protected readonly hidesPersonalDetails = hidesPersonalDetails;
+  protected readonly fonts = CV_FONTS;
+  protected readonly fontRoles = ['heading', 'body'] as const;
+
+  protected fontLabel(id: CvFontId | null): string {
+    return CV_FONTS.find((font) => font.id === id)?.label ?? 'Aa';
+  }
 
   constructor() {
     effect(() => {

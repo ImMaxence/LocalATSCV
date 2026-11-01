@@ -1,3 +1,5 @@
+import { CvFontId } from './cv-fonts';
+
 /** Langues dans lesquelles un CV peut être rédigé (titres de sections, dates, règle EN). */
 export const CV_LANGUAGES = ['fr', 'en', 'it', 'es', 'de'] as const;
 export type CvLanguage = (typeof CV_LANGUAGES)[number];
@@ -95,9 +97,13 @@ export interface Profile {
   /** Format ISO `AAAA-MM-JJ`. */
   birthDate: string;
   nationality: string;
+  /** Permis de conduire, en texte libre (« Permis B, véhiculé »). */
+  drivingLicense: string;
   summary: string;
   /** Référence vers la table `photos` d'IndexedDB. */
   photoId: string | null;
+  /** Lien à afficher en QR code dans les modèles qui le proposent. */
+  qrLinkId: string | null;
   links: ProfileLink[];
 }
 
@@ -107,6 +113,8 @@ export interface MasterCv {
   name: string;
   language: CvLanguage;
   template: CvTemplateId;
+  /** Polices choisies ; `null` = police prévue par le modèle. */
+  fonts: { heading: CvFontId | null; body: CvFontId | null };
   accentColor: string;
   profile: Profile;
   sections: CvSection[];
@@ -133,16 +141,20 @@ export interface CvVersion {
  * le contenu sur deux colonnes, ce que certains ATS lisent dans le désordre.
  */
 export const CV_TEMPLATES = [
+  { id: 'signature', ats: 'good' },
+  { id: 'aurora', ats: 'excellent' },
+  { id: 'pulse', ats: 'excellent' },
   { id: 'impact', ats: 'excellent' },
   { id: 'classic', ats: 'excellent' },
   { id: 'modern', ats: 'excellent' },
   { id: 'elegant', ats: 'excellent' },
   { id: 'tech', ats: 'excellent' },
   { id: 'minimal', ats: 'good' },
-  { id: 'sidebar', ats: 'fair' },
+  { id: 'sidebar', ats: 'good' },
 ] as const;
 export type CvTemplateId = (typeof CV_TEMPLATES)[number]['id'];
-export type AtsCompatibility = (typeof CV_TEMPLATES)[number]['ats'];
+/** Note de compatibilité ATS d'un modèle, d'après les risques de lecture connus (colonnes, etc.). */
+export type AtsCompatibility = 'excellent' | 'good' | 'fair';
 export const DEFAULT_TEMPLATE: CvTemplateId = 'classic';
 
 export function isTemplateId(value: unknown): value is CvTemplateId {
@@ -208,8 +220,10 @@ export function createProfile(): Profile {
     location: '',
     birthDate: '',
     nationality: '',
+    drivingLicense: '',
     summary: '',
     photoId: null,
+    qrLinkId: null,
     links: [],
   };
 }
@@ -220,7 +234,8 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     id: newId(),
     name,
     language,
-    template: 'impact',
+    template: 'aurora',
+    fonts: { heading: null, body: null },
     accentColor: ACCENT_COLORS[0],
     profile: createProfile(),
     sections: (['experience', 'education', 'skills', 'languages'] as const).map(createSection),

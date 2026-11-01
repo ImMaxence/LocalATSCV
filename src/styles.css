@@ -3,6 +3,21 @@
 @import '@fontsource-variable/fraunces/wght.css';
 @import '@fontsource-variable/fraunces/wght-italic.css';
 @import '@fontsource-variable/space-grotesk/wght.css';
+/* Polices proposées pour les CV (téléchargées uniquement si elles sont utilisées). */
+@import '@fontsource/poppins/latin-400.css';
+@import '@fontsource/poppins/latin-ext-400.css';
+@import '@fontsource/poppins/latin-500.css';
+@import '@fontsource/poppins/latin-ext-500.css';
+@import '@fontsource/poppins/latin-600.css';
+@import '@fontsource/poppins/latin-ext-600.css';
+@import '@fontsource/poppins/latin-700.css';
+@import '@fontsource/poppins/latin-ext-700.css';
+@import '@fontsource-variable/montserrat/wght.css';
+@import '@fontsource-variable/dm-sans/wght.css';
+@import '@fontsource-variable/manrope/wght.css';
+@import '@fontsource-variable/lora/wght.css';
+@import '@fontsource-variable/playfair-display/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
 @import '@angular/cdk/overlay-prebuilt.css';
 
 /* Le mode sombre est piloté par la classe .dark posée sur <html> (voir ThemeService). */
@@ -189,6 +204,14 @@
     opacity: 0;
     transform: translateY(-4px) scale(0.97);
   }
+}
+
+/*
+ * CV : pas de ligatures (« fi », « fl »). Certains extracteurs de PDF les restituent par un
+ * caractère spécial (« ﬁ »), ce qui casse la recherche de mots-clés des ATS.
+ */
+app-cv-document .cv {
+  font-variant-ligatures: none;
 }
 
 /* Glisser-déposer (Angular CDK) */

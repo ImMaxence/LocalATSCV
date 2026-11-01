@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Icon } from '../../../../shared/icon/icon';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 /**
@@ -10,7 +11,7 @@ import { CvTemplateBase } from '../cv-template-base';
 @Component({
   selector: 'app-cv-sidebar',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Icon],
+  imports: [RichText, Icon],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <div class="main">
@@ -49,7 +50,7 @@ import { CvTemplateBase } from '../cv-template-base';
                 @if (entry.bullets.length) {
                   <ul class="bullets">
                     @for (bullet of entry.bullets; track bullet.id) {
-                      <li>{{ bullet.text }}</li>
+                      <li><app-cv-rich [text]="bullet.text" /></li>
                     }
                   </ul>
                 }
@@ -69,11 +70,7 @@ import { CvTemplateBase } from '../cv-template-base';
             <ul class="side-list">
               @for (item of contactItems(); track $index) {
                 <li class="contact-row">
-                  <app-icon
-                    class="contact-icon"
-                    [name]="contactIcons[item.kind]"
-                    [strokeWidth]="2"
-                  />
+                  <app-icon class="contact-icon" [name]="item.icon" [strokeWidth]="2" />
                   <span class="min-w-0">{{ item.text }}</span>
                 </li>
               }
@@ -138,7 +135,7 @@ import { CvTemplateBase } from '../cv-template-base';
       min-height: 1123px;
       background: #fff;
       color: #1f2328;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12px;
       line-height: 1.45;
       print-color-adjust: exact;
@@ -164,7 +161,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .name {
       color: #111;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 32px;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -184,7 +181,7 @@ import { CvTemplateBase } from '../cv-template-base';
       padding-left: 10px;
       border-left: 4px solid var(--cv-accent);
       color: #111;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 14px;
       font-weight: 700;
       letter-spacing: 0.04em;
@@ -236,7 +233,7 @@ import { CvTemplateBase } from '../cv-template-base';
       padding-bottom: 5px;
       border-bottom: 1px solid rgb(255 255 255 / 0.25);
       color: #fff;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.06em;

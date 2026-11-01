@@ -327,7 +327,11 @@
       "linkUrl": "Linkadresse",
       "linkUrlPlaceholder": "linkedin.com/in/…",
       "addLink": "Link hinzufügen",
-      "removeLink": "Link entfernen"
+      "removeLink": "Link entfernen",
+      "drivingLicense": "Führerschein",
+      "drivingLicensePlaceholder": "z. B. Führerschein Klasse B, eigenes Auto",
+      "qrToggle": "Diesen Link als QR-Code anzeigen",
+      "linksHint": "Das Logo (LinkedIn, GitHub, YouTube…) wird automatisch ergänzt. Die QR-Schaltfläche zeigt den Link in den Vorlagen Signature, Aurora und Pulse als QR-Code an"
     },
     "sections": {
       "kinds": {
@@ -389,7 +393,8 @@
       "bullets": "Erfolge",
       "bulletPlaceholder": "Beginne mit einem Aktionsverb und beziffere das Ergebnis",
       "addBullet": "Stichpunkt hinzufügen",
-      "bulletHint": "Eingabetaste: neuer Stichpunkt"
+      "bulletHint": "Eingabetaste: neuer Stichpunkt",
+      "boldHint": "**Wort** für Fettdruck"
     },
     "items": {
       "skillLabel": "Kategorie",
@@ -431,7 +436,7 @@
         "good": "gut",
         "fair": "mittel"
       },
-      "atsHint": "Alle Vorlagen drucken echten Text. Mehrspaltige Layouts werden von ATS manchmal in falscher Reihenfolge gelesen: Für Online-Bewerbungen ist eine einspaltige Vorlage die bessere Wahl",
+      "atsHint": "Alle Vorlagen drucken echten Text. Zweispaltige Layouts lesen die meisten aktuellen ATS gut, manche ältere Programme vermischen jedoch die Spalten: Im Zweifel ist eine einspaltige Vorlage die bessere Wahl",
       "names": {
         "classic": {
           "name": "Klassisch",
@@ -460,6 +465,18 @@
         "impact": {
           "name": "Impact",
           "description": "Fotoband, Icons, Zeitleiste und Sprachbalken, dabei perfekt lesbar für ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organische Pastellformen, großes rundes Foto, Zeitleiste und QR-Code, zweispaltig"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Der Signature-Look in einer Spalte: grafisch und für ATS perfekt lesbar"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Dunkles diagonales Band, Farbverläufe, Erfahrungen als Karten und Kenntnisse als Tags"
         }
       }
     },
@@ -496,6 +513,13 @@
     },
     "weak": {
       "hint": "„{{phrase}}“ beschreibt eine Aufgabe: Beginne mit einem Aktionsverb"
+    },
+    "fonts": {
+      "title": "Typografie",
+      "heading": "Überschriften",
+      "body": "Text",
+      "default": "Die der Vorlage",
+      "hint": "ATS lesen alle diese Schriften problemlos: Der Text bleibt echter Text"
     }
   },
   "changelog": {
@@ -627,29 +651,47 @@
       "issues": "{{count}} Punkt(e) bei dieser Vorlage zu prüfen",
       "allGood": "Bei dieser Vorlage wurde kein Problem gefunden",
       "hint": "Berechnet auf dem angezeigten Layout, mit derselben Engine wie die Lebenslauf-Analyse"
+    },
+    "method": {
+      "title": "Wie wird dieser Wert berechnet?",
+      "intro": "Es gibt keinen offiziellen ATS-Wert: Jede Recruiting-Software (Workday, Taleo, Greenhouse, Lever…) hat eigene, oft vertrauliche Regeln. Dieser Index prüft, was den meisten davon Probleme bereitet, nach diesem Schema:",
+      "disclaimer": "Diese Kriterien stammen aus öffentlichen Empfehlungen der ATS-Anbieter und den häufigsten Lesefehlern (Text als Bild, Spalten, Symbole, nicht standardisierte Überschriften). Der Wert hilft dir, deinen Lebenslauf zu verbessern: Er sagt keine Auswahl voraus"
     }
   },
   "import": {
     "title": "Lebenslauf importieren",
     "linkedinTitle": "Von LinkedIn importieren",
     "text": "Wähle einen Lebenslauf als PDF: Der Inhalt wird in deinem Browser extrahiert und den Abschnitten des Editors zugeordnet. Danach kannst du eine Vorlage wählen",
-    "linkedinSteps": {
-      "step1": "Öffne dein LinkedIn-Profil an einem Computer",
-      "step2": "Klicke unter deinem Foto auf „Mehr“ und dann auf „Als PDF speichern“",
-      "step3": "Wähle unten die heruntergeladene Datei"
-    },
     "choose": "PDF auswählen",
+    "chooseFile": "Datei auswählen",
     "hint": "Nur PDF, maximal 15 MB",
     "reading": "Import läuft…",
     "privacy": "Die Datei wird in deinem Browser gelesen und nirgendwohin gesendet",
     "close": "Schließen",
     "done": "Lebenslauf importiert ({{items}} Einträge): Prüfe jeden Abschnitt",
     "errors": {
-      "notPdf": "Diese Datei ist kein PDF",
       "tooLarge": "Diese Datei ist größer als 15 MB",
       "encrypted": "Dieses PDF ist passwortgeschützt",
       "unreadable": "Dieses PDF kann nicht gelesen werden: Es ist möglicherweise beschädigt",
-      "empty": "Kein verwertbarer Text: Dieses PDF ist vermutlich ein Bild oder ein Scan"
+      "empty": "Kein verwertbarer Text: Dieses PDF ist vermutlich ein Bild oder ein Scan",
+      "unsupported": "Wähle eine PDF-Datei oder ein LinkedIn-ZIP-Archiv",
+      "archiveEmpty": "Dieses Archiv enthält keine verwertbaren LinkedIn-Profildaten"
+    },
+    "hintArchive": "PDF (Computer) oder ZIP-Archiv (Mobile App)",
+    "linkedin": {
+      "computer": {
+        "title": "Am Computer: das PDF deines Profils",
+        "step1": "Öffne linkedin.com in einem Browser am Computer (in der App gibt es diese Option nicht)",
+        "step2": "Klicke in deinem Profil auf „Ressourcen“ (oder „Mehr“) und dann auf „Als PDF speichern“",
+        "step3": "Wähle dieses PDF unten aus"
+      },
+      "archive": {
+        "title": "In der Mobile App: das Archiv deiner Daten",
+        "step1": "Tippe in der App auf dein Foto, dann auf Einstellungen und Datenschutz",
+        "step2": "Wähle „Kopie Ihrer Daten herunterladen“ und markiere Profil, Positionen, Ausbildung, Kenntnisse und Sprachen",
+        "step3": "LinkedIn schickt dir innerhalb weniger Minuten eine E-Mail: Lade das ZIP-Archiv herunter",
+        "step4": "Wähle diese ZIP-Datei unten aus, ohne sie zu entpacken"
+      }
     }
   },
   "legal": {

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
+import { linkIcon } from '../../../../cv/document/templates/cv-template-base';
 import { hidesPersonalDetails } from '../../../../cv/model/resolve-cv';
 import { Profile } from '../../../../cv/model/cv.model';
 import { TextField } from '../../../../shared/form/text-field';
@@ -122,6 +123,13 @@ import { CvEditorStore } from '../cv-editor.store';
           />
           <app-text-field
             class="sm:col-span-2"
+            [label]="t('drivingLicense')"
+            [placeholder]="t('drivingLicensePlaceholder')"
+            [value]="cv.profile.drivingLicense"
+            (valueChange)="update({ drivingLicense: $event })"
+          />
+          <app-text-field
+            class="sm:col-span-2"
             [multiline]="true"
             [label]="t('summary')"
             [placeholder]="t('summaryPlaceholder')"
@@ -134,7 +142,7 @@ import { CvEditorStore } from '../cv-editor.store';
             <ul class="space-y-1.5">
               @for (link of cv.profile.links; track link.id) {
                 <li class="group flex items-center gap-1.5">
-                  <app-icon class="mx-1 size-4 shrink-0 text-muted" name="link" />
+                  <app-icon class="mx-1 size-4 shrink-0 text-muted" [name]="linkIcon(link.url)" />
                   <input
                     class="field-input w-[34%] shrink-0"
                     [attr.aria-label]="t('linkLabel')"
@@ -152,6 +160,16 @@ import { CvEditorStore } from '../cv-editor.store';
                   />
                   <button
                     type="button"
+                    class="icon-btn aria-pressed:bg-accent-soft aria-pressed:text-accent"
+                    [attr.aria-pressed]="cv.profile.qrLinkId === link.id"
+                    [attr.aria-label]="t('qrToggle')"
+                    [title]="t('qrToggle')"
+                    (click)="update({ qrLinkId: cv.profile.qrLinkId === link.id ? null : link.id })"
+                  >
+                    <app-icon class="size-4" name="qr" />
+                  </button>
+                  <button
+                    type="button"
                     class="icon-btn sm:opacity-0 sm:group-hover:opacity-100 sm:focus:opacity-100"
                     [attr.aria-label]="t('removeLink')"
                     (click)="store.removeLink(link.id)"
@@ -164,6 +182,7 @@ import { CvEditorStore } from '../cv-editor.store';
             <button type="button" class="add-btn mt-1.5" (click)="store.addLink()">
               <app-icon class="size-4" name="plus" />{{ t('addLink') }}
             </button>
+            <p class="mt-1 text-xs text-muted">{{ t('linksHint') }}</p>
           </div>
         </div>
       </section>
@@ -176,6 +195,7 @@ export class ProfilePanel {
   private readonly transloco = inject(TranslocoService);
 
   protected readonly uploading = signal(false);
+  protected readonly linkIcon = linkIcon;
   protected readonly hidesDetails = computed(() =>
     hidesPersonalDetails(this.store.cv()?.language ?? 'fr'),
   );

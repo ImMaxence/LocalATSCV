@@ -86,7 +86,9 @@ import { IncludeToggle } from './editor-controls';
         <button type="button" class="add-btn" (click)="add()">
           <app-icon class="size-4" name="plus" />{{ t('entry.addBullet') }}
         </button>
-        <span class="text-xs text-muted">{{ t('entry.bulletHint') }}</span>
+        <span class="text-xs text-muted"
+          >{{ t('entry.bulletHint') }} · {{ t('entry.boldHint') }}</span
+        >
       </div>
     </div>
   `,

@@ -77,7 +77,7 @@
               @if (entry.bullets.length) {
                 <ul class="cv-bullets">
                   @for (bullet of entry.bullets; track bullet.id) {
-                    <li>{{ bullet.text }}</li>
+                    <li><app-cv-rich [text]="bullet.text" /></li>
                   }
                 </ul>
               }

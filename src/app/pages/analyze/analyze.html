@@ -169,6 +169,32 @@
           }
         }
 
+        <!-- Méthode : transparence sur le calcul -->
+        <details class="panel group">
+          <summary
+            class="flex cursor-pointer list-none items-center gap-2 px-5 py-3.5 font-semibold [&::-webkit-details-marker]:hidden"
+          >
+            <app-icon class="size-4 text-muted" name="info" />
+            <span class="flex-1">{{ t('method.title') }}</span>
+            <app-icon
+              class="size-4 text-muted transition-transform group-open:rotate-180"
+              name="chevronDown"
+            />
+          </summary>
+          <div class="space-y-3 border-t border-line px-5 py-4 text-sm leading-relaxed text-muted">
+            <p>{{ t('method.intro') }}</p>
+            <ul class="grid gap-x-6 gap-y-1 sm:grid-cols-2">
+              @for (check of result.checks; track check.id) {
+                <li class="flex justify-between gap-3">
+                  <span>{{ t('checks.' + check.id + '.title') }}</span>
+                  <span class="tabular-nums">{{ check.max }} pts</span>
+                </li>
+              }
+            </ul>
+            <p>{{ t('method.disclaimer') }}</p>
+          </div>
+        </details>
+
         <!-- Ce que lit le robot -->
         <section class="panel">
           <div class="flex items-center gap-2 border-b border-line px-5 py-3.5">

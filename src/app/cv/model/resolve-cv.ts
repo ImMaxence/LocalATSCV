@@ -14,6 +14,7 @@ import {
 export interface ResolvedCv {
   language: CvLanguage;
   template: CvTemplateId;
+  fonts: MasterCv['fonts'];
   accentColor: string;
   profile: Profile;
   sections: CvSection[];
@@ -65,6 +66,7 @@ export function resolveCv(cv: MasterCv, version: CvVersion | null): ResolvedCv {
   return {
     language: cv.language,
     template: cv.template,
+    fonts: cv.fonts,
     accentColor: cv.accentColor,
     profile: { ...profile, links: profile.links.filter((link) => filled(link.url)) },
     sections,

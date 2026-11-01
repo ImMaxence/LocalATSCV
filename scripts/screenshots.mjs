@@ -112,6 +112,43 @@ const shots = [
     },
   },
   {
+    file: 'templates-showcase.png',
+    context: { viewport: { width: 1440, height: 760 }, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      const pages = [];
+      for (const name of ['Signature', 'Aurore', 'Pulse']) {
+        await page.locator('button:has(app-icon[name=layout])').click();
+        await page
+          .getByRole('dialog')
+          .getByRole('button', { name: new RegExp(`^${name}`) })
+          .click();
+        await page.getByRole('dialog').waitFor({ state: 'detached' });
+        await page.waitForTimeout(300);
+        // Angular retire les styles d'un modèle qui n'est plus affiché : on les garde avec le CV.
+        pages.push(
+          await page.evaluate(() => {
+            const styles = [...document.querySelectorAll('head style')].map((s) => s.textContent);
+            return {
+              html: document.querySelector('app-cv-preview app-cv-document').outerHTML,
+              styles,
+            };
+          }),
+        );
+      }
+      await page.evaluate((pages) => {
+        const css = [...new Set(pages.flatMap((p) => p.styles))].join('\n');
+        document.body.innerHTML = `<style>${css}
+          .showcase { display: flex; justify-content: center; gap: 32px; padding: 40px; background: #f3f1ec; }
+          .showcase > div { width: 397px; height: 562px; overflow: hidden; border-radius: 6px; box-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.35); }
+          .showcase > div > * { transform: scale(0.5); transform-origin: top left; }
+        </style><div class="showcase">${pages.map((p) => `<div>${p.html}</div>`).join('')}</div>`;
+      }, pages);
+      await page.waitForTimeout(300);
+    },
+    target: (page) => page.locator('.showcase'),
+  },
+  {
     file: 'analyze.png',
     context: { viewport: { width: 1440, height: 1250 }, colorScheme: 'light' },
     prepare: async (page) => {

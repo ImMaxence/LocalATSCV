@@ -21,6 +21,7 @@ import {
   newId,
 } from '../../../cv/model/cv.model';
 import { resolveCv } from '../../../cv/model/resolve-cv';
+import { CvFontId } from '../../../cv/model/cv-fonts';
 import { extractKeywords, hiddenIdsForJob, matchCv } from '../../../cv/analysis/job-match';
 
 const SAVE_DELAY_MS = 400;
@@ -118,6 +119,10 @@ export class CvEditorStore {
 
   setTemplate(template: CvTemplateId): void {
     this.mutate((cv) => (cv.template = template));
+  }
+
+  setFont(role: 'heading' | 'body', font: CvFontId | null): void {
+    this.mutate((cv) => (cv.fonts = { ...cv.fonts, [role]: font }));
   }
 
   setAccent(color: string): void {

@@ -23,18 +23,29 @@ const stripProtocol = (url: string): string =>
 const SIDE_KINDS: readonly SectionKind[] = ['skills', 'languages', 'interests'];
 
 export interface ContactItem {
-  kind: 'location' | 'email' | 'phone' | 'link' | 'birthDate' | 'nationality';
+  kind: 'location' | 'email' | 'phone' | 'license' | 'link' | 'birthDate' | 'nationality';
   text: string;
+  /** Icône SVG (invisible pour un ATS) : pictogramme, ou logo pour les liens connus. */
+  icon: IconName;
 }
 
-const CONTACT_ICONS: Record<ContactItem['kind'], IconName> = {
+const CONTACT_ICONS: Record<Exclude<ContactItem['kind'], 'link'>, IconName> = {
   location: 'mapPin',
   email: 'mail',
   phone: 'phone',
-  link: 'link',
+  license: 'car',
   birthDate: 'calendar',
   nationality: 'flag',
 };
+
+/** Logo affiché devant un lien, selon son adresse. */
+export function linkIcon(url: string): IconName {
+  if (/linkedin\.com/i.test(url)) return 'linkedin';
+  if (/github\.com/i.test(url)) return 'github';
+  if (/youtube\.com|youtu\.be/i.test(url)) return 'youtube';
+  if (/instagram\.com/i.test(url)) return 'instagram';
+  return 'globe';
+}
 
 /** Indices de niveau reconnus dans le texte saisi (CECRL et mots usuels des 5 langues). */
 const LEVEL_HINTS: [RegExp, number][] = [
@@ -74,28 +85,46 @@ export abstract class CvTemplateBase {
   protected readonly contactItems = computed((): ContactItem[] => {
     const { profile, language } = this.cv();
     const labels = this.labels();
+    const item = (kind: Exclude<ContactItem['kind'], 'link'>, text: string): ContactItem => ({
+      kind,
+      text,
+      icon: CONTACT_ICONS[kind],
+    });
     const items: ContactItem[] = [
-      { kind: 'location', text: profile.location },
-      { kind: 'email', text: profile.email },
-      { kind: 'phone', text: profile.phone },
-      ...profile.links.map((link) => ({ kind: 'link' as const, text: stripProtocol(link.url) })),
-      {
-        kind: 'birthDate',
-        text:
-          profile.birthDate &&
+      item('location', profile.location),
+      item('email', profile.email),
+      item('phone', profile.phone),
+      item('license', profile.drivingLicense ?? ''),
+      ...profile.links.map((link): ContactItem => ({
+        kind: 'link',
+        text: stripProtocol(link.url),
+        icon: linkIcon(link.url),
+      })),
+      item(
+        'birthDate',
+        profile.birthDate &&
           `${labels.birthDate}${this.separator()}${formatBirthDate(profile.birthDate, language)}`,
-      },
-      {
-        kind: 'nationality',
-        text:
-          profile.nationality && `${labels.nationality}${this.separator()}${profile.nationality}`,
-      },
+      ),
+      item(
+        'nationality',
+        profile.nationality && `${labels.nationality}${this.separator()}${profile.nationality}`,
+      ),
     ];
-    return items.map((item) => ({ ...item, text: item.text.trim() })).filter((item) => item.text);
+    return items.map((i) => ({ ...i, text: i.text.trim() })).filter((i) => i.text);
   });
 
   protected readonly contact = computed(() => this.contactItems().map((item) => item.text));
-  protected readonly contactIcons = CONTACT_ICONS;
+
+  /** Lien choisi pour le QR code : adresse complète et légende lisible. */
+  protected readonly qr = computed(() => {
+    const { links, qrLinkId } = this.cv().profile;
+    const link = links.find((l) => l.id === qrLinkId && l.url.trim());
+    if (!link) return null;
+    const url = /^https?:\/\//i.test(link.url.trim())
+      ? link.url.trim()
+      : `https://${link.url.trim()}`;
+    return { url, caption: link.label.trim() || stripProtocol(link.url), icon: linkIcon(link.url) };
+  });
 
   protected readonly summary = computed(() => this.cv().profile.summary.trim());
   protected readonly mainSections = computed(() =>

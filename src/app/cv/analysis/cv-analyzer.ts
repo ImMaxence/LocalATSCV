@@ -146,6 +146,65 @@ export function buildLines(pdf: ExtractedPdf): Line[] {
   return lines;
 }
 
+const chars = (items: PdfTextItem[]) => items.reduce((sum, item) => sum + item.text.length, 0);
+
+/**
+ * Gouttière verticale entre deux colonnes : une abscisse qu'aucun fragment de texte ne traverse,
+ * avec assez de texte de chaque côté. Un CV à une colonne n'en a pas : ses lignes la traversent.
+ */
+export function findGutter(page: ExtractedPdf['pages'][number]): number | null {
+  const items = page.items.filter((item) => item.text.trim().length >= 2);
+  const total = chars(items);
+  for (let x = page.width * 0.2; x <= page.width * 0.55; x += 2) {
+    const crossing = items.filter((item) => item.x < x - 1 && item.x + item.width > x + 1).length;
+    if (crossing > Math.max(1, items.length * 0.03)) continue;
+    const left = items.filter((item) => item.x + item.width <= x + 1);
+    const right = items.filter((item) => item.x >= x - 1);
+    if (
+      left.length >= 6 &&
+      right.length >= 6 &&
+      Math.min(chars(left), chars(right)) >= total * 0.12
+    ) {
+      return x;
+    }
+  }
+  return null;
+}
+
+/**
+ * Lecture colonne par colonne, comme les ATS récents : si une page a une vraie colonne
+ * latérale, la colonne principale (la plus fournie) est lue d'abord, puis la latérale.
+ * Une marge de dates alignée ligne à ligne avec le contenu n'est pas une colonne indépendante.
+ */
+export function readingColumns(pdf: ExtractedPdf): { main: Line[]; side: Line[] } {
+  const main: Line[] = [];
+  const side: Line[] = [];
+  for (const page of pdf.pages) {
+    const linesOf = (items: PdfTextItem[]) => buildLines({ pages: [{ ...page, items }] });
+    const gutter = findGutter(page);
+    if (gutter === null) {
+      main.push(...linesOf(page.items));
+      continue;
+    }
+    const left = page.items.filter((item) => item.x < gutter);
+    const right = page.items.filter((item) => item.x >= gutter);
+    const leftLines = linesOf(left);
+    const rightLines = linesOf(right);
+    const aligned = leftLines.filter((line) =>
+      rightLines.some((other) => Math.abs(other.y - line.y) <= 1.5),
+    ).length;
+    if (aligned >= leftLines.length * 0.5) {
+      main.push(...linesOf(page.items));
+      continue;
+    }
+    const [primary, secondary] =
+      chars(right) >= chars(left) ? [rightLines, leftLines] : [leftLines, rightLines];
+    main.push(...primary);
+    side.push(...secondary);
+  }
+  return { main, side };
+}
+
 /**
  * Colonnes côte à côte : sur une même ligne, deux blocs de texte séparés par un grand blanc,
  * le bloc de droite n'étant pas une simple date alignée à droite.
@@ -222,6 +281,10 @@ const check = (
 
 export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   const lines = buildLines(pdf);
+  // Le contenu est évalué colonne par colonne (lecture des ATS récents). La vue « robot » et le
+  // contrôle de mise en page gardent la lecture ligne à ligne, la plus pessimiste.
+  const { main, side } = readingColumns(pdf);
+  const contentLines = [...main, ...side];
   const text = lines.map((line) => line.text).join('\n');
   const characters = text.replace(/\s/g, '').length;
   const words = text.match(WORD)?.length ?? 0;
@@ -284,7 +347,7 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
         : check('contact', 'structure', 10, 'fail', 0),
   );
 
-  const headings = lines
+  const headings = contentLines
     .map((line) =>
       normalizeText(line.text)
         .replace(/[^a-z ]/g, ' ')
@@ -334,11 +397,11 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   );
 
   // 3. Contenu
-  const bulletLines = lines.filter((line) => BULLET.test(line.text));
+  const bulletLines = contentLines.filter((line) => BULLET.test(line.text));
   const candidates =
     bulletLines.length >= 3
       ? bulletLines
-      : lines.filter((line) => (line.text.match(WORD)?.length ?? 0) >= 6);
+      : contentLines.filter((line) => (line.text.match(WORD)?.length ?? 0) >= 6);
   const quantified = candidates.filter((line) => /\d/.test(line.text.replace(YEAR, ''))).length;
   const percent = candidates.length ? Math.round((quantified / candidates.length) * 100) : 0;
   const quantifiedStatus: CheckStatus = percent >= 30 ? 'pass' : percent >= 10 ? 'warn' : 'fail';
@@ -355,7 +418,9 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   );
 
   const weak = [
-    ...new Set(lines.map((line) => findWeakOpener(line.text)).filter((phrase) => phrase !== null)),
+    ...new Set(
+      contentLines.map((line) => findWeakOpener(line.text)).filter((phrase) => phrase !== null),
+    ),
   ];
   checks.push(
     weak.length === 0

@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RichText } from '../../parts/rich-text';
 import { CvTemplateBase } from '../cv-template-base';
 
 /** Tech : liseré latéral, titres et dates en chasse fixe, compétences façon `code`. */
 @Component({
   selector: 'app-cv-tech',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RichText],
   template: `
     <article class="cv" [attr.lang]="cv().language" [style.--cv-accent]="cv().accentColor">
       <header>
@@ -81,7 +83,7 @@ import { CvTemplateBase } from '../cv-template-base';
                   @if (entry.bullets.length) {
                     <ul class="bullets">
                       @for (bullet of entry.bullets; track bullet.id) {
-                        <li>{{ bullet.text }}</li>
+                        <li><app-cv-rich [text]="bullet.text" /></li>
                       }
                     </ul>
                   }
@@ -105,7 +107,7 @@ import { CvTemplateBase } from '../cv-template-base';
       border-left: 7px solid var(--cv-accent);
       background: #fff;
       color: #1f2328;
-      font-family: var(--font-sans);
+      font-family: var(--cv-body-font, var(--font-sans));
       font-size: 12.5px;
       line-height: 1.5;
       print-color-adjust: exact;
@@ -120,7 +122,7 @@ import { CvTemplateBase } from '../cv-template-base';
     }
     .name {
       color: #0d1117;
-      font-family: var(--font-grotesk);
+      font-family: var(--cv-heading-font, var(--font-grotesk));
       font-size: 31px;
       font-weight: 700;
       letter-spacing: -0.02em;

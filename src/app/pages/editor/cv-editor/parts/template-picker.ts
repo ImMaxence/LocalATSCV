@@ -74,7 +74,7 @@ const ATS_BADGES: Record<AtsCompatibility, string> = {
                   class="mt-2 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold"
                   [class]="badges[option.ats]"
                 >
-                  @if (option.ats === 'fair') {
+                  @if (option.ats !== 'excellent') {
                     <app-icon class="size-3" name="alert" [strokeWidth]="2.25" />
                   }
                   {{ t('ats') }} : {{ t('levels.' + option.ats) }}

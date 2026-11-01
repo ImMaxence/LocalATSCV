@@ -1,4 +1,4 @@
-import { buildLines } from '../analysis/cv-analyzer';
+import { readingColumns } from '../analysis/cv-analyzer';
 import { ExtractedPdf, PdfTextItem } from '../analysis/pdf-text';
 import { normalizeText } from '../analysis/weak-phrases';
 import {
@@ -332,68 +332,15 @@ interface SourceLine {
   size: number;
 }
 
-const chars = (items: PdfTextItem[]) => items.reduce((sum, item) => sum + item.text.length, 0);
-
 /**
- * Gouttière verticale entre deux colonnes : une abscisse qu'aucun fragment de texte ne traverse,
- * avec assez de texte de chaque côté. Un CV à une colonne n'en a pas : ses lignes la traversent.
- */
-function findGutter(page: ExtractedPdf['pages'][number]): number | null {
-  const items = page.items.filter((item) => item.text.trim().length >= 2);
-  const total = chars(items);
-  for (let x = page.width * 0.2; x <= page.width * 0.55; x += 2) {
-    const crossing = items.filter((item) => item.x < x - 1 && item.x + item.width > x + 1).length;
-    if (crossing > Math.max(1, items.length * 0.03)) continue;
-    const left = items.filter((item) => item.x + item.width <= x + 1);
-    const right = items.filter((item) => item.x >= x - 1);
-    if (
-      left.length >= 6 &&
-      right.length >= 6 &&
-      Math.min(chars(left), chars(right)) >= total * 0.12
-    ) {
-      return x;
-    }
-  }
-  return null;
-}
-
-/**
- * Lignes de lecture. Si le PDF a deux colonnes, chacune est lue séparément :
- * la principale (la plus fournie) d'abord, puis la latérale.
+ * Lignes de lecture : colonne principale de toutes les pages, puis colonne latérale
+ * (voir readingColumns dans l'analyseur).
  */
 function readingLines(pdf: ExtractedPdf): SourceLine[] {
-  const main: SourceLine[] = [];
-  const side: SourceLine[] = [];
-  const toLines = (items: PdfTextItem[], width: number, height: number) =>
-    buildLines({ pages: [{ width, height, items }] }).map((line) => ({
-      text: line.text,
-      size: Math.max(...line.items.map((item) => item.height)),
-    }));
-
-  for (const page of pdf.pages) {
-    const gutter = findGutter(page);
-    if (gutter === null) {
-      main.push(...toLines(page.items, page.width, page.height));
-      continue;
-    }
-    const left = page.items.filter((item) => item.x < gutter);
-    const right = page.items.filter((item) => item.x >= gutter);
-    // Marge de dates alignée ligne à ligne avec le contenu : ce n'est pas une colonne
-    // indépendante, la lecture par lignes la garde à côté de l'entrée qu'elle date.
-    const rightLines = buildLines({ pages: [{ ...page, items: right }] });
-    const leftLines = buildLines({ pages: [{ ...page, items: left }] });
-    const aligned = leftLines.filter((line) =>
-      rightLines.some((other) => Math.abs(other.y - line.y) <= 1.5),
-    ).length;
-    if (aligned >= leftLines.length * 0.5) {
-      main.push(...toLines(page.items, page.width, page.height));
-      continue;
-    }
-    const [primary, secondary] = chars(right) >= chars(left) ? [right, left] : [left, right];
-    main.push(...toLines(primary, page.width, page.height));
-    side.push(...toLines(secondary, page.width, page.height));
-  }
-  return [...main, ...side].filter((line) => line.text && !PAGE_FOOTER.test(line.text.trim()));
+  const { main, side } = readingColumns(pdf);
+  return [...main, ...side]
+    .map((line) => ({ text: line.text, size: Math.max(...line.items.map((item) => item.height)) }))
+    .filter((line) => line.text && !PAGE_FOOTER.test(line.text.trim()));
 }
 
 const isContactLike = (text: string) =>

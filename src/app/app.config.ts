@@ -5,6 +5,7 @@ import {
   provideAppInitializer,
   provideBrowserGlobalErrorListeners,
 } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import {
   TitleStrategy,
@@ -16,6 +17,7 @@ import {
 import { provideServiceWorker } from '@angular/service-worker';
 import { provideTransloco } from '@jsverse/transloco';
 import { routes } from './app.routes';
+import { AnchorScroller } from './core/anchor-scroller';
 import { DEFAULT_UI_LANGUAGE, LanguageService, UI_LANGUAGES } from './core/i18n/language.service';
 import { TranslatedTitleStrategy } from './core/i18n/translated-title-strategy';
 import { TranslocoHttpLoader } from './core/i18n/transloco-loader';
@@ -33,6 +35,7 @@ export const appConfig: ApplicationConfig = {
         onViewTransitionCreated: skipSamePageTransitions,
       }),
     ),
+    { provide: ViewportScroller, useClass: AnchorScroller },
     { provide: TitleStrategy, useClass: TranslatedTitleStrategy },
     provideHttpClient(withFetch()),
     provideTransloco({

@@ -327,7 +327,11 @@
       "linkUrl": "Link address",
       "linkUrlPlaceholder": "linkedin.com/in/…",
       "addLink": "Add a link",
-      "removeLink": "Remove link"
+      "removeLink": "Remove link",
+      "drivingLicense": "Driver's license",
+      "drivingLicensePlaceholder": "E.g. Full driving licence, own car",
+      "qrToggle": "Show this link as a QR code",
+      "linksHint": "The logo (LinkedIn, GitHub, YouTube…) is added automatically. The QR button shows the link as a QR code in the Signature, Aurora and Pulse templates"
     },
     "sections": {
       "kinds": {
@@ -389,7 +393,8 @@
       "bullets": "Achievements",
       "bulletPlaceholder": "Start with an action verb and quantify the result",
       "addBullet": "Add a bullet",
-      "bulletHint": "Enter: new bullet"
+      "bulletHint": "Enter: new bullet",
+      "boldHint": "**word** to make it bold"
     },
     "items": {
       "skillLabel": "Category",
@@ -431,7 +436,7 @@
         "good": "good",
         "fair": "fair"
       },
-      "atsHint": "Every template prints real text. Column layouts are sometimes read out of order by ATS software: for online applications, prefer a single-column template",
+      "atsHint": "Every template prints real text. Two-column layouts are read well by most modern ATS software, but some older tools mix the columns up: when in doubt, pick a single-column template",
       "names": {
         "classic": {
           "name": "Classic",
@@ -460,6 +465,18 @@
         "impact": {
           "name": "Impact",
           "description": "Photo banner, icons, timeline and language gauges, while staying perfectly readable by ATS software"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Pastel organic shapes, large round photo, timeline and QR code, on two columns"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "The Signature look on a single column: graphic and perfectly readable by ATS software"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Dark diagonal banner, color glows, experience cards and solid skill tags"
         }
       }
     },
@@ -496,6 +513,13 @@
     },
     "weak": {
       "hint": "“{{phrase}}” describes a duty: start with an action verb"
+    },
+    "fonts": {
+      "title": "Typography",
+      "heading": "Headings",
+      "body": "Body text",
+      "default": "Template's own",
+      "hint": "ATS software reads all of these fonts well: the text stays real text"
     }
   },
   "changelog": {
@@ -627,29 +651,47 @@
       "issues": "{{count}} point(s) to check on this template",
       "allGood": "No issues found on this template",
       "hint": "Computed on the displayed layout, with the same engine as the resume analyzer"
+    },
+    "method": {
+      "title": "How is this score calculated?",
+      "intro": "There is no official ATS score: every recruiting software (Workday, Taleo, Greenhouse, Lever…) has its own, often confidential, rules. This index checks what trips up most of them, with this scale:",
+      "disclaimer": "These criteria come from ATS vendors’ public recommendations and the most common reading errors (text in images, columns, icons, non-standard headings). The score helps you improve your resume: it does not predict selection"
     }
   },
   "import": {
     "title": "Import a resume",
     "linkedinTitle": "Import from LinkedIn",
     "text": "Choose a PDF resume: its content is extracted in your browser and sorted into the editor sections. You can then pick a template",
-    "linkedinSteps": {
-      "step1": "Open your LinkedIn profile on a computer",
-      "step2": "Click “More” under your photo, then “Save to PDF”",
-      "step3": "Choose the downloaded file below"
-    },
     "choose": "Choose a PDF",
+    "chooseFile": "Choose a file",
     "hint": "PDF only, 15 MB max",
     "reading": "Importing…",
     "privacy": "The file is read in your browser: it is never sent anywhere",
     "close": "Close",
     "done": "Resume imported ({{items}} items): review each section",
     "errors": {
-      "notPdf": "This file is not a PDF",
       "tooLarge": "This file is larger than 15 MB",
       "encrypted": "This PDF is password-protected",
       "unreadable": "This PDF could not be read: it may be damaged",
-      "empty": "No usable text: this PDF is probably an image or a scan"
+      "empty": "No usable text: this PDF is probably an image or a scan",
+      "unsupported": "Choose a PDF file or a LinkedIn ZIP archive",
+      "archiveEmpty": "This archive contains no usable LinkedIn profile data"
+    },
+    "hintArchive": "PDF (computer) or ZIP archive (mobile app)",
+    "linkedin": {
+      "computer": {
+        "title": "On a computer: your profile PDF",
+        "step1": "Open linkedin.com in a browser on a computer (the option does not exist in the app)",
+        "step2": "On your profile, click “Resources” (or “More”), then “Save to PDF”",
+        "step3": "Choose that PDF below"
+      },
+      "archive": {
+        "title": "In the mobile app: your data archive",
+        "step1": "In the app, tap your photo, then Settings and Data privacy",
+        "step2": "Choose “Get a copy of your data” and tick Profile, Positions, Education, Skills and Languages",
+        "step3": "LinkedIn emails you within minutes: download the ZIP archive",
+        "step4": "Choose that ZIP file below, without unzipping it"
+      }
     }
   },
   "legal": {

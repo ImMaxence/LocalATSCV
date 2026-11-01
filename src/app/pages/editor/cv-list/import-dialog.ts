@@ -16,6 +16,7 @@ export interface ImportDialogResult {
 }
 
 const MAX_SIZE = 15 * 1024 * 1024;
+const MAX_ARCHIVE_SIZE = 60 * 1024 * 1024;
 
 /** Import d'un CV PDF existant (ou du PDF de profil LinkedIn) dans l'éditeur. */
 @Component({
@@ -42,17 +43,27 @@ const MAX_SIZE = 15 * 1024 * 1024;
       </div>
 
       @if (data.mode === 'linkedin') {
-        <ol class="mt-4 space-y-2.5 text-sm">
-          @for (step of ['step1', 'step2', 'step3']; track step; let i = $index) {
-            <li class="flex gap-3">
-              <span
-                class="grid size-6 shrink-0 place-items-center rounded-full bg-accent-soft text-xs font-semibold text-accent"
-                >{{ i + 1 }}</span
-              >
-              <span class="pt-0.5">{{ t('linkedinSteps.' + step) }}</span>
-            </li>
+        <div class="mt-4 space-y-3">
+          @for (method of linkedinMethods; track method.key) {
+            <section class="rounded-xl border border-line p-3.5">
+              <h3 class="flex items-center gap-2 text-sm font-semibold">
+                <app-icon class="size-4 text-accent" [name]="method.icon" />
+                {{ t('linkedin.' + method.key + '.title') }}
+              </h3>
+              <ol class="mt-2.5 space-y-1.5 text-sm text-muted">
+                @for (step of method.steps; track step; let i = $index) {
+                  <li class="flex gap-2.5">
+                    <span
+                      class="grid size-5 shrink-0 place-items-center rounded-full bg-accent-soft text-[11px] font-semibold text-accent"
+                      >{{ i + 1 }}</span
+                    >
+                    <span>{{ t('linkedin.' + method.key + '.' + step) }}</span>
+                  </li>
+                }
+              </ol>
+            </section>
           }
-        </ol>
+        </div>
       } @else {
         <p class="mt-3 text-sm text-muted">{{ t('text') }}</p>
       }
@@ -66,12 +77,16 @@ const MAX_SIZE = 15 * 1024 * 1024;
           <span class="mt-3 text-sm font-semibold">{{ t('reading') }}</span>
         } @else {
           <app-icon class="size-7 text-accent" name="upload" />
-          <span class="btn btn-primary mt-4">{{ t('choose') }}</span>
-          <span class="mt-2 text-xs text-muted">{{ t('hint') }}</span>
+          <span class="btn btn-primary mt-4">
+            {{ data.mode === 'linkedin' ? t('chooseFile') : t('choose') }}
+          </span>
+          <span class="mt-2 text-xs text-muted">
+            {{ data.mode === 'linkedin' ? t('hintArchive') : t('hint') }}
+          </span>
         }
         <input
           type="file"
-          accept="application/pdf,.pdf"
+          accept="application/pdf,.pdf,application/zip,.zip"
           class="sr-only"
           (change)="onFile($event)"
         />
@@ -99,26 +114,37 @@ export class ImportDialog {
   protected readonly reading = signal(false);
   protected readonly error = signal<string | null>(null);
 
+  /** Le PDF n'existe que sur ordinateur ; l'archive de données se demande aussi depuis l'appli mobile. */
+  protected readonly linkedinMethods = [
+    { key: 'computer', icon: 'monitor', steps: ['step1', 'step2', 'step3'] },
+    { key: 'archive', icon: 'device', steps: ['step1', 'step2', 'step3', 'step4'] },
+  ] as const;
+
   protected async onFile(event: Event): Promise<void> {
     const input = event.target as HTMLInputElement;
     const file = input.files?.[0];
     input.value = '';
     if (!file) return;
     this.error.set(null);
-    if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
-      this.error.set('notPdf');
+    const name = file.name.toLowerCase();
+    const isZip = name.endsWith('.zip') || file.type.includes('zip');
+    const isPdf = name.endsWith('.pdf') || file.type === 'application/pdf';
+    if (!isZip && !isPdf) {
+      this.error.set('unsupported');
       return;
     }
-    if (file.size > MAX_SIZE) {
+    if (file.size > (isZip ? MAX_ARCHIVE_SIZE : MAX_SIZE)) {
       this.error.set('tooLarge');
       return;
     }
     this.reading.set(true);
     try {
-      const pdf = await extractPdfText(await file.arrayBuffer());
-      const { cv, items } = importCv(pdf, file.name.replace(/\.pdf$/i, ''));
+      const fallbackName = file.name.replace(/\.(pdf|zip)$/i, '');
+      const { cv, items } = isZip
+        ? await this.importArchive(file, fallbackName)
+        : importCv(await extractPdfText(await file.arrayBuffer()), fallbackName);
       if (!items && !cv.profile.firstName) {
-        this.error.set('empty');
+        this.error.set(isZip ? 'archiveEmpty' : 'empty');
         return;
       }
       await this.repository.saveCv(cv);
@@ -128,5 +154,11 @@ export class ImportDialog {
     } finally {
       this.reading.set(false);
     }
+  }
+
+  /** Lecture de l'archive LinkedIn, chargée seulement si besoin. */
+  private async importArchive(file: File, fallbackName: string) {
+    const { importLinkedInArchive } = await import('../../../cv/import/linkedin-archive');
+    return importLinkedInArchive(new Uint8Array(await file.arrayBuffer()), fallbackName);
   }
 }

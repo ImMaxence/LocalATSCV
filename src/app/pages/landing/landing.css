@@ -1,0 +1,70 @@
+.hero-in > * {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-in > :nth-child(2) {
+  animation-delay: 60ms;
+}
+.hero-in > :nth-child(3) {
+  animation-delay: 120ms;
+}
+.hero-in > :nth-child(n + 4) {
+  animation-delay: 180ms;
+}
+
+.demo-in {
+  animation: rise 0.9s 150ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Mots-clés surlignés au feutre, l'un après l'autre. */
+.kw {
+  color: inherit;
+  border-radius: 0.2rem;
+  padding: 0 0.15rem;
+  background: linear-gradient(var(--accent-soft), var(--accent-soft)) no-repeat 0 0 / 0% 100%;
+  animation: mark 0.6s ease-out forwards;
+}
+
+.weak {
+  text-decoration: underline wavy #d97706;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+}
+
+.suggest {
+  animation: rise 0.5s 1.6s ease-out both;
+}
+
+.score-ring {
+  animation: ring 1.4s 0.5s cubic-bezier(0.3, 0.7, 0.2, 1) both;
+}
+
+.float {
+  animation:
+    rise 0.8s 0.4s ease-out both,
+    float 7s 1.2s ease-in-out infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@keyframes mark {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes ring {
+  from {
+    stroke-dashoffset: var(--circ);
+  }
+}
+
+@keyframes float {
+  50% {
+    translate: 0 -6px;
+  }
+}

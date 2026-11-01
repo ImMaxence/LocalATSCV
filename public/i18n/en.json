@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "home": "LocalATSCV home",
+    "main": "Main navigation",
+    "how": "How it works",
+    "privacy": "Privacy",
+    "analyze": "Analyze a resume",
+    "editor": "Build my resume",
+    "skipToContent": "Skip to content"
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "system": "System",
+    "dark": "Dark"
+  },
+  "lang": {
+    "label": "Interface language",
+    "fr": "Français",
+    "en": "English"
+  },
+  "pages": {
+    "home": "ATS-friendly resumes, 100% local",
+    "editor": "Editor",
+    "analyze": "Resume analyzer",
+    "changelog": "What's new",
+    "legalNotice": "Legal notice",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy"
+  },
+  "footer": {
+    "tagline": "The ATS-friendly resume builder that never sees your data.",
+    "product": "Product",
+    "legal": "Legal",
+    "project": "Project",
+    "changelog": "What's new",
+    "sourceCode": "Source code",
+    "reportIssue": "Report an issue",
+    "license": "MIT License",
+    "versionLabel": "Version {{version}}, see what's new"
+  },
+  "update": {
+    "title": "New version available",
+    "text": "Reload the page to get it.",
+    "changelog": "See what's new",
+    "reload": "Reload",
+    "later": "Later"
+  },
+  "comingSoon": {
+    "title": "Coming soon",
+    "text": "This part of LocalATSCV is under construction. It will ship in an upcoming version.",
+    "back": "Back to home"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% local · Free · Open source",
+      "titleLine1": "A resume that gets past the bots.",
+      "titleLine2": "Data that stays with you.",
+      "subtitle": "LocalATSCV helps you build a resume optimized for applicant tracking systems (ATS) and tailor it to every job in a few clicks. Everything happens in your browser: no account, no data sent anywhere.",
+      "ctaPrimary": "Build my resume",
+      "ctaSecondary": "Analyze an existing resume",
+      "points": {
+        "noAccount": "No sign-up",
+        "offline": "Works offline",
+        "atsPdf": "ATS-readable PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "The problem",
+      "title": "Your resume is read by a machine first",
+      "text": "Most large companies and recruiting agencies sort applications with an ATS (Applicant Tracking System). It extracts the text of your resume, stores it in a database and lets recruiters search candidates by keyword.",
+      "pitfalls": {
+        "layout": {
+          "title": "Complex layouts",
+          "text": "Columns, tables and text boxes scramble the reading order: your information comes out jumbled."
+        },
+        "image": {
+          "title": "Unreadable text",
+          "text": "Icons, skill gauges and some design-tool exports turn into gibberish characters, or no text at all."
+        },
+        "keywords": {
+          "title": "Missing keywords",
+          "text": "If the job ad's vocabulary doesn't appear in your resume, your profile won't show up in recruiters' searches."
+        }
+      },
+      "seen": "What you see",
+      "read": "What the bot reads",
+      "fix": "LocalATSCV does the opposite: a single column, real text and standard section headings that bots read in the right order."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Write it once, tailor it endlessly",
+      "text": "Four steps turn your Master resume into a tailored application for every job.",
+      "steps": {
+        "profile": {
+          "title": "Fill in your Master resume",
+          "text": "Enter all your experience once and for all, or import your LinkedIn profile PDF to save time."
+        },
+        "offer": {
+          "title": "Paste the job ad",
+          "text": "LocalATSCV extracts its keywords and computes a match score out of 100, updated as you type."
+        },
+        "compose": {
+          "title": "Build a tailored version",
+          "text": "Tick the relevant experiences and bullet points, reorder them with drag and drop. Nothing is deleted from your Master."
+        },
+        "export": {
+          "title": "Export to PDF",
+          "text": "A text-based, structured, single-column PDF that reads as well for bots as it does for recruiters."
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privacy",
+      "title": "Zero data on our servers. Literally.",
+      "text": "There is no database to hack: our server only sends you the application. After that, everything happens in your browser, even offline.",
+      "browser": {
+        "title": "Your browser",
+        "tag": "Your device",
+        "items": {
+          "master": "Master resume",
+          "photo": "Profile photo",
+          "versions": "Tailored versions",
+          "settings": "Preferences"
+        },
+        "note": "Stored in IndexedDB, on this device only."
+      },
+      "flow": {
+        "app": "The application, on first load",
+        "data": "Your data",
+        "never": "never"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Serves the application files (HTML, CSS, JavaScript), nothing more.",
+        "items": {
+          "noDb": "No database",
+          "noAccount": "No user accounts",
+          "noLogs": "No visitor logs"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "No account",
+          "text": "No sign-up, no email, no password. Open the page and get started."
+        },
+        "trackers": {
+          "title": "No trackers",
+          "text": "No analytics, no ads, no cookies. Even the fonts are self-hosted."
+        },
+        "csp": {
+          "title": "Technically locked down",
+          "text": "The site's security policy (CSP) forbids the browser from contacting any other domain. The code is open source: check it yourself."
+        },
+        "backup": {
+          "title": "Your backups, your files",
+          "text": "Export all your data to a JSON file and import it back on any device."
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "Everything you need to land the interview",
+      "items": {
+        "master": {
+          "title": "Master resume and tailored versions",
+          "text": "One complete resume, as many variants as applications. Tick, untick: nothing is ever lost."
+        },
+        "score": {
+          "title": "Match score",
+          "text": "Paste the job ad: matched keywords, missing keywords and a score out of 100 in real time."
+        },
+        "weak": {
+          "title": "Weak phrase detector",
+          "text": "“Responsible for”, “helped with”… are flagged automatically, with a bank of action verbs to replace them."
+        },
+        "analyzer": {
+          "title": "Existing resume analyzer",
+          "text": "Drop in a resume made elsewhere: see what the bot actually reads and what to fix."
+        },
+        "linkedin": {
+          "title": "LinkedIn import",
+          "text": "Pre-fill your Master resume from the free PDF you can export from your LinkedIn profile."
+        },
+        "languages": {
+          "title": "5 resume languages",
+          "text": "French, English, Italian, Spanish and German. In English, photo and date of birth are hidden, following English-speaking norms."
+        },
+        "pdf": {
+          "title": "ATS-friendly PDF export",
+          "text": "Real text and a clear structure: readable by bots, pleasant for recruiters."
+        },
+        "offline": {
+          "title": "Installable and offline",
+          "text": "Add LocalATSCV to your home screen and keep working without a connection."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "text": "Question not listed here? Write to us:",
+      "items": {
+        "ats": {
+          "q": "What is an ATS?",
+          "a": "An Applicant Tracking System is the software recruiters use to receive, sort and search applications. It converts your resume to text and indexes it: if the text is badly extracted or the right keywords are missing, your application becomes hard to find."
+        },
+        "storage": {
+          "q": "Where is my data stored?",
+          "a": "Only in your browser, using IndexedDB, a database built into every modern browser. It never goes through our servers, which only know how to serve the application files."
+        },
+        "clear": {
+          "q": "What happens if I clear my browser data?",
+          "a": "Your resumes are erased, since they exist nowhere else. Export a JSON backup regularly: you can import it back at any time, on any device."
+        },
+        "score": {
+          "q": "Does the score guarantee my resume will be shortlisted?",
+          "a": "No. Every ATS has its own rules and the final decision is made by a human. The score is an indicator: it checks that your resume uses the job ad's vocabulary and that a machine can read it correctly."
+        },
+        "photo": {
+          "q": "Why does the photo disappear in English?",
+          "a": "In the UK, the US and many English-speaking countries, photos and dates of birth are discouraged to limit hiring discrimination. Some recruiters even reject resumes that include them."
+        },
+        "free": {
+          "q": "Is it really free?",
+          "a": "Yes. LocalATSCV is an open source project under the MIT license, with no ads or subscription. It costs almost nothing to host, since your browser does all the work."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to get past the filter?",
+      "text": "Create your Master resume in minutes. Nothing will leave this device.",
+      "button": "Get started"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+<footer *transloco="let t" class="mt-24 border-t border-line bg-surface/60">
+  <div class="container-page grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div class="max-w-xs">
+      <a routerLink="/" class="flex items-center gap-2.5 font-semibold tracking-tight">
+        <img src="favicon.svg" alt="" width="28" height="28" class="size-7" />
+        <span>Local<span class="text-accent">ATS</span>CV</span>
+      </a>
+      <p class="mt-3 text-sm leading-relaxed text-muted">{{ t('footer.tagline') }}</p>
+    </div>
+
+    <nav [attr.aria-label]="t('footer.product')">
+      <h2 class="text-xs font-semibold tracking-wider text-muted uppercase">
+        {{ t('footer.product') }}
+      </h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>
+          <a routerLink="/editor" class="hover:text-accent">{{ t('nav.editor') }}</a>
+        </li>
+        <li>
+          <a routerLink="/analyze" class="hover:text-accent">{{ t('nav.analyze') }}</a>
+        </li>
+        <li>
+          <a routerLink="/changelog" class="hover:text-accent">{{ t('footer.changelog') }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav [attr.aria-label]="t('footer.legal')">
+      <h2 class="text-xs font-semibold tracking-wider text-muted uppercase">
+        {{ t('footer.legal') }}
+      </h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>
+          <a routerLink="/legal/notice" class="hover:text-accent">{{ t('pages.legalNotice') }}</a>
+        </li>
+        <li>
+          <a routerLink="/legal/terms" class="hover:text-accent">{{ t('pages.terms') }}</a>
+        </li>
+        <li>
+          <a routerLink="/legal/privacy" class="hover:text-accent">{{ t('pages.privacy') }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav [attr.aria-label]="t('footer.project')">
+      <h2 class="text-xs font-semibold tracking-wider text-muted uppercase">
+        {{ t('footer.project') }}
+      </h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>
+          <a
+            [href]="repoUrl"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1.5 hover:text-accent"
+          >
+            <app-icon class="size-4" name="code" />{{ t('footer.sourceCode') }}
+          </a>
+        </li>
+        <li>
+          <a
+            [href]="repoUrl + '/issues/new/choose'"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1.5 hover:text-accent"
+            (click)="reportIssue($event)"
+          >
+            <app-icon class="size-4" name="flag" />{{ t('footer.reportIssue') }}
+          </a>
+        </li>
+        <li>
+          <a
+            [href]="repoUrl + '/blob/main/LICENSE'"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-accent"
+          >
+            {{ t('footer.license') }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="border-t border-line">
+    <div
+      class="container-page flex flex-col gap-2 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p>
+        © {{ year }} {{ author }} ·
+        <a [href]="'mailto:' + contactEmail" class="hover:text-accent">{{ contactEmail }}</a>
+      </p>
+      <a
+        routerLink="/changelog"
+        class="inline-flex items-center gap-1.5 self-start rounded-full border border-line px-2.5 py-1 font-mono hover:text-accent sm:self-auto"
+        [attr.aria-label]="t('footer.versionLabel', { version })"
+      >
+        <span class="size-1.5 rounded-full bg-accent"></span>v{{ version }}
+      </a>
+    </div>
+  </div>
+</footer>

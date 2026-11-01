@@ -1,0 +1,11 @@
+# Déploiement Coolify : aucun port publié, le proxy de Coolify route le domaine
+# localatscv.mbonnici.fr vers le port 80 du conteneur.
+# Test en local : npm run docker:local (ajoute docker-compose.local.yml).
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    expose:
+      - '80'

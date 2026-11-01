@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource-variable/fraunces/wght.css';
+@import '@fontsource-variable/fraunces/wght-italic.css';
+
+/* Le mode sombre est piloté par la classe .dark posée sur <html> (voir ThemeService). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Jetons de couleur sémantiques : les composants n'utilisent que ces noms
+ * (bg-paper, text-muted, border-line…), le thème sombre se contente de les redéfinir.
+ */
+:root {
+  --paper: #f6f4ee;
+  --surface: #ffffff;
+  --surface-2: #efece4;
+  --ink: #15171c;
+  --muted: #5b606d;
+  --line: #e2ddd2;
+  --accent: #11795a;
+  --accent-strong: #0c5f46;
+  --accent-ink: #ffffff;
+  --accent-soft: #d6efe3;
+  --marker: #fde68a;
+  --marker-ink: #6b4e00;
+  --danger: #c2410c;
+  --inverse: #15171c;
+  --inverse-ink: #f6f4ee;
+  --inverse-accent: #4fd89d;
+  --inverse-danger: #fb923c;
+}
+
+.dark {
+  --paper: #0f1114;
+  --surface: #171a1f;
+  --surface-2: #1e2228;
+  --ink: #ecebe6;
+  --muted: #9ba1ac;
+  --line: #2a2f37;
+  --accent: #3ccf91;
+  --accent-strong: #6be0ad;
+  --accent-ink: #062016;
+  --accent-soft: #12352a;
+  --marker: #5c4708;
+  --marker-ink: #fde68a;
+  --danger: #fb923c;
+  --inverse: #e9f5ef;
+  --inverse-ink: #0f1114;
+  --inverse-accent: #0c5f46;
+  --inverse-danger: #c2410c;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace;
+
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-marker: var(--marker);
+  --color-marker-ink: var(--marker-ink);
+  --color-danger: var(--danger);
+  --color-inverse: var(--inverse);
+  --color-inverse-ink: var(--inverse-ink);
+  --color-inverse-accent: var(--inverse-accent);
+  --color-inverse-danger: var(--inverse-danger);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  ::selection {
+    @apply bg-accent-soft text-ink;
+  }
+
+  :focus-visible {
+    @apply rounded-sm outline-2 outline-offset-2 outline-accent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-colors duration-150;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-accent-ink hover:bg-accent-strong;
+  }
+
+  .btn-ghost {
+    @apply border border-line bg-surface text-ink hover:border-ink/30;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.14em] text-accent uppercase;
+  }
+}

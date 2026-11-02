@@ -54,7 +54,7 @@ const ATS_BADGES: Record<AtsCompatibility, string> = {
               (click)="filter.set(option)"
             >
               {{ t('filters.' + option) }}
-              <span class="ml-1 text-xs opacity-70">{{ count(option) }}</span>
+              <span class="ms-1 text-xs opacity-70">{{ count(option) }}</span>
             </button>
           }
         </div>
@@ -82,7 +82,7 @@ const ATS_BADGES: Record<AtsCompatibility, string> = {
           <li>
             <button
               type="button"
-              class="group block w-full rounded-2xl border-2 p-2 text-left transition-colors"
+              class="group block w-full rounded-2xl border-2 p-2 text-start transition-colors"
               [class]="
                 option.id === data.cv.template
                   ? 'border-accent bg-accent-soft/40'

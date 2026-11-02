@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Strona główna LocalATSCV",
+    "main": "Nawigacja główna",
+    "how": "Jak to działa",
+    "privacy": "Prywatność",
+    "analyze": "Przeanalizuj CV",
+    "editor": "Utwórz moje CV",
+    "skipToContent": "Przejdź do treści"
+  },
+  "theme": {
+    "label": "Motyw",
+    "light": "Jasny",
+    "system": "Systemowy",
+    "dark": "Ciemny"
+  },
+  "lang": {
+    "label": "Język interfejsu",
+    "suggestion": "Wyświetl tę stronę po polsku",
+    "dismiss": "Zamknij",
+    "search": "Szukaj języka",
+    "noResult": "Nie znaleziono języka"
+  },
+  "pages": {
+    "home": "CV przyjazne dla ATS, w 100% lokalnie",
+    "editor": "Edytor",
+    "analyze": "Analizator CV",
+    "changelog": "Nowości",
+    "legalNotice": "Nota prawna",
+    "terms": "Warunki korzystania",
+    "privacy": "Polityka prywatności"
+  },
+  "seo": {
+    "home": "Darmowy kreator CV przyjaznego dla ATS: 30 graficznych szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i wynik ATS. Open source, Twoje dane zostają w przeglądarce",
+    "editor": "Edytor CV z podglądem na żywo, CV Master i wersjami docelowymi, kontrolą ATS i eksportem PDF z prawdziwym tekstem. Wszystko zostaje w Twojej przeglądarce",
+    "analyze": "Przeanalizuj za darmo CV w PDF: wynik ATS na 100, punkty do poprawy i tekst tak, jak odczytuje go system rekrutacyjny. Plik nigdy nie opuszcza Twojej przeglądarki",
+    "changelog": "Nowości w LocalATSCV, wersja po wersji: nowe szablony CV, funkcje i poprawki",
+    "legalNotice": "Nota prawna LocalATSCV: wydawca, hosting i kontakt",
+    "terms": "Warunki korzystania z LocalATSCV, darmowego kreatora CV o otwartym kodzie",
+    "privacy": "Polityka prywatności LocalATSCV: żadne dane nie są zbierane, Twoje CV zostają w przeglądarce"
+  },
+  "footer": {
+    "tagline": "Kreator CV przyjaznego dla ATS, który nigdy nie widzi Twoich danych",
+    "product": "Produkt",
+    "legal": "Informacje prawne",
+    "project": "Projekt",
+    "changelog": "Nowości",
+    "sourceCode": "Kod źródłowy",
+    "reportIssue": "Zgłoś problem",
+    "license": "Licencja MIT",
+    "versionLabel": "Wersja {{version}}, zobacz nowości"
+  },
+  "update": {
+    "title": "Dostępna nowa wersja",
+    "text": "Odśwież stronę, aby z niej skorzystać",
+    "changelog": "Zobacz nowości",
+    "reload": "Odśwież",
+    "later": "Później"
+  },
+  "landing": {
+    "hero": {
+      "badge": "W 100% lokalnie · Za darmo · Open source",
+      "titleLine1": "CV, które przechodzi przez roboty",
+      "titleLine2": "Dane, które zostają u Ciebie",
+      "subtitle": "LocalATSCV pomaga stworzyć CV zoptymalizowane pod systemy rekrutacyjne (ATS) i w kilku kliknięciach dopasować je do każdej oferty. Wszystko dzieje się w Twojej przeglądarce: bez konta i bez wysyłania jakichkolwiek danych",
+      "ctaPrimary": "Utwórz moje CV",
+      "ctaSecondary": "Przeanalizuj istniejące CV",
+      "points": {
+        "noAccount": "Bez rejestracji",
+        "offline": "Działa offline",
+        "atsPdf": "PDF czytelny dla ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problem",
+      "title": "Twoje CV najpierw czyta maszyna",
+      "text": "Większość dużych firm i agencji rekrutacyjnych sortuje zgłoszenia za pomocą ATS (Applicant Tracking System). Wyciąga on tekst z Twojego CV, zapisuje go w bazie danych i pozwala rekruterom wyszukiwać kandydatów po słowach kluczowych",
+      "pitfalls": {
+        "layout": {
+          "title": "Złożony układ",
+          "text": "Kolumny, tabele i pola tekstowe mieszają kolejność czytania: Twoje informacje wychodzą pomieszane"
+        },
+        "image": {
+          "title": "Nieczytelny tekst",
+          "text": "Ikony, paski umiejętności i niektóre eksporty z narzędzi graficznych zamieniają się w krzaczki albo znikają całkiem"
+        },
+        "keywords": {
+          "title": "Brakujące słowa kluczowe",
+          "text": "Jeśli słownictwa z oferty nie ma w Twoim CV, Twój profil nie pojawi się w wynikach wyszukiwania rekruterów"
+        }
+      },
+      "seen": "Co widzisz Ty",
+      "read": "Co czyta robot",
+      "fix": "LocalATSCV robi odwrotnie: jedna kolumna, prawdziwy tekst i standardowe nagłówki sekcji, które roboty czytają we właściwej kolejności"
+    },
+    "how": {
+      "eyebrow": "Jak to działa",
+      "title": "Napisz raz, dopasowuj bez końca",
+      "text": "Cztery kroki, aby zamienić CV Master w aplikację skrojoną pod każdą ofertę",
+      "steps": {
+        "profile": {
+          "title": "Wypełnij swoje CV Master",
+          "text": "Wpisz całe swoje doświadczenie raz na zawsze albo zaimportuj PDF swojego profilu LinkedIn, aby zaoszczędzić czas"
+        },
+        "offer": {
+          "title": "Wklej ofertę pracy",
+          "text": "LocalATSCV wyodrębnia słowa kluczowe i oblicza wynik dopasowania na 100, aktualizowany na bieżąco podczas pisania"
+        },
+        "compose": {
+          "title": "Złóż wersję docelową",
+          "text": "Zaznacz odpowiednie doświadczenia i punkty, a potem ułóż je metodą przeciągnij i upuść. Z Twojego Mastera nic nie znika"
+        },
+        "export": {
+          "title": "Wyeksportuj do PDF",
+          "text": "PDF z prawdziwym tekstem, uporządkowany i w jednej kolumnie, równie czytelny dla robotów jak dla rekruterów"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Prywatność",
+      "title": "Zero danych na naszych serwerach. Dosłownie",
+      "text": "Nie ma bazy danych do zhakowania: nasz serwer wysyła Ci tylko aplikację. Potem wszystko dzieje się w Twojej przeglądarce, nawet offline",
+      "browser": {
+        "title": "Twoja przeglądarka",
+        "tag": "Twoje urządzenie",
+        "items": {
+          "master": "CV Master",
+          "photo": "Zdjęcie profilowe",
+          "versions": "Wersje docelowe",
+          "settings": "Preferencje"
+        },
+        "note": "Zapisane w IndexedDB, tylko na tym urządzeniu"
+      },
+      "flow": {
+        "app": "Aplikacja, przy pierwszym wczytaniu",
+        "data": "Twoje dane",
+        "never": "nigdy"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Serwer",
+        "text": "Udostępnia pliki aplikacji (HTML, CSS, JavaScript), nic więcej",
+        "items": {
+          "noDb": "Brak bazy danych",
+          "noAccount": "Brak kont użytkowników",
+          "noLogs": "Brak logów odwiedzin"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Bez konta",
+          "text": "Bez rejestracji, e-maila i hasła. Otwórz stronę i zaczynaj"
+        },
+        "trackers": {
+          "title": "Bez śledzenia",
+          "text": "Bez statystyk, reklam i śledzących plików cookie. Nawet czcionki są hostowane na naszym serwerze"
+        },
+        "csp": {
+          "title": "Technicznie zablokowane",
+          "text": "Polityka bezpieczeństwa strony (CSP) zabrania przeglądarce łączenia się z jakąkolwiek inną domeną. Kod jest otwarty: sprawdź sam"
+        },
+        "backup": {
+          "title": "Twoje kopie zapasowe, Twoje pliki",
+          "text": "Wyeksportuj wszystkie dane do pliku JSON i zaimportuj je na dowolnym urządzeniu"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkcje",
+      "title": "Wszystko, czego potrzebujesz, by dostać się na rozmowę",
+      "items": {
+        "master": {
+          "title": "CV Master i wersje docelowe",
+          "text": "Jedno pełne CV i tyle wariantów, ile aplikacji. Zaznacz, odznacz: nic nie przepada"
+        },
+        "score": {
+          "title": "Wynik dopasowania",
+          "text": "Wklej ofertę: znalezione i brakujące słowa kluczowe oraz wynik na 100 w czasie rzeczywistym"
+        },
+        "weak": {
+          "title": "Wykrywanie słabych sformułowań",
+          "text": "„Odpowiedzialny za”, „pomagałem przy”… są oznaczane automatycznie, a w zamian dostajesz bank czasowników akcji"
+        },
+        "analyzer": {
+          "title": "Analizator istniejących CV",
+          "text": "Wrzuć CV zrobione gdzie indziej: zobacz, co robot naprawdę czyta i co poprawić"
+        },
+        "linkedin": {
+          "title": "Import z LinkedIn",
+          "text": "Wypełnij wstępnie swoje CV Master z darmowego PDF, który możesz wyeksportować ze swojego profilu LinkedIn"
+        },
+        "languages": {
+          "title": "5 języków CV",
+          "text": "Francuski, angielski, włoski, hiszpański i niemiecki. Po angielsku zdjęcie i data urodzenia są ukryte zgodnie z normami krajów anglojęzycznych"
+        },
+        "pdf": {
+          "title": "Eksport PDF przyjazny dla ATS",
+          "text": "Prawdziwy tekst i przejrzysta struktura: czytelne dla robotów, przyjemne dla rekruterów"
+        },
+        "offline": {
+          "title": "Instalowalne i offline",
+          "text": "Dodaj LocalATSCV do ekranu głównego i pracuj dalej bez połączenia"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Najczęściej zadawane pytania",
+      "text": "Nie ma tu Twojego pytania? Napisz do nas:",
+      "items": {
+        "ats": {
+          "q": "Czym jest ATS?",
+          "a": "Applicant Tracking System to oprogramowanie, którego rekruterzy używają do przyjmowania, sortowania i przeszukiwania zgłoszeń. Zamienia Twoje CV na tekst i je indeksuje: jeśli tekst zostanie źle wyodrębniony albo zabraknie właściwych słów kluczowych, Twoją aplikację trudno będzie znaleźć"
+        },
+        "storage": {
+          "q": "Gdzie są przechowywane moje dane?",
+          "a": "Tylko w Twojej przeglądarce, w IndexedDB, bazie danych wbudowanej w każdą nowoczesną przeglądarkę. Nigdy nie przechodzą przez nasze serwery, które potrafią jedynie udostępniać pliki aplikacji"
+        },
+        "clear": {
+          "q": "Co się stanie, jeśli wyczyszczę dane przeglądarki?",
+          "a": "Twoje CV zostaną usunięte, bo nie ma ich nigdzie indziej. Regularnie eksportuj kopię zapasową JSON: możesz ją zaimportować w każdej chwili, na dowolnym urządzeniu"
+        },
+        "score": {
+          "q": "Czy wynik gwarantuje, że moje CV zostanie wybrane?",
+          "a": "Nie. Każdy ATS ma własne zasady, a ostateczną decyzję podejmuje człowiek. Wynik jest wskaźnikiem: sprawdza, czy Twoje CV używa słownictwa z oferty i czy maszyna może je poprawnie odczytać"
+        },
+        "photo": {
+          "q": "Dlaczego po angielsku znika zdjęcie?",
+          "a": "W Wielkiej Brytanii, USA i wielu krajach anglojęzycznych odradza się podawanie zdjęcia i daty urodzenia, aby ograniczyć dyskryminację w rekrutacji. Niektórzy rekruterzy wręcz odrzucają CV, które je zawierają"
+        },
+        "free": {
+          "q": "Czy to naprawdę jest darmowe?",
+          "a": "Tak. LocalATSCV to projekt open source na licencji MIT, bez reklam i abonamentu. Utrzymanie go prawie nic nie kosztuje, bo całą pracę wykonuje Twoja przeglądarka"
+        },
+        "templates": {
+          "q": "Czy szablony graficzne przechodzą przez ATS?",
+          "a": "Tak. Każdy szablon drukuje prawdziwy tekst, w kolejności czytania, ze standardowymi nagłówkami sekcji: kształty, paski i ikony to rysunki, które roboty ignorują. Szablony jednokolumnowe wciąż są najbezpieczniejsze, a kontrola ATS w edytorze testuje Twój układ na żywo"
+        },
+        "import": {
+          "q": "Czy mogę wykorzystać obecne CV lub profil LinkedIn?",
+          "a": "Tak. Zaimportuj CV w PDF lub Word (.docx), PDF swojego profilu LinkedIn (na komputerze) albo archiwum danych LinkedIn (z aplikacji mobilnej): treść jest odczytywana w Twojej przeglądarce i porządkowana w edytorze"
+        },
+        "offline": {
+          "q": "Czy LocalATSCV działa offline?",
+          "a": "Tak. To instalowalna aplikacja internetowa: po pierwszej wizycie wszystko działa bez połączenia, łącznie z eksportem do PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Gotowy, by przejść przez filtr?",
+      "text": "Utwórz swoje CV Master w kilka minut. Nic nie opuści tego urządzenia",
+      "button": "Zaczynamy"
+    },
+    "demo": {
+      "role": "Programistka front-end",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Doświadczenie",
+      "jobTitle": "Programistka Angular",
+      "jobMeta": "Przykład sp. z o.o. · 2022 – obecnie",
+      "bullets": {
+        "migration": "Migracja 40 ekranów do <k>Angular</k> i <k>TypeScript</k>, czas ładowania krótszy o 35%",
+        "testing": "<w>Odpowiedzialna za</w> strategię testów end-to-end",
+        "delivery": "Ciągłe wdrażanie z <k>GitLab CI</k> dla 3 zespołów produktowych"
+      },
+      "weakLabel": "Słabe sformułowanie",
+      "weakReplacement": "„Kierowałam”",
+      "skills": "Umiejętności",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Dostępność",
+      "score": "Dopasowanie do oferty",
+      "sent": "Wysłano 0 bajtów",
+      "robot": "UMIEJĘTNOŚCI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Programistka front-end Angular <n>●●●●○</n> DOŚWIADCZENIE <n>� camille.mar</n> Programistka Angular <n>tin@example.com</n> 2022 – obecnie TypeScript <n>●●●○○</n> Przykład sp. z o.o. JĘZYKI Angielski Migracja 40 ekranów do…"
+    }
+  },
+  "dialog": {
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "create": "Utwórz",
+    "save": "Zapisz",
+    "import": "Importuj"
+  },
+  "editor": {
+    "list": {
+      "title": "Moje CV",
+      "subtitle": "Zapisane tylko w tej przeglądarce",
+      "new": "Nowe CV",
+      "newBlank": "Puste CV",
+      "newBlankHint": "Zacznij od pustej strony",
+      "newSample": "Zacznij od przykładu",
+      "newSampleHint": "Wypełnione fikcyjne CV do poznania edytora",
+      "import": "Przywróć kopię zapasową",
+      "exportAll": "Eksportuj wszystko",
+      "emptyTitle": "Na razie brak CV",
+      "emptyText": "Utwórz swoje CV Master: całe doświadczenie w jednym miejscu, gotowe do dopasowania do każdej oferty",
+      "open": "Otwórz",
+      "actions": "Działania",
+      "duplicate": "Duplikuj",
+      "export": "Eksportuj (JSON)",
+      "delete": "Usuń",
+      "updated": "Edytowano {{date}}",
+      "versions": "Wersje: {{count}}",
+      "backupHint": "Twoje CV istnieją tylko w tej przeglądarce. Regularnie eksportuj kopię zapasową JSON: jeśli wyczyścisz dane przeglądarki, pozwoli Ci wszystko odzyskać",
+      "defaultName": "Moje CV",
+      "copySuffix": "(kopia)",
+      "deleteTitle": "Usunąć „{{name}}”?",
+      "deleteText": "CV i wszystkie jego wersje zostaną trwale usunięte z tej przeglądarki",
+      "exportDone": "Pobrano kopię zapasową",
+      "importConfirmTitle": "Zaimportować tę kopię zapasową?",
+      "importConfirmText": "Liczba CV w tej kopii: {{count}}. CV, które już istnieją w tej przeglądarce, zostaną zastąpione",
+      "importDone": "Zaimportowano kopię zapasową: {{count}} CV",
+      "importError": {
+        "invalidJson": "Ten plik nie jest prawidłowym plikiem JSON",
+        "notABackup": "Ten plik nie jest kopią zapasową LocalATSCV",
+        "newerVersion": "Ta kopia zapasowa pochodzi z nowszej wersji LocalATSCV: najpierw zaktualizuj aplikację"
+      },
+      "importPdf": "Importuj CV (PDF lub Word)",
+      "importPdfHint": "Przenieś istniejące CV do naszych szablonów",
+      "importLinkedin": "Importuj z LinkedIn",
+      "importLinkedinHint": "Z PDF Twojego profilu"
+    },
+    "toolbar": {
+      "back": "Moje CV",
+      "name": "Nazwa CV",
+      "cvLanguage": "Język CV",
+      "accent": "Kolor akcentu",
+      "customAccent": "Własny kolor",
+      "saved": "Zapisano",
+      "saving": "Zapisywanie…",
+      "saveError": "Nie udało się zapisać",
+      "edit": "Edytuj",
+      "preview": "Podgląd",
+      "exportPdf": "Eksportuj do PDF",
+      "undo": "Cofnij (Ctrl+Z)",
+      "redo": "Ponów (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Edytowany dokument",
+      "cv": "CV",
+      "letter": "List motywacyjny"
+    },
+    "letter": {
+      "title": "List motywacyjny",
+      "versionOwn": "Ta wersja ma własny list",
+      "versionShared": "Ta wersja używa listu z Mastera: edycja tutaj utworzy kopię dla tej wersji",
+      "useMaster": "Użyj listu z Mastera",
+      "recipient": "Adresat",
+      "recipientPlaceholder": "Przykład sp. z o.o.\nDział Rekrutacji\nul. Marszałkowska 10, 00-001 Warszawa",
+      "place": "Miejscowość",
+      "date": "Data",
+      "dateHint": "Puste: data z dnia wydruku",
+      "subject": "Temat",
+      "subjectPlaceholder": "Aplikacja na stanowisko…",
+      "greeting": "Zwrot grzecznościowy",
+      "body": "List",
+      "bodyPlaceholder": "Trzy krótkie akapity: co przyciąga Cię do firmy, co wnosisz, jaki następny krok proponujesz",
+      "bodyHint": "Pusta linia oddziela dwa akapity · **pogrubienie** dla słowa kluczowego",
+      "outline": "Wstaw szkic",
+      "closing": "Zakończenie",
+      "fileName": "List motywacyjny"
+    },
+    "fit": {
+      "pages": "Stron: {{count}}",
+      "onePage": "Mieści się na jednej stronie",
+      "hintMany": "Większość rekruterów oczekuje CV na jedną stronę",
+      "hintOne": "Idealny format dla większości aplikacji",
+      "stillTooLong": "Wciąż za długie, nawet po zagęszczeniu: skróć kilka punktów lub ukryj elementy w jednej z wersji",
+      "fit": "Zmieść na jednej stronie",
+      "settings": "Ustawienia układu",
+      "spacing": "Odstępy",
+      "scale": "Rozmiar tekstu",
+      "settingsHint": "Tekst pozostaje prawdziwym tekstem: zmienia się tylko układ",
+      "reset": "Układ szablonu",
+      "grayscale": "Pokaż w czerni i bieli",
+      "grayscaleHint": "Symuluje wydruk czarno-biały: wyeksportowany PDF zachowuje kolory"
+    },
+    "versions": {
+      "label": "Wyświetlana wersja",
+      "master": "CV Master",
+      "masterHint": "Cała treść, bez filtrów",
+      "new": "Nowa wersja",
+      "newText": "Wersja docelowa zaczyna się od całego Twojego CV Master: potem odznacz to, czego ta aplikacja nie potrzebuje",
+      "nameLabel": "Nazwa wersji",
+      "namePlaceholder": "Np. Front-end Dev – Firma X",
+      "rename": "Zmień nazwę wersji",
+      "delete": "Usuń wersję",
+      "deleteTitle": "Usunąć wersję „{{name}}”?",
+      "deleteText": "Usuwany jest tylko wybór: cała treść zostaje w Twoim CV Master",
+      "banner": "Wersja „{{name}}”: odznacz to, co nie powinno się pojawić. Z Twojego CV Master nic nie znika",
+      "include": "Uwzględnij w tej wersji"
+    },
+    "enRule": "CV po angielsku: zdjęcie, data urodzenia i obywatelstwo są ukryte zgodnie z normami krajów anglojęzycznych",
+    "profile": {
+      "title": "Profil",
+      "photo": "Zdjęcie",
+      "photoAdd": "Dodaj zdjęcie",
+      "photoChange": "Zmień",
+      "photoRemove": "Usuń",
+      "photoHint": "Pomniejszone i zapisane tylko na tym urządzeniu",
+      "photoError": "Nie udało się odczytać tego obrazu",
+      "hiddenInEnglish": "Ukryte po angielsku",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "headline": "Nagłówek CV",
+      "headlinePlaceholder": "Np. Programistka front-end",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "location": "Miasto",
+      "birthDate": "Data urodzenia",
+      "nationality": "Obywatelstwo",
+      "summary": "Podsumowanie",
+      "summaryPlaceholder": "Dwa lub trzy zdania podsumowujące Twój profil i to, czego szukasz",
+      "links": "Linki",
+      "linkLabel": "Nazwa linku",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adres linku",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Dodaj link",
+      "removeLink": "Usuń link",
+      "drivingLicense": "Prawo jazdy",
+      "drivingLicensePlaceholder": "Np. Prawo jazdy kat. B, własny samochód",
+      "qrToggle": "Pokaż ten link jako kod QR",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) jest dodawane automatycznie. Przycisk QR pokazuje link jako kod QR w większości szablonów graficznych"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Doświadczenie",
+        "education": "Wykształcenie",
+        "projects": "Projekty",
+        "certifications": "Certyfikaty",
+        "custom": "Sekcja dowolna",
+        "skills": "Umiejętności",
+        "languages": "Języki",
+        "interests": "Zainteresowania"
+      },
+      "add": "Dodaj sekcję",
+      "titleLabel": "Tytuł sekcji",
+      "empty": "Pusta sekcja: nie pojawi się w CV",
+      "addItem": {
+        "experience": "Dodaj doświadczenie",
+        "education": "Dodaj wykształcenie",
+        "projects": "Dodaj projekt",
+        "certifications": "Dodaj certyfikat",
+        "custom": "Dodaj element",
+        "skills": "Dodaj umiejętności",
+        "languages": "Dodaj język",
+        "interests": "Dodaj zainteresowanie"
+      },
+      "deleteTitle": "Usunąć sekcję „{{name}}”?",
+      "deleteText": "Jej treść zostanie usunięta z CV Master i wszystkich jego wersji"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Stanowisko",
+          "subtitle": "Firma"
+        },
+        "education": {
+          "title": "Kierunek lub tytuł",
+          "subtitle": "Szkoła lub uczelnia"
+        },
+        "projects": {
+          "title": "Nazwa projektu",
+          "subtitle": "Rola lub technologie"
+        },
+        "certifications": {
+          "title": "Certyfikat",
+          "subtitle": "Wystawca"
+        },
+        "custom": {
+          "title": "Tytuł",
+          "subtitle": "Podtytuł"
+        }
+      },
+      "location": "Miejsce",
+      "url": "Link",
+      "start": "Początek",
+      "end": "Koniec",
+      "date": "Data uzyskania",
+      "current": "W trakcie",
+      "untitled": "Bez tytułu",
+      "bullets": "Osiągnięcia",
+      "bulletPlaceholder": "Zacznij od czasownika akcji i podaj wynik w liczbach",
+      "addBullet": "Dodaj punkt",
+      "bulletHint": "Enter: nowy punkt",
+      "boldHint": "**słowo**, aby pogrubić"
+    },
+    "items": {
+      "skillLabel": "Kategoria",
+      "skillLabelPlaceholder": "Np. Front-end",
+      "skillKeywords": "Umiejętności",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Język",
+      "languageLevel": "Poziom",
+      "languageLevelPlaceholder": "Np. C1, fluent",
+      "interest": "Zainteresowanie",
+      "interestPlaceholder": "Np. Wspinaczka",
+      "levelDetected": "Rozpoznano poziom: szablony z paskiem go pokażą",
+      "levelUnknown": "Nie rozpoznano poziomu, brak paska: użyj od A1 do C2 lub propozycji z listy",
+      "levelEmpty": "Wpisz poziom, aby pokazać pasek",
+      "levelHint": "Użyj poziomu europejskiego (od A1 do C2) lub słowa takiego jak „fluent” czy „native”: niektóre szablony pokazują go też jako pasek, którego podgląd dają kropki po prawej"
+    },
+    "actions": {
+      "menu": "Działania",
+      "moveUp": "Przenieś w górę",
+      "moveDown": "Przenieś w dół",
+      "duplicate": "Duplikuj",
+      "delete": "Usuń",
+      "drag": "Przeciągnij, aby zmienić kolejność"
+    },
+    "month": "Miesiąc",
+    "year": "Rok",
+    "noMonth": "Miesiąc",
+    "preview": {
+      "page": "Strona {{n}}"
+    },
+    "notFound": {
+      "title": "Nie znaleziono CV",
+      "text": "To CV nie istnieje lub zostało usunięte z tej przeglądarki"
+    },
+    "templates": {
+      "button": "Szablon",
+      "title": "Wybierz szablon",
+      "subtitle": "Wszystkie szablony z pełnym przykładowym CV albo z Twoim. Kolor akcentu dotyczy wszystkich szablonów",
+      "close": "Zamknij",
+      "filter": "Filtruj szablony",
+      "filters": {
+        "all": "Wszystkie",
+        "graphic": "Graficzne",
+        "sober": "Stonowane"
+      },
+      "ats": "Zgodność z ATS",
+      "levels": {
+        "excellent": "doskonała",
+        "good": "dobra",
+        "fair": "przeciętna"
+      },
+      "atsHint": "Każdy szablon drukuje prawdziwy tekst. Układy dwukolumnowe są dobrze odczytywane przez większość nowoczesnych ATS, ale niektóre starsze narzędzia mieszają kolumny: w razie wątpliwości wybierz szablon jednokolumnowy",
+      "names": {
+        "classic": {
+          "name": "Klasyczny",
+          "description": "Czysty i skuteczny: jedna kolumna, podkreślone nagłówki, nic nie rozprasza"
+        },
+        "modern": {
+          "name": "Nowoczesny",
+          "description": "Kolorowy baner, wyraziste nagłówki i umiejętności jako etykiety"
+        },
+        "elegant": {
+          "name": "Elegancki",
+          "description": "Wyśrodkowany nagłówek i typografia szeryfowa dla wyrafinowanego wyglądu"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Kolorowa krawędź, szczegóły w czcionce o stałej szerokości i umiejętności w stylu kodu"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Styl szwajcarski: ogromne imię, nagłówki na marginesie, dużo wolnej przestrzeni"
+        },
+        "sidebar": {
+          "name": "Kolumny",
+          "description": "Kolorowy pasek boczny ze zdjęciem, danymi kontaktowymi i umiejętnościami"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Baner ze zdjęciem, ikony, oś czasu i paski języków, a przy tym w pełni czytelny dla ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organiczne pastelowe kształty, duże okrągłe zdjęcie, oś czasu i kod QR, w dwóch kolumnach"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Wygląd Signature w jednej kolumnie: graficzny i w pełni czytelny dla ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Ciemny ukośny baner, kolorowe poświaty, karty doświadczeń i pełne etykiety umiejętności"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometryczna kompozycja w kolorach podstawowych wokół zdjęcia, geometryczna czcionka i kształty przed każdym nagłówkiem"
+        },
+        "editorial": {
+          "name": "Magazynowy",
+          "description": "Układ magazynu: duże imię szeryfowe, lead kursywą, numerowane sekcje i przesunięty portret"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalizm: grube czarne obramowania, twarde cienie, mocne bloki koloru i czarne etykiety"
+        },
+        "prism": {
+          "name": "Pryzmat",
+          "description": "Gradient siatkowy w Twoich kolorach akcentu, karta kontaktowa z efektem szkła i karty z gradientową ramką"
+        },
+        "swiss": {
+          "name": "Szwajcarski",
+          "description": "Styl szwajcarskiego plakatu: gigantyczne imię, kolorowy pas, grube czarne linie i numerowane sekcje"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Papier w kolorze kości słoniowej, cienka podwójna ramka, ornamenty w romby i typografia Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturn",
+          "description": "Tryb ciemny: nocne tło, neonowe akcenty i świecąca oś czasu, idealny do aplikacji cyfrowych"
+        },
+        "wave": {
+          "name": "Fala",
+          "description": "Kolorowy baner zakończony falami, okrągłe zdjęcie i faliste nagłówki, miękki i przyjazny"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Zaokrąglone kafelki bento: zdjęcie, imię i kod QR w siatce, jeden kafelek na sekcję"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Rysunek techniczny: papier w kratkę, znaczniki narożników, linia wymiarowa i etykiety o stałej szerokości"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometryczne konfetti z lat 80., mocne kolory i nagłówki podkreślone zygzakiem"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Duży dzielony baner: tekst na bloku koloru i dwutonowe zdjęcie"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografia jako jedyna ozdoba: ogromne, częściowo konturowe imię i bardzo duże nagłówki"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Jeden pastelowy kolor na sekcję, nagłówki w kształcie pigułek i wielobarwna poświata"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Granatowy baner, złota linia i imię szeryfowe, na stanowiska kierownicze"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japoński minimalizm: papier washi, okrąg ensō w Twoim kolorze akcentu i pociągnięcie pędzla"
+        },
+        "ribbon": {
+          "name": "Wstęga",
+          "description": "Nagłówki sekcji na wstęgach z jaskółczym ogonem, wyśrodkowany nagłówek"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Sześciokątne zdjęcie, plaster miodu w rogu i sześciokąty przed nagłówkami"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Nagłówek z warstw wycinanego papieru, sekcje jak arkusze papieru"
+        },
+        "thread": {
+          "name": "Nić",
+          "description": "Ciągła nić łączy nagłówek i każdą sekcję, z kropką przy każdym stanowisku"
+        }
+      },
+      "preview": {
+        "label": "Zawartość miniatur",
+        "sample": "Pełny przykład",
+        "mine": "Moje CV"
+      }
+    },
+    "print": {
+      "title": "Eksportuj do PDF",
+      "text": "Za chwilę otworzy się okno drukowania przeglądarki. Aby uzyskać idealny PDF:",
+      "tips": {
+        "destination": "Miejsce docelowe: „Zapisz jako PDF”",
+        "margins": "Marginesy: „Brak”",
+        "headers": "Odznacz „Nagłówki i stopki”",
+        "background": "Zaznacz „Grafika w tle”, aby zachować kolory"
+      },
+      "dontShow": "Nie pokazuj więcej",
+      "cancel": "Anuluj",
+      "print": "Otwórz okno drukowania"
+    },
+    "job": {
+      "title": "Dopasuj do oferty pracy",
+      "sources": "LinkedIn, Pracuj.pl, OLX Praca, Indeed, Just Join IT…",
+      "placeholder": "Wklej tutaj pełną treść oferty: stanowisko, zadania, wymagania",
+      "urlWarning": "Wklej treść oferty zamiast linku: LocalATSCV nigdy nie łączy się z żadną stroną, więc Twoje dane zostają u Ciebie",
+      "empty": "Nie znaleziono słów kluczowych: wklej pełniejszą ofertę",
+      "score": "Dopasowanie do oferty",
+      "summary": "Obecne słowa kluczowe: {{found}} z {{total}}",
+      "found": "Słowa kluczowe w Twoim CV",
+      "missing": "Brakujące słowa kluczowe",
+      "missingHint": "Kliknij słowo kluczowe, aby dodać je do umiejętności, albo wpleć je w opis doświadczenia",
+      "addToSkills": "Dodaj do umiejętności",
+      "added": "Dodano „{{keyword}}” do Twoich umiejętności",
+      "keywordsGroup": "Słowa kluczowe",
+      "createVersion": "Utwórz wersję docelową dla tej oferty",
+      "createVersionHint": "Doświadczenia i punkty niezwiązane z ofertą zostaną odznaczone: możesz je dostosować",
+      "savedInVersion": "Oferta zapisana z wersją „{{name}}”"
+    },
+    "weak": {
+      "hint": "„{{phrase}}” opisuje obowiązek: zacznij od czasownika akcji"
+    },
+    "fonts": {
+      "title": "Typografia",
+      "heading": "Nagłówki",
+      "body": "Tekst główny",
+      "default": "Z szablonu",
+      "hint": "ATS dobrze odczytują wszystkie te czcionki: tekst pozostaje prawdziwym tekstem"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Nowości",
+    "title": "Dziennik zmian",
+    "subtitle": "Wszystkie wersje LocalATSCV z nowościami i poprawkami",
+    "current": "Bieżąca wersja",
+    "frenchOnly": "Dziennik zmian jest napisany po francusku",
+    "error": "Nie udało się wczytać dziennika zmian",
+    "types": {
+      "added": "Dodano",
+      "changed": "Zmieniono",
+      "fixed": "Poprawiono",
+      "removed": "Usunięto",
+      "deprecated": "Przestarzałe",
+      "security": "Bezpieczeństwo",
+      "other": "Inne"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizator",
+    "title": "Czy Twoje CV przechodzi przez roboty?",
+    "subtitle": "Wrzuć CV w PDF zrobione dowolnym narzędziem: LocalATSCV odczyta je jak ATS i powie Ci, co poprawić",
+    "drop": "Przeciągnij tutaj swoje CV",
+    "dropActive": "Upuść plik, aby rozpocząć analizę",
+    "hint": "Tylko PDF, maks. 15 MB",
+    "choose": "Wybierz plik",
+    "reading": "Odczytywanie PDF…",
+    "privacy": "Plik jest analizowany w Twojej przeglądarce: nigdy nie jest nigdzie wysyłany",
+    "another": "Przeanalizuj inne CV",
+    "errors": {
+      "notPdf": "Ten plik nie jest plikiem PDF",
+      "tooLarge": "Ten plik ma ponad 15 MB",
+      "encrypted": "Ten PDF jest chroniony hasłem: ATS też nie może go odczytać",
+      "unreadable": "Nie udało się odczytać tego PDF: może być uszkodzony"
+    },
+    "stats": "Stron: {{pages}} · słów: {{words}}",
+    "verdict": {
+      "excellent": "Doskonale",
+      "good": "Dobrze",
+      "fair": "Do poprawy",
+      "poor": "Krytycznie"
+    },
+    "verdictText": {
+      "excellent": "Roboty bardzo dobrze odczytują Twoje CV",
+      "good": "Kilka poprawek sprawi, że będzie jeszcze skuteczniejsze",
+      "fair": "Kilka problemów utrudnia odczyt przez ATS",
+      "poor": "ATS prawdopodobnie przeoczy to, co najważniejsze"
+    },
+    "categories": {
+      "readability": "Czytelność maszynowa",
+      "structure": "Struktura",
+      "content": "Treść"
+    },
+    "sectionNames": {
+      "experience": "Doświadczenie",
+      "education": "Wykształcenie",
+      "skills": "Umiejętności"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Tekst czytelny maszynowo",
+        "pass": "Cały tekst Twojego CV da się wyodrębnić",
+        "warn": "Niektóre strony nie zawierają czytelnego tekstu: prawdopodobnie obrazy lub skan",
+        "fail": "Brak czytelnego tekstu: to CV jest prawdopodobnie obrazem lub skanem i ATS nic z niego nie wyciągnie. Wyeksportuj je do PDF z edytora tekstu"
+      },
+      "columns": {
+        "title": "Układ",
+        "pass": "Liniowa kolejność czytania, kolumny się nie mieszają",
+        "warn": "Wykryto układ kolumnowy: tekst może zostać odczytany w złej kolejności. Sprawdź poniżej „Co czyta robot”"
+      },
+      "order": {
+        "title": "Kolejność czytania w pliku",
+        "pass": "Tekst jest zapisany w pliku w kolejności czytania",
+        "warnHeader": "Twoje imię i nagłówek są zapisane w pliku po reszcie CV: ATS czytający plik po kolei może nie znaleźć Twojego imienia",
+        "warn": "{{percent}}% tekstu jest zapisane w pliku poza kolejnością czytania: niektóre ATS odczytają te fragmenty w złej kolejności",
+        "fail": "{{percent}}% tekstu jest zapisane w pliku nie po kolei, co typowe dla CV zrobionych z wolnych pól tekstowych (Canva, PowerPoint…): wiele ATS odczyta Twoje CV pomieszane. Porównaj poniżej oba odczyty"
+      },
+      "unreadable": {
+        "title": "Ikony i paski umiejętności",
+        "pass": "Brak ikon i nieczytelnych znaków",
+        "warn": "Wykryto ikony lub paski ({{count}}): ATS odczytuje je jako krzaczki. Zastąp je tekstem",
+        "fail": "Wykryto ikony lub paski ({{count}}): zastąp je tekstem, na przykład „Angielski: C1” zamiast kropek"
+      },
+      "contact": {
+        "title": "Dane kontaktowe",
+        "pass": "Znaleziono adres e-mail i numer telefonu",
+        "warnNoPhone": "Nie znaleziono numeru telefonu",
+        "warnNoEmail": "Nie znaleziono adresu e-mail",
+        "fail": "Nie znaleziono ani e-maila, ani telefonu: wpisz je jako tekst, a nie na obrazku"
+      },
+      "sections": {
+        "title": "Standardowe sekcje",
+        "pass": "Doświadczenie, wykształcenie i umiejętności są dobrze rozpoznane",
+        "warn": "Tych sekcji nie rozpoznano: użyj standardowych nagłówków",
+        "fail": "Nie rozpoznano żadnej standardowej sekcji: ATS opierają się na nagłówkach takich jak „Doświadczenie” czy „Wykształcenie”"
+      },
+      "length": {
+        "title": "Długość",
+        "pass": "Stron: {{pages}}, słów: {{words}}: idealna długość",
+        "warn": "Stron: {{pages}}, słów: {{words}}: celuj w 1–2 strony i 250–1000 słów",
+        "fail": "Stron: {{pages}}, słów: {{words}}: zbyt krótkie lub zbyt długie, by dobrze je ocenić"
+      },
+      "quantified": {
+        "title": "Wymierne wyniki",
+        "pass": "{{percent}}% Twoich punktów zawiera liczbę, brawo",
+        "warn": "Tylko {{percent}}% punktów zawiera liczby: dodaj wymierne wyniki (procenty, kwoty, wolumeny)",
+        "fail": "Brak wymiernych wyników: rekruterzy i ATS cenią mierzalne osiągnięcia"
+      },
+      "weakPhrases": {
+        "title": "Czasowniki akcji",
+        "pass": "Brak słabych sformułowań na początku punktów",
+        "warn": "Te początki opisują obowiązek, a nie wynik: zacznij od czasownika akcji",
+        "fail": "Te początki opisują obowiązek, a nie wynik: zacznij od czasownika akcji"
+      },
+      "dates": {
+        "title": "Daty",
+        "pass": "Twoje doświadczenie ma daty",
+        "warn": "Znaleziono tylko jeden rok: podaj daty przy każdym stanowisku, ATS na ich podstawie liczą lata doświadczenia",
+        "fail": "Nie znaleziono dat: ATS na ich podstawie liczą Twoje lata doświadczenia"
+      }
+    },
+    "robot": {
+      "title": "Co czyta robot",
+      "text": "Tekst odbudowany linia po linii, tak jak robi to większość ATS. Jeśli tutaj jest pomieszany lub niepełny, dla rekrutera też będzie",
+      "empty": "Nie udało się wyodrębnić żadnego tekstu",
+      "position": "Według położenia",
+      "file": "Kolejność w pliku",
+      "fileText": "Tekst w kolejności, w jakiej jest zapisany w pliku: tak czytają go ATS, które nie odtwarzają układu. Powinien odpowiadać kolejności czytania Twojego CV"
+    },
+    "cta": {
+      "title": "Zacznij od nowa na solidnych podstawach",
+      "text": "Utwórz w edytorze CV przyjazne dla ATS, a potem dopasuj je do każdej oferty",
+      "button": "Otwórz edytor",
+      "import": "Przenieś to CV do naszych szablonów"
+    },
+    "live": {
+      "title": "Kontrola ATS na żywo",
+      "issues": "Punkty do sprawdzenia w tym szablonie: {{count}}",
+      "allGood": "W tym szablonie nie wykryto problemów",
+      "hint": "Obliczone na wyświetlanym układzie, tym samym silnikiem co analizator CV"
+    },
+    "method": {
+      "title": "Jak obliczany jest ten wynik?",
+      "intro": "Nie ma oficjalnego wyniku ATS: każde oprogramowanie rekrutacyjne (Workday, Taleo, Greenhouse, Lever…) ma własne, często poufne zasady. Ten wskaźnik sprawdza to, na czym potyka się większość z nich, według tej skali:",
+      "disclaimer": "Kryteria pochodzą z publicznych zaleceń dostawców ATS i najczęstszych błędów odczytu (tekst na obrazku, kolumny, ikony, niestandardowe nagłówki). Wynik pomaga ulepszyć CV: nie przewiduje selekcji"
+    }
+  },
+  "import": {
+    "title": "Importuj CV",
+    "linkedinTitle": "Importuj z LinkedIn",
+    "text": "Wybierz CV w PDF lub Word (.docx): treść jest wyodrębniana w Twojej przeglądarce i rozdzielana na sekcje edytora. Potem możesz wybrać szablon",
+    "choose": "Wybierz plik",
+    "chooseFile": "Wybierz plik",
+    "hint": "PDF lub Word (.docx), maks. 15 MB",
+    "reading": "Importowanie…",
+    "privacy": "Plik jest odczytywany w Twojej przeglądarce: nigdy nie jest nigdzie wysyłany",
+    "close": "Zamknij",
+    "done": "Zaimportowano CV (elementów: {{items}}): sprawdź każdą sekcję",
+    "errors": {
+      "tooLarge": "Ten plik ma ponad 15 MB",
+      "encrypted": "Ten PDF jest chroniony hasłem",
+      "unreadable": "Nie udało się odczytać tego pliku: może być uszkodzony",
+      "empty": "Brak użytecznego tekstu: ten PDF jest prawdopodobnie obrazem lub skanem",
+      "unsupported": "Wybierz PDF, plik Word (.docx) lub archiwum ZIP z LinkedIn",
+      "archiveEmpty": "To archiwum nie zawiera użytecznych danych profilu LinkedIn"
+    },
+    "hintArchive": "PDF (komputer) lub archiwum ZIP (aplikacja mobilna)",
+    "linkedin": {
+      "computer": {
+        "title": "Na komputerze: PDF Twojego profilu",
+        "step1": "Otwórz linkedin.com w przeglądarce na komputerze (w aplikacji ta opcja nie istnieje)",
+        "step2": "Na swoim profilu kliknij „Zasoby” (lub „Więcej”), a potem „Zapisz jako PDF”",
+        "step3": "Wybierz ten PDF poniżej"
+      },
+      "archive": {
+        "title": "W aplikacji mobilnej: archiwum Twoich danych",
+        "step1": "W aplikacji dotknij swojego zdjęcia, a potem Ustawienia i Prywatność danych",
+        "step2": "Wybierz „Pobierz kopię swoich danych” i zaznacz Profil, Stanowiska, Wykształcenie, Umiejętności i Języki",
+        "step3": "LinkedIn wyśle Ci e-mail w ciągu kilku minut: pobierz archiwum ZIP",
+        "step4": "Wybierz ten plik ZIP poniżej, bez rozpakowywania"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Ten dokument jest wyświetlany po angielsku. Moc prawną ma wyłącznie wersja francuska.",
+    "error": "Nie udało się wczytać tego dokumentu."
+  }
+}

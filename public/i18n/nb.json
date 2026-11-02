@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCVs forside",
+    "main": "Hovednavigasjon",
+    "how": "Slik fungerer det",
+    "privacy": "Personvern",
+    "analyze": "Analyser en CV",
+    "editor": "Lag min CV",
+    "skipToContent": "Gå til innholdet"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Lyst",
+    "system": "System",
+    "dark": "Mørkt"
+  },
+  "lang": {
+    "label": "Språk i grensesnittet",
+    "suggestion": "Vis siden på norsk",
+    "dismiss": "Lukk",
+    "search": "Søk etter språk",
+    "noResult": "Fant ikke noe språk"
+  },
+  "pages": {
+    "home": "ATS-vennlige CV-er, 100 % lokalt",
+    "editor": "Redigering",
+    "analyze": "CV-analyse",
+    "changelog": "Nyheter",
+    "legalNotice": "Juridisk informasjon",
+    "terms": "Bruksvilkår",
+    "privacy": "Personvernerklæring"
+  },
+  "seo": {
+    "home": "Gratis ATS-vennlig CV-verktøy: 30 grafiske maler, matchende søknadsbrev, tilpasning til hver stillingsannonse og ATS-poengsum. Åpen kildekode, dataene dine blir i nettleseren",
+    "editor": "CV-redigering med direkte forhåndsvisning, Master-CV og målrettede versjoner, ATS-sjekk og PDF-eksport med ekte tekst. Alt blir i nettleseren din",
+    "analyze": "Analyser en CV i PDF gratis: ATS-poengsum av 100, ting å rette og teksten slik et rekrutteringssystem leser den. Filen forlater aldri nettleseren din",
+    "changelog": "Nyheter i LocalATSCV, versjon for versjon: nye CV-maler, funksjoner og rettelser",
+    "legalNotice": "Juridisk informasjon om LocalATSCV: utgiver, hosting og kontakt",
+    "terms": "Bruksvilkår for LocalATSCV, det gratis CV-verktøyet med åpen kildekode",
+    "privacy": "Personvernerklæring for LocalATSCV: ingen data samles inn, CV-ene dine blir i nettleseren"
+  },
+  "footer": {
+    "tagline": "Det ATS-vennlige CV-verktøyet som aldri ser dataene dine",
+    "product": "Produkt",
+    "legal": "Juridisk",
+    "project": "Prosjekt",
+    "changelog": "Nyheter",
+    "sourceCode": "Kildekode",
+    "reportIssue": "Rapporter et problem",
+    "license": "MIT-lisens",
+    "versionLabel": "Versjon {{version}}, se nyhetene"
+  },
+  "update": {
+    "title": "Ny versjon tilgjengelig",
+    "text": "Last inn siden på nytt for å bruke den",
+    "changelog": "Se nyhetene",
+    "reload": "Last inn på nytt",
+    "later": "Senere"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % lokalt · Gratis · Åpen kildekode",
+      "titleLine1": "En CV som kommer forbi robotene",
+      "titleLine2": "Data som blir hos deg",
+      "subtitle": "LocalATSCV hjelper deg med å lage en CV som er optimalisert for rekrutteringssystemer (ATS), og tilpasse den til hver stilling med noen få klikk. Alt skjer i nettleseren din: ingen konto, ingen data sendes",
+      "ctaPrimary": "Lag min CV",
+      "ctaSecondary": "Analyser en eksisterende CV",
+      "points": {
+        "noAccount": "Ingen registrering",
+        "offline": "Fungerer uten nett",
+        "atsPdf": "PDF som ATS kan lese"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problemet",
+      "title": "CV-en din leses først av en maskin",
+      "text": "De fleste store bedrifter og rekrutteringsbyråer sorterer søknader med et ATS (Applicant Tracking System). Det henter ut teksten i CV-en din, lagrer den i en database og lar rekrutterere søke etter kandidater på nøkkelord",
+      "pitfalls": {
+        "layout": {
+          "title": "Kompleks layout",
+          "text": "Kolonner, tabeller og tekstbokser blander lesrekkefølgen: opplysningene dine kommer ut hulter til bulter"
+        },
+        "image": {
+          "title": "Uleselig tekst",
+          "text": "Ikoner, ferdighetsstolper og enkelte eksporter fra designverktøy blir til rare tegn, eller ingen tekst i det hele tatt"
+        },
+        "keywords": {
+          "title": "Manglende nøkkelord",
+          "text": "Hvis ordene fra annonsen ikke står i CV-en din, dukker ikke profilen din opp når rekrutterere søker"
+        }
+      },
+      "seen": "Det du ser",
+      "read": "Det roboten leser",
+      "fix": "LocalATSCV gjør det motsatte: én kolonne, ekte tekst og standardoverskrifter som robotene leser i riktig rekkefølge"
+    },
+    "how": {
+      "eyebrow": "Slik fungerer det",
+      "title": "Skriv én gang, tilpass i det uendelige",
+      "text": "Fire trinn gjør Master-CV-en din til en skreddersydd søknad for hver stilling",
+      "steps": {
+        "profile": {
+          "title": "Fyll ut Master-CV-en din",
+          "text": "Legg inn all erfaringen din én gang for alle, eller importer PDF-en av LinkedIn-profilen din for å spare tid"
+        },
+        "offer": {
+          "title": "Lim inn stillingsannonsen",
+          "text": "LocalATSCV henter ut nøkkelordene og beregner en matchpoengsum av 100 som oppdateres mens du skriver"
+        },
+        "compose": {
+          "title": "Bygg en målrettet versjon",
+          "text": "Kryss av for relevante erfaringer og punkter, og endre rekkefølgen med dra og slipp. Ingenting slettes fra Masteren din"
+        },
+        "export": {
+          "title": "Eksporter til PDF",
+          "text": "En PDF med ekte tekst, strukturert og i én kolonne, like lesbar for roboter som for rekrutterere"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Personvern",
+      "title": "Null data på serverne våre. Bokstavelig talt",
+      "text": "Det finnes ingen database å hacke: serveren vår sender deg bare applikasjonen. Deretter skjer alt i nettleseren din, også uten nett",
+      "browser": {
+        "title": "Nettleseren din",
+        "tag": "Enheten din",
+        "items": {
+          "master": "Master-CV",
+          "photo": "Profilbilde",
+          "versions": "Målrettede versjoner",
+          "settings": "Innstillinger"
+        },
+        "note": "Lagret i IndexedDB, bare på denne enheten"
+      },
+      "flow": {
+        "app": "Applikasjonen, ved første besøk",
+        "data": "Dataene dine",
+        "never": "aldri"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Leverer applikasjonens filer (HTML, CSS, JavaScript), ingenting mer",
+        "items": {
+          "noDb": "Ingen database",
+          "noAccount": "Ingen brukerkontoer",
+          "noLogs": "Ingen besøkslogger"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Ingen konto",
+          "text": "Ingen registrering, ingen e-post, intet passord. Åpne siden og sett i gang"
+        },
+        "trackers": {
+          "title": "Ingen sporing",
+          "text": "Ingen statistikk, ingen reklame, ingen sporingskapsler. Selv skrifttypene ligger på vår egen server"
+        },
+        "csp": {
+          "title": "Teknisk låst",
+          "text": "Nettstedets sikkerhetspolicy (CSP) forbyr nettleseren å kontakte andre domener. Koden er åpen: sjekk selv"
+        },
+        "backup": {
+          "title": "Dine sikkerhetskopier, dine filer",
+          "text": "Eksporter alle dataene dine til en JSON-fil og importer dem igjen på hvilken som helst enhet"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funksjoner",
+      "title": "Alt du trenger for å komme til intervju",
+      "items": {
+        "master": {
+          "title": "Master-CV og målrettede versjoner",
+          "text": "Én komplett CV og like mange varianter som søknader. Kryss av og fjern kryss: ingenting går tapt"
+        },
+        "score": {
+          "title": "Matchpoengsum",
+          "text": "Lim inn annonsen: funnede og manglende nøkkelord og en poengsum av 100 i sanntid"
+        },
+        "weak": {
+          "title": "Oppdager svake formuleringer",
+          "text": "«Ansvarlig for», «hjalp til med» … markeres automatisk, med en bank av handlingsverb å erstatte dem med"
+        },
+        "analyzer": {
+          "title": "Analyse av eksisterende CV-er",
+          "text": "Slipp en CV laget et annet sted: se hva roboten faktisk leser, og hva som må rettes"
+        },
+        "linkedin": {
+          "title": "Import fra LinkedIn",
+          "text": "Fyll ut Master-CV-en din på forhånd med den gratis PDF-en du kan eksportere fra LinkedIn-profilen din"
+        },
+        "languages": {
+          "title": "5 CV-språk",
+          "text": "Fransk, engelsk, italiensk, spansk og tysk. På engelsk skjules bilde og fødselsdato, etter normene i engelskspråklige land"
+        },
+        "pdf": {
+          "title": "ATS-vennlig PDF-eksport",
+          "text": "Ekte tekst og tydelig struktur: lesbar for roboter, behagelig for rekrutterere"
+        },
+        "offline": {
+          "title": "Kan installeres og virker uten nett",
+          "text": "Legg LocalATSCV til på startskjermen og jobb videre uten tilkobling"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Vanlige spørsmål",
+      "title": "Vanlige spørsmål",
+      "text": "Finner du ikke spørsmålet ditt? Skriv til oss:",
+      "items": {
+        "ats": {
+          "q": "Hva er et ATS?",
+          "a": "Et Applicant Tracking System er programvaren rekrutterere bruker til å motta, sortere og søke i søknader. Det gjør CV-en din om til tekst og indekserer den: hvis teksten hentes ut dårlig eller de riktige nøkkelordene mangler, blir søknaden din vanskelig å finne"
+        },
+        "storage": {
+          "q": "Hvor lagres dataene mine?",
+          "a": "Bare i nettleseren din, i IndexedDB, en database som finnes i alle moderne nettlesere. De går aldri gjennom serverne våre, som bare kan levere applikasjonens filer"
+        },
+        "clear": {
+          "q": "Hva skjer hvis jeg tømmer nettleserdataene?",
+          "a": "CV-ene dine slettes, fordi de ikke finnes noe annet sted. Eksporter en JSON-sikkerhetskopi jevnlig: du kan importere den igjen når som helst, på hvilken som helst enhet"
+        },
+        "score": {
+          "q": "Garanterer poengsummen at CV-en min blir valgt ut?",
+          "a": "Nei. Hvert ATS har sine egne regler, og den endelige avgjørelsen tas av et menneske. Poengsummen er en indikator: den sjekker at CV-en din bruker ordene fra annonsen, og at en maskin kan lese den riktig"
+        },
+        "photo": {
+          "q": "Hvorfor forsvinner bildet på engelsk?",
+          "a": "I Storbritannia, USA og mange engelskspråklige land frarådes bilde og fødselsdato for å begrense diskriminering ved ansettelse. Noen rekrutterere sorterer til og med bort CV-er som har dem med"
+        },
+        "free": {
+          "q": "Er det virkelig gratis?",
+          "a": "Ja. LocalATSCV er et åpen kildekode-prosjekt under MIT-lisensen, uten reklame eller abonnement. Det koster nesten ingenting å drifte, fordi det er nettleseren din som gjør all jobben"
+        },
+        "templates": {
+          "q": "Kommer de grafiske malene gjennom ATS?",
+          "a": "Ja. Alle maler skriver ut ekte tekst, i lesrekkefølge, med standardoverskrifter: former, stolper og ikoner er tegninger som robotene ignorerer. Maler med én kolonne er fortsatt de sikreste, og ATS-sjekken i redigeringen tester layouten din direkte"
+        },
+        "import": {
+          "q": "Kan jeg gjenbruke den nåværende CV-en min eller LinkedIn-profilen min?",
+          "a": "Ja. Importer en CV i PDF eller Word (.docx), PDF-en av LinkedIn-profilen din (på en datamaskin) eller LinkedIn-dataarkivet ditt (fra mobilappen): innholdet leses i nettleseren din og sorteres inn i redigeringen"
+        },
+        "offline": {
+          "q": "Fungerer LocalATSCV uten nett?",
+          "a": "Ja. Det er en nettapp som kan installeres: etter første besøk fungerer alt uten tilkobling, også PDF-eksporten"
+        }
+      }
+    },
+    "cta": {
+      "title": "Klar for å komme gjennom filteret?",
+      "text": "Lag Master-CV-en din på noen minutter. Ingenting forlater denne enheten",
+      "button": "Kom i gang"
+    },
+    "demo": {
+      "role": "Frontendutvikler",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Arbeidserfaring",
+      "jobTitle": "Angular-utvikler",
+      "jobMeta": "Eksempel AS · 2022 – nå",
+      "bullets": {
+        "migration": "Migrerte 40 skjermbilder til <k>Angular</k> og <k>TypeScript</k>, lastetiden gikk ned med 35 %",
+        "testing": "<w>Ansvarlig for</w> strategien for ende-til-ende-testing",
+        "delivery": "Kontinuerlig leveranse med <k>GitLab CI</k> for 3 produktteam"
+      },
+      "weakLabel": "Svak formulering",
+      "weakReplacement": "«Ledet»",
+      "skills": "Kompetanse",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Universell utforming",
+      "score": "Match med annonsen",
+      "sent": "0 byte sendt",
+      "robot": "KOMPETANSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Frontendutvikler Angular <n>●●●●○</n> ARBEIDSERFARING <n>� camille.mar</n> Angular-utvikler <n>tin@example.com</n> 2022 – nå TypeScript <n>●●●○○</n> Eksempel AS SPRÅK Engelsk Migrerte 40 skjermbilder til…"
+    }
+  },
+  "dialog": {
+    "cancel": "Avbryt",
+    "delete": "Slett",
+    "create": "Opprett",
+    "save": "Lagre",
+    "import": "Importer"
+  },
+  "editor": {
+    "list": {
+      "title": "Mine CV-er",
+      "subtitle": "Lagret bare i denne nettleseren",
+      "new": "Ny CV",
+      "newBlank": "Tom CV",
+      "newBlankHint": "Start med en tom side",
+      "newSample": "Start med et eksempel",
+      "newSampleHint": "En utfylt, oppdiktet CV for å utforske redigeringen",
+      "import": "Gjenopprett en sikkerhetskopi",
+      "exportAll": "Eksporter alt",
+      "emptyTitle": "Ingen CV-er ennå",
+      "emptyText": "Lag Master-CV-en din: all erfaringen din på ett sted, klar til å tilpasses hver stilling",
+      "open": "Åpne",
+      "actions": "Handlinger",
+      "duplicate": "Dupliser",
+      "export": "Eksporter (JSON)",
+      "delete": "Slett",
+      "updated": "Endret {{date}}",
+      "versions": "Versjoner: {{count}}",
+      "backupHint": "CV-ene dine finnes bare i denne nettleseren. Eksporter en JSON-sikkerhetskopi jevnlig: tømmer du nettleserdataene, kan du få alt tilbake med den",
+      "defaultName": "Min CV",
+      "copySuffix": "(kopi)",
+      "deleteTitle": "Slette «{{name}}»?",
+      "deleteText": "CV-en og alle versjonene av den slettes permanent fra denne nettleseren",
+      "exportDone": "Sikkerhetskopien er lastet ned",
+      "importConfirmTitle": "Importere denne sikkerhetskopien?",
+      "importConfirmText": "CV-er i denne sikkerhetskopien: {{count}}. CV-er som allerede finnes i denne nettleseren, blir erstattet",
+      "importDone": "Sikkerhetskopi importert: {{count}} CV(-er)",
+      "importError": {
+        "invalidJson": "Filen er ikke gyldig JSON",
+        "notABackup": "Filen er ikke en sikkerhetskopi fra LocalATSCV",
+        "newerVersion": "Sikkerhetskopien kommer fra en nyere versjon av LocalATSCV: oppdater appen først"
+      },
+      "importPdf": "Importer en CV (PDF eller Word)",
+      "importPdfHint": "Overfør en eksisterende CV til malene våre",
+      "importLinkedin": "Importer fra LinkedIn",
+      "importLinkedinHint": "Fra PDF-en av profilen din"
+    },
+    "toolbar": {
+      "back": "Mine CV-er",
+      "name": "Navn på CV-en",
+      "cvLanguage": "CV-ens språk",
+      "accent": "Aksentfarge",
+      "customAccent": "Egen farge",
+      "saved": "Lagret",
+      "saving": "Lagrer …",
+      "saveError": "Kunne ikke lagre",
+      "edit": "Rediger",
+      "preview": "Forhåndsvis",
+      "exportPdf": "Eksporter til PDF",
+      "undo": "Angre (Ctrl+Z)",
+      "redo": "Gjør om (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokument som redigeres",
+      "cv": "CV",
+      "letter": "Søknadsbrev"
+    },
+    "letter": {
+      "title": "Søknadsbrev",
+      "versionOwn": "Denne versjonen har sitt eget brev",
+      "versionShared": "Denne versjonen bruker Masterens brev: redigerer du her, opprettes en kopi for versjonen",
+      "useMaster": "Bruk Masterens brev",
+      "recipient": "Mottaker",
+      "recipientPlaceholder": "Eksempel AS\nRekruttering\nKarl Johans gate 10, 0154 Oslo",
+      "place": "Sted",
+      "date": "Dato",
+      "dateHint": "Tomt: dagens dato ved utskrift",
+      "subject": "Emne",
+      "subjectPlaceholder": "Søknad på stillingen som …",
+      "greeting": "Hilsen",
+      "body": "Brev",
+      "bodyPlaceholder": "Tre korte avsnitt: hva som tiltrekker deg ved bedriften, hva du bidrar med, og hvilket neste steg du foreslår",
+      "bodyHint": "En tom linje skiller to avsnitt · **fet** for et nøkkelord",
+      "outline": "Sett inn et utkast",
+      "closing": "Avslutning",
+      "fileName": "Søknadsbrev"
+    },
+    "fit": {
+      "pages": "{{count}} sider",
+      "onePage": "Får plass på én side",
+      "hintMany": "De fleste rekrutterere forventer en CV på én side",
+      "hintOne": "Ideelt format for de fleste søknader",
+      "stillTooLong": "Fortsatt for lang, selv strammet inn: kort ned noen punkter eller skjul elementer i en versjon",
+      "fit": "Tilpass til én side",
+      "settings": "Layoutinnstillinger",
+      "spacing": "Avstand",
+      "scale": "Tekststørrelse",
+      "settingsHint": "Teksten forblir ekte tekst: bare layouten endres",
+      "reset": "Malens layout",
+      "grayscale": "Vis i svart-hvitt",
+      "grayscaleHint": "Simulerer en svart-hvitt-utskrift: den eksporterte PDF-en beholder fargene"
+    },
+    "versions": {
+      "label": "Vist versjon",
+      "master": "Master-CV",
+      "masterHint": "Alt innhold, ufiltrert",
+      "new": "Ny versjon",
+      "newText": "En målrettet versjon tar utgangspunkt i hele Master-CV-en din: fjern deretter krysset for det denne søknaden ikke trenger",
+      "nameLabel": "Versjonens navn",
+      "namePlaceholder": "F.eks. Frontendutvikler – Bedrift X",
+      "rename": "Gi versjonen nytt navn",
+      "delete": "Slett versjonen",
+      "deleteTitle": "Slette versjonen «{{name}}»?",
+      "deleteText": "Bare utvalget slettes: alt innhold blir værende i Master-CV-en din",
+      "banner": "Versjon «{{name}}»: fjern krysset for det som ikke skal vises. Ingenting slettes fra Master-CV-en din",
+      "include": "Ta med i denne versjonen"
+    },
+    "enRule": "CV på engelsk: bilde, fødselsdato og nasjonalitet skjules, etter normene i engelskspråklige land",
+    "profile": {
+      "title": "Profil",
+      "photo": "Bilde",
+      "photoAdd": "Legg til et bilde",
+      "photoChange": "Bytt",
+      "photoRemove": "Fjern",
+      "photoHint": "Forminsket og lagret bare på denne enheten",
+      "photoError": "Bildet kunne ikke leses",
+      "hiddenInEnglish": "Skjult på engelsk",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "headline": "CV-tittel",
+      "headlinePlaceholder": "F.eks. Frontendutvikler",
+      "email": "E-post",
+      "phone": "Telefon",
+      "location": "By",
+      "birthDate": "Fødselsdato",
+      "nationality": "Nasjonalitet",
+      "summary": "Sammendrag",
+      "summaryPlaceholder": "To eller tre setninger som oppsummerer profilen din og hva du ser etter",
+      "links": "Lenker",
+      "linkLabel": "Lenkens navn",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Lenkens adresse",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Legg til en lenke",
+      "removeLink": "Fjern lenken",
+      "drivingLicense": "Førerkort",
+      "drivingLicensePlaceholder": "F.eks. Førerkort klasse B, egen bil",
+      "qrToggle": "Vis lenken som QR-kode",
+      "linksHint": "Logoen (LinkedIn, GitHub, YouTube …) legges til automatisk. QR-knappen viser lenken som QR-kode i de fleste grafiske maler"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Arbeidserfaring",
+        "education": "Utdanning",
+        "projects": "Prosjekter",
+        "certifications": "Sertifiseringer",
+        "custom": "Fri seksjon",
+        "skills": "Kompetanse",
+        "languages": "Språk",
+        "interests": "Interesser"
+      },
+      "add": "Legg til en seksjon",
+      "titleLabel": "Seksjonens tittel",
+      "empty": "Tom seksjon: den vises ikke på CV-en",
+      "addItem": {
+        "experience": "Legg til en erfaring",
+        "education": "Legg til en utdanning",
+        "projects": "Legg til et prosjekt",
+        "certifications": "Legg til en sertifisering",
+        "custom": "Legg til et element",
+        "skills": "Legg til kompetanse",
+        "languages": "Legg til et språk",
+        "interests": "Legg til en interesse"
+      },
+      "deleteTitle": "Slette seksjonen «{{name}}»?",
+      "deleteText": "Innholdet fjernes fra Master-CV-en og alle versjonene av den"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Stilling",
+          "subtitle": "Bedrift"
+        },
+        "education": {
+          "title": "Grad",
+          "subtitle": "Skole eller universitet"
+        },
+        "projects": {
+          "title": "Prosjektnavn",
+          "subtitle": "Rolle eller teknologier"
+        },
+        "certifications": {
+          "title": "Sertifisering",
+          "subtitle": "Utsteder"
+        },
+        "custom": {
+          "title": "Tittel",
+          "subtitle": "Undertittel"
+        }
+      },
+      "location": "Sted",
+      "url": "Lenke",
+      "start": "Start",
+      "end": "Slutt",
+      "date": "Dato oppnådd",
+      "current": "Pågår",
+      "untitled": "Uten tittel",
+      "bullets": "Resultater",
+      "bulletPlaceholder": "Start med et handlingsverb og tallfest resultatet",
+      "addBullet": "Legg til et punkt",
+      "bulletHint": "Enter: nytt punkt",
+      "boldHint": "**ord** for fet skrift"
+    },
+    "items": {
+      "skillLabel": "Kategori",
+      "skillLabelPlaceholder": "F.eks. Frontend",
+      "skillKeywords": "Kompetanse",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Språk",
+      "languageLevel": "Nivå",
+      "languageLevelPlaceholder": "F.eks. C1, fluent",
+      "interest": "Interesse",
+      "interestPlaceholder": "F.eks. Klatring",
+      "levelDetected": "Nivået gjenkjennes: maler med stolpe viser det",
+      "levelUnknown": "Nivået gjenkjennes ikke, ingen stolpe: bruk A1 til C2 eller et forslag fra listen",
+      "levelEmpty": "Skriv inn et nivå for å vise en stolpe",
+      "levelHint": "Bruk det europeiske nivået (A1 til C2) eller et ord som «fluent» eller «native»: noen maler viser det også som stolpe, slik prikkene til høyre forhåndsviser"
+    },
+    "actions": {
+      "menu": "Handlinger",
+      "moveUp": "Flytt opp",
+      "moveDown": "Flytt ned",
+      "duplicate": "Dupliser",
+      "delete": "Slett",
+      "drag": "Dra for å endre rekkefølgen"
+    },
+    "month": "Måned",
+    "year": "År",
+    "noMonth": "Måned",
+    "preview": {
+      "page": "Side {{n}}"
+    },
+    "notFound": {
+      "title": "Fant ikke CV-en",
+      "text": "CV-en finnes ikke eller er slettet fra denne nettleseren"
+    },
+    "templates": {
+      "button": "Mal",
+      "title": "Velg en mal",
+      "subtitle": "Alle maler med en komplett eksempel-CV, eller med din egen. Aksentfargen gjelder for alle maler",
+      "close": "Lukk",
+      "filter": "Filtrer malene",
+      "filters": {
+        "all": "Alle",
+        "graphic": "Grafiske",
+        "sober": "Nøkterne"
+      },
+      "ats": "ATS-kompatibilitet",
+      "levels": {
+        "excellent": "utmerket",
+        "good": "god",
+        "fair": "grei"
+      },
+      "atsHint": "Alle maler skriver ut ekte tekst. Layouter i to kolonner leses godt av de fleste moderne ATS, men noen eldre verktøy blander kolonnene: velg en mal med én kolonne hvis du er i tvil",
+      "names": {
+        "classic": {
+          "name": "Klassisk",
+          "description": "Rent og effektivt: én kolonne, understrekede overskrifter, ingen forstyrrelser"
+        },
+        "modern": {
+          "name": "Moderne",
+          "description": "Farget banner, tydelige overskrifter og kompetanse som merkelapper"
+        },
+        "elegant": {
+          "name": "Elegant",
+          "description": "Sentrert topptekst og typografi med seriffer for et raffinert uttrykk"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Farget kant, detaljer i monospace og kompetanse i kodestil"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Sveitsisk stil: stort navn, overskrifter i margen, mye luft"
+        },
+        "sidebar": {
+          "name": "Kolonner",
+          "description": "Farget sidefelt med bilde, kontaktinformasjon og kompetanse"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Fotobanner, ikoner, tidslinje og språkstolper, og likevel fullt lesbar for ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organiske pastellformer, stort rundt bilde, tidslinje og QR-kode, i to kolonner"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Signature-looken i én kolonne: grafisk og fullt lesbar for ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Mørkt diagonalt banner, fargede glorier, erfaringskort og fylte kompetansemerker"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrisk komposisjon i primærfarger rundt bildet, geometrisk skrift og former foran hver overskrift"
+        },
+        "editorial": {
+          "name": "Redaksjonell",
+          "description": "Magasinlayout: stort navn med seriffer, ingress i kursiv, nummererte seksjoner og forskjøvet portrett"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Nybrutalisme: tykke svarte konturer, harde skygger, sterke fargeblokker og svarte etiketter"
+        },
+        "prism": {
+          "name": "Prisme",
+          "description": "Mesh-gradient i aksentfargene dine, kontaktkort med glasseffekt og kort med gradientkant"
+        },
+        "swiss": {
+          "name": "Sveitsisk",
+          "description": "Sveitsisk plakatstil: kjempestort navn, fargebånd, kraftige svarte linjer og nummererte seksjoner"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Elfenbensfarget papir, fin dobbel ramme, ruteornamenter og Garamond-typografi"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Mørk modus: nattbakgrunn, neonaksenter og lysende tidslinje, ideell for digitale søknader"
+        },
+        "wave": {
+          "name": "Bølge",
+          "description": "Farget banner som ender i bølger, rundt bilde og bølgete overskrifter, mykt og vennlig"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Avrundede bentoruter: bilde, navn og QR-kode i et rutenett, én rute per seksjon"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Teknisk tegning: rutepapir, hjørnemerker, målelinje og etiketter i monospace"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrisk konfetti fra 80-tallet, sterke farger og overskrifter understreket med sikksakk"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Stort delt banner: tekst på en fargeblokk og et tofarget bilde"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografien som eneste pynt: kjempestort, delvis konturert navn og svært store overskrifter"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Én pastellfarge per seksjon, pilleformede overskrifter og et flerfarget skjær"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Marineblått banner, gullinje og navn med seriffer, for lederstillinger"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japansk minimalisme: washipapir, en ensō-sirkel i aksentfargen din og et penselstrøk"
+        },
+        "ribbon": {
+          "name": "Bånd",
+          "description": "Seksjonsoverskrifter på bånd med svalehale, sentrert topptekst"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Sekskantet bilde, bikake i hjørnet og sekskanter foran overskriftene"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Topptekst av utklipt papir i lag, seksjoner som papirark"
+        },
+        "thread": {
+          "name": "Tråd",
+          "description": "En sammenhengende tråd binder sammen toppteksten og hver seksjon, med en prikk per stilling"
+        }
+      },
+      "preview": {
+        "label": "Innhold i miniatyrene",
+        "sample": "Komplett eksempel",
+        "mine": "Min CV"
+      }
+    },
+    "print": {
+      "title": "Eksporter til PDF",
+      "text": "Nettleserens utskriftsvindu åpnes straks. For en perfekt PDF:",
+      "tips": {
+        "destination": "Mål: «Lagre som PDF»",
+        "margins": "Marger: «Ingen»",
+        "headers": "Fjern krysset for «Topptekst og bunntekst»",
+        "background": "Kryss av for «Bakgrunnsgrafikk» for å beholde fargene"
+      },
+      "dontShow": "Ikke vis igjen",
+      "cancel": "Avbryt",
+      "print": "Åpne utskriftsvinduet"
+    },
+    "job": {
+      "title": "Tilpass til en stillingsannonse",
+      "sources": "LinkedIn, FINN jobb, NAV Arbeidsplassen, Indeed, Jobbnorge…",
+      "placeholder": "Lim inn hele annonseteksten her: tittel, oppgaver, krav",
+      "urlWarning": "Lim inn teksten i annonsen i stedet for lenken: LocalATSCV kontakter aldri noe nettsted, så dataene dine blir hos deg",
+      "empty": "Fant ingen nøkkelord: lim inn en mer komplett annonse",
+      "score": "Match med annonsen",
+      "summary": "{{found}} av {{total}} nøkkelord er med",
+      "found": "Nøkkelord i CV-en din",
+      "missing": "Manglende nøkkelord",
+      "missingHint": "Klikk på et nøkkelord for å legge det til i kompetansen din, eller arbeid det inn i en erfaring",
+      "addToSkills": "Legg til i kompetanse",
+      "added": "«{{keyword}}» er lagt til i kompetansen din",
+      "keywordsGroup": "Nøkkelord",
+      "createVersion": "Lag en målrettet versjon for denne stillingen",
+      "createVersionHint": "Erfaringer og punkter uten tilknytning til stillingen får fjernet krysset: du kan justere dem",
+      "savedInVersion": "Annonsen er lagret med versjonen «{{name}}»"
+    },
+    "weak": {
+      "hint": "«{{phrase}}» beskriver en oppgave: start med et handlingsverb"
+    },
+    "fonts": {
+      "title": "Typografi",
+      "heading": "Overskrifter",
+      "body": "Brødtekst",
+      "default": "Malens egen",
+      "hint": "ATS-systemer leser alle disse skrifttypene godt: teksten forblir ekte tekst"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Nyheter",
+    "title": "Endringslogg",
+    "subtitle": "Alle versjoner av LocalATSCV, med nyheter og rettelser",
+    "current": "Gjeldende versjon",
+    "frenchOnly": "Endringsloggen er skrevet på fransk",
+    "error": "Kunne ikke laste inn endringsloggen",
+    "types": {
+      "added": "Lagt til",
+      "changed": "Endret",
+      "fixed": "Rettet",
+      "removed": "Fjernet",
+      "deprecated": "Utdatert",
+      "security": "Sikkerhet",
+      "other": "Annet"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyse",
+    "title": "Kommer CV-en din forbi robotene?",
+    "subtitle": "Slipp en CV i PDF laget med et hvilket som helst verktøy: LocalATSCV leser den som et ATS og forteller deg hva som må rettes",
+    "drop": "Dra CV-en din hit",
+    "dropActive": "Slipp filen for å starte analysen",
+    "hint": "Bare PDF, maks 15 MB",
+    "choose": "Velg en fil",
+    "reading": "Leser PDF-en …",
+    "privacy": "Filen analyseres i nettleseren din: den sendes aldri noe sted",
+    "another": "Analyser en annen CV",
+    "errors": {
+      "notPdf": "Filen er ikke en PDF",
+      "tooLarge": "Filen er større enn 15 MB",
+      "encrypted": "PDF-en er passordbeskyttet: et ATS kan heller ikke lese den",
+      "unreadable": "PDF-en kunne ikke leses: den kan være skadet"
+    },
+    "stats": "{{pages}} side(r) · {{words}} ord",
+    "verdict": {
+      "excellent": "Utmerket",
+      "good": "Bra",
+      "fair": "Kan forbedres",
+      "poor": "Kritisk"
+    },
+    "verdictText": {
+      "excellent": "Robotene leser CV-en din svært godt",
+      "good": "Noen justeringer gjør den enda mer effektiv",
+      "fair": "Flere problemer gjør det vanskelig for ATS å lese den",
+      "poor": "Et ATS risikerer å gå glipp av det viktigste"
+    },
+    "categories": {
+      "readability": "Maskinlesbarhet",
+      "structure": "Struktur",
+      "content": "Innhold"
+    },
+    "sectionNames": {
+      "experience": "Arbeidserfaring",
+      "education": "Utdanning",
+      "skills": "Kompetanse"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Maskinlesbar tekst",
+        "pass": "All teksten i CV-en din kan hentes ut",
+        "warn": "Noen sider inneholder ingen lesbar tekst: trolig bilder eller en skanning",
+        "fail": "Ingen lesbar tekst: CV-en er trolig et bilde eller en skanning, og et ATS får ikke ut noe. Eksporter den til PDF fra tekstbehandleren din"
+      },
+      "columns": {
+        "title": "Layout",
+        "pass": "Lineær lesrekkefølge, ingen kolonner som blandes",
+        "warn": "Kolonnelayout oppdaget: teksten kan leses i feil rekkefølge. Sjekk «Det roboten leser» nedenfor"
+      },
+      "order": {
+        "title": "Lesrekkefølge i filen",
+        "pass": "Teksten er skrevet i filen i lesrekkefølge",
+        "warnHeader": "Navnet og toppteksten din er skrevet i filen etter resten av CV-en: et ATS som leser filen i rekkefølge, finner kanskje ikke navnet ditt",
+        "warn": "{{percent}} % av teksten er skrevet i filen utenfor lesrekkefølgen: noen ATS leser disse partiene i feil rekkefølge",
+        "fail": "{{percent}} % av teksten er skrevet i filen i uorden, typisk for CV-er laget med frie tekstbokser (Canva, PowerPoint …): mange ATS leser CV-en din hulter til bulter. Sammenlign de to lesningene nedenfor"
+      },
+      "unreadable": {
+        "title": "Ikoner og ferdighetsstolper",
+        "pass": "Ingen ikoner eller uleselige tegn",
+        "warn": "Ikoner eller stolper oppdaget ({{count}}): et ATS leser dem som rare tegn. Erstatt dem med tekst",
+        "fail": "Ikoner eller stolper oppdaget ({{count}}): erstatt dem med tekst, for eksempel «Engelsk: C1» i stedet for prikker"
+      },
+      "contact": {
+        "title": "Kontaktinformasjon",
+        "pass": "E-postadresse og telefonnummer funnet",
+        "warnNoPhone": "Fant ikke noe telefonnummer",
+        "warnNoEmail": "Fant ingen e-postadresse",
+        "fail": "Fant ingen e-post eller telefon: skriv dem som tekst, ikke i et bilde"
+      },
+      "sections": {
+        "title": "Standardseksjoner",
+        "pass": "Erfaring, utdanning og kompetanse er tydelig identifisert",
+        "warn": "Disse seksjonene ble ikke gjenkjent: bruk standardoverskrifter",
+        "fail": "Ingen standardseksjon gjenkjent: ATS-systemer støtter seg på overskrifter som «Arbeidserfaring» eller «Utdanning»"
+      },
+      "length": {
+        "title": "Lengde",
+        "pass": "{{pages}} side(r), {{words}} ord: ideell lengde",
+        "warn": "{{pages}} side(r), {{words}} ord: sikt mot 1 til 2 sider og 250 til 1 000 ord",
+        "fail": "{{pages}} side(r), {{words}} ord: for kort eller for lang til å bli godt vurdert"
+      },
+      "quantified": {
+        "title": "Tallfestede resultater",
+        "pass": "{{percent}} % av punktene dine inneholder et tall, godt jobbet",
+        "warn": "Bare {{percent}} % av punktene er tallfestet: legg til målbare resultater (prosenter, beløp, volumer)",
+        "fail": "Ingen tallfestede resultater: rekrutterere og ATS verdsetter målbare prestasjoner"
+      },
+      "weakPhrases": {
+        "title": "Handlingsverb",
+        "pass": "Ingen svake formuleringer i starten av punktene",
+        "warn": "Disse innledningene beskriver en oppgave i stedet for et resultat: start med et handlingsverb",
+        "fail": "Disse innledningene beskriver en oppgave i stedet for et resultat: start med et handlingsverb"
+      },
+      "dates": {
+        "title": "Datoer",
+        "pass": "Erfaringen din er datert",
+        "warn": "Fant bare ett årstall: dater hver stilling, ATS-systemer bruker datoer til å beregne antall års erfaring",
+        "fail": "Fant ingen datoer: ATS-systemer bruker dem til å beregne antall års erfaring"
+      }
+    },
+    "robot": {
+      "title": "Det roboten leser",
+      "text": "Teksten bygget opp igjen linje for linje, slik de fleste ATS gjør. Er den rotete eller ufullstendig her, er den det også for rekruttereren",
+      "empty": "Ingen tekst kunne hentes ut",
+      "position": "Etter plassering",
+      "file": "Rekkefølge i filen",
+      "fileText": "Teksten i den rekkefølgen den er skrevet i filen: slik leser ATS som ikke bygger opp layouten igjen, den. Den bør følge lesrekkefølgen i CV-en din"
+    },
+    "cta": {
+      "title": "Begynn på nytt på riktig grunnlag",
+      "text": "Lag en ATS-vennlig CV i redigeringen, og tilpass den deretter til hver stilling",
+      "button": "Åpne redigeringen",
+      "import": "Overfør denne CV-en til malene våre"
+    },
+    "live": {
+      "title": "ATS-sjekk i sanntid",
+      "issues": "{{count}} punkt(er) å sjekke i denne malen",
+      "allGood": "Fant ingen problemer i denne malen",
+      "hint": "Beregnet på den viste layouten, med samme motor som CV-analysen"
+    },
+    "method": {
+      "title": "Hvordan beregnes poengsummen?",
+      "intro": "Det finnes ingen offisiell ATS-poengsum: hvert rekrutteringssystem (Workday, Taleo, Greenhouse, Lever …) har egne, ofte hemmelige regler. Denne indeksen sjekker det som får de fleste av dem til å snuble, etter denne skalaen:",
+      "disclaimer": "Kriteriene kommer fra ATS-leverandørenes offentlige anbefalinger og de vanligste lesefeilene (tekst i bilder, kolonner, ikoner, overskrifter som ikke er standard). Poengsummen hjelper deg med å forbedre CV-en: den forutsier ikke utvelgelsen"
+    }
+  },
+  "import": {
+    "title": "Importer en CV",
+    "linkedinTitle": "Importer fra LinkedIn",
+    "text": "Velg en CV i PDF eller Word (.docx): innholdet hentes ut i nettleseren din og sorteres inn i seksjonene i redigeringen. Deretter kan du velge en mal",
+    "choose": "Velg en fil",
+    "chooseFile": "Velg en fil",
+    "hint": "PDF eller Word (.docx), maks 15 MB",
+    "reading": "Importerer …",
+    "privacy": "Filen leses i nettleseren din: den sendes aldri noe sted",
+    "close": "Lukk",
+    "done": "CV importert ({{items}} elementer): gå gjennom hver seksjon",
+    "errors": {
+      "tooLarge": "Filen er større enn 15 MB",
+      "encrypted": "PDF-en er passordbeskyttet",
+      "unreadable": "Filen kunne ikke leses: den kan være skadet",
+      "empty": "Ingen brukbar tekst: PDF-en er trolig et bilde eller en skanning",
+      "unsupported": "Velg en PDF, en Word-fil (.docx) eller et ZIP-arkiv fra LinkedIn",
+      "archiveEmpty": "Arkivet inneholder ingen brukbare profildata fra LinkedIn"
+    },
+    "hintArchive": "PDF (datamaskin) eller ZIP-arkiv (mobilapp)",
+    "linkedin": {
+      "computer": {
+        "title": "På en datamaskin: PDF-en av profilen din",
+        "step1": "Åpne linkedin.com i en nettleser på en datamaskin (valget finnes ikke i appen)",
+        "step2": "Klikk på «Ressurser» (eller «Mer») på profilen din og deretter på «Lagre som PDF»",
+        "step3": "Velg den PDF-en nedenfor"
+      },
+      "archive": {
+        "title": "I mobilappen: dataarkivet ditt",
+        "step1": "Trykk på bildet ditt i appen og deretter på Innstillinger og Datavern",
+        "step2": "Velg «Få en kopi av dataene dine» og kryss av for Profil, Stillinger, Utdanning, Ferdigheter og Språk",
+        "step3": "LinkedIn sender deg en e-post i løpet av noen minutter: last ned ZIP-arkivet",
+        "step4": "Velg ZIP-filen nedenfor uten å pakke den ut"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Dokumentet vises på engelsk. Bare den franske versjonen er juridisk bindende.",
+    "error": "Kunne ikke laste inn dokumentet."
+  }
+}

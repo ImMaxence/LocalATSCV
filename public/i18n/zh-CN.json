@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV 首页",
+    "main": "主导航",
+    "how": "使用方式",
+    "privacy": "隐私",
+    "analyze": "分析简历",
+    "editor": "制作我的简历",
+    "skipToContent": "跳到正文"
+  },
+  "theme": {
+    "label": "主题",
+    "light": "浅色",
+    "system": "跟随系统",
+    "dark": "深色"
+  },
+  "lang": {
+    "label": "界面语言",
+    "suggestion": "以简体中文显示此页面",
+    "dismiss": "关闭",
+    "search": "搜索语言",
+    "noResult": "未找到匹配的语言"
+  },
+  "pages": {
+    "home": "适配 ATS 的简历，100% 本地运行",
+    "editor": "编辑器",
+    "analyze": "简历分析器",
+    "changelog": "新功能",
+    "legalNotice": "法律声明",
+    "terms": "使用条款",
+    "privacy": "隐私政策"
+  },
+  "seo": {
+    "home": "免费的 ATS 友好简历制作工具：30 款设计模板、风格统一的求职信、按职位定制、ATS 评分。开源，数据始终保存在你的浏览器中",
+    "editor": "简历编辑器：实时预览、主简历与定向版本、ATS 检查、导出真实文本的 PDF。所有内容都留在你的浏览器中",
+    "analyze": "免费分析 PDF 简历：满分 100 的 ATS 评分、需要修改的地方，以及招聘系统读取到的文本。文件绝不会离开你的浏览器",
+    "changelog": "LocalATSCV 各版本更新：新的简历模板、功能与修复",
+    "legalNotice": "LocalATSCV 法律声明：发布者、托管与联系方式",
+    "terms": "LocalATSCV 使用条款：免费开源的简历制作工具",
+    "privacy": "LocalATSCV 隐私政策：不收集任何数据，你的简历保存在浏览器中"
+  },
+  "footer": {
+    "tagline": "从不接触你数据的 ATS 友好简历制作工具",
+    "product": "产品",
+    "legal": "法律信息",
+    "project": "项目",
+    "changelog": "新功能",
+    "sourceCode": "源代码",
+    "reportIssue": "报告问题",
+    "license": "MIT 许可证",
+    "versionLabel": "版本 {{version}}，查看新功能"
+  },
+  "update": {
+    "title": "有新版本可用",
+    "text": "刷新页面即可使用新版本",
+    "changelog": "查看新功能",
+    "reload": "刷新",
+    "later": "稍后"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% 本地 · 免费 · 开源",
+      "titleLine1": "能通过机器筛选的简历",
+      "titleLine2": "数据始终留在你身边",
+      "subtitle": "LocalATSCV 帮你制作针对招聘管理系统（ATS）优化的简历，只需几下点击即可为每个职位定制。一切都在浏览器中完成：无需账号，不发送任何数据",
+      "ctaPrimary": "制作我的简历",
+      "ctaSecondary": "分析现有简历",
+      "points": {
+        "noAccount": "无需注册",
+        "offline": "离线可用",
+        "atsPdf": "ATS 可读的 PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "问题所在",
+      "title": "你的简历首先由机器阅读",
+      "text": "大多数大公司和招聘机构都用 ATS（Applicant Tracking System）筛选求职申请。它会提取简历中的文本，存入数据库，并让招聘人员按关键词搜索候选人",
+      "pitfalls": {
+        "layout": {
+          "title": "复杂版式",
+          "text": "分栏、表格和文本框会打乱阅读顺序：你的信息会被读得一团乱"
+        },
+        "image": {
+          "title": "无法识别的文本",
+          "text": "图标、技能进度条以及部分设计工具导出的文件会变成乱码，甚至完全没有文本"
+        },
+        "keywords": {
+          "title": "缺少关键词",
+          "text": "如果简历中没有职位描述里的用语，你的资料就不会出现在招聘人员的搜索结果中"
+        }
+      },
+      "seen": "你看到的",
+      "read": "机器读到的",
+      "fix": "LocalATSCV 反其道而行：单栏、真实文本和标准的板块标题，让机器按正确顺序读取"
+    },
+    "how": {
+      "eyebrow": "使用方式",
+      "title": "写一次，无限次定制",
+      "text": "四个步骤，把主简历变成为每个职位量身定制的申请",
+      "steps": {
+        "profile": {
+          "title": "填写主简历",
+          "text": "一次性录入你的全部经历，或导入 LinkedIn 个人资料 PDF 节省时间"
+        },
+        "offer": {
+          "title": "粘贴职位描述",
+          "text": "LocalATSCV 会提取关键词并计算满分 100 的匹配度，随你输入实时更新"
+        },
+        "compose": {
+          "title": "组合定向版本",
+          "text": "勾选相关的经历和要点，拖放调整顺序。主简历中的内容不会被删除"
+        },
+        "export": {
+          "title": "导出 PDF",
+          "text": "真实文本、结构清晰的单栏 PDF，对机器和招聘人员都同样易读"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "隐私",
+      "title": "我们的服务器上没有任何数据。字面意义上的",
+      "text": "没有可被攻破的数据库：服务器只把应用发送给你。之后的一切都在你的浏览器中完成，离线也可以",
+      "browser": {
+        "title": "你的浏览器",
+        "tag": "你的设备",
+        "items": {
+          "master": "主简历",
+          "photo": "个人照片",
+          "versions": "定向版本",
+          "settings": "偏好设置"
+        },
+        "note": "存储在 IndexedDB 中，仅限本设备"
+      },
+      "flow": {
+        "app": "应用（首次加载时）",
+        "data": "你的数据",
+        "never": "从不上传"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "服务器",
+        "text": "只提供应用文件（HTML、CSS、JavaScript），仅此而已",
+        "items": {
+          "noDb": "没有数据库",
+          "noAccount": "没有用户账号",
+          "noLogs": "没有访问日志"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "无需账号",
+          "text": "无需注册、邮箱或密码。打开页面即可开始"
+        },
+        "trackers": {
+          "title": "没有追踪器",
+          "text": "没有统计、没有广告、没有追踪 Cookie。连字体都托管在我们自己的服务器上"
+        },
+        "csp": {
+          "title": "技术上锁定",
+          "text": "网站的安全策略（CSP）禁止浏览器连接任何其他域名。代码开源，欢迎自行验证"
+        },
+        "backup": {
+          "title": "你的备份，你的文件",
+          "text": "把所有数据导出为 JSON 文件，可在任意设备上重新导入"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "功能",
+      "title": "拿到面试所需的一切",
+      "items": {
+        "master": {
+          "title": "主简历与定向版本",
+          "text": "一份完整简历，投多少份就有多少个版本。勾选、取消勾选：内容永不丢失"
+        },
+        "score": {
+          "title": "匹配度评分",
+          "text": "粘贴职位描述：实时显示已匹配关键词、缺失关键词和满分 100 的评分"
+        },
+        "weak": {
+          "title": "弱表达检测",
+          "text": "“负责……”“协助……”等表达会被自动标出，并提供动作动词词库供你替换"
+        },
+        "analyzer": {
+          "title": "现有简历分析",
+          "text": "拖入在别处制作的简历：看看机器实际读到什么，以及需要修改哪里"
+        },
+        "linkedin": {
+          "title": "从 LinkedIn 导入",
+          "text": "用 LinkedIn 个人资料免费导出的 PDF 预先填写主简历"
+        },
+        "languages": {
+          "title": "5 种简历语言",
+          "text": "法语、英语、意大利语、西班牙语和德语。英文简历按英语国家的惯例隐藏照片和出生日期"
+        },
+        "pdf": {
+          "title": "ATS 友好的 PDF 导出",
+          "text": "真实文本和清晰结构：机器易读，招聘人员看着舒服"
+        },
+        "offline": {
+          "title": "可安装，可离线使用",
+          "text": "把 LocalATSCV 添加到主屏幕，没有网络也能继续工作"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "常见问题",
+      "title": "常见问题",
+      "text": "没有找到你的问题？给我们写信：",
+      "items": {
+        "ats": {
+          "q": "什么是 ATS？",
+          "a": "Applicant Tracking System（招聘管理系统）是招聘人员用来接收、筛选和搜索求职申请的软件。它会把简历转换成文本并建立索引：如果文本提取不佳或缺少合适的关键词，你的申请就很难被找到"
+        },
+        "storage": {
+          "q": "我的数据存储在哪里？",
+          "a": "只存储在你的浏览器中，即所有现代浏览器都内置的 IndexedDB 数据库。数据从不经过我们的服务器，服务器只负责提供应用文件"
+        },
+        "clear": {
+          "q": "如果清除浏览器数据会怎样？",
+          "a": "你的简历会被删除，因为它们没有保存在其他任何地方。请定期导出 JSON 备份：随时可以在任何设备上重新导入"
+        },
+        "score": {
+          "q": "评分能保证我的简历通过筛选吗？",
+          "a": "不能。每个 ATS 都有自己的规则，最终决定由人做出。评分只是参考：它检查简历是否使用了职位描述中的用语，以及机器能否正确读取"
+        },
+        "photo": {
+          "q": "为什么英文简历里照片会消失？",
+          "a": "在英国、美国和许多英语国家，为了减少招聘歧视，不建议在简历中放照片和出生日期。有些招聘人员甚至会直接淘汰包含这些信息的简历"
+        },
+        "free": {
+          "q": "真的免费吗？",
+          "a": "是的。LocalATSCV 是采用 MIT 许可证的开源项目，没有广告也没有订阅。由于所有工作都由你的浏览器完成，托管成本几乎为零"
+        },
+        "templates": {
+          "q": "设计感强的模板能通过 ATS 吗？",
+          "a": "能。每个模板都按阅读顺序输出真实文本，并使用标准板块标题：图形、进度条和图标都是机器会忽略的装饰。单栏模板仍是最稳妥的选择，编辑器中的 ATS 检查会实时测试你的版式"
+        },
+        "import": {
+          "q": "可以复用我现有的简历或 LinkedIn 个人资料吗？",
+          "a": "可以。导入 PDF 或 Word（.docx）简历、LinkedIn 个人资料 PDF（电脑端）或 LinkedIn 数据存档（手机应用）：内容会在浏览器中读取并整理到编辑器里"
+        },
+        "offline": {
+          "q": "LocalATSCV 可以离线使用吗？",
+          "a": "可以。它是可安装的网页应用：首次访问后，包括 PDF 导出在内的所有功能都能离线使用"
+        }
+      }
+    },
+    "cta": {
+      "title": "准备好通过筛选了吗？",
+      "text": "几分钟就能完成主简历。任何内容都不会离开这台设备",
+      "button": "开始使用"
+    },
+    "demo": {
+      "role": "前端开发工程师",
+      "contact": "里昂 · camille.martin@example.com",
+      "experience": "工作经历",
+      "jobTitle": "Angular 开发工程师",
+      "jobMeta": "示例科技有限公司 · 2022 – 至今",
+      "bullets": {
+        "migration": "将 40 个页面迁移至 <k>Angular</k> 和 <k>TypeScript</k>，加载时间缩短 35%",
+        "testing": "<w>负责</w>端到端测试策略",
+        "delivery": "使用 <k>GitLab CI</k> 为 3 个产品团队实现持续交付"
+      },
+      "weakLabel": "弱表达",
+      "weakReplacement": "“主导”",
+      "skills": "专业技能",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · 无障碍设计",
+      "score": "职位匹配度",
+      "sent": "已发送 0 字节",
+      "robot": "专业技能 CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> 前端开发工程师 Angular <n>●●●●○</n> 工作经历 <n>� camille.mar</n> Angular 开发工程师 <n>tin@example.com</n> 2022 – 至今 TypeScript <n>●●●○○</n> 示例科技有限公司 语言能力 英语 将 40 个页面迁移至…"
+    }
+  },
+  "dialog": {
+    "cancel": "取消",
+    "delete": "删除",
+    "create": "创建",
+    "save": "保存",
+    "import": "导入"
+  },
+  "editor": {
+    "list": {
+      "title": "我的简历",
+      "subtitle": "仅保存在此浏览器中",
+      "new": "新建简历",
+      "newBlank": "空白简历",
+      "newBlankHint": "从空白页开始",
+      "newSample": "从示例开始",
+      "newSampleHint": "一份已填好的虚构简历，方便你熟悉编辑器",
+      "import": "恢复备份",
+      "exportAll": "全部导出",
+      "emptyTitle": "还没有简历",
+      "emptyText": "创建你的主简历：所有经历集中一处，随时为每个职位定制",
+      "open": "打开",
+      "actions": "操作",
+      "duplicate": "复制",
+      "export": "导出（JSON）",
+      "delete": "删除",
+      "updated": "编辑于 {{date}}",
+      "versions": "版本：{{count}}",
+      "backupHint": "你的简历只存在于此浏览器中。请定期导出 JSON 备份：即使清除了浏览器数据，也能凭它恢复全部内容",
+      "defaultName": "我的简历",
+      "copySuffix": "（副本）",
+      "deleteTitle": "删除“{{name}}”？",
+      "deleteText": "这份简历及其所有版本将从此浏览器中永久删除",
+      "exportDone": "备份已下载",
+      "importConfirmTitle": "导入此备份？",
+      "importConfirmText": "此备份中的简历：{{count}} 份。此浏览器中已有的同一简历将被替换",
+      "importDone": "备份已导入：{{count}} 份简历",
+      "importError": {
+        "invalidJson": "此文件不是有效的 JSON",
+        "notABackup": "此文件不是 LocalATSCV 备份",
+        "newerVersion": "此备份来自更新版本的 LocalATSCV：请先更新应用"
+      },
+      "importPdf": "导入简历（PDF 或 Word）",
+      "importPdfHint": "把现有简历转入我们的模板",
+      "importLinkedin": "从 LinkedIn 导入",
+      "importLinkedinHint": "通过个人资料 PDF"
+    },
+    "toolbar": {
+      "back": "我的简历",
+      "name": "简历名称",
+      "cvLanguage": "简历语言",
+      "accent": "强调色",
+      "customAccent": "自定义颜色",
+      "saved": "已保存",
+      "saving": "正在保存…",
+      "saveError": "保存失败",
+      "edit": "编辑",
+      "preview": "预览",
+      "exportPdf": "导出 PDF",
+      "undo": "撤销（Ctrl+Z）",
+      "redo": "重做（Ctrl+Y）"
+    },
+    "modes": {
+      "label": "要编辑的文档",
+      "cv": "简历",
+      "letter": "求职信"
+    },
+    "letter": {
+      "title": "求职信",
+      "versionOwn": "此版本有自己的求职信",
+      "versionShared": "此版本使用主简历的求职信：在此编辑会为此版本创建一份副本",
+      "useMaster": "使用主简历的求职信",
+      "recipient": "收件人",
+      "recipientPlaceholder": "示例科技有限公司\n人力资源部 招聘组\n北京市朝阳区建国路 10 号",
+      "place": "地点",
+      "date": "日期",
+      "dateHint": "留空：使用打印当天的日期",
+      "subject": "主题",
+      "subjectPlaceholder": "应聘××职位",
+      "greeting": "称呼",
+      "body": "正文",
+      "bodyPlaceholder": "三个简短段落：公司吸引你的地方、你能带来什么、你建议的下一步",
+      "bodyHint": "空一行分隔两个段落 · 用 **加粗** 突出关键词",
+      "outline": "插入框架",
+      "closing": "结束语",
+      "fileName": "求职信"
+    },
+    "fit": {
+      "pages": "{{count}} 页",
+      "onePage": "可容纳在一页内",
+      "hintMany": "大多数招聘人员希望简历只有一页",
+      "hintOne": "适合大多数求职申请的理想格式",
+      "stillTooLong": "压缩后仍然太长：请精简部分要点，或在某个版本中隐藏一些内容",
+      "fit": "压缩到一页",
+      "settings": "版式设置",
+      "spacing": "间距",
+      "scale": "文字大小",
+      "settingsHint": "文本始终是真实文本：只有版式会改变",
+      "reset": "模板默认版式",
+      "grayscale": "黑白查看",
+      "grayscaleHint": "模拟黑白打印效果：导出的 PDF 仍保留颜色"
+    },
+    "versions": {
+      "label": "当前显示的版本",
+      "master": "主简历",
+      "masterHint": "全部内容，不做筛选",
+      "new": "新版本",
+      "newText": "定向版本以完整的主简历为起点：然后取消勾选这次申请不需要的内容",
+      "nameLabel": "版本名称",
+      "namePlaceholder": "例如：前端开发 – X 公司",
+      "rename": "重命名版本",
+      "delete": "删除版本",
+      "deleteTitle": "删除版本“{{name}}”？",
+      "deleteText": "只删除这一组选择：所有内容仍保留在主简历中",
+      "banner": "版本“{{name}}”：取消勾选不应显示的内容。主简历中的内容不会被删除",
+      "include": "包含在此版本中"
+    },
+    "enRule": "英文简历：按英语国家的惯例隐藏照片、出生日期和国籍",
+    "profile": {
+      "title": "个人信息",
+      "photo": "照片",
+      "photoAdd": "添加照片",
+      "photoChange": "更换",
+      "photoRemove": "移除",
+      "photoHint": "缩小后仅保存在此设备上",
+      "photoError": "无法读取这张图片",
+      "hiddenInEnglish": "英文中隐藏",
+      "firstName": "名",
+      "lastName": "姓",
+      "headline": "求职意向",
+      "headlinePlaceholder": "例如：前端开发工程师",
+      "email": "电子邮箱",
+      "phone": "电话",
+      "location": "所在城市",
+      "birthDate": "出生日期",
+      "nationality": "国籍",
+      "summary": "个人简介",
+      "summaryPlaceholder": "用两三句话概括你的背景和求职方向",
+      "links": "链接",
+      "linkLabel": "链接名称",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "链接地址",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "添加链接",
+      "removeLink": "移除链接",
+      "drivingLicense": "驾驶证",
+      "drivingLicensePlaceholder": "例如：C1 驾照，自有车辆",
+      "qrToggle": "将此链接显示为二维码",
+      "linksHint": "标志（LinkedIn、GitHub、YouTube 等）会自动添加。点二维码按钮后，大多数设计模板会以二维码显示该链接"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "工作经历",
+        "education": "教育背景",
+        "projects": "项目经历",
+        "certifications": "证书",
+        "custom": "自定义板块",
+        "skills": "专业技能",
+        "languages": "语言能力",
+        "interests": "兴趣爱好"
+      },
+      "add": "添加板块",
+      "titleLabel": "板块标题",
+      "empty": "空板块：不会显示在简历中",
+      "addItem": {
+        "experience": "添加工作经历",
+        "education": "添加教育经历",
+        "projects": "添加项目",
+        "certifications": "添加证书",
+        "custom": "添加条目",
+        "skills": "添加技能",
+        "languages": "添加语言",
+        "interests": "添加兴趣爱好"
+      },
+      "deleteTitle": "删除板块“{{name}}”？",
+      "deleteText": "其内容将从主简历及其所有版本中移除"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "职位",
+          "subtitle": "公司"
+        },
+        "education": {
+          "title": "学位 / 专业",
+          "subtitle": "学校"
+        },
+        "projects": {
+          "title": "项目名称",
+          "subtitle": "角色或技术"
+        },
+        "certifications": {
+          "title": "证书名称",
+          "subtitle": "颁发机构"
+        },
+        "custom": {
+          "title": "标题",
+          "subtitle": "副标题"
+        }
+      },
+      "location": "地点",
+      "url": "链接",
+      "start": "开始",
+      "end": "结束",
+      "date": "获得日期",
+      "current": "至今",
+      "untitled": "未命名",
+      "bullets": "工作成果",
+      "bulletPlaceholder": "以动作动词开头，并用数字量化成果",
+      "addBullet": "添加要点",
+      "bulletHint": "回车：新要点",
+      "boldHint": "**词语** 可加粗"
+    },
+    "items": {
+      "skillLabel": "类别",
+      "skillLabelPlaceholder": "例如：前端",
+      "skillKeywords": "技能",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "语言",
+      "languageLevel": "水平",
+      "languageLevelPlaceholder": "例如：C1、fluent",
+      "interest": "兴趣",
+      "interestPlaceholder": "例如：攀岩",
+      "levelDetected": "已识别水平：带进度条的模板会显示它",
+      "levelUnknown": "未能识别水平，不显示进度条：请使用 A1 至 C2 或列表中的建议",
+      "levelEmpty": "填写水平即可显示进度条",
+      "levelHint": "使用欧洲语言共同参考框架（A1 至 C2）或 “fluent”“native” 等词：部分模板还会以进度条显示，右侧圆点即为预览"
+    },
+    "actions": {
+      "menu": "操作",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "duplicate": "复制",
+      "delete": "删除",
+      "drag": "拖动以调整顺序"
+    },
+    "month": "月",
+    "year": "年",
+    "noMonth": "月",
+    "preview": {
+      "page": "第 {{n}} 页"
+    },
+    "notFound": {
+      "title": "未找到简历",
+      "text": "这份简历不存在，或已从此浏览器中删除"
+    },
+    "templates": {
+      "button": "模板",
+      "title": "选择模板",
+      "subtitle": "所有模板均可用完整的示例简历或你自己的简历预览。强调色会应用到所有模板",
+      "close": "关闭",
+      "filter": "筛选模板",
+      "filters": {
+        "all": "全部",
+        "graphic": "设计型",
+        "sober": "简约型"
+      },
+      "ats": "ATS 兼容性",
+      "levels": {
+        "excellent": "极佳",
+        "good": "良好",
+        "fair": "一般"
+      },
+      "atsHint": "每个模板都输出真实文本。大多数现代 ATS 能很好地读取双栏版式，但部分旧工具会把各栏混在一起：拿不准时，请选择单栏模板",
+      "names": {
+        "classic": {
+          "name": "经典",
+          "description": "简洁高效：单栏、带下划线的标题、毫无干扰"
+        },
+        "modern": {
+          "name": "现代",
+          "description": "彩色横幅、醒目的标题、标签式技能"
+        },
+        "elegant": {
+          "name": "优雅",
+          "description": "居中页眉搭配衬线字体，气质精致"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "彩色边框、等宽字体细节、代码风格的技能"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "瑞士风格：大号姓名、标题置于页边、大量留白"
+        },
+        "sidebar": {
+          "name": "双栏",
+          "description": "带照片、联系方式和技能的彩色侧栏"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "带照片的横幅、图标、时间线和语言进度条，同时完全可被 ATS 读取"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "柔和的有机色块、大圆形照片、时间线和二维码，双栏布局"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "单栏版的 Signature 风格：有设计感，且完全可被 ATS 读取"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "深色斜向横幅、彩色光晕、经历卡片和实心技能标签"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "照片周围的三原色几何构图、几何字体、每个标题前的图形"
+        },
+        "editorial": {
+          "name": "杂志",
+          "description": "杂志版式：大号衬线姓名、斜体导语、编号板块和错位人像"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "新粗野主义：粗黑边框、硬朗阴影、鲜明色块和黑色标签"
+        },
+        "prism": {
+          "name": "棱镜",
+          "description": "以强调色呈现的网格渐变、玻璃质感联系卡片、渐变边框卡片"
+        },
+        "swiss": {
+          "name": "瑞士",
+          "description": "瑞士海报风格：超大姓名、彩色色带、粗黑线条和编号板块"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "象牙色纸张、细双线边框、菱形装饰和 Garamond 字体"
+        },
+        "nocturne": {
+          "name": "夜曲",
+          "description": "深色模式：夜空背景、霓虹点缀和发光时间线，适合线上投递"
+        },
+        "wave": {
+          "name": "波浪",
+          "description": "以波浪收尾的彩色横幅、圆形照片和波浪标题，柔和亲切"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "圆角便当格：照片、姓名和二维码排成网格，每个板块一格"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "工程图纸：方格纸、角标、尺寸线和等宽标签"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80 年代几何彩屑、鲜艳色彩和锯齿下划线标题"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "大幅分割横幅：色块上的文字和双色调照片"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "只用字体做装饰：部分镂空的超大姓名和超大标题"
+        },
+        "sorbet": {
+          "name": "冰沙",
+          "description": "每个板块一种马卡龙色、胶囊形标题和多彩光晕"
+        },
+        "executive": {
+          "name": "行政",
+          "description": "藏青色横幅、金色线条和衬线姓名，适合管理岗位"
+        },
+        "zen": {
+          "name": "禅",
+          "description": "日式极简：和纸、强调色的圆相和一笔笔触"
+        },
+        "ribbon": {
+          "name": "丝带",
+          "description": "燕尾丝带上的板块标题，居中页眉"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "六边形照片、角落的蜂巢图案和标题前的六边形"
+        },
+        "origami": {
+          "name": "折纸",
+          "description": "层叠剪纸页眉，板块如一张张纸"
+        },
+        "thread": {
+          "name": "丝线",
+          "description": "一条连续的线串起页眉和每个板块，每段经历一个圆点"
+        }
+      },
+      "preview": {
+        "label": "缩略图内容",
+        "sample": "完整示例",
+        "mine": "我的简历"
+      }
+    },
+    "print": {
+      "title": "导出 PDF",
+      "text": "浏览器的打印窗口即将打开。要得到完美的 PDF：",
+      "tips": {
+        "destination": "目标打印机：“另存为 PDF”",
+        "margins": "边距：“无”",
+        "headers": "取消勾选“页眉和页脚”",
+        "background": "勾选“背景图形”以保留颜色"
+      },
+      "dontShow": "不再显示",
+      "cancel": "取消",
+      "print": "打开打印窗口"
+    },
+    "job": {
+      "title": "按职位定制",
+      "sources": "BOSS直聘、智联招聘、前程无忧、猎聘、LinkedIn…",
+      "placeholder": "在此粘贴职位描述全文：职位名称、工作内容、任职要求",
+      "urlWarning": "请粘贴职位描述的文字而不是链接：LocalATSCV 从不访问任何网站，你的数据始终留在你身边",
+      "empty": "未找到关键词：请粘贴更完整的职位描述",
+      "score": "职位匹配度",
+      "summary": "包含 {{total}} 个关键词中的 {{found}} 个",
+      "found": "简历中已有的关键词",
+      "missing": "缺失的关键词",
+      "missingHint": "点击关键词即可加入技能，或把它写进某段经历中",
+      "addToSkills": "加入技能",
+      "added": "已将“{{keyword}}”加入你的技能",
+      "keywordsGroup": "关键词",
+      "createVersion": "为此职位创建定向版本",
+      "createVersionHint": "与职位无关的经历和要点会被取消勾选：你可以再调整",
+      "savedInVersion": "职位描述已随版本“{{name}}”保存"
+    },
+    "weak": {
+      "hint": "“{{phrase}}”描述的是职责：请以动作动词开头"
+    },
+    "fonts": {
+      "title": "字体",
+      "heading": "标题",
+      "body": "正文",
+      "default": "模板默认",
+      "hint": "ATS 都能很好地读取这些字体：文本始终是真实文本"
+    }
+  },
+  "changelog": {
+    "eyebrow": "新功能",
+    "title": "更新日志",
+    "subtitle": "LocalATSCV 的每个版本及其新功能和修复",
+    "current": "当前版本",
+    "frenchOnly": "更新日志以法语撰写",
+    "error": "无法加载更新日志",
+    "types": {
+      "added": "新增",
+      "changed": "变更",
+      "fixed": "修复",
+      "removed": "移除",
+      "deprecated": "弃用",
+      "security": "安全",
+      "other": "其他"
+    }
+  },
+  "analyze": {
+    "eyebrow": "分析器",
+    "title": "你的简历能通过机器筛选吗？",
+    "subtitle": "拖入用任意工具制作的 PDF 简历：LocalATSCV 会像 ATS 一样读取它，并告诉你需要修改的地方",
+    "drop": "将简历拖到这里",
+    "dropActive": "松开文件即可开始分析",
+    "hint": "仅限 PDF，最大 15 MB",
+    "choose": "选择文件",
+    "reading": "正在读取 PDF…",
+    "privacy": "文件在你的浏览器中分析：绝不会发送到任何地方",
+    "another": "分析另一份简历",
+    "errors": {
+      "notPdf": "此文件不是 PDF",
+      "tooLarge": "此文件超过 15 MB",
+      "encrypted": "此 PDF 受密码保护：ATS 同样无法读取",
+      "unreadable": "无法读取此 PDF：文件可能已损坏"
+    },
+    "stats": "{{pages}} 页 · {{words}} 词",
+    "verdict": {
+      "excellent": "优秀",
+      "good": "良好",
+      "fair": "有待改进",
+      "poor": "严重问题"
+    },
+    "verdictText": {
+      "excellent": "机器能很好地读取你的简历",
+      "good": "稍作调整会更加有效",
+      "fair": "多个问题影响了 ATS 的读取",
+      "poor": "ATS 很可能会漏掉关键信息"
+    },
+    "categories": {
+      "readability": "机器可读性",
+      "structure": "结构",
+      "content": "内容"
+    },
+    "sectionNames": {
+      "experience": "工作经历",
+      "education": "教育背景",
+      "skills": "专业技能"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "机器可读的文本",
+        "pass": "简历中的所有文本都能被提取",
+        "warn": "部分页面没有可读文本：可能是图片或扫描件",
+        "fail": "没有可读文本：这份简历可能是图片或扫描件，ATS 无法从中提取任何内容。请从文字处理软件导出为 PDF"
+      },
+      "columns": {
+        "title": "版式",
+        "pass": "线性阅读，各栏不会混在一起",
+        "warn": "检测到分栏版式：文本可能被按错误顺序读取。请查看下方“机器读到的”"
+      },
+      "order": {
+        "title": "文件中的阅读顺序",
+        "pass": "文本按阅读顺序写入文件",
+        "warnHeader": "你的姓名和页眉在文件中写在简历其余部分之后：按顺序读取文件的 ATS 可能找不到你的姓名",
+        "warn": "{{percent}}% 的文本未按阅读顺序写入文件：部分 ATS 会以错误顺序读取这些段落",
+        "fail": "{{percent}}% 的文本在文件中顺序错乱，这在用自由文本框制作的简历（Canva、PowerPoint 等）中很常见：许多 ATS 会把你的简历读得一团乱。请对比下方两种读取结果"
+      },
+      "unreadable": {
+        "title": "图标与技能进度条",
+        "pass": "没有图标或无法识别的字符",
+        "warn": "检测到图标或进度条（{{count}} 个）：ATS 会把它们读成乱码。请改用文字",
+        "fail": "检测到图标或进度条（{{count}} 个）：请改用文字，例如用“英语：C1”代替圆点"
+      },
+      "contact": {
+        "title": "联系方式",
+        "pass": "已找到电子邮箱和电话号码",
+        "warnNoPhone": "未找到电话号码",
+        "warnNoEmail": "未找到电子邮箱",
+        "fail": "既没有找到邮箱也没有找到电话：请以文字形式填写，不要放在图片里"
+      },
+      "sections": {
+        "title": "标准板块",
+        "pass": "工作经历、教育背景和技能都已清晰识别",
+        "warn": "这些板块未被识别：请使用标准标题",
+        "fail": "未识别出任何标准板块：ATS 依赖“工作经历”“教育背景”等标题"
+      },
+      "length": {
+        "title": "篇幅",
+        "pass": "{{pages}} 页，{{words}} 词：篇幅理想",
+        "warn": "{{pages}} 页，{{words}} 词：建议控制在 1 至 2 页、250 至 1000 词",
+        "fail": "{{pages}} 页，{{words}} 词：太短或太长，难以有效评估"
+      },
+      "quantified": {
+        "title": "量化成果",
+        "pass": "{{percent}}% 的要点包含数字，很好",
+        "warn": "只有 {{percent}}% 的要点有量化数据：请补充可衡量的成果（百分比、金额、规模）",
+        "fail": "没有量化成果：招聘人员和 ATS 都看重可衡量的业绩"
+      },
+      "weakPhrases": {
+        "title": "动作动词",
+        "pass": "要点开头没有弱表达",
+        "warn": "这些开头描述的是职责而非成果：请以动作动词开头",
+        "fail": "这些开头描述的是职责而非成果：请以动作动词开头"
+      },
+      "dates": {
+        "title": "日期",
+        "pass": "你的经历都标注了日期",
+        "warn": "只找到一个年份：请为每段经历标注日期，ATS 会据此计算你的工作年限",
+        "fail": "未找到日期：ATS 会据此计算你的工作年限"
+      }
+    },
+    "robot": {
+      "title": "机器读到的",
+      "text": "按大多数 ATS 的方式逐行重建的文本。如果这里混乱或缺失，招聘人员看到的也一样",
+      "empty": "未能提取到任何文本",
+      "position": "按位置",
+      "file": "按文件顺序",
+      "fileText": "按文件中写入顺序排列的文本：不重建版式的 ATS 就是这样读取的。它应与简历的阅读顺序一致"
+    },
+    "cta": {
+      "title": "在正确的基础上重新开始",
+      "text": "在编辑器中制作 ATS 友好的简历，再针对每个职位定制",
+      "button": "打开编辑器",
+      "import": "把这份简历转入我们的模板"
+    },
+    "live": {
+      "title": "实时 ATS 检查",
+      "issues": "此模板有 {{count}} 处需要检查",
+      "allGood": "此模板未发现问题",
+      "hint": "基于当前显示的版式计算，使用与简历分析器相同的引擎"
+    },
+    "method": {
+      "title": "这个评分是如何计算的？",
+      "intro": "并不存在官方的 ATS 评分：每款招聘软件（Workday、Taleo、Greenhouse、Lever 等）都有自己的规则，而且往往不公开。本指数按以下标准检查让大多数系统出错的问题：",
+      "disclaimer": "这些标准来自 ATS 供应商的公开建议以及最常见的读取错误（图片中的文字、分栏、图标、非标准标题）。评分能帮助你改进简历，但并不预测筛选结果"
+    }
+  },
+  "import": {
+    "title": "导入简历",
+    "linkedinTitle": "从 LinkedIn 导入",
+    "text": "选择 PDF 或 Word（.docx）简历：内容会在浏览器中提取，并整理到编辑器的各个板块。之后即可选择模板",
+    "choose": "选择文件",
+    "chooseFile": "选择文件",
+    "hint": "PDF 或 Word（.docx），最大 15 MB",
+    "reading": "正在导入…",
+    "privacy": "文件在你的浏览器中读取：绝不会发送到任何地方",
+    "close": "关闭",
+    "done": "简历已导入（{{items}} 项）：请逐一检查各板块",
+    "errors": {
+      "tooLarge": "此文件超过 15 MB",
+      "encrypted": "此 PDF 受密码保护",
+      "unreadable": "无法读取此文件：文件可能已损坏",
+      "empty": "没有可用文本：此 PDF 可能是图片或扫描件",
+      "unsupported": "请选择 PDF、Word 文件（.docx）或 LinkedIn ZIP 存档",
+      "archiveEmpty": "此存档中没有可用的 LinkedIn 个人资料数据"
+    },
+    "hintArchive": "PDF（电脑端）或 ZIP 存档（手机应用）",
+    "linkedin": {
+      "computer": {
+        "title": "电脑端：个人资料 PDF",
+        "step1": "在电脑浏览器中打开 linkedin.com（手机应用中没有此选项）",
+        "step2": "在你的个人资料页点击“资源”（或“更多”），再点击“保存为 PDF”",
+        "step3": "在下方选择该 PDF"
+      },
+      "archive": {
+        "title": "手机应用：你的数据存档",
+        "step1": "在应用中点击你的头像，然后进入“设置”和“数据隐私”",
+        "step2": "选择“获取你的数据副本”，勾选个人资料、职位、教育经历、技能和语言",
+        "step3": "LinkedIn 会在几分钟内给你发邮件：下载 ZIP 存档",
+        "step4": "在下方选择该 ZIP 文件，无需解压"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "本文件以英文显示。仅法文版本具有法律效力。",
+    "error": "无法加载此文件。"
+  }
+}

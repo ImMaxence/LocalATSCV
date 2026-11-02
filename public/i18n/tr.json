@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV ana sayfası",
+    "main": "Ana gezinme",
+    "how": "Nasıl çalışır",
+    "privacy": "Gizlilik",
+    "analyze": "CV analiz et",
+    "editor": "CV'mi oluştur",
+    "skipToContent": "İçeriğe geç"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Açık",
+    "system": "Sistem",
+    "dark": "Koyu"
+  },
+  "lang": {
+    "label": "Arayüz dili",
+    "suggestion": "Bu sayfayı Türkçe görüntüle",
+    "dismiss": "Kapat",
+    "search": "Dil ara",
+    "noResult": "Dil bulunamadı"
+  },
+  "pages": {
+    "home": "ATS uyumlu CV'ler, %100 yerel",
+    "editor": "Düzenleyici",
+    "analyze": "CV analizcisi",
+    "changelog": "Yenilikler",
+    "legalNotice": "Yasal bildirim",
+    "terms": "Kullanım koşulları",
+    "privacy": "Gizlilik politikası"
+  },
+  "seo": {
+    "home": "Ücretsiz ATS uyumlu CV oluşturucu: 30 grafik şablon, uyumlu ön yazı, her iş ilanına uyarlama ve ATS puanı. Açık kaynak, verileriniz tarayıcınızda kalır",
+    "editor": "Canlı önizlemeli CV düzenleyici, Master CV ve hedefli sürümler, ATS kontrolü ve gerçek metinli PDF dışa aktarma. Her şey tarayıcınızda kalır",
+    "analyze": "PDF CV'nizi ücretsiz analiz edin: 100 üzerinden ATS puanı, düzeltilecek noktalar ve bir işe alım sisteminin okuduğu hâliyle metin. Dosya tarayıcınızdan asla çıkmaz",
+    "changelog": "LocalATSCV'deki yenilikler, sürüm sürüm: yeni CV şablonları, özellikler ve düzeltmeler",
+    "legalNotice": "LocalATSCV yasal bildirimi: yayıncı, barındırma ve iletişim",
+    "terms": "Ücretsiz ve açık kaynaklı CV oluşturucu LocalATSCV'nin kullanım koşulları",
+    "privacy": "LocalATSCV gizlilik politikası: hiçbir veri toplanmaz, CV'leriniz tarayıcınızda kalır"
+  },
+  "footer": {
+    "tagline": "Verilerinizi asla görmeyen ATS uyumlu CV oluşturucu",
+    "product": "Ürün",
+    "legal": "Yasal",
+    "project": "Proje",
+    "changelog": "Yenilikler",
+    "sourceCode": "Kaynak kodu",
+    "reportIssue": "Sorun bildir",
+    "license": "MIT Lisansı",
+    "versionLabel": "Sürüm {{version}}, yenilikleri görün"
+  },
+  "update": {
+    "title": "Yeni sürüm mevcut",
+    "text": "Kullanmak için sayfayı yenileyin",
+    "changelog": "Yenilikleri görün",
+    "reload": "Yenile",
+    "later": "Sonra"
+  },
+  "landing": {
+    "hero": {
+      "badge": "%100 yerel · Ücretsiz · Açık kaynak",
+      "titleLine1": "Robotlardan geçen bir CV",
+      "titleLine2": "Sizde kalan veriler",
+      "subtitle": "LocalATSCV, işe alım sistemleri (ATS) için optimize edilmiş bir CV oluşturmanıza ve onu birkaç tıklamayla her ilana uyarlamanıza yardımcı olur. Her şey tarayıcınızda gerçekleşir: hesap yok, hiçbir veri gönderilmez",
+      "ctaPrimary": "CV'mi oluştur",
+      "ctaSecondary": "Mevcut bir CV'yi analiz et",
+      "points": {
+        "noAccount": "Kayıt yok",
+        "offline": "Çevrimdışı çalışır",
+        "atsPdf": "ATS'nin okuyabildiği PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "Sorun",
+      "title": "CV'nizi önce bir makine okur",
+      "text": "Büyük şirketlerin ve işe alım ajanslarının çoğu başvuruları bir ATS (Applicant Tracking System) ile sıralar. ATS, CV'nizin metnini çıkarır, bir veritabanına kaydeder ve işe alım uzmanlarının adayları anahtar kelimeyle aramasını sağlar",
+      "pitfalls": {
+        "layout": {
+          "title": "Karmaşık düzenler",
+          "text": "Sütunlar, tablolar ve metin kutuları okuma sırasını karıştırır: bilgileriniz birbirine girmiş hâlde çıkar"
+        },
+        "image": {
+          "title": "Okunamayan metin",
+          "text": "Simgeler, beceri çubukları ve bazı tasarım aracı çıktıları anlamsız karakterlere dönüşür ya da hiç metin kalmaz"
+        },
+        "keywords": {
+          "title": "Eksik anahtar kelimeler",
+          "text": "İlanın kelimeleri CV'nizde geçmiyorsa profiliniz işe alım uzmanlarının aramalarında çıkmaz"
+        }
+      },
+      "seen": "Sizin gördüğünüz",
+      "read": "Robotun okuduğu",
+      "fix": "LocalATSCV tam tersini yapar: tek sütun, gerçek metin ve robotların doğru sırayla okuduğu standart bölüm başlıkları"
+    },
+    "how": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Bir kez yazın, sonsuza dek uyarlayın",
+      "text": "Master CV'nizi her iş ilanına özel bir başvuruya dönüştürmek için dört adım",
+      "steps": {
+        "profile": {
+          "title": "Master CV'nizi doldurun",
+          "text": "Tüm deneyiminizi bir kez ve kalıcı olarak girin ya da zaman kazanmak için LinkedIn profilinizin PDF'sini içe aktarın"
+        },
+        "offer": {
+          "title": "İş ilanını yapıştırın",
+          "text": "LocalATSCV anahtar kelimeleri çıkarır ve siz yazdıkça güncellenen, 100 üzerinden bir eşleşme puanı hesaplar"
+        },
+        "compose": {
+          "title": "Hedefli bir sürüm oluşturun",
+          "text": "İlgili deneyimleri ve maddeleri işaretleyin, sürükle-bırak ile yeniden sıralayın. Master'ınızdan hiçbir şey silinmez"
+        },
+        "export": {
+          "title": "PDF olarak dışa aktarın",
+          "text": "Gerçek metinli, yapılandırılmış, tek sütunlu bir PDF: robotlar için de işe alım uzmanları için de aynı derecede okunaklı"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Gizlilik",
+      "title": "Sunucularımızda sıfır veri. Kelimenin tam anlamıyla",
+      "text": "Saldırıya açık bir veritabanı yok: sunucumuz size yalnızca uygulamayı gönderir. Sonrasında her şey tarayıcınızda gerçekleşir, çevrimdışıyken bile",
+      "browser": {
+        "title": "Tarayıcınız",
+        "tag": "Cihazınız",
+        "items": {
+          "master": "Master CV",
+          "photo": "Profil fotoğrafı",
+          "versions": "Hedefli sürümler",
+          "settings": "Tercihler"
+        },
+        "note": "IndexedDB'de, yalnızca bu cihazda saklanır"
+      },
+      "flow": {
+        "app": "Uygulama, ilk yüklemede",
+        "data": "Verileriniz",
+        "never": "asla"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Sunucu",
+        "text": "Uygulamanın dosyalarını (HTML, CSS, JavaScript) sunar, başka hiçbir şey",
+        "items": {
+          "noDb": "Veritabanı yok",
+          "noAccount": "Kullanıcı hesabı yok",
+          "noLogs": "Ziyaret kaydı yok"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Hesap yok",
+          "text": "Kayıt, e-posta ya da parola yok. Sayfayı açın ve başlayın"
+        },
+        "trackers": {
+          "title": "İzleyici yok",
+          "text": "İstatistik, reklam ya da izleme çerezi yok. Yazı tipleri bile kendi sunucumuzda barındırılıyor"
+        },
+        "csp": {
+          "title": "Teknik olarak kilitli",
+          "text": "Sitenin güvenlik politikası (CSP), tarayıcının başka herhangi bir alan adıyla iletişim kurmasını yasaklar. Kod açık: kendiniz kontrol edin"
+        },
+        "backup": {
+          "title": "Yedekleriniz, dosyalarınız",
+          "text": "Tüm verilerinizi bir JSON dosyasına aktarın ve istediğiniz cihazda geri yükleyin"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Özellikler",
+      "title": "Mülakata ulaşmak için ihtiyacınız olan her şey",
+      "items": {
+        "master": {
+          "title": "Master CV ve hedefli sürümler",
+          "text": "Tek bir eksiksiz CV ve başvuru sayısı kadar sürüm. İşaretleyin, kaldırın: hiçbir şey kaybolmaz"
+        },
+        "score": {
+          "title": "Eşleşme puanı",
+          "text": "İlanı yapıştırın: bulunan ve eksik anahtar kelimeler ile gerçek zamanlı 100 üzerinden puan"
+        },
+        "weak": {
+          "title": "Zayıf ifade dedektörü",
+          "text": "“Sorumluydum”, “yardımcı oldum”… gibi ifadeler otomatik işaretlenir, yerlerine koymanız için eylem fiilleri sunulur"
+        },
+        "analyzer": {
+          "title": "Mevcut CV analizcisi",
+          "text": "Başka bir yerde hazırlanmış bir CV bırakın: robotun gerçekte ne okuduğunu ve neyi düzeltmeniz gerektiğini görün"
+        },
+        "linkedin": {
+          "title": "LinkedIn'den içe aktarma",
+          "text": "Master CV'nizi LinkedIn profilinizden dışa aktarabileceğiniz ücretsiz PDF ile önceden doldurun"
+        },
+        "languages": {
+          "title": "5 CV dili",
+          "text": "Fransızca, İngilizce, İtalyanca, İspanyolca ve Almanca. İngilizcede fotoğraf ve doğum tarihi, İngilizce konuşulan ülkelerin normlarına uygun olarak gizlenir"
+        },
+        "pdf": {
+          "title": "ATS uyumlu PDF dışa aktarma",
+          "text": "Gerçek metin ve net bir yapı: robotlar için okunaklı, işe alım uzmanları için hoş"
+        },
+        "offline": {
+          "title": "Yüklenebilir ve çevrimdışı",
+          "text": "LocalATSCV'yi ana ekranınıza ekleyin, bağlantı olmadan çalışmaya devam edin"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Sık sorulan sorular",
+      "text": "Sorunuz burada yok mu? Bize yazın:",
+      "items": {
+        "ats": {
+          "q": "ATS nedir?",
+          "a": "Applicant Tracking System, işe alım uzmanlarının başvuruları almak, sıralamak ve aramak için kullandığı yazılımdır. CV'nizi metne dönüştürür ve dizine ekler: metin kötü çıkarılırsa ya da doğru anahtar kelimeler eksikse başvurunuzu bulmak zorlaşır"
+        },
+        "storage": {
+          "q": "Verilerim nerede saklanıyor?",
+          "a": "Yalnızca tarayıcınızda, her modern tarayıcıda yerleşik bir veritabanı olan IndexedDB'de. Verileriniz hiçbir zaman yalnızca uygulama dosyalarını sunabilen sunucularımızdan geçmez"
+        },
+        "clear": {
+          "q": "Tarayıcı verilerimi temizlersem ne olur?",
+          "a": "CV'leriniz silinir, çünkü başka hiçbir yerde bulunmazlar. Düzenli olarak bir JSON yedeği alın: istediğiniz zaman, istediğiniz cihazda geri yükleyebilirsiniz"
+        },
+        "score": {
+          "q": "Puan, CV'min seçileceğini garanti eder mi?",
+          "a": "Hayır. Her ATS'nin kendi kuralları vardır ve son kararı bir insan verir. Puan bir göstergedir: CV'nizin ilanın kelimelerini kullandığını ve bir makinenin onu doğru okuyabildiğini kontrol eder"
+        },
+        "photo": {
+          "q": "İngilizcede fotoğraf neden kayboluyor?",
+          "a": "Birleşik Krallık, ABD ve İngilizce konuşulan birçok ülkede işe alımda ayrımcılığı sınırlamak için fotoğraf ve doğum tarihi önerilmez. Bazı işe alım uzmanları bunları içeren CV'leri doğrudan reddeder"
+        },
+        "free": {
+          "q": "Gerçekten ücretsiz mi?",
+          "a": "Evet. LocalATSCV, MIT lisanslı, reklamsız ve aboneliksiz açık kaynaklı bir projedir. Tüm işi tarayıcınız yaptığı için barındırma maliyeti neredeyse sıfırdır"
+        },
+        "templates": {
+          "q": "Grafik şablonlar ATS'den geçer mi?",
+          "a": "Evet. Her şablon, okuma sırasına uygun ve standart bölüm başlıklarıyla gerçek metin basar: şekiller, çubuklar ve simgeler robotların görmezden geldiği çizimlerdir. Tek sütunlu şablonlar hâlâ en güvenli seçenektir ve düzenleyicideki ATS kontrolü düzeninizi canlı olarak test eder"
+        },
+        "import": {
+          "q": "Mevcut CV'mi veya LinkedIn profilimi kullanabilir miyim?",
+          "a": "Evet. PDF ya da Word (.docx) bir CV'yi, LinkedIn profilinizin PDF'sini (bilgisayarda) veya LinkedIn veri arşivinizi (mobil uygulamadan) içe aktarın: içerik tarayıcınızda okunur ve düzenleyiciye yerleştirilir"
+        },
+        "offline": {
+          "q": "LocalATSCV çevrimdışı çalışır mı?",
+          "a": "Evet. Yüklenebilir bir web uygulamasıdır: ilk ziyaretten sonra PDF dışa aktarma dahil her şey bağlantısız çalışır"
+        }
+      }
+    },
+    "cta": {
+      "title": "Filtreyi geçmeye hazır mısınız?",
+      "text": "Master CV'nizi birkaç dakikada oluşturun. Hiçbir şey bu cihazdan çıkmayacak",
+      "button": "Başlayın"
+    },
+    "demo": {
+      "role": "Front-end Geliştirici",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Deneyim",
+      "jobTitle": "Angular Geliştirici",
+      "jobMeta": "Örnek A.Ş. · 2022 – günümüz",
+      "bullets": {
+        "migration": "40 ekranı <k>Angular</k> ve <k>TypeScript</k>'e taşıdım, yükleme süresi %35 kısaldı",
+        "testing": "Uçtan uca test stratejisinden <w>sorumluydum</w>",
+        "delivery": "3 ürün ekibi için <k>GitLab CI</k> ile sürekli teslimat"
+      },
+      "weakLabel": "Zayıf ifade",
+      "weakReplacement": "“Yönettim”",
+      "skills": "Yetkinlikler",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Erişilebilirlik",
+      "score": "İlanla eşleşme",
+      "sent": "0 bayt gönderildi",
+      "robot": "YETKİNLİKLER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end Geliştirici Angular <n>●●●●○</n> DENEYİM <n>� camille.mar</n> Angular Geliştirici <n>tin@example.com</n> 2022 – günümüz TypeScript <n>●●●○○</n> Örnek A.Ş. DİLLER İngilizce 40 ekranı Angular ve…"
+    }
+  },
+  "dialog": {
+    "cancel": "İptal",
+    "delete": "Sil",
+    "create": "Oluştur",
+    "save": "Kaydet",
+    "import": "İçe aktar"
+  },
+  "editor": {
+    "list": {
+      "title": "CV'lerim",
+      "subtitle": "Yalnızca bu tarayıcıda saklanır",
+      "new": "Yeni CV",
+      "newBlank": "Boş CV",
+      "newBlankHint": "Boş bir sayfayla başlayın",
+      "newSample": "Bir örnekle başlayın",
+      "newSampleHint": "Düzenleyiciyi keşfetmek için doldurulmuş kurgusal bir CV",
+      "import": "Yedeği geri yükle",
+      "exportAll": "Tümünü dışa aktar",
+      "emptyTitle": "Henüz CV yok",
+      "emptyText": "Master CV'nizi oluşturun: tüm deneyiminiz tek bir yerde, her ilana uyarlanmaya hazır",
+      "open": "Aç",
+      "actions": "İşlemler",
+      "duplicate": "Çoğalt",
+      "export": "Dışa aktar (JSON)",
+      "delete": "Sil",
+      "updated": "Düzenlendi: {{date}}",
+      "versions": "Sürümler: {{count}}",
+      "backupHint": "CV'leriniz yalnızca bu tarayıcıda bulunur. Düzenli olarak JSON yedeği alın: tarayıcı verilerinizi temizlerseniz her şeyi geri yükleyebilirsiniz",
+      "defaultName": "CV'm",
+      "copySuffix": "(kopya)",
+      "deleteTitle": "“{{name}}” silinsin mi?",
+      "deleteText": "CV ve tüm sürümleri bu tarayıcıdan kalıcı olarak silinecek",
+      "exportDone": "Yedek indirildi",
+      "importConfirmTitle": "Bu yedek içe aktarılsın mı?",
+      "importConfirmText": "Bu yedekteki CV'ler: {{count}}. Bu tarayıcıda zaten bulunan CV'lerin yerine geçecek",
+      "importDone": "Yedek içe aktarıldı: {{count}} CV",
+      "importError": {
+        "invalidJson": "Bu dosya geçerli bir JSON değil",
+        "notABackup": "Bu dosya bir LocalATSCV yedeği değil",
+        "newerVersion": "Bu yedek LocalATSCV'nin daha yeni bir sürümünden: önce uygulamayı güncelleyin"
+      },
+      "importPdf": "CV içe aktar (PDF veya Word)",
+      "importPdfHint": "Mevcut bir CV'yi şablonlarımıza taşıyın",
+      "importLinkedin": "LinkedIn'den içe aktar",
+      "importLinkedinHint": "Profilinizin PDF'sinden"
+    },
+    "toolbar": {
+      "back": "CV'lerim",
+      "name": "CV adı",
+      "cvLanguage": "CV dili",
+      "accent": "Vurgu rengi",
+      "customAccent": "Özel renk",
+      "saved": "Kaydedildi",
+      "saving": "Kaydediliyor…",
+      "saveError": "Kaydedilemedi",
+      "edit": "Düzenle",
+      "preview": "Önizleme",
+      "exportPdf": "PDF olarak dışa aktar",
+      "undo": "Geri al (Ctrl+Z)",
+      "redo": "Yinele (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Düzenlenecek belge",
+      "cv": "CV",
+      "letter": "Ön yazı"
+    },
+    "letter": {
+      "title": "Ön yazı",
+      "versionOwn": "Bu sürümün kendi ön yazısı var",
+      "versionShared": "Bu sürüm Master'ın ön yazısını kullanıyor: burada düzenlemek bu sürüm için bir kopya oluşturur",
+      "useMaster": "Master'ın ön yazısını kullan",
+      "recipient": "Alıcı",
+      "recipientPlaceholder": "Örnek A.Ş.\nİnsan Kaynakları\nİstiklal Caddesi No: 10, 34430 Beyoğlu/İstanbul",
+      "place": "Yer",
+      "date": "Tarih",
+      "dateHint": "Boş: yazdırma gününün tarihi",
+      "subject": "Konu",
+      "subjectPlaceholder": "… pozisyonu için başvuru",
+      "greeting": "Hitap",
+      "body": "Ön yazı",
+      "bodyPlaceholder": "Üç kısa paragraf: şirkette sizi ne çekiyor, neler katıyorsunuz, hangi sonraki adımı öneriyorsunuz",
+      "bodyHint": "Boş bir satır iki paragrafı ayırır · anahtar kelime için **kalın**",
+      "outline": "Taslak ekle",
+      "closing": "Kapanış",
+      "fileName": "Ön yazı"
+    },
+    "fit": {
+      "pages": "{{count}} sayfa",
+      "onePage": "Tek sayfaya sığıyor",
+      "hintMany": "İşe alım uzmanlarının çoğu tek sayfalık bir CV bekler",
+      "hintOne": "Çoğu başvuru için ideal format",
+      "stillTooLong": "Sıkıştırılmış hâliyle bile hâlâ çok uzun: birkaç maddeyi kısaltın ya da bir sürümde bazı öğeleri gizleyin",
+      "fit": "Tek sayfaya sığdır",
+      "settings": "Düzen ayarları",
+      "spacing": "Boşluk",
+      "scale": "Metin boyutu",
+      "settingsHint": "Metin gerçek metin olarak kalır: yalnızca düzen değişir",
+      "reset": "Şablonun düzeni",
+      "grayscale": "Siyah beyaz görüntüle",
+      "grayscaleHint": "Siyah beyaz baskıyı taklit eder: dışa aktarılan PDF renklerini korur"
+    },
+    "versions": {
+      "label": "Görüntülenen sürüm",
+      "master": "Master CV",
+      "masterHint": "Tüm içerik, filtresiz",
+      "new": "Yeni sürüm",
+      "newText": "Hedefli bir sürüm Master CV'nizin tamamından başlar: ardından bu başvurunun ihtiyaç duymadıklarının işaretini kaldırın",
+      "nameLabel": "Sürüm adı",
+      "namePlaceholder": "Örn. Front-end Geliştirici – X Şirketi",
+      "rename": "Sürümü yeniden adlandır",
+      "delete": "Sürümü sil",
+      "deleteTitle": "“{{name}}” sürümü silinsin mi?",
+      "deleteText": "Yalnızca seçim silinir: tüm içerik Master CV'nizde kalır",
+      "banner": "“{{name}}” sürümü: görünmemesi gerekenlerin işaretini kaldırın. Master CV'nizden hiçbir şey silinmez",
+      "include": "Bu sürüme dahil et"
+    },
+    "enRule": "İngilizce CV: fotoğraf, doğum tarihi ve uyruk, İngilizce konuşulan ülkelerin normlarına uygun olarak gizlenir",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fotoğraf",
+      "photoAdd": "Fotoğraf ekle",
+      "photoChange": "Değiştir",
+      "photoRemove": "Kaldır",
+      "photoHint": "Yeniden boyutlandırılır ve yalnızca bu cihazda saklanır",
+      "photoError": "Bu görsel okunamadı",
+      "hiddenInEnglish": "İngilizcede gizli",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "headline": "CV başlığı",
+      "headlinePlaceholder": "Örn. Front-end Geliştirici",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "location": "Şehir",
+      "birthDate": "Doğum tarihi",
+      "nationality": "Uyruk",
+      "summary": "Özet",
+      "summaryPlaceholder": "Profilinizi ve aradığınızı özetleyen iki üç cümle",
+      "links": "Bağlantılar",
+      "linkLabel": "Bağlantı adı",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Bağlantı adresi",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Bağlantı ekle",
+      "removeLink": "Bağlantıyı kaldır",
+      "drivingLicense": "Sürücü belgesi",
+      "drivingLicensePlaceholder": "Örn. B sınıfı ehliyet, kendi aracı var",
+      "qrToggle": "Bu bağlantıyı QR kod olarak göster",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) otomatik eklenir. QR düğmesi, grafik şablonların çoğunda bağlantıyı QR kod olarak gösterir"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Deneyim",
+        "education": "Eğitim",
+        "projects": "Projeler",
+        "certifications": "Sertifikalar",
+        "custom": "Serbest bölüm",
+        "skills": "Yetkinlikler",
+        "languages": "Diller",
+        "interests": "İlgi alanları"
+      },
+      "add": "Bölüm ekle",
+      "titleLabel": "Bölüm başlığı",
+      "empty": "Boş bölüm: CV'de görünmeyecek",
+      "addItem": {
+        "experience": "Deneyim ekle",
+        "education": "Eğitim ekle",
+        "projects": "Proje ekle",
+        "certifications": "Sertifika ekle",
+        "custom": "Öğe ekle",
+        "skills": "Yetkinlik ekle",
+        "languages": "Dil ekle",
+        "interests": "İlgi alanı ekle"
+      },
+      "deleteTitle": "“{{name}}” bölümü silinsin mi?",
+      "deleteText": "İçeriği Master CV'den ve tüm sürümlerinden kaldırılacak"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Pozisyon",
+          "subtitle": "Şirket"
+        },
+        "education": {
+          "title": "Derece",
+          "subtitle": "Okul veya üniversite"
+        },
+        "projects": {
+          "title": "Proje adı",
+          "subtitle": "Rol veya teknolojiler"
+        },
+        "certifications": {
+          "title": "Sertifika",
+          "subtitle": "Veren kurum"
+        },
+        "custom": {
+          "title": "Başlık",
+          "subtitle": "Alt başlık"
+        }
+      },
+      "location": "Konum",
+      "url": "Bağlantı",
+      "start": "Başlangıç",
+      "end": "Bitiş",
+      "date": "Alındığı tarih",
+      "current": "Devam ediyor",
+      "untitled": "Başlıksız",
+      "bullets": "Başarılar",
+      "bulletPlaceholder": "Bir eylem fiiliyle başlayın ve sonucu sayıyla ifade edin",
+      "addBullet": "Madde ekle",
+      "bulletHint": "Enter: yeni madde",
+      "boldHint": "Kalın yazmak için **kelime**"
+    },
+    "items": {
+      "skillLabel": "Kategori",
+      "skillLabelPlaceholder": "Örn. Front-end",
+      "skillKeywords": "Yetkinlikler",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Dil",
+      "languageLevel": "Seviye",
+      "languageLevelPlaceholder": "Örn. C1, fluent",
+      "interest": "İlgi alanı",
+      "interestPlaceholder": "Örn. Tırmanış",
+      "levelDetected": "Seviye tanındı: çubuklu şablonlar bunu gösterecek",
+      "levelUnknown": "Seviye tanınmadı, çubuk yok: A1–C2 ya da listeden bir öneri kullanın",
+      "levelEmpty": "Çubuk göstermek için bir seviye girin",
+      "levelHint": "Avrupa seviyesini (A1–C2) ya da “fluent” veya “native” gibi bir kelimeyi kullanın: bazı şablonlar bunu bir çubuk olarak da gösterir, sağdaki noktalar önizlemesini verir"
+    },
+    "actions": {
+      "menu": "İşlemler",
+      "moveUp": "Yukarı taşı",
+      "moveDown": "Aşağı taşı",
+      "duplicate": "Çoğalt",
+      "delete": "Sil",
+      "drag": "Sıralamak için sürükleyin"
+    },
+    "month": "Ay",
+    "year": "Yıl",
+    "noMonth": "Ay",
+    "preview": {
+      "page": "Sayfa {{n}}"
+    },
+    "notFound": {
+      "title": "CV bulunamadı",
+      "text": "Bu CV yok ya da bu tarayıcıdan silinmiş"
+    },
+    "templates": {
+      "button": "Şablon",
+      "title": "Şablon seçin",
+      "subtitle": "Tüm şablonlar eksiksiz bir örnek CV ile ya da sizinkiyle. Vurgu rengi tüm şablonlara uygulanır",
+      "close": "Kapat",
+      "filter": "Şablonları filtrele",
+      "filters": {
+        "all": "Tümü",
+        "graphic": "Grafik",
+        "sober": "Sade"
+      },
+      "ats": "ATS uyumluluğu",
+      "levels": {
+        "excellent": "mükemmel",
+        "good": "iyi",
+        "fair": "orta"
+      },
+      "atsHint": "Her şablon gerçek metin basar. İki sütunlu düzenler modern ATS'lerin çoğu tarafından iyi okunur, ancak bazı eski araçlar sütunları karıştırır: emin değilseniz tek sütunlu bir şablon seçin",
+      "names": {
+        "classic": {
+          "name": "Klasik",
+          "description": "Sade ve etkili: tek sütun, altı çizili başlıklar, dikkat dağıtan hiçbir şey yok"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Renkli şerit, belirgin başlıklar ve etiket biçiminde yetkinlikler"
+        },
+        "elegant": {
+          "name": "Zarif",
+          "description": "Ortalanmış üst bilgi ve rafine bir görünüm için tırnaklı yazı"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Renkli kenar, eş aralıklı yazıyla ayrıntılar ve kod tarzı yetkinlikler"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "İsviçre stili: büyük ad, kenar boşluğunda başlıklar, bol beyaz alan"
+        },
+        "sidebar": {
+          "name": "Sütunlar",
+          "description": "Fotoğraf, iletişim bilgileri ve yetkinliklerle renkli kenar çubuğu"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Fotoğraflı şerit, simgeler, zaman çizelgesi ve dil çubukları, yine de ATS için tamamen okunaklı"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Pastel organik şekiller, büyük yuvarlak fotoğraf, zaman çizelgesi ve QR kod, iki sütunda"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Tek sütunda Signature görünümü: grafik ve ATS için tamamen okunaklı"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Koyu çapraz şerit, renkli ışıltılar, deneyim kartları ve dolgulu yetkinlik etiketleri"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Fotoğrafın etrafında ana renklerle geometrik kompozisyon, geometrik yazı ve her başlıktan önce şekiller"
+        },
+        "editorial": {
+          "name": "Dergi",
+          "description": "Dergi düzeni: tırnaklı büyük ad, italik giriş, numaralı bölümler ve kaydırılmış portre"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brütalizm: kalın siyah çerçeveler, sert gölgeler, canlı renk blokları ve siyah etiketler"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Vurgu renklerinizde ağ gradyanı, cam efektli iletişim kartı ve gradyan kenarlı kartlar"
+        },
+        "swiss": {
+          "name": "İsviçre",
+          "description": "İsviçre afişi stili: dev ad, renkli bant, kalın siyah çizgiler ve numaralı bölümler"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Fildişi kâğıt, ince çift çerçeve, eşkenar dörtgen süslemeler ve Garamond yazı"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Karanlık mod: gece arka planı, neon vurgular ve parlayan zaman çizelgesi, dijital başvurular için ideal"
+        },
+        "wave": {
+          "name": "Dalga",
+          "description": "Dalgalarla biten renkli şerit, yuvarlak fotoğraf ve dalgalı başlıklar, yumuşak ve samimi"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Yuvarlak köşeli bento kutuları: fotoğraf, ad ve QR kod bir ızgarada, her bölüm için bir kutu"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Teknik çizim: kareli kâğıt, köşe işaretleri, ölçü çizgisi ve eş aralıklı etiketler"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80'lerin geometrik konfetisi, canlı renkler ve zikzakla altı çizilmiş başlıklar"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Büyük bölünmüş şerit: renk bloğu üzerinde metin ve iki tonlu fotoğraf"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tek süsleme tipografi: kısmen yalnızca çerçeveli dev ad, çok büyük başlıklar"
+        },
+        "sorbet": {
+          "name": "Sorbe",
+          "description": "Her bölüme bir pastel renk, hap biçimli başlıklar ve çok renkli bir ışıltı"
+        },
+        "executive": {
+          "name": "Yönetici",
+          "description": "Lacivert şerit, altın çizgi ve tırnaklı ad, yönetici pozisyonları için"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japon minimalizmi: washi kâğıdı, vurgu renginizde bir ensō dairesi ve bir fırça darbesi"
+        },
+        "ribbon": {
+          "name": "Kurdele",
+          "description": "Kırlangıç kuyruklu kurdeleler üzerinde bölüm başlıkları, ortalanmış üst bilgi"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Altıgen fotoğraf, köşede bal peteği ve başlıklardan önce altıgenler"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Katmanlı kesme kâğıttan üst bilgi, kâğıt yaprakları gibi bölümler"
+        },
+        "thread": {
+          "name": "İplik",
+          "description": "Kesintisiz bir iplik üst bilgiyi ve her bölümü birbirine bağlar, her pozisyon için bir nokta"
+        }
+      },
+      "preview": {
+        "label": "Küçük resimlerin içeriği",
+        "sample": "Eksiksiz örnek",
+        "mine": "CV'm"
+      }
+    },
+    "print": {
+      "title": "PDF olarak dışa aktar",
+      "text": "Tarayıcınızın yazdırma penceresi açılmak üzere. Kusursuz bir PDF için:",
+      "tips": {
+        "destination": "Hedef: “PDF olarak kaydet”",
+        "margins": "Kenar boşlukları: “Yok”",
+        "headers": "“Üstbilgiler ve altbilgiler” işaretini kaldırın",
+        "background": "Renkleri korumak için “Arka plan grafikleri”ni işaretleyin"
+      },
+      "dontShow": "Bir daha gösterme",
+      "cancel": "İptal",
+      "print": "Yazdırma penceresini aç"
+    },
+    "job": {
+      "title": "Bir ilana uyarla",
+      "sources": "LinkedIn, Kariyer.net, Yenibiris, Secretcv, Indeed…",
+      "placeholder": "İlanın tam metnini buraya yapıştırın: pozisyon, görevler, aranan nitelikler",
+      "urlWarning": "Bağlantı yerine ilanın metnini yapıştırın: LocalATSCV hiçbir siteyle asla bağlantı kurmaz, böylece verileriniz sizde kalır",
+      "empty": "Anahtar kelime bulunamadı: daha eksiksiz bir ilan yapıştırın",
+      "score": "İlanla eşleşme",
+      "summary": "{{total}} anahtar kelimeden {{found}} tanesi mevcut",
+      "found": "CV'nizdeki anahtar kelimeler",
+      "missing": "Eksik anahtar kelimeler",
+      "missingHint": "Yetkinliklerinize eklemek için bir anahtar kelimeye tıklayın ya da onu bir deneyime yerleştirin",
+      "addToSkills": "Yetkinliklere ekle",
+      "added": "“{{keyword}}” yetkinliklerinize eklendi",
+      "keywordsGroup": "Anahtar kelimeler",
+      "createVersion": "Bu ilan için hedefli bir sürüm oluştur",
+      "createVersionHint": "İlanla ilgisi olmayan deneyim ve maddelerin işareti kaldırılacak: bunları ayarlayabilirsiniz",
+      "savedInVersion": "İlan “{{name}}” sürümüyle kaydedildi"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” bir görevi tanımlıyor: bir eylem fiiliyle başlayın"
+    },
+    "fonts": {
+      "title": "Tipografi",
+      "heading": "Başlıklar",
+      "body": "Metin",
+      "default": "Şablonunki",
+      "hint": "ATS'ler bu yazı tiplerinin hepsini iyi okur: metin gerçek metin olarak kalır"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Yenilikler",
+    "title": "Değişiklik günlüğü",
+    "subtitle": "Yeni özellikleri ve düzeltmeleriyle tüm LocalATSCV sürümleri",
+    "current": "Geçerli sürüm",
+    "frenchOnly": "Değişiklik günlüğü Fransızca yazılmıştır",
+    "error": "Değişiklik günlüğü yüklenemedi",
+    "types": {
+      "added": "Eklendi",
+      "changed": "Değiştirildi",
+      "fixed": "Düzeltildi",
+      "removed": "Kaldırıldı",
+      "deprecated": "Kullanımdan kalktı",
+      "security": "Güvenlik",
+      "other": "Diğer"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizci",
+    "title": "CV'niz robotlardan geçiyor mu?",
+    "subtitle": "Herhangi bir araçla hazırlanmış bir PDF CV bırakın: LocalATSCV onu bir ATS gibi okur ve neyi düzeltmeniz gerektiğini söyler",
+    "drop": "CV'nizi buraya sürükleyin",
+    "dropActive": "Analizi başlatmak için dosyayı bırakın",
+    "hint": "Yalnızca PDF, en fazla 15 MB",
+    "choose": "Dosya seç",
+    "reading": "PDF okunuyor…",
+    "privacy": "Dosya tarayıcınızda analiz edilir: hiçbir yere gönderilmez",
+    "another": "Başka bir CV analiz et",
+    "errors": {
+      "notPdf": "Bu dosya bir PDF değil",
+      "tooLarge": "Bu dosya 15 MB'tan büyük",
+      "encrypted": "Bu PDF parolayla korunuyor: bir ATS de onu okuyamaz",
+      "unreadable": "Bu PDF okunamadı: bozuk olabilir"
+    },
+    "stats": "{{pages}} sayfa · {{words}} kelime",
+    "verdict": {
+      "excellent": "Mükemmel",
+      "good": "İyi",
+      "fair": "Geliştirilmeli",
+      "poor": "Kritik"
+    },
+    "verdictText": {
+      "excellent": "Robotlar CV'nizi çok iyi okuyor",
+      "good": "Birkaç düzeltme onu daha da etkili kılacak",
+      "fair": "Birkaç sorun ATS'lerin okumasını zorlaştırıyor",
+      "poor": "Bir ATS büyük olasılıkla önemli bilgileri kaçıracak"
+    },
+    "categories": {
+      "readability": "Makine okunabilirliği",
+      "structure": "Yapı",
+      "content": "İçerik"
+    },
+    "sectionNames": {
+      "experience": "Deneyim",
+      "education": "Eğitim",
+      "skills": "Yetkinlikler"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Makinenin okuyabildiği metin",
+        "pass": "CV'nizdeki tüm metin çıkarılabiliyor",
+        "warn": "Bazı sayfalarda okunabilir metin yok: büyük olasılıkla görseller veya tarama",
+        "fail": "Okunabilir metin yok: bu CV büyük olasılıkla bir görsel veya tarama ve bir ATS ondan hiçbir şey çıkaramaz. Kelime işlemcinizden PDF olarak dışa aktarın"
+      },
+      "columns": {
+        "title": "Düzen",
+        "pass": "Doğrusal okuma, sütunlar karışmıyor",
+        "warn": "Sütunlu düzen algılandı: metin yanlış sırayla okunabilir. Aşağıda “Robotun okuduğu” bölümünü kontrol edin"
+      },
+      "order": {
+        "title": "Dosyadaki okuma sırası",
+        "pass": "Metin dosyaya okuma sırasıyla yazılmış",
+        "warnHeader": "Adınız ve üst bilginiz dosyaya CV'nin geri kalanından sonra yazılmış: dosyayı sırayla okuyan bir ATS adınızı bulamayabilir",
+        "warn": "Metnin %{{percent}}'i dosyaya okuma sırası dışında yazılmış: bazı ATS'ler bu bölümleri yanlış sırayla okuyacak",
+        "fail": "Metnin %{{percent}}'i dosyaya karışık sırayla yazılmış, bu serbest metin kutularıyla hazırlanan CV'lerde tipiktir (Canva, PowerPoint…): pek çok ATS CV'nizi karışık okuyacak. Aşağıdaki iki okumayı karşılaştırın"
+      },
+      "unreadable": {
+        "title": "Simgeler ve beceri çubukları",
+        "pass": "Simge veya okunamayan karakter yok",
+        "warn": "Simge veya çubuk algılandı ({{count}}): bir ATS bunları anlamsız karakterler olarak okur. Bunları metinle değiştirin",
+        "fail": "Simge veya çubuk algılandı ({{count}}): bunları metinle değiştirin, örneğin noktalar yerine “İngilizce: C1”"
+      },
+      "contact": {
+        "title": "İletişim bilgileri",
+        "pass": "E-posta adresi ve telefon numarası bulundu",
+        "warnNoPhone": "Telefon numarası bulunamadı",
+        "warnNoEmail": "E-posta adresi bulunamadı",
+        "fail": "Ne e-posta ne de telefon bulundu: bunları görsel içinde değil, metin olarak yazın"
+      },
+      "sections": {
+        "title": "Standart bölümler",
+        "pass": "Deneyim, eğitim ve yetkinlikler açıkça tanımlanmış",
+        "warn": "Bu bölümler tanınmadı: standart başlıklar kullanın",
+        "fail": "Hiçbir standart bölüm tanınmadı: ATS'ler “Deneyim” veya “Eğitim” gibi başlıklara dayanır"
+      },
+      "length": {
+        "title": "Uzunluk",
+        "pass": "{{pages}} sayfa, {{words}} kelime: ideal uzunluk",
+        "warn": "{{pages}} sayfa, {{words}} kelime: 1-2 sayfa ve 250-1.000 kelimeyi hedefleyin",
+        "fail": "{{pages}} sayfa, {{words}} kelime: iyi değerlendirilmek için çok kısa ya da çok uzun"
+      },
+      "quantified": {
+        "title": "Sayısal sonuçlar",
+        "pass": "Maddelerinizin %{{percent}}'i bir sayı içeriyor, tebrikler",
+        "warn": "Maddelerin yalnızca %{{percent}}'i sayısal: ölçülebilir sonuçlar ekleyin (yüzdeler, tutarlar, hacimler)",
+        "fail": "Sayısal sonuç yok: işe alım uzmanları ve ATS'ler ölçülebilir başarılara değer verir"
+      },
+      "weakPhrases": {
+        "title": "Eylem fiilleri",
+        "pass": "Maddelerin başında zayıf ifade yok",
+        "warn": "Bu ifadeler bir sonuç değil, bir görev anlatıyor: bir eylem fiiliyle başlayın",
+        "fail": "Bu ifadeler bir sonuç değil, bir görev anlatıyor: bir eylem fiiliyle başlayın"
+      },
+      "dates": {
+        "title": "Tarihler",
+        "pass": "Deneyimleriniz tarihli",
+        "warn": "Yalnızca bir yıl bulundu: her pozisyona tarih ekleyin, ATS'ler deneyim yılınızı hesaplamak için tarihleri kullanır",
+        "fail": "Tarih bulunamadı: ATS'ler deneyim yılınızı hesaplamak için tarihleri kullanır"
+      }
+    },
+    "robot": {
+      "title": "Robotun okuduğu",
+      "text": "Metin, ATS'lerin çoğunun yaptığı gibi satır satır yeniden oluşturuldu. Burada karışık ya da eksikse işe alım uzmanı için de öyledir",
+      "empty": "Hiçbir metin çıkarılamadı",
+      "position": "Konuma göre",
+      "file": "Dosya sırası",
+      "fileText": "Metin, dosyaya yazıldığı sırayla: düzeni yeniden oluşturmayan ATS'ler onu böyle okur. CV'nizin okuma sırasını izlemelidir"
+    },
+    "cta": {
+      "title": "Sağlam temellerle yeniden başlayın",
+      "text": "Düzenleyicide ATS uyumlu bir CV oluşturun, ardından onu her ilana uyarlayın",
+      "button": "Düzenleyiciyi aç",
+      "import": "Bu CV'yi şablonlarımıza taşı"
+    },
+    "live": {
+      "title": "Canlı ATS kontrolü",
+      "issues": "Bu şablonda kontrol edilecek nokta: {{count}}",
+      "allGood": "Bu şablonda sorun algılanmadı",
+      "hint": "Görüntülenen düzen üzerinde, CV analizcisiyle aynı motorla hesaplanır"
+    },
+    "method": {
+      "title": "Bu puan nasıl hesaplanıyor?",
+      "intro": "Resmî bir ATS puanı yoktur: her işe alım yazılımının (Workday, Taleo, Greenhouse, Lever…) kendine özgü, çoğu zaman gizli kuralları vardır. Bu endeks, çoğunu zorlayan noktaları şu ölçeğe göre kontrol eder:",
+      "disclaimer": "Bu ölçütler ATS sağlayıcılarının kamuya açık önerilerinden ve en yaygın okuma hatalarından (görsel içinde metin, sütunlar, simgeler, standart dışı başlıklar) gelir. Puan, CV'nizi geliştirmenize yardımcı olur: seçilmeyi öngörmez"
+    }
+  },
+  "import": {
+    "title": "CV içe aktar",
+    "linkedinTitle": "LinkedIn'den içe aktar",
+    "text": "PDF veya Word (.docx) bir CV seçin: içerik tarayıcınızda çıkarılır ve düzenleyicinin bölümlerine yerleştirilir. Ardından bir şablon seçebilirsiniz",
+    "choose": "Dosya seç",
+    "chooseFile": "Dosya seç",
+    "hint": "PDF veya Word (.docx), en fazla 15 MB",
+    "reading": "İçe aktarılıyor…",
+    "privacy": "Dosya tarayıcınızda okunur: hiçbir yere gönderilmez",
+    "close": "Kapat",
+    "done": "CV içe aktarıldı ({{items}} öğe): her bölümü gözden geçirin",
+    "errors": {
+      "tooLarge": "Bu dosya 15 MB'tan büyük",
+      "encrypted": "Bu PDF parolayla korunuyor",
+      "unreadable": "Bu dosya okunamadı: bozuk olabilir",
+      "empty": "Kullanılabilir metin yok: bu PDF büyük olasılıkla bir görsel veya tarama",
+      "unsupported": "Bir PDF, Word dosyası (.docx) ya da LinkedIn ZIP arşivi seçin",
+      "archiveEmpty": "Bu arşiv kullanılabilir LinkedIn profil verisi içermiyor"
+    },
+    "hintArchive": "PDF (bilgisayar) veya ZIP arşivi (mobil uygulama)",
+    "linkedin": {
+      "computer": {
+        "title": "Bilgisayarda: profilinizin PDF'si",
+        "step1": "linkedin.com'u bilgisayarda bir tarayıcıda açın (bu seçenek uygulamada yok)",
+        "step2": "Profilinizde “Kaynaklar”a (veya “Daha fazla”) ve ardından “PDF olarak kaydet”e tıklayın",
+        "step3": "Bu PDF'yi aşağıda seçin"
+      },
+      "archive": {
+        "title": "Mobil uygulamada: veri arşiviniz",
+        "step1": "Uygulamada fotoğrafınıza, ardından Ayarlar ve Veri gizliliği'ne dokunun",
+        "step2": "“Verilerinizin bir kopyasını alın”ı seçin ve Profil, Pozisyonlar, Eğitim, Yetenekler ve Diller'i işaretleyin",
+        "step3": "LinkedIn birkaç dakika içinde size e-posta gönderir: ZIP arşivini indirin",
+        "step4": "Bu ZIP dosyasını açmadan aşağıda seçin"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Bu belge İngilizce gösteriliyor. Yalnızca Fransızca sürüm hukuken bağlayıcıdır.",
+    "error": "Bu belge yüklenemedi."
+  }
+}

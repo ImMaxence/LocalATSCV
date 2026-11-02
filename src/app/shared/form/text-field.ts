@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, input, output } from '@angular/core
       <span class="field-label">
         {{ label() }}
         @if (badge()) {
-          <span class="ml-1 rounded bg-surface-2 px-1.5 py-px text-[10px] font-semibold">{{
+          <span class="ms-1 rounded bg-surface-2 px-1.5 py-px text-[10px] font-semibold">{{
             badge()
           }}</span>
         }

@@ -15,7 +15,11 @@
     "dark": "Dunkel"
   },
   "lang": {
-    "label": "Sprache der Oberfläche"
+    "label": "Sprache der Oberfläche",
+    "suggestion": "Diese Seite auf Deutsch anzeigen",
+    "dismiss": "Schließen",
+    "search": "Sprache suchen",
+    "noResult": "Keine Sprache gefunden"
   },
   "pages": {
     "home": "ATS-optimierte Lebensläufe, 100 % lokal",
@@ -246,6 +250,25 @@
       "title": "Bereit, den Filter zu passieren?",
       "text": "Erstelle deinen Master-Lebenslauf in wenigen Minuten. Nichts verlässt dieses Gerät",
       "button": "Jetzt starten"
+    },
+    "demo": {
+      "role": "Front-End-Entwicklerin",
+      "contact": "Lyon · camille.martin@beispiel.de",
+      "experience": "Berufserfahrung",
+      "jobTitle": "Angular-Entwicklerin",
+      "jobMeta": "Beispiel GmbH · 2022 – heute",
+      "bullets": {
+        "migration": "Migration von 40 Ansichten auf <k>Angular</k> und <k>TypeScript</k>, Ladezeit um 35 % verkürzt",
+        "testing": "<w>Zuständig für</w> die End-to-End-Teststrategie",
+        "delivery": "Continuous Delivery mit <k>GitLab CI</k> für 3 Produktteams"
+      },
+      "weakLabel": "Schwache Formulierung",
+      "weakReplacement": "„Eingeführt“",
+      "skills": "Kenntnisse",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Barrierefreiheit",
+      "score": "Übereinstimmung mit der Anzeige",
+      "sent": "0 Byte gesendet",
+      "robot": "KENNTNISSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-End-Entwicklerin Angular <n>●●●●○</n> BERUFSERFAHRUNG <n>� camille.mar</n> Angular-Entwicklerin <n>tin@beispiel.de</n> 2022 – heute TypeScript <n>●●●○○</n> Beispiel GmbH SPRACHEN Englisch Migration von 40 Ansichten auf…"
     }
   },
   "dialog": {

@@ -14,7 +14,7 @@ import { CvEditorStore } from '../cv-editor.store';
     <ng-container *transloco="let t; prefix: 'editor.versions'">
       <button
         type="button"
-        class="flex h-9 max-w-64 items-center gap-2 rounded-full border border-line bg-surface pr-2.5 pl-3 text-sm font-medium transition-colors hover:border-ink/25 aria-expanded:border-ink/25"
+        class="flex h-9 max-w-64 items-center gap-2 rounded-full border border-line bg-surface ps-3 pe-2.5 text-sm font-medium transition-colors hover:border-ink/25 aria-expanded:border-ink/25"
         [cdkMenuTriggerFor]="menu"
         [attr.aria-label]="t('label')"
       >

@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Beranda LocalATSCV",
+    "main": "Navigasi utama",
+    "how": "Cara kerja",
+    "privacy": "Privasi",
+    "analyze": "Analisis CV",
+    "editor": "Buat CV saya",
+    "skipToContent": "Langsung ke konten"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Terang",
+    "system": "Sistem",
+    "dark": "Gelap"
+  },
+  "lang": {
+    "label": "Bahasa antarmuka",
+    "suggestion": "Lihat halaman ini dalam bahasa Indonesia",
+    "dismiss": "Tutup",
+    "search": "Cari bahasa",
+    "noResult": "Bahasa tidak ditemukan"
+  },
+  "pages": {
+    "home": "CV ramah ATS, 100% lokal",
+    "editor": "Editor",
+    "analyze": "Penganalisis CV",
+    "changelog": "Yang baru",
+    "legalNotice": "Informasi hukum",
+    "terms": "Ketentuan penggunaan",
+    "privacy": "Kebijakan privasi"
+  },
+  "seo": {
+    "home": "Pembuat CV ramah ATS gratis: 30 template grafis, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan skor ATS. Sumber terbuka, data Anda tetap di browser",
+    "editor": "Editor CV dengan pratinjau langsung, CV Master dan versi tertarget, pemeriksaan ATS, serta ekspor PDF dengan teks asli. Semuanya tetap di browser Anda",
+    "analyze": "Analisis CV PDF secara gratis: skor ATS dari 100, hal yang perlu diperbaiki, dan teks seperti yang dibaca sistem rekrutmen. File tidak pernah keluar dari browser Anda",
+    "changelog": "Yang baru di LocalATSCV, versi demi versi: template CV baru, fitur, dan perbaikan",
+    "legalNotice": "Informasi hukum LocalATSCV: penerbit, hosting, dan kontak",
+    "terms": "Ketentuan penggunaan LocalATSCV, pembuat CV gratis dan sumber terbuka",
+    "privacy": "Kebijakan privasi LocalATSCV: tidak ada data yang dikumpulkan, CV Anda tetap di browser"
+  },
+  "footer": {
+    "tagline": "Pembuat CV ramah ATS yang tidak pernah melihat data Anda",
+    "product": "Produk",
+    "legal": "Hukum",
+    "project": "Proyek",
+    "changelog": "Yang baru",
+    "sourceCode": "Kode sumber",
+    "reportIssue": "Laporkan masalah",
+    "license": "Lisensi MIT",
+    "versionLabel": "Versi {{version}}, lihat yang baru"
+  },
+  "update": {
+    "title": "Versi baru tersedia",
+    "text": "Muat ulang halaman untuk mendapatkannya",
+    "changelog": "Lihat yang baru",
+    "reload": "Muat ulang",
+    "later": "Nanti"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% lokal · Gratis · Sumber terbuka",
+      "titleLine1": "CV yang lolos dari robot",
+      "titleLine2": "Data yang tetap bersama Anda",
+      "subtitle": "LocalATSCV membantu Anda membuat CV yang dioptimalkan untuk sistem pelacakan pelamar (ATS) dan menyesuaikannya untuk setiap lowongan dalam beberapa klik. Semuanya terjadi di browser Anda: tanpa akun, tanpa data yang dikirim",
+      "ctaPrimary": "Buat CV saya",
+      "ctaSecondary": "Analisis CV yang sudah ada",
+      "points": {
+        "noAccount": "Tanpa daftar",
+        "offline": "Bisa offline",
+        "atsPdf": "PDF terbaca ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Masalahnya",
+      "title": "CV Anda dibaca mesin lebih dulu",
+      "text": "Sebagian besar perusahaan besar dan agen rekrutmen menyaring lamaran dengan ATS (Applicant Tracking System). Sistem ini mengekstrak teks CV Anda, menyimpannya di basis data, dan memungkinkan perekrut mencari kandidat berdasarkan kata kunci",
+      "pitfalls": {
+        "layout": {
+          "title": "Tata letak rumit",
+          "text": "Kolom, tabel, dan kotak teks mengacaukan urutan baca: informasi Anda keluar campur aduk"
+        },
+        "image": {
+          "title": "Teks tak terbaca",
+          "text": "Ikon, bilah keahlian, dan sebagian ekspor alat desain berubah menjadi karakter aneh, atau tidak ada teks sama sekali"
+        },
+        "keywords": {
+          "title": "Kata kunci hilang",
+          "text": "Jika kosakata lowongan tidak muncul di CV Anda, profil Anda tidak akan muncul di pencarian perekrut"
+        }
+      },
+      "seen": "Yang Anda lihat",
+      "read": "Yang dibaca robot",
+      "fix": "LocalATSCV melakukan sebaliknya: satu kolom, teks asli, dan judul bagian standar yang dibaca robot dalam urutan yang benar"
+    },
+    "how": {
+      "eyebrow": "Cara kerja",
+      "title": "Tulis sekali, sesuaikan tanpa batas",
+      "text": "Empat langkah untuk mengubah CV Master Anda menjadi lamaran yang pas untuk setiap lowongan",
+      "steps": {
+        "profile": {
+          "title": "Isi CV Master Anda",
+          "text": "Masukkan semua pengalaman Anda sekali saja, atau impor PDF profil LinkedIn Anda untuk menghemat waktu"
+        },
+        "offer": {
+          "title": "Tempel lowongan kerja",
+          "text": "LocalATSCV mengekstrak kata kunci dan menghitung skor kecocokan dari 100 yang diperbarui saat Anda mengetik"
+        },
+        "compose": {
+          "title": "Susun versi tertarget",
+          "text": "Centang pengalaman dan poin yang relevan, lalu atur ulang dengan seret dan lepas. Tidak ada yang terhapus dari Master Anda"
+        },
+        "export": {
+          "title": "Ekspor ke PDF",
+          "text": "PDF dengan teks asli, terstruktur, dan satu kolom, sama mudah dibaca oleh robot maupun perekrut"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privasi",
+      "title": "Nol data di server kami. Secara harfiah",
+      "text": "Tidak ada basis data untuk diretas: server kami hanya mengirim aplikasinya. Setelah itu semuanya terjadi di browser Anda, bahkan saat offline",
+      "browser": {
+        "title": "Browser Anda",
+        "tag": "Perangkat Anda",
+        "items": {
+          "master": "CV Master",
+          "photo": "Foto profil",
+          "versions": "Versi tertarget",
+          "settings": "Preferensi"
+        },
+        "note": "Disimpan di IndexedDB, hanya di perangkat ini"
+      },
+      "flow": {
+        "app": "Aplikasi, saat pertama dimuat",
+        "data": "Data Anda",
+        "never": "tidak pernah"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Menyajikan file aplikasi (HTML, CSS, JavaScript), tidak lebih",
+        "items": {
+          "noDb": "Tanpa basis data",
+          "noAccount": "Tanpa akun pengguna",
+          "noLogs": "Tanpa log kunjungan"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Tanpa akun",
+          "text": "Tanpa pendaftaran, email, atau kata sandi. Buka halamannya dan mulai"
+        },
+        "trackers": {
+          "title": "Tanpa pelacak",
+          "text": "Tanpa statistik, iklan, atau cookie pelacak. Bahkan fontnya di-hosting di server kami sendiri"
+        },
+        "csp": {
+          "title": "Terkunci secara teknis",
+          "text": "Kebijakan keamanan situs (CSP) melarang browser menghubungi domain lain mana pun. Kodenya terbuka: periksa sendiri"
+        },
+        "backup": {
+          "title": "Cadangan Anda, file Anda",
+          "text": "Ekspor semua data Anda ke file JSON dan impor kembali di perangkat mana pun"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Fitur",
+      "title": "Semua yang Anda butuhkan untuk sampai ke wawancara",
+      "items": {
+        "master": {
+          "title": "CV Master dan versi tertarget",
+          "text": "Satu CV lengkap, dan versi sebanyak lamaran Anda. Centang, hapus centang: tidak ada yang hilang"
+        },
+        "score": {
+          "title": "Skor kecocokan",
+          "text": "Tempel lowongan: kata kunci yang ditemukan, yang hilang, dan skor dari 100 secara langsung"
+        },
+        "weak": {
+          "title": "Pendeteksi frasa lemah",
+          "text": "“Bertanggung jawab atas”, “membantu dalam”… ditandai otomatis, lengkap dengan daftar kata kerja aksi sebagai penggantinya"
+        },
+        "analyzer": {
+          "title": "Penganalisis CV yang ada",
+          "text": "Letakkan CV yang dibuat di tempat lain: lihat apa yang benar-benar dibaca robot dan apa yang perlu diperbaiki"
+        },
+        "linkedin": {
+          "title": "Impor dari LinkedIn",
+          "text": "Isi CV Master Anda dari PDF gratis yang bisa diekspor dari profil LinkedIn Anda"
+        },
+        "languages": {
+          "title": "5 bahasa CV",
+          "text": "Prancis, Inggris, Italia, Spanyol, dan Jerman. Dalam bahasa Inggris, foto dan tanggal lahir disembunyikan sesuai kebiasaan negara berbahasa Inggris"
+        },
+        "pdf": {
+          "title": "Ekspor PDF ramah ATS",
+          "text": "Teks asli dan struktur jelas: terbaca oleh robot, nyaman bagi perekrut"
+        },
+        "offline": {
+          "title": "Bisa dipasang dan offline",
+          "text": "Tambahkan LocalATSCV ke layar utama dan tetap bekerja tanpa koneksi"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan umum",
+      "text": "Pertanyaan Anda tidak ada di sini? Kirimi kami email:",
+      "items": {
+        "ats": {
+          "q": "Apa itu ATS?",
+          "a": "Applicant Tracking System adalah perangkat lunak yang dipakai perekrut untuk menerima, menyaring, dan mencari lamaran. Sistem ini mengubah CV Anda menjadi teks dan mengindeksnya: jika teks diekstrak dengan buruk atau kata kunci yang tepat tidak ada, lamaran Anda sulit ditemukan"
+        },
+        "storage": {
+          "q": "Di mana data saya disimpan?",
+          "a": "Hanya di browser Anda, di IndexedDB, basis data yang ada di setiap browser modern. Data tidak pernah melewati server kami, yang hanya bisa menyajikan file aplikasi"
+        },
+        "clear": {
+          "q": "Apa yang terjadi jika saya menghapus data browser?",
+          "a": "CV Anda akan terhapus, karena tidak tersimpan di tempat lain. Ekspor cadangan JSON secara berkala: Anda bisa mengimpornya kembali kapan saja, di perangkat mana pun"
+        },
+        "score": {
+          "q": "Apakah skor menjamin CV saya akan lolos seleksi?",
+          "a": "Tidak. Setiap ATS punya aturan sendiri dan keputusan akhir diambil oleh manusia. Skor adalah indikator: ia memeriksa apakah CV Anda memakai kosakata lowongan dan apakah mesin bisa membacanya dengan benar"
+        },
+        "photo": {
+          "q": "Mengapa foto hilang dalam bahasa Inggris?",
+          "a": "Di Inggris, Amerika Serikat, dan banyak negara berbahasa Inggris, foto dan tanggal lahir tidak disarankan untuk mengurangi diskriminasi dalam perekrutan. Beberapa perekrut bahkan menolak CV yang mencantumkannya"
+        },
+        "free": {
+          "q": "Apakah benar-benar gratis?",
+          "a": "Ya. LocalATSCV adalah proyek sumber terbuka berlisensi MIT, tanpa iklan atau langganan. Biaya hostingnya hampir nol, karena browser Anda yang mengerjakan semuanya"
+        },
+        "templates": {
+          "q": "Apakah template grafis lolos ATS?",
+          "a": "Ya. Setiap template mencetak teks asli sesuai urutan baca, dengan judul bagian standar: bentuk, bilah, dan ikon adalah gambar yang diabaikan robot. Template satu kolom tetap yang paling aman, dan pemeriksaan ATS di editor menguji tata letak Anda secara langsung"
+        },
+        "import": {
+          "q": "Bisakah saya memakai CV saya yang sekarang atau profil LinkedIn saya?",
+          "a": "Bisa. Impor CV PDF atau Word (.docx), PDF profil LinkedIn Anda (di komputer), atau arsip data LinkedIn Anda (dari aplikasi seluler): isinya dibaca di browser Anda dan ditata ke dalam editor"
+        },
+        "offline": {
+          "q": "Apakah LocalATSCV bisa dipakai offline?",
+          "a": "Ya. Ini aplikasi web yang bisa dipasang: setelah kunjungan pertama, semuanya berjalan tanpa koneksi, termasuk ekspor PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Siap lolos dari penyaringan?",
+      "text": "Buat CV Master Anda dalam hitungan menit. Tidak ada yang meninggalkan perangkat ini",
+      "button": "Mulai"
+    },
+    "demo": {
+      "role": "Pengembang Front-end",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Pengalaman",
+      "jobTitle": "Pengembang Angular",
+      "jobMeta": "PT Contoh · 2022 – sekarang",
+      "bullets": {
+        "migration": "Memigrasikan 40 layar ke <k>Angular</k> dan <k>TypeScript</k>, waktu muat berkurang 35%",
+        "testing": "<w>Bertanggung jawab atas</w> strategi pengujian end-to-end",
+        "delivery": "Continuous delivery dengan <k>GitLab CI</k> untuk 3 tim produk"
+      },
+      "weakLabel": "Frasa lemah",
+      "weakReplacement": "“Memimpin”",
+      "skills": "Keahlian",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Aksesibilitas",
+      "score": "Kecocokan dengan lowongan",
+      "sent": "0 byte terkirim",
+      "robot": "KEAHLIAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pengembang Front-end Angular <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pengembang Angular <n>tin@example.com</n> 2022 – sekarang TypeScript <n>●●●○○</n> PT Contoh BAHASA Inggris Memigrasikan 40 layar ke…"
+    }
+  },
+  "dialog": {
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "create": "Buat",
+    "save": "Simpan",
+    "import": "Impor"
+  },
+  "editor": {
+    "list": {
+      "title": "CV saya",
+      "subtitle": "Disimpan hanya di browser ini",
+      "new": "CV baru",
+      "newBlank": "CV kosong",
+      "newBlankHint": "Mulai dari halaman kosong",
+      "newSample": "Mulai dari contoh",
+      "newSampleHint": "CV fiktif yang sudah terisi untuk menjelajahi editor",
+      "import": "Pulihkan cadangan",
+      "exportAll": "Ekspor semua",
+      "emptyTitle": "Belum ada CV",
+      "emptyText": "Buat CV Master Anda: semua pengalaman di satu tempat, siap disesuaikan untuk setiap lowongan",
+      "open": "Buka",
+      "actions": "Tindakan",
+      "duplicate": "Duplikat",
+      "export": "Ekspor (JSON)",
+      "delete": "Hapus",
+      "updated": "Diubah {{date}}",
+      "versions": "Versi: {{count}}",
+      "backupHint": "CV Anda hanya ada di browser ini. Ekspor cadangan JSON secara berkala: jika Anda menghapus data browser, cadangan ini memungkinkan Anda memulihkan semuanya",
+      "defaultName": "CV saya",
+      "copySuffix": "(salinan)",
+      "deleteTitle": "Hapus “{{name}}”?",
+      "deleteText": "CV beserta semua versinya akan dihapus permanen dari browser ini",
+      "exportDone": "Cadangan diunduh",
+      "importConfirmTitle": "Impor cadangan ini?",
+      "importConfirmText": "CV dalam cadangan ini: {{count}}. CV yang sudah ada di browser ini akan diganti",
+      "importDone": "Cadangan diimpor: {{count}} CV",
+      "importError": {
+        "invalidJson": "File ini bukan JSON yang valid",
+        "notABackup": "File ini bukan cadangan LocalATSCV",
+        "newerVersion": "Cadangan ini berasal dari versi LocalATSCV yang lebih baru: perbarui aplikasi terlebih dahulu"
+      },
+      "importPdf": "Impor CV (PDF atau Word)",
+      "importPdfHint": "Bawa CV yang sudah ada ke template kami",
+      "importLinkedin": "Impor dari LinkedIn",
+      "importLinkedinHint": "Dari PDF profil Anda"
+    },
+    "toolbar": {
+      "back": "CV saya",
+      "name": "Nama CV",
+      "cvLanguage": "Bahasa CV",
+      "accent": "Warna aksen",
+      "customAccent": "Warna kustom",
+      "saved": "Tersimpan",
+      "saving": "Menyimpan…",
+      "saveError": "Gagal menyimpan",
+      "edit": "Edit",
+      "preview": "Pratinjau",
+      "exportPdf": "Ekspor ke PDF",
+      "undo": "Urungkan (Ctrl+Z)",
+      "redo": "Ulangi (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokumen yang diedit",
+      "cv": "CV",
+      "letter": "Surat lamaran"
+    },
+    "letter": {
+      "title": "Surat lamaran",
+      "versionOwn": "Versi ini punya surat sendiri",
+      "versionShared": "Versi ini memakai surat dari Master: mengeditnya di sini akan membuat salinan untuk versi ini",
+      "useMaster": "Pakai surat dari Master",
+      "recipient": "Penerima",
+      "recipientPlaceholder": "PT Contoh\nBagian Rekrutmen\nJl. Jenderal Sudirman No. 10, Jakarta 10220",
+      "place": "Tempat",
+      "date": "Tanggal",
+      "dateHint": "Kosong: tanggal hari pencetakan",
+      "subject": "Perihal",
+      "subjectPlaceholder": "Lamaran untuk posisi…",
+      "greeting": "Salam pembuka",
+      "body": "Isi surat",
+      "bodyPlaceholder": "Tiga paragraf singkat: apa yang menarik Anda dari perusahaan, apa yang Anda bawa, langkah berikutnya yang Anda usulkan",
+      "bodyHint": "Baris kosong memisahkan dua paragraf · **tebal** untuk kata kunci",
+      "outline": "Sisipkan kerangka",
+      "closing": "Salam penutup",
+      "fileName": "Surat lamaran"
+    },
+    "fit": {
+      "pages": "{{count}} halaman",
+      "onePage": "Muat dalam satu halaman",
+      "hintMany": "Sebagian besar perekrut mengharapkan CV satu halaman",
+      "hintOne": "Format ideal untuk sebagian besar lamaran",
+      "stillTooLong": "Masih terlalu panjang, bahkan setelah dipadatkan: persingkat beberapa poin atau sembunyikan elemen di salah satu versi",
+      "fit": "Muatkan dalam satu halaman",
+      "settings": "Pengaturan tata letak",
+      "spacing": "Jarak",
+      "scale": "Ukuran teks",
+      "settingsHint": "Teks tetap teks asli: hanya tata letaknya yang berubah",
+      "reset": "Tata letak template",
+      "grayscale": "Lihat hitam putih",
+      "grayscaleHint": "Mensimulasikan cetakan hitam putih: PDF yang diekspor tetap berwarna"
+    },
+    "versions": {
+      "label": "Versi yang ditampilkan",
+      "master": "CV Master",
+      "masterHint": "Semua konten, tanpa filter",
+      "new": "Versi baru",
+      "newText": "Versi tertarget dimulai dari seluruh CV Master Anda: lalu hapus centang yang tidak diperlukan untuk lamaran ini",
+      "nameLabel": "Nama versi",
+      "namePlaceholder": "Mis. Front-end Dev – Perusahaan X",
+      "rename": "Ganti nama versi",
+      "delete": "Hapus versi",
+      "deleteTitle": "Hapus versi “{{name}}”?",
+      "deleteText": "Hanya pilihannya yang dihapus: semua konten tetap ada di CV Master Anda",
+      "banner": "Versi “{{name}}”: hapus centang yang tidak boleh tampil. Tidak ada yang terhapus dari CV Master Anda",
+      "include": "Sertakan dalam versi ini"
+    },
+    "enRule": "CV bahasa Inggris: foto, tanggal lahir, dan kewarganegaraan disembunyikan sesuai kebiasaan negara berbahasa Inggris",
+    "profile": {
+      "title": "Profil",
+      "photo": "Foto",
+      "photoAdd": "Tambahkan foto",
+      "photoChange": "Ganti",
+      "photoRemove": "Hapus",
+      "photoHint": "Diperkecil dan disimpan hanya di perangkat ini",
+      "photoError": "Gambar ini tidak dapat dibaca",
+      "hiddenInEnglish": "Disembunyikan dalam bahasa Inggris",
+      "firstName": "Nama depan",
+      "lastName": "Nama belakang",
+      "headline": "Judul CV",
+      "headlinePlaceholder": "Mis. Pengembang Front-end",
+      "email": "Email",
+      "phone": "Telepon",
+      "location": "Kota",
+      "birthDate": "Tanggal lahir",
+      "nationality": "Kewarganegaraan",
+      "summary": "Ringkasan",
+      "summaryPlaceholder": "Dua atau tiga kalimat yang merangkum profil Anda dan apa yang Anda cari",
+      "links": "Tautan",
+      "linkLabel": "Nama tautan",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Alamat tautan",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Tambahkan tautan",
+      "removeLink": "Hapus tautan",
+      "drivingLicense": "SIM",
+      "drivingLicensePlaceholder": "Mis. SIM A, punya kendaraan sendiri",
+      "qrToggle": "Tampilkan tautan ini sebagai kode QR",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) ditambahkan otomatis. Tombol QR menampilkan tautan sebagai kode QR di sebagian besar template grafis"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Pengalaman",
+        "education": "Pendidikan",
+        "projects": "Proyek",
+        "certifications": "Sertifikasi",
+        "custom": "Bagian bebas",
+        "skills": "Keahlian",
+        "languages": "Bahasa",
+        "interests": "Minat"
+      },
+      "add": "Tambahkan bagian",
+      "titleLabel": "Judul bagian",
+      "empty": "Bagian kosong: tidak akan muncul di CV",
+      "addItem": {
+        "experience": "Tambahkan pengalaman",
+        "education": "Tambahkan pendidikan",
+        "projects": "Tambahkan proyek",
+        "certifications": "Tambahkan sertifikasi",
+        "custom": "Tambahkan item",
+        "skills": "Tambahkan keahlian",
+        "languages": "Tambahkan bahasa",
+        "interests": "Tambahkan minat"
+      },
+      "deleteTitle": "Hapus bagian “{{name}}”?",
+      "deleteText": "Isinya akan dihapus dari CV Master dan semua versinya"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Jabatan",
+          "subtitle": "Perusahaan"
+        },
+        "education": {
+          "title": "Gelar",
+          "subtitle": "Sekolah atau universitas"
+        },
+        "projects": {
+          "title": "Nama proyek",
+          "subtitle": "Peran atau teknologi"
+        },
+        "certifications": {
+          "title": "Sertifikasi",
+          "subtitle": "Penerbit"
+        },
+        "custom": {
+          "title": "Judul",
+          "subtitle": "Subjudul"
+        }
+      },
+      "location": "Lokasi",
+      "url": "Tautan",
+      "start": "Mulai",
+      "end": "Selesai",
+      "date": "Tanggal diperoleh",
+      "current": "Masih berlangsung",
+      "untitled": "Tanpa judul",
+      "bullets": "Pencapaian",
+      "bulletPlaceholder": "Mulai dengan kata kerja aksi dan nyatakan hasilnya dengan angka",
+      "addBullet": "Tambahkan poin",
+      "bulletHint": "Enter: poin baru",
+      "boldHint": "**kata** untuk menebalkan"
+    },
+    "items": {
+      "skillLabel": "Kategori",
+      "skillLabelPlaceholder": "Mis. Front-end",
+      "skillKeywords": "Keahlian",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Bahasa",
+      "languageLevel": "Tingkat",
+      "languageLevelPlaceholder": "Mis. C1, fluent",
+      "interest": "Minat",
+      "interestPlaceholder": "Mis. Panjat tebing",
+      "levelDetected": "Tingkat dikenali: template dengan bilah akan menampilkannya",
+      "levelUnknown": "Tingkat tidak dikenali, tanpa bilah: gunakan A1 sampai C2 atau saran dari daftar",
+      "levelEmpty": "Isi tingkat untuk menampilkan bilah",
+      "levelHint": "Gunakan tingkat Eropa (A1 sampai C2) atau kata seperti “fluent” atau “native”: sebagian template juga menampilkannya sebagai bilah, yang pratinjaunya terlihat dari titik di kanan"
+    },
+    "actions": {
+      "menu": "Tindakan",
+      "moveUp": "Pindah ke atas",
+      "moveDown": "Pindah ke bawah",
+      "duplicate": "Duplikat",
+      "delete": "Hapus",
+      "drag": "Seret untuk mengatur ulang"
+    },
+    "month": "Bulan",
+    "year": "Tahun",
+    "noMonth": "Bulan",
+    "preview": {
+      "page": "Halaman {{n}}"
+    },
+    "notFound": {
+      "title": "CV tidak ditemukan",
+      "text": "CV ini tidak ada atau sudah dihapus dari browser ini"
+    },
+    "templates": {
+      "button": "Template",
+      "title": "Pilih template",
+      "subtitle": "Semua template dengan contoh CV lengkap, atau dengan CV Anda. Warna aksen berlaku untuk semua template",
+      "close": "Tutup",
+      "filter": "Filter template",
+      "filters": {
+        "all": "Semua",
+        "graphic": "Grafis",
+        "sober": "Sederhana"
+      },
+      "ats": "Kompatibilitas ATS",
+      "levels": {
+        "excellent": "sangat baik",
+        "good": "baik",
+        "fair": "cukup"
+      },
+      "atsHint": "Setiap template mencetak teks asli. Tata letak dua kolom dibaca dengan baik oleh sebagian besar ATS modern, tetapi beberapa alat lama mencampur kolom: jika ragu, pilih template satu kolom",
+      "names": {
+        "classic": {
+          "name": "Klasik",
+          "description": "Bersih dan efektif: satu kolom, judul bergaris bawah, tanpa gangguan"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Banner berwarna, judul tegas, dan keahlian berbentuk tag"
+        },
+        "elegant": {
+          "name": "Elegan",
+          "description": "Kepala halaman di tengah dan huruf serif untuk tampilan berkelas"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Tepi berwarna, detail huruf monospace, dan keahlian bergaya kode"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Gaya Swiss: nama besar, judul di margin, banyak ruang kosong"
+        },
+        "sidebar": {
+          "name": "Kolom",
+          "description": "Bilah samping berwarna dengan foto, kontak, dan keahlian"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Banner foto, ikon, linimasa, dan bilah bahasa, tetap sepenuhnya terbaca ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Bentuk organik pastel, foto bulat besar, linimasa, dan kode QR dalam dua kolom"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Tampilan Signature dalam satu kolom: grafis dan sepenuhnya terbaca ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Banner gelap diagonal, pendar warna, kartu pengalaman, dan tag keahlian penuh"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Komposisi geometris warna primer di sekitar foto, huruf geometris, dan bentuk sebelum setiap judul"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Tata letak majalah: nama serif besar, pengantar miring, bagian bernomor, dan potret bergeser"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brutalisme: garis hitam tebal, bayangan tegas, blok warna mencolok, dan label hitam"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Gradien mesh dengan warna aksen Anda, kartu kontak efek kaca, dan kartu berbingkai gradien"
+        },
+        "swiss": {
+          "name": "Swiss",
+          "description": "Gaya poster Swiss: nama raksasa, pita warna, garis hitam tebal, dan bagian bernomor"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Kertas gading, bingkai ganda tipis, ornamen belah ketupat, dan huruf Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturno",
+          "description": "Mode gelap: latar malam, aksen neon, dan linimasa bercahaya, cocok untuk lamaran digital"
+        },
+        "wave": {
+          "name": "Gelombang",
+          "description": "Banner berwarna berujung gelombang, foto bulat, dan judul bergelombang, lembut dan ramah"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Petak bento membulat: foto, nama, dan kode QR dalam kisi, satu petak per bagian"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Gambar teknik: kertas berpetak, tanda sudut, garis ukur, dan label monospace"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Konfeti geometris era 80-an, warna mencolok, dan judul bergaris bawah zigzag"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Banner besar terbelah: teks di atas blok warna dan foto dua warna"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografi sebagai satu-satunya hiasan: nama raksasa yang sebagian hanya garis luar dan judul sangat besar"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Satu warna pastel per bagian, judul berbentuk pil, dan pendar warna-warni"
+        },
+        "executive": {
+          "name": "Eksekutif",
+          "description": "Banner biru dongker, garis emas, dan nama serif, untuk posisi pimpinan"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Minimalisme Jepang: kertas washi, lingkaran ensō dengan warna aksen Anda, dan sapuan kuas"
+        },
+        "ribbon": {
+          "name": "Pita",
+          "description": "Judul bagian di atas pita berekor burung walet, kepala halaman di tengah"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Foto heksagonal, sarang lebah di sudut, dan heksagon sebelum judul"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Kepala halaman dari lapisan kertas potong, bagian seperti lembaran kertas"
+        },
+        "thread": {
+          "name": "Benang",
+          "description": "Benang tak terputus menghubungkan kepala halaman dan setiap bagian, dengan titik untuk setiap jabatan"
+        }
+      },
+      "preview": {
+        "label": "Isi gambar mini",
+        "sample": "Contoh lengkap",
+        "mine": "CV saya"
+      }
+    },
+    "print": {
+      "title": "Ekspor ke PDF",
+      "text": "Jendela cetak browser Anda akan terbuka. Untuk PDF yang sempurna:",
+      "tips": {
+        "destination": "Tujuan: “Simpan sebagai PDF”",
+        "margins": "Margin: “Tidak ada”",
+        "headers": "Hapus centang “Header dan footer”",
+        "background": "Centang “Grafis latar belakang” agar warna tetap ada"
+      },
+      "dontShow": "Jangan tampilkan lagi",
+      "cancel": "Batal",
+      "print": "Buka jendela cetak"
+    },
+    "job": {
+      "title": "Sesuaikan dengan lowongan",
+      "sources": "LinkedIn, JobStreet, Glints, Kalibrr, Indeed…",
+      "placeholder": "Tempel di sini teks lengkap lowongan: posisi, tanggung jawab, persyaratan",
+      "urlWarning": "Tempel teks lowongan, bukan tautannya: LocalATSCV tidak pernah menghubungi situs web mana pun, jadi data Anda tetap bersama Anda",
+      "empty": "Kata kunci tidak ditemukan: tempel lowongan yang lebih lengkap",
+      "score": "Kecocokan dengan lowongan",
+      "summary": "{{found}} dari {{total}} kata kunci ada",
+      "found": "Kata kunci di CV Anda",
+      "missing": "Kata kunci yang hilang",
+      "missingHint": "Klik kata kunci untuk menambahkannya ke keahlian Anda, atau masukkan ke salah satu pengalaman",
+      "addToSkills": "Tambahkan ke keahlian",
+      "added": "“{{keyword}}” ditambahkan ke keahlian Anda",
+      "keywordsGroup": "Kata kunci",
+      "createVersion": "Buat versi tertarget untuk lowongan ini",
+      "createVersionHint": "Pengalaman dan poin yang tidak berkaitan dengan lowongan akan dihapus centangnya: Anda bisa menyesuaikannya",
+      "savedInVersion": "Lowongan disimpan bersama versi “{{name}}”"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” menggambarkan tugas: mulai dengan kata kerja aksi"
+    },
+    "fonts": {
+      "title": "Tipografi",
+      "heading": "Judul",
+      "body": "Teks isi",
+      "default": "Bawaan template",
+      "hint": "ATS membaca semua font ini dengan baik: teks tetap teks asli"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Yang baru",
+    "title": "Catatan perubahan",
+    "subtitle": "Setiap versi LocalATSCV, dengan fitur baru dan perbaikannya",
+    "current": "Versi saat ini",
+    "frenchOnly": "Catatan perubahan ditulis dalam bahasa Prancis",
+    "error": "Catatan perubahan tidak dapat dimuat",
+    "types": {
+      "added": "Ditambahkan",
+      "changed": "Diubah",
+      "fixed": "Diperbaiki",
+      "removed": "Dihapus",
+      "deprecated": "Usang",
+      "security": "Keamanan",
+      "other": "Lainnya"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Penganalisis",
+    "title": "Apakah CV Anda lolos dari robot?",
+    "subtitle": "Letakkan CV PDF yang dibuat dengan alat apa pun: LocalATSCV membacanya seperti ATS dan memberi tahu apa yang perlu diperbaiki",
+    "drop": "Seret CV Anda ke sini",
+    "dropActive": "Lepaskan file untuk memulai analisis",
+    "hint": "Hanya PDF, maks. 15 MB",
+    "choose": "Pilih file",
+    "reading": "Membaca PDF…",
+    "privacy": "File dianalisis di browser Anda: tidak pernah dikirim ke mana pun",
+    "another": "Analisis CV lain",
+    "errors": {
+      "notPdf": "File ini bukan PDF",
+      "tooLarge": "File ini lebih dari 15 MB",
+      "encrypted": "PDF ini dilindungi kata sandi: ATS juga tidak bisa membacanya",
+      "unreadable": "PDF ini tidak dapat dibaca: mungkin rusak"
+    },
+    "stats": "{{pages}} halaman · {{words}} kata",
+    "verdict": {
+      "excellent": "Sangat baik",
+      "good": "Baik",
+      "fair": "Perlu diperbaiki",
+      "poor": "Kritis"
+    },
+    "verdictText": {
+      "excellent": "Robot membaca CV Anda dengan sangat baik",
+      "good": "Beberapa penyesuaian akan membuatnya lebih efektif",
+      "fair": "Beberapa masalah menghambat pembacaan oleh ATS",
+      "poor": "ATS kemungkinan melewatkan hal-hal penting"
+    },
+    "categories": {
+      "readability": "Keterbacaan mesin",
+      "structure": "Struktur",
+      "content": "Konten"
+    },
+    "sectionNames": {
+      "experience": "Pengalaman",
+      "education": "Pendidikan",
+      "skills": "Keahlian"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Teks yang terbaca mesin",
+        "pass": "Semua teks di CV Anda bisa diekstrak",
+        "warn": "Beberapa halaman tidak berisi teks terbaca: kemungkinan gambar atau hasil pindaian",
+        "fail": "Tidak ada teks terbaca: CV ini kemungkinan gambar atau hasil pindaian, dan ATS tidak akan mendapat apa pun darinya. Ekspor ke PDF dari pengolah kata Anda"
+      },
+      "columns": {
+        "title": "Tata letak",
+        "pass": "Urutan baca linear, kolom tidak tercampur",
+        "warn": "Tata letak kolom terdeteksi: teks bisa terbaca dalam urutan yang salah. Periksa “Yang dibaca robot” di bawah"
+      },
+      "order": {
+        "title": "Urutan baca di file",
+        "pass": "Teks ditulis di file sesuai urutan baca",
+        "warnHeader": "Nama dan kepala halaman Anda ditulis di file setelah bagian CV lainnya: ATS yang membaca file secara berurutan mungkin tidak menemukan nama Anda",
+        "warn": "{{percent}}% teks ditulis di file di luar urutan baca: sebagian ATS akan membaca bagian ini dalam urutan yang salah",
+        "fail": "{{percent}}% teks ditulis di file secara acak, khas CV yang dibuat dengan kotak teks bebas (Canva, PowerPoint…): banyak ATS akan membaca CV Anda campur aduk. Bandingkan dua hasil baca di bawah"
+      },
+      "unreadable": {
+        "title": "Ikon dan bilah keahlian",
+        "pass": "Tidak ada ikon atau karakter tak terbaca",
+        "warn": "Ikon atau bilah terdeteksi ({{count}}): ATS membacanya sebagai karakter aneh. Ganti dengan teks",
+        "fail": "Ikon atau bilah terdeteksi ({{count}}): ganti dengan teks, misalnya “Inggris: C1” sebagai pengganti titik"
+      },
+      "contact": {
+        "title": "Informasi kontak",
+        "pass": "Alamat email dan nomor telepon ditemukan",
+        "warnNoPhone": "Nomor telepon tidak ditemukan",
+        "warnNoEmail": "Alamat email tidak ditemukan",
+        "fail": "Email maupun telepon tidak ditemukan: tulis sebagai teks, bukan di dalam gambar"
+      },
+      "sections": {
+        "title": "Bagian standar",
+        "pass": "Pengalaman, pendidikan, dan keahlian teridentifikasi dengan jelas",
+        "warn": "Bagian ini tidak dikenali: gunakan judul standar",
+        "fail": "Tidak ada bagian standar yang dikenali: ATS mengandalkan judul seperti “Pengalaman” atau “Pendidikan”"
+      },
+      "length": {
+        "title": "Panjang",
+        "pass": "{{pages}} halaman, {{words}} kata: panjang ideal",
+        "warn": "{{pages}} halaman, {{words}} kata: usahakan 1 sampai 2 halaman dan 250 sampai 1.000 kata",
+        "fail": "{{pages}} halaman, {{words}} kata: terlalu pendek atau terlalu panjang untuk dinilai dengan baik"
+      },
+      "quantified": {
+        "title": "Hasil terukur",
+        "pass": "{{percent}}% poin Anda memuat angka, bagus sekali",
+        "warn": "Hanya {{percent}}% poin yang memuat angka: tambahkan hasil terukur (persentase, nilai, volume)",
+        "fail": "Tidak ada hasil terukur: perekrut dan ATS menghargai pencapaian yang terukur"
+      },
+      "weakPhrases": {
+        "title": "Kata kerja aksi",
+        "pass": "Tidak ada frasa lemah di awal poin",
+        "warn": "Awalan ini menggambarkan tugas, bukan hasil: mulai dengan kata kerja aksi",
+        "fail": "Awalan ini menggambarkan tugas, bukan hasil: mulai dengan kata kerja aksi"
+      },
+      "dates": {
+        "title": "Tanggal",
+        "pass": "Pengalaman Anda bertanggal",
+        "warn": "Hanya satu tahun ditemukan: cantumkan tanggal di setiap jabatan, ATS memakainya untuk menghitung lama pengalaman Anda",
+        "fail": "Tanggal tidak ditemukan: ATS memakainya untuk menghitung lama pengalaman Anda"
+      }
+    },
+    "robot": {
+      "title": "Yang dibaca robot",
+      "text": "Teks yang disusun ulang baris demi baris, seperti yang dilakukan sebagian besar ATS. Jika di sini berantakan atau tidak lengkap, begitu pula bagi perekrut",
+      "empty": "Tidak ada teks yang dapat diekstrak",
+      "position": "Berdasarkan posisi",
+      "file": "Urutan file",
+      "fileText": "Teks dalam urutan penulisannya di file: begitulah ATS yang tidak menyusun ulang tata letak membacanya. Seharusnya mengikuti urutan baca CV Anda"
+    },
+    "cta": {
+      "title": "Mulai lagi dengan dasar yang benar",
+      "text": "Buat CV ramah ATS di editor, lalu sesuaikan untuk setiap lowongan",
+      "button": "Buka editor",
+      "import": "Bawa CV ini ke template kami"
+    },
+    "live": {
+      "title": "Pemeriksaan ATS langsung",
+      "issues": "{{count}} poin yang perlu diperiksa di template ini",
+      "allGood": "Tidak ada masalah terdeteksi di template ini",
+      "hint": "Dihitung pada tata letak yang ditampilkan, dengan mesin yang sama dengan penganalisis CV"
+    },
+    "method": {
+      "title": "Bagaimana skor ini dihitung?",
+      "intro": "Tidak ada skor ATS resmi: setiap perangkat lunak rekrutmen (Workday, Taleo, Greenhouse, Lever…) punya aturan sendiri yang sering kali rahasia. Indeks ini memeriksa hal yang membuat sebagian besar dari mereka tersandung, dengan skala berikut:",
+      "disclaimer": "Kriteria ini berasal dari rekomendasi publik penyedia ATS dan kesalahan baca yang paling umum (teks dalam gambar, kolom, ikon, judul tidak standar). Skor membantu Anda memperbaiki CV: skor tidak memprediksi hasil seleksi"
+    }
+  },
+  "import": {
+    "title": "Impor CV",
+    "linkedinTitle": "Impor dari LinkedIn",
+    "text": "Pilih CV PDF atau Word (.docx): isinya diekstrak di browser Anda dan ditata ke bagian-bagian editor. Setelah itu Anda bisa memilih template",
+    "choose": "Pilih file",
+    "chooseFile": "Pilih file",
+    "hint": "PDF atau Word (.docx), maks. 15 MB",
+    "reading": "Mengimpor…",
+    "privacy": "File dibaca di browser Anda: tidak pernah dikirim ke mana pun",
+    "close": "Tutup",
+    "done": "CV diimpor ({{items}} item): periksa setiap bagian",
+    "errors": {
+      "tooLarge": "File ini lebih dari 15 MB",
+      "encrypted": "PDF ini dilindungi kata sandi",
+      "unreadable": "File ini tidak dapat dibaca: mungkin rusak",
+      "empty": "Tidak ada teks yang bisa dipakai: PDF ini kemungkinan gambar atau hasil pindaian",
+      "unsupported": "Pilih PDF, file Word (.docx), atau arsip ZIP LinkedIn",
+      "archiveEmpty": "Arsip ini tidak berisi data profil LinkedIn yang bisa dipakai"
+    },
+    "hintArchive": "PDF (komputer) atau arsip ZIP (aplikasi seluler)",
+    "linkedin": {
+      "computer": {
+        "title": "Di komputer: PDF profil Anda",
+        "step1": "Buka linkedin.com di browser komputer (opsi ini tidak ada di aplikasi)",
+        "step2": "Di profil Anda, klik “Sumber Daya” (atau “Lainnya”), lalu “Simpan sebagai PDF”",
+        "step3": "Pilih PDF tersebut di bawah"
+      },
+      "archive": {
+        "title": "Di aplikasi seluler: arsip data Anda",
+        "step1": "Di aplikasi, ketuk foto Anda, lalu Pengaturan dan Privasi data",
+        "step2": "Pilih “Dapatkan salinan data Anda” dan centang Profil, Posisi, Pendidikan, Keahlian, dan Bahasa",
+        "step3": "LinkedIn akan mengirim email dalam beberapa menit: unduh arsip ZIP",
+        "step4": "Pilih file ZIP tersebut di bawah, tanpa mengekstraknya"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Dokumen ini ditampilkan dalam bahasa Inggris. Hanya versi bahasa Prancis yang berkekuatan hukum.",
+    "error": "Dokumen ini tidak dapat dimuat."
+  }
+}

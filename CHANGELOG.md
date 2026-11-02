@@ -4,6 +4,21 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.6.0] - 2026-11-02
+
+### Ajouté
+
+- Interface traduite en 44 langues, dont l'arabe, l'hébreu, le persan et l'ourdou lus de droite à gauche
+- Une adresse par langue pour les pages publiques (/en, /ja, /pt-br/analyze…), avec balises hreflang, canonique et plan du site généré automatiquement au build
+- Sélecteur de langue avec champ de recherche (nom natif, nom traduit ou code) et navigation au clavier
+- Bandeau proposant la langue du navigateur lors d'une première visite, et liens vers toutes les langues en pied de page
+- Démo de la page d'accueil traduite, avec un CV d'exemple dans la langue de l'interface
+
+### Modifié
+
+- Mise en page en propriétés logiques (début/fin) pour que l'interface s'inverse proprement en mode droite à gauche ; l'aperçu du CV reste de gauche à droite
+- Traductions de l'interface chargées à la demande au lieu d'être toutes mises en cache hors ligne dès la première visite
+
 ## [0.5.0] - 2026-11-01
 
 ### Ajouté
@@ -130,6 +145,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.6.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.6.0
 [0.5.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.3.0

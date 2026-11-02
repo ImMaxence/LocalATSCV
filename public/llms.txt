@@ -1,7 +1,7 @@
 # LocalATSCV
 
 > Générateur de CV gratuit et open source (licence MIT), optimisé pour les ATS (logiciels de suivi des candidatures). Tout fonctionne dans le navigateur : les CV, la photo et les offres d'emploi ne sont jamais envoyés à un serveur.
-> Free, open source resume builder optimized for applicant tracking systems (ATS). It runs entirely in the browser: no resume data is ever sent to a server. Interface in French, English, Italian, Spanish and German.
+> Free, open source resume builder optimized for applicant tracking systems (ATS). It runs entirely in the browser: no resume data is ever sent to a server. Interface in 44 languages, each with its own URL (for example /en, /de, /ja, /pt-br).
 
 LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible par les robots de recrutement. Points clés :
 

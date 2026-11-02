@@ -27,7 +27,12 @@ const pagesFor = (height: number) => Math.max(1, Math.ceil((height - 2) / PAGE_H
   imports: [CvDocument, TranslocoDirective],
   host: { class: 'block' },
   template: `
-    <div #frame class="relative w-full overflow-hidden" [style.height.px]="frameHeight()">
+    <div
+      #frame
+      class="relative w-full overflow-hidden"
+      dir="ltr"
+      [style.height.px]="frameHeight()"
+    >
       <div
         #paper
         class="absolute top-0 left-0 origin-top-left"

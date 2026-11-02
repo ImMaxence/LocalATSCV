@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV sākumlapa",
+    "main": "Galvenā navigācija",
+    "how": "Kā tas darbojas",
+    "privacy": "Privātums",
+    "analyze": "Analizēt CV",
+    "editor": "Izveidot manu CV",
+    "skipToContent": "Pāriet uz saturu"
+  },
+  "theme": {
+    "label": "Motīvs",
+    "light": "Gaišs",
+    "system": "Sistēmas",
+    "dark": "Tumšs"
+  },
+  "lang": {
+    "label": "Saskarnes valoda",
+    "suggestion": "Skatīt šo lapu latviski",
+    "dismiss": "Aizvērt",
+    "search": "Meklēt valodu",
+    "noResult": "Valoda nav atrasta"
+  },
+  "pages": {
+    "home": "ATS draudzīgi CV, 100 % lokāli",
+    "editor": "Redaktors",
+    "analyze": "CV analizators",
+    "changelog": "Jaunumi",
+    "legalNotice": "Juridiskā informācija",
+    "terms": "Lietošanas noteikumi",
+    "privacy": "Privātuma politika"
+  },
+  "seo": {
+    "home": "Bezmaksas ATS draudzīgs CV veidotājs: 30 grafiskas veidnes, saskaņota pieteikuma vēstule, pielāgošana katram darba sludinājumam un ATS vērtējums. Atvērtais kods, jūsu dati paliek pārlūkā",
+    "editor": "CV redaktors ar tiešo priekšskatījumu, Master CV un mērķētām versijām, ATS pārbaudi un PDF eksportu ar īstu tekstu. Viss paliek jūsu pārlūkā",
+    "analyze": "Bez maksas analizējiet CV PDF formātā: ATS vērtējums no 100, labojamās vietas un teksts tā, kā to nolasa atlases sistēma. Fails nekad nepamet jūsu pārlūku",
+    "changelog": "LocalATSCV jaunumi pa versijām: jaunas CV veidnes, funkcijas un labojumi",
+    "legalNotice": "LocalATSCV juridiskā informācija: izdevējs, mitināšana un kontakti",
+    "terms": "LocalATSCV lietošanas noteikumi: bezmaksas atvērtā koda CV veidotājs",
+    "privacy": "LocalATSCV privātuma politika: dati netiek vākti, jūsu CV paliek pārlūkā"
+  },
+  "footer": {
+    "tagline": "ATS draudzīgs CV veidotājs, kas nekad neredz jūsu datus",
+    "product": "Produkts",
+    "legal": "Juridiski",
+    "project": "Projekts",
+    "changelog": "Jaunumi",
+    "sourceCode": "Pirmkods",
+    "reportIssue": "Ziņot par problēmu",
+    "license": "MIT licence",
+    "versionLabel": "Versija {{version}}, skatīt jaunumus"
+  },
+  "update": {
+    "title": "Pieejama jauna versija",
+    "text": "Pārlādējiet lapu, lai to izmantotu",
+    "changelog": "Skatīt jaunumus",
+    "reload": "Pārlādēt",
+    "later": "Vēlāk"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % lokāli · Bez maksas · Atvērtais kods",
+      "titleLine1": "CV, kas tiek garām robotiem",
+      "titleLine2": "Dati, kas paliek pie jums",
+      "subtitle": "LocalATSCV palīdz izveidot CV, kas optimizēts personāla atlases sistēmām (ATS), un dažos klikšķos pielāgot to katram amatam. Viss notiek jūsu pārlūkā: bez konta, nekādi dati netiek sūtīti",
+      "ctaPrimary": "Izveidot manu CV",
+      "ctaSecondary": "Analizēt esošu CV",
+      "points": {
+        "noAccount": "Bez reģistrācijas",
+        "offline": "Darbojas bezsaistē",
+        "atsPdf": "ATS nolasāms PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problēma",
+      "title": "Jūsu CV vispirms lasa mašīna",
+      "text": "Lielākā daļa lielo uzņēmumu un personāla atlases aģentūru šķiro pieteikumus ar ATS (Applicant Tracking System). Tā izvelk tekstu no jūsu CV, saglabā to datubāzē un ļauj atlases speciālistiem meklēt kandidātus pēc atslēgvārdiem",
+      "pitfalls": {
+        "layout": {
+          "title": "Sarežģīts izkārtojums",
+          "text": "Kolonnas, tabulas un teksta lodziņi sajauc lasīšanas secību: jūsu informācija iznāk juku jukām"
+        },
+        "image": {
+          "title": "Nesalasāms teksts",
+          "text": "Ikonas, prasmju joslas un daži dizaina rīku eksporti pārvēršas nesaprotamās zīmēs vai pazūd pavisam"
+        },
+        "keywords": {
+          "title": "Trūkstoši atslēgvārdi",
+          "text": "Ja sludinājuma vārdi neparādās jūsu CV, jūsu profils neparādās atlases speciālistu meklēšanā"
+        }
+      },
+      "seen": "Ko redzat jūs",
+      "read": "Ko nolasa robots",
+      "fix": "LocalATSCV dara pretēji: viena kolonna, īsts teksts un standarta sadaļu virsraksti, ko roboti nolasa pareizā secībā"
+    },
+    "how": {
+      "eyebrow": "Kā tas darbojas",
+      "title": "Uzrakstiet vienreiz, pielāgojiet bezgalīgi",
+      "text": "Četri soļi, lai jūsu Master CV kļūtu par katram amatam pielāgotu pieteikumu",
+      "steps": {
+        "profile": {
+          "title": "Aizpildiet savu Master CV",
+          "text": "Ievadiet visu savu pieredzi vienreiz un uz visiem laikiem vai importējiet sava LinkedIn profila PDF, lai ietaupītu laiku"
+        },
+        "offer": {
+          "title": "Ielīmējiet darba sludinājumu",
+          "text": "LocalATSCV izvelk atslēgvārdus un aprēķina atbilstības vērtējumu no 100, kas atjaunojas rakstīšanas laikā"
+        },
+        "compose": {
+          "title": "Izveidojiet mērķētu versiju",
+          "text": "Atzīmējiet atbilstošo pieredzi un punktus un pārkārtojiet tos, velkot un nometot. No jūsu Master nekas netiek dzēsts"
+        },
+        "export": {
+          "title": "Eksportējiet PDF",
+          "text": "PDF ar īstu tekstu, strukturēts un vienā kolonnā, robotiem tikpat salasāms kā atlases speciālistiem"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privātums",
+      "title": "Nulle datu mūsu serveros. Burtiski",
+      "text": "Nav datubāzes, ko uzlauzt: mūsu serveris jums nosūta tikai lietotni. Pēc tam viss notiek jūsu pārlūkā, pat bezsaistē",
+      "browser": {
+        "title": "Jūsu pārlūks",
+        "tag": "Jūsu ierīce",
+        "items": {
+          "master": "Master CV",
+          "photo": "Profila foto",
+          "versions": "Mērķētas versijas",
+          "settings": "Iestatījumi"
+        },
+        "note": "Saglabāts IndexedDB, tikai šajā ierīcē"
+      },
+      "flow": {
+        "app": "Lietotne, pirmajā ielādē",
+        "data": "Jūsu dati",
+        "never": "nekad"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Serveris",
+        "text": "Pasniedz lietotnes failus (HTML, CSS, JavaScript), neko vairāk",
+        "items": {
+          "noDb": "Nav datubāzes",
+          "noAccount": "Nav lietotāju kontu",
+          "noLogs": "Nav apmeklējumu žurnālu"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Bez konta",
+          "text": "Bez reģistrācijas, e-pasta un paroles. Atveriet lapu un sāciet"
+        },
+        "trackers": {
+          "title": "Bez izsekotājiem",
+          "text": "Bez statistikas, reklāmām un izsekošanas sīkdatnēm. Pat fonti tiek mitināti mūsu pašu serverī"
+        },
+        "csp": {
+          "title": "Tehniski aizslēgts",
+          "text": "Vietnes drošības politika (CSP) aizliedz pārlūkam sazināties ar jebkuru citu domēnu. Kods ir atvērts: pārbaudiet paši"
+        },
+        "backup": {
+          "title": "Jūsu rezerves kopijas, jūsu faili",
+          "text": "Eksportējiet visus savus datus JSON failā un importējiet tos atpakaļ jebkurā ierīcē"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkcijas",
+      "title": "Viss, kas nepieciešams, lai tiktu uz darba interviju",
+      "items": {
+        "master": {
+          "title": "Master CV un mērķētas versijas",
+          "text": "Viens pilns CV un tik daudz variantu, cik pieteikumu. Atzīmējiet, noņemiet atzīmi: nekas nepazūd"
+        },
+        "score": {
+          "title": "Atbilstības vērtējums",
+          "text": "Ielīmējiet sludinājumu: atrastie un trūkstošie atslēgvārdi un vērtējums no 100 reāllaikā"
+        },
+        "weak": {
+          "title": "Vāju formulējumu noteicējs",
+          "text": "„Atbildīgs par”, „palīdzēju”… tiek atzīmēti automātiski, ar darbības vārdu banku to aizstāšanai"
+        },
+        "analyzer": {
+          "title": "Esošu CV analizators",
+          "text": "Iemetiet citur veidotu CV: skatiet, ko robots patiešām nolasa un kas jālabo"
+        },
+        "linkedin": {
+          "title": "Imports no LinkedIn",
+          "text": "Iepriekš aizpildiet savu Master CV ar bezmaksas PDF, ko varat eksportēt no sava LinkedIn profila"
+        },
+        "languages": {
+          "title": "5 CV valodas",
+          "text": "Franču, angļu, itāļu, spāņu un vācu. Angļu valodā foto un dzimšanas datums tiek paslēpti saskaņā ar angliski runājošo valstu normām"
+        },
+        "pdf": {
+          "title": "ATS draudzīgs PDF eksports",
+          "text": "Īsts teksts un skaidra struktūra: robotiem salasāms, atlases speciālistiem patīkams"
+        },
+        "offline": {
+          "title": "Instalējams un bezsaistē",
+          "text": "Pievienojiet LocalATSCV sākuma ekrānam un turpiniet strādāt bez savienojuma"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "BUJ",
+      "title": "Biežāk uzdotie jautājumi",
+      "text": "Jūsu jautājuma šeit nav? Rakstiet mums:",
+      "items": {
+        "ats": {
+          "q": "Kas ir ATS?",
+          "a": "Applicant Tracking System ir programmatūra, ar kuru atlases speciālisti saņem, šķiro un meklē pieteikumus. Tā pārvērš jūsu CV tekstā un indeksē to: ja teksts izvilkts slikti vai trūkst īsto atslēgvārdu, jūsu pieteikumu ir grūti atrast"
+        },
+        "storage": {
+          "q": "Kur tiek glabāti mani dati?",
+          "a": "Tikai jūsu pārlūkā, IndexedDB, datubāzē, kas ir katrā mūsdienu pārlūkā. Tie nekad neiet caur mūsu serveriem, kas prot tikai pasniegt lietotnes failus"
+        },
+        "clear": {
+          "q": "Kas notiek, ja notīru pārlūka datus?",
+          "a": "Jūsu CV tiek izdzēsti, jo tie nekur citur nepastāv. Regulāri eksportējiet JSON rezerves kopiju: to var importēt atpakaļ jebkurā laikā un jebkurā ierīcē"
+        },
+        "score": {
+          "q": "Vai vērtējums garantē, ka mans CV tiks atlasīts?",
+          "a": "Nē. Katrai ATS ir savi noteikumi, un galīgo lēmumu pieņem cilvēks. Vērtējums ir rādītājs: tas pārbauda, vai jūsu CV izmanto sludinājuma vārdus un vai mašīna to var pareizi nolasīt"
+        },
+        "photo": {
+          "q": "Kāpēc angļu valodā pazūd foto?",
+          "a": "Apvienotajā Karalistē, ASV un daudzās angliski runājošās valstīs foto un dzimšanas datums nav ieteicami, lai mazinātu diskrimināciju darbā pieņemšanā. Daži atlases speciālisti pat noraida CV, kuros tie ir"
+        },
+        "free": {
+          "q": "Vai tas tiešām ir bez maksas?",
+          "a": "Jā. LocalATSCV ir atvērtā koda projekts ar MIT licenci, bez reklāmām un abonementa. Tā mitināšana neko daudz neizmaksā, jo visu darbu paveic jūsu pārlūks"
+        },
+        "templates": {
+          "q": "Vai grafiskās veidnes iztur ATS?",
+          "a": "Jā. Katra veidne drukā īstu tekstu lasīšanas secībā ar standarta sadaļu virsrakstiem: formas, joslas un ikonas ir zīmējumi, ko roboti ignorē. Vienas kolonnas veidnes joprojām ir visdrošākās, un redaktora ATS pārbaude tieši testē jūsu izkārtojumu"
+        },
+        "import": {
+          "q": "Vai varu izmantot savu pašreizējo CV vai LinkedIn profilu?",
+          "a": "Jā. Importējiet CV PDF vai Word (.docx) formātā, sava LinkedIn profila PDF (datorā) vai LinkedIn datu arhīvu (no mobilās lietotnes): saturs tiek nolasīts jūsu pārlūkā un sakārtots redaktorā"
+        },
+        "offline": {
+          "q": "Vai LocalATSCV darbojas bezsaistē?",
+          "a": "Jā. Tā ir instalējama tīmekļa lietotne: pēc pirmā apmeklējuma viss darbojas bez savienojuma, arī PDF eksports"
+        }
+      }
+    },
+    "cta": {
+      "title": "Gatavi tikt cauri filtram?",
+      "text": "Izveidojiet savu Master CV dažās minūtēs. Nekas nepametīs šo ierīci",
+      "button": "Sākt"
+    },
+    "demo": {
+      "role": "Front-end izstrādātāja",
+      "contact": "Liona · camille.martin@example.com",
+      "experience": "Darba pieredze",
+      "jobTitle": "Angular izstrādātāja",
+      "jobMeta": "SIA Piemērs · 2022 – šobrīd",
+      "bullets": {
+        "migration": "40 ekrānu migrācija uz <k>Angular</k> un <k>TypeScript</k>, ielādes laiks samazināts par 35 %",
+        "testing": "<w>Atbildīga par</w> pilna cikla testēšanas stratēģiju",
+        "delivery": "Nepārtraukta piegāde ar <k>GitLab CI</k> 3 produktu komandām"
+      },
+      "weakLabel": "Vājš formulējums",
+      "weakReplacement": "„Vadīju”",
+      "skills": "Prasmes",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Piekļūstamība",
+      "score": "Atbilstība sludinājumam",
+      "sent": "Nosūtīti 0 baiti",
+      "robot": "PRASMES CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end izstrādātāja Angular <n>●●●●○</n> DARBA PIEREDZE <n>� camille.mar</n> Angular izstrādātāja <n>tin@example.com</n> 2022 – šobrīd TypeScript <n>●●●○○</n> SIA Piemērs VALODAS Angļu 40 ekrānu migrācija uz…"
+    }
+  },
+  "dialog": {
+    "cancel": "Atcelt",
+    "delete": "Dzēst",
+    "create": "Izveidot",
+    "save": "Saglabāt",
+    "import": "Importēt"
+  },
+  "editor": {
+    "list": {
+      "title": "Mani CV",
+      "subtitle": "Saglabāti tikai šajā pārlūkā",
+      "new": "Jauns CV",
+      "newBlank": "Tukšs CV",
+      "newBlankHint": "Sākt ar tukšu lapu",
+      "newSample": "Sākt ar piemēru",
+      "newSampleHint": "Aizpildīts izdomāts CV redaktora izpētei",
+      "import": "Atjaunot rezerves kopiju",
+      "exportAll": "Eksportēt visu",
+      "emptyTitle": "Vēl nav neviena CV",
+      "emptyText": "Izveidojiet savu Master CV: visa jūsu pieredze vienuviet, gatava pielāgošanai katram amatam",
+      "open": "Atvērt",
+      "actions": "Darbības",
+      "duplicate": "Dublēt",
+      "export": "Eksportēt (JSON)",
+      "delete": "Dzēst",
+      "updated": "Rediģēts {{date}}",
+      "versions": "Versijas: {{count}}",
+      "backupHint": "Jūsu CV pastāv tikai šajā pārlūkā. Regulāri eksportējiet JSON rezerves kopiju: ja notīrīsiet pārlūka datus, ar to varēsiet visu atgūt",
+      "defaultName": "Mans CV",
+      "copySuffix": "(kopija)",
+      "deleteTitle": "Dzēst „{{name}}”?",
+      "deleteText": "CV un visas tā versijas tiks neatgriezeniski dzēstas no šī pārlūka",
+      "exportDone": "Rezerves kopija lejupielādēta",
+      "importConfirmTitle": "Importēt šo rezerves kopiju?",
+      "importConfirmText": "CV šajā rezerves kopijā: {{count}}. CV, kas jau ir šajā pārlūkā, tiks aizstāti",
+      "importDone": "Rezerves kopija importēta: {{count}} CV",
+      "importError": {
+        "invalidJson": "Šis fails nav derīgs JSON",
+        "notABackup": "Šis fails nav LocalATSCV rezerves kopija",
+        "newerVersion": "Šī rezerves kopija ir no jaunākas LocalATSCV versijas: vispirms atjauniniet lietotni"
+      },
+      "importPdf": "Importēt CV (PDF vai Word)",
+      "importPdfHint": "Pārnesiet esošu CV mūsu veidnēs",
+      "importLinkedin": "Importēt no LinkedIn",
+      "importLinkedinHint": "No jūsu profila PDF"
+    },
+    "toolbar": {
+      "back": "Mani CV",
+      "name": "CV nosaukums",
+      "cvLanguage": "CV valoda",
+      "accent": "Akcenta krāsa",
+      "customAccent": "Pielāgota krāsa",
+      "saved": "Saglabāts",
+      "saving": "Saglabā…",
+      "saveError": "Neizdevās saglabāt",
+      "edit": "Rediģēt",
+      "preview": "Priekšskatīt",
+      "exportPdf": "Eksportēt PDF",
+      "undo": "Atsaukt (Ctrl+Z)",
+      "redo": "Atcelt atsaukšanu (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Rediģējamais dokuments",
+      "cv": "CV",
+      "letter": "Pieteikuma vēstule"
+    },
+    "letter": {
+      "title": "Pieteikuma vēstule",
+      "versionOwn": "Šai versijai ir sava vēstule",
+      "versionShared": "Šī versija izmanto Master vēstuli: rediģējot šeit, tiks izveidota kopija šai versijai",
+      "useMaster": "Izmantot Master vēstuli",
+      "recipient": "Adresāts",
+      "recipientPlaceholder": "SIA Piemērs\nPersonāla atlases nodaļa\nBrīvības iela 10, Rīga, LV-1010",
+      "place": "Vieta",
+      "date": "Datums",
+      "dateHint": "Tukšs: drukāšanas dienas datums",
+      "subject": "Temats",
+      "subjectPlaceholder": "Pieteikums amatam…",
+      "greeting": "Uzruna",
+      "body": "Vēstule",
+      "bodyPlaceholder": "Trīs īsas rindkopas: kas jūs piesaista uzņēmumā, ko jūs sniedzat, kādu nākamo soli piedāvājat",
+      "bodyHint": "Tukša rinda atdala divas rindkopas · **treknraksts** atslēgvārdam",
+      "outline": "Ievietot plānu",
+      "closing": "Noslēgums",
+      "fileName": "Pieteikuma vēstule"
+    },
+    "fit": {
+      "pages": "{{count}} lappuses",
+      "onePage": "Ietilpst vienā lappusē",
+      "hintMany": "Lielākā daļa atlases speciālistu sagaida vienas lappuses CV",
+      "hintOne": "Ideāls formāts lielākajai daļai pieteikumu",
+      "stillTooLong": "Joprojām par garu, pat saspiests: saīsiniet dažus punktus vai paslēpiet elementus kādā versijā",
+      "fit": "Ietilpināt vienā lappusē",
+      "settings": "Izkārtojuma iestatījumi",
+      "spacing": "Atstarpes",
+      "scale": "Teksta izmērs",
+      "settingsHint": "Teksts paliek īsts teksts: mainās tikai izkārtojums",
+      "reset": "Veidnes izkārtojums",
+      "grayscale": "Skatīt melnbaltu",
+      "grayscaleHint": "Simulē melnbaltu izdruku: eksportētais PDF saglabā krāsas"
+    },
+    "versions": {
+      "label": "Rādītā versija",
+      "master": "Master CV",
+      "masterHint": "Viss saturs bez filtra",
+      "new": "Jauna versija",
+      "newText": "Mērķēta versija sākas no visa jūsu Master CV: pēc tam noņemiet atzīmi no tā, kas šim pieteikumam nav vajadzīgs",
+      "nameLabel": "Versijas nosaukums",
+      "namePlaceholder": "Piem., Front-end izstrādātājs – Uzņēmums X",
+      "rename": "Pārdēvēt versiju",
+      "delete": "Dzēst versiju",
+      "deleteTitle": "Dzēst versiju „{{name}}”?",
+      "deleteText": "Tiek dzēsta tikai atlase: viss saturs paliek jūsu Master CV",
+      "banner": "Versija „{{name}}”: noņemiet atzīmi no tā, kam nav jāparādās. No jūsu Master CV nekas netiek dzēsts",
+      "include": "Iekļaut šajā versijā"
+    },
+    "enRule": "CV angļu valodā: foto, dzimšanas datums un pilsonība tiek paslēpti saskaņā ar angliski runājošo valstu normām",
+    "profile": {
+      "title": "Profils",
+      "photo": "Foto",
+      "photoAdd": "Pievienot foto",
+      "photoChange": "Mainīt",
+      "photoRemove": "Noņemt",
+      "photoHint": "Samazināts un saglabāts tikai šajā ierīcē",
+      "photoError": "Šo attēlu neizdevās nolasīt",
+      "hiddenInEnglish": "Angļu valodā paslēpts",
+      "firstName": "Vārds",
+      "lastName": "Uzvārds",
+      "headline": "CV virsraksts",
+      "headlinePlaceholder": "Piem., Front-end izstrādātāja",
+      "email": "E-pasts",
+      "phone": "Tālrunis",
+      "location": "Pilsēta",
+      "birthDate": "Dzimšanas datums",
+      "nationality": "Pilsonība",
+      "summary": "Kopsavilkums",
+      "summaryPlaceholder": "Divi vai trīs teikumi, kas apkopo jūsu profilu un to, ko meklējat",
+      "links": "Saites",
+      "linkLabel": "Saites nosaukums",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Saites adrese",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Pievienot saiti",
+      "removeLink": "Noņemt saiti",
+      "drivingLicense": "Vadītāja apliecība",
+      "drivingLicensePlaceholder": "Piem., B kategorijas vadītāja apliecība, savs auto",
+      "qrToggle": "Rādīt šo saiti kā QR kodu",
+      "linksHint": "Logotips (LinkedIn, GitHub, YouTube…) tiek pievienots automātiski. QR poga lielākajā daļā grafisko veidņu rāda saiti kā QR kodu"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Darba pieredze",
+        "education": "Izglītība",
+        "projects": "Projekti",
+        "certifications": "Sertifikāti",
+        "custom": "Brīva sadaļa",
+        "skills": "Prasmes",
+        "languages": "Valodas",
+        "interests": "Intereses"
+      },
+      "add": "Pievienot sadaļu",
+      "titleLabel": "Sadaļas virsraksts",
+      "empty": "Tukša sadaļa: tā neparādīsies CV",
+      "addItem": {
+        "experience": "Pievienot pieredzi",
+        "education": "Pievienot izglītību",
+        "projects": "Pievienot projektu",
+        "certifications": "Pievienot sertifikātu",
+        "custom": "Pievienot elementu",
+        "skills": "Pievienot prasmes",
+        "languages": "Pievienot valodu",
+        "interests": "Pievienot interesi"
+      },
+      "deleteTitle": "Dzēst sadaļu „{{name}}”?",
+      "deleteText": "Tās saturs tiks noņemts no Master CV un visām tā versijām"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Amats",
+          "subtitle": "Uzņēmums"
+        },
+        "education": {
+          "title": "Grāds",
+          "subtitle": "Skola vai universitāte"
+        },
+        "projects": {
+          "title": "Projekta nosaukums",
+          "subtitle": "Loma vai tehnoloģijas"
+        },
+        "certifications": {
+          "title": "Sertifikāts",
+          "subtitle": "Izdevējs"
+        },
+        "custom": {
+          "title": "Virsraksts",
+          "subtitle": "Apakšvirsraksts"
+        }
+      },
+      "location": "Vieta",
+      "url": "Saite",
+      "start": "Sākums",
+      "end": "Beigas",
+      "date": "Iegūšanas datums",
+      "current": "Turpinās",
+      "untitled": "Bez nosaukuma",
+      "bullets": "Sasniegumi",
+      "bulletPlaceholder": "Sāciet ar darbības vārdu un izsakiet rezultātu skaitļos",
+      "addBullet": "Pievienot punktu",
+      "bulletHint": "Enter: jauns punkts",
+      "boldHint": "**vārds**, lai izceltu treknrakstā"
+    },
+    "items": {
+      "skillLabel": "Kategorija",
+      "skillLabelPlaceholder": "Piem., Front-end",
+      "skillKeywords": "Prasmes",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Valoda",
+      "languageLevel": "Līmenis",
+      "languageLevelPlaceholder": "Piem., C1, fluent",
+      "interest": "Interese",
+      "interestPlaceholder": "Piem., Klinšu kāpšana",
+      "levelDetected": "Līmenis atpazīts: veidnes ar joslu to parādīs",
+      "levelUnknown": "Līmenis nav atpazīts, joslas nav: izmantojiet A1–C2 vai ieteikumu no saraksta",
+      "levelEmpty": "Ievadiet līmeni, lai parādītu joslu",
+      "levelHint": "Izmantojiet Eiropas līmeni (A1–C2) vai vārdu, piemēram, „fluent” vai „native”: dažas veidnes to rāda arī kā joslu, ko priekšskata punkti labajā pusē"
+    },
+    "actions": {
+      "menu": "Darbības",
+      "moveUp": "Pārvietot uz augšu",
+      "moveDown": "Pārvietot uz leju",
+      "duplicate": "Dublēt",
+      "delete": "Dzēst",
+      "drag": "Velciet, lai mainītu secību"
+    },
+    "month": "Mēnesis",
+    "year": "Gads",
+    "noMonth": "Mēnesis",
+    "preview": {
+      "page": "{{n}}. lappuse"
+    },
+    "notFound": {
+      "title": "CV nav atrasts",
+      "text": "Šis CV nepastāv vai ir dzēsts no šī pārlūka"
+    },
+    "templates": {
+      "button": "Veidne",
+      "title": "Izvēlieties veidni",
+      "subtitle": "Visas veidnes ar pilnu CV piemēru vai ar jūsējo. Akcenta krāsa attiecas uz visām veidnēm",
+      "close": "Aizvērt",
+      "filter": "Filtrēt veidnes",
+      "filters": {
+        "all": "Visas",
+        "graphic": "Grafiskas",
+        "sober": "Atturīgas"
+      },
+      "ats": "ATS saderība",
+      "levels": {
+        "excellent": "izcila",
+        "good": "laba",
+        "fair": "pieņemama"
+      },
+      "atsHint": "Katra veidne drukā īstu tekstu. Divu kolonnu izkārtojumus labi nolasa lielākā daļa mūsdienu ATS, taču daži vecāki rīki sajauc kolonnas: šaubu gadījumā izvēlieties vienas kolonnas veidni",
+      "names": {
+        "classic": {
+          "name": "Klasiskā",
+          "description": "Tīra un efektīva: viena kolonna, pasvītroti virsraksti, nekas nenovērš uzmanību"
+        },
+        "modern": {
+          "name": "Modernā",
+          "description": "Krāsaina galvene, izteiksmīgi virsraksti un prasmes kā birkas"
+        },
+        "elegant": {
+          "name": "Elegantā",
+          "description": "Centrēta galvene un serifu tipogrāfija izsmalcinātam izskatam"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Krāsaina mala, vienplatuma detaļas un prasmes koda stilā"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Šveices stils: liels vārds, virsraksti malā, daudz brīvas vietas"
+        },
+        "sidebar": {
+          "name": "Kolonnas",
+          "description": "Krāsaina sānjosla ar foto, kontaktiem un prasmēm"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Galvene ar foto, ikonas, laika josla un valodu joslas, tomēr pilnībā nolasāma ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organiskas pasteļu formas, liels apaļš foto, laika josla un QR kods divās kolonnās"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Signature izskats vienā kolonnā: grafiska un pilnībā nolasāma ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Tumša diagonāla galvene, krāsaini mirdzumi, pieredzes kartītes un pilnas prasmju birkas"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Ģeometriska kompozīcija pamatkrāsās ap foto, ģeometrisks burtveidols un formas pirms katra virsraksta"
+        },
+        "editorial": {
+          "name": "Redakcijas",
+          "description": "Žurnāla izkārtojums: liels serifu vārds, ievadteksts slīprakstā, numurētas sadaļas un nobīdīts portrets"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutālisms: biezas melnas kontūras, asas ēnas, spilgti krāsu bloki un melnas birkas"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Tīkla gradients jūsu akcenta krāsās, kontaktu kartīte ar stikla efektu un kartītes ar gradienta malu"
+        },
+        "swiss": {
+          "name": "Šveices",
+          "description": "Šveices plakāta stils: milzīgs vārds, krāsu josla, biezas melnas līnijas un numurētas sadaļas"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Ziloņkaula papīrs, smalks dubults rāmis, rombveida ornamenti un Garamond tipogrāfija"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Tumšais režīms: nakts fons, neona akcenti un mirdzoša laika josla, ideāla digitāliem pieteikumiem"
+        },
+        "wave": {
+          "name": "Vilnis",
+          "description": "Krāsaina galvene, kas beidzas viļņos, apaļš foto un viļņoti virsraksti, maiga un draudzīga"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Noapaļoti bento lauciņi: foto, vārds un QR kods režģī, viens lauciņš katrai sadaļai"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Tehniskais rasējums: rūtiņu papīrs, stūru atzīmes, izmēra līnija un vienplatuma birkas"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80. gadu ģeometrisks konfeti, spilgtas krāsas un ar zigzagu pasvītroti virsraksti"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Liela dalīta galvene: teksts uz krāsu bloka un divtoņu foto"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipogrāfija kā vienīgais rotājums: milzīgs, daļēji kontūrēts vārds un ļoti lieli virsraksti"
+        },
+        "sorbet": {
+          "name": "Sorbets",
+          "description": "Katrai sadaļai sava pasteļkrāsa, tabletes formas virsraksti un daudzkrāsains mirdzums"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Tumši zila galvene, zelta līnija un serifu vārds vadošiem amatiem"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japāņu minimālisms: washi papīrs, ensō aplis jūsu akcenta krāsā un otas triepiens"
+        },
+        "ribbon": {
+          "name": "Lente",
+          "description": "Sadaļu virsraksti uz lentēm ar bezdelīgas astes galu, centrēta galvene"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Sešstūra foto, šūnu raksts stūrī un sešstūri pirms virsrakstiem"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Galvene no slāņota griezta papīra, sadaļas kā papīra lapas"
+        },
+        "thread": {
+          "name": "Pavediens",
+          "description": "Nepārtraukts pavediens savieno galveni un katru sadaļu, ar punktu katram amatam"
+        }
+      },
+      "preview": {
+        "label": "Sīktēlu saturs",
+        "sample": "Pilns piemērs",
+        "mine": "Mans CV"
+      }
+    },
+    "print": {
+      "title": "Eksportēt PDF",
+      "text": "Tūlīt atvērsies jūsu pārlūka drukāšanas logs. Lai iegūtu nevainojamu PDF:",
+      "tips": {
+        "destination": "Galamērķis: „Saglabāt kā PDF”",
+        "margins": "Piemales: „Nav”",
+        "headers": "Noņemiet atzīmi no „Galvenes un kājenes”",
+        "background": "Atzīmējiet „Fona grafika”, lai saglabātu krāsas"
+      },
+      "dontShow": "Vairs nerādīt",
+      "cancel": "Atcelt",
+      "print": "Atvērt drukāšanas logu"
+    },
+    "job": {
+      "title": "Pielāgot darba sludinājumam",
+      "sources": "LinkedIn, CV.lv, CV-Online, Visidarbi.lv, NVA…",
+      "placeholder": "Ielīmējiet šeit pilnu sludinājuma tekstu: amats, pienākumi, prasības",
+      "urlWarning": "Ielīmējiet sludinājuma tekstu, nevis saiti: LocalATSCV nekad nesazinās ne ar vienu vietni, tāpēc jūsu dati paliek pie jums",
+      "empty": "Atslēgvārdi nav atrasti: ielīmējiet pilnīgāku sludinājumu",
+      "score": "Atbilstība sludinājumam",
+      "summary": "Ir {{found}} no {{total}} atslēgvārdiem",
+      "found": "Atslēgvārdi jūsu CV",
+      "missing": "Trūkstošie atslēgvārdi",
+      "missingHint": "Noklikšķiniet uz atslēgvārda, lai pievienotu to savām prasmēm, vai iestrādājiet to kādā pieredzē",
+      "addToSkills": "Pievienot prasmēm",
+      "added": "„{{keyword}}” pievienots jūsu prasmēm",
+      "keywordsGroup": "Atslēgvārdi",
+      "createVersion": "Izveidot mērķētu versiju šim amatam",
+      "createVersionHint": "No pieredzes un punktiem, kas nav saistīti ar amatu, atzīme tiks noņemta: tos varat pielāgot",
+      "savedInVersion": "Sludinājums saglabāts ar versiju „{{name}}”"
+    },
+    "weak": {
+      "hint": "„{{phrase}}” apraksta pienākumu: sāciet ar darbības vārdu"
+    },
+    "fonts": {
+      "title": "Tipogrāfija",
+      "heading": "Virsraksti",
+      "body": "Pamatteksts",
+      "default": "Veidnes",
+      "hint": "ATS labi nolasa visus šos fontus: teksts paliek īsts teksts"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Jaunumi",
+    "title": "Izmaiņu žurnāls",
+    "subtitle": "Visas LocalATSCV versijas ar jaunajām funkcijām un labojumiem",
+    "current": "Pašreizējā versija",
+    "frenchOnly": "Izmaiņu žurnāls ir rakstīts franču valodā",
+    "error": "Neizdevās ielādēt izmaiņu žurnālu",
+    "types": {
+      "added": "Pievienots",
+      "changed": "Mainīts",
+      "fixed": "Labots",
+      "removed": "Noņemts",
+      "deprecated": "Novecojis",
+      "security": "Drošība",
+      "other": "Cits"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizators",
+    "title": "Vai jūsu CV tiek garām robotiem?",
+    "subtitle": "Iemetiet ar jebkuru rīku veidotu CV PDF formātā: LocalATSCV to nolasa kā ATS un pasaka, kas jālabo",
+    "drop": "Velciet savu CV šurp",
+    "dropActive": "Nometiet failu, lai sāktu analīzi",
+    "hint": "Tikai PDF, līdz 15 MB",
+    "choose": "Izvēlēties failu",
+    "reading": "Nolasa PDF…",
+    "privacy": "Fails tiek analizēts jūsu pārlūkā: tas nekad netiek nekur sūtīts",
+    "another": "Analizēt citu CV",
+    "errors": {
+      "notPdf": "Šis fails nav PDF",
+      "tooLarge": "Šis fails ir lielāks par 15 MB",
+      "encrypted": "Šis PDF ir aizsargāts ar paroli: arī ATS to nevar nolasīt",
+      "unreadable": "Šo PDF neizdevās nolasīt: tas var būt bojāts"
+    },
+    "stats": "{{pages}} lpp. · {{words}} vārdi",
+    "verdict": {
+      "excellent": "Izcili",
+      "good": "Labi",
+      "fair": "Jāuzlabo",
+      "poor": "Kritiski"
+    },
+    "verdictText": {
+      "excellent": "Roboti jūsu CV nolasa ļoti labi",
+      "good": "Daži uzlabojumi padarīs to vēl efektīvāku",
+      "fair": "Vairākas problēmas traucē ATS to nolasīt",
+      "poor": "ATS, visticamāk, palaidīs garām būtiskāko"
+    },
+    "categories": {
+      "readability": "Mašīnlasāmība",
+      "structure": "Struktūra",
+      "content": "Saturs"
+    },
+    "sectionNames": {
+      "experience": "Darba pieredze",
+      "education": "Izglītība",
+      "skills": "Prasmes"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Mašīnlasāms teksts",
+        "pass": "Visu jūsu CV tekstu var izvilkt",
+        "warn": "Dažās lappusēs nav nolasāma teksta: visticamāk, attēli vai skenējums",
+        "fail": "Nav nolasāma teksta: šis CV, visticamāk, ir attēls vai skenējums, un ATS no tā neko neiegūs. Eksportējiet to PDF formātā no savas teksta apstrādes programmas"
+      },
+      "columns": {
+        "title": "Izkārtojums",
+        "pass": "Lineāra lasīšanas secība, kolonnas nesajaucas",
+        "warn": "Konstatēts kolonnu izkārtojums: tekstu var nolasīt nepareizā secībā. Pārbaudiet „Ko nolasa robots” zemāk"
+      },
+      "order": {
+        "title": "Faila lasīšanas secība",
+        "pass": "Teksts failā ierakstīts lasīšanas secībā",
+        "warnHeader": "Jūsu vārds un galvene failā ierakstīti pēc pārējā CV: ATS, kas lasa failu pēc kārtas, var neatrast jūsu vārdu",
+        "warn": "{{percent}} % teksta failā ierakstīti ārpus lasīšanas secības: dažas ATS šos fragmentus nolasīs nepareizā secībā",
+        "fail": "{{percent}} % teksta failā ierakstīti nekārtībā, kas raksturīgi CV, kas veidoti ar brīviem teksta lodziņiem (Canva, PowerPoint…): daudzas ATS nolasīs jūsu CV juku jukām. Salīdziniet abus nolasījumus zemāk"
+      },
+      "unreadable": {
+        "title": "Ikonas un prasmju joslas",
+        "pass": "Nav ikonu vai nesalasāmu rakstzīmju",
+        "warn": "Konstatētas ikonas vai joslas ({{count}}): ATS tās nolasa kā nesaprotamas zīmes. Aizstājiet tās ar tekstu",
+        "fail": "Konstatētas ikonas vai joslas ({{count}}): aizstājiet tās ar tekstu, piemēram, „Angļu: C1” punktu vietā"
+      },
+      "contact": {
+        "title": "Kontaktinformācija",
+        "pass": "Atrasta e-pasta adrese un tālruņa numurs",
+        "warnNoPhone": "Tālruņa numurs nav atrasts",
+        "warnNoEmail": "E-pasta adrese nav atrasta",
+        "fail": "Nav atrasts ne e-pasts, ne tālrunis: rakstiet tos kā tekstu, nevis attēlā"
+      },
+      "sections": {
+        "title": "Standarta sadaļas",
+        "pass": "Pieredze, izglītība un prasmes ir skaidri identificētas",
+        "warn": "Šīs sadaļas netika atpazītas: izmantojiet standarta virsrakstus",
+        "fail": "Netika atpazīta neviena standarta sadaļa: ATS balstās uz virsrakstiem, piemēram, „Darba pieredze” vai „Izglītība”"
+      },
+      "length": {
+        "title": "Garums",
+        "pass": "{{pages}} lpp., {{words}} vārdi: ideāls garums",
+        "warn": "{{pages}} lpp., {{words}} vārdi: tiecieties uz 1–2 lappusēm un 250–1000 vārdiem",
+        "fail": "{{pages}} lpp., {{words}} vārdi: pārāk īss vai garš, lai to labi novērtētu"
+      },
+      "quantified": {
+        "title": "Izmērāmi rezultāti",
+        "pass": "{{percent}} % jūsu punktu satur skaitli, lieliski",
+        "warn": "Tikai {{percent}} % punktu ir izteikti skaitļos: pievienojiet izmērāmus rezultātus (procentus, summas, apjomus)",
+        "fail": "Nav izmērāmu rezultātu: atlases speciālisti un ATS novērtē izmērāmus sasniegumus"
+      },
+      "weakPhrases": {
+        "title": "Darbības vārdi",
+        "pass": "Punktu sākumā nav vāju formulējumu",
+        "warn": "Šie sākumi apraksta pienākumu, nevis rezultātu: sāciet ar darbības vārdu",
+        "fail": "Šie sākumi apraksta pienākumu, nevis rezultātu: sāciet ar darbības vārdu"
+      },
+      "dates": {
+        "title": "Datumi",
+        "pass": "Jūsu pieredze ir datēta",
+        "warn": "Atrasts tikai viens gads: norādiet datumus katram amatam, ATS pēc tiem aprēķina jūsu darba stāžu",
+        "fail": "Datumi nav atrasti: ATS pēc tiem aprēķina jūsu darba stāžu"
+      }
+    },
+    "robot": {
+      "title": "Ko nolasa robots",
+      "text": "Teksts, kas rindu pa rindai salikts no jauna, kā to dara lielākā daļa ATS. Ja šeit tas ir sajaukts vai nepilnīgs, tāds tas ir arī atlases speciālistam",
+      "empty": "Neizdevās izvilkt nevienu tekstu",
+      "position": "Pēc novietojuma",
+      "file": "Faila secība",
+      "fileText": "Teksts tādā secībā, kādā tas ierakstīts failā: tā to nolasa ATS, kas neatjauno izkārtojumu. Tam jāseko jūsu CV lasīšanas secībai"
+    },
+    "cta": {
+      "title": "Sāciet no jauna uz stingriem pamatiem",
+      "text": "Izveidojiet redaktorā ATS draudzīgu CV un pēc tam pielāgojiet to katram amatam",
+      "button": "Atvērt redaktoru",
+      "import": "Pārnest šo CV mūsu veidnēs"
+    },
+    "live": {
+      "title": "ATS pārbaude reāllaikā",
+      "issues": "Šajā veidnē jāpārbauda {{count}} punkts(-i)",
+      "allGood": "Šajā veidnē problēmas nav atrastas",
+      "hint": "Aprēķināts parādītajam izkārtojumam ar to pašu dzinēju kā CV analizatoram"
+    },
+    "method": {
+      "title": "Kā tiek aprēķināts šis vērtējums?",
+      "intro": "Oficiāla ATS vērtējuma nav: katrai atlases programmatūrai (Workday, Taleo, Greenhouse, Lever…) ir savi, bieži konfidenciāli noteikumi. Šis indekss pārbauda, kas lielāko daļu no tām aptur, pēc šādas skalas:",
+      "disclaimer": "Šie kritēriji ir no ATS piegādātāju publiskajiem ieteikumiem un biežākajām nolasīšanas kļūdām (teksts attēlā, kolonnas, ikonas, nestandarta virsraksti). Vērtējums palīdz uzlabot jūsu CV: tas neparedz atlasi"
+    }
+  },
+  "import": {
+    "title": "Importēt CV",
+    "linkedinTitle": "Importēt no LinkedIn",
+    "text": "Izvēlieties CV PDF vai Word (.docx) formātā: saturs tiek izvilkts jūsu pārlūkā un sakārtots redaktora sadaļās. Pēc tam varat izvēlēties veidni",
+    "choose": "Izvēlēties failu",
+    "chooseFile": "Izvēlēties failu",
+    "hint": "PDF vai Word (.docx), līdz 15 MB",
+    "reading": "Importē…",
+    "privacy": "Fails tiek nolasīts jūsu pārlūkā: tas nekad netiek nekur sūtīts",
+    "close": "Aizvērt",
+    "done": "CV importēts ({{items}} elementi): pārskatiet katru sadaļu",
+    "errors": {
+      "tooLarge": "Šis fails ir lielāks par 15 MB",
+      "encrypted": "Šis PDF ir aizsargāts ar paroli",
+      "unreadable": "Šo failu neizdevās nolasīt: tas var būt bojāts",
+      "empty": "Nav izmantojama teksta: šis PDF, visticamāk, ir attēls vai skenējums",
+      "unsupported": "Izvēlieties PDF, Word failu (.docx) vai LinkedIn ZIP arhīvu",
+      "archiveEmpty": "Šajā arhīvā nav izmantojamu LinkedIn profila datu"
+    },
+    "hintArchive": "PDF (dators) vai ZIP arhīvs (mobilā lietotne)",
+    "linkedin": {
+      "computer": {
+        "title": "Datorā: jūsu profila PDF",
+        "step1": "Atveriet linkedin.com datora pārlūkā (lietotnē šādas iespējas nav)",
+        "step2": "Savā profilā noklikšķiniet uz „Resursi” (vai „Vairāk”), tad uz „Saglabāt kā PDF”",
+        "step3": "Izvēlieties šo PDF zemāk"
+      },
+      "archive": {
+        "title": "Mobilajā lietotnē: jūsu datu arhīvs",
+        "step1": "Lietotnē pieskarieties savam foto, tad Iestatījumi un Datu privātums",
+        "step2": "Izvēlieties „Iegūt savu datu kopiju” un atzīmējiet Profils, Amati, Izglītība, Prasmes un Valodas",
+        "step3": "LinkedIn dažu minūšu laikā nosūtīs jums e-pastu: lejupielādējiet ZIP arhīvu",
+        "step4": "Izvēlieties šo ZIP failu zemāk, to neizpakojot"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Šis dokuments tiek rādīts angļu valodā. Juridiski saistoša ir tikai franču valodas versija.",
+    "error": "Šo dokumentu neizdevās ielādēt."
+  }
+}

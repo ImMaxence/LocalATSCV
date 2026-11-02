@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Home ng LocalATSCV",
+    "main": "Pangunahing nabigasyon",
+    "how": "Paano ito gumagana",
+    "privacy": "Privacy",
+    "analyze": "Suriin ang resume",
+    "editor": "Gawin ang resume ko",
+    "skipToContent": "Lumaktaw sa nilalaman"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Maliwanag",
+    "system": "System",
+    "dark": "Madilim"
+  },
+  "lang": {
+    "label": "Wika ng interface",
+    "suggestion": "Tingnan ang pahinang ito sa Filipino",
+    "dismiss": "Isara",
+    "search": "Maghanap ng wika",
+    "noResult": "Walang nahanap na wika"
+  },
+  "pages": {
+    "home": "Resume na pasado sa ATS, 100% lokal",
+    "editor": "Editor",
+    "analyze": "Tagasuri ng resume",
+    "changelog": "Mga bago",
+    "legalNotice": "Legal na abiso",
+    "terms": "Mga tuntunin ng paggamit",
+    "privacy": "Patakaran sa privacy"
+  },
+  "seo": {
+    "home": "Libreng resume builder na pasado sa ATS: 30 graphic template, katugmang cover letter, pag-angkop sa bawat job posting at ATS score. Open source, at nananatili sa browser mo ang iyong data",
+    "editor": "Resume editor na may live preview, Master na resume at mga naka-target na bersyon, ATS check at PDF export na may tunay na teksto. Lahat ay nananatili sa browser mo",
+    "analyze": "Libreng pagsusuri ng PDF na resume: ATS score mula 100, mga dapat ayusin at ang eksaktong tekstong nababasa ng mga recruitment system. Hindi umaalis sa browser mo ang file",
+    "changelog": "Ang mga bago sa LocalATSCV bawat bersyon: mga bagong template ng resume, feature at pag-aayos",
+    "legalNotice": "Legal na abiso ng LocalATSCV: publisher, hosting at contact",
+    "terms": "Mga tuntunin ng paggamit ng LocalATSCV, ang libre at open-source na resume builder",
+    "privacy": "Patakaran sa privacy ng LocalATSCV: walang kinokolektang data, nananatili sa browser mo ang resume mo"
+  },
+  "footer": {
+    "tagline": "Ang resume builder na pasado sa ATS na hindi kailanman nakikita ang data mo",
+    "product": "Produkto",
+    "legal": "Legal",
+    "project": "Proyekto",
+    "changelog": "Mga bago",
+    "sourceCode": "Source code",
+    "reportIssue": "Mag-ulat ng problema",
+    "license": "MIT License",
+    "versionLabel": "Bersyon {{version}}, tingnan ang mga bago"
+  },
+  "update": {
+    "title": "May bagong bersyon",
+    "text": "I-reload ang pahina para mag-update",
+    "changelog": "Tingnan ang mga bago",
+    "reload": "I-reload",
+    "later": "Mamaya na"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% lokal · Libre · Open source",
+      "titleLine1": "Resume na lumalampas sa mga robot",
+      "titleLine2": "Data na nananatili sa iyo",
+      "subtitle": "Tinutulungan ka ng LocalATSCV na gumawa ng resume na naka-optimize para sa mga applicant tracking system (ATS) at iangkop ito sa bawat trabaho sa ilang click lang. Lahat ay nangyayari sa browser mo: walang account, walang ipinapadalang data",
+      "ctaPrimary": "Gawin ang resume ko",
+      "ctaSecondary": "Suriin ang kasalukuyang resume",
+      "points": {
+        "noAccount": "Walang sign-up",
+        "offline": "Gumagana kahit offline",
+        "atsPdf": "PDF na nababasa ng ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Ang problema",
+      "title": "Makina muna ang bumabasa ng resume mo",
+      "text": "Karamihan ng malalaking kumpanya at recruitment agency ay nagsasala ng mga aplikasyon gamit ang ATS (Applicant Tracking System). Kinukuha nito ang teksto ng resume mo, iniimbak sa database at hinahayaan ang recruiter na maghanap ng kandidato gamit ang mga keyword",
+      "pitfalls": {
+        "layout": {
+          "title": "Komplikadong layout",
+          "text": "Ginugulo ng mga column, table at text box ang pagkakasunod-sunod ng pagbasa: nagkakahalo-halo ang impormasyon mo"
+        },
+        "image": {
+          "title": "Tekstong hindi mabasa",
+          "text": "Nagiging kakaibang simbolo ang mga icon, skill bar at ilang export mula sa design tool, o tuluyang nawawala ang teksto"
+        },
+        "keywords": {
+          "title": "Kulang na keyword",
+          "text": "Kung wala sa resume mo ang mga salita sa job posting, hindi lalabas ang profile mo sa mga paghahanap ng recruiter"
+        }
+      },
+      "seen": "Ang nakikita mo",
+      "read": "Ang binabasa ng robot",
+      "fix": "Kabaligtaran ang ginagawa ng LocalATSCV: isang column, tunay na teksto at karaniwang mga heading ng seksyon na binabasa ng robot sa tamang pagkakasunod-sunod"
+    },
+    "how": {
+      "eyebrow": "Paano ito gumagana",
+      "title": "Isulat nang minsan, iangkop nang walang hanggan",
+      "text": "Apat na hakbang para gawing aplikasyong akma sa bawat trabaho ang Master na resume mo",
+      "steps": {
+        "profile": {
+          "title": "Punan ang Master na resume",
+          "text": "Ilagay nang minsanan ang lahat ng karanasan mo, o i-import ang PDF ng LinkedIn profile mo para makatipid ng oras"
+        },
+        "offer": {
+          "title": "I-paste ang job posting",
+          "text": "Kinukuha ng LocalATSCV ang mga keyword at kinakalkula ang match score mula 100, habang nagta-type ka"
+        },
+        "compose": {
+          "title": "Gumawa ng naka-target na bersyon",
+          "text": "Lagyan ng check ang mga angkop na karanasan at bullet, at i-drag para ayusin ang pagkakasunod-sunod. Walang nabubura sa Master"
+        },
+        "export": {
+          "title": "I-export bilang PDF",
+          "text": "PDF na may tunay at nakaayos na teksto sa isang column, madaling basahin ng robot at ng recruiter"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privacy",
+      "title": "Walang data sa mga server namin. Literal",
+      "text": "Walang database na puwedeng ma-hack: ang tanging ipinapadala ng server ay ang app. Pagkatapos noon, lahat ay nangyayari sa browser mo, kahit offline",
+      "browser": {
+        "title": "Ang browser mo",
+        "tag": "Ang device mo",
+        "items": {
+          "master": "Master na resume",
+          "photo": "Larawan sa profile",
+          "versions": "Mga naka-target na bersyon",
+          "settings": "Mga kagustuhan"
+        },
+        "note": "Naka-imbak sa IndexedDB, sa device na ito lang"
+      },
+      "flow": {
+        "app": "Ang app, sa unang pag-load",
+        "data": "Ang data mo",
+        "never": "hindi kailanman"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Ipinapadala lang ang mga file ng app (HTML, CSS, JavaScript), wala nang iba",
+        "items": {
+          "noDb": "Walang database",
+          "noAccount": "Walang user account",
+          "noLogs": "Walang access log"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Walang account",
+          "text": "Walang sign-up, walang email, walang password. Buksan ang pahina at magsimula"
+        },
+        "trackers": {
+          "title": "Walang tracker",
+          "text": "Walang analytics, walang ad, walang tracking cookie. Kahit ang mga font ay naka-host sa sarili naming server"
+        },
+        "csp": {
+          "title": "Teknikal na naka-lock",
+          "text": "Ipinagbabawal ng security policy ng site (CSP) na kumonekta ang browser sa ibang domain. Open source ang code: puwede mo itong suriin mismo"
+        },
+        "backup": {
+          "title": "Backup mo, file mo",
+          "text": "I-export ang lahat ng data mo sa isang JSON file at i-import ito sa kahit anong device"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Mga feature",
+      "title": "Lahat ng kailangan mo para maimbitahan sa interview",
+      "items": {
+        "master": {
+          "title": "Master na resume at mga naka-target na bersyon",
+          "text": "Isang kumpletong resume, at kasindami ng bersyon ng mga aplikasyon mo. Mag-check, mag-uncheck: walang nawawala"
+        },
+        "score": {
+          "title": "Match score",
+          "text": "I-paste ang job posting: mga keyword na mayroon ka, mga kulang, at score mula 100 nang real time"
+        },
+        "weak": {
+          "title": "Pagtukoy sa mahihinang parirala",
+          "text": "Awtomatikong namamarkahan ang “Responsable sa”, “Tumulong sa”… kasama ang listahan ng action verb na ipapalit"
+        },
+        "analyzer": {
+          "title": "Tagasuri ng kasalukuyang resume",
+          "text": "Mag-drop ng resume na ginawa sa ibang lugar: tingnan kung ano talaga ang nababasa ng robot at kung ano ang dapat ayusin"
+        },
+        "linkedin": {
+          "title": "Import mula sa LinkedIn",
+          "text": "Paunang punan ang Master na resume mo mula sa libreng PDF na ine-export ng LinkedIn profile mo"
+        },
+        "languages": {
+          "title": "5 wika ng resume",
+          "text": "French, English, Italian, Spanish at German. Sa English, itinatago ang larawan at petsa ng kapanganakan ayon sa kaugalian sa mga bansang nagsasalita ng English"
+        },
+        "pdf": {
+          "title": "PDF export na pasado sa ATS",
+          "text": "Tunay na teksto at malinaw na istruktura: nababasa ng robot, magaan sa mata ng recruiter"
+        },
+        "offline": {
+          "title": "Puwedeng i-install at gamitin offline",
+          "text": "Idagdag ang LocalATSCV sa home screen mo at magpatuloy kahit walang koneksyon"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Mga madalas itanong",
+      "text": "Wala rito ang tanong mo? Sumulat sa amin:",
+      "items": {
+        "ats": {
+          "q": "Ano ang ATS?",
+          "a": "Ang Applicant Tracking System ay software na ginagamit ng mga recruiter para tumanggap, magsala at maghanap ng mga aplikasyon. Ginagawa nitong teksto ang resume mo at ini-index ito: kung mali ang pagkuha ng teksto o kulang ang tamang keyword, mahirap mahanap ang profile mo"
+        },
+        "storage": {
+          "q": "Saan naka-imbak ang data ko?",
+          "a": "Sa browser mo lang, sa IndexedDB, ang database na nakapaloob sa lahat ng modernong browser. Hindi ito kailanman dumadaan sa mga server namin, na tanging mga file ng app ang kayang ipadala"
+        },
+        "clear": {
+          "q": "Ano ang mangyayari kung buburahin ko ang data ng browser ko?",
+          "a": "Mabubura ang mga resume mo, dahil wala silang kopya sa ibang lugar. Regular na mag-export ng JSON backup: puwede mo itong i-import muli anumang oras, sa kahit anong device"
+        },
+        "score": {
+          "q": "Garantiya ba ng score na mapipili ang resume ko?",
+          "a": "Hindi. May sariling patakaran ang bawat ATS at tao pa rin ang gumagawa ng huling desisyon. Indicator lang ang score: sinusuri nito kung ginagamit ng resume mo ang mga salita ng job posting at kung tama itong nababasa ng mga makina"
+        },
+        "photo": {
+          "q": "Bakit nawawala ang larawan sa English?",
+          "a": "Sa UK, US at maraming bansang nagsasalita ng English, hindi inirerekomenda ang larawan at petsa ng kapanganakan sa resume para mabawasan ang diskriminasyon sa pagkuha ng empleyado. May mga recruiter pang tumatanggi sa mga resume na may ganitong impormasyon"
+        },
+        "free": {
+          "q": "Libre ba talaga ito?",
+          "a": "Oo. Ang LocalATSCV ay open-source na proyekto sa ilalim ng MIT License, walang ad at walang subscription. Halos walang gastos ang hosting dahil ang browser mo ang gumagawa ng lahat ng trabaho"
+        },
+        "templates": {
+          "q": "Pasado ba sa ATS ang mga graphic template?",
+          "a": "Oo. Bawat template ay nagpi-print ng tunay na teksto sa pagkakasunod-sunod ng pagbasa, na may karaniwang mga heading ng seksyon: ang mga hugis, bar at icon ay mga drawing na hindi pinapansin ng robot. Ang mga template na may isang column pa rin ang pinakaligtas, at sinusubok ng ATS check ng editor ang layout mo nang real time"
+        },
+        "import": {
+          "q": "Puwede ko bang gamitin muli ang kasalukuyang resume ko o ang LinkedIn profile ko?",
+          "a": "Oo. Mag-import ng PDF o Word (.docx) na resume, ng PDF ng LinkedIn profile mo (sa computer) o ng LinkedIn data archive mo (mula sa mobile app): binabasa ang nilalaman sa browser mo at inaayos sa editor"
+        },
+        "offline": {
+          "q": "Gumagana ba ang LocalATSCV nang offline?",
+          "a": "Oo. Isa itong web app na puwedeng i-install: pagkatapos ng unang pagbisita, gumagana ang lahat nang walang koneksyon, kasama ang PDF export"
+        }
+      }
+    },
+    "cta": {
+      "title": "Handa ka na bang lampasan ang mga filter?",
+      "text": "Gawin ang Master na resume mo sa loob ng ilang minuto. Walang umaalis sa device na ito",
+      "button": "Magsimula"
+    },
+    "demo": {
+      "role": "Front-end developer",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Karanasan",
+      "jobTitle": "Angular developer",
+      "jobMeta": "Halimbawang Kumpanya · 2022 – kasalukuyan",
+      "bullets": {
+        "migration": "Inilipat ang 40 screen sa <k>Angular</k> at <k>TypeScript</k>, at nabawasan nang 35% ang loading time",
+        "testing": "<w>Responsable sa</w> end-to-end na estratehiya sa testing",
+        "delivery": "Tuloy-tuloy na deployment gamit ang <k>GitLab CI</k> para sa 3 product team"
+      },
+      "weakLabel": "Mahinang parirala",
+      "weakReplacement": "“Pinamunuan”",
+      "skills": "Mga kasanayan",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibility",
+      "score": "Pagtutugma sa job posting",
+      "sent": "0 byte ang naipadala",
+      "robot": "MGA KASANAYAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end developer Angular <n>●●●●○</n> KARANASAN <n>� camille.mar</n> Angular developer <n>tin@example.com</n> 2022 – kasalukuyan TypeScript <n>●●●○○</n> Halimbawang Kumpanya MGA WIKA English Inilipat ang 40 screen sa…"
+    }
+  },
+  "dialog": {
+    "cancel": "Kanselahin",
+    "delete": "Burahin",
+    "create": "Gumawa",
+    "save": "I-save",
+    "import": "I-import"
+  },
+  "editor": {
+    "list": {
+      "title": "Mga resume ko",
+      "subtitle": "Naka-imbak lang sa browser na ito",
+      "new": "Bagong resume",
+      "newBlank": "Blangkong resume",
+      "newBlankHint": "Magsimula sa blangkong pahina",
+      "newSample": "Magsimula sa halimbawa",
+      "newSampleHint": "Isang kathang-isip na resume na napunan na para matuklasan mo ang editor",
+      "import": "I-restore ang backup",
+      "exportAll": "I-export lahat",
+      "emptyTitle": "Wala ka pang resume",
+      "emptyText": "Gawin ang Master na resume mo: lahat ng karanasan mo sa iisang lugar, handang iangkop sa bawat trabaho",
+      "open": "Buksan",
+      "actions": "Mga aksyon",
+      "duplicate": "I-duplicate",
+      "export": "I-export (JSON)",
+      "delete": "Burahin",
+      "updated": "Binago noong {{date}}",
+      "versions": "Mga bersyon: {{count}}",
+      "backupHint": "Sa browser na ito lang umiiral ang mga resume mo. Regular na mag-export ng JSON backup: kung buburahin mo ang data ng browser mo, maibabalik mo pa rin ang lahat",
+      "defaultName": "Resume ko",
+      "copySuffix": "(kopya)",
+      "deleteTitle": "Burahin ang “{{name}}”?",
+      "deleteText": "Permanenteng mabubura sa browser na ito ang resume at lahat ng bersyon nito",
+      "exportDone": "Na-download na ang backup",
+      "importConfirmTitle": "I-import ang backup na ito?",
+      "importConfirmText": "Mga resume sa backup: {{count}}. Papalitan ang mga resume na nasa browser na ito",
+      "importDone": "Na-import ang backup: {{count}} resume",
+      "importError": {
+        "invalidJson": "Hindi valid na JSON ang file na ito",
+        "notABackup": "Hindi backup ng LocalATSCV ang file na ito",
+        "newerVersion": "Galing sa mas bagong bersyon ng LocalATSCV ang backup na ito: i-update muna ang app"
+      },
+      "importPdf": "Mag-import ng resume (PDF o Word)",
+      "importPdfHint": "Ilipat ang kasalukuyang resume mo sa mga template namin",
+      "importLinkedin": "Import mula sa LinkedIn",
+      "importLinkedinHint": "Mula sa PDF ng profile mo"
+    },
+    "toolbar": {
+      "back": "Mga resume ko",
+      "name": "Pangalan ng resume",
+      "cvLanguage": "Wika ng resume",
+      "accent": "Accent color",
+      "customAccent": "Custom na kulay",
+      "saved": "Na-save",
+      "saving": "Sine-save…",
+      "saveError": "Hindi na-save",
+      "edit": "I-edit",
+      "preview": "Preview",
+      "exportPdf": "I-export bilang PDF",
+      "undo": "I-undo (Ctrl+Z)",
+      "redo": "I-redo (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokumentong ie-edit",
+      "cv": "Resume",
+      "letter": "Cover letter"
+    },
+    "letter": {
+      "title": "Cover letter",
+      "versionOwn": "May sariling liham ang bersyong ito",
+      "versionShared": "Ginagamit ng bersyong ito ang liham ng Master: ang pag-edit dito ay gagawa ng kopya para sa bersyong ito",
+      "useMaster": "Gamitin ang liham ng Master",
+      "recipient": "Tatanggap",
+      "recipientPlaceholder": "Halimbawang Kumpanya\nHuman Resources\n10 Ayala Avenue, Makati City",
+      "place": "Lugar",
+      "date": "Petsa",
+      "dateHint": "Kapag blangko: ang petsa ng pag-print",
+      "subject": "Paksa",
+      "subjectPlaceholder": "Aplikasyon para sa posisyong…",
+      "greeting": "Pagbati",
+      "body": "Liham",
+      "bodyPlaceholder": "Tatlong maikling talata: ang nakakaakit sa iyo sa kumpanya, ang maibibigay mo, at ang susunod na hakbang na imumungkahi mo",
+      "bodyHint": "Isang blangkong linya ang naghihiwalay sa dalawang talata · **bold** para sa mga keyword",
+      "outline": "Maglagay ng balangkas",
+      "closing": "Pangwakas",
+      "fileName": "Cover letter"
+    },
+    "fit": {
+      "pages": "{{count}} pahina",
+      "onePage": "Kasya sa isang pahina",
+      "hintMany": "Karamihan ng recruiter ay umaasa ng resume na isang pahina",
+      "hintOne": "Ang ideal na format para sa karamihan ng profile",
+      "stillTooLong": "Masyado pa ring mahaba kahit pinaliit: paikliin ang ilang bullet o itago ang isang seksyon sa isang bersyon",
+      "fit": "Pagkasyahin sa isang pahina",
+      "settings": "Mga setting ng layout",
+      "spacing": "Espasyo",
+      "scale": "Laki ng teksto",
+      "settingsHint": "Nananatiling tunay na teksto ang teksto: ang layout lang ang nagbabago",
+      "reset": "Layout ng template",
+      "grayscale": "Preview na black and white",
+      "grayscaleHint": "Ginagaya ang black and white na printout: may kulay pa rin ang na-export na PDF"
+    },
+    "versions": {
+      "label": "Ipinapakitang bersyon",
+      "master": "Master na resume",
+      "masterHint": "Lahat ng nilalaman, walang filter",
+      "new": "Bagong bersyon",
+      "newText": "Nagsisimula ang naka-target na bersyon sa buong Master na resume: pagkatapos ay i-uncheck ang hindi kailangan ng aplikasyong ito",
+      "nameLabel": "Pangalan ng bersyon",
+      "namePlaceholder": "Hal: Front-end Dev – Kumpanya X",
+      "rename": "Palitan ang pangalan ng bersyon",
+      "delete": "Burahin ang bersyon",
+      "deleteTitle": "Burahin ang bersyong “{{name}}”?",
+      "deleteText": "Ang pagpili lang ang mabubura: nananatili sa Master na resume ang lahat ng nilalaman",
+      "banner": "Bersyong “{{name}}”: i-uncheck ang hindi dapat lumabas. Walang nabubura sa Master na resume",
+      "include": "Isama sa bersyong ito"
+    },
+    "enRule": "Resume sa English: itinatago ang larawan, petsa ng kapanganakan at nasyonalidad ayon sa kaugalian sa mga bansang nagsasalita ng English",
+    "profile": {
+      "title": "Profile",
+      "photo": "Larawan",
+      "photoAdd": "Magdagdag ng larawan",
+      "photoChange": "Palitan",
+      "photoRemove": "Alisin",
+      "photoHint": "Pinaliliit at sa device na ito lang iniimbak",
+      "photoError": "Hindi mabasa ang larawang ito",
+      "hiddenInEnglish": "Nakatago sa English",
+      "firstName": "Pangalan",
+      "lastName": "Apelyido",
+      "headline": "Pamagat ng resume",
+      "headlinePlaceholder": "Hal: Front-end developer",
+      "email": "Email",
+      "phone": "Telepono",
+      "location": "Lungsod",
+      "birthDate": "Petsa ng kapanganakan",
+      "nationality": "Nasyonalidad",
+      "summary": "Buod",
+      "summaryPlaceholder": "Dalawa o tatlong pangungusap na nagbubuod ng profile mo at ng hinahanap mo",
+      "links": "Mga link",
+      "linkLabel": "Label ng link",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Address ng link",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Magdagdag ng link",
+      "removeLink": "Alisin ang link",
+      "drivingLicense": "Lisensya sa pagmamaneho",
+      "drivingLicensePlaceholder": "Hal: Professional driver's license, may sariling sasakyan",
+      "qrToggle": "Ipakita ang link na ito bilang QR code",
+      "linksHint": "Awtomatikong idinadagdag ang mga logo (LinkedIn, GitHub, YouTube…). Ipinapakita ng QR button ang link bilang QR code sa karamihan ng mga graphic template"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Karanasan",
+        "education": "Edukasyon",
+        "projects": "Mga proyekto",
+        "certifications": "Mga sertipikasyon",
+        "custom": "Malayang seksyon",
+        "skills": "Mga kasanayan",
+        "languages": "Mga wika",
+        "interests": "Mga interes"
+      },
+      "add": "Magdagdag ng seksyon",
+      "titleLabel": "Pamagat ng seksyon",
+      "empty": "Walang laman na seksyon: hindi ito lalabas sa resume",
+      "addItem": {
+        "experience": "Magdagdag ng karanasan",
+        "education": "Magdagdag ng natapos na kurso",
+        "projects": "Magdagdag ng proyekto",
+        "certifications": "Magdagdag ng sertipikasyon",
+        "custom": "Magdagdag ng item",
+        "skills": "Magdagdag ng kasanayan",
+        "languages": "Magdagdag ng wika",
+        "interests": "Magdagdag ng interes"
+      },
+      "deleteTitle": "Burahin ang seksyong “{{name}}”?",
+      "deleteText": "Aalisin ang nilalaman nito sa Master na resume at sa lahat ng bersyon"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Posisyon",
+          "subtitle": "Kumpanya"
+        },
+        "education": {
+          "title": "Kurso o digri",
+          "subtitle": "Paaralan"
+        },
+        "projects": {
+          "title": "Pangalan ng proyekto",
+          "subtitle": "Tungkulin o teknolohiya"
+        },
+        "certifications": {
+          "title": "Sertipikasyon",
+          "subtitle": "Nagbigay"
+        },
+        "custom": {
+          "title": "Pamagat",
+          "subtitle": "Subtitle"
+        }
+      },
+      "location": "Lokasyon",
+      "url": "Link",
+      "start": "Simula",
+      "end": "Katapusan",
+      "date": "Petsa ng pagkakamit",
+      "current": "Kasalukuyan",
+      "untitled": "Walang pamagat",
+      "bullets": "Mga nagawa",
+      "bulletPlaceholder": "Magsimula sa action verb at sukatin ang resulta",
+      "addBullet": "Magdagdag ng bullet",
+      "bulletHint": "Enter: bagong bullet",
+      "boldHint": "**salita** para sa bold"
+    },
+    "items": {
+      "skillLabel": "Kategorya",
+      "skillLabelPlaceholder": "Hal: Front-end",
+      "skillKeywords": "Mga kasanayan",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Wika",
+      "languageLevel": "Antas",
+      "languageLevelPlaceholder": "Hal: C1, fluent",
+      "interest": "Interes",
+      "interestPlaceholder": "Hal: Pag-akyat ng bundok",
+      "levelDetected": "Natukoy ang antas: ipapakita ito ng mga template na may bar",
+      "levelUnknown": "Hindi natukoy ang antas, walang bar: gumamit ng A1 hanggang C2 o isang mungkahi mula sa listahan",
+      "levelEmpty": "Ilagay ang antas para lumabas ang bar",
+      "levelHint": "Gamitin ang European na antas (A1 hanggang C2) o salitang tulad ng “fluent” o “native”: ipinapakita rin ito ng ilang template bilang bar, at may preview sa mga tuldok sa kanan"
+    },
+    "actions": {
+      "menu": "Mga aksyon",
+      "moveUp": "Iakyat",
+      "moveDown": "Ibaba",
+      "duplicate": "I-duplicate",
+      "delete": "Burahin",
+      "drag": "I-drag para ayusin ang pagkakasunod-sunod"
+    },
+    "month": "Buwan",
+    "year": "Taon",
+    "noMonth": "Buwan",
+    "preview": {
+      "page": "Pahina {{n}}"
+    },
+    "notFound": {
+      "title": "Hindi nahanap ang resume",
+      "text": "Wala ang resume na ito o nabura na ito sa browser na ito"
+    },
+    "templates": {
+      "button": "Template",
+      "title": "Pumili ng template",
+      "subtitle": "Bawat template ay may kumpletong halimbawang resume, o ang resume mo. Ginagamit ng lahat ng template ang accent color",
+      "close": "Isara",
+      "filter": "I-filter ang mga template",
+      "filters": {
+        "all": "Lahat",
+        "graphic": "Graphic",
+        "sober": "Simple"
+      },
+      "ats": "Pagkakatugma sa ATS",
+      "levels": {
+        "excellent": "napakahusay",
+        "good": "mahusay",
+        "fair": "katamtaman"
+      },
+      "atsHint": "Bawat template ay nagpi-print ng tunay na teksto. Mahusay na nababasa ng karamihan ng modernong ATS ang layout na may dalawang column, pero may ilang lumang tool na pinaghahalo ang mga column: kung may duda, pumili ng template na may isang column",
+      "names": {
+        "classic": {
+          "name": "Klasiko",
+          "description": "Malinis at epektibo: isang column, may salungguhit na heading, walang nakakaabala"
+        },
+        "modern": {
+          "name": "Moderno",
+          "description": "Makulay na banner, kapansin-pansing heading at mga kasanayang naka-tag"
+        },
+        "elegant": {
+          "name": "Elegante",
+          "description": "Nakagitnang header at serif na font para sa pinong dating"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Makulay na gilid, mga detalyeng monospace at mga kasanayang parang code"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Swiss na istilo: malaking pangalan, mga heading sa margin, maraming puting espasyo"
+        },
+        "sidebar": {
+          "name": "Dalawang column",
+          "description": "Makulay na sidebar na may larawan, contact at mga kasanayan"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Banner na may larawan, mga icon, timeline at mga bar ng wika, buo pa ring nababasa ng ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Mga organikong pastel na hugis, malaking bilog na larawan, timeline at QR code, sa dalawang column"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Ang istilo ng Signature sa isang column: puno ng graphics at buong nababasa ng ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Pahilis na madilim na banner, mga halo, card ng karanasan at solid na tag ng kasanayan"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Heometrikong komposisyon sa mga pangunahing kulay sa paligid ng larawan, heometrikong font at hugis bago ang bawat heading"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Layout ng magasin: malaking serif na pangalan, italic na panimula, may numerong seksyon at nakausling portrait"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brutalism: makapal na itim na border, matigas na anino, matitingkad na bloke ng kulay at itim na label"
+        },
+        "prism": {
+          "name": "Prism",
+          "description": "Mesh gradient sa accent color mo, frosted glass na contact card at mga card na may gradient na border"
+        },
+        "swiss": {
+          "name": "Swiss",
+          "description": "Swiss na istilo ng poster: napakalaking pangalan, makulay na guhit, makakapal na itim na linya at may numerong seksyon"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Ivory na papel, manipis na dobleng frame, mga palamuting diamante at Garamond"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Dark mode: background na parang gabi, neon na accent at kumikinang na timeline, swak sa mga online na profile"
+        },
+        "wave": {
+          "name": "Wave",
+          "description": "Makulay na banner na nagtatapos sa mga alon, bilog na larawan at kulot na heading, malambot at magiliw"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Mga bilugang bento tile: larawan, pangalan at QR code sa grid, at isang tile bawat seksyon"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Teknikal na drawing: graph paper, mga marka sa sulok, mga linya ng sukat at monospace na label"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Heometrikong confetti ng dekada 80, matitingkad na kulay at mga heading na may zigzag na salungguhit"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Malaking hating banner: teksto sa bloke ng kulay at duotone na larawan"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Teksto lang ang palamuti: napakalaking pangalan na bahagyang outline lang, at napakalalaking heading"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Isang pastel na kulay bawat seksyon, mga heading na hugis-pill at makukulay na halo"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Navy na banner, gintong linya at serif na pangalan, para sa mga posisyon sa pamunuan"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japanese na minimalism: washi na papel, ensō na bilog sa accent color mo at isang guhit ng brush"
+        },
+        "ribbon": {
+          "name": "Ribbon",
+          "description": "Mga heading ng seksyon sa mga laso na may hiwang dulo, nakagitnang header"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Heksagonal na larawan, pulot-pukyutan sa sulok at mga heksagono bago ang mga heading"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Header na gawa sa mga patong ng ginupit na papel, mga seksyon na parang mga papel"
+        },
+        "thread": {
+          "name": "Thread",
+          "description": "Isang tuloy-tuloy na sinulid na nag-uugnay sa header at bawat seksyon, may tuldok bawat posisyon"
+        }
+      },
+      "preview": {
+        "label": "Nilalaman ng mga thumbnail",
+        "sample": "Kumpletong halimbawa",
+        "mine": "Resume ko"
+      }
+    },
+    "print": {
+      "title": "I-export bilang PDF",
+      "text": "Magbubukas ang print window ng browser mo. Para sa perpektong PDF:",
+      "tips": {
+        "destination": "Destinasyon: “I-save bilang PDF”",
+        "margins": "Mga margin: “Wala”",
+        "headers": "I-uncheck ang “Mga header at footer”",
+        "background": "I-check ang “Mga background graphic” para mapanatili ang mga kulay"
+      },
+      "dontShow": "Huwag nang ipakita ulit",
+      "cancel": "Kanselahin",
+      "print": "Buksan ang print window"
+    },
+    "job": {
+      "title": "Iangkop sa job posting",
+      "sources": "LinkedIn, JobStreet, Kalibrr, Indeed, OnlineJobs.ph…",
+      "placeholder": "I-paste dito ang buong teksto ng job posting: posisyon, mga gawain, mga kwalipikasyon",
+      "urlWarning": "I-paste ang teksto ng posting sa halip na ang link: hindi kailanman kumokonekta ang LocalATSCV sa anumang website, kaya nananatili sa iyo ang data mo",
+      "empty": "Walang nahanap na keyword: mag-paste ng mas kumpletong job posting",
+      "score": "Pagtutugma sa job posting",
+      "summary": "{{found}}/{{total}} keyword ang nakita",
+      "found": "Mga keyword sa resume mo",
+      "missing": "Mga kulang na keyword",
+      "missingHint": "I-click ang keyword para idagdag sa mga kasanayan mo, o isama ito sa isang karanasan",
+      "addToSkills": "Idagdag sa mga kasanayan",
+      "added": "Idinagdag ang “{{keyword}}” sa mga kasanayan",
+      "keywordsGroup": "Mga keyword",
+      "createVersion": "Gumawa ng naka-target na bersyon para sa trabahong ito",
+      "createVersionHint": "Ia-uncheck ang mga karanasan at bullet na walang kaugnayan sa trabaho: puwede mo pa itong ayusin",
+      "savedInVersion": "Na-save ang job posting kasama ng bersyong “{{name}}”"
+    },
+    "weak": {
+      "hint": "Gawain ang inilalarawan ng “{{phrase}}”: magsimula sa action verb"
+    },
+    "fonts": {
+      "title": "Typography",
+      "heading": "Mga heading",
+      "body": "Teksto",
+      "default": "Ayon sa template",
+      "hint": "Mahusay na nababasa ng ATS ang lahat ng font na ito: nananatiling tunay na teksto ang teksto"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Mga bago",
+    "title": "Changelog",
+    "subtitle": "Lahat ng bersyon ng LocalATSCV, kasama ang mga bagong feature at pag-aayos",
+    "current": "Kasalukuyang bersyon",
+    "frenchOnly": "Nakasulat sa French ang changelog",
+    "error": "Hindi ma-load ang changelog",
+    "types": {
+      "added": "Idinagdag",
+      "changed": "Binago",
+      "fixed": "Inayos",
+      "removed": "Inalis",
+      "deprecated": "Hindi na inirerekomenda",
+      "security": "Seguridad",
+      "other": "Iba pa"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Tagasuri",
+    "title": "Lumalampas ba sa mga robot ang resume mo?",
+    "subtitle": "Mag-drop ng PDF na resume na ginawa sa kahit anong tool: binabasa ito ng LocalATSCV gaya ng ATS at sinasabi sa iyo kung ano ang dapat ayusin",
+    "drop": "I-drop dito ang resume mo",
+    "dropActive": "Bitawan ang file para simulan ang pagsusuri",
+    "hint": "PDF lang, hanggang 15 MB",
+    "choose": "Pumili ng file",
+    "reading": "Binabasa ang PDF…",
+    "privacy": "Sinusuri ang file sa browser mo: hindi ito kailanman ipinapadala kahit saan",
+    "another": "Sumuri ng ibang resume",
+    "errors": {
+      "notPdf": "Hindi PDF ang file na ito",
+      "tooLarge": "Lampas 15 MB ang file na ito",
+      "encrypted": "Protektado ng password ang PDF na ito: hindi rin ito mababasa ng ATS",
+      "unreadable": "Hindi mabasa ang PDF na ito: baka sira ang file"
+    },
+    "stats": "{{pages}} pahina · {{words}} salita",
+    "verdict": {
+      "excellent": "Napakahusay",
+      "good": "Mahusay",
+      "fair": "Puwede pang pagbutihin",
+      "poor": "Kritikal"
+    },
+    "verdictText": {
+      "excellent": "Mahusay na nababasa ng mga robot ang resume mo",
+      "good": "Ilang maliliit na pagbabago at mas magiging epektibo pa ito",
+      "fair": "May ilang problemang nagpapahirap sa pagbasa ng ATS",
+      "poor": "Malamang na hindi makikita ng ATS ang mahahalagang impormasyon"
+    },
+    "categories": {
+      "readability": "Nababasa ng makina",
+      "structure": "Istruktura",
+      "content": "Nilalaman"
+    },
+    "sectionNames": {
+      "experience": "Karanasan",
+      "education": "Edukasyon",
+      "skills": "Mga kasanayan"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Tekstong nababasa ng makina",
+        "pass": "Nakuha ang lahat ng teksto ng resume",
+        "warn": "Walang nababasang teksto ang ilang pahina: baka larawan o scan ang mga ito",
+        "fail": "Walang nababasang teksto: malamang na larawan o scan ang resume na ito, at walang makukuha ang ATS. I-export ito bilang PDF mula sa isang word processor"
+      },
+      "columns": {
+        "title": "Layout",
+        "pass": "Tuloy-tuloy ang pagbasa, hindi naghahalo ang mga column",
+        "warn": "May natukoy na layout na maraming column: baka mabasa ang teksto sa maling pagkakasunod-sunod. Tingnan ang “Ang binabasa ng robot” sa ibaba"
+      },
+      "order": {
+        "title": "Pagkakasunod-sunod sa file",
+        "pass": "Nakasulat ang teksto sa file ayon sa pagkakasunod-sunod ng pagbasa",
+        "warnHeader": "Nakasulat sa file ang pangalan at header mo pagkatapos ng natitirang bahagi ng resume: baka hindi mahanap ang pangalan mo ng ATS na nagbabasa ng file ayon sa pagkakasunod-sunod",
+        "warn": "{{percent}}% ng teksto ang nakasulat sa file nang hindi ayon sa pagkakasunod-sunod ng pagbasa: babasahin ito ng ilang ATS sa maling ayos",
+        "fail": "{{percent}}% ng teksto ang nakasulat sa file nang gulo-gulo, karaniwan sa mga resume na gawa sa malalayang text box (Canva, PowerPoint…): mababasa ng maraming ATS nang halo-halo ang resume mo. Ihambing ang dalawang pagbasa sa ibaba"
+      },
+      "unreadable": {
+        "title": "Mga icon at skill bar",
+        "pass": "Walang icon o hindi mabasang karakter",
+        "warn": "May natukoy na icon o bar ({{count}}): binabasa ito ng ATS bilang kakaibang karakter. Palitan ng teksto",
+        "fail": "May natukoy na icon o bar ({{count}}): palitan ng teksto, halimbawa “English: C1” sa halip na mga tuldok"
+      },
+      "contact": {
+        "title": "Impormasyon sa pakikipag-ugnayan",
+        "pass": "Nahanap ang email at numero ng telepono",
+        "warnNoPhone": "Walang nahanap na numero ng telepono",
+        "warnNoEmail": "Walang nahanap na email address",
+        "fail": "Walang nahanap na email o numero ng telepono: isulat ang mga ito bilang teksto, hindi sa larawan"
+      },
+      "sections": {
+        "title": "Karaniwang mga seksyon",
+        "pass": "Malinaw na natukoy ang karanasan, edukasyon at mga kasanayan",
+        "warn": "Hindi natukoy ang mga seksyong ito: gumamit ng karaniwang heading",
+        "fail": "Walang natukoy na karaniwang seksyon: umaasa ang ATS sa mga heading tulad ng “Karanasan” o “Edukasyon”"
+      },
+      "length": {
+        "title": "Haba",
+        "pass": "{{pages}} pahina, {{words}} salita: ideal na haba",
+        "warn": "{{pages}} pahina, {{words}} salita: layunin ang 1 hanggang 2 pahina at 250 hanggang 1,000 salita",
+        "fail": "{{pages}} pahina, {{words}} salita: masyadong maikli o masyadong mahaba para masuri nang maayos"
+      },
+      "quantified": {
+        "title": "Nasusukat na resulta",
+        "pass": "{{percent}}% ng mga bullet mo ay may numero, napakahusay",
+        "warn": "{{percent}}% lang ng mga bullet ang may numero: magdagdag ng nasusukat na resulta (porsiyento, halaga, dami)",
+        "fail": "Walang nasusukat na resulta: pinahahalagahan ng mga recruiter at ATS ang mga nasusukat na nagawa"
+      },
+      "weakPhrases": {
+        "title": "Mga action verb",
+        "pass": "Walang mahinang parirala sa simula ng mga bullet",
+        "warn": "Gawain ang inilalarawan ng mga panimulang ito sa halip na resulta: magsimula sa action verb",
+        "fail": "Gawain ang inilalarawan ng mga panimulang ito sa halip na resulta: magsimula sa action verb"
+      },
+      "dates": {
+        "title": "Mga petsa",
+        "pass": "May petsa ang mga karanasan mo",
+        "warn": "Isang taon lang ang nahanap: lagyan ng petsa ang bawat posisyon, ginagamit ito ng ATS para kalkulahin ang taon ng karanasan",
+        "fail": "Walang nahanap na petsa: ginagamit ito ng ATS para kalkulahin ang taon ng karanasan"
+      }
+    },
+    "robot": {
+      "title": "Ang binabasa ng robot",
+      "text": "Binuo muli ang teksto linya por linya, gaya ng ginagawa ng karamihan ng ATS. Kung gulo-gulo o kulang ito rito, ganoon din ang makikita ng recruiter",
+      "empty": "Walang nakuhang teksto",
+      "position": "Ayon sa posisyon",
+      "file": "Pagkakasunod-sunod sa file",
+      "fileText": "Ang teksto sa pagkakasunod-sunod kung paano ito nakasulat sa file: ganito ito binabasa ng mga ATS na hindi bumubuo muli ng layout. Dapat itong sumunod sa pagkakasunod-sunod ng pagbasa ng resume mo"
+    },
+    "cta": {
+      "title": "Magsimulang muli sa matibay na pundasyon",
+      "text": "Gumawa ng resume na pasado sa ATS sa editor, at iangkop ito sa bawat trabaho",
+      "button": "Buksan ang editor",
+      "import": "Ilipat ang resume na ito sa mga template namin"
+    },
+    "live": {
+      "title": "Live na ATS check",
+      "issues": "{{count}} puntong susuriin sa template na ito",
+      "allGood": "Walang natukoy na problema sa template na ito",
+      "hint": "Kinakalkula sa ipinapakitang layout, gamit ang parehong engine ng tagasuri ng resume"
+    },
+    "method": {
+      "title": "Paano kinakalkula ang score na ito?",
+      "intro": "Walang opisyal na ATS score: bawat recruitment software (Workday, Taleo, Greenhouse, Lever…) ay may sariling patakaran, na kadalasang hindi isinasapubliko. Sinusuri ng indicator na ito ang mga puntong nagpapahirap sa karamihan ng system, ayon sa iskalang ito:",
+      "disclaimer": "Nakabatay ang mga pamantayang ito sa mga pampublikong rekomendasyon ng mga ATS vendor at sa pinakakaraniwang pagkakamali sa pagbasa (teksto sa larawan, mga column, icon, hindi karaniwang heading). Tinutulungan ka ng score na pagbutihin ang resume mo: hindi nito hinuhulaan ang resulta ng pagpili"
+    }
+  },
+  "import": {
+    "title": "Mag-import ng resume",
+    "linkedinTitle": "Import mula sa LinkedIn",
+    "text": "Pumili ng PDF o Word (.docx) na resume: kinukuha ang nilalaman nito sa browser mo at inaayos sa mga seksyon ng editor. Pagkatapos ay puwede kang pumili ng template",
+    "choose": "Pumili ng file",
+    "chooseFile": "Pumili ng file",
+    "hint": "PDF o Word (.docx), hanggang 15 MB",
+    "reading": "Ini-import…",
+    "privacy": "Binabasa ang file sa browser mo: hindi ito kailanman ipinapadala kahit saan",
+    "close": "Isara",
+    "done": "Na-import ang resume ({{items}} item): suriin ang bawat seksyon",
+    "errors": {
+      "tooLarge": "Lampas 15 MB ang file na ito",
+      "encrypted": "Protektado ng password ang PDF na ito",
+      "unreadable": "Hindi mabasa ang file na ito: baka sira ito",
+      "empty": "Walang magagamit na teksto: malamang na larawan o scan ang PDF na ito",
+      "unsupported": "Pumili ng PDF, Word file (.docx) o ZIP archive ng LinkedIn",
+      "archiveEmpty": "Walang magagamit na data ng LinkedIn profile ang archive na ito"
+    },
+    "hintArchive": "PDF (computer) o ZIP archive (mobile app)",
+    "linkedin": {
+      "computer": {
+        "title": "Sa computer: ang PDF ng profile mo",
+        "step1": "Buksan ang linkedin.com sa browser ng computer (wala ang opsyong ito sa app)",
+        "step2": "Sa profile mo, i-click ang “Resources” (o “More”), pagkatapos ay “Save to PDF”",
+        "step3": "Piliin ang PDF na iyon sa ibaba"
+      },
+      "archive": {
+        "title": "Sa mobile app: ang data archive mo",
+        "step1": "Sa app, i-tap ang larawan mo, pagkatapos ay ang Settings at Data privacy",
+        "step2": "Piliin ang “Get a copy of your data” at i-check ang Profile, Positions, Education, Skills at Languages",
+        "step3": "Mag-e-email sa iyo ang LinkedIn sa loob ng ilang minuto: i-download ang ZIP archive",
+        "step4": "Piliin ang ZIP file na iyon sa ibaba, nang hindi ito ina-unzip"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Ipinapakita ang dokumentong ito sa English. Ang bersyong French lang ang may bisang legal.",
+    "error": "Hindi ma-load ang dokumentong ito."
+  }
+}

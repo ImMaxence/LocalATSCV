@@ -13,7 +13,6 @@
           "/favicon.svg",
           "/*.css",
           "/*.js",
-          "/i18n/*.json",
           "/CHANGELOG.md"
         ]
       }
@@ -26,6 +25,7 @@
         "files": [
           "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)",
           "/pdfjs/*.mjs",
+          "/i18n/*.json",
           "/legal/**/*.md"
         ]
       }

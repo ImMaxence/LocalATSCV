@@ -133,6 +133,9 @@
     animation: menu-in 140ms cubic-bezier(0.2, 0.7, 0.2, 1);
     transform-origin: top right;
   }
+  .menu-in:dir(rtl) {
+    transform-origin: top left;
+  }
 
   .panel {
     @apply rounded-2xl border border-line bg-surface;
@@ -164,7 +167,7 @@
   }
 
   .menu-item {
-    @apply flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-sm text-ink outline-none hover:bg-surface-2 focus-visible:bg-surface-2;
+    @apply flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-start text-sm text-ink outline-none hover:bg-surface-2 focus-visible:bg-surface-2;
   }
 
   .add-btn {
@@ -322,4 +325,26 @@ app-header > header {
     orphans: 2;
     widows: 2;
   }
+}
+
+/*
+ * Écritures absentes de Fraunces (arabe, hébreu, persan, ourdou, écritures indiennes, thaï,
+ * chinois, japonais, coréen) : les titres passent dans la police d'interface plutôt que dans un
+ * empattement système dépareillé, et l'italique, étranger à ces écritures, est retiré. Hors
+ * couche, pour l'emporter sur les utilitaires ; le CV, qui a sa propre langue, n'est pas touché.
+ */
+:is(.font-display, .italic):is(
+    :lang(ar),
+    :lang(fa),
+    :lang(ur),
+    :lang(he),
+    :lang(hi),
+    :lang(bn),
+    :lang(th),
+    :lang(ja),
+    :lang(ko),
+    :lang(zh)
+  ) {
+  font-family: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  font-style: normal;
 }

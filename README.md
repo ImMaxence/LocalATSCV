@@ -34,7 +34,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 
 ## Fonctionnalités
 
-- [x] Landing page, thème clair/sombre, interface en 5 langues (FR, EN, IT, ES, DE)
+- [x] Landing page, thème clair/sombre, interface en 44 langues (dont 4 de droite à gauche), une URL par langue avec hreflang et sitemap
 - [x] Master CV stocké dans IndexedDB, photo comprise, enregistrement automatique
 - [x] Sauvegarde et restauration au format JSON
 - [x] Éditeur avec aperçu A4 en direct, repères de sauts de page

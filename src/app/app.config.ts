@@ -18,7 +18,8 @@ import { provideServiceWorker } from '@angular/service-worker';
 import { provideTransloco } from '@jsverse/transloco';
 import { routes } from './app.routes';
 import { AnchorScroller } from './core/anchor-scroller';
-import { DEFAULT_UI_LANGUAGE, LanguageService, UI_LANGUAGES } from './core/i18n/language.service';
+import { LanguageService } from './core/i18n/language.service';
+import { DEFAULT_UI_LANGUAGE, UI_LANGUAGES } from './core/i18n/languages';
 import { TranslatedTitleStrategy } from './core/i18n/translated-title-strategy';
 import { TranslocoHttpLoader } from './core/i18n/transloco-loader';
 import { skipSamePageTransitions } from './core/view-transitions';
@@ -42,8 +43,9 @@ export const appConfig: ApplicationConfig = {
       config: {
         availableLangs: [...UI_LANGUAGES],
         defaultLang: DEFAULT_UI_LANGUAGE,
-        fallbackLang: DEFAULT_UI_LANGUAGE,
-        missingHandler: { useFallbackTranslation: true },
+        // Seulement si un fichier de traduction ne se charge pas : chaque fichier contient toutes
+        // les clés (voir translations.spec.ts), inutile de télécharger une seconde langue.
+        fallbackLang: 'en',
         reRenderOnLangChange: true,
         prodMode: !isDevMode(),
       },

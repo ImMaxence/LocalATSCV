@@ -1,10 +1,17 @@
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { CONTACT_EMAIL } from '../../core/app-info';
 import { LanguageService } from '../../core/i18n/language.service';
 import { Icon, IconName } from '../../shared/icon/icon';
-import { LANDING_DEMO } from './landing-demo';
+import {
+  DEMO_BULLETS,
+  DEMO_KEYWORDS,
+  DEMO_NAME,
+  DEMO_SCORE,
+  DemoSegment,
+  DemoSegmentsPipe,
+} from './landing-demo';
 import { FAQ_ITEMS } from './faq';
 
 interface IconItem {
@@ -17,21 +24,22 @@ const SCORE_RADIUS = 42;
 @Component({
   selector: 'app-landing',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, TranslocoDirective, Icon],
+  imports: [RouterLink, TranslocoDirective, Icon, DemoSegmentsPipe],
   templateUrl: './landing.html',
   styleUrl: './landing.css',
 })
 export class Landing {
-  private readonly language = inject(LanguageService);
+  protected readonly language = inject(LanguageService);
 
-  protected readonly demo = computed(() => LANDING_DEMO[this.language.current()]);
   protected readonly contactEmail = CONTACT_EMAIL;
 
+  protected readonly demoName = DEMO_NAME;
+  protected readonly demoBullets = DEMO_BULLETS;
+  protected readonly demoKeywords = DEMO_KEYWORDS;
+  protected readonly demoScore = DEMO_SCORE;
   protected readonly scoreRadius = SCORE_RADIUS;
   protected readonly scoreCircumference = 2 * Math.PI * SCORE_RADIUS;
-  protected readonly scoreOffset = computed(
-    () => this.scoreCircumference * (1 - this.demo().score.value / 100),
-  );
+  protected readonly scoreOffset = this.scoreCircumference * (1 - DEMO_SCORE / 100);
 
   protected readonly heroPoints = ['noAccount', 'offline', 'atsPdf'];
 
@@ -70,4 +78,9 @@ export class Landing {
   ];
 
   protected readonly faq = FAQ_ITEMS;
+
+  /** Une puce qui contient une phrase faible affiche la suggestion de verbe d'action. */
+  protected hasWeak(segments: DemoSegment[]): boolean {
+    return segments.some((segment) => segment.kind === 'weak');
+  }
 }

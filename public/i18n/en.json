@@ -15,7 +15,11 @@
     "dark": "Dark"
   },
   "lang": {
-    "label": "Interface language"
+    "label": "Interface language",
+    "suggestion": "View this page in English",
+    "dismiss": "Close",
+    "search": "Search languages",
+    "noResult": "No language found"
   },
   "pages": {
     "home": "ATS-friendly resumes, 100% local",
@@ -246,6 +250,25 @@
       "title": "Ready to get past the filter?",
       "text": "Create your Master resume in minutes. Nothing will leave this device",
       "button": "Get started"
+    },
+    "demo": {
+      "role": "Front-end Developer",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Experience",
+      "jobTitle": "Angular Developer",
+      "jobMeta": "Example Corp · 2022 – present",
+      "bullets": {
+        "migration": "Migrated 40 screens to <k>Angular</k> and <k>TypeScript</k>, cutting load time by 35%",
+        "testing": "<w>Responsible for</w> the end-to-end testing strategy",
+        "delivery": "Continuous delivery with <k>GitLab CI</k> for 3 product teams"
+      },
+      "weakLabel": "Weak phrase",
+      "weakReplacement": "“Led”",
+      "skills": "Skills",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibility",
+      "score": "Match with the job ad",
+      "sent": "0 bytes sent",
+      "robot": "SKILLS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end Developer Angular <n>●●●●○</n> EXPERIENCE <n>� camille.mar</n> Angular Developer <n>tin@example.com</n> 2022 – present TypeScript <n>●●●○○</n> Example Corp LANGUAGES French Migrated 40 screens to…"
     }
   },
   "dialog": {

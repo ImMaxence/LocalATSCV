@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV pradžia",
+    "main": "Pagrindinė navigacija",
+    "how": "Kaip tai veikia",
+    "privacy": "Privatumas",
+    "analyze": "Analizuoti CV",
+    "editor": "Kurti mano CV",
+    "skipToContent": "Pereiti prie turinio"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Šviesi",
+    "system": "Sistemos",
+    "dark": "Tamsi"
+  },
+  "lang": {
+    "label": "Sąsajos kalba",
+    "suggestion": "Rodyti šį puslapį lietuviškai",
+    "dismiss": "Uždaryti",
+    "search": "Ieškoti kalbos",
+    "noResult": "Kalba nerasta"
+  },
+  "pages": {
+    "home": "ATS draugiški CV, 100 % vietoje",
+    "editor": "Redaktorius",
+    "analyze": "CV analizatorius",
+    "changelog": "Naujienos",
+    "legalNotice": "Teisinė informacija",
+    "terms": "Naudojimo sąlygos",
+    "privacy": "Privatumo politika"
+  },
+  "seo": {
+    "home": "Nemokamas ATS draugiškas CV kūrėjas: 30 grafinių šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam darbo skelbimui ir ATS įvertinimas. Atvirasis kodas, jūsų duomenys lieka naršyklėje",
+    "editor": "CV redaktorius su tiesiogine peržiūra, Master CV ir tikslinėmis versijomis, ATS patikra ir PDF eksportu su tikru tekstu. Viskas lieka jūsų naršyklėje",
+    "analyze": "Nemokamai išanalizuokite PDF formato CV: ATS įvertinimas iš 100, taisytinos vietos ir tekstas taip, kaip jį perskaito atrankos sistema. Failas niekada nepalieka jūsų naršyklės",
+    "changelog": "LocalATSCV naujienos pagal versijas: nauji CV šablonai, funkcijos ir pataisymai",
+    "legalNotice": "LocalATSCV teisinė informacija: leidėjas, talpinimas ir kontaktai",
+    "terms": "LocalATSCV naudojimo sąlygos: nemokamas atvirojo kodo CV kūrėjas",
+    "privacy": "LocalATSCV privatumo politika: jokie duomenys nerenkami, jūsų CV lieka naršyklėje"
+  },
+  "footer": {
+    "tagline": "ATS draugiškas CV kūrėjas, kuris niekada nemato jūsų duomenų",
+    "product": "Produktas",
+    "legal": "Teisinė informacija",
+    "project": "Projektas",
+    "changelog": "Naujienos",
+    "sourceCode": "Šaltinio kodas",
+    "reportIssue": "Pranešti apie problemą",
+    "license": "MIT licencija",
+    "versionLabel": "Versija {{version}}, žiūrėti naujienas"
+  },
+  "update": {
+    "title": "Yra nauja versija",
+    "text": "Įkelkite puslapį iš naujo, kad ją naudotumėte",
+    "changelog": "Žiūrėti naujienas",
+    "reload": "Įkelti iš naujo",
+    "later": "Vėliau"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % vietoje · Nemokamai · Atvirasis kodas",
+      "titleLine1": "CV, kuris praeina pro robotus",
+      "titleLine2": "Duomenys, kurie lieka pas jus",
+      "subtitle": "LocalATSCV padeda sukurti CV, optimizuotą atrankos sistemoms (ATS), ir keliais paspaudimais pritaikyti jį kiekvienai darbo vietai. Viskas vyksta jūsų naršyklėje: jokios paskyros, jokie duomenys niekur nesiunčiami",
+      "ctaPrimary": "Kurti mano CV",
+      "ctaSecondary": "Analizuoti esamą CV",
+      "points": {
+        "noAccount": "Be registracijos",
+        "offline": "Veikia neprisijungus",
+        "atsPdf": "ATS nuskaitomas PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problema",
+      "title": "Jūsų CV pirmiausia skaito mašina",
+      "text": "Dauguma didelių įmonių ir įdarbinimo agentūrų rūšiuoja paraiškas su ATS (Applicant Tracking System). Ji ištraukia tekstą iš jūsų CV, išsaugo jį duomenų bazėje ir leidžia atrankos specialistams ieškoti kandidatų pagal raktinius žodžius",
+      "pitfalls": {
+        "layout": {
+          "title": "Sudėtingas maketas",
+          "text": "Stulpeliai, lentelės ir teksto laukeliai sujaukia skaitymo tvarką: jūsų informacija išeina sumaišyta"
+        },
+        "image": {
+          "title": "Neįskaitomas tekstas",
+          "text": "Piktogramos, įgūdžių juostos ir kai kurie dizaino įrankių eksportai virsta keistais simboliais arba visai dingsta"
+        },
+        "keywords": {
+          "title": "Trūkstami raktiniai žodžiai",
+          "text": "Jei skelbimo žodžių nėra jūsų CV, jūsų profilis neatsiras atrankos specialistų paieškose"
+        }
+      },
+      "seen": "Ką matote jūs",
+      "read": "Ką perskaito robotas",
+      "fix": "LocalATSCV daro priešingai: vienas stulpelis, tikras tekstas ir standartinės skilčių antraštės, kurias robotai perskaito teisinga tvarka"
+    },
+    "how": {
+      "eyebrow": "Kaip tai veikia",
+      "title": "Parašykite kartą, pritaikykite be galo",
+      "text": "Keturi žingsniai, kad jūsų Master CV taptų kiekvienai darbo vietai pritaikyta paraiška",
+      "steps": {
+        "profile": {
+          "title": "Užpildykite savo Master CV",
+          "text": "Įveskite visą savo patirtį kartą ir visiems laikams arba importuokite savo LinkedIn profilio PDF ir sutaupykite laiko"
+        },
+        "offer": {
+          "title": "Įklijuokite darbo skelbimą",
+          "text": "LocalATSCV ištraukia raktinius žodžius ir apskaičiuoja atitikties įvertinimą iš 100, kuris atnaujinamas jums rašant"
+        },
+        "compose": {
+          "title": "Sukurkite tikslinę versiją",
+          "text": "Pažymėkite tinkamą patirtį ir punktus, pertvarkykite juos vilkdami. Iš jūsų Master niekas neištrinama"
+        },
+        "export": {
+          "title": "Eksportuokite į PDF",
+          "text": "PDF su tikru tekstu, struktūruotas ir viename stulpelyje, robotams toks pat įskaitomas kaip ir atrankos specialistams"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privatumas",
+      "title": "Nulis duomenų mūsų serveriuose. Tiesiogine prasme",
+      "text": "Nėra duomenų bazės, kurią būtų galima įsilaužti: mūsų serveris jums siunčia tik programėlę. Po to viskas vyksta jūsų naršyklėje, net neprisijungus",
+      "browser": {
+        "title": "Jūsų naršyklė",
+        "tag": "Jūsų įrenginys",
+        "items": {
+          "master": "Master CV",
+          "photo": "Profilio nuotrauka",
+          "versions": "Tikslinės versijos",
+          "settings": "Nuostatos"
+        },
+        "note": "Saugoma IndexedDB, tik šiame įrenginyje"
+      },
+      "flow": {
+        "app": "Programėlė, pirmą kartą įkeliant",
+        "data": "Jūsų duomenys",
+        "never": "niekada"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Serveris",
+        "text": "Pateikia programėlės failus (HTML, CSS, JavaScript), nieko daugiau",
+        "items": {
+          "noDb": "Jokios duomenų bazės",
+          "noAccount": "Jokių naudotojų paskyrų",
+          "noLogs": "Jokių lankymosi žurnalų"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Be paskyros",
+          "text": "Be registracijos, el. pašto ir slaptažodžio. Atidarykite puslapį ir pradėkite"
+        },
+        "trackers": {
+          "title": "Be sekiklių",
+          "text": "Jokios statistikos, reklamų ar sekimo slapukų. Net šriftai laikomi mūsų pačių serveryje"
+        },
+        "csp": {
+          "title": "Techniškai užrakinta",
+          "text": "Svetainės saugumo politika (CSP) draudžia naršyklei jungtis prie bet kurio kito domeno. Kodas atviras: patikrinkite patys"
+        },
+        "backup": {
+          "title": "Jūsų atsarginės kopijos, jūsų failai",
+          "text": "Eksportuokite visus savo duomenis į JSON failą ir importuokite juos bet kuriame įrenginyje"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkcijos",
+      "title": "Viskas, ko reikia, kad patektumėte į pokalbį",
+      "items": {
+        "master": {
+          "title": "Master CV ir tikslinės versijos",
+          "text": "Vienas išsamus CV ir tiek variantų, kiek paraiškų. Pažymėkite, atžymėkite: niekas nepradingsta"
+        },
+        "score": {
+          "title": "Atitikties įvertinimas",
+          "text": "Įklijuokite skelbimą: rasti ir trūkstami raktiniai žodžiai bei įvertinimas iš 100 realiuoju laiku"
+        },
+        "weak": {
+          "title": "Silpnų formuluočių aptikimas",
+          "text": "„Atsakingas už“, „padėjau“… pažymimi automatiškai, o jiems pakeisti siūlomas veiksmažodžių bankas"
+        },
+        "analyzer": {
+          "title": "Esamų CV analizatorius",
+          "text": "Įmeskite kitur sukurtą CV: pamatykite, ką robotas iš tikrųjų perskaito ir ką reikia taisyti"
+        },
+        "linkedin": {
+          "title": "Importas iš LinkedIn",
+          "text": "Iš anksto užpildykite savo Master CV nemokamu PDF, kurį galite eksportuoti iš savo LinkedIn profilio"
+        },
+        "languages": {
+          "title": "5 CV kalbos",
+          "text": "Prancūzų, anglų, italų, ispanų ir vokiečių. Anglų kalba nuotrauka ir gimimo data paslepiamos pagal angliškai kalbančių šalių normas"
+        },
+        "pdf": {
+          "title": "ATS draugiškas PDF eksportas",
+          "text": "Tikras tekstas ir aiški struktūra: įskaitoma robotams, maloni atrankos specialistams"
+        },
+        "offline": {
+          "title": "Įdiegiama ir veikia neprisijungus",
+          "text": "Pridėkite LocalATSCV prie pradžios ekrano ir dirbkite toliau be ryšio"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "DUK",
+      "title": "Dažniausiai užduodami klausimai",
+      "text": "Jūsų klausimo čia nėra? Parašykite mums:",
+      "items": {
+        "ats": {
+          "q": "Kas yra ATS?",
+          "a": "Applicant Tracking System yra programinė įranga, kuria atrankos specialistai priima, rūšiuoja ir ieško paraiškų. Ji paverčia jūsų CV tekstu ir jį indeksuoja: jei tekstas ištrauktas prastai arba trūksta tinkamų raktinių žodžių, jūsų paraišką sunku rasti"
+        },
+        "storage": {
+          "q": "Kur saugomi mano duomenys?",
+          "a": "Tik jūsų naršyklėje, IndexedDB, duomenų bazėje, kuri yra kiekvienoje šiuolaikinėje naršyklėje. Jie niekada nekeliauja per mūsų serverius, kurie moka tik pateikti programėlės failus"
+        },
+        "clear": {
+          "q": "Kas nutiks, jei išvalysiu naršyklės duomenis?",
+          "a": "Jūsų CV bus ištrinti, nes jų niekur kitur nėra. Reguliariai eksportuokite JSON atsarginę kopiją: ją galėsite bet kada importuoti bet kuriame įrenginyje"
+        },
+        "score": {
+          "q": "Ar įvertinimas garantuoja, kad mano CV bus atrinktas?",
+          "a": "Ne. Kiekviena ATS turi savo taisykles, o galutinį sprendimą priima žmogus. Įvertinimas yra rodiklis: jis patikrina, ar jūsų CV vartoja skelbimo žodžius ir ar mašina gali jį teisingai perskaityti"
+        },
+        "photo": {
+          "q": "Kodėl anglų kalba dingsta nuotrauka?",
+          "a": "Jungtinėje Karalystėje, JAV ir daugelyje angliškai kalbančių šalių nuotraukos ir gimimo datos nerekomenduojama pateikti, kad būtų ribojama diskriminacija įdarbinant. Kai kurie atrankos specialistai net atmeta jas turinčius CV"
+        },
+        "free": {
+          "q": "Ar tikrai nemokama?",
+          "a": "Taip. LocalATSCV yra atvirojo kodo projektas su MIT licencija, be reklamų ir prenumeratos. Jo talpinimas beveik nieko nekainuoja, nes visą darbą atlieka jūsų naršyklė"
+        },
+        "templates": {
+          "q": "Ar grafiniai šablonai praeina ATS?",
+          "a": "Taip. Kiekvienas šablonas spausdina tikrą tekstą skaitymo tvarka su standartinėmis skilčių antraštėmis: formos, juostos ir piktogramos yra piešiniai, kurių robotai nepaiso. Vieno stulpelio šablonai vis dar saugiausi, o redaktoriaus ATS patikra realiuoju laiku tikrina jūsų maketą"
+        },
+        "import": {
+          "q": "Ar galiu panaudoti dabartinį CV arba LinkedIn profilį?",
+          "a": "Taip. Importuokite CV PDF arba Word (.docx) formatu, savo LinkedIn profilio PDF (kompiuteryje) arba LinkedIn duomenų archyvą (iš programėlės telefone): turinys perskaitomas jūsų naršyklėje ir suskirstomas redaktoriuje"
+        },
+        "offline": {
+          "q": "Ar LocalATSCV veikia neprisijungus?",
+          "a": "Taip. Tai įdiegiama interneto programėlė: po pirmo apsilankymo viskas veikia be ryšio, įskaitant PDF eksportą"
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę praeiti pro filtrą?",
+      "text": "Sukurkite savo Master CV per kelias minutes. Niekas nepaliks šio įrenginio",
+      "button": "Pradėti"
+    },
+    "demo": {
+      "role": "Front-end programuotoja",
+      "contact": "Lionas · camille.martin@example.com",
+      "experience": "Darbo patirtis",
+      "jobTitle": "Angular programuotoja",
+      "jobMeta": "UAB Pavyzdys · 2022 – dabar",
+      "bullets": {
+        "migration": "40 ekranų perkėlimas į <k>Angular</k> ir <k>TypeScript</k>, įkėlimo laikas sutrumpėjo 35 %",
+        "testing": "<w>Atsakinga už</w> visapusio testavimo strategiją",
+        "delivery": "Nuolatinis diegimas su <k>GitLab CI</k> 3 produktų komandoms"
+      },
+      "weakLabel": "Silpna formuluotė",
+      "weakReplacement": "„Vadovavau“",
+      "skills": "Įgūdžiai",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Prieinamumas",
+      "score": "Atitiktis skelbimui",
+      "sent": "Išsiųsta 0 baitų",
+      "robot": "ĮGŪDŽIAI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end programuotoja Angular <n>●●●●○</n> DARBO PATIRTIS <n>� camille.mar</n> Angular programuotoja <n>tin@example.com</n> 2022 – dabar TypeScript <n>●●●○○</n> UAB Pavyzdys KALBOS Anglų 40 ekranų perkėlimas į…"
+    }
+  },
+  "dialog": {
+    "cancel": "Atšaukti",
+    "delete": "Ištrinti",
+    "create": "Sukurti",
+    "save": "Išsaugoti",
+    "import": "Importuoti"
+  },
+  "editor": {
+    "list": {
+      "title": "Mano CV",
+      "subtitle": "Saugoma tik šioje naršyklėje",
+      "new": "Naujas CV",
+      "newBlank": "Tuščias CV",
+      "newBlankHint": "Pradėti nuo tuščio puslapio",
+      "newSample": "Pradėti nuo pavyzdžio",
+      "newSampleHint": "Užpildytas išgalvotas CV redaktoriui išbandyti",
+      "import": "Atkurti atsarginę kopiją",
+      "exportAll": "Eksportuoti viską",
+      "emptyTitle": "Kol kas CV nėra",
+      "emptyText": "Sukurkite savo Master CV: visa jūsų patirtis vienoje vietoje, paruošta pritaikyti kiekvienai darbo vietai",
+      "open": "Atidaryti",
+      "actions": "Veiksmai",
+      "duplicate": "Dublikuoti",
+      "export": "Eksportuoti (JSON)",
+      "delete": "Ištrinti",
+      "updated": "Redaguota {{date}}",
+      "versions": "Versijos: {{count}}",
+      "backupHint": "Jūsų CV egzistuoja tik šioje naršyklėje. Reguliariai eksportuokite JSON atsarginę kopiją: jei išvalysite naršyklės duomenis, su ja viską atgausite",
+      "defaultName": "Mano CV",
+      "copySuffix": "(kopija)",
+      "deleteTitle": "Ištrinti „{{name}}“?",
+      "deleteText": "CV ir visos jo versijos bus negrįžtamai ištrinti iš šios naršyklės",
+      "exportDone": "Atsarginė kopija atsisiųsta",
+      "importConfirmTitle": "Importuoti šią atsarginę kopiją?",
+      "importConfirmText": "CV šioje atsarginėje kopijoje: {{count}}. Šioje naršyklėje jau esantys CV bus pakeisti",
+      "importDone": "Atsarginė kopija importuota: {{count}} CV",
+      "importError": {
+        "invalidJson": "Šis failas nėra tinkamas JSON",
+        "notABackup": "Šis failas nėra LocalATSCV atsarginė kopija",
+        "newerVersion": "Ši atsarginė kopija yra iš naujesnės LocalATSCV versijos: pirmiausia atnaujinkite programėlę"
+      },
+      "importPdf": "Importuoti CV (PDF arba Word)",
+      "importPdfHint": "Perkelkite esamą CV į mūsų šablonus",
+      "importLinkedin": "Importuoti iš LinkedIn",
+      "importLinkedinHint": "Iš jūsų profilio PDF"
+    },
+    "toolbar": {
+      "back": "Mano CV",
+      "name": "CV pavadinimas",
+      "cvLanguage": "CV kalba",
+      "accent": "Akcento spalva",
+      "customAccent": "Pasirinktinė spalva",
+      "saved": "Išsaugota",
+      "saving": "Išsaugoma…",
+      "saveError": "Nepavyko išsaugoti",
+      "edit": "Redaguoti",
+      "preview": "Peržiūrėti",
+      "exportPdf": "Eksportuoti į PDF",
+      "undo": "Anuliuoti (Ctrl+Z)",
+      "redo": "Grąžinti (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Redaguojamas dokumentas",
+      "cv": "CV",
+      "letter": "Motyvacinis laiškas"
+    },
+    "letter": {
+      "title": "Motyvacinis laiškas",
+      "versionOwn": "Ši versija turi savo laišką",
+      "versionShared": "Ši versija naudoja Master laišką: redaguojant čia bus sukurta kopija šiai versijai",
+      "useMaster": "Naudoti Master laišką",
+      "recipient": "Gavėjas",
+      "recipientPlaceholder": "UAB Pavyzdys\nPersonalo skyrius\nGedimino pr. 10, LT-01103 Vilnius",
+      "place": "Vieta",
+      "date": "Data",
+      "dateHint": "Tuščia: spausdinimo dienos data",
+      "subject": "Tema",
+      "subjectPlaceholder": "Paraiška dėl pareigų…",
+      "greeting": "Kreipinys",
+      "body": "Laiškas",
+      "bodyPlaceholder": "Trys trumpos pastraipos: kas jus traukia įmonėje, ką jūs suteikiate, kokį kitą žingsnį siūlote",
+      "bodyHint": "Tuščia eilutė skiria dvi pastraipas · **paryškinta** raktiniam žodžiui",
+      "outline": "Įterpti planą",
+      "closing": "Atsisveikinimas",
+      "fileName": "Motyvacinis laiškas"
+    },
+    "fit": {
+      "pages": "Puslapių: {{count}}",
+      "onePage": "Telpa viename puslapyje",
+      "hintMany": "Dauguma atrankos specialistų tikisi vieno puslapio CV",
+      "hintOne": "Idealus formatas daugumai paraiškų",
+      "stillTooLong": "Vis dar per ilgas, net suglaudintas: sutrumpinkite kelis punktus arba paslėpkite elementus kurioje nors versijoje",
+      "fit": "Sutalpinti į vieną puslapį",
+      "settings": "Maketo nustatymai",
+      "spacing": "Tarpai",
+      "scale": "Teksto dydis",
+      "settingsHint": "Tekstas lieka tikru tekstu: keičiasi tik maketas",
+      "reset": "Šablono maketas",
+      "grayscale": "Rodyti nespalvotai",
+      "grayscaleHint": "Imituoja nespalvotą spaudinį: eksportuotas PDF išlaiko spalvas"
+    },
+    "versions": {
+      "label": "Rodoma versija",
+      "master": "Master CV",
+      "masterHint": "Visas turinys, be filtro",
+      "new": "Nauja versija",
+      "newText": "Tikslinė versija prasideda nuo viso jūsų Master CV: tada atžymėkite tai, ko šiai paraiškai nereikia",
+      "nameLabel": "Versijos pavadinimas",
+      "namePlaceholder": "Pvz., Front-end programuotojas – Įmonė X",
+      "rename": "Pervadinti versiją",
+      "delete": "Ištrinti versiją",
+      "deleteTitle": "Ištrinti versiją „{{name}}“?",
+      "deleteText": "Ištrinamas tik pasirinkimas: visas turinys lieka jūsų Master CV",
+      "banner": "Versija „{{name}}“: atžymėkite tai, kas neturi būti rodoma. Iš jūsų Master CV niekas neištrinama",
+      "include": "Įtraukti į šią versiją"
+    },
+    "enRule": "CV anglų kalba: nuotrauka, gimimo data ir pilietybė paslepiamos pagal angliškai kalbančių šalių normas",
+    "profile": {
+      "title": "Profilis",
+      "photo": "Nuotrauka",
+      "photoAdd": "Pridėti nuotrauką",
+      "photoChange": "Keisti",
+      "photoRemove": "Pašalinti",
+      "photoHint": "Sumažinta ir saugoma tik šiame įrenginyje",
+      "photoError": "Nepavyko nuskaityti šio paveikslėlio",
+      "hiddenInEnglish": "Anglų kalba paslėpta",
+      "firstName": "Vardas",
+      "lastName": "Pavardė",
+      "headline": "CV antraštė",
+      "headlinePlaceholder": "Pvz., Front-end programuotoja",
+      "email": "El. paštas",
+      "phone": "Telefonas",
+      "location": "Miestas",
+      "birthDate": "Gimimo data",
+      "nationality": "Pilietybė",
+      "summary": "Santrauka",
+      "summaryPlaceholder": "Du ar trys sakiniai, apibendrinantys jūsų profilį ir tai, ko ieškote",
+      "links": "Nuorodos",
+      "linkLabel": "Nuorodos pavadinimas",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Nuorodos adresas",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Pridėti nuorodą",
+      "removeLink": "Pašalinti nuorodą",
+      "drivingLicense": "Vairuotojo pažymėjimas",
+      "drivingLicensePlaceholder": "Pvz., B kategorija, nuosavas automobilis",
+      "qrToggle": "Rodyti šią nuorodą kaip QR kodą",
+      "linksHint": "Logotipas (LinkedIn, GitHub, YouTube…) pridedamas automatiškai. QR mygtukas daugumoje grafinių šablonų rodo nuorodą kaip QR kodą"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Darbo patirtis",
+        "education": "Išsilavinimas",
+        "projects": "Projektai",
+        "certifications": "Sertifikatai",
+        "custom": "Laisva skiltis",
+        "skills": "Įgūdžiai",
+        "languages": "Kalbos",
+        "interests": "Pomėgiai"
+      },
+      "add": "Pridėti skiltį",
+      "titleLabel": "Skilties pavadinimas",
+      "empty": "Tuščia skiltis: ji nebus rodoma CV",
+      "addItem": {
+        "experience": "Pridėti patirtį",
+        "education": "Pridėti išsilavinimą",
+        "projects": "Pridėti projektą",
+        "certifications": "Pridėti sertifikatą",
+        "custom": "Pridėti elementą",
+        "skills": "Pridėti įgūdžių",
+        "languages": "Pridėti kalbą",
+        "interests": "Pridėti pomėgį"
+      },
+      "deleteTitle": "Ištrinti skiltį „{{name}}“?",
+      "deleteText": "Jos turinys bus pašalintas iš Master CV ir visų jo versijų"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Pareigos",
+          "subtitle": "Įmonė"
+        },
+        "education": {
+          "title": "Laipsnis",
+          "subtitle": "Mokykla ar universitetas"
+        },
+        "projects": {
+          "title": "Projekto pavadinimas",
+          "subtitle": "Vaidmuo ar technologijos"
+        },
+        "certifications": {
+          "title": "Sertifikatas",
+          "subtitle": "Išdavėjas"
+        },
+        "custom": {
+          "title": "Pavadinimas",
+          "subtitle": "Paantraštė"
+        }
+      },
+      "location": "Vieta",
+      "url": "Nuoroda",
+      "start": "Pradžia",
+      "end": "Pabaiga",
+      "date": "Gavimo data",
+      "current": "Tebevyksta",
+      "untitled": "Be pavadinimo",
+      "bullets": "Pasiekimai",
+      "bulletPlaceholder": "Pradėkite veiksmažodžiu ir išreikškite rezultatą skaičiais",
+      "addBullet": "Pridėti punktą",
+      "bulletHint": "Enter: naujas punktas",
+      "boldHint": "**žodis**, kad būtų paryškinta"
+    },
+    "items": {
+      "skillLabel": "Kategorija",
+      "skillLabelPlaceholder": "Pvz., Front-end",
+      "skillKeywords": "Įgūdžiai",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Kalba",
+      "languageLevel": "Lygis",
+      "languageLevelPlaceholder": "Pvz., C1, fluent",
+      "interest": "Pomėgis",
+      "interestPlaceholder": "Pvz., Laipiojimas",
+      "levelDetected": "Lygis atpažintas: šablonai su juosta jį parodys",
+      "levelUnknown": "Lygis neatpažintas, juostos nėra: naudokite A1–C2 arba pasiūlymą iš sąrašo",
+      "levelEmpty": "Įveskite lygį, kad būtų rodoma juosta",
+      "levelHint": "Naudokite europinį lygį (A1–C2) arba žodį, pavyzdžiui, „fluent“ ar „native“: kai kurie šablonai jį rodo ir kaip juostą, kurią iš anksto parodo taškai dešinėje"
+    },
+    "actions": {
+      "menu": "Veiksmai",
+      "moveUp": "Perkelti aukštyn",
+      "moveDown": "Perkelti žemyn",
+      "duplicate": "Dublikuoti",
+      "delete": "Ištrinti",
+      "drag": "Vilkite, kad pakeistumėte tvarką"
+    },
+    "month": "Mėnuo",
+    "year": "Metai",
+    "noMonth": "Mėnuo",
+    "preview": {
+      "page": "{{n}} puslapis"
+    },
+    "notFound": {
+      "title": "CV nerastas",
+      "text": "Šio CV nėra arba jis ištrintas iš šios naršyklės"
+    },
+    "templates": {
+      "button": "Šablonas",
+      "title": "Pasirinkite šabloną",
+      "subtitle": "Visi šablonai su išsamiu CV pavyzdžiu arba su jūsų CV. Akcento spalva taikoma visiems šablonams",
+      "close": "Uždaryti",
+      "filter": "Filtruoti šablonus",
+      "filters": {
+        "all": "Visi",
+        "graphic": "Grafiniai",
+        "sober": "Santūrūs"
+      },
+      "ats": "ATS suderinamumas",
+      "levels": {
+        "excellent": "puikus",
+        "good": "geras",
+        "fair": "priimtinas"
+      },
+      "atsHint": "Kiekvienas šablonas spausdina tikrą tekstą. Dviejų stulpelių maketus dauguma šiuolaikinių ATS perskaito gerai, bet kai kurie senesni įrankiai sumaišo stulpelius: jei abejojate, rinkitės vieno stulpelio šabloną",
+      "names": {
+        "classic": {
+          "name": "Klasikinis",
+          "description": "Švarus ir veiksmingas: vienas stulpelis, pabrauktos antraštės, nieko nereikalingo"
+        },
+        "modern": {
+          "name": "Modernus",
+          "description": "Spalvota juosta, ryškios antraštės ir įgūdžiai kaip žymės"
+        },
+        "elegant": {
+          "name": "Elegantiškas",
+          "description": "Centruota antraštė ir serifinė tipografija rafinuotai išvaizdai"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Spalvotas kraštas, vienodo pločio šrifto detalės ir įgūdžiai kodo stiliumi"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Šveicariškas stilius: didelis vardas, antraštės paraštėje, daug laisvos vietos"
+        },
+        "sidebar": {
+          "name": "Stulpeliai",
+          "description": "Spalvota šoninė juosta su nuotrauka, kontaktais ir įgūdžiais"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Juosta su nuotrauka, piktogramos, laiko juosta ir kalbų juostos, vis tiek visiškai įskaitomas ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organinės pastelinės formos, didelė apvali nuotrauka, laiko juosta ir QR kodas dviem stulpeliais"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Signature išvaizda viename stulpelyje: grafiškas ir visiškai įskaitomas ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Tamsi įstriža juosta, spalvoti švytėjimai, patirties kortelės ir vientisos įgūdžių žymės"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrinė kompozicija pagrindinėmis spalvomis aplink nuotrauką, geometrinis šriftas ir formos prieš kiekvieną antraštę"
+        },
+        "editorial": {
+          "name": "Redakcinis",
+          "description": "Žurnalo maketas: didelis serifinis vardas, kursyvinė įžanga, sunumeruotos skiltys ir paslinktas portretas"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalizmas: storos juodos kontūrinės linijos, aštrūs šešėliai, ryškūs spalvų blokai ir juodos etiketės"
+        },
+        "prism": {
+          "name": "Prizmė",
+          "description": "Tinklinis gradientas jūsų akcento spalvomis, stiklo efekto kontaktų kortelė ir kortelės su gradientiniu kraštu"
+        },
+        "swiss": {
+          "name": "Šveicariškas",
+          "description": "Šveicariško plakato stilius: milžiniškas vardas, spalvota juosta, storos juodos linijos ir sunumeruotos skiltys"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Dramblio kaulo spalvos popierius, plonas dvigubas rėmelis, rombų ornamentai ir Garamond tipografija"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Tamsusis režimas: naktinis fonas, neoniniai akcentai ir švytinti laiko juosta, idealu skaitmeninėms paraiškoms"
+        },
+        "wave": {
+          "name": "Banga",
+          "description": "Spalvota juosta, besibaigianti bangomis, apvali nuotrauka ir banguotos antraštės, švelnus ir draugiškas"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Suapvalinti bento langeliai: nuotrauka, vardas ir QR kodas tinklelyje, po langelį kiekvienai skilčiai"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Techninis brėžinys: langeliais suskirstytas popierius, kampų žymės, matmenų linija ir vienodo pločio šrifto etiketės"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Devintojo dešimtmečio geometriniai konfeti, ryškios spalvos ir zigzagu pabrauktos antraštės"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Didelė padalyta juosta: tekstas ant spalvų bloko ir dviejų tonų nuotrauka"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografija kaip vienintelė puošmena: milžiniškas, iš dalies kontūrinis vardas ir labai didelės antraštės"
+        },
+        "sorbet": {
+          "name": "Sorbetas",
+          "description": "Kiekvienai skilčiai sava pastelinė spalva, piliulės formos antraštės ir daugiaspalvis švytėjimas"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Tamsiai mėlyna juosta, auksinė linija ir serifinis vardas vadovaujamoms pareigoms"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japoniškas minimalizmas: washi popierius, ensō ratas jūsų akcento spalva ir teptuko brūkšnys"
+        },
+        "ribbon": {
+          "name": "Kaspinas",
+          "description": "Skilčių antraštės ant kaspinų su kregždės uodegos galais, centruota antraštė"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Šešiakampė nuotrauka, korys kampe ir šešiakampiai prieš antraštes"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Sluoksniuoto karpyto popieriaus antraštė, skiltys kaip popieriaus lapai"
+        },
+        "thread": {
+          "name": "Siūlas",
+          "description": "Ištisinis siūlas jungia antraštę ir kiekvieną skiltį, su tašku kiekvienoms pareigoms"
+        }
+      },
+      "preview": {
+        "label": "Miniatiūrų turinys",
+        "sample": "Išsamus pavyzdys",
+        "mine": "Mano CV"
+      }
+    },
+    "print": {
+      "title": "Eksportuoti į PDF",
+      "text": "Tuoj atsidarys jūsų naršyklės spausdinimo langas. Kad PDF būtų nepriekaištingas:",
+      "tips": {
+        "destination": "Paskirties vieta: „Išsaugoti kaip PDF“",
+        "margins": "Paraštės: „Nėra“",
+        "headers": "Atžymėkite „Antraštės ir poraštės“",
+        "background": "Pažymėkite „Fono grafika“, kad išliktų spalvos"
+      },
+      "dontShow": "Daugiau nerodyti",
+      "cancel": "Atšaukti",
+      "print": "Atidaryti spausdinimo langą"
+    },
+    "job": {
+      "title": "Pritaikyti darbo skelbimui",
+      "sources": "LinkedIn, CV.lt, CVbankas, CV Online, Užimtumo tarnyba…",
+      "placeholder": "Įklijuokite čia visą skelbimo tekstą: pareigas, užduotis, reikalavimus",
+      "urlWarning": "Įklijuokite skelbimo tekstą, o ne nuorodą: LocalATSCV niekada nesijungia prie jokios svetainės, todėl jūsų duomenys lieka pas jus",
+      "empty": "Raktinių žodžių nerasta: įklijuokite išsamesnį skelbimą",
+      "score": "Atitiktis skelbimui",
+      "summary": "Yra {{found}} iš {{total}} raktinių žodžių",
+      "found": "Raktiniai žodžiai jūsų CV",
+      "missing": "Trūkstami raktiniai žodžiai",
+      "missingHint": "Spustelėkite raktinį žodį, kad pridėtumėte jį prie savo įgūdžių, arba įtraukite jį į kurią nors patirtį",
+      "addToSkills": "Pridėti prie įgūdžių",
+      "added": "„{{keyword}}“ pridėtas prie jūsų įgūdžių",
+      "keywordsGroup": "Raktiniai žodžiai",
+      "createVersion": "Sukurti tikslinę versiją šiai darbo vietai",
+      "createVersionHint": "Su darbo vieta nesusijusi patirtis ir punktai bus atžymėti: galėsite juos pakoreguoti",
+      "savedInVersion": "Skelbimas išsaugotas su versija „{{name}}“"
+    },
+    "weak": {
+      "hint": "„{{phrase}}“ apibūdina pareigas: pradėkite veiksmažodžiu"
+    },
+    "fonts": {
+      "title": "Tipografija",
+      "heading": "Antraštės",
+      "body": "Pagrindinis tekstas",
+      "default": "Šablono",
+      "hint": "ATS gerai perskaito visus šiuos šriftus: tekstas lieka tikru tekstu"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Naujienos",
+    "title": "Pakeitimų žurnalas",
+    "subtitle": "Visos LocalATSCV versijos su naujomis funkcijomis ir pataisymais",
+    "current": "Dabartinė versija",
+    "frenchOnly": "Pakeitimų žurnalas parašytas prancūzų kalba",
+    "error": "Nepavyko įkelti pakeitimų žurnalo",
+    "types": {
+      "added": "Pridėta",
+      "changed": "Pakeista",
+      "fixed": "Pataisyta",
+      "removed": "Pašalinta",
+      "deprecated": "Pasenę",
+      "security": "Saugumas",
+      "other": "Kita"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizatorius",
+    "title": "Ar jūsų CV praeina pro robotus?",
+    "subtitle": "Įmeskite bet kuriuo įrankiu sukurtą PDF formato CV: LocalATSCV jį perskaito kaip ATS ir pasako, ką taisyti",
+    "drop": "Vilkite savo CV čia",
+    "dropActive": "Paleiskite failą, kad pradėtumėte analizę",
+    "hint": "Tik PDF, iki 15 MB",
+    "choose": "Pasirinkti failą",
+    "reading": "Skaitomas PDF…",
+    "privacy": "Failas analizuojamas jūsų naršyklėje: jis niekada niekur nesiunčiamas",
+    "another": "Analizuoti kitą CV",
+    "errors": {
+      "notPdf": "Šis failas nėra PDF",
+      "tooLarge": "Šis failas didesnis nei 15 MB",
+      "encrypted": "Šis PDF apsaugotas slaptažodžiu: ATS jo taip pat negali perskaityti",
+      "unreadable": "Nepavyko perskaityti šio PDF: jis gali būti sugadintas"
+    },
+    "stats": "Puslapių: {{pages}} · žodžių: {{words}}",
+    "verdict": {
+      "excellent": "Puiku",
+      "good": "Gerai",
+      "fair": "Reikia tobulinti",
+      "poor": "Kritiška"
+    },
+    "verdictText": {
+      "excellent": "Robotai jūsų CV perskaito labai gerai",
+      "good": "Keli patobulinimai jį padarys dar veiksmingesnį",
+      "fair": "Kelios problemos trukdo ATS jį perskaityti",
+      "poor": "ATS gali praleisti svarbiausią informaciją"
+    },
+    "categories": {
+      "readability": "Mašininis įskaitomumas",
+      "structure": "Struktūra",
+      "content": "Turinys"
+    },
+    "sectionNames": {
+      "experience": "Darbo patirtis",
+      "education": "Išsilavinimas",
+      "skills": "Įgūdžiai"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Mašinai įskaitomas tekstas",
+        "pass": "Visą jūsų CV tekstą galima ištraukti",
+        "warn": "Kai kuriuose puslapiuose nėra įskaitomo teksto: tikriausiai paveikslėliai ar skenuotas dokumentas",
+        "fail": "Nėra įskaitomo teksto: šis CV tikriausiai yra paveikslėlis ar skenuotas dokumentas, ir ATS iš jo nieko neišgaus. Eksportuokite jį į PDF iš savo teksto rengyklės"
+      },
+      "columns": {
+        "title": "Maketas",
+        "pass": "Linijinė skaitymo tvarka, stulpeliai nesusimaišo",
+        "warn": "Aptiktas stulpelių maketas: tekstas gali būti perskaitytas netinkama tvarka. Patikrinkite „Ką perskaito robotas“ žemiau"
+      },
+      "order": {
+        "title": "Failo skaitymo tvarka",
+        "pass": "Tekstas faile įrašytas skaitymo tvarka",
+        "warnHeader": "Jūsų vardas ir antraštė faile įrašyti po likusio CV: failą iš eilės skaitanti ATS gali nerasti jūsų vardo",
+        "warn": "{{percent}} % teksto faile įrašyta ne skaitymo tvarka: kai kurios ATS šias ištraukas perskaitys netinkama tvarka",
+        "fail": "{{percent}} % teksto faile įrašyta netvarkingai, kas būdinga CV, sukurtiems su laisvais teksto laukeliais (Canva, PowerPoint…): daugelis ATS jūsų CV perskaitys sumaišytą. Palyginkite abu skaitymus žemiau"
+      },
+      "unreadable": {
+        "title": "Piktogramos ir įgūdžių juostos",
+        "pass": "Nėra piktogramų ar neįskaitomų simbolių",
+        "warn": "Aptiktos piktogramos ar juostos ({{count}}): ATS jas skaito kaip keistus simbolius. Pakeiskite jas tekstu",
+        "fail": "Aptiktos piktogramos ar juostos ({{count}}): pakeiskite jas tekstu, pavyzdžiui, „Anglų: C1“ vietoj taškų"
+      },
+      "contact": {
+        "title": "Kontaktiniai duomenys",
+        "pass": "Rastas el. pašto adresas ir telefono numeris",
+        "warnNoPhone": "Telefono numerio nerasta",
+        "warnNoEmail": "El. pašto adreso nerasta",
+        "fail": "Nerasta nei el. pašto, nei telefono: rašykite juos tekstu, o ne paveikslėlyje"
+      },
+      "sections": {
+        "title": "Standartinės skiltys",
+        "pass": "Patirtis, išsilavinimas ir įgūdžiai aiškiai atpažinti",
+        "warn": "Šios skiltys neatpažintos: naudokite standartines antraštes",
+        "fail": "Neatpažinta nė viena standartinė skiltis: ATS remiasi antraštėmis, tokiomis kaip „Darbo patirtis“ ar „Išsilavinimas“"
+      },
+      "length": {
+        "title": "Ilgis",
+        "pass": "Puslapių: {{pages}}, žodžių: {{words}}: idealus ilgis",
+        "warn": "Puslapių: {{pages}}, žodžių: {{words}}: siekite 1–2 puslapių ir 250–1000 žodžių",
+        "fail": "Puslapių: {{pages}}, žodžių: {{words}}: per trumpas arba per ilgas, kad būtų gerai įvertintas"
+      },
+      "quantified": {
+        "title": "Išmatuojami rezultatai",
+        "pass": "{{percent}} % jūsų punktų turi skaičių, puiku",
+        "warn": "Tik {{percent}} % punktų išreikšti skaičiais: pridėkite išmatuojamų rezultatų (procentų, sumų, apimčių)",
+        "fail": "Nėra išmatuojamų rezultatų: atrankos specialistai ir ATS vertina išmatuojamus pasiekimus"
+      },
+      "weakPhrases": {
+        "title": "Veiksmažodžiai",
+        "pass": "Punktų pradžioje nėra silpnų formuluočių",
+        "warn": "Šios pradžios apibūdina pareigas, o ne rezultatą: pradėkite veiksmažodžiu",
+        "fail": "Šios pradžios apibūdina pareigas, o ne rezultatą: pradėkite veiksmažodžiu"
+      },
+      "dates": {
+        "title": "Datos",
+        "pass": "Jūsų patirtis nurodyta su datomis",
+        "warn": "Rasti tik vieni metai: nurodykite datas kiekvienoms pareigoms, ATS pagal jas apskaičiuoja jūsų darbo stažą",
+        "fail": "Datų nerasta: ATS pagal jas apskaičiuoja jūsų darbo stažą"
+      }
+    },
+    "robot": {
+      "title": "Ką perskaito robotas",
+      "text": "Tekstas, iš naujo sudėliotas eilutė po eilutės, kaip tai daro dauguma ATS. Jei čia jis sujauktas ar neišsamus, toks jis ir atrankos specialistui",
+      "empty": "Nepavyko ištraukti jokio teksto",
+      "position": "Pagal vietą",
+      "file": "Failo tvarka",
+      "fileText": "Tekstas ta tvarka, kuria jis įrašytas faile: taip jį perskaito ATS, kurios neatkuria maketo. Jis turėtų sekti jūsų CV skaitymo tvarką"
+    },
+    "cta": {
+      "title": "Pradėkite iš naujo tvirtais pagrindais",
+      "text": "Sukurkite ATS draugišką CV redaktoriuje, tada pritaikykite jį kiekvienai darbo vietai",
+      "button": "Atidaryti redaktorių",
+      "import": "Perkelti šį CV į mūsų šablonus"
+    },
+    "live": {
+      "title": "ATS patikra realiuoju laiku",
+      "issues": "Šiame šablone reikia patikrinti punktų: {{count}}",
+      "allGood": "Šiame šablone problemų nerasta",
+      "hint": "Apskaičiuota pagal rodomą maketą, tuo pačiu varikliu kaip ir CV analizatorius"
+    },
+    "method": {
+      "title": "Kaip apskaičiuojamas šis įvertinimas?",
+      "intro": "Oficialaus ATS įvertinimo nėra: kiekviena atrankos programinė įranga (Workday, Taleo, Greenhouse, Lever…) turi savo, dažnai konfidencialias taisykles. Šis indeksas tikrina, kas daugumai jų trukdo, pagal šią skalę:",
+      "disclaimer": "Šie kriterijai paremti viešomis ATS tiekėjų rekomendacijomis ir dažniausiomis skaitymo klaidomis (tekstas paveikslėlyje, stulpeliai, piktogramos, nestandartinės antraštės). Įvertinimas padeda tobulinti jūsų CV: jis nenuspėja atrankos"
+    }
+  },
+  "import": {
+    "title": "Importuoti CV",
+    "linkedinTitle": "Importuoti iš LinkedIn",
+    "text": "Pasirinkite PDF arba Word (.docx) formato CV: turinys ištraukiamas jūsų naršyklėje ir suskirstomas į redaktoriaus skiltis. Tada galėsite pasirinkti šabloną",
+    "choose": "Pasirinkti failą",
+    "chooseFile": "Pasirinkti failą",
+    "hint": "PDF arba Word (.docx), iki 15 MB",
+    "reading": "Importuojama…",
+    "privacy": "Failas skaitomas jūsų naršyklėje: jis niekada niekur nesiunčiamas",
+    "close": "Uždaryti",
+    "done": "CV importuotas (elementų: {{items}}): peržiūrėkite kiekvieną skiltį",
+    "errors": {
+      "tooLarge": "Šis failas didesnis nei 15 MB",
+      "encrypted": "Šis PDF apsaugotas slaptažodžiu",
+      "unreadable": "Nepavyko perskaityti šio failo: jis gali būti sugadintas",
+      "empty": "Nėra tinkamo teksto: šis PDF tikriausiai yra paveikslėlis ar skenuotas dokumentas",
+      "unsupported": "Pasirinkite PDF, Word failą (.docx) arba LinkedIn ZIP archyvą",
+      "archiveEmpty": "Šiame archyve nėra tinkamų LinkedIn profilio duomenų"
+    },
+    "hintArchive": "PDF (kompiuteris) arba ZIP archyvas (programėlė telefone)",
+    "linkedin": {
+      "computer": {
+        "title": "Kompiuteryje: jūsų profilio PDF",
+        "step1": "Atidarykite linkedin.com kompiuterio naršyklėje (programėlėje šios parinkties nėra)",
+        "step2": "Savo profilyje spustelėkite „Ištekliai“ (arba „Daugiau“), tada „Išsaugoti kaip PDF“",
+        "step3": "Pasirinkite tą PDF žemiau"
+      },
+      "archive": {
+        "title": "Programėlėje telefone: jūsų duomenų archyvas",
+        "step1": "Programėlėje palieskite savo nuotrauką, tada Nustatymai ir Duomenų privatumas",
+        "step2": "Pasirinkite „Gauti savo duomenų kopiją“ ir pažymėkite Profilis, Pareigos, Išsilavinimas, Įgūdžiai ir Kalbos",
+        "step3": "LinkedIn per kelias minutes atsiųs jums el. laišką: atsisiųskite ZIP archyvą",
+        "step4": "Pasirinkite tą ZIP failą žemiau jo neišskleidę"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Šis dokumentas rodomas anglų kalba. Teisiškai privaloma tik prancūziška versija.",
+    "error": "Nepavyko įkelti šio dokumento."
+  }
+}

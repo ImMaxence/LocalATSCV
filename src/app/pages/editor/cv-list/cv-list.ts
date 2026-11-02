@@ -52,9 +52,10 @@ export class CvList {
     }).format(new Date(iso));
   }
 
+  /** Langue du nouveau CV : celle de l'interface si un CV peut l'utiliser, sinon l'anglais. */
   private uiAsCvLanguage(): CvLanguage {
     const lang = this.language.current();
-    return CV_LANGUAGES.includes(lang) ? lang : 'fr';
+    return CV_LANGUAGES.find((cvLanguage) => cvLanguage === lang) ?? 'en';
   }
 
   protected async createBlank(): Promise<void> {

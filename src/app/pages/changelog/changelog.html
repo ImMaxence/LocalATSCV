@@ -19,11 +19,11 @@
   } @else if (failed()) {
     <p class="mt-12 rounded-2xl border border-line bg-surface p-6 text-muted">{{ t('error') }}</p>
   } @else {
-    <ol class="relative mt-14 space-y-12 border-l border-line pl-6 sm:ml-2 sm:pl-10">
+    <ol class="relative mt-14 space-y-12 border-s border-line ps-6 sm:ms-2 sm:ps-10">
       @for (release of list(); track release.version) {
         <li class="relative">
           <span
-            class="absolute top-1.5 -left-[31px] size-3 rounded-full border-2 border-paper sm:-left-[47px]"
+            class="absolute top-1.5 -start-[31px] size-3 rounded-full border-2 border-paper sm:-start-[47px]"
             [class]="release.version === currentVersion ? 'bg-accent' : 'bg-line'"
             aria-hidden="true"
           ></span>

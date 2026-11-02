@@ -36,7 +36,7 @@ const DELAY_MS = 600;
       >
         <button
           type="button"
-          class="flex w-full items-center gap-3 px-4 py-3 text-left"
+          class="flex w-full items-center gap-3 px-4 py-3 text-start"
           [attr.aria-expanded]="open()"
           (click)="open.set(!open())"
         >

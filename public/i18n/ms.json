@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Laman utama LocalATSCV",
+    "main": "Navigasi utama",
+    "how": "Cara ia berfungsi",
+    "privacy": "Privasi",
+    "analyze": "Analisis resume",
+    "editor": "Bina resume saya",
+    "skipToContent": "Langkau ke kandungan"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Cerah",
+    "system": "Sistem",
+    "dark": "Gelap"
+  },
+  "lang": {
+    "label": "Bahasa antara muka",
+    "suggestion": "Lihat halaman ini dalam bahasa Melayu",
+    "dismiss": "Tutup",
+    "search": "Cari bahasa",
+    "noResult": "Tiada bahasa ditemui"
+  },
+  "pages": {
+    "home": "Resume mesra ATS, 100% setempat",
+    "editor": "Editor",
+    "analyze": "Penganalisis resume",
+    "changelog": "Apa yang baharu",
+    "legalNotice": "Notis undang-undang",
+    "terms": "Terma penggunaan",
+    "privacy": "Dasar privasi"
+  },
+  "seo": {
+    "home": "Pembina resume mesra ATS percuma: 30 templat grafik, surat iringan yang sepadan, penyesuaian untuk setiap iklan jawatan dan skor ATS. Sumber terbuka, data anda kekal dalam pelayar",
+    "editor": "Editor resume dengan pratonton langsung, resume Master dan versi sasaran, semakan ATS dan eksport PDF dengan teks sebenar. Semuanya kekal dalam pelayar anda",
+    "analyze": "Analisis resume PDF secara percuma: skor ATS daripada 100, perkara untuk dibaiki dan teks seperti yang dibaca sistem pengambilan. Fail tidak pernah meninggalkan pelayar anda",
+    "changelog": "Apa yang baharu dalam LocalATSCV, versi demi versi: templat resume baharu, ciri dan pembaikan",
+    "legalNotice": "Notis undang-undang LocalATSCV: penerbit, pengehosan dan hubungan",
+    "terms": "Terma penggunaan LocalATSCV, pembina resume percuma dan sumber terbuka",
+    "privacy": "Dasar privasi LocalATSCV: tiada data dikumpul, resume anda kekal dalam pelayar"
+  },
+  "footer": {
+    "tagline": "Pembina resume mesra ATS yang tidak pernah melihat data anda",
+    "product": "Produk",
+    "legal": "Undang-undang",
+    "project": "Projek",
+    "changelog": "Apa yang baharu",
+    "sourceCode": "Kod sumber",
+    "reportIssue": "Laporkan masalah",
+    "license": "Lesen MIT",
+    "versionLabel": "Versi {{version}}, lihat apa yang baharu"
+  },
+  "update": {
+    "title": "Versi baharu tersedia",
+    "text": "Muat semula halaman untuk mendapatkannya",
+    "changelog": "Lihat apa yang baharu",
+    "reload": "Muat semula",
+    "later": "Kemudian"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% setempat · Percuma · Sumber terbuka",
+      "titleLine1": "Resume yang melepasi robot",
+      "titleLine2": "Data yang kekal bersama anda",
+      "subtitle": "LocalATSCV membantu anda membina resume yang dioptimumkan untuk sistem pengesanan pemohon (ATS) dan menyesuaikannya untuk setiap jawatan dengan beberapa klik. Semuanya berlaku dalam pelayar anda: tiada akaun, tiada data dihantar",
+      "ctaPrimary": "Bina resume saya",
+      "ctaSecondary": "Analisis resume sedia ada",
+      "points": {
+        "noAccount": "Tanpa pendaftaran",
+        "offline": "Berfungsi luar talian",
+        "atsPdf": "PDF boleh dibaca ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Masalahnya",
+      "title": "Resume anda dibaca oleh mesin dahulu",
+      "text": "Kebanyakan syarikat besar dan agensi pengambilan menapis permohonan dengan ATS (Applicant Tracking System). Ia mengekstrak teks resume anda, menyimpannya dalam pangkalan data dan membolehkan perekrut mencari calon mengikut kata kunci",
+      "pitfalls": {
+        "layout": {
+          "title": "Susun atur rumit",
+          "text": "Lajur, jadual dan kotak teks mengacau susunan bacaan: maklumat anda keluar bercampur aduk"
+        },
+        "image": {
+          "title": "Teks tidak terbaca",
+          "text": "Ikon, bar kemahiran dan sesetengah eksport alat reka bentuk menjadi aksara pelik, atau langsung tiada teks"
+        },
+        "keywords": {
+          "title": "Kata kunci tiada",
+          "text": "Jika perbendaharaan kata iklan jawatan tiada dalam resume anda, profil anda tidak akan muncul dalam carian perekrut"
+        }
+      },
+      "seen": "Apa yang anda lihat",
+      "read": "Apa yang dibaca robot",
+      "fix": "LocalATSCV melakukan sebaliknya: satu lajur, teks sebenar dan tajuk bahagian standard yang dibaca robot dalam susunan yang betul"
+    },
+    "how": {
+      "eyebrow": "Cara ia berfungsi",
+      "title": "Tulis sekali, sesuaikan tanpa had",
+      "text": "Empat langkah untuk menjadikan resume Master anda permohonan yang dipadankan untuk setiap jawatan",
+      "steps": {
+        "profile": {
+          "title": "Isi resume Master anda",
+          "text": "Masukkan semua pengalaman anda sekali sahaja, atau import PDF profil LinkedIn anda untuk menjimatkan masa"
+        },
+        "offer": {
+          "title": "Tampal iklan jawatan",
+          "text": "LocalATSCV mengekstrak kata kunci dan mengira skor padanan daripada 100 yang dikemas kini semasa anda menaip"
+        },
+        "compose": {
+          "title": "Susun versi sasaran",
+          "text": "Tandakan pengalaman dan butiran yang berkaitan, kemudian susun semula dengan seret dan lepas. Tiada apa yang dipadam daripada Master anda"
+        },
+        "export": {
+          "title": "Eksport ke PDF",
+          "text": "PDF dengan teks sebenar, berstruktur dan satu lajur, sama mudah dibaca oleh robot dan perekrut"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privasi",
+      "title": "Sifar data di pelayan kami. Secara literal",
+      "text": "Tiada pangkalan data untuk digodam: pelayan kami hanya menghantar aplikasi. Selepas itu, semuanya berlaku dalam pelayar anda, malah ketika luar talian",
+      "browser": {
+        "title": "Pelayar anda",
+        "tag": "Peranti anda",
+        "items": {
+          "master": "Resume Master",
+          "photo": "Foto profil",
+          "versions": "Versi sasaran",
+          "settings": "Keutamaan"
+        },
+        "note": "Disimpan dalam IndexedDB, hanya pada peranti ini"
+      },
+      "flow": {
+        "app": "Aplikasi, semasa muatan pertama",
+        "data": "Data anda",
+        "never": "tidak pernah"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Pelayan",
+        "text": "Menyediakan fail aplikasi (HTML, CSS, JavaScript), tidak lebih daripada itu",
+        "items": {
+          "noDb": "Tiada pangkalan data",
+          "noAccount": "Tiada akaun pengguna",
+          "noLogs": "Tiada log lawatan"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Tanpa akaun",
+          "text": "Tanpa pendaftaran, e-mel atau kata laluan. Buka halaman dan mula"
+        },
+        "trackers": {
+          "title": "Tanpa penjejak",
+          "text": "Tiada statistik, iklan atau kuki penjejakan. Malah fon pun dihoskan di pelayan kami sendiri"
+        },
+        "csp": {
+          "title": "Dikunci secara teknikal",
+          "text": "Dasar keselamatan laman (CSP) melarang pelayar menghubungi domain lain. Kodnya terbuka: semak sendiri"
+        },
+        "backup": {
+          "title": "Sandaran anda, fail anda",
+          "text": "Eksport semua data anda ke fail JSON dan import semula pada mana-mana peranti"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Ciri",
+      "title": "Semua yang anda perlukan untuk ke temu duga",
+      "items": {
+        "master": {
+          "title": "Resume Master dan versi sasaran",
+          "text": "Satu resume lengkap, dan versi sebanyak permohonan anda. Tanda, nyahtanda: tiada apa yang hilang"
+        },
+        "score": {
+          "title": "Skor padanan",
+          "text": "Tampal iklan jawatan: kata kunci ditemui, kata kunci tiada dan skor daripada 100 secara masa nyata"
+        },
+        "weak": {
+          "title": "Pengesan frasa lemah",
+          "text": "“Bertanggungjawab atas”, “membantu dalam”… ditanda secara automatik, bersama senarai kata kerja tindakan sebagai pengganti"
+        },
+        "analyzer": {
+          "title": "Penganalisis resume sedia ada",
+          "text": "Letakkan resume yang dibuat di tempat lain: lihat apa yang benar-benar dibaca robot dan apa yang perlu dibaiki"
+        },
+        "linkedin": {
+          "title": "Import dari LinkedIn",
+          "text": "Isi awal resume Master anda daripada PDF percuma yang boleh dieksport daripada profil LinkedIn anda"
+        },
+        "languages": {
+          "title": "5 bahasa resume",
+          "text": "Perancis, Inggeris, Itali, Sepanyol dan Jerman. Dalam bahasa Inggeris, foto dan tarikh lahir disembunyikan mengikut amalan negara berbahasa Inggeris"
+        },
+        "pdf": {
+          "title": "Eksport PDF mesra ATS",
+          "text": "Teks sebenar dan struktur jelas: boleh dibaca robot, menyenangkan perekrut"
+        },
+        "offline": {
+          "title": "Boleh dipasang dan luar talian",
+          "text": "Tambah LocalATSCV ke skrin utama dan terus bekerja tanpa sambungan"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Soalan lazim",
+      "title": "Soalan lazim",
+      "text": "Soalan anda tiada di sini? Hubungi kami:",
+      "items": {
+        "ats": {
+          "q": "Apakah itu ATS?",
+          "a": "Applicant Tracking System ialah perisian yang digunakan perekrut untuk menerima, menapis dan mencari permohonan. Ia menukar resume anda kepada teks dan mengindeksnya: jika teks diekstrak dengan buruk atau kata kunci yang betul tiada, permohonan anda sukar ditemui"
+        },
+        "storage": {
+          "q": "Di manakah data saya disimpan?",
+          "a": "Hanya dalam pelayar anda, dalam IndexedDB, pangkalan data yang terbina dalam setiap pelayar moden. Data tidak pernah melalui pelayan kami, yang hanya tahu menyediakan fail aplikasi"
+        },
+        "clear": {
+          "q": "Apakah yang berlaku jika saya mengosongkan data pelayar?",
+          "a": "Resume anda akan dipadam, kerana ia tidak wujud di tempat lain. Eksport sandaran JSON secara berkala: anda boleh mengimportnya semula bila-bila masa, pada mana-mana peranti"
+        },
+        "score": {
+          "q": "Adakah skor menjamin resume saya akan dipilih?",
+          "a": "Tidak. Setiap ATS ada peraturannya sendiri dan keputusan akhir dibuat oleh manusia. Skor ialah penunjuk: ia menyemak sama ada resume anda menggunakan perbendaharaan kata iklan jawatan dan sama ada mesin boleh membacanya dengan betul"
+        },
+        "photo": {
+          "q": "Mengapa foto hilang dalam bahasa Inggeris?",
+          "a": "Di United Kingdom, Amerika Syarikat dan banyak negara berbahasa Inggeris, foto dan tarikh lahir tidak digalakkan untuk mengurangkan diskriminasi dalam pengambilan. Sesetengah perekrut malah menolak resume yang menyertakannya"
+        },
+        "free": {
+          "q": "Adakah ia benar-benar percuma?",
+          "a": "Ya. LocalATSCV ialah projek sumber terbuka di bawah lesen MIT, tanpa iklan atau langganan. Kos pengehosannya hampir sifar, kerana pelayar anda yang melakukan semua kerja"
+        },
+        "templates": {
+          "q": "Adakah templat grafik melepasi ATS?",
+          "a": "Ya. Setiap templat mencetak teks sebenar mengikut susunan bacaan, dengan tajuk bahagian standard: bentuk, bar dan ikon ialah lukisan yang diabaikan robot. Templat satu lajur kekal paling selamat, dan semakan ATS dalam editor menguji susun atur anda secara langsung"
+        },
+        "import": {
+          "q": "Bolehkah saya menggunakan semula resume semasa atau profil LinkedIn saya?",
+          "a": "Boleh. Import resume PDF atau Word (.docx), PDF profil LinkedIn anda (di komputer) atau arkib data LinkedIn anda (dari aplikasi mudah alih): kandungan dibaca dalam pelayar anda dan disusun dalam editor"
+        },
+        "offline": {
+          "q": "Adakah LocalATSCV berfungsi luar talian?",
+          "a": "Ya. Ia aplikasi web yang boleh dipasang: selepas lawatan pertama, semuanya berfungsi tanpa sambungan, termasuk eksport PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Bersedia untuk melepasi penapis?",
+      "text": "Bina resume Master anda dalam beberapa minit. Tiada apa yang akan meninggalkan peranti ini",
+      "button": "Mula"
+    },
+    "demo": {
+      "role": "Pembangun Front-end",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Pengalaman",
+      "jobTitle": "Pembangun Angular",
+      "jobMeta": "Contoh Sdn Bhd · 2022 – kini",
+      "bullets": {
+        "migration": "Memindahkan 40 skrin ke <k>Angular</k> dan <k>TypeScript</k>, masa muat berkurang 35%",
+        "testing": "<w>Bertanggungjawab atas</w> strategi ujian hujung ke hujung",
+        "delivery": "Penghantaran berterusan dengan <k>GitLab CI</k> untuk 3 pasukan produk"
+      },
+      "weakLabel": "Frasa lemah",
+      "weakReplacement": "“Mengetuai”",
+      "skills": "Kemahiran",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Kebolehcapaian",
+      "score": "Padanan dengan iklan",
+      "sent": "0 bait dihantar",
+      "robot": "KEMAHIRAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pembangun Front-end Angular <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pembangun Angular <n>tin@example.com</n> 2022 – kini TypeScript <n>●●●○○</n> Contoh Sdn Bhd BAHASA Inggeris Memindahkan 40 skrin ke…"
+    }
+  },
+  "dialog": {
+    "cancel": "Batal",
+    "delete": "Padam",
+    "create": "Cipta",
+    "save": "Simpan",
+    "import": "Import"
+  },
+  "editor": {
+    "list": {
+      "title": "Resume saya",
+      "subtitle": "Disimpan dalam pelayar ini sahaja",
+      "new": "Resume baharu",
+      "newBlank": "Resume kosong",
+      "newBlankHint": "Mula dengan halaman kosong",
+      "newSample": "Mula dengan contoh",
+      "newSampleHint": "Resume rekaan yang sudah diisi untuk meneroka editor",
+      "import": "Pulihkan sandaran",
+      "exportAll": "Eksport semua",
+      "emptyTitle": "Belum ada resume",
+      "emptyText": "Bina resume Master anda: semua pengalaman di satu tempat, sedia disesuaikan untuk setiap jawatan",
+      "open": "Buka",
+      "actions": "Tindakan",
+      "duplicate": "Pendua",
+      "export": "Eksport (JSON)",
+      "delete": "Padam",
+      "updated": "Disunting {{date}}",
+      "versions": "Versi: {{count}}",
+      "backupHint": "Resume anda hanya wujud dalam pelayar ini. Eksport sandaran JSON secara berkala: jika anda mengosongkan data pelayar, ia membolehkan anda memulihkan semuanya",
+      "defaultName": "Resume saya",
+      "copySuffix": "(salinan)",
+      "deleteTitle": "Padam “{{name}}”?",
+      "deleteText": "Resume dan semua versinya akan dipadam secara kekal daripada pelayar ini",
+      "exportDone": "Sandaran dimuat turun",
+      "importConfirmTitle": "Import sandaran ini?",
+      "importConfirmText": "Resume dalam sandaran ini: {{count}}. Resume yang sudah wujud dalam pelayar ini akan diganti",
+      "importDone": "Sandaran diimport: {{count}} resume",
+      "importError": {
+        "invalidJson": "Fail ini bukan JSON yang sah",
+        "notABackup": "Fail ini bukan sandaran LocalATSCV",
+        "newerVersion": "Sandaran ini datang daripada versi LocalATSCV yang lebih baharu: kemas kini aplikasi dahulu"
+      },
+      "importPdf": "Import resume (PDF atau Word)",
+      "importPdfHint": "Bawa resume sedia ada ke dalam templat kami",
+      "importLinkedin": "Import dari LinkedIn",
+      "importLinkedinHint": "Daripada PDF profil anda"
+    },
+    "toolbar": {
+      "back": "Resume saya",
+      "name": "Nama resume",
+      "cvLanguage": "Bahasa resume",
+      "accent": "Warna aksen",
+      "customAccent": "Warna tersuai",
+      "saved": "Disimpan",
+      "saving": "Menyimpan…",
+      "saveError": "Gagal menyimpan",
+      "edit": "Sunting",
+      "preview": "Pratonton",
+      "exportPdf": "Eksport ke PDF",
+      "undo": "Buat asal (Ctrl+Z)",
+      "redo": "Buat semula (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokumen untuk disunting",
+      "cv": "Resume",
+      "letter": "Surat iringan"
+    },
+    "letter": {
+      "title": "Surat iringan",
+      "versionOwn": "Versi ini mempunyai suratnya sendiri",
+      "versionShared": "Versi ini menggunakan surat Master: menyuntingnya di sini akan mencipta salinan untuk versi ini",
+      "useMaster": "Guna surat Master",
+      "recipient": "Penerima",
+      "recipientPlaceholder": "Contoh Sdn Bhd\nJabatan Sumber Manusia\nNo. 10, Jalan Ampang, 50450 Kuala Lumpur",
+      "place": "Tempat",
+      "date": "Tarikh",
+      "dateHint": "Kosong: tarikh hari cetakan",
+      "subject": "Perkara",
+      "subjectPlaceholder": "Permohonan jawatan…",
+      "greeting": "Kata sapaan",
+      "body": "Surat",
+      "bodyPlaceholder": "Tiga perenggan pendek: apa yang menarik anda kepada syarikat, apa yang anda bawa, langkah seterusnya yang anda cadangkan",
+      "bodyHint": "Baris kosong memisahkan dua perenggan · **tebal** untuk kata kunci",
+      "outline": "Sisipkan rangka",
+      "closing": "Penutup",
+      "fileName": "Surat iringan"
+    },
+    "fit": {
+      "pages": "{{count}} halaman",
+      "onePage": "Muat dalam satu halaman",
+      "hintMany": "Kebanyakan perekrut mengharapkan resume satu halaman",
+      "hintOne": "Format ideal untuk kebanyakan permohonan",
+      "stillTooLong": "Masih terlalu panjang walaupun dipadatkan: pendekkan beberapa butiran atau sembunyikan elemen dalam satu versi",
+      "fit": "Muatkan dalam satu halaman",
+      "settings": "Tetapan susun atur",
+      "spacing": "Jarak",
+      "scale": "Saiz teks",
+      "settingsHint": "Teks kekal sebagai teks sebenar: hanya susun atur yang berubah",
+      "reset": "Susun atur templat",
+      "grayscale": "Lihat hitam putih",
+      "grayscaleHint": "Menyimulasikan cetakan hitam putih: PDF yang dieksport mengekalkan warnanya"
+    },
+    "versions": {
+      "label": "Versi dipaparkan",
+      "master": "Resume Master",
+      "masterHint": "Semua kandungan, tanpa penapis",
+      "new": "Versi baharu",
+      "newText": "Versi sasaran bermula daripada keseluruhan resume Master anda: kemudian nyahtanda apa yang tidak diperlukan untuk permohonan ini",
+      "nameLabel": "Nama versi",
+      "namePlaceholder": "Cth. Front-end Dev – Syarikat X",
+      "rename": "Namakan semula versi",
+      "delete": "Padam versi",
+      "deleteTitle": "Padam versi “{{name}}”?",
+      "deleteText": "Hanya pilihan yang dipadam: semua kandungan kekal dalam resume Master anda",
+      "banner": "Versi “{{name}}”: nyahtanda apa yang tidak patut dipaparkan. Tiada apa yang dipadam daripada resume Master anda",
+      "include": "Sertakan dalam versi ini"
+    },
+    "enRule": "Resume bahasa Inggeris: foto, tarikh lahir dan kewarganegaraan disembunyikan mengikut amalan negara berbahasa Inggeris",
+    "profile": {
+      "title": "Profil",
+      "photo": "Foto",
+      "photoAdd": "Tambah foto",
+      "photoChange": "Tukar",
+      "photoRemove": "Buang",
+      "photoHint": "Dikecilkan dan disimpan pada peranti ini sahaja",
+      "photoError": "Imej ini tidak dapat dibaca",
+      "hiddenInEnglish": "Disembunyikan dalam bahasa Inggeris",
+      "firstName": "Nama pertama",
+      "lastName": "Nama keluarga",
+      "headline": "Tajuk resume",
+      "headlinePlaceholder": "Cth. Pembangun Front-end",
+      "email": "E-mel",
+      "phone": "Telefon",
+      "location": "Bandar",
+      "birthDate": "Tarikh lahir",
+      "nationality": "Kewarganegaraan",
+      "summary": "Ringkasan",
+      "summaryPlaceholder": "Dua atau tiga ayat yang meringkaskan profil anda dan apa yang anda cari",
+      "links": "Pautan",
+      "linkLabel": "Nama pautan",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Alamat pautan",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Tambah pautan",
+      "removeLink": "Buang pautan",
+      "drivingLicense": "Lesen memandu",
+      "drivingLicensePlaceholder": "Cth. Lesen D, mempunyai kenderaan sendiri",
+      "qrToggle": "Papar pautan ini sebagai kod QR",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) ditambah secara automatik. Butang QR memaparkan pautan sebagai kod QR dalam kebanyakan templat grafik"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Pengalaman",
+        "education": "Pendidikan",
+        "projects": "Projek",
+        "certifications": "Pensijilan",
+        "custom": "Bahagian bebas",
+        "skills": "Kemahiran",
+        "languages": "Bahasa",
+        "interests": "Minat"
+      },
+      "add": "Tambah bahagian",
+      "titleLabel": "Tajuk bahagian",
+      "empty": "Bahagian kosong: ia tidak akan dipaparkan pada resume",
+      "addItem": {
+        "experience": "Tambah pengalaman",
+        "education": "Tambah kelayakan",
+        "projects": "Tambah projek",
+        "certifications": "Tambah pensijilan",
+        "custom": "Tambah item",
+        "skills": "Tambah kemahiran",
+        "languages": "Tambah bahasa",
+        "interests": "Tambah minat"
+      },
+      "deleteTitle": "Padam bahagian “{{name}}”?",
+      "deleteText": "Kandungannya akan dibuang daripada resume Master dan semua versinya"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Jawatan",
+          "subtitle": "Syarikat"
+        },
+        "education": {
+          "title": "Kelayakan",
+          "subtitle": "Sekolah atau universiti"
+        },
+        "projects": {
+          "title": "Nama projek",
+          "subtitle": "Peranan atau teknologi"
+        },
+        "certifications": {
+          "title": "Pensijilan",
+          "subtitle": "Pengeluar"
+        },
+        "custom": {
+          "title": "Tajuk",
+          "subtitle": "Subtajuk"
+        }
+      },
+      "location": "Lokasi",
+      "url": "Pautan",
+      "start": "Mula",
+      "end": "Tamat",
+      "date": "Tarikh diperoleh",
+      "current": "Masih berjalan",
+      "untitled": "Tanpa tajuk",
+      "bullets": "Pencapaian",
+      "bulletPlaceholder": "Mula dengan kata kerja tindakan dan nyatakan hasil dalam angka",
+      "addBullet": "Tambah butiran",
+      "bulletHint": "Enter: butiran baharu",
+      "boldHint": "**perkataan** untuk tebal"
+    },
+    "items": {
+      "skillLabel": "Kategori",
+      "skillLabelPlaceholder": "Cth. Front-end",
+      "skillKeywords": "Kemahiran",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Bahasa",
+      "languageLevel": "Tahap",
+      "languageLevelPlaceholder": "Cth. C1, fluent",
+      "interest": "Minat",
+      "interestPlaceholder": "Cth. Panjat tebing",
+      "levelDetected": "Tahap dikenal pasti: templat dengan bar akan memaparkannya",
+      "levelUnknown": "Tahap tidak dikenal pasti, tiada bar: guna A1 hingga C2 atau cadangan daripada senarai",
+      "levelEmpty": "Masukkan tahap untuk memaparkan bar",
+      "levelHint": "Guna tahap Eropah (A1 hingga C2) atau perkataan seperti “fluent” atau “native”: sesetengah templat turut memaparkannya sebagai bar, yang pratontonnya ditunjukkan oleh titik di sebelah kanan"
+    },
+    "actions": {
+      "menu": "Tindakan",
+      "moveUp": "Alih ke atas",
+      "moveDown": "Alih ke bawah",
+      "duplicate": "Pendua",
+      "delete": "Padam",
+      "drag": "Seret untuk menyusun semula"
+    },
+    "month": "Bulan",
+    "year": "Tahun",
+    "noMonth": "Bulan",
+    "preview": {
+      "page": "Halaman {{n}}"
+    },
+    "notFound": {
+      "title": "Resume tidak ditemui",
+      "text": "Resume ini tidak wujud atau telah dipadam daripada pelayar ini"
+    },
+    "templates": {
+      "button": "Templat",
+      "title": "Pilih templat",
+      "subtitle": "Setiap templat dengan contoh resume lengkap, atau dengan resume anda. Warna aksen digunakan pada semua templat",
+      "close": "Tutup",
+      "filter": "Tapis templat",
+      "filters": {
+        "all": "Semua",
+        "graphic": "Grafik",
+        "sober": "Ringkas"
+      },
+      "ats": "Keserasian ATS",
+      "levels": {
+        "excellent": "cemerlang",
+        "good": "baik",
+        "fair": "sederhana"
+      },
+      "atsHint": "Setiap templat mencetak teks sebenar. Susun atur dua lajur dibaca dengan baik oleh kebanyakan ATS moden, tetapi sesetengah alat lama mencampurkan lajur: jika ragu-ragu, pilih templat satu lajur",
+      "names": {
+        "classic": {
+          "name": "Klasik",
+          "description": "Kemas dan berkesan: satu lajur, tajuk bergaris bawah, tiada gangguan"
+        },
+        "modern": {
+          "name": "Moden",
+          "description": "Sepanduk berwarna, tajuk menonjol dan kemahiran sebagai tag"
+        },
+        "elegant": {
+          "name": "Elegan",
+          "description": "Kepala halaman di tengah dan tipografi serif untuk rupa yang halus"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Tepi berwarna, butiran fon monospace dan kemahiran gaya kod"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Gaya Swiss: nama besar, tajuk di margin, banyak ruang kosong"
+        },
+        "sidebar": {
+          "name": "Lajur",
+          "description": "Bar sisi berwarna dengan foto, maklumat hubungan dan kemahiran"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Sepanduk foto, ikon, garis masa dan bar bahasa, tetap boleh dibaca sepenuhnya oleh ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Bentuk organik pastel, foto bulat besar, garis masa dan kod QR, dalam dua lajur"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Rupa Signature dalam satu lajur: grafik dan boleh dibaca sepenuhnya oleh ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Sepanduk gelap pepenjuru, cahaya berwarna, kad pengalaman dan tag kemahiran padu"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Komposisi geometri warna primer di sekeliling foto, tipografi geometri dan bentuk sebelum setiap tajuk"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Susun atur majalah: nama serif besar, pendahuluan condong, bahagian bernombor dan potret teranjak"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neo-brutalisme: garis hitam tebal, bayang tegas, blok warna terang dan label hitam"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Kecerunan mesh dalam warna aksen anda, kad hubungan kesan kaca dan kad berbingkai kecerunan"
+        },
+        "swiss": {
+          "name": "Swiss",
+          "description": "Gaya poster Swiss: nama gergasi, jalur warna, garisan hitam tebal dan bahagian bernombor"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Kertas gading, bingkai berganda halus, hiasan berlian dan tipografi Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturno",
+          "description": "Mod gelap: latar malam, aksen neon dan garis masa bercahaya, sesuai untuk permohonan digital"
+        },
+        "wave": {
+          "name": "Ombak",
+          "description": "Sepanduk berwarna yang berakhir dengan ombak, foto bulat dan tajuk beralun, lembut dan mesra"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Jubin bento bersudut bulat: foto, nama dan kod QR dalam grid, satu jubin bagi setiap bahagian"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Lukisan teknikal: kertas grid, tanda sudut, garis ukuran dan label monospace"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Konfeti geometri era 80-an, warna terang dan tajuk bergaris bawah zigzag"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Sepanduk besar terbelah: teks di atas blok warna dan foto dua ton"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografi sebagai satu-satunya hiasan: nama gergasi separa bergaris luar dan tajuk sangat besar"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Satu warna pastel bagi setiap bahagian, tajuk berbentuk pil dan cahaya pelbagai warna"
+        },
+        "executive": {
+          "name": "Eksekutif",
+          "description": "Sepanduk biru tua, garisan emas dan nama serif, untuk jawatan kepimpinan"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Minimalisme Jepun: kertas washi, bulatan ensō dalam warna aksen anda dan sapuan berus"
+        },
+        "ribbon": {
+          "name": "Reben",
+          "description": "Tajuk bahagian di atas reben ekor layang-layang, kepala halaman di tengah"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Foto heksagon, sarang lebah di sudut dan heksagon sebelum tajuk"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Kepala halaman daripada lapisan kertas potong, bahagian seperti helaian kertas"
+        },
+        "thread": {
+          "name": "Benang",
+          "description": "Benang berterusan menghubungkan kepala halaman dan setiap bahagian, dengan titik bagi setiap jawatan"
+        }
+      },
+      "preview": {
+        "label": "Kandungan imej kecil",
+        "sample": "Contoh lengkap",
+        "mine": "Resume saya"
+      }
+    },
+    "print": {
+      "title": "Eksport ke PDF",
+      "text": "Tetingkap cetak pelayar anda akan dibuka. Untuk PDF yang sempurna:",
+      "tips": {
+        "destination": "Destinasi: “Simpan sebagai PDF”",
+        "margins": "Jidar: “Tiada”",
+        "headers": "Nyahtanda “Pengepala dan pengaki”",
+        "background": "Tandakan “Grafik latar belakang” untuk mengekalkan warna"
+      },
+      "dontShow": "Jangan tunjukkan lagi",
+      "cancel": "Batal",
+      "print": "Buka tetingkap cetak"
+    },
+    "job": {
+      "title": "Sesuaikan dengan iklan jawatan",
+      "sources": "LinkedIn, JobStreet, Hiredly, Maukerja, Indeed…",
+      "placeholder": "Tampal teks penuh iklan jawatan di sini: jawatan, tugas, kelayakan",
+      "urlWarning": "Tampal teks iklan, bukan pautannya: LocalATSCV tidak pernah menghubungi mana-mana laman web, jadi data anda kekal bersama anda",
+      "empty": "Tiada kata kunci ditemui: tampal iklan yang lebih lengkap",
+      "score": "Padanan dengan iklan",
+      "summary": "{{found}} daripada {{total}} kata kunci ada",
+      "found": "Kata kunci dalam resume anda",
+      "missing": "Kata kunci yang tiada",
+      "missingHint": "Klik kata kunci untuk menambahnya ke kemahiran anda, atau masukkannya ke dalam satu pengalaman",
+      "addToSkills": "Tambah ke kemahiran",
+      "added": "“{{keyword}}” ditambah ke kemahiran anda",
+      "keywordsGroup": "Kata kunci",
+      "createVersion": "Cipta versi sasaran untuk jawatan ini",
+      "createVersionHint": "Pengalaman dan butiran yang tidak berkaitan dengan jawatan akan dinyahtanda: anda boleh melaraskannya",
+      "savedInVersion": "Iklan disimpan bersama versi “{{name}}”"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” menerangkan tugas: mula dengan kata kerja tindakan"
+    },
+    "fonts": {
+      "title": "Tipografi",
+      "heading": "Tajuk",
+      "body": "Teks badan",
+      "default": "Lalai templat",
+      "hint": "ATS membaca semua fon ini dengan baik: teks kekal sebagai teks sebenar"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Apa yang baharu",
+    "title": "Log perubahan",
+    "subtitle": "Setiap versi LocalATSCV, dengan ciri baharu dan pembaikannya",
+    "current": "Versi semasa",
+    "frenchOnly": "Log perubahan ditulis dalam bahasa Perancis",
+    "error": "Log perubahan tidak dapat dimuatkan",
+    "types": {
+      "added": "Ditambah",
+      "changed": "Diubah",
+      "fixed": "Dibaiki",
+      "removed": "Dibuang",
+      "deprecated": "Lapuk",
+      "security": "Keselamatan",
+      "other": "Lain-lain"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Penganalisis",
+    "title": "Adakah resume anda melepasi robot?",
+    "subtitle": "Letakkan resume PDF yang dibuat dengan mana-mana alat: LocalATSCV membacanya seperti ATS dan memberitahu anda apa yang perlu dibaiki",
+    "drop": "Seret resume anda ke sini",
+    "dropActive": "Lepaskan fail untuk memulakan analisis",
+    "hint": "PDF sahaja, maksimum 15 MB",
+    "choose": "Pilih fail",
+    "reading": "Membaca PDF…",
+    "privacy": "Fail dianalisis dalam pelayar anda: ia tidak pernah dihantar ke mana-mana",
+    "another": "Analisis resume lain",
+    "errors": {
+      "notPdf": "Fail ini bukan PDF",
+      "tooLarge": "Fail ini melebihi 15 MB",
+      "encrypted": "PDF ini dilindungi kata laluan: ATS juga tidak dapat membacanya",
+      "unreadable": "PDF ini tidak dapat dibaca: mungkin rosak"
+    },
+    "stats": "{{pages}} halaman · {{words}} perkataan",
+    "verdict": {
+      "excellent": "Cemerlang",
+      "good": "Baik",
+      "fair": "Perlu diperbaiki",
+      "poor": "Kritikal"
+    },
+    "verdictText": {
+      "excellent": "Robot membaca resume anda dengan sangat baik",
+      "good": "Beberapa pelarasan akan menjadikannya lebih berkesan",
+      "fair": "Beberapa masalah menyukarkan bacaan oleh ATS",
+      "poor": "ATS berkemungkinan terlepas perkara penting"
+    },
+    "categories": {
+      "readability": "Kebolehbacaan mesin",
+      "structure": "Struktur",
+      "content": "Kandungan"
+    },
+    "sectionNames": {
+      "experience": "Pengalaman",
+      "education": "Pendidikan",
+      "skills": "Kemahiran"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Teks boleh dibaca mesin",
+        "pass": "Semua teks dalam resume anda boleh diekstrak",
+        "warn": "Sesetengah halaman tiada teks yang boleh dibaca: mungkin imej atau imbasan",
+        "fail": "Tiada teks yang boleh dibaca: resume ini mungkin imej atau imbasan, dan ATS tidak akan mendapat apa-apa daripadanya. Eksportnya ke PDF daripada pemproses kata anda"
+      },
+      "columns": {
+        "title": "Susun atur",
+        "pass": "Bacaan linear, lajur tidak bercampur",
+        "warn": "Susun atur berlajur dikesan: teks mungkin dibaca dalam susunan yang salah. Semak “Apa yang dibaca robot” di bawah"
+      },
+      "order": {
+        "title": "Susunan bacaan dalam fail",
+        "pass": "Teks ditulis dalam fail mengikut susunan bacaan",
+        "warnHeader": "Nama dan kepala halaman anda ditulis dalam fail selepas bahagian lain resume: ATS yang membaca fail secara berurutan mungkin tidak menemui nama anda",
+        "warn": "{{percent}}% teks ditulis dalam fail di luar susunan bacaan: sesetengah ATS akan membaca petikan ini dalam susunan yang salah",
+        "fail": "{{percent}}% teks ditulis dalam fail secara tidak tersusun, lazim bagi resume yang dibuat dengan kotak teks bebas (Canva, PowerPoint…): banyak ATS akan membaca resume anda bercampur aduk. Bandingkan dua bacaan di bawah"
+      },
+      "unreadable": {
+        "title": "Ikon dan bar kemahiran",
+        "pass": "Tiada ikon atau aksara yang tidak boleh dibaca",
+        "warn": "Ikon atau bar dikesan ({{count}}): ATS membacanya sebagai aksara pelik. Gantikan dengan teks",
+        "fail": "Ikon atau bar dikesan ({{count}}): gantikan dengan teks, contohnya “Inggeris: C1” sebagai ganti titik"
+      },
+      "contact": {
+        "title": "Maklumat hubungan",
+        "pass": "Alamat e-mel dan nombor telefon ditemui",
+        "warnNoPhone": "Tiada nombor telefon ditemui",
+        "warnNoEmail": "Tiada alamat e-mel ditemui",
+        "fail": "Tiada e-mel atau telefon ditemui: tulis sebagai teks, bukan dalam imej"
+      },
+      "sections": {
+        "title": "Bahagian standard",
+        "pass": "Pengalaman, pendidikan dan kemahiran dikenal pasti dengan jelas",
+        "warn": "Bahagian ini tidak dikenali: guna tajuk standard",
+        "fail": "Tiada bahagian standard dikenali: ATS bergantung pada tajuk seperti “Pengalaman” atau “Pendidikan”"
+      },
+      "length": {
+        "title": "Panjang",
+        "pass": "{{pages}} halaman, {{words}} perkataan: panjang ideal",
+        "warn": "{{pages}} halaman, {{words}} perkataan: sasarkan 1 hingga 2 halaman dan 250 hingga 1,000 perkataan",
+        "fail": "{{pages}} halaman, {{words}} perkataan: terlalu pendek atau terlalu panjang untuk dinilai dengan baik"
+      },
+      "quantified": {
+        "title": "Hasil berangka",
+        "pass": "{{percent}}% butiran anda mengandungi nombor, syabas",
+        "warn": "Hanya {{percent}}% butiran berangka: tambah hasil yang boleh diukur (peratusan, jumlah, isi padu)",
+        "fail": "Tiada hasil berangka: perekrut dan ATS menghargai pencapaian yang boleh diukur"
+      },
+      "weakPhrases": {
+        "title": "Kata kerja tindakan",
+        "pass": "Tiada frasa lemah di awal butiran",
+        "warn": "Permulaan ini menerangkan tugas, bukan hasil: mula dengan kata kerja tindakan",
+        "fail": "Permulaan ini menerangkan tugas, bukan hasil: mula dengan kata kerja tindakan"
+      },
+      "dates": {
+        "title": "Tarikh",
+        "pass": "Pengalaman anda bertarikh",
+        "warn": "Hanya satu tahun ditemui: letakkan tarikh pada setiap jawatan, ATS menggunakannya untuk mengira tahun pengalaman anda",
+        "fail": "Tiada tarikh ditemui: ATS menggunakannya untuk mengira tahun pengalaman anda"
+      }
+    },
+    "robot": {
+      "title": "Apa yang dibaca robot",
+      "text": "Teks yang dibina semula baris demi baris, seperti yang dilakukan kebanyakan ATS. Jika ia bercampur aduk atau tidak lengkap di sini, begitu juga bagi perekrut",
+      "empty": "Tiada teks dapat diekstrak",
+      "position": "Mengikut kedudukan",
+      "file": "Susunan fail",
+      "fileText": "Teks mengikut susunan ia ditulis dalam fail: begitulah ATS yang tidak membina semula susun atur membacanya. Ia sepatutnya mengikut susunan bacaan resume anda"
+    },
+    "cta": {
+      "title": "Mula semula dengan asas yang kukuh",
+      "text": "Bina resume mesra ATS dalam editor, kemudian sesuaikannya untuk setiap jawatan",
+      "button": "Buka editor",
+      "import": "Bawa resume ini ke dalam templat kami"
+    },
+    "live": {
+      "title": "Semakan ATS langsung",
+      "issues": "{{count}} perkara untuk disemak pada templat ini",
+      "allGood": "Tiada masalah dikesan pada templat ini",
+      "hint": "Dikira pada susun atur yang dipaparkan, dengan enjin yang sama seperti penganalisis resume"
+    },
+    "method": {
+      "title": "Bagaimanakah skor ini dikira?",
+      "intro": "Tiada skor ATS rasmi: setiap perisian pengambilan (Workday, Taleo, Greenhouse, Lever…) ada peraturannya sendiri yang sering sulit. Indeks ini menyemak perkara yang menyukarkan kebanyakannya, mengikut skala ini:",
+      "disclaimer": "Kriteria ini berasaskan cadangan awam pembekal ATS dan ralat bacaan yang paling biasa (teks dalam imej, lajur, ikon, tajuk tidak standard). Skor membantu anda memperbaik resume: ia tidak meramal pemilihan"
+    }
+  },
+  "import": {
+    "title": "Import resume",
+    "linkedinTitle": "Import dari LinkedIn",
+    "text": "Pilih resume PDF atau Word (.docx): kandungannya diekstrak dalam pelayar anda dan disusun ke dalam bahagian editor. Kemudian anda boleh memilih templat",
+    "choose": "Pilih fail",
+    "chooseFile": "Pilih fail",
+    "hint": "PDF atau Word (.docx), maksimum 15 MB",
+    "reading": "Mengimport…",
+    "privacy": "Fail dibaca dalam pelayar anda: ia tidak pernah dihantar ke mana-mana",
+    "close": "Tutup",
+    "done": "Resume diimport ({{items}} item): semak setiap bahagian",
+    "errors": {
+      "tooLarge": "Fail ini melebihi 15 MB",
+      "encrypted": "PDF ini dilindungi kata laluan",
+      "unreadable": "Fail ini tidak dapat dibaca: mungkin rosak",
+      "empty": "Tiada teks yang boleh digunakan: PDF ini mungkin imej atau imbasan",
+      "unsupported": "Pilih PDF, fail Word (.docx) atau arkib ZIP LinkedIn",
+      "archiveEmpty": "Arkib ini tidak mengandungi data profil LinkedIn yang boleh digunakan"
+    },
+    "hintArchive": "PDF (komputer) atau arkib ZIP (aplikasi mudah alih)",
+    "linkedin": {
+      "computer": {
+        "title": "Di komputer: PDF profil anda",
+        "step1": "Buka linkedin.com dalam pelayar di komputer (pilihan ini tiada dalam aplikasi)",
+        "step2": "Pada profil anda, klik “Sumber” (atau “Lagi”), kemudian “Simpan ke PDF”",
+        "step3": "Pilih PDF itu di bawah"
+      },
+      "archive": {
+        "title": "Dalam aplikasi mudah alih: arkib data anda",
+        "step1": "Dalam aplikasi, ketik foto anda, kemudian Tetapan dan Privasi data",
+        "step2": "Pilih “Dapatkan salinan data anda” dan tandakan Profil, Jawatan, Pendidikan, Kemahiran dan Bahasa",
+        "step3": "LinkedIn akan menghantar e-mel dalam beberapa minit: muat turun arkib ZIP",
+        "step4": "Pilih fail ZIP itu di bawah, tanpa menyahzipnya"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Dokumen ini dipaparkan dalam bahasa Inggeris. Hanya versi bahasa Perancis yang sah di sisi undang-undang.",
+    "error": "Dokumen ini tidak dapat dimuatkan."
+  }
+}

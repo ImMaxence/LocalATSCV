@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "A LocalATSCV kezdőlapja",
+    "main": "Fő navigáció",
+    "how": "Hogyan működik",
+    "privacy": "Adatvédelem",
+    "analyze": "Önéletrajz elemzése",
+    "editor": "Önéletrajzom elkészítése",
+    "skipToContent": "Ugrás a tartalomra"
+  },
+  "theme": {
+    "label": "Téma",
+    "light": "Világos",
+    "system": "Rendszer",
+    "dark": "Sötét"
+  },
+  "lang": {
+    "label": "A felület nyelve",
+    "suggestion": "Az oldal megjelenítése magyarul",
+    "dismiss": "Bezárás",
+    "search": "Nyelv keresése",
+    "noResult": "Nincs ilyen nyelv"
+  },
+  "pages": {
+    "home": "ATS-barát önéletrajzok, 100%-ban helyben",
+    "editor": "Szerkesztő",
+    "analyze": "Önéletrajz-elemző",
+    "changelog": "Újdonságok",
+    "legalNotice": "Jogi nyilatkozat",
+    "terms": "Felhasználási feltételek",
+    "privacy": "Adatvédelmi irányelvek"
+  },
+  "seo": {
+    "home": "Ingyenes ATS-barát önéletrajz-készítő: 30 grafikus sablon, hozzáillő motivációs levél, igazítás minden álláshirdetéshez és ATS-pontszám. Nyílt forráskód, adatai a böngészőjében maradnak",
+    "editor": "Önéletrajz-szerkesztő élő előnézettel, Master önéletrajzzal és célzott változatokkal, ATS-ellenőrzéssel és valódi szöveges PDF-exporttal. Minden a böngészőjében marad",
+    "analyze": "Elemezzen ingyen egy PDF önéletrajzot: ATS-pontszám 100-ból, javítandó pontok és a szöveg úgy, ahogy egy toborzórendszer olvassa. A fájl sosem hagyja el a böngészőjét",
+    "changelog": "A LocalATSCV újdonságai verzióról verzióra: új önéletrajzsablonok, funkciók és javítások",
+    "legalNotice": "A LocalATSCV jogi nyilatkozata: kiadó, tárhely és kapcsolat",
+    "terms": "A LocalATSCV, az ingyenes, nyílt forráskódú önéletrajz-készítő felhasználási feltételei",
+    "privacy": "A LocalATSCV adatvédelmi irányelvei: semmilyen adatot nem gyűjtünk, önéletrajzai a böngészőjében maradnak"
+  },
+  "footer": {
+    "tagline": "Az ATS-barát önéletrajz-készítő, amely sosem látja az adatait",
+    "product": "Termék",
+    "legal": "Jogi információk",
+    "project": "Projekt",
+    "changelog": "Újdonságok",
+    "sourceCode": "Forráskód",
+    "reportIssue": "Hiba bejelentése",
+    "license": "MIT-licenc",
+    "versionLabel": "{{version}} verzió, újdonságok megtekintése"
+  },
+  "update": {
+    "title": "Új verzió érhető el",
+    "text": "Töltse újra az oldalt a használatához",
+    "changelog": "Újdonságok megtekintése",
+    "reload": "Újratöltés",
+    "later": "Később"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100%-ban helyben · Ingyenes · Nyílt forráskód",
+      "titleLine1": "Önéletrajz, amely átjut a robotokon",
+      "titleLine2": "Adatok, amelyek Önnél maradnak",
+      "subtitle": "A LocalATSCV segít a toborzórendszerekre (ATS) optimalizált önéletrajzot készíteni, és néhány kattintással minden álláshoz igazítani. Minden a böngészőjében történik: nincs fiók, és semmilyen adatot nem küldünk el",
+      "ctaPrimary": "Önéletrajzom elkészítése",
+      "ctaSecondary": "Meglévő önéletrajz elemzése",
+      "points": {
+        "noAccount": "Regisztráció nélkül",
+        "offline": "Offline is működik",
+        "atsPdf": "ATS által olvasható PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "A probléma",
+      "title": "Az önéletrajzát először egy gép olvassa",
+      "text": "A legtöbb nagyvállalat és fejvadász cég ATS-sel (Applicant Tracking System) szűri a jelentkezéseket. Ez kinyeri a szöveget az önéletrajzából, adatbázisban tárolja, és lehetővé teszi, hogy a toborzók kulcsszavak alapján keressenek jelölteket",
+      "pitfalls": {
+        "layout": {
+          "title": "Összetett elrendezés",
+          "text": "A hasábok, táblázatok és szövegdobozok összekeverik az olvasási sorrendet: az adatai összevissza jönnek ki"
+        },
+        "image": {
+          "title": "Olvashatatlan szöveg",
+          "text": "Az ikonok, készségsávok és egyes tervezőeszközös exportok értelmetlen karakterekké válnak, vagy teljesen eltűnnek"
+        },
+        "keywords": {
+          "title": "Hiányzó kulcsszavak",
+          "text": "Ha a hirdetés szókincse nem szerepel az önéletrajzában, a profilja nem jelenik meg a toborzók kereséseiben"
+        }
+      },
+      "seen": "Amit Ön lát",
+      "read": "Amit a robot olvas",
+      "fix": "A LocalATSCV az ellenkezőjét teszi: egy hasáb, valódi szöveg és szabványos szakaszcímek, amelyeket a robotok a helyes sorrendben olvasnak"
+    },
+    "how": {
+      "eyebrow": "Hogyan működik",
+      "title": "Írja meg egyszer, igazítsa végtelenszer",
+      "text": "Négy lépésben lesz a Master önéletrajzából minden álláshoz szabott jelentkezés",
+      "steps": {
+        "profile": {
+          "title": "Töltse ki a Master önéletrajzát",
+          "text": "Adja meg egyszer és mindenkorra az összes tapasztalatát, vagy időt spórolva importálja a LinkedIn-profilja PDF-jét"
+        },
+        "offer": {
+          "title": "Illessze be az álláshirdetést",
+          "text": "A LocalATSCV kinyeri a kulcsszavakat, és 100-as egyezési pontszámot számol, amely gépelés közben frissül"
+        },
+        "compose": {
+          "title": "Állítson össze célzott változatot",
+          "text": "Jelölje be a releváns tapasztalatokat és pontokat, és rendezze át őket húzással. A Masterből semmi sem törlődik"
+        },
+        "export": {
+          "title": "Exportálás PDF-be",
+          "text": "Valódi szöveges, strukturált, egyhasábos PDF, amely a robotok számára ugyanolyan olvasható, mint a toborzóknak"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Adatvédelem",
+      "title": "Nulla adat a szervereinken. Szó szerint",
+      "text": "Nincs feltörhető adatbázis: a szerverünk csak az alkalmazást küldi el. Utána minden a böngészőjében történik, akár offline is",
+      "browser": {
+        "title": "Az Ön böngészője",
+        "tag": "Az Ön eszköze",
+        "items": {
+          "master": "Master önéletrajz",
+          "photo": "Profilkép",
+          "versions": "Célzott változatok",
+          "settings": "Beállítások"
+        },
+        "note": "Az IndexedDB-ben tárolva, csak ezen az eszközön"
+      },
+      "flow": {
+        "app": "Az alkalmazás, az első betöltéskor",
+        "data": "Az Ön adatai",
+        "never": "soha"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Szerver",
+        "text": "Az alkalmazás fájljait szolgálja ki (HTML, CSS, JavaScript), semmi mást",
+        "items": {
+          "noDb": "Nincs adatbázis",
+          "noAccount": "Nincsenek felhasználói fiókok",
+          "noLogs": "Nincsenek látogatási naplók"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Fiók nélkül",
+          "text": "Nincs regisztráció, e-mail vagy jelszó. Nyissa meg az oldalt, és kezdjen hozzá"
+        },
+        "trackers": {
+          "title": "Követők nélkül",
+          "text": "Nincs statisztika, hirdetés és követő süti. Még a betűtípusok is a saját szerverünkön vannak"
+        },
+        "csp": {
+          "title": "Technikailag lezárva",
+          "text": "Az oldal biztonsági szabályzata (CSP) megtiltja a böngészőnek, hogy bármilyen más tartományhoz kapcsolódjon. A kód nyílt: ellenőrizze maga"
+        },
+        "backup": {
+          "title": "Az Ön mentései, az Ön fájljai",
+          "text": "Exportálja az összes adatát egy JSON-fájlba, és importálja vissza bármelyik eszközön"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkciók",
+      "title": "Minden, ami az állásinterjúhoz kell",
+      "items": {
+        "master": {
+          "title": "Master önéletrajz és célzott változatok",
+          "text": "Egy teljes önéletrajz, és annyi változat, ahány jelentkezés. Bejelöl, kivesz: semmi sem vész el"
+        },
+        "score": {
+          "title": "Egyezési pontszám",
+          "text": "Illessze be a hirdetést: megtalált és hiányzó kulcsszavak, valamint 100-as pontszám valós időben"
+        },
+        "weak": {
+          "title": "Gyenge megfogalmazások felismerése",
+          "text": "A „felelős voltam”, „segítettem” és hasonlók automatikusan megjelölődnek, cseréjükhöz cselekvő igék tárát kapja"
+        },
+        "analyzer": {
+          "title": "Meglévő önéletrajzok elemzése",
+          "text": "Húzzon be egy máshol készült önéletrajzot: lássa, mit olvas valójában a robot, és min kell javítani"
+        },
+        "linkedin": {
+          "title": "LinkedIn-import",
+          "text": "Töltse ki előre a Master önéletrajzát az ingyenes PDF-ből, amelyet a LinkedIn-profiljából exportálhat"
+        },
+        "languages": {
+          "title": "5 önéletrajz-nyelv",
+          "text": "Francia, angol, olasz, spanyol és német. Angolul a fénykép és a születési dátum rejtve marad az angolszász szokások szerint"
+        },
+        "pdf": {
+          "title": "ATS-barát PDF-export",
+          "text": "Valódi szöveg és átlátható szerkezet: a robotoknak olvasható, a toborzóknak kellemes"
+        },
+        "offline": {
+          "title": "Telepíthető és offline",
+          "text": "Tegye a LocalATSCV-t a kezdőképernyőre, és dolgozzon tovább kapcsolat nélkül"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "GYIK",
+      "title": "Gyakran ismételt kérdések",
+      "text": "Nem találja a kérdését? Írjon nekünk:",
+      "items": {
+        "ats": {
+          "q": "Mi az ATS?",
+          "a": "Az Applicant Tracking System az a szoftver, amellyel a toborzók fogadják, szűrik és keresik a jelentkezéseket. Szöveggé alakítja és indexeli az önéletrajzát: ha a szöveget rosszul nyeri ki, vagy hiányoznak a megfelelő kulcsszavak, a jelentkezését nehéz lesz megtalálni"
+        },
+        "storage": {
+          "q": "Hol tárolódnak az adataim?",
+          "a": "Csak a böngészőjében, az IndexedDB-ben, amely minden modern böngészőbe beépített adatbázis. Soha nem haladnak át a szervereinken, amelyek csak az alkalmazás fájljait tudják kiszolgálni"
+        },
+        "clear": {
+          "q": "Mi történik, ha törlöm a böngésző adatait?",
+          "a": "Az önéletrajzai törlődnek, mert máshol nem léteznek. Rendszeresen exportáljon JSON-mentést: bármikor, bármelyik eszközön visszaimportálhatja"
+        },
+        "score": {
+          "q": "A pontszám garantálja, hogy kiválasztják az önéletrajzomat?",
+          "a": "Nem. Minden ATS-nek saját szabályai vannak, és a végső döntést ember hozza meg. A pontszám tájékoztató jellegű: azt ellenőrzi, hogy az önéletrajza a hirdetés szókincsét használja-e, és hogy egy gép helyesen el tudja-e olvasni"
+        },
+        "photo": {
+          "q": "Miért tűnik el a fénykép angolul?",
+          "a": "Az Egyesült Királyságban, az Egyesült Államokban és sok angol nyelvű országban nem ajánlott fényképet és születési dátumot megadni, hogy csökkenjen a felvételi diszkrimináció. Egyes toborzók egyenesen elutasítják az ilyen adatokat tartalmazó önéletrajzokat"
+        },
+        "free": {
+          "q": "Tényleg ingyenes?",
+          "a": "Igen. A LocalATSCV MIT-licencű, nyílt forráskódú projekt, hirdetések és előfizetés nélkül. Az üzemeltetése szinte semmibe sem kerül, mert minden munkát a böngészője végez"
+        },
+        "templates": {
+          "q": "Átjutnak a grafikus sablonok az ATS-en?",
+          "a": "Igen. Minden sablon valódi szöveget nyomtat, olvasási sorrendben, szabványos szakaszcímekkel: az alakzatok, sávok és ikonok rajzok, amelyeket a robotok figyelmen kívül hagynak. Az egyhasábos sablonok továbbra is a legbiztonságosabbak, a szerkesztő ATS-ellenőrzése pedig élőben teszteli az elrendezést"
+        },
+        "import": {
+          "q": "Felhasználhatom a jelenlegi önéletrajzomat vagy a LinkedIn-profilomat?",
+          "a": "Igen. Importáljon PDF vagy Word (.docx) önéletrajzot, a LinkedIn-profilja PDF-jét (számítógépen) vagy a LinkedIn-adatarchívumát (a mobilalkalmazásból): a tartalmat a böngészője olvassa be, és a szerkesztőbe rendezi"
+        },
+        "offline": {
+          "q": "Működik a LocalATSCV offline?",
+          "a": "Igen. Telepíthető webalkalmazás: az első látogatás után minden működik kapcsolat nélkül, a PDF-exportot is beleértve"
+        }
+      }
+    },
+    "cta": {
+      "title": "Készen áll, hogy átjusson a szűrőn?",
+      "text": "Készítse el a Master önéletrajzát néhány perc alatt. Semmi sem hagyja el ezt az eszközt",
+      "button": "Kezdjük"
+    },
+    "demo": {
+      "role": "Front-end fejlesztő",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Szakmai tapasztalat",
+      "jobTitle": "Angular-fejlesztő",
+      "jobMeta": "Példa Kft. · 2022 – jelenleg",
+      "bullets": {
+        "migration": "40 képernyő migrálása <k>Angular</k> és <k>TypeScript</k> alapokra, 35%-kal rövidebb betöltési idő",
+        "testing": "<w>Felelős voltam</w> a végponttól végpontig tartó tesztelési stratégiáért",
+        "delivery": "Folyamatos szállítás <k>GitLab CI</k> segítségével 3 termékcsapatnak"
+      },
+      "weakLabel": "Gyenge megfogalmazás",
+      "weakReplacement": "„Irányítottam”",
+      "skills": "Készségek",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Akadálymentesség",
+      "score": "Egyezés a hirdetéssel",
+      "sent": "0 bájt elküldve",
+      "robot": "KÉSZSÉGEK CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end fejlesztő Angular <n>●●●●○</n> SZAKMAI TAPASZTALAT <n>� camille.mar</n> Angular-fejlesztő <n>tin@example.com</n> 2022 – jelenleg TypeScript <n>●●●○○</n> Példa Kft. NYELVEK Angol 40 képernyő migrálása…"
+    }
+  },
+  "dialog": {
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "create": "Létrehozás",
+    "save": "Mentés",
+    "import": "Importálás"
+  },
+  "editor": {
+    "list": {
+      "title": "Önéletrajzaim",
+      "subtitle": "Csak ebben a böngészőben tárolva",
+      "new": "Új önéletrajz",
+      "newBlank": "Üres önéletrajz",
+      "newBlankHint": "Kezdés üres oldallal",
+      "newSample": "Kezdés egy példával",
+      "newSampleHint": "Kitöltött, kitalált önéletrajz a szerkesztő kipróbálásához",
+      "import": "Mentés visszaállítása",
+      "exportAll": "Összes exportálása",
+      "emptyTitle": "Még nincs önéletrajz",
+      "emptyText": "Készítse el a Master önéletrajzát: minden tapasztalata egy helyen, készen arra, hogy minden álláshoz igazítsa",
+      "open": "Megnyitás",
+      "actions": "Műveletek",
+      "duplicate": "Másolat készítése",
+      "export": "Exportálás (JSON)",
+      "delete": "Törlés",
+      "updated": "Szerkesztve: {{date}}",
+      "versions": "Változatok: {{count}}",
+      "backupHint": "Az önéletrajzai csak ebben a böngészőben léteznek. Rendszeresen exportáljon JSON-mentést: ha törli a böngésző adatait, ezzel mindent visszaállíthat",
+      "defaultName": "Önéletrajzom",
+      "copySuffix": "(másolat)",
+      "deleteTitle": "Törli ezt: „{{name}}”?",
+      "deleteText": "Az önéletrajz és összes változata véglegesen törlődik ebből a böngészőből",
+      "exportDone": "Mentés letöltve",
+      "importConfirmTitle": "Importálja ezt a mentést?",
+      "importConfirmText": "Önéletrajzok ebben a mentésben: {{count}}. Az ebben a böngészőben már létezők felülíródnak",
+      "importDone": "Mentés importálva: {{count}} önéletrajz",
+      "importError": {
+        "invalidJson": "Ez a fájl nem érvényes JSON",
+        "notABackup": "Ez a fájl nem LocalATSCV-mentés",
+        "newerVersion": "Ez a mentés a LocalATSCV egy újabb verziójából származik: előbb frissítse az alkalmazást"
+      },
+      "importPdf": "Önéletrajz importálása (PDF vagy Word)",
+      "importPdfHint": "Hozza át meglévő önéletrajzát a sablonjainkba",
+      "importLinkedin": "Importálás a LinkedInről",
+      "importLinkedinHint": "A profilja PDF-jéből"
+    },
+    "toolbar": {
+      "back": "Önéletrajzaim",
+      "name": "Az önéletrajz neve",
+      "cvLanguage": "Az önéletrajz nyelve",
+      "accent": "Kiemelőszín",
+      "customAccent": "Egyéni szín",
+      "saved": "Mentve",
+      "saving": "Mentés…",
+      "saveError": "A mentés nem sikerült",
+      "edit": "Szerkesztés",
+      "preview": "Előnézet",
+      "exportPdf": "Exportálás PDF-be",
+      "undo": "Visszavonás (Ctrl+Z)",
+      "redo": "Mégis (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Szerkesztett dokumentum",
+      "cv": "Önéletrajz",
+      "letter": "Motivációs levél"
+    },
+    "letter": {
+      "title": "Motivációs levél",
+      "versionOwn": "Ennek a változatnak saját levele van",
+      "versionShared": "Ez a változat a Master levelét használja: ha itt szerkeszti, másolat készül ehhez a változathoz",
+      "useMaster": "A Master levelének használata",
+      "recipient": "Címzett",
+      "recipientPlaceholder": "Példa Kft.\nToborzási osztály\nBudapest, Andrássy út 10., 1061",
+      "place": "Hely",
+      "date": "Dátum",
+      "dateHint": "Üresen: a nyomtatás napjának dátuma",
+      "subject": "Tárgy",
+      "subjectPlaceholder": "Jelentkezés a(z) … pozícióra",
+      "greeting": "Megszólítás",
+      "body": "Levél",
+      "bodyPlaceholder": "Három rövid bekezdés: mi vonzza a cégnél, mit hoz magával, milyen következő lépést javasol",
+      "bodyHint": "Egy üres sor választ el két bekezdést · **félkövér** egy kulcsszóhoz",
+      "outline": "Vázlat beszúrása",
+      "closing": "Elköszönés",
+      "fileName": "Motivációs levél"
+    },
+    "fit": {
+      "pages": "{{count}} oldal",
+      "onePage": "Elfér egy oldalon",
+      "hintMany": "A legtöbb toborzó egyoldalas önéletrajzot vár",
+      "hintOne": "Ideális formátum a legtöbb jelentkezéshez",
+      "stillTooLong": "Tömörítve is túl hosszú: rövidítsen néhány pontot, vagy rejtsen el elemeket egy változatban",
+      "fit": "Igazítás egy oldalra",
+      "settings": "Elrendezési beállítások",
+      "spacing": "Térköz",
+      "scale": "Szövegméret",
+      "settingsHint": "A szöveg valódi szöveg marad: csak az elrendezés változik",
+      "reset": "A sablon elrendezése",
+      "grayscale": "Fekete-fehér nézet",
+      "grayscaleHint": "Fekete-fehér nyomtatást szimulál: az exportált PDF megtartja a színeit"
+    },
+    "versions": {
+      "label": "Megjelenített változat",
+      "master": "Master önéletrajz",
+      "masterHint": "Teljes tartalom, szűrés nélkül",
+      "new": "Új változat",
+      "newText": "A célzott változat a teljes Master önéletrajzból indul: utána vegye ki a jelölést abból, amire ennek a jelentkezésnek nincs szüksége",
+      "nameLabel": "A változat neve",
+      "namePlaceholder": "Pl. Front-end fejlesztő – X cég",
+      "rename": "Változat átnevezése",
+      "delete": "Változat törlése",
+      "deleteTitle": "Törli ezt a változatot: „{{name}}”?",
+      "deleteText": "Csak a kijelölés törlődik: minden tartalom megmarad a Master önéletrajzában",
+      "banner": "„{{name}}” változat: vegye ki a jelölést abból, aminek nem kell megjelennie. A Master önéletrajzából semmi sem törlődik",
+      "include": "Felvétel ebbe a változatba"
+    },
+    "enRule": "Angol önéletrajz: a fénykép, a születési dátum és az állampolgárság rejtve marad az angolszász szokások szerint",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fénykép",
+      "photoAdd": "Fénykép hozzáadása",
+      "photoChange": "Csere",
+      "photoRemove": "Eltávolítás",
+      "photoHint": "Kicsinyítve és csak ezen az eszközön tárolva",
+      "photoError": "Ezt a képet nem sikerült beolvasni",
+      "hiddenInEnglish": "Angolul rejtve",
+      "firstName": "Utónév",
+      "lastName": "Vezetéknév",
+      "headline": "Az önéletrajz címe",
+      "headlinePlaceholder": "Pl. Front-end fejlesztő",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "location": "Település",
+      "birthDate": "Születési dátum",
+      "nationality": "Állampolgárság",
+      "summary": "Összefoglaló",
+      "summaryPlaceholder": "Két-három mondat, amely összefoglalja a profilját és azt, amit keres",
+      "links": "Hivatkozások",
+      "linkLabel": "A hivatkozás neve",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "A hivatkozás címe",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Hivatkozás hozzáadása",
+      "removeLink": "Hivatkozás eltávolítása",
+      "drivingLicense": "Jogosítvány",
+      "drivingLicensePlaceholder": "Pl. B kategóriás jogosítvány, saját autó",
+      "qrToggle": "A hivatkozás megjelenítése QR-kódként",
+      "linksHint": "A logó (LinkedIn, GitHub, YouTube…) automatikusan megjelenik. A QR gomb a legtöbb grafikus sablonban QR-kódként mutatja a hivatkozást"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Szakmai tapasztalat",
+        "education": "Tanulmányok",
+        "projects": "Projektek",
+        "certifications": "Tanúsítványok",
+        "custom": "Szabad szakasz",
+        "skills": "Készségek",
+        "languages": "Nyelvek",
+        "interests": "Érdeklődési kör"
+      },
+      "add": "Szakasz hozzáadása",
+      "titleLabel": "A szakasz címe",
+      "empty": "Üres szakasz: nem jelenik meg az önéletrajzban",
+      "addItem": {
+        "experience": "Tapasztalat hozzáadása",
+        "education": "Tanulmány hozzáadása",
+        "projects": "Projekt hozzáadása",
+        "certifications": "Tanúsítvány hozzáadása",
+        "custom": "Elem hozzáadása",
+        "skills": "Készségek hozzáadása",
+        "languages": "Nyelv hozzáadása",
+        "interests": "Érdeklődés hozzáadása"
+      },
+      "deleteTitle": "Törli ezt a szakaszt: „{{name}}”?",
+      "deleteText": "A tartalma törlődik a Master önéletrajzból és annak összes változatából"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Munkakör",
+          "subtitle": "Cég"
+        },
+        "education": {
+          "title": "Végzettség",
+          "subtitle": "Iskola vagy egyetem"
+        },
+        "projects": {
+          "title": "A projekt neve",
+          "subtitle": "Szerep vagy technológiák"
+        },
+        "certifications": {
+          "title": "Tanúsítvány",
+          "subtitle": "Kiállító"
+        },
+        "custom": {
+          "title": "Cím",
+          "subtitle": "Alcím"
+        }
+      },
+      "location": "Helyszín",
+      "url": "Hivatkozás",
+      "start": "Kezdet",
+      "end": "Vége",
+      "date": "Megszerzés dátuma",
+      "current": "Folyamatban",
+      "untitled": "Cím nélkül",
+      "bullets": "Eredmények",
+      "bulletPlaceholder": "Kezdje cselekvő igével, és számszerűsítse az eredményt",
+      "addBullet": "Pont hozzáadása",
+      "bulletHint": "Enter: új pont",
+      "boldHint": "**szó** a félkövérhez"
+    },
+    "items": {
+      "skillLabel": "Kategória",
+      "skillLabelPlaceholder": "Pl. Front-end",
+      "skillKeywords": "Készségek",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Nyelv",
+      "languageLevel": "Szint",
+      "languageLevelPlaceholder": "Pl. C1, fluent",
+      "interest": "Érdeklődés",
+      "interestPlaceholder": "Pl. Mászás",
+      "levelDetected": "Szint felismerve: a sávos sablonok megjelenítik",
+      "levelUnknown": "A szint nem ismerhető fel, nincs sáv: használja az A1–C2 szinteket vagy a lista egyik javaslatát",
+      "levelEmpty": "Adjon meg egy szintet a sáv megjelenítéséhez",
+      "levelHint": "Használja az európai szintet (A1–C2) vagy egy olyan szót, mint a „fluent” vagy a „native”: egyes sablonok sávként is megjelenítik, ennek előnézetét a jobb oldali pontok mutatják"
+    },
+    "actions": {
+      "menu": "Műveletek",
+      "moveUp": "Mozgatás fel",
+      "moveDown": "Mozgatás le",
+      "duplicate": "Másolat készítése",
+      "delete": "Törlés",
+      "drag": "Húzza az átrendezéshez"
+    },
+    "month": "Hónap",
+    "year": "Év",
+    "noMonth": "Hónap",
+    "preview": {
+      "page": "{{n}}. oldal"
+    },
+    "notFound": {
+      "title": "Az önéletrajz nem található",
+      "text": "Ez az önéletrajz nem létezik, vagy törölték ebből a böngészőből"
+    },
+    "templates": {
+      "button": "Sablon",
+      "title": "Válasszon sablont",
+      "subtitle": "Minden sablon egy teljes minta-önéletrajzzal vagy a sajátjával. A kiemelőszín minden sablonra érvényes",
+      "close": "Bezárás",
+      "filter": "Sablonok szűrése",
+      "filters": {
+        "all": "Összes",
+        "graphic": "Grafikus",
+        "sober": "Visszafogott"
+      },
+      "ats": "ATS-kompatibilitás",
+      "levels": {
+        "excellent": "kiváló",
+        "good": "jó",
+        "fair": "elfogadható"
+      },
+      "atsHint": "Minden sablon valódi szöveget nyomtat. A kéthasábos elrendezéseket a legtöbb modern ATS jól olvassa, de egyes régebbi eszközök összekeverik a hasábokat: ha bizonytalan, válasszon egyhasábos sablont",
+      "names": {
+        "classic": {
+          "name": "Klasszikus",
+          "description": "Letisztult és hatékony: egy hasáb, aláhúzott címek, semmi zavaró"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Színes sáv, markáns címek és címkékként megjelenő készségek"
+        },
+        "elegant": {
+          "name": "Elegáns",
+          "description": "Középre igazított fejléc és talpas betűk a kifinomult megjelenésért"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Színes szegély, fix szélességű betűs részletek és kódstílusú készségek"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Svájci stílus: óriási név, címek a margón, sok üres tér"
+        },
+        "sidebar": {
+          "name": "Hasábok",
+          "description": "Színes oldalsáv fényképpel, elérhetőségekkel és készségekkel"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Fényképes sáv, ikonok, idővonal és nyelvi sávok, mégis tökéletesen olvasható az ATS számára"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organikus pasztell formák, nagy kerek fénykép, idővonal és QR-kód, két hasábban"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "A Signature megjelenése egy hasábban: grafikus és tökéletesen olvasható az ATS számára"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Sötét átlós sáv, színes ragyogás, tapasztalati kártyák és telített készségcímkék"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrikus kompozíció alapszínekben a fénykép körül, geometrikus betűk és formák minden cím előtt"
+        },
+        "editorial": {
+          "name": "Magazin",
+          "description": "Magazinelrendezés: nagy talpas név, dőlt bevezető, számozott szakaszok és eltolt portré"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalizmus: vastag fekete körvonalak, éles árnyékok, erős színblokkok és fekete címkék"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Hálós színátmenet a kiemelőszíneiben, üveghatású névjegykártya és színátmenetes keretű kártyák"
+        },
+        "swiss": {
+          "name": "Svájci",
+          "description": "Svájci plakátstílus: hatalmas név, színes sáv, vastag fekete vonalak és számozott szakaszok"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Elefántcsontszínű papír, finom dupla keret, rombuszdíszek és Garamond betűk"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Sötét mód: éjszakai háttér, neon kiemelések és világító idővonal, ideális digitális jelentkezésekhez"
+        },
+        "wave": {
+          "name": "Hullám",
+          "description": "Hullámokban végződő színes sáv, kerek fénykép és hullámos címek, lágy és barátságos"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Lekerekített bento csempék: fénykép, név és QR-kód rácsban, szakaszonként egy csempe"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Műszaki rajz: négyzethálós papír, sarokjelölések, méretvonal és fix szélességű címkék"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80-as évekbeli geometrikus konfetti, élénk színek és cikcakkal aláhúzott címek"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Nagy, kettéosztott sáv: szöveg színblokkon és kéttónusú fénykép"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "A tipográfia az egyetlen dísz: óriási, részben körvonalas név és nagyon nagy címek"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Szakaszonként egy pasztellszín, kapszula alakú címek és sokszínű ragyogás"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Tengerészkék sáv, arany vonal és talpas név vezetői pozíciókhoz"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japán minimalizmus: washi papír, ensō kör a kiemelőszínében és egy ecsetvonás"
+        },
+        "ribbon": {
+          "name": "Szalag",
+          "description": "Fecskefarkú szalagokon álló szakaszcímek, középre igazított fejléc"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Hatszögletű fénykép, méhsejt a sarokban és hatszögek a címek előtt"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Rétegzett kivágott papír fejléc, papírlapként megjelenő szakaszok"
+        },
+        "thread": {
+          "name": "Fonal",
+          "description": "Folytonos fonal köti össze a fejlécet és minden szakaszt, minden munkakörnél egy ponttal"
+        }
+      },
+      "preview": {
+        "label": "A bélyegképek tartalma",
+        "sample": "Teljes példa",
+        "mine": "Az önéletrajzom"
+      }
+    },
+    "print": {
+      "title": "Exportálás PDF-be",
+      "text": "Mindjárt megnyílik a böngésző nyomtatási ablaka. A tökéletes PDF-hez:",
+      "tips": {
+        "destination": "Cél: „Mentés PDF-ként”",
+        "margins": "Margók: „Nincs”",
+        "headers": "Vegye ki a jelölést a „Fejléc és lábléc” elől",
+        "background": "Jelölje be a „Háttérgrafika” lehetőséget a színek megtartásához"
+      },
+      "dontShow": "Ne jelenjen meg újra",
+      "cancel": "Mégse",
+      "print": "Nyomtatási ablak megnyitása"
+    },
+    "job": {
+      "title": "Igazítás egy álláshirdetéshez",
+      "sources": "LinkedIn, Profession.hu, Jobline, Indeed, CVonline…",
+      "placeholder": "Illessze be ide a hirdetés teljes szövegét: munkakör, feladatok, elvárások",
+      "urlWarning": "A hirdetés szövegét illessze be, ne a hivatkozását: a LocalATSCV soha nem kapcsolódik egyetlen weboldalhoz sem, így az adatai Önnél maradnak",
+      "empty": "Nem található kulcsszó: illesszen be egy teljesebb hirdetést",
+      "score": "Egyezés a hirdetéssel",
+      "summary": "{{total}} kulcsszóból {{found}} szerepel",
+      "found": "Kulcsszavak az önéletrajzában",
+      "missing": "Hiányzó kulcsszavak",
+      "missingHint": "Kattintson egy kulcsszóra, hogy hozzáadja a készségeihez, vagy dolgozza bele egy tapasztalatba",
+      "addToSkills": "Hozzáadás a készségekhez",
+      "added": "„{{keyword}}” hozzáadva a készségeihez",
+      "keywordsGroup": "Kulcsszavak",
+      "createVersion": "Célzott változat létrehozása ehhez az álláshoz",
+      "createVersionHint": "Az álláshoz nem kapcsolódó tapasztalatok és pontok jelölése kikerül: módosíthatja őket",
+      "savedInVersion": "A hirdetés mentve a(z) „{{name}}” változattal"
+    },
+    "weak": {
+      "hint": "A(z) „{{phrase}}” feladatot ír le: kezdje cselekvő igével"
+    },
+    "fonts": {
+      "title": "Tipográfia",
+      "heading": "Címek",
+      "body": "Szövegtörzs",
+      "default": "A sablon sajátja",
+      "hint": "Az ATS-ek mindezeket a betűtípusokat jól olvassák: a szöveg valódi szöveg marad"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Újdonságok",
+    "title": "Változásnapló",
+    "subtitle": "A LocalATSCV összes verziója az újdonságokkal és javításokkal",
+    "current": "Jelenlegi verzió",
+    "frenchOnly": "A változásnapló franciául készült",
+    "error": "Nem sikerült betölteni a változásnaplót",
+    "types": {
+      "added": "Hozzáadva",
+      "changed": "Módosítva",
+      "fixed": "Javítva",
+      "removed": "Eltávolítva",
+      "deprecated": "Elavult",
+      "security": "Biztonság",
+      "other": "Egyéb"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Elemző",
+    "title": "Átjut az önéletrajza a robotokon?",
+    "subtitle": "Húzzon be egy bármilyen eszközzel készült PDF önéletrajzot: a LocalATSCV úgy olvassa el, mint egy ATS, és megmondja, min kell javítani",
+    "drop": "Húzza ide az önéletrajzát",
+    "dropActive": "Engedje el a fájlt az elemzés indításához",
+    "hint": "Csak PDF, legfeljebb 15 MB",
+    "choose": "Fájl kiválasztása",
+    "reading": "A PDF beolvasása…",
+    "privacy": "A fájl elemzése a böngészőjében történik: soha nem küldjük el sehova",
+    "another": "Másik önéletrajz elemzése",
+    "errors": {
+      "notPdf": "Ez a fájl nem PDF",
+      "tooLarge": "Ez a fájl nagyobb 15 MB-nál",
+      "encrypted": "Ez a PDF jelszóval védett: egy ATS sem tudja elolvasni",
+      "unreadable": "Ezt a PDF-et nem sikerült beolvasni: lehet, hogy sérült"
+    },
+    "stats": "{{pages}} oldal · {{words}} szó",
+    "verdict": {
+      "excellent": "Kiváló",
+      "good": "Jó",
+      "fair": "Javítandó",
+      "poor": "Kritikus"
+    },
+    "verdictText": {
+      "excellent": "A robotok nagyon jól olvassák az önéletrajzát",
+      "good": "Néhány finomítással még hatékonyabb lesz",
+      "fair": "Több probléma is nehezíti az ATS általi olvasást",
+      "poor": "Egy ATS valószínűleg elsiklik a lényeg felett"
+    },
+    "categories": {
+      "readability": "Gépi olvashatóság",
+      "structure": "Szerkezet",
+      "content": "Tartalom"
+    },
+    "sectionNames": {
+      "experience": "Szakmai tapasztalat",
+      "education": "Tanulmányok",
+      "skills": "Készségek"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Gépileg olvasható szöveg",
+        "pass": "Az önéletrajz teljes szövege kinyerhető",
+        "warn": "Egyes oldalakon nincs olvasható szöveg: valószínűleg képek vagy szkennelés",
+        "fail": "Nincs olvasható szöveg: ez az önéletrajz valószínűleg kép vagy szkennelés, és egy ATS semmit sem nyer ki belőle. Exportálja PDF-be a szövegszerkesztőjéből"
+      },
+      "columns": {
+        "title": "Elrendezés",
+        "pass": "Lineáris olvasási sorrend, a hasábok nem keverednek",
+        "warn": "Hasábos elrendezés észlelve: a szöveg rossz sorrendben olvasható. Ellenőrizze lent az „Amit a robot olvas” részt"
+      },
+      "order": {
+        "title": "Olvasási sorrend a fájlban",
+        "pass": "A szöveg olvasási sorrendben szerepel a fájlban",
+        "warnHeader": "A neve és a fejléc a fájlban az önéletrajz többi része után szerepel: egy sorban olvasó ATS nem biztos, hogy megtalálja a nevét",
+        "warn": "A szöveg {{percent}}%-a az olvasási sorrenden kívül szerepel a fájlban: egyes ATS-ek rossz sorrendben olvassák ezeket a részeket",
+        "fail": "A szöveg {{percent}}%-a összevissza szerepel a fájlban, ami a szabad szövegdobozokból készült önéletrajzokra jellemző (Canva, PowerPoint…): sok ATS összekeverve olvassa az önéletrajzát. Hasonlítsa össze lent a két olvasatot"
+      },
+      "unreadable": {
+        "title": "Ikonok és készségsávok",
+        "pass": "Nincsenek ikonok vagy olvashatatlan karakterek",
+        "warn": "Ikonok vagy sávok észlelve ({{count}}): egy ATS értelmetlen karakterekként olvassa őket. Cserélje le őket szövegre",
+        "fail": "Ikonok vagy sávok észlelve ({{count}}): cserélje le őket szövegre, például „Angol: C1” a pontok helyett"
+      },
+      "contact": {
+        "title": "Elérhetőségek",
+        "pass": "E-mail-cím és telefonszám megtalálva",
+        "warnNoPhone": "Nem található telefonszám",
+        "warnNoEmail": "Nem található e-mail-cím",
+        "fail": "Sem e-mail, sem telefonszám nem található: írja be őket szövegként, ne képként"
+      },
+      "sections": {
+        "title": "Szabványos szakaszok",
+        "pass": "A tapasztalat, a tanulmányok és a készségek egyértelműen azonosíthatók",
+        "warn": "Ezeket a szakaszokat nem sikerült felismerni: használjon szabványos címeket",
+        "fail": "Egyetlen szabványos szakasz sem ismerhető fel: az ATS-ek olyan címekre támaszkodnak, mint a „Szakmai tapasztalat” vagy a „Tanulmányok”"
+      },
+      "length": {
+        "title": "Terjedelem",
+        "pass": "{{pages}} oldal, {{words}} szó: ideális terjedelem",
+        "warn": "{{pages}} oldal, {{words}} szó: törekedjen 1–2 oldalra és 250–1000 szóra",
+        "fail": "{{pages}} oldal, {{words}} szó: túl rövid vagy túl hosszú a jó értékeléshez"
+      },
+      "quantified": {
+        "title": "Számszerű eredmények",
+        "pass": "A pontjai {{percent}}%-a tartalmaz számot, remek",
+        "warn": "A pontoknak csak {{percent}}%-a számszerű: adjon hozzá mérhető eredményeket (százalékokat, összegeket, mennyiségeket)",
+        "fail": "Nincsenek számszerű eredmények: a toborzók és az ATS-ek értékelik a mérhető eredményeket"
+      },
+      "weakPhrases": {
+        "title": "Cselekvő igék",
+        "pass": "A pontok elején nincsenek gyenge megfogalmazások",
+        "warn": "Ezek a kezdések feladatot írnak le, nem eredményt: kezdje cselekvő igével",
+        "fail": "Ezek a kezdések feladatot írnak le, nem eredményt: kezdje cselekvő igével"
+      },
+      "dates": {
+        "title": "Dátumok",
+        "pass": "A tapasztalatai dátumozva vannak",
+        "warn": "Csak egy évszám található: adjon meg dátumot minden munkakörnél, az ATS-ek ebből számolják a szakmai éveit",
+        "fail": "Nem található dátum: az ATS-ek ebből számolják a szakmai éveit"
+      }
+    },
+    "robot": {
+      "title": "Amit a robot olvas",
+      "text": "A szöveg soronként újra összerakva, ahogy a legtöbb ATS teszi. Ha itt összevissza vagy hiányos, a toborzó számára is az",
+      "empty": "Nem sikerült szöveget kinyerni",
+      "position": "Hely szerint",
+      "file": "Fájlbeli sorrend",
+      "fileText": "A szöveg abban a sorrendben, ahogy a fájlban szerepel: így olvassák az elrendezést nem rekonstruáló ATS-ek. Követnie kell az önéletrajza olvasási sorrendjét"
+    },
+    "cta": {
+      "title": "Kezdje újra szilárd alapokon",
+      "text": "Készítsen ATS-barát önéletrajzot a szerkesztőben, majd igazítsa minden álláshoz",
+      "button": "A szerkesztő megnyitása",
+      "import": "Az önéletrajz áthozása a sablonjainkba"
+    },
+    "live": {
+      "title": "Élő ATS-ellenőrzés",
+      "issues": "Ellenőrizendő pontok ebben a sablonban: {{count}}",
+      "allGood": "Ebben a sablonban nem található probléma",
+      "hint": "A megjelenített elrendezésen számolva, ugyanazzal a motorral, mint az önéletrajz-elemző"
+    },
+    "method": {
+      "title": "Hogyan számoljuk ezt a pontszámot?",
+      "intro": "Nincs hivatalos ATS-pontszám: minden toborzószoftvernek (Workday, Taleo, Greenhouse, Lever…) saját, gyakran bizalmas szabályai vannak. Ez az index azt ellenőrzi, amin a legtöbbjük elakad, a következő skálán:",
+      "disclaimer": "Ezek a szempontok az ATS-szállítók nyilvános ajánlásaiból és a leggyakoribb olvasási hibákból származnak (szöveg képen, hasábok, ikonok, nem szabványos címek). A pontszám segít javítani az önéletrajzán: nem jósolja meg a kiválasztást"
+    }
+  },
+  "import": {
+    "title": "Önéletrajz importálása",
+    "linkedinTitle": "Importálás a LinkedInről",
+    "text": "Válasszon PDF vagy Word (.docx) önéletrajzot: a tartalmat a böngészője nyeri ki, és a szerkesztő szakaszaiba rendezi. Utána választhat sablont",
+    "choose": "Fájl kiválasztása",
+    "chooseFile": "Fájl kiválasztása",
+    "hint": "PDF vagy Word (.docx), legfeljebb 15 MB",
+    "reading": "Importálás…",
+    "privacy": "A fájlt a böngészője olvassa be: soha nem küldjük el sehova",
+    "close": "Bezárás",
+    "done": "Önéletrajz importálva ({{items}} elem): nézze át az összes szakaszt",
+    "errors": {
+      "tooLarge": "Ez a fájl nagyobb 15 MB-nál",
+      "encrypted": "Ez a PDF jelszóval védett",
+      "unreadable": "Ezt a fájlt nem sikerült beolvasni: lehet, hogy sérült",
+      "empty": "Nincs használható szöveg: ez a PDF valószínűleg kép vagy szkennelés",
+      "unsupported": "Válasszon PDF-et, Word-fájlt (.docx) vagy LinkedIn ZIP-archívumot",
+      "archiveEmpty": "Ez az archívum nem tartalmaz használható LinkedIn-profiladatokat"
+    },
+    "hintArchive": "PDF (számítógép) vagy ZIP-archívum (mobilalkalmazás)",
+    "linkedin": {
+      "computer": {
+        "title": "Számítógépen: a profilja PDF-je",
+        "step1": "Nyissa meg a linkedin.com oldalt egy számítógépes böngészőben (az alkalmazásban nincs ilyen lehetőség)",
+        "step2": "A profilján kattintson az „Erőforrások” (vagy „Továbbiak”), majd a „Mentés PDF-ként” lehetőségre",
+        "step3": "Válassza ki lent ezt a PDF-et"
+      },
+      "archive": {
+        "title": "A mobilalkalmazásban: az adatarchívuma",
+        "step1": "Az alkalmazásban koppintson a fényképére, majd a Beállítások és az Adatvédelem pontra",
+        "step2": "Válassza az „Adatai másolatának lekérése” lehetőséget, és jelölje be a Profil, Munkakörök, Tanulmányok, Készségek és Nyelvek elemeket",
+        "step3": "A LinkedIn néhány percen belül e-mailt küld: töltse le a ZIP-archívumot",
+        "step4": "Válassza ki lent ezt a ZIP-fájlt kicsomagolás nélkül"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Ez a dokumentum angolul jelenik meg. Jogilag csak a francia változat kötelező érvényű.",
+    "error": "Nem sikerült betölteni ezt a dokumentumot."
+  }
+}

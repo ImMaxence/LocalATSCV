@@ -37,7 +37,7 @@ import { CvEditorStore } from '../cv-editor.store';
               <p class="field-label mb-1.5!">
                 {{ t('photo') }}
                 @if (hidesDetails()) {
-                  <span class="ml-1 rounded bg-surface-2 px-1.5 py-px text-[10px] font-semibold">
+                  <span class="ms-1 rounded bg-surface-2 px-1.5 py-px text-[10px] font-semibold">
                     {{ t('hiddenInEnglish') }}
                   </span>
                 }

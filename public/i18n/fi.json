@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV:n etusivu",
+    "main": "Päänavigointi",
+    "how": "Näin se toimii",
+    "privacy": "Yksityisyys",
+    "analyze": "Analysoi CV",
+    "editor": "Luo CV:ni",
+    "skipToContent": "Siirry sisältöön"
+  },
+  "theme": {
+    "label": "Teema",
+    "light": "Vaalea",
+    "system": "Järjestelmä",
+    "dark": "Tumma"
+  },
+  "lang": {
+    "label": "Käyttöliittymän kieli",
+    "suggestion": "Näytä sivu suomeksi",
+    "dismiss": "Sulje",
+    "search": "Hae kieltä",
+    "noResult": "Kieltä ei löytynyt"
+  },
+  "pages": {
+    "home": "ATS-yhteensopivat CV:t, 100 % paikallisesti",
+    "editor": "Editori",
+    "analyze": "CV-analyysi",
+    "changelog": "Uutta",
+    "legalNotice": "Oikeudelliset tiedot",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojaseloste"
+  },
+  "seo": {
+    "home": "Ilmainen ATS-yhteensopiva CV-työkalu: 30 graafista pohjaa, yhteensopiva saatekirje, mukautus jokaiseen työpaikkailmoitukseen ja ATS-pisteet. Avoin lähdekoodi, tietosi pysyvät selaimessasi",
+    "editor": "CV-editori, jossa on reaaliaikainen esikatselu, Master-CV ja kohdennetut versiot, ATS-tarkistus ja PDF-vienti oikeana tekstinä. Kaikki pysyy selaimessasi",
+    "analyze": "Analysoi PDF-muotoinen CV ilmaiseksi: ATS-pisteet asteikolla 0–100, korjattavat kohdat ja teksti sellaisena kuin rekrytointijärjestelmä sen lukee. Tiedosto ei koskaan poistu selaimestasi",
+    "changelog": "LocalATSCV:n uutuudet versio versiolta: uudet CV-pohjat, ominaisuudet ja korjaukset",
+    "legalNotice": "LocalATSCV:n oikeudelliset tiedot: julkaisija, ylläpito ja yhteystiedot",
+    "terms": "LocalATSCV:n käyttöehdot, ilmainen ja avoimen lähdekoodin CV-työkalu",
+    "privacy": "LocalATSCV:n tietosuojaseloste: tietoja ei kerätä, CV:si pysyvät selaimessasi"
+  },
+  "footer": {
+    "tagline": "ATS-yhteensopiva CV-työkalu, joka ei koskaan näe tietojasi",
+    "product": "Tuote",
+    "legal": "Oikeudelliset",
+    "project": "Projekti",
+    "changelog": "Uutta",
+    "sourceCode": "Lähdekoodi",
+    "reportIssue": "Ilmoita ongelmasta",
+    "license": "MIT-lisenssi",
+    "versionLabel": "Versio {{version}}, katso uutuudet"
+  },
+  "update": {
+    "title": "Uusi versio saatavilla",
+    "text": "Lataa sivu uudelleen ottaaksesi sen käyttöön",
+    "changelog": "Katso uutuudet",
+    "reload": "Lataa uudelleen",
+    "later": "Myöhemmin"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % paikallinen · Ilmainen · Avoin lähdekoodi",
+      "titleLine1": "CV, joka pääsee robottien läpi",
+      "titleLine2": "Tiedot, jotka pysyvät sinulla",
+      "subtitle": "LocalATSCV auttaa sinua luomaan rekrytointijärjestelmille (ATS) optimoidun CV:n ja mukauttamaan sen jokaiseen työpaikkaan muutamalla klikkauksella. Kaikki tapahtuu selaimessasi: ei tiliä, eikä mitään tietoja lähetetä",
+      "ctaPrimary": "Luo CV:ni",
+      "ctaSecondary": "Analysoi olemassa oleva CV",
+      "points": {
+        "noAccount": "Ei rekisteröitymistä",
+        "offline": "Toimii ilman yhteyttä",
+        "atsPdf": "ATS:n luettava PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "Ongelma",
+      "title": "CV:si lukee ensin kone",
+      "text": "Useimmat suuret yritykset ja rekrytointitoimistot lajittelevat hakemukset ATS:llä (Applicant Tracking System). Se poimii CV:si tekstin, tallentaa sen tietokantaan ja antaa rekrytoijien hakea ehdokkaita avainsanoilla",
+      "pitfalls": {
+        "layout": {
+          "title": "Monimutkainen asettelu",
+          "text": "Palstat, taulukot ja tekstiruudut sotkevat lukujärjestyksen: tietosi tulevat ulos sekaisin"
+        },
+        "image": {
+          "title": "Lukukelvoton teksti",
+          "text": "Kuvakkeet, taitopalkit ja osa suunnittelutyökalujen vienneistä muuttuvat merkkisotkuksi tai katoavat kokonaan"
+        },
+        "keywords": {
+          "title": "Puuttuvat avainsanat",
+          "text": "Jos ilmoituksen sanasto ei näy CV:ssäsi, profiilisi ei tule esiin rekrytoijien hauissa"
+        }
+      },
+      "seen": "Mitä sinä näet",
+      "read": "Mitä robotti lukee",
+      "fix": "LocalATSCV tekee päinvastoin: yksi palsta, oikeaa tekstiä ja vakiomuotoiset osioiden otsikot, jotka robotit lukevat oikeassa järjestyksessä"
+    },
+    "how": {
+      "eyebrow": "Näin se toimii",
+      "title": "Kirjoita kerran, mukauta loputtomasti",
+      "text": "Neljä vaihetta tekee Master-CV:stäsi räätälöidyn hakemuksen jokaiseen työpaikkaan",
+      "steps": {
+        "profile": {
+          "title": "Täytä Master-CV:si",
+          "text": "Syötä kaikki kokemuksesi kerralla, tai tuo LinkedIn-profiilisi PDF säästääksesi aikaa"
+        },
+        "offer": {
+          "title": "Liitä työpaikkailmoitus",
+          "text": "LocalATSCV poimii avainsanat ja laskee vastaavuuspisteet asteikolla 0–100, ja ne päivittyvät kirjoittaessasi"
+        },
+        "compose": {
+          "title": "Kokoa kohdennettu versio",
+          "text": "Valitse olennaiset kokemukset ja kohdat ja järjestä ne vetämällä. Master-versiostasi ei poisteta mitään"
+        },
+        "export": {
+          "title": "Vie PDF-muotoon",
+          "text": "PDF, jossa on oikeaa tekstiä, selkeä rakenne ja yksi palsta, yhtä luettava roboteille kuin rekrytoijille"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Yksityisyys",
+      "title": "Ei mitään tietoja palvelimillamme. Kirjaimellisesti",
+      "text": "Ei ole tietokantaa, johon murtautua: palvelimemme lähettää sinulle vain sovelluksen. Sen jälkeen kaikki tapahtuu selaimessasi, myös ilman yhteyttä",
+      "browser": {
+        "title": "Selaimesi",
+        "tag": "Laitteesi",
+        "items": {
+          "master": "Master-CV",
+          "photo": "Profiilikuva",
+          "versions": "Kohdennetut versiot",
+          "settings": "Asetukset"
+        },
+        "note": "Tallennettu IndexedDB:hen, vain tälle laitteelle"
+      },
+      "flow": {
+        "app": "Sovellus, ensimmäisellä latauksella",
+        "data": "Tietosi",
+        "never": "ei koskaan"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Palvelin",
+        "text": "Toimittaa sovelluksen tiedostot (HTML, CSS, JavaScript), ei muuta",
+        "items": {
+          "noDb": "Ei tietokantaa",
+          "noAccount": "Ei käyttäjätilejä",
+          "noLogs": "Ei kävijälokeja"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Ei tiliä",
+          "text": "Ei rekisteröitymistä, ei sähköpostia, ei salasanaa. Avaa sivu ja aloita"
+        },
+        "trackers": {
+          "title": "Ei seurantaa",
+          "text": "Ei tilastoja, ei mainoksia, ei seurantaevästeitä. Jopa fontit ovat omalla palvelimellamme"
+        },
+        "csp": {
+          "title": "Teknisesti lukittu",
+          "text": "Sivuston tietoturvakäytäntö (CSP) kieltää selainta ottamasta yhteyttä mihinkään muuhun verkkotunnukseen. Koodi on avointa: tarkista itse"
+        },
+        "backup": {
+          "title": "Sinun varmuuskopiosi, sinun tiedostosi",
+          "text": "Vie kaikki tietosi JSON-tiedostoon ja tuo ne takaisin millä tahansa laitteella"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Ominaisuudet",
+      "title": "Kaikki, mitä tarvitset haastatteluun pääsemiseksi",
+      "items": {
+        "master": {
+          "title": "Master-CV ja kohdennetut versiot",
+          "text": "Yksi täydellinen CV ja yhtä monta versiota kuin hakemusta. Valitse ja poista valintoja: mitään ei katoa"
+        },
+        "score": {
+          "title": "Vastaavuuspisteet",
+          "text": "Liitä ilmoitus: löytyneet ja puuttuvat avainsanat sekä pisteet asteikolla 0–100 reaaliajassa"
+        },
+        "weak": {
+          "title": "Heikkojen ilmausten tunnistus",
+          "text": "”Vastuussa”, ”autoin”… merkitään automaattisesti, ja tarjolla on toimintaverbejä niiden tilalle"
+        },
+        "analyzer": {
+          "title": "Olemassa olevien CV:iden analyysi",
+          "text": "Pudota muualla tehty CV: näe, mitä robotti oikeasti lukee ja mitä pitää korjata"
+        },
+        "linkedin": {
+          "title": "Tuonti LinkedInistä",
+          "text": "Esitäytä Master-CV:si ilmaisella PDF:llä, jonka voit viedä LinkedIn-profiilistasi"
+        },
+        "languages": {
+          "title": "5 CV-kieltä",
+          "text": "Ranska, englanti, italia, espanja ja saksa. Englanniksi kuva ja syntymäaika piilotetaan englanninkielisten maiden käytäntöjen mukaisesti"
+        },
+        "pdf": {
+          "title": "ATS-yhteensopiva PDF-vienti",
+          "text": "Oikeaa tekstiä ja selkeä rakenne: luettava roboteille, miellyttävä rekrytoijille"
+        },
+        "offline": {
+          "title": "Asennettava ja toimii ilman yhteyttä",
+          "text": "Lisää LocalATSCV aloitusnäytölle ja jatka työskentelyä ilman yhteyttä"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "UKK",
+      "title": "Usein kysytyt kysymykset",
+      "text": "Eikö kysymystäsi löydy? Kirjoita meille:",
+      "items": {
+        "ats": {
+          "q": "Mikä on ATS?",
+          "a": "Applicant Tracking System on ohjelmisto, jolla rekrytoijat vastaanottavat, lajittelevat ja hakevat hakemuksia. Se muuntaa CV:si tekstiksi ja indeksoi sen: jos teksti poimitaan huonosti tai oikeat avainsanat puuttuvat, hakemustasi on vaikea löytää"
+        },
+        "storage": {
+          "q": "Missä tietoni säilytetään?",
+          "a": "Vain selaimessasi, IndexedDB:ssä, joka on jokaisessa nykyaikaisessa selaimessa oleva tietokanta. Tiedot eivät koskaan kulje palvelimiemme kautta, jotka osaavat vain toimittaa sovelluksen tiedostot"
+        },
+        "clear": {
+          "q": "Mitä tapahtuu, jos tyhjennän selaimen tiedot?",
+          "a": "CV:si poistetaan, koska niitä ei ole missään muualla. Vie JSON-varmuuskopio säännöllisesti: voit tuoda sen takaisin milloin tahansa, millä tahansa laitteella"
+        },
+        "score": {
+          "q": "Takaavatko pisteet, että CV:ni valitaan?",
+          "a": "Eivät. Jokaisella ATS:llä on omat sääntönsä, ja lopullisen päätöksen tekee ihminen. Pisteet ovat suuntaa antava mittari: ne tarkistavat, että CV:si käyttää ilmoituksen sanastoa ja että kone pystyy lukemaan sen oikein"
+        },
+        "photo": {
+          "q": "Miksi kuva katoaa englanniksi?",
+          "a": "Isossa-Britanniassa, Yhdysvalloissa ja monissa englanninkielisissä maissa kuvaa ja syntymäaikaa ei suositella rekrytointisyrjinnän vähentämiseksi. Jotkut rekrytoijat jopa hylkäävät CV:t, joissa ne ovat"
+        },
+        "free": {
+          "q": "Onko se todella ilmainen?",
+          "a": "Kyllä. LocalATSCV on avoimen lähdekoodin projekti MIT-lisenssillä, ilman mainoksia tai tilausta. Sen ylläpito ei maksa juuri mitään, koska selaimesi tekee kaiken työn"
+        },
+        "templates": {
+          "q": "Läpäisevätkö graafiset pohjat ATS:n?",
+          "a": "Kyllä. Jokainen pohja tulostaa oikeaa tekstiä lukujärjestyksessä vakiomuotoisilla osioiden otsikoilla: muodot, palkit ja kuvakkeet ovat piirroksia, jotka robotit ohittavat. Yhden palstan pohjat ovat edelleen varmimpia, ja editorin ATS-tarkistus testaa asettelusi reaaliajassa"
+        },
+        "import": {
+          "q": "Voinko käyttää nykyistä CV:täni tai LinkedIn-profiiliani?",
+          "a": "Kyllä. Tuo CV PDF- tai Word-muodossa (.docx), LinkedIn-profiilisi PDF (tietokoneella) tai LinkedIn-tietoarkistosi (mobiilisovelluksesta): sisältö luetaan selaimessasi ja järjestetään editoriin"
+        },
+        "offline": {
+          "q": "Toimiiko LocalATSCV ilman yhteyttä?",
+          "a": "Kyllä. Se on asennettava verkkosovellus: ensimmäisen käynnin jälkeen kaikki toimii ilman yhteyttä, myös PDF-vienti"
+        }
+      }
+    },
+    "cta": {
+      "title": "Valmis pääsemään seulan läpi?",
+      "text": "Luo Master-CV:si muutamassa minuutissa. Mikään ei poistu tältä laitteelta",
+      "button": "Aloita"
+    },
+    "demo": {
+      "role": "Front-end-kehittäjä",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Työkokemus",
+      "jobTitle": "Angular-kehittäjä",
+      "jobMeta": "Esimerkki Oy · 2022 – nyt",
+      "bullets": {
+        "migration": "40 näkymän siirto <k>Angular</k>- ja <k>TypeScript</k>-pohjaiseksi, latausaika lyheni 35 %",
+        "testing": "<w>Vastuussa</w> päästä päähän -testausstrategiasta",
+        "delivery": "Jatkuva toimitus <k>GitLab CI</k>:llä 3 tuotetiimille"
+      },
+      "weakLabel": "Heikko ilmaus",
+      "weakReplacement": "”Johdin”",
+      "skills": "Osaaminen",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Saavutettavuus",
+      "score": "Vastaavuus ilmoitukseen",
+      "sent": "0 tavua lähetetty",
+      "robot": "OSAAMINEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end-kehittäjä Angular <n>●●●●○</n> TYÖKOKEMUS <n>� camille.mar</n> Angular-kehittäjä <n>tin@example.com</n> 2022 – nyt TypeScript <n>●●●○○</n> Esimerkki Oy KIELET Englanti 40 näkymän siirto…"
+    }
+  },
+  "dialog": {
+    "cancel": "Peruuta",
+    "delete": "Poista",
+    "create": "Luo",
+    "save": "Tallenna",
+    "import": "Tuo"
+  },
+  "editor": {
+    "list": {
+      "title": "Omat CV:t",
+      "subtitle": "Tallennettu vain tähän selaimeen",
+      "new": "Uusi CV",
+      "newBlank": "Tyhjä CV",
+      "newBlankHint": "Aloita tyhjältä sivulta",
+      "newSample": "Aloita esimerkistä",
+      "newSampleHint": "Valmiiksi täytetty kuvitteellinen CV editoriin tutustumiseen",
+      "import": "Palauta varmuuskopio",
+      "exportAll": "Vie kaikki",
+      "emptyTitle": "Ei vielä CV:itä",
+      "emptyText": "Luo Master-CV:si: kaikki kokemuksesi yhdessä paikassa, valmiina mukautettavaksi jokaiseen työpaikkaan",
+      "open": "Avaa",
+      "actions": "Toiminnot",
+      "duplicate": "Monista",
+      "export": "Vie (JSON)",
+      "delete": "Poista",
+      "updated": "Muokattu {{date}}",
+      "versions": "Versiot: {{count}}",
+      "backupHint": "CV:si ovat olemassa vain tässä selaimessa. Vie JSON-varmuuskopio säännöllisesti: jos tyhjennät selaimen tiedot, saat sen avulla kaiken takaisin",
+      "defaultName": "CV:ni",
+      "copySuffix": "(kopio)",
+      "deleteTitle": "Poistetaanko ”{{name}}”?",
+      "deleteText": "CV ja kaikki sen versiot poistetaan pysyvästi tästä selaimesta",
+      "exportDone": "Varmuuskopio ladattu",
+      "importConfirmTitle": "Tuodaanko tämä varmuuskopio?",
+      "importConfirmText": "CV:itä tässä varmuuskopiossa: {{count}}. Tässä selaimessa jo olevat CV:t korvataan",
+      "importDone": "Varmuuskopio tuotu: {{count}} CV:tä",
+      "importError": {
+        "invalidJson": "Tiedosto ei ole kelvollista JSONia",
+        "notABackup": "Tiedosto ei ole LocalATSCV:n varmuuskopio",
+        "newerVersion": "Varmuuskopio on peräisin LocalATSCV:n uudemmasta versiosta: päivitä sovellus ensin"
+      },
+      "importPdf": "Tuo CV (PDF tai Word)",
+      "importPdfHint": "Siirrä olemassa oleva CV pohjiimme",
+      "importLinkedin": "Tuo LinkedInistä",
+      "importLinkedinHint": "Profiilisi PDF:stä"
+    },
+    "toolbar": {
+      "back": "Omat CV:t",
+      "name": "CV:n nimi",
+      "cvLanguage": "CV:n kieli",
+      "accent": "Korostusväri",
+      "customAccent": "Oma väri",
+      "saved": "Tallennettu",
+      "saving": "Tallennetaan…",
+      "saveError": "Tallennus epäonnistui",
+      "edit": "Muokkaa",
+      "preview": "Esikatselu",
+      "exportPdf": "Vie PDF-muotoon",
+      "undo": "Kumoa (Ctrl+Z)",
+      "redo": "Tee uudelleen (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Muokattava asiakirja",
+      "cv": "CV",
+      "letter": "Saatekirje"
+    },
+    "letter": {
+      "title": "Saatekirje",
+      "versionOwn": "Tällä versiolla on oma kirje",
+      "versionShared": "Tämä versio käyttää Masterin kirjettä: muokkaaminen tässä luo kopion tälle versiolle",
+      "useMaster": "Käytä Masterin kirjettä",
+      "recipient": "Vastaanottaja",
+      "recipientPlaceholder": "Esimerkki Oy\nRekrytointi\nMannerheimintie 10, 00100 Helsinki",
+      "place": "Paikka",
+      "date": "Päivämäärä",
+      "dateHint": "Tyhjä: tulostuspäivän päivämäärä",
+      "subject": "Aihe",
+      "subjectPlaceholder": "Hakemus tehtävään…",
+      "greeting": "Tervehdys",
+      "body": "Kirje",
+      "bodyPlaceholder": "Kolme lyhyttä kappaletta: mikä sinua yrityksessä kiinnostaa, mitä tuot mukanasi ja mitä seuraavaa askelta ehdotat",
+      "bodyHint": "Tyhjä rivi erottaa kaksi kappaletta · **lihavointi** avainsanalle",
+      "outline": "Lisää runko",
+      "closing": "Lopputervehdys",
+      "fileName": "Saatekirje"
+    },
+    "fit": {
+      "pages": "{{count}} sivua",
+      "onePage": "Mahtuu yhdelle sivulle",
+      "hintMany": "Useimmat rekrytoijat odottavat yhden sivun CV:tä",
+      "hintOne": "Ihanteellinen muoto useimpiin hakemuksiin",
+      "stillTooLong": "Edelleen liian pitkä, tiivistettynäkin: lyhennä muutamia kohtia tai piilota osia versiossa",
+      "fit": "Sovita yhdelle sivulle",
+      "settings": "Asetteluasetukset",
+      "spacing": "Välistys",
+      "scale": "Tekstin koko",
+      "settingsHint": "Teksti pysyy oikeana tekstinä: vain asettelu muuttuu",
+      "reset": "Pohjan asettelu",
+      "grayscale": "Näytä mustavalkoisena",
+      "grayscaleHint": "Simuloi mustavalkotulostusta: viety PDF säilyttää värinsä"
+    },
+    "versions": {
+      "label": "Näytettävä versio",
+      "master": "Master-CV",
+      "masterHint": "Kaikki sisältö suodattamatta",
+      "new": "Uusi versio",
+      "newText": "Kohdennettu versio lähtee koko Master-CV:stäsi: poista sitten valinta kohdista, joita tämä hakemus ei tarvitse",
+      "nameLabel": "Version nimi",
+      "namePlaceholder": "Esim. Front-end-kehittäjä – Yritys X",
+      "rename": "Nimeä versio uudelleen",
+      "delete": "Poista versio",
+      "deleteTitle": "Poistetaanko versio ”{{name}}”?",
+      "deleteText": "Vain valinta poistetaan: kaikki sisältö säilyy Master-CV:ssäsi",
+      "banner": "Versio ”{{name}}”: poista valinta kohdista, joiden ei pidä näkyä. Master-CV:stäsi ei poisteta mitään",
+      "include": "Sisällytä tähän versioon"
+    },
+    "enRule": "Englanninkielinen CV: kuva, syntymäaika ja kansalaisuus piilotetaan englanninkielisten maiden käytäntöjen mukaisesti",
+    "profile": {
+      "title": "Profiili",
+      "photo": "Kuva",
+      "photoAdd": "Lisää kuva",
+      "photoChange": "Vaihda",
+      "photoRemove": "Poista",
+      "photoHint": "Pienennetty ja tallennettu vain tälle laitteelle",
+      "photoError": "Kuvaa ei voitu lukea",
+      "hiddenInEnglish": "Piilotettu englanniksi",
+      "firstName": "Etunimi",
+      "lastName": "Sukunimi",
+      "headline": "CV:n otsikko",
+      "headlinePlaceholder": "Esim. Front-end-kehittäjä",
+      "email": "Sähköposti",
+      "phone": "Puhelin",
+      "location": "Paikkakunta",
+      "birthDate": "Syntymäaika",
+      "nationality": "Kansalaisuus",
+      "summary": "Tiivistelmä",
+      "summaryPlaceholder": "Kaksi tai kolme lausetta, jotka tiivistävät profiilisi ja sen, mitä etsit",
+      "links": "Linkit",
+      "linkLabel": "Linkin nimi",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Linkin osoite",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Lisää linkki",
+      "removeLink": "Poista linkki",
+      "drivingLicense": "Ajokortti",
+      "drivingLicensePlaceholder": "Esim. B-ajokortti, oma auto",
+      "qrToggle": "Näytä linkki QR-koodina",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) lisätään automaattisesti. QR-painike näyttää linkin QR-koodina useimmissa graafisissa pohjissa"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Työkokemus",
+        "education": "Koulutus",
+        "projects": "Projektit",
+        "certifications": "Sertifikaatit",
+        "custom": "Vapaa osio",
+        "skills": "Osaaminen",
+        "languages": "Kielitaito",
+        "interests": "Harrastukset"
+      },
+      "add": "Lisää osio",
+      "titleLabel": "Osion otsikko",
+      "empty": "Tyhjä osio: se ei näy CV:ssä",
+      "addItem": {
+        "experience": "Lisää kokemus",
+        "education": "Lisää koulutus",
+        "projects": "Lisää projekti",
+        "certifications": "Lisää sertifikaatti",
+        "custom": "Lisää kohta",
+        "skills": "Lisää osaamista",
+        "languages": "Lisää kieli",
+        "interests": "Lisää harrastus"
+      },
+      "deleteTitle": "Poistetaanko osio ”{{name}}”?",
+      "deleteText": "Sen sisältö poistetaan Master-CV:stä ja kaikista sen versioista"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Tehtävänimike",
+          "subtitle": "Yritys"
+        },
+        "education": {
+          "title": "Tutkinto",
+          "subtitle": "Oppilaitos"
+        },
+        "projects": {
+          "title": "Projektin nimi",
+          "subtitle": "Rooli tai teknologiat"
+        },
+        "certifications": {
+          "title": "Sertifikaatti",
+          "subtitle": "Myöntäjä"
+        },
+        "custom": {
+          "title": "Otsikko",
+          "subtitle": "Alaotsikko"
+        }
+      },
+      "location": "Paikka",
+      "url": "Linkki",
+      "start": "Alku",
+      "end": "Loppu",
+      "date": "Suorituspäivä",
+      "current": "Käynnissä",
+      "untitled": "Nimetön",
+      "bullets": "Saavutukset",
+      "bulletPlaceholder": "Aloita toimintaverbillä ja ilmaise tulos numeroin",
+      "addBullet": "Lisää kohta",
+      "bulletHint": "Enter: uusi kohta",
+      "boldHint": "**sana** lihavoi sen"
+    },
+    "items": {
+      "skillLabel": "Luokka",
+      "skillLabelPlaceholder": "Esim. Front-end",
+      "skillKeywords": "Osaaminen",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Kieli",
+      "languageLevel": "Taso",
+      "languageLevelPlaceholder": "Esim. C1, fluent",
+      "interest": "Harrastus",
+      "interestPlaceholder": "Esim. Kiipeily",
+      "levelDetected": "Taso tunnistettu: palkilliset pohjat näyttävät sen",
+      "levelUnknown": "Tasoa ei tunnistettu, ei palkkia: käytä tasoja A1–C2 tai luettelon ehdotusta",
+      "levelEmpty": "Anna taso, niin palkki näkyy",
+      "levelHint": "Käytä eurooppalaista tasoa (A1–C2) tai sanaa kuten ”fluent” tai ”native”: jotkin pohjat näyttävät sen myös palkkina, jonka oikealla olevat pisteet esikatselevat"
+    },
+    "actions": {
+      "menu": "Toiminnot",
+      "moveUp": "Siirrä ylös",
+      "moveDown": "Siirrä alas",
+      "duplicate": "Monista",
+      "delete": "Poista",
+      "drag": "Vedä järjestääksesi"
+    },
+    "month": "Kuukausi",
+    "year": "Vuosi",
+    "noMonth": "Kuukausi",
+    "preview": {
+      "page": "Sivu {{n}}"
+    },
+    "notFound": {
+      "title": "CV:tä ei löytynyt",
+      "text": "Tätä CV:tä ei ole olemassa tai se on poistettu tästä selaimesta"
+    },
+    "templates": {
+      "button": "Pohja",
+      "title": "Valitse pohja",
+      "subtitle": "Kaikki pohjat täydellisellä esimerkki-CV:llä tai omallasi. Korostusväri koskee kaikkia pohjia",
+      "close": "Sulje",
+      "filter": "Suodata pohjia",
+      "filters": {
+        "all": "Kaikki",
+        "graphic": "Graafiset",
+        "sober": "Hillityt"
+      },
+      "ats": "ATS-yhteensopivuus",
+      "levels": {
+        "excellent": "erinomainen",
+        "good": "hyvä",
+        "fair": "kohtalainen"
+      },
+      "atsHint": "Jokainen pohja tulostaa oikeaa tekstiä. Useimmat nykyaikaiset ATS:t lukevat kahden palstan asettelut hyvin, mutta jotkin vanhemmat työkalut sekoittavat palstat: jos olet epävarma, valitse yhden palstan pohja",
+      "names": {
+        "classic": {
+          "name": "Klassinen",
+          "description": "Selkeä ja tehokas: yksi palsta, alleviivatut otsikot, ei häiriötekijöitä"
+        },
+        "modern": {
+          "name": "Moderni",
+          "description": "Värikäs banneri, näyttävät otsikot ja osaaminen tunnisteina"
+        },
+        "elegant": {
+          "name": "Elegantti",
+          "description": "Keskitetty ylätunniste ja antiikvatypografia hienostuneeseen ilmeeseen"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Värikäs reuna, tasalevyiset yksityiskohdat ja osaaminen koodityylillä"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Sveitsiläinen tyyli: suuri nimi, otsikot marginaalissa, runsaasti tyhjää tilaa"
+        },
+        "sidebar": {
+          "name": "Palstat",
+          "description": "Värikäs sivupalkki, jossa kuva, yhteystiedot ja osaaminen"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Kuvabanneri, kuvakkeet, aikajana ja kielipalkit, silti täysin ATS:n luettavissa"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Orgaaniset pastellimuodot, suuri pyöreä kuva, aikajana ja QR-koodi kahdessa palstassa"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Signaturen ilme yhdessä palstassa: graafinen ja täysin ATS:n luettavissa"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Tumma vino banneri, värihehkut, kokemuskortit ja täytetyt osaamistunnisteet"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrinen sommitelma pääväreissä kuvan ympärillä, geometrinen kirjasin ja muodot jokaisen otsikon edessä"
+        },
+        "editorial": {
+          "name": "Editoriaali",
+          "description": "Aikakauslehtiasettelu: suuri antiikvanimi, kursivoitu ingressi, numeroidut osiot ja siirretty muotokuva"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Uusbrutalismi: paksut mustat ääriviivat, kovat varjot, voimakkaat värilohkot ja mustat tunnisteet"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Mesh-liukuväri korostusväreissäsi, lasimainen yhteystietokortti ja liukuvärireunaiset kortit"
+        },
+        "swiss": {
+          "name": "Sveitsiläinen",
+          "description": "Sveitsiläinen julistetyyli: valtava nimi, värinauha, paksut mustat viivat ja numeroidut osiot"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Norsunluunvärinen paperi, ohut kaksoiskehys, vinoneliökoristeet ja Garamond-typografia"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Tumma tila: yötausta, neonkorostukset ja hehkuva aikajana, sopii digitaalisiin hakemuksiin"
+        },
+        "wave": {
+          "name": "Aalto",
+          "description": "Värikäs banneri, joka päättyy aaltoihin, pyöreä kuva ja aaltoilevat otsikot, pehmeä ja ystävällinen"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Pyöristetyt bentoruudut: kuva, nimi ja QR-koodi ruudukossa, yksi ruutu osiota kohden"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Tekninen piirustus: ruutupaperi, kulmamerkit, mittaviiva ja tasalevyiset tunnisteet"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80-luvun geometrinen konfetti, voimakkaat värit ja siksakilla alleviivatut otsikot"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Suuri jaettu banneri: teksti värilohkon päällä ja kaksisävyinen kuva"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografia ainoana koristeena: valtava, osin ääriviivainen nimi ja erittäin suuret otsikot"
+        },
+        "sorbet": {
+          "name": "Sorbetti",
+          "description": "Yksi pastelliväri osiota kohden, pillerinmuotoiset otsikot ja monivärinen hehku"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Laivastonsininen banneri, kultainen viiva ja antiikvanimi johtotehtäviin"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japanilainen minimalismi: washi-paperi, ensō-ympyrä korostusvärilläsi ja siveltimenveto"
+        },
+        "ribbon": {
+          "name": "Nauha",
+          "description": "Osioiden otsikot pääskysenpyrstönauhoilla, keskitetty ylätunniste"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Kuusikulmainen kuva, hunajakenno kulmassa ja kuusikulmiot otsikoiden edessä"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Kerroksellinen leikepaperinen ylätunniste, osiot paperiarkkeina"
+        },
+        "thread": {
+          "name": "Lanka",
+          "description": "Yhtenäinen lanka yhdistää ylätunnisteen ja jokaisen osion, piste jokaista tehtävää kohden"
+        }
+      },
+      "preview": {
+        "label": "Pienoiskuvien sisältö",
+        "sample": "Täydellinen esimerkki",
+        "mine": "Oma CV"
+      }
+    },
+    "print": {
+      "title": "Vie PDF-muotoon",
+      "text": "Selaimesi tulostusikkuna avautuu kohta. Täydellistä PDF:ää varten:",
+      "tips": {
+        "destination": "Kohde: ”Tallenna PDF-tiedostona”",
+        "margins": "Marginaalit: ”Ei mitään”",
+        "headers": "Poista valinta kohdasta ”Ylä- ja alatunnisteet”",
+        "background": "Valitse ”Taustagrafiikka”, jotta värit säilyvät"
+      },
+      "dontShow": "Älä näytä uudelleen",
+      "cancel": "Peruuta",
+      "print": "Avaa tulostusikkuna"
+    },
+    "job": {
+      "title": "Mukauta työpaikkailmoitukseen",
+      "sources": "LinkedIn, Duunitori, Oikotie Työpaikat, Työmarkkinatori, Indeed…",
+      "placeholder": "Liitä tähän ilmoituksen koko teksti: nimike, tehtävät, vaatimukset",
+      "urlWarning": "Liitä ilmoituksen teksti linkin sijaan: LocalATSCV ei koskaan ota yhteyttä mihinkään sivustoon, joten tietosi pysyvät sinulla",
+      "empty": "Avainsanoja ei löytynyt: liitä kattavampi ilmoitus",
+      "score": "Vastaavuus ilmoitukseen",
+      "summary": "{{found}}/{{total}} avainsanaa löytyy",
+      "found": "Avainsanat CV:ssäsi",
+      "missing": "Puuttuvat avainsanat",
+      "missingHint": "Klikkaa avainsanaa lisätäksesi sen osaamiseesi, tai sisällytä se johonkin kokemukseen",
+      "addToSkills": "Lisää osaamiseen",
+      "added": "”{{keyword}}” lisätty osaamiseesi",
+      "keywordsGroup": "Avainsanat",
+      "createVersion": "Luo kohdennettu versio tähän työpaikkaan",
+      "createVersionHint": "Työhön liittymättömistä kokemuksista ja kohdista poistetaan valinta: voit säätää niitä",
+      "savedInVersion": "Ilmoitus tallennettu versioon ”{{name}}”"
+    },
+    "weak": {
+      "hint": "”{{phrase}}” kuvaa tehtävää: aloita toimintaverbillä"
+    },
+    "fonts": {
+      "title": "Typografia",
+      "heading": "Otsikot",
+      "body": "Leipäteksti",
+      "default": "Pohjan oma",
+      "hint": "ATS:t lukevat kaikkia näitä fontteja hyvin: teksti pysyy oikeana tekstinä"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Uutta",
+    "title": "Muutosloki",
+    "subtitle": "Jokainen LocalATSCV:n versio uusine ominaisuuksineen ja korjauksineen",
+    "current": "Nykyinen versio",
+    "frenchOnly": "Muutosloki on kirjoitettu ranskaksi",
+    "error": "Muutoslokia ei voitu ladata",
+    "types": {
+      "added": "Lisätty",
+      "changed": "Muutettu",
+      "fixed": "Korjattu",
+      "removed": "Poistettu",
+      "deprecated": "Vanhentunut",
+      "security": "Tietoturva",
+      "other": "Muut"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyysi",
+    "title": "Pääseekö CV:si robottien läpi?",
+    "subtitle": "Pudota millä tahansa työkalulla tehty PDF-CV: LocalATSCV lukee sen kuten ATS ja kertoo, mitä korjata",
+    "drop": "Vedä CV:si tähän",
+    "dropActive": "Pudota tiedosto aloittaaksesi analyysin",
+    "hint": "Vain PDF, enintään 15 Mt",
+    "choose": "Valitse tiedosto",
+    "reading": "Luetaan PDF:ää…",
+    "privacy": "Tiedosto analysoidaan selaimessasi: sitä ei koskaan lähetetä minnekään",
+    "another": "Analysoi toinen CV",
+    "errors": {
+      "notPdf": "Tiedosto ei ole PDF",
+      "tooLarge": "Tiedosto on yli 15 Mt",
+      "encrypted": "PDF on suojattu salasanalla: ATS ei myöskään pysty lukemaan sitä",
+      "unreadable": "PDF:ää ei voitu lukea: se voi olla vioittunut"
+    },
+    "stats": "{{pages}} sivu(a) · {{words}} sanaa",
+    "verdict": {
+      "excellent": "Erinomainen",
+      "good": "Hyvä",
+      "fair": "Parannettavaa",
+      "poor": "Kriittinen"
+    },
+    "verdictText": {
+      "excellent": "Robotit lukevat CV:si erittäin hyvin",
+      "good": "Muutama hienosäätö tekee siitä vielä tehokkaamman",
+      "fair": "Useat ongelmat haittaavat ATS:n lukemista",
+      "poor": "ATS saattaa ohittaa olennaisen"
+    },
+    "categories": {
+      "readability": "Koneluettavuus",
+      "structure": "Rakenne",
+      "content": "Sisältö"
+    },
+    "sectionNames": {
+      "experience": "Työkokemus",
+      "education": "Koulutus",
+      "skills": "Osaaminen"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Koneluettava teksti",
+        "pass": "Kaikki CV:si teksti voidaan poimia",
+        "warn": "Joillakin sivuilla ei ole luettavaa tekstiä: todennäköisesti kuvia tai skannaus",
+        "fail": "Ei luettavaa tekstiä: tämä CV on todennäköisesti kuva tai skannaus, eikä ATS saa siitä mitään irti. Vie se PDF-muotoon tekstinkäsittelyohjelmastasi"
+      },
+      "columns": {
+        "title": "Asettelu",
+        "pass": "Lineaarinen lukujärjestys, palstat eivät sekoitu",
+        "warn": "Palsta-asettelu havaittu: teksti voidaan lukea väärässä järjestyksessä. Tarkista ”Mitä robotti lukee” alta"
+      },
+      "order": {
+        "title": "Tiedoston lukujärjestys",
+        "pass": "Teksti on kirjoitettu tiedostoon lukujärjestyksessä",
+        "warnHeader": "Nimesi ja ylätunnisteesi on kirjoitettu tiedostoon muun CV:n jälkeen: ATS, joka lukee tiedoston järjestyksessä, ei ehkä löydä nimeäsi",
+        "warn": "{{percent}} % tekstistä on kirjoitettu tiedostoon lukujärjestyksen vastaisesti: jotkin ATS:t lukevat nämä kohdat väärässä järjestyksessä",
+        "fail": "{{percent}} % tekstistä on tiedostossa sekaisin, mikä on tyypillistä vapaista tekstiruuduista tehdyille CV:ille (Canva, PowerPoint…): monet ATS:t lukevat CV:si sekaisin. Vertaa alla olevia kahta lukutapaa"
+      },
+      "unreadable": {
+        "title": "Kuvakkeet ja taitopalkit",
+        "pass": "Ei kuvakkeita eikä lukukelvottomia merkkejä",
+        "warn": "Kuvakkeita tai palkkeja havaittu ({{count}}): ATS lukee ne merkkisotkuna. Korvaa ne tekstillä",
+        "fail": "Kuvakkeita tai palkkeja havaittu ({{count}}): korvaa ne tekstillä, esimerkiksi ”Englanti: C1” pisteiden sijaan"
+      },
+      "contact": {
+        "title": "Yhteystiedot",
+        "pass": "Sähköpostiosoite ja puhelinnumero löytyivät",
+        "warnNoPhone": "Puhelinnumeroa ei löytynyt",
+        "warnNoEmail": "Sähköpostiosoitetta ei löytynyt",
+        "fail": "Sähköpostia tai puhelinnumeroa ei löytynyt: kirjoita ne tekstinä, ei kuvaan"
+      },
+      "sections": {
+        "title": "Vakio-osiot",
+        "pass": "Kokemus, koulutus ja osaaminen on selvästi tunnistettu",
+        "warn": "Näitä osioita ei tunnistettu: käytä vakiomuotoisia otsikoita",
+        "fail": "Yhtään vakio-osiota ei tunnistettu: ATS:t tukeutuvat otsikoihin kuten ”Työkokemus” tai ”Koulutus”"
+      },
+      "length": {
+        "title": "Pituus",
+        "pass": "{{pages}} sivu(a), {{words}} sanaa: ihanteellinen pituus",
+        "warn": "{{pages}} sivu(a), {{words}} sanaa: tavoittele 1–2 sivua ja 250–1 000 sanaa",
+        "fail": "{{pages}} sivu(a), {{words}} sanaa: liian lyhyt tai pitkä arvioitavaksi hyvin"
+      },
+      "quantified": {
+        "title": "Mitattavat tulokset",
+        "pass": "{{percent}} % kohdistasi sisältää luvun, hienoa",
+        "warn": "Vain {{percent}} % kohdista sisältää lukuja: lisää mitattavia tuloksia (prosentteja, summia, määriä)",
+        "fail": "Ei mitattavia tuloksia: rekrytoijat ja ATS:t arvostavat mitattavia saavutuksia"
+      },
+      "weakPhrases": {
+        "title": "Toimintaverbit",
+        "pass": "Kohtien alussa ei ole heikkoja ilmauksia",
+        "warn": "Nämä aloitukset kuvaavat tehtävää eivätkä tulosta: aloita toimintaverbillä",
+        "fail": "Nämä aloitukset kuvaavat tehtävää eivätkä tulosta: aloita toimintaverbillä"
+      },
+      "dates": {
+        "title": "Päivämäärät",
+        "pass": "Kokemuksesi on päivätty",
+        "warn": "Vain yksi vuosiluku löytyi: päivää jokainen tehtävä, ATS:t laskevat päivämääristä työkokemusvuotesi",
+        "fail": "Päivämääriä ei löytynyt: ATS:t laskevat niistä työkokemusvuotesi"
+      }
+    },
+    "robot": {
+      "title": "Mitä robotti lukee",
+      "text": "Teksti rakennettuna uudelleen rivi riviltä, kuten useimmat ATS:t tekevät. Jos se on tässä sekava tai puutteellinen, se on sitä myös rekrytoijalle",
+      "empty": "Tekstiä ei voitu poimia",
+      "position": "Sijainnin mukaan",
+      "file": "Tiedoston järjestys",
+      "fileText": "Teksti siinä järjestyksessä kuin se on tiedostoon kirjoitettu: näin sen lukevat ATS:t, jotka eivät rakenna asettelua uudelleen. Sen pitäisi noudattaa CV:si lukujärjestystä"
+    },
+    "cta": {
+      "title": "Aloita puhtaalta pöydältä",
+      "text": "Luo ATS-yhteensopiva CV editorissa ja mukauta se sitten jokaiseen työpaikkaan",
+      "button": "Avaa editori",
+      "import": "Siirrä tämä CV pohjiimme"
+    },
+    "live": {
+      "title": "ATS-tarkistus reaaliajassa",
+      "issues": "{{count}} tarkistettavaa kohtaa tässä pohjassa",
+      "allGood": "Tässä pohjassa ei havaittu ongelmia",
+      "hint": "Laskettu näytetystä asettelusta samalla moottorilla kuin CV-analyysi"
+    },
+    "method": {
+      "title": "Miten pisteet lasketaan?",
+      "intro": "Virallista ATS-pistemäärää ei ole: jokaisella rekrytointiohjelmistolla (Workday, Taleo, Greenhouse, Lever…) on omat, usein luottamukselliset sääntönsä. Tämä indeksi tarkistaa, mihin useimmat niistä kompastuvat, tällä asteikolla:",
+      "disclaimer": "Kriteerit perustuvat ATS-toimittajien julkisiin suosituksiin ja yleisimpiin lukuvirheisiin (teksti kuvissa, palstat, kuvakkeet, epätavalliset otsikot). Pisteet auttavat parantamaan CV:täsi: ne eivät ennusta valintaa"
+    }
+  },
+  "import": {
+    "title": "Tuo CV",
+    "linkedinTitle": "Tuo LinkedInistä",
+    "text": "Valitse CV PDF- tai Word-muodossa (.docx): sisältö poimitaan selaimessasi ja järjestetään editorin osioihin. Sen jälkeen voit valita pohjan",
+    "choose": "Valitse tiedosto",
+    "chooseFile": "Valitse tiedosto",
+    "hint": "PDF tai Word (.docx), enintään 15 Mt",
+    "reading": "Tuodaan…",
+    "privacy": "Tiedosto luetaan selaimessasi: sitä ei koskaan lähetetä minnekään",
+    "close": "Sulje",
+    "done": "CV tuotu ({{items}} kohtaa): tarkista jokainen osio",
+    "errors": {
+      "tooLarge": "Tiedosto on yli 15 Mt",
+      "encrypted": "PDF on suojattu salasanalla",
+      "unreadable": "Tiedostoa ei voitu lukea: se voi olla vioittunut",
+      "empty": "Ei käyttökelpoista tekstiä: tämä PDF on todennäköisesti kuva tai skannaus",
+      "unsupported": "Valitse PDF, Word-tiedosto (.docx) tai LinkedInin ZIP-arkisto",
+      "archiveEmpty": "Arkisto ei sisällä käyttökelpoisia LinkedIn-profiilitietoja"
+    },
+    "hintArchive": "PDF (tietokone) tai ZIP-arkisto (mobiilisovellus)",
+    "linkedin": {
+      "computer": {
+        "title": "Tietokoneella: profiilisi PDF",
+        "step1": "Avaa linkedin.com tietokoneen selaimessa (vaihtoehtoa ei ole sovelluksessa)",
+        "step2": "Klikkaa profiilissasi ”Resurssit” (tai ”Lisää”) ja sitten ”Tallenna PDF-tiedostona”",
+        "step3": "Valitse se PDF alta"
+      },
+      "archive": {
+        "title": "Mobiilisovelluksessa: tietoarkistosi",
+        "step1": "Napauta sovelluksessa kuvaasi ja sitten Asetukset ja Tietosuoja",
+        "step2": "Valitse ”Hae kopio tiedoistasi” ja valitse Profiili, Tehtävät, Koulutus, Taidot ja Kielet",
+        "step3": "LinkedIn lähettää sinulle sähköpostin muutamassa minuutissa: lataa ZIP-arkisto",
+        "step4": "Valitse ZIP-tiedosto alta purkamatta sitä"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Asiakirja näytetään englanniksi. Vain ranskankielinen versio on oikeudellisesti sitova.",
+    "error": "Asiakirjaa ei voitu ladata."
+  }
+}

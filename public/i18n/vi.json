@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Trang chủ LocalATSCV",
+    "main": "Điều hướng chính",
+    "how": "Cách hoạt động",
+    "privacy": "Quyền riêng tư",
+    "analyze": "Phân tích CV",
+    "editor": "Tạo CV của tôi",
+    "skipToContent": "Chuyển đến nội dung"
+  },
+  "theme": {
+    "label": "Giao diện",
+    "light": "Sáng",
+    "system": "Hệ thống",
+    "dark": "Tối"
+  },
+  "lang": {
+    "label": "Ngôn ngữ giao diện",
+    "suggestion": "Xem trang này bằng tiếng Việt",
+    "dismiss": "Đóng",
+    "search": "Tìm ngôn ngữ",
+    "noResult": "Không tìm thấy ngôn ngữ nào"
+  },
+  "pages": {
+    "home": "CV thân thiện với ATS, 100% cục bộ",
+    "editor": "Trình soạn thảo",
+    "analyze": "Trình phân tích CV",
+    "changelog": "Có gì mới",
+    "legalNotice": "Thông tin pháp lý",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách quyền riêng tư"
+  },
+  "seo": {
+    "home": "Công cụ tạo CV miễn phí, thân thiện với ATS: 30 mẫu đồ họa, thư xin việc đồng bộ, tùy chỉnh theo từng tin tuyển dụng và điểm ATS. Mã nguồn mở, dữ liệu của bạn luôn ở trong trình duyệt",
+    "editor": "Trình soạn CV với xem trước trực tiếp, CV Master và các phiên bản nhắm mục tiêu, kiểm tra ATS và xuất PDF bằng văn bản thật. Mọi thứ đều ở trong trình duyệt của bạn",
+    "analyze": "Phân tích CV PDF miễn phí: điểm ATS trên thang 100, các điểm cần sửa và văn bản đúng như hệ thống tuyển dụng đọc được. Tệp không bao giờ rời khỏi trình duyệt của bạn",
+    "changelog": "Có gì mới trong LocalATSCV qua từng phiên bản: mẫu CV mới, tính năng và bản sửa lỗi",
+    "legalNotice": "Thông tin pháp lý của LocalATSCV: đơn vị phát hành, lưu trữ và liên hệ",
+    "terms": "Điều khoản sử dụng LocalATSCV, công cụ tạo CV miễn phí và mã nguồn mở",
+    "privacy": "Chính sách quyền riêng tư của LocalATSCV: không thu thập dữ liệu nào, CV của bạn ở lại trong trình duyệt"
+  },
+  "footer": {
+    "tagline": "Công cụ tạo CV thân thiện với ATS không bao giờ nhìn thấy dữ liệu của bạn",
+    "product": "Sản phẩm",
+    "legal": "Pháp lý",
+    "project": "Dự án",
+    "changelog": "Có gì mới",
+    "sourceCode": "Mã nguồn",
+    "reportIssue": "Báo cáo sự cố",
+    "license": "Giấy phép MIT",
+    "versionLabel": "Phiên bản {{version}}, xem có gì mới"
+  },
+  "update": {
+    "title": "Đã có phiên bản mới",
+    "text": "Tải lại trang để cập nhật",
+    "changelog": "Xem có gì mới",
+    "reload": "Tải lại",
+    "later": "Để sau"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% cục bộ · Miễn phí · Mã nguồn mở",
+      "titleLine1": "CV vượt qua vòng lọc của robot",
+      "titleLine2": "Dữ liệu luôn ở bên bạn",
+      "subtitle": "LocalATSCV giúp bạn tạo CV được tối ưu cho hệ thống quản lý ứng viên (ATS) và điều chỉnh cho từng vị trí chỉ với vài cú nhấp. Mọi thứ diễn ra trong trình duyệt: không cần tài khoản, không gửi đi bất kỳ dữ liệu nào",
+      "ctaPrimary": "Tạo CV của tôi",
+      "ctaSecondary": "Phân tích CV có sẵn",
+      "points": {
+        "noAccount": "Không cần đăng ký",
+        "offline": "Dùng được khi ngoại tuyến",
+        "atsPdf": "PDF mà ATS đọc được"
+      }
+    },
+    "ats": {
+      "eyebrow": "Vấn đề",
+      "title": "CV của bạn được máy đọc trước tiên",
+      "text": "Hầu hết các công ty lớn và đơn vị tuyển dụng đều sàng lọc hồ sơ bằng ATS (Applicant Tracking System). Hệ thống này trích xuất văn bản trong CV, lưu vào cơ sở dữ liệu và cho phép nhà tuyển dụng tìm ứng viên theo từ khóa",
+      "pitfalls": {
+        "layout": {
+          "title": "Bố cục phức tạp",
+          "text": "Cột, bảng và hộp văn bản làm rối thứ tự đọc: thông tin của bạn bị xáo trộn"
+        },
+        "image": {
+          "title": "Văn bản không đọc được",
+          "text": "Biểu tượng, thanh kỹ năng và một số tệp xuất từ công cụ thiết kế biến thành ký tự lạ, hoặc mất hẳn văn bản"
+        },
+        "keywords": {
+          "title": "Thiếu từ khóa",
+          "text": "Nếu CV không có các từ trong tin tuyển dụng, hồ sơ của bạn sẽ không xuất hiện trong kết quả tìm kiếm của nhà tuyển dụng"
+        }
+      },
+      "seen": "Điều bạn thấy",
+      "read": "Điều robot đọc",
+      "fix": "LocalATSCV làm ngược lại: một cột, văn bản thật và tiêu đề mục chuẩn mà robot đọc đúng thứ tự"
+    },
+    "how": {
+      "eyebrow": "Cách hoạt động",
+      "title": "Viết một lần, điều chỉnh không giới hạn",
+      "text": "Bốn bước để biến CV Master thành hồ sơ ứng tuyển phù hợp với từng vị trí",
+      "steps": {
+        "profile": {
+          "title": "Điền CV Master",
+          "text": "Nhập toàn bộ kinh nghiệm một lần cho tất cả, hoặc nhập PDF hồ sơ LinkedIn để tiết kiệm thời gian"
+        },
+        "offer": {
+          "title": "Dán tin tuyển dụng",
+          "text": "LocalATSCV trích xuất từ khóa và tính điểm phù hợp trên thang 100, cập nhật ngay khi bạn gõ"
+        },
+        "compose": {
+          "title": "Tạo phiên bản nhắm mục tiêu",
+          "text": "Đánh dấu các kinh nghiệm và ý phù hợp, kéo thả để sắp xếp lại. Không có gì bị xóa khỏi Master"
+        },
+        "export": {
+          "title": "Xuất ra PDF",
+          "text": "PDF bằng văn bản thật, có cấu trúc, một cột, dễ đọc với cả robot lẫn nhà tuyển dụng"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Quyền riêng tư",
+      "title": "Không có dữ liệu nào trên máy chủ của chúng tôi. Đúng theo nghĩa đen",
+      "text": "Không có cơ sở dữ liệu nào để bị tấn công: máy chủ chỉ gửi cho bạn ứng dụng. Sau đó mọi thứ diễn ra trong trình duyệt của bạn, kể cả khi ngoại tuyến",
+      "browser": {
+        "title": "Trình duyệt của bạn",
+        "tag": "Thiết bị của bạn",
+        "items": {
+          "master": "CV Master",
+          "photo": "Ảnh hồ sơ",
+          "versions": "Phiên bản nhắm mục tiêu",
+          "settings": "Tùy chọn"
+        },
+        "note": "Lưu trong IndexedDB, chỉ trên thiết bị này"
+      },
+      "flow": {
+        "app": "Ứng dụng, ở lần tải đầu tiên",
+        "data": "Dữ liệu của bạn",
+        "never": "không bao giờ"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Máy chủ",
+        "text": "Chỉ phân phối các tệp của ứng dụng (HTML, CSS, JavaScript), không hơn",
+        "items": {
+          "noDb": "Không có cơ sở dữ liệu",
+          "noAccount": "Không có tài khoản người dùng",
+          "noLogs": "Không ghi nhật ký truy cập"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Không cần tài khoản",
+          "text": "Không đăng ký, không email, không mật khẩu. Mở trang và bắt đầu"
+        },
+        "trackers": {
+          "title": "Không theo dõi",
+          "text": "Không thống kê, không quảng cáo, không cookie theo dõi. Ngay cả phông chữ cũng được lưu trên máy chủ của chúng tôi"
+        },
+        "csp": {
+          "title": "Khóa chặt về kỹ thuật",
+          "text": "Chính sách bảo mật của trang (CSP) cấm trình duyệt kết nối tới bất kỳ tên miền nào khác. Mã nguồn mở: bạn có thể tự kiểm tra"
+        },
+        "backup": {
+          "title": "Bản sao lưu của bạn, tệp của bạn",
+          "text": "Xuất toàn bộ dữ liệu ra tệp JSON và nhập lại trên bất kỳ thiết bị nào"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Tính năng",
+      "title": "Mọi thứ bạn cần để được mời phỏng vấn",
+      "items": {
+        "master": {
+          "title": "CV Master và các phiên bản nhắm mục tiêu",
+          "text": "Một CV đầy đủ, và bao nhiêu phiên bản tùy số lần ứng tuyển. Đánh dấu, bỏ đánh dấu: không mất gì cả"
+        },
+        "score": {
+          "title": "Điểm phù hợp",
+          "text": "Dán tin tuyển dụng: từ khóa đã có, từ khóa còn thiếu và điểm trên thang 100 theo thời gian thực"
+        },
+        "weak": {
+          "title": "Phát hiện cụm từ yếu",
+          "text": "“Chịu trách nhiệm”, “hỗ trợ”… được đánh dấu tự động, kèm kho động từ hành động để thay thế"
+        },
+        "analyzer": {
+          "title": "Phân tích CV có sẵn",
+          "text": "Thả vào một CV làm ở nơi khác: xem robot thực sự đọc được gì và cần sửa gì"
+        },
+        "linkedin": {
+          "title": "Nhập từ LinkedIn",
+          "text": "Điền sẵn CV Master từ tệp PDF miễn phí mà bạn xuất được từ hồ sơ LinkedIn"
+        },
+        "languages": {
+          "title": "5 ngôn ngữ CV",
+          "text": "Tiếng Pháp, Anh, Ý, Tây Ban Nha và Đức. Với tiếng Anh, ảnh và ngày sinh được ẩn theo thông lệ của các nước nói tiếng Anh"
+        },
+        "pdf": {
+          "title": "Xuất PDF thân thiện với ATS",
+          "text": "Văn bản thật và cấu trúc rõ ràng: robot đọc được, nhà tuyển dụng dễ chịu"
+        },
+        "offline": {
+          "title": "Cài đặt được và dùng ngoại tuyến",
+          "text": "Thêm LocalATSCV vào màn hình chính và tiếp tục làm việc khi không có mạng"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Hỏi đáp",
+      "title": "Câu hỏi thường gặp",
+      "text": "Không thấy câu hỏi của bạn? Hãy viết cho chúng tôi:",
+      "items": {
+        "ats": {
+          "q": "ATS là gì?",
+          "a": "Applicant Tracking System là phần mềm mà nhà tuyển dụng dùng để nhận, sàng lọc và tìm kiếm hồ sơ. Nó chuyển CV của bạn thành văn bản và lập chỉ mục: nếu văn bản bị trích xuất sai hoặc thiếu từ khóa phù hợp, hồ sơ của bạn sẽ khó được tìm thấy"
+        },
+        "storage": {
+          "q": "Dữ liệu của tôi được lưu ở đâu?",
+          "a": "Chỉ trong trình duyệt của bạn, trong IndexedDB, cơ sở dữ liệu có sẵn trong mọi trình duyệt hiện đại. Dữ liệu không bao giờ đi qua máy chủ của chúng tôi, vốn chỉ biết phân phối các tệp của ứng dụng"
+        },
+        "clear": {
+          "q": "Điều gì xảy ra nếu tôi xóa dữ liệu trình duyệt?",
+          "a": "CV của bạn sẽ bị xóa, vì chúng không tồn tại ở nơi nào khác. Hãy thường xuyên xuất bản sao lưu JSON: bạn có thể nhập lại bất cứ lúc nào, trên bất kỳ thiết bị nào"
+        },
+        "score": {
+          "q": "Điểm số có bảo đảm CV của tôi được chọn không?",
+          "a": "Không. Mỗi ATS có quy tắc riêng và quyết định cuối cùng do con người đưa ra. Điểm số chỉ là chỉ báo: nó kiểm tra xem CV có dùng từ ngữ của tin tuyển dụng không và máy có đọc đúng không"
+        },
+        "photo": {
+          "q": "Vì sao ảnh biến mất khi chọn tiếng Anh?",
+          "a": "Ở Anh, Mỹ và nhiều nước nói tiếng Anh, người ta khuyên không nên đưa ảnh và ngày sinh vào CV để hạn chế phân biệt đối xử khi tuyển dụng. Một số nhà tuyển dụng thậm chí loại luôn những CV có các thông tin này"
+        },
+        "free": {
+          "q": "Có thật sự miễn phí không?",
+          "a": "Có. LocalATSCV là dự án mã nguồn mở theo giấy phép MIT, không quảng cáo, không thuê bao. Chi phí lưu trữ gần như bằng không, vì trình duyệt của bạn làm toàn bộ công việc"
+        },
+        "templates": {
+          "q": "Các mẫu đồ họa có qua được ATS không?",
+          "a": "Có. Mỗi mẫu đều in văn bản thật theo thứ tự đọc, với tiêu đề mục chuẩn: hình khối, thanh và biểu tượng là hình vẽ mà robot bỏ qua. Mẫu một cột vẫn là lựa chọn an toàn nhất, và tính năng kiểm tra ATS trong trình soạn thảo sẽ thử bố cục của bạn theo thời gian thực"
+        },
+        "import": {
+          "q": "Tôi có thể dùng lại CV hiện tại hoặc hồ sơ LinkedIn không?",
+          "a": "Có. Nhập CV PDF hoặc Word (.docx), PDF hồ sơ LinkedIn (trên máy tính) hoặc kho dữ liệu LinkedIn (từ ứng dụng di động): nội dung được đọc trong trình duyệt của bạn và sắp xếp vào trình soạn thảo"
+        },
+        "offline": {
+          "q": "LocalATSCV có dùng được khi ngoại tuyến không?",
+          "a": "Có. Đây là ứng dụng web có thể cài đặt: sau lần truy cập đầu tiên, mọi thứ hoạt động không cần kết nối, kể cả xuất PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng vượt qua vòng lọc?",
+      "text": "Tạo CV Master chỉ trong vài phút. Không có gì rời khỏi thiết bị này",
+      "button": "Bắt đầu"
+    },
+    "demo": {
+      "role": "Lập trình viên Front-end",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Kinh nghiệm",
+      "jobTitle": "Lập trình viên Angular",
+      "jobMeta": "Công ty Ví Dụ · 2022 – nay",
+      "bullets": {
+        "migration": "Chuyển 40 màn hình sang <k>Angular</k> và <k>TypeScript</k>, giảm 35% thời gian tải",
+        "testing": "<w>Chịu trách nhiệm</w> chiến lược kiểm thử end-to-end",
+        "delivery": "Triển khai liên tục với <k>GitLab CI</k> cho 3 nhóm sản phẩm"
+      },
+      "weakLabel": "Cụm từ yếu",
+      "weakReplacement": "“Dẫn dắt”",
+      "skills": "Kỹ năng",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Khả năng tiếp cận",
+      "score": "Mức phù hợp với tin tuyển dụng",
+      "sent": "0 byte được gửi",
+      "robot": "KỸ NĂNG CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Lập trình viên Front-end Angular <n>●●●●○</n> KINH NGHIỆM <n>� camille.mar</n> Lập trình viên Angular <n>tin@example.com</n> 2022 – nay TypeScript <n>●●●○○</n> Công ty Ví Dụ NGÔN NGỮ Tiếng Anh Chuyển 40 màn hình sang…"
+    }
+  },
+  "dialog": {
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "create": "Tạo",
+    "save": "Lưu",
+    "import": "Nhập"
+  },
+  "editor": {
+    "list": {
+      "title": "CV của tôi",
+      "subtitle": "Chỉ lưu trong trình duyệt này",
+      "new": "CV mới",
+      "newBlank": "CV trống",
+      "newBlankHint": "Bắt đầu từ trang trống",
+      "newSample": "Bắt đầu từ mẫu ví dụ",
+      "newSampleHint": "Một CV giả định đã điền sẵn để bạn khám phá trình soạn thảo",
+      "import": "Khôi phục bản sao lưu",
+      "exportAll": "Xuất tất cả",
+      "emptyTitle": "Chưa có CV nào",
+      "emptyText": "Tạo CV Master: toàn bộ kinh nghiệm ở một nơi, sẵn sàng điều chỉnh cho từng vị trí",
+      "open": "Mở",
+      "actions": "Thao tác",
+      "duplicate": "Nhân bản",
+      "export": "Xuất (JSON)",
+      "delete": "Xóa",
+      "updated": "Sửa lúc {{date}}",
+      "versions": "Phiên bản: {{count}}",
+      "backupHint": "CV của bạn chỉ tồn tại trong trình duyệt này. Hãy thường xuyên xuất bản sao lưu JSON: nếu xóa dữ liệu trình duyệt, bạn vẫn khôi phục được mọi thứ",
+      "defaultName": "CV của tôi",
+      "copySuffix": "(bản sao)",
+      "deleteTitle": "Xóa “{{name}}”?",
+      "deleteText": "CV và mọi phiên bản của nó sẽ bị xóa vĩnh viễn khỏi trình duyệt này",
+      "exportDone": "Đã tải xuống bản sao lưu",
+      "importConfirmTitle": "Nhập bản sao lưu này?",
+      "importConfirmText": "Số CV trong bản sao lưu: {{count}}. CV đã có trong trình duyệt này sẽ bị thay thế",
+      "importDone": "Đã nhập bản sao lưu: {{count}} CV",
+      "importError": {
+        "invalidJson": "Tệp này không phải JSON hợp lệ",
+        "notABackup": "Tệp này không phải bản sao lưu của LocalATSCV",
+        "newerVersion": "Bản sao lưu này đến từ phiên bản LocalATSCV mới hơn: hãy cập nhật ứng dụng trước"
+      },
+      "importPdf": "Nhập CV (PDF hoặc Word)",
+      "importPdfHint": "Đưa CV có sẵn vào các mẫu của chúng tôi",
+      "importLinkedin": "Nhập từ LinkedIn",
+      "importLinkedinHint": "Từ PDF hồ sơ của bạn"
+    },
+    "toolbar": {
+      "back": "CV của tôi",
+      "name": "Tên CV",
+      "cvLanguage": "Ngôn ngữ CV",
+      "accent": "Màu nhấn",
+      "customAccent": "Màu tùy chỉnh",
+      "saved": "Đã lưu",
+      "saving": "Đang lưu…",
+      "saveError": "Lưu thất bại",
+      "edit": "Chỉnh sửa",
+      "preview": "Xem trước",
+      "exportPdf": "Xuất ra PDF",
+      "undo": "Hoàn tác (Ctrl+Z)",
+      "redo": "Làm lại (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Tài liệu cần chỉnh sửa",
+      "cv": "CV",
+      "letter": "Thư xin việc"
+    },
+    "letter": {
+      "title": "Thư xin việc",
+      "versionOwn": "Phiên bản này có thư riêng",
+      "versionShared": "Phiên bản này dùng thư của Master: chỉnh sửa ở đây sẽ tạo một bản sao cho phiên bản này",
+      "useMaster": "Dùng thư của Master",
+      "recipient": "Người nhận",
+      "recipientPlaceholder": "Công ty Ví Dụ\nPhòng Tuyển dụng\n10 Lê Lợi, Quận 1, TP. Hồ Chí Minh",
+      "place": "Nơi viết",
+      "date": "Ngày",
+      "dateHint": "Để trống: dùng ngày in",
+      "subject": "Tiêu đề",
+      "subjectPlaceholder": "Ứng tuyển vị trí…",
+      "greeting": "Lời chào",
+      "body": "Nội dung thư",
+      "bodyPlaceholder": "Ba đoạn ngắn: điều gì thu hút bạn ở công ty, bạn mang lại gì, bước tiếp theo bạn đề xuất",
+      "bodyHint": "Một dòng trống phân tách hai đoạn · **in đậm** cho từ khóa",
+      "outline": "Chèn dàn ý",
+      "closing": "Lời kết",
+      "fileName": "Thư xin việc"
+    },
+    "fit": {
+      "pages": "{{count}} trang",
+      "onePage": "Vừa một trang",
+      "hintMany": "Hầu hết nhà tuyển dụng mong đợi CV một trang",
+      "hintOne": "Định dạng lý tưởng cho hầu hết hồ sơ",
+      "stillTooLong": "Vẫn quá dài dù đã thu gọn: hãy rút ngắn vài ý hoặc ẩn bớt mục trong một phiên bản",
+      "fit": "Thu gọn còn một trang",
+      "settings": "Cài đặt bố cục",
+      "spacing": "Khoảng cách",
+      "scale": "Cỡ chữ",
+      "settingsHint": "Văn bản vẫn là văn bản thật: chỉ bố cục thay đổi",
+      "reset": "Bố cục của mẫu",
+      "grayscale": "Xem đen trắng",
+      "grayscaleHint": "Mô phỏng bản in đen trắng: PDF xuất ra vẫn giữ màu"
+    },
+    "versions": {
+      "label": "Phiên bản đang hiển thị",
+      "master": "CV Master",
+      "masterHint": "Toàn bộ nội dung, không lọc",
+      "new": "Phiên bản mới",
+      "newText": "Phiên bản nhắm mục tiêu bắt đầu từ toàn bộ CV Master: sau đó bỏ đánh dấu những gì hồ sơ này không cần",
+      "nameLabel": "Tên phiên bản",
+      "namePlaceholder": "VD: Front-end Dev – Công ty X",
+      "rename": "Đổi tên phiên bản",
+      "delete": "Xóa phiên bản",
+      "deleteTitle": "Xóa phiên bản “{{name}}”?",
+      "deleteText": "Chỉ lựa chọn bị xóa: toàn bộ nội dung vẫn nằm trong CV Master",
+      "banner": "Phiên bản “{{name}}”: bỏ đánh dấu những gì không nên xuất hiện. Không có gì bị xóa khỏi CV Master",
+      "include": "Đưa vào phiên bản này"
+    },
+    "enRule": "CV tiếng Anh: ảnh, ngày sinh và quốc tịch được ẩn theo thông lệ của các nước nói tiếng Anh",
+    "profile": {
+      "title": "Hồ sơ",
+      "photo": "Ảnh",
+      "photoAdd": "Thêm ảnh",
+      "photoChange": "Đổi",
+      "photoRemove": "Gỡ",
+      "photoHint": "Được thu nhỏ và chỉ lưu trên thiết bị này",
+      "photoError": "Không đọc được hình ảnh này",
+      "hiddenInEnglish": "Ẩn khi dùng tiếng Anh",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "headline": "Tiêu đề CV",
+      "headlinePlaceholder": "VD: Lập trình viên Front-end",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "location": "Thành phố",
+      "birthDate": "Ngày sinh",
+      "nationality": "Quốc tịch",
+      "summary": "Giới thiệu bản thân",
+      "summaryPlaceholder": "Hai hoặc ba câu tóm tắt hồ sơ của bạn và điều bạn đang tìm kiếm",
+      "links": "Liên kết",
+      "linkLabel": "Tên liên kết",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Địa chỉ liên kết",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Thêm liên kết",
+      "removeLink": "Gỡ liên kết",
+      "drivingLicense": "Giấy phép lái xe",
+      "drivingLicensePlaceholder": "VD: Bằng lái B2, có xe riêng",
+      "qrToggle": "Hiển thị liên kết này dưới dạng mã QR",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) được thêm tự động. Nút QR hiển thị liên kết dưới dạng mã QR trong hầu hết các mẫu đồ họa"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Kinh nghiệm",
+        "education": "Học vấn",
+        "projects": "Dự án",
+        "certifications": "Chứng chỉ",
+        "custom": "Mục tự do",
+        "skills": "Kỹ năng",
+        "languages": "Ngôn ngữ",
+        "interests": "Sở thích"
+      },
+      "add": "Thêm mục",
+      "titleLabel": "Tiêu đề mục",
+      "empty": "Mục trống: sẽ không xuất hiện trong CV",
+      "addItem": {
+        "experience": "Thêm kinh nghiệm",
+        "education": "Thêm bằng cấp",
+        "projects": "Thêm dự án",
+        "certifications": "Thêm chứng chỉ",
+        "custom": "Thêm mục con",
+        "skills": "Thêm kỹ năng",
+        "languages": "Thêm ngôn ngữ",
+        "interests": "Thêm sở thích"
+      },
+      "deleteTitle": "Xóa mục “{{name}}”?",
+      "deleteText": "Nội dung của mục sẽ bị gỡ khỏi CV Master và mọi phiên bản"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Chức danh",
+          "subtitle": "Công ty"
+        },
+        "education": {
+          "title": "Bằng cấp",
+          "subtitle": "Trường"
+        },
+        "projects": {
+          "title": "Tên dự án",
+          "subtitle": "Vai trò hoặc công nghệ"
+        },
+        "certifications": {
+          "title": "Chứng chỉ",
+          "subtitle": "Đơn vị cấp"
+        },
+        "custom": {
+          "title": "Tiêu đề",
+          "subtitle": "Tiêu đề phụ"
+        }
+      },
+      "location": "Địa điểm",
+      "url": "Liên kết",
+      "start": "Bắt đầu",
+      "end": "Kết thúc",
+      "date": "Ngày đạt được",
+      "current": "Hiện tại",
+      "untitled": "Chưa đặt tên",
+      "bullets": "Thành tích",
+      "bulletPlaceholder": "Bắt đầu bằng động từ hành động và lượng hóa kết quả",
+      "addBullet": "Thêm ý",
+      "bulletHint": "Enter: ý mới",
+      "boldHint": "**từ** để in đậm"
+    },
+    "items": {
+      "skillLabel": "Nhóm",
+      "skillLabelPlaceholder": "VD: Front-end",
+      "skillKeywords": "Kỹ năng",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Ngôn ngữ",
+      "languageLevel": "Trình độ",
+      "languageLevelPlaceholder": "VD: C1, fluent",
+      "interest": "Sở thích",
+      "interestPlaceholder": "VD: Leo núi",
+      "levelDetected": "Đã nhận diện trình độ: các mẫu có thanh sẽ hiển thị",
+      "levelUnknown": "Không nhận diện được trình độ, không có thanh: dùng A1 đến C2 hoặc một gợi ý trong danh sách",
+      "levelEmpty": "Nhập trình độ để hiển thị thanh",
+      "levelHint": "Dùng khung trình độ châu Âu (A1 đến C2) hoặc từ như “fluent” hay “native”: một số mẫu còn hiển thị dưới dạng thanh, xem trước bằng các chấm bên phải"
+    },
+    "actions": {
+      "menu": "Thao tác",
+      "moveUp": "Di chuyển lên",
+      "moveDown": "Di chuyển xuống",
+      "duplicate": "Nhân bản",
+      "delete": "Xóa",
+      "drag": "Kéo để sắp xếp lại"
+    },
+    "month": "Tháng",
+    "year": "Năm",
+    "noMonth": "Tháng",
+    "preview": {
+      "page": "Trang {{n}}"
+    },
+    "notFound": {
+      "title": "Không tìm thấy CV",
+      "text": "CV này không tồn tại hoặc đã bị xóa khỏi trình duyệt này"
+    },
+    "templates": {
+      "button": "Mẫu",
+      "title": "Chọn mẫu",
+      "subtitle": "Mọi mẫu đều có CV ví dụ đầy đủ, hoặc CV của bạn. Màu nhấn được áp dụng cho tất cả các mẫu",
+      "close": "Đóng",
+      "filter": "Lọc mẫu",
+      "filters": {
+        "all": "Tất cả",
+        "graphic": "Đồ họa",
+        "sober": "Tối giản"
+      },
+      "ats": "Khả năng tương thích ATS",
+      "levels": {
+        "excellent": "rất tốt",
+        "good": "tốt",
+        "fair": "khá"
+      },
+      "atsHint": "Mỗi mẫu đều in văn bản thật. Bố cục hai cột được hầu hết ATS hiện đại đọc tốt, nhưng một số công cụ cũ đọc lẫn các cột: nếu phân vân, hãy chọn mẫu một cột",
+      "names": {
+        "classic": {
+          "name": "Cổ điển",
+          "description": "Gọn gàng và hiệu quả: một cột, tiêu đề gạch chân, không gì gây phân tán"
+        },
+        "modern": {
+          "name": "Hiện đại",
+          "description": "Dải màu, tiêu đề nổi bật và kỹ năng dạng thẻ"
+        },
+        "elegant": {
+          "name": "Thanh lịch",
+          "description": "Phần đầu căn giữa và chữ có chân cho vẻ tinh tế"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Viền màu, chi tiết bằng phông đơn cách và kỹ năng kiểu mã lệnh"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Phong cách Thụy Sĩ: tên cỡ lớn, tiêu đề ở lề, nhiều khoảng trắng"
+        },
+        "sidebar": {
+          "name": "Hai cột",
+          "description": "Thanh bên có màu với ảnh, thông tin liên hệ và kỹ năng"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Băng ảnh, biểu tượng, dòng thời gian và thanh ngôn ngữ, vẫn được ATS đọc trọn vẹn"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Hình khối hữu cơ màu pastel, ảnh tròn lớn, dòng thời gian và mã QR, trên hai cột"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Phong cách Signature trên một cột: giàu đồ họa và được ATS đọc trọn vẹn"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Băng tối chéo, quầng màu, thẻ kinh nghiệm và thẻ kỹ năng đặc màu"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Bố cục hình học bằng màu cơ bản quanh ảnh, phông hình học và hình khối trước mỗi tiêu đề"
+        },
+        "editorial": {
+          "name": "Tạp chí",
+          "description": "Bố cục tạp chí: tên chữ có chân cỡ lớn, đoạn dẫn in nghiêng, mục đánh số và ảnh chân dung lệch"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Tân thô mộc: viền đen dày, bóng đổ cứng, khối màu đậm và nhãn đen"
+        },
+        "prism": {
+          "name": "Lăng kính",
+          "description": "Dải chuyển màu dạng lưới theo màu nhấn của bạn, thẻ liên hệ hiệu ứng kính và thẻ viền chuyển màu"
+        },
+        "swiss": {
+          "name": "Thụy Sĩ",
+          "description": "Phong cách áp phích Thụy Sĩ: tên khổng lồ, dải màu, đường kẻ đen dày và mục đánh số"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Giấy màu ngà, khung đôi mảnh, họa tiết hình thoi và phông Garamond"
+        },
+        "nocturne": {
+          "name": "Dạ khúc",
+          "description": "Chế độ tối: nền đêm, điểm nhấn neon và dòng thời gian phát sáng, lý tưởng cho hồ sơ trực tuyến"
+        },
+        "wave": {
+          "name": "Sóng",
+          "description": "Dải màu kết thúc bằng những con sóng, ảnh tròn và tiêu đề uốn lượn, mềm mại và thân thiện"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Ô bento bo góc: ảnh, tên và mã QR trong lưới, mỗi mục một ô"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Bản vẽ kỹ thuật: giấy kẻ ô, dấu góc, đường kích thước và nhãn phông đơn cách"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Hoa giấy hình học thập niên 80, màu sắc rực rỡ và tiêu đề gạch chân zíc zắc"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Băng lớn chia đôi: văn bản trên khối màu và ảnh hai tông"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Chỉ trang trí bằng chữ: tên khổng lồ một phần chỉ có nét viền và tiêu đề rất lớn"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Mỗi mục một màu pastel, tiêu đề hình viên thuốc và quầng sáng nhiều màu"
+        },
+        "executive": {
+          "name": "Điều hành",
+          "description": "Băng xanh navy, đường kẻ vàng và tên chữ có chân, dành cho vị trí lãnh đạo"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Tối giản kiểu Nhật: giấy washi, vòng tròn ensō theo màu nhấn của bạn và một nét cọ"
+        },
+        "ribbon": {
+          "name": "Ruy băng",
+          "description": "Tiêu đề mục trên dải ruy băng đuôi én, phần đầu căn giữa"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Ảnh lục giác, tổ ong ở góc và hình lục giác trước tiêu đề"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Phần đầu bằng các lớp giấy cắt, các mục như những tờ giấy"
+        },
+        "thread": {
+          "name": "Sợi chỉ",
+          "description": "Một sợi chỉ liền mạch nối phần đầu với từng mục, mỗi vị trí một chấm"
+        }
+      },
+      "preview": {
+        "label": "Nội dung hình thu nhỏ",
+        "sample": "Ví dụ đầy đủ",
+        "mine": "CV của tôi"
+      }
+    },
+    "print": {
+      "title": "Xuất ra PDF",
+      "text": "Cửa sổ in của trình duyệt sắp mở. Để có PDF hoàn hảo:",
+      "tips": {
+        "destination": "Đích: “Lưu dưới dạng PDF”",
+        "margins": "Lề: “Không có”",
+        "headers": "Bỏ chọn “Đầu trang và chân trang”",
+        "background": "Chọn “Đồ họa nền” để giữ màu"
+      },
+      "dontShow": "Không hiển thị lại",
+      "cancel": "Hủy",
+      "print": "Mở cửa sổ in"
+    },
+    "job": {
+      "title": "Điều chỉnh theo tin tuyển dụng",
+      "sources": "LinkedIn, TopCV, VietnamWorks, ITviec, CareerViet…",
+      "placeholder": "Dán toàn bộ nội dung tin tuyển dụng vào đây: vị trí, nhiệm vụ, yêu cầu",
+      "urlWarning": "Hãy dán nội dung tin thay vì đường liên kết: LocalATSCV không bao giờ kết nối tới trang web nào, nên dữ liệu luôn ở bên bạn",
+      "empty": "Không tìm thấy từ khóa: hãy dán tin tuyển dụng đầy đủ hơn",
+      "score": "Mức phù hợp với tin tuyển dụng",
+      "summary": "Có {{found}}/{{total}} từ khóa",
+      "found": "Từ khóa trong CV của bạn",
+      "missing": "Từ khóa còn thiếu",
+      "missingHint": "Nhấp vào từ khóa để thêm vào kỹ năng, hoặc lồng ghép vào một kinh nghiệm",
+      "addToSkills": "Thêm vào kỹ năng",
+      "added": "Đã thêm “{{keyword}}” vào kỹ năng",
+      "keywordsGroup": "Từ khóa",
+      "createVersion": "Tạo phiên bản nhắm mục tiêu cho vị trí này",
+      "createVersionHint": "Các kinh nghiệm và ý không liên quan đến vị trí sẽ bị bỏ đánh dấu: bạn có thể điều chỉnh lại",
+      "savedInVersion": "Đã lưu tin tuyển dụng cùng phiên bản “{{name}}”"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” mô tả nhiệm vụ: hãy bắt đầu bằng động từ hành động"
+    },
+    "fonts": {
+      "title": "Kiểu chữ",
+      "heading": "Tiêu đề",
+      "body": "Nội dung",
+      "default": "Theo mẫu",
+      "hint": "ATS đọc tốt tất cả các phông này: văn bản vẫn là văn bản thật"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Có gì mới",
+    "title": "Nhật ký thay đổi",
+    "subtitle": "Mọi phiên bản của LocalATSCV, cùng tính năng mới và bản sửa lỗi",
+    "current": "Phiên bản hiện tại",
+    "frenchOnly": "Nhật ký thay đổi được viết bằng tiếng Pháp",
+    "error": "Không tải được nhật ký thay đổi",
+    "types": {
+      "added": "Thêm mới",
+      "changed": "Thay đổi",
+      "fixed": "Sửa lỗi",
+      "removed": "Gỡ bỏ",
+      "deprecated": "Ngừng hỗ trợ",
+      "security": "Bảo mật",
+      "other": "Khác"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Trình phân tích",
+    "title": "CV của bạn có vượt qua robot không?",
+    "subtitle": "Thả vào một CV PDF làm bằng bất kỳ công cụ nào: LocalATSCV đọc nó như ATS và cho bạn biết cần sửa gì",
+    "drop": "Kéo CV của bạn vào đây",
+    "dropActive": "Thả tệp để bắt đầu phân tích",
+    "hint": "Chỉ PDF, tối đa 15 MB",
+    "choose": "Chọn tệp",
+    "reading": "Đang đọc PDF…",
+    "privacy": "Tệp được phân tích trong trình duyệt của bạn: không bao giờ được gửi đi đâu",
+    "another": "Phân tích CV khác",
+    "errors": {
+      "notPdf": "Tệp này không phải PDF",
+      "tooLarge": "Tệp này lớn hơn 15 MB",
+      "encrypted": "PDF này được bảo vệ bằng mật khẩu: ATS cũng không đọc được",
+      "unreadable": "Không đọc được PDF này: có thể tệp bị hỏng"
+    },
+    "stats": "{{pages}} trang · {{words}} từ",
+    "verdict": {
+      "excellent": "Rất tốt",
+      "good": "Tốt",
+      "fair": "Cần cải thiện",
+      "poor": "Nghiêm trọng"
+    },
+    "verdictText": {
+      "excellent": "Robot đọc CV của bạn rất tốt",
+      "good": "Vài chỉnh sửa nhỏ sẽ giúp CV hiệu quả hơn nữa",
+      "fair": "Một số vấn đề gây khó khăn cho ATS khi đọc",
+      "poor": "ATS nhiều khả năng sẽ bỏ sót thông tin chính"
+    },
+    "categories": {
+      "readability": "Khả năng đọc bằng máy",
+      "structure": "Cấu trúc",
+      "content": "Nội dung"
+    },
+    "sectionNames": {
+      "experience": "Kinh nghiệm",
+      "education": "Học vấn",
+      "skills": "Kỹ năng"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Văn bản máy đọc được",
+        "pass": "Toàn bộ văn bản trong CV đều trích xuất được",
+        "warn": "Một số trang không có văn bản đọc được: có thể là ảnh hoặc bản quét",
+        "fail": "Không có văn bản đọc được: CV này có lẽ là ảnh hoặc bản quét, và ATS sẽ không trích xuất được gì. Hãy xuất ra PDF từ trình soạn thảo văn bản"
+      },
+      "columns": {
+        "title": "Bố cục",
+        "pass": "Đọc tuyến tính, các cột không bị trộn lẫn",
+        "warn": "Phát hiện bố cục nhiều cột: văn bản có thể bị đọc sai thứ tự. Hãy xem “Điều robot đọc” bên dưới"
+      },
+      "order": {
+        "title": "Thứ tự đọc trong tệp",
+        "pass": "Văn bản được ghi trong tệp theo đúng thứ tự đọc",
+        "warnHeader": "Tên và phần đầu của bạn được ghi trong tệp sau phần còn lại của CV: ATS đọc tệp theo thứ tự có thể không tìm thấy tên bạn",
+        "warn": "{{percent}}% văn bản được ghi trong tệp không theo thứ tự đọc: một số ATS sẽ đọc các đoạn này sai thứ tự",
+        "fail": "{{percent}}% văn bản được ghi trong tệp lộn xộn, thường gặp ở CV làm bằng hộp văn bản tự do (Canva, PowerPoint…): nhiều ATS sẽ đọc CV của bạn bị xáo trộn. Hãy so sánh hai cách đọc bên dưới"
+      },
+      "unreadable": {
+        "title": "Biểu tượng và thanh kỹ năng",
+        "pass": "Không có biểu tượng hay ký tự không đọc được",
+        "warn": "Phát hiện biểu tượng hoặc thanh ({{count}}): ATS đọc chúng thành ký tự lạ. Hãy thay bằng văn bản",
+        "fail": "Phát hiện biểu tượng hoặc thanh ({{count}}): hãy thay bằng văn bản, ví dụ “Tiếng Anh: C1” thay cho các chấm"
+      },
+      "contact": {
+        "title": "Thông tin liên hệ",
+        "pass": "Đã tìm thấy email và số điện thoại",
+        "warnNoPhone": "Không tìm thấy số điện thoại",
+        "warnNoEmail": "Không tìm thấy địa chỉ email",
+        "fail": "Không tìm thấy email lẫn số điện thoại: hãy viết dưới dạng văn bản, không đặt trong ảnh"
+      },
+      "sections": {
+        "title": "Mục chuẩn",
+        "pass": "Kinh nghiệm, học vấn và kỹ năng được nhận diện rõ ràng",
+        "warn": "Các mục này không được nhận diện: hãy dùng tiêu đề chuẩn",
+        "fail": "Không nhận diện được mục chuẩn nào: ATS dựa vào các tiêu đề như “Kinh nghiệm” hoặc “Học vấn”"
+      },
+      "length": {
+        "title": "Độ dài",
+        "pass": "{{pages}} trang, {{words}} từ: độ dài lý tưởng",
+        "warn": "{{pages}} trang, {{words}} từ: nên ở mức 1 đến 2 trang và 250 đến 1.000 từ",
+        "fail": "{{pages}} trang, {{words}} từ: quá ngắn hoặc quá dài để đánh giá tốt"
+      },
+      "quantified": {
+        "title": "Kết quả định lượng",
+        "pass": "{{percent}}% số ý của bạn có con số, rất tốt",
+        "warn": "Chỉ {{percent}}% số ý có con số: hãy thêm kết quả đo lường được (phần trăm, số tiền, khối lượng)",
+        "fail": "Không có kết quả định lượng: nhà tuyển dụng và ATS đánh giá cao thành tích đo lường được"
+      },
+      "weakPhrases": {
+        "title": "Động từ hành động",
+        "pass": "Không có cụm từ yếu ở đầu các ý",
+        "warn": "Những cách mở đầu này mô tả nhiệm vụ thay vì kết quả: hãy bắt đầu bằng động từ hành động",
+        "fail": "Những cách mở đầu này mô tả nhiệm vụ thay vì kết quả: hãy bắt đầu bằng động từ hành động"
+      },
+      "dates": {
+        "title": "Ngày tháng",
+        "pass": "Các kinh nghiệm của bạn đều có ngày tháng",
+        "warn": "Chỉ tìm thấy một năm: hãy ghi ngày tháng cho mỗi vị trí, ATS dùng chúng để tính số năm kinh nghiệm",
+        "fail": "Không tìm thấy ngày tháng: ATS dùng chúng để tính số năm kinh nghiệm"
+      }
+    },
+    "robot": {
+      "title": "Điều robot đọc",
+      "text": "Văn bản được dựng lại từng dòng, như cách hầu hết ATS làm. Nếu ở đây nó lộn xộn hoặc thiếu, nhà tuyển dụng cũng sẽ thấy như vậy",
+      "empty": "Không trích xuất được văn bản nào",
+      "position": "Theo vị trí",
+      "file": "Thứ tự trong tệp",
+      "fileText": "Văn bản theo thứ tự được ghi trong tệp: các ATS không dựng lại bố cục sẽ đọc như vậy. Nó cần theo đúng thứ tự đọc của CV"
+    },
+    "cta": {
+      "title": "Bắt đầu lại trên nền tảng vững chắc",
+      "text": "Tạo CV thân thiện với ATS trong trình soạn thảo, rồi điều chỉnh cho từng vị trí",
+      "button": "Mở trình soạn thảo",
+      "import": "Đưa CV này vào các mẫu của chúng tôi"
+    },
+    "live": {
+      "title": "Kiểm tra ATS trực tiếp",
+      "issues": "{{count}} điểm cần kiểm tra trên mẫu này",
+      "allGood": "Không phát hiện vấn đề nào trên mẫu này",
+      "hint": "Tính trên bố cục đang hiển thị, bằng cùng công cụ với trình phân tích CV"
+    },
+    "method": {
+      "title": "Điểm này được tính như thế nào?",
+      "intro": "Không có điểm ATS chính thức: mỗi phần mềm tuyển dụng (Workday, Taleo, Greenhouse, Lever…) có quy tắc riêng, thường không công khai. Chỉ số này kiểm tra những điểm khiến phần lớn hệ thống vấp phải, theo thang sau:",
+      "disclaimer": "Các tiêu chí này dựa trên khuyến nghị công khai của các nhà cung cấp ATS và những lỗi đọc phổ biến nhất (chữ trong ảnh, cột, biểu tượng, tiêu đề không chuẩn). Điểm số giúp bạn cải thiện CV: nó không dự đoán kết quả tuyển chọn"
+    }
+  },
+  "import": {
+    "title": "Nhập CV",
+    "linkedinTitle": "Nhập từ LinkedIn",
+    "text": "Chọn CV PDF hoặc Word (.docx): nội dung được trích xuất trong trình duyệt và sắp xếp vào các mục của trình soạn thảo. Sau đó bạn có thể chọn mẫu",
+    "choose": "Chọn tệp",
+    "chooseFile": "Chọn tệp",
+    "hint": "PDF hoặc Word (.docx), tối đa 15 MB",
+    "reading": "Đang nhập…",
+    "privacy": "Tệp được đọc trong trình duyệt của bạn: không bao giờ được gửi đi đâu",
+    "close": "Đóng",
+    "done": "Đã nhập CV ({{items}} mục): hãy rà soát từng mục",
+    "errors": {
+      "tooLarge": "Tệp này lớn hơn 15 MB",
+      "encrypted": "PDF này được bảo vệ bằng mật khẩu",
+      "unreadable": "Không đọc được tệp này: có thể tệp bị hỏng",
+      "empty": "Không có văn bản dùng được: PDF này có lẽ là ảnh hoặc bản quét",
+      "unsupported": "Hãy chọn PDF, tệp Word (.docx) hoặc tệp nén ZIP của LinkedIn",
+      "archiveEmpty": "Tệp nén này không chứa dữ liệu hồ sơ LinkedIn dùng được"
+    },
+    "hintArchive": "PDF (máy tính) hoặc tệp nén ZIP (ứng dụng di động)",
+    "linkedin": {
+      "computer": {
+        "title": "Trên máy tính: PDF hồ sơ của bạn",
+        "step1": "Mở linkedin.com trên trình duyệt máy tính (ứng dụng không có tùy chọn này)",
+        "step2": "Trên hồ sơ của bạn, nhấp “Tài nguyên” (hoặc “Xem thêm”), rồi “Lưu dưới dạng PDF”",
+        "step3": "Chọn tệp PDF đó bên dưới"
+      },
+      "archive": {
+        "title": "Trên ứng dụng di động: kho dữ liệu của bạn",
+        "step1": "Trong ứng dụng, chạm vào ảnh của bạn, rồi vào Cài đặt và Quyền riêng tư dữ liệu",
+        "step2": "Chọn “Nhận bản sao dữ liệu của bạn” và đánh dấu Hồ sơ, Vị trí, Học vấn, Kỹ năng và Ngôn ngữ",
+        "step3": "LinkedIn sẽ gửi email cho bạn trong vài phút: tải tệp nén ZIP xuống",
+        "step4": "Chọn tệp ZIP đó bên dưới, không cần giải nén"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Tài liệu này được hiển thị bằng tiếng Anh. Chỉ bản tiếng Pháp có giá trị pháp lý.",
+    "error": "Không tải được tài liệu này."
+  }
+}

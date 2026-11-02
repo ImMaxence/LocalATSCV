@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Pagina principală LocalATSCV",
+    "main": "Navigare principală",
+    "how": "Cum funcționează",
+    "privacy": "Confidențialitate",
+    "analyze": "Analizează un CV",
+    "editor": "Creează-mi CV-ul",
+    "skipToContent": "Salt la conținut"
+  },
+  "theme": {
+    "label": "Temă",
+    "light": "Luminoasă",
+    "system": "Sistem",
+    "dark": "Întunecată"
+  },
+  "lang": {
+    "label": "Limba interfeței",
+    "suggestion": "Afișează această pagină în română",
+    "dismiss": "Închide",
+    "search": "Caută o limbă",
+    "noResult": "Nicio limbă găsită"
+  },
+  "pages": {
+    "home": "CV-uri compatibile ATS, 100% local",
+    "editor": "Editor",
+    "analyze": "Analizor de CV",
+    "changelog": "Noutăți",
+    "legalNotice": "Mențiuni legale",
+    "terms": "Condiții de utilizare",
+    "privacy": "Politica de confidențialitate"
+  },
+  "seo": {
+    "home": "Generator gratuit de CV compatibil ATS: 30 de șabloane grafice, scrisoare de intenție asortată, adaptare la fiecare anunț și scor ATS. Open source, datele tale rămân în browser",
+    "editor": "Editor de CV cu previzualizare live, CV Master și versiuni țintite, verificare ATS și export PDF cu text real. Totul rămâne în browserul tău",
+    "analyze": "Analizează gratuit un CV în PDF: scor ATS din 100, puncte de corectat și textul așa cum îl citește un sistem de recrutare. Fișierul nu părăsește niciodată browserul tău",
+    "changelog": "Noutățile LocalATSCV, versiune cu versiune: șabloane noi de CV, funcții și corecturi",
+    "legalNotice": "Mențiunile legale LocalATSCV: editor, găzduire și contact",
+    "terms": "Condițiile de utilizare LocalATSCV, generatorul de CV gratuit și open source",
+    "privacy": "Politica de confidențialitate LocalATSCV: nu colectăm date, CV-urile tale rămân în browser"
+  },
+  "footer": {
+    "tagline": "Generatorul de CV compatibil ATS care nu îți vede niciodată datele",
+    "product": "Produs",
+    "legal": "Informații legale",
+    "project": "Proiect",
+    "changelog": "Noutăți",
+    "sourceCode": "Cod sursă",
+    "reportIssue": "Raportează o problemă",
+    "license": "Licență MIT",
+    "versionLabel": "Versiunea {{version}}, vezi noutățile"
+  },
+  "update": {
+    "title": "Versiune nouă disponibilă",
+    "text": "Reîncarcă pagina pentru a o folosi",
+    "changelog": "Vezi noutățile",
+    "reload": "Reîncarcă",
+    "later": "Mai târziu"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% local · Gratuit · Open source",
+      "titleLine1": "Un CV care trece de roboți",
+      "titleLine2": "Date care rămân la tine",
+      "subtitle": "LocalATSCV te ajută să creezi un CV optimizat pentru sistemele de recrutare (ATS) și să-l adaptezi la fiecare post în câteva clicuri. Totul se întâmplă în browserul tău: fără cont și fără nicio dată trimisă",
+      "ctaPrimary": "Creează-mi CV-ul",
+      "ctaSecondary": "Analizează un CV existent",
+      "points": {
+        "noAccount": "Fără înregistrare",
+        "offline": "Funcționează offline",
+        "atsPdf": "PDF lizibil de ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problema",
+      "title": "CV-ul tău este citit mai întâi de o mașină",
+      "text": "Majoritatea companiilor mari și a agențiilor de recrutare triază candidaturile cu un ATS (Applicant Tracking System). Acesta extrage textul din CV-ul tău, îl stochează într-o bază de date și le permite recrutorilor să caute candidați după cuvinte-cheie",
+      "pitfalls": {
+        "layout": {
+          "title": "Machete complexe",
+          "text": "Coloanele, tabelele și casetele de text amestecă ordinea de citire: informațiile tale ies alandala"
+        },
+        "image": {
+          "title": "Text ilizibil",
+          "text": "Pictogramele, barele de competențe și unele exporturi din instrumente de design devin caractere ciudate sau dispar complet"
+        },
+        "keywords": {
+          "title": "Cuvinte-cheie lipsă",
+          "text": "Dacă vocabularul anunțului nu apare în CV-ul tău, profilul tău nu apare în căutările recrutorilor"
+        }
+      },
+      "seen": "Ce vezi tu",
+      "read": "Ce citește robotul",
+      "fix": "LocalATSCV face invers: o singură coloană, text real și titluri de secțiune standard, pe care roboții le citesc în ordinea corectă"
+    },
+    "how": {
+      "eyebrow": "Cum funcționează",
+      "title": "Scrii o dată, adaptezi la nesfârșit",
+      "text": "Patru pași pentru a transforma CV-ul Master într-o candidatură făcută pe măsura fiecărui post",
+      "steps": {
+        "profile": {
+          "title": "Completează-ți CV-ul Master",
+          "text": "Introdu toată experiența o dată pentru totdeauna sau importă PDF-ul profilului tău LinkedIn ca să câștigi timp"
+        },
+        "offer": {
+          "title": "Lipește anunțul",
+          "text": "LocalATSCV extrage cuvintele-cheie și calculează un scor de potrivire din 100, actualizat pe măsură ce scrii"
+        },
+        "compose": {
+          "title": "Compune o versiune țintită",
+          "text": "Bifează experiențele și punctele relevante și reordonează-le prin glisare. Nimic nu se șterge din Master"
+        },
+        "export": {
+          "title": "Exportă în PDF",
+          "text": "Un PDF cu text real, structurat și pe o coloană, la fel de lizibil pentru roboți ca pentru recrutori"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Confidențialitate",
+      "title": "Zero date pe serverele noastre. Literalmente",
+      "text": "Nu există nicio bază de date de spart: serverul nostru îți trimite doar aplicația. Apoi totul se întâmplă în browserul tău, chiar și offline",
+      "browser": {
+        "title": "Browserul tău",
+        "tag": "Dispozitivul tău",
+        "items": {
+          "master": "CV Master",
+          "photo": "Fotografie de profil",
+          "versions": "Versiuni țintite",
+          "settings": "Preferințe"
+        },
+        "note": "Stocat în IndexedDB, doar pe acest dispozitiv"
+      },
+      "flow": {
+        "app": "Aplicația, la prima încărcare",
+        "data": "Datele tale",
+        "never": "niciodată"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Servește fișierele aplicației (HTML, CSS, JavaScript), nimic mai mult",
+        "items": {
+          "noDb": "Nicio bază de date",
+          "noAccount": "Niciun cont de utilizator",
+          "noLogs": "Niciun jurnal de vizite"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Fără cont",
+          "text": "Fără înregistrare, fără e-mail, fără parolă. Deschide pagina și începe"
+        },
+        "trackers": {
+          "title": "Fără urmărire",
+          "text": "Fără statistici, fără reclame, fără cookie-uri de urmărire. Chiar și fonturile sunt găzduite pe serverul nostru"
+        },
+        "csp": {
+          "title": "Blocat tehnic",
+          "text": "Politica de securitate a site-ului (CSP) interzice browserului să contacteze orice alt domeniu. Codul este deschis: verifică singur"
+        },
+        "backup": {
+          "title": "Copiile tale, fișierele tale",
+          "text": "Exportă toate datele într-un fișier JSON și importă-le înapoi pe orice dispozitiv"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funcții",
+      "title": "Tot ce îți trebuie ca să ajungi la interviu",
+      "items": {
+        "master": {
+          "title": "CV Master și versiuni țintite",
+          "text": "Un CV complet și atâtea variante câte candidaturi. Bifezi, debifezi: nimic nu se pierde"
+        },
+        "score": {
+          "title": "Scor de potrivire",
+          "text": "Lipește anunțul: cuvinte-cheie găsite, lipsă și un scor din 100 în timp real"
+        },
+        "weak": {
+          "title": "Detector de formulări slabe",
+          "text": "„Responsabil de”, „am ajutat la”… sunt semnalate automat, cu o bancă de verbe de acțiune pentru a le înlocui"
+        },
+        "analyzer": {
+          "title": "Analizor de CV-uri existente",
+          "text": "Încarcă un CV făcut în altă parte: vezi ce citește cu adevărat robotul și ce trebuie corectat"
+        },
+        "linkedin": {
+          "title": "Import din LinkedIn",
+          "text": "Precompletează-ți CV-ul Master din PDF-ul gratuit pe care îl poți exporta din profilul tău LinkedIn"
+        },
+        "languages": {
+          "title": "5 limbi pentru CV",
+          "text": "Franceză, engleză, italiană, spaniolă și germană. În engleză, fotografia și data nașterii sunt ascunse, conform normelor din țările anglofone"
+        },
+        "pdf": {
+          "title": "Export PDF compatibil ATS",
+          "text": "Text real și o structură clară: lizibil pentru roboți, plăcut pentru recrutori"
+        },
+        "offline": {
+          "title": "Instalabil și offline",
+          "text": "Adaugă LocalATSCV pe ecranul de pornire și continuă să lucrezi fără conexiune"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Întrebări frecvente",
+      "title": "Întrebări frecvente",
+      "text": "Nu găsești întrebarea ta? Scrie-ne:",
+      "items": {
+        "ats": {
+          "q": "Ce este un ATS?",
+          "a": "Un Applicant Tracking System este software-ul pe care recrutorii îl folosesc pentru a primi, tria și căuta candidaturi. Îți transformă CV-ul în text și îl indexează: dacă textul e extras prost sau lipsesc cuvintele-cheie potrivite, candidatura ta devine greu de găsit"
+        },
+        "storage": {
+          "q": "Unde sunt stocate datele mele?",
+          "a": "Doar în browserul tău, în IndexedDB, o bază de date integrată în orice browser modern. Nu trec niciodată prin serverele noastre, care știu doar să servească fișierele aplicației"
+        },
+        "clear": {
+          "q": "Ce se întâmplă dacă șterg datele browserului?",
+          "a": "CV-urile tale sunt șterse, pentru că nu există în altă parte. Exportă regulat o copie de rezervă JSON: o poți importa înapoi oricând, pe orice dispozitiv"
+        },
+        "score": {
+          "q": "Scorul garantează că CV-ul meu va fi selectat?",
+          "a": "Nu. Fiecare ATS are propriile reguli, iar decizia finală o ia un om. Scorul este un indicator: verifică dacă CV-ul tău folosește vocabularul anunțului și dacă o mașină îl poate citi corect"
+        },
+        "photo": {
+          "q": "De ce dispare fotografia în engleză?",
+          "a": "În Regatul Unit, în Statele Unite și în multe țări anglofone, fotografia și data nașterii sunt descurajate pentru a limita discriminarea la angajare. Unii recrutori resping chiar CV-urile care le conțin"
+        },
+        "free": {
+          "q": "Chiar este gratuit?",
+          "a": "Da. LocalATSCV este un proiect open source sub licență MIT, fără reclame și fără abonament. Găzduirea lui nu costă aproape nimic, pentru că browserul tău face toată munca"
+        },
+        "templates": {
+          "q": "Șabloanele grafice trec de ATS?",
+          "a": "Da. Fiecare șablon tipărește text real, în ordinea de citire, cu titluri de secțiune standard: formele, barele și pictogramele sunt desene pe care roboții le ignoră. Șabloanele pe o coloană rămân cele mai sigure, iar verificarea ATS din editor îți testează macheta în timp real"
+        },
+        "import": {
+          "q": "Pot refolosi CV-ul actual sau profilul LinkedIn?",
+          "a": "Da. Importă un CV PDF sau Word (.docx), PDF-ul profilului tău LinkedIn (pe calculator) sau arhiva de date LinkedIn (din aplicația mobilă): conținutul este citit în browserul tău și sortat în editor"
+        },
+        "offline": {
+          "q": "LocalATSCV funcționează offline?",
+          "a": "Da. Este o aplicație web instalabilă: după prima vizită totul funcționează fără conexiune, inclusiv exportul în PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Gata să treci de filtru?",
+      "text": "Creează-ți CV-ul Master în câteva minute. Nimic nu va părăsi acest dispozitiv",
+      "button": "Începe"
+    },
+    "demo": {
+      "role": "Dezvoltatoare Front-end",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Experiență",
+      "jobTitle": "Dezvoltatoare Angular",
+      "jobMeta": "Exemplu SRL · 2022 – prezent",
+      "bullets": {
+        "migration": "Migrarea a 40 de ecrane la <k>Angular</k> și <k>TypeScript</k>, timp de încărcare redus cu 35%",
+        "testing": "<w>Responsabilă de</w> strategia de testare end-to-end",
+        "delivery": "Livrare continuă cu <k>GitLab CI</k> pentru 3 echipe de produs"
+      },
+      "weakLabel": "Formulare slabă",
+      "weakReplacement": "„Am condus”",
+      "skills": "Competențe",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accesibilitate",
+      "score": "Potrivire cu anunțul",
+      "sent": "0 octeți trimiși",
+      "robot": "COMPETENȚE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Dezvoltatoare Front-end Angular <n>●●●●○</n> EXPERIENȚĂ <n>� camille.mar</n> Dezvoltatoare Angular <n>tin@example.com</n> 2022 – prezent TypeScript <n>●●●○○</n> Exemplu SRL LIMBI Engleză Migrarea a 40 de ecrane la…"
+    }
+  },
+  "dialog": {
+    "cancel": "Anulează",
+    "delete": "Șterge",
+    "create": "Creează",
+    "save": "Salvează",
+    "import": "Importă"
+  },
+  "editor": {
+    "list": {
+      "title": "CV-urile mele",
+      "subtitle": "Stocate doar în acest browser",
+      "new": "CV nou",
+      "newBlank": "CV gol",
+      "newBlankHint": "Pornește de la o pagină goală",
+      "newSample": "Pornește de la un exemplu",
+      "newSampleHint": "Un CV fictiv completat pentru a explora editorul",
+      "import": "Restaurează o copie de rezervă",
+      "exportAll": "Exportă tot",
+      "emptyTitle": "Încă niciun CV",
+      "emptyText": "Creează-ți CV-ul Master: toată experiența într-un singur loc, gata de adaptat la fiecare post",
+      "open": "Deschide",
+      "actions": "Acțiuni",
+      "duplicate": "Duplică",
+      "export": "Exportă (JSON)",
+      "delete": "Șterge",
+      "updated": "Modificat la {{date}}",
+      "versions": "Versiuni: {{count}}",
+      "backupHint": "CV-urile tale există doar în acest browser. Exportă regulat o copie de rezervă JSON: dacă ștergi datele browserului, îți permite să recuperezi totul",
+      "defaultName": "CV-ul meu",
+      "copySuffix": "(copie)",
+      "deleteTitle": "Ștergi „{{name}}”?",
+      "deleteText": "CV-ul și toate versiunile lui vor fi șterse definitiv din acest browser",
+      "exportDone": "Copie de rezervă descărcată",
+      "importConfirmTitle": "Importi această copie de rezervă?",
+      "importConfirmText": "CV-uri în această copie: {{count}}. Cele care există deja în acest browser vor fi înlocuite",
+      "importDone": "Copie de rezervă importată: {{count}} CV-uri",
+      "importError": {
+        "invalidJson": "Acest fișier nu este un JSON valid",
+        "notABackup": "Acest fișier nu este o copie de rezervă LocalATSCV",
+        "newerVersion": "Această copie provine dintr-o versiune mai nouă a LocalATSCV: actualizează mai întâi aplicația"
+      },
+      "importPdf": "Importă un CV (PDF sau Word)",
+      "importPdfHint": "Adu un CV existent în șabloanele noastre",
+      "importLinkedin": "Importă din LinkedIn",
+      "importLinkedinHint": "Din PDF-ul profilului tău"
+    },
+    "toolbar": {
+      "back": "CV-urile mele",
+      "name": "Numele CV-ului",
+      "cvLanguage": "Limba CV-ului",
+      "accent": "Culoare de accent",
+      "customAccent": "Culoare personalizată",
+      "saved": "Salvat",
+      "saving": "Se salvează…",
+      "saveError": "Salvarea a eșuat",
+      "edit": "Editează",
+      "preview": "Previzualizare",
+      "exportPdf": "Exportă în PDF",
+      "undo": "Anulează (Ctrl+Z)",
+      "redo": "Refă (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Document de editat",
+      "cv": "CV",
+      "letter": "Scrisoare de intenție"
+    },
+    "letter": {
+      "title": "Scrisoare de intenție",
+      "versionOwn": "Această versiune are propria scrisoare",
+      "versionShared": "Această versiune folosește scrisoarea din Master: dacă o editezi aici, se creează o copie pentru această versiune",
+      "useMaster": "Folosește scrisoarea din Master",
+      "recipient": "Destinatar",
+      "recipientPlaceholder": "Exemplu SRL\nDepartamentul de recrutare\nCalea Victoriei 10, 010061 București",
+      "place": "Locul",
+      "date": "Data",
+      "dateHint": "Gol: data zilei tipăririi",
+      "subject": "Subiect",
+      "subjectPlaceholder": "Candidatură pentru postul de…",
+      "greeting": "Formulă de adresare",
+      "body": "Scrisoare",
+      "bodyPlaceholder": "Trei paragrafe scurte: ce te atrage la companie, ce aduci, ce pas următor propui",
+      "bodyHint": "Un rând gol separă două paragrafe · **îngroșat** pentru un cuvânt-cheie",
+      "outline": "Inserează o schiță",
+      "closing": "Formulă de încheiere",
+      "fileName": "Scrisoare de intenție"
+    },
+    "fit": {
+      "pages": "{{count}} pagini",
+      "onePage": "Încape pe o pagină",
+      "hintMany": "Majoritatea recrutorilor se așteaptă la un CV de o pagină",
+      "hintOne": "Format ideal pentru majoritatea candidaturilor",
+      "stillTooLong": "Încă prea lung, chiar și comprimat: scurtează câteva puncte sau ascunde elemente într-o versiune",
+      "fit": "Încadrează pe o pagină",
+      "settings": "Setări de machetare",
+      "spacing": "Spațiere",
+      "scale": "Mărimea textului",
+      "settingsHint": "Textul rămâne text real: se schimbă doar macheta",
+      "reset": "Macheta șablonului",
+      "grayscale": "Vezi alb-negru",
+      "grayscaleHint": "Simulează o tipărire alb-negru: PDF-ul exportat își păstrează culorile"
+    },
+    "versions": {
+      "label": "Versiune afișată",
+      "master": "CV Master",
+      "masterHint": "Tot conținutul, fără filtru",
+      "new": "Versiune nouă",
+      "newText": "O versiune țintită pornește de la întregul tău CV Master: apoi debifează ce nu îi trebuie acestei candidaturi",
+      "nameLabel": "Numele versiunii",
+      "namePlaceholder": "Ex.: Dezvoltator Front-end – Compania X",
+      "rename": "Redenumește versiunea",
+      "delete": "Șterge versiunea",
+      "deleteTitle": "Ștergi versiunea „{{name}}”?",
+      "deleteText": "Se șterge doar selecția: tot conținutul rămâne în CV-ul tău Master",
+      "banner": "Versiunea „{{name}}”: debifează ce nu trebuie să apară. Nimic nu se șterge din CV-ul tău Master",
+      "include": "Include în această versiune"
+    },
+    "enRule": "CV în engleză: fotografia, data nașterii și naționalitatea sunt ascunse, conform normelor din țările anglofone",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fotografie",
+      "photoAdd": "Adaugă o fotografie",
+      "photoChange": "Schimbă",
+      "photoRemove": "Elimină",
+      "photoHint": "Redimensionată și stocată doar pe acest dispozitiv",
+      "photoError": "Această imagine nu a putut fi citită",
+      "hiddenInEnglish": "Ascuns în engleză",
+      "firstName": "Prenume",
+      "lastName": "Nume",
+      "headline": "Titlul CV-ului",
+      "headlinePlaceholder": "Ex.: Dezvoltatoare Front-end",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "location": "Oraș",
+      "birthDate": "Data nașterii",
+      "nationality": "Naționalitate",
+      "summary": "Rezumat",
+      "summaryPlaceholder": "Două-trei fraze care îți rezumă profilul și ce cauți",
+      "links": "Linkuri",
+      "linkLabel": "Numele linkului",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adresa linkului",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Adaugă un link",
+      "removeLink": "Elimină linkul",
+      "drivingLicense": "Permis de conducere",
+      "drivingLicensePlaceholder": "Ex.: Permis categoria B, mașină proprie",
+      "qrToggle": "Afișează acest link drept cod QR",
+      "linksHint": "Logoul (LinkedIn, GitHub, YouTube…) este adăugat automat. Butonul QR afișează linkul drept cod QR în majoritatea șabloanelor grafice"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Experiență",
+        "education": "Educație",
+        "projects": "Proiecte",
+        "certifications": "Certificări",
+        "custom": "Secțiune liberă",
+        "skills": "Competențe",
+        "languages": "Limbi",
+        "interests": "Interese"
+      },
+      "add": "Adaugă o secțiune",
+      "titleLabel": "Titlul secțiunii",
+      "empty": "Secțiune goală: nu va apărea în CV",
+      "addItem": {
+        "experience": "Adaugă o experiență",
+        "education": "Adaugă o formare",
+        "projects": "Adaugă un proiect",
+        "certifications": "Adaugă o certificare",
+        "custom": "Adaugă un element",
+        "skills": "Adaugă competențe",
+        "languages": "Adaugă o limbă",
+        "interests": "Adaugă un interes"
+      },
+      "deleteTitle": "Ștergi secțiunea „{{name}}”?",
+      "deleteText": "Conținutul ei va fi eliminat din CV-ul Master și din toate versiunile"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Funcție",
+          "subtitle": "Companie"
+        },
+        "education": {
+          "title": "Diplomă",
+          "subtitle": "Școală sau universitate"
+        },
+        "projects": {
+          "title": "Numele proiectului",
+          "subtitle": "Rol sau tehnologii"
+        },
+        "certifications": {
+          "title": "Certificare",
+          "subtitle": "Emitent"
+        },
+        "custom": {
+          "title": "Titlu",
+          "subtitle": "Subtitlu"
+        }
+      },
+      "location": "Loc",
+      "url": "Link",
+      "start": "Început",
+      "end": "Sfârșit",
+      "date": "Data obținerii",
+      "current": "În curs",
+      "untitled": "Fără titlu",
+      "bullets": "Realizări",
+      "bulletPlaceholder": "Începe cu un verb de acțiune și cuantifică rezultatul",
+      "addBullet": "Adaugă un punct",
+      "bulletHint": "Enter: punct nou",
+      "boldHint": "**cuvânt** pentru îngroșat"
+    },
+    "items": {
+      "skillLabel": "Categorie",
+      "skillLabelPlaceholder": "Ex.: Front-end",
+      "skillKeywords": "Competențe",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Limbă",
+      "languageLevel": "Nivel",
+      "languageLevelPlaceholder": "Ex.: C1, fluent",
+      "interest": "Interes",
+      "interestPlaceholder": "Ex.: Escaladă",
+      "levelDetected": "Nivel recunoscut: șabloanele cu bară îl vor afișa",
+      "levelUnknown": "Nivel nerecunoscut, fără bară: folosește A1–C2 sau o sugestie din listă",
+      "levelEmpty": "Introdu un nivel pentru a afișa o bară",
+      "levelHint": "Folosește nivelul european (A1–C2) sau un cuvânt precum „fluent” sau „native”: unele șabloane îl afișează și ca bară, previzualizată de punctele din dreapta"
+    },
+    "actions": {
+      "menu": "Acțiuni",
+      "moveUp": "Mută în sus",
+      "moveDown": "Mută în jos",
+      "duplicate": "Duplică",
+      "delete": "Șterge",
+      "drag": "Trage pentru a reordona"
+    },
+    "month": "Luna",
+    "year": "Anul",
+    "noMonth": "Luna",
+    "preview": {
+      "page": "Pagina {{n}}"
+    },
+    "notFound": {
+      "title": "CV negăsit",
+      "text": "Acest CV nu există sau a fost șters din acest browser"
+    },
+    "templates": {
+      "button": "Șablon",
+      "title": "Alege un șablon",
+      "subtitle": "Toate șabloanele cu un CV de exemplu complet, sau cu al tău. Culoarea de accent se aplică tuturor șabloanelor",
+      "close": "Închide",
+      "filter": "Filtrează șabloanele",
+      "filters": {
+        "all": "Toate",
+        "graphic": "Grafice",
+        "sober": "Sobre"
+      },
+      "ats": "Compatibilitate ATS",
+      "levels": {
+        "excellent": "excelentă",
+        "good": "bună",
+        "fair": "acceptabilă"
+      },
+      "atsHint": "Fiecare șablon tipărește text real. Machetele pe două coloane sunt citite bine de majoritatea ATS-urilor moderne, dar unele instrumente mai vechi amestecă coloanele: dacă ai dubii, alege un șablon pe o coloană",
+      "names": {
+        "classic": {
+          "name": "Clasic",
+          "description": "Curat și eficient: o coloană, titluri subliniate, nimic care să distragă"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Bandă colorată, titluri marcate și competențe sub formă de etichete"
+        },
+        "elegant": {
+          "name": "Elegant",
+          "description": "Antet centrat și tipografie serif pentru un aspect rafinat"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Margine colorată, detalii în font monospațiat și competențe în stil cod"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Stil elvețian: nume uriaș, titluri pe margine, mult spațiu alb"
+        },
+        "sidebar": {
+          "name": "Coloane",
+          "description": "Bară laterală colorată cu fotografie, date de contact și competențe"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Bandă cu fotografie, pictograme, cronologie și bare de limbi, perfect lizibil de ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Forme organice în pastel, fotografie rotundă mare, cronologie și cod QR, pe două coloane"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Aspectul Signature pe o singură coloană: grafic și perfect lizibil de ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Bandă întunecată în diagonală, halouri colorate, carduri de experiență și etichete de competențe pline"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Compoziție geometrică în culori primare în jurul fotografiei, tipografie geometrică și forme înaintea fiecărui titlu"
+        },
+        "editorial": {
+          "name": "Editorial",
+          "description": "Machetă de revistă: nume mare serif, șapou italic, secțiuni numerotate și portret decalat"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalism: contururi negre groase, umbre dure, blocuri de culoare vii și etichete negre"
+        },
+        "prism": {
+          "name": "Prismă",
+          "description": "Gradient de tip mesh în culorile tale de accent, card de contact cu efect de sticlă și carduri cu bordură în gradient"
+        },
+        "swiss": {
+          "name": "Elvețian",
+          "description": "Stil de afiș elvețian: nume gigantic, bandă colorată, filete negre groase și secțiuni numerotate"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Hârtie ivoire, chenar dublu fin, ornamente în romb și tipografie Garamond"
+        },
+        "nocturne": {
+          "name": "Nocturn",
+          "description": "Mod întunecat: fundal de noapte, accente neon și cronologie luminoasă, ideal pentru candidaturile digitale"
+        },
+        "wave": {
+          "name": "Val",
+          "description": "Bandă colorată care se termină în valuri, fotografie rotundă și titluri ondulate, blând și prietenos"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Plăci bento rotunjite: fotografie, nume și cod QR într-o grilă, câte o placă pe secțiune"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Desen tehnic: hârtie milimetrică, repere de colț, linie de cotă și etichete monospațiate"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Confetti geometrice din anii '80, culori vii și titluri subliniate în zigzag"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Bandă mare împărțită: text pe un bloc de culoare și fotografie în două tonuri"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografia ca singură decorațiune: nume uriaș, parțial doar contur, titluri foarte mari"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "O culoare pastelată pe secțiune, titluri în formă de pastilă și un halou multicolor"
+        },
+        "executive": {
+          "name": "Executiv",
+          "description": "Bandă bleumarin, filet auriu și nume serif, pentru posturi de conducere"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Minimalism japonez: hârtie washi, un cerc ensō în culoarea ta de accent și o tușă de pensulă"
+        },
+        "ribbon": {
+          "name": "Panglică",
+          "description": "Titluri de secțiune pe panglici cu coadă de rândunică, antet centrat"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Fotografie hexagonală, fagure în colț și hexagoane înaintea titlurilor"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Antet din straturi de hârtie decupată, secțiuni ca foi de hârtie"
+        },
+        "thread": {
+          "name": "Fir",
+          "description": "Un fir continuu leagă antetul și fiecare secțiune, cu un punct pentru fiecare post"
+        }
+      },
+      "preview": {
+        "label": "Conținutul miniaturilor",
+        "sample": "Exemplu complet",
+        "mine": "CV-ul meu"
+      }
+    },
+    "print": {
+      "title": "Exportă în PDF",
+      "text": "Fereastra de tipărire a browserului se va deschide. Pentru un PDF perfect:",
+      "tips": {
+        "destination": "Destinație: „Salvează ca PDF”",
+        "margins": "Margini: „Fără”",
+        "headers": "Debifează „Anteturi și subsoluri”",
+        "background": "Bifează „Grafică de fundal” pentru a păstra culorile"
+      },
+      "dontShow": "Nu mai afișa",
+      "cancel": "Anulează",
+      "print": "Deschide fereastra de tipărire"
+    },
+    "job": {
+      "title": "Adaptează la un anunț",
+      "sources": "LinkedIn, eJobs, BestJobs, Hipo, Indeed…",
+      "placeholder": "Lipește aici textul complet al anunțului: titlu, responsabilități, cerințe",
+      "urlWarning": "Lipește textul anunțului, nu linkul: LocalATSCV nu contactează niciodată niciun site, așa că datele tale rămân la tine",
+      "empty": "Niciun cuvânt-cheie găsit: lipește un anunț mai complet",
+      "score": "Potrivire cu anunțul",
+      "summary": "{{found}} din {{total}} cuvinte-cheie prezente",
+      "found": "Cuvinte-cheie din CV-ul tău",
+      "missing": "Cuvinte-cheie lipsă",
+      "missingHint": "Fă clic pe un cuvânt-cheie ca să-l adaugi la competențe sau integrează-l într-o experiență",
+      "addToSkills": "Adaugă la competențe",
+      "added": "„{{keyword}}” a fost adăugat la competențele tale",
+      "keywordsGroup": "Cuvinte-cheie",
+      "createVersion": "Creează o versiune țintită pentru acest post",
+      "createVersionHint": "Experiențele și punctele fără legătură cu postul vor fi debifate: le poți ajusta",
+      "savedInVersion": "Anunț salvat cu versiunea „{{name}}”"
+    },
+    "weak": {
+      "hint": "„{{phrase}}” descrie o sarcină: începe cu un verb de acțiune"
+    },
+    "fonts": {
+      "title": "Tipografie",
+      "heading": "Titluri",
+      "body": "Text",
+      "default": "A șablonului",
+      "hint": "ATS-urile citesc bine toate aceste fonturi: textul rămâne text real"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Noutăți",
+    "title": "Jurnalul modificărilor",
+    "subtitle": "Toate versiunile LocalATSCV, cu noutățile și corecturile lor",
+    "current": "Versiunea curentă",
+    "frenchOnly": "Jurnalul modificărilor este redactat în franceză",
+    "error": "Jurnalul modificărilor nu a putut fi încărcat",
+    "types": {
+      "added": "Adăugat",
+      "changed": "Modificat",
+      "fixed": "Corectat",
+      "removed": "Eliminat",
+      "deprecated": "Învechit",
+      "security": "Securitate",
+      "other": "Altele"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizor",
+    "title": "CV-ul tău trece de roboți?",
+    "subtitle": "Încarcă un CV PDF făcut cu orice instrument: LocalATSCV îl citește ca un ATS și îți spune ce să corectezi",
+    "drop": "Trage CV-ul aici",
+    "dropActive": "Eliberează fișierul pentru a începe analiza",
+    "hint": "Doar PDF, maximum 15 MB",
+    "choose": "Alege un fișier",
+    "reading": "Se citește PDF-ul…",
+    "privacy": "Fișierul este analizat în browserul tău: nu este trimis niciodată nicăieri",
+    "another": "Analizează alt CV",
+    "errors": {
+      "notPdf": "Acest fișier nu este un PDF",
+      "tooLarge": "Acest fișier depășește 15 MB",
+      "encrypted": "Acest PDF este protejat prin parolă: nici un ATS nu îl poate citi",
+      "unreadable": "Acest PDF nu a putut fi citit: poate fi deteriorat"
+    },
+    "stats": "{{pages}} pagină(i) · {{words}} cuvinte",
+    "verdict": {
+      "excellent": "Excelent",
+      "good": "Bun",
+      "fair": "De îmbunătățit",
+      "poor": "Critic"
+    },
+    "verdictText": {
+      "excellent": "Roboții îți citesc CV-ul foarte bine",
+      "good": "Câteva ajustări îl vor face și mai eficient",
+      "fair": "Mai multe probleme îngreunează citirea de către ATS",
+      "poor": "Un ATS riscă să rateze esențialul"
+    },
+    "categories": {
+      "readability": "Lizibilitate pentru mașini",
+      "structure": "Structură",
+      "content": "Conținut"
+    },
+    "sectionNames": {
+      "experience": "Experiență",
+      "education": "Educație",
+      "skills": "Competențe"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Text lizibil de mașini",
+        "pass": "Tot textul CV-ului tău poate fi extras",
+        "warn": "Unele pagini nu conțin text lizibil: probabil imagini sau o scanare",
+        "fail": "Niciun text lizibil: acest CV este probabil o imagine sau o scanare, iar un ATS nu va extrage nimic. Exportă-l în PDF din procesorul de text"
+      },
+      "columns": {
+        "title": "Machetă",
+        "pass": "Citire liniară, fără coloane amestecate",
+        "warn": "Machetă pe coloane detectată: textul poate fi citit în altă ordine. Verifică mai jos „Ce citește robotul”"
+      },
+      "order": {
+        "title": "Ordinea de citire a fișierului",
+        "pass": "Textul este scris în fișier în ordinea de citire",
+        "warnHeader": "Numele și antetul tău sunt scrise în fișier după restul CV-ului: un ATS care citește fișierul în ordine s-ar putea să nu-ți găsească numele",
+        "warn": "{{percent}}% din text este scris în fișier în afara ordinii de citire: unele ATS-uri vor citi aceste pasaje în ordinea greșită",
+        "fail": "{{percent}}% din text este scris în fișier în dezordine, tipic pentru CV-urile făcute din casete de text libere (Canva, PowerPoint…): multe ATS-uri îți vor citi CV-ul amestecat. Compară cele două citiri de mai jos"
+      },
+      "unreadable": {
+        "title": "Pictograme și bare de competențe",
+        "pass": "Nicio pictogramă sau caracter ilizibil",
+        "warn": "Pictograme sau bare detectate ({{count}}): un ATS le citește drept caractere ciudate. Înlocuiește-le cu text",
+        "fail": "Pictograme sau bare detectate ({{count}}): înlocuiește-le cu text, de exemplu „Engleză: C1” în loc de buline"
+      },
+      "contact": {
+        "title": "Date de contact",
+        "pass": "Adresă de e-mail și telefon găsite",
+        "warnNoPhone": "Niciun număr de telefon găsit",
+        "warnNoEmail": "Nicio adresă de e-mail găsită",
+        "fail": "Niciun e-mail și niciun telefon găsit: scrie-le ca text, nu într-o imagine"
+      },
+      "sections": {
+        "title": "Secțiuni standard",
+        "pass": "Experiența, educația și competențele sunt bine identificate",
+        "warn": "Aceste secțiuni nu au fost recunoscute: folosește titluri standard",
+        "fail": "Nicio secțiune standard recunoscută: ATS-urile se bazează pe titluri precum „Experiență” sau „Educație”"
+      },
+      "length": {
+        "title": "Lungime",
+        "pass": "{{pages}} pagină(i), {{words}} cuvinte: lungime ideală",
+        "warn": "{{pages}} pagină(i), {{words}} cuvinte: țintește 1–2 pagini și 250–1.000 de cuvinte",
+        "fail": "{{pages}} pagină(i), {{words}} cuvinte: prea scurt sau prea lung pentru a fi evaluat bine"
+      },
+      "quantified": {
+        "title": "Rezultate cuantificate",
+        "pass": "{{percent}}% din punctele tale conțin o cifră, bravo",
+        "warn": "Doar {{percent}}% din puncte sunt cuantificate: adaugă rezultate măsurabile (procente, sume, volume)",
+        "fail": "Niciun rezultat cuantificat: recrutorii și ATS-urile apreciază realizările măsurabile"
+      },
+      "weakPhrases": {
+        "title": "Verbe de acțiune",
+        "pass": "Nicio formulare slabă la începutul punctelor",
+        "warn": "Aceste începuturi descriu o sarcină în loc de un rezultat: începe cu un verb de acțiune",
+        "fail": "Aceste începuturi descriu o sarcină în loc de un rezultat: începe cu un verb de acțiune"
+      },
+      "dates": {
+        "title": "Date",
+        "pass": "Experiențele tale sunt datate",
+        "warn": "Un singur an găsit: datează fiecare post, ATS-urile folosesc datele pentru a-ți calcula anii de experiență",
+        "fail": "Nicio dată găsită: ATS-urile le folosesc pentru a-ți calcula anii de experiență"
+      }
+    },
+    "robot": {
+      "title": "Ce citește robotul",
+      "text": "Textul reconstruit rând cu rând, așa cum fac majoritatea ATS-urilor. Dacă aici e amestecat sau incomplet, la fel va fi și pentru recrutor",
+      "empty": "Nu s-a putut extrage niciun text",
+      "position": "După poziție",
+      "file": "Ordinea din fișier",
+      "fileText": "Textul în ordinea în care este scris în fișier: așa îl citesc ATS-urile care nu reconstruiesc macheta. Ar trebui să urmeze ordinea de citire a CV-ului tău"
+    },
+    "cta": {
+      "title": "Pornește din nou cu dreptul",
+      "text": "Creează un CV compatibil ATS în editor, apoi adaptează-l la fiecare post",
+      "button": "Deschide editorul",
+      "import": "Adu acest CV în șabloanele noastre"
+    },
+    "live": {
+      "title": "Verificare ATS în timp real",
+      "issues": "{{count}} punct(e) de verificat pe acest șablon",
+      "allGood": "Nicio problemă detectată pe acest șablon",
+      "hint": "Calculat pe macheta afișată, cu același motor ca analizorul de CV"
+    },
+    "method": {
+      "title": "Cum se calculează acest scor?",
+      "intro": "Nu există un scor ATS oficial: fiecare software de recrutare (Workday, Taleo, Greenhouse, Lever…) are propriile reguli, adesea confidențiale. Acest indice verifică ce îi încurcă pe cei mai mulți, după această grilă:",
+      "disclaimer": "Aceste criterii provin din recomandările publice ale furnizorilor de ATS și din cele mai frecvente erori de citire (text în imagine, coloane, pictograme, titluri nestandard). Scorul te ajută să-ți îmbunătățești CV-ul: nu prezice selecția"
+    }
+  },
+  "import": {
+    "title": "Importă un CV",
+    "linkedinTitle": "Importă din LinkedIn",
+    "text": "Alege un CV PDF sau Word (.docx): conținutul este extras în browserul tău și sortat în secțiunile editorului. Apoi poți alege un șablon",
+    "choose": "Alege un fișier",
+    "chooseFile": "Alege un fișier",
+    "hint": "PDF sau Word (.docx), maximum 15 MB",
+    "reading": "Se importă…",
+    "privacy": "Fișierul este citit în browserul tău: nu este trimis niciodată nicăieri",
+    "close": "Închide",
+    "done": "CV importat ({{items}} elemente): verifică fiecare secțiune",
+    "errors": {
+      "tooLarge": "Acest fișier depășește 15 MB",
+      "encrypted": "Acest PDF este protejat prin parolă",
+      "unreadable": "Acest fișier nu a putut fi citit: poate fi deteriorat",
+      "empty": "Niciun text utilizabil: acest PDF este probabil o imagine sau o scanare",
+      "unsupported": "Alege un PDF, un fișier Word (.docx) sau o arhivă ZIP LinkedIn",
+      "archiveEmpty": "Această arhivă nu conține date de profil LinkedIn utilizabile"
+    },
+    "hintArchive": "PDF (calculator) sau arhivă ZIP (aplicație mobilă)",
+    "linkedin": {
+      "computer": {
+        "title": "Pe calculator: PDF-ul profilului tău",
+        "step1": "Deschide linkedin.com într-un browser pe calculator (opțiunea nu există în aplicație)",
+        "step2": "Pe profilul tău, fă clic pe „Resurse” (sau „Mai multe”), apoi pe „Salvează ca PDF”",
+        "step3": "Alege acel PDF mai jos"
+      },
+      "archive": {
+        "title": "În aplicația mobilă: arhiva datelor tale",
+        "step1": "În aplicație, atinge fotografia ta, apoi Setări și Confidențialitatea datelor",
+        "step2": "Alege „Obține o copie a datelor tale” și bifează Profil, Funcții, Educație, Competențe și Limbi",
+        "step3": "LinkedIn îți trimite un e-mail în câteva minute: descarcă arhiva ZIP",
+        "step4": "Alege acel fișier ZIP mai jos, fără să-l dezarhivezi"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Acest document este afișat în engleză. Doar versiunea în franceză are valoare juridică.",
+    "error": "Acest document nu a putut fi încărcat."
+  }
+}

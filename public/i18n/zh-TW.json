@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV 首頁",
+    "main": "主要導覽",
+    "how": "使用方式",
+    "privacy": "隱私",
+    "analyze": "分析履歷",
+    "editor": "製作我的履歷",
+    "skipToContent": "跳至主要內容"
+  },
+  "theme": {
+    "label": "主題",
+    "light": "淺色",
+    "system": "跟隨系統",
+    "dark": "深色"
+  },
+  "lang": {
+    "label": "介面語言",
+    "suggestion": "以繁體中文顯示此頁面",
+    "dismiss": "關閉",
+    "search": "搜尋語言",
+    "noResult": "找不到符合的語言"
+  },
+  "pages": {
+    "home": "符合 ATS 的履歷，100% 在本機執行",
+    "editor": "編輯器",
+    "analyze": "履歷分析器",
+    "changelog": "新功能",
+    "legalNotice": "法律聲明",
+    "terms": "使用條款",
+    "privacy": "隱私權政策"
+  },
+  "seo": {
+    "home": "免費的 ATS 友善履歷製作工具：30 款設計範本、風格一致的求職信、依職缺量身調整與 ATS 評分。開放原始碼，資料始終留在你的瀏覽器",
+    "editor": "履歷編輯器：即時預覽、主履歷與目標版本、ATS 檢查、匯出真實文字的 PDF。所有內容都留在你的瀏覽器",
+    "analyze": "免費分析 PDF 履歷：滿分 100 的 ATS 評分、需要修正的地方，以及招募系統讀到的文字。檔案絕不會離開你的瀏覽器",
+    "changelog": "LocalATSCV 各版本更新：新的履歷範本、功能與修正",
+    "legalNotice": "LocalATSCV 法律聲明：發布者、主機代管與聯絡方式",
+    "terms": "LocalATSCV 使用條款：免費且開放原始碼的履歷製作工具",
+    "privacy": "LocalATSCV 隱私權政策：不蒐集任何資料，你的履歷留在瀏覽器中"
+  },
+  "footer": {
+    "tagline": "從不碰觸你資料的 ATS 友善履歷製作工具",
+    "product": "產品",
+    "legal": "法律資訊",
+    "project": "專案",
+    "changelog": "新功能",
+    "sourceCode": "原始碼",
+    "reportIssue": "回報問題",
+    "license": "MIT 授權",
+    "versionLabel": "版本 {{version}}，查看新功能"
+  },
+  "update": {
+    "title": "有新版本可用",
+    "text": "重新整理頁面即可使用新版本",
+    "changelog": "查看新功能",
+    "reload": "重新整理",
+    "later": "稍後"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% 本機 · 免費 · 開放原始碼",
+      "titleLine1": "能通過機器篩選的履歷",
+      "titleLine2": "資料始終留在你身邊",
+      "subtitle": "LocalATSCV 協助你製作針對應徵者追蹤系統（ATS）最佳化的履歷，只要幾下點擊就能為每個職缺調整。一切都在瀏覽器中完成：不需帳號，也不傳送任何資料",
+      "ctaPrimary": "製作我的履歷",
+      "ctaSecondary": "分析現有履歷",
+      "points": {
+        "noAccount": "免註冊",
+        "offline": "可離線使用",
+        "atsPdf": "ATS 可讀的 PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "問題所在",
+      "title": "你的履歷最先由機器閱讀",
+      "text": "多數大型企業與人力仲介都用 ATS（Applicant Tracking System）篩選應徵資料。它會擷取履歷文字、存入資料庫，讓招募人員用關鍵字搜尋人選",
+      "pitfalls": {
+        "layout": {
+          "title": "複雜版面",
+          "text": "分欄、表格與文字方塊會打亂閱讀順序：你的資訊會被讀得亂七八糟"
+        },
+        "image": {
+          "title": "無法辨識的文字",
+          "text": "圖示、技能量表和部分設計工具匯出的檔案會變成亂碼，甚至完全沒有文字"
+        },
+        "keywords": {
+          "title": "缺少關鍵字",
+          "text": "如果履歷中沒有職缺說明裡的用語，你的資料就不會出現在招募人員的搜尋結果中"
+        }
+      },
+      "seen": "你看到的",
+      "read": "機器讀到的",
+      "fix": "LocalATSCV 反其道而行：單欄、真實文字與標準的區塊標題，讓機器依正確順序讀取"
+    },
+    "how": {
+      "eyebrow": "使用方式",
+      "title": "寫一次，無限次調整",
+      "text": "四個步驟，把主履歷變成為每個職缺量身打造的應徵資料",
+      "steps": {
+        "profile": {
+          "title": "填寫主履歷",
+          "text": "一次輸入你所有的經歷，或匯入 LinkedIn 個人檔案 PDF 節省時間"
+        },
+        "offer": {
+          "title": "貼上職缺說明",
+          "text": "LocalATSCV 會擷取關鍵字並計算滿分 100 的契合度，隨你輸入即時更新"
+        },
+        "compose": {
+          "title": "組合目標版本",
+          "text": "勾選相關的經歷與要點，拖放調整順序。主履歷中的內容不會被刪除"
+        },
+        "export": {
+          "title": "匯出 PDF",
+          "text": "真實文字、結構清楚的單欄 PDF，對機器與招募人員都一樣好讀"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "隱私",
+      "title": "我們的伺服器上沒有任何資料。字面上的意思",
+      "text": "沒有可被入侵的資料庫：伺服器只把應用程式傳給你。之後的一切都在你的瀏覽器中完成，離線也行",
+      "browser": {
+        "title": "你的瀏覽器",
+        "tag": "你的裝置",
+        "items": {
+          "master": "主履歷",
+          "photo": "大頭照",
+          "versions": "目標版本",
+          "settings": "偏好設定"
+        },
+        "note": "儲存在 IndexedDB，僅限此裝置"
+      },
+      "flow": {
+        "app": "應用程式（首次載入時）",
+        "data": "你的資料",
+        "never": "從不上傳"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "伺服器",
+        "text": "只提供應用程式檔案（HTML、CSS、JavaScript），僅此而已",
+        "items": {
+          "noDb": "沒有資料庫",
+          "noAccount": "沒有使用者帳號",
+          "noLogs": "沒有造訪紀錄"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "不需帳號",
+          "text": "不需註冊、電子郵件或密碼。開啟頁面就能開始"
+        },
+        "trackers": {
+          "title": "沒有追蹤器",
+          "text": "沒有統計、沒有廣告、沒有追蹤 Cookie。連字型都放在我們自己的伺服器上"
+        },
+        "csp": {
+          "title": "技術上鎖定",
+          "text": "網站的安全性政策（CSP）禁止瀏覽器連線到任何其他網域。程式碼公開，歡迎自行驗證"
+        },
+        "backup": {
+          "title": "你的備份，你的檔案",
+          "text": "把所有資料匯出成 JSON 檔，可在任何裝置上重新匯入"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "功能",
+      "title": "拿到面試所需的一切",
+      "items": {
+        "master": {
+          "title": "主履歷與目標版本",
+          "text": "一份完整履歷，應徵幾份就有幾個版本。勾選、取消勾選：內容永遠不會遺失"
+        },
+        "score": {
+          "title": "契合度評分",
+          "text": "貼上職缺說明：即時顯示已符合的關鍵字、缺少的關鍵字與滿分 100 的評分"
+        },
+        "weak": {
+          "title": "弱表達偵測",
+          "text": "「負責……」「協助……」等說法會自動標示，並提供行動動詞庫讓你替換"
+        },
+        "analyzer": {
+          "title": "現有履歷分析",
+          "text": "拖入在其他地方製作的履歷：看看機器實際讀到什麼，以及哪裡需要修正"
+        },
+        "linkedin": {
+          "title": "從 LinkedIn 匯入",
+          "text": "用 LinkedIn 個人檔案免費匯出的 PDF 預先填好主履歷"
+        },
+        "languages": {
+          "title": "5 種履歷語言",
+          "text": "法文、英文、義大利文、西班牙文與德文。英文履歷依英語系國家慣例隱藏照片與出生日期"
+        },
+        "pdf": {
+          "title": "ATS 友善的 PDF 匯出",
+          "text": "真實文字與清楚結構：機器好讀，招募人員看了舒服"
+        },
+        "offline": {
+          "title": "可安裝，可離線使用",
+          "text": "把 LocalATSCV 加到主畫面，沒有網路也能繼續工作"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "常見問題",
+      "title": "常見問題",
+      "text": "沒找到你的問題？寫信給我們：",
+      "items": {
+        "ats": {
+          "q": "什麼是 ATS？",
+          "a": "Applicant Tracking System（應徵者追蹤系統）是招募人員用來接收、篩選與搜尋應徵資料的軟體。它會把履歷轉成文字並建立索引：如果文字擷取不佳或缺少合適的關鍵字，你的應徵資料就很難被找到"
+        },
+        "storage": {
+          "q": "我的資料儲存在哪裡？",
+          "a": "只存在你的瀏覽器中，也就是所有現代瀏覽器都內建的 IndexedDB 資料庫。資料從不經過我們的伺服器，伺服器只負責提供應用程式檔案"
+        },
+        "clear": {
+          "q": "如果清除瀏覽器資料會怎樣？",
+          "a": "你的履歷會被刪除，因為它們沒有存在其他地方。請定期匯出 JSON 備份：隨時都能在任何裝置上重新匯入"
+        },
+        "score": {
+          "q": "評分能保證我的履歷通過篩選嗎？",
+          "a": "不能。每套 ATS 都有自己的規則，最後由人來決定。評分只是參考指標：它檢查履歷是否使用職缺說明的用語，以及機器能否正確讀取"
+        },
+        "photo": {
+          "q": "為什麼英文履歷的照片會消失？",
+          "a": "在英國、美國與許多英語系國家，為了減少招募歧視，並不建議在履歷放照片和出生日期。有些招募人員甚至會直接淘汰附上這些資訊的履歷"
+        },
+        "free": {
+          "q": "真的免費嗎？",
+          "a": "是的。LocalATSCV 是採用 MIT 授權的開放原始碼專案，沒有廣告也不用訂閱。因為所有工作都由你的瀏覽器完成，主機成本幾乎是零"
+        },
+        "templates": {
+          "q": "設計感強的範本也能通過 ATS 嗎？",
+          "a": "可以。每個範本都依閱讀順序輸出真實文字，並使用標準區塊標題：圖形、量表與圖示都是機器會忽略的裝飾。單欄範本仍是最保險的選擇，編輯器中的 ATS 檢查會即時測試你的版面"
+        },
+        "import": {
+          "q": "可以沿用我現有的履歷或 LinkedIn 個人檔案嗎？",
+          "a": "可以。匯入 PDF 或 Word（.docx）履歷、LinkedIn 個人檔案 PDF（電腦版）或 LinkedIn 資料封存檔（行動應用程式）：內容會在瀏覽器中讀取並整理到編輯器"
+        },
+        "offline": {
+          "q": "LocalATSCV 可以離線使用嗎？",
+          "a": "可以。它是可安裝的網頁應用程式：首次造訪後，包括 PDF 匯出在內的所有功能都能離線使用"
+        }
+      }
+    },
+    "cta": {
+      "title": "準備好通過篩選了嗎？",
+      "text": "幾分鐘就能完成主履歷。任何內容都不會離開這台裝置",
+      "button": "開始使用"
+    },
+    "demo": {
+      "role": "前端工程師",
+      "contact": "里昂 · camille.martin@example.com",
+      "experience": "工作經歷",
+      "jobTitle": "Angular 工程師",
+      "jobMeta": "範例股份有限公司 · 2022 – 至今",
+      "bullets": {
+        "migration": "將 40 個畫面遷移至 <k>Angular</k> 與 <k>TypeScript</k>，載入時間縮短 35%",
+        "testing": "<w>負責</w>端對端測試策略",
+        "delivery": "以 <k>GitLab CI</k> 為 3 個產品團隊建立持續交付"
+      },
+      "weakLabel": "弱表達",
+      "weakReplacement": "「主導」",
+      "skills": "專業技能",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · 無障礙設計",
+      "score": "職缺契合度",
+      "sent": "已傳送 0 位元組",
+      "robot": "專業技能 CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> 前端工程師 Angular <n>●●●●○</n> 工作經歷 <n>� camille.mar</n> Angular 工程師 <n>tin@example.com</n> 2022 – 至今 TypeScript <n>●●●○○</n> 範例股份有限公司 語言能力 英文 將 40 個畫面遷移至…"
+    }
+  },
+  "dialog": {
+    "cancel": "取消",
+    "delete": "刪除",
+    "create": "建立",
+    "save": "儲存",
+    "import": "匯入"
+  },
+  "editor": {
+    "list": {
+      "title": "我的履歷",
+      "subtitle": "只儲存在此瀏覽器中",
+      "new": "新增履歷",
+      "newBlank": "空白履歷",
+      "newBlankHint": "從空白頁開始",
+      "newSample": "從範例開始",
+      "newSampleHint": "一份已填好的虛構履歷，方便你熟悉編輯器",
+      "import": "還原備份",
+      "exportAll": "全部匯出",
+      "emptyTitle": "還沒有履歷",
+      "emptyText": "建立你的主履歷：所有經歷集中一處，隨時為每個職缺調整",
+      "open": "開啟",
+      "actions": "動作",
+      "duplicate": "複製",
+      "export": "匯出（JSON）",
+      "delete": "刪除",
+      "updated": "編輯於 {{date}}",
+      "versions": "版本：{{count}}",
+      "backupHint": "你的履歷只存在此瀏覽器中。請定期匯出 JSON 備份：即使清除了瀏覽器資料，也能靠它還原所有內容",
+      "defaultName": "我的履歷",
+      "copySuffix": "（副本）",
+      "deleteTitle": "要刪除「{{name}}」嗎？",
+      "deleteText": "這份履歷及其所有版本將從此瀏覽器中永久刪除",
+      "exportDone": "已下載備份",
+      "importConfirmTitle": "要匯入此備份嗎？",
+      "importConfirmText": "此備份中的履歷：{{count}} 份。此瀏覽器中已存在的同一份履歷將被取代",
+      "importDone": "已匯入備份：{{count}} 份履歷",
+      "importError": {
+        "invalidJson": "此檔案不是有效的 JSON",
+        "notABackup": "此檔案不是 LocalATSCV 備份",
+        "newerVersion": "此備份來自較新版本的 LocalATSCV：請先更新應用程式"
+      },
+      "importPdf": "匯入履歷（PDF 或 Word）",
+      "importPdfHint": "把現有履歷轉進我們的範本",
+      "importLinkedin": "從 LinkedIn 匯入",
+      "importLinkedinHint": "透過個人檔案 PDF"
+    },
+    "toolbar": {
+      "back": "我的履歷",
+      "name": "履歷名稱",
+      "cvLanguage": "履歷語言",
+      "accent": "強調色",
+      "customAccent": "自訂顏色",
+      "saved": "已儲存",
+      "saving": "儲存中…",
+      "saveError": "儲存失敗",
+      "edit": "編輯",
+      "preview": "預覽",
+      "exportPdf": "匯出 PDF",
+      "undo": "復原（Ctrl+Z）",
+      "redo": "重做（Ctrl+Y）"
+    },
+    "modes": {
+      "label": "要編輯的文件",
+      "cv": "履歷",
+      "letter": "求職信"
+    },
+    "letter": {
+      "title": "求職信",
+      "versionOwn": "此版本有自己的求職信",
+      "versionShared": "此版本使用主履歷的求職信：在這裡編輯會為此版本建立副本",
+      "useMaster": "使用主履歷的求職信",
+      "recipient": "收件人",
+      "recipientPlaceholder": "範例股份有限公司\n人力資源部 招募組\n台北市信義區信義路五段 7 號",
+      "place": "地點",
+      "date": "日期",
+      "dateHint": "留空：使用列印當天的日期",
+      "subject": "主旨",
+      "subjectPlaceholder": "應徵○○職位",
+      "greeting": "稱謂",
+      "body": "內文",
+      "bodyPlaceholder": "三段簡短的文字：公司吸引你的地方、你能帶來什麼、你建議的下一步",
+      "bodyHint": "空一行分隔兩個段落 · 用 **粗體** 標出關鍵字",
+      "outline": "插入架構",
+      "closing": "結語",
+      "fileName": "求職信"
+    },
+    "fit": {
+      "pages": "{{count}} 頁",
+      "onePage": "可容納在一頁內",
+      "hintMany": "多數招募人員希望履歷只有一頁",
+      "hintOne": "適合多數應徵的理想格式",
+      "stillTooLong": "壓縮後仍然太長：請精簡部分要點，或在某個版本中隱藏一些項目",
+      "fit": "壓縮成一頁",
+      "settings": "版面設定",
+      "spacing": "間距",
+      "scale": "文字大小",
+      "settingsHint": "文字始終是真實文字：只有版面會改變",
+      "reset": "範本預設版面",
+      "grayscale": "以黑白檢視",
+      "grayscaleHint": "模擬黑白列印效果：匯出的 PDF 仍保留顏色"
+    },
+    "versions": {
+      "label": "目前顯示的版本",
+      "master": "主履歷",
+      "masterHint": "全部內容，不做篩選",
+      "new": "新版本",
+      "newText": "目標版本以完整的主履歷為起點：接著取消勾選這次應徵用不到的內容",
+      "nameLabel": "版本名稱",
+      "namePlaceholder": "例如：前端工程師 – X 公司",
+      "rename": "重新命名版本",
+      "delete": "刪除版本",
+      "deleteTitle": "要刪除版本「{{name}}」嗎？",
+      "deleteText": "只會刪除這組選擇：所有內容仍保留在主履歷中",
+      "banner": "版本「{{name}}」：取消勾選不應顯示的內容。主履歷中的內容不會被刪除",
+      "include": "包含在此版本"
+    },
+    "enRule": "英文履歷：依英語系國家慣例隱藏照片、出生日期與國籍",
+    "profile": {
+      "title": "個人資料",
+      "photo": "照片",
+      "photoAdd": "新增照片",
+      "photoChange": "更換",
+      "photoRemove": "移除",
+      "photoHint": "縮小後只儲存在此裝置上",
+      "photoError": "無法讀取這張圖片",
+      "hiddenInEnglish": "英文中隱藏",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "headline": "應徵職稱",
+      "headlinePlaceholder": "例如：前端工程師",
+      "email": "電子郵件",
+      "phone": "電話",
+      "location": "所在城市",
+      "birthDate": "出生日期",
+      "nationality": "國籍",
+      "summary": "自我介紹",
+      "summaryPlaceholder": "用兩三句話概述你的背景與求職方向",
+      "links": "連結",
+      "linkLabel": "連結名稱",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "連結網址",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "新增連結",
+      "removeLink": "移除連結",
+      "drivingLicense": "駕照",
+      "drivingLicensePlaceholder": "例如：普通小型車駕照，有自用車",
+      "qrToggle": "將此連結顯示為 QR 碼",
+      "linksHint": "標誌（LinkedIn、GitHub、YouTube 等）會自動加上。按下 QR 按鈕後，多數設計範本會以 QR 碼顯示此連結"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "工作經歷",
+        "education": "學歷",
+        "projects": "專案經歷",
+        "certifications": "證照",
+        "custom": "自訂區塊",
+        "skills": "專業技能",
+        "languages": "語言能力",
+        "interests": "興趣"
+      },
+      "add": "新增區塊",
+      "titleLabel": "區塊標題",
+      "empty": "空白區塊：不會顯示在履歷上",
+      "addItem": {
+        "experience": "新增工作經歷",
+        "education": "新增學歷",
+        "projects": "新增專案",
+        "certifications": "新增證照",
+        "custom": "新增項目",
+        "skills": "新增技能",
+        "languages": "新增語言",
+        "interests": "新增興趣"
+      },
+      "deleteTitle": "要刪除區塊「{{name}}」嗎？",
+      "deleteText": "其內容將從主履歷及所有版本中移除"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "職稱",
+          "subtitle": "公司"
+        },
+        "education": {
+          "title": "學位／科系",
+          "subtitle": "學校"
+        },
+        "projects": {
+          "title": "專案名稱",
+          "subtitle": "角色或技術"
+        },
+        "certifications": {
+          "title": "證照名稱",
+          "subtitle": "核發單位"
+        },
+        "custom": {
+          "title": "標題",
+          "subtitle": "副標題"
+        }
+      },
+      "location": "地點",
+      "url": "連結",
+      "start": "開始",
+      "end": "結束",
+      "date": "取得日期",
+      "current": "至今",
+      "untitled": "未命名",
+      "bullets": "工作成果",
+      "bulletPlaceholder": "以行動動詞開頭，並用數字量化成果",
+      "addBullet": "新增要點",
+      "bulletHint": "Enter：新增要點",
+      "boldHint": "**字詞** 可設為粗體"
+    },
+    "items": {
+      "skillLabel": "類別",
+      "skillLabelPlaceholder": "例如：前端",
+      "skillKeywords": "技能",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "語言",
+      "languageLevel": "程度",
+      "languageLevelPlaceholder": "例如：C1、fluent",
+      "interest": "興趣",
+      "interestPlaceholder": "例如：攀岩",
+      "levelDetected": "已辨識程度：附量表的範本會顯示它",
+      "levelUnknown": "無法辨識程度，不顯示量表：請使用 A1 至 C2 或清單中的建議",
+      "levelEmpty": "填入程度即可顯示量表",
+      "levelHint": "使用歐洲語言共同參考架構（A1 至 C2）或「fluent」「native」等字詞：部分範本也會以量表顯示，右側圓點即為預覽"
+    },
+    "actions": {
+      "menu": "動作",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "duplicate": "複製",
+      "delete": "刪除",
+      "drag": "拖曳以調整順序"
+    },
+    "month": "月",
+    "year": "年",
+    "noMonth": "月",
+    "preview": {
+      "page": "第 {{n}} 頁"
+    },
+    "notFound": {
+      "title": "找不到履歷",
+      "text": "這份履歷不存在，或已從此瀏覽器刪除"
+    },
+    "templates": {
+      "button": "範本",
+      "title": "選擇範本",
+      "subtitle": "所有範本都能以完整的範例履歷或你自己的履歷預覽。強調色會套用到所有範本",
+      "close": "關閉",
+      "filter": "篩選範本",
+      "filters": {
+        "all": "全部",
+        "graphic": "設計型",
+        "sober": "簡約型"
+      },
+      "ats": "ATS 相容性",
+      "levels": {
+        "excellent": "極佳",
+        "good": "良好",
+        "fair": "普通"
+      },
+      "atsHint": "每個範本都輸出真實文字。多數現代 ATS 都能順利讀取雙欄版面，但部分較舊的工具會把各欄混在一起：不確定時，請選擇單欄範本",
+      "names": {
+        "classic": {
+          "name": "經典",
+          "description": "簡潔有效：單欄、加底線的標題、毫無干擾"
+        },
+        "modern": {
+          "name": "現代",
+          "description": "彩色橫幅、醒目的標題、標籤式技能"
+        },
+        "elegant": {
+          "name": "優雅",
+          "description": "置中頁首搭配襯線字體，氣質精緻"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "彩色邊框、等寬字型細節、程式碼風格的技能"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "瑞士風格：大字姓名、標題置於頁邊、大量留白"
+        },
+        "sidebar": {
+          "name": "雙欄",
+          "description": "附照片、聯絡資訊與技能的彩色側欄"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "附照片的橫幅、圖示、時間軸與語言量表，同時能被 ATS 完整讀取"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "粉彩有機色塊、大圓形照片、時間軸與 QR 碼，雙欄版面"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "單欄版的 Signature 風格：有設計感，又能被 ATS 完整讀取"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "深色斜向橫幅、彩色光暈、經歷卡片與實心技能標籤"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "照片周圍的三原色幾何構圖、幾何字體、每個標題前的圖形"
+        },
+        "editorial": {
+          "name": "雜誌",
+          "description": "雜誌版面：大字襯線姓名、斜體導言、編號區塊與錯位人像"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "新粗獷主義：粗黑邊框、硬朗陰影、鮮明色塊與黑色標籤"
+        },
+        "prism": {
+          "name": "稜鏡",
+          "description": "以強調色呈現的網格漸層、玻璃質感聯絡卡片、漸層邊框卡片"
+        },
+        "swiss": {
+          "name": "瑞士",
+          "description": "瑞士海報風格：超大姓名、彩色色帶、粗黑線條與編號區塊"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "象牙色紙張、細雙線框、菱形裝飾與 Garamond 字體"
+        },
+        "nocturne": {
+          "name": "夜曲",
+          "description": "深色模式：夜空背景、霓虹點綴與發光時間軸，適合線上投遞"
+        },
+        "wave": {
+          "name": "波浪",
+          "description": "以波浪收尾的彩色橫幅、圓形照片與波浪標題，柔和親切"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "圓角便當格：照片、姓名與 QR 碼排成格狀，每個區塊一格"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "工程藍圖：方格紙、角標、尺寸線與等寬標籤"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80 年代幾何彩紙、鮮豔色彩與鋸齒底線標題"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "大幅分割橫幅：色塊上的文字與雙色調照片"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "只用字體裝飾：部分鏤空的超大姓名與超大標題"
+        },
+        "sorbet": {
+          "name": "雪酪",
+          "description": "每個區塊一種粉彩色、膠囊形標題與多彩光暈"
+        },
+        "executive": {
+          "name": "主管",
+          "description": "海軍藍橫幅、金色線條與襯線姓名，適合管理職"
+        },
+        "zen": {
+          "name": "禪",
+          "description": "日式極簡：和紙、強調色的圓相與一筆筆觸"
+        },
+        "ribbon": {
+          "name": "緞帶",
+          "description": "燕尾緞帶上的區塊標題，置中頁首"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "六角形照片、角落的蜂巢圖樣與標題前的六角形"
+        },
+        "origami": {
+          "name": "摺紙",
+          "description": "層疊剪紙頁首，區塊如一張張紙"
+        },
+        "thread": {
+          "name": "絲線",
+          "description": "一條連續的線串起頁首與每個區塊，每段經歷一個圓點"
+        }
+      },
+      "preview": {
+        "label": "縮圖內容",
+        "sample": "完整範例",
+        "mine": "我的履歷"
+      }
+    },
+    "print": {
+      "title": "匯出 PDF",
+      "text": "瀏覽器的列印視窗即將開啟。想要完美的 PDF：",
+      "tips": {
+        "destination": "目的地：「另存為 PDF」",
+        "margins": "邊界：「無」",
+        "headers": "取消勾選「頁首及頁尾」",
+        "background": "勾選「背景圖形」以保留顏色"
+      },
+      "dontShow": "不再顯示",
+      "cancel": "取消",
+      "print": "開啟列印視窗"
+    },
+    "job": {
+      "title": "依職缺調整",
+      "sources": "104人力銀行、1111人力銀行、Yourator、Cake、LinkedIn…",
+      "placeholder": "在此貼上職缺說明全文：職稱、工作內容、條件要求",
+      "urlWarning": "請貼上職缺的文字而非連結：LocalATSCV 從不連線到任何網站，你的資料始終留在你身邊",
+      "empty": "找不到關鍵字：請貼上更完整的職缺說明",
+      "score": "職缺契合度",
+      "summary": "包含 {{total}} 個關鍵字中的 {{found}} 個",
+      "found": "履歷中已有的關鍵字",
+      "missing": "缺少的關鍵字",
+      "missingHint": "點選關鍵字即可加入技能，或把它寫進某段經歷",
+      "addToSkills": "加入技能",
+      "added": "已將「{{keyword}}」加入你的技能",
+      "keywordsGroup": "關鍵字",
+      "createVersion": "為此職缺建立目標版本",
+      "createVersionHint": "與職缺無關的經歷和要點會被取消勾選：你可以再調整",
+      "savedInVersion": "職缺說明已隨版本「{{name}}」儲存"
+    },
+    "weak": {
+      "hint": "「{{phrase}}」描述的是職責：請以行動動詞開頭"
+    },
+    "fonts": {
+      "title": "字型",
+      "heading": "標題",
+      "body": "內文",
+      "default": "範本預設",
+      "hint": "ATS 都能順利讀取這些字型：文字始終是真實文字"
+    }
+  },
+  "changelog": {
+    "eyebrow": "新功能",
+    "title": "更新紀錄",
+    "subtitle": "LocalATSCV 的每個版本及其新功能與修正",
+    "current": "目前版本",
+    "frenchOnly": "更新紀錄以法文撰寫",
+    "error": "無法載入更新紀錄",
+    "types": {
+      "added": "新增",
+      "changed": "變更",
+      "fixed": "修正",
+      "removed": "移除",
+      "deprecated": "即將淘汰",
+      "security": "安全性",
+      "other": "其他"
+    }
+  },
+  "analyze": {
+    "eyebrow": "分析器",
+    "title": "你的履歷能通過機器篩選嗎？",
+    "subtitle": "拖入用任何工具製作的 PDF 履歷：LocalATSCV 會像 ATS 一樣讀取，並告訴你哪裡需要修正",
+    "drop": "將履歷拖曳到這裡",
+    "dropActive": "放開檔案即可開始分析",
+    "hint": "僅限 PDF，最大 15 MB",
+    "choose": "選擇檔案",
+    "reading": "正在讀取 PDF…",
+    "privacy": "檔案在你的瀏覽器中分析：絕不會傳送到任何地方",
+    "another": "分析另一份履歷",
+    "errors": {
+      "notPdf": "此檔案不是 PDF",
+      "tooLarge": "此檔案超過 15 MB",
+      "encrypted": "此 PDF 受密碼保護：ATS 同樣無法讀取",
+      "unreadable": "無法讀取此 PDF：檔案可能已損毀"
+    },
+    "stats": "{{pages}} 頁 · {{words}} 字",
+    "verdict": {
+      "excellent": "優秀",
+      "good": "良好",
+      "fair": "有待改善",
+      "poor": "嚴重問題"
+    },
+    "verdictText": {
+      "excellent": "機器能很順利地讀取你的履歷",
+      "good": "稍作調整會更有效果",
+      "fair": "幾個問題妨礙了 ATS 讀取",
+      "poor": "ATS 很可能會漏掉重點"
+    },
+    "categories": {
+      "readability": "機器可讀性",
+      "structure": "結構",
+      "content": "內容"
+    },
+    "sectionNames": {
+      "experience": "工作經歷",
+      "education": "學歷",
+      "skills": "專業技能"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "機器可讀的文字",
+        "pass": "履歷中的所有文字都能被擷取",
+        "warn": "部分頁面沒有可讀文字：可能是圖片或掃描檔",
+        "fail": "沒有可讀文字：這份履歷可能是圖片或掃描檔，ATS 無法從中擷取任何內容。請從文書處理軟體匯出成 PDF"
+      },
+      "columns": {
+        "title": "版面",
+        "pass": "線性閱讀，各欄不會混在一起",
+        "warn": "偵測到分欄版面：文字可能以錯誤順序被讀取。請查看下方「機器讀到的」"
+      },
+      "order": {
+        "title": "檔案中的閱讀順序",
+        "pass": "文字依閱讀順序寫入檔案",
+        "warnHeader": "你的姓名與頁首在檔案中寫在履歷其餘內容之後：依序讀取檔案的 ATS 可能找不到你的姓名",
+        "warn": "{{percent}}% 的文字未依閱讀順序寫入檔案：部分 ATS 會以錯誤順序讀取這些段落",
+        "fail": "{{percent}}% 的文字在檔案中順序錯亂，這在用自由文字方塊製作的履歷（Canva、PowerPoint 等）中很常見：許多 ATS 會把你的履歷讀得亂七八糟。請比較下方兩種讀取結果"
+      },
+      "unreadable": {
+        "title": "圖示與技能量表",
+        "pass": "沒有圖示或無法辨識的字元",
+        "warn": "偵測到圖示或量表（{{count}} 個）：ATS 會把它們讀成亂碼。請改用文字",
+        "fail": "偵測到圖示或量表（{{count}} 個）：請改用文字，例如以「英文：C1」取代圓點"
+      },
+      "contact": {
+        "title": "聯絡資訊",
+        "pass": "已找到電子郵件與電話號碼",
+        "warnNoPhone": "找不到電話號碼",
+        "warnNoEmail": "找不到電子郵件地址",
+        "fail": "找不到電子郵件也找不到電話：請以文字填寫，不要放在圖片裡"
+      },
+      "sections": {
+        "title": "標準區塊",
+        "pass": "工作經歷、學歷與技能都已清楚辨識",
+        "warn": "這些區塊無法辨識：請使用標準標題",
+        "fail": "沒有辨識出任何標準區塊：ATS 仰賴「工作經歷」「學歷」等標題"
+      },
+      "length": {
+        "title": "篇幅",
+        "pass": "{{pages}} 頁，{{words}} 字：篇幅理想",
+        "warn": "{{pages}} 頁，{{words}} 字：建議控制在 1 至 2 頁、250 至 1,000 字",
+        "fail": "{{pages}} 頁，{{words}} 字：太短或太長，難以有效評估"
+      },
+      "quantified": {
+        "title": "量化成果",
+        "pass": "{{percent}}% 的要點包含數字，做得好",
+        "warn": "只有 {{percent}}% 的要點有量化數據：請補充可衡量的成果（百分比、金額、規模）",
+        "fail": "沒有量化成果：招募人員與 ATS 都重視可衡量的成果"
+      },
+      "weakPhrases": {
+        "title": "行動動詞",
+        "pass": "要點開頭沒有弱表達",
+        "warn": "這些開頭描述的是職責而非成果：請以行動動詞開頭",
+        "fail": "這些開頭描述的是職責而非成果：請以行動動詞開頭"
+      },
+      "dates": {
+        "title": "日期",
+        "pass": "你的經歷都有標註日期",
+        "warn": "只找到一個年份：請為每段經歷標註日期，ATS 會據此計算你的年資",
+        "fail": "找不到日期：ATS 會據此計算你的年資"
+      }
+    },
+    "robot": {
+      "title": "機器讀到的",
+      "text": "依多數 ATS 的方式逐行重建的文字。如果這裡混亂或缺漏，招募人員看到的也一樣",
+      "empty": "無法擷取任何文字",
+      "position": "依位置",
+      "file": "依檔案順序",
+      "fileText": "依檔案中寫入順序排列的文字：不重建版面的 ATS 就是這樣讀取的。它應該與履歷的閱讀順序一致"
+    },
+    "cta": {
+      "title": "從正確的基礎重新開始",
+      "text": "在編輯器中製作 ATS 友善的履歷，再依每個職缺調整",
+      "button": "開啟編輯器",
+      "import": "把這份履歷轉進我們的範本"
+    },
+    "live": {
+      "title": "即時 ATS 檢查",
+      "issues": "此範本有 {{count}} 處需要檢查",
+      "allGood": "此範本沒有發現問題",
+      "hint": "根據目前顯示的版面計算，使用與履歷分析器相同的引擎"
+    },
+    "method": {
+      "title": "這個評分是怎麼計算的？",
+      "intro": "並沒有官方的 ATS 評分：每套招募軟體（Workday、Taleo、Greenhouse、Lever 等）都有自己的規則，而且多半不公開。本指標依下列標準，檢查讓多數系統出錯的問題：",
+      "disclaimer": "這些標準來自 ATS 廠商的公開建議，以及最常見的讀取錯誤（圖片中的文字、分欄、圖示、非標準標題）。評分能幫你改善履歷，但無法預測篩選結果"
+    }
+  },
+  "import": {
+    "title": "匯入履歷",
+    "linkedinTitle": "從 LinkedIn 匯入",
+    "text": "選擇 PDF 或 Word（.docx）履歷：內容會在瀏覽器中擷取，並整理到編輯器的各個區塊。之後就能選擇範本",
+    "choose": "選擇檔案",
+    "chooseFile": "選擇檔案",
+    "hint": "PDF 或 Word（.docx），最大 15 MB",
+    "reading": "正在匯入…",
+    "privacy": "檔案在你的瀏覽器中讀取：絕不會傳送到任何地方",
+    "close": "關閉",
+    "done": "已匯入履歷（{{items}} 個項目）：請逐一檢查各區塊",
+    "errors": {
+      "tooLarge": "此檔案超過 15 MB",
+      "encrypted": "此 PDF 受密碼保護",
+      "unreadable": "無法讀取此檔案：檔案可能已損毀",
+      "empty": "沒有可用的文字：此 PDF 可能是圖片或掃描檔",
+      "unsupported": "請選擇 PDF、Word 檔（.docx）或 LinkedIn ZIP 封存檔",
+      "archiveEmpty": "此封存檔中沒有可用的 LinkedIn 個人檔案資料"
+    },
+    "hintArchive": "PDF（電腦）或 ZIP 封存檔（行動應用程式）",
+    "linkedin": {
+      "computer": {
+        "title": "電腦版：個人檔案 PDF",
+        "step1": "在電腦瀏覽器中開啟 linkedin.com（應用程式中沒有此選項）",
+        "step2": "在你的個人檔案頁點選「資源」（或「更多」），再點選「存成 PDF」",
+        "step3": "在下方選擇該 PDF"
+      },
+      "archive": {
+        "title": "行動應用程式：你的資料封存檔",
+        "step1": "在應用程式中點選你的大頭照，再進入「設定」與「資料隱私」",
+        "step2": "選擇「取得你的資料副本」，勾選個人檔案、職位、學歷、技能與語言",
+        "step3": "LinkedIn 會在幾分鐘內寄信給你：下載 ZIP 封存檔",
+        "step4": "在下方選擇該 ZIP 檔，不必解壓縮"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "本文件以英文顯示。僅法文版本具有法律效力。",
+    "error": "無法載入此文件。"
+  }
+}

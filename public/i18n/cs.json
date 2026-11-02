@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Domovská stránka LocalATSCV",
+    "main": "Hlavní navigace",
+    "how": "Jak to funguje",
+    "privacy": "Soukromí",
+    "analyze": "Analyzovat životopis",
+    "editor": "Vytvořit můj životopis",
+    "skipToContent": "Přejít na obsah"
+  },
+  "theme": {
+    "label": "Motiv",
+    "light": "Světlý",
+    "system": "Systémový",
+    "dark": "Tmavý"
+  },
+  "lang": {
+    "label": "Jazyk rozhraní",
+    "suggestion": "Zobrazit tuto stránku česky",
+    "dismiss": "Zavřít",
+    "search": "Hledat jazyk",
+    "noResult": "Žádný jazyk nenalezen"
+  },
+  "pages": {
+    "home": "Životopisy vhodné pro ATS, 100% lokálně",
+    "editor": "Editor",
+    "analyze": "Analyzátor životopisu",
+    "changelog": "Novinky",
+    "legalNotice": "Právní informace",
+    "terms": "Podmínky použití",
+    "privacy": "Zásady ochrany soukromí"
+  },
+  "seo": {
+    "home": "Bezplatný tvůrce životopisů vhodných pro ATS: 30 grafických šablon, ladící motivační dopis, přizpůsobení každému inzerátu a skóre ATS. Open source, vaše data zůstávají v prohlížeči",
+    "editor": "Editor životopisu s živým náhledem, Master životopisem a cílenými verzemi, kontrolou ATS a exportem do PDF se skutečným textem. Vše zůstává ve vašem prohlížeči",
+    "analyze": "Zdarma analyzujte životopis v PDF: skóre ATS ze 100, body k opravě a text tak, jak ho čte náborový systém. Soubor nikdy neopustí váš prohlížeč",
+    "changelog": "Novinky v LocalATSCV verzi po verzi: nové šablony životopisů, funkce a opravy",
+    "legalNotice": "Právní informace LocalATSCV: vydavatel, hosting a kontakt",
+    "terms": "Podmínky použití LocalATSCV, bezplatného tvůrce životopisů s otevřeným kódem",
+    "privacy": "Zásady ochrany soukromí LocalATSCV: žádná data se neshromažďují, vaše životopisy zůstávají v prohlížeči"
+  },
+  "footer": {
+    "tagline": "Tvůrce životopisů vhodných pro ATS, který nikdy nevidí vaše data",
+    "product": "Produkt",
+    "legal": "Právní informace",
+    "project": "Projekt",
+    "changelog": "Novinky",
+    "sourceCode": "Zdrojový kód",
+    "reportIssue": "Nahlásit problém",
+    "license": "Licence MIT",
+    "versionLabel": "Verze {{version}}, zobrazit novinky"
+  },
+  "update": {
+    "title": "Je k dispozici nová verze",
+    "text": "Načtěte stránku znovu a začněte ji používat",
+    "changelog": "Zobrazit novinky",
+    "reload": "Načíst znovu",
+    "later": "Později"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% lokálně · Zdarma · Open source",
+      "titleLine1": "Životopis, který projde přes roboty",
+      "titleLine2": "Data, která zůstanou u vás",
+      "subtitle": "LocalATSCV vám pomůže vytvořit životopis optimalizovaný pro náborové systémy (ATS) a několika kliknutími ho přizpůsobit každé pozici. Vše probíhá ve vašem prohlížeči: bez účtu a bez odesílání jakýchkoli dat",
+      "ctaPrimary": "Vytvořit můj životopis",
+      "ctaSecondary": "Analyzovat existující životopis",
+      "points": {
+        "noAccount": "Bez registrace",
+        "offline": "Funguje offline",
+        "atsPdf": "PDF čitelné pro ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problém",
+      "title": "Váš životopis nejdřív čte stroj",
+      "text": "Většina velkých firem a personálních agentur třídí žádosti pomocí ATS (Applicant Tracking System). Ten vytáhne text z vašeho životopisu, uloží ho do databáze a umožní náborářům hledat kandidáty podle klíčových slov",
+      "pitfalls": {
+        "layout": {
+          "title": "Složité rozvržení",
+          "text": "Sloupce, tabulky a textová pole pomíchají pořadí čtení: vaše údaje vyjdou na přeskáčku"
+        },
+        "image": {
+          "title": "Nečitelný text",
+          "text": "Ikony, ukazatele dovedností a některé exporty z grafických nástrojů se změní ve shluky podivných znaků, nebo zmizí úplně"
+        },
+        "keywords": {
+          "title": "Chybějící klíčová slova",
+          "text": "Když se slova z inzerátu ve vašem životopisu neobjeví, váš profil se ve vyhledávání náborářů nezobrazí"
+        }
+      },
+      "seen": "Co vidíte vy",
+      "read": "Co čte robot",
+      "fix": "LocalATSCV dělá opak: jeden sloupec, skutečný text a standardní nadpisy sekcí, které roboti čtou ve správném pořadí"
+    },
+    "how": {
+      "eyebrow": "Jak to funguje",
+      "title": "Napište jednou, přizpůsobujte donekonečna",
+      "text": "Čtyři kroky, jak z Master životopisu udělat žádost na míru každé pozici",
+      "steps": {
+        "profile": {
+          "title": "Vyplňte svůj Master životopis",
+          "text": "Zadejte všechny své zkušenosti jednou provždy, nebo pro úsporu času importujte PDF svého profilu na LinkedInu"
+        },
+        "offer": {
+          "title": "Vložte inzerát",
+          "text": "LocalATSCV z něj vytáhne klíčová slova a spočítá skóre shody ze 100, které se aktualizuje během psaní"
+        },
+        "compose": {
+          "title": "Sestavte cílenou verzi",
+          "text": "Zaškrtněte relevantní zkušenosti a body a seřaďte je přetažením. Z vašeho Masteru se nic nemaže"
+        },
+        "export": {
+          "title": "Exportujte do PDF",
+          "text": "PDF se skutečným textem, strukturované a v jednom sloupci, stejně čitelné pro roboty jako pro náboráře"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Soukromí",
+      "title": "Nula dat na našich serverech. Doslova",
+      "text": "Neexistuje databáze, kterou by šlo hacknout: náš server vám pošle jen aplikaci. Potom se vše děje ve vašem prohlížeči, i offline",
+      "browser": {
+        "title": "Váš prohlížeč",
+        "tag": "Vaše zařízení",
+        "items": {
+          "master": "Master životopis",
+          "photo": "Profilová fotka",
+          "versions": "Cílené verze",
+          "settings": "Předvolby"
+        },
+        "note": "Uloženo v IndexedDB, pouze v tomto zařízení"
+      },
+      "flow": {
+        "app": "Aplikace, při prvním načtení",
+        "data": "Vaše data",
+        "never": "nikdy"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Poskytuje soubory aplikace (HTML, CSS, JavaScript), nic víc",
+        "items": {
+          "noDb": "Žádná databáze",
+          "noAccount": "Žádné uživatelské účty",
+          "noLogs": "Žádné záznamy o návštěvách"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Bez účtu",
+          "text": "Bez registrace, e-mailu a hesla. Otevřete stránku a začněte"
+        },
+        "trackers": {
+          "title": "Bez sledování",
+          "text": "Bez statistik, reklam a sledovacích cookies. I písma jsou hostována na našem vlastním serveru"
+        },
+        "csp": {
+          "title": "Technicky uzamčeno",
+          "text": "Bezpečnostní zásady webu (CSP) zakazují prohlížeči kontaktovat jakoukoli jinou doménu. Kód je otevřený: ověřte si to sami"
+        },
+        "backup": {
+          "title": "Vaše zálohy, vaše soubory",
+          "text": "Exportujte všechna svá data do souboru JSON a importujte je zpět na jakémkoli zařízení"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkce",
+      "title": "Vše, co potřebujete, abyste se dostali k pohovoru",
+      "items": {
+        "master": {
+          "title": "Master životopis a cílené verze",
+          "text": "Jeden úplný životopis a tolik variant, kolik máte žádostí. Zaškrtněte, odškrtněte: nic se neztratí"
+        },
+        "score": {
+          "title": "Skóre shody",
+          "text": "Vložte inzerát: nalezená a chybějící klíčová slova a skóre ze 100 v reálném čase"
+        },
+        "weak": {
+          "title": "Odhalování slabých formulací",
+          "text": "„Zodpovědný za“, „pomáhal jsem s“… se označí automaticky a k jejich nahrazení je k dispozici zásobník akčních sloves"
+        },
+        "analyzer": {
+          "title": "Analyzátor existujících životopisů",
+          "text": "Přetáhněte životopis vytvořený jinde: uvidíte, co robot skutečně čte a co opravit"
+        },
+        "linkedin": {
+          "title": "Import z LinkedInu",
+          "text": "Předvyplňte svůj Master životopis z bezplatného PDF, které můžete exportovat ze svého profilu na LinkedInu"
+        },
+        "languages": {
+          "title": "5 jazyků životopisu",
+          "text": "Francouzština, angličtina, italština, španělština a němčina. V angličtině se fotka a datum narození skryjí podle zvyklostí anglicky mluvících zemí"
+        },
+        "pdf": {
+          "title": "Export do PDF vhodný pro ATS",
+          "text": "Skutečný text a jasná struktura: čitelné pro roboty, příjemné pro náboráře"
+        },
+        "offline": {
+          "title": "Instalovatelné a offline",
+          "text": "Přidejte LocalATSCV na plochu a pracujte dál bez připojení"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Časté dotazy",
+      "title": "Časté dotazy",
+      "text": "Nenašli jste svou otázku? Napište nám:",
+      "items": {
+        "ats": {
+          "q": "Co je ATS?",
+          "a": "Applicant Tracking System je software, kterým náboráři přijímají, třídí a prohledávají žádosti. Převede váš životopis na text a zaindexuje ho: pokud je text špatně vytažený nebo chybí správná klíčová slova, vaši žádost bude těžké najít"
+        },
+        "storage": {
+          "q": "Kde jsou uložena moje data?",
+          "a": "Pouze ve vašem prohlížeči, v IndexedDB, databázi, kterou má každý moderní prohlížeč. Nikdy neprocházejí našimi servery, které umějí jen poskytovat soubory aplikace"
+        },
+        "clear": {
+          "q": "Co se stane, když vymažu data prohlížeče?",
+          "a": "Vaše životopisy se smažou, protože nikde jinde neexistují. Pravidelně exportujte zálohu JSON: kdykoli ji můžete importovat zpět, na jakémkoli zařízení"
+        },
+        "score": {
+          "q": "Zaručuje skóre, že můj životopis projde výběrem?",
+          "a": "Ne. Každý ATS má svá pravidla a konečné rozhodnutí dělá člověk. Skóre je ukazatel: ověřuje, že váš životopis používá slovník inzerátu a že ho stroj dokáže správně přečíst"
+        },
+        "photo": {
+          "q": "Proč v angličtině zmizí fotka?",
+          "a": "Ve Spojeném království, v USA a v mnoha anglicky mluvících zemích se fotka a datum narození nedoporučují, aby se omezila diskriminace při náboru. Někteří náboráři dokonce životopisy, které je obsahují, vyřazují"
+        },
+        "free": {
+          "q": "Je to opravdu zdarma?",
+          "a": "Ano. LocalATSCV je open source projekt pod licencí MIT, bez reklam a předplatného. Jeho provoz nestojí skoro nic, protože veškerou práci odvede váš prohlížeč"
+        },
+        "templates": {
+          "q": "Projdou grafické šablony přes ATS?",
+          "a": "Ano. Každá šablona tiskne skutečný text v pořadí čtení se standardními nadpisy sekcí: tvary, ukazatele a ikony jsou kresby, které roboti ignorují. Jednosloupcové šablony zůstávají nejbezpečnější a kontrola ATS v editoru testuje vaše rozvržení živě"
+        },
+        "import": {
+          "q": "Mohu znovu použít svůj současný životopis nebo profil na LinkedInu?",
+          "a": "Ano. Importujte životopis v PDF nebo Wordu (.docx), PDF svého profilu na LinkedInu (na počítači) nebo archiv dat z LinkedInu (z mobilní aplikace): obsah se přečte ve vašem prohlížeči a roztřídí v editoru"
+        },
+        "offline": {
+          "q": "Funguje LocalATSCV offline?",
+          "a": "Ano. Je to instalovatelná webová aplikace: po první návštěvě vše funguje bez připojení, včetně exportu do PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Připraveni projít filtrem?",
+      "text": "Vytvořte si Master životopis během pár minut. Nic neopustí toto zařízení",
+      "button": "Začít"
+    },
+    "demo": {
+      "role": "Front-end vývojářka",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Pracovní zkušenosti",
+      "jobTitle": "Vývojářka Angular",
+      "jobMeta": "Příklad s.r.o. · 2022 – dosud",
+      "bullets": {
+        "migration": "Migrace 40 obrazovek na <k>Angular</k> a <k>TypeScript</k>, doba načítání kratší o 35 %",
+        "testing": "<w>Zodpovědná za</w> strategii end-to-end testů",
+        "delivery": "Průběžné nasazování s <k>GitLab CI</k> pro 3 produktové týmy"
+      },
+      "weakLabel": "Slabá formulace",
+      "weakReplacement": "„Vedla jsem“",
+      "skills": "Dovednosti",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Přístupnost",
+      "score": "Shoda s inzerátem",
+      "sent": "Odesláno 0 bajtů",
+      "robot": "DOVEDNOSTI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end vývojářka Angular <n>●●●●○</n> PRACOVNÍ ZKUŠENOSTI <n>� camille.mar</n> Vývojářka Angular <n>tin@example.com</n> 2022 – dosud TypeScript <n>●●●○○</n> Příklad s.r.o. JAZYKY Angličtina Migrace 40 obrazovek na…"
+    }
+  },
+  "dialog": {
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "create": "Vytvořit",
+    "save": "Uložit",
+    "import": "Importovat"
+  },
+  "editor": {
+    "list": {
+      "title": "Moje životopisy",
+      "subtitle": "Uloženo pouze v tomto prohlížeči",
+      "new": "Nový životopis",
+      "newBlank": "Prázdný životopis",
+      "newBlankHint": "Začít s prázdnou stránkou",
+      "newSample": "Začít s ukázkou",
+      "newSampleHint": "Vyplněný smyšlený životopis k vyzkoušení editoru",
+      "import": "Obnovit zálohu",
+      "exportAll": "Exportovat vše",
+      "emptyTitle": "Zatím žádný životopis",
+      "emptyText": "Vytvořte si Master životopis: všechny zkušenosti na jednom místě, připravené k přizpůsobení každé pozici",
+      "open": "Otevřít",
+      "actions": "Akce",
+      "duplicate": "Duplikovat",
+      "export": "Exportovat (JSON)",
+      "delete": "Smazat",
+      "updated": "Upraveno {{date}}",
+      "versions": "Verze: {{count}}",
+      "backupHint": "Vaše životopisy existují jen v tomto prohlížeči. Pravidelně exportujte zálohu JSON: pokud vymažete data prohlížeče, umožní vám vše obnovit",
+      "defaultName": "Můj životopis",
+      "copySuffix": "(kopie)",
+      "deleteTitle": "Smazat „{{name}}“?",
+      "deleteText": "Životopis a všechny jeho verze budou z tohoto prohlížeče trvale smazány",
+      "exportDone": "Záloha stažena",
+      "importConfirmTitle": "Importovat tuto zálohu?",
+      "importConfirmText": "Životopisy v této záloze: {{count}}. Životopisy, které už v tomto prohlížeči existují, budou nahrazeny",
+      "importDone": "Záloha importována, životopisy: {{count}}",
+      "importError": {
+        "invalidJson": "Tento soubor není platný JSON",
+        "notABackup": "Tento soubor není záloha LocalATSCV",
+        "newerVersion": "Tato záloha pochází z novější verze LocalATSCV: nejdřív aplikaci aktualizujte"
+      },
+      "importPdf": "Importovat životopis (PDF nebo Word)",
+      "importPdfHint": "Převeďte existující životopis do našich šablon",
+      "importLinkedin": "Importovat z LinkedInu",
+      "importLinkedinHint": "Z PDF vašeho profilu"
+    },
+    "toolbar": {
+      "back": "Moje životopisy",
+      "name": "Název životopisu",
+      "cvLanguage": "Jazyk životopisu",
+      "accent": "Barva zvýraznění",
+      "customAccent": "Vlastní barva",
+      "saved": "Uloženo",
+      "saving": "Ukládání…",
+      "saveError": "Uložení se nezdařilo",
+      "edit": "Upravit",
+      "preview": "Náhled",
+      "exportPdf": "Exportovat do PDF",
+      "undo": "Zpět (Ctrl+Z)",
+      "redo": "Znovu (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Upravovaný dokument",
+      "cv": "Životopis",
+      "letter": "Motivační dopis"
+    },
+    "letter": {
+      "title": "Motivační dopis",
+      "versionOwn": "Tato verze má vlastní dopis",
+      "versionShared": "Tato verze používá dopis z Masteru: úpravou zde vytvoříte kopii pro tuto verzi",
+      "useMaster": "Použít dopis z Masteru",
+      "recipient": "Adresát",
+      "recipientPlaceholder": "Příklad s.r.o.\nPersonální oddělení\nVáclavské náměstí 10, 110 00 Praha 1",
+      "place": "Místo",
+      "date": "Datum",
+      "dateHint": "Prázdné: datum dne tisku",
+      "subject": "Předmět",
+      "subjectPlaceholder": "Žádost o pozici…",
+      "greeting": "Oslovení",
+      "body": "Dopis",
+      "bodyPlaceholder": "Tři krátké odstavce: co vás na firmě láká, co přinášíte, jaký další krok navrhujete",
+      "bodyHint": "Prázdný řádek odděluje dva odstavce · **tučně** pro klíčové slovo",
+      "outline": "Vložit osnovu",
+      "closing": "Závěrečný pozdrav",
+      "fileName": "Motivační dopis"
+    },
+    "fit": {
+      "pages": "Stran: {{count}}",
+      "onePage": "Vejde se na jednu stranu",
+      "hintMany": "Většina náborářů očekává životopis na jednu stranu",
+      "hintOne": "Ideální formát pro většinu žádostí",
+      "stillTooLong": "Stále příliš dlouhé, i po zhuštění: zkraťte několik bodů nebo skryjte položky v některé verzi",
+      "fit": "Vměstnat na jednu stranu",
+      "settings": "Nastavení rozvržení",
+      "spacing": "Mezery",
+      "scale": "Velikost textu",
+      "settingsHint": "Text zůstává skutečným textem: mění se jen rozvržení",
+      "reset": "Rozvržení šablony",
+      "grayscale": "Zobrazit černobíle",
+      "grayscaleHint": "Simuluje černobílý tisk: exportované PDF si zachová barvy"
+    },
+    "versions": {
+      "label": "Zobrazená verze",
+      "master": "Master životopis",
+      "masterHint": "Veškerý obsah, bez filtru",
+      "new": "Nová verze",
+      "newText": "Cílená verze vychází z celého vašeho Master životopisu: pak odškrtněte, co tato žádost nepotřebuje",
+      "nameLabel": "Název verze",
+      "namePlaceholder": "Např. Front-end vývojář – Firma X",
+      "rename": "Přejmenovat verzi",
+      "delete": "Smazat verzi",
+      "deleteTitle": "Smazat verzi „{{name}}“?",
+      "deleteText": "Smaže se jen výběr: veškerý obsah zůstane ve vašem Master životopisu",
+      "banner": "Verze „{{name}}“: odškrtněte, co se nemá zobrazit. Z vašeho Master životopisu se nic nemaže",
+      "include": "Zahrnout do této verze"
+    },
+    "enRule": "Anglický životopis: fotka, datum narození a státní příslušnost se skryjí podle zvyklostí anglicky mluvících zemí",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fotka",
+      "photoAdd": "Přidat fotku",
+      "photoChange": "Změnit",
+      "photoRemove": "Odebrat",
+      "photoHint": "Zmenšená a uložená pouze v tomto zařízení",
+      "photoError": "Tento obrázek se nepodařilo načíst",
+      "hiddenInEnglish": "V angličtině skryto",
+      "firstName": "Jméno",
+      "lastName": "Příjmení",
+      "headline": "Titulek životopisu",
+      "headlinePlaceholder": "Např. Front-end vývojářka",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "location": "Město",
+      "birthDate": "Datum narození",
+      "nationality": "Státní příslušnost",
+      "summary": "Shrnutí",
+      "summaryPlaceholder": "Dvě nebo tři věty, které shrnou váš profil a to, co hledáte",
+      "links": "Odkazy",
+      "linkLabel": "Název odkazu",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adresa odkazu",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Přidat odkaz",
+      "removeLink": "Odebrat odkaz",
+      "drivingLicense": "Řidičský průkaz",
+      "drivingLicensePlaceholder": "Např. Řidičský průkaz sk. B, vlastní auto",
+      "qrToggle": "Zobrazit tento odkaz jako QR kód",
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) se přidá automaticky. Tlačítko QR zobrazí odkaz jako QR kód ve většině grafických šablon"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Pracovní zkušenosti",
+        "education": "Vzdělání",
+        "projects": "Projekty",
+        "certifications": "Certifikace",
+        "custom": "Volná sekce",
+        "skills": "Dovednosti",
+        "languages": "Jazyky",
+        "interests": "Zájmy"
+      },
+      "add": "Přidat sekci",
+      "titleLabel": "Název sekce",
+      "empty": "Prázdná sekce: v životopisu se nezobrazí",
+      "addItem": {
+        "experience": "Přidat zkušenost",
+        "education": "Přidat vzdělání",
+        "projects": "Přidat projekt",
+        "certifications": "Přidat certifikaci",
+        "custom": "Přidat položku",
+        "skills": "Přidat dovednosti",
+        "languages": "Přidat jazyk",
+        "interests": "Přidat zájem"
+      },
+      "deleteTitle": "Smazat sekci „{{name}}“?",
+      "deleteText": "Její obsah bude odstraněn z Master životopisu i ze všech jeho verzí"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Pozice",
+          "subtitle": "Firma"
+        },
+        "education": {
+          "title": "Titul nebo obor",
+          "subtitle": "Škola nebo univerzita"
+        },
+        "projects": {
+          "title": "Název projektu",
+          "subtitle": "Role nebo technologie"
+        },
+        "certifications": {
+          "title": "Certifikace",
+          "subtitle": "Vydavatel"
+        },
+        "custom": {
+          "title": "Název",
+          "subtitle": "Podnázev"
+        }
+      },
+      "location": "Místo",
+      "url": "Odkaz",
+      "start": "Začátek",
+      "end": "Konec",
+      "date": "Datum získání",
+      "current": "Probíhá",
+      "untitled": "Bez názvu",
+      "bullets": "Úspěchy",
+      "bulletPlaceholder": "Začněte akčním slovesem a vyjádřete výsledek čísly",
+      "addBullet": "Přidat bod",
+      "bulletHint": "Enter: nový bod",
+      "boldHint": "**slovo** pro tučné písmo"
+    },
+    "items": {
+      "skillLabel": "Kategorie",
+      "skillLabelPlaceholder": "Např. Front-end",
+      "skillKeywords": "Dovednosti",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Jazyk",
+      "languageLevel": "Úroveň",
+      "languageLevelPlaceholder": "Např. C1, fluent",
+      "interest": "Zájem",
+      "interestPlaceholder": "Např. Lezení",
+      "levelDetected": "Úroveň rozpoznána: šablony s ukazatelem ji zobrazí",
+      "levelUnknown": "Úroveň nerozpoznána, bez ukazatele: použijte A1 až C2 nebo návrh ze seznamu",
+      "levelEmpty": "Zadejte úroveň, aby se zobrazil ukazatel",
+      "levelHint": "Použijte evropskou úroveň (A1 až C2) nebo slovo jako „fluent“ či „native“: některé šablony ji zobrazí i jako ukazatel, jehož náhled ukazují tečky vpravo"
+    },
+    "actions": {
+      "menu": "Akce",
+      "moveUp": "Posunout nahoru",
+      "moveDown": "Posunout dolů",
+      "duplicate": "Duplikovat",
+      "delete": "Smazat",
+      "drag": "Přetažením změníte pořadí"
+    },
+    "month": "Měsíc",
+    "year": "Rok",
+    "noMonth": "Měsíc",
+    "preview": {
+      "page": "Strana {{n}}"
+    },
+    "notFound": {
+      "title": "Životopis nenalezen",
+      "text": "Tento životopis neexistuje nebo byl z tohoto prohlížeče smazán"
+    },
+    "templates": {
+      "button": "Šablona",
+      "title": "Vyberte šablonu",
+      "subtitle": "Všechny šablony s úplným ukázkovým životopisem, nebo s vaším. Barva zvýraznění platí pro všechny šablony",
+      "close": "Zavřít",
+      "filter": "Filtrovat šablony",
+      "filters": {
+        "all": "Všechny",
+        "graphic": "Grafické",
+        "sober": "Střídmé"
+      },
+      "ats": "Kompatibilita s ATS",
+      "levels": {
+        "excellent": "výborná",
+        "good": "dobrá",
+        "fair": "přijatelná"
+      },
+      "atsHint": "Každá šablona tiskne skutečný text. Dvousloupcová rozvržení čte většina moderních ATS dobře, ale některé starší nástroje sloupce pomíchají: v případě pochybností zvolte jednosloupcovou šablonu",
+      "names": {
+        "classic": {
+          "name": "Klasická",
+          "description": "Čistá a účinná: jeden sloupec, podtržené nadpisy, nic nerozptyluje"
+        },
+        "modern": {
+          "name": "Moderní",
+          "description": "Barevný pruh, výrazné nadpisy a dovednosti jako štítky"
+        },
+        "elegant": {
+          "name": "Elegantní",
+          "description": "Vycentrovaná hlavička a patková typografie pro vytříbený vzhled"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Barevný okraj, detaily neproporcionálním písmem a dovednosti ve stylu kódu"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Švýcarský styl: velké jméno, nadpisy na okraji, hodně volného prostoru"
+        },
+        "sidebar": {
+          "name": "Sloupce",
+          "description": "Barevný boční panel s fotkou, kontakty a dovednostmi"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Pruh s fotkou, ikony, časová osa a ukazatele jazyků, a přitom plně čitelná pro ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organické pastelové tvary, velká kulatá fotka, časová osa a QR kód ve dvou sloupcích"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Vzhled Signature v jednom sloupci: grafická a plně čitelná pro ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Tmavý šikmý pruh, barevné záře, karty zkušeností a plné štítky dovedností"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrická kompozice v základních barvách kolem fotky, geometrické písmo a tvary před každým nadpisem"
+        },
+        "editorial": {
+          "name": "Magazín",
+          "description": "Časopisecké rozvržení: velké patkové jméno, perex kurzívou, číslované sekce a posunutý portrét"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalismus: silné černé obrysy, ostré stíny, výrazné barevné bloky a černé štítky"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Síťový přechod ve vašich barvách zvýraznění, kontaktní karta s efektem skla a karty s přechodovým okrajem"
+        },
+        "swiss": {
+          "name": "Švýcarská",
+          "description": "Styl švýcarského plakátu: obří jméno, barevný pás, silné černé linky a číslované sekce"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Papír barvy slonové kosti, jemný dvojitý rámeček, kosočtvercové ornamenty a typografie Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturno",
+          "description": "Tmavý režim: noční pozadí, neonové akcenty a zářící časová osa, ideální pro digitální žádosti"
+        },
+        "wave": {
+          "name": "Vlna",
+          "description": "Barevný pruh zakončený vlnami, kulatá fotka a vlnité nadpisy, jemná a přátelská"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Zaoblené bento dlaždice: fotka, jméno a QR kód v mřížce, jedna dlaždice na sekci"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Technický výkres: čtverečkovaný papír, rohové značky, kótovací čára a neproporcionální štítky"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrické konfety z 80. let, výrazné barvy a nadpisy podtržené klikatou čarou"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Velký rozdělený pruh: text na barevném bloku a dvoutónová fotka"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografie jako jediná ozdoba: obří, částečně obrysové jméno a velmi velké nadpisy"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Každá sekce má vlastní pastelovou barvu, nadpisy ve tvaru pilulek a vícebarevná záře"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Námořnicky modrý pruh, zlatá linka a patkové jméno pro vedoucí pozice"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japonský minimalismus: papír washi, kruh ensō ve vaší barvě zvýraznění a tah štětcem"
+        },
+        "ribbon": {
+          "name": "Stuha",
+          "description": "Nadpisy sekcí na stuhách s vlaštovčím ocasem, vycentrovaná hlavička"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Šestiúhelníková fotka, plástev v rohu a šestiúhelníky před nadpisy"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Hlavička z vrstev vystřihovaného papíru, sekce jako listy papíru"
+        },
+        "thread": {
+          "name": "Nit",
+          "description": "Souvislá nit spojuje hlavičku a každou sekci, s tečkou u každé pozice"
+        }
+      },
+      "preview": {
+        "label": "Obsah miniatur",
+        "sample": "Úplná ukázka",
+        "mine": "Můj životopis"
+      }
+    },
+    "print": {
+      "title": "Exportovat do PDF",
+      "text": "Za chvíli se otevře okno tisku vašeho prohlížeče. Pro dokonalé PDF:",
+      "tips": {
+        "destination": "Cíl: „Uložit jako PDF“",
+        "margins": "Okraje: „Žádné“",
+        "headers": "Zrušte zaškrtnutí „Záhlaví a zápatí“",
+        "background": "Zaškrtněte „Grafika na pozadí“, aby se zachovaly barvy"
+      },
+      "dontShow": "Příště nezobrazovat",
+      "cancel": "Zrušit",
+      "print": "Otevřít okno tisku"
+    },
+    "job": {
+      "title": "Přizpůsobit inzerátu",
+      "sources": "LinkedIn, Jobs.cz, Prace.cz, StartupJobs, Indeed…",
+      "placeholder": "Sem vložte celý text inzerátu: název pozice, náplň práce, požadavky",
+      "urlWarning": "Vložte text inzerátu, ne odkaz: LocalATSCV nikdy nekontaktuje žádný web, takže vaše data zůstávají u vás",
+      "empty": "Nenalezena žádná klíčová slova: vložte úplnější inzerát",
+      "score": "Shoda s inzerátem",
+      "summary": "Nalezeno {{found}} z {{total}} klíčových slov",
+      "found": "Klíčová slova ve vašem životopisu",
+      "missing": "Chybějící klíčová slova",
+      "missingHint": "Kliknutím na klíčové slovo ho přidáte do dovedností, nebo ho zapracujte do některé zkušenosti",
+      "addToSkills": "Přidat do dovedností",
+      "added": "„{{keyword}}“ přidáno do vašich dovedností",
+      "keywordsGroup": "Klíčová slova",
+      "createVersion": "Vytvořit cílenou verzi pro tuto pozici",
+      "createVersionHint": "Zkušenosti a body, které s pozicí nesouvisí, se odškrtnou: můžete je upravit",
+      "savedInVersion": "Inzerát uložen s verzí „{{name}}“"
+    },
+    "weak": {
+      "hint": "„{{phrase}}“ popisuje povinnost: začněte akčním slovesem"
+    },
+    "fonts": {
+      "title": "Typografie",
+      "heading": "Nadpisy",
+      "body": "Text",
+      "default": "Podle šablony",
+      "hint": "ATS čtou všechna tato písma dobře: text zůstává skutečným textem"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Novinky",
+    "title": "Seznam změn",
+    "subtitle": "Všechny verze LocalATSCV s novinkami a opravami",
+    "current": "Aktuální verze",
+    "frenchOnly": "Seznam změn je napsán francouzsky",
+    "error": "Seznam změn se nepodařilo načíst",
+    "types": {
+      "added": "Přidáno",
+      "changed": "Změněno",
+      "fixed": "Opraveno",
+      "removed": "Odstraněno",
+      "deprecated": "Zastaralé",
+      "security": "Zabezpečení",
+      "other": "Ostatní"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyzátor",
+    "title": "Projde váš životopis přes roboty?",
+    "subtitle": "Přetáhněte životopis v PDF vytvořený jakýmkoli nástrojem: LocalATSCV ho přečte jako ATS a řekne vám, co opravit",
+    "drop": "Přetáhněte sem svůj životopis",
+    "dropActive": "Pusťte soubor a analýza začne",
+    "hint": "Pouze PDF, max. 15 MB",
+    "choose": "Vybrat soubor",
+    "reading": "Čtení PDF…",
+    "privacy": "Soubor se analyzuje ve vašem prohlížeči: nikdy se nikam neodesílá",
+    "another": "Analyzovat jiný životopis",
+    "errors": {
+      "notPdf": "Tento soubor není PDF",
+      "tooLarge": "Tento soubor je větší než 15 MB",
+      "encrypted": "Toto PDF je chráněno heslem: ATS ho také nepřečte",
+      "unreadable": "Toto PDF se nepodařilo přečíst: může být poškozené"
+    },
+    "stats": "Stran: {{pages}} · slov: {{words}}",
+    "verdict": {
+      "excellent": "Výborné",
+      "good": "Dobré",
+      "fair": "Ke zlepšení",
+      "poor": "Kritické"
+    },
+    "verdictText": {
+      "excellent": "Roboti váš životopis čtou velmi dobře",
+      "good": "Pár úprav ho udělá ještě účinnějším",
+      "fair": "Několik problémů ztěžuje čtení pomocí ATS",
+      "poor": "ATS pravděpodobně přehlédne to podstatné"
+    },
+    "categories": {
+      "readability": "Strojová čitelnost",
+      "structure": "Struktura",
+      "content": "Obsah"
+    },
+    "sectionNames": {
+      "experience": "Pracovní zkušenosti",
+      "education": "Vzdělání",
+      "skills": "Dovednosti"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Strojově čitelný text",
+        "pass": "Veškerý text vašeho životopisu lze vytáhnout",
+        "warn": "Některé strany neobsahují čitelný text: pravděpodobně obrázky nebo sken",
+        "fail": "Žádný čitelný text: tento životopis je pravděpodobně obrázek nebo sken a ATS z něj nic nedostane. Exportujte ho do PDF z textového editoru"
+      },
+      "columns": {
+        "title": "Rozvržení",
+        "pass": "Lineární pořadí čtení, sloupce se nemíchají",
+        "warn": "Zjištěno rozvržení do sloupců: text může být přečten ve špatném pořadí. Zkontrolujte níže „Co čte robot“"
+      },
+      "order": {
+        "title": "Pořadí čtení v souboru",
+        "pass": "Text je v souboru zapsán v pořadí čtení",
+        "warnHeader": "Vaše jméno a hlavička jsou v souboru zapsány až za zbytkem životopisu: ATS, který čte soubor popořadě, nemusí vaše jméno najít",
+        "warn": "{{percent}} % textu je v souboru zapsáno mimo pořadí čtení: některé ATS tyto pasáže přečtou ve špatném pořadí",
+        "fail": "{{percent}} % textu je v souboru zapsáno na přeskáčku, což je typické pro životopisy z volných textových polí (Canva, PowerPoint…): mnoho ATS přečte váš životopis pomíchaný. Porovnejte obě čtení níže"
+      },
+      "unreadable": {
+        "title": "Ikony a ukazatele dovedností",
+        "pass": "Žádné ikony ani nečitelné znaky",
+        "warn": "Zjištěny ikony nebo ukazatele ({{count}}): ATS je čte jako shluky podivných znaků. Nahraďte je textem",
+        "fail": "Zjištěny ikony nebo ukazatele ({{count}}): nahraďte je textem, například „Angličtina: C1“ místo teček"
+      },
+      "contact": {
+        "title": "Kontaktní údaje",
+        "pass": "Nalezena e-mailová adresa a telefonní číslo",
+        "warnNoPhone": "Nenalezeno žádné telefonní číslo",
+        "warnNoEmail": "Nenalezena žádná e-mailová adresa",
+        "fail": "Nenalezen e-mail ani telefon: napište je jako text, ne do obrázku"
+      },
+      "sections": {
+        "title": "Standardní sekce",
+        "pass": "Zkušenosti, vzdělání a dovednosti jsou jasně rozpoznané",
+        "warn": "Tyto sekce nebyly rozpoznány: použijte standardní nadpisy",
+        "fail": "Nebyla rozpoznána žádná standardní sekce: ATS se řídí nadpisy jako „Pracovní zkušenosti“ nebo „Vzdělání“"
+      },
+      "length": {
+        "title": "Délka",
+        "pass": "Stran: {{pages}}, slov: {{words}}: ideální délka",
+        "warn": "Stran: {{pages}}, slov: {{words}}: mířte na 1 až 2 strany a 250 až 1 000 slov",
+        "fail": "Stran: {{pages}}, slov: {{words}}: příliš krátké nebo dlouhé na dobré posouzení"
+      },
+      "quantified": {
+        "title": "Vyčíslené výsledky",
+        "pass": "{{percent}} % vašich bodů obsahuje číslo, výborně",
+        "warn": "Jen {{percent}} % bodů je vyčísleno: přidejte měřitelné výsledky (procenta, částky, objemy)",
+        "fail": "Žádné vyčíslené výsledky: náboráři i ATS oceňují měřitelné úspěchy"
+      },
+      "weakPhrases": {
+        "title": "Akční slovesa",
+        "pass": "Na začátku bodů nejsou žádné slabé formulace",
+        "warn": "Tyto začátky popisují povinnost místo výsledku: začněte akčním slovesem",
+        "fail": "Tyto začátky popisují povinnost místo výsledku: začněte akčním slovesem"
+      },
+      "dates": {
+        "title": "Data",
+        "pass": "Vaše zkušenosti mají data",
+        "warn": "Nalezen jen jeden rok: uveďte data u každé pozice, ATS z nich počítají vaše roky praxe",
+        "fail": "Nenalezena žádná data: ATS z nich počítají vaše roky praxe"
+      }
+    },
+    "robot": {
+      "title": "Co čte robot",
+      "text": "Text znovu složený řádek po řádku, jak to dělá většina ATS. Pokud je tady pomíchaný nebo neúplný, je takový i pro náboráře",
+      "empty": "Nepodařilo se vytáhnout žádný text",
+      "position": "Podle polohy",
+      "file": "Pořadí v souboru",
+      "fileText": "Text v pořadí, v jakém je zapsán v souboru: takto ho čtou ATS, které rozvržení nerekonstruují. Měl by odpovídat pořadí čtení vašeho životopisu"
+    },
+    "cta": {
+      "title": "Začněte znovu na pevných základech",
+      "text": "Vytvořte v editoru životopis vhodný pro ATS a pak ho přizpůsobte každé pozici",
+      "button": "Otevřít editor",
+      "import": "Převést tento životopis do našich šablon"
+    },
+    "live": {
+      "title": "Kontrola ATS v reálném čase",
+      "issues": "Body ke kontrole v této šabloně: {{count}}",
+      "allGood": "V této šabloně nebyl zjištěn žádný problém",
+      "hint": "Vypočteno na zobrazeném rozvržení stejným jádrem jako analyzátor životopisu"
+    },
+    "method": {
+      "title": "Jak se toto skóre počítá?",
+      "intro": "Oficiální skóre ATS neexistuje: každý náborový software (Workday, Taleo, Greenhouse, Lever…) má vlastní, často důvěrná pravidla. Tento index kontroluje, na čem většina z nich klopýtá, podle této stupnice:",
+      "disclaimer": "Kritéria vycházejí z veřejných doporučení dodavatelů ATS a z nejčastějších chyb čtení (text v obrázku, sloupce, ikony, nestandardní nadpisy). Skóre vám pomůže životopis vylepšit: nepředpovídá výběr"
+    }
+  },
+  "import": {
+    "title": "Importovat životopis",
+    "linkedinTitle": "Importovat z LinkedInu",
+    "text": "Vyberte životopis v PDF nebo Wordu (.docx): obsah se vytáhne ve vašem prohlížeči a roztřídí do sekcí editoru. Pak si můžete vybrat šablonu",
+    "choose": "Vybrat soubor",
+    "chooseFile": "Vybrat soubor",
+    "hint": "PDF nebo Word (.docx), max. 15 MB",
+    "reading": "Importování…",
+    "privacy": "Soubor se čte ve vašem prohlížeči: nikdy se nikam neodesílá",
+    "close": "Zavřít",
+    "done": "Životopis importován (položky: {{items}}): zkontrolujte každou sekci",
+    "errors": {
+      "tooLarge": "Tento soubor je větší než 15 MB",
+      "encrypted": "Toto PDF je chráněno heslem",
+      "unreadable": "Tento soubor se nepodařilo přečíst: může být poškozený",
+      "empty": "Žádný použitelný text: toto PDF je pravděpodobně obrázek nebo sken",
+      "unsupported": "Vyberte PDF, soubor Word (.docx) nebo archiv ZIP z LinkedInu",
+      "archiveEmpty": "Tento archiv neobsahuje použitelné údaje profilu z LinkedInu"
+    },
+    "hintArchive": "PDF (počítač) nebo archiv ZIP (mobilní aplikace)",
+    "linkedin": {
+      "computer": {
+        "title": "Na počítači: PDF vašeho profilu",
+        "step1": "Otevřete linkedin.com v prohlížeči na počítači (v aplikaci tato možnost není)",
+        "step2": "Na svém profilu klikněte na „Zdroje“ (nebo „Více“) a pak na „Uložit jako PDF“",
+        "step3": "Vyberte toto PDF níže"
+      },
+      "archive": {
+        "title": "V mobilní aplikaci: archiv vašich dat",
+        "step1": "V aplikaci klepněte na svou fotku, pak na Nastavení a Ochrana osobních údajů",
+        "step2": "Zvolte „Získat kopii svých dat“ a zaškrtněte Profil, Pozice, Vzdělání, Dovednosti a Jazyky",
+        "step3": "LinkedIn vám během několika minut pošle e-mail: stáhněte archiv ZIP",
+        "step4": "Vyberte tento soubor ZIP níže, bez rozbalování"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Tento dokument je zobrazen v angličtině. Právně závazná je pouze francouzská verze.",
+    "error": "Tento dokument se nepodařilo načíst."
+  }
+}

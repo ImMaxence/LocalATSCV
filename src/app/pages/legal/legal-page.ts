@@ -58,7 +58,7 @@ import { Icon } from '../../shared/icon/icon';
               }
               @case ('ul') {
                 <ul
-                  class="mt-4 list-disc space-y-1.5 pl-5 leading-relaxed text-muted marker:text-accent"
+                  class="mt-4 list-disc space-y-1.5 ps-5 leading-relaxed text-muted marker:text-accent"
                 >
                   @for (item of listItems(block); track $index) {
                     <li>

@@ -4,23 +4,24 @@ import { RouterStateSnapshot, TitleStrategy } from '@angular/router';
 import { TranslocoService } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
 import { FAQ_ITEMS } from '../../pages/landing/faq';
-import { UI_LANGUAGES } from './language.service';
+import {
+  LANGUAGE_INFO,
+  UI_LANGUAGES,
+  UiLanguage,
+  indexedLanguages,
+  isUiLanguage,
+  localizedPath,
+  publicPage,
+} from './languages';
 
 export const SITE_URL = 'https://localatscv.mbonnici.fr';
-
-const OG_LOCALES: Record<string, string> = {
-  fr: 'fr_FR',
-  en: 'en_US',
-  it: 'it_IT',
-  es: 'es_ES',
-  de: 'de_DE',
-};
 
 /**
  * Titre et balises SEO de chaque page. Le `title` des routes est une clé de traduction
  * (ex. `pages.editor`) ; la description associée est `seo.<page>`. Tout est retraduit quand la
  * langue change, et écrit dans le HTML des pages pré-générées au build (moteurs de recherche,
- * aperçus de liens, robots des IA).
+ * aperçus de liens, robots des IA). Chaque page publique indexée annonce ses versions dans les
+ * autres langues (hreflang).
  */
 @Injectable({ providedIn: 'root' })
 export class TranslatedTitleStrategy extends TitleStrategy {
@@ -34,8 +35,12 @@ export class TranslatedTitleStrategy extends TitleStrategy {
     const key = this.buildTitle(snapshot) ?? 'pages.home';
     const page = key.replace(/^pages\./, '');
     const path = snapshot.url.split(/[?#]/)[0];
+    const publicPath = publicPage(path);
+    const languages = publicPath ? indexedLanguages(publicPath) : [];
     this.subscription?.unsubscribe();
     this.subscription = this.transloco.selectTranslation().subscribe(() => {
+      const active = this.transloco.getActiveLang();
+      const lang: UiLanguage = isUiLanguage(active) ? active : 'fr';
       const title = `LocalATSCV · ${this.transloco.translate(key)}`;
       const description = this.transloco.translate(`seo.${page}`);
       const url = `${SITE_URL}${path === '/' ? '/' : path}`;
@@ -44,18 +49,18 @@ export class TranslatedTitleStrategy extends TitleStrategy {
       this.meta.updateTag({ property: 'og:title', content: title });
       this.meta.updateTag({ property: 'og:description', content: description });
       this.meta.updateTag({ property: 'og:url', content: url });
-      this.meta.updateTag({
-        property: 'og:locale',
-        content: OG_LOCALES[this.transloco.getActiveLang()] ?? OG_LOCALES['fr'],
-      });
+      this.meta.updateTag({ property: 'og:locale', content: LANGUAGE_INFO[lang].ogLocale });
       this.meta.updateTag({ name: 'twitter:title', content: title });
       this.meta.updateTag({ name: 'twitter:description', content: description });
-      // Les pages de l'éditeur ne contiennent que des données locales : rien à indexer.
+      // Les pages de l'éditeur ne contiennent que des données locales : rien à indexer. Une page
+      // sans contenu propre dans cette langue (journal en français…) ne l'est pas non plus.
+      const indexed = languages.includes(lang);
       this.meta.updateTag({
         name: 'robots',
-        content: page === 'editor' ? 'noindex, follow' : 'index, follow',
+        content: indexed ? 'index, follow' : 'noindex, follow',
       });
       this.setCanonical(url);
+      this.setAlternates(indexed ? publicPath : null, languages);
       this.setStructuredData(page === 'home' ? this.homeStructuredData(url, description) : null);
     });
   }
@@ -68,6 +73,28 @@ export class TranslatedTitleStrategy extends TitleStrategy {
       this.document.head.appendChild(link);
     }
     link.href = url;
+  }
+
+  /**
+   * Versions de la page dans les autres langues. x-default, proposé aux langues sans version,
+   * désigne l'anglais quand il existe.
+   */
+  private setAlternates(page: string | null, languages: readonly UiLanguage[]): void {
+    const head = this.document.head;
+    head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
+    if (!page || languages.length < 2) return;
+    const fallback: UiLanguage = languages.includes('en') ? 'en' : languages[0];
+    const entries: [string, UiLanguage][] = [
+      ...languages.map((lang): [string, UiLanguage] => [LANGUAGE_INFO[lang].hreflang ?? lang, lang]),
+      ['x-default', fallback],
+    ];
+    for (const [hreflang, lang] of entries) {
+      const link = this.document.createElement('link');
+      link.rel = 'alternate';
+      link.hreflang = hreflang;
+      link.href = `${SITE_URL}${localizedPath(page, lang)}`;
+      head.appendChild(link);
+    }
   }
 
   /** Données structurées (JSON-LD) : un bloc de données, jamais exécuté par le navigateur. */

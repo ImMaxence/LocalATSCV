@@ -24,7 +24,7 @@ import { LanguageService } from '../../core/i18n/language.service';
       <legend class="field-label">{{ label() }}</legend>
       <div class="flex gap-1.5">
         <select
-          class="field-input min-w-0 flex-1 pr-1"
+          class="field-input min-w-0 flex-1 pe-1"
           [attr.aria-label]="label() + ' · ' + t('editor.month')"
           (change)="setMonth($event)"
         >

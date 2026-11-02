@@ -50,7 +50,7 @@ import { IncludeToggle, ItemMenu } from './editor-controls';
         <app-include-toggle [itemId]="entry().id" />
         <button
           type="button"
-          class="flex min-w-0 flex-1 items-center gap-2 rounded-lg px-1.5 py-1 text-left hover:bg-surface-2"
+          class="flex min-w-0 flex-1 items-center gap-2 rounded-lg px-1.5 py-1 text-start hover:bg-surface-2"
           [attr.aria-expanded]="expanded()"
           (click)="expanded.set(!expanded())"
         >

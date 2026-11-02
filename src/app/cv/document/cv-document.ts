@@ -93,6 +93,8 @@ function loadCvFonts(document: Document): void {
   ],
   host: {
     class: 'block',
+    // Les langues des CV s'écrivent toutes de gauche à droite, même dans l'interface en arabe.
+    dir: 'ltr',
     '[style.--cv-heading-font]': 'headingFont()',
     '[style.--cv-body-font]': 'bodyFont()',
     '[style.--cv-space]': 'layout().spacing',

@@ -45,7 +45,7 @@ export class ToastService {
     >
       @for (toast of service.toasts(); track toast.id) {
         <div
-          class="toast-in pointer-events-auto flex max-w-md items-center gap-2.5 rounded-full bg-inverse py-2 pr-2 pl-4 text-sm font-medium text-inverse-ink shadow-xl"
+          class="toast-in pointer-events-auto flex max-w-md items-center gap-2.5 rounded-full bg-inverse py-2 ps-4 pe-2 text-sm font-medium text-inverse-ink shadow-xl"
           [attr.role]="toast.kind === 'error' ? 'alert' : 'status'"
         >
           <app-icon

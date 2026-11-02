@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Početna stranica LocalATSCV-a",
+    "main": "Glavna navigacija",
+    "how": "Kako funkcionira",
+    "privacy": "Privatnost",
+    "analyze": "Analiziraj životopis",
+    "editor": "Izradi moj životopis",
+    "skipToContent": "Prijeđi na sadržaj"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Svijetla",
+    "system": "Sustav",
+    "dark": "Tamna"
+  },
+  "lang": {
+    "label": "Jezik sučelja",
+    "suggestion": "Prikaži ovu stranicu na hrvatskom",
+    "dismiss": "Zatvori",
+    "search": "Pretraži jezike",
+    "noResult": "Nije pronađen nijedan jezik"
+  },
+  "pages": {
+    "home": "Životopisi prilagođeni ATS-u, 100 % lokalno",
+    "editor": "Uređivač",
+    "analyze": "Analizator životopisa",
+    "changelog": "Novosti",
+    "legalNotice": "Pravne napomene",
+    "terms": "Uvjeti korištenja",
+    "privacy": "Pravila privatnosti"
+  },
+  "seo": {
+    "home": "Besplatan alat za izradu životopisa prilagođenog ATS-u: 30 grafičkih predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS ocjena. Otvoreni kod, vaši podaci ostaju u pregledniku",
+    "editor": "Uređivač životopisa s pregledom uživo, Master životopisom i ciljanim verzijama, ATS provjerom i izvozom u PDF sa stvarnim tekstom. Sve ostaje u vašem pregledniku",
+    "analyze": "Besplatno analizirajte životopis u PDF-u: ATS ocjena od 100, stavke za ispravak i tekst onako kako ga čita sustav za zapošljavanje. Datoteka nikad ne napušta vaš preglednik",
+    "changelog": "Novosti u LocalATSCV-u, verziju po verziju: novi predlošci životopisa, značajke i ispravci",
+    "legalNotice": "Pravne napomene LocalATSCV-a: izdavač, hosting i kontakt",
+    "terms": "Uvjeti korištenja LocalATSCV-a, besplatnog alata za izradu životopisa otvorenog koda",
+    "privacy": "Pravila privatnosti LocalATSCV-a: ne prikupljaju se podaci, vaši životopisi ostaju u pregledniku"
+  },
+  "footer": {
+    "tagline": "Alat za životopise prilagođene ATS-u koji nikad ne vidi vaše podatke",
+    "product": "Proizvod",
+    "legal": "Pravno",
+    "project": "Projekt",
+    "changelog": "Novosti",
+    "sourceCode": "Izvorni kod",
+    "reportIssue": "Prijavi problem",
+    "license": "MIT licenca",
+    "versionLabel": "Verzija {{version}}, pogledajte novosti"
+  },
+  "update": {
+    "title": "Dostupna je nova verzija",
+    "text": "Ponovno učitajte stranicu da biste je koristili",
+    "changelog": "Pogledajte novosti",
+    "reload": "Ponovno učitaj",
+    "later": "Kasnije"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % lokalno · Besplatno · Otvoreni kod",
+      "titleLine1": "Životopis koji prolazi kroz robote",
+      "titleLine2": "Podaci koji ostaju kod vas",
+      "subtitle": "LocalATSCV vam pomaže izraditi životopis optimiziran za sustave za zapošljavanje (ATS) i u nekoliko klikova ga prilagoditi svakom radnom mjestu. Sve se događa u vašem pregledniku: bez računa i bez slanja ikakvih podataka",
+      "ctaPrimary": "Izradi moj životopis",
+      "ctaSecondary": "Analiziraj postojeći životopis",
+      "points": {
+        "noAccount": "Bez registracije",
+        "offline": "Radi izvan mreže",
+        "atsPdf": "PDF čitljiv ATS-u"
+      }
+    },
+    "ats": {
+      "eyebrow": "Problem",
+      "title": "Vaš životopis najprije čita stroj",
+      "text": "Većina velikih tvrtki i agencija za zapošljavanje razvrstava prijave pomoću ATS-a (Applicant Tracking System). On izvlači tekst iz vašeg životopisa, sprema ga u bazu podataka i omogućuje regruterima da traže kandidate po ključnim riječima",
+      "pitfalls": {
+        "layout": {
+          "title": "Složeni rasporedi",
+          "text": "Stupci, tablice i tekstni okviri miješaju redoslijed čitanja: vaši podaci izlaze ispremetani"
+        },
+        "image": {
+          "title": "Nečitljiv tekst",
+          "text": "Ikone, trake vještina i neki izvozi iz alata za dizajn pretvaraju se u čudne znakove ili potpuno nestaju"
+        },
+        "keywords": {
+          "title": "Ključne riječi koje nedostaju",
+          "text": "Ako se riječi iz oglasa ne pojavljuju u vašem životopisu, vaš se profil ne prikazuje u pretragama regrutera"
+        }
+      },
+      "seen": "Što vidite vi",
+      "read": "Što čita robot",
+      "fix": "LocalATSCV radi suprotno: jedan stupac, stvaran tekst i standardni naslovi odjeljaka koje roboti čitaju pravilnim redoslijedom"
+    },
+    "how": {
+      "eyebrow": "Kako funkcionira",
+      "title": "Napišite jednom, prilagođavajte beskonačno",
+      "text": "Četiri koraka da svoj Master životopis pretvorite u prijavu po mjeri svakog radnog mjesta",
+      "steps": {
+        "profile": {
+          "title": "Ispunite svoj Master životopis",
+          "text": "Unesite sva svoja iskustva jednom zauvijek ili uvezite PDF svog LinkedIn profila da uštedite vrijeme"
+        },
+        "offer": {
+          "title": "Zalijepite oglas",
+          "text": "LocalATSCV izdvaja ključne riječi i izračunava ocjenu podudarnosti od 100 koja se ažurira dok tipkate"
+        },
+        "compose": {
+          "title": "Složite ciljanu verziju",
+          "text": "Označite relevantna iskustva i stavke i presložite ih povlačenjem. Iz vašeg Mastera ništa se ne briše"
+        },
+        "export": {
+          "title": "Izvezite u PDF",
+          "text": "PDF sa stvarnim tekstom, strukturiran i u jednom stupcu, jednako čitljiv robotima kao i regruterima"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privatnost",
+      "title": "Nula podataka na našim poslužiteljima. Doslovno",
+      "text": "Nema baze podataka koju bi se moglo hakirati: naš poslužitelj vam šalje samo aplikaciju. Nakon toga sve se događa u vašem pregledniku, čak i izvan mreže",
+      "browser": {
+        "title": "Vaš preglednik",
+        "tag": "Vaš uređaj",
+        "items": {
+          "master": "Master životopis",
+          "photo": "Profilna fotografija",
+          "versions": "Ciljane verzije",
+          "settings": "Postavke"
+        },
+        "note": "Spremljeno u IndexedDB, samo na ovom uređaju"
+      },
+      "flow": {
+        "app": "Aplikacija, pri prvom učitavanju",
+        "data": "Vaši podaci",
+        "never": "nikad"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Poslužitelj",
+        "text": "Poslužuje datoteke aplikacije (HTML, CSS, JavaScript), ništa više",
+        "items": {
+          "noDb": "Nema baze podataka",
+          "noAccount": "Nema korisničkih računa",
+          "noLogs": "Nema zapisa o posjetima"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Bez računa",
+          "text": "Bez registracije, e-pošte i lozinke. Otvorite stranicu i počnite"
+        },
+        "trackers": {
+          "title": "Bez praćenja",
+          "text": "Bez statistike, oglasa i kolačića za praćenje. Čak su i fontovi na našem vlastitom poslužitelju"
+        },
+        "csp": {
+          "title": "Tehnički zaključano",
+          "text": "Sigurnosna pravila stranice (CSP) zabranjuju pregledniku da kontaktira bilo koju drugu domenu. Kod je otvoren: provjerite sami"
+        },
+        "backup": {
+          "title": "Vaše sigurnosne kopije, vaše datoteke",
+          "text": "Izvezite sve svoje podatke u JSON datoteku i ponovno ih uvezite na bilo kojem uređaju"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Značajke",
+      "title": "Sve što vam treba da dođete do razgovora za posao",
+      "items": {
+        "master": {
+          "title": "Master životopis i ciljane verzije",
+          "text": "Jedan potpuni životopis i onoliko inačica koliko prijava. Označite, odznačite: ništa se ne gubi"
+        },
+        "score": {
+          "title": "Ocjena podudarnosti",
+          "text": "Zalijepite oglas: pronađene i nedostajuće ključne riječi te ocjena od 100 u stvarnom vremenu"
+        },
+        "weak": {
+          "title": "Otkrivanje slabih formulacija",
+          "text": "„Odgovoran za”, „pomagao u”… označavaju se automatski, uz zbirku glagola radnje kojima ih zamijenite"
+        },
+        "analyzer": {
+          "title": "Analizator postojećih životopisa",
+          "text": "Ubacite životopis izrađen negdje drugdje: pogledajte što robot stvarno čita i što treba ispraviti"
+        },
+        "linkedin": {
+          "title": "Uvoz s LinkedIna",
+          "text": "Unaprijed ispunite svoj Master životopis iz besplatnog PDF-a koji možete izvesti sa svog LinkedIn profila"
+        },
+        "languages": {
+          "title": "5 jezika životopisa",
+          "text": "Francuski, engleski, talijanski, španjolski i njemački. Na engleskom se fotografija i datum rođenja skrivaju, prema običajima engleskog govornog područja"
+        },
+        "pdf": {
+          "title": "Izvoz u PDF prilagođen ATS-u",
+          "text": "Stvaran tekst i jasna struktura: čitljivo robotima, ugodno regruterima"
+        },
+        "offline": {
+          "title": "Može se instalirati i radi izvan mreže",
+          "text": "Dodajte LocalATSCV na početni zaslon i nastavite raditi bez veze"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Česta pitanja",
+      "title": "Česta pitanja",
+      "text": "Vašeg pitanja nema ovdje? Pišite nam:",
+      "items": {
+        "ats": {
+          "q": "Što je ATS?",
+          "a": "Applicant Tracking System je softver kojim regruteri primaju, razvrstavaju i pretražuju prijave. Pretvara vaš životopis u tekst i indeksira ga: ako je tekst loše izvučen ili nedostaju prave ključne riječi, vašu je prijavu teško pronaći"
+        },
+        "storage": {
+          "q": "Gdje se spremaju moji podaci?",
+          "a": "Samo u vašem pregledniku, u IndexedDB-u, bazi podataka ugrađenoj u svaki moderni preglednik. Nikad ne prolaze kroz naše poslužitelje, koji znaju samo posluživati datoteke aplikacije"
+        },
+        "clear": {
+          "q": "Što se događa ako izbrišem podatke preglednika?",
+          "a": "Vaši se životopisi brišu jer ne postoje nigdje drugdje. Redovito izvozite JSON sigurnosnu kopiju: možete je ponovno uvesti u bilo kojem trenutku, na bilo kojem uređaju"
+        },
+        "score": {
+          "q": "Jamči li ocjena da će moj životopis biti odabran?",
+          "a": "Ne. Svaki ATS ima svoja pravila, a konačnu odluku donosi čovjek. Ocjena je pokazatelj: provjerava koristi li vaš životopis riječi iz oglasa i može li ga stroj ispravno pročitati"
+        },
+        "photo": {
+          "q": "Zašto fotografija nestaje na engleskom?",
+          "a": "U Ujedinjenom Kraljevstvu, SAD-u i mnogim zemljama engleskog govornog područja fotografija i datum rođenja ne preporučuju se kako bi se ograničila diskriminacija pri zapošljavanju. Neki regruteri čak odbacuju životopise koji ih sadrže"
+        },
+        "free": {
+          "q": "Je li stvarno besplatno?",
+          "a": "Da. LocalATSCV je projekt otvorenog koda pod licencom MIT, bez oglasa i pretplate. Njegov hosting gotovo ništa ne košta jer sav posao obavlja vaš preglednik"
+        },
+        "templates": {
+          "q": "Prolaze li grafički predlošci kroz ATS?",
+          "a": "Da. Svaki predložak ispisuje stvaran tekst, redoslijedom čitanja, sa standardnim naslovima odjeljaka: oblici, trake i ikone su crteži koje roboti zanemaruju. Predlošci s jednim stupcem i dalje su najsigurniji, a ATS provjera u uređivaču testira vaš raspored uživo"
+        },
+        "import": {
+          "q": "Mogu li ponovno upotrijebiti svoj sadašnji životopis ili LinkedIn profil?",
+          "a": "Da. Uvezite životopis u PDF-u ili Wordu (.docx), PDF svog LinkedIn profila (na računalu) ili arhivu podataka s LinkedIna (iz mobilne aplikacije): sadržaj se čita u vašem pregledniku i razvrstava u uređivaču"
+        },
+        "offline": {
+          "q": "Radi li LocalATSCV izvan mreže?",
+          "a": "Da. To je web-aplikacija koja se može instalirati: nakon prvog posjeta sve radi bez veze, uključujući izvoz u PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Spremni proći kroz filtar?",
+      "text": "Izradite svoj Master životopis za nekoliko minuta. Ništa neće napustiti ovaj uređaj",
+      "button": "Započnite"
+    },
+    "demo": {
+      "role": "Front-end programerka",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Radno iskustvo",
+      "jobTitle": "Angular programerka",
+      "jobMeta": "Primjer d.o.o. · 2022 – danas",
+      "bullets": {
+        "migration": "Migracija 40 zaslona na <k>Angular</k> i <k>TypeScript</k>, vrijeme učitavanja kraće za 35 %",
+        "testing": "<w>Odgovorna za</w> strategiju end-to-end testiranja",
+        "delivery": "Kontinuirana isporuka uz <k>GitLab CI</k> za 3 produktna tima"
+      },
+      "weakLabel": "Slaba formulacija",
+      "weakReplacement": "„Vodila sam”",
+      "skills": "Vještine",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Pristupačnost",
+      "score": "Podudarnost s oglasom",
+      "sent": "Poslano 0 bajtova",
+      "robot": "VJEŠTINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end programerka Angular <n>●●●●○</n> RADNO ISKUSTVO <n>� camille.mar</n> Angular programerka <n>tin@example.com</n> 2022 – danas TypeScript <n>●●●○○</n> Primjer d.o.o. JEZICI Engleski Migracija 40 zaslona na…"
+    }
+  },
+  "dialog": {
+    "cancel": "Odustani",
+    "delete": "Izbriši",
+    "create": "Izradi",
+    "save": "Spremi",
+    "import": "Uvezi"
+  },
+  "editor": {
+    "list": {
+      "title": "Moji životopisi",
+      "subtitle": "Spremljeni samo u ovom pregledniku",
+      "new": "Novi životopis",
+      "newBlank": "Prazan životopis",
+      "newBlankHint": "Počnite od prazne stranice",
+      "newSample": "Počnite od primjera",
+      "newSampleHint": "Ispunjen izmišljeni životopis za upoznavanje uređivača",
+      "import": "Vrati sigurnosnu kopiju",
+      "exportAll": "Izvezi sve",
+      "emptyTitle": "Još nema životopisa",
+      "emptyText": "Izradite svoj Master životopis: sva vaša iskustva na jednom mjestu, spremna za prilagodbu svakom radnom mjestu",
+      "open": "Otvori",
+      "actions": "Radnje",
+      "duplicate": "Dupliciraj",
+      "export": "Izvezi (JSON)",
+      "delete": "Izbriši",
+      "updated": "Uređeno {{date}}",
+      "versions": "Verzije: {{count}}",
+      "backupHint": "Vaši životopisi postoje samo u ovom pregledniku. Redovito izvozite JSON sigurnosnu kopiju: ako izbrišete podatke preglednika, s njom možete sve vratiti",
+      "defaultName": "Moj životopis",
+      "copySuffix": "(kopija)",
+      "deleteTitle": "Izbrisati „{{name}}”?",
+      "deleteText": "Životopis i sve njegove verzije trajno će se izbrisati iz ovog preglednika",
+      "exportDone": "Sigurnosna kopija preuzeta",
+      "importConfirmTitle": "Uvesti ovu sigurnosnu kopiju?",
+      "importConfirmText": "Životopisi u ovoj kopiji: {{count}}. Oni koji već postoje u ovom pregledniku bit će zamijenjeni",
+      "importDone": "Sigurnosna kopija uvezena, životopisi: {{count}}",
+      "importError": {
+        "invalidJson": "Ova datoteka nije valjan JSON",
+        "notABackup": "Ova datoteka nije sigurnosna kopija LocalATSCV-a",
+        "newerVersion": "Ova sigurnosna kopija potječe iz novije verzije LocalATSCV-a: najprije ažurirajte aplikaciju"
+      },
+      "importPdf": "Uvezi životopis (PDF ili Word)",
+      "importPdfHint": "Prenesite postojeći životopis u naše predloške",
+      "importLinkedin": "Uvezi s LinkedIna",
+      "importLinkedinHint": "Iz PDF-a vašeg profila"
+    },
+    "toolbar": {
+      "back": "Moji životopisi",
+      "name": "Naziv životopisa",
+      "cvLanguage": "Jezik životopisa",
+      "accent": "Boja naglaska",
+      "customAccent": "Prilagođena boja",
+      "saved": "Spremljeno",
+      "saving": "Spremanje…",
+      "saveError": "Spremanje nije uspjelo",
+      "edit": "Uredi",
+      "preview": "Pregled",
+      "exportPdf": "Izvezi u PDF",
+      "undo": "Poništi (Ctrl+Z)",
+      "redo": "Ponovi (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokument za uređivanje",
+      "cv": "Životopis",
+      "letter": "Motivacijsko pismo"
+    },
+    "letter": {
+      "title": "Motivacijsko pismo",
+      "versionOwn": "Ova verzija ima vlastito pismo",
+      "versionShared": "Ova verzija koristi pismo iz Mastera: uređivanjem ovdje stvara se kopija za ovu verziju",
+      "useMaster": "Koristi pismo iz Mastera",
+      "recipient": "Primatelj",
+      "recipientPlaceholder": "Primjer d.o.o.\nOdjel za zapošljavanje\nIlica 10, 10000 Zagreb",
+      "place": "Mjesto",
+      "date": "Datum",
+      "dateHint": "Prazno: datum dana ispisa",
+      "subject": "Predmet",
+      "subjectPlaceholder": "Prijava za radno mjesto…",
+      "greeting": "Oslovljavanje",
+      "body": "Pismo",
+      "bodyPlaceholder": "Tri kratka odlomka: što vas privlači u tvrtki, što donosite, koji sljedeći korak predlažete",
+      "bodyHint": "Prazan redak odvaja dva odlomka · **podebljano** za ključnu riječ",
+      "outline": "Umetni nacrt",
+      "closing": "Završni pozdrav",
+      "fileName": "Motivacijsko pismo"
+    },
+    "fit": {
+      "pages": "Stranica: {{count}}",
+      "onePage": "Stane na jednu stranicu",
+      "hintMany": "Većina regrutera očekuje životopis na jednoj stranici",
+      "hintOne": "Idealan format za većinu prijava",
+      "stillTooLong": "I dalje predugo, čak i zgusnuto: skratite nekoliko stavki ili sakrijte elemente u nekoj verziji",
+      "fit": "Smjesti na jednu stranicu",
+      "settings": "Postavke rasporeda",
+      "spacing": "Razmak",
+      "scale": "Veličina teksta",
+      "settingsHint": "Tekst ostaje stvaran tekst: mijenja se samo raspored",
+      "reset": "Raspored predloška",
+      "grayscale": "Prikaži crno-bijelo",
+      "grayscaleHint": "Simulira crno-bijeli ispis: izvezeni PDF zadržava boje"
+    },
+    "versions": {
+      "label": "Prikazana verzija",
+      "master": "Master životopis",
+      "masterHint": "Sav sadržaj, bez filtra",
+      "new": "Nova verzija",
+      "newText": "Ciljana verzija polazi od cijelog vašeg Master životopisa: zatim odznačite ono što ovoj prijavi ne treba",
+      "nameLabel": "Naziv verzije",
+      "namePlaceholder": "Npr. Front-end programer – Tvrtka X",
+      "rename": "Preimenuj verziju",
+      "delete": "Izbriši verziju",
+      "deleteTitle": "Izbrisati verziju „{{name}}”?",
+      "deleteText": "Briše se samo odabir: sav sadržaj ostaje u vašem Master životopisu",
+      "banner": "Verzija „{{name}}”: odznačite ono što se ne smije prikazati. Iz vašeg Master životopisa ništa se ne briše",
+      "include": "Uključi u ovu verziju"
+    },
+    "enRule": "Životopis na engleskom: fotografija, datum rođenja i državljanstvo skrivaju se, prema običajima engleskog govornog područja",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fotografija",
+      "photoAdd": "Dodaj fotografiju",
+      "photoChange": "Promijeni",
+      "photoRemove": "Ukloni",
+      "photoHint": "Smanjena i spremljena samo na ovom uređaju",
+      "photoError": "Ovu sliku nije moguće pročitati",
+      "hiddenInEnglish": "Skriveno na engleskom",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "headline": "Naslov životopisa",
+      "headlinePlaceholder": "Npr. Front-end programerka",
+      "email": "E-pošta",
+      "phone": "Telefon",
+      "location": "Grad",
+      "birthDate": "Datum rođenja",
+      "nationality": "Državljanstvo",
+      "summary": "Sažetak",
+      "summaryPlaceholder": "Dvije ili tri rečenice koje sažimaju vaš profil i ono što tražite",
+      "links": "Poveznice",
+      "linkLabel": "Naziv poveznice",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adresa poveznice",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Dodaj poveznicu",
+      "removeLink": "Ukloni poveznicu",
+      "drivingLicense": "Vozačka dozvola",
+      "drivingLicensePlaceholder": "Npr. Vozačka dozvola B kategorije, vlastiti automobil",
+      "qrToggle": "Prikaži ovu poveznicu kao QR kôd",
+      "linksHint": "Logotip (LinkedIn, GitHub, YouTube…) dodaje se automatski. Gumb QR prikazuje poveznicu kao QR kôd u većini grafičkih predložaka"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Radno iskustvo",
+        "education": "Obrazovanje",
+        "projects": "Projekti",
+        "certifications": "Certifikati",
+        "custom": "Slobodni odjeljak",
+        "skills": "Vještine",
+        "languages": "Jezici",
+        "interests": "Interesi"
+      },
+      "add": "Dodaj odjeljak",
+      "titleLabel": "Naslov odjeljka",
+      "empty": "Prazan odjeljak: neće se pojaviti u životopisu",
+      "addItem": {
+        "experience": "Dodaj iskustvo",
+        "education": "Dodaj obrazovanje",
+        "projects": "Dodaj projekt",
+        "certifications": "Dodaj certifikat",
+        "custom": "Dodaj stavku",
+        "skills": "Dodaj vještine",
+        "languages": "Dodaj jezik",
+        "interests": "Dodaj interes"
+      },
+      "deleteTitle": "Izbrisati odjeljak „{{name}}”?",
+      "deleteText": "Njegov će se sadržaj ukloniti iz Master životopisa i iz svih njegovih verzija"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Radno mjesto",
+          "subtitle": "Tvrtka"
+        },
+        "education": {
+          "title": "Zvanje ili smjer",
+          "subtitle": "Škola ili fakultet"
+        },
+        "projects": {
+          "title": "Naziv projekta",
+          "subtitle": "Uloga ili tehnologije"
+        },
+        "certifications": {
+          "title": "Certifikat",
+          "subtitle": "Izdavatelj"
+        },
+        "custom": {
+          "title": "Naslov",
+          "subtitle": "Podnaslov"
+        }
+      },
+      "location": "Mjesto",
+      "url": "Poveznica",
+      "start": "Početak",
+      "end": "Kraj",
+      "date": "Datum stjecanja",
+      "current": "U tijeku",
+      "untitled": "Bez naslova",
+      "bullets": "Postignuća",
+      "bulletPlaceholder": "Počnite glagolom radnje i izrazite rezultat brojkama",
+      "addBullet": "Dodaj stavku",
+      "bulletHint": "Enter: nova stavka",
+      "boldHint": "**riječ** za podebljano"
+    },
+    "items": {
+      "skillLabel": "Kategorija",
+      "skillLabelPlaceholder": "Npr. Front-end",
+      "skillKeywords": "Vještine",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Jezik",
+      "languageLevel": "Razina",
+      "languageLevelPlaceholder": "Npr. C1, fluent",
+      "interest": "Interes",
+      "interestPlaceholder": "Npr. Penjanje",
+      "levelDetected": "Razina prepoznata: predlošci s trakom prikazat će je",
+      "levelUnknown": "Razina nije prepoznata, nema trake: koristite A1 do C2 ili prijedlog s popisa",
+      "levelEmpty": "Unesite razinu da se prikaže traka",
+      "levelHint": "Koristite europsku razinu (A1 do C2) ili riječ poput „fluent” ili „native”: neki je predlošci prikazuju i kao traku, čiji pregled daju točke desno"
+    },
+    "actions": {
+      "menu": "Radnje",
+      "moveUp": "Pomakni gore",
+      "moveDown": "Pomakni dolje",
+      "duplicate": "Dupliciraj",
+      "delete": "Izbriši",
+      "drag": "Povucite za promjenu redoslijeda"
+    },
+    "month": "Mjesec",
+    "year": "Godina",
+    "noMonth": "Mjesec",
+    "preview": {
+      "page": "Stranica {{n}}"
+    },
+    "notFound": {
+      "title": "Životopis nije pronađen",
+      "text": "Ovaj životopis ne postoji ili je izbrisan iz ovog preglednika"
+    },
+    "templates": {
+      "button": "Predložak",
+      "title": "Odaberite predložak",
+      "subtitle": "Svi predlošci s potpunim primjerom životopisa ili s vašim. Boja naglaska vrijedi za sve predloške",
+      "close": "Zatvori",
+      "filter": "Filtriraj predloške",
+      "filters": {
+        "all": "Svi",
+        "graphic": "Grafički",
+        "sober": "Jednostavni"
+      },
+      "ats": "Kompatibilnost s ATS-om",
+      "levels": {
+        "excellent": "izvrsna",
+        "good": "dobra",
+        "fair": "prihvatljiva"
+      },
+      "atsHint": "Svaki predložak ispisuje stvaran tekst. Rasporede s dva stupca većina modernih ATS-ova dobro čita, ali neki stariji alati miješaju stupce: ako niste sigurni, odaberite predložak s jednim stupcem",
+      "names": {
+        "classic": {
+          "name": "Klasični",
+          "description": "Čist i učinkovit: jedan stupac, podcrtani naslovi, ništa ne odvlači pažnju"
+        },
+        "modern": {
+          "name": "Moderni",
+          "description": "Obojena traka, izraziti naslovi i vještine kao oznake"
+        },
+        "elegant": {
+          "name": "Elegantni",
+          "description": "Centrirano zaglavlje i serifna tipografija za profinjen izgled"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Obojeni rub, detalji u fontu fiksne širine i vještine u stilu koda"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Švicarski stil: veliko ime, naslovi na margini, puno praznog prostora"
+        },
+        "sidebar": {
+          "name": "Stupci",
+          "description": "Obojena bočna traka s fotografijom, kontaktima i vještinama"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Traka s fotografijom, ikone, vremenska crta i trake jezika, a ipak savršeno čitljiv ATS-u"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organski pastelni oblici, velika okrugla fotografija, vremenska crta i QR kôd u dva stupca"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Izgled Signaturea u jednom stupcu: grafičan i savršeno čitljiv ATS-u"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Tamna dijagonalna traka, obojeni sjaj, kartice iskustva i pune oznake vještina"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrijska kompozicija u osnovnim bojama oko fotografije, geometrijsko pismo i oblici ispred svakog naslova"
+        },
+        "editorial": {
+          "name": "Magazin",
+          "description": "Raspored časopisa: veliko serifno ime, uvod u kurzivu, numerirani odjeljci i pomaknuti portret"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalizam: debeli crni obrubi, oštre sjene, jarki blokovi boje i crne oznake"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Mrežasti prijelaz u vašim bojama naglaska, kontaktna kartica s efektom stakla i kartice s rubom u prijelazu"
+        },
+        "swiss": {
+          "name": "Švicarski",
+          "description": "Stil švicarskog plakata: golemo ime, obojena traka, debele crne linije i numerirani odjeljci"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Papir boje bjelokosti, tanki dvostruki okvir, rombasti ukrasi i tipografija Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturno",
+          "description": "Tamni način: noćna pozadina, neonski naglasci i svjetleća vremenska crta, idealan za digitalne prijave"
+        },
+        "wave": {
+          "name": "Val",
+          "description": "Obojena traka koja završava valovima, okrugla fotografija i valoviti naslovi, mekan i prijateljski"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Zaobljene bento pločice: fotografija, ime i QR kôd u mreži, jedna pločica po odjeljku"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Tehnički crtež: milimetarski papir, kutne oznake, kotna linija i oznake fiksne širine"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrijski konfeti iz 80-ih, jarke boje i naslovi podcrtani cik-cak linijom"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Velika podijeljena traka: tekst na bloku boje i dvobojna fotografija"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografija kao jedini ukras: golemo, djelomično obrubljeno ime i vrlo veliki naslovi"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Svaki odjeljak ima svoju pastelnu boju, naslovi u obliku tablete i višebojni sjaj"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Tamnoplava traka, zlatna linija i serifno ime za rukovodeća mjesta"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japanski minimalizam: washi papir, krug ensō u vašoj boji naglaska i potez kistom"
+        },
+        "ribbon": {
+          "name": "Vrpca",
+          "description": "Naslovi odjeljaka na vrpcama s lastavičjim repom, centrirano zaglavlje"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Šesterokutna fotografija, saće u kutu i šesterokuti ispred naslova"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Zaglavlje od slojeva izrezanog papira, odjeljci kao listovi papira"
+        },
+        "thread": {
+          "name": "Nit",
+          "description": "Neprekinuta nit povezuje zaglavlje i svaki odjeljak, s točkom za svako radno mjesto"
+        }
+      },
+      "preview": {
+        "label": "Sadržaj minijatura",
+        "sample": "Potpuni primjer",
+        "mine": "Moj životopis"
+      }
+    },
+    "print": {
+      "title": "Izvezi u PDF",
+      "text": "Uskoro će se otvoriti prozor za ispis vašeg preglednika. Za savršen PDF:",
+      "tips": {
+        "destination": "Odredište: „Spremi kao PDF”",
+        "margins": "Margine: „Ništa”",
+        "headers": "Odznačite „Zaglavlja i podnožja”",
+        "background": "Označite „Pozadinska grafika” da biste zadržali boje"
+      },
+      "dontShow": "Ne prikazuj ponovno",
+      "cancel": "Odustani",
+      "print": "Otvori prozor za ispis"
+    },
+    "job": {
+      "title": "Prilagodi oglasu za posao",
+      "sources": "LinkedIn, MojPosao, Posao.hr, Indeed, HZZ…",
+      "placeholder": "Ovdje zalijepite cijeli tekst oglasa: naziv radnog mjesta, zadaci, uvjeti",
+      "urlWarning": "Zalijepite tekst oglasa umjesto poveznice: LocalATSCV nikad ne kontaktira nijednu stranicu, pa vaši podaci ostaju kod vas",
+      "empty": "Nisu pronađene ključne riječi: zalijepite potpuniji oglas",
+      "score": "Podudarnost s oglasom",
+      "summary": "Prisutno {{found}} od {{total}} ključnih riječi",
+      "found": "Ključne riječi u vašem životopisu",
+      "missing": "Ključne riječi koje nedostaju",
+      "missingHint": "Kliknite ključnu riječ da je dodate svojim vještinama ili je uklopite u neko iskustvo",
+      "addToSkills": "Dodaj vještinama",
+      "added": "„{{keyword}}” dodano vašim vještinama",
+      "keywordsGroup": "Ključne riječi",
+      "createVersion": "Izradi ciljanu verziju za ovo radno mjesto",
+      "createVersionHint": "Iskustva i stavke koje nisu povezane s poslom bit će odznačene: možete ih prilagoditi",
+      "savedInVersion": "Oglas spremljen uz verziju „{{name}}”"
+    },
+    "weak": {
+      "hint": "„{{phrase}}” opisuje zaduženje: počnite glagolom radnje"
+    },
+    "fonts": {
+      "title": "Tipografija",
+      "heading": "Naslovi",
+      "body": "Tekst",
+      "default": "Iz predloška",
+      "hint": "ATS-ovi dobro čitaju sve ove fontove: tekst ostaje stvaran tekst"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Novosti",
+    "title": "Popis promjena",
+    "subtitle": "Sve verzije LocalATSCV-a s novostima i ispravcima",
+    "current": "Trenutačna verzija",
+    "frenchOnly": "Popis promjena napisan je na francuskom",
+    "error": "Popis promjena nije moguće učitati",
+    "types": {
+      "added": "Dodano",
+      "changed": "Promijenjeno",
+      "fixed": "Ispravljeno",
+      "removed": "Uklonjeno",
+      "deprecated": "Zastarjelo",
+      "security": "Sigurnost",
+      "other": "Ostalo"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizator",
+    "title": "Prolazi li vaš životopis kroz robote?",
+    "subtitle": "Ubacite životopis u PDF-u izrađen bilo kojim alatom: LocalATSCV ga čita kao ATS i kaže vam što ispraviti",
+    "drop": "Povucite životopis ovamo",
+    "dropActive": "Ispustite datoteku za početak analize",
+    "hint": "Samo PDF, najviše 15 MB",
+    "choose": "Odaberi datoteku",
+    "reading": "Čitanje PDF-a…",
+    "privacy": "Datoteka se analizira u vašem pregledniku: nikad se nikamo ne šalje",
+    "another": "Analiziraj drugi životopis",
+    "errors": {
+      "notPdf": "Ova datoteka nije PDF",
+      "tooLarge": "Ova datoteka je veća od 15 MB",
+      "encrypted": "Ovaj PDF zaštićen je lozinkom: ni ATS ga ne može pročitati",
+      "unreadable": "Ovaj PDF nije moguće pročitati: možda je oštećen"
+    },
+    "stats": "Stranica: {{pages}} · riječi: {{words}}",
+    "verdict": {
+      "excellent": "Izvrsno",
+      "good": "Dobro",
+      "fair": "Za poboljšati",
+      "poor": "Kritično"
+    },
+    "verdictText": {
+      "excellent": "Roboti vrlo dobro čitaju vaš životopis",
+      "good": "Nekoliko prilagodbi učinit će ga još učinkovitijim",
+      "fair": "Nekoliko problema otežava čitanje ATS-u",
+      "poor": "ATS će vjerojatno propustiti ono bitno"
+    },
+    "categories": {
+      "readability": "Strojna čitljivost",
+      "structure": "Struktura",
+      "content": "Sadržaj"
+    },
+    "sectionNames": {
+      "experience": "Radno iskustvo",
+      "education": "Obrazovanje",
+      "skills": "Vještine"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Strojno čitljiv tekst",
+        "pass": "Sav tekst vašeg životopisa može se izvući",
+        "warn": "Neke stranice ne sadrže čitljiv tekst: vjerojatno slike ili sken",
+        "fail": "Nema čitljivog teksta: ovaj je životopis vjerojatno slika ili sken i ATS iz njega neće ništa izvući. Izvezite ga u PDF iz svog programa za obradu teksta"
+      },
+      "columns": {
+        "title": "Raspored",
+        "pass": "Linearno čitanje, stupci se ne miješaju",
+        "warn": "Otkriven raspored u stupcima: tekst se može pročitati pogrešnim redoslijedom. Provjerite „Što čita robot” u nastavku"
+      },
+      "order": {
+        "title": "Redoslijed čitanja u datoteci",
+        "pass": "Tekst je u datoteci zapisan redoslijedom čitanja",
+        "warnHeader": "Vaše ime i zaglavlje zapisani su u datoteci nakon ostatka životopisa: ATS koji čita datoteku redom možda neće pronaći vaše ime",
+        "warn": "{{percent}} % teksta zapisano je u datoteci izvan redoslijeda čitanja: neki ATS-ovi pročitat će te odlomke pogrešnim redoslijedom",
+        "fail": "{{percent}} % teksta zapisano je u datoteci ispremetano, što je tipično za životopise iz slobodnih tekstnih okvira (Canva, PowerPoint…): mnogi ATS-ovi pročitat će vaš životopis izmiješan. Usporedite dva čitanja u nastavku"
+      },
+      "unreadable": {
+        "title": "Ikone i trake vještina",
+        "pass": "Nema ikona ni nečitljivih znakova",
+        "warn": "Otkrivene ikone ili trake ({{count}}): ATS ih čita kao čudne znakove. Zamijenite ih tekstom",
+        "fail": "Otkrivene ikone ili trake ({{count}}): zamijenite ih tekstom, na primjer „Engleski: C1” umjesto točkica"
+      },
+      "contact": {
+        "title": "Kontakt podaci",
+        "pass": "Pronađeni su adresa e-pošte i broj telefona",
+        "warnNoPhone": "Nije pronađen broj telefona",
+        "warnNoEmail": "Nije pronađena adresa e-pošte",
+        "fail": "Nisu pronađeni ni e-pošta ni telefon: napišite ih kao tekst, a ne u slici"
+      },
+      "sections": {
+        "title": "Standardni odjeljci",
+        "pass": "Iskustvo, obrazovanje i vještine jasno su prepoznati",
+        "warn": "Ovi odjeljci nisu prepoznati: koristite standardne naslove",
+        "fail": "Nije prepoznat nijedan standardni odjeljak: ATS-ovi se oslanjaju na naslove poput „Radno iskustvo” ili „Obrazovanje”"
+      },
+      "length": {
+        "title": "Duljina",
+        "pass": "Stranica: {{pages}}, riječi: {{words}}: idealna duljina",
+        "warn": "Stranica: {{pages}}, riječi: {{words}}: ciljajte na 1 do 2 stranice i 250 do 1000 riječi",
+        "fail": "Stranica: {{pages}}, riječi: {{words}}: prekratko ili predugo za dobru procjenu"
+      },
+      "quantified": {
+        "title": "Brojčani rezultati",
+        "pass": "{{percent}} % vaših stavki sadrži broj, bravo",
+        "warn": "Samo {{percent}} % stavki sadrži brojke: dodajte mjerljive rezultate (postotke, iznose, količine)",
+        "fail": "Nema brojčanih rezultata: regruteri i ATS-ovi cijene mjerljiva postignuća"
+      },
+      "weakPhrases": {
+        "title": "Glagoli radnje",
+        "pass": "Nema slabih formulacija na početku stavki",
+        "warn": "Ovi počeci opisuju zaduženje umjesto rezultata: počnite glagolom radnje",
+        "fail": "Ovi počeci opisuju zaduženje umjesto rezultata: počnite glagolom radnje"
+      },
+      "dates": {
+        "title": "Datumi",
+        "pass": "Vaša su iskustva datirana",
+        "warn": "Pronađena je samo jedna godina: navedite datume za svako radno mjesto, ATS-ovi iz njih računaju vaše godine iskustva",
+        "fail": "Nisu pronađeni datumi: ATS-ovi iz njih računaju vaše godine iskustva"
+      }
+    },
+    "robot": {
+      "title": "Što čita robot",
+      "text": "Tekst ponovno složen redak po redak, kako to radi većina ATS-ova. Ako je ovdje izmiješan ili nepotpun, takav je i regruteru",
+      "empty": "Nije moguće izvući nikakav tekst",
+      "position": "Po položaju",
+      "file": "Redoslijed u datoteci",
+      "fileText": "Tekst redoslijedom kojim je zapisan u datoteci: tako ga čitaju ATS-ovi koji ne rekonstruiraju raspored. Trebao bi pratiti redoslijed čitanja vašeg životopisa"
+    },
+    "cta": {
+      "title": "Krenite ispočetka na čvrstim temeljima",
+      "text": "Izradite životopis prilagođen ATS-u u uređivaču, a zatim ga prilagodite svakom radnom mjestu",
+      "button": "Otvori uređivač",
+      "import": "Prenesi ovaj životopis u naše predloške"
+    },
+    "live": {
+      "title": "ATS provjera uživo",
+      "issues": "Stavke za provjeru u ovom predlošku: {{count}}",
+      "allGood": "U ovom predlošku nije otkriven nijedan problem",
+      "hint": "Izračunato na prikazanom rasporedu, istim mehanizmom kao analizator životopisa"
+    },
+    "method": {
+      "title": "Kako se izračunava ova ocjena?",
+      "intro": "Ne postoji službena ATS ocjena: svaki softver za zapošljavanje (Workday, Taleo, Greenhouse, Lever…) ima vlastita, često povjerljiva pravila. Ovaj indeks provjerava ono na čemu većina njih zapne, prema ovoj ljestvici:",
+      "disclaimer": "Ovi kriteriji potječu iz javnih preporuka dobavljača ATS-a i najčešćih pogrešaka pri čitanju (tekst u slici, stupci, ikone, nestandardni naslovi). Ocjena vam pomaže poboljšati životopis: ne predviđa odabir"
+    }
+  },
+  "import": {
+    "title": "Uvezi životopis",
+    "linkedinTitle": "Uvezi s LinkedIna",
+    "text": "Odaberite životopis u PDF-u ili Wordu (.docx): sadržaj se izvlači u vašem pregledniku i razvrstava u odjeljke uređivača. Zatim možete odabrati predložak",
+    "choose": "Odaberi datoteku",
+    "chooseFile": "Odaberi datoteku",
+    "hint": "PDF ili Word (.docx), najviše 15 MB",
+    "reading": "Uvoz…",
+    "privacy": "Datoteka se čita u vašem pregledniku: nikad se nikamo ne šalje",
+    "close": "Zatvori",
+    "done": "Životopis uvezen (stavki: {{items}}): pregledajte svaki odjeljak",
+    "errors": {
+      "tooLarge": "Ova datoteka je veća od 15 MB",
+      "encrypted": "Ovaj PDF zaštićen je lozinkom",
+      "unreadable": "Ovu datoteku nije moguće pročitati: možda je oštećena",
+      "empty": "Nema upotrebljivog teksta: ovaj je PDF vjerojatno slika ili sken",
+      "unsupported": "Odaberite PDF, Word datoteku (.docx) ili ZIP arhivu s LinkedIna",
+      "archiveEmpty": "Ova arhiva ne sadrži upotrebljive podatke LinkedIn profila"
+    },
+    "hintArchive": "PDF (računalo) ili ZIP arhiva (mobilna aplikacija)",
+    "linkedin": {
+      "computer": {
+        "title": "Na računalu: PDF vašeg profila",
+        "step1": "Otvorite linkedin.com u pregledniku na računalu (ta mogućnost ne postoji u aplikaciji)",
+        "step2": "Na svom profilu kliknite „Resursi” (ili „Više”), zatim „Spremi kao PDF”",
+        "step3": "Odaberite taj PDF u nastavku"
+      },
+      "archive": {
+        "title": "U mobilnoj aplikaciji: arhiva vaših podataka",
+        "step1": "U aplikaciji dodirnite svoju fotografiju, zatim Postavke i Privatnost podataka",
+        "step2": "Odaberite „Preuzmi kopiju svojih podataka” i označite Profil, Radna mjesta, Obrazovanje, Vještine i Jezici",
+        "step3": "LinkedIn vam za nekoliko minuta šalje e-poruku: preuzmite ZIP arhivu",
+        "step4": "Odaberite tu ZIP datoteku u nastavku, bez raspakiravanja"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Ovaj dokument prikazan je na engleskom. Pravno obvezujuća je samo francuska verzija.",
+    "error": "Ovaj dokument nije moguće učitati."
+  }
+}

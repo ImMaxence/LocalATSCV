@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Domača stran LocalATSCV",
+    "main": "Glavna navigacija",
+    "how": "Kako deluje",
+    "privacy": "Zasebnost",
+    "analyze": "Analiziraj življenjepis",
+    "editor": "Ustvari moj življenjepis",
+    "skipToContent": "Preskoči na vsebino"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Svetla",
+    "system": "Sistemska",
+    "dark": "Temna"
+  },
+  "lang": {
+    "label": "Jezik vmesnika",
+    "suggestion": "Prikaži to stran v slovenščini",
+    "dismiss": "Zapri",
+    "search": "Iskanje jezika",
+    "noResult": "Ni najdenega jezika"
+  },
+  "pages": {
+    "home": "Življenjepisi, prilagojeni ATS, 100 % lokalno",
+    "editor": "Urejevalnik",
+    "analyze": "Analizator življenjepisa",
+    "changelog": "Novosti",
+    "legalNotice": "Pravno obvestilo",
+    "terms": "Pogoji uporabe",
+    "privacy": "Pravilnik o zasebnosti"
+  },
+  "seo": {
+    "home": "Brezplačno orodje za življenjepis, prilagojen ATS: 30 grafičnih predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in ocena ATS. Odprta koda, vaši podatki ostanejo v brskalniku",
+    "editor": "Urejevalnik življenjepisa s predogledom v živo, Master življenjepisom in ciljnimi različicami, preverjanjem ATS in izvozom v PDF s pravim besedilom. Vse ostane v vašem brskalniku",
+    "analyze": "Brezplačno analizirajte življenjepis v PDF: ocena ATS od 100, točke za popravek in besedilo, kot ga prebere sistem za zaposlovanje. Datoteka nikoli ne zapusti vašega brskalnika",
+    "changelog": "Novosti v LocalATSCV po različicah: nove predloge življenjepisov, funkcije in popravki",
+    "legalNotice": "Pravno obvestilo LocalATSCV: izdajatelj, gostovanje in stik",
+    "terms": "Pogoji uporabe LocalATSCV, brezplačnega orodja za življenjepise z odprto kodo",
+    "privacy": "Pravilnik o zasebnosti LocalATSCV: podatkov ne zbiramo, vaši življenjepisi ostanejo v brskalniku"
+  },
+  "footer": {
+    "tagline": "Orodje za življenjepise, prilagojene ATS, ki nikoli ne vidi vaših podatkov",
+    "product": "Izdelek",
+    "legal": "Pravno",
+    "project": "Projekt",
+    "changelog": "Novosti",
+    "sourceCode": "Izvorna koda",
+    "reportIssue": "Prijavi težavo",
+    "license": "Licenca MIT",
+    "versionLabel": "Različica {{version}}, oglejte si novosti"
+  },
+  "update": {
+    "title": "Na voljo je nova različica",
+    "text": "Znova naložite stran, da jo uporabite",
+    "changelog": "Oglejte si novosti",
+    "reload": "Znova naloži",
+    "later": "Pozneje"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100 % lokalno · Brezplačno · Odprta koda",
+      "titleLine1": "Življenjepis, ki pride mimo robotov",
+      "titleLine2": "Podatki, ki ostanejo pri vas",
+      "subtitle": "LocalATSCV vam pomaga ustvariti življenjepis, optimiziran za sisteme za zaposlovanje (ATS), in ga z nekaj kliki prilagoditi vsakemu delovnemu mestu. Vse se zgodi v vašem brskalniku: brez računa in brez pošiljanja kakršnih koli podatkov",
+      "ctaPrimary": "Ustvari moj življenjepis",
+      "ctaSecondary": "Analiziraj obstoječi življenjepis",
+      "points": {
+        "noAccount": "Brez registracije",
+        "offline": "Deluje brez povezave",
+        "atsPdf": "PDF, berljiv za ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Težava",
+      "title": "Vaš življenjepis najprej prebere stroj",
+      "text": "Večina velikih podjetij in kadrovskih agencij razvršča prijave s sistemom ATS (Applicant Tracking System). Ta izlušči besedilo vašega življenjepisa, ga shrani v podatkovno zbirko in kadrovikom omogoči iskanje kandidatov po ključnih besedah",
+      "pitfalls": {
+        "layout": {
+          "title": "Zapletene postavitve",
+          "text": "Stolpci, tabele in polja z besedilom pomešajo vrstni red branja: vaši podatki pridejo ven pomešani"
+        },
+        "image": {
+          "title": "Neberljivo besedilo",
+          "text": "Ikone, vrstice veščin in nekateri izvozi iz oblikovalskih orodij se spremenijo v čudne znake ali povsem izginejo"
+        },
+        "keywords": {
+          "title": "Manjkajoče ključne besede",
+          "text": "Če se besede iz oglasa ne pojavijo v vašem življenjepisu, se vaš profil ne prikaže v iskanjih kadrovikov"
+        }
+      },
+      "seen": "Kaj vidite vi",
+      "read": "Kaj prebere robot",
+      "fix": "LocalATSCV naredi nasprotno: en stolpec, pravo besedilo in standardni naslovi razdelkov, ki jih roboti preberejo v pravem vrstnem redu"
+    },
+    "how": {
+      "eyebrow": "Kako deluje",
+      "title": "Napišite enkrat, prilagajajte v nedogled",
+      "text": "Štirje koraki, da svoj Master življenjepis spremenite v prijavo po meri vsakega delovnega mesta",
+      "steps": {
+        "profile": {
+          "title": "Izpolnite svoj Master življenjepis",
+          "text": "Vnesite vse svoje izkušnje enkrat za vselej ali uvozite PDF svojega profila na LinkedInu, da prihranite čas"
+        },
+        "offer": {
+          "title": "Prilepite oglas",
+          "text": "LocalATSCV izlušči ključne besede in izračuna oceno ujemanja od 100, ki se posodablja med tipkanjem"
+        },
+        "compose": {
+          "title": "Sestavite ciljno različico",
+          "text": "Označite ustrezne izkušnje in točke ter jih preuredite z vlečenjem. Iz vašega Mastra se nič ne izbriše"
+        },
+        "export": {
+          "title": "Izvozite v PDF",
+          "text": "PDF s pravim besedilom, strukturiran in v enem stolpcu, enako berljiv za robote kot za kadrovike"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Zasebnost",
+      "title": "Nič podatkov na naših strežnikih. Dobesedno",
+      "text": "Ni podatkovne zbirke, ki bi jo lahko vdrli: naš strežnik vam pošlje le aplikacijo. Nato se vse dogaja v vašem brskalniku, tudi brez povezave",
+      "browser": {
+        "title": "Vaš brskalnik",
+        "tag": "Vaša naprava",
+        "items": {
+          "master": "Master življenjepis",
+          "photo": "Profilna fotografija",
+          "versions": "Ciljne različice",
+          "settings": "Nastavitve"
+        },
+        "note": "Shranjeno v IndexedDB, samo v tej napravi"
+      },
+      "flow": {
+        "app": "Aplikacija, ob prvem nalaganju",
+        "data": "Vaši podatki",
+        "never": "nikoli"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Strežnik",
+        "text": "Streže datoteke aplikacije (HTML, CSS, JavaScript), nič drugega",
+        "items": {
+          "noDb": "Brez podatkovne zbirke",
+          "noAccount": "Brez uporabniških računov",
+          "noLogs": "Brez dnevnikov obiskov"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Brez računa",
+          "text": "Brez registracije, e-pošte in gesla. Odprite stran in začnite"
+        },
+        "trackers": {
+          "title": "Brez sledenja",
+          "text": "Brez statistike, oglasov in piškotkov za sledenje. Celo pisave gostujejo na našem lastnem strežniku"
+        },
+        "csp": {
+          "title": "Tehnično zaklenjeno",
+          "text": "Varnostni pravilnik spletnega mesta (CSP) brskalniku prepoveduje, da bi se povezal s katero koli drugo domeno. Koda je odprta: preverite sami"
+        },
+        "backup": {
+          "title": "Vaše varnostne kopije, vaše datoteke",
+          "text": "Izvozite vse svoje podatke v datoteko JSON in jih znova uvozite v kateri koli napravi"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Funkcije",
+      "title": "Vse, kar potrebujete, da pridete do razgovora",
+      "items": {
+        "master": {
+          "title": "Master življenjepis in ciljne različice",
+          "text": "En popoln življenjepis in toliko različic, kolikor je prijav. Označite, odznačite: nič se ne izgubi"
+        },
+        "score": {
+          "title": "Ocena ujemanja",
+          "text": "Prilepite oglas: najdene in manjkajoče ključne besede ter ocena od 100 v realnem času"
+        },
+        "weak": {
+          "title": "Zaznavanje šibkih formulacij",
+          "text": "»Odgovoren za«, »pomagal pri«… se samodejno označijo, z zbirko glagolov dejanja, s katerimi jih zamenjate"
+        },
+        "analyzer": {
+          "title": "Analizator obstoječih življenjepisov",
+          "text": "Spustite življenjepis, ustvarjen drugje: oglejte si, kaj robot zares prebere in kaj je treba popraviti"
+        },
+        "linkedin": {
+          "title": "Uvoz iz LinkedIna",
+          "text": "Vnaprej izpolnite svoj Master življenjepis iz brezplačnega PDF-ja, ki ga lahko izvozite iz svojega profila na LinkedInu"
+        },
+        "languages": {
+          "title": "5 jezikov življenjepisa",
+          "text": "Francoščina, angleščina, italijanščina, španščina in nemščina. V angleščini sta fotografija in datum rojstva skrita, v skladu z navadami angleško govorečih držav"
+        },
+        "pdf": {
+          "title": "Izvoz v PDF, prilagojen ATS",
+          "text": "Pravo besedilo in jasna struktura: berljivo za robote, prijetno za kadrovike"
+        },
+        "offline": {
+          "title": "Namestljivo in brez povezave",
+          "text": "Dodajte LocalATSCV na začetni zaslon in delajte naprej brez povezave"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Pogosta vprašanja",
+      "title": "Pogosta vprašanja",
+      "text": "Vašega vprašanja ni tukaj? Pišite nam:",
+      "items": {
+        "ats": {
+          "q": "Kaj je ATS?",
+          "a": "Applicant Tracking System je programska oprema, s katero kadroviki prejemajo, razvrščajo in iščejo prijave. Vaš življenjepis pretvori v besedilo in ga indeksira: če je besedilo slabo izluščeno ali manjkajo prave ključne besede, je vašo prijavo težko najti"
+        },
+        "storage": {
+          "q": "Kje so shranjeni moji podatki?",
+          "a": "Samo v vašem brskalniku, v IndexedDB, podatkovni zbirki, ki je vgrajena v vsak sodoben brskalnik. Nikoli ne gredo skozi naše strežnike, ki znajo le streči datoteke aplikacije"
+        },
+        "clear": {
+          "q": "Kaj se zgodi, če izbrišem podatke brskalnika?",
+          "a": "Vaši življenjepisi se izbrišejo, saj ne obstajajo nikjer drugje. Redno izvažajte varnostno kopijo JSON: kadar koli jo lahko znova uvozite, v kateri koli napravi"
+        },
+        "score": {
+          "q": "Ali ocena zagotavlja, da bo moj življenjepis izbran?",
+          "a": "Ne. Vsak ATS ima svoja pravila, končno odločitev pa sprejme človek. Ocena je kazalnik: preveri, ali vaš življenjepis uporablja besede iz oglasa in ali ga stroj lahko pravilno prebere"
+        },
+        "photo": {
+          "q": "Zakaj v angleščini fotografija izgine?",
+          "a": "V Združenem kraljestvu, ZDA in mnogih angleško govorečih državah fotografije in datuma rojstva ne priporočajo, da bi omejili diskriminacijo pri zaposlovanju. Nekateri kadroviki življenjepise, ki ju vsebujejo, celo zavrnejo"
+        },
+        "free": {
+          "q": "Je res brezplačno?",
+          "a": "Da. LocalATSCV je odprtokodni projekt pod licenco MIT, brez oglasov in naročnine. Njegovo gostovanje skoraj nič ne stane, ker vse delo opravi vaš brskalnik"
+        },
+        "templates": {
+          "q": "Ali grafične predloge prestanejo ATS?",
+          "a": "Da. Vsaka predloga natisne pravo besedilo v vrstnem redu branja in s standardnimi naslovi razdelkov: oblike, vrstice in ikone so risbe, ki jih roboti prezrejo. Predloge z enim stolpcem ostajajo najvarnejše, preverjanje ATS v urejevalniku pa vašo postavitev preizkuša sproti"
+        },
+        "import": {
+          "q": "Ali lahko znova uporabim svoj trenutni življenjepis ali profil na LinkedInu?",
+          "a": "Da. Uvozite življenjepis v PDF ali Wordu (.docx), PDF svojega profila na LinkedInu (v računalniku) ali arhiv podatkov LinkedIna (iz mobilne aplikacije): vsebina se prebere v vašem brskalniku in razvrsti v urejevalnik"
+        },
+        "offline": {
+          "q": "Ali LocalATSCV deluje brez povezave?",
+          "a": "Da. Je namestljiva spletna aplikacija: po prvem obisku vse deluje brez povezave, tudi izvoz v PDF"
+        }
+      }
+    },
+    "cta": {
+      "title": "Pripravljeni, da pridete skozi filter?",
+      "text": "Ustvarite svoj Master življenjepis v nekaj minutah. Nič ne bo zapustilo te naprave",
+      "button": "Začnite"
+    },
+    "demo": {
+      "role": "Front-end razvijalka",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Delovne izkušnje",
+      "jobTitle": "Razvijalka Angular",
+      "jobMeta": "Primer d.o.o. · 2022 – danes",
+      "bullets": {
+        "migration": "Migracija 40 zaslonov na <k>Angular</k> in <k>TypeScript</k>, čas nalaganja krajši za 35 %",
+        "testing": "<w>Odgovorna za</w> strategijo testiranja end-to-end",
+        "delivery": "Neprekinjena dostava z <k>GitLab CI</k> za 3 produktne ekipe"
+      },
+      "weakLabel": "Šibka formulacija",
+      "weakReplacement": "»Vodila sem«",
+      "skills": "Veščine",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Dostopnost",
+      "score": "Ujemanje z oglasom",
+      "sent": "Poslanih 0 bajtov",
+      "robot": "VEŠČINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end razvijalka Angular <n>●●●●○</n> DELOVNE IZKUŠNJE <n>� camille.mar</n> Razvijalka Angular <n>tin@example.com</n> 2022 – danes TypeScript <n>●●●○○</n> Primer d.o.o. JEZIKI Angleščina Migracija 40 zaslonov na…"
+    }
+  },
+  "dialog": {
+    "cancel": "Prekliči",
+    "delete": "Izbriši",
+    "create": "Ustvari",
+    "save": "Shrani",
+    "import": "Uvozi"
+  },
+  "editor": {
+    "list": {
+      "title": "Moji življenjepisi",
+      "subtitle": "Shranjeni samo v tem brskalniku",
+      "new": "Nov življenjepis",
+      "newBlank": "Prazen življenjepis",
+      "newBlankHint": "Začnite s prazno stranjo",
+      "newSample": "Začnite s primerom",
+      "newSampleHint": "Izpolnjen izmišljen življenjepis za spoznavanje urejevalnika",
+      "import": "Obnovi varnostno kopijo",
+      "exportAll": "Izvozi vse",
+      "emptyTitle": "Še ni življenjepisov",
+      "emptyText": "Ustvarite svoj Master življenjepis: vse vaše izkušnje na enem mestu, pripravljene za prilagoditev vsakemu delovnemu mestu",
+      "open": "Odpri",
+      "actions": "Dejanja",
+      "duplicate": "Podvoji",
+      "export": "Izvozi (JSON)",
+      "delete": "Izbriši",
+      "updated": "Urejeno {{date}}",
+      "versions": "Različice: {{count}}",
+      "backupHint": "Vaši življenjepisi obstajajo samo v tem brskalniku. Redno izvažajte varnostno kopijo JSON: če izbrišete podatke brskalnika, lahko z njo vse obnovite",
+      "defaultName": "Moj življenjepis",
+      "copySuffix": "(kopija)",
+      "deleteTitle": "Izbrišem »{{name}}«?",
+      "deleteText": "Življenjepis in vse njegove različice bodo trajno izbrisani iz tega brskalnika",
+      "exportDone": "Varnostna kopija je prenesena",
+      "importConfirmTitle": "Uvozim to varnostno kopijo?",
+      "importConfirmText": "Življenjepisi v tej kopiji: {{count}}. Tisti, ki že obstajajo v tem brskalniku, bodo zamenjani",
+      "importDone": "Varnostna kopija uvožena, življenjepisi: {{count}}",
+      "importError": {
+        "invalidJson": "Ta datoteka ni veljaven JSON",
+        "notABackup": "Ta datoteka ni varnostna kopija LocalATSCV",
+        "newerVersion": "Ta varnostna kopija izvira iz novejše različice LocalATSCV: najprej posodobite aplikacijo"
+      },
+      "importPdf": "Uvozi življenjepis (PDF ali Word)",
+      "importPdfHint": "Prenesite obstoječi življenjepis v naše predloge",
+      "importLinkedin": "Uvozi iz LinkedIna",
+      "importLinkedinHint": "Iz PDF-ja vašega profila"
+    },
+    "toolbar": {
+      "back": "Moji življenjepisi",
+      "name": "Ime življenjepisa",
+      "cvLanguage": "Jezik življenjepisa",
+      "accent": "Poudarna barva",
+      "customAccent": "Barva po meri",
+      "saved": "Shranjeno",
+      "saving": "Shranjevanje …",
+      "saveError": "Shranjevanje ni uspelo",
+      "edit": "Uredi",
+      "preview": "Predogled",
+      "exportPdf": "Izvozi v PDF",
+      "undo": "Razveljavi (Ctrl+Z)",
+      "redo": "Uveljavi (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Dokument za urejanje",
+      "cv": "Življenjepis",
+      "letter": "Motivacijsko pismo"
+    },
+    "letter": {
+      "title": "Motivacijsko pismo",
+      "versionOwn": "Ta različica ima lastno pismo",
+      "versionShared": "Ta različica uporablja pismo iz Mastra: če ga urejate tukaj, se ustvari kopija za to različico",
+      "useMaster": "Uporabi pismo iz Mastra",
+      "recipient": "Prejemnik",
+      "recipientPlaceholder": "Primer d.o.o.\nKadrovska služba\nSlovenska cesta 10, 1000 Ljubljana",
+      "place": "Kraj",
+      "date": "Datum",
+      "dateHint": "Prazno: datum dneva tiskanja",
+      "subject": "Zadeva",
+      "subjectPlaceholder": "Prijava na delovno mesto …",
+      "greeting": "Nagovor",
+      "body": "Pismo",
+      "bodyPlaceholder": "Trije kratki odstavki: kaj vas privlači pri podjetju, kaj prinašate, kateri naslednji korak predlagate",
+      "bodyHint": "Prazna vrstica loči dva odstavka · **krepko** za ključno besedo",
+      "outline": "Vstavi osnutek",
+      "closing": "Zaključni pozdrav",
+      "fileName": "Motivacijsko pismo"
+    },
+    "fit": {
+      "pages": "Strani: {{count}}",
+      "onePage": "Pride na eno stran",
+      "hintMany": "Večina kadrovikov pričakuje enostranski življenjepis",
+      "hintOne": "Idealna oblika za večino prijav",
+      "stillTooLong": "Še vedno predolgo, tudi zgoščeno: skrajšajte nekaj točk ali skrijte elemente v eni od različic",
+      "fit": "Prilagodi na eno stran",
+      "settings": "Nastavitve postavitve",
+      "spacing": "Razmik",
+      "scale": "Velikost besedila",
+      "settingsHint": "Besedilo ostane pravo besedilo: spremeni se le postavitev",
+      "reset": "Postavitev predloge",
+      "grayscale": "Prikaži črno-belo",
+      "grayscaleHint": "Simulira črno-belo tiskanje: izvoženi PDF ohrani barve"
+    },
+    "versions": {
+      "label": "Prikazana različica",
+      "master": "Master življenjepis",
+      "masterHint": "Vsa vsebina, brez filtra",
+      "new": "Nova različica",
+      "newText": "Ciljna različica izhaja iz celotnega Master življenjepisa: nato odznačite, česar ta prijava ne potrebuje",
+      "nameLabel": "Ime različice",
+      "namePlaceholder": "Npr. Front-end razvijalec – Podjetje X",
+      "rename": "Preimenuj različico",
+      "delete": "Izbriši različico",
+      "deleteTitle": "Izbrišem različico »{{name}}«?",
+      "deleteText": "Izbriše se le izbor: vsa vsebina ostane v vašem Master življenjepisu",
+      "banner": "Različica »{{name}}«: odznačite, kar se ne sme prikazati. Iz vašega Master življenjepisa se nič ne izbriše",
+      "include": "Vključi v to različico"
+    },
+    "enRule": "Življenjepis v angleščini: fotografija, datum rojstva in državljanstvo so skriti, v skladu z navadami angleško govorečih držav",
+    "profile": {
+      "title": "Profil",
+      "photo": "Fotografija",
+      "photoAdd": "Dodaj fotografijo",
+      "photoChange": "Zamenjaj",
+      "photoRemove": "Odstrani",
+      "photoHint": "Pomanjšana in shranjena samo v tej napravi",
+      "photoError": "Te slike ni bilo mogoče prebrati",
+      "hiddenInEnglish": "Skrito v angleščini",
+      "firstName": "Ime",
+      "lastName": "Priimek",
+      "headline": "Naslov življenjepisa",
+      "headlinePlaceholder": "Npr. Front-end razvijalka",
+      "email": "E-pošta",
+      "phone": "Telefon",
+      "location": "Kraj",
+      "birthDate": "Datum rojstva",
+      "nationality": "Državljanstvo",
+      "summary": "Povzetek",
+      "summaryPlaceholder": "Dva ali trije stavki, ki povzamejo vaš profil in to, kar iščete",
+      "links": "Povezave",
+      "linkLabel": "Ime povezave",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Naslov povezave",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Dodaj povezavo",
+      "removeLink": "Odstrani povezavo",
+      "drivingLicense": "Vozniško dovoljenje",
+      "drivingLicensePlaceholder": "Npr. Vozniško dovoljenje kategorije B, lasten avto",
+      "qrToggle": "Prikaži to povezavo kot kodo QR",
+      "linksHint": "Logotip (LinkedIn, GitHub, YouTube …) se doda samodejno. Gumb QR v večini grafičnih predlog prikaže povezavo kot kodo QR"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Delovne izkušnje",
+        "education": "Izobrazba",
+        "projects": "Projekti",
+        "certifications": "Certifikati",
+        "custom": "Prosti razdelek",
+        "skills": "Veščine",
+        "languages": "Jeziki",
+        "interests": "Interesi"
+      },
+      "add": "Dodaj razdelek",
+      "titleLabel": "Naslov razdelka",
+      "empty": "Prazen razdelek: ne bo prikazan v življenjepisu",
+      "addItem": {
+        "experience": "Dodaj izkušnjo",
+        "education": "Dodaj izobrazbo",
+        "projects": "Dodaj projekt",
+        "certifications": "Dodaj certifikat",
+        "custom": "Dodaj element",
+        "skills": "Dodaj veščine",
+        "languages": "Dodaj jezik",
+        "interests": "Dodaj interes"
+      },
+      "deleteTitle": "Izbrišem razdelek »{{name}}«?",
+      "deleteText": "Njegova vsebina bo odstranjena iz Master življenjepisa in iz vseh njegovih različic"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Delovno mesto",
+          "subtitle": "Podjetje"
+        },
+        "education": {
+          "title": "Naziv ali smer",
+          "subtitle": "Šola ali fakulteta"
+        },
+        "projects": {
+          "title": "Ime projekta",
+          "subtitle": "Vloga ali tehnologije"
+        },
+        "certifications": {
+          "title": "Certifikat",
+          "subtitle": "Izdajatelj"
+        },
+        "custom": {
+          "title": "Naslov",
+          "subtitle": "Podnaslov"
+        }
+      },
+      "location": "Kraj",
+      "url": "Povezava",
+      "start": "Začetek",
+      "end": "Konec",
+      "date": "Datum pridobitve",
+      "current": "V teku",
+      "untitled": "Brez naslova",
+      "bullets": "Dosežki",
+      "bulletPlaceholder": "Začnite z glagolom dejanja in izrazite rezultat s številkami",
+      "addBullet": "Dodaj točko",
+      "bulletHint": "Enter: nova točka",
+      "boldHint": "**beseda** za krepko"
+    },
+    "items": {
+      "skillLabel": "Kategorija",
+      "skillLabelPlaceholder": "Npr. Front-end",
+      "skillKeywords": "Veščine",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Jezik",
+      "languageLevel": "Raven",
+      "languageLevelPlaceholder": "Npr. C1, fluent",
+      "interest": "Interes",
+      "interestPlaceholder": "Npr. Plezanje",
+      "levelDetected": "Raven prepoznana: predloge z vrstico jo bodo prikazale",
+      "levelUnknown": "Raven ni prepoznana, brez vrstice: uporabite A1 do C2 ali predlog s seznama",
+      "levelEmpty": "Vnesite raven, da se prikaže vrstica",
+      "levelHint": "Uporabite evropsko raven (A1 do C2) ali besedo, kot je »fluent« ali »native«: nekatere predloge jo prikažejo tudi kot vrstico, ki jo predogledajo pike na desni"
+    },
+    "actions": {
+      "menu": "Dejanja",
+      "moveUp": "Premakni gor",
+      "moveDown": "Premakni dol",
+      "duplicate": "Podvoji",
+      "delete": "Izbriši",
+      "drag": "Povlecite za spremembo vrstnega reda"
+    },
+    "month": "Mesec",
+    "year": "Leto",
+    "noMonth": "Mesec",
+    "preview": {
+      "page": "Stran {{n}}"
+    },
+    "notFound": {
+      "title": "Življenjepisa ni mogoče najti",
+      "text": "Ta življenjepis ne obstaja ali je bil izbrisan iz tega brskalnika"
+    },
+    "templates": {
+      "button": "Predloga",
+      "title": "Izberite predlogo",
+      "subtitle": "Vse predloge s popolnim primerom življenjepisa ali z vašim. Poudarna barva velja za vse predloge",
+      "close": "Zapri",
+      "filter": "Filtriraj predloge",
+      "filters": {
+        "all": "Vse",
+        "graphic": "Grafične",
+        "sober": "Preproste"
+      },
+      "ats": "Združljivost z ATS",
+      "levels": {
+        "excellent": "odlična",
+        "good": "dobra",
+        "fair": "sprejemljiva"
+      },
+      "atsHint": "Vsaka predloga natisne pravo besedilo. Postavitve z dvema stolpcema večina sodobnih ATS dobro prebere, nekatera starejša orodja pa stolpce pomešajo: če niste prepričani, izberite predlogo z enim stolpcem",
+      "names": {
+        "classic": {
+          "name": "Klasična",
+          "description": "Čista in učinkovita: en stolpec, podčrtani naslovi, nič odvečnega"
+        },
+        "modern": {
+          "name": "Moderna",
+          "description": "Barvni pas, izraziti naslovi in veščine kot oznake"
+        },
+        "elegant": {
+          "name": "Elegantna",
+          "description": "Sredinska glava in pisava s serifi za prefinjen videz"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Barvni rob, podrobnosti v pisavi s stalno širino in veščine v slogu kode"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Švicarski slog: veliko ime, naslovi na robu, veliko praznega prostora"
+        },
+        "sidebar": {
+          "name": "Stolpci",
+          "description": "Barvna stranska vrstica s fotografijo, stiki in veščinami"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Pas s fotografijo, ikone, časovnica in vrstice jezikov, pa vendar popolnoma berljiva za ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organske pastelne oblike, velika okrogla fotografija, časovnica in koda QR v dveh stolpcih"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Videz Signature v enem stolpcu: grafična in popolnoma berljiva za ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Temen diagonalni pas, barvni sij, kartice izkušenj in polne oznake veščin"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrijska kompozicija v osnovnih barvah okoli fotografije, geometrijska pisava in oblike pred vsakim naslovom"
+        },
+        "editorial": {
+          "name": "Revija",
+          "description": "Revijalna postavitev: veliko ime s serifi, uvod v ležečem tisku, oštevilčeni razdelki in zamaknjen portret"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalizem: debele črne obrobe, ostre sence, živi barvni bloki in črne oznake"
+        },
+        "prism": {
+          "name": "Prizma",
+          "description": "Mrežni preliv v vaših poudarnih barvah, kontaktna kartica z učinkom stekla in kartice s prelivno obrobo"
+        },
+        "swiss": {
+          "name": "Švicarska",
+          "description": "Slog švicarskega plakata: ogromno ime, barvni trak, debele črne črte in oštevilčeni razdelki"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Papir barve slonovine, tanek dvojni okvir, rombasti okraski in pisava Garamond"
+        },
+        "nocturne": {
+          "name": "Nokturno",
+          "description": "Temni način: nočno ozadje, neonski poudarki in svetleča časovnica, idealna za digitalne prijave"
+        },
+        "wave": {
+          "name": "Val",
+          "description": "Barvni pas, ki se konča z valovi, okrogla fotografija in valoviti naslovi, mehka in prijazna"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Zaobljene ploščice bento: fotografija, ime in koda QR v mreži, ena ploščica na razdelek"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Tehnična risba: milimetrski papir, kotne oznake, kotirna črta in oznake s stalno širino"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrijski konfeti iz 80. let, žive barve in naslovi, podčrtani s cikcakom"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Velik razdeljen pas: besedilo na barvnem bloku in dvobarvna fotografija"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Tipografija kot edini okras: ogromno, delno obrobljeno ime in zelo veliki naslovi"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Vsak razdelek ima svojo pastelno barvo, naslovi v obliki tablete in večbarvni sij"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Temno moder pas, zlata črta in ime s serifi za vodstvena delovna mesta"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japonski minimalizem: papir washi, krog ensō v vaši poudarni barvi in poteza s čopičem"
+        },
+        "ribbon": {
+          "name": "Trak",
+          "description": "Naslovi razdelkov na trakovih z lastovičjim repom, sredinska glava"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Šesterokotna fotografija, satovje v kotu in šesterokotniki pred naslovi"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Glava iz plasti izrezanega papirja, razdelki kot listi papirja"
+        },
+        "thread": {
+          "name": "Nit",
+          "description": "Neprekinjena nit povezuje glavo in vsak razdelek, s piko za vsako delovno mesto"
+        }
+      },
+      "preview": {
+        "label": "Vsebina sličic",
+        "sample": "Popoln primer",
+        "mine": "Moj življenjepis"
+      }
+    },
+    "print": {
+      "title": "Izvozi v PDF",
+      "text": "Kmalu se bo odprlo okno za tiskanje vašega brskalnika. Za popoln PDF:",
+      "tips": {
+        "destination": "Cilj: »Shrani kot PDF«",
+        "margins": "Robovi: »Brez«",
+        "headers": "Odznačite »Glave in noge«",
+        "background": "Označite »Grafika ozadja«, da ohranite barve"
+      },
+      "dontShow": "Ne prikaži več",
+      "cancel": "Prekliči",
+      "print": "Odpri okno za tiskanje"
+    },
+    "job": {
+      "title": "Prilagodi oglasu za delo",
+      "sources": "LinkedIn, MojeDelo, Optius, Zaposlitev.net, Indeed…",
+      "placeholder": "Sem prilepite celotno besedilo oglasa: naziv, naloge, zahteve",
+      "urlWarning": "Prilepite besedilo oglasa namesto povezave: LocalATSCV nikoli ne vzpostavi stika z nobenim spletnim mestom, zato vaši podatki ostanejo pri vas",
+      "empty": "Ni najdenih ključnih besed: prilepite popolnejši oglas",
+      "score": "Ujemanje z oglasom",
+      "summary": "Prisotnih {{found}} od {{total}} ključnih besed",
+      "found": "Ključne besede v vašem življenjepisu",
+      "missing": "Manjkajoče ključne besede",
+      "missingHint": "Kliknite ključno besedo, da jo dodate med veščine, ali jo vključite v eno od izkušenj",
+      "addToSkills": "Dodaj med veščine",
+      "added": "»{{keyword}}« je dodano med vaše veščine",
+      "keywordsGroup": "Ključne besede",
+      "createVersion": "Ustvari ciljno različico za to delovno mesto",
+      "createVersionHint": "Izkušnje in točke, ki niso povezane z delovnim mestom, bodo odznačene: lahko jih prilagodite",
+      "savedInVersion": "Oglas shranjen z različico »{{name}}«"
+    },
+    "weak": {
+      "hint": "»{{phrase}}« opisuje nalogo: začnite z glagolom dejanja"
+    },
+    "fonts": {
+      "title": "Tipografija",
+      "heading": "Naslovi",
+      "body": "Besedilo",
+      "default": "Iz predloge",
+      "hint": "ATS dobro preberejo vse te pisave: besedilo ostane pravo besedilo"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Novosti",
+    "title": "Dnevnik sprememb",
+    "subtitle": "Vse različice LocalATSCV z novostmi in popravki",
+    "current": "Trenutna različica",
+    "frenchOnly": "Dnevnik sprememb je napisan v francoščini",
+    "error": "Dnevnika sprememb ni bilo mogoče naložiti",
+    "types": {
+      "added": "Dodano",
+      "changed": "Spremenjeno",
+      "fixed": "Popravljeno",
+      "removed": "Odstranjeno",
+      "deprecated": "Zastarelo",
+      "security": "Varnost",
+      "other": "Drugo"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analizator",
+    "title": "Ali vaš življenjepis pride mimo robotov?",
+    "subtitle": "Spustite življenjepis v PDF, ustvarjen s katerim koli orodjem: LocalATSCV ga prebere kot ATS in vam pove, kaj popraviti",
+    "drop": "Povlecite življenjepis sem",
+    "dropActive": "Spustite datoteko, da se analiza začne",
+    "hint": "Samo PDF, največ 15 MB",
+    "choose": "Izberi datoteko",
+    "reading": "Branje PDF-ja …",
+    "privacy": "Datoteka se analizira v vašem brskalniku: nikoli se nikamor ne pošlje",
+    "another": "Analiziraj drug življenjepis",
+    "errors": {
+      "notPdf": "Ta datoteka ni PDF",
+      "tooLarge": "Ta datoteka je večja od 15 MB",
+      "encrypted": "Ta PDF je zaščiten z geslom: tudi ATS ga ne more prebrati",
+      "unreadable": "Tega PDF-ja ni bilo mogoče prebrati: morda je poškodovan"
+    },
+    "stats": "Strani: {{pages}} · besed: {{words}}",
+    "verdict": {
+      "excellent": "Odlično",
+      "good": "Dobro",
+      "fair": "Za izboljšavo",
+      "poor": "Kritično"
+    },
+    "verdictText": {
+      "excellent": "Roboti vaš življenjepis berejo zelo dobro",
+      "good": "Nekaj popravkov ga bo naredilo še učinkovitejšega",
+      "fair": "Več težav otežuje branje sistemom ATS",
+      "poor": "ATS bo verjetno spregledal bistveno"
+    },
+    "categories": {
+      "readability": "Strojna berljivost",
+      "structure": "Struktura",
+      "content": "Vsebina"
+    },
+    "sectionNames": {
+      "experience": "Delovne izkušnje",
+      "education": "Izobrazba",
+      "skills": "Veščine"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Strojno berljivo besedilo",
+        "pass": "Vse besedilo vašega življenjepisa je mogoče izluščiti",
+        "warn": "Nekatere strani ne vsebujejo berljivega besedila: verjetno slike ali skeniranje",
+        "fail": "Ni berljivega besedila: ta življenjepis je verjetno slika ali skeniranje in ATS iz njega ne bo izluščil ničesar. Izvozite ga v PDF iz urejevalnika besedil"
+      },
+      "columns": {
+        "title": "Postavitev",
+        "pass": "Linearno branje, stolpci se ne mešajo",
+        "warn": "Zaznana postavitev v stolpcih: besedilo se lahko prebere v napačnem vrstnem redu. Preverite »Kaj prebere robot« spodaj"
+      },
+      "order": {
+        "title": "Vrstni red branja v datoteki",
+        "pass": "Besedilo je v datoteki zapisano v vrstnem redu branja",
+        "warnHeader": "Vaše ime in glava sta v datoteki zapisana za preostalim življenjepisom: ATS, ki datoteko bere po vrsti, vašega imena morda ne bo našel",
+        "warn": "{{percent}} % besedila je v datoteki zapisanih zunaj vrstnega reda branja: nekateri ATS bodo te odlomke prebrali v napačnem vrstnem redu",
+        "fail": "{{percent}} % besedila je v datoteki zapisanih neurejeno, kar je značilno za življenjepise iz prostih polj z besedilom (Canva, PowerPoint …): mnogi ATS bodo vaš življenjepis prebrali pomešan. Primerjajte obe branji spodaj"
+      },
+      "unreadable": {
+        "title": "Ikone in vrstice veščin",
+        "pass": "Ni ikon ali neberljivih znakov",
+        "warn": "Zaznane ikone ali vrstice ({{count}}): ATS jih prebere kot čudne znake. Zamenjajte jih z besedilom",
+        "fail": "Zaznane ikone ali vrstice ({{count}}): zamenjajte jih z besedilom, na primer »Angleščina: C1« namesto pik"
+      },
+      "contact": {
+        "title": "Kontaktni podatki",
+        "pass": "Najdena sta e-poštni naslov in telefonska številka",
+        "warnNoPhone": "Ni najdene telefonske številke",
+        "warnNoEmail": "Ni najdenega e-poštnega naslova",
+        "fail": "Ni najdene ne e-pošte ne telefona: napišite ju kot besedilo, ne na sliki"
+      },
+      "sections": {
+        "title": "Standardni razdelki",
+        "pass": "Izkušnje, izobrazba in veščine so jasno prepoznane",
+        "warn": "Ti razdelki niso bili prepoznani: uporabite standardne naslove",
+        "fail": "Ni prepoznan noben standardni razdelek: ATS se zanašajo na naslove, kot sta »Delovne izkušnje« ali »Izobrazba«"
+      },
+      "length": {
+        "title": "Dolžina",
+        "pass": "Strani: {{pages}}, besed: {{words}}: idealna dolžina",
+        "warn": "Strani: {{pages}}, besed: {{words}}: ciljajte na 1 do 2 strani in 250 do 1000 besed",
+        "fail": "Strani: {{pages}}, besed: {{words}}: prekratko ali predolgo za dobro oceno"
+      },
+      "quantified": {
+        "title": "Številčni rezultati",
+        "pass": "{{percent}} % vaših točk vsebuje število, odlično",
+        "warn": "Le {{percent}} % točk vsebuje številke: dodajte merljive rezultate (odstotke, zneske, obsege)",
+        "fail": "Ni številčnih rezultatov: kadroviki in ATS cenijo merljive dosežke"
+      },
+      "weakPhrases": {
+        "title": "Glagoli dejanja",
+        "pass": "Na začetku točk ni šibkih formulacij",
+        "warn": "Ti začetki opisujejo nalogo namesto rezultata: začnite z glagolom dejanja",
+        "fail": "Ti začetki opisujejo nalogo namesto rezultata: začnite z glagolom dejanja"
+      },
+      "dates": {
+        "title": "Datumi",
+        "pass": "Vaše izkušnje so datirane",
+        "warn": "Najdeno je le eno leto: navedite datume za vsako delovno mesto, ATS iz njih izračunajo vaša leta izkušenj",
+        "fail": "Ni najdenih datumov: ATS iz njih izračunajo vaša leta izkušenj"
+      }
+    },
+    "robot": {
+      "title": "Kaj prebere robot",
+      "text": "Besedilo, znova sestavljeno vrstico za vrstico, kot to počne večina ATS. Če je tukaj pomešano ali nepopolno, je takšno tudi za kadrovika",
+      "empty": "Ni bilo mogoče izluščiti nobenega besedila",
+      "position": "Po položaju",
+      "file": "Vrstni red v datoteki",
+      "fileText": "Besedilo v vrstnem redu, v katerem je zapisano v datoteki: tako ga berejo ATS, ki ne rekonstruirajo postavitve. Slediti mora vrstnemu redu branja vašega življenjepisa"
+    },
+    "cta": {
+      "title": "Začnite znova na trdnih temeljih",
+      "text": "Ustvarite življenjepis, prilagojen ATS, v urejevalniku in ga nato prilagodite vsakemu delovnemu mestu",
+      "button": "Odpri urejevalnik",
+      "import": "Prenesi ta življenjepis v naše predloge"
+    },
+    "live": {
+      "title": "Preverjanje ATS v živo",
+      "issues": "Točke za preverjanje v tej predlogi: {{count}}",
+      "allGood": "V tej predlogi ni zaznanih težav",
+      "hint": "Izračunano na prikazani postavitvi, z istim mehanizmom kot analizator življenjepisa"
+    },
+    "method": {
+      "title": "Kako se izračuna ta ocena?",
+      "intro": "Uradne ocene ATS ni: vsaka programska oprema za zaposlovanje (Workday, Taleo, Greenhouse, Lever …) ima svoja, pogosto zaupna pravila. Ta indeks preveri, kje se večina od njih zatakne, po tej lestvici:",
+      "disclaimer": "Ta merila izhajajo iz javnih priporočil ponudnikov ATS in najpogostejših napak pri branju (besedilo na sliki, stolpci, ikone, nestandardni naslovi). Ocena vam pomaga izboljšati življenjepis: ne napoveduje izbora"
+    }
+  },
+  "import": {
+    "title": "Uvozi življenjepis",
+    "linkedinTitle": "Uvozi iz LinkedIna",
+    "text": "Izberite življenjepis v PDF ali Wordu (.docx): vsebina se izlušči v vašem brskalniku in razvrsti v razdelke urejevalnika. Nato lahko izberete predlogo",
+    "choose": "Izberi datoteko",
+    "chooseFile": "Izberi datoteko",
+    "hint": "PDF ali Word (.docx), največ 15 MB",
+    "reading": "Uvažanje …",
+    "privacy": "Datoteka se prebere v vašem brskalniku: nikoli se nikamor ne pošlje",
+    "close": "Zapri",
+    "done": "Življenjepis uvožen (elementov: {{items}}): preglejte vsak razdelek",
+    "errors": {
+      "tooLarge": "Ta datoteka je večja od 15 MB",
+      "encrypted": "Ta PDF je zaščiten z geslom",
+      "unreadable": "Te datoteke ni bilo mogoče prebrati: morda je poškodovana",
+      "empty": "Ni uporabnega besedila: ta PDF je verjetno slika ali skeniranje",
+      "unsupported": "Izberite PDF, datoteko Word (.docx) ali arhiv ZIP iz LinkedIna",
+      "archiveEmpty": "Ta arhiv ne vsebuje uporabnih podatkov profila LinkedIn"
+    },
+    "hintArchive": "PDF (računalnik) ali arhiv ZIP (mobilna aplikacija)",
+    "linkedin": {
+      "computer": {
+        "title": "V računalniku: PDF vašega profila",
+        "step1": "Odprite linkedin.com v brskalniku v računalniku (v aplikaciji te možnosti ni)",
+        "step2": "Na svojem profilu kliknite »Viri« (ali »Več«) in nato »Shrani kot PDF«",
+        "step3": "Izberite ta PDF spodaj"
+      },
+      "archive": {
+        "title": "V mobilni aplikaciji: arhiv vaših podatkov",
+        "step1": "V aplikaciji tapnite svojo fotografijo, nato Nastavitve in Zasebnost podatkov",
+        "step2": "Izberite »Pridobite kopijo svojih podatkov« in označite Profil, Delovna mesta, Izobrazba, Veščine in Jeziki",
+        "step3": "LinkedIn vam v nekaj minutah pošlje e-poštno sporočilo: prenesite arhiv ZIP",
+        "step4": "Izberite to datoteko ZIP spodaj, ne da bi jo razširili"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Ta dokument je prikazan v angleščini. Pravno zavezujoča je samo francoska različica.",
+    "error": "Tega dokumenta ni bilo mogoče naložiti."
+  }
+}

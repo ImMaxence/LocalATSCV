@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { LanguageService } from '../../core/i18n/language.service';
 import { AppUpdateService } from '../../core/pwa/app-update.service';
 import { Icon } from '../../shared/icon/icon';
 
@@ -13,14 +14,17 @@ import { Icon } from '../../shared/icon/icon';
       <div
         *transloco="let t"
         role="status"
-        class="fixed right-4 bottom-4 left-4 z-50 flex items-start gap-3 rounded-2xl border border-line bg-surface p-4 shadow-xl sm:left-auto sm:max-w-sm"
+        class="fixed start-4 end-4 bottom-4 z-50 flex items-start gap-3 rounded-2xl border border-line bg-surface p-4 shadow-xl sm:start-auto sm:max-w-sm"
       >
         <app-icon class="mt-0.5 size-5 text-accent" name="sparkles" />
         <div class="flex-1 text-sm">
           <p class="font-semibold">{{ t('update.title') }}</p>
           <p class="mt-1 text-muted">
             {{ t('update.text') }}
-            <a routerLink="/changelog" class="text-accent underline underline-offset-2">
+            <a
+              [routerLink]="language.link('/changelog')"
+              class="text-accent underline underline-offset-2"
+            >
               {{ t('update.changelog') }}
             </a>
           </p>
@@ -39,4 +43,5 @@ import { Icon } from '../../shared/icon/icon';
 })
 export class UpdateToast {
   protected readonly updates = inject(AppUpdateService);
+  protected readonly language = inject(LanguageService);
 }

@@ -15,7 +15,11 @@
     "dark": "Scuro"
   },
   "lang": {
-    "label": "Lingua dell'interfaccia"
+    "label": "Lingua dell'interfaccia",
+    "suggestion": "Visualizza questa pagina in italiano",
+    "dismiss": "Chiudi",
+    "search": "Cerca una lingua",
+    "noResult": "Nessuna lingua trovata"
   },
   "pages": {
     "home": "CV ottimizzati per gli ATS, 100% in locale",
@@ -246,6 +250,25 @@
       "title": "Pronto a superare il filtro?",
       "text": "Crea il tuo Master CV in pochi minuti. Nulla lascerà questo dispositivo",
       "button": "Inizia ora"
+    },
+    "demo": {
+      "role": "Sviluppatrice Front-end",
+      "contact": "Lione · camille.martin@esempio.it",
+      "experience": "Esperienza",
+      "jobTitle": "Sviluppatrice Angular",
+      "jobMeta": "Società Esempio · 2022 – oggi",
+      "bullets": {
+        "migration": "Migrazione di 40 schermate verso <k>Angular</k> e <k>TypeScript</k>, tempi di caricamento ridotti del 35%",
+        "testing": "<w>Responsabile di</w> la strategia di test end-to-end",
+        "delivery": "Rilascio continuo con <k>GitLab CI</k> per 3 team di prodotto"
+      },
+      "weakLabel": "Frase debole",
+      "weakReplacement": "« Guidato »",
+      "skills": "Competenze",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibilità",
+      "score": "Corrispondenza con l’annuncio",
+      "sent": "0 byte inviati",
+      "robot": "COMPETENZE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Sviluppatrice Front-end Angular <n>●●●●○</n> ESPERIENZA <n>� camille.mar</n> Sviluppatrice Angular <n>tin@esempio.it</n> 2022 – oggi TypeScript <n>●●●○○</n> Società Esempio LINGUE Inglese Migrazione di 40 schermate verso…"
     }
   },
   "dialog": {

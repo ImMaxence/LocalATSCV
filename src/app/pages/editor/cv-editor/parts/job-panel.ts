@@ -25,7 +25,7 @@ import { CvEditorStore } from '../cv-editor.store';
     <section *transloco="let t; prefix: 'editor.job'" class="panel overflow-hidden">
       <button
         type="button"
-        class="flex w-full items-center gap-3 px-4 py-3 text-left"
+        class="flex w-full items-center gap-3 px-4 py-3 text-start"
         [attr.aria-expanded]="isOpen()"
         (click)="open.set(!isOpen())"
       >

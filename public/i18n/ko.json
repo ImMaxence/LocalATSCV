@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "LocalATSCV 홈",
+    "main": "주요 메뉴",
+    "how": "사용 방법",
+    "privacy": "개인정보 보호",
+    "analyze": "이력서 분석",
+    "editor": "이력서 만들기",
+    "skipToContent": "본문으로 건너뛰기"
+  },
+  "theme": {
+    "label": "테마",
+    "light": "라이트",
+    "system": "시스템",
+    "dark": "다크"
+  },
+  "lang": {
+    "label": "인터페이스 언어",
+    "suggestion": "이 페이지를 한국어로 보기",
+    "dismiss": "닫기",
+    "search": "언어 검색",
+    "noResult": "일치하는 언어가 없습니다"
+  },
+  "pages": {
+    "home": "ATS 친화적 이력서, 100% 로컬",
+    "editor": "편집기",
+    "analyze": "이력서 분석기",
+    "changelog": "새로운 기능",
+    "legalNotice": "법적 고지",
+    "terms": "이용약관",
+    "privacy": "개인정보 처리방침"
+  },
+  "seo": {
+    "home": "무료 ATS 친화적 이력서 작성기: 그래픽 템플릿 30종, 어울리는 자기소개서, 채용 공고별 맞춤화, ATS 점수. 오픈 소스이며 데이터는 브라우저에만 저장됩니다",
+    "editor": "실시간 미리보기, 마스터 이력서와 맞춤 버전, ATS 검사, 실제 텍스트 PDF 내보내기를 갖춘 이력서 편집기. 모든 것이 브라우저에 남습니다",
+    "analyze": "PDF 이력서를 무료로 분석하세요: 100점 만점 ATS 점수, 고칠 점, 채용 시스템이 읽는 그대로의 텍스트. 파일은 브라우저 밖으로 나가지 않습니다",
+    "changelog": "버전별 LocalATSCV 새 소식: 새 이력서 템플릿, 기능, 수정 사항",
+    "legalNotice": "LocalATSCV 법적 고지: 운영자, 호스팅, 연락처",
+    "terms": "무료 오픈 소스 이력서 작성기 LocalATSCV 이용약관",
+    "privacy": "LocalATSCV 개인정보 처리방침: 어떤 데이터도 수집하지 않으며 이력서는 브라우저에 남습니다"
+  },
+  "footer": {
+    "tagline": "당신의 데이터를 절대 보지 않는 ATS 친화적 이력서 작성기",
+    "product": "제품",
+    "legal": "법적 정보",
+    "project": "프로젝트",
+    "changelog": "새로운 기능",
+    "sourceCode": "소스 코드",
+    "reportIssue": "문제 신고",
+    "license": "MIT 라이선스",
+    "versionLabel": "버전 {{version}}, 새로운 기능 보기"
+  },
+  "update": {
+    "title": "새 버전이 있습니다",
+    "text": "페이지를 새로고침하면 적용됩니다",
+    "changelog": "새로운 기능 보기",
+    "reload": "새로고침",
+    "later": "나중에"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% 로컬 · 무료 · 오픈 소스",
+      "titleLine1": "로봇을 통과하는 이력서",
+      "titleLine2": "내 곁에 남는 데이터",
+      "subtitle": "LocalATSCV로 채용 관리 시스템(ATS)에 최적화된 이력서를 만들고 몇 번의 클릭으로 공고마다 맞춤화하세요. 모든 작업은 브라우저에서 이루어집니다: 계정도, 데이터 전송도 없습니다",
+      "ctaPrimary": "이력서 만들기",
+      "ctaSecondary": "기존 이력서 분석",
+      "points": {
+        "noAccount": "가입 불필요",
+        "offline": "오프라인 작동",
+        "atsPdf": "ATS가 읽을 수 있는 PDF"
+      }
+    },
+    "ats": {
+      "eyebrow": "문제",
+      "title": "당신의 이력서는 먼저 기계가 읽습니다",
+      "text": "대부분의 대기업과 헤드헌팅 회사는 ATS(Applicant Tracking System)로 지원서를 분류합니다. ATS는 이력서의 텍스트를 추출해 데이터베이스에 저장하고, 채용 담당자가 키워드로 후보자를 검색할 수 있게 합니다",
+      "pitfalls": {
+        "layout": {
+          "title": "복잡한 레이아웃",
+          "text": "다단, 표, 텍스트 상자는 읽는 순서를 뒤섞어 정보가 엉망으로 출력됩니다"
+        },
+        "image": {
+          "title": "읽을 수 없는 텍스트",
+          "text": "아이콘, 스킬 게이지, 일부 디자인 도구의 내보내기는 깨진 문자가 되거나 아예 텍스트가 사라집니다"
+        },
+        "keywords": {
+          "title": "누락된 키워드",
+          "text": "채용 공고의 용어가 이력서에 없으면 채용 담당자의 검색 결과에 프로필이 나타나지 않습니다"
+        }
+      },
+      "seen": "당신이 보는 것",
+      "read": "로봇이 읽는 것",
+      "fix": "LocalATSCV는 반대로 합니다: 단일 칼럼, 실제 텍스트, 로봇이 올바른 순서로 읽는 표준 섹션 제목"
+    },
+    "how": {
+      "eyebrow": "사용 방법",
+      "title": "한 번 쓰고, 무한히 맞춤화",
+      "text": "네 단계로 마스터 이력서를 공고마다 맞춘 지원서로 바꾸세요",
+      "steps": {
+        "profile": {
+          "title": "마스터 이력서 작성",
+          "text": "모든 경력을 한 번만 입력하거나, 시간을 아끼려면 LinkedIn 프로필 PDF를 가져오세요"
+        },
+        "offer": {
+          "title": "채용 공고 붙여넣기",
+          "text": "LocalATSCV가 키워드를 추출하고, 입력하는 동안 갱신되는 100점 만점의 일치도를 계산합니다"
+        },
+        "compose": {
+          "title": "맞춤 버전 구성",
+          "text": "관련 경력과 항목을 체크하고 드래그 앤 드롭으로 순서를 바꾸세요. 마스터에서는 아무것도 삭제되지 않습니다"
+        },
+        "export": {
+          "title": "PDF로 내보내기",
+          "text": "실제 텍스트로 된 구조적인 단일 칼럼 PDF로, 로봇과 채용 담당자 모두 읽기 쉽습니다"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "개인정보 보호",
+      "title": "서버에 저장되는 데이터 0. 말 그대로",
+      "text": "해킹당할 데이터베이스가 없습니다: 서버는 앱만 보내 줍니다. 그다음부터는 오프라인에서도 모든 것이 브라우저에서 이루어집니다",
+      "browser": {
+        "title": "내 브라우저",
+        "tag": "내 기기",
+        "items": {
+          "master": "마스터 이력서",
+          "photo": "프로필 사진",
+          "versions": "맞춤 버전",
+          "settings": "환경설정"
+        },
+        "note": "IndexedDB에 저장, 이 기기에만"
+      },
+      "flow": {
+        "app": "앱(첫 로드 시)",
+        "data": "내 데이터",
+        "never": "전송 안 함"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "서버",
+        "text": "앱 파일(HTML, CSS, JavaScript)만 제공합니다",
+        "items": {
+          "noDb": "데이터베이스 없음",
+          "noAccount": "사용자 계정 없음",
+          "noLogs": "방문 기록 없음"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "계정 불필요",
+          "text": "가입도, 이메일도, 비밀번호도 필요 없습니다. 페이지를 열고 바로 시작하세요"
+        },
+        "trackers": {
+          "title": "추적 없음",
+          "text": "통계도, 광고도, 추적 쿠키도 없습니다. 글꼴까지 자체 서버에서 제공합니다"
+        },
+        "csp": {
+          "title": "기술적으로 차단",
+          "text": "사이트의 보안 정책(CSP)이 브라우저가 다른 도메인에 접속하는 것을 금지합니다. 코드가 공개되어 있으니 직접 확인하세요"
+        },
+        "backup": {
+          "title": "백업은 내 파일로",
+          "text": "모든 데이터를 JSON 파일로 내보내고 어떤 기기에서든 다시 가져오세요"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "기능",
+      "title": "면접까지 가는 데 필요한 모든 것",
+      "items": {
+        "master": {
+          "title": "마스터 이력서와 맞춤 버전",
+          "text": "완전한 이력서 하나, 지원하는 만큼의 버전. 체크하고 해제하세요: 아무것도 사라지지 않습니다"
+        },
+        "score": {
+          "title": "일치도 점수",
+          "text": "공고를 붙여넣으면 일치한 키워드, 누락된 키워드, 100점 만점 점수를 실시간으로 확인할 수 있습니다"
+        },
+        "weak": {
+          "title": "약한 표현 감지",
+          "text": "'담당했음', '도왔음' 같은 표현을 자동으로 표시하고, 대신 쓸 행동 동사를 제안합니다"
+        },
+        "analyzer": {
+          "title": "기존 이력서 분석기",
+          "text": "다른 곳에서 만든 이력서를 놓으면 로봇이 실제로 읽는 내용과 고칠 점을 보여 줍니다"
+        },
+        "linkedin": {
+          "title": "LinkedIn 가져오기",
+          "text": "LinkedIn 프로필에서 무료로 내보낼 수 있는 PDF로 마스터 이력서를 미리 채웁니다"
+        },
+        "languages": {
+          "title": "이력서 언어 5개",
+          "text": "프랑스어, 영어, 이탈리아어, 스페인어, 독일어. 영어에서는 영어권 관행에 따라 사진과 생년월일을 숨깁니다"
+        },
+        "pdf": {
+          "title": "ATS 친화적 PDF 내보내기",
+          "text": "실제 텍스트와 명확한 구조: 로봇이 읽기 쉽고 채용 담당자에게도 보기 좋습니다"
+        },
+        "offline": {
+          "title": "설치 가능, 오프라인 지원",
+          "text": "LocalATSCV를 홈 화면에 추가하고 연결 없이도 계속 작업하세요"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "자주 묻는 질문",
+      "title": "자주 묻는 질문",
+      "text": "찾는 질문이 없나요? 문의해 주세요:",
+      "items": {
+        "ats": {
+          "q": "ATS란 무엇인가요?",
+          "a": "Applicant Tracking System(채용 관리 시스템)은 채용 담당자가 지원서를 접수하고 분류하고 검색하는 데 쓰는 소프트웨어입니다. 이력서를 텍스트로 변환해 색인하므로, 텍스트가 제대로 추출되지 않거나 알맞은 키워드가 없으면 지원서를 찾기 어려워집니다"
+        },
+        "storage": {
+          "q": "제 데이터는 어디에 저장되나요?",
+          "a": "브라우저 안의 IndexedDB에만 저장됩니다. 모든 최신 브라우저에 내장된 데이터베이스입니다. 데이터는 앱 파일만 제공하는 저희 서버를 절대 거치지 않습니다"
+        },
+        "clear": {
+          "q": "브라우저 데이터를 지우면 어떻게 되나요?",
+          "a": "이력서는 다른 어디에도 없으므로 삭제됩니다. JSON 백업을 정기적으로 내보내 두면 언제든 어떤 기기에서든 다시 가져올 수 있습니다"
+        },
+        "score": {
+          "q": "점수가 높으면 서류 합격이 보장되나요?",
+          "a": "아니요. ATS마다 규칙이 다르고 최종 결정은 사람이 내립니다. 점수는 지표일 뿐이며, 이력서가 공고의 용어를 쓰는지와 기계가 제대로 읽을 수 있는지를 확인합니다"
+        },
+        "photo": {
+          "q": "영어로 바꾸면 사진이 사라지는 이유는 무엇인가요?",
+          "a": "영국, 미국 등 많은 영어권 국가에서는 채용 차별을 줄이기 위해 사진과 생년월일 기재를 권장하지 않습니다. 이를 기재한 이력서를 탈락시키는 채용 담당자도 있습니다"
+        },
+        "free": {
+          "q": "정말 무료인가요?",
+          "a": "네. LocalATSCV는 MIT 라이선스의 오픈 소스 프로젝트로, 광고도 구독도 없습니다. 모든 작업을 브라우저가 처리하므로 호스팅 비용이 거의 들지 않습니다"
+        },
+        "templates": {
+          "q": "그래픽 템플릿도 ATS를 통과하나요?",
+          "a": "네. 모든 템플릿은 실제 텍스트를 읽는 순서대로, 표준 섹션 제목과 함께 출력합니다. 도형, 게이지, 아이콘은 로봇이 무시하는 그림입니다. 단일 칼럼 템플릿이 여전히 가장 안전하며, 편집기의 ATS 검사로 레이아웃을 실시간으로 확인할 수 있습니다"
+        },
+        "import": {
+          "q": "지금 쓰는 이력서나 LinkedIn 프로필을 다시 쓸 수 있나요?",
+          "a": "네. PDF 또는 Word(.docx) 이력서, LinkedIn 프로필 PDF(컴퓨터), LinkedIn 데이터 아카이브(모바일 앱)를 가져오세요. 내용은 브라우저에서 읽혀 편집기에 정리됩니다"
+        },
+        "offline": {
+          "q": "LocalATSCV는 오프라인에서도 작동하나요?",
+          "a": "네. 설치 가능한 웹 앱이라 첫 방문 이후에는 PDF 내보내기를 포함해 모든 기능이 연결 없이 작동합니다"
+        }
+      }
+    },
+    "cta": {
+      "title": "서류 필터를 통과할 준비가 되셨나요?",
+      "text": "몇 분 만에 마스터 이력서를 만드세요. 아무것도 이 기기를 떠나지 않습니다",
+      "button": "시작하기"
+    },
+    "demo": {
+      "role": "프런트엔드 개발자",
+      "contact": "리옹 · camille.martin@example.com",
+      "experience": "경력",
+      "jobTitle": "Angular 개발자",
+      "jobMeta": "(주)예시 · 2022 – 현재",
+      "bullets": {
+        "migration": "화면 40개를 <k>Angular</k>와 <k>TypeScript</k>로 이전해 로딩 시간 35% 단축",
+        "testing": "E2E 테스트 전략 <w>담당</w>",
+        "delivery": "<k>GitLab CI</k>로 제품 팀 3곳의 지속적 배포 구축"
+      },
+      "weakLabel": "약한 표현",
+      "weakReplacement": "'주도'",
+      "skills": "보유 기술",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · 웹 접근성",
+      "score": "공고 일치도",
+      "sent": "전송 0바이트",
+      "robot": "보유 기술 CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> 프런트엔드 개발자 Angular <n>●●●●○</n> 경력 <n>� camille.mar</n> Angular 개발자 <n>tin@example.com</n> 2022 – 현재 TypeScript <n>●●●○○</n> (주)예시 외국어 영어 화면 40개를 Angular와…"
+    }
+  },
+  "dialog": {
+    "cancel": "취소",
+    "delete": "삭제",
+    "create": "만들기",
+    "save": "저장",
+    "import": "가져오기"
+  },
+  "editor": {
+    "list": {
+      "title": "내 이력서",
+      "subtitle": "이 브라우저에만 저장됩니다",
+      "new": "새 이력서",
+      "newBlank": "빈 이력서",
+      "newBlankHint": "빈 페이지에서 시작",
+      "newSample": "예시로 시작",
+      "newSampleHint": "편집기를 둘러볼 수 있도록 내용이 채워진 가상의 이력서",
+      "import": "백업 복원",
+      "exportAll": "모두 내보내기",
+      "emptyTitle": "아직 이력서가 없습니다",
+      "emptyText": "마스터 이력서를 만드세요: 모든 경력을 한곳에 모아 공고마다 맞춤화할 수 있습니다",
+      "open": "열기",
+      "actions": "작업",
+      "duplicate": "복제",
+      "export": "내보내기(JSON)",
+      "delete": "삭제",
+      "updated": "{{date}}에 수정됨",
+      "versions": "버전: {{count}}",
+      "backupHint": "이력서는 이 브라우저에만 존재합니다. JSON 백업을 정기적으로 내보내 두면 브라우저 데이터를 지워도 모두 복구할 수 있습니다",
+      "defaultName": "내 이력서",
+      "copySuffix": "(사본)",
+      "deleteTitle": "'{{name}}'을(를) 삭제할까요?",
+      "deleteText": "이력서와 모든 버전이 이 브라우저에서 영구적으로 삭제됩니다",
+      "exportDone": "백업을 다운로드했습니다",
+      "importConfirmTitle": "이 백업을 가져올까요?",
+      "importConfirmText": "이 백업의 이력서: {{count}}개. 이 브라우저에 이미 있는 이력서는 대체됩니다",
+      "importDone": "백업을 가져왔습니다: 이력서 {{count}}개",
+      "importError": {
+        "invalidJson": "올바른 JSON 파일이 아닙니다",
+        "notABackup": "LocalATSCV 백업 파일이 아닙니다",
+        "newerVersion": "더 최신 버전의 LocalATSCV에서 만든 백업입니다: 먼저 앱을 업데이트하세요"
+      },
+      "importPdf": "이력서 가져오기(PDF 또는 Word)",
+      "importPdfHint": "기존 이력서를 템플릿으로 옮겨 오세요",
+      "importLinkedin": "LinkedIn에서 가져오기",
+      "importLinkedinHint": "프로필 PDF에서"
+    },
+    "toolbar": {
+      "back": "내 이력서",
+      "name": "이력서 이름",
+      "cvLanguage": "이력서 언어",
+      "accent": "강조 색상",
+      "customAccent": "사용자 지정 색상",
+      "saved": "저장됨",
+      "saving": "저장 중…",
+      "saveError": "저장 실패",
+      "edit": "편집",
+      "preview": "미리보기",
+      "exportPdf": "PDF로 내보내기",
+      "undo": "실행 취소(Ctrl+Z)",
+      "redo": "다시 실행(Ctrl+Y)"
+    },
+    "modes": {
+      "label": "편집할 문서",
+      "cv": "이력서",
+      "letter": "자기소개서"
+    },
+    "letter": {
+      "title": "자기소개서",
+      "versionOwn": "이 버전에는 전용 자기소개서가 있습니다",
+      "versionShared": "이 버전은 마스터의 자기소개서를 사용합니다: 여기서 편집하면 이 버전용 사본이 만들어집니다",
+      "useMaster": "마스터의 자기소개서 사용",
+      "recipient": "수신인",
+      "recipientPlaceholder": "(주)예시\n인사팀 채용 담당\n서울특별시 중구 세종대로 110",
+      "place": "장소",
+      "date": "날짜",
+      "dateHint": "비워 두면 인쇄한 날의 날짜",
+      "subject": "제목",
+      "subjectPlaceholder": "○○ 직무 지원의 건",
+      "greeting": "인사말",
+      "body": "본문",
+      "bodyPlaceholder": "짧은 세 문단: 회사에 끌리는 이유, 내가 기여할 수 있는 점, 제안하는 다음 단계",
+      "bodyHint": "빈 줄로 문단을 나눕니다 · **굵게**로 키워드 강조",
+      "outline": "구성안 넣기",
+      "closing": "맺음말",
+      "fileName": "자기소개서"
+    },
+    "fit": {
+      "pages": "{{count}}페이지",
+      "onePage": "한 페이지에 들어갑니다",
+      "hintMany": "대부분의 채용 담당자는 한 페이지 이력서를 기대합니다",
+      "hintOne": "대부분의 지원에 이상적인 형식입니다",
+      "stillTooLong": "줄여도 여전히 깁니다: 일부 항목을 줄이거나 버전에서 요소를 숨기세요",
+      "fit": "한 페이지에 맞추기",
+      "settings": "레이아웃 설정",
+      "spacing": "간격",
+      "scale": "글자 크기",
+      "settingsHint": "텍스트는 실제 텍스트 그대로이며 레이아웃만 바뀝니다",
+      "reset": "템플릿 기본 레이아웃",
+      "grayscale": "흑백으로 보기",
+      "grayscaleHint": "흑백 인쇄를 시뮬레이션합니다: 내보낸 PDF는 색상을 유지합니다"
+    },
+    "versions": {
+      "label": "표시 중인 버전",
+      "master": "마스터 이력서",
+      "masterHint": "필터 없이 모든 내용",
+      "new": "새 버전",
+      "newText": "맞춤 버전은 마스터 이력서 전체에서 시작합니다: 이 지원에 필요 없는 항목의 체크를 해제하세요",
+      "nameLabel": "버전 이름",
+      "namePlaceholder": "예: 프런트엔드 개발 – X사",
+      "rename": "버전 이름 바꾸기",
+      "delete": "버전 삭제",
+      "deleteTitle": "'{{name}}' 버전을 삭제할까요?",
+      "deleteText": "선택 항목만 삭제되며 모든 내용은 마스터 이력서에 남습니다",
+      "banner": "'{{name}}' 버전: 표시하지 않을 항목의 체크를 해제하세요. 마스터 이력서에서는 아무것도 삭제되지 않습니다",
+      "include": "이 버전에 포함"
+    },
+    "enRule": "영문 이력서: 영어권 관행에 따라 사진, 생년월일, 국적을 숨깁니다",
+    "profile": {
+      "title": "프로필",
+      "photo": "사진",
+      "photoAdd": "사진 추가",
+      "photoChange": "변경",
+      "photoRemove": "삭제",
+      "photoHint": "크기를 줄여 이 기기에만 저장합니다",
+      "photoError": "이 이미지를 읽을 수 없습니다",
+      "hiddenInEnglish": "영어에서는 숨김",
+      "firstName": "이름",
+      "lastName": "성",
+      "headline": "이력서 제목",
+      "headlinePlaceholder": "예: 프런트엔드 개발자",
+      "email": "이메일",
+      "phone": "전화번호",
+      "location": "거주지",
+      "birthDate": "생년월일",
+      "nationality": "국적",
+      "summary": "자기소개 요약",
+      "summaryPlaceholder": "내 프로필과 원하는 바를 두세 문장으로 요약하세요",
+      "links": "링크",
+      "linkLabel": "링크 이름",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "링크 주소",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "링크 추가",
+      "removeLink": "링크 삭제",
+      "drivingLicense": "운전면허",
+      "drivingLicensePlaceholder": "예: 1종 보통, 자차 보유",
+      "qrToggle": "이 링크를 QR 코드로 표시",
+      "linksHint": "로고(LinkedIn, GitHub, YouTube 등)는 자동으로 추가됩니다. QR 버튼을 누르면 대부분의 그래픽 템플릿에서 링크가 QR 코드로 표시됩니다"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "경력",
+        "education": "학력",
+        "projects": "프로젝트",
+        "certifications": "자격증",
+        "custom": "자유 섹션",
+        "skills": "보유 기술",
+        "languages": "외국어",
+        "interests": "관심사"
+      },
+      "add": "섹션 추가",
+      "titleLabel": "섹션 제목",
+      "empty": "빈 섹션은 이력서에 표시되지 않습니다",
+      "addItem": {
+        "experience": "경력 추가",
+        "education": "학력 추가",
+        "projects": "프로젝트 추가",
+        "certifications": "자격증 추가",
+        "custom": "항목 추가",
+        "skills": "기술 추가",
+        "languages": "언어 추가",
+        "interests": "관심사 추가"
+      },
+      "deleteTitle": "'{{name}}' 섹션을 삭제할까요?",
+      "deleteText": "내용이 마스터 이력서와 모든 버전에서 삭제됩니다"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "직무",
+          "subtitle": "회사"
+        },
+        "education": {
+          "title": "학위·전공",
+          "subtitle": "학교"
+        },
+        "projects": {
+          "title": "프로젝트명",
+          "subtitle": "역할 또는 기술"
+        },
+        "certifications": {
+          "title": "자격증명",
+          "subtitle": "발급 기관"
+        },
+        "custom": {
+          "title": "제목",
+          "subtitle": "부제목"
+        }
+      },
+      "location": "장소",
+      "url": "링크",
+      "start": "시작",
+      "end": "종료",
+      "date": "취득일",
+      "current": "재직·진행 중",
+      "untitled": "제목 없음",
+      "bullets": "주요 성과",
+      "bulletPlaceholder": "행동 동사로 시작하고 결과를 숫자로 나타내세요",
+      "addBullet": "항목 추가",
+      "bulletHint": "Enter: 새 항목",
+      "boldHint": "**단어**로 굵게 표시"
+    },
+    "items": {
+      "skillLabel": "분류",
+      "skillLabelPlaceholder": "예: 프런트엔드",
+      "skillKeywords": "기술",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "언어",
+      "languageLevel": "수준",
+      "languageLevelPlaceholder": "예: C1, fluent",
+      "interest": "관심사",
+      "interestPlaceholder": "예: 클라이밍",
+      "levelDetected": "수준 인식됨: 게이지가 있는 템플릿에 표시됩니다",
+      "levelUnknown": "수준을 인식하지 못해 게이지가 없습니다: A1~C2 또는 목록의 제안을 사용하세요",
+      "levelEmpty": "수준을 입력하면 게이지가 표시됩니다",
+      "levelHint": "유럽 공통 기준(A1~C2)이나 'fluent', 'native' 같은 단어를 사용하세요: 일부 템플릿은 게이지로도 표시하며, 오른쪽 점으로 미리 볼 수 있습니다"
+    },
+    "actions": {
+      "menu": "작업",
+      "moveUp": "위로 이동",
+      "moveDown": "아래로 이동",
+      "duplicate": "복제",
+      "delete": "삭제",
+      "drag": "드래그해서 순서 변경"
+    },
+    "month": "월",
+    "year": "연도",
+    "noMonth": "월",
+    "preview": {
+      "page": "{{n}}페이지"
+    },
+    "notFound": {
+      "title": "이력서를 찾을 수 없습니다",
+      "text": "이 이력서는 존재하지 않거나 이 브라우저에서 삭제되었습니다"
+    },
+    "templates": {
+      "button": "템플릿",
+      "title": "템플릿 선택",
+      "subtitle": "모든 템플릿을 완전한 예시 이력서 또는 내 이력서로 볼 수 있습니다. 강조 색상은 모든 템플릿에 적용됩니다",
+      "close": "닫기",
+      "filter": "템플릿 필터",
+      "filters": {
+        "all": "전체",
+        "graphic": "그래픽",
+        "sober": "심플"
+      },
+      "ats": "ATS 호환성",
+      "levels": {
+        "excellent": "매우 좋음",
+        "good": "좋음",
+        "fair": "보통"
+      },
+      "atsHint": "모든 템플릿은 실제 텍스트를 출력합니다. 2단 레이아웃은 대부분의 최신 ATS가 잘 읽지만, 일부 오래된 도구는 단을 섞어 읽습니다: 잘 모르겠다면 단일 칼럼 템플릿을 고르세요",
+      "names": {
+        "classic": {
+          "name": "클래식",
+          "description": "깔끔하고 효과적: 단일 칼럼, 밑줄 제목, 군더더기 없음"
+        },
+        "modern": {
+          "name": "모던",
+          "description": "컬러 띠, 강렬한 제목, 태그 형태의 기술"
+        },
+        "elegant": {
+          "name": "엘레강트",
+          "description": "가운데 정렬 헤더와 세리프체로 세련된 인상"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "컬러 테두리, 고정폭 글꼴 세부 정보, 코드 스타일의 기술"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "스위스 스타일: 큰 이름, 여백에 둔 제목, 넉넉한 여백"
+        },
+        "sidebar": {
+          "name": "2단",
+          "description": "사진, 연락처, 기술을 담은 컬러 사이드바"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "사진 배너, 아이콘, 타임라인, 언어 게이지를 갖추고도 ATS가 완벽히 읽는 템플릿"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "파스텔 유기적 도형, 큰 원형 사진, 타임라인, QR 코드의 2단 구성"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "Signature의 분위기를 단일 칼럼으로: 그래픽하면서 ATS가 완벽히 읽음"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "어두운 사선 배너, 컬러 광채, 경력 카드, 채워진 기술 태그"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "사진을 둘러싼 원색의 기하학적 구성, 기하학적 서체, 제목 앞의 도형"
+        },
+        "editorial": {
+          "name": "에디토리얼",
+          "description": "잡지 레이아웃: 큰 세리프체 이름, 이탤릭 리드, 번호 매긴 섹션, 비껴 놓은 인물 사진"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "네오 브루탈리즘: 두꺼운 검은 테두리, 선명한 그림자, 강렬한 색 블록, 검은 라벨"
+        },
+        "prism": {
+          "name": "프리즘",
+          "description": "강조 색상의 메시 그라데이션, 유리 효과 연락처 카드, 그라데이션 테두리 카드"
+        },
+        "swiss": {
+          "name": "스위스",
+          "description": "스위스 포스터 스타일: 거대한 이름, 컬러 띠, 굵은 검은 선, 번호 매긴 섹션"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "아이보리 종이, 가는 이중 테두리, 마름모 장식, Garamond 서체"
+        },
+        "nocturne": {
+          "name": "녹턴",
+          "description": "다크 모드: 밤하늘 배경, 네온 포인트, 빛나는 타임라인. 온라인 지원에 제격"
+        },
+        "wave": {
+          "name": "웨이브",
+          "description": "물결로 끝나는 컬러 배너, 원형 사진, 물결 제목의 부드럽고 친근한 디자인"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "둥근 도시락 칸 타일: 사진, 이름, QR 코드를 격자에, 섹션마다 타일 하나"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "설계 도면: 모눈종이, 모서리 표시, 치수선, 고정폭 라벨"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "80년대 기하학 색종이, 강렬한 색상, 지그재그 밑줄 제목"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "크게 나눈 배너: 색 블록 위의 텍스트와 두 가지 톤의 사진"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "타이포그래피만으로 장식: 일부를 외곽선으로 처리한 거대한 이름과 아주 큰 제목"
+        },
+        "sorbet": {
+          "name": "소르베",
+          "description": "섹션마다 다른 파스텔 색상, 알약 모양 제목, 여러 색의 광채"
+        },
+        "executive": {
+          "name": "이그제큐티브",
+          "description": "네이비 배너, 금색 선, 세리프체 이름. 관리자급 직무용"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "일본식 미니멀리즘: 와시 종이, 강조 색상의 엔소 원, 붓 터치"
+        },
+        "ribbon": {
+          "name": "리본",
+          "description": "제비꼬리 리본 위의 섹션 제목, 가운데 정렬 헤더"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "육각형 사진, 모서리의 벌집 무늬, 제목 앞의 육각형"
+        },
+        "origami": {
+          "name": "오리가미",
+          "description": "겹쳐 오린 종이 헤더, 종이 낱장 같은 섹션"
+        },
+        "thread": {
+          "name": "스레드",
+          "description": "한 줄의 실이 헤더와 모든 섹션을 잇고, 경력마다 점을 찍는 디자인"
+        }
+      },
+      "preview": {
+        "label": "썸네일 내용",
+        "sample": "전체 예시",
+        "mine": "내 이력서"
+      }
+    },
+    "print": {
+      "title": "PDF로 내보내기",
+      "text": "브라우저 인쇄 창이 열립니다. 완벽한 PDF를 위해:",
+      "tips": {
+        "destination": "대상: 'PDF로 저장'",
+        "margins": "여백: '없음'",
+        "headers": "'머리글과 바닥글' 체크 해제",
+        "background": "색상을 유지하려면 '배경 그래픽' 체크"
+      },
+      "dontShow": "다시 표시하지 않기",
+      "cancel": "취소",
+      "print": "인쇄 창 열기"
+    },
+    "job": {
+      "title": "채용 공고에 맞추기",
+      "sources": "LinkedIn, 사람인, 잡코리아, 원티드, 리멤버…",
+      "placeholder": "채용 공고의 전문을 여기에 붙여넣으세요: 직무, 업무 내용, 자격 요건",
+      "urlWarning": "링크 대신 공고 본문을 붙여넣으세요: LocalATSCV는 어떤 사이트에도 접속하지 않으므로 데이터가 내 곁에 남습니다",
+      "empty": "키워드를 찾지 못했습니다: 더 자세한 공고를 붙여넣으세요",
+      "score": "공고 일치도",
+      "summary": "키워드 {{total}}개 중 {{found}}개 포함",
+      "found": "이력서에 있는 키워드",
+      "missing": "누락된 키워드",
+      "missingHint": "키워드를 클릭해 기술에 추가하거나 경력 설명에 녹여 넣으세요",
+      "addToSkills": "기술에 추가",
+      "added": "'{{keyword}}'을(를) 기술에 추가했습니다",
+      "keywordsGroup": "키워드",
+      "createVersion": "이 공고용 맞춤 버전 만들기",
+      "createVersionHint": "공고와 관련 없는 경력과 항목은 체크가 해제됩니다: 나중에 조정할 수 있습니다",
+      "savedInVersion": "공고를 '{{name}}' 버전에 저장했습니다"
+    },
+    "weak": {
+      "hint": "'{{phrase}}'은(는) 담당 업무를 설명합니다: 행동 동사로 시작하세요"
+    },
+    "fonts": {
+      "title": "글꼴",
+      "heading": "제목",
+      "body": "본문",
+      "default": "템플릿 기본값",
+      "hint": "ATS는 이 글꼴들을 모두 잘 읽습니다: 텍스트는 실제 텍스트 그대로입니다"
+    }
+  },
+  "changelog": {
+    "eyebrow": "새로운 기능",
+    "title": "변경 내역",
+    "subtitle": "LocalATSCV의 모든 버전과 새 기능, 수정 사항",
+    "current": "현재 버전",
+    "frenchOnly": "변경 내역은 프랑스어로 작성되어 있습니다",
+    "error": "변경 내역을 불러올 수 없습니다",
+    "types": {
+      "added": "추가",
+      "changed": "변경",
+      "fixed": "수정",
+      "removed": "삭제",
+      "deprecated": "지원 중단 예정",
+      "security": "보안",
+      "other": "기타"
+    }
+  },
+  "analyze": {
+    "eyebrow": "분석기",
+    "title": "내 이력서는 로봇을 통과할까요?",
+    "subtitle": "어떤 도구로 만든 PDF 이력서든 놓아 보세요: LocalATSCV가 ATS처럼 읽고 고칠 점을 알려 드립니다",
+    "drop": "여기로 이력서를 끌어 오세요",
+    "dropActive": "파일을 놓으면 분석이 시작됩니다",
+    "hint": "PDF만 가능, 최대 15MB",
+    "choose": "파일 선택",
+    "reading": "PDF 읽는 중…",
+    "privacy": "파일은 브라우저에서 분석되며 어디에도 전송되지 않습니다",
+    "another": "다른 이력서 분석",
+    "errors": {
+      "notPdf": "PDF 파일이 아닙니다",
+      "tooLarge": "파일이 15MB를 초과합니다",
+      "encrypted": "비밀번호로 보호된 PDF입니다: ATS도 읽을 수 없습니다",
+      "unreadable": "이 PDF를 읽을 수 없습니다: 손상되었을 수 있습니다"
+    },
+    "stats": "{{pages}}페이지 · {{words}}단어",
+    "verdict": {
+      "excellent": "매우 좋음",
+      "good": "좋음",
+      "fair": "개선 필요",
+      "poor": "심각"
+    },
+    "verdictText": {
+      "excellent": "로봇이 이력서를 아주 잘 읽습니다",
+      "good": "몇 가지만 다듬으면 더욱 효과적입니다",
+      "fair": "여러 문제가 ATS의 읽기를 방해합니다",
+      "poor": "ATS가 핵심 정보를 놓칠 가능성이 높습니다"
+    },
+    "categories": {
+      "readability": "기계 판독성",
+      "structure": "구조",
+      "content": "내용"
+    },
+    "sectionNames": {
+      "experience": "경력",
+      "education": "학력",
+      "skills": "보유 기술"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "기계가 읽을 수 있는 텍스트",
+        "pass": "이력서의 모든 텍스트를 추출할 수 있습니다",
+        "warn": "읽을 수 있는 텍스트가 없는 페이지가 있습니다: 이미지나 스캔일 가능성이 높습니다",
+        "fail": "읽을 수 있는 텍스트가 없습니다: 이미지나 스캔으로 보이며 ATS가 아무것도 추출하지 못합니다. 문서 작성 프로그램에서 PDF로 내보내세요"
+      },
+      "columns": {
+        "title": "레이아웃",
+        "pass": "선형으로 읽히며 단이 섞이지 않습니다",
+        "warn": "다단 레이아웃이 감지되었습니다: 텍스트가 잘못된 순서로 읽힐 수 있습니다. 아래 '로봇이 읽는 것'을 확인하세요"
+      },
+      "order": {
+        "title": "파일 내 읽기 순서",
+        "pass": "텍스트가 읽는 순서대로 파일에 기록되어 있습니다",
+        "warnHeader": "이름과 헤더가 이력서의 나머지 부분보다 뒤에 파일에 기록되어 있습니다: 파일을 순서대로 읽는 ATS는 이름을 찾지 못할 수 있습니다",
+        "warn": "텍스트의 {{percent}}%가 읽는 순서와 다르게 파일에 기록되어 있습니다: 일부 ATS는 이 부분을 잘못된 순서로 읽습니다",
+        "fail": "텍스트의 {{percent}}%가 파일에 뒤죽박죽으로 기록되어 있습니다. 자유 배치 텍스트 상자로 만든 이력서(Canva, PowerPoint 등)에서 흔한 문제로, 많은 ATS가 이력서를 뒤섞어 읽습니다. 아래 두 가지 읽기 결과를 비교해 보세요"
+      },
+      "unreadable": {
+        "title": "아이콘과 스킬 게이지",
+        "pass": "아이콘이나 읽을 수 없는 문자가 없습니다",
+        "warn": "아이콘 또는 게이지 감지({{count}}개): ATS는 이를 깨진 문자로 읽습니다. 텍스트로 바꾸세요",
+        "fail": "아이콘 또는 게이지 감지({{count}}개): 점 대신 '영어: C1'처럼 텍스트로 바꾸세요"
+      },
+      "contact": {
+        "title": "연락처",
+        "pass": "이메일 주소와 전화번호를 찾았습니다",
+        "warnNoPhone": "전화번호를 찾지 못했습니다",
+        "warnNoEmail": "이메일 주소를 찾지 못했습니다",
+        "fail": "이메일도 전화번호도 찾지 못했습니다: 이미지가 아닌 텍스트로 적으세요"
+      },
+      "sections": {
+        "title": "표준 섹션",
+        "pass": "경력, 학력, 기술이 명확히 식별됩니다",
+        "warn": "이 섹션들을 인식하지 못했습니다: 표준 제목을 사용하세요",
+        "fail": "표준 섹션을 하나도 인식하지 못했습니다: ATS는 '경력', '학력' 같은 제목에 의존합니다"
+      },
+      "length": {
+        "title": "분량",
+        "pass": "{{pages}}페이지, {{words}}단어: 이상적인 분량입니다",
+        "warn": "{{pages}}페이지, {{words}}단어: 1~2페이지, 250~1,000단어를 목표로 하세요",
+        "fail": "{{pages}}페이지, {{words}}단어: 너무 짧거나 길어서 제대로 평가하기 어렵습니다"
+      },
+      "quantified": {
+        "title": "수치화된 성과",
+        "pass": "항목의 {{percent}}%에 숫자가 들어 있습니다. 훌륭합니다",
+        "warn": "숫자가 들어간 항목은 {{percent}}%뿐입니다: 측정 가능한 성과(비율, 금액, 규모)를 추가하세요",
+        "fail": "수치화된 성과가 없습니다: 채용 담당자와 ATS 모두 측정 가능한 성과를 중시합니다"
+      },
+      "weakPhrases": {
+        "title": "행동 동사",
+        "pass": "항목 첫머리에 약한 표현이 없습니다",
+        "warn": "이 첫머리는 성과가 아닌 담당 업무를 설명합니다: 행동 동사로 시작하세요",
+        "fail": "이 첫머리는 성과가 아닌 담당 업무를 설명합니다: 행동 동사로 시작하세요"
+      },
+      "dates": {
+        "title": "날짜",
+        "pass": "경력에 날짜가 있습니다",
+        "warn": "연도가 하나만 있습니다: 모든 경력에 날짜를 넣으세요. ATS는 날짜로 경력 연수를 계산합니다",
+        "fail": "날짜를 찾지 못했습니다: ATS는 날짜로 경력 연수를 계산합니다"
+      }
+    },
+    "robot": {
+      "title": "로봇이 읽는 것",
+      "text": "대부분의 ATS처럼 한 줄씩 재구성한 텍스트입니다. 여기서 뒤섞이거나 빠져 있다면 채용 담당자에게도 마찬가지입니다",
+      "empty": "텍스트를 추출하지 못했습니다",
+      "position": "위치 순",
+      "file": "파일 순",
+      "fileText": "파일에 기록된 순서의 텍스트입니다: 레이아웃을 재구성하지 않는 ATS는 이렇게 읽습니다. 이력서의 읽는 순서와 같아야 합니다"
+    },
+    "cta": {
+      "title": "제대로 된 토대에서 다시 시작하세요",
+      "text": "편집기에서 ATS 친화적 이력서를 만들고 공고마다 맞춤화하세요",
+      "button": "편집기 열기",
+      "import": "이 이력서를 템플릿으로 가져오기"
+    },
+    "live": {
+      "title": "실시간 ATS 검사",
+      "issues": "이 템플릿에서 확인할 항목: {{count}}개",
+      "allGood": "이 템플릿에서 문제가 발견되지 않았습니다",
+      "hint": "표시된 레이아웃을 기준으로 이력서 분석기와 같은 엔진으로 계산합니다"
+    },
+    "method": {
+      "title": "이 점수는 어떻게 계산되나요?",
+      "intro": "공식 ATS 점수는 없습니다: 채용 소프트웨어(Workday, Taleo, Greenhouse, Lever 등)마다 대개 비공개인 자체 규칙이 있습니다. 이 지표는 대부분이 걸려 넘어지는 지점을 다음 기준으로 확인합니다:",
+      "disclaimer": "이 기준은 ATS 업체의 공개 권고 사항과 가장 흔한 판독 오류(이미지 속 텍스트, 다단, 아이콘, 비표준 제목)를 바탕으로 합니다. 점수는 이력서 개선에 도움이 되지만 합격을 예측하지는 않습니다"
+    }
+  },
+  "import": {
+    "title": "이력서 가져오기",
+    "linkedinTitle": "LinkedIn에서 가져오기",
+    "text": "PDF 또는 Word(.docx) 이력서를 선택하세요: 내용이 브라우저에서 추출되어 편집기의 섹션으로 정리됩니다. 그다음 템플릿을 고를 수 있습니다",
+    "choose": "파일 선택",
+    "chooseFile": "파일 선택",
+    "hint": "PDF 또는 Word(.docx), 최대 15MB",
+    "reading": "가져오는 중…",
+    "privacy": "파일은 브라우저에서 읽히며 어디에도 전송되지 않습니다",
+    "close": "닫기",
+    "done": "이력서를 가져왔습니다(항목 {{items}}개): 각 섹션을 확인하세요",
+    "errors": {
+      "tooLarge": "파일이 15MB를 초과합니다",
+      "encrypted": "비밀번호로 보호된 PDF입니다",
+      "unreadable": "이 파일을 읽을 수 없습니다: 손상되었을 수 있습니다",
+      "empty": "사용할 수 있는 텍스트가 없습니다: 이미지나 스캔된 PDF로 보입니다",
+      "unsupported": "PDF, Word 파일(.docx) 또는 LinkedIn ZIP 아카이브를 선택하세요",
+      "archiveEmpty": "이 아카이브에는 사용할 수 있는 LinkedIn 프로필 데이터가 없습니다"
+    },
+    "hintArchive": "PDF(컴퓨터) 또는 ZIP 아카이브(모바일 앱)",
+    "linkedin": {
+      "computer": {
+        "title": "컴퓨터에서: 프로필 PDF",
+        "step1": "컴퓨터 브라우저에서 linkedin.com을 엽니다(앱에는 이 옵션이 없습니다)",
+        "step2": "프로필에서 '리소스'(또는 '더보기')를 클릭한 다음 'PDF로 저장'을 선택합니다",
+        "step3": "아래에서 그 PDF를 선택합니다"
+      },
+      "archive": {
+        "title": "모바일 앱에서: 데이터 아카이브",
+        "step1": "앱에서 내 사진을 탭한 뒤 설정, 데이터 개인정보 보호로 이동합니다",
+        "step2": "'내 데이터 사본 받기'를 선택하고 프로필, 경력, 학력, 기술, 언어를 체크합니다",
+        "step3": "몇 분 안에 LinkedIn에서 이메일이 옵니다: ZIP 아카이브를 다운로드하세요",
+        "step4": "압축을 풀지 말고 아래에서 그 ZIP 파일을 선택합니다"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "이 문서는 영어로 표시됩니다. 법적 효력은 프랑스어판에만 있습니다.",
+    "error": "이 문서를 불러올 수 없습니다."
+  }
+}

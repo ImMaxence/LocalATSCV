@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { LanguageService } from '../../core/i18n/language.service';
 import { LanguageSelect } from '../language-select/language-select';
 import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
@@ -17,7 +18,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
     >
       <div class="container-page flex h-16 items-center gap-3">
         <a
-          routerLink="/"
+          [routerLink]="language.link('/')"
           class="flex items-center gap-2.5 rounded-lg font-semibold tracking-tight"
           [attr.aria-label]="t('nav.home')"
         >
@@ -28,17 +29,21 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
         </a>
 
         <nav
-          class="ml-6 hidden items-center gap-1 text-sm lg:flex"
+          class="ms-6 hidden items-center gap-1 text-sm lg:flex"
           [attr.aria-label]="t('nav.main')"
         >
-          <a routerLink="/" fragment="how" class="nav-link">{{ t('nav.how') }}</a>
-          <a routerLink="/" fragment="privacy" class="nav-link">{{ t('nav.privacy') }}</a>
-          <a routerLink="/analyze" routerLinkActive="text-ink!" class="nav-link">
+          <a [routerLink]="language.link('/')" fragment="how" class="nav-link">{{ t('nav.how') }}</a>
+          <a [routerLink]="language.link('/')" fragment="privacy" class="nav-link">{{ t('nav.privacy') }}</a>
+          <a
+            [routerLink]="language.link('/analyze')"
+            routerLinkActive="text-ink!"
+            class="nav-link"
+          >
             {{ t('nav.analyze') }}
           </a>
         </nav>
 
-        <div class="ml-auto flex items-center gap-2">
+        <div class="ms-auto flex items-center gap-2">
           <app-language-select />
           <app-theme-toggle />
           <a routerLink="/editor" class="btn btn-primary hidden py-2! sm:inline-flex">
@@ -60,4 +65,6 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
     }
   `,
 })
-export class Header {}
+export class Header {
+  protected readonly language = inject(LanguageService);
+}

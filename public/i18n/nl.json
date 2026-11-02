@@ -1,0 +1,893 @@
+{
+  "nav": {
+    "home": "Startpagina van LocalATSCV",
+    "main": "Hoofdnavigatie",
+    "how": "Hoe het werkt",
+    "privacy": "Privacy",
+    "analyze": "Een cv analyseren",
+    "editor": "Mijn cv maken",
+    "skipToContent": "Naar de inhoud"
+  },
+  "theme": {
+    "label": "Thema",
+    "light": "Licht",
+    "system": "Systeem",
+    "dark": "Donker"
+  },
+  "lang": {
+    "label": "Taal van de interface",
+    "suggestion": "Deze pagina in het Nederlands bekijken",
+    "dismiss": "Sluiten",
+    "search": "Taal zoeken",
+    "noResult": "Geen taal gevonden"
+  },
+  "pages": {
+    "home": "ATS-vriendelijke cv's, 100% lokaal",
+    "editor": "Editor",
+    "analyze": "Cv-analyse",
+    "changelog": "Nieuw",
+    "legalNotice": "Colofon",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacybeleid"
+  },
+  "seo": {
+    "home": "Gratis ATS-vriendelijke cv-maker: 30 grafische sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-score. Open source, je gegevens blijven in je browser",
+    "editor": "Cv-editor met live voorbeeld, Master-cv en gerichte versies, ATS-controle en pdf-export met echte tekst. Alles blijft in je browser",
+    "analyze": "Analyseer gratis een pdf-cv: ATS-score op 100, verbeterpunten en de tekst zoals een sollicitatiesysteem die leest. Het bestand verlaat je browser nooit",
+    "changelog": "Nieuw in LocalATSCV, versie per versie: nieuwe cv-sjablonen, functies en oplossingen",
+    "legalNotice": "Colofon van LocalATSCV: uitgever, hosting en contact",
+    "terms": "Gebruiksvoorwaarden van LocalATSCV, de gratis en open source cv-maker",
+    "privacy": "Privacybeleid van LocalATSCV: geen gegevens verzameld, je cv's blijven in je browser"
+  },
+  "footer": {
+    "tagline": "De ATS-vriendelijke cv-maker die je gegevens nooit ziet",
+    "product": "Product",
+    "legal": "Juridisch",
+    "project": "Project",
+    "changelog": "Nieuw",
+    "sourceCode": "Broncode",
+    "reportIssue": "Een probleem melden",
+    "license": "MIT-licentie",
+    "versionLabel": "Versie {{version}}, bekijk wat er nieuw is"
+  },
+  "update": {
+    "title": "Nieuwe versie beschikbaar",
+    "text": "Herlaad de pagina om hem te gebruiken",
+    "changelog": "Bekijk wat er nieuw is",
+    "reload": "Herladen",
+    "later": "Later"
+  },
+  "landing": {
+    "hero": {
+      "badge": "100% lokaal · Gratis · Open source",
+      "titleLine1": "Een cv dat langs de robots komt",
+      "titleLine2": "Gegevens die bij jou blijven",
+      "subtitle": "Met LocalATSCV maak je een cv dat geoptimaliseerd is voor sollicitatiesystemen (ATS) en stem je het in een paar klikken af op elke vacature. Alles gebeurt in je browser: geen account, er worden geen gegevens verstuurd",
+      "ctaPrimary": "Mijn cv maken",
+      "ctaSecondary": "Een bestaand cv analyseren",
+      "points": {
+        "noAccount": "Zonder registratie",
+        "offline": "Werkt offline",
+        "atsPdf": "Pdf leesbaar voor ATS"
+      }
+    },
+    "ats": {
+      "eyebrow": "Het probleem",
+      "title": "Je cv wordt eerst door een machine gelezen",
+      "text": "De meeste grote bedrijven en recruitmentbureaus sorteren sollicitaties met een ATS (Applicant Tracking System). Dat haalt de tekst uit je cv, slaat die op in een database en laat recruiters kandidaten zoeken op trefwoord",
+      "pitfalls": {
+        "layout": {
+          "title": "Ingewikkelde opmaak",
+          "text": "Kolommen, tabellen en tekstvakken gooien de leesvolgorde door elkaar: je gegevens komen er rommelig uit"
+        },
+        "image": {
+          "title": "Onleesbare tekst",
+          "text": "Iconen, vaardigheidsbalken en sommige exports uit ontwerptools worden onzintekens, of helemaal geen tekst"
+        },
+        "keywords": {
+          "title": "Ontbrekende trefwoorden",
+          "text": "Komt de woordenschat van de vacature niet voor in je cv, dan verschijnt je profiel niet in de zoekresultaten van recruiters"
+        }
+      },
+      "seen": "Wat jij ziet",
+      "read": "Wat de robot leest",
+      "fix": "LocalATSCV doet het omgekeerde: één kolom, echte tekst en standaard sectiekoppen die robots in de juiste volgorde lezen"
+    },
+    "how": {
+      "eyebrow": "Hoe het werkt",
+      "title": "Eén keer schrijven, eindeloos aanpassen",
+      "text": "Vier stappen om van je Master-cv een gerichte sollicitatie voor elke vacature te maken",
+      "steps": {
+        "profile": {
+          "title": "Vul je Master-cv in",
+          "text": "Voer al je ervaring één keer in, of importeer de pdf van je LinkedIn-profiel om tijd te winnen"
+        },
+        "offer": {
+          "title": "Plak de vacature",
+          "text": "LocalATSCV haalt de trefwoorden eruit en berekent een matchscore op 100, die meeloopt terwijl je typt"
+        },
+        "compose": {
+          "title": "Stel een gerichte versie samen",
+          "text": "Vink de relevante ervaringen en punten aan en zet ze in volgorde met slepen en neerzetten. Er verdwijnt niets uit je Master"
+        },
+        "export": {
+          "title": "Exporteer naar pdf",
+          "text": "Een pdf met echte tekst, gestructureerd en in één kolom, even leesbaar voor robots als voor recruiters"
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Privacy",
+      "title": "Nul gegevens op onze servers. Letterlijk",
+      "text": "Er is geen database om te hacken: onze server stuurt je alleen de applicatie. Daarna gebeurt alles in je browser, zelfs offline",
+      "browser": {
+        "title": "Je browser",
+        "tag": "Je apparaat",
+        "items": {
+          "master": "Master-cv",
+          "photo": "Profielfoto",
+          "versions": "Gerichte versies",
+          "settings": "Voorkeuren"
+        },
+        "note": "Opgeslagen in IndexedDB, alleen op dit apparaat"
+      },
+      "flow": {
+        "app": "De applicatie, bij het eerste bezoek",
+        "data": "Je gegevens",
+        "never": "nooit"
+      },
+      "server": {
+        "title": "localatscv.mbonnici.fr",
+        "tag": "Server",
+        "text": "Levert de bestanden van de applicatie (HTML, CSS, JavaScript), meer niet",
+        "items": {
+          "noDb": "Geen database",
+          "noAccount": "Geen gebruikersaccounts",
+          "noLogs": "Geen bezoekerslogs"
+        }
+      },
+      "points": {
+        "account": {
+          "title": "Geen account",
+          "text": "Geen registratie, geen e-mail, geen wachtwoord. Open de pagina en ga aan de slag"
+        },
+        "trackers": {
+          "title": "Geen trackers",
+          "text": "Geen statistieken, geen advertenties, geen trackingcookies. Zelfs de lettertypen staan op onze eigen server"
+        },
+        "csp": {
+          "title": "Technisch afgeschermd",
+          "text": "Het beveiligingsbeleid van de site (CSP) verbiedt de browser contact op te nemen met een ander domein. De code is open source: controleer het zelf"
+        },
+        "backup": {
+          "title": "Jouw back-ups, jouw bestanden",
+          "text": "Exporteer al je gegevens naar een JSON-bestand en importeer ze weer op elk apparaat"
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Functies",
+      "title": "Alles wat je nodig hebt voor dat sollicitatiegesprek",
+      "items": {
+        "master": {
+          "title": "Master-cv en gerichte versies",
+          "text": "Eén volledig cv, zoveel varianten als sollicitaties. Aanvinken, uitvinken: er gaat nooit iets verloren"
+        },
+        "score": {
+          "title": "Matchscore",
+          "text": "Plak de vacature: gevonden trefwoorden, ontbrekende trefwoorden en een score op 100 in realtime"
+        },
+        "weak": {
+          "title": "Detector voor zwakke formuleringen",
+          "text": "“Verantwoordelijk voor”, “geholpen bij”… worden automatisch gemarkeerd, met een lijst actiewerkwoorden om ze te vervangen"
+        },
+        "analyzer": {
+          "title": "Analyse van bestaande cv's",
+          "text": "Zet een elders gemaakt cv neer: zie wat de robot echt leest en wat je moet verbeteren"
+        },
+        "linkedin": {
+          "title": "LinkedIn-import",
+          "text": "Vul je Master-cv vooraf in met de gratis pdf die je van je LinkedIn-profiel kunt exporteren"
+        },
+        "languages": {
+          "title": "5 cv-talen",
+          "text": "Frans, Engels, Italiaans, Spaans en Duits. In het Engels worden foto en geboortedatum verborgen, volgens de Engelstalige normen"
+        },
+        "pdf": {
+          "title": "ATS-vriendelijke pdf-export",
+          "text": "Echte tekst en een duidelijke structuur: leesbaar voor robots, prettig voor recruiters"
+        },
+        "offline": {
+          "title": "Installeerbaar en offline",
+          "text": "Zet LocalATSCV op je startscherm en werk verder zonder verbinding"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Veelgestelde vragen",
+      "title": "Veelgestelde vragen",
+      "text": "Staat je vraag er niet bij? Schrijf ons:",
+      "items": {
+        "ats": {
+          "q": "Wat is een ATS?",
+          "a": "Een Applicant Tracking System is de software waarmee recruiters sollicitaties ontvangen, sorteren en doorzoeken. Het zet je cv om in tekst en indexeert die: wordt de tekst slecht uitgelezen of ontbreken de juiste trefwoorden, dan is je sollicitatie moeilijk te vinden"
+        },
+        "storage": {
+          "q": "Waar worden mijn gegevens opgeslagen?",
+          "a": "Alleen in je browser, in IndexedDB, een database die in elke moderne browser zit. Ze gaan nooit via onze servers, die alleen de bestanden van de applicatie kunnen leveren"
+        },
+        "clear": {
+          "q": "Wat gebeurt er als ik mijn browsergegevens wis?",
+          "a": "Je cv's worden gewist, want ze staan nergens anders. Exporteer regelmatig een JSON-back-up: je kunt die altijd weer importeren, op elk apparaat"
+        },
+        "score": {
+          "q": "Garandeert de score dat mijn cv wordt geselecteerd?",
+          "a": "Nee. Elk ATS heeft zijn eigen regels en de uiteindelijke beslissing neemt een mens. De score is een indicator: hij controleert of je cv de woordenschat van de vacature gebruikt en of een machine het goed kan lezen"
+        },
+        "photo": {
+          "q": "Waarom verdwijnt de foto in het Engels?",
+          "a": "In het Verenigd Koninkrijk, de Verenigde Staten en veel Engelstalige landen worden foto en geboortedatum afgeraden om discriminatie bij werving te beperken. Sommige recruiters wijzen cv's met die gegevens zelfs af"
+        },
+        "free": {
+          "q": "Is het echt gratis?",
+          "a": "Ja. LocalATSCV is een open source project onder de MIT-licentie, zonder advertenties of abonnement. Hosten kost bijna niets, want je browser doet al het werk"
+        },
+        "templates": {
+          "q": "Komen de grafische sjablonen door een ATS?",
+          "a": "Ja. Elk sjabloon drukt echte tekst af, in leesvolgorde, met standaard sectiekoppen: vormen, balken en iconen zijn tekeningen die robots negeren. Sjablonen met één kolom blijven het veiligst, en de ATS-controle in de editor test je opmaak live"
+        },
+        "import": {
+          "q": "Kan ik mijn huidige cv of mijn LinkedIn-profiel hergebruiken?",
+          "a": "Ja. Importeer een cv in pdf of Word (.docx), de pdf van je LinkedIn-profiel (op een computer) of je LinkedIn-gegevensarchief (via de mobiele app): de inhoud wordt in je browser gelezen en in de editor ingedeeld"
+        },
+        "offline": {
+          "q": "Werkt LocalATSCV offline?",
+          "a": "Ja. Het is een installeerbare webapp: na het eerste bezoek werkt alles zonder verbinding, ook de pdf-export"
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om door de filter te komen?",
+      "text": "Maak je Master-cv in een paar minuten. Er verlaat niets dit apparaat",
+      "button": "Aan de slag"
+    },
+    "demo": {
+      "role": "Front-end developer",
+      "contact": "Lyon · camille.martin@example.com",
+      "experience": "Werkervaring",
+      "jobTitle": "Angular-developer",
+      "jobMeta": "Voorbeeld BV · 2022 – heden",
+      "bullets": {
+        "migration": "40 schermen gemigreerd naar <k>Angular</k> en <k>TypeScript</k>, laadtijd 35% korter",
+        "testing": "<w>Verantwoordelijk voor</w> de end-to-end-teststrategie",
+        "delivery": "Continuous delivery met <k>GitLab CI</k> voor 3 productteams"
+      },
+      "weakLabel": "Zwakke formulering",
+      "weakReplacement": "“Geleid”",
+      "skills": "Vaardigheden",
+      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Toegankelijkheid",
+      "score": "Match met de vacature",
+      "sent": "0 bytes verstuurd",
+      "robot": "VAARDIGHEDEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end developer Angular <n>●●●●○</n> WERKERVARING <n>� camille.mar</n> Angular-developer <n>tin@example.com</n> 2022 – heden TypeScript <n>●●●○○</n> Voorbeeld BV TALEN Engels 40 schermen gemigreerd naar…"
+    }
+  },
+  "dialog": {
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "create": "Maken",
+    "save": "Opslaan",
+    "import": "Importeren"
+  },
+  "editor": {
+    "list": {
+      "title": "Mijn cv's",
+      "subtitle": "Alleen in deze browser opgeslagen",
+      "new": "Nieuw cv",
+      "newBlank": "Leeg cv",
+      "newBlankHint": "Begin met een lege pagina",
+      "newSample": "Begin met een voorbeeld",
+      "newSampleHint": "Een ingevuld fictief cv om de editor te verkennen",
+      "import": "Een back-up terugzetten",
+      "exportAll": "Alles exporteren",
+      "emptyTitle": "Nog geen cv's",
+      "emptyText": "Maak je Master-cv: al je ervaring op één plek, klaar om voor elke vacature aan te passen",
+      "open": "Openen",
+      "actions": "Acties",
+      "duplicate": "Dupliceren",
+      "export": "Exporteren (JSON)",
+      "delete": "Verwijderen",
+      "updated": "Bewerkt op {{date}}",
+      "versions": "Versies: {{count}}",
+      "backupHint": "Je cv's bestaan alleen in deze browser. Exporteer regelmatig een JSON-back-up: als je je browsergegevens wist, kun je daarmee alles terughalen",
+      "defaultName": "Mijn cv",
+      "copySuffix": "(kopie)",
+      "deleteTitle": "“{{name}}” verwijderen?",
+      "deleteText": "Het cv en al zijn versies worden definitief uit deze browser verwijderd",
+      "exportDone": "Back-up gedownload",
+      "importConfirmTitle": "Deze back-up importeren?",
+      "importConfirmText": "Cv's in deze back-up: {{count}}. Een cv dat al in deze browser bestaat, wordt vervangen",
+      "importDone": "Back-up geïmporteerd: {{count}} cv('s)",
+      "importError": {
+        "invalidJson": "Dit bestand is geen geldige JSON",
+        "notABackup": "Dit bestand is geen back-up van LocalATSCV",
+        "newerVersion": "Deze back-up komt uit een nieuwere versie van LocalATSCV: werk eerst de app bij"
+      },
+      "importPdf": "Een cv importeren (pdf of Word)",
+      "importPdfHint": "Breng een bestaand cv over naar onze sjablonen",
+      "importLinkedin": "Importeren uit LinkedIn",
+      "importLinkedinHint": "Via de pdf van je profiel"
+    },
+    "toolbar": {
+      "back": "Mijn cv's",
+      "name": "Naam van het cv",
+      "cvLanguage": "Taal van het cv",
+      "accent": "Accentkleur",
+      "customAccent": "Eigen kleur",
+      "saved": "Opgeslagen",
+      "saving": "Opslaan…",
+      "saveError": "Opslaan mislukt",
+      "edit": "Bewerken",
+      "preview": "Voorbeeld",
+      "exportPdf": "Exporteren naar pdf",
+      "undo": "Ongedaan maken (Ctrl+Z)",
+      "redo": "Opnieuw (Ctrl+Y)"
+    },
+    "modes": {
+      "label": "Te bewerken document",
+      "cv": "Cv",
+      "letter": "Sollicitatiebrief"
+    },
+    "letter": {
+      "title": "Sollicitatiebrief",
+      "versionOwn": "Deze versie heeft een eigen brief",
+      "versionShared": "Deze versie gebruikt de brief van de Master: bewerken maakt hier een kopie voor deze versie",
+      "useMaster": "De brief van de Master gebruiken",
+      "recipient": "Geadresseerde",
+      "recipientPlaceholder": "Voorbeeld BV\nAfdeling Werving & Selectie\nDamrak 10, 1012 LG Amsterdam",
+      "place": "Plaats",
+      "date": "Datum",
+      "dateHint": "Leeg: de datum van de dag van afdrukken",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Sollicitatie naar de functie van…",
+      "greeting": "Aanhef",
+      "body": "Brief",
+      "bodyPlaceholder": "Drie korte alinea's: wat je aantrekt in het bedrijf, wat je meebrengt, de volgende stap die je voorstelt",
+      "bodyHint": "Een lege regel scheidt twee alinea's · **vet** voor een trefwoord",
+      "outline": "Een opzet invoegen",
+      "closing": "Afsluiting",
+      "fileName": "Sollicitatiebrief"
+    },
+    "fit": {
+      "pages": "{{count}} pagina's",
+      "onePage": "Past op één pagina",
+      "hintMany": "De meeste recruiters verwachten een cv van één pagina",
+      "hintOne": "Ideaal formaat voor de meeste sollicitaties",
+      "stillTooLong": "Nog steeds te lang, zelfs compacter: kort een paar punten in of verberg onderdelen in een versie",
+      "fit": "Op één pagina passen",
+      "settings": "Opmaakinstellingen",
+      "spacing": "Witruimte",
+      "scale": "Tekstgrootte",
+      "settingsHint": "De tekst blijft echte tekst: alleen de opmaak verandert",
+      "reset": "Opmaak van het sjabloon",
+      "grayscale": "In zwart-wit bekijken",
+      "grayscaleHint": "Simuleert een zwart-witafdruk: de geëxporteerde pdf houdt zijn kleuren"
+    },
+    "versions": {
+      "label": "Getoonde versie",
+      "master": "Master-cv",
+      "masterHint": "Alle inhoud, ongefilterd",
+      "new": "Nieuwe versie",
+      "newText": "Een gerichte versie begint met je hele Master-cv: vink daarna uit wat deze sollicitatie niet nodig heeft",
+      "nameLabel": "Naam van de versie",
+      "namePlaceholder": "Bijv. Front-end dev – Bedrijf X",
+      "rename": "Versie hernoemen",
+      "delete": "Versie verwijderen",
+      "deleteTitle": "De versie “{{name}}” verwijderen?",
+      "deleteText": "Alleen de selectie wordt verwijderd: alle inhoud blijft in je Master-cv",
+      "banner": "Versie “{{name}}”: vink uit wat er niet in hoort. Er verdwijnt niets uit je Master-cv",
+      "include": "Opnemen in deze versie"
+    },
+    "enRule": "Engelstalig cv: foto, geboortedatum en nationaliteit worden verborgen, volgens de Engelstalige normen",
+    "profile": {
+      "title": "Profiel",
+      "photo": "Foto",
+      "photoAdd": "Foto toevoegen",
+      "photoChange": "Wijzigen",
+      "photoRemove": "Verwijderen",
+      "photoHint": "Verkleind en alleen op dit apparaat opgeslagen",
+      "photoError": "Deze afbeelding kan niet worden gelezen",
+      "hiddenInEnglish": "Verborgen in het Engels",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "headline": "Titel van het cv",
+      "headlinePlaceholder": "Bijv. Front-end developer",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "location": "Woonplaats",
+      "birthDate": "Geboortedatum",
+      "nationality": "Nationaliteit",
+      "summary": "Profieltekst",
+      "summaryPlaceholder": "Twee of drie zinnen die je profiel samenvatten en zeggen wat je zoekt",
+      "links": "Links",
+      "linkLabel": "Naam van de link",
+      "linkLabelPlaceholder": "LinkedIn",
+      "linkUrl": "Adres van de link",
+      "linkUrlPlaceholder": "linkedin.com/in/…",
+      "addLink": "Link toevoegen",
+      "removeLink": "Link verwijderen",
+      "drivingLicense": "Rijbewijs",
+      "drivingLicensePlaceholder": "Bijv. Rijbewijs B, eigen auto",
+      "qrToggle": "Deze link als QR-code tonen",
+      "linksHint": "Het logo (LinkedIn, GitHub, YouTube…) wordt automatisch toegevoegd. De QR-knop toont de link als QR-code in de meeste grafische sjablonen"
+    },
+    "sections": {
+      "kinds": {
+        "experience": "Werkervaring",
+        "education": "Opleiding",
+        "projects": "Projecten",
+        "certifications": "Certificeringen",
+        "custom": "Vrije sectie",
+        "skills": "Vaardigheden",
+        "languages": "Talen",
+        "interests": "Interesses"
+      },
+      "add": "Sectie toevoegen",
+      "titleLabel": "Titel van de sectie",
+      "empty": "Lege sectie: die verschijnt niet op het cv",
+      "addItem": {
+        "experience": "Ervaring toevoegen",
+        "education": "Opleiding toevoegen",
+        "projects": "Project toevoegen",
+        "certifications": "Certificering toevoegen",
+        "custom": "Onderdeel toevoegen",
+        "skills": "Vaardigheden toevoegen",
+        "languages": "Taal toevoegen",
+        "interests": "Interesse toevoegen"
+      },
+      "deleteTitle": "De sectie “{{name}}” verwijderen?",
+      "deleteText": "De inhoud wordt verwijderd uit het Master-cv en al zijn versies"
+    },
+    "entry": {
+      "fields": {
+        "experience": {
+          "title": "Functie",
+          "subtitle": "Bedrijf"
+        },
+        "education": {
+          "title": "Diploma",
+          "subtitle": "School of universiteit"
+        },
+        "projects": {
+          "title": "Naam van het project",
+          "subtitle": "Rol of technologieën"
+        },
+        "certifications": {
+          "title": "Certificering",
+          "subtitle": "Uitgever"
+        },
+        "custom": {
+          "title": "Titel",
+          "subtitle": "Ondertitel"
+        }
+      },
+      "location": "Plaats",
+      "url": "Link",
+      "start": "Begin",
+      "end": "Einde",
+      "date": "Datum behaald",
+      "current": "Lopend",
+      "untitled": "Zonder titel",
+      "bullets": "Resultaten",
+      "bulletPlaceholder": "Begin met een actiewerkwoord en maak het resultaat meetbaar",
+      "addBullet": "Punt toevoegen",
+      "bulletHint": "Enter: nieuw punt",
+      "boldHint": "**woord** om het vet te maken"
+    },
+    "items": {
+      "skillLabel": "Categorie",
+      "skillLabelPlaceholder": "Bijv. Front-end",
+      "skillKeywords": "Vaardigheden",
+      "skillKeywordsPlaceholder": "Angular, TypeScript, RxJS",
+      "languageName": "Taal",
+      "languageLevel": "Niveau",
+      "languageLevelPlaceholder": "Bijv. C1, fluent",
+      "interest": "Interesse",
+      "interestPlaceholder": "Bijv. Klimmen",
+      "levelDetected": "Niveau herkend: sjablonen met een balk tonen het",
+      "levelUnknown": "Niveau niet herkend, geen balk: gebruik A1 tot C2 of een suggestie uit de lijst",
+      "levelEmpty": "Vul een niveau in om een balk te tonen",
+      "levelHint": "Gebruik het Europese niveau (A1 tot C2) of een woord als “fluent” of “native”: sommige sjablonen tonen het ook als balk, vooraf weergegeven met de stippen rechts"
+    },
+    "actions": {
+      "menu": "Acties",
+      "moveUp": "Omhoog",
+      "moveDown": "Omlaag",
+      "duplicate": "Dupliceren",
+      "delete": "Verwijderen",
+      "drag": "Sleep om de volgorde te wijzigen"
+    },
+    "month": "Maand",
+    "year": "Jaar",
+    "noMonth": "Maand",
+    "preview": {
+      "page": "Pagina {{n}}"
+    },
+    "notFound": {
+      "title": "Cv niet gevonden",
+      "text": "Dit cv bestaat niet of is uit deze browser verwijderd"
+    },
+    "templates": {
+      "button": "Sjabloon",
+      "title": "Kies een sjabloon",
+      "subtitle": "Elk sjabloon met een volledig voorbeeld-cv, of met dat van jou. De accentkleur geldt voor alle sjablonen",
+      "close": "Sluiten",
+      "filter": "Sjablonen filteren",
+      "filters": {
+        "all": "Alle",
+        "graphic": "Grafisch",
+        "sober": "Sober"
+      },
+      "ats": "ATS-compatibiliteit",
+      "levels": {
+        "excellent": "uitstekend",
+        "good": "goed",
+        "fair": "redelijk"
+      },
+      "atsHint": "Elk sjabloon drukt echte tekst af. Opmaak in twee kolommen wordt door de meeste moderne ATS goed gelezen, maar sommige oudere systemen halen de kolommen door elkaar: kies bij twijfel een sjabloon met één kolom",
+      "names": {
+        "classic": {
+          "name": "Klassiek",
+          "description": "Strak en doeltreffend: één kolom, onderstreepte koppen, geen afleiding"
+        },
+        "modern": {
+          "name": "Modern",
+          "description": "Gekleurde banner, krachtige koppen en vaardigheden als labels"
+        },
+        "elegant": {
+          "name": "Elegant",
+          "description": "Gecentreerde kop en schreeftypografie voor een verfijnde uitstraling"
+        },
+        "tech": {
+          "name": "Tech",
+          "description": "Gekleurde rand, details in monospace en vaardigheden in codestijl"
+        },
+        "minimal": {
+          "name": "Minimal",
+          "description": "Zwitserse stijl: grote naam, koppen in de marge, veel witruimte"
+        },
+        "sidebar": {
+          "name": "Kolommen",
+          "description": "Gekleurde zijbalk met foto, contactgegevens en vaardigheden"
+        },
+        "impact": {
+          "name": "Impact",
+          "description": "Fotobanner, iconen, tijdlijn en taalbalken, en toch perfect leesbaar voor ATS"
+        },
+        "signature": {
+          "name": "Signature",
+          "description": "Organische pastelvormen, grote ronde foto, tijdlijn en QR-code, in twee kolommen"
+        },
+        "aurora": {
+          "name": "Aurora",
+          "description": "De Signature-look in één kolom: grafisch en perfect leesbaar voor ATS"
+        },
+        "pulse": {
+          "name": "Pulse",
+          "description": "Donkere diagonale banner, kleurgloed, ervaringskaarten en volle vaardigheidslabels"
+        },
+        "bauhaus": {
+          "name": "Bauhaus",
+          "description": "Geometrische compositie in primaire kleuren rond de foto, geometrische letters en vormen voor elke kop"
+        },
+        "editorial": {
+          "name": "Editoriaal",
+          "description": "Tijdschriftopmaak: grote schreefnaam, cursieve intro, genummerde secties en een verschoven portret"
+        },
+        "brutal": {
+          "name": "Brutal",
+          "description": "Neobrutalisme: dikke zwarte lijnen, harde schaduwen, felle kleurvlakken en zwarte labels"
+        },
+        "prism": {
+          "name": "Prisma",
+          "description": "Mesh-verloop in je accentkleuren, contactkaart met glaseffect en kaarten met een verlooprand"
+        },
+        "swiss": {
+          "name": "Zwitsers",
+          "description": "Zwitserse affichestijl: enorme naam, kleurband, dikke zwarte lijnen en genummerde secties"
+        },
+        "prestige": {
+          "name": "Prestige",
+          "description": "Ivoorkleurig papier, fijne dubbele lijst, ruitornamenten en Garamond-typografie"
+        },
+        "nocturne": {
+          "name": "Nocturne",
+          "description": "Donkere modus: nachtachtergrond, neonaccenten en een lichtgevende tijdlijn, ideaal voor digitale sollicitaties"
+        },
+        "wave": {
+          "name": "Golf",
+          "description": "Gekleurde banner die in golven eindigt, ronde foto en golvende koppen, zacht en vriendelijk"
+        },
+        "bento": {
+          "name": "Bento",
+          "description": "Afgeronde bentotegels: foto, naam en QR-code in een raster, één tegel per sectie"
+        },
+        "blueprint": {
+          "name": "Blueprint",
+          "description": "Technische tekening: ruitjespapier, hoekmarkeringen, maatlijn en labels in monospace"
+        },
+        "memphis": {
+          "name": "Memphis",
+          "description": "Geometrische confetti uit de jaren 80, felle kleuren en koppen met een zigzaglijn eronder"
+        },
+        "duotone": {
+          "name": "Duotone",
+          "description": "Grote gesplitste banner: tekst op een kleurvlak en een tweekleurige foto"
+        },
+        "typo": {
+          "name": "Typo",
+          "description": "Typografie als enige versiering: enorme, deels uitgesneden naam en zeer grote koppen"
+        },
+        "sorbet": {
+          "name": "Sorbet",
+          "description": "Eén pastelkleur per sectie, pilvormige koppen en een veelkleurige gloed"
+        },
+        "executive": {
+          "name": "Executive",
+          "description": "Marineblauwe banner, gouden lijn en naam met schreef, voor leidinggevende functies"
+        },
+        "zen": {
+          "name": "Zen",
+          "description": "Japans minimalisme: washipapier, een ensō-cirkel in je accentkleur en een penseelstreek"
+        },
+        "ribbon": {
+          "name": "Lint",
+          "description": "Sectiekoppen op linten met zwaluwstaart, gecentreerde kop"
+        },
+        "hexa": {
+          "name": "Hexa",
+          "description": "Zeshoekige foto, honingraat in de hoek en zeshoeken voor de koppen"
+        },
+        "origami": {
+          "name": "Origami",
+          "description": "Kop van gelaagd knippapier, secties als vellen papier"
+        },
+        "thread": {
+          "name": "Draad",
+          "description": "Een doorlopende draad verbindt de kop en elke sectie, met een stip per functie"
+        }
+      },
+      "preview": {
+        "label": "Inhoud van de miniaturen",
+        "sample": "Volledig voorbeeld",
+        "mine": "Mijn cv"
+      }
+    },
+    "print": {
+      "title": "Exporteren naar pdf",
+      "text": "Het afdrukvenster van je browser gaat zo open. Voor een perfecte pdf:",
+      "tips": {
+        "destination": "Bestemming: “Opslaan als pdf”",
+        "margins": "Marges: “Geen”",
+        "headers": "Vink “Kop- en voetteksten” uit",
+        "background": "Vink “Achtergrondafbeeldingen” aan om de kleuren te behouden"
+      },
+      "dontShow": "Niet meer tonen",
+      "cancel": "Annuleren",
+      "print": "Afdrukvenster openen"
+    },
+    "job": {
+      "title": "Afstemmen op een vacature",
+      "sources": "LinkedIn, Indeed, Nationale Vacaturebank, Werk.nl, Monsterboard…",
+      "placeholder": "Plak hier de volledige tekst van de vacature: titel, taken, eisen",
+      "urlWarning": "Plak de tekst van de vacature in plaats van de link: LocalATSCV neemt nooit contact op met een website, zo blijven je gegevens bij jou",
+      "empty": "Geen trefwoorden gevonden: plak een vollediger vacature",
+      "score": "Match met de vacature",
+      "summary": "{{found}} van de {{total}} trefwoorden aanwezig",
+      "found": "Trefwoorden in je cv",
+      "missing": "Ontbrekende trefwoorden",
+      "missingHint": "Klik op een trefwoord om het aan je vaardigheden toe te voegen, of verwerk het in een ervaring",
+      "addToSkills": "Toevoegen aan vaardigheden",
+      "added": "“{{keyword}}” toegevoegd aan je vaardigheden",
+      "keywordsGroup": "Trefwoorden",
+      "createVersion": "Een gerichte versie voor deze vacature maken",
+      "createVersionHint": "Ervaring en punten die niets met de vacature te maken hebben, worden uitgevinkt: je kunt ze aanpassen",
+      "savedInVersion": "Vacature opgeslagen bij de versie “{{name}}”"
+    },
+    "weak": {
+      "hint": "“{{phrase}}” beschrijft een taak: begin met een actiewerkwoord"
+    },
+    "fonts": {
+      "title": "Typografie",
+      "heading": "Koppen",
+      "body": "Lopende tekst",
+      "default": "Die van het sjabloon",
+      "hint": "ATS-software leest al deze lettertypen goed: de tekst blijft echte tekst"
+    }
+  },
+  "changelog": {
+    "eyebrow": "Nieuw",
+    "title": "Wijzigingslogboek",
+    "subtitle": "Elke versie van LocalATSCV, met de nieuwe functies en oplossingen",
+    "current": "Huidige versie",
+    "frenchOnly": "Het wijzigingslogboek is in het Frans geschreven",
+    "error": "Het wijzigingslogboek kon niet worden geladen",
+    "types": {
+      "added": "Toegevoegd",
+      "changed": "Gewijzigd",
+      "fixed": "Opgelost",
+      "removed": "Verwijderd",
+      "deprecated": "Verouderd",
+      "security": "Beveiliging",
+      "other": "Overig"
+    }
+  },
+  "analyze": {
+    "eyebrow": "Analyse",
+    "title": "Komt je cv langs de robots?",
+    "subtitle": "Zet een pdf-cv neer dat met welke tool dan ook is gemaakt: LocalATSCV leest het zoals een ATS en vertelt je wat je moet verbeteren",
+    "drop": "Sleep je cv hierheen",
+    "dropActive": "Laat het bestand los om de analyse te starten",
+    "hint": "Alleen pdf, max. 15 MB",
+    "choose": "Een bestand kiezen",
+    "reading": "Pdf lezen…",
+    "privacy": "Het bestand wordt in je browser geanalyseerd: het wordt nergens naartoe gestuurd",
+    "another": "Een ander cv analyseren",
+    "errors": {
+      "notPdf": "Dit bestand is geen pdf",
+      "tooLarge": "Dit bestand is groter dan 15 MB",
+      "encrypted": "Deze pdf is met een wachtwoord beveiligd: een ATS kan hem ook niet lezen",
+      "unreadable": "Deze pdf kan niet worden gelezen: misschien is hij beschadigd"
+    },
+    "stats": "{{pages}} pagina('s) · {{words}} woorden",
+    "verdict": {
+      "excellent": "Uitstekend",
+      "good": "Goed",
+      "fair": "Kan beter",
+      "poor": "Kritiek"
+    },
+    "verdictText": {
+      "excellent": "Robots lezen je cv uitstekend",
+      "good": "Met een paar aanpassingen wordt het nog doeltreffender",
+      "fair": "Verschillende problemen bemoeilijken het lezen door ATS",
+      "poor": "Een ATS mist waarschijnlijk het belangrijkste"
+    },
+    "categories": {
+      "readability": "Machineleesbaarheid",
+      "structure": "Structuur",
+      "content": "Inhoud"
+    },
+    "sectionNames": {
+      "experience": "Werkervaring",
+      "education": "Opleiding",
+      "skills": "Vaardigheden"
+    },
+    "checks": {
+      "textLayer": {
+        "title": "Machineleesbare tekst",
+        "pass": "Alle tekst in je cv kan worden uitgelezen",
+        "warn": "Sommige pagina's bevatten geen leesbare tekst: waarschijnlijk afbeeldingen of een scan",
+        "fail": "Geen leesbare tekst: dit cv is waarschijnlijk een afbeelding of een scan, en een ATS haalt er niets uit. Exporteer het naar pdf vanuit je tekstverwerker"
+      },
+      "columns": {
+        "title": "Opmaak",
+        "pass": "Lineaire leesvolgorde, geen kolommen die door elkaar lopen",
+        "warn": "Opmaak in kolommen gevonden: de tekst kan in de verkeerde volgorde worden gelezen. Controleer “Wat de robot leest” hieronder"
+      },
+      "order": {
+        "title": "Leesvolgorde in het bestand",
+        "pass": "De tekst staat in leesvolgorde in het bestand",
+        "warnHeader": "Je naam en kop staan in het bestand na de rest van het cv: een ATS dat het bestand op volgorde leest, vindt je naam misschien niet",
+        "warn": "{{percent}}% van de tekst staat buiten de leesvolgorde in het bestand: sommige ATS lezen die passages in de verkeerde volgorde",
+        "fail": "{{percent}}% van de tekst staat door elkaar in het bestand, typisch voor cv's gemaakt met losse tekstvakken (Canva, PowerPoint…): veel ATS lezen je cv door elkaar. Vergelijk de twee leeswijzen hieronder"
+      },
+      "unreadable": {
+        "title": "Iconen en vaardigheidsbalken",
+        "pass": "Geen iconen of onleesbare tekens",
+        "warn": "Iconen of balken gevonden ({{count}}): een ATS leest ze als onzintekens. Vervang ze door tekst",
+        "fail": "Iconen of balken gevonden ({{count}}): vervang ze door tekst, bijvoorbeeld “Engels: C1” in plaats van stippen"
+      },
+      "contact": {
+        "title": "Contactgegevens",
+        "pass": "E-mailadres en telefoonnummer gevonden",
+        "warnNoPhone": "Geen telefoonnummer gevonden",
+        "warnNoEmail": "Geen e-mailadres gevonden",
+        "fail": "Geen e-mail of telefoonnummer gevonden: schrijf ze als tekst, niet in een afbeelding"
+      },
+      "sections": {
+        "title": "Standaardsecties",
+        "pass": "Werkervaring, opleiding en vaardigheden zijn duidelijk herkenbaar",
+        "warn": "Deze secties zijn niet herkend: gebruik standaardkoppen",
+        "fail": "Geen standaardsectie herkend: ATS-software vertrouwt op koppen als “Werkervaring” of “Opleiding”"
+      },
+      "length": {
+        "title": "Lengte",
+        "pass": "{{pages}} pagina('s), {{words}} woorden: ideale lengte",
+        "warn": "{{pages}} pagina('s), {{words}} woorden: mik op 1 tot 2 pagina's en 250 tot 1.000 woorden",
+        "fail": "{{pages}} pagina('s), {{words}} woorden: te kort of te lang om goed beoordeeld te worden"
+      },
+      "quantified": {
+        "title": "Meetbare resultaten",
+        "pass": "{{percent}}% van je punten bevat een getal, goed zo",
+        "warn": "Slechts {{percent}}% van de punten is meetbaar: voeg meetbare resultaten toe (percentages, bedragen, volumes)",
+        "fail": "Geen meetbare resultaten: recruiters en ATS-software waarderen meetbare prestaties"
+      },
+      "weakPhrases": {
+        "title": "Actiewerkwoorden",
+        "pass": "Geen zwakke formuleringen aan het begin van de punten",
+        "warn": "Deze openingen beschrijven een taak in plaats van een resultaat: begin met een actiewerkwoord",
+        "fail": "Deze openingen beschrijven een taak in plaats van een resultaat: begin met een actiewerkwoord"
+      },
+      "dates": {
+        "title": "Data",
+        "pass": "Je ervaring is gedateerd",
+        "warn": "Slechts één jaartal gevonden: dateer elke functie, ATS-software gebruikt data om je jaren ervaring te berekenen",
+        "fail": "Geen data gevonden: ATS-software gebruikt ze om je jaren ervaring te berekenen"
+      }
+    },
+    "robot": {
+      "title": "Wat de robot leest",
+      "text": "De tekst regel voor regel opnieuw opgebouwd, zoals de meeste ATS-software dat doet. Is hij hier rommelig of onvolledig, dan is hij dat ook voor de recruiter",
+      "empty": "Er kon geen tekst worden uitgelezen",
+      "position": "Op positie",
+      "file": "Volgorde in het bestand",
+      "fileText": "De tekst in de volgorde waarin hij in het bestand staat: zo lezen ATS die de opmaak niet reconstrueren hem. Hij moet de leesvolgorde van je cv volgen"
+    },
+    "cta": {
+      "title": "Begin met een schone lei",
+      "text": "Maak een ATS-vriendelijk cv in de editor en stem het af op elke vacature",
+      "button": "De editor openen",
+      "import": "Dit cv overbrengen naar onze sjablonen"
+    },
+    "live": {
+      "title": "Live ATS-controle",
+      "issues": "{{count}} punt(en) om te controleren bij dit sjabloon",
+      "allGood": "Geen problemen gevonden bij dit sjabloon",
+      "hint": "Berekend op de getoonde opmaak, met dezelfde engine als de cv-analyse"
+    },
+    "method": {
+      "title": "Hoe wordt deze score berekend?",
+      "intro": "Er bestaat geen officiële ATS-score: elke recruitmentsoftware (Workday, Taleo, Greenhouse, Lever…) heeft eigen, vaak vertrouwelijke regels. Deze index controleert wat de meeste ervan laat struikelen, volgens deze schaal:",
+      "disclaimer": "Deze criteria komen uit de openbare aanbevelingen van ATS-leveranciers en de meest voorkomende leesfouten (tekst in afbeeldingen, kolommen, iconen, niet-standaard koppen). De score helpt je cv te verbeteren: hij voorspelt geen selectie"
+    }
+  },
+  "import": {
+    "title": "Een cv importeren",
+    "linkedinTitle": "Importeren uit LinkedIn",
+    "text": "Kies een cv in pdf of Word (.docx): de inhoud wordt in je browser uitgelezen en over de secties van de editor verdeeld. Daarna kun je een sjabloon kiezen",
+    "choose": "Een bestand kiezen",
+    "chooseFile": "Een bestand kiezen",
+    "hint": "Pdf of Word (.docx), maximaal 15 MB",
+    "reading": "Importeren…",
+    "privacy": "Het bestand wordt in je browser gelezen: het wordt nergens naartoe gestuurd",
+    "close": "Sluiten",
+    "done": "Cv geïmporteerd ({{items}} onderdelen): controleer elke sectie",
+    "errors": {
+      "tooLarge": "Dit bestand is groter dan 15 MB",
+      "encrypted": "Deze pdf is met een wachtwoord beveiligd",
+      "unreadable": "Dit bestand kan niet worden gelezen: misschien is het beschadigd",
+      "empty": "Geen bruikbare tekst: deze pdf is waarschijnlijk een afbeelding of een scan",
+      "unsupported": "Kies een pdf, een Word-bestand (.docx) of een LinkedIn-ZIP-archief",
+      "archiveEmpty": "Dit archief bevat geen bruikbare LinkedIn-profielgegevens"
+    },
+    "hintArchive": "Pdf (computer) of ZIP-archief (mobiele app)",
+    "linkedin": {
+      "computer": {
+        "title": "Op een computer: de pdf van je profiel",
+        "step1": "Open linkedin.com in een browser op een computer (de optie bestaat niet in de app)",
+        "step2": "Klik op je profiel op “Bronnen” (of “Meer”) en daarna op “Opslaan als pdf”",
+        "step3": "Kies die pdf hieronder"
+      },
+      "archive": {
+        "title": "In de mobiele app: je gegevensarchief",
+        "step1": "Tik in de app op je foto en daarna op Instellingen en Gegevensprivacy",
+        "step2": "Kies “Een kopie van je gegevens downloaden” en vink Profiel, Functies, Opleiding, Vaardigheden en Talen aan",
+        "step3": "LinkedIn stuurt je binnen enkele minuten een e-mail: download het ZIP-archief",
+        "step4": "Kies dat ZIP-bestand hieronder, zonder het uit te pakken"
+      }
+    }
+  },
+  "legal": {
+    "translationNote": "Dit document wordt in het Engels getoond. Alleen de Franse versie is juridisch bindend.",
+    "error": "Dit document kon niet worden geladen."
+  }
+}

@@ -31,7 +31,7 @@
     "privacy": "Sera ya faragha"
   },
   "seo": {
-    "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 30, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
+    "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 52, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
     "editor": "Kihariri cha CV chenye onyesho la moja kwa moja, CV Kuu na matoleo yaliyolengwa, ukaguzi wa ATS na usafirishaji wa PDF yenye maandishi halisi. Kila kitu kinabaki kwenye kivinjari chako",
     "analyze": "Uchambuzi wa bure wa CV ya PDF: alama ya ATS kati ya 100, mambo ya kurekebisha na maandishi kama mifumo ya uajiri inavyoyasoma. Faili haitoki kamwe kwenye kivinjari chako",
     "changelog": "Mapya ya LocalATSCV kwa kila toleo: violezo vipya vya CV, vipengele na marekebisho",
@@ -62,11 +62,11 @@
       "badge": "Bure · Bila kujisajili · Bila matangazo",
       "titleLine1": "CV inayokufikisha kwenye usaili",
       "titleLine2": "Tayari kwa dakika chache",
-      "subtitle": "Jaza historia yako, chagua kiolezo kimoja kati ya 30 na upakue CV iliyo tayari kutumwa. LocalATSCV pia inakusaidia kuirekebisha kwa kila tangazo la kazi na inakagua kama programu zinazochuja maombi zinaisoma ipasavyo",
+      "subtitle": "Jaza historia yako, chagua kiolezo kimoja kati ya 52 na upakue CV iliyo tayari kutumwa. LocalATSCV pia inakusaidia kuirekebisha kwa kila tangazo la kazi na inakagua kama programu zinazochuja maombi zinaisoma ipasavyo",
       "ctaPrimary": "Tengeneza CV yangu bure",
       "ctaSecondary": "Jaribu CV yangu ya sasa",
       "points": {
-        "templates": "Violezo 30 vya kuchagua",
+        "templates": "Violezo 52 vya kuchagua",
         "letter": "Barua ya maombi inayolingana",
         "private": "Data yako inabaki kwako"
       }
@@ -170,7 +170,7 @@
       "title": "Kila kitu kwa ombi la kazi lenye mafanikio",
       "items": {
         "templates": {
-          "title": "Violezo 30 vilivyoboreshwa",
+          "title": "Violezo 52 vilivyoboreshwa",
           "text": "Rahisi, vya kisasa au vya rangi, vikiwa na picha au bila. Badilisha kiolezo au rangi kwa mbofyo mmoja, maandishi yako yanafuata"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "wa wastani"
       },
       "atsHint": "Kila kiolezo huchapisha maandishi halisi. Mpangilio wa safu mbili husomwa vizuri na ATS nyingi za kisasa, lakini baadhi ya zana za zamani huchanganya safu: ukiwa na shaka, chagua kiolezo cha safu moja",
+      "preview": {
+        "label": "Maudhui ya picha ndogo",
+        "sample": "Mfano kamili",
+        "mine": "CV yangu"
+      },
+      "count": "Violezo {{n}}",
+      "search": "Tafuta kiolezo",
+      "random": "Bila mpangilio",
+      "randomHint": "Chagua kiolezo bila mpangilio kati ya vilivyoonyeshwa",
+      "current": "Cha sasa",
+      "noResults": "Hakuna kiolezo kinacholingana na utafutaji wako",
+      "previous": "Kiolezo kilichotangulia",
+      "next": "Kiolezo kinachofuata",
+      "open": "Fungua maktaba ya violezo",
       "names": {
         "classic": {
           "name": "Classic",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Uzi",
           "description": "Uzi mmoja unaoendelea unaounganisha kichwa na kila sehemu, kitone kimoja kwa kila nafasi"
+        },
+        "horizon": {
+          "name": "Upeo",
+          "description": "Mvuko mkubwa wa mshazari, kadi nyeupe inayoinuka juu yake na picha ya duara kwenye mpaka"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Picha ndani ya fremu ya papo hapo iliyoinama, kadi zilizobandikwa kwa utepe wa rangi, karatasi ya krimu"
+        },
+        "terminal": {
+          "name": "Terminali",
+          "description": "Kiweko cheusi chenye fonti ya upana sawa, kishale na mishale kabla ya vichwa, lebo za mtindo wa msimbo"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Mistari ya rangi ya miaka ya 70, jua la matao kwenye kona na serifu ya mviringo"
+        },
+        "mosaic": {
+          "name": "Mozaiki",
+          "description": "Ukanda wa vigae katika vivuli vya rangi ya msisitizo, alama za chess kabla ya vichwa, picha ya mraba"
+        },
+        "cosmos": {
+          "name": "Anga",
+          "description": "Anga la nyota la buluu ya usiku, sayari yenye pete na njia za mzunguko kabla ya vichwa"
+        },
+        "botanical": {
+          "name": "Mimea",
+          "description": "Karatasi ya krimu, matawi ya majani pembeni, serifu ya Cormorant na mistari miwili"
+        },
+        "ticket": {
+          "name": "Tiketi",
+          "description": "Tiketi yenye kingo za meno na kipande cha kuchana kwa picha na msimbo wa QR, msimbopau"
+        },
+        "comic": {
+          "name": "Katuni",
+          "description": "Nukta za halftone, vichwa ndani ya viputo vya maneno, paneli zenye mpaka mweusi, njano na rangi ya msisitizo"
+        },
+        "postal": {
+          "name": "Posta",
+          "description": "Mpaka wa barua ya ndege, picha kama stempu yenye meno, muhuri wa posta na serifu ya Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Mchezo wa video wa biti 8: ukanda wa ngazi, mistari ya chini ya vitalu, vipimo vya visanduku, fonti ya upana sawa"
+        },
+        "notebook": {
+          "name": "Daftari",
+          "description": "Ukurasa wa daftari wenye mistari na pambizo nyekundu, vichwa vilivyopakwa kalamu ya kuangazia, muhtasari kwenye kinoti"
+        },
+        "circuit": {
+          "name": "Saketi",
+          "description": "Njia za bodi ya saketi pembeni, vichwa juu ya chipu zenye pini, maelezo kwa fonti ya upana sawa"
+        },
+        "gazette": {
+          "name": "Gazeti",
+          "description": "Ukurasa wa mbele wa gazeti: kichwa cha Playfair, mistari miwili, mstari wa tarehe na herufi kubwa ya kwanza"
+        },
+        "topo": {
+          "name": "Topografia",
+          "description": "Mistari ya kontua ya ramani pembeni, rangi za udongo na alama za mwinuko"
+        },
+        "watercolor": {
+          "name": "Rangi ya maji",
+          "description": "Madoa ya rangi iliyoyeyushwa, vichwa vya mpigo wa brashi na serifu ya Cormorant"
+        },
+        "ledger": {
+          "name": "Leja",
+          "description": "Tarehe kwenye safu ya kushoto, mistari myembamba kati ya maingizo, herufi kubwa ndogo"
+        },
+        "compact": {
+          "name": "Fupi",
+          "description": "Msongamano wa juu kwa taaluma ndefu: maandishi madogo zaidi, vichwa vya maingizo vya mstari mmoja"
+        },
+        "academic": {
+          "name": "Kitaaluma",
+          "description": "Muundo wa chuo kikuu: jina katikati kwa herufi kubwa, vichwa vilivyopigiwa mstari, serifu, bila rangi"
+        },
+        "mono": {
+          "name": "Rangi moja",
+          "description": "Nyeusi na nyeupe, tofauti za unene, mraba mmoja tu wa msisitizo kabla ya jina"
+        },
+        "soft": {
+          "name": "Laini",
+          "description": "Paneli za mviringo katika kivuli chepesi cha rangi ya msisitizo, hakuna mstari mgumu"
+        },
+        "outline": {
+          "name": "Muhtasari",
+          "description": "Mistari myembamba na pembe za mraba, vichwa kama vichupo vilivyoambatishwa kwenye fremu ya kila sehemu"
         }
-      },
-      "preview": {
-        "label": "Maudhui ya picha ndogo",
-        "sample": "Mfano kamili",
-        "mine": "CV yangu"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Hamia kwenye CV isiyo na dosari",
-      "text": "Chagua kimoja kati ya violezo vyetu 30, ambavyo programu za kuchuja huvisoma ipasavyo, na ukirekebishe kwa kila tangazo",
+      "text": "Chagua kimoja kati ya violezo vyetu 52, ambavyo programu za kuchuja huvisoma ipasavyo, na ukirekebishe kwa kila tangazo",
       "button": "Fungua kihariri",
       "import": "Hamishia CV hii kwenye violezo vyetu"
     },

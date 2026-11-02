@@ -12,6 +12,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![100% local](https://img.shields.io/badge/data-100%25%20local-success)
+![52 templates](https://img.shields.io/badge/templates-52-ff6b6b)
 ![44 languages](https://img.shields.io/badge/interface-44%20languages-orange)
 ![Works offline](https://img.shields.io/badge/PWA-works%20offline-purple)
 ![Angular 22](https://img.shields.io/badge/Angular-22-dd0031)
@@ -42,9 +43,11 @@ Most online resume builders, on the other hand, want your email, your phone numb
 
 ## Everything you need to land the job
 
-### ✨ 30 templates that look great *and* pass the robots
+### ✨ 52 templates that look great *and* pass the robots
 
-23 graphic designs (Bento, Memphis, Bauhaus, Brutal, Duotone, Editorial, Prism, Nocturne, Sorbet, Origami, Hexa, Typo, Ribbon, Zen…) and 7 classic ones. Every single template prints real, selectable text, in reading order, with standard section titles.
+39 graphic designs (Bento, Memphis, Bauhaus, Brutal, Duotone, Editorial, Prism, Nocturne, Sorbet, Origami, Hexa, Typo, Ribbon, Zen, Polaroid, Terminal, Retro, Cosmos, Botanical, Ticket, Comic, Arcade, Notebook, Gazette, Watercolor…) and 13 classic ones (Classic, Executive, Elegant, Ledger, Academic, Compact, Monochrome…). Every single template prints real, selectable text, in reading order, with standard section titles.
+
+Browse them in a gallery with search and a "Surprise me" button, or flip through them with the previous / next arrows right from the toolbar.
 
 ![Eight of the graphic templates: Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo and Ribbon](docs/screenshots/templates-showcase.png)
 

@@ -31,7 +31,7 @@
     "privacy": "Privacy policy"
   },
   "seo": {
-    "home": "Build a free resume that lands the interview: 30 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
+    "home": "Build a free resume that lands the interview: 52 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
     "editor": "Resume editor with live preview, Master CV and tailored versions, ATS check and real-text PDF export. Everything stays in your browser",
     "analyze": "Analyze a PDF resume for free: ATS score out of 100, issues to fix and the text as an applicant tracking system reads it. The file never leaves your browser",
     "changelog": "What's new in LocalATSCV, release by release: new resume templates, features and fixes",
@@ -62,11 +62,11 @@
       "badge": "Free · No sign-up · No ads",
       "titleLine1": "The resume that lands the interview",
       "titleLine2": "Ready in minutes",
-      "subtitle": "Fill in your background, pick one of 30 templates and download a resume ready to send. LocalATSCV also helps you tailor it to every job ad and checks that it will be read correctly by the software that sorts applications",
+      "subtitle": "Fill in your background, pick one of 52 templates and download a resume ready to send. LocalATSCV also helps you tailor it to every job ad and checks that it will be read correctly by the software that sorts applications",
       "ctaPrimary": "Build my resume for free",
       "ctaSecondary": "Test my current resume",
       "points": {
-        "templates": "30 templates to choose from",
+        "templates": "52 templates to choose from",
         "letter": "Matching cover letter",
         "private": "Your data stays with you"
       }
@@ -170,7 +170,7 @@
       "title": "Everything for a winning application",
       "items": {
         "templates": {
-          "title": "30 polished templates",
+          "title": "52 polished templates",
           "text": "Simple, modern or colorful, with or without a photo. Switch template or color in one click, your text follows"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "fair"
       },
       "atsHint": "Every template prints real text. Two-column layouts are read well by most modern ATS software, but some older tools mix the columns up: when in doubt, pick a single-column template",
+      "preview": {
+        "label": "Thumbnail content",
+        "sample": "Full example",
+        "mine": "My resume"
+      },
+      "count": "{{n}} templates",
+      "search": "Search templates",
+      "random": "Surprise me",
+      "randomHint": "Pick a random template among those shown",
+      "current": "Current",
+      "noResults": "No template matches your search",
+      "previous": "Previous template",
+      "next": "Next template",
+      "open": "Open the template gallery",
       "names": {
         "classic": {
           "name": "Classic",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Thread",
           "description": "A continuous thread links the header and every section, with a dot per job"
+        },
+        "horizon": {
+          "name": "Horizon",
+          "description": "Large diagonal gradient, white card rising over it and a round photo straddling both"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Photo in a tilted instant-camera frame, cards held by colored tape, cream paper"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Dark console in monospace, cursor and chevrons before headings, code-style tags"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70s color stripes, a sun of arcs in the corner and a rounded serif"
+        },
+        "mosaic": {
+          "name": "Mosaic",
+          "description": "Banner of tiles in your accent tints, checkered marks before headings, square photo"
+        },
+        "cosmos": {
+          "name": "Cosmos",
+          "description": "Starry midnight sky, ringed planet and orbit marks before headings"
+        },
+        "botanical": {
+          "name": "Botanical",
+          "description": "Cream paper, leaf sprigs in the corners, Cormorant serif and double rules"
+        },
+        "ticket": {
+          "name": "Ticket",
+          "description": "Notched ticket with a tear-off stub for the photo and QR code, barcode detail"
+        },
+        "comic": {
+          "name": "Comic",
+          "description": "Halftone dots, headings in speech bubbles, black-bordered panels, yellow and accent"
+        },
+        "postal": {
+          "name": "Postal",
+          "description": "Airmail border, photo as a perforated stamp, postmark and Lora serif"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8-bit video game: stepped banner, block underlines, boxed gauges, monospace"
+        },
+        "notebook": {
+          "name": "Notebook",
+          "description": "Ruled notebook page with red margin, marker-highlighted headings, summary on a sticky note"
+        },
+        "circuit": {
+          "name": "Circuit",
+          "description": "Printed-circuit traces in the corner, headings on pinned chips, monospace details"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Newspaper front page: Playfair masthead, double rules, dateline and drop cap"
+        },
+        "topo": {
+          "name": "Topo",
+          "description": "Map contour lines in the corners, earthy tints and elevation markers"
+        },
+        "watercolor": {
+          "name": "Watercolor",
+          "description": "Washes of diluted color, brush-stroke headings and Cormorant serif"
+        },
+        "ledger": {
+          "name": "Ledger",
+          "description": "Dates in a left-hand column, hairlines between entries, small caps"
+        },
+        "compact": {
+          "name": "Compact",
+          "description": "Maximum density for long careers: smaller text, one-line entry headers"
+        },
+        "academic": {
+          "name": "Academic",
+          "description": "University format: centered uppercase name, underlined headings, serif, no color"
+        },
+        "mono": {
+          "name": "Monochrome",
+          "description": "Black and white, weight contrasts, a single accent square before the name"
+        },
+        "soft": {
+          "name": "Soft",
+          "description": "Rounded panels in a light tint of your accent, no hard lines"
+        },
+        "outline": {
+          "name": "Outline",
+          "description": "Thin rules and square corners, headings as tabs attached to each section frame"
         }
-      },
-      "preview": {
-        "label": "Thumbnail content",
-        "sample": "Full example",
-        "mine": "My resume"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Switch to a flawless resume",
-      "text": "Pick one of our 30 templates, read correctly by screening software, and tailor it to every job ad",
+      "text": "Pick one of our 52 templates, read correctly by screening software, and tailor it to every job ad",
       "button": "Open the editor",
       "import": "Bring this resume into our templates"
     },

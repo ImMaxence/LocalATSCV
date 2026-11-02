@@ -31,7 +31,7 @@
     "privacy": "Informativa sulla privacy"
   },
   "seo": {
-    "home": "Crea gratis un CV che ti porta al colloquio: 30 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
+    "home": "Crea gratis un CV che ti porta al colloquio: 52 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
     "editor": "Editor di CV con anteprima dal vivo, CV master e versioni mirate, controllo ATS ed esportazione PDF in testo reale. Tutto resta nel tuo browser",
     "analyze": "Analizza gratis un CV in PDF: punteggio ATS su 100, punti da correggere e testo come lo legge un software di selezione. Il file non lascia il tuo browser",
     "changelog": "Le novità di LocalATSCV, versione per versione: nuovi modelli di CV, funzionalità e correzioni",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Senza registrazione · Senza pubblicità",
       "titleLine1": "Il CV che ti porta al colloquio",
       "titleLine2": "Pronto in pochi minuti",
-      "subtitle": "Inserisci il tuo percorso, scegli tra 30 modelli e scarica un CV pronto da inviare. LocalATSCV ti aiuta anche ad adattarlo a ogni annuncio e controlla che venga letto bene dai software che smistano le candidature",
+      "subtitle": "Inserisci il tuo percorso, scegli tra 52 modelli e scarica un CV pronto da inviare. LocalATSCV ti aiuta anche ad adattarlo a ogni annuncio e controlla che venga letto bene dai software che smistano le candidature",
       "ctaPrimary": "Crea il mio CV gratis",
       "ctaSecondary": "Testa il mio CV attuale",
       "points": {
-        "templates": "30 modelli tra cui scegliere",
+        "templates": "52 modelli tra cui scegliere",
         "letter": "Lettera di presentazione abbinata",
         "private": "I tuoi dati restano a casa tua"
       }
@@ -170,7 +170,7 @@
       "title": "Tutto per una candidatura vincente",
       "items": {
         "templates": {
-          "title": "30 modelli curati",
+          "title": "52 modelli curati",
           "text": "Sobri, moderni o colorati, con o senza foto. Cambia modello o colore con un clic, il tuo testo segue"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "media"
       },
       "atsHint": "Tutti i modelli stampano testo vero. Le impaginazioni a due colonne sono lette bene dalla maggior parte degli ATS recenti, ma alcuni software più vecchi mescolano le colonne: nel dubbio, scegli un modello a una colonna",
+      "preview": {
+        "label": "Contenuto delle anteprime",
+        "sample": "Esempio completo",
+        "mine": "Il mio CV"
+      },
+      "count": "{{n}} modelli",
+      "search": "Cerca un modello",
+      "random": "A caso",
+      "randomHint": "Scegliere un modello a caso tra quelli mostrati",
+      "current": "Attuale",
+      "noResults": "Nessun modello corrisponde alla tua ricerca",
+      "previous": "Modello precedente",
+      "next": "Modello successivo",
+      "open": "Apri la galleria dei modelli",
       "names": {
         "classic": {
           "name": "Classico",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Filo",
           "description": "Un filo continuo collega l'intestazione e ogni sezione, con un punto per esperienza"
+        },
+        "horizon": {
+          "name": "Orizzonte",
+          "description": "Grande sfumatura in diagonale, scheda bianca che la sovrasta e foto rotonda a cavallo tra le due"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto in una cornice istantanea inclinata, schede fissate con nastro colorato, carta crema"
+        },
+        "terminal": {
+          "name": "Terminale",
+          "description": "Console scura a spaziatura fissa, cursore e frecce davanti ai titoli, etichette in stile codice"
+        },
+        "retro": {
+          "name": "Retrò",
+          "description": "Strisce colorate anni 70, sole ad archi nell'angolo e serif arrotondato"
+        },
+        "mosaic": {
+          "name": "Mosaico",
+          "description": "Fascia di piastrelle nei toni dell'accento, scacchiera davanti ai titoli, foto quadrata"
+        },
+        "cosmos": {
+          "name": "Cosmo",
+          "description": "Cielo stellato blu notte, pianeta con anello e orbite davanti ai titoli"
+        },
+        "botanical": {
+          "name": "Botanico",
+          "description": "Carta crema, rametti di foglie negli angoli, serif Cormorant e filetti doppi"
+        },
+        "ticket": {
+          "name": "Biglietto",
+          "description": "Biglietto con bordi dentellati e tagliando staccabile per foto e codice QR, codice a barre"
+        },
+        "comic": {
+          "name": "Fumetto",
+          "description": "Retino a punti, titoli in nuvolette, vignette bordate di nero, giallo e accento"
+        },
+        "postal": {
+          "name": "Postale",
+          "description": "Bordo posta aerea, foto come francobollo dentellato, timbro postale e serif Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Videogioco a 8 bit: fascia a gradini, sottolineature a blocchi, indicatori a caselle, spaziatura fissa"
+        },
+        "notebook": {
+          "name": "Quaderno",
+          "description": "Pagina di quaderno a righe con margine rosso, titoli evidenziati, profilo su un post-it"
+        },
+        "circuit": {
+          "name": "Circuito",
+          "description": "Piste di circuito stampato nell'angolo, titoli su chip con piedini, dettagli a spaziatura fissa"
+        },
+        "gazette": {
+          "name": "Gazzetta",
+          "description": "Prima pagina di giornale: testata Playfair, filetti doppi, riga della data e capolettera"
+        },
+        "topo": {
+          "name": "Rilievo",
+          "description": "Curve di livello negli angoli, toni terra e indicatori di altitudine"
+        },
+        "watercolor": {
+          "name": "Acquerello",
+          "description": "Macchie di colore diluito, titoli a pennellata e serif Cormorant"
+        },
+        "ledger": {
+          "name": "Registro",
+          "description": "Date in una colonna a sinistra, filetti sottili tra le voci, maiuscoletto"
+        },
+        "compact": {
+          "name": "Compatto",
+          "description": "Massima densità per percorsi lunghi: testo più piccolo, intestazioni su una riga"
+        },
+        "academic": {
+          "name": "Accademico",
+          "description": "Formato universitario: nome centrato in maiuscolo, titoli sottolineati, serif, nessun colore"
+        },
+        "mono": {
+          "name": "Monocromo",
+          "description": "Bianco e nero, contrasti di spessore, un solo quadrato d'accento davanti al nome"
+        },
+        "soft": {
+          "name": "Morbido",
+          "description": "Pannelli arrotondati in una tinta chiara dell'accento, nessuna linea dura"
+        },
+        "outline": {
+          "name": "Contorno",
+          "description": "Filetti sottili e angoli retti, titoli a linguetta attaccata alla cornice di ogni sezione"
         }
-      },
-      "preview": {
-        "label": "Contenuto delle anteprime",
-        "sample": "Esempio completo",
-        "mine": "Il mio CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Passa a un CV impeccabile",
-      "text": "Scegli uno dei nostri 30 modelli, ben letti dai software di selezione, e adattalo a ogni offerta",
+      "text": "Scegli uno dei nostri 52 modelli, ben letti dai software di selezione, e adattalo a ogni offerta",
       "button": "Apri l'editor",
       "import": "Porta questo CV nei nostri modelli"
     },

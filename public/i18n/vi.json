@@ -31,7 +31,7 @@
     "privacy": "Chính sách quyền riêng tư"
   },
   "seo": {
-    "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 30 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
+    "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 52 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
     "editor": "Trình soạn CV với xem trước trực tiếp, CV Master và các phiên bản nhắm mục tiêu, kiểm tra ATS và xuất PDF bằng văn bản thật. Mọi thứ đều ở trong trình duyệt của bạn",
     "analyze": "Phân tích CV PDF miễn phí: điểm ATS trên thang 100, các điểm cần sửa và văn bản đúng như hệ thống tuyển dụng đọc được. Tệp không bao giờ rời khỏi trình duyệt của bạn",
     "changelog": "Có gì mới trong LocalATSCV qua từng phiên bản: mẫu CV mới, tính năng và bản sửa lỗi",
@@ -62,11 +62,11 @@
       "badge": "Miễn phí · Không cần đăng ký · Không quảng cáo",
       "titleLine1": "CV giúp bạn có buổi phỏng vấn",
       "titleLine2": "Xong chỉ trong vài phút",
-      "subtitle": "Điền quá trình làm việc, chọn một trong 30 mẫu và tải về CV sẵn sàng gửi đi. LocalATSCV còn giúp bạn điều chỉnh CV cho từng tin tuyển dụng và kiểm tra xem phần mềm lọc hồ sơ có đọc đúng không",
+      "subtitle": "Điền quá trình làm việc, chọn một trong 52 mẫu và tải về CV sẵn sàng gửi đi. LocalATSCV còn giúp bạn điều chỉnh CV cho từng tin tuyển dụng và kiểm tra xem phần mềm lọc hồ sơ có đọc đúng không",
       "ctaPrimary": "Tạo CV miễn phí",
       "ctaSecondary": "Kiểm tra CV hiện tại",
       "points": {
-        "templates": "30 mẫu để lựa chọn",
+        "templates": "52 mẫu để lựa chọn",
         "letter": "Thư xin việc đồng bộ",
         "private": "Dữ liệu ở lại với bạn"
       }
@@ -170,7 +170,7 @@
       "title": "Mọi thứ cho một hồ sơ ứng tuyển thành công",
       "items": {
         "templates": {
-          "title": "30 mẫu được chăm chút",
+          "title": "52 mẫu được chăm chút",
           "text": "Tối giản, hiện đại hay nhiều màu sắc, có hoặc không có ảnh. Đổi mẫu hay màu chỉ với một cú nhấp, nội dung vẫn giữ nguyên"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "khá"
       },
       "atsHint": "Mỗi mẫu đều in văn bản thật. Bố cục hai cột được hầu hết ATS hiện đại đọc tốt, nhưng một số công cụ cũ đọc lẫn các cột: nếu phân vân, hãy chọn mẫu một cột",
+      "preview": {
+        "label": "Nội dung hình thu nhỏ",
+        "sample": "Ví dụ đầy đủ",
+        "mine": "CV của tôi"
+      },
+      "count": "{{n}} mẫu",
+      "search": "Tìm mẫu",
+      "random": "Ngẫu nhiên",
+      "randomHint": "Chọn ngẫu nhiên một mẫu trong số các mẫu đang hiển thị",
+      "current": "Hiện tại",
+      "noResults": "Không có mẫu nào khớp với tìm kiếm của bạn",
+      "previous": "Mẫu trước",
+      "next": "Mẫu tiếp theo",
+      "open": "Mở thư viện mẫu",
       "names": {
         "classic": {
           "name": "Cổ điển",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Sợi chỉ",
           "description": "Một sợi chỉ liền mạch nối phần đầu với từng mục, mỗi vị trí một chấm"
+        },
+        "horizon": {
+          "name": "Chân trời",
+          "description": "Dải chuyển màu chéo lớn, thẻ trắng nổi lên trên và ảnh tròn nằm giữa ranh giới"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Ảnh trong khung ảnh lấy liền nghiêng, các thẻ dán bằng băng keo màu, giấy màu kem"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Bảng điều khiển tối với phông đơn cách, con trỏ và mũi tên trước tiêu đề, nhãn kiểu mã"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Sọc màu thập niên 70, mặt trời bằng các cung ở góc và phông serif bo tròn"
+        },
+        "mosaic": {
+          "name": "Khảm",
+          "description": "Dải gạch theo sắc độ màu nhấn, ô bàn cờ trước tiêu đề, ảnh vuông"
+        },
+        "cosmos": {
+          "name": "Vũ trụ",
+          "description": "Bầu trời đêm xanh đầy sao, hành tinh có vành đai và quỹ đạo trước tiêu đề"
+        },
+        "botanical": {
+          "name": "Thực vật",
+          "description": "Giấy màu kem, cành lá ở các góc, phông serif Cormorant và đường kẻ đôi"
+        },
+        "ticket": {
+          "name": "Vé",
+          "description": "Vé viền răng cưa với cuống xé rời cho ảnh và mã QR, chi tiết mã vạch"
+        },
+        "comic": {
+          "name": "Truyện tranh",
+          "description": "Chấm bán sắc, tiêu đề trong bong bóng thoại, khung viền đen, vàng và màu nhấn"
+        },
+        "postal": {
+          "name": "Bưu chính",
+          "description": "Viền thư hàng không, ảnh dạng tem răng cưa, dấu bưu điện và phông serif Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Trò chơi điện tử 8-bit: dải bậc thang, gạch chân dạng khối, thanh đo dạng ô, phông đơn cách"
+        },
+        "notebook": {
+          "name": "Vở",
+          "description": "Trang vở kẻ dòng với lề đỏ, tiêu đề tô bằng bút dạ quang, tóm tắt trên giấy ghi chú"
+        },
+        "circuit": {
+          "name": "Mạch điện",
+          "description": "Đường mạch in ở góc, tiêu đề trên chip có chân, chi tiết phông đơn cách"
+        },
+        "gazette": {
+          "name": "Nhật báo",
+          "description": "Trang nhất báo: măng sét Playfair, đường kẻ đôi, dòng ngày tháng và chữ cái đầu lớn"
+        },
+        "topo": {
+          "name": "Địa hình",
+          "description": "Đường đồng mức bản đồ ở các góc, tông màu đất và mốc độ cao"
+        },
+        "watercolor": {
+          "name": "Màu nước",
+          "description": "Vệt màu loãng, tiêu đề nét cọ và phông serif Cormorant"
+        },
+        "ledger": {
+          "name": "Sổ cái",
+          "description": "Ngày tháng ở cột trái, đường kẻ mảnh giữa các mục, chữ hoa nhỏ"
+        },
+        "compact": {
+          "name": "Gọn",
+          "description": "Mật độ tối đa cho sự nghiệp dài: chữ nhỏ hơn, đầu mục trên một dòng"
+        },
+        "academic": {
+          "name": "Học thuật",
+          "description": "Định dạng đại học: tên viết hoa căn giữa, tiêu đề gạch chân, serif, không màu"
+        },
+        "mono": {
+          "name": "Đơn sắc",
+          "description": "Đen trắng, tương phản độ đậm, chỉ một ô vuông màu nhấn trước tên"
+        },
+        "soft": {
+          "name": "Dịu",
+          "description": "Các khung bo tròn trong sắc nhạt của màu nhấn, không có đường nét cứng"
+        },
+        "outline": {
+          "name": "Viền",
+          "description": "Đường kẻ mảnh và góc vuông, tiêu đề dạng thẻ gắn vào khung của mỗi phần"
         }
-      },
-      "preview": {
-        "label": "Nội dung hình thu nhỏ",
-        "sample": "Ví dụ đầy đủ",
-        "mine": "CV của tôi"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Chuyển sang một CV hoàn hảo",
-      "text": "Chọn một trong 30 mẫu của chúng tôi, được phần mềm lọc hồ sơ đọc chính xác, và điều chỉnh cho từng tin tuyển dụng",
+      "text": "Chọn một trong 52 mẫu của chúng tôi, được phần mềm lọc hồ sơ đọc chính xác, và điều chỉnh cho từng tin tuyển dụng",
       "button": "Mở trình soạn thảo",
       "import": "Đưa CV này vào các mẫu của chúng tôi"
     },

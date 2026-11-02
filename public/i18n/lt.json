@@ -31,7 +31,7 @@
     "privacy": "Privatumo politika"
   },
   "seo": {
-    "home": "Nemokamai sukurkite CV, kuris atveria duris į pokalbį: 30 šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam skelbimui ir ATS patikra. Be registracijos, jūsų duomenys lieka jūsų įrenginyje",
+    "home": "Nemokamai sukurkite CV, kuris atveria duris į pokalbį: 52 šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam skelbimui ir ATS patikra. Be registracijos, jūsų duomenys lieka jūsų įrenginyje",
     "editor": "CV redaktorius su tiesiogine peržiūra, Master CV ir tikslinėmis versijomis, ATS patikra ir PDF eksportu su tikru tekstu. Viskas lieka jūsų naršyklėje",
     "analyze": "Nemokamai išanalizuokite PDF formato CV: ATS įvertinimas iš 100, taisytinos vietos ir tekstas taip, kaip jį perskaito atrankos sistema. Failas niekada nepalieka jūsų naršyklės",
     "changelog": "LocalATSCV naujienos pagal versijas: nauji CV šablonai, funkcijos ir pataisymai",
@@ -62,11 +62,11 @@
       "badge": "Nemokama · Be registracijos · Be reklamų",
       "titleLine1": "CV, kuris atveria duris į pokalbį",
       "titleLine2": "Paruošta per kelias minutes",
-      "subtitle": "Užpildykite savo patirtį, pasirinkite vieną iš 30 šablonų ir atsisiųskite siųsti paruoštą CV. LocalATSCV taip pat padeda jį pritaikyti kiekvienam skelbimui ir patikrina, ar paraiškas rūšiuojančios programos jį perskaito teisingai",
+      "subtitle": "Užpildykite savo patirtį, pasirinkite vieną iš 52 šablonų ir atsisiųskite siųsti paruoštą CV. LocalATSCV taip pat padeda jį pritaikyti kiekvienam skelbimui ir patikrina, ar paraiškas rūšiuojančios programos jį perskaito teisingai",
       "ctaPrimary": "Kurti mano CV nemokamai",
       "ctaSecondary": "Išbandyti dabartinį CV",
       "points": {
-        "templates": "30 šablonų pasirinkimui",
+        "templates": "52 šablonų pasirinkimui",
         "letter": "Derantis motyvacinis laiškas",
         "private": "Jūsų duomenys lieka pas jus"
       }
@@ -170,7 +170,7 @@
       "title": "Viskas sėkmingai paraiškai",
       "items": {
         "templates": {
-          "title": "30 kruopščiai sukurtų šablonų",
+          "title": "52 kruopščiai sukurtų šablonų",
           "text": "Santūrūs, modernūs ar spalvingi, su nuotrauka arba be jos. Keiskite šabloną ar spalvą vienu paspaudimu, jūsų tekstas prisitaiko"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "priimtinas"
       },
       "atsHint": "Kiekvienas šablonas spausdina tikrą tekstą. Dviejų stulpelių maketus dauguma šiuolaikinių ATS perskaito gerai, bet kai kurie senesni įrankiai sumaišo stulpelius: jei abejojate, rinkitės vieno stulpelio šabloną",
+      "preview": {
+        "label": "Miniatiūrų turinys",
+        "sample": "Išsamus pavyzdys",
+        "mine": "Mano CV"
+      },
+      "count": "{{n}} šablonai",
+      "search": "Ieškoti šablono",
+      "random": "Atsitiktinai",
+      "randomHint": "Pasirinkti atsitiktinį šabloną iš rodomų",
+      "current": "Dabartinis",
+      "noResults": "Nė vienas šablonas neatitinka jūsų paieškos",
+      "previous": "Ankstesnis šablonas",
+      "next": "Kitas šablonas",
+      "open": "Atidaryti šablonų galeriją",
       "names": {
         "classic": {
           "name": "Klasikinis",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Siūlas",
           "description": "Ištisinis siūlas jungia antraštę ir kiekvieną skiltį, su tašku kiekvienoms pareigoms"
+        },
+        "horizon": {
+          "name": "Horizontas",
+          "description": "Didelis įstrižas gradientas, virš jo kylanti balta kortelė ir apvali nuotrauka ant ribos"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Nuotrauka pakreiptame momentinės nuotraukos rėmelyje, kortelės pritvirtintos spalvota juostele, kreminis popierius"
+        },
+        "terminal": {
+          "name": "Terminalas",
+          "description": "Tamsi konsolė vienodo pločio šriftu, žymeklis ir rodyklės prieš antraštes, kodo stiliaus žymos"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Aštuntojo dešimtmečio spalvų juostos, lankų saulė kampe ir apvalus serifinis šriftas"
+        },
+        "mosaic": {
+          "name": "Mozaika",
+          "description": "Plytelių juosta akcento spalvos atspalviais, languoti ženklai prieš antraštes, kvadratinė nuotrauka"
+        },
+        "cosmos": {
+          "name": "Kosmosas",
+          "description": "Naktinis mėlynas žvaigždėtas dangus, planeta su žiedu ir orbitos prieš antraštes"
+        },
+        "botanical": {
+          "name": "Botanika",
+          "description": "Kreminis popierius, lapų šakelės kampuose, Cormorant serifinis šriftas ir dvigubos linijos"
+        },
+        "ticket": {
+          "name": "Bilietas",
+          "description": "Bilietas dantytais kraštais su nuplėšiama šaknele nuotraukai ir QR kodui, brūkšninis kodas"
+        },
+        "comic": {
+          "name": "Komiksas",
+          "description": "Rastro taškai, antraštės kalbos debesėliuose, juodai įrėminti kadrai, geltona ir akcento spalva"
+        },
+        "postal": {
+          "name": "Paštas",
+          "description": "Oro pašto apvadas, nuotrauka kaip dantytas pašto ženklas, pašto antspaudas ir Lora serifinis šriftas"
+        },
+        "arcade": {
+          "name": "Arkada",
+          "description": "8 bitų vaizdo žaidimas: laiptuota juosta, blokiniai pabraukimai, langelių matuokliai, vienodo pločio šriftas"
+        },
+        "notebook": {
+          "name": "Sąsiuvinis",
+          "description": "Linijuotas sąsiuvinio lapas su raudona parašte, žymekliu paryškintos antraštės, profilis ant lipnaus lapelio"
+        },
+        "circuit": {
+          "name": "Grandinė",
+          "description": "Spausdintinės plokštės takeliai kampe, antraštės ant lustų su kojelėmis, detalės vienodo pločio šriftu"
+        },
+        "gazette": {
+          "name": "Laikraštis",
+          "description": "Laikraščio pirmasis puslapis: Playfair antraštė, dvigubos linijos, datos eilutė ir inicialas"
+        },
+        "topo": {
+          "name": "Reljefas",
+          "description": "Žemėlapio horizontalės kampuose, žemės atspalviai ir aukščio žymės"
+        },
+        "watercolor": {
+          "name": "Akvarelė",
+          "description": "Praskiestos spalvos dėmės, antraštės teptuko potėpiu ir Cormorant serifinis šriftas"
+        },
+        "ledger": {
+          "name": "Registras",
+          "description": "Datos kairiajame stulpelyje, plonos linijos tarp įrašų, kapitelės"
+        },
+        "compact": {
+          "name": "Kompaktiškas",
+          "description": "Didžiausias tankis ilgoms karjeroms: mažesnis tekstas, vienos eilutės įrašų antraštės"
+        },
+        "academic": {
+          "name": "Akademinis",
+          "description": "Universitetinis formatas: centruotas vardas didžiosiomis raidėmis, pabrauktos antraštės, serifas, be spalvos"
+        },
+        "mono": {
+          "name": "Vienspalvis",
+          "description": "Juoda ir balta, storio kontrastai, vienas vienintelis akcento kvadratas prieš vardą"
+        },
+        "soft": {
+          "name": "Švelnus",
+          "description": "Suapvalinti skydeliai šviesiu akcento spalvos atspalviu, nė vienos kietos linijos"
+        },
+        "outline": {
+          "name": "Kontūras",
+          "description": "Plonos linijos ir stačios kampai, antraštės kaip skirtukai prie kiekvieno skyriaus rėmelio"
         }
-      },
-      "preview": {
-        "label": "Miniatiūrų turinys",
-        "sample": "Išsamus pavyzdys",
-        "mine": "Mano CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Pereikite prie nepriekaištingo CV",
-      "text": "Pasirinkite vieną iš mūsų 30 šablonų, kuriuos atrankos programos perskaito teisingai, ir pritaikykite jį kiekvienam skelbimui",
+      "text": "Pasirinkite vieną iš mūsų 52 šablonų, kuriuos atrankos programos perskaito teisingai, ir pritaikykite jį kiekvienam skelbimui",
       "button": "Atidaryti redaktorių",
       "import": "Perkelti šį CV į mūsų šablonus"
     },

@@ -31,7 +31,7 @@
     "privacy": "Polityka prywatności"
   },
   "seo": {
-    "home": "Utwórz za darmo CV, które zaprowadzi cię na rozmowę: 30 szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i kontrola ATS. Bez rejestracji, twoje dane zostają na twoim urządzeniu",
+    "home": "Utwórz za darmo CV, które zaprowadzi cię na rozmowę: 52 szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i kontrola ATS. Bez rejestracji, twoje dane zostają na twoim urządzeniu",
     "editor": "Edytor CV z podglądem na żywo, CV Master i wersjami docelowymi, kontrolą ATS i eksportem PDF z prawdziwym tekstem. Wszystko zostaje w Twojej przeglądarce",
     "analyze": "Przeanalizuj za darmo CV w PDF: wynik ATS na 100, punkty do poprawy i tekst tak, jak odczytuje go system rekrutacyjny. Plik nigdy nie opuszcza Twojej przeglądarki",
     "changelog": "Nowości w LocalATSCV, wersja po wersji: nowe szablony CV, funkcje i poprawki",
@@ -62,11 +62,11 @@
       "badge": "Za darmo · Bez rejestracji · Bez reklam",
       "titleLine1": "CV, które zaprowadzi cię na rozmowę",
       "titleLine2": "Gotowe w kilka minut",
-      "subtitle": "Uzupełnij swoje doświadczenie, wybierz jeden z 30 szablonów i pobierz CV gotowe do wysłania. LocalATSCV pomoże ci też dopasować je do każdego ogłoszenia i sprawdzi, czy programy sortujące zgłoszenia odczytają je poprawnie",
+      "subtitle": "Uzupełnij swoje doświadczenie, wybierz jeden z 52 szablonów i pobierz CV gotowe do wysłania. LocalATSCV pomoże ci też dopasować je do każdego ogłoszenia i sprawdzi, czy programy sortujące zgłoszenia odczytają je poprawnie",
       "ctaPrimary": "Utwórz CV za darmo",
       "ctaSecondary": "Sprawdź swoje obecne CV",
       "points": {
-        "templates": "30 szablonów do wyboru",
+        "templates": "52 szablonów do wyboru",
         "letter": "Dopasowany list motywacyjny",
         "private": "Twoje dane zostają u ciebie"
       }
@@ -170,7 +170,7 @@
       "title": "Wszystko do udanej rekrutacji",
       "items": {
         "templates": {
-          "title": "30 dopracowanych szablonów",
+          "title": "52 dopracowanych szablonów",
           "text": "Stonowane, nowoczesne lub kolorowe, ze zdjęciem lub bez. Zmieniaj szablon lub kolor jednym kliknięciem, tekst się dopasuje"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "przeciętna"
       },
       "atsHint": "Każdy szablon drukuje prawdziwy tekst. Układy dwukolumnowe są dobrze odczytywane przez większość nowoczesnych ATS, ale niektóre starsze narzędzia mieszają kolumny: w razie wątpliwości wybierz szablon jednokolumnowy",
+      "preview": {
+        "label": "Zawartość miniatur",
+        "sample": "Pełny przykład",
+        "mine": "Moje CV"
+      },
+      "count": "{{n}} szablonów",
+      "search": "Szukaj szablonu",
+      "random": "Losowo",
+      "randomHint": "Wybierz losowy szablon spośród wyświetlonych",
+      "current": "Bieżący",
+      "noResults": "Żaden szablon nie pasuje do wyszukiwania",
+      "previous": "Poprzedni szablon",
+      "next": "Następny szablon",
+      "open": "Otwórz galerię szablonów",
       "names": {
         "classic": {
           "name": "Klasyczny",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Nić",
           "description": "Ciągła nić łączy nagłówek i każdą sekcję, z kropką przy każdym stanowisku"
+        },
+        "horizon": {
+          "name": "Horyzont",
+          "description": "Duży ukośny gradient, biała karta wznosząca się nad nim i okrągłe zdjęcie na granicy"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Zdjęcie w przechylonej ramce z aparatu natychmiastowego, karty przyklejone kolorową taśmą, kremowy papier"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Ciemna konsola w czcionce o stałej szerokości, kursor i strzałki przed nagłówkami, etykiety w stylu kodu"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Kolorowe pasy z lat 70., słońce z łuków w rogu i zaokrąglona szeryfowa czcionka"
+        },
+        "mosaic": {
+          "name": "Mozaika",
+          "description": "Pas kafelków w odcieniach koloru akcentu, szachownice przed nagłówkami, kwadratowe zdjęcie"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Granatowe gwiaździste niebo, planeta z pierścieniem i orbity przed nagłówkami"
+        },
+        "botanical": {
+          "name": "Botaniczny",
+          "description": "Kremowy papier, gałązki liści w rogach, szeryfowa czcionka Cormorant i podwójne linie"
+        },
+        "ticket": {
+          "name": "Bilet",
+          "description": "Bilet z ząbkowanymi brzegami i odrywanym odcinkiem na zdjęcie i kod QR, kod kreskowy"
+        },
+        "comic": {
+          "name": "Komiks",
+          "description": "Raster z kropek, nagłówki w dymkach, kadry z czarną obwódką, żółć i kolor akcentu"
+        },
+        "postal": {
+          "name": "Pocztowy",
+          "description": "Obramowanie poczty lotniczej, zdjęcie jako ząbkowany znaczek, stempel pocztowy i szeryfowa czcionka Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8-bitowa gra wideo: schodkowy pas, blokowe podkreślenia, mierniki w kratkach, stała szerokość"
+        },
+        "notebook": {
+          "name": "Zeszyt",
+          "description": "Strona zeszytu w linie z czerwonym marginesem, nagłówki zakreślone markerem, profil na karteczce samoprzylepnej"
+        },
+        "circuit": {
+          "name": "Obwód",
+          "description": "Ścieżki płytki drukowanej w rogu, nagłówki na układach scalonych z nóżkami, szczegóły w stałej szerokości"
+        },
+        "gazette": {
+          "name": "Gazeta",
+          "description": "Pierwsza strona gazety: winieta Playfair, podwójne linie, wiersz z datą i inicjał"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Poziomice mapy w rogach, ziemiste odcienie i znaczniki wysokości"
+        },
+        "watercolor": {
+          "name": "Akwarela",
+          "description": "Plamy rozcieńczonej farby, nagłówki pociągnięciem pędzla i szeryfowa czcionka Cormorant"
+        },
+        "ledger": {
+          "name": "Rejestr",
+          "description": "Daty w lewej kolumnie, cienkie linie między wpisami, kapitaliki"
+        },
+        "compact": {
+          "name": "Kompaktowy",
+          "description": "Maksymalna gęstość dla długich karier: mniejszy tekst, jednowierszowe nagłówki wpisów"
+        },
+        "academic": {
+          "name": "Akademicki",
+          "description": "Format uniwersytecki: wyśrodkowane nazwisko wielkimi literami, podkreślone nagłówki, szeryfy, bez koloru"
+        },
+        "mono": {
+          "name": "Monochromatyczny",
+          "description": "Czerń i biel, kontrasty grubości, jeden kwadrat akcentu przed nazwiskiem"
+        },
+        "soft": {
+          "name": "Łagodny",
+          "description": "Zaokrąglone panele w jasnym odcieniu koloru akcentu, bez żadnej twardej linii"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "Cienkie linie i proste kąty, nagłówki jako zakładki przy ramce każdej sekcji"
         }
-      },
-      "preview": {
-        "label": "Zawartość miniatur",
-        "sample": "Pełny przykład",
-        "mine": "Moje CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Przejdź na CV bez zarzutu",
-      "text": "Wybierz jeden z naszych 30 szablonów, dobrze odczytywanych przez programy rekrutacyjne, i dopasuj go do każdej oferty",
+      "text": "Wybierz jeden z naszych 52 szablonów, dobrze odczytywanych przez programy rekrutacyjne, i dopasuj go do każdej oferty",
       "button": "Otwórz edytor",
       "import": "Przenieś to CV do naszych szablonów"
     },

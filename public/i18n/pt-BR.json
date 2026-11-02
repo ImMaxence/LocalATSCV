@@ -31,7 +31,7 @@
     "privacy": "Política de privacidade"
   },
   "seo": {
-    "home": "Crie grátis um currículo que conquista entrevistas: 30 modelos, carta de apresentação combinando, adaptação a cada vaga e verificação ATS. Sem cadastro, seus dados ficam no seu dispositivo",
+    "home": "Crie grátis um currículo que conquista entrevistas: 52 modelos, carta de apresentação combinando, adaptação a cada vaga e verificação ATS. Sem cadastro, seus dados ficam no seu dispositivo",
     "editor": "Editor de currículo com pré-visualização em tempo real, currículo Master e versões direcionadas, verificação ATS e exportação em PDF com texto real. Tudo fica no seu navegador",
     "analyze": "Analise grátis um currículo em PDF: nota ATS de 0 a 100, pontos a corrigir e o texto como um sistema de recrutamento o lê. O arquivo nunca sai do seu navegador",
     "changelog": "Novidades do LocalATSCV, versão por versão: novos modelos de currículo, recursos e correções",
@@ -62,11 +62,11 @@
       "badge": "Grátis · Sem cadastro · Sem anúncios",
       "titleLine1": "O currículo que conquista a entrevista",
       "titleLine2": "Pronto em poucos minutos",
-      "subtitle": "Preencha sua trajetória, escolha entre 30 modelos e baixe um currículo pronto para enviar. O LocalATSCV também ajuda você a adaptá-lo a cada vaga e verifica se ele será bem lido pelos sistemas que fazem a triagem das candidaturas",
+      "subtitle": "Preencha sua trajetória, escolha entre 52 modelos e baixe um currículo pronto para enviar. O LocalATSCV também ajuda você a adaptá-lo a cada vaga e verifica se ele será bem lido pelos sistemas que fazem a triagem das candidaturas",
       "ctaPrimary": "Criar meu currículo grátis",
       "ctaSecondary": "Testar meu currículo atual",
       "points": {
-        "templates": "30 modelos à escolha",
+        "templates": "52 modelos à escolha",
         "letter": "Carta de apresentação combinando",
         "private": "Seus dados ficam com você"
       }
@@ -170,7 +170,7 @@
       "title": "Tudo para uma candidatura de sucesso",
       "items": {
         "templates": {
-          "title": "30 modelos caprichados",
+          "title": "52 modelos caprichados",
           "text": "Sóbrios, modernos ou coloridos, com ou sem foto. Troque de modelo ou de cor com um clique, seu texto acompanha"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "razoável"
       },
       "atsHint": "Todos os modelos imprimem texto real. Layouts em duas colunas são bem lidos pela maioria dos ATS modernos, mas algumas ferramentas antigas misturam as colunas: na dúvida, escolha um modelo de uma coluna",
+      "preview": {
+        "label": "Conteúdo das miniaturas",
+        "sample": "Exemplo completo",
+        "mine": "Meu currículo"
+      },
+      "count": "{{n}} modelos",
+      "search": "Buscar um modelo",
+      "random": "Aleatório",
+      "randomHint": "Escolher um modelo aleatório entre os exibidos",
+      "current": "Atual",
+      "noResults": "Nenhum modelo corresponde à sua busca",
+      "previous": "Modelo anterior",
+      "next": "Próximo modelo",
+      "open": "Abrir a galeria de modelos",
       "names": {
         "classic": {
           "name": "Clássico",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Fio",
           "description": "Um fio contínuo liga o cabeçalho e cada seção, com um ponto por cargo"
+        },
+        "horizon": {
+          "name": "Horizonte",
+          "description": "Grande degradê na diagonal, cartão branco que sobe sobre ele e foto redonda entre os dois"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto em moldura instantânea inclinada, fichas presas com fita colorida, papel creme"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Console escuro em fonte monoespaçada, cursor e setas antes dos títulos, etiquetas estilo código"
+        },
+        "retro": {
+          "name": "Retrô",
+          "description": "Faixas de cores anos 70, sol em arcos no canto e serifa arredondada"
+        },
+        "mosaic": {
+          "name": "Mosaico",
+          "description": "Faixa de azulejos nos tons do destaque, xadrez antes dos títulos, foto quadrada"
+        },
+        "cosmos": {
+          "name": "Cosmos",
+          "description": "Céu estrelado azul-noite, planeta com anel e órbitas antes dos títulos"
+        },
+        "botanical": {
+          "name": "Botânico",
+          "description": "Papel creme, ramos de folhas nos cantos, serifa Cormorant e filetes duplos"
+        },
+        "ticket": {
+          "name": "Ingresso",
+          "description": "Bilhete com bordas recortadas e canhoto destacável para a foto e o QR code, código de barras"
+        },
+        "comic": {
+          "name": "Quadrinhos",
+          "description": "Retícula de pontos, títulos em balões de fala, quadros com borda preta, amarelo e destaque"
+        },
+        "postal": {
+          "name": "Postal",
+          "description": "Borda de correio aéreo, foto como selo picotado, carimbo postal e serifa Lora"
+        },
+        "arcade": {
+          "name": "Fliperama",
+          "description": "Videogame 8 bits: faixa em degraus, sublinhados em blocos, medidores em caixas, monoespaçada"
+        },
+        "notebook": {
+          "name": "Caderno",
+          "description": "Página de caderno pautada com margem vermelha, títulos marcados com marca-texto, resumo em post-it"
+        },
+        "circuit": {
+          "name": "Circuito",
+          "description": "Trilhas de placa de circuito no canto, títulos sobre chips com pinos, detalhes em monoespaçada"
+        },
+        "gazette": {
+          "name": "Gazeta",
+          "description": "Capa de jornal: cabeçalho Playfair, filetes duplos, linha de data e capitular"
+        },
+        "topo": {
+          "name": "Relevo",
+          "description": "Curvas de nível de mapa nos cantos, tons terrosos e marcadores de altitude"
+        },
+        "watercolor": {
+          "name": "Aquarela",
+          "description": "Manchas de cor diluída, títulos em pincelada e serifa Cormorant"
+        },
+        "ledger": {
+          "name": "Registro",
+          "description": "Datas em uma coluna à esquerda, filetes finos entre as entradas, versaletes"
+        },
+        "compact": {
+          "name": "Compacto",
+          "description": "Densidade máxima para trajetórias longas: texto menor, cabeçalhos em uma linha"
+        },
+        "academic": {
+          "name": "Acadêmico",
+          "description": "Formato universitário: nome centralizado em maiúsculas, títulos sublinhados, serifa, sem cor"
+        },
+        "mono": {
+          "name": "Monocromático",
+          "description": "Preto e branco, contrastes de peso, um único quadrado de destaque antes do nome"
+        },
+        "soft": {
+          "name": "Suave",
+          "description": "Painéis arredondados em um tom claro do destaque, sem nenhuma linha dura"
+        },
+        "outline": {
+          "name": "Contorno",
+          "description": "Filetes finos e cantos retos, títulos em abas coladas à moldura de cada seção"
         }
-      },
-      "preview": {
-        "label": "Conteúdo das miniaturas",
-        "sample": "Exemplo completo",
-        "mine": "Meu currículo"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Mude para um currículo impecável",
-      "text": "Escolha um dos nossos 30 modelos, bem lidos pelos sistemas de triagem, e adapte-o a cada vaga",
+      "text": "Escolha um dos nossos 52 modelos, bem lidos pelos sistemas de triagem, e adapte-o a cada vaga",
       "button": "Abrir o editor",
       "import": "Trazer este currículo para os nossos modelos"
     },

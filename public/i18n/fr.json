@@ -31,7 +31,7 @@
     "privacy": "Politique de confidentialité"
   },
   "seo": {
-    "home": "Créez gratuitement un CV qui décroche l'entretien : 30 modèles, lettre de motivation assortie, adaptation à chaque offre et vérification ATS. Sans inscription, vos données restent sur votre appareil",
+    "home": "Créez gratuitement un CV qui décroche l'entretien : 52 modèles, lettre de motivation assortie, adaptation à chaque offre et vérification ATS. Sans inscription, vos données restent sur votre appareil",
     "editor": "Éditeur de CV avec aperçu en direct, Master CV et versions ciblées, contrôle ATS et export PDF en texte réel. Tout reste dans votre navigateur",
     "analyze": "Analysez gratuitement un CV PDF : note ATS sur 100, points à corriger et texte tel que le lit un logiciel de recrutement. Le fichier ne quitte pas votre navigateur",
     "changelog": "Les nouveautés de LocalATSCV, version par version : nouveaux modèles de CV, fonctionnalités et corrections",
@@ -62,11 +62,11 @@
       "badge": "Gratuit · Sans inscription · Sans pub",
       "titleLine1": "Le CV qui décroche l'entretien",
       "titleLine2": "Prêt en quelques minutes",
-      "subtitle": "Remplissez votre parcours, choisissez parmi 30 modèles et téléchargez un CV prêt à envoyer. LocalATSCV vous aide aussi à l'adapter à chaque annonce et vérifie qu'il sera bien lu par les logiciels qui trient les candidatures",
+      "subtitle": "Remplissez votre parcours, choisissez parmi 52 modèles et téléchargez un CV prêt à envoyer. LocalATSCV vous aide aussi à l'adapter à chaque annonce et vérifie qu'il sera bien lu par les logiciels qui trient les candidatures",
       "ctaPrimary": "Créer mon CV gratuitement",
       "ctaSecondary": "Tester mon CV actuel",
       "points": {
-        "templates": "30 modèles au choix",
+        "templates": "52 modèles au choix",
         "letter": "Lettre de motivation assortie",
         "private": "Vos données restent chez vous"
       }
@@ -170,7 +170,7 @@
       "title": "Tout pour une candidature réussie",
       "items": {
         "templates": {
-          "title": "30 modèles soignés",
+          "title": "52 modèles soignés",
           "text": "Sobres, modernes ou colorés, avec ou sans photo. Changez de modèle ou de couleur en un clic, votre texte suit"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "moyenne"
       },
       "atsHint": "Tous les modèles impriment du vrai texte. Les mises en page à deux colonnes sont bien lues par la plupart des ATS récents, mais certains logiciels plus anciens mélangent les colonnes : en cas de doute, choisissez un modèle à une colonne",
+      "preview": {
+        "label": "Contenu des vignettes",
+        "sample": "Exemple complet",
+        "mine": "Mon CV"
+      },
+      "count": "{{n}} modèles",
+      "search": "Rechercher un modèle",
+      "random": "Au hasard",
+      "randomHint": "Choisir un modèle au hasard parmi ceux affichés",
+      "current": "Actuel",
+      "noResults": "Aucun modèle ne correspond à votre recherche",
+      "previous": "Modèle précédent",
+      "next": "Modèle suivant",
+      "open": "Ouvrir la galerie des modèles",
       "names": {
         "classic": {
           "name": "Classique",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Fil",
           "description": "Un fil continu relie l'en-tête et chaque section, avec un point par expérience"
+        },
+        "horizon": {
+          "name": "Horizon",
+          "description": "Grand dégradé en diagonale, carte blanche qui remonte dessus et photo ronde à cheval"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Photo dans un cadre instantané penché, fiches tenues par du ruban adhésif, papier crème"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Console sombre en chasse fixe, curseur et chevrons devant les titres, étiquettes de code"
+        },
+        "retro": {
+          "name": "Rétro",
+          "description": "Bandes de couleurs années 70, soleil en arcs dans l'angle, serif arrondie"
+        },
+        "mosaic": {
+          "name": "Mosaïque",
+          "description": "Bandeau de carreaux dans les teintes de l'accent, damiers devant les titres, photo carrée"
+        },
+        "cosmos": {
+          "name": "Cosmos",
+          "description": "Ciel étoilé bleu nuit, planète à anneau et orbites devant les titres"
+        },
+        "botanical": {
+          "name": "Botanique",
+          "description": "Papier crème, rameaux de feuilles dans les angles, serif Cormorant et filets doubles"
+        },
+        "ticket": {
+          "name": "Ticket",
+          "description": "Billet à bords crantés avec talon détachable pour la photo et le QR code, code-barres"
+        },
+        "comic": {
+          "name": "BD",
+          "description": "Trame de points, titres en bulles de dialogue, cases bordées de noir, jaune et accent"
+        },
+        "postal": {
+          "name": "Postal",
+          "description": "Bordure par avion, photo en timbre dentelé, cachet de la poste et serif Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Jeu vidéo 8 bits : bandeau à marches, soulignés en blocs, jauges en cases, chasse fixe"
+        },
+        "notebook": {
+          "name": "Cahier",
+          "description": "Page de cahier lignée avec marge rouge, titres surlignés au marqueur, résumé sur post-it"
+        },
+        "circuit": {
+          "name": "Circuit",
+          "description": "Pistes de circuit imprimé dans l'angle, titres sur des puces à broches, détails en chasse fixe"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Une de journal : manchette Playfair, filets doubles, ligne de date et lettrine"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Courbes de niveau de carte dans les angles, teintes terre, marqueurs d'altitude"
+        },
+        "watercolor": {
+          "name": "Aquarelle",
+          "description": "Taches de couleur diluée, titres au coup de pinceau, serif Cormorant"
+        },
+        "ledger": {
+          "name": "Registre",
+          "description": "Dates dans une colonne à gauche, filets fins entre les entrées, petites capitales"
+        },
+        "compact": {
+          "name": "Compact",
+          "description": "Densité maximale pour les longs parcours : texte plus petit, en-têtes sur une ligne"
+        },
+        "academic": {
+          "name": "Académique",
+          "description": "Format universitaire : nom centré en capitales, titres soulignés, serif, aucune couleur"
+        },
+        "mono": {
+          "name": "Monochrome",
+          "description": "Noir et blanc, jeux de graisses, un seul carré d'accent devant le nom"
+        },
+        "soft": {
+          "name": "Douceur",
+          "description": "Panneaux arrondis dans une teinte claire de l'accent, aucun trait dur"
+        },
+        "outline": {
+          "name": "Contour",
+          "description": "Filets fins et angles droits, titres en onglet accolé au cadre de chaque rubrique"
         }
-      },
-      "preview": {
-        "label": "Contenu des vignettes",
-        "sample": "Exemple complet",
-        "mine": "Mon CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Passez à un CV sans défaut",
-      "text": "Choisissez l'un de nos 30 modèles, bien lus par les logiciels de tri, et adaptez-le à chaque offre",
+      "text": "Choisissez l'un de nos 52 modèles, bien lus par les logiciels de tri, et adaptez-le à chaque offre",
       "button": "Ouvrir l'éditeur",
       "import": "Reprendre ce CV dans nos modèles"
     },

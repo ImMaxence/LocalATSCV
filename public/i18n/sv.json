@@ -31,7 +31,7 @@
     "privacy": "Integritetspolicy"
   },
   "seo": {
-    "home": "Skapa gratis ett CV som ger dig intervjun: 30 mallar, matchande personligt brev, anpassning till varje annons och ATS-kontroll. Utan registrering, dina uppgifter stannar på din enhet",
+    "home": "Skapa gratis ett CV som ger dig intervjun: 52 mallar, matchande personligt brev, anpassning till varje annons och ATS-kontroll. Utan registrering, dina uppgifter stannar på din enhet",
     "editor": "CV-redigerare med live-förhandsvisning, Master-CV och riktade versioner, ATS-kontroll och PDF-export med riktig text. Allt stannar i din webbläsare",
     "analyze": "Analysera ett CV i PDF gratis: ATS-poäng av 100, saker att åtgärda och texten så som ett rekryteringssystem läser den. Filen lämnar aldrig din webbläsare",
     "changelog": "Nyheter i LocalATSCV, version för version: nya CV-mallar, funktioner och rättningar",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Utan registrering · Utan reklam",
       "titleLine1": "CV:t som ger dig intervjun",
       "titleLine2": "Klart på några minuter",
-      "subtitle": "Fyll i din bakgrund, välj bland 30 mallar och ladda ner ett CV som är klart att skicka. LocalATSCV hjälper dig också att anpassa det till varje annons och kontrollerar att programmen som sorterar ansökningar läser det rätt",
+      "subtitle": "Fyll i din bakgrund, välj bland 52 mallar och ladda ner ett CV som är klart att skicka. LocalATSCV hjälper dig också att anpassa det till varje annons och kontrollerar att programmen som sorterar ansökningar läser det rätt",
       "ctaPrimary": "Skapa mitt CV gratis",
       "ctaSecondary": "Testa mitt nuvarande CV",
       "points": {
-        "templates": "30 mallar att välja mellan",
+        "templates": "52 mallar att välja mellan",
         "letter": "Matchande personligt brev",
         "private": "Dina uppgifter stannar hos dig"
       }
@@ -170,7 +170,7 @@
       "title": "Allt för en lyckad ansökan",
       "items": {
         "templates": {
-          "title": "30 genomarbetade mallar",
+          "title": "52 genomarbetade mallar",
           "text": "Stilrena, moderna eller färgglada, med eller utan foto. Byt mall eller färg med ett klick, din text följer med"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "godtagbar"
       },
       "atsHint": "Alla mallar skriver ut riktig text. Layouter i två kolumner läses bra av de flesta moderna ATS, men vissa äldre verktyg blandar ihop kolumnerna: välj en mall med en kolumn om du är osäker",
+      "preview": {
+        "label": "Miniatyrernas innehåll",
+        "sample": "Komplett exempel",
+        "mine": "Mitt CV"
+      },
+      "count": "{{n}} mallar",
+      "search": "Sök mall",
+      "random": "Slumpa",
+      "randomHint": "Välj en slumpmässig mall bland de visade",
+      "current": "Nuvarande",
+      "noResults": "Ingen mall matchar din sökning",
+      "previous": "Föregående mall",
+      "next": "Nästa mall",
+      "open": "Öppna mallgalleriet",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Tråd",
           "description": "En obruten tråd förbinder sidhuvudet och varje sektion, med en prick per tjänst"
+        },
+        "horizon": {
+          "name": "Horisont",
+          "description": "Stor diagonal gradient, vitt kort som reser sig över den och rund bild på gränsen"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Bild i lutande snabbfotoram, kort fästa med färgad tejp, krämfärgat papper"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Mörk konsol i monospace, markör och pilar före rubrikerna, etiketter i kodstil"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70-talets färgränder, sol av bågar i hörnet och rundad serif"
+        },
+        "mosaic": {
+          "name": "Mosaik",
+          "description": "Kakelband i accentfärgens toner, schackrutor före rubrikerna, kvadratisk bild"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Stjärnhimmel i nattblått, ringplanet och omloppsbanor före rubrikerna"
+        },
+        "botanical": {
+          "name": "Botanisk",
+          "description": "Krämfärgat papper, lövkvistar i hörnen, Cormorant-serif och dubbla linjer"
+        },
+        "ticket": {
+          "name": "Biljett",
+          "description": "Biljett med tandade kanter och avrivningsdel för bild och QR-kod, streckkod"
+        },
+        "comic": {
+          "name": "Serie",
+          "description": "Rasterpunkter, rubriker i pratbubblor, svartkantade rutor, gult och accentfärg"
+        },
+        "postal": {
+          "name": "Post",
+          "description": "Flygpostkant, bild som tandat frimärke, poststämpel och Lora-serif"
+        },
+        "arcade": {
+          "name": "Arkad",
+          "description": "8-bitars tv-spel: trappband, blockunderstrykningar, rutmätare, monospace"
+        },
+        "notebook": {
+          "name": "Anteckningsbok",
+          "description": "Linjerad sida med röd marginal, rubriker markerade med överstrykningspenna, profil på en post-it"
+        },
+        "circuit": {
+          "name": "Kretskort",
+          "description": "Ledarbanor i hörnet, rubriker på chip med ben, detaljer i monospace"
+        },
+        "gazette": {
+          "name": "Gazett",
+          "description": "Tidningens förstasida: Playfair-huvud, dubbla linjer, datumrad och anfang"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Höjdkurvor från en karta i hörnen, jordtoner och höjdmarkeringar"
+        },
+        "watercolor": {
+          "name": "Akvarell",
+          "description": "Fläckar av utspädd färg, rubriker med penseldrag och Cormorant-serif"
+        },
+        "ledger": {
+          "name": "Liggare",
+          "description": "Datum i en vänsterkolumn, hårlinjer mellan posterna, kapitäler"
+        },
+        "compact": {
+          "name": "Kompakt",
+          "description": "Maximal täthet för långa karriärer: mindre text, enradiga posthuvuden"
+        },
+        "academic": {
+          "name": "Akademisk",
+          "description": "Universitetsformat: centrerat namn i versaler, understrukna rubriker, serif, ingen färg"
+        },
+        "mono": {
+          "name": "Monokrom",
+          "description": "Svartvitt, kontraster i teckenvikt, en enda accentruta före namnet"
+        },
+        "soft": {
+          "name": "Mjuk",
+          "description": "Rundade paneler i en ljus ton av accentfärgen, inga hårda linjer"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "Tunna linjer och räta hörn, rubriker som flikar fästa på varje avsnitts ram"
         }
-      },
-      "preview": {
-        "label": "Miniatyrernas innehåll",
-        "sample": "Komplett exempel",
-        "mine": "Mitt CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Byt till ett felfritt CV",
-      "text": "Välj en av våra 30 mallar, som urvalsprogram läser rätt, och anpassa den till varje annons",
+      "text": "Välj en av våra 52 mallar, som urvalsprogram läser rätt, och anpassa den till varje annons",
       "button": "Öppna redigeraren",
       "import": "För över det här CV:t till våra mallar"
     },

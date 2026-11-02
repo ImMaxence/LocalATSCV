@@ -31,7 +31,7 @@
     "privacy": "Tietosuojaseloste"
   },
   "seo": {
-    "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 30 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
+    "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 52 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
     "editor": "CV-editori, jossa on reaaliaikainen esikatselu, Master-CV ja kohdennetut versiot, ATS-tarkistus ja PDF-vienti oikeana tekstinä. Kaikki pysyy selaimessasi",
     "analyze": "Analysoi PDF-muotoinen CV ilmaiseksi: ATS-pisteet asteikolla 0–100, korjattavat kohdat ja teksti sellaisena kuin rekrytointijärjestelmä sen lukee. Tiedosto ei koskaan poistu selaimestasi",
     "changelog": "LocalATSCV:n uutuudet versio versiolta: uudet CV-pohjat, ominaisuudet ja korjaukset",
@@ -62,11 +62,11 @@
       "badge": "Ilmainen · Ei rekisteröitymistä · Ei mainoksia",
       "titleLine1": "CV, joka vie sinut haastatteluun",
       "titleLine2": "Valmis muutamassa minuutissa",
-      "subtitle": "Täytä taustasi, valitse 30 pohjasta ja lataa lähetysvalmis CV. LocalATSCV auttaa myös muokkaamaan sen jokaiseen ilmoitukseen sopivaksi ja tarkistaa, että hakemuksia lajittelevat ohjelmat lukevat sen oikein",
+      "subtitle": "Täytä taustasi, valitse 52 pohjasta ja lataa lähetysvalmis CV. LocalATSCV auttaa myös muokkaamaan sen jokaiseen ilmoitukseen sopivaksi ja tarkistaa, että hakemuksia lajittelevat ohjelmat lukevat sen oikein",
       "ctaPrimary": "Luo CV:ni ilmaiseksi",
       "ctaSecondary": "Testaa nykyinen CV:ni",
       "points": {
-        "templates": "30 pohjaa valittavana",
+        "templates": "52 pohjaa valittavana",
         "letter": "Yhteensopiva hakemuskirje",
         "private": "Tietosi pysyvät sinulla"
       }
@@ -170,7 +170,7 @@
       "title": "Kaikki onnistuneeseen hakemukseen",
       "items": {
         "templates": {
-          "title": "30 viimeisteltyä pohjaa",
+          "title": "52 viimeisteltyä pohjaa",
           "text": "Hillittyjä, moderneja tai värikkäitä, kuvalla tai ilman. Vaihda pohjaa tai väriä yhdellä klikkauksella, tekstisi seuraa mukana"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "kohtalainen"
       },
       "atsHint": "Jokainen pohja tulostaa oikeaa tekstiä. Useimmat nykyaikaiset ATS:t lukevat kahden palstan asettelut hyvin, mutta jotkin vanhemmat työkalut sekoittavat palstat: jos olet epävarma, valitse yhden palstan pohja",
+      "preview": {
+        "label": "Pienoiskuvien sisältö",
+        "sample": "Täydellinen esimerkki",
+        "mine": "Oma CV"
+      },
+      "count": "{{n}} mallia",
+      "search": "Hae mallia",
+      "random": "Satunnainen",
+      "randomHint": "Valitse satunnainen malli näytetyistä",
+      "current": "Nykyinen",
+      "noResults": "Yksikään malli ei vastaa hakuasi",
+      "previous": "Edellinen malli",
+      "next": "Seuraava malli",
+      "open": "Avaa malligalleria",
       "names": {
         "classic": {
           "name": "Klassinen",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Lanka",
           "description": "Yhtenäinen lanka yhdistää ylätunnisteen ja jokaisen osion, piste jokaista tehtävää kohden"
+        },
+        "horizon": {
+          "name": "Horisontti",
+          "description": "Suuri vino liukuväri, sen päälle nouseva valkoinen kortti ja pyöreä kuva rajalla"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Kuva vinossa pikakuvakehyksessä, kortit kiinnitetty värillisellä teipillä, kermanvärinen paperi"
+        },
+        "terminal": {
+          "name": "Pääte",
+          "description": "Tumma konsoli tasalevyisellä kirjasimella, kohdistin ja nuolet otsikoiden edessä, kooditunnisteet"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70-luvun väriraidat, kaarista muodostuva aurinko kulmassa ja pyöristetty antiikva"
+        },
+        "mosaic": {
+          "name": "Mosaiikki",
+          "description": "Laattanauha korostusvärin sävyissä, ruutumerkit otsikoiden edessä, neliökuva"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Yönsininen tähtitaivas, rengasplaneetta ja kiertoradat otsikoiden edessä"
+        },
+        "botanical": {
+          "name": "Kasvitieteellinen",
+          "description": "Kermanvärinen paperi, lehtioksia kulmissa, Cormorant-antiikva ja kaksoisviivat"
+        },
+        "ticket": {
+          "name": "Lippu",
+          "description": "Hammastettureunainen lippu, jossa irrotettava kanta kuvalle ja QR-koodille, viivakoodi"
+        },
+        "comic": {
+          "name": "Sarjakuva",
+          "description": "Rasteripisteet, otsikot puhekuplissa, mustareunaiset ruudut, keltainen ja korostusväri"
+        },
+        "postal": {
+          "name": "Posti",
+          "description": "Lentopostireunus, kuva hammastettuna postimerkkinä, postileima ja Lora-antiikva"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8-bittinen videopeli: porrasnauha, lohkoalleviivaukset, ruutumittarit, tasalevyinen kirjasin"
+        },
+        "notebook": {
+          "name": "Vihko",
+          "description": "Viivoitettu vihkosivu punaisella marginaalilla, tussilla korostetut otsikot, profiili tarralapulla"
+        },
+        "circuit": {
+          "name": "Piirilevy",
+          "description": "Piirilevyn johtimet kulmassa, otsikot nastallisilla siruilla, yksityiskohdat tasalevyisellä kirjasimella"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Sanomalehden etusivu: Playfair-otsake, kaksoisviivat, päivämäärärivi ja anfangi"
+        },
+        "topo": {
+          "name": "Korkeuskäyrät",
+          "description": "Kartan korkeuskäyrät kulmissa, maanläheiset sävyt ja korkeusmerkit"
+        },
+        "watercolor": {
+          "name": "Akvarelli",
+          "description": "Laimennetun värin läikkiä, siveltimenvedolla korostetut otsikot ja Cormorant-antiikva"
+        },
+        "ledger": {
+          "name": "Kirjanpito",
+          "description": "Päivämäärät vasemmassa sarakkeessa, hiusviivat kohtien välissä, kapiteelit"
+        },
+        "compact": {
+          "name": "Tiivis",
+          "description": "Suurin tiheys pitkille urille: pienempi teksti, yksiriviset kohtien otsikot"
+        },
+        "academic": {
+          "name": "Akateeminen",
+          "description": "Yliopistomuoto: keskitetty nimi suuraakkosin, alleviivatut otsikot, antiikva, ei väriä"
+        },
+        "mono": {
+          "name": "Yksivärinen",
+          "description": "Mustavalkoinen, lihavuuskontrastit, yksi ainoa korostusneliö nimen edessä"
+        },
+        "soft": {
+          "name": "Pehmeä",
+          "description": "Pyöristetyt paneelit korostusvärin vaaleassa sävyssä, ei yhtään kovaa viivaa"
+        },
+        "outline": {
+          "name": "Ääriviiva",
+          "description": "Ohuet viivat ja suorat kulmat, otsikot välilehtinä kunkin osion kehyksessä"
         }
-      },
-      "preview": {
-        "label": "Pienoiskuvien sisältö",
-        "sample": "Täydellinen esimerkki",
-        "mine": "Oma CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Vaihda virheettömään CV:hen",
-      "text": "Valitse yksi 30 pohjastamme, jotka hakemuksia lajittelevat ohjelmat lukevat oikein, ja muokkaa se jokaiseen ilmoitukseen",
+      "text": "Valitse yksi 52 pohjastamme, jotka hakemuksia lajittelevat ohjelmat lukevat oikein, ja muokkaa se jokaiseen ilmoitukseen",
       "button": "Avaa editori",
       "import": "Siirrä tämä CV pohjiimme"
     },

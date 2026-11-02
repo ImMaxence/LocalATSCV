@@ -31,7 +31,7 @@
     "privacy": "Privaatsuspoliitika"
   },
   "seo": {
-    "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 30 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
+    "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 52 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
     "editor": "CV redaktor reaalajas eelvaate, Master-CV ja sihitud versioonide, ATS-kontrolli ja päris tekstiga PDF-ekspordiga. Kõik jääb sinu brauserisse",
     "analyze": "Analüüsi PDF-vormingus CV-d tasuta: ATS-skoor 100-st, parandamist vajavad kohad ja tekst nii, nagu värbamissüsteem seda loeb. Fail ei lahku kunagi sinu brauserist",
     "changelog": "LocalATSCV uudised versioonide kaupa: uued CV mallid, funktsioonid ja parandused",
@@ -62,11 +62,11 @@
       "badge": "Tasuta · Ilma registreerumata · Ilma reklaamita",
       "titleLine1": "CV, mis toob sulle tööintervjuu",
       "titleLine2": "Valmis mõne minutiga",
-      "subtitle": "Täida oma taust, vali 30 mallist sobiv ja laadi alla saatmiseks valmis CV. LocalATSCV aitab sul seda ka iga kuulutuse jaoks kohandada ja kontrollib, et kandideerimisi sorteerivad programmid loeksid seda õigesti",
+      "subtitle": "Täida oma taust, vali 52 mallist sobiv ja laadi alla saatmiseks valmis CV. LocalATSCV aitab sul seda ka iga kuulutuse jaoks kohandada ja kontrollib, et kandideerimisi sorteerivad programmid loeksid seda õigesti",
       "ctaPrimary": "Loo oma CV tasuta",
       "ctaSecondary": "Testi oma praegust CV-d",
       "points": {
-        "templates": "30 malli valikus",
+        "templates": "52 malli valikus",
         "letter": "Sobiv kaaskiri",
         "private": "Sinu andmed jäävad sinu juurde"
       }
@@ -170,7 +170,7 @@
       "title": "Kõik eduka kandideerimise jaoks",
       "items": {
         "templates": {
-          "title": "30 viimistletud malli",
+          "title": "52 viimistletud malli",
           "text": "Lihtsad, moodsad või värvikad, fotoga või ilma. Vaheta malli või värvi ühe klikiga, sinu tekst liigub kaasa"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "rahuldav"
       },
       "atsHint": "Iga mall prindib päris teksti. Enamik tänapäevaseid ATS-e loeb kaheveerulisi paigutusi hästi, kuid mõned vanemad tööriistad ajavad veerud segamini: kahtluse korral vali üheveeruline mall",
+      "preview": {
+        "label": "Pisipiltide sisu",
+        "sample": "Täielik näide",
+        "mine": "Minu CV"
+      },
+      "count": "{{n}} malli",
+      "search": "Otsi malli",
+      "random": "Juhuslik",
+      "randomHint": "Vali kuvatute seast juhuslik mall",
+      "current": "Praegune",
+      "noResults": "Ükski mall ei vasta sinu otsingule",
+      "previous": "Eelmine mall",
+      "next": "Järgmine mall",
+      "open": "Ava mallide galerii",
       "names": {
         "classic": {
           "name": "Klassikaline",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Niit",
           "description": "Katkematu niit ühendab päise ja iga jaotise, iga ametikoha juures täpp"
+        },
+        "horizon": {
+          "name": "Horisont",
+          "description": "Suur diagonaalne üleminek, selle kohale kerkiv valge kaart ja ümar foto piiril"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto kaldus kiirpildiraamis, värvilise teibiga kinnitatud kaardid, kreemikas paber"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Tume konsool püsisammkirjas, kursor ja nooled pealkirjade ees, koodistiilis sildid"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70ndate värvitriibud, kaartest päike nurgas ja ümar seriifkiri"
+        },
+        "mosaic": {
+          "name": "Mosaiik",
+          "description": "Plaadiriba rõhuvärvi toonides, ruudulised märgid pealkirjade ees, ruudukujuline foto"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Öösinine tähistaevas, rõngasplaneet ja orbiidid pealkirjade ees"
+        },
+        "botanical": {
+          "name": "Botaaniline",
+          "description": "Kreemikas paber, leheoksad nurkades, Cormorant-seriifkiri ja topeltjooned"
+        },
+        "ticket": {
+          "name": "Pilet",
+          "description": "Sakiliste servadega pilet äärrebitava kontsaga foto ja QR-koodi jaoks, vöötkood"
+        },
+        "comic": {
+          "name": "Koomiks",
+          "description": "Rastripunktid, pealkirjad jutumullides, musta äärega kaadrid, kollane ja rõhuvärv"
+        },
+        "postal": {
+          "name": "Postisaadetis",
+          "description": "Lennuposti ääris, foto hammastatud postmargina, postitempel ja Lora-seriifkiri"
+        },
+        "arcade": {
+          "name": "Arkaad",
+          "description": "8-bitine videomäng: astmeline riba, plokkallajooned, ruudustikus näidikud, püsisammkiri"
+        },
+        "notebook": {
+          "name": "Vihik",
+          "description": "Jooneline vihikuleht punase äärega, markeriga esile tõstetud pealkirjad, profiil kleeplehel"
+        },
+        "circuit": {
+          "name": "Trükkplaat",
+          "description": "Trükkplaadi rajad nurgas, pealkirjad jalgadega kiipidel, üksikasjad püsisammkirjas"
+        },
+        "gazette": {
+          "name": "Ajaleht",
+          "description": "Ajalehe esikülg: Playfair-päis, topeltjooned, kuupäevarida ja initsiaal"
+        },
+        "topo": {
+          "name": "Reljeef",
+          "description": "Kaardi samakõrgusjooned nurkades, maatoonid ja kõrgusmärgid"
+        },
+        "watercolor": {
+          "name": "Akvarell",
+          "description": "Lahjendatud värvi laigud, pintslitõmbega pealkirjad ja Cormorant-seriifkiri"
+        },
+        "ledger": {
+          "name": "Register",
+          "description": "Kuupäevad vasakus veerus, peenjooned kirjete vahel, kapiteelkiri"
+        },
+        "compact": {
+          "name": "Kompaktne",
+          "description": "Suurim tihedus pikkade karjääride jaoks: väiksem tekst, üherealised kirjete päised"
+        },
+        "academic": {
+          "name": "Akadeemiline",
+          "description": "Ülikoolivorming: keskel suurtähtedes nimi, allajoonitud pealkirjad, seriifkiri, värvita"
+        },
+        "mono": {
+          "name": "Ühevärviline",
+          "description": "Must-valge, kirjapaksuse kontrastid, üksainus rõhuruut nime ees"
+        },
+        "soft": {
+          "name": "Pehme",
+          "description": "Ümarate nurkadega paneelid rõhuvärvi heledas toonis, mitte ühtegi teravat joont"
+        },
+        "outline": {
+          "name": "Kontuur",
+          "description": "Peened jooned ja täisnurgad, pealkirjad sakkidena iga jaotise raami küljes"
         }
-      },
-      "preview": {
-        "label": "Pisipiltide sisu",
-        "sample": "Täielik näide",
-        "mine": "Minu CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Vali veatu CV",
-      "text": "Vali üks meie 30 mallist, mida värbamisprogrammid õigesti loevad, ja kohanda see iga kuulutuse jaoks",
+      "text": "Vali üks meie 52 mallist, mida värbamisprogrammid õigesti loevad, ja kohanda see iga kuulutuse jaoks",
       "button": "Ava redaktor",
       "import": "Too see CV meie mallidesse"
     },

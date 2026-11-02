@@ -31,7 +31,7 @@
     "privacy": "Zásady ochrany súkromia"
   },
   "seo": {
-    "home": "Vytvorte si zadarmo životopis, ktorý vám otvorí dvere k pohovoru: 30 šablón, zladený motivačný list, prispôsobenie každej ponuke a kontrola ATS. Bez registrácie, vaše údaje zostávajú vo vašom zariadení",
+    "home": "Vytvorte si zadarmo životopis, ktorý vám otvorí dvere k pohovoru: 52 šablón, zladený motivačný list, prispôsobenie každej ponuke a kontrola ATS. Bez registrácie, vaše údaje zostávajú vo vašom zariadení",
     "editor": "Editor životopisu so živým náhľadom, Master životopisom a cielenými verziami, kontrolou ATS a exportom do PDF so skutočným textom. Všetko zostáva vo vašom prehliadači",
     "analyze": "Zadarmo analyzujte životopis v PDF: skóre ATS zo 100, body na opravu a text tak, ako ho číta náborový systém. Súbor nikdy neopustí váš prehliadač",
     "changelog": "Novinky v LocalATSCV verziu po verzii: nové šablóny životopisov, funkcie a opravy",
@@ -62,11 +62,11 @@
       "badge": "Zadarmo · Bez registrácie · Bez reklám",
       "titleLine1": "Životopis, ktorý vám otvorí dvere",
       "titleLine2": "Hotové za pár minút",
-      "subtitle": "Vyplňte svoju prax, vyberte si z 30 šablón a stiahnite si životopis pripravený na odoslanie. LocalATSCV vám tiež pomôže prispôsobiť ho každému inzerátu a overí, že ho programy, ktoré triedia žiadosti, prečítajú správne",
+      "subtitle": "Vyplňte svoju prax, vyberte si z 52 šablón a stiahnite si životopis pripravený na odoslanie. LocalATSCV vám tiež pomôže prispôsobiť ho každému inzerátu a overí, že ho programy, ktoré triedia žiadosti, prečítajú správne",
       "ctaPrimary": "Vytvoriť životopis zadarmo",
       "ctaSecondary": "Otestovať môj súčasný životopis",
       "points": {
-        "templates": "30 šablón na výber",
+        "templates": "52 šablón na výber",
         "letter": "Zladený motivačný list",
         "private": "Vaše údaje zostávajú u vás"
       }
@@ -170,7 +170,7 @@
       "title": "Všetko pre úspešnú žiadosť",
       "items": {
         "templates": {
-          "title": "30 prepracovaných šablón",
+          "title": "52 prepracovaných šablón",
           "text": "Striedme, moderné alebo farebné, s fotkou aj bez. Zmeňte šablónu alebo farbu jedným kliknutím, váš text sa prispôsobí"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "prijateľná"
       },
       "atsHint": "Každá šablóna tlačí skutočný text. Dvojstĺpcové rozloženia číta väčšina moderných ATS dobre, ale niektoré staršie nástroje stĺpce pomiešajú: ak si nie ste istí, zvoľte jednostĺpcovú šablónu",
+      "preview": {
+        "label": "Obsah miniatúr",
+        "sample": "Úplná ukážka",
+        "mine": "Môj životopis"
+      },
+      "count": "{{n}} šablón",
+      "search": "Hľadať šablónu",
+      "random": "Náhodne",
+      "randomHint": "Vybrať náhodnú šablónu zo zobrazených",
+      "current": "Aktuálna",
+      "noResults": "Žiadna šablóna nezodpovedá vášmu hľadaniu",
+      "previous": "Predchádzajúca šablóna",
+      "next": "Ďalšia šablóna",
+      "open": "Otvoriť galériu šablón",
       "names": {
         "classic": {
           "name": "Klasická",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Niť",
           "description": "Súvislá niť spája hlavičku a každú sekciu, s bodkou pri každej pozícii"
+        },
+        "horizon": {
+          "name": "Horizont",
+          "description": "Veľký diagonálny prechod, biela karta, ktorá nad neho vystupuje, a okrúhla fotka na rozhraní"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotka v naklonenom rámiku instantnej fotografie, karty prilepené farebnou páskou, krémový papier"
+        },
+        "terminal": {
+          "name": "Terminál",
+          "description": "Tmavá konzola v neproporcionálnom písme, kurzor a šípky pred nadpismi, štítky v štýle kódu"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Farebné pruhy zo 70. rokov, slnko z oblúkov v rohu a zaoblené pätkové písmo"
+        },
+        "mosaic": {
+          "name": "Mozaika",
+          "description": "Pás dlaždíc v odtieňoch farby zvýraznenia, šachovnice pred nadpismi, štvorcová fotka"
+        },
+        "cosmos": {
+          "name": "Kozmos",
+          "description": "Nočná modrá hviezdna obloha, planéta s prstencom a obežné dráhy pred nadpismi"
+        },
+        "botanical": {
+          "name": "Botanický",
+          "description": "Krémový papier, vetvičky s listami v rohoch, pätkové písmo Cormorant a dvojité linky"
+        },
+        "ticket": {
+          "name": "Lístok",
+          "description": "Lístok s vrúbkovanými okrajmi a odtrhávacím ústrižkom pre fotku a QR kód, čiarový kód"
+        },
+        "comic": {
+          "name": "Komiks",
+          "description": "Rastrové body, nadpisy v bublinách, políčka s čiernym rámom, žltá a farba zvýraznenia"
+        },
+        "postal": {
+          "name": "Poštový",
+          "description": "Lem leteckej pošty, fotka ako zúbkovaná známka, poštová pečiatka a pätkové písmo Lora"
+        },
+        "arcade": {
+          "name": "Arkáda",
+          "description": "8-bitová videohra: schodovitý pás, blokové podčiarknutia, meradlá v políčkach, neproporcionálne písmo"
+        },
+        "notebook": {
+          "name": "Zošit",
+          "description": "Linajková strana zošita s červeným okrajom, nadpisy zvýraznené fixkou, profil na lepiacom lístku"
+        },
+        "circuit": {
+          "name": "Obvod",
+          "description": "Cesty plošného spoja v rohu, nadpisy na čipoch s vývodmi, detaily v neproporcionálnom písme"
+        },
+        "gazette": {
+          "name": "Noviny",
+          "description": "Titulná strana novín: hlavička Playfair, dvojité linky, riadok s dátumom a iniciála"
+        },
+        "topo": {
+          "name": "Reliéf",
+          "description": "Vrstevnice mapy v rohoch, zemité odtiene a výškové značky"
+        },
+        "watercolor": {
+          "name": "Akvarel",
+          "description": "Škvrny zriedenej farby, nadpisy ťahom štetca a pätkové písmo Cormorant"
+        },
+        "ledger": {
+          "name": "Register",
+          "description": "Dátumy v ľavom stĺpci, vlasové linky medzi položkami, kapitálky"
+        },
+        "compact": {
+          "name": "Kompaktný",
+          "description": "Maximálna hustota pre dlhé kariéry: menší text, jednoriadkové hlavičky položiek"
+        },
+        "academic": {
+          "name": "Akademický",
+          "description": "Univerzitný formát: meno na stred veľkými písmenami, podčiarknuté nadpisy, pätkové písmo, bez farby"
+        },
+        "mono": {
+          "name": "Monochromatický",
+          "description": "Čiernobiely, kontrasty hrúbky písma, jediný štvorec zvýraznenia pred menom"
+        },
+        "soft": {
+          "name": "Jemný",
+          "description": "Zaoblené panely vo svetlom odtieni farby zvýraznenia, žiadna tvrdá linka"
+        },
+        "outline": {
+          "name": "Obrys",
+          "description": "Tenké linky a pravé uhly, nadpisy ako záložky priliehajúce k rámu každej sekcie"
         }
-      },
-      "preview": {
-        "label": "Obsah miniatúr",
-        "sample": "Úplná ukážka",
-        "mine": "Môj životopis"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Prejdite na bezchybný životopis",
-      "text": "Vyberte si jednu z našich 30 šablón, ktoré náborové programy čítajú správne, a prispôsobte ju každej ponuke",
+      "text": "Vyberte si jednu z našich 52 šablón, ktoré náborové programy čítajú správne, a prispôsobte ju každej ponuke",
       "button": "Otvoriť editor",
       "import": "Preniesť tento životopis do našich šablón"
     },

@@ -31,7 +31,7 @@
     "privacy": "Politica de confidențialitate"
   },
   "seo": {
-    "home": "Creează gratuit un CV care îți aduce interviul: 30 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
+    "home": "Creează gratuit un CV care îți aduce interviul: 52 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
     "editor": "Editor de CV cu previzualizare live, CV Master și versiuni țintite, verificare ATS și export PDF cu text real. Totul rămâne în browserul tău",
     "analyze": "Analizează gratuit un CV în PDF: scor ATS din 100, puncte de corectat și textul așa cum îl citește un sistem de recrutare. Fișierul nu părăsește niciodată browserul tău",
     "changelog": "Noutățile LocalATSCV, versiune cu versiune: șabloane noi de CV, funcții și corecturi",
@@ -62,11 +62,11 @@
       "badge": "Gratuit · Fără cont · Fără reclame",
       "titleLine1": "CV-ul care îți aduce interviul",
       "titleLine2": "Gata în câteva minute",
-      "subtitle": "Completează-ți parcursul, alege unul dintre cele 30 de șabloane și descarcă un CV gata de trimis. LocalATSCV te ajută și să-l adaptezi fiecărui anunț și verifică dacă programele care triază candidaturile îl citesc corect",
+      "subtitle": "Completează-ți parcursul, alege unul dintre cele 52 de șabloane și descarcă un CV gata de trimis. LocalATSCV te ajută și să-l adaptezi fiecărui anunț și verifică dacă programele care triază candidaturile îl citesc corect",
       "ctaPrimary": "Creează-mi CV-ul gratuit",
       "ctaSecondary": "Testează-mi CV-ul actual",
       "points": {
-        "templates": "30 de șabloane la alegere",
+        "templates": "52 de șabloane la alegere",
         "letter": "Scrisoare de intenție asortată",
         "private": "Datele tale rămân la tine"
       }
@@ -170,7 +170,7 @@
       "title": "Tot ce trebuie pentru o candidatură reușită",
       "items": {
         "templates": {
-          "title": "30 de șabloane îngrijite",
+          "title": "52 de șabloane îngrijite",
           "text": "Sobre, moderne sau colorate, cu sau fără fotografie. Schimbă șablonul sau culoarea dintr-un clic, textul tău se adaptează"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "acceptabilă"
       },
       "atsHint": "Fiecare șablon tipărește text real. Machetele pe două coloane sunt citite bine de majoritatea ATS-urilor moderne, dar unele instrumente mai vechi amestecă coloanele: dacă ai dubii, alege un șablon pe o coloană",
+      "preview": {
+        "label": "Conținutul miniaturilor",
+        "sample": "Exemplu complet",
+        "mine": "CV-ul meu"
+      },
+      "count": "{{n}} șabloane",
+      "search": "Caută un șablon",
+      "random": "La întâmplare",
+      "randomHint": "Alege un șablon la întâmplare dintre cele afișate",
+      "current": "Actual",
+      "noResults": "Niciun șablon nu corespunde căutării tale",
+      "previous": "Șablonul anterior",
+      "next": "Șablonul următor",
+      "open": "Deschide galeria de șabloane",
       "names": {
         "classic": {
           "name": "Clasic",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Fir",
           "description": "Un fir continuu leagă antetul și fiecare secțiune, cu un punct pentru fiecare post"
+        },
+        "horizon": {
+          "name": "Orizont",
+          "description": "Degrade mare în diagonală, card alb care se ridică peste el și fotografie rotundă pe graniță"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotografie într-o ramă instant înclinată, fișe prinse cu bandă colorată, hârtie crem"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Consolă întunecată cu font monospațiat, cursor și săgeți înaintea titlurilor, etichete în stil cod"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Dungi colorate anii 70, soare din arce în colț și serif rotunjit"
+        },
+        "mosaic": {
+          "name": "Mozaic",
+          "description": "Bandă de plăci în nuanțele culorii de accent, pătrățele în carouri înaintea titlurilor, fotografie pătrată"
+        },
+        "cosmos": {
+          "name": "Cosmos",
+          "description": "Cer înstelat albastru de noapte, planetă cu inel și orbite înaintea titlurilor"
+        },
+        "botanical": {
+          "name": "Botanic",
+          "description": "Hârtie crem, rămurele cu frunze în colțuri, serif Cormorant și linii duble"
+        },
+        "ticket": {
+          "name": "Bilet",
+          "description": "Bilet cu margini zimțate și cotor detașabil pentru fotografie și cod QR, cod de bare"
+        },
+        "comic": {
+          "name": "Benzi desenate",
+          "description": "Puncte de raster, titluri în baloane de dialog, casete cu chenar negru, galben și accent"
+        },
+        "postal": {
+          "name": "Poștal",
+          "description": "Chenar par avion, fotografie ca timbru dantelat, ștampilă poștală și serif Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Joc video pe 8 biți: bandă în trepte, sublinieri în blocuri, indicatori în căsuțe, monospațiat"
+        },
+        "notebook": {
+          "name": "Caiet",
+          "description": "Pagină de caiet liniată cu margine roșie, titluri evidențiate cu marker, profil pe un post-it"
+        },
+        "circuit": {
+          "name": "Circuit",
+          "description": "Trasee de circuit imprimat în colț, titluri pe cipuri cu pini, detalii monospațiate"
+        },
+        "gazette": {
+          "name": "Gazetă",
+          "description": "Prima pagină de ziar: frontispiciu Playfair, linii duble, rând cu data și letrină"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Curbe de nivel de hartă în colțuri, tonuri de pământ și marcaje de altitudine"
+        },
+        "watercolor": {
+          "name": "Acuarelă",
+          "description": "Pete de culoare diluată, titluri cu tușă de pensulă și serif Cormorant"
+        },
+        "ledger": {
+          "name": "Registru",
+          "description": "Date într-o coloană în stânga, linii fine între intrări, capităluțe"
+        },
+        "compact": {
+          "name": "Compact",
+          "description": "Densitate maximă pentru parcursuri lungi: text mai mic, antete de intrare pe un rând"
+        },
+        "academic": {
+          "name": "Academic",
+          "description": "Format universitar: nume centrat cu majuscule, titluri subliniate, serif, fără culoare"
+        },
+        "mono": {
+          "name": "Monocrom",
+          "description": "Alb-negru, contraste de grosime, un singur pătrat de accent înaintea numelui"
+        },
+        "soft": {
+          "name": "Delicat",
+          "description": "Panouri rotunjite într-o nuanță deschisă a accentului, nicio linie dură"
+        },
+        "outline": {
+          "name": "Contur",
+          "description": "Linii fine și unghiuri drepte, titluri ca file lipite de chenarul fiecărei secțiuni"
         }
-      },
-      "preview": {
-        "label": "Conținutul miniaturilor",
-        "sample": "Exemplu complet",
-        "mine": "CV-ul meu"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Treci la un CV impecabil",
-      "text": "Alege unul dintre cele 30 de șabloane ale noastre, citite corect de programele de recrutare, și adaptează-l fiecărei oferte",
+      "text": "Alege unul dintre cele 52 de șabloane ale noastre, citite corect de programele de recrutare, și adaptează-l fiecărei oferte",
       "button": "Deschide editorul",
       "import": "Adu acest CV în șabloanele noastre"
     },

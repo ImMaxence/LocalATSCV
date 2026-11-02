@@ -31,7 +31,7 @@
     "privacy": "Privatlivspolitik"
   },
   "seo": {
-    "home": "Lav gratis et CV, der giver dig samtalen: 30 skabeloner, matchende ansøgning, tilpasning til hvert opslag og ATS-tjek. Uden tilmelding, dine data bliver på din enhed",
+    "home": "Lav gratis et CV, der giver dig samtalen: 52 skabeloner, matchende ansøgning, tilpasning til hvert opslag og ATS-tjek. Uden tilmelding, dine data bliver på din enhed",
     "editor": "CV-editor med live-visning, Master-CV og målrettede versioner, ATS-tjek og PDF-eksport med ægte tekst. Alt bliver i din browser",
     "analyze": "Analysér et CV i PDF gratis: ATS-score ud af 100, ting der skal rettes, og teksten sådan som et rekrutteringssystem læser den. Filen forlader aldrig din browser",
     "changelog": "Nyheder i LocalATSCV, version for version: nye CV-skabeloner, funktioner og rettelser",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Uden tilmelding · Uden reklamer",
       "titleLine1": "CV'et, der giver dig samtalen",
       "titleLine2": "Klar på få minutter",
-      "subtitle": "Udfyld din baggrund, vælg mellem 30 skabeloner, og download et CV, der er klar til at sende. LocalATSCV hjælper dig også med at tilpasse det til hvert opslag og tjekker, at de programmer, der sorterer ansøgninger, læser det korrekt",
+      "subtitle": "Udfyld din baggrund, vælg mellem 52 skabeloner, og download et CV, der er klar til at sende. LocalATSCV hjælper dig også med at tilpasse det til hvert opslag og tjekker, at de programmer, der sorterer ansøgninger, læser det korrekt",
       "ctaPrimary": "Lav mit CV gratis",
       "ctaSecondary": "Test mit nuværende CV",
       "points": {
-        "templates": "30 skabeloner at vælge imellem",
+        "templates": "52 skabeloner at vælge imellem",
         "letter": "Matchende ansøgning",
         "private": "Dine data bliver hos dig"
       }
@@ -170,7 +170,7 @@
       "title": "Alt til en vellykket ansøgning",
       "items": {
         "templates": {
-          "title": "30 gennemarbejdede skabeloner",
+          "title": "52 gennemarbejdede skabeloner",
           "text": "Enkle, moderne eller farverige, med eller uden foto. Skift skabelon eller farve med ét klik, din tekst følger med"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "rimelig"
       },
       "atsHint": "Alle skabeloner udskriver ægte tekst. Layouts i to kolonner læses godt af de fleste moderne ATS, men nogle ældre værktøjer blander kolonnerne: vælg en skabelon med én kolonne, hvis du er i tvivl",
+      "preview": {
+        "label": "Miniaturernes indhold",
+        "sample": "Komplet eksempel",
+        "mine": "Mit CV"
+      },
+      "count": "{{n}} skabeloner",
+      "search": "Søg efter skabelon",
+      "random": "Tilfældig",
+      "randomHint": "Vælg en tilfældig skabelon blandt de viste",
+      "current": "Nuværende",
+      "noResults": "Ingen skabelon matcher din søgning",
+      "previous": "Forrige skabelon",
+      "next": "Næste skabelon",
+      "open": "Åbn skabelongalleriet",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Tråd",
           "description": "En gennemgående tråd forbinder toppen og hver sektion, med en prik pr. stilling"
+        },
+        "horizon": {
+          "name": "Horisont",
+          "description": "Stor diagonal gradient, hvidt kort der rejser sig over den og rundt foto på grænsen"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto i en skrå polaroidramme, kort holdt fast med farvet tape, cremefarvet papir"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Mørk konsol i monospace, markør og pile foran overskrifterne, etiketter i kodestil"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Farvestriber fra 70'erne, sol af buer i hjørnet og afrundet serif"
+        },
+        "mosaic": {
+          "name": "Mosaik",
+          "description": "Flisebånd i accentfarvens toner, skakternede mærker foran overskrifterne, kvadratisk foto"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Stjernehimmel i natblå, ringplanet og kredsløb foran overskrifterne"
+        },
+        "botanical": {
+          "name": "Botanisk",
+          "description": "Cremefarvet papir, bladkviste i hjørnerne, Cormorant-serif og dobbelte linjer"
+        },
+        "ticket": {
+          "name": "Billet",
+          "description": "Billet med takkede kanter og afrivningsdel til foto og QR-kode, stregkode"
+        },
+        "comic": {
+          "name": "Tegneserie",
+          "description": "Rasterprikker, overskrifter i talebobler, sortkantede ruder, gul og accentfarve"
+        },
+        "postal": {
+          "name": "Post",
+          "description": "Luftpostkant, foto som takket frimærke, poststempel og Lora-serif"
+        },
+        "arcade": {
+          "name": "Arkade",
+          "description": "8-bit videospil: trappebånd, blokunderstregninger, målere i felter, monospace"
+        },
+        "notebook": {
+          "name": "Notesbog",
+          "description": "Linjeret side med rød margen, overskrifter fremhævet med tusch, profil på en post-it"
+        },
+        "circuit": {
+          "name": "Printplade",
+          "description": "Printbaner i hjørnet, overskrifter på chips med ben, detaljer i monospace"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Avisens forside: Playfair-hoved, dobbelte linjer, datolinje og initial"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Højdekurver fra et kort i hjørnerne, jordfarver og højdemarkeringer"
+        },
+        "watercolor": {
+          "name": "Akvarel",
+          "description": "Pletter af fortyndet farve, overskrifter med penselstrøg og Cormorant-serif"
+        },
+        "ledger": {
+          "name": "Protokol",
+          "description": "Datoer i en venstre kolonne, hårlinjer mellem posterne, kapitæler"
+        },
+        "compact": {
+          "name": "Kompakt",
+          "description": "Maksimal tæthed til lange karrierer: mindre tekst, overskrifter på én linje"
+        },
+        "academic": {
+          "name": "Akademisk",
+          "description": "Universitetsformat: centreret navn i versaler, understregede overskrifter, serif, ingen farve"
+        },
+        "mono": {
+          "name": "Monokrom",
+          "description": "Sort-hvid, kontraster i skriftvægt, en enkelt accentfirkant foran navnet"
+        },
+        "soft": {
+          "name": "Blød",
+          "description": "Afrundede paneler i en lys tone af accentfarven, ingen hårde linjer"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "Tynde linjer og rette vinkler, overskrifter som faner fæstnet til hvert afsnits ramme"
         }
-      },
-      "preview": {
-        "label": "Miniaturernes indhold",
-        "sample": "Komplet eksempel",
-        "mine": "Mit CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Skift til et fejlfrit CV",
-      "text": "Vælg en af vores 30 skabeloner, som screeningsprogrammer læser korrekt, og tilpas den til hvert opslag",
+      "text": "Vælg en af vores 52 skabeloner, som screeningsprogrammer læser korrekt, og tilpas den til hvert opslag",
       "button": "Åbn editoren",
       "import": "Overfør dette CV til vores skabeloner"
     },

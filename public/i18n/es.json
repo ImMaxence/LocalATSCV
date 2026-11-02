@@ -31,7 +31,7 @@
     "privacy": "Política de privacidad"
   },
   "seo": {
-    "home": "Crea gratis un CV que consigue entrevistas: 30 plantillas, carta de presentación a juego, adaptación a cada oferta y revisión ATS. Sin registro, tus datos se quedan en tu dispositivo",
+    "home": "Crea gratis un CV que consigue entrevistas: 52 plantillas, carta de presentación a juego, adaptación a cada oferta y revisión ATS. Sin registro, tus datos se quedan en tu dispositivo",
     "editor": "Editor de CV con vista previa en directo, CV maestro y versiones específicas, control ATS y exportación PDF en texto real. Todo se queda en tu navegador",
     "analyze": "Analiza gratis un CV en PDF: puntuación ATS sobre 100, puntos a corregir y el texto tal como lo lee un software de selección. El archivo no sale de tu navegador",
     "changelog": "Las novedades de LocalATSCV, versión a versión: nuevas plantillas de CV, funciones y correcciones",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Sin registro · Sin anuncios",
       "titleLine1": "El CV que consigue la entrevista",
       "titleLine2": "Listo en pocos minutos",
-      "subtitle": "Rellena tu trayectoria, elige entre 30 plantillas y descarga un CV listo para enviar. LocalATSCV también te ayuda a adaptarlo a cada oferta y comprueba que lo lean bien los programas que filtran las candidaturas",
+      "subtitle": "Rellena tu trayectoria, elige entre 52 plantillas y descarga un CV listo para enviar. LocalATSCV también te ayuda a adaptarlo a cada oferta y comprueba que lo lean bien los programas que filtran las candidaturas",
       "ctaPrimary": "Crear mi CV gratis",
       "ctaSecondary": "Probar mi CV actual",
       "points": {
-        "templates": "30 plantillas a elegir",
+        "templates": "52 plantillas a elegir",
         "letter": "Carta de presentación a juego",
         "private": "Tus datos se quedan contigo"
       }
@@ -170,7 +170,7 @@
       "title": "Todo para una candidatura de éxito",
       "items": {
         "templates": {
-          "title": "30 plantillas cuidadas",
+          "title": "52 plantillas cuidadas",
           "text": "Sobrias, modernas o coloridas, con o sin foto. Cambia de plantilla o de color con un clic, tu texto se adapta"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "media"
       },
       "atsHint": "Todas las plantillas imprimen texto real. La mayoría de los ATS recientes leen bien los diseños a dos columnas, pero algunos programas antiguos mezclan las columnas: en caso de duda, elige una plantilla de una columna",
+      "preview": {
+        "label": "Contenido de las miniaturas",
+        "sample": "Ejemplo completo",
+        "mine": "Mi CV"
+      },
+      "count": "{{n}} plantillas",
+      "search": "Buscar una plantilla",
+      "random": "Al azar",
+      "randomHint": "Elegir una plantilla al azar entre las mostradas",
+      "current": "Actual",
+      "noResults": "Ninguna plantilla coincide con tu búsqueda",
+      "previous": "Plantilla anterior",
+      "next": "Plantilla siguiente",
+      "open": "Abrir la galería de plantillas",
       "names": {
         "classic": {
           "name": "Clásica",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Hilo",
           "description": "Un hilo continuo une el encabezado y cada sección, con un punto por experiencia"
+        },
+        "horizon": {
+          "name": "Horizonte",
+          "description": "Gran degradado en diagonal, tarjeta blanca que sube sobre él y foto redonda a caballo entre ambos"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto en un marco instantáneo inclinado, fichas sujetas con cinta de color, papel crema"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Consola oscura en monoespaciada, cursor y chevrones ante los títulos, etiquetas de código"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Franjas de colores años 70, sol de arcos en la esquina y serif redondeada"
+        },
+        "mosaic": {
+          "name": "Mosaico",
+          "description": "Banda de azulejos en los tonos del acento, damero ante los títulos, foto cuadrada"
+        },
+        "cosmos": {
+          "name": "Cosmos",
+          "description": "Cielo estrellado azul noche, planeta con anillo y órbitas ante los títulos"
+        },
+        "botanical": {
+          "name": "Botánico",
+          "description": "Papel crema, ramas de hojas en las esquinas, serif Cormorant y filetes dobles"
+        },
+        "ticket": {
+          "name": "Ticket",
+          "description": "Entrada con bordes dentados y talón desprendible para la foto y el código QR, código de barras"
+        },
+        "comic": {
+          "name": "Cómic",
+          "description": "Trama de puntos, títulos en bocadillos, viñetas con borde negro, amarillo y acento"
+        },
+        "postal": {
+          "name": "Postal",
+          "description": "Borde de correo aéreo, foto como sello dentado, matasellos y serif Lora"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "Videojuego de 8 bits: banda escalonada, subrayados en bloques, medidores en casillas, monoespaciada"
+        },
+        "notebook": {
+          "name": "Cuaderno",
+          "description": "Página de cuaderno rayada con margen rojo, títulos resaltados con marcador, resumen en una nota adhesiva"
+        },
+        "circuit": {
+          "name": "Circuito",
+          "description": "Pistas de circuito impreso en la esquina, títulos sobre chips con patillas, detalles en monoespaciada"
+        },
+        "gazette": {
+          "name": "Gaceta",
+          "description": "Portada de periódico: cabecera Playfair, filetes dobles, línea de fecha y letra capital"
+        },
+        "topo": {
+          "name": "Relieve",
+          "description": "Curvas de nivel de mapa en las esquinas, tonos tierra y marcadores de altitud"
+        },
+        "watercolor": {
+          "name": "Acuarela",
+          "description": "Manchas de color diluido, títulos a pincelada y serif Cormorant"
+        },
+        "ledger": {
+          "name": "Registro",
+          "description": "Fechas en una columna a la izquierda, filetes finos entre entradas, versalitas"
+        },
+        "compact": {
+          "name": "Compacto",
+          "description": "Densidad máxima para trayectorias largas: texto más pequeño, cabeceras en una línea"
+        },
+        "academic": {
+          "name": "Académico",
+          "description": "Formato universitario: nombre centrado en mayúsculas, títulos subrayados, serif, sin color"
+        },
+        "mono": {
+          "name": "Monocromo",
+          "description": "Blanco y negro, contrastes de grosor, un único cuadrado de acento ante el nombre"
+        },
+        "soft": {
+          "name": "Suave",
+          "description": "Paneles redondeados en un tono claro del acento, sin ninguna línea dura"
+        },
+        "outline": {
+          "name": "Contorno",
+          "description": "Filetes finos y ángulos rectos, títulos en pestaña pegada al marco de cada sección"
         }
-      },
-      "preview": {
-        "label": "Contenido de las miniaturas",
-        "sample": "Ejemplo completo",
-        "mine": "Mi CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Pasa a un CV impecable",
-      "text": "Elige una de nuestras 30 plantillas, bien leídas por los programas de selección, y adáptala a cada oferta",
+      "text": "Elige una de nuestras 52 plantillas, bien leídas por los programas de selección, y adáptala a cada oferta",
       "button": "Abrir el editor",
       "import": "Pasar este CV a nuestras plantillas"
     },

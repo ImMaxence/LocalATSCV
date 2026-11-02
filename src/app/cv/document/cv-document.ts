@@ -3,34 +3,56 @@ import { ChangeDetectionStrategy, Component, computed, inject, input } from '@an
 import { CoverLetter, DEFAULT_LAYOUT } from '../model/cv.model';
 import { fontStack } from '../model/cv-fonts';
 import { ResolvedCv } from '../model/resolve-cv';
+import { CvAcademic } from './templates/academic/cv-academic';
+import { CvArcade } from './templates/arcade/cv-arcade';
 import { CvAurora } from './templates/aurora/cv-aurora';
 import { CvBauhaus } from './templates/bauhaus/cv-bauhaus';
 import { CvBento } from './templates/bento/cv-bento';
 import { CvBlueprint } from './templates/blueprint/cv-blueprint';
+import { CvBotanical } from './templates/botanical/cv-botanical';
 import { CvBrutal } from './templates/brutal/cv-brutal';
+import { CvCircuit } from './templates/circuit/cv-circuit';
 import { CvClassic } from './templates/classic/cv-classic';
+import { CvComic } from './templates/comic/cv-comic';
+import { CvCompact } from './templates/compact/cv-compact';
+import { CvCosmos } from './templates/cosmos/cv-cosmos';
 import { CvDuotone } from './templates/duotone/cv-duotone';
 import { CvEditorial } from './templates/editorial/cv-editorial';
 import { CvElegant } from './templates/elegant/cv-elegant';
 import { CvExecutive } from './templates/executive/cv-executive';
+import { CvGazette } from './templates/gazette/cv-gazette';
 import { CvHexa } from './templates/hexa/cv-hexa';
+import { CvHorizon } from './templates/horizon/cv-horizon';
 import { CvImpact } from './templates/impact/cv-impact';
+import { CvLedger } from './templates/ledger/cv-ledger';
 import { CvMemphis } from './templates/memphis/cv-memphis';
 import { CvMinimal } from './templates/minimal/cv-minimal';
 import { CvModern } from './templates/modern/cv-modern';
+import { CvMono } from './templates/mono/cv-mono';
+import { CvMosaic } from './templates/mosaic/cv-mosaic';
 import { CvNocturne } from './templates/nocturne/cv-nocturne';
+import { CvNotebook } from './templates/notebook/cv-notebook';
 import { CvOrigami } from './templates/origami/cv-origami';
+import { CvOutline } from './templates/outline/cv-outline';
+import { CvPolaroid } from './templates/polaroid/cv-polaroid';
+import { CvPostal } from './templates/postal/cv-postal';
 import { CvPrestige } from './templates/prestige/cv-prestige';
 import { CvPrism } from './templates/prism/cv-prism';
 import { CvPulse } from './templates/pulse/cv-pulse';
+import { CvRetro } from './templates/retro/cv-retro';
 import { CvRibbon } from './templates/ribbon/cv-ribbon';
 import { CvSidebar } from './templates/sidebar/cv-sidebar';
 import { CvSignature } from './templates/signature/cv-signature';
+import { CvSoft } from './templates/soft/cv-soft';
 import { CvSorbet } from './templates/sorbet/cv-sorbet';
 import { CvSwiss } from './templates/swiss/cv-swiss';
 import { CvTech } from './templates/tech/cv-tech';
+import { CvTerminal } from './templates/terminal/cv-terminal';
 import { CvThread } from './templates/thread/cv-thread';
+import { CvTicket } from './templates/ticket/cv-ticket';
+import { CvTopo } from './templates/topo/cv-topo';
 import { CvTypo } from './templates/typo/cv-typo';
+import { CvWatercolor } from './templates/watercolor/cv-watercolor';
 import { CvWave } from './templates/wave/cv-wave';
 import { CvZen } from './templates/zen/cv-zen';
 
@@ -90,6 +112,28 @@ function loadCvFonts(document: Document): void {
     CvTech,
     CvMinimal,
     CvSidebar,
+    CvHorizon,
+    CvPolaroid,
+    CvTerminal,
+    CvRetro,
+    CvMosaic,
+    CvCosmos,
+    CvBotanical,
+    CvTicket,
+    CvComic,
+    CvPostal,
+    CvArcade,
+    CvNotebook,
+    CvCircuit,
+    CvGazette,
+    CvTopo,
+    CvWatercolor,
+    CvLedger,
+    CvCompact,
+    CvAcademic,
+    CvMono,
+    CvSoft,
+    CvOutline,
   ],
   host: {
     class: 'block',
@@ -189,6 +233,72 @@ function loadCvFonts(document: Document): void {
       }
       @case ('sidebar') {
         <app-cv-sidebar [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('horizon') {
+        <app-cv-horizon [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('polaroid') {
+        <app-cv-polaroid [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('terminal') {
+        <app-cv-terminal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('retro') {
+        <app-cv-retro [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('mosaic') {
+        <app-cv-mosaic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('cosmos') {
+        <app-cv-cosmos [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('botanical') {
+        <app-cv-botanical [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('ticket') {
+        <app-cv-ticket [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('comic') {
+        <app-cv-comic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('postal') {
+        <app-cv-postal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('arcade') {
+        <app-cv-arcade [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('notebook') {
+        <app-cv-notebook [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('circuit') {
+        <app-cv-circuit [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('gazette') {
+        <app-cv-gazette [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('topo') {
+        <app-cv-topo [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('watercolor') {
+        <app-cv-watercolor [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('ledger') {
+        <app-cv-ledger [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('compact') {
+        <app-cv-compact [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('academic') {
+        <app-cv-academic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('mono') {
+        <app-cv-mono [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('soft') {
+        <app-cv-soft [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+      }
+      @case ('outline') {
+        <app-cv-outline [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
       }
       @default {
         <app-cv-classic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />

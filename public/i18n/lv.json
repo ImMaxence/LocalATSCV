@@ -31,7 +31,7 @@
     "privacy": "Privātuma politika"
   },
   "seo": {
-    "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 30 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
+    "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 52 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
     "editor": "CV redaktors ar tiešo priekšskatījumu, Master CV un mērķētām versijām, ATS pārbaudi un PDF eksportu ar īstu tekstu. Viss paliek jūsu pārlūkā",
     "analyze": "Bez maksas analizējiet CV PDF formātā: ATS vērtējums no 100, labojamās vietas un teksts tā, kā to nolasa atlases sistēma. Fails nekad nepamet jūsu pārlūku",
     "changelog": "LocalATSCV jaunumi pa versijām: jaunas CV veidnes, funkcijas un labojumi",
@@ -62,11 +62,11 @@
       "badge": "Bez maksas · Bez reģistrācijas · Bez reklāmām",
       "titleLine1": "CV, kas atver durvis uz darba interviju",
       "titleLine2": "Gatavs dažās minūtēs",
-      "subtitle": "Aizpildiet savu pieredzi, izvēlieties kādu no 30 veidnēm un lejupielādējiet nosūtīšanai gatavu CV. LocalATSCV arī palīdz to pielāgot katram sludinājumam un pārbauda, vai pieteikumus šķirojošās programmas to nolasa pareizi",
+      "subtitle": "Aizpildiet savu pieredzi, izvēlieties kādu no 52 veidnēm un lejupielādējiet nosūtīšanai gatavu CV. LocalATSCV arī palīdz to pielāgot katram sludinājumam un pārbauda, vai pieteikumus šķirojošās programmas to nolasa pareizi",
       "ctaPrimary": "Izveidot manu CV bez maksas",
       "ctaSecondary": "Pārbaudīt manu pašreizējo CV",
       "points": {
-        "templates": "30 veidnes izvēlei",
+        "templates": "52 veidnes izvēlei",
         "letter": "Saskaņota motivācijas vēstule",
         "private": "Jūsu dati paliek pie jums"
       }
@@ -170,7 +170,7 @@
       "title": "Viss veiksmīgam pieteikumam",
       "items": {
         "templates": {
-          "title": "30 rūpīgi veidotas veidnes",
+          "title": "52 rūpīgi veidotas veidnes",
           "text": "Vienkāršas, modernas vai krāsainas, ar vai bez foto. Mainiet veidni vai krāsu ar vienu klikšķi, jūsu teksts seko līdzi"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "pieņemama"
       },
       "atsHint": "Katra veidne drukā īstu tekstu. Divu kolonnu izkārtojumus labi nolasa lielākā daļa mūsdienu ATS, taču daži vecāki rīki sajauc kolonnas: šaubu gadījumā izvēlieties vienas kolonnas veidni",
+      "preview": {
+        "label": "Sīktēlu saturs",
+        "sample": "Pilns piemērs",
+        "mine": "Mans CV"
+      },
+      "count": "{{n}} veidnes",
+      "search": "Meklēt veidni",
+      "random": "Nejauši",
+      "randomHint": "Izvēlēties nejaušu veidni no redzamajām",
+      "current": "Pašreizējā",
+      "noResults": "Neviena veidne neatbilst jūsu meklējumam",
+      "previous": "Iepriekšējā veidne",
+      "next": "Nākamā veidne",
+      "open": "Atvērt veidņu galeriju",
       "names": {
         "classic": {
           "name": "Klasiskā",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Pavediens",
           "description": "Nepārtraukts pavediens savieno galveni un katru sadaļu, ar punktu katram amatam"
+        },
+        "horizon": {
+          "name": "Horizonts",
+          "description": "Liela diagonāla pāreja, balta kartīte, kas paceļas virs tās, un apaļš foto uz robežas"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto slīpā momentfoto rāmī, kartītes piestiprinātas ar krāsainu līmlenti, krēmkrāsas papīrs"
+        },
+        "terminal": {
+          "name": "Terminālis",
+          "description": "Tumša konsole vienplatuma rakstā, kursors un bultiņas pirms virsrakstiem, koda stila etiķetes"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70. gadu krāsu svītras, loku saule stūrī un noapaļots serifa raksts"
+        },
+        "mosaic": {
+          "name": "Mozaīka",
+          "description": "Flīžu josla akcenta krāsas toņos, rūtotas zīmes pirms virsrakstiem, kvadrātveida foto"
+        },
+        "cosmos": {
+          "name": "Kosmoss",
+          "description": "Nakts zilas zvaigžņotas debesis, planēta ar gredzenu un orbītas pirms virsrakstiem"
+        },
+        "botanical": {
+          "name": "Botānika",
+          "description": "Krēmkrāsas papīrs, lapu zariņi stūros, Cormorant serifa raksts un dubultlīnijas"
+        },
+        "ticket": {
+          "name": "Biļete",
+          "description": "Biļete ar robainām malām un noplēšamu pasakni fotoattēlam un QR kodam, svītrkods"
+        },
+        "comic": {
+          "name": "Komikss",
+          "description": "Rastra punkti, virsraksti runas burbuļos, melni ierāmēti kadri, dzeltena un akcenta krāsa"
+        },
+        "postal": {
+          "name": "Pasts",
+          "description": "Gaisa pasta apmale, foto kā zobaina pastmarka, pasta zīmogs un Lora serifa raksts"
+        },
+        "arcade": {
+          "name": "Arkāde",
+          "description": "8 bitu videospēle: pakāpienu josla, bloku pasvītrojumi, rūtiņu mērītāji, vienplatuma raksts"
+        },
+        "notebook": {
+          "name": "Burtnīca",
+          "description": "Līniju burtnīcas lapa ar sarkanu malu, ar marķieri izcelti virsraksti, profils uz līmlapiņas"
+        },
+        "circuit": {
+          "name": "Shēma",
+          "description": "Drukātās shēmas celiņi stūrī, virsraksti uz mikroshēmām ar kājiņām, detaļas vienplatuma rakstā"
+        },
+        "gazette": {
+          "name": "Avīze",
+          "description": "Avīzes pirmā lapa: Playfair galvene, dubultlīnijas, datuma rinda un iniciālis"
+        },
+        "topo": {
+          "name": "Reljefs",
+          "description": "Kartes horizontāles stūros, zemes toņi un augstuma atzīmes"
+        },
+        "watercolor": {
+          "name": "Akvarelis",
+          "description": "Atšķaidītas krāsas traipi, virsraksti ar otas vilcienu un Cormorant serifa raksts"
+        },
+        "ledger": {
+          "name": "Reģistrs",
+          "description": "Datumi kreisajā kolonnā, smalkas līnijas starp ierakstiem, kapiteļi"
+        },
+        "compact": {
+          "name": "Kompakts",
+          "description": "Maksimāls blīvums garām karjerām: mazāks teksts, vienas rindas ierakstu galvenes"
+        },
+        "academic": {
+          "name": "Akadēmisks",
+          "description": "Universitātes formāts: centrēts vārds lielajiem burtiem, pasvītroti virsraksti, serifs, bez krāsas"
+        },
+        "mono": {
+          "name": "Vienkrāsains",
+          "description": "Melnbalts, biezuma kontrasti, viens vienīgs akcenta kvadrāts pirms vārda"
+        },
+        "soft": {
+          "name": "Maigs",
+          "description": "Noapaļoti paneļi akcenta krāsas gaišā tonī, neviena asa līnija"
+        },
+        "outline": {
+          "name": "Kontūra",
+          "description": "Smalkas līnijas un taisni stūri, virsraksti kā cilnes pie katras sadaļas rāmja"
         }
-      },
-      "preview": {
-        "label": "Sīktēlu saturs",
-        "sample": "Pilns piemērs",
-        "mine": "Mans CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Pārejiet uz nevainojamu CV",
-      "text": "Izvēlieties vienu no mūsu 30 veidnēm, ko atlases programmas nolasa pareizi, un pielāgojiet to katram sludinājumam",
+      "text": "Izvēlieties vienu no mūsu 52 veidnēm, ko atlases programmas nolasa pareizi, un pielāgojiet to katram sludinājumam",
       "button": "Atvērt redaktoru",
       "import": "Pārnest šo CV mūsu veidnēs"
     },

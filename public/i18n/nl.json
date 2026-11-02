@@ -31,7 +31,7 @@
     "privacy": "Privacybeleid"
   },
   "seo": {
-    "home": "Maak gratis een cv dat je het gesprek oplevert: 30 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
+    "home": "Maak gratis een cv dat je het gesprek oplevert: 52 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
     "editor": "Cv-editor met live voorbeeld, Master-cv en gerichte versies, ATS-controle en pdf-export met echte tekst. Alles blijft in je browser",
     "analyze": "Analyseer gratis een pdf-cv: ATS-score op 100, verbeterpunten en de tekst zoals een sollicitatiesysteem die leest. Het bestand verlaat je browser nooit",
     "changelog": "Nieuw in LocalATSCV, versie per versie: nieuwe cv-sjablonen, functies en oplossingen",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Zonder account · Zonder reclame",
       "titleLine1": "Het cv dat je het gesprek oplevert",
       "titleLine2": "Klaar in een paar minuten",
-      "subtitle": "Vul je loopbaan in, kies een van de 30 sjablonen en download een cv dat klaar is om te versturen. LocalATSCV helpt je ook om het op elke vacature af te stemmen en controleert of de software die sollicitaties sorteert het goed leest",
+      "subtitle": "Vul je loopbaan in, kies een van de 52 sjablonen en download een cv dat klaar is om te versturen. LocalATSCV helpt je ook om het op elke vacature af te stemmen en controleert of de software die sollicitaties sorteert het goed leest",
       "ctaPrimary": "Gratis mijn cv maken",
       "ctaSecondary": "Mijn huidige cv testen",
       "points": {
-        "templates": "30 sjablonen om uit te kiezen",
+        "templates": "52 sjablonen om uit te kiezen",
         "letter": "Bijpassende sollicitatiebrief",
         "private": "Je gegevens blijven bij jou"
       }
@@ -170,7 +170,7 @@
       "title": "Alles voor een geslaagde sollicitatie",
       "items": {
         "templates": {
-          "title": "30 verzorgde sjablonen",
+          "title": "52 verzorgde sjablonen",
           "text": "Sober, modern of kleurrijk, met of zonder foto. Wissel met één klik van sjabloon of kleur, je tekst gaat mee"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "redelijk"
       },
       "atsHint": "Elk sjabloon drukt echte tekst af. Opmaak in twee kolommen wordt door de meeste moderne ATS goed gelezen, maar sommige oudere systemen halen de kolommen door elkaar: kies bij twijfel een sjabloon met één kolom",
+      "preview": {
+        "label": "Inhoud van de miniaturen",
+        "sample": "Volledig voorbeeld",
+        "mine": "Mijn cv"
+      },
+      "count": "{{n}} sjablonen",
+      "search": "Sjabloon zoeken",
+      "random": "Willekeurig",
+      "randomHint": "Een willekeurig sjabloon kiezen uit de getoonde",
+      "current": "Huidig",
+      "noResults": "Geen enkel sjabloon komt overeen met je zoekopdracht",
+      "previous": "Vorig sjabloon",
+      "next": "Volgend sjabloon",
+      "open": "Sjabloongalerij openen",
       "names": {
         "classic": {
           "name": "Klassiek",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Draad",
           "description": "Een doorlopende draad verbindt de kop en elke sectie, met een stip per functie"
+        },
+        "horizon": {
+          "name": "Horizon",
+          "description": "Groot diagonaal verloop, witte kaart die eroverheen stijgt en ronde foto op de grens"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto in een scheef instantkader, kaarten vastgezet met gekleurd plakband, crèmekleurig papier"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Donkere console in monospace, cursor en pijltjes voor de koppen, labels in codestijl"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Kleurstrepen uit de jaren 70, zon van bogen in de hoek en afgeronde schreefletter"
+        },
+        "mosaic": {
+          "name": "Mozaïek",
+          "description": "Tegelband in de tinten van je accentkleur, dambordjes voor de koppen, vierkante foto"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Sterrenhemel in nachtblauw, planeet met ring en banen voor de koppen"
+        },
+        "botanical": {
+          "name": "Botanisch",
+          "description": "Crèmekleurig papier, bladtakjes in de hoeken, Cormorant-schreefletter en dubbele lijnen"
+        },
+        "ticket": {
+          "name": "Ticket",
+          "description": "Kaartje met gekartelde randen en afscheurstrook voor foto en QR-code, streepjescode"
+        },
+        "comic": {
+          "name": "Strip",
+          "description": "Rasterpunten, koppen in tekstballonnen, zwart omrande vakken, geel en accentkleur"
+        },
+        "postal": {
+          "name": "Post",
+          "description": "Luchtpostrand, foto als getande postzegel, poststempel en Lora-schreefletter"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8-bit videogame: trapband, blokonderstrepingen, meters in vakjes, monospace"
+        },
+        "notebook": {
+          "name": "Schrift",
+          "description": "Gelinieerde schriftpagina met rode kantlijn, koppen gemarkeerd met stift, profiel op een plakbriefje"
+        },
+        "circuit": {
+          "name": "Printplaat",
+          "description": "Printbanen in de hoek, koppen op chips met pootjes, details in monospace"
+        },
+        "gazette": {
+          "name": "Gazet",
+          "description": "Voorpagina van een krant: Playfair-kop, dubbele lijnen, datumregel en initiaal"
+        },
+        "topo": {
+          "name": "Reliëf",
+          "description": "Hoogtelijnen van een kaart in de hoeken, aardetinten en hoogtemarkeringen"
+        },
+        "watercolor": {
+          "name": "Aquarel",
+          "description": "Vlekken verdunde verf, koppen met penseelstreek en Cormorant-schreefletter"
+        },
+        "ledger": {
+          "name": "Register",
+          "description": "Data in een linkerkolom, haarlijnen tussen de items, kleinkapitalen"
+        },
+        "compact": {
+          "name": "Compact",
+          "description": "Maximale dichtheid voor lange loopbanen: kleinere tekst, koppen op één regel"
+        },
+        "academic": {
+          "name": "Academisch",
+          "description": "Universitair formaat: gecentreerde naam in hoofdletters, onderstreepte koppen, schreef, geen kleur"
+        },
+        "mono": {
+          "name": "Monochroom",
+          "description": "Zwart-wit, contrasten in letterdikte, één accentvierkant voor de naam"
+        },
+        "soft": {
+          "name": "Zacht",
+          "description": "Afgeronde vlakken in een lichte tint van je accentkleur, geen enkele harde lijn"
+        },
+        "outline": {
+          "name": "Contour",
+          "description": "Dunne lijnen en rechte hoeken, koppen als tabs tegen het kader van elke sectie"
         }
-      },
-      "preview": {
-        "label": "Inhoud van de miniaturen",
-        "sample": "Volledig voorbeeld",
-        "mine": "Mijn cv"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Stap over op een foutloos cv",
-      "text": "Kies een van onze 30 sjablonen, die selectiesoftware goed leest, en stem het af op elke vacature",
+      "text": "Kies een van onze 52 sjablonen, die selectiesoftware goed leest, en stem het af op elke vacature",
       "button": "De editor openen",
       "import": "Dit cv overbrengen naar onze sjablonen"
     },

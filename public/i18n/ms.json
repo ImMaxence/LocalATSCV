@@ -31,7 +31,7 @@
     "privacy": "Dasar privasi"
   },
   "seo": {
-    "home": "Bina resume percuma yang membawa anda ke temu duga: 30 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
+    "home": "Bina resume percuma yang membawa anda ke temu duga: 52 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
     "editor": "Editor resume dengan pratonton langsung, resume Master dan versi sasaran, semakan ATS dan eksport PDF dengan teks sebenar. Semuanya kekal dalam pelayar anda",
     "analyze": "Analisis resume PDF secara percuma: skor ATS daripada 100, perkara untuk dibaiki dan teks seperti yang dibaca sistem pengambilan. Fail tidak pernah meninggalkan pelayar anda",
     "changelog": "Apa yang baharu dalam LocalATSCV, versi demi versi: templat resume baharu, ciri dan pembaikan",
@@ -62,11 +62,11 @@
       "badge": "Percuma · Tanpa pendaftaran · Tanpa iklan",
       "titleLine1": "Resume yang membawa anda ke temu duga",
       "titleLine2": "Siap dalam beberapa minit",
-      "subtitle": "Isikan latar belakang anda, pilih satu daripada 30 templat dan muat turun resume yang sedia dihantar. LocalATSCV juga membantu anda menyesuaikannya untuk setiap iklan dan menyemak sama ada perisian yang menapis permohonan membacanya dengan betul",
+      "subtitle": "Isikan latar belakang anda, pilih satu daripada 52 templat dan muat turun resume yang sedia dihantar. LocalATSCV juga membantu anda menyesuaikannya untuk setiap iklan dan menyemak sama ada perisian yang menapis permohonan membacanya dengan betul",
       "ctaPrimary": "Bina resume saya secara percuma",
       "ctaSecondary": "Uji resume saya sekarang",
       "points": {
-        "templates": "30 templat untuk dipilih",
+        "templates": "52 templat untuk dipilih",
         "letter": "Surat iringan yang sepadan",
         "private": "Data anda kekal bersama anda"
       }
@@ -170,7 +170,7 @@
       "title": "Segala yang anda perlukan untuk permohonan yang berjaya",
       "items": {
         "templates": {
-          "title": "30 templat yang kemas",
+          "title": "52 templat yang kemas",
           "text": "Ringkas, moden atau berwarna-warni, dengan atau tanpa foto. Tukar templat atau warna dengan satu klik, teks anda ikut sekali"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "sederhana"
       },
       "atsHint": "Setiap templat mencetak teks sebenar. Susun atur dua lajur dibaca dengan baik oleh kebanyakan ATS moden, tetapi sesetengah alat lama mencampurkan lajur: jika ragu-ragu, pilih templat satu lajur",
+      "preview": {
+        "label": "Kandungan imej kecil",
+        "sample": "Contoh lengkap",
+        "mine": "Resume saya"
+      },
+      "count": "{{n}} templat",
+      "search": "Cari templat",
+      "random": "Rawak",
+      "randomHint": "Pilih templat secara rawak daripada yang dipaparkan",
+      "current": "Semasa",
+      "noResults": "Tiada templat sepadan dengan carian anda",
+      "previous": "Templat sebelumnya",
+      "next": "Templat seterusnya",
+      "open": "Buka galeri templat",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Benang",
           "description": "Benang berterusan menghubungkan kepala halaman dan setiap bahagian, dengan titik bagi setiap jawatan"
+        },
+        "horizon": {
+          "name": "Ufuk",
+          "description": "Kecerunan pepenjuru yang besar, kad putih yang naik di atasnya dan foto bulat di sempadan"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto dalam bingkai foto segera yang condong, kad dilekat dengan pita berwarna, kertas krim"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Konsol gelap dengan fon monospace, kursor dan anak panah sebelum tajuk, label gaya kod"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Jalur warna 70-an, matahari daripada lengkung di sudut dan serif membulat"
+        },
+        "mosaic": {
+          "name": "Mozek",
+          "description": "Jalur jubin dalam ton warna aksen, tanda petak catur sebelum tajuk, foto segi empat"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Langit berbintang biru malam, planet bergelang dan orbit sebelum tajuk"
+        },
+        "botanical": {
+          "name": "Botani",
+          "description": "Kertas krim, ranting daun di sudut, serif Cormorant dan garis berganda"
+        },
+        "ticket": {
+          "name": "Tiket",
+          "description": "Tiket bertepi bergerigi dengan keratan untuk foto dan kod QR, butiran kod bar"
+        },
+        "comic": {
+          "name": "Komik",
+          "description": "Titik separuh ton, tajuk dalam belon kata, panel berbingkai hitam, kuning dan warna aksen"
+        },
+        "postal": {
+          "name": "Pos",
+          "description": "Bingkai mel udara, foto sebagai setem bergerigi, cap pos dan serif Lora"
+        },
+        "arcade": {
+          "name": "Arked",
+          "description": "Permainan video 8-bit: jalur bertangga, garis bawah blok, meter berpetak, monospace"
+        },
+        "notebook": {
+          "name": "Buku nota",
+          "description": "Halaman buku bergaris dengan jidar merah, tajuk disorot penanda, ringkasan pada nota lekat"
+        },
+        "circuit": {
+          "name": "Litar",
+          "description": "Jejak litar bercetak di sudut, tajuk pada cip berkaki, butiran monospace"
+        },
+        "gazette": {
+          "name": "Gazet",
+          "description": "Muka depan akhbar: kepala Playfair, garis berganda, baris tarikh dan huruf awal besar"
+        },
+        "topo": {
+          "name": "Topografi",
+          "description": "Garis kontur peta di sudut, ton tanah dan penanda ketinggian"
+        },
+        "watercolor": {
+          "name": "Cat air",
+          "description": "Tompok warna cair, tajuk dengan sapuan berus dan serif Cormorant"
+        },
+        "ledger": {
+          "name": "Lejar",
+          "description": "Tarikh di lajur kiri, garis halus antara entri, huruf besar kecil"
+        },
+        "compact": {
+          "name": "Padat",
+          "description": "Ketumpatan maksimum untuk kerjaya panjang: teks lebih kecil, kepala entri satu baris"
+        },
+        "academic": {
+          "name": "Akademik",
+          "description": "Format universiti: nama di tengah dengan huruf besar, tajuk bergaris bawah, serif, tanpa warna"
+        },
+        "mono": {
+          "name": "Monokrom",
+          "description": "Hitam putih, kontras ketebalan, satu petak aksen sahaja sebelum nama"
+        },
+        "soft": {
+          "name": "Lembut",
+          "description": "Panel membulat dalam ton cerah warna aksen, tiada garis keras"
+        },
+        "outline": {
+          "name": "Garis luar",
+          "description": "Garis halus dan sudut tepat, tajuk sebagai tab yang melekat pada bingkai setiap bahagian"
         }
-      },
-      "preview": {
-        "label": "Kandungan imej kecil",
-        "sample": "Contoh lengkap",
-        "mine": "Resume saya"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Beralih kepada resume yang sempurna",
-      "text": "Pilih satu daripada 30 templat kami yang dibaca dengan betul oleh perisian penapis, dan sesuaikan untuk setiap iklan",
+      "text": "Pilih satu daripada 52 templat kami yang dibaca dengan betul oleh perisian penapis, dan sesuaikan untuk setiap iklan",
       "button": "Buka editor",
       "import": "Bawa resume ini ke dalam templat kami"
     },

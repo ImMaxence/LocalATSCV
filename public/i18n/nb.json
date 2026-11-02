@@ -31,7 +31,7 @@
     "privacy": "Personvernerklæring"
   },
   "seo": {
-    "home": "Lag gratis en CV som gir deg intervjuet: 30 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
+    "home": "Lag gratis en CV som gir deg intervjuet: 52 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
     "editor": "CV-redigering med direkte forhåndsvisning, Master-CV og målrettede versjoner, ATS-sjekk og PDF-eksport med ekte tekst. Alt blir i nettleseren din",
     "analyze": "Analyser en CV i PDF gratis: ATS-poengsum av 100, ting å rette og teksten slik et rekrutteringssystem leser den. Filen forlater aldri nettleseren din",
     "changelog": "Nyheter i LocalATSCV, versjon for versjon: nye CV-maler, funksjoner og rettelser",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Uten registrering · Uten reklame",
       "titleLine1": "CV-en som gir deg intervjuet",
       "titleLine2": "Klar på få minutter",
-      "subtitle": "Fyll inn bakgrunnen din, velg blant 30 maler og last ned en CV som er klar til å sendes. LocalATSCV hjelper deg også med å tilpasse den til hver annonse og sjekker at programmene som sorterer søknader, leser den riktig",
+      "subtitle": "Fyll inn bakgrunnen din, velg blant 52 maler og last ned en CV som er klar til å sendes. LocalATSCV hjelper deg også med å tilpasse den til hver annonse og sjekker at programmene som sorterer søknader, leser den riktig",
       "ctaPrimary": "Lag min CV gratis",
       "ctaSecondary": "Test CV-en jeg har",
       "points": {
-        "templates": "30 maler å velge mellom",
+        "templates": "52 maler å velge mellom",
         "letter": "Søknadsbrev som matcher",
         "private": "Dataene dine blir hos deg"
       }
@@ -170,7 +170,7 @@
       "title": "Alt for en vellykket søknad",
       "items": {
         "templates": {
-          "title": "30 gjennomarbeidede maler",
+          "title": "52 gjennomarbeidede maler",
           "text": "Enkle, moderne eller fargerike, med eller uten bilde. Bytt mal eller farge med ett klikk, teksten din følger med"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "grei"
       },
       "atsHint": "Alle maler skriver ut ekte tekst. Layouter i to kolonner leses godt av de fleste moderne ATS, men noen eldre verktøy blander kolonnene: velg en mal med én kolonne hvis du er i tvil",
+      "preview": {
+        "label": "Innhold i miniatyrene",
+        "sample": "Komplett eksempel",
+        "mine": "Min CV"
+      },
+      "count": "{{n}} maler",
+      "search": "Søk etter mal",
+      "random": "Tilfeldig",
+      "randomHint": "Velg en tilfeldig mal blant de viste",
+      "current": "Nåværende",
+      "noResults": "Ingen mal samsvarer med søket ditt",
+      "previous": "Forrige mal",
+      "next": "Neste mal",
+      "open": "Åpne malgalleriet",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Tråd",
           "description": "En sammenhengende tråd binder sammen toppteksten og hver seksjon, med en prikk per stilling"
+        },
+        "horizon": {
+          "name": "Horisont",
+          "description": "Stor diagonal gradient, hvitt kort som reiser seg over den og rundt bilde på grensen"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Bilde i en skrå polaroidramme, kort festet med farget teip, kremfarget papir"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Mørk konsoll i monospace, markør og piler foran overskriftene, etiketter i kodestil"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Fargestriper fra 70-tallet, sol av buer i hjørnet og avrundet serif"
+        },
+        "mosaic": {
+          "name": "Mosaikk",
+          "description": "Flisebånd i aksentfargens toner, sjakkrutete merker foran overskriftene, kvadratisk bilde"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Stjernehimmel i nattblått, ringplanet og baner foran overskriftene"
+        },
+        "botanical": {
+          "name": "Botanisk",
+          "description": "Kremfarget papir, bladkvister i hjørnene, Cormorant-serif og doble linjer"
+        },
+        "ticket": {
+          "name": "Billett",
+          "description": "Billett med taggete kanter og avrivningsdel for bilde og QR-kode, strekkode"
+        },
+        "comic": {
+          "name": "Tegneserie",
+          "description": "Rasterprikker, overskrifter i snakkebobler, svartkantede ruter, gult og aksentfarge"
+        },
+        "postal": {
+          "name": "Post",
+          "description": "Luftpostkant, bilde som tagget frimerke, poststempel og Lora-serif"
+        },
+        "arcade": {
+          "name": "Arkade",
+          "description": "8-bits videospill: trappebånd, blokkunderstrekinger, målere i ruter, monospace"
+        },
+        "notebook": {
+          "name": "Notatbok",
+          "description": "Linjert side med rød marg, overskrifter markert med tusj, profil på en post-it"
+        },
+        "circuit": {
+          "name": "Kretskort",
+          "description": "Lederbaner i hjørnet, overskrifter på brikker med pinner, detaljer i monospace"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Avisens førsteside: Playfair-hode, doble linjer, datolinje og initial"
+        },
+        "topo": {
+          "name": "Relieff",
+          "description": "Høydekurver fra et kart i hjørnene, jordtoner og høydemarkeringer"
+        },
+        "watercolor": {
+          "name": "Akvarell",
+          "description": "Flekker av fortynnet farge, overskrifter med penselstrøk og Cormorant-serif"
+        },
+        "ledger": {
+          "name": "Protokoll",
+          "description": "Datoer i en venstre kolonne, hårlinjer mellom oppføringene, kapiteler"
+        },
+        "compact": {
+          "name": "Kompakt",
+          "description": "Maksimal tetthet for lange karrierer: mindre tekst, overskrifter på én linje"
+        },
+        "academic": {
+          "name": "Akademisk",
+          "description": "Universitetsformat: sentrert navn i versaler, understrekede overskrifter, serif, ingen farge"
+        },
+        "mono": {
+          "name": "Monokrom",
+          "description": "Svart-hvitt, kontraster i skriftvekt, én enkelt aksentfirkant foran navnet"
+        },
+        "soft": {
+          "name": "Myk",
+          "description": "Avrundede paneler i en lys tone av aksentfargen, ingen harde linjer"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "Tynne linjer og rette vinkler, overskrifter som faner festet til hver seksjons ramme"
         }
-      },
-      "preview": {
-        "label": "Innhold i miniatyrene",
-        "sample": "Komplett eksempel",
-        "mine": "Min CV"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Bytt til en feilfri CV",
-      "text": "Velg en av våre 30 maler, som utvelgelsesprogrammer leser riktig, og tilpass den til hver annonse",
+      "text": "Velg en av våre 52 maler, som utvelgelsesprogrammer leser riktig, og tilpass den til hver annonse",
       "button": "Åpne redigeringen",
       "import": "Overfør denne CV-en til malene våre"
     },

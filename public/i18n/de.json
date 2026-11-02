@@ -31,7 +31,7 @@
     "privacy": "Datenschutzerklärung"
   },
   "seo": {
-    "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 30 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
+    "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 52 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
     "editor": "Lebenslauf-Editor mit Live-Vorschau, Master-CV und gezielten Versionen, ATS-Prüfung und PDF-Export mit echtem Text. Alles bleibt in deinem Browser",
     "analyze": "Analysiere einen PDF-Lebenslauf kostenlos: ATS-Score von 100, Verbesserungspunkte und der Text, wie ihn ein Bewerbermanagementsystem liest. Die Datei verlässt deinen Browser nie",
     "changelog": "Die Neuerungen von LocalATSCV, Version für Version: neue Lebenslauf-Vorlagen, Funktionen und Korrekturen",
@@ -62,11 +62,11 @@
       "badge": "Kostenlos · Ohne Anmeldung · Ohne Werbung",
       "titleLine1": "Der Lebenslauf, der Türen öffnet",
       "titleLine2": "In wenigen Minuten fertig",
-      "subtitle": "Trag deinen Werdegang ein, wähle eine von 30 Vorlagen und lade einen versandfertigen Lebenslauf herunter. LocalATSCV hilft dir außerdem, ihn an jede Stellenanzeige anzupassen, und prüft, ob die Programme, die Bewerbungen sortieren, ihn richtig lesen",
+      "subtitle": "Trag deinen Werdegang ein, wähle eine von 52 Vorlagen und lade einen versandfertigen Lebenslauf herunter. LocalATSCV hilft dir außerdem, ihn an jede Stellenanzeige anzupassen, und prüft, ob die Programme, die Bewerbungen sortieren, ihn richtig lesen",
       "ctaPrimary": "Kostenlos Lebenslauf erstellen",
       "ctaSecondary": "Meinen Lebenslauf testen",
       "points": {
-        "templates": "30 Vorlagen zur Auswahl",
+        "templates": "52 Vorlagen zur Auswahl",
         "letter": "Passendes Anschreiben",
         "private": "Deine Daten bleiben bei dir"
       }
@@ -170,7 +170,7 @@
       "title": "Alles für eine erfolgreiche Bewerbung",
       "items": {
         "templates": {
-          "title": "30 sorgfältig gestaltete Vorlagen",
+          "title": "52 sorgfältig gestaltete Vorlagen",
           "text": "Schlicht, modern oder farbenfroh, mit oder ohne Foto. Wechsle Vorlage oder Farbe mit einem Klick, dein Text zieht mit"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "mittel"
       },
       "atsHint": "Alle Vorlagen drucken echten Text. Zweispaltige Layouts lesen die meisten aktuellen ATS gut, manche ältere Programme vermischen jedoch die Spalten: Im Zweifel ist eine einspaltige Vorlage die bessere Wahl",
+      "preview": {
+        "label": "Inhalt der Vorschaubilder",
+        "sample": "Vollständiges Beispiel",
+        "mine": "Mein Lebenslauf"
+      },
+      "count": "{{n}} Vorlagen",
+      "search": "Vorlage suchen",
+      "random": "Zufällig",
+      "randomHint": "Eine zufällige Vorlage aus den angezeigten wählen",
+      "current": "Aktuell",
+      "noResults": "Keine Vorlage passt zu deiner Suche",
+      "previous": "Vorherige Vorlage",
+      "next": "Nächste Vorlage",
+      "open": "Vorlagengalerie öffnen",
       "names": {
         "classic": {
           "name": "Klassisch",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Faden",
           "description": "Ein durchgehender Faden verbindet Kopf und jeden Abschnitt, mit einem Punkt pro Station"
+        },
+        "horizon": {
+          "name": "Horizont",
+          "description": "Großer diagonaler Verlauf, weiße Karte, die darüber hinausragt, und rundes Foto auf der Grenze"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto im schräg gestellten Sofortbildrahmen, Karten mit farbigem Klebeband, cremefarbenes Papier"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Dunkle Konsole in Monospace, Cursor und Pfeile vor den Überschriften, Code-Etiketten"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Farbstreifen der 70er, Sonne aus Bögen in der Ecke und gerundete Serifenschrift"
+        },
+        "mosaic": {
+          "name": "Mosaik",
+          "description": "Kachelband in den Tönen deiner Akzentfarbe, Schachbrettmarken vor den Überschriften, quadratisches Foto"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Sternenhimmel in Nachtblau, Ringplanet und Umlaufbahnen vor den Überschriften"
+        },
+        "botanical": {
+          "name": "Botanisch",
+          "description": "Cremefarbenes Papier, Blätterzweige in den Ecken, Cormorant-Serifenschrift und Doppellinien"
+        },
+        "ticket": {
+          "name": "Ticket",
+          "description": "Eintrittskarte mit gezackten Rändern und Abriss für Foto und QR-Code, Barcode-Detail"
+        },
+        "comic": {
+          "name": "Comic",
+          "description": "Rasterpunkte, Überschriften in Sprechblasen, schwarz umrandete Panels, Gelb und Akzentfarbe"
+        },
+        "postal": {
+          "name": "Postalisch",
+          "description": "Luftpostrand, Foto als gezähnte Briefmarke, Poststempel und Lora-Serifenschrift"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8-Bit-Videospiel: Treppenband, Blockunterstreichungen, Kästchenanzeigen, Monospace"
+        },
+        "notebook": {
+          "name": "Heft",
+          "description": "Linierte Heftseite mit rotem Rand, mit Marker hervorgehobene Überschriften, Profil auf einem Haftzettel"
+        },
+        "circuit": {
+          "name": "Platine",
+          "description": "Leiterbahnen in der Ecke, Überschriften auf Chips mit Pins, Details in Monospace"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Titelseite einer Zeitung: Playfair-Kopf, Doppellinien, Datumszeile und Initiale"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Höhenlinien einer Karte in den Ecken, Erdtöne und Höhenmarken"
+        },
+        "watercolor": {
+          "name": "Aquarell",
+          "description": "Verdünnte Farbflecken, Überschriften mit Pinselstrich und Cormorant-Serifenschrift"
+        },
+        "ledger": {
+          "name": "Register",
+          "description": "Daten in einer linken Spalte, Haarlinien zwischen den Einträgen, Kapitälchen"
+        },
+        "compact": {
+          "name": "Kompakt",
+          "description": "Maximale Dichte für lange Laufbahnen: kleinere Schrift, einzeilige Eintragsköpfe"
+        },
+        "academic": {
+          "name": "Akademisch",
+          "description": "Universitäres Format: zentrierter Name in Großbuchstaben, unterstrichene Überschriften, Serifen, keine Farbe"
+        },
+        "mono": {
+          "name": "Monochrom",
+          "description": "Schwarz-weiß, Kontraste der Schriftstärke, ein einziges Akzentquadrat vor dem Namen"
+        },
+        "soft": {
+          "name": "Sanft",
+          "description": "Abgerundete Flächen in einem hellen Ton deiner Akzentfarbe, keine harte Linie"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "Feine Linien und rechte Winkel, Überschriften als Reiter am Rahmen jedes Abschnitts"
         }
-      },
-      "preview": {
-        "label": "Inhalt der Vorschaubilder",
-        "sample": "Vollständiges Beispiel",
-        "mine": "Mein Lebenslauf"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Wechsle zu einem fehlerfreien Lebenslauf",
-      "text": "Wähle eine unserer 30 Vorlagen, die Bewerbungssoftware zuverlässig liest, und passe sie an jede Stelle an",
+      "text": "Wähle eine unserer 52 Vorlagen, die Bewerbungssoftware zuverlässig liest, und passe sie an jede Stelle an",
       "button": "Editor öffnen",
       "import": "Diesen Lebenslauf in unsere Vorlagen übernehmen"
     },

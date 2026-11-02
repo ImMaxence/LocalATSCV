@@ -58,22 +58,51 @@
                 <app-icon class="size-4" name="redo" />
               </button>
             </div>
-            <button
-              type="button"
-              class="flex h-9 shrink-0 items-center gap-2 rounded-full border border-line bg-surface px-3 text-sm font-medium transition-colors hover:border-ink/25"
-              [attr.aria-busy]="openingTemplates()"
-              (click)="openTemplates()"
+            <!-- Choix du modèle : flèches pour passer au précédent / suivant, bouton central pour la galerie -->
+            <div
+              class="flex h-9 shrink-0 items-stretch overflow-hidden rounded-full border border-line bg-surface text-sm font-medium transition-colors hover:border-ink/25"
+              role="group"
+              [attr.aria-label]="t('templates.title')"
             >
-              @if (openingTemplates()) {
-                <app-icon class="size-4 animate-spin text-accent" name="loader" />
-              } @else {
-                <app-icon class="size-4 text-accent" name="layout" />
-              }
-              <span class="hidden sm:inline">{{
-                t('templates.names.' + cv.template + '.name')
-              }}</span>
-              <span class="sm:hidden">{{ t('templates.button') }}</span>
-            </button>
+              <button
+                type="button"
+                class="grid w-8 place-items-center text-muted transition-colors hover:bg-surface-2 hover:text-ink"
+                [attr.aria-label]="t('templates.previous')"
+                [title]="t('templates.previous')"
+                (click)="shiftTemplate(-1)"
+              >
+                <app-icon class="size-4 rtl:-scale-x-100" name="chevronLeft" />
+              </button>
+              <button
+                type="button"
+                class="flex items-center gap-2 border-x border-line px-3 transition-colors hover:bg-surface-2"
+                [attr.aria-busy]="openingTemplates()"
+                [title]="t('templates.open')"
+                (click)="openTemplates()"
+              >
+                @if (openingTemplates()) {
+                  <app-icon class="size-4 animate-spin text-accent" name="loader" />
+                } @else {
+                  <app-icon class="size-4 text-accent" name="layout" />
+                }
+                <span class="hidden sm:inline">{{
+                  t('templates.names.' + cv.template + '.name')
+                }}</span>
+                <span class="sm:hidden">{{ t('templates.button') }}</span>
+                <span class="hidden text-xs tabular-nums text-muted md:inline"
+                  >{{ templatePosition() }}/{{ templateCount }}</span
+                >
+              </button>
+              <button
+                type="button"
+                class="grid w-8 place-items-center text-muted transition-colors hover:bg-surface-2 hover:text-ink"
+                [attr.aria-label]="t('templates.next')"
+                [title]="t('templates.next')"
+                (click)="shiftTemplate(1)"
+              >
+                <app-icon class="size-4 rtl:-scale-x-100" name="chevronRight" />
+              </button>
+            </div>
             <button
               type="button"
               class="flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-sm font-medium transition-colors hover:border-ink/25"

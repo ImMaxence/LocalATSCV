@@ -31,7 +31,7 @@
     "privacy": "Kebijakan privasi"
   },
   "seo": {
-    "home": "Buat gratis CV yang membawa Anda ke wawancara: 30 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
+    "home": "Buat gratis CV yang membawa Anda ke wawancara: 52 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
     "editor": "Editor CV dengan pratinjau langsung, CV Master dan versi tertarget, pemeriksaan ATS, serta ekspor PDF dengan teks asli. Semuanya tetap di browser Anda",
     "analyze": "Analisis CV PDF secara gratis: skor ATS dari 100, hal yang perlu diperbaiki, dan teks seperti yang dibaca sistem rekrutmen. File tidak pernah keluar dari browser Anda",
     "changelog": "Yang baru di LocalATSCV, versi demi versi: template CV baru, fitur, dan perbaikan",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Tanpa daftar · Tanpa iklan",
       "titleLine1": "CV yang membawa Anda ke wawancara",
       "titleLine2": "Siap dalam hitungan menit",
-      "subtitle": "Isi riwayat Anda, pilih salah satu dari 30 template, lalu unduh CV yang siap dikirim. LocalATSCV juga membantu Anda menyesuaikannya untuk setiap lowongan dan memeriksa apakah software penyaring lamaran membacanya dengan benar",
+      "subtitle": "Isi riwayat Anda, pilih salah satu dari 52 template, lalu unduh CV yang siap dikirim. LocalATSCV juga membantu Anda menyesuaikannya untuk setiap lowongan dan memeriksa apakah software penyaring lamaran membacanya dengan benar",
       "ctaPrimary": "Buat CV saya gratis",
       "ctaSecondary": "Uji CV saya sekarang",
       "points": {
-        "templates": "30 template pilihan",
+        "templates": "52 template pilihan",
         "letter": "Surat lamaran yang serasi",
         "private": "Data Anda tetap di tangan Anda"
       }
@@ -170,7 +170,7 @@
       "title": "Semua yang Anda butuhkan untuk lamaran yang sukses",
       "items": {
         "templates": {
-          "title": "30 template yang rapi",
+          "title": "52 template yang rapi",
           "text": "Sederhana, modern, atau berwarna, dengan atau tanpa foto. Ganti template atau warna dengan satu klik, teks Anda ikut menyesuaikan"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "cukup"
       },
       "atsHint": "Setiap template mencetak teks asli. Tata letak dua kolom dibaca dengan baik oleh sebagian besar ATS modern, tetapi beberapa alat lama mencampur kolom: jika ragu, pilih template satu kolom",
+      "preview": {
+        "label": "Isi gambar mini",
+        "sample": "Contoh lengkap",
+        "mine": "CV saya"
+      },
+      "count": "{{n}} templat",
+      "search": "Cari templat",
+      "random": "Acak",
+      "randomHint": "Pilih templat secara acak dari yang ditampilkan",
+      "current": "Saat ini",
+      "noResults": "Tidak ada templat yang cocok dengan pencarian Anda",
+      "previous": "Templat sebelumnya",
+      "next": "Templat berikutnya",
+      "open": "Buka galeri templat",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Benang",
           "description": "Benang tak terputus menghubungkan kepala halaman dan setiap bagian, dengan titik untuk setiap jabatan"
+        },
+        "horizon": {
+          "name": "Horizon",
+          "description": "Gradasi diagonal besar, kartu putih yang naik di atasnya dan foto bulat di perbatasan"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Foto dalam bingkai foto instan yang miring, kartu ditempel selotip berwarna, kertas krem"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Konsol gelap dengan font monospace, kursor dan panah di depan judul, label bergaya kode"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Garis-garis warna tahun 70-an, matahari dari lengkungan di sudut, dan serif membulat"
+        },
+        "mosaic": {
+          "name": "Mosaik",
+          "description": "Pita ubin dalam nuansa warna aksen, tanda kotak-kotak di depan judul, foto persegi"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Langit berbintang biru malam, planet bercincin, dan orbit di depan judul"
+        },
+        "botanical": {
+          "name": "Botani",
+          "description": "Kertas krem, ranting daun di sudut, serif Cormorant dan garis ganda"
+        },
+        "ticket": {
+          "name": "Tiket",
+          "description": "Tiket bertepi bergerigi dengan sobekan untuk foto dan kode QR, detail barcode"
+        },
+        "comic": {
+          "name": "Komik",
+          "description": "Titik halftone, judul dalam balon kata, panel berbingkai hitam, kuning dan warna aksen"
+        },
+        "postal": {
+          "name": "Pos",
+          "description": "Bingkai pos udara, foto sebagai perangko bergerigi, cap pos dan serif Lora"
+        },
+        "arcade": {
+          "name": "Arkade",
+          "description": "Video game 8-bit: pita bertangga, garis bawah blok, meteran berkotak, monospace"
+        },
+        "notebook": {
+          "name": "Buku catatan",
+          "description": "Halaman buku bergaris dengan margin merah, judul disorot stabilo, ringkasan di catatan tempel"
+        },
+        "circuit": {
+          "name": "Sirkuit",
+          "description": "Jalur sirkuit cetak di sudut, judul di atas cip berkaki, detail monospace"
+        },
+        "gazette": {
+          "name": "Gazet",
+          "description": "Halaman depan koran: kepala Playfair, garis ganda, baris tanggal, dan huruf awal besar"
+        },
+        "topo": {
+          "name": "Topografi",
+          "description": "Garis kontur peta di sudut, nuansa tanah dan penanda ketinggian"
+        },
+        "watercolor": {
+          "name": "Cat air",
+          "description": "Noda warna encer, judul dengan sapuan kuas, dan serif Cormorant"
+        },
+        "ledger": {
+          "name": "Buku besar",
+          "description": "Tanggal di kolom kiri, garis tipis di antara entri, kapital kecil"
+        },
+        "compact": {
+          "name": "Ringkas",
+          "description": "Kepadatan maksimal untuk karier panjang: teks lebih kecil, kepala entri satu baris"
+        },
+        "academic": {
+          "name": "Akademik",
+          "description": "Format universitas: nama di tengah dengan huruf kapital, judul bergaris bawah, serif, tanpa warna"
+        },
+        "mono": {
+          "name": "Monokrom",
+          "description": "Hitam putih, kontras ketebalan, satu kotak aksen di depan nama"
+        },
+        "soft": {
+          "name": "Lembut",
+          "description": "Panel membulat dalam nuansa terang warna aksen, tanpa garis keras"
+        },
+        "outline": {
+          "name": "Garis luar",
+          "description": "Garis tipis dan sudut siku, judul berupa tab yang menempel pada bingkai tiap bagian"
         }
-      },
-      "preview": {
-        "label": "Isi gambar mini",
-        "sample": "Contoh lengkap",
-        "mine": "CV saya"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Beralih ke CV tanpa cela",
-      "text": "Pilih salah satu dari 30 template kami yang terbaca dengan benar oleh software penyaring, lalu sesuaikan untuk setiap lowongan",
+      "text": "Pilih salah satu dari 52 template kami yang terbaca dengan benar oleh software penyaring, lalu sesuaikan untuk setiap lowongan",
       "button": "Buka editor",
       "import": "Bawa CV ini ke template kami"
     },

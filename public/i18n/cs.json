@@ -31,7 +31,7 @@
     "privacy": "Zásady ochrany soukromí"
   },
   "seo": {
-    "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 30 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
+    "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 52 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
     "editor": "Editor životopisu s živým náhledem, Master životopisem a cílenými verzemi, kontrolou ATS a exportem do PDF se skutečným textem. Vše zůstává ve vašem prohlížeči",
     "analyze": "Zdarma analyzujte životopis v PDF: skóre ATS ze 100, body k opravě a text tak, jak ho čte náborový systém. Soubor nikdy neopustí váš prohlížeč",
     "changelog": "Novinky v LocalATSCV verzi po verzi: nové šablony životopisů, funkce a opravy",
@@ -62,11 +62,11 @@
       "badge": "Zdarma · Bez registrace · Bez reklam",
       "titleLine1": "Životopis, který vám otevře dveře",
       "titleLine2": "Hotovo za pár minut",
-      "subtitle": "Vyplňte svou praxi, vyberte si z 30 šablon a stáhněte si životopis připravený k odeslání. LocalATSCV vám také pomůže ho přizpůsobit každému inzerátu a ověří, že ho programy, které třídí přihlášky, přečtou správně",
+      "subtitle": "Vyplňte svou praxi, vyberte si z 52 šablon a stáhněte si životopis připravený k odeslání. LocalATSCV vám také pomůže ho přizpůsobit každému inzerátu a ověří, že ho programy, které třídí přihlášky, přečtou správně",
       "ctaPrimary": "Vytvořit životopis zdarma",
       "ctaSecondary": "Otestovat můj současný životopis",
       "points": {
-        "templates": "30 šablon na výběr",
+        "templates": "52 šablon na výběr",
         "letter": "Sladěný motivační dopis",
         "private": "Vaše data zůstávají u vás"
       }
@@ -170,7 +170,7 @@
       "title": "Vše pro úspěšnou přihlášku",
       "items": {
         "templates": {
-          "title": "30 propracovaných šablon",
+          "title": "52 propracovaných šablon",
           "text": "Střídmé, moderní nebo barevné, s fotkou i bez. Změňte šablonu nebo barvu jedním kliknutím, váš text se přizpůsobí"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "přijatelná"
       },
       "atsHint": "Každá šablona tiskne skutečný text. Dvousloupcová rozvržení čte většina moderních ATS dobře, ale některé starší nástroje sloupce pomíchají: v případě pochybností zvolte jednosloupcovou šablonu",
+      "preview": {
+        "label": "Obsah miniatur",
+        "sample": "Úplná ukázka",
+        "mine": "Můj životopis"
+      },
+      "count": "{{n}} šablon",
+      "search": "Hledat šablonu",
+      "random": "Náhodně",
+      "randomHint": "Vybrat náhodnou šablonu ze zobrazených",
+      "current": "Aktuální",
+      "noResults": "Žádná šablona neodpovídá vašemu hledání",
+      "previous": "Předchozí šablona",
+      "next": "Další šablona",
+      "open": "Otevřít galerii šablon",
       "names": {
         "classic": {
           "name": "Klasická",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Nit",
           "description": "Souvislá nit spojuje hlavičku a každou sekci, s tečkou u každé pozice"
+        },
+        "horizon": {
+          "name": "Horizont",
+          "description": "Velký diagonální přechod, bílá karta, která nad něj vystupuje, a kulatá fotka na rozhraní"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotka v nakloněném rámečku instantní fotografie, karty přilepené barevnou páskou, krémový papír"
+        },
+        "terminal": {
+          "name": "Terminál",
+          "description": "Tmavá konzole v neproporcionálním písmu, kurzor a šipky před nadpisy, štítky ve stylu kódu"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Barevné pruhy ze 70. let, slunce z oblouků v rohu a zaoblené patkové písmo"
+        },
+        "mosaic": {
+          "name": "Mozaika",
+          "description": "Pás dlaždic v odstínech barvy zvýraznění, šachovnice před nadpisy, čtvercová fotka"
+        },
+        "cosmos": {
+          "name": "Kosmos",
+          "description": "Noční modrá hvězdná obloha, planeta s prstencem a oběžné dráhy před nadpisy"
+        },
+        "botanical": {
+          "name": "Botanický",
+          "description": "Krémový papír, větvičky s listy v rozích, patkové písmo Cormorant a dvojité linky"
+        },
+        "ticket": {
+          "name": "Vstupenka",
+          "description": "Vstupenka s vroubkovanými okraji a odtrhávacím útržkem pro fotku a QR kód, čárový kód"
+        },
+        "comic": {
+          "name": "Komiks",
+          "description": "Rastrové body, nadpisy v bublinách, políčka s černým rámečkem, žlutá a barva zvýraznění"
+        },
+        "postal": {
+          "name": "Poštovní",
+          "description": "Lem letecké pošty, fotka jako zoubkovaná známka, poštovní razítko a patkové písmo Lora"
+        },
+        "arcade": {
+          "name": "Arkáda",
+          "description": "8bitová videohra: schodovitý pás, blokové podtržení, měřidla v políčkách, neproporcionální písmo"
+        },
+        "notebook": {
+          "name": "Sešit",
+          "description": "Linkovaná stránka sešitu s červeným okrajem, nadpisy zvýrazněné fixem, profil na lepicím lístku"
+        },
+        "circuit": {
+          "name": "Obvod",
+          "description": "Cesty plošného spoje v rohu, nadpisy na čipech s vývody, detaily v neproporcionálním písmu"
+        },
+        "gazette": {
+          "name": "Noviny",
+          "description": "Titulní strana novin: hlavička Playfair, dvojité linky, řádek s datem a iniciála"
+        },
+        "topo": {
+          "name": "Reliéf",
+          "description": "Vrstevnice mapy v rozích, zemité odstíny a výškové značky"
+        },
+        "watercolor": {
+          "name": "Akvarel",
+          "description": "Skvrny zředěné barvy, nadpisy tahem štětce a patkové písmo Cormorant"
+        },
+        "ledger": {
+          "name": "Rejstřík",
+          "description": "Data v levém sloupci, vlasové linky mezi položkami, kapitálky"
+        },
+        "compact": {
+          "name": "Kompaktní",
+          "description": "Maximální hustota pro dlouhé kariéry: menší text, jednořádkové hlavičky položek"
+        },
+        "academic": {
+          "name": "Akademický",
+          "description": "Univerzitní formát: jméno na střed velkými písmeny, podtržené nadpisy, patkové písmo, bez barvy"
+        },
+        "mono": {
+          "name": "Monochromatický",
+          "description": "Černobílý, kontrasty tloušťky písma, jediný čtverec zvýraznění před jménem"
+        },
+        "soft": {
+          "name": "Jemný",
+          "description": "Zaoblené panely ve světlém odstínu barvy zvýraznění, žádná tvrdá linka"
+        },
+        "outline": {
+          "name": "Obrys",
+          "description": "Tenké linky a pravé úhly, nadpisy jako záložky přiléhající k rámečku každé sekce"
         }
-      },
-      "preview": {
-        "label": "Obsah miniatur",
-        "sample": "Úplná ukázka",
-        "mine": "Můj životopis"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Přejděte na bezchybný životopis",
-      "text": "Vyberte si jednu z našich 30 šablon, které náborové programy čtou správně, a přizpůsobte ji každé nabídce",
+      "text": "Vyberte si jednu z našich 52 šablon, které náborové programy čtou správně, a přizpůsobte ji každé nabídce",
       "button": "Otevřít editor",
       "import": "Převést tento životopis do našich šablon"
     },

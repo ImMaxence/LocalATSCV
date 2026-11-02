@@ -31,7 +31,7 @@
     "privacy": "Adatvédelmi irányelvek"
   },
   "seo": {
-    "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 30 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
+    "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 52 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
     "editor": "Önéletrajz-szerkesztő élő előnézettel, Master önéletrajzzal és célzott változatokkal, ATS-ellenőrzéssel és valódi szöveges PDF-exporttal. Minden a böngészőjében marad",
     "analyze": "Elemezzen ingyen egy PDF önéletrajzot: ATS-pontszám 100-ból, javítandó pontok és a szöveg úgy, ahogy egy toborzórendszer olvassa. A fájl sosem hagyja el a böngészőjét",
     "changelog": "A LocalATSCV újdonságai verzióról verzióra: új önéletrajzsablonok, funkciók és javítások",
@@ -62,11 +62,11 @@
       "badge": "Ingyenes · Regisztráció nélkül · Reklám nélkül",
       "titleLine1": "Az önéletrajz, amellyel behívják interjúra",
       "titleLine2": "Néhány perc alatt kész",
-      "subtitle": "Töltse ki a pályafutását, válasszon 30 sablon közül, és töltsön le egy küldésre kész önéletrajzot. A LocalATSCV abban is segít, hogy minden hirdetéshez igazítsa, és ellenőrzi, hogy a jelentkezéseket szűrő programok helyesen olvassák-e",
+      "subtitle": "Töltse ki a pályafutását, válasszon 52 sablon közül, és töltsön le egy küldésre kész önéletrajzot. A LocalATSCV abban is segít, hogy minden hirdetéshez igazítsa, és ellenőrzi, hogy a jelentkezéseket szűrő programok helyesen olvassák-e",
       "ctaPrimary": "Önéletrajz készítése ingyen",
       "ctaSecondary": "Jelenlegi önéletrajzom tesztelése",
       "points": {
-        "templates": "30 sablon közül választhat",
+        "templates": "52 sablon közül választhat",
         "letter": "Hozzáillő motivációs levél",
         "private": "Adatai Önnél maradnak"
       }
@@ -170,7 +170,7 @@
       "title": "Minden a sikeres jelentkezéshez",
       "items": {
         "templates": {
-          "title": "30 igényes sablon",
+          "title": "52 igényes sablon",
           "text": "Visszafogott, modern vagy színes, fotóval vagy anélkül. Egy kattintással válthat sablont vagy színt, a szöveg követi"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "elfogadható"
       },
       "atsHint": "Minden sablon valódi szöveget nyomtat. A kéthasábos elrendezéseket a legtöbb modern ATS jól olvassa, de egyes régebbi eszközök összekeverik a hasábokat: ha bizonytalan, válasszon egyhasábos sablont",
+      "preview": {
+        "label": "A bélyegképek tartalma",
+        "sample": "Teljes példa",
+        "mine": "Az önéletrajzom"
+      },
+      "count": "{{n}} sablon",
+      "search": "Sablon keresése",
+      "random": "Véletlenszerű",
+      "randomHint": "Véletlenszerű sablon választása a megjelenítettek közül",
+      "current": "Jelenlegi",
+      "noResults": "Egyetlen sablon sem felel meg a keresésnek",
+      "previous": "Előző sablon",
+      "next": "Következő sablon",
+      "open": "Sablongaléria megnyitása",
       "names": {
         "classic": {
           "name": "Klasszikus",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Fonal",
           "description": "Folytonos fonal köti össze a fejlécet és minden szakaszt, minden munkakörnél egy ponttal"
+        },
+        "horizon": {
+          "name": "Horizont",
+          "description": "Nagy átlós színátmenet, fölé emelkedő fehér kártya és a határon ülő kerek fotó"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotó megdöntött instant fényképkeretben, színes ragasztószalaggal rögzített kártyák, krémszínű papír"
+        },
+        "terminal": {
+          "name": "Terminál",
+          "description": "Sötét konzol rögzített szélességű betűkkel, kurzor és nyilak a címek előtt, kódstílusú címkék"
+        },
+        "retro": {
+          "name": "Retró",
+          "description": "70-es évekbeli színcsíkok, ívekből álló nap a sarokban és lekerekített talpas betű"
+        },
+        "mosaic": {
+          "name": "Mozaik",
+          "description": "Csempesáv a kiemelőszín árnyalataiban, sakktáblajelek a címek előtt, négyzetes fotó"
+        },
+        "cosmos": {
+          "name": "Kozmosz",
+          "description": "Éjkék csillagos ég, gyűrűs bolygó és pályák a címek előtt"
+        },
+        "botanical": {
+          "name": "Botanikus",
+          "description": "Krémszínű papír, leveles ágak a sarkokban, Cormorant talpas betű és dupla vonalak"
+        },
+        "ticket": {
+          "name": "Jegy",
+          "description": "Csipkézett szélű jegy letéphető szelvénnyel a fotónak és a QR-kódnak, vonalkód"
+        },
+        "comic": {
+          "name": "Képregény",
+          "description": "Raszterpontok, címek szövegbuborékokban, fekete keretes panelek, sárga és kiemelőszín"
+        },
+        "postal": {
+          "name": "Postai",
+          "description": "Légiposta-szegély, fotó fogazott bélyegként, postabélyegző és Lora talpas betű"
+        },
+        "arcade": {
+          "name": "Arcade",
+          "description": "8 bites videójáték: lépcsős sáv, tömbös aláhúzások, rácsos mérők, rögzített szélesség"
+        },
+        "notebook": {
+          "name": "Füzet",
+          "description": "Vonalas füzetlap piros margóval, filccel kiemelt címek, profil egy cetlin"
+        },
+        "circuit": {
+          "name": "Áramkör",
+          "description": "Nyomtatott áramköri vezetősávok a sarokban, címek lábas chipeken, részletek rögzített szélességgel"
+        },
+        "gazette": {
+          "name": "Gazette",
+          "description": "Újság címlapja: Playfair fejléc, dupla vonalak, dátumsor és iniciálé"
+        },
+        "topo": {
+          "name": "Domborzat",
+          "description": "Térképi szintvonalak a sarkokban, földszínek és magassági jelek"
+        },
+        "watercolor": {
+          "name": "Akvarell",
+          "description": "Hígított színfoltok, ecsetvonásos címek és Cormorant talpas betű"
+        },
+        "ledger": {
+          "name": "Főkönyv",
+          "description": "Dátumok a bal oldali oszlopban, hajszálvonalak a tételek között, kiskapitális"
+        },
+        "compact": {
+          "name": "Kompakt",
+          "description": "Maximális sűrűség hosszú pályafutásokhoz: kisebb szöveg, egysoros tételfejlécek"
+        },
+        "academic": {
+          "name": "Akadémiai",
+          "description": "Egyetemi formátum: középre zárt név nagybetűkkel, aláhúzott címek, talpas betű, szín nélkül"
+        },
+        "mono": {
+          "name": "Monokróm",
+          "description": "Fekete-fehér, betűvastagsági kontrasztok, egyetlen kiemelőnégyzet a név előtt"
+        },
+        "soft": {
+          "name": "Lágy",
+          "description": "Lekerekített panelek a kiemelőszín világos árnyalatában, egyetlen kemény vonal nélkül"
+        },
+        "outline": {
+          "name": "Kontúr",
+          "description": "Vékony vonalak és derékszögek, címek fülként minden szakasz keretéhez illesztve"
         }
-      },
-      "preview": {
-        "label": "A bélyegképek tartalma",
-        "sample": "Teljes példa",
-        "mine": "Az önéletrajzom"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Váltson hibátlan önéletrajzra",
-      "text": "Válasszon egyet 30 sablonunk közül, amelyeket a szűrőprogramok helyesen olvasnak, és igazítsa minden hirdetéshez",
+      "text": "Válasszon egyet 52 sablonunk közül, amelyeket a szűrőprogramok helyesen olvasnak, és igazítsa minden hirdetéshez",
       "button": "A szerkesztő megnyitása",
       "import": "Az önéletrajz áthozása a sablonjainkba"
     },

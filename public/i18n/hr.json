@@ -31,7 +31,7 @@
     "privacy": "Pravila privatnosti"
   },
   "seo": {
-    "home": "Izradite besplatno životopis koji vas vodi do razgovora: 30 predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS provjera. Bez registracije, vaši podaci ostaju na vašem uređaju",
+    "home": "Izradite besplatno životopis koji vas vodi do razgovora: 52 predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS provjera. Bez registracije, vaši podaci ostaju na vašem uređaju",
     "editor": "Uređivač životopisa s pregledom uživo, Master životopisom i ciljanim verzijama, ATS provjerom i izvozom u PDF sa stvarnim tekstom. Sve ostaje u vašem pregledniku",
     "analyze": "Besplatno analizirajte životopis u PDF-u: ATS ocjena od 100, stavke za ispravak i tekst onako kako ga čita sustav za zapošljavanje. Datoteka nikad ne napušta vaš preglednik",
     "changelog": "Novosti u LocalATSCV-u, verziju po verziju: novi predlošci životopisa, značajke i ispravci",
@@ -62,11 +62,11 @@
       "badge": "Besplatno · Bez registracije · Bez oglasa",
       "titleLine1": "Životopis koji vas vodi do razgovora",
       "titleLine2": "Gotovo za nekoliko minuta",
-      "subtitle": "Ispunite svoje iskustvo, odaberite jedan od 30 predložaka i preuzmite životopis spreman za slanje. LocalATSCV vam pomaže i da ga prilagodite svakom oglasu te provjerava čitaju li ga programi koji razvrstavaju prijave ispravno",
+      "subtitle": "Ispunite svoje iskustvo, odaberite jedan od 52 predložaka i preuzmite životopis spreman za slanje. LocalATSCV vam pomaže i da ga prilagodite svakom oglasu te provjerava čitaju li ga programi koji razvrstavaju prijave ispravno",
       "ctaPrimary": "Izradi životopis besplatno",
       "ctaSecondary": "Testiraj moj trenutačni životopis",
       "points": {
-        "templates": "30 predložaka na izbor",
+        "templates": "52 predložaka na izbor",
         "letter": "Usklađeno motivacijsko pismo",
         "private": "Vaši podaci ostaju kod vas"
       }
@@ -170,7 +170,7 @@
       "title": "Sve za uspješnu prijavu",
       "items": {
         "templates": {
-          "title": "30 dotjeranih predložaka",
+          "title": "52 dotjeranih predložaka",
           "text": "Jednostavni, moderni ili šareni, sa slikom ili bez nje. Promijenite predložak ili boju jednim klikom, vaš tekst prati"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "prihvatljiva"
       },
       "atsHint": "Svaki predložak ispisuje stvaran tekst. Rasporede s dva stupca većina modernih ATS-ova dobro čita, ali neki stariji alati miješaju stupce: ako niste sigurni, odaberite predložak s jednim stupcem",
+      "preview": {
+        "label": "Sadržaj minijatura",
+        "sample": "Potpuni primjer",
+        "mine": "Moj životopis"
+      },
+      "count": "{{n}} predložaka",
+      "search": "Traži predložak",
+      "random": "Nasumično",
+      "randomHint": "Odaberi nasumičan predložak među prikazanima",
+      "current": "Trenutni",
+      "noResults": "Nijedan predložak ne odgovara vašoj pretrazi",
+      "previous": "Prethodni predložak",
+      "next": "Sljedeći predložak",
+      "open": "Otvori galeriju predložaka",
       "names": {
         "classic": {
           "name": "Klasični",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Nit",
           "description": "Neprekinuta nit povezuje zaglavlje i svaki odjeljak, s točkom za svako radno mjesto"
+        },
+        "horizon": {
+          "name": "Horizont",
+          "description": "Veliki dijagonalni gradijent, bijela kartica koja se uzdiže iznad njega i okrugla fotografija na granici"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotografija u nakošenom okviru instant fotografije, kartice pričvršćene trakom u boji, krem papir"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Tamna konzola u fontu fiksne širine, kursor i strelice ispred naslova, oznake u stilu koda"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Pruge u bojama 70-ih, sunce od lukova u kutu i zaobljeni serifni font"
+        },
+        "mosaic": {
+          "name": "Mozaik",
+          "description": "Traka pločica u nijansama naglasne boje, šahovnice ispred naslova, kvadratna fotografija"
+        },
+        "cosmos": {
+          "name": "Kozmos",
+          "description": "Noćno plavo zvjezdano nebo, planet s prstenom i orbite ispred naslova"
+        },
+        "botanical": {
+          "name": "Botanički",
+          "description": "Krem papir, grančice s lišćem u kutovima, serifni font Cormorant i dvostruke linije"
+        },
+        "ticket": {
+          "name": "Ulaznica",
+          "description": "Ulaznica nazubljenih rubova s odvojivim kuponom za fotografiju i QR kod, crtični kod"
+        },
+        "comic": {
+          "name": "Strip",
+          "description": "Rasterske točke, naslovi u oblačićima, kadrovi s crnim obrubom, žuta i naglasna boja"
+        },
+        "postal": {
+          "name": "Poštanski",
+          "description": "Obrub zračne pošte, fotografija kao nazubljena marka, poštanski žig i serifni font Lora"
+        },
+        "arcade": {
+          "name": "Arkada",
+          "description": "8-bitna videoigra: stepenasta traka, blokovska podcrtavanja, mjerači u poljima, fiksna širina"
+        },
+        "notebook": {
+          "name": "Bilježnica",
+          "description": "Stranica bilježnice na crte s crvenom marginom, naslovi istaknuti markerom, profil na ljepljivoj bilješci"
+        },
+        "circuit": {
+          "name": "Sklop",
+          "description": "Vodovi tiskane pločice u kutu, naslovi na čipovima s nožicama, detalji u fiksnoj širini"
+        },
+        "gazette": {
+          "name": "Novine",
+          "description": "Naslovnica novina: zaglavlje Playfair, dvostruke linije, redak s datumom i inicijal"
+        },
+        "topo": {
+          "name": "Reljef",
+          "description": "Izohipse karte u kutovima, zemljani tonovi i oznake visine"
+        },
+        "watercolor": {
+          "name": "Akvarel",
+          "description": "Mrlje razrijeđene boje, naslovi potezom kista i serifni font Cormorant"
+        },
+        "ledger": {
+          "name": "Registar",
+          "description": "Datumi u lijevom stupcu, tanke linije između unosa, kapitalke"
+        },
+        "compact": {
+          "name": "Kompaktni",
+          "description": "Najveća gustoća za duge karijere: manji tekst, jednoredna zaglavlja unosa"
+        },
+        "academic": {
+          "name": "Akademski",
+          "description": "Sveučilišni format: centrirano ime velikim slovima, podcrtani naslovi, serif, bez boje"
+        },
+        "mono": {
+          "name": "Monokromni",
+          "description": "Crno-bijelo, kontrasti debljine, jedan jedini naglasni kvadrat ispred imena"
+        },
+        "soft": {
+          "name": "Nježni",
+          "description": "Zaobljene ploče u svijetloj nijansi naglasne boje, nijedna oštra linija"
+        },
+        "outline": {
+          "name": "Obris",
+          "description": "Tanke linije i pravi kutovi, naslovi kao jezičci uz okvir svakog odjeljka"
         }
-      },
-      "preview": {
-        "label": "Sadržaj minijatura",
-        "sample": "Potpuni primjer",
-        "mine": "Moj životopis"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Prijeđite na besprijekoran životopis",
-      "text": "Odaberite jedan od naših 30 predložaka, koje programi za odabir ispravno čitaju, i prilagodite ga svakom oglasu",
+      "text": "Odaberite jedan od naših 52 predložaka, koje programi za odabir ispravno čitaju, i prilagodite ga svakom oglasu",
       "button": "Otvori uređivač",
       "import": "Prenesi ovaj životopis u naše predloške"
     },

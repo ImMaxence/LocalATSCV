@@ -31,7 +31,7 @@
     "privacy": "Gizlilik politikası"
   },
   "seo": {
-    "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 30 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
+    "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 52 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
     "editor": "Canlı önizlemeli CV düzenleyici, Master CV ve hedefli sürümler, ATS kontrolü ve gerçek metinli PDF dışa aktarma. Her şey tarayıcınızda kalır",
     "analyze": "PDF CV'nizi ücretsiz analiz edin: 100 üzerinden ATS puanı, düzeltilecek noktalar ve bir işe alım sisteminin okuduğu hâliyle metin. Dosya tarayıcınızdan asla çıkmaz",
     "changelog": "LocalATSCV'deki yenilikler, sürüm sürüm: yeni CV şablonları, özellikler ve düzeltmeler",
@@ -62,11 +62,11 @@
       "badge": "Ücretsiz · Kayıt yok · Reklam yok",
       "titleLine1": "Sizi mülakata taşıyan CV",
       "titleLine2": "Birkaç dakikada hazır",
-      "subtitle": "Geçmişinizi doldurun, 30 şablondan birini seçin ve gönderime hazır bir CV indirin. LocalATSCV ayrıca CV'nizi her ilana uyarlamanıza yardımcı olur ve başvuruları ayıklayan programların onu doğru okuduğunu kontrol eder",
+      "subtitle": "Geçmişinizi doldurun, 52 şablondan birini seçin ve gönderime hazır bir CV indirin. LocalATSCV ayrıca CV'nizi her ilana uyarlamanıza yardımcı olur ve başvuruları ayıklayan programların onu doğru okuduğunu kontrol eder",
       "ctaPrimary": "Ücretsiz CV'mi oluştur",
       "ctaSecondary": "Mevcut CV'mi test et",
       "points": {
-        "templates": "Seçebileceğiniz 30 şablon",
+        "templates": "Seçebileceğiniz 52 şablon",
         "letter": "Uyumlu ön yazı",
         "private": "Verileriniz sizde kalır"
       }
@@ -170,7 +170,7 @@
       "title": "Başarılı bir başvuru için her şey",
       "items": {
         "templates": {
-          "title": "Özenle hazırlanmış 30 şablon",
+          "title": "Özenle hazırlanmış 52 şablon",
           "text": "Sade, modern ya da renkli, fotoğraflı veya fotoğrafsız. Tek tıkla şablonu ya da rengi değiştirin, metniniz uyum sağlar"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "orta"
       },
       "atsHint": "Her şablon gerçek metin basar. İki sütunlu düzenler modern ATS'lerin çoğu tarafından iyi okunur, ancak bazı eski araçlar sütunları karıştırır: emin değilseniz tek sütunlu bir şablon seçin",
+      "preview": {
+        "label": "Küçük resimlerin içeriği",
+        "sample": "Eksiksiz örnek",
+        "mine": "CV'm"
+      },
+      "count": "{{n}} şablon",
+      "search": "Şablon ara",
+      "random": "Rastgele",
+      "randomHint": "Gösterilenler arasından rastgele bir şablon seç",
+      "current": "Geçerli",
+      "noResults": "Aramanızla eşleşen şablon yok",
+      "previous": "Önceki şablon",
+      "next": "Sonraki şablon",
+      "open": "Şablon galerisini aç",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "İplik",
           "description": "Kesintisiz bir iplik üst bilgiyi ve her bölümü birbirine bağlar, her pozisyon için bir nokta"
+        },
+        "horizon": {
+          "name": "Ufuk",
+          "description": "Büyük çapraz degrade, üzerine yükselen beyaz kart ve sınırda duran yuvarlak fotoğraf"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Eğik şipşak çerçevede fotoğraf, renkli bantla tutturulmuş kartlar, krem kâğıt"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Eş aralıklı yazı tipiyle koyu konsol, başlıkların önünde imleç ve oklar, kod tarzı etiketler"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "70'lerin renkli şeritleri, köşede yaylardan güneş ve yuvarlatılmış serif yazı tipi"
+        },
+        "mosaic": {
+          "name": "Mozaik",
+          "description": "Vurgu renginin tonlarında karo şeridi, başlıkların önünde dama işaretleri, kare fotoğraf"
+        },
+        "cosmos": {
+          "name": "Kozmos",
+          "description": "Gece mavisi yıldızlı gökyüzü, halkalı gezegen ve başlıkların önünde yörüngeler"
+        },
+        "botanical": {
+          "name": "Botanik",
+          "description": "Krem kâğıt, köşelerde yapraklı dallar, Cormorant serif yazı tipi ve çift çizgiler"
+        },
+        "ticket": {
+          "name": "Bilet",
+          "description": "Tırtıklı kenarlı bilet, fotoğraf ve QR kodu için koparılabilir koçan, barkod"
+        },
+        "comic": {
+          "name": "Çizgi roman",
+          "description": "Tram noktaları, konuşma balonlarında başlıklar, siyah kenarlıklı kareler, sarı ve vurgu rengi"
+        },
+        "postal": {
+          "name": "Posta",
+          "description": "Uçak postası kenarı, tırtıklı pul olarak fotoğraf, posta damgası ve Lora serif yazı tipi"
+        },
+        "arcade": {
+          "name": "Atari",
+          "description": "8 bit video oyunu: basamaklı şerit, blok alt çizgiler, kutulu göstergeler, eş aralıklı yazı"
+        },
+        "notebook": {
+          "name": "Defter",
+          "description": "Kırmızı kenar boşluklu çizgili defter sayfası, fosforlu kalemle vurgulanmış başlıklar, yapışkan notta profil"
+        },
+        "circuit": {
+          "name": "Devre",
+          "description": "Köşede baskı devre yolları, pimli çipler üzerinde başlıklar, eş aralıklı ayrıntılar"
+        },
+        "gazette": {
+          "name": "Gazete",
+          "description": "Gazete ön sayfası: Playfair başlık, çift çizgiler, tarih satırı ve büyük ilk harf"
+        },
+        "topo": {
+          "name": "Rölyef",
+          "description": "Köşelerde harita eş yükselti eğrileri, toprak tonları ve yükseklik işaretleri"
+        },
+        "watercolor": {
+          "name": "Suluboya",
+          "description": "Sulandırılmış renk lekeleri, fırça darbeli başlıklar ve Cormorant serif yazı tipi"
+        },
+        "ledger": {
+          "name": "Defter-i kebir",
+          "description": "Sol sütunda tarihler, kayıtlar arasında ince çizgiler, küçük büyük harfler"
+        },
+        "compact": {
+          "name": "Sıkışık",
+          "description": "Uzun kariyerler için en yüksek yoğunluk: daha küçük metin, tek satırlık kayıt başlıkları"
+        },
+        "academic": {
+          "name": "Akademik",
+          "description": "Üniversite biçimi: ortalanmış büyük harfli ad, altı çizili başlıklar, serif, renksiz"
+        },
+        "mono": {
+          "name": "Tek renk",
+          "description": "Siyah-beyaz, kalınlık kontrastları, adın önünde tek bir vurgu karesi"
+        },
+        "soft": {
+          "name": "Yumuşak",
+          "description": "Vurgu renginin açık tonunda yuvarlatılmış paneller, hiç sert çizgi yok"
+        },
+        "outline": {
+          "name": "Kontur",
+          "description": "İnce çizgiler ve dik açılar, her bölümün çerçevesine bitişik sekme biçiminde başlıklar"
         }
-      },
-      "preview": {
-        "label": "Küçük resimlerin içeriği",
-        "sample": "Eksiksiz örnek",
-        "mine": "CV'm"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Kusursuz bir CV'ye geçin",
-      "text": "Eleme programlarının doğru okuduğu 30 şablonumuzdan birini seçin ve her ilana uyarlayın",
+      "text": "Eleme programlarının doğru okuduğu 52 şablonumuzdan birini seçin ve her ilana uyarlayın",
       "button": "Düzenleyiciyi aç",
       "import": "Bu CV'yi şablonlarımıza taşı"
     },

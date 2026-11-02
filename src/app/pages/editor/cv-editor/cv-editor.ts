@@ -29,6 +29,7 @@ import { readSetting } from '../../../core/storage/local-settings';
 import {
   ACCENT_COLORS,
   CV_LANGUAGES,
+  CV_TEMPLATES,
   CvTemplateId,
   SECTION_KINDS,
 } from '../../../cv/model/cv.model';
@@ -185,6 +186,21 @@ export class CvEditor {
 
   /** Galerie en cours d'ouverture : le bouton affiche un indicateur le temps du premier rendu. */
   protected readonly openingTemplates = signal(false);
+
+  protected readonly templateCount = CV_TEMPLATES.length;
+  /** Rang (1 à n) du modèle en cours, affiché dans le bouton de la barre d'outils. */
+  protected readonly templatePosition = computed(
+    () => CV_TEMPLATES.findIndex((template) => template.id === this.store.cv()?.template) + 1,
+  );
+
+  /** Passe au modèle précédent ou suivant de la galerie, sans l'ouvrir (en boucle). */
+  protected shiftTemplate(step: 1 | -1): void {
+    const cv = this.store.cv();
+    if (!cv) return;
+    const index = CV_TEMPLATES.findIndex((template) => template.id === cv.template);
+    const next = CV_TEMPLATES[(index + step + CV_TEMPLATES.length) % CV_TEMPLATES.length];
+    this.store.setTemplate(next.id);
+  }
 
   protected openTemplates(): void {
     const cv = this.store.resolved();

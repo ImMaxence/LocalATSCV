@@ -31,7 +31,7 @@
     "privacy": "Pravilnik o zasebnosti"
   },
   "seo": {
-    "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 30 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
+    "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 52 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
     "editor": "Urejevalnik življenjepisa s predogledom v živo, Master življenjepisom in ciljnimi različicami, preverjanjem ATS in izvozom v PDF s pravim besedilom. Vse ostane v vašem brskalniku",
     "analyze": "Brezplačno analizirajte življenjepis v PDF: ocena ATS od 100, točke za popravek in besedilo, kot ga prebere sistem za zaposlovanje. Datoteka nikoli ne zapusti vašega brskalnika",
     "changelog": "Novosti v LocalATSCV po različicah: nove predloge življenjepisov, funkcije in popravki",
@@ -62,11 +62,11 @@
       "badge": "Brezplačno · Brez registracije · Brez oglasov",
       "titleLine1": "Življenjepis, ki vas pripelje do razgovora",
       "titleLine2": "Pripravljeno v nekaj minutah",
-      "subtitle": "Izpolnite svoje izkušnje, izberite eno od 30 predlog in prenesite življenjepis, pripravljen za pošiljanje. LocalATSCV vam pomaga tudi prilagoditi ga vsakemu oglasu in preveri, ali ga programi, ki razvrščajo prijave, pravilno preberejo",
+      "subtitle": "Izpolnite svoje izkušnje, izberite eno od 52 predlog in prenesite življenjepis, pripravljen za pošiljanje. LocalATSCV vam pomaga tudi prilagoditi ga vsakemu oglasu in preveri, ali ga programi, ki razvrščajo prijave, pravilno preberejo",
       "ctaPrimary": "Ustvari življenjepis brezplačno",
       "ctaSecondary": "Preizkusi moj trenutni življenjepis",
       "points": {
-        "templates": "30 predlog na izbiro",
+        "templates": "52 predlog na izbiro",
         "letter": "Usklajeno motivacijsko pismo",
         "private": "Vaši podatki ostanejo pri vas"
       }
@@ -170,7 +170,7 @@
       "title": "Vse za uspešno prijavo",
       "items": {
         "templates": {
-          "title": "30 dodelanih predlog",
+          "title": "52 dodelanih predlog",
           "text": "Preproste, sodobne ali barvite, s fotografijo ali brez. Zamenjajte predlogo ali barvo z enim klikom, vaše besedilo sledi"
         },
         "letter": {
@@ -540,6 +540,20 @@
         "fair": "sprejemljiva"
       },
       "atsHint": "Vsaka predloga natisne pravo besedilo. Postavitve z dvema stolpcema večina sodobnih ATS dobro prebere, nekatera starejša orodja pa stolpce pomešajo: če niste prepričani, izberite predlogo z enim stolpcem",
+      "preview": {
+        "label": "Vsebina sličic",
+        "sample": "Popoln primer",
+        "mine": "Moj življenjepis"
+      },
+      "count": "{{n}} predlog",
+      "search": "Išči predlogo",
+      "random": "Naključno",
+      "randomHint": "Izberi naključno predlogo med prikazanimi",
+      "current": "Trenutna",
+      "noResults": "Nobena predloga ne ustreza vašemu iskanju",
+      "previous": "Prejšnja predloga",
+      "next": "Naslednja predloga",
+      "open": "Odpri galerijo predlog",
       "names": {
         "classic": {
           "name": "Klasična",
@@ -660,12 +674,95 @@
         "thread": {
           "name": "Nit",
           "description": "Neprekinjena nit povezuje glavo in vsak razdelek, s piko za vsako delovno mesto"
+        },
+        "horizon": {
+          "name": "Obzorje",
+          "description": "Velik diagonalni preliv, bela kartica, ki se dviga nad njim, in okrogla fotografija na meji"
+        },
+        "polaroid": {
+          "name": "Polaroid",
+          "description": "Fotografija v nagnjenem okvirju instant fotografije, kartice pritrjene z barvnim trakom, kremast papir"
+        },
+        "terminal": {
+          "name": "Terminal",
+          "description": "Temna konzola v pisavi enotne širine, kazalec in puščice pred naslovi, oznake v slogu kode"
+        },
+        "retro": {
+          "name": "Retro",
+          "description": "Barvne črte iz 70. let, sonce iz lokov v kotu in zaobljena serifna pisava"
+        },
+        "mosaic": {
+          "name": "Mozaik",
+          "description": "Pas ploščic v odtenkih poudarjene barve, šahovnice pred naslovi, kvadratna fotografija"
+        },
+        "cosmos": {
+          "name": "Kozmos",
+          "description": "Nočno modro zvezdno nebo, planet z obročem in orbite pred naslovi"
+        },
+        "botanical": {
+          "name": "Botanični",
+          "description": "Kremast papir, vejice z listi v kotih, serifna pisava Cormorant in dvojne črte"
+        },
+        "ticket": {
+          "name": "Vstopnica",
+          "description": "Vstopnica z nazobčanimi robovi in odtrgljivim kuponom za fotografijo in kodo QR, črtna koda"
+        },
+        "comic": {
+          "name": "Strip",
+          "description": "Rastrske pike, naslovi v oblačkih, okvirji s črnim robom, rumena in poudarjena barva"
+        },
+        "postal": {
+          "name": "Poštni",
+          "description": "Rob letalske pošte, fotografija kot nazobčana znamka, poštni žig in serifna pisava Lora"
+        },
+        "arcade": {
+          "name": "Arkada",
+          "description": "8-bitna videoigra: stopničast pas, blokovska podčrtavanja, merilniki v poljih, enotna širina"
+        },
+        "notebook": {
+          "name": "Zvezek",
+          "description": "Črtasta stran zvezka z rdečim robom, naslovi označeni s flomastrom, profil na lepljivem listku"
+        },
+        "circuit": {
+          "name": "Vezje",
+          "description": "Povezave tiskanega vezja v kotu, naslovi na čipih z nožicami, podrobnosti v enotni širini"
+        },
+        "gazette": {
+          "name": "Časopis",
+          "description": "Naslovnica časopisa: glava Playfair, dvojne črte, vrstica z datumom in inicialka"
+        },
+        "topo": {
+          "name": "Relief",
+          "description": "Plastnice zemljevida v kotih, zemeljski toni in oznake nadmorske višine"
+        },
+        "watercolor": {
+          "name": "Akvarel",
+          "description": "Madeži razredčene barve, naslovi s potezo čopiča in serifna pisava Cormorant"
+        },
+        "ledger": {
+          "name": "Register",
+          "description": "Datumi v levem stolpcu, tanke črte med vnosi, pomanjšane velike črke"
+        },
+        "compact": {
+          "name": "Kompaktna",
+          "description": "Največja gostota za dolge kariere: manjše besedilo, enovrstične glave vnosov"
+        },
+        "academic": {
+          "name": "Akademska",
+          "description": "Univerzitetna oblika: sredinsko poravnano ime z velikimi črkami, podčrtani naslovi, serif, brez barve"
+        },
+        "mono": {
+          "name": "Enobarvna",
+          "description": "Črno-belo, kontrasti debeline, en sam poudarjen kvadrat pred imenom"
+        },
+        "soft": {
+          "name": "Nežna",
+          "description": "Zaobljene plošče v svetlem odtenku poudarjene barve, nobene trde črte"
+        },
+        "outline": {
+          "name": "Obris",
+          "description": "Tanke črte in pravi koti, naslovi kot zavihki ob okvirju vsakega razdelka"
         }
-      },
-      "preview": {
-        "label": "Vsebina sličic",
-        "sample": "Popoln primer",
-        "mine": "Moj življenjepis"
       }
     },
     "print": {
@@ -840,7 +937,7 @@
     },
     "cta": {
       "title": "Preidite na brezhiben življenjepis",
-      "text": "Izberite eno od naših 30 predlog, ki jih programi za izbor pravilno preberejo, in jo prilagodite vsakemu oglasu",
+      "text": "Izberite eno od naših 52 predlog, ki jih programi za izbor pravilno preberejo, in jo prilagodite vsakemu oglasu",
       "button": "Odpri urejevalnik",
       "import": "Prenesi ta življenjepis v naše predloge"
     },

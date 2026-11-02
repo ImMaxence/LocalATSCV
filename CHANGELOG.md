@@ -4,6 +4,14 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.9.0] - 2026-11-02
+
+### Ajouté
+
+- 22 nouveaux modèles de CV, soit 52 au total : 16 graphiques (Horizon, Polaroid, Terminal, Rétro, Mosaïque, Cosmos, Botanique, Ticket, BD, Postal, Arcade, Cahier, Circuit, Gazette, Relief, Aquarelle) et 6 sobres (Registre, Compact, Académique, Monochrome, Douceur, Contour), tous lus dans l'ordre par les ATS, avec la lettre de motivation assortie et « Tenir sur une page »
+- Bouton Modèle de l'éditeur : flèches pour passer au modèle précédent ou suivant sans ouvrir la galerie, et rang du modèle en cours
+- Galerie des modèles : recherche par nom ou description, bouton « Au hasard », quatre colonnes sur grand écran et défilement automatique jusqu'au modèle en cours
+
 ## [0.8.1] - 2026-11-02
 
 ### Corrigé
@@ -178,6 +186,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.9.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.9.0
 [0.8.1]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.1
 [0.8.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.0
 [0.7.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.7.0

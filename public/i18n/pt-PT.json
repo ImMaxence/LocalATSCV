@@ -542,6 +542,7 @@
         "fair": "razoável"
       },
       "atsHint": "Todos os modelos imprimem texto real. As paginações em duas colunas são bem lidas pela maioria dos ATS modernos, mas algumas ferramentas antigas misturam as colunas: em caso de dúvida, escolha um modelo de uma coluna",
+      "atsWarning": "As paginações em duas colunas são bem lidas pela maioria dos ATS modernos, mas algumas ferramentas antigas misturam as colunas",
       "preview": {
         "label": "Conteúdo das miniaturas",
         "sample": "Exemplo completo",
@@ -551,6 +552,7 @@
       "search": "Procurar um modelo",
       "random": "Ao acaso",
       "randomHint": "Escolher um modelo ao acaso entre os apresentados",
+      "columns": "Modelos por linha",
       "current": "Atual",
       "noResults": "Nenhum modelo corresponde à sua pesquisa",
       "previous": "Modelo anterior",

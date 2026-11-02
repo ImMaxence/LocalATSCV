@@ -542,6 +542,7 @@
         "fair": "priimtinas"
       },
       "atsHint": "Kiekvienas šablonas spausdina tikrą tekstą. Dviejų stulpelių maketus dauguma šiuolaikinių ATS perskaito gerai, bet kai kurie senesni įrankiai sumaišo stulpelius: jei abejojate, rinkitės vieno stulpelio šabloną",
+      "atsWarning": "Dviejų stulpelių maketus dauguma šiuolaikinių ATS perskaito gerai, bet kai kurie senesni įrankiai sumaišo stulpelius",
       "preview": {
         "label": "Miniatiūrų turinys",
         "sample": "Išsamus pavyzdys",
@@ -551,6 +552,7 @@
       "search": "Ieškoti šablono",
       "random": "Atsitiktinai",
       "randomHint": "Pasirinkti atsitiktinį šabloną iš rodomų",
+      "columns": "Šablonų eilutėje",
       "current": "Dabartinis",
       "noResults": "Nė vienas šablonas neatitinka jūsų paieškos",
       "previous": "Ankstesnis šablonas",

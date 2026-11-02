@@ -542,6 +542,7 @@
         "fair": "media"
       },
       "atsHint": "Todas las plantillas imprimen texto real. La mayoría de los ATS recientes leen bien los diseños a dos columnas, pero algunos programas antiguos mezclan las columnas: en caso de duda, elige una plantilla de una columna",
+      "atsWarning": "La mayoría de los ATS recientes leen bien los diseños a dos columnas, pero algunos programas antiguos mezclan las columnas",
       "preview": {
         "label": "Contenido de las miniaturas",
         "sample": "Ejemplo completo",
@@ -551,6 +552,7 @@
       "search": "Buscar una plantilla",
       "random": "Al azar",
       "randomHint": "Elegir una plantilla al azar entre las mostradas",
+      "columns": "Plantillas por fila",
       "current": "Actual",
       "noResults": "Ninguna plantilla coincide con tu búsqueda",
       "previous": "Plantilla anterior",

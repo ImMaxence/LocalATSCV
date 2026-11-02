@@ -542,6 +542,7 @@
         "fair": "sprejemljiva"
       },
       "atsHint": "Vsaka predloga natisne pravo besedilo. Postavitve z dvema stolpcema večina sodobnih ATS dobro prebere, nekatera starejša orodja pa stolpce pomešajo: če niste prepričani, izberite predlogo z enim stolpcem",
+      "atsWarning": "Postavitve z dvema stolpcema večina sodobnih ATS dobro prebere, nekatera starejša orodja pa stolpce pomešajo",
       "preview": {
         "label": "Vsebina sličic",
         "sample": "Popoln primer",
@@ -551,6 +552,7 @@
       "search": "Išči predlogo",
       "random": "Naključno",
       "randomHint": "Izberi naključno predlogo med prikazanimi",
+      "columns": "Predlog v vrstici",
       "current": "Trenutna",
       "noResults": "Nobena predloga ne ustreza vašemu iskanju",
       "previous": "Prejšnja predloga",

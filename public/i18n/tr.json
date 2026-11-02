@@ -542,6 +542,7 @@
         "fair": "orta"
       },
       "atsHint": "Her şablon gerçek metin basar. İki sütunlu düzenler modern ATS'lerin çoğu tarafından iyi okunur, ancak bazı eski araçlar sütunları karıştırır: emin değilseniz tek sütunlu bir şablon seçin",
+      "atsWarning": "İki sütunlu düzenler modern ATS'lerin çoğu tarafından iyi okunur, ancak bazı eski araçlar sütunları karıştırır",
       "preview": {
         "label": "Küçük resimlerin içeriği",
         "sample": "Eksiksiz örnek",
@@ -551,6 +552,7 @@
       "search": "Şablon ara",
       "random": "Rastgele",
       "randomHint": "Gösterilenler arasından rastgele bir şablon seç",
+      "columns": "Satır başına şablon",
       "current": "Geçerli",
       "noResults": "Aramanızla eşleşen şablon yok",
       "previous": "Önceki şablon",

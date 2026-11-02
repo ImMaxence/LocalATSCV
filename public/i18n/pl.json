@@ -542,6 +542,7 @@
         "fair": "przeciętna"
       },
       "atsHint": "Każdy szablon drukuje prawdziwy tekst. Układy dwukolumnowe są dobrze odczytywane przez większość nowoczesnych ATS, ale niektóre starsze narzędzia mieszają kolumny: w razie wątpliwości wybierz szablon jednokolumnowy",
+      "atsWarning": "Układy dwukolumnowe są dobrze odczytywane przez większość nowoczesnych ATS, ale niektóre starsze narzędzia mieszają kolumny",
       "preview": {
         "label": "Zawartość miniatur",
         "sample": "Pełny przykład",
@@ -551,6 +552,7 @@
       "search": "Szukaj szablonu",
       "random": "Losowo",
       "randomHint": "Wybierz losowy szablon spośród wyświetlonych",
+      "columns": "Szablonów w wierszu",
       "current": "Bieżący",
       "noResults": "Żaden szablon nie pasuje do wyszukiwania",
       "previous": "Poprzedni szablon",

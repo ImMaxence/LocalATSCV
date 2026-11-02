@@ -542,6 +542,7 @@
         "fair": "moyenne"
       },
       "atsHint": "Tous les modèles impriment du vrai texte. Les mises en page à deux colonnes sont bien lues par la plupart des ATS récents, mais certains logiciels plus anciens mélangent les colonnes : en cas de doute, choisissez un modèle à une colonne",
+      "atsWarning": "Les mises en page à deux colonnes sont bien lues par la plupart des ATS récents, mais certains logiciels plus anciens mélangent les colonnes",
       "preview": {
         "label": "Contenu des vignettes",
         "sample": "Exemple complet",
@@ -551,6 +552,7 @@
       "search": "Rechercher un modèle",
       "random": "Au hasard",
       "randomHint": "Choisir un modèle au hasard parmi ceux affichés",
+      "columns": "Modèles par ligne",
       "current": "Actuel",
       "noResults": "Aucun modèle ne correspond à votre recherche",
       "previous": "Modèle précédent",

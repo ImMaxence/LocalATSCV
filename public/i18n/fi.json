@@ -542,6 +542,7 @@
         "fair": "kohtalainen"
       },
       "atsHint": "Jokainen pohja tulostaa oikeaa tekstiä. Useimmat nykyaikaiset ATS:t lukevat kahden palstan asettelut hyvin, mutta jotkin vanhemmat työkalut sekoittavat palstat: jos olet epävarma, valitse yhden palstan pohja",
+      "atsWarning": "Useimmat nykyaikaiset ATS:t lukevat kahden palstan asettelut hyvin, mutta jotkin vanhemmat työkalut sekoittavat palstat",
       "preview": {
         "label": "Pienoiskuvien sisältö",
         "sample": "Täydellinen esimerkki",
@@ -551,6 +552,7 @@
       "search": "Hae mallia",
       "random": "Satunnainen",
       "randomHint": "Valitse satunnainen malli näytetyistä",
+      "columns": "Malleja rivillä",
       "current": "Nykyinen",
       "noResults": "Yksikään malli ei vastaa hakuasi",
       "previous": "Edellinen malli",

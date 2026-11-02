@@ -542,6 +542,7 @@
         "fair": "khá"
       },
       "atsHint": "Mỗi mẫu đều in văn bản thật. Bố cục hai cột được hầu hết ATS hiện đại đọc tốt, nhưng một số công cụ cũ đọc lẫn các cột: nếu phân vân, hãy chọn mẫu một cột",
+      "atsWarning": "Bố cục hai cột được hầu hết ATS hiện đại đọc tốt, nhưng một số công cụ cũ đọc lẫn các cột",
       "preview": {
         "label": "Nội dung hình thu nhỏ",
         "sample": "Ví dụ đầy đủ",
@@ -551,6 +552,7 @@
       "search": "Tìm mẫu",
       "random": "Ngẫu nhiên",
       "randomHint": "Chọn ngẫu nhiên một mẫu trong số các mẫu đang hiển thị",
+      "columns": "Số mẫu mỗi hàng",
       "current": "Hiện tại",
       "noResults": "Không có mẫu nào khớp với tìm kiếm của bạn",
       "previous": "Mẫu trước",

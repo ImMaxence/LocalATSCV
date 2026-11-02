@@ -542,6 +542,7 @@
         "fair": "grei"
       },
       "atsHint": "Alle maler skriver ut ekte tekst. Layouter i to kolonner leses godt av de fleste moderne ATS, men noen eldre verktøy blander kolonnene: velg en mal med én kolonne hvis du er i tvil",
+      "atsWarning": "Layouter i to kolonner leses godt av de fleste moderne ATS, men noen eldre verktøy blander kolonnene",
       "preview": {
         "label": "Innhold i miniatyrene",
         "sample": "Komplett eksempel",
@@ -551,6 +552,7 @@
       "search": "Søk etter mal",
       "random": "Tilfeldig",
       "randomHint": "Velg en tilfeldig mal blant de viste",
+      "columns": "Maler per rad",
       "current": "Nåværende",
       "noResults": "Ingen mal samsvarer med søket ditt",
       "previous": "Forrige mal",

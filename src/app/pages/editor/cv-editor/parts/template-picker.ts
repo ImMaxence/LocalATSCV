@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
+  Injector,
   afterNextRender,
   computed,
   inject,
@@ -43,10 +44,26 @@ const ATS_BADGES: Record<AtsCompatibility, string> = {
 const FAVORITES_KEY = 'templates.favorites';
 const RECENT_KEY = 'templates.recent';
 const RECENT_LIMIT = 8;
+const COLUMNS_KEY = 'templates.columns';
 /** Au-dessus, la galerie montre le volet d'aperçu ; en dessous, un clic applique le modèle. */
 const PREVIEW_PANE_QUERY = '(min-width: 1024px)';
+/** En dessous (téléphone), la grille se limite à 2 vignettes par ligne. */
+const WIDE_QUERY = '(min-width: 640px)';
+/** Écart entre les vignettes (gap-3) et largeur sous laquelle une ligne perd une vignette. */
+const GRID_GAP = '0.75rem';
+const MIN_CARD = '11rem';
 
 type Filter = 'all' | 'favorites' | 'recent' | CvTemplateFamily;
+type Columns = 1 | 2 | 3 | 4;
+
+const COLUMN_CHOICES: readonly Columns[] = [4, 3, 2, 1];
+
+/** Vignettes par ligne choisies sur cet appareil ; à défaut, le maximum que permet l'écran. */
+function readColumns(): Columns {
+  const stored = Number(readSetting(COLUMNS_KEY));
+  if (COLUMN_CHOICES.includes(stored as Columns)) return stored as Columns;
+  return matchMedia(WIDE_QUERY).matches ? 4 : 2;
+}
 
 /** Minuscules sans accents, pour comparer une recherche aux noms et descriptions traduits. */
 const fold = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
@@ -142,7 +159,7 @@ function readIds(key: string): CvTemplateId[] {
             }
           </div>
         </div>
-        <div class="flex min-w-0 items-center gap-2 sm:min-w-72 sm:flex-1">
+        <div class="flex min-w-0 items-center gap-2 sm:min-w-md sm:flex-1">
           <label class="relative min-w-0 flex-1">
             <app-icon
               class="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted"
@@ -167,6 +184,27 @@ function readIds(key: string): CvTemplateId[] {
             <app-icon class="size-4" name="shuffle" />
             <span class="hidden sm:inline">{{ t('random') }}</span>
           </button>
+          <div
+            role="radiogroup"
+            class="flex h-9 shrink-0 items-center rounded-full border border-line p-0.5 text-sm font-semibold"
+            [attr.aria-label]="t('columns')"
+            [title]="t('columns')"
+          >
+            <app-icon class="ms-2 me-1 size-4 text-muted" name="columns" />
+            <!-- Sur téléphone, 3 ou 4 vignettes par ligne seraient illisibles : seuls 2 et 1 restent -->
+            @for (n of columnChoices; track n) {
+              <button
+                type="button"
+                role="radio"
+                class="h-full min-w-8 rounded-full px-2 text-muted transition-colors hover:text-ink aria-checked:bg-accent-soft aria-checked:text-accent"
+                [class]="n > 2 ? 'max-sm:hidden' : ''"
+                [attr.aria-checked]="columns() === n"
+                (click)="setColumns(n)"
+              >
+                {{ n }}
+              </button>
+            }
+          </div>
         </div>
       </div>
 
@@ -190,7 +228,12 @@ function readIds(key: string): CvTemplateId[] {
             </div>
           }
           @if (options().length) {
-            <ul #list class="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+            <ul
+              #list
+              class="grid gap-3"
+              [class]="columns() === 1 ? 'mx-auto max-w-2xl' : ''"
+              [style.grid-template-columns]="gridColumns()"
+            >
               @for (option of options(); track option.id) {
                 <li class="group relative">
                   <button
@@ -225,11 +268,16 @@ function readIds(key: string): CvTemplateId[] {
                         <app-icon class="size-3.5 text-accent" name="check" [strokeWidth]="3" />
                       }
                       @if (option.ats !== 'excellent') {
-                        <app-icon
-                          class="size-3.5 text-amber-600 dark:text-amber-400"
-                          name="alert"
-                          [strokeWidth]="2.25"
-                        />
+                        <span class="inline-flex" [title]="t('atsWarning')">
+                          <app-icon
+                            class="size-3.5 text-amber-600 dark:text-amber-400"
+                            name="alert"
+                            [strokeWidth]="2.25"
+                          />
+                          <span class="sr-only"
+                            >{{ t('ats') }} : {{ t('levels.' + option.ats) }}</span
+                          >
+                        </span>
                       }
                     </span>
                   </button>
@@ -343,6 +391,9 @@ function readIds(key: string): CvTemplateId[] {
                 >
               }
             </div>
+            @if (selectedTemplate().ats !== 'excellent') {
+              <p class="mt-2 text-xs leading-relaxed text-muted">{{ t('atsWarning') }}</p>
+            }
           </div>
           <div class="border-t border-line p-4">
             <button
@@ -379,6 +430,7 @@ export class TemplatePicker {
   protected readonly ref = inject<DialogRef<CvTemplateId>>(DialogRef);
   private readonly transloco = inject(TranslocoService);
   private readonly host = inject<ElementRef<HTMLElement>>(ElementRef);
+  private readonly injector = inject(Injector);
   private readonly list = viewChild<ElementRef<HTMLUListElement>>('list');
 
   protected readonly badges = ATS_BADGES;
@@ -401,6 +453,20 @@ export class TemplatePicker {
   protected readonly selected = signal<CvTemplateId>(this.data.cv.template);
   protected readonly favorites = signal<CvTemplateId[]>(readIds(FAVORITES_KEY));
   private readonly recent = signal<CvTemplateId[]>(readIds(RECENT_KEY));
+
+  protected readonly columnChoices = COLUMN_CHOICES;
+  protected readonly columns = signal<Columns>(readColumns());
+  /**
+   * Jusqu'à `columns` vignettes par ligne, moins quand elles passeraient sous MIN_CARD (volet
+   * d'aperçu, tablette), sans descendre sous 2 tant que l'utilisateur en demande au moins 2.
+   * Chaque minimum retranche un écart de plus que nécessaire : l'arrondi des navigateurs ne
+   * peut ainsi jamais faire tomber la ligne à une vignette de moins.
+   */
+  protected readonly gridColumns = computed(() => {
+    const n = this.columns();
+    const floor = `min(${MIN_CARD}, (100% - 2 * ${GRID_GAP}) / 2)`;
+    return `repeat(auto-fill, minmax(max(${floor}, (100% - ${n} * ${GRID_GAP}) / ${n}), 1fr))`;
+  });
 
   /** Aperçu avec un CV d'exemple complet (par défaut) ou avec le CV en cours. */
   protected readonly sources = ['sample', 'mine'] as const;
@@ -454,11 +520,20 @@ export class TemplatePicker {
 
   constructor() {
     // Avec des dizaines de modèles, le modèle en cours peut être loin : on le montre d'emblée.
-    afterNextRender(() => {
-      this.host.nativeElement
-        .querySelector('[aria-pressed="true"][data-id]')
-        ?.scrollIntoView({ block: 'center' });
-    });
+    afterNextRender(() => this.revealSelected());
+  }
+
+  protected setColumns(n: Columns): void {
+    this.columns.set(n);
+    writeSetting(COLUMNS_KEY, String(n));
+    // La hauteur de la grille change : sans cela, le modèle sélectionné sortirait de la vue.
+    afterNextRender(() => this.revealSelected(), { injector: this.injector });
+  }
+
+  private revealSelected(): void {
+    this.host.nativeElement
+      .querySelector('[aria-pressed="true"][data-id]')
+      ?.scrollIntoView({ block: 'center' });
   }
 
   protected thumbnail(id: CvTemplateId): string {

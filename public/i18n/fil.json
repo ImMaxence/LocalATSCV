@@ -542,6 +542,7 @@
         "fair": "katamtaman"
       },
       "atsHint": "Bawat template ay nagpi-print ng tunay na teksto. Mahusay na nababasa ng karamihan ng modernong ATS ang layout na may dalawang column, pero may ilang lumang tool na pinaghahalo ang mga column: kung may duda, pumili ng template na may isang column",
+      "atsWarning": "Mahusay na nababasa ng karamihan ng modernong ATS ang layout na may dalawang column, pero may ilang lumang tool na pinaghahalo ang mga column",
       "preview": {
         "label": "Nilalaman ng mga thumbnail",
         "sample": "Kumpletong halimbawa",
@@ -551,6 +552,7 @@
       "search": "Maghanap ng template",
       "random": "Random",
       "randomHint": "Pumili ng random na template mula sa mga ipinapakita",
+      "columns": "Mga template bawat hanay",
       "current": "Kasalukuyan",
       "noResults": "Walang template na tumutugma sa iyong paghahanap",
       "previous": "Nakaraang template",

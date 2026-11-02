@@ -542,6 +542,7 @@
         "fair": "media"
       },
       "atsHint": "Tutti i modelli stampano testo vero. Le impaginazioni a due colonne sono lette bene dalla maggior parte degli ATS recenti, ma alcuni software più vecchi mescolano le colonne: nel dubbio, scegli un modello a una colonna",
+      "atsWarning": "Le impaginazioni a due colonne sono lette bene dalla maggior parte degli ATS recenti, ma alcuni software più vecchi mescolano le colonne",
       "preview": {
         "label": "Contenuto delle anteprime",
         "sample": "Esempio completo",
@@ -551,6 +552,7 @@
       "search": "Cerca un modello",
       "random": "A caso",
       "randomHint": "Scegliere un modello a caso tra quelli mostrati",
+      "columns": "Modelli per riga",
       "current": "Attuale",
       "noResults": "Nessun modello corrisponde alla tua ricerca",
       "previous": "Modello precedente",

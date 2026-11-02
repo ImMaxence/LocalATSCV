@@ -542,6 +542,7 @@
         "fair": "godtagbar"
       },
       "atsHint": "Alla mallar skriver ut riktig text. Layouter i två kolumner läses bra av de flesta moderna ATS, men vissa äldre verktyg blandar ihop kolumnerna: välj en mall med en kolumn om du är osäker",
+      "atsWarning": "Layouter i två kolumner läses bra av de flesta moderna ATS, men vissa äldre verktyg blandar ihop kolumnerna",
       "preview": {
         "label": "Miniatyrernas innehåll",
         "sample": "Komplett exempel",
@@ -551,6 +552,7 @@
       "search": "Sök mall",
       "random": "Slumpa",
       "randomHint": "Välj en slumpmässig mall bland de visade",
+      "columns": "Mallar per rad",
       "current": "Nuvarande",
       "noResults": "Ingen mall matchar din sökning",
       "previous": "Föregående mall",

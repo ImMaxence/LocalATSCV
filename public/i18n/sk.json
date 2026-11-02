@@ -542,6 +542,7 @@
         "fair": "prijateľná"
       },
       "atsHint": "Každá šablóna tlačí skutočný text. Dvojstĺpcové rozloženia číta väčšina moderných ATS dobre, ale niektoré staršie nástroje stĺpce pomiešajú: ak si nie ste istí, zvoľte jednostĺpcovú šablónu",
+      "atsWarning": "Dvojstĺpcové rozloženia číta väčšina moderných ATS dobre, ale niektoré staršie nástroje stĺpce pomiešajú",
       "preview": {
         "label": "Obsah miniatúr",
         "sample": "Úplná ukážka",
@@ -551,6 +552,7 @@
       "search": "Hľadať šablónu",
       "random": "Náhodne",
       "randomHint": "Vybrať náhodnú šablónu zo zobrazených",
+      "columns": "Šablón v riadku",
       "current": "Aktuálna",
       "noResults": "Žiadna šablóna nezodpovedá vášmu hľadaniu",
       "previous": "Predchádzajúca šablóna",

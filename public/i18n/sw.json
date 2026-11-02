@@ -542,6 +542,7 @@
         "fair": "wa wastani"
       },
       "atsHint": "Kila kiolezo huchapisha maandishi halisi. Mpangilio wa safu mbili husomwa vizuri na ATS nyingi za kisasa, lakini baadhi ya zana za zamani huchanganya safu: ukiwa na shaka, chagua kiolezo cha safu moja",
+      "atsWarning": "Mpangilio wa safu mbili husomwa vizuri na ATS nyingi za kisasa, lakini baadhi ya zana za zamani huchanganya safu",
       "preview": {
         "label": "Maudhui ya picha ndogo",
         "sample": "Mfano kamili",
@@ -551,6 +552,7 @@
       "search": "Tafuta kiolezo",
       "random": "Bila mpangilio",
       "randomHint": "Chagua kiolezo bila mpangilio kati ya vilivyoonyeshwa",
+      "columns": "Violezo kwa kila safu",
       "current": "Cha sasa",
       "noResults": "Hakuna kiolezo kinacholingana na utafutaji wako",
       "previous": "Kiolezo kilichotangulia",

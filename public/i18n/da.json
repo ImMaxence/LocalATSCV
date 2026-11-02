@@ -542,6 +542,7 @@
         "fair": "rimelig"
       },
       "atsHint": "Alle skabeloner udskriver ægte tekst. Layouts i to kolonner læses godt af de fleste moderne ATS, men nogle ældre værktøjer blander kolonnerne: vælg en skabelon med én kolonne, hvis du er i tvivl",
+      "atsWarning": "Layouts i to kolonner læses godt af de fleste moderne ATS, men nogle ældre værktøjer blander kolonnerne",
       "preview": {
         "label": "Miniaturernes indhold",
         "sample": "Komplet eksempel",
@@ -551,6 +552,7 @@
       "search": "Søg efter skabelon",
       "random": "Tilfældig",
       "randomHint": "Vælg en tilfældig skabelon blandt de viste",
+      "columns": "Skabeloner pr. række",
       "current": "Nuværende",
       "noResults": "Ingen skabelon matcher din søgning",
       "previous": "Forrige skabelon",

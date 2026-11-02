@@ -542,6 +542,7 @@
         "fair": "pieņemama"
       },
       "atsHint": "Katra veidne drukā īstu tekstu. Divu kolonnu izkārtojumus labi nolasa lielākā daļa mūsdienu ATS, taču daži vecāki rīki sajauc kolonnas: šaubu gadījumā izvēlieties vienas kolonnas veidni",
+      "atsWarning": "Divu kolonnu izkārtojumus labi nolasa lielākā daļa mūsdienu ATS, taču daži vecāki rīki sajauc kolonnas",
       "preview": {
         "label": "Sīktēlu saturs",
         "sample": "Pilns piemērs",
@@ -551,6 +552,7 @@
       "search": "Meklēt veidni",
       "random": "Nejauši",
       "randomHint": "Izvēlēties nejaušu veidni no redzamajām",
+      "columns": "Veidnes rindā",
       "current": "Pašreizējā",
       "noResults": "Neviena veidne neatbilst jūsu meklējumam",
       "previous": "Iepriekšējā veidne",

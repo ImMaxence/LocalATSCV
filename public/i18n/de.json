@@ -542,6 +542,7 @@
         "fair": "mittel"
       },
       "atsHint": "Alle Vorlagen drucken echten Text. Zweispaltige Layouts lesen die meisten aktuellen ATS gut, manche ältere Programme vermischen jedoch die Spalten: Im Zweifel ist eine einspaltige Vorlage die bessere Wahl",
+      "atsWarning": "Zweispaltige Layouts lesen die meisten aktuellen ATS gut, manche ältere Programme vermischen jedoch die Spalten",
       "preview": {
         "label": "Inhalt der Vorschaubilder",
         "sample": "Vollständiges Beispiel",
@@ -551,6 +552,7 @@
       "search": "Vorlage suchen",
       "random": "Zufällig",
       "randomHint": "Eine zufällige Vorlage aus den angezeigten wählen",
+      "columns": "Vorlagen pro Zeile",
       "current": "Aktuell",
       "noResults": "Keine Vorlage passt zu deiner Suche",
       "previous": "Vorherige Vorlage",

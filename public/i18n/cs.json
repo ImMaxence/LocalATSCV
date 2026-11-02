@@ -542,6 +542,7 @@
         "fair": "přijatelná"
       },
       "atsHint": "Každá šablona tiskne skutečný text. Dvousloupcová rozvržení čte většina moderních ATS dobře, ale některé starší nástroje sloupce pomíchají: v případě pochybností zvolte jednosloupcovou šablonu",
+      "atsWarning": "Dvousloupcová rozvržení čte většina moderních ATS dobře, ale některé starší nástroje sloupce pomíchají",
       "preview": {
         "label": "Obsah miniatur",
         "sample": "Úplná ukázka",
@@ -551,6 +552,7 @@
       "search": "Hledat šablonu",
       "random": "Náhodně",
       "randomHint": "Vybrat náhodnou šablonu ze zobrazených",
+      "columns": "Šablon na řádek",
       "current": "Aktuální",
       "noResults": "Žádná šablona neodpovídá vašemu hledání",
       "previous": "Předchozí šablona",

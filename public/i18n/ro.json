@@ -542,6 +542,7 @@
         "fair": "acceptabilă"
       },
       "atsHint": "Fiecare șablon tipărește text real. Machetele pe două coloane sunt citite bine de majoritatea ATS-urilor moderne, dar unele instrumente mai vechi amestecă coloanele: dacă ai dubii, alege un șablon pe o coloană",
+      "atsWarning": "Machetele pe două coloane sunt citite bine de majoritatea ATS-urilor moderne, dar unele instrumente mai vechi amestecă coloanele",
       "preview": {
         "label": "Conținutul miniaturilor",
         "sample": "Exemplu complet",
@@ -551,6 +552,7 @@
       "search": "Caută un șablon",
       "random": "La întâmplare",
       "randomHint": "Alege un șablon la întâmplare dintre cele afișate",
+      "columns": "Șabloane pe rând",
       "current": "Actual",
       "noResults": "Niciun șablon nu corespunde căutării tale",
       "previous": "Șablonul anterior",

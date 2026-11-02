@@ -542,6 +542,7 @@
         "fair": "fair"
       },
       "atsHint": "Every template prints real text. Two-column layouts are read well by most modern ATS software, but some older tools mix the columns up: when in doubt, pick a single-column template",
+      "atsWarning": "Two-column layouts are read well by most modern ATS software, but some older tools mix the columns up",
       "preview": {
         "label": "Thumbnail content",
         "sample": "Full example",
@@ -551,6 +552,7 @@
       "search": "Search templates",
       "random": "Surprise me",
       "randomHint": "Pick a random template among those shown",
+      "columns": "Templates per row",
       "current": "Current",
       "noResults": "No template matches your search",
       "previous": "Previous template",

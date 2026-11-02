@@ -542,6 +542,7 @@
         "fair": "sederhana"
       },
       "atsHint": "Setiap templat mencetak teks sebenar. Susun atur dua lajur dibaca dengan baik oleh kebanyakan ATS moden, tetapi sesetengah alat lama mencampurkan lajur: jika ragu-ragu, pilih templat satu lajur",
+      "atsWarning": "Susun atur dua lajur dibaca dengan baik oleh kebanyakan ATS moden, tetapi sesetengah alat lama mencampurkan lajur",
       "preview": {
         "label": "Kandungan imej kecil",
         "sample": "Contoh lengkap",
@@ -551,6 +552,7 @@
       "search": "Cari templat",
       "random": "Rawak",
       "randomHint": "Pilih templat secara rawak daripada yang dipaparkan",
+      "columns": "Templat setiap baris",
       "current": "Semasa",
       "noResults": "Tiada templat sepadan dengan carian anda",
       "previous": "Templat sebelumnya",

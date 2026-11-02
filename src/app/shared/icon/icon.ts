@@ -34,6 +34,7 @@ const ICONS = {
   check: 'M20 6 9 17l-5-5',
   plus: 'M12 5v14 M5 12h14',
   layout: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z M3 9h18 M9 21V9',
+  columns: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z M9 3v18 M15 3v18',
   x: 'M18 6 6 18 M6 6l12 12',
   arrowRight: 'M5 12h14 M12 5l7 7-7 7',
   arrowLeft: 'M19 12H5 M12 19l-7-7 7-7',

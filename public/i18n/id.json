@@ -542,6 +542,7 @@
         "fair": "cukup"
       },
       "atsHint": "Setiap template mencetak teks asli. Tata letak dua kolom dibaca dengan baik oleh sebagian besar ATS modern, tetapi beberapa alat lama mencampur kolom: jika ragu, pilih template satu kolom",
+      "atsWarning": "Tata letak dua kolom dibaca dengan baik oleh sebagian besar ATS modern, tetapi beberapa alat lama mencampur kolom",
       "preview": {
         "label": "Isi gambar mini",
         "sample": "Contoh lengkap",
@@ -551,6 +552,7 @@
       "search": "Cari templat",
       "random": "Acak",
       "randomHint": "Pilih templat secara acak dari yang ditampilkan",
+      "columns": "Templat per baris",
       "current": "Saat ini",
       "noResults": "Tidak ada templat yang cocok dengan pencarian Anda",
       "previous": "Templat sebelumnya",

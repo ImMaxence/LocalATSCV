@@ -542,6 +542,7 @@
         "fair": "elfogadható"
       },
       "atsHint": "Minden sablon valódi szöveget nyomtat. A kéthasábos elrendezéseket a legtöbb modern ATS jól olvassa, de egyes régebbi eszközök összekeverik a hasábokat: ha bizonytalan, válasszon egyhasábos sablont",
+      "atsWarning": "A kéthasábos elrendezéseket a legtöbb modern ATS jól olvassa, de egyes régebbi eszközök összekeverik a hasábokat",
       "preview": {
         "label": "A bélyegképek tartalma",
         "sample": "Teljes példa",
@@ -551,6 +552,7 @@
       "search": "Sablon keresése",
       "random": "Véletlenszerű",
       "randomHint": "Véletlenszerű sablon választása a megjelenítettek közül",
+      "columns": "Sablonok soronként",
       "current": "Jelenlegi",
       "noResults": "Egyetlen sablon sem felel meg a keresésnek",
       "previous": "Előző sablon",

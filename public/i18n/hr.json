@@ -542,6 +542,7 @@
         "fair": "prihvatljiva"
       },
       "atsHint": "Svaki predložak ispisuje stvaran tekst. Rasporede s dva stupca većina modernih ATS-ova dobro čita, ali neki stariji alati miješaju stupce: ako niste sigurni, odaberite predložak s jednim stupcem",
+      "atsWarning": "Rasporede s dva stupca većina modernih ATS-ova dobro čita, ali neki stariji alati miješaju stupce",
       "preview": {
         "label": "Sadržaj minijatura",
         "sample": "Potpuni primjer",
@@ -551,6 +552,7 @@
       "search": "Traži predložak",
       "random": "Nasumično",
       "randomHint": "Odaberi nasumičan predložak među prikazanima",
+      "columns": "Predložaka po retku",
       "current": "Trenutni",
       "noResults": "Nijedan predložak ne odgovara vašoj pretrazi",
       "previous": "Prethodni predložak",

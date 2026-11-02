@@ -542,6 +542,7 @@
         "fair": "redelijk"
       },
       "atsHint": "Elk sjabloon drukt echte tekst af. Opmaak in twee kolommen wordt door de meeste moderne ATS goed gelezen, maar sommige oudere systemen halen de kolommen door elkaar: kies bij twijfel een sjabloon met één kolom",
+      "atsWarning": "Opmaak in twee kolommen wordt door de meeste moderne ATS goed gelezen, maar sommige oudere systemen halen de kolommen door elkaar",
       "preview": {
         "label": "Inhoud van de miniaturen",
         "sample": "Volledig voorbeeld",
@@ -551,6 +552,7 @@
       "search": "Sjabloon zoeken",
       "random": "Willekeurig",
       "randomHint": "Een willekeurig sjabloon kiezen uit de getoonde",
+      "columns": "Sjablonen per rij",
       "current": "Huidig",
       "noResults": "Geen enkel sjabloon komt overeen met je zoekopdracht",
       "previous": "Vorig sjabloon",

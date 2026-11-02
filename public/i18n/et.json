@@ -542,6 +542,7 @@
         "fair": "rahuldav"
       },
       "atsHint": "Iga mall prindib päris teksti. Enamik tänapäevaseid ATS-e loeb kaheveerulisi paigutusi hästi, kuid mõned vanemad tööriistad ajavad veerud segamini: kahtluse korral vali üheveeruline mall",
+      "atsWarning": "Enamik tänapäevaseid ATS-e loeb kaheveerulisi paigutusi hästi, kuid mõned vanemad tööriistad ajavad veerud segamini",
       "preview": {
         "label": "Pisipiltide sisu",
         "sample": "Täielik näide",
@@ -551,6 +552,7 @@
       "search": "Otsi malli",
       "random": "Juhuslik",
       "randomHint": "Vali kuvatute seast juhuslik mall",
+      "columns": "Malle reas",
       "current": "Praegune",
       "noResults": "Ükski mall ei vasta sinu otsingule",
       "previous": "Eelmine mall",

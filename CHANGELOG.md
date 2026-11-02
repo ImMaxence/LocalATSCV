@@ -4,6 +4,13 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.8.1] - 2026-11-02
+
+### Corrigé
+
+- Les mises à jour de l'application ne s'installaient plus et la notification de nouvelle version n'apparaissait jamais : l'application restait bloquée sur une ancienne version
+- Application installée (iPhone notamment) : la recherche de mise à jour se fait aussi à chaque retour sur l'application, plus seulement au lancement
+
 ## [0.8.0] - 2026-11-02
 
 ### Modifié
@@ -171,6 +178,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.8.1]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.1
 [0.8.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.0
 [0.7.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.7.0
 [0.6.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.6.0

@@ -1,7 +1,7 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { SwUpdate } from '@angular/service-worker';
-import { filter, interval } from 'rxjs';
+import { filter, fromEvent, interval, merge } from 'rxjs';
 
 const CHECK_INTERVAL_MS = 6 * 60 * 60 * 1000;
 
@@ -22,8 +22,14 @@ export class AppUpdateService {
       )
       .subscribe(() => this.updateReady.set(true));
 
-    // L'onglet peut rester ouvert longtemps (PWA installée) : on revérifie régulièrement.
-    interval(CHECK_INTERVAL_MS)
+    // L'onglet peut rester ouvert longtemps (PWA installée) : on revérifie régulièrement, et à
+    // chaque retour au premier plan (sur iOS, la PWA est suspendue puis reprise, jamais rechargée).
+    merge(
+      interval(CHECK_INTERVAL_MS),
+      fromEvent(document, 'visibilitychange').pipe(
+        filter(() => document.visibilityState === 'visible'),
+      ),
+    )
       .pipe(takeUntilDestroyed())
       .subscribe(() => void this.swUpdate.checkForUpdate().catch(() => undefined));
 

@@ -300,11 +300,11 @@
       "open": "Mở",
       "actions": "Thao tác",
       "duplicate": "Nhân bản",
-      "export": "Xuất (JSON)",
+      "export": "Tải xuống bản sao lưu",
       "delete": "Xóa",
       "updated": "Sửa lúc {{date}}",
       "versions": "Phiên bản: {{count}}",
-      "backupHint": "CV của bạn chỉ tồn tại trong trình duyệt này. Hãy thường xuyên xuất bản sao lưu JSON: nếu xóa dữ liệu trình duyệt, bạn vẫn khôi phục được mọi thứ",
+      "backupHint": "CV của bạn chỉ tồn tại trong trình duyệt này. Hãy thường xuyên xuất bản sao lưu: nếu xóa dữ liệu trình duyệt, bạn vẫn khôi phục được mọi thứ",
       "defaultName": "CV của tôi",
       "copySuffix": "(bản sao)",
       "deleteTitle": "Xóa “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Số CV trong bản sao lưu: {{count}}. CV đã có trong trình duyệt này sẽ bị thay thế",
       "importDone": "Đã nhập bản sao lưu: {{count}} CV",
       "importError": {
-        "invalidJson": "Tệp này không phải JSON hợp lệ",
+        "invalidJson": "Tệp này không phải bản sao lưu LocalATSCV",
         "notABackup": "Tệp này không phải bản sao lưu của LocalATSCV",
         "newerVersion": "Bản sao lưu này đến từ phiên bản LocalATSCV mới hơn: hãy cập nhật ứng dụng trước"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Nền tối",
         "columns": "Hai cột",
-        "serif": "Có chân",
+        "serif": "Kiểu sách",
         "mono": "Kiểu máy đánh chữ",
         "paper": "Giấy",
         "colorful": "Nhiều màu",

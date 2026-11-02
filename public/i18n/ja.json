@@ -300,11 +300,11 @@
       "open": "開く",
       "actions": "操作",
       "duplicate": "複製",
-      "export": "書き出す（JSON）",
+      "export": "バックアップをダウンロード",
       "delete": "削除",
       "updated": "{{date}}に編集",
       "versions": "バージョン：{{count}}",
-      "backupHint": "履歴書はこのブラウザーにしか存在しません。定期的にJSONバックアップを書き出しておけば、ブラウザーのデータを消去してもすべて復元できます",
+      "backupHint": "履歴書はこのブラウザーにしか存在しません。定期的にバックアップを書き出しておけば、ブラウザーのデータを消去してもすべて復元できます",
       "defaultName": "マイ履歴書",
       "copySuffix": "（コピー）",
       "deleteTitle": "「{{name}}」を削除しますか？",
@@ -314,7 +314,7 @@
       "importConfirmText": "このバックアップの履歴書：{{count}}件。このブラウザーにすでにある履歴書は置き換えられます",
       "importDone": "バックアップを読み込みました：履歴書{{count}}件",
       "importError": {
-        "invalidJson": "このファイルは有効なJSONではありません",
+        "invalidJson": "このファイルはLocalATSCVのバックアップではありません",
         "notABackup": "このファイルはLocalATSCVのバックアップではありません",
         "newerVersion": "このバックアップは新しいバージョンのLocalATSCVで作成されています。先にアプリを更新してください"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "暗い背景",
         "columns": "2段組",
-        "serif": "セリフ体",
+        "serif": "書籍風",
         "mono": "タイプライター風",
         "paper": "紙質感",
         "colorful": "カラフル",

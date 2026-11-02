@@ -300,11 +300,11 @@
       "open": "Odpri",
       "actions": "Dejanja",
       "duplicate": "Podvoji",
-      "export": "Izvozi (JSON)",
+      "export": "Prenesi varnostno kopijo",
       "delete": "Izbriši",
       "updated": "Urejeno {{date}}",
       "versions": "Različice: {{count}}",
-      "backupHint": "Vaši življenjepisi obstajajo samo v tem brskalniku. Redno izvažajte varnostno kopijo JSON: če izbrišete podatke brskalnika, lahko z njo vse obnovite",
+      "backupHint": "Vaši življenjepisi obstajajo samo v tem brskalniku. Redno izvažajte varnostno kopijo: če izbrišete podatke brskalnika, lahko z njo vse obnovite",
       "defaultName": "Moj življenjepis",
       "copySuffix": "(kopija)",
       "deleteTitle": "Izbrišem »{{name}}«?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Življenjepisi v tej kopiji: {{count}}. Tisti, ki že obstajajo v tem brskalniku, bodo zamenjani",
       "importDone": "Varnostna kopija uvožena, življenjepisi: {{count}}",
       "importError": {
-        "invalidJson": "Ta datoteka ni veljaven JSON",
+        "invalidJson": "Ta datoteka ni varnostna kopija LocalATSCV",
         "notABackup": "Ta datoteka ni varnostna kopija LocalATSCV",
         "newerVersion": "Ta varnostna kopija izvira iz novejše različice LocalATSCV: najprej posodobite aplikacijo"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Temno ozadje",
         "columns": "Dva stolpca",
-        "serif": "Serifna",
+        "serif": "Knjižni slog",
         "mono": "Slog pisalnega stroja",
         "paper": "Papir",
         "colorful": "Pisana",

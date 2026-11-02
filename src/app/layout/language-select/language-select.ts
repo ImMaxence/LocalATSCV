@@ -53,9 +53,10 @@ function displayNames(locale: string): Intl.DisplayNames | null {
         class="group flex h-8 items-center gap-1.5 rounded-full border border-line bg-surface ps-2 pe-1.5 text-xs font-semibold text-ink transition-[color,border-color,box-shadow] hover:border-ink/25 aria-expanded:border-accent aria-expanded:ring-2 aria-expanded:ring-accent/20"
         aria-haspopup="listbox"
         [attr.aria-expanded]="open()"
-        [attr.aria-label]="t('lang.label') + ' (' + info[language.current()].name + ')'"
         (click)="toggle()"
       >
+        <!-- Nom lu = libellé masqué + texte visible : il contient ce qu'on voit (WCAG 2.5.3). -->
+        <span class="sr-only">{{ t('lang.label') }} :</span>
         <app-icon
           class="size-4 text-muted transition-colors group-hover:text-ink group-aria-expanded:text-accent"
           name="globe"

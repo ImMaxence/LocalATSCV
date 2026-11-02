@@ -300,11 +300,11 @@
       "open": "開啟",
       "actions": "動作",
       "duplicate": "複製",
-      "export": "匯出（JSON）",
+      "export": "下載備份",
       "delete": "刪除",
       "updated": "編輯於 {{date}}",
       "versions": "版本：{{count}}",
-      "backupHint": "你的履歷只存在此瀏覽器中。請定期匯出 JSON 備份：即使清除了瀏覽器資料，也能靠它還原所有內容",
+      "backupHint": "你的履歷只存在此瀏覽器中。請定期下載備份：即使清除了瀏覽器資料，也能靠它還原所有內容",
       "defaultName": "我的履歷",
       "copySuffix": "（副本）",
       "deleteTitle": "要刪除「{{name}}」嗎？",
@@ -314,7 +314,7 @@
       "importConfirmText": "此備份中的履歷：{{count}} 份。此瀏覽器中已存在的同一份履歷將被取代",
       "importDone": "已匯入備份：{{count}} 份履歷",
       "importError": {
-        "invalidJson": "此檔案不是有效的 JSON",
+        "invalidJson": "此檔案不是 LocalATSCV 備份",
         "notABackup": "此檔案不是 LocalATSCV 備份",
         "newerVersion": "此備份來自較新版本的 LocalATSCV：請先更新應用程式"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "深色背景",
         "columns": "雙欄",
-        "serif": "襯線",
+        "serif": "書籍風格",
         "mono": "打字機風格",
         "paper": "紙張質感",
         "colorful": "多彩",

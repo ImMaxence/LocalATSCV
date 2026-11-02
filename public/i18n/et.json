@@ -300,11 +300,11 @@
       "open": "Ava",
       "actions": "Toimingud",
       "duplicate": "Tee koopia",
-      "export": "Ekspordi (JSON)",
+      "export": "Laadi alla varukoopia",
       "delete": "Kustuta",
       "updated": "Muudetud {{date}}",
       "versions": "Versioonid: {{count}}",
-      "backupHint": "Sinu CV-d on olemas ainult selles brauseris. Ekspordi regulaarselt JSON-varukoopia: kui kustutad brauseri andmed, saad selle abil kõik tagasi",
+      "backupHint": "Sinu CV-d on olemas ainult selles brauseris. Ekspordi regulaarselt varukoopia: kui kustutad brauseri andmed, saad selle abil kõik tagasi",
       "defaultName": "Minu CV",
       "copySuffix": "(koopia)",
       "deleteTitle": "Kas kustutada „{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV-sid selles varukoopias: {{count}}. Selles brauseris juba olevad CV-d asendatakse",
       "importDone": "Varukoopia imporditud: {{count}} CV-d",
       "importError": {
-        "invalidJson": "See fail pole kehtiv JSON",
+        "invalidJson": "See fail pole LocalATSCV varukoopia",
         "notABackup": "See fail pole LocalATSCV varukoopia",
         "newerVersion": "See varukoopia pärineb LocalATSCV uuemast versioonist: uuenda kõigepealt rakendust"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tume taust",
         "columns": "Kaks veergu",
-        "serif": "Seriifkiri",
+        "serif": "Raamatustiil",
         "mono": "Kirjutusmasina stiil",
         "paper": "Paber",
         "colorful": "Värviline",

@@ -300,11 +300,11 @@
       "open": "Fungua",
       "actions": "Vitendo",
       "duplicate": "Nakili",
-      "export": "Hamisha (JSON)",
+      "export": "Pakua nakala rudufu",
       "delete": "Futa",
       "updated": "Imehaririwa {{date}}",
       "versions": "Matoleo: {{count}}",
-      "backupHint": "CV zako zipo kwenye kivinjari hiki tu. Hamisha nakala ya JSON mara kwa mara: ukifuta data ya kivinjari chako, bado utaweza kurejesha kila kitu",
+      "backupHint": "CV zako zipo kwenye kivinjari hiki tu. Pakua nakala rudufu mara kwa mara: ukifuta data ya kivinjari chako, bado utaweza kurejesha kila kitu",
       "defaultName": "CV yangu",
       "copySuffix": "(nakala)",
       "deleteTitle": "Futa “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV kwenye nakala: {{count}}. CV zilizopo kwenye kivinjari hiki zitabadilishwa",
       "importDone": "Nakala imeletwa: CV {{count}}",
       "importError": {
-        "invalidJson": "Faili hii si JSON halali",
+        "invalidJson": "Faili hii si nakala rudufu ya LocalATSCV",
         "notABackup": "Faili hii si nakala ya LocalATSCV",
         "newerVersion": "Nakala hii imetoka kwenye toleo jipya zaidi la LocalATSCV: sasisha programu kwanza"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Mandharinyuma meusi",
         "columns": "Safu mbili",
-        "serif": "Serifu",
+        "serif": "Mtindo wa kitabu",
         "mono": "Mtindo wa taipureta",
         "paper": "Karatasi",
         "colorful": "Rangi nyingi",

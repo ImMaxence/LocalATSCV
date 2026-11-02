@@ -300,11 +300,11 @@
       "open": "열기",
       "actions": "작업",
       "duplicate": "복제",
-      "export": "내보내기(JSON)",
+      "export": "백업 다운로드",
       "delete": "삭제",
       "updated": "{{date}}에 수정됨",
       "versions": "버전: {{count}}",
-      "backupHint": "이력서는 이 브라우저에만 존재합니다. JSON 백업을 정기적으로 내보내 두면 브라우저 데이터를 지워도 모두 복구할 수 있습니다",
+      "backupHint": "이력서는 이 브라우저에만 존재합니다. 백업을 정기적으로 내보내 두면 브라우저 데이터를 지워도 모두 복구할 수 있습니다",
       "defaultName": "내 이력서",
       "copySuffix": "(사본)",
       "deleteTitle": "'{{name}}'을(를) 삭제할까요?",
@@ -314,7 +314,7 @@
       "importConfirmText": "이 백업의 이력서: {{count}}개. 이 브라우저에 이미 있는 이력서는 대체됩니다",
       "importDone": "백업을 가져왔습니다: 이력서 {{count}}개",
       "importError": {
-        "invalidJson": "올바른 JSON 파일이 아닙니다",
+        "invalidJson": "LocalATSCV 백업 파일이 아닙니다",
         "notABackup": "LocalATSCV 백업 파일이 아닙니다",
         "newerVersion": "더 최신 버전의 LocalATSCV에서 만든 백업입니다: 먼저 앱을 업데이트하세요"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "어두운 배경",
         "columns": "2단",
-        "serif": "세리프",
+        "serif": "책 스타일",
         "mono": "타자기 스타일",
         "paper": "종이 질감",
         "colorful": "다채로운",

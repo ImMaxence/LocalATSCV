@@ -300,11 +300,11 @@
       "open": "打开",
       "actions": "操作",
       "duplicate": "复制",
-      "export": "导出（JSON）",
+      "export": "下载备份",
       "delete": "删除",
       "updated": "编辑于 {{date}}",
       "versions": "版本：{{count}}",
-      "backupHint": "你的简历只存在于此浏览器中。请定期导出 JSON 备份：即使清除了浏览器数据，也能凭它恢复全部内容",
+      "backupHint": "你的简历只存在于此浏览器中。请定期下载备份：即使清除了浏览器数据，也能凭它恢复全部内容",
       "defaultName": "我的简历",
       "copySuffix": "（副本）",
       "deleteTitle": "删除“{{name}}”？",
@@ -314,7 +314,7 @@
       "importConfirmText": "此备份中的简历：{{count}} 份。此浏览器中已有的同一简历将被替换",
       "importDone": "备份已导入：{{count}} 份简历",
       "importError": {
-        "invalidJson": "此文件不是有效的 JSON",
+        "invalidJson": "此文件不是 LocalATSCV 备份",
         "notABackup": "此文件不是 LocalATSCV 备份",
         "newerVersion": "此备份来自更新版本的 LocalATSCV：请先更新应用"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "深色背景",
         "columns": "双栏",
-        "serif": "衬线",
+        "serif": "书籍风格",
         "mono": "打字机风格",
         "paper": "纸张质感",
         "colorful": "多彩",

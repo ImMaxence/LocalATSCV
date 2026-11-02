@@ -300,11 +300,11 @@
       "open": "Megnyitás",
       "actions": "Műveletek",
       "duplicate": "Másolat készítése",
-      "export": "Exportálás (JSON)",
+      "export": "Biztonsági mentés letöltése",
       "delete": "Törlés",
       "updated": "Szerkesztve: {{date}}",
       "versions": "Változatok: {{count}}",
-      "backupHint": "Az önéletrajzai csak ebben a böngészőben léteznek. Rendszeresen exportáljon JSON-mentést: ha törli a böngésző adatait, ezzel mindent visszaállíthat",
+      "backupHint": "Az önéletrajzai csak ebben a böngészőben léteznek. Rendszeresen exportáljon mentést: ha törli a böngésző adatait, ezzel mindent visszaállíthat",
       "defaultName": "Önéletrajzom",
       "copySuffix": "(másolat)",
       "deleteTitle": "Törli ezt: „{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Önéletrajzok ebben a mentésben: {{count}}. Az ebben a böngészőben már létezők felülíródnak",
       "importDone": "Mentés importálva: {{count}} önéletrajz",
       "importError": {
-        "invalidJson": "Ez a fájl nem érvényes JSON",
+        "invalidJson": "Ez a fájl nem LocalATSCV-mentés",
         "notABackup": "Ez a fájl nem LocalATSCV-mentés",
         "newerVersion": "Ez a mentés a LocalATSCV egy újabb verziójából származik: előbb frissítse az alkalmazást"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Sötét háttér",
         "columns": "Két hasáb",
-        "serif": "Talpas",
+        "serif": "Könyvstílus",
         "mono": "Írógépes stílus",
         "paper": "Papír",
         "colorful": "Színes",

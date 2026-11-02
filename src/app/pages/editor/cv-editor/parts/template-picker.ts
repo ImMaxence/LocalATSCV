@@ -49,11 +49,7 @@ const PREVIEW_PANE_QUERY = '(min-width: 1024px)';
 type Filter = 'all' | 'favorites' | 'recent' | CvTemplateFamily;
 
 /** Minuscules sans accents, pour comparer une recherche aux noms et descriptions traduits. */
-const fold = (text: string) =>
-  text
-    .normalize('NFD')
-    .replace(/\p{M}/gu, '')
-    .toLowerCase();
+const fold = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 
 /** Liste d'identifiants de modèles mémorisée dans les réglages locaux (favoris, récents). */
 function readIds(key: string): CvTemplateId[] {
@@ -88,71 +84,90 @@ function readIds(key: string): CvTemplateId[] {
               t('count', { n: total })
             }}</span>
           </h2>
-          <p class="mt-0.5 text-sm text-muted">{{ t('subtitle') }}</p>
+          <!-- Le sous-titre décrit le volet d'aperçu, absent sur petit écran -->
+          <p class="mt-0.5 hidden text-sm text-muted lg:block">{{ t('subtitle') }}</p>
         </div>
         <button type="button" class="icon-btn" [attr.aria-label]="t('close')" (click)="ref.close()">
           <app-icon class="size-4" name="x" />
         </button>
       </header>
 
-      <div class="flex flex-wrap items-center gap-2 border-b border-line px-5 py-2.5">
-        <div role="radiogroup" class="flex flex-wrap gap-1.5" [attr.aria-label]="t('filter')">
-          @for (option of filters; track option) {
-            <button
-              type="button"
-              role="radio"
-              class="flex items-center gap-1 rounded-full border border-line px-2.5 py-1 text-sm font-medium text-muted transition-colors hover:text-ink aria-checked:border-accent aria-checked:bg-accent-soft aria-checked:text-accent"
-              [attr.aria-checked]="filter() === option"
-              (click)="filter.set(option)"
-            >
-              @if (option === 'favorites') {
-                <svg viewBox="0 0 24 24" class="size-3.5" aria-hidden="true">
-                  <path [attr.d]="starPath" fill="currentColor" />
-                </svg>
-              } @else if (option === 'recent') {
-                <app-icon class="size-3.5" name="history" />
-              }
-              {{ t('filters.' + option) }}
-              <span class="text-xs opacity-70">{{ count(option) }}</span>
-            </button>
-          }
-        </div>
-        <span class="hidden h-5 w-px bg-line sm:block" aria-hidden="true"></span>
-        <div class="flex flex-wrap gap-1.5" role="group" [attr.aria-label]="t('tagsLabel')">
-          @for (tag of allTags; track tag) {
-            <button
-              type="button"
-              class="rounded-full border border-dashed border-line px-2.5 py-0.5 text-xs font-medium text-muted transition-colors hover:text-ink aria-pressed:border-solid aria-pressed:border-ink/40 aria-pressed:bg-surface-2 aria-pressed:text-ink"
-              [attr.aria-pressed]="tags().has(tag)"
-              (click)="toggleTag(tag)"
-            >
-              {{ t('tags.' + tag) }}
-            </button>
-          }
-        </div>
-        <label class="relative min-w-0 flex-1 basis-40">
-          <app-icon
-            class="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted"
-            name="search"
-          />
-          <input
-            type="search"
-            class="h-9 w-full rounded-full border border-line bg-surface-2 ps-9 pe-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-accent"
-            [placeholder]="t('search')"
-            [attr.aria-label]="t('search')"
-            [value]="query()"
-            (input)="query.set($any($event.target).value)"
-          />
-        </label>
-        <button
-          type="button"
-          class="flex h-9 items-center gap-2 rounded-full border border-line px-3 text-sm font-medium text-muted transition-colors hover:border-ink/25 hover:text-ink"
-          [title]="t('randomHint')"
-          (click)="pickRandom()"
+      <div
+        class="flex flex-col gap-2 border-b border-line px-5 py-2.5 sm:flex-row sm:flex-wrap sm:items-center"
+      >
+        <!-- Sur téléphone, tous les filtres tiennent sur une ligne qui défile horizontalement -->
+        <div
+          class="-mx-5 flex items-center gap-1.5 overflow-x-auto px-5 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0"
         >
-          <app-icon class="size-4" name="shuffle" />
-          <span class="hidden sm:inline">{{ t('random') }}</span>
-        </button>
+          <div
+            role="radiogroup"
+            class="flex shrink-0 gap-1.5 sm:flex-wrap"
+            [attr.aria-label]="t('filter')"
+          >
+            @for (option of filters; track option) {
+              <button
+                type="button"
+                role="radio"
+                class="flex shrink-0 items-center gap-1 rounded-full border border-line px-2.5 py-1 text-sm font-medium whitespace-nowrap text-muted transition-colors hover:text-ink aria-checked:border-accent aria-checked:bg-accent-soft aria-checked:text-accent"
+                [attr.aria-checked]="filter() === option"
+                (click)="filter.set(option)"
+              >
+                @if (option === 'favorites') {
+                  <svg viewBox="0 0 24 24" class="size-3.5" aria-hidden="true">
+                    <path [attr.d]="starPath" fill="currentColor" />
+                  </svg>
+                } @else if (option === 'recent') {
+                  <app-icon class="size-3.5" name="history" />
+                }
+                {{ t('filters.' + option) }}
+                <span class="text-xs opacity-70">{{ count(option) }}</span>
+              </button>
+            }
+          </div>
+          <span class="h-5 w-px shrink-0 bg-line" aria-hidden="true"></span>
+          <div
+            class="flex shrink-0 gap-1.5 sm:flex-wrap"
+            role="group"
+            [attr.aria-label]="t('tagsLabel')"
+          >
+            @for (tag of allTags; track tag) {
+              <button
+                type="button"
+                class="shrink-0 rounded-full border border-dashed border-line px-2.5 py-0.5 text-xs font-medium whitespace-nowrap text-muted transition-colors hover:text-ink aria-pressed:border-solid aria-pressed:border-ink/40 aria-pressed:bg-surface-2 aria-pressed:text-ink"
+                [attr.aria-pressed]="tags().has(tag)"
+                (click)="toggleTag(tag)"
+              >
+                {{ t('tags.' + tag) }}
+              </button>
+            }
+          </div>
+        </div>
+        <div class="flex min-w-0 items-center gap-2 sm:min-w-72 sm:flex-1">
+          <label class="relative min-w-0 flex-1">
+            <app-icon
+              class="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted"
+              name="search"
+            />
+            <input
+              type="search"
+              class="h-9 w-full rounded-full border border-line bg-surface-2 ps-9 pe-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-accent"
+              [placeholder]="t('search')"
+              [attr.aria-label]="t('search')"
+              [value]="query()"
+              (input)="query.set($any($event.target).value)"
+            />
+          </label>
+          <button
+            type="button"
+            class="flex h-9 shrink-0 items-center gap-2 rounded-full border border-line px-3 text-sm font-medium text-muted transition-colors hover:border-ink/25 hover:text-ink"
+            [title]="t('randomHint')"
+            [attr.aria-label]="t('random')"
+            (click)="pickRandom()"
+          >
+            <app-icon class="size-4" name="shuffle" />
+            <span class="hidden sm:inline">{{ t('random') }}</span>
+          </button>
+        </div>
       </div>
 
       <div class="grid min-h-0 flex-1 lg:grid-cols-[minmax(0,1fr)_22rem]">
@@ -322,9 +337,10 @@ function readIds(key: string): CvTemplateId[] {
                 >{{ t('filters.' + selectedTemplate().family) }}</span
               >
               @for (tag of selectedTemplate().tags; track tag) {
-                <span class="rounded-full bg-surface px-2 py-0.5 text-[11px] font-semibold text-muted">{{
-                  t('tags.' + tag)
-                }}</span>
+                <span
+                  class="rounded-full bg-surface px-2 py-0.5 text-[11px] font-semibold text-muted"
+                  >{{ t('tags.' + tag) }}</span
+                >
               }
             </div>
           </div>
@@ -346,8 +362,10 @@ function readIds(key: string): CvTemplateId[] {
       </div>
 
       <p
-        class="flex flex-wrap items-start gap-x-4 gap-y-1 border-t border-line px-5 py-2.5 text-xs text-muted"
+        class="hidden flex-wrap items-start gap-x-4 gap-y-1 border-t border-line px-5 py-2.5 text-xs text-muted sm:flex"
       >
+        <!-- Masqué sur téléphone pour laisser la place aux vignettes ; l'icône d'alerte des
+             modèles à deux colonnes reste visible sur chaque carte. -->
         <span class="flex items-start gap-2"
           ><app-icon class="mt-px size-3.5 shrink-0" name="info" />{{ t('atsHint') }}</span
         >
@@ -369,7 +387,13 @@ export class TemplatePicker {
   protected readonly starPath =
     'M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9Z';
 
-  protected readonly filters: readonly Filter[] = ['all', 'favorites', 'recent', 'graphic', 'sober'];
+  protected readonly filters: readonly Filter[] = [
+    'all',
+    'favorites',
+    'recent',
+    'graphic',
+    'sober',
+  ];
   protected readonly filter = signal<Filter>('all');
   protected readonly tags = signal<ReadonlySet<CvTemplateTag>>(new Set());
   protected readonly query = signal('');
@@ -396,12 +420,10 @@ export class TemplatePicker {
     return hidesPersonalDetails(this.sample.language) ? null : SAMPLE_PHOTO_URL;
   });
 
-  protected readonly previewCv = computed(
-    (): ResolvedCv => ({
-      ...(this.source() === 'sample' ? this.sample : this.data.cv),
-      template: this.selected(),
-    }),
-  );
+  protected readonly previewCv = computed((): ResolvedCv => ({
+    ...(this.source() === 'sample' ? this.sample : this.data.cv),
+    template: this.selected(),
+  }));
 
   protected readonly selectedTemplate = computed(
     () => CV_TEMPLATES.find((template) => template.id === this.selected()) ?? CV_TEMPLATES[0],

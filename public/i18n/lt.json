@@ -300,11 +300,11 @@
       "open": "Atidaryti",
       "actions": "Veiksmai",
       "duplicate": "Dublikuoti",
-      "export": "Eksportuoti (JSON)",
+      "export": "Atsisiųsti atsarginę kopiją",
       "delete": "Ištrinti",
       "updated": "Redaguota {{date}}",
       "versions": "Versijos: {{count}}",
-      "backupHint": "Jūsų CV egzistuoja tik šioje naršyklėje. Reguliariai eksportuokite JSON atsarginę kopiją: jei išvalysite naršyklės duomenis, su ja viską atgausite",
+      "backupHint": "Jūsų CV egzistuoja tik šioje naršyklėje. Reguliariai eksportuokite atsarginę kopiją: jei išvalysite naršyklės duomenis, su ja viską atgausite",
       "defaultName": "Mano CV",
       "copySuffix": "(kopija)",
       "deleteTitle": "Ištrinti „{{name}}“?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV šioje atsarginėje kopijoje: {{count}}. Šioje naršyklėje jau esantys CV bus pakeisti",
       "importDone": "Atsarginė kopija importuota: {{count}} CV",
       "importError": {
-        "invalidJson": "Šis failas nėra tinkamas JSON",
+        "invalidJson": "Šis failas nėra LocalATSCV atsarginė kopija",
         "notABackup": "Šis failas nėra LocalATSCV atsarginė kopija",
         "newerVersion": "Ši atsarginė kopija yra iš naujesnės LocalATSCV versijos: pirmiausia atnaujinkite programėlę"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tamsus fonas",
         "columns": "Du stulpeliai",
-        "serif": "Serifinis",
+        "serif": "Knygos stilius",
         "mono": "Rašomosios mašinėlės stilius",
         "paper": "Popierius",
         "colorful": "Spalvingas",

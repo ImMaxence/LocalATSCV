@@ -300,11 +300,11 @@
       "open": "Aç",
       "actions": "İşlemler",
       "duplicate": "Çoğalt",
-      "export": "Dışa aktar (JSON)",
+      "export": "Yedeği indir",
       "delete": "Sil",
       "updated": "Düzenlendi: {{date}}",
       "versions": "Sürümler: {{count}}",
-      "backupHint": "CV'leriniz yalnızca bu tarayıcıda bulunur. Düzenli olarak JSON yedeği alın: tarayıcı verilerinizi temizlerseniz her şeyi geri yükleyebilirsiniz",
+      "backupHint": "CV'leriniz yalnızca bu tarayıcıda bulunur. Düzenli olarak yedek alın: tarayıcı verilerinizi temizlerseniz her şeyi geri yükleyebilirsiniz",
       "defaultName": "CV'm",
       "copySuffix": "(kopya)",
       "deleteTitle": "“{{name}}” silinsin mi?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Bu yedekteki CV'ler: {{count}}. Bu tarayıcıda zaten bulunan CV'lerin yerine geçecek",
       "importDone": "Yedek içe aktarıldı: {{count}} CV",
       "importError": {
-        "invalidJson": "Bu dosya geçerli bir JSON değil",
+        "invalidJson": "Bu dosya bir LocalATSCV yedeği değil",
         "notABackup": "Bu dosya bir LocalATSCV yedeği değil",
         "newerVersion": "Bu yedek LocalATSCV'nin daha yeni bir sürümünden: önce uygulamayı güncelleyin"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Koyu arka plan",
         "columns": "İki sütun",
-        "serif": "Serif",
+        "serif": "Kitap stili",
         "mono": "Daktilo stili",
         "paper": "Kâğıt",
         "colorful": "Renkli",

@@ -35,7 +35,10 @@ import { ToastOutlet } from './shared/toast/toast';
     <div class="flex min-h-dvh flex-col" [dir]="language.direction()">
       <app-header />
       <app-language-suggestion />
-      <main id="main" class="flex-1">
+      <!-- Au moins la hauteur de l'écran : quand la page est rendue dans le navigateur (visite
+           servie par le service worker), le pied de page reste sous la ligne de flottaison le
+           temps que le contenu arrive, au lieu de sauter vers le bas sous les yeux (CLS). -->
+      <main id="main" class="min-h-dvh flex-1">
         <router-outlet />
       </main>
       <app-footer />

@@ -300,11 +300,11 @@
       "open": "Åbn",
       "actions": "Handlinger",
       "duplicate": "Duplikér",
-      "export": "Eksportér (JSON)",
+      "export": "Download en sikkerhedskopi",
       "delete": "Slet",
       "updated": "Redigeret {{date}}",
       "versions": "Versioner: {{count}}",
-      "backupHint": "Dine CV'er findes kun i denne browser. Eksportér jævnligt en JSON-sikkerhedskopi: rydder du dine browserdata, kan du få det hele tilbage med den",
+      "backupHint": "Dine CV'er findes kun i denne browser. Eksportér jævnligt en sikkerhedskopi: rydder du dine browserdata, kan du få det hele tilbage med den",
       "defaultName": "Mit CV",
       "copySuffix": "(kopi)",
       "deleteTitle": "Slet »{{name}}«?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV'er i denne sikkerhedskopi: {{count}}. CV'er, der allerede findes i denne browser, bliver erstattet",
       "importDone": "Sikkerhedskopi importeret: {{count}} CV('er)",
       "importError": {
-        "invalidJson": "Filen er ikke gyldig JSON",
+        "invalidJson": "Filen er ikke en sikkerhedskopi fra LocalATSCV",
         "notABackup": "Filen er ikke en sikkerhedskopi fra LocalATSCV",
         "newerVersion": "Sikkerhedskopien kommer fra en nyere version af LocalATSCV: opdatér appen først"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Mørk baggrund",
         "columns": "To kolonner",
-        "serif": "Serif",
+        "serif": "Bogstil",
         "mono": "Skrivemaskinestil",
         "paper": "Papir",
         "colorful": "Farverig",

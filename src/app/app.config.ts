@@ -6,6 +6,7 @@ import {
   provideBrowserGlobalErrorListeners,
 } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import {
   TitleStrategy,
@@ -27,6 +28,10 @@ import { skipSamePageTransitions } from './core/view-transitions';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
+    // Les pages publiques pré-générées sont reprises telles quelles au démarrage au lieu d'être
+    // effacées puis redessinées : plus de saut du pied de page (CLS) ni de page blanche furtive.
+    // Les clics faits avant le démarrage sont rejoués.
+    provideClientHydration(withEventReplay()),
     provideRouter(
       routes,
       withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),

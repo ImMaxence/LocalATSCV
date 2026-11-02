@@ -300,11 +300,11 @@
       "open": "Öppna",
       "actions": "Åtgärder",
       "duplicate": "Duplicera",
-      "export": "Exportera (JSON)",
+      "export": "Ladda ner en säkerhetskopia",
       "delete": "Radera",
       "updated": "Ändrat {{date}}",
       "versions": "Versioner: {{count}}",
-      "backupHint": "Dina CV finns bara i den här webbläsaren. Exportera en JSON-säkerhetskopia regelbundet: om du rensar webbläsarens data kan du få tillbaka allt med den",
+      "backupHint": "Dina CV finns bara i den här webbläsaren. Exportera en säkerhetskopia regelbundet: om du rensar webbläsarens data kan du få tillbaka allt med den",
       "defaultName": "Mitt CV",
       "copySuffix": "(kopia)",
       "deleteTitle": "Radera ”{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV i den här säkerhetskopian: {{count}}. CV som redan finns i den här webbläsaren ersätts",
       "importDone": "Säkerhetskopia importerad: {{count}} CV",
       "importError": {
-        "invalidJson": "Filen är inte giltig JSON",
+        "invalidJson": "Filen är inte en säkerhetskopia från LocalATSCV",
         "notABackup": "Filen är ingen säkerhetskopia från LocalATSCV",
         "newerVersion": "Säkerhetskopian kommer från en nyare version av LocalATSCV: uppdatera appen först"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Mörk bakgrund",
         "columns": "Två kolumner",
-        "serif": "Serif",
+        "serif": "Bokstil",
         "mono": "Skrivmaskinsstil",
         "paper": "Papper",
         "colorful": "Färgglad",

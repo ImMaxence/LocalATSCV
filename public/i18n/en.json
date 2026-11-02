@@ -300,11 +300,11 @@
       "open": "Open",
       "actions": "Actions",
       "duplicate": "Duplicate",
-      "export": "Export (JSON)",
+      "export": "Download a backup",
       "delete": "Delete",
       "updated": "Edited {{date}}",
       "versions": "Versions: {{count}}",
-      "backupHint": "Your resumes only exist in this browser. Export a JSON backup regularly: if you clear your browser data, it lets you recover everything",
+      "backupHint": "Your resumes only exist in this browser. Download a backup regularly: if you clear your browser data, it lets you recover everything",
       "defaultName": "My resume",
       "copySuffix": "(copy)",
       "deleteTitle": "Delete “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Resumes in this backup: {{count}}. Any resume that already exists in this browser will be replaced",
       "importDone": "Backup imported: {{count}} resume(s)",
       "importError": {
-        "invalidJson": "This file is not valid JSON",
+        "invalidJson": "This file is not a LocalATSCV backup",
         "notABackup": "This file is not a LocalATSCV backup",
         "newerVersion": "This backup comes from a newer version of LocalATSCV: update the app first"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Dark background",
         "columns": "Two columns",
-        "serif": "Serif",
+        "serif": "Book style",
         "mono": "Typewriter style",
         "paper": "Paper",
         "colorful": "Colorful",
@@ -584,7 +584,7 @@
         },
         "elegant": {
           "name": "Elegant",
-          "description": "Centered header and serif typography for a refined look"
+          "description": "Centered header and fine classic lettering for a refined look"
         },
         "tech": {
           "name": "Tech",
@@ -620,7 +620,7 @@
         },
         "editorial": {
           "name": "Editorial",
-          "description": "Magazine layout: large serif name, italic standfirst, numbered sections and an offset portrait"
+          "description": "Magazine layout: large headline-style name, italic standfirst, numbered sections and an offset portrait"
         },
         "brutal": {
           "name": "Brutal",
@@ -636,7 +636,7 @@
         },
         "prestige": {
           "name": "Prestige",
-          "description": "Ivory paper, fine double frame, diamond ornaments and Garamond typography"
+          "description": "Ivory paper, fine double frame, diamond ornaments and old-style lettering"
         },
         "nocturne": {
           "name": "Nocturne",
@@ -672,7 +672,7 @@
         },
         "executive": {
           "name": "Executive",
-          "description": "Navy banner, gold rule and serif name, for leadership roles"
+          "description": "Navy banner, gold rule and a classic-lettered name, for leadership roles"
         },
         "zen": {
           "name": "Zen",
@@ -708,7 +708,7 @@
         },
         "retro": {
           "name": "Retro",
-          "description": "70s color stripes, a sun of arcs in the corner and a rounded serif"
+          "description": "70s color stripes, a sun of arcs in the corner and warm rounded lettering"
         },
         "mosaic": {
           "name": "Mosaic",
@@ -720,7 +720,7 @@
         },
         "botanical": {
           "name": "Botanical",
-          "description": "Cream paper, leaf sprigs in the corners, Cormorant serif and double rules"
+          "description": "Cream paper, leaf sprigs in the corners, fine elegant lettering and double rules"
         },
         "ticket": {
           "name": "Ticket",
@@ -732,7 +732,7 @@
         },
         "postal": {
           "name": "Postal",
-          "description": "Airmail border, photo as a perforated stamp, postmark and Lora serif"
+          "description": "Airmail border, photo as a perforated stamp, postmark and letter-writing type"
         },
         "arcade": {
           "name": "Arcade",
@@ -748,7 +748,7 @@
         },
         "gazette": {
           "name": "Gazette",
-          "description": "Newspaper front page: Playfair masthead, double rules, dateline and drop cap"
+          "description": "Newspaper front page: name as the masthead, double rules, dateline and drop cap"
         },
         "topo": {
           "name": "Topo",
@@ -756,7 +756,7 @@
         },
         "watercolor": {
           "name": "Watercolor",
-          "description": "Washes of diluted color, brush-stroke headings and Cormorant serif"
+          "description": "Washes of diluted color, brush-stroke headings and fine elegant lettering"
         },
         "ledger": {
           "name": "Ledger",
@@ -768,7 +768,7 @@
         },
         "academic": {
           "name": "Academic",
-          "description": "University format: centered uppercase name, underlined headings, serif, no color"
+          "description": "University format: centered uppercase name, underlined headings, book style, no color"
         },
         "mono": {
           "name": "Monochrome",
@@ -796,15 +796,15 @@
         },
         "riso": {
           "name": "Riso",
-          "description": "Two-ink print with offset registration, dotted grain, heavy grotesque"
+          "description": "Two-ink print with offset registration, dotted grain and extra-bold lettering"
         },
         "collage": {
           "name": "Collage",
-          "description": "Irregular paper scraps, tape, tilted photo and an italic serif"
+          "description": "Irregular paper scraps, tape, tilted photo and italic headings"
         },
         "marble": {
           "name": "Marble",
-          "description": "Veined marble banner, gold rules, Cormorant and a gold-ringed photo"
+          "description": "Veined marble banner, gold rules, fine lettering and a gold-ringed photo"
         },
         "sticker": {
           "name": "Stickers",
@@ -836,11 +836,11 @@
         },
         "stained": {
           "name": "Stained glass",
-          "description": "Lead-lined colored glass panes at the top, lead rules, Cormorant"
+          "description": "Lead-lined colored glass panes at the top, lead rules and fine lettering"
         },
         "finance": {
           "name": "Finance",
-          "description": "Banking classic: serif, spaced capitals, double rule, midnight ink"
+          "description": "Banking classic: book style, spaced capitals, double rule, midnight ink"
         },
         "split": {
           "name": "Split",

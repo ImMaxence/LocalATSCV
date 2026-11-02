@@ -300,11 +300,11 @@
       "open": "Otevřít",
       "actions": "Akce",
       "duplicate": "Duplikovat",
-      "export": "Exportovat (JSON)",
+      "export": "Stáhnout zálohu",
       "delete": "Smazat",
       "updated": "Upraveno {{date}}",
       "versions": "Verze: {{count}}",
-      "backupHint": "Vaše životopisy existují jen v tomto prohlížeči. Pravidelně exportujte zálohu JSON: pokud vymažete data prohlížeče, umožní vám vše obnovit",
+      "backupHint": "Vaše životopisy existují jen v tomto prohlížeči. Pravidelně exportujte zálohu: pokud vymažete data prohlížeče, umožní vám vše obnovit",
       "defaultName": "Můj životopis",
       "copySuffix": "(kopie)",
       "deleteTitle": "Smazat „{{name}}“?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Životopisy v této záloze: {{count}}. Životopisy, které už v tomto prohlížeči existují, budou nahrazeny",
       "importDone": "Záloha importována, životopisy: {{count}}",
       "importError": {
-        "invalidJson": "Tento soubor není platný JSON",
+        "invalidJson": "Tento soubor není záloha LocalATSCV",
         "notABackup": "Tento soubor není záloha LocalATSCV",
         "newerVersion": "Tato záloha pochází z novější verze LocalATSCV: nejdřív aplikaci aktualizujte"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tmavé pozadí",
         "columns": "Dva sloupce",
-        "serif": "Patkové",
+        "serif": "Knižní styl",
         "mono": "Styl psacího stroje",
         "paper": "Papír",
         "colorful": "Barevné",

@@ -300,11 +300,11 @@
       "open": "Otvori",
       "actions": "Radnje",
       "duplicate": "Dupliciraj",
-      "export": "Izvezi (JSON)",
+      "export": "Preuzmi sigurnosnu kopiju",
       "delete": "Izbriši",
       "updated": "Uređeno {{date}}",
       "versions": "Verzije: {{count}}",
-      "backupHint": "Vaši životopisi postoje samo u ovom pregledniku. Redovito izvozite JSON sigurnosnu kopiju: ako izbrišete podatke preglednika, s njom možete sve vratiti",
+      "backupHint": "Vaši životopisi postoje samo u ovom pregledniku. Redovito izvozite sigurnosnu kopiju: ako izbrišete podatke preglednika, s njom možete sve vratiti",
       "defaultName": "Moj životopis",
       "copySuffix": "(kopija)",
       "deleteTitle": "Izbrisati „{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Životopisi u ovoj kopiji: {{count}}. Oni koji već postoje u ovom pregledniku bit će zamijenjeni",
       "importDone": "Sigurnosna kopija uvezena, životopisi: {{count}}",
       "importError": {
-        "invalidJson": "Ova datoteka nije valjan JSON",
+        "invalidJson": "Ova datoteka nije sigurnosna kopija LocalATSCV-a",
         "notABackup": "Ova datoteka nije sigurnosna kopija LocalATSCV-a",
         "newerVersion": "Ova sigurnosna kopija potječe iz novije verzije LocalATSCV-a: najprije ažurirajte aplikaciju"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tamna pozadina",
         "columns": "Dva stupca",
-        "serif": "Serifni",
+        "serif": "Knjiški stil",
         "mono": "Stil pisaćeg stroja",
         "paper": "Papir",
         "colorful": "Šareni",

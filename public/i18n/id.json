@@ -300,11 +300,11 @@
       "open": "Buka",
       "actions": "Tindakan",
       "duplicate": "Duplikat",
-      "export": "Ekspor (JSON)",
+      "export": "Unduh cadangan",
       "delete": "Hapus",
       "updated": "Diubah {{date}}",
       "versions": "Versi: {{count}}",
-      "backupHint": "CV Anda hanya ada di browser ini. Ekspor cadangan JSON secara berkala: jika Anda menghapus data browser, cadangan ini memungkinkan Anda memulihkan semuanya",
+      "backupHint": "CV Anda hanya ada di browser ini. Ekspor cadangan secara berkala: jika Anda menghapus data browser, cadangan ini memungkinkan Anda memulihkan semuanya",
       "defaultName": "CV saya",
       "copySuffix": "(salinan)",
       "deleteTitle": "Hapus “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV dalam cadangan ini: {{count}}. CV yang sudah ada di browser ini akan diganti",
       "importDone": "Cadangan diimpor: {{count}} CV",
       "importError": {
-        "invalidJson": "File ini bukan JSON yang valid",
+        "invalidJson": "File ini bukan cadangan LocalATSCV",
         "notABackup": "File ini bukan cadangan LocalATSCV",
         "newerVersion": "Cadangan ini berasal dari versi LocalATSCV yang lebih baru: perbarui aplikasi terlebih dahulu"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Latar gelap",
         "columns": "Dua kolom",
-        "serif": "Serif",
+        "serif": "Gaya buku",
         "mono": "Gaya mesin tik",
         "paper": "Kertas",
         "colorful": "Berwarna",

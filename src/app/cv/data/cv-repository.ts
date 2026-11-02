@@ -4,7 +4,7 @@ import { Observable, from } from 'rxjs';
 import { CvVersion, MasterCv, newId } from '../model/cv.model';
 import { Backup, BackupPhoto, createBackup, normalizeCv } from './backup';
 import { LocalAtsCvDb } from './db';
-import { blobToDataUrl, dataUrlToBlob } from './photo';
+import { blobToDataUrl, dataUrlToBlob, prepareProfilePhoto } from './photo';
 
 /** Accès aux données locales (IndexedDB). Rien ne sort jamais du navigateur. */
 @Injectable({ providedIn: 'root' })
@@ -117,10 +117,22 @@ export class CvRepository {
 
   /** Les CV de même identifiant sont remplacés, les autres sont conservés. */
   async importBackup(backup: Backup): Promise<void> {
+    // Les photos d'une sauvegarde passent par le même traitement qu'un envoi : décodées puis
+    // réencodées en JPEG par le navigateur. Un fichier qui n'est pas une vraie image (SVG
+    // fabriqué à la main, données corrompues) n'est jamais stocké ; le CV reste sans photo.
+    const photos: { id: string; blob: Blob }[] = [];
+    for (const photo of backup.photos) {
+      try {
+        photos.push({
+          id: photo.id,
+          blob: await prepareProfilePhoto(dataUrlToBlob(photo.dataUrl)),
+        });
+      } catch {
+        // Photo illisible : ignorée.
+      }
+    }
     await this.db.transaction('rw', this.db.cvs, this.db.versions, this.db.photos, async () => {
-      await this.db.photos.bulkPut(
-        backup.photos.map((photo) => ({ id: photo.id, blob: dataUrlToBlob(photo.dataUrl) })),
-      );
+      await this.db.photos.bulkPut(photos);
       for (const cv of backup.cvs) await this.db.versions.where('masterId').equals(cv.id).delete();
       await this.db.versions.bulkPut(backup.versions);
       await this.db.cvs.bulkPut(backup.cvs);

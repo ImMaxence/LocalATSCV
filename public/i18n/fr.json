@@ -300,11 +300,11 @@
       "open": "Ouvrir",
       "actions": "Actions",
       "duplicate": "Dupliquer",
-      "export": "Exporter (JSON)",
+      "export": "Télécharger une sauvegarde",
       "delete": "Supprimer",
       "updated": "Modifié le {{date}}",
       "versions": "Versions : {{count}}",
-      "backupHint": "Vos CV n'existent que dans ce navigateur. Exportez régulièrement une sauvegarde JSON : si vous videz les données du navigateur, elle vous permettra de tout récupérer",
+      "backupHint": "Vos CV n'existent que dans ce navigateur. Téléchargez régulièrement une sauvegarde : si vous videz les données du navigateur, elle vous permettra de tout récupérer",
       "defaultName": "Mon CV",
       "copySuffix": "(copie)",
       "deleteTitle": "Supprimer « {{name}} » ?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Elle contient {{count}} CV. Si l'un d'eux existe déjà dans ce navigateur, il sera remplacé",
       "importDone": "Sauvegarde importée : {{count}} CV",
       "importError": {
-        "invalidJson": "Ce fichier n'est pas un JSON valide",
+        "invalidJson": "Ce fichier n'est pas une sauvegarde LocalATSCV",
         "notABackup": "Ce fichier n'est pas une sauvegarde LocalATSCV",
         "newerVersion": "Cette sauvegarde vient d'une version plus récente de LocalATSCV : mettez l'application à jour"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Fond sombre",
         "columns": "Deux colonnes",
-        "serif": "Serif",
+        "serif": "Style livre",
         "mono": "Style machine à écrire",
         "paper": "Papier",
         "colorful": "Coloré",
@@ -584,7 +584,7 @@
         },
         "elegant": {
           "name": "Élégant",
-          "description": "En-tête centré et typographie à empattements, pour un rendu raffiné"
+          "description": "En-tête centré et lettres fines à l'ancienne, pour un rendu raffiné"
         },
         "tech": {
           "name": "Tech",
@@ -620,7 +620,7 @@
         },
         "editorial": {
           "name": "Éditorial",
-          "description": "Mise en page de magazine : grand nom en serif, chapô en italique, rubriques numérotées et portrait décalé"
+          "description": "Mise en page de magazine : grand nom façon titre de presse, chapô en italique, rubriques numérotées et portrait décalé"
         },
         "brutal": {
           "name": "Brutal",
@@ -636,7 +636,7 @@
         },
         "prestige": {
           "name": "Prestige",
-          "description": "Papier ivoire, double cadre fin, ornements en losange et typographie Garamond"
+          "description": "Papier ivoire, double cadre fin, ornements en losange et lettres à l'ancienne"
         },
         "nocturne": {
           "name": "Nocturne",
@@ -672,7 +672,7 @@
         },
         "executive": {
           "name": "Exécutif",
-          "description": "Bandeau bleu nuit, filet doré et nom en serif, pour les fonctions de direction"
+          "description": "Bandeau bleu nuit, filet doré et nom en lettres classiques, pour les fonctions de direction"
         },
         "zen": {
           "name": "Zen",
@@ -708,7 +708,7 @@
         },
         "retro": {
           "name": "Rétro",
-          "description": "Bandes de couleurs années 70, soleil en arcs dans l'angle, serif arrondie"
+          "description": "Bandes de couleurs années 70, soleil en arcs dans l'angle, lettres rondes et chaleureuses"
         },
         "mosaic": {
           "name": "Mosaïque",
@@ -720,7 +720,7 @@
         },
         "botanical": {
           "name": "Botanique",
-          "description": "Papier crème, rameaux de feuilles dans les angles, serif Cormorant et filets doubles"
+          "description": "Papier crème, rameaux de feuilles dans les angles, lettres fines et élégantes, filets doubles"
         },
         "ticket": {
           "name": "Ticket",
@@ -732,7 +732,7 @@
         },
         "postal": {
           "name": "Postal",
-          "description": "Bordure par avion, photo en timbre dentelé, cachet de la poste et serif Lora"
+          "description": "Bordure par avion, photo en timbre dentelé, cachet de la poste et lettres de correspondance"
         },
         "arcade": {
           "name": "Arcade",
@@ -748,7 +748,7 @@
         },
         "gazette": {
           "name": "Gazette",
-          "description": "Une de journal : manchette Playfair, filets doubles, ligne de date et lettrine"
+          "description": "Une de journal : nom en manchette, filets doubles, ligne de date et lettrine"
         },
         "topo": {
           "name": "Relief",
@@ -756,7 +756,7 @@
         },
         "watercolor": {
           "name": "Aquarelle",
-          "description": "Taches de couleur diluée, titres au coup de pinceau, serif Cormorant"
+          "description": "Taches de couleur diluée, titres au coup de pinceau, lettres fines et élégantes"
         },
         "ledger": {
           "name": "Registre",
@@ -768,7 +768,7 @@
         },
         "academic": {
           "name": "Académique",
-          "description": "Format universitaire : nom centré en capitales, titres soulignés, serif, aucune couleur"
+          "description": "Format universitaire : nom centré en capitales, titres soulignés, style livre, aucune couleur"
         },
         "mono": {
           "name": "Monochrome",
@@ -796,15 +796,15 @@
         },
         "riso": {
           "name": "Riso",
-          "description": "Impression deux encres au repérage décalé, grain de points, grotesque grasse"
+          "description": "Impression deux encres au repérage décalé, grain de points, lettres très grasses"
         },
         "collage": {
           "name": "Collage",
-          "description": "Morceaux de papier aux bords irréguliers, ruban adhésif, photo penchée, serif italique"
+          "description": "Morceaux de papier aux bords irréguliers, ruban adhésif, photo penchée, titres en italique"
         },
         "marble": {
           "name": "Marbre",
-          "description": "Bandeau de marbre veiné, filets dorés, Cormorant et photo cerclée d'or"
+          "description": "Bandeau de marbre veiné, filets dorés, lettres fines et photo cerclée d'or"
         },
         "sticker": {
           "name": "Stickers",
@@ -836,11 +836,11 @@
         },
         "stained": {
           "name": "Vitrail",
-          "description": "Verres colorés sertis de plomb en tête de page, filets plomb, Cormorant"
+          "description": "Verres colorés sertis de plomb en tête de page, filets plomb, lettres fines"
         },
         "finance": {
           "name": "Finance",
-          "description": "Classique bancaire : serif, capitales espacées, filet double, encre bleu nuit"
+          "description": "Classique bancaire : style livre, capitales espacées, filet double, encre bleu nuit"
         },
         "split": {
           "name": "Partagé",

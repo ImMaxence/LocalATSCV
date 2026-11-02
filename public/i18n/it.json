@@ -300,11 +300,11 @@
       "open": "Apri",
       "actions": "Azioni",
       "duplicate": "Duplica",
-      "export": "Esporta (JSON)",
+      "export": "Scarica un backup",
       "delete": "Elimina",
       "updated": "Modificato il {{date}}",
       "versions": "Versioni: {{count}}",
-      "backupHint": "I tuoi CV esistono solo in questo browser. Esporta regolarmente un backup JSON: se cancelli i dati del browser, ti permetterà di recuperare tutto",
+      "backupHint": "I tuoi CV esistono solo in questo browser. Esporta regolarmente un backup: se cancelli i dati del browser, ti permetterà di recuperare tutto",
       "defaultName": "Il mio CV",
       "copySuffix": "(copia)",
       "deleteTitle": "Eliminare «{{name}}»?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Contiene {{count}} CV. Se uno di essi esiste già in questo browser, verrà sostituito",
       "importDone": "Backup importato: {{count}} CV",
       "importError": {
-        "invalidJson": "Questo file non è un JSON valido",
+        "invalidJson": "Questo file non è un backup di LocalATSCV",
         "notABackup": "Questo file non è un backup di LocalATSCV",
         "newerVersion": "Questo backup proviene da una versione più recente di LocalATSCV: aggiorna prima l'applicazione"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Sfondo scuro",
         "columns": "Due colonne",
-        "serif": "Serif",
+        "serif": "Stile libro",
         "mono": "Stile macchina da scrivere",
         "paper": "Carta",
         "colorful": "Colorato",

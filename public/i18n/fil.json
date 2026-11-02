@@ -300,11 +300,11 @@
       "open": "Buksan",
       "actions": "Mga aksyon",
       "duplicate": "I-duplicate",
-      "export": "I-export (JSON)",
+      "export": "I-download ang backup",
       "delete": "Burahin",
       "updated": "Binago noong {{date}}",
       "versions": "Mga bersyon: {{count}}",
-      "backupHint": "Sa browser na ito lang umiiral ang mga resume mo. Regular na mag-export ng JSON backup: kung buburahin mo ang data ng browser mo, maibabalik mo pa rin ang lahat",
+      "backupHint": "Sa browser na ito lang umiiral ang mga resume mo. Regular na mag-export ng backup: kung buburahin mo ang data ng browser mo, maibabalik mo pa rin ang lahat",
       "defaultName": "Resume ko",
       "copySuffix": "(kopya)",
       "deleteTitle": "Burahin ang “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Mga resume sa backup: {{count}}. Papalitan ang mga resume na nasa browser na ito",
       "importDone": "Na-import ang backup: {{count}} resume",
       "importError": {
-        "invalidJson": "Hindi valid na JSON ang file na ito",
+        "invalidJson": "Hindi ito backup ng LocalATSCV",
         "notABackup": "Hindi backup ng LocalATSCV ang file na ito",
         "newerVersion": "Galing sa mas bagong bersyon ng LocalATSCV ang backup na ito: i-update muna ang app"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Madilim na background",
         "columns": "Dalawang column",
-        "serif": "Serif",
+        "serif": "Istilong aklat",
         "mono": "Istilong makinilya",
         "paper": "Papel",
         "colorful": "Makulay",

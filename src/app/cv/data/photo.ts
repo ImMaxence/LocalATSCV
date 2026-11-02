@@ -4,7 +4,7 @@ const MAX_PHOTO_SIZE = 800;
 export class PhotoError extends Error {}
 
 /** Redimensionne la photo dans le navigateur et la convertit en JPEG. */
-export async function prepareProfilePhoto(file: File): Promise<Blob> {
+export async function prepareProfilePhoto(file: Blob): Promise<Blob> {
   if (!file.type.startsWith('image/')) throw new PhotoError('notAnImage');
   const bitmap = await createImageBitmap(file).catch(() => {
     throw new PhotoError('unreadable');

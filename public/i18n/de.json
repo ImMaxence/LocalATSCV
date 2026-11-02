@@ -300,11 +300,11 @@
       "open": "Öffnen",
       "actions": "Aktionen",
       "duplicate": "Duplizieren",
-      "export": "Exportieren (JSON)",
+      "export": "Sicherung herunterladen",
       "delete": "Löschen",
       "updated": "Geändert am {{date}}",
       "versions": "Versionen: {{count}}",
-      "backupHint": "Deine Lebensläufe existieren nur in diesem Browser. Exportiere regelmäßig ein JSON-Backup: Wenn du deine Browserdaten löschst, kannst du damit alles wiederherstellen",
+      "backupHint": "Deine Lebensläufe existieren nur in diesem Browser. Exportiere regelmäßig ein Backup: Wenn du deine Browserdaten löschst, kannst du damit alles wiederherstellen",
       "defaultName": "Mein Lebenslauf",
       "copySuffix": "(Kopie)",
       "deleteTitle": "„{{name}}“ löschen?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Lebensläufe in diesem Backup: {{count}}. Bereits vorhandene Lebensläufe werden ersetzt",
       "importDone": "Backup importiert ({{count}})",
       "importError": {
-        "invalidJson": "Diese Datei ist kein gültiges JSON",
+        "invalidJson": "Diese Datei ist keine LocalATSCV-Sicherung",
         "notABackup": "Diese Datei ist kein LocalATSCV-Backup",
         "newerVersion": "Dieses Backup stammt aus einer neueren Version von LocalATSCV: Aktualisiere zuerst die Anwendung"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Dunkler Hintergrund",
         "columns": "Zwei Spalten",
-        "serif": "Serif",
+        "serif": "Buchstil",
         "mono": "Schreibmaschinenstil",
         "paper": "Papier",
         "colorful": "Bunt",

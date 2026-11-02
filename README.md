@@ -47,7 +47,7 @@ Most online resume builders, on the other hand, want your email, your phone numb
 
 53 graphic designs (Bento, Memphis, Bauhaus, Brutal, Editorial, Nocturne, Sorbet, Origami, Polaroid, Terminal, Retro, Cosmos, Ticket, Comic, Gazette, Watercolor, Art Deco, Glass, Y2K, Riso, Collage, Marble, Stickers, Kraft, Linocut, Candy, Metro, Stained glass…) and 19 classic ones (Classic, Executive, Elegant, Ledger, Academic, Compact, Finance, Split, Airy, Cards, Linear, Typewriter…). Every single template prints real, selectable text, in reading order, with standard section titles.
 
-Pick them in a gallery that stays fast with 72 entries: static thumbnails, a live preview of *your* CV in the selected template, filters by family and style (dark, two columns, serif, typewriter style, paper, colorful, minimalist), search, favorites, recently used, suggestions based on the job ad you are tailoring to, and keyboard navigation. From the toolbar, flip through templates with the previous / next arrows or `Ctrl+Shift+←/→`.
+Pick them in a gallery that stays fast with 72 entries: static thumbnails, a live preview of *your* CV in the selected template, filters by family and style (dark, two columns, book style, typewriter style, paper, colorful, minimalist), search, favorites, recently used, suggestions based on the job ad you are tailoring to, and keyboard navigation. From the toolbar, flip through templates with the previous / next arrows or `Ctrl+Shift+←/→`.
 
 ![Eight of the graphic templates: Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo and Ribbon](docs/screenshots/templates-showcase.png)
 

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, afterNextRender, inject, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LanguageService } from '../../core/i18n/language.service';
 import { LANGUAGE_INFO } from '../../core/i18n/languages';
@@ -14,7 +14,7 @@ import { Icon } from '../../shared/icon/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [TranslocoDirective, Icon],
   template: `
-    @if (language.suggestion(); as lang) {
+    @if (ready() && language.suggestion(); as lang) {
       <div
         *transloco="let t; lang: lang"
         class="border-b border-line bg-accent-soft/60"
@@ -47,4 +47,13 @@ import { Icon } from '../../shared/icon/icon';
 export class LanguageSuggestion {
   protected readonly language = inject(LanguageService);
   protected readonly info = LANGUAGE_INFO;
+  /**
+   * Le bandeau dépend du navigateur (langue, choix mémorisé) : absent de la page pré-générée,
+   * il n'apparaît qu'après l'hydratation, sinon le DOM du client ne correspondrait plus.
+   */
+  protected readonly ready = signal(false);
+
+  constructor() {
+    afterNextRender(() => this.ready.set(true));
+  }
 }

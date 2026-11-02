@@ -300,11 +300,11 @@
       "open": "Avaa",
       "actions": "Toiminnot",
       "duplicate": "Monista",
-      "export": "Vie (JSON)",
+      "export": "Lataa varmuuskopio",
       "delete": "Poista",
       "updated": "Muokattu {{date}}",
       "versions": "Versiot: {{count}}",
-      "backupHint": "CV:si ovat olemassa vain tässä selaimessa. Vie JSON-varmuuskopio säännöllisesti: jos tyhjennät selaimen tiedot, saat sen avulla kaiken takaisin",
+      "backupHint": "CV:si ovat olemassa vain tässä selaimessa. Vie varmuuskopio säännöllisesti: jos tyhjennät selaimen tiedot, saat sen avulla kaiken takaisin",
       "defaultName": "CV:ni",
       "copySuffix": "(kopio)",
       "deleteTitle": "Poistetaanko ”{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV:itä tässä varmuuskopiossa: {{count}}. Tässä selaimessa jo olevat CV:t korvataan",
       "importDone": "Varmuuskopio tuotu: {{count}} CV:tä",
       "importError": {
-        "invalidJson": "Tiedosto ei ole kelvollista JSONia",
+        "invalidJson": "Tiedosto ei ole LocalATSCV-varmuuskopio",
         "notABackup": "Tiedosto ei ole LocalATSCV:n varmuuskopio",
         "newerVersion": "Varmuuskopio on peräisin LocalATSCV:n uudemmasta versiosta: päivitä sovellus ensin"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tumma tausta",
         "columns": "Kaksi palstaa",
-        "serif": "Antiikva",
+        "serif": "Kirjatyyli",
         "mono": "Kirjoituskonetyyli",
         "paper": "Paperi",
         "colorful": "Värikäs",

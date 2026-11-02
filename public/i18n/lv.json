@@ -300,11 +300,11 @@
       "open": "Atvērt",
       "actions": "Darbības",
       "duplicate": "Dublēt",
-      "export": "Eksportēt (JSON)",
+      "export": "Lejupielādēt rezerves kopiju",
       "delete": "Dzēst",
       "updated": "Rediģēts {{date}}",
       "versions": "Versijas: {{count}}",
-      "backupHint": "Jūsu CV pastāv tikai šajā pārlūkā. Regulāri eksportējiet JSON rezerves kopiju: ja notīrīsiet pārlūka datus, ar to varēsiet visu atgūt",
+      "backupHint": "Jūsu CV pastāv tikai šajā pārlūkā. Regulāri eksportējiet rezerves kopiju: ja notīrīsiet pārlūka datus, ar to varēsiet visu atgūt",
       "defaultName": "Mans CV",
       "copySuffix": "(kopija)",
       "deleteTitle": "Dzēst „{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV šajā rezerves kopijā: {{count}}. CV, kas jau ir šajā pārlūkā, tiks aizstāti",
       "importDone": "Rezerves kopija importēta: {{count}} CV",
       "importError": {
-        "invalidJson": "Šis fails nav derīgs JSON",
+        "invalidJson": "Šis fails nav LocalATSCV rezerves kopija",
         "notABackup": "Šis fails nav LocalATSCV rezerves kopija",
         "newerVersion": "Šī rezerves kopija ir no jaunākas LocalATSCV versijas: vispirms atjauniniet lietotni"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Tumšs fons",
         "columns": "Divas kolonnas",
-        "serif": "Serifa",
+        "serif": "Grāmatas stils",
         "mono": "Rakstāmmašīnas stils",
         "paper": "Papīrs",
         "colorful": "Krāsaina",

@@ -97,11 +97,12 @@
 
   <!-- La page affichée dans chaque langue : des liens que les moteurs de recherche suivent. -->
   <nav class="border-t border-line" [attr.aria-label]="t('lang.label')">
-    <ul class="container-page flex flex-wrap gap-x-3.5 gap-y-1.5 py-5 text-xs text-muted">
+    <!-- Liens d'au moins 24 px de haut : assez grands pour être touchés au doigt (WCAG 2.5.8). -->
+    <ul class="container-page flex flex-wrap gap-x-1.5 py-4 text-xs text-muted">
       @for (lang of languages; track lang) {
         <li>
           <a
-            class="hover:text-accent aria-[current=page]:font-semibold aria-[current=page]:text-ink"
+            class="inline-block px-1 py-1 hover:text-accent aria-[current=page]:font-semibold aria-[current=page]:text-ink"
             [routerLink]="languageLink(lang)"
             [attr.lang]="lang"
             [attr.hreflang]="info[lang].hreflang ?? lang"
@@ -125,9 +126,10 @@
       <a
         [routerLink]="language.link('/changelog')"
         class="inline-flex items-center gap-1.5 self-start rounded-full border border-line px-2.5 py-1 font-mono hover:text-accent sm:self-auto"
-        [attr.aria-label]="t('footer.versionLabel', { version })"
+        [title]="t('footer.versionLabel', { version })"
       >
-        <span class="size-1.5 rounded-full bg-accent"></span>v{{ version }}
+        <!-- Nom lu : le texte visible « v0.x » (WCAG 2.5.3), le titre en complément au survol. -->
+        <span class="size-1.5 rounded-full bg-accent" aria-hidden="true"></span>v{{ version }}
       </a>
     </div>
   </div>

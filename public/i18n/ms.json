@@ -300,11 +300,11 @@
       "open": "Buka",
       "actions": "Tindakan",
       "duplicate": "Pendua",
-      "export": "Eksport (JSON)",
+      "export": "Muat turun sandaran",
       "delete": "Padam",
       "updated": "Disunting {{date}}",
       "versions": "Versi: {{count}}",
-      "backupHint": "Resume anda hanya wujud dalam pelayar ini. Eksport sandaran JSON secara berkala: jika anda mengosongkan data pelayar, ia membolehkan anda memulihkan semuanya",
+      "backupHint": "Resume anda hanya wujud dalam pelayar ini. Eksport sandaran secara berkala: jika anda mengosongkan data pelayar, ia membolehkan anda memulihkan semuanya",
       "defaultName": "Resume saya",
       "copySuffix": "(salinan)",
       "deleteTitle": "Padam “{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Resume dalam sandaran ini: {{count}}. Resume yang sudah wujud dalam pelayar ini akan diganti",
       "importDone": "Sandaran diimport: {{count}} resume",
       "importError": {
-        "invalidJson": "Fail ini bukan JSON yang sah",
+        "invalidJson": "Fail ini bukan sandaran LocalATSCV",
         "notABackup": "Fail ini bukan sandaran LocalATSCV",
         "newerVersion": "Sandaran ini datang daripada versi LocalATSCV yang lebih baharu: kemas kini aplikasi dahulu"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Latar gelap",
         "columns": "Dua lajur",
-        "serif": "Serif",
+        "serif": "Gaya buku",
         "mono": "Gaya mesin taip",
         "paper": "Kertas",
         "colorful": "Berwarna-warni",

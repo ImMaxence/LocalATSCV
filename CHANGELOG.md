@@ -4,12 +4,25 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.11.0] - 2026-11-02
+
+### Modifié
+
+- Les pages publiques ne sautent plus au chargement : la page pré-générée est reprise telle quelle au démarrage au lieu d'être redessinée, et le pied de page ne remonte plus sous les yeux (décalage de mise en page divisé par plus de 50)
+- Galerie des modèles sur téléphone : filtres sur une seule ligne qui défile, texte d'aide masqué, presque deux fois plus de place pour les vignettes
+- Textes plus clairs, sans jargon : filtres « Style livre » et « Style machine à écrire », descriptions des modèles sans noms de polices, « Télécharger une sauvegarde » au lieu de « Exporter (JSON) »
+- Accessibilité : chiffres des étapes de l'accueil plus contrastés, liens des langues du pied de page plus faciles à toucher, sélecteur de langue et numéro de version lus tels qu'affichés par les lecteurs d'écran
+
+### Sécurité
+
+- Les photos d'une sauvegarde importée sont réencodées comme une photo envoyée : seule une vraie image est conservée
+
 ## [0.10.0] - 2026-11-02
 
 ### Ajouté
 
 - 20 nouveaux modèles de CV, soit 72 au total : 14 graphiques (Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 6 sobres (Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire)
-- Galerie des modèles repensée : un volet d'aperçu rend le modèle sélectionné avec votre CV ou un CV d'exemple, filtres par style (fond sombre, deux colonnes, serif, style machine à écrire, papier, coloré, minimaliste), favoris, modèles récents, suggestions selon l'offre d'emploi en cours d'adaptation, navigation au clavier (flèches, Entrée, Échap)
+- Galerie des modèles repensée : un volet d'aperçu rend le modèle sélectionné avec votre CV ou un CV d'exemple, filtres par style (fond sombre, deux colonnes, style livre, style machine à écrire, papier, coloré, minimaliste), favoris, modèles récents, suggestions selon l'offre d'emploi en cours d'adaptation, navigation au clavier (flèches, Entrée, Échap)
 - Raccourcis Ctrl+Maj+← et Ctrl+Maj+→ pour changer de modèle sans ouvrir la galerie ; la vignette du modèle en cours s'affiche dans le bouton de la barre d'outils
 
 ### Modifié
@@ -200,6 +213,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.11.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.11.0
 [0.10.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.10.0
 [0.9.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.9.0
 [0.8.1]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.1

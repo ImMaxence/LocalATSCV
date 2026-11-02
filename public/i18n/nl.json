@@ -300,11 +300,11 @@
       "open": "Openen",
       "actions": "Acties",
       "duplicate": "Dupliceren",
-      "export": "Exporteren (JSON)",
+      "export": "Back-up downloaden",
       "delete": "Verwijderen",
       "updated": "Bewerkt op {{date}}",
       "versions": "Versies: {{count}}",
-      "backupHint": "Je cv's bestaan alleen in deze browser. Exporteer regelmatig een JSON-back-up: als je je browsergegevens wist, kun je daarmee alles terughalen",
+      "backupHint": "Je cv's bestaan alleen in deze browser. Exporteer regelmatig een back-up: als je je browsergegevens wist, kun je daarmee alles terughalen",
       "defaultName": "Mijn cv",
       "copySuffix": "(kopie)",
       "deleteTitle": "“{{name}}” verwijderen?",
@@ -314,7 +314,7 @@
       "importConfirmText": "Cv's in deze back-up: {{count}}. Een cv dat al in deze browser bestaat, wordt vervangen",
       "importDone": "Back-up geïmporteerd: {{count}} cv('s)",
       "importError": {
-        "invalidJson": "Dit bestand is geen geldige JSON",
+        "invalidJson": "Dit bestand is geen LocalATSCV-back-up",
         "notABackup": "Dit bestand is geen back-up van LocalATSCV",
         "newerVersion": "Deze back-up komt uit een nieuwere versie van LocalATSCV: werk eerst de app bij"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Donkere achtergrond",
         "columns": "Twee kolommen",
-        "serif": "Schreef",
+        "serif": "Boekstijl",
         "mono": "Typemachinestijl",
         "paper": "Papier",
         "colorful": "Kleurrijk",

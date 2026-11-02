@@ -300,11 +300,11 @@
       "open": "Deschide",
       "actions": "Acțiuni",
       "duplicate": "Duplică",
-      "export": "Exportă (JSON)",
+      "export": "Descarcă o copie de rezervă",
       "delete": "Șterge",
       "updated": "Modificat la {{date}}",
       "versions": "Versiuni: {{count}}",
-      "backupHint": "CV-urile tale există doar în acest browser. Exportă regulat o copie de rezervă JSON: dacă ștergi datele browserului, îți permite să recuperezi totul",
+      "backupHint": "CV-urile tale există doar în acest browser. Exportă regulat o copie de rezervă: dacă ștergi datele browserului, îți permite să recuperezi totul",
       "defaultName": "CV-ul meu",
       "copySuffix": "(copie)",
       "deleteTitle": "Ștergi „{{name}}”?",
@@ -314,7 +314,7 @@
       "importConfirmText": "CV-uri în această copie: {{count}}. Cele care există deja în acest browser vor fi înlocuite",
       "importDone": "Copie de rezervă importată: {{count}} CV-uri",
       "importError": {
-        "invalidJson": "Acest fișier nu este un JSON valid",
+        "invalidJson": "Acest fișier nu este o copie de rezervă LocalATSCV",
         "notABackup": "Acest fișier nu este o copie de rezervă LocalATSCV",
         "newerVersion": "Această copie provine dintr-o versiune mai nouă a LocalATSCV: actualizează mai întâi aplicația"
       },
@@ -560,7 +560,7 @@
       "tags": {
         "dark": "Fundal închis",
         "columns": "Două coloane",
-        "serif": "Serif",
+        "serif": "Stil de carte",
         "mono": "Stil mașină de scris",
         "paper": "Hârtie",
         "colorful": "Colorat",

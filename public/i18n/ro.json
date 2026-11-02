@@ -4,7 +4,7 @@
     "main": "Navigare principală",
     "how": "Cum funcționează",
     "privacy": "Confidențialitate",
-    "analyze": "Analizează un CV",
+    "analyze": "Testează-mi CV-ul",
     "editor": "Creează-mi CV-ul",
     "skipToContent": "Salt la conținut"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nicio limbă găsită"
   },
   "pages": {
-    "home": "CV-uri compatibile ATS, 100% local",
+    "home": "CV gratuit compatibil ATS, fără cont",
     "editor": "Editor",
     "analyze": "Analizor de CV",
     "changelog": "Noutăți",
@@ -31,7 +31,7 @@
     "privacy": "Politica de confidențialitate"
   },
   "seo": {
-    "home": "Generator gratuit de CV compatibil ATS: 30 de șabloane grafice, scrisoare de intenție asortată, adaptare la fiecare anunț și scor ATS. Open source, datele tale rămân în browser",
+    "home": "Creează gratuit un CV care îți aduce interviul: 30 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
     "editor": "Editor de CV cu previzualizare live, CV Master și versiuni țintite, verificare ATS și export PDF cu text real. Totul rămâne în browserul tău",
     "analyze": "Analizează gratuit un CV în PDF: scor ATS din 100, puncte de corectat și textul așa cum îl citește un sistem de recrutare. Fișierul nu părăsește niciodată browserul tău",
     "changelog": "Noutățile LocalATSCV, versiune cu versiune: șabloane noi de CV, funcții și corecturi",
@@ -40,7 +40,7 @@
     "privacy": "Politica de confidențialitate LocalATSCV: nu colectăm date, CV-urile tale rămân în browser"
   },
   "footer": {
-    "tagline": "Generatorul de CV compatibil ATS care nu îți vede niciodată datele",
+    "tagline": "Generatorul de CV gratuit care nu îți vede niciodată datele",
     "product": "Produs",
     "legal": "Informații legale",
     "project": "Proiect",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% local · Gratuit · Open source",
-      "titleLine1": "Un CV care trece de roboți",
-      "titleLine2": "Date care rămân la tine",
-      "subtitle": "LocalATSCV te ajută să creezi un CV optimizat pentru sistemele de recrutare (ATS) și să-l adaptezi la fiecare post în câteva clicuri. Totul se întâmplă în browserul tău: fără cont și fără nicio dată trimisă",
-      "ctaPrimary": "Creează-mi CV-ul",
-      "ctaSecondary": "Analizează un CV existent",
+      "badge": "Gratuit · Fără cont · Fără reclame",
+      "titleLine1": "CV-ul care îți aduce interviul",
+      "titleLine2": "Gata în câteva minute",
+      "subtitle": "Completează-ți parcursul, alege unul dintre cele 30 de șabloane și descarcă un CV gata de trimis. LocalATSCV te ajută și să-l adaptezi fiecărui anunț și verifică dacă programele care triază candidaturile îl citesc corect",
+      "ctaPrimary": "Creează-mi CV-ul gratuit",
+      "ctaSecondary": "Testează-mi CV-ul actual",
       "points": {
-        "noAccount": "Fără înregistrare",
-        "offline": "Funcționează offline",
-        "atsPdf": "PDF lizibil de ATS"
+        "templates": "30 de șabloane la alegere",
+        "letter": "Scrisoare de intenție asortată",
+        "private": "Datele tale rămân la tine"
       }
     },
     "ats": {
-      "eyebrow": "Problema",
-      "title": "CV-ul tău este citit mai întâi de o mașină",
-      "text": "Majoritatea companiilor mari și a agențiilor de recrutare triază candidaturile cu un ATS (Applicant Tracking System). Acesta extrage textul din CV-ul tău, îl stochează într-o bază de date și le permite recrutorilor să caute candidați după cuvinte-cheie",
+      "eyebrow": "Știai că…",
+      "title": "Înaintea recrutorului, de multe ori un program îți citește CV-ul",
+      "text": "Multe companii, agenții de recrutare și site-uri de joburi triază candidaturile cu un program numit ATS. Acesta citește textul CV-ului tău și îl salvează într-o bază de date. Dacă CV-ul e citit greșit sau nu conține cuvintele din anunț, s-ar putea să nu ajungă niciodată la recrutor",
       "pitfalls": {
         "layout": {
           "title": "Machete complexe",
-          "text": "Coloanele, tabelele și casetele de text amestecă ordinea de citire: informațiile tale ies alandala"
+          "text": "Coloanele, tabelele și casetele amestecă ordinea de citire: programul îți citește CV-ul de-a valma"
         },
         "image": {
           "title": "Text ilizibil",
-          "text": "Pictogramele, barele de competențe și unele exporturi din instrumente de design devin caractere ciudate sau dispar complet"
+          "text": "Pictogramele, scalele cu buline și CV-urile făcute în unele aplicații de design devin caractere ilizibile sau dispar complet"
         },
         "keywords": {
           "title": "Cuvinte-cheie lipsă",
-          "text": "Dacă vocabularul anunțului nu apare în CV-ul tău, profilul tău nu apare în căutările recrutorilor"
+          "text": "Recrutorul caută „vânzătoare”, „HACCP” sau „permis categoria B”? Dacă aceste cuvinte nu sunt în CV-ul tău, candidatura ta nu apare"
         }
       },
       "seen": "Ce vezi tu",
       "read": "Ce citește robotul",
-      "fix": "LocalATSCV face invers: o singură coloană, text real și titluri de secțiune standard, pe care roboții le citesc în ordinea corectă"
+      "fix": "Cu LocalATSCV, fără surprize neplăcute: CV-urile tale le plac recrutorilor și sunt citite în ordinea corectă de programe"
     },
     "how": {
       "eyebrow": "Cum funcționează",
-      "title": "Scrii o dată, adaptezi la nesfârșit",
-      "text": "Patru pași pentru a transforma CV-ul Master într-o candidatură făcută pe măsura fiecărui post",
+      "title": "Un singur CV, adaptat fiecărei oferte",
+      "text": "Completează-ți parcursul o singură dată, apoi creează în câteva clicuri o versiune pe măsură pentru fiecare candidatură",
       "steps": {
         "profile": {
-          "title": "Completează-ți CV-ul Master",
-          "text": "Introdu toată experiența o dată pentru totdeauna sau importă PDF-ul profilului tău LinkedIn ca să câștigi timp"
+          "title": "Povestește-ți parcursul",
+          "text": "Introdu experiențele, studiile și competențele o dată pentru totdeauna. Ai deja un CV sau un profil LinkedIn? Importă-l ca să câștigi timp"
         },
         "offer": {
           "title": "Lipește anunțul",
-          "text": "LocalATSCV extrage cuvintele-cheie și calculează un scor de potrivire din 100, actualizat pe măsură ce scrii"
+          "text": "LocalATSCV găsește cuvintele importante din anunț, îți arată care lipsesc din CV și îți dă un scor din 100"
         },
         "compose": {
-          "title": "Compune o versiune țintită",
-          "text": "Bifează experiențele și punctele relevante și reordonează-le prin glisare. Nimic nu se șterge din Master"
+          "title": "Păstrează esențialul",
+          "text": "Bifează ce contează pentru acest post și schimbă ordinea prin glisare. CV-ul tău complet rămâne intact"
         },
         "export": {
-          "title": "Exportă în PDF",
-          "text": "Un PDF cu text real, structurat și pe o coloană, la fel de lizibil pentru roboți ca pentru recrutori"
+          "title": "Descarcă și aplică",
+          "text": "Alege șablonul și culoarea, apoi descarcă CV-ul în PDF, gata de trimis sau de tipărit"
         }
       }
     },
     "privacy": {
       "eyebrow": "Confidențialitate",
-      "title": "Zero date pe serverele noastre. Literalmente",
-      "text": "Nu există nicio bază de date de spart: serverul nostru îți trimite doar aplicația. Apoi totul se întâmplă în browserul tău, chiar și offline",
+      "title": "CV-ul tău rămâne la tine. Pe bune",
+      "text": "Niciun cont de creat, niciun fișier trimis pe internet. Site-ul se încarcă o dată, apoi totul se întâmplă pe calculatorul sau telefonul tău, chiar și fără conexiune. Nimeni în afară de tine nu îți vede CV-ul, nici măcar noi",
       "browser": {
         "title": "Browserul tău",
         "tag": "Dispozitivul tău",
         "items": {
-          "master": "CV Master",
+          "cvs": "CV-urile tale",
           "photo": "Fotografie de profil",
-          "versions": "Versiuni țintite",
+          "letters": "Scrisori de intenție",
           "settings": "Preferințe"
         },
-        "note": "Stocat în IndexedDB, doar pe acest dispozitiv"
+        "note": "Salvat în browserul tău, doar pe acest dispozitiv"
       },
       "flow": {
-        "app": "Aplicația, la prima încărcare",
+        "app": "Site-ul, la prima vizită",
         "data": "Datele tale",
         "never": "niciodată"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Servește fișierele aplicației (HTML, CSS, JavaScript), nimic mai mult",
+        "text": "Trimite paginile site-ului, nimic mai mult",
         "items": {
-          "noDb": "Nicio bază de date",
+          "noDb": "Niciun CV stocat",
           "noAccount": "Niciun cont de utilizator",
           "noLogs": "Niciun jurnal de vizite"
         }
@@ -152,54 +152,54 @@
           "text": "Fără înregistrare, fără e-mail, fără parolă. Deschide pagina și începe"
         },
         "trackers": {
-          "title": "Fără urmărire",
-          "text": "Fără statistici, fără reclame, fără cookie-uri de urmărire. Chiar și fonturile sunt găzduite pe serverul nostru"
+          "title": "Fără reclame și urmărire",
+          "text": "Fără publicitate, fără cookie-uri de urmărire, fără revânzare: pur și simplu nu avem datele tale"
         },
         "csp": {
-          "title": "Blocat tehnic",
-          "text": "Politica de securitate a site-ului (CSP) interzice browserului să contacteze orice alt domeniu. Codul este deschis: verifică singur"
+          "title": "Verificabil de oricine",
+          "text": "Site-ul este blocat astfel încât să nu comunice cu niciun alt serviciu, iar codul lui este public: orice expert poate verifica"
         },
         "backup": {
-          "title": "Copiile tale, fișierele tale",
-          "text": "Exportă toate datele într-un fișier JSON și importă-le înapoi pe orice dispozitiv"
+          "title": "O copie oricând vrei",
+          "text": "Descarcă dintr-un clic o copie de rezervă a tuturor CV-urilor și deschide-le pe alt dispozitiv"
         }
       }
     },
     "features": {
       "eyebrow": "Funcții",
-      "title": "Tot ce îți trebuie ca să ajungi la interviu",
+      "title": "Tot ce trebuie pentru o candidatură reușită",
       "items": {
+        "templates": {
+          "title": "30 de șabloane îngrijite",
+          "text": "Sobre, moderne sau colorate, cu sau fără fotografie. Schimbă șablonul sau culoarea dintr-un clic, textul tău se adaptează"
+        },
+        "letter": {
+          "title": "Scrisoare de intenție asortată",
+          "text": "Scrie-ți scrisoarea în același stil ca CV-ul, pentru un dosar care arată impecabil"
+        },
         "master": {
-          "title": "CV Master și versiuni țintite",
-          "text": "Un CV complet și atâtea variante câte candidaturi. Bifezi, debifezi: nimic nu se pierde"
+          "title": "O versiune pentru fiecare ofertă",
+          "text": "Păstrează CV-ul complet și creează câte versiuni ai nevoie, una pentru fiecare candidatură. Bifezi, debifezi: nu se pierde nimic"
         },
         "score": {
           "title": "Scor de potrivire",
-          "text": "Lipește anunțul: cuvinte-cheie găsite, lipsă și un scor din 100 în timp real"
+          "text": "Lipește un anunț: vezi cuvintele găsite, pe cele lipsă și un scor din 100, actualizat în timp real"
         },
         "weak": {
-          "title": "Detector de formulări slabe",
-          "text": "„Responsabil de”, „am ajutat la”… sunt semnalate automat, cu o bancă de verbe de acțiune pentru a le înlocui"
+          "title": "Sfaturi de redactare",
+          "text": "Formulările care nu te pun în valoare, precum „Responsabil de”, sunt semnalate, cu verbe mai puternice ca înlocuire"
         },
         "analyzer": {
-          "title": "Analizor de CV-uri existente",
-          "text": "Încarcă un CV făcut în altă parte: vezi ce citește cu adevărat robotul și ce trebuie corectat"
+          "title": "Testează-ți CV-ul actual",
+          "text": "Încarcă un CV făcut în altă parte: descoperă ce citesc de fapt programele de recrutare și ce trebuie corectat"
         },
-        "linkedin": {
-          "title": "Import din LinkedIn",
-          "text": "Precompletează-ți CV-ul Master din PDF-ul gratuit pe care îl poți exporta din profilul tău LinkedIn"
+        "import": {
+          "title": "Nimic de rescris",
+          "text": "Preia CV-ul actual (PDF sau Word) sau profilul LinkedIn: totul este aranjat automat în editor"
         },
         "languages": {
           "title": "5 limbi pentru CV",
           "text": "Franceză, engleză, italiană, spaniolă și germană. În engleză, fotografia și data nașterii sunt ascunse, conform normelor din țările anglofone"
-        },
-        "pdf": {
-          "title": "Export PDF compatibil ATS",
-          "text": "Text real și o structură clară: lizibil pentru roboți, plăcut pentru recrutori"
-        },
-        "offline": {
-          "title": "Instalabil și offline",
-          "text": "Adaugă LocalATSCV pe ecranul de pornire și continuă să lucrezi fără conexiune"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Ce este un ATS?",
-          "a": "Un Applicant Tracking System este software-ul pe care recrutorii îl folosesc pentru a primi, tria și căuta candidaturi. Îți transformă CV-ul în text și îl indexează: dacă textul e extras prost sau lipsesc cuvintele-cheie potrivite, candidatura ta devine greu de găsit"
+          "a": "Este programul pe care multe companii, agenții de recrutare și site-uri de joburi îl folosesc pentru a primi și tria candidaturile. Transformă CV-ul tău în text și îi permite recrutorului să caute după cuvinte-cheie. Dacă CV-ul e citit greșit sau îi lipsesc cuvintele potrivite, rămâne pe dinafară"
         },
         "storage": {
           "q": "Unde sunt stocate datele mele?",
-          "a": "Doar în browserul tău, în IndexedDB, o bază de date integrată în orice browser modern. Nu trec niciodată prin serverele noastre, care știu doar să servească fișierele aplicației"
+          "a": "Doar pe dispozitivul tău, în browser. Nu trec niciodată prin serverele noastre: nimeni în afară de tine nu are acces la ele"
         },
         "clear": {
           "q": "Ce se întâmplă dacă șterg datele browserului?",
-          "a": "CV-urile tale sunt șterse, pentru că nu există în altă parte. Exportă regulat o copie de rezervă JSON: o poți importa înapoi oricând, pe orice dispozitiv"
+          "a": "CV-urile tale sunt șterse, pentru că nu există în altă parte. Descarcă din când în când o copie de rezervă: o poți deschide oricând, pe orice dispozitiv"
         },
         "score": {
           "q": "Scorul garantează că CV-ul meu va fi selectat?",
-          "a": "Nu. Fiecare ATS are propriile reguli, iar decizia finală o ia un om. Scorul este un indicator: verifică dacă CV-ul tău folosește vocabularul anunțului și dacă o mașină îl poate citi corect"
+          "a": "Nu. Fiecare companie are propriile instrumente, iar decizia finală o ia întotdeauna un om. Scorul te ajută să folosești cuvintele din anunț și să verifici că CV-ul tău e citit corect: așa îți crești șansele"
         },
         "photo": {
           "q": "De ce dispare fotografia în engleză?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Chiar este gratuit?",
-          "a": "Da. LocalATSCV este un proiect open source sub licență MIT, fără reclame și fără abonament. Găzduirea lui nu costă aproape nimic, pentru că browserul tău face toată munca"
+          "a": "Da, complet: fără abonament, fără reclame, fără filigran pe PDF-urile tale. LocalATSCV este un proiect open source (codul e public) care aproape nu costă nimic de întreținut, pentru că totul se întâmplă pe dispozitivul tău"
         },
         "templates": {
-          "q": "Șabloanele grafice trec de ATS?",
-          "a": "Da. Fiecare șablon tipărește text real, în ordinea de citire, cu titluri de secțiune standard: formele, barele și pictogramele sunt desene pe care roboții le ignoră. Șabloanele pe o coloană rămân cele mai sigure, iar verificarea ATS din editor îți testează macheta în timp real"
+          "q": "Șabloanele colorate trec de programele de recrutare?",
+          "a": "Da. Toate șabloanele conțin text real, în ordinea corectă, cu titluri obișnuite precum „Experiență” sau „Educație”. Formele, culorile și pictogramele sunt simple decorațiuni pe care programele le ignoră. Șabloanele pe o coloană rămân cele mai sigure, iar editorul îți verifică aspectul în timp real"
         },
         "import": {
           "q": "Pot refolosi CV-ul actual sau profilul LinkedIn?",
-          "a": "Da. Importă un CV PDF sau Word (.docx), PDF-ul profilului tău LinkedIn (pe calculator) sau arhiva de date LinkedIn (din aplicația mobilă): conținutul este citit în browserul tău și sortat în editor"
+          "a": "Da. Importă-ți CV-ul în PDF sau Word ori profilul LinkedIn: conținutul este citit pe dispozitivul tău și aranjat automat în editor. Nu-ți rămâne decât să recitești și să alegi un șablon"
         },
         "offline": {
-          "q": "LocalATSCV funcționează offline?",
-          "a": "Da. Este o aplicație web instalabilă: după prima vizită totul funcționează fără conexiune, inclusiv exportul în PDF"
+          "q": "Funcționează fără internet?",
+          "a": "Da. După prima vizită, îți poți edita și descărca CV-urile fără conexiune. Poți chiar să adaugi LocalATSCV pe ecranul de pornire al telefonului sau calculatorului, ca pe o aplicație"
         }
       }
     },
     "cta": {
-      "title": "Gata să treci de filtru?",
-      "text": "Creează-ți CV-ul Master în câteva minute. Nimic nu va părăsi acest dispozitiv",
+      "title": "Următorul tău interviu începe aici",
+      "text": "Creează-ți CV-ul gratuit în câteva minute, fără cont. Nimic nu părăsește dispozitivul tău",
       "button": "Începe"
     },
     "demo": {
-      "role": "Dezvoltatoare Front-end",
+      "role": "Brutăriță și cofetăriță",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Experiență",
-      "jobTitle": "Dezvoltatoare Angular",
-      "jobMeta": "Exemplu SRL · 2022 – prezent",
+      "jobTitle": "Brutăriță",
+      "jobMeta": "Brutăria Exemplu · 2021 – prezent",
       "bullets": {
-        "migration": "Migrarea a 40 de ecrane la <k>Angular</k> și <k>TypeScript</k>, timp de încărcare redus cu 35%",
-        "testing": "<w>Responsabilă de</w> strategia de testare end-to-end",
-        "delivery": "Livrare continuă cu <k>GitLab CI</k> pentru 3 echipe de produs"
+        "production": "Producerea în fiecare dimineață a 300 de <k>produse de patiserie</k> și pâini cu <k>maia</k>, vânzări în creștere cu 18%",
+        "opening": "<w>Responsabilă de</w> deschiderea magazinului și de vitrină",
+        "hygiene": "Respectarea regulilor de igienă <k>HACCP</k> și formarea a 2 ucenici"
       },
       "weakLabel": "Formulare slabă",
       "weakReplacement": "„Am condus”",
       "skills": "Competențe",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accesibilitate",
+      "skillList": "Patiserie · Pâine cu maia · Cofetărie · HACCP · Vânzare în magazin",
+      "keywords": {
+        "pastry": "Patiserie",
+        "sourdough": "Maia",
+        "hygiene": "HACCP",
+        "license": "Permis categoria B"
+      },
       "score": "Potrivire cu anunțul",
-      "sent": "0 octeți trimiși",
-      "robot": "COMPETENȚE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Dezvoltatoare Front-end Angular <n>●●●●○</n> EXPERIENȚĂ <n>� camille.mar</n> Dezvoltatoare Angular <n>tin@example.com</n> 2022 – prezent TypeScript <n>●●●○○</n> Exemplu SRL LIMBI Engleză Migrarea a 40 de ecrane la…"
+      "sent": "Nimic nu este trimis",
+      "robot": "COMPETENȚE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Brutăriță și cofetăriță Patiserie <n>●●●●○</n> EXPERIENȚĂ <n>� camille.mar</n> Brutăriță <n>tin@example.com</n> 2021 – prezent Cofetărie <n>●●●○○</n> Brutăria Exemplu LIMBI Engleză Producerea în fiecare dimineață a…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizor",
-    "title": "CV-ul tău trece de roboți?",
-    "subtitle": "Încarcă un CV PDF făcut cu orice instrument: LocalATSCV îl citește ca un ATS și îți spune ce să corectezi",
+    "eyebrow": "Test de CV gratuit",
+    "title": "Trece CV-ul tău de trierea recrutorilor?",
+    "subtitle": "Încarcă-ți CV-ul în PDF, fie că vine din Word, din Canva sau din alt instrument: LocalATSCV îl citește ca programele de recrutare și îți spune în câteva secunde ce să corectezi",
     "drop": "Trage CV-ul aici",
     "dropActive": "Eliberează fișierul pentru a începe analiza",
     "hint": "Doar PDF, maximum 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Textul în ordinea în care este scris în fișier: așa îl citesc ATS-urile care nu reconstruiesc macheta. Ar trebui să urmeze ordinea de citire a CV-ului tău"
     },
     "cta": {
-      "title": "Pornește din nou cu dreptul",
-      "text": "Creează un CV compatibil ATS în editor, apoi adaptează-l la fiecare post",
+      "title": "Treci la un CV impecabil",
+      "text": "Alege unul dintre cele 30 de șabloane ale noastre, citite corect de programele de recrutare, și adaptează-l fiecărei oferte",
       "button": "Deschide editorul",
       "import": "Adu acest CV în șabloanele noastre"
     },

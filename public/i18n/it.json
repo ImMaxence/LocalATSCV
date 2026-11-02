@@ -4,7 +4,7 @@
     "main": "Navigazione principale",
     "how": "Come funziona",
     "privacy": "Privacy",
-    "analyze": "Analizza un CV",
+    "analyze": "Testa il mio CV",
     "editor": "Crea il mio CV",
     "skipToContent": "Vai al contenuto"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nessuna lingua trovata"
   },
   "pages": {
-    "home": "CV ottimizzati per gli ATS, 100% in locale",
+    "home": "CV gratis compatibile con gli ATS, senza registrazione",
     "editor": "Editor",
     "analyze": "Analizzatore di CV",
     "changelog": "Novità",
@@ -31,7 +31,7 @@
     "privacy": "Informativa sulla privacy"
   },
   "seo": {
-    "home": "CV gratuito ottimizzato per gli ATS: 30 modelli grafici, lettera di presentazione abbinata, adattamento a ogni annuncio e punteggio ATS. Open source, i tuoi dati restano nel browser",
+    "home": "Crea gratis un CV che ti porta al colloquio: 30 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
     "editor": "Editor di CV con anteprima dal vivo, CV master e versioni mirate, controllo ATS ed esportazione PDF in testo reale. Tutto resta nel tuo browser",
     "analyze": "Analizza gratis un CV in PDF: punteggio ATS su 100, punti da correggere e testo come lo legge un software di selezione. Il file non lascia il tuo browser",
     "changelog": "Le novità di LocalATSCV, versione per versione: nuovi modelli di CV, funzionalità e correzioni",
@@ -40,7 +40,7 @@
     "privacy": "Informativa sulla privacy di LocalATSCV: nessun dato raccolto, i tuoi CV restano nel browser"
   },
   "footer": {
-    "tagline": "Il generatore di CV ottimizzati per gli ATS che non vede mai i tuoi dati",
+    "tagline": "Il generatore di CV gratuito che non vede mai i tuoi dati",
     "product": "Prodotto",
     "legal": "Legale",
     "project": "Progetto",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% in locale · Gratuito · Open source",
-      "titleLine1": "Un CV che supera i robot",
-      "titleLine2": "Dati che restano a casa tua",
-      "subtitle": "LocalATSCV ti aiuta a creare un CV ottimizzato per i software di selezione (ATS) e ad adattarlo a ogni offerta in pochi clic. Tutto avviene nel tuo browser: nessun account, nessun dato inviato",
-      "ctaPrimary": "Crea il mio CV",
-      "ctaSecondary": "Analizza un CV esistente",
+      "badge": "Gratis · Senza registrazione · Senza pubblicità",
+      "titleLine1": "Il CV che ti porta al colloquio",
+      "titleLine2": "Pronto in pochi minuti",
+      "subtitle": "Inserisci il tuo percorso, scegli tra 30 modelli e scarica un CV pronto da inviare. LocalATSCV ti aiuta anche ad adattarlo a ogni annuncio e controlla che venga letto bene dai software che smistano le candidature",
+      "ctaPrimary": "Crea il mio CV gratis",
+      "ctaSecondary": "Testa il mio CV attuale",
       "points": {
-        "noAccount": "Senza registrazione",
-        "offline": "Funziona offline",
-        "atsPdf": "PDF leggibile dagli ATS"
+        "templates": "30 modelli tra cui scegliere",
+        "letter": "Lettera di presentazione abbinata",
+        "private": "I tuoi dati restano a casa tua"
       }
     },
     "ats": {
-      "eyebrow": "Il problema",
-      "title": "Il tuo CV viene letto prima da una macchina",
-      "text": "La maggior parte delle grandi aziende e delle agenzie di selezione smista le candidature con un ATS (Applicant Tracking System). Questo software estrae il testo del tuo CV, lo archivia in un database e permette ai selezionatori di cercare i profili per parole chiave",
+      "eyebrow": "Lo sapevi?",
+      "title": "Prima del selezionatore, spesso è un software a leggere il tuo CV",
+      "text": "Molte aziende, agenzie per il lavoro e siti di annunci smistano le candidature con un software chiamato ATS. Legge il testo del tuo CV e lo archivia in una banca dati. Se il tuo CV viene letto male, o non contiene le parole dell'annuncio, rischia di non arrivare mai sotto gli occhi del selezionatore",
       "pitfalls": {
         "layout": {
           "title": "Impaginazione complessa",
-          "text": "Colonne, tabelle e caselle di testo mescolano l'ordine di lettura: le tue informazioni arrivano in disordine"
+          "text": "Colonne, tabelle e riquadri mescolano l'ordine di lettura: il software legge il tuo CV alla rinfusa"
         },
         "image": {
           "title": "Testo illeggibile",
-          "text": "Icone, barre di livello e alcuni export degli strumenti di grafica producono caratteri incomprensibili, o addirittura nessun testo"
+          "text": "Icone, barre di livello a pallini e CV creati con alcune app di grafica diventano caratteri illeggibili, o spariscono del tutto"
         },
         "keywords": {
           "title": "Parole chiave assenti",
-          "text": "Se il lessico dell'annuncio non compare nel tuo CV, il tuo profilo non emerge nelle ricerche dei selezionatori"
+          "text": "Il selezionatore cerca «commessa», «HACCP» o «patente B»? Se queste parole non sono nel tuo CV, la tua candidatura non salta fuori"
         }
       },
       "seen": "Quello che vedi tu",
       "read": "Quello che legge il robot",
-      "fix": "LocalATSCV fa l'opposto: una sola colonna, testo vero e titoli di sezione standard, che i robot leggono nell'ordine giusto"
+      "fix": "Con LocalATSCV niente brutte sorprese: i tuoi CV piacciono ai selezionatori e vengono letti nell'ordine giusto dai software"
     },
     "how": {
       "eyebrow": "Come funziona",
-      "title": "Scrivi una volta, adatta all'infinito",
-      "text": "Quattro passaggi e il tuo Master CV diventa una candidatura su misura per ogni offerta",
+      "title": "Un solo CV, adattato a ogni offerta",
+      "text": "Inserisci il tuo percorso una volta sola, poi crea in pochi clic una versione su misura per ogni candidatura",
       "steps": {
         "profile": {
-          "title": "Compila il tuo Master CV",
-          "text": "Inserisci tutte le tue esperienze una volta per tutte, oppure importa il PDF del tuo profilo LinkedIn per risparmiare tempo"
+          "title": "Racconta il tuo percorso",
+          "text": "Inserisci esperienze, titoli di studio e competenze una volta per tutte. Hai già un CV o un profilo LinkedIn? Importalo per fare prima"
         },
         "offer": {
           "title": "Incolla l'offerta di lavoro",
-          "text": "LocalATSCV ne estrae le parole chiave e calcola un punteggio di corrispondenza su 100, aggiornato mentre scrivi"
+          "text": "LocalATSCV individua le parole importanti dell'annuncio, ti mostra quelle che mancano nel tuo CV e ti dà un punteggio su 100"
         },
         "compose": {
-          "title": "Componi una versione mirata",
-          "text": "Seleziona le esperienze e i punti pertinenti e riordinali trascinandoli. Nulla viene eliminato dal tuo Master"
+          "title": "Tieni l'essenziale",
+          "text": "Spunta ciò che conta per questo ruolo e cambia l'ordine con un semplice trascinamento. Il tuo CV completo resta intatto"
         },
         "export": {
-          "title": "Esporta in PDF",
-          "text": "Un PDF testuale e strutturato su una sola colonna, leggibile dai robot quanto dai selezionatori"
+          "title": "Scarica e candidati",
+          "text": "Scegli modello e colore, poi scarica il tuo CV in PDF, pronto da inviare o stampare"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacy",
-      "title": "Zero dati sui nostri server. Letteralmente",
-      "text": "Non c'è nessun database da violare: il nostro server si limita a inviarti l'applicazione. Poi tutto avviene nel tuo browser, anche senza connessione",
+      "title": "Il tuo CV resta a casa tua. Davvero",
+      "text": "Nessun account da creare, nessun file inviato su internet. Il sito si carica una volta, poi tutto avviene sul tuo computer o sul tuo telefono, anche senza connessione. Nessuno tranne te vede il tuo CV, nemmeno noi",
       "browser": {
         "title": "Il tuo browser",
         "tag": "Il tuo dispositivo",
         "items": {
-          "master": "Master CV",
+          "cvs": "I tuoi CV",
           "photo": "Foto profilo",
-          "versions": "Versioni mirate",
+          "letters": "Lettere di presentazione",
           "settings": "Preferenze"
         },
-        "note": "Salvato in IndexedDB, solo su questo dispositivo"
+        "note": "Salvato nel tuo browser, solo su questo dispositivo"
       },
       "flow": {
-        "app": "L'applicazione, al primo caricamento",
+        "app": "Il sito, alla prima visita",
         "data": "I tuoi dati",
         "never": "mai"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Distribuisce i file dell'applicazione (HTML, CSS, JavaScript), niente di più",
+        "text": "Invia le pagine del sito, niente di più",
         "items": {
-          "noDb": "Nessun database",
+          "noDb": "Nessun CV salvato",
           "noAccount": "Nessun account utente",
           "noLogs": "Nessun registro delle visite"
         }
@@ -152,54 +152,54 @@
           "text": "Niente registrazione, niente e-mail, niente password. Apri la pagina e inizi"
         },
         "trackers": {
-          "title": "Nessun tracciamento",
-          "text": "Niente statistiche, niente pubblicità, niente cookie di tracciamento. Anche i font sono ospitati sul sito stesso"
+          "title": "Niente pubblicità né tracciamento",
+          "text": "Nessuna pubblicità, nessun cookie di tracciamento, nessuna rivendita: semplicemente non abbiamo i tuoi dati"
         },
         "csp": {
-          "title": "Bloccato tecnicamente",
-          "text": "La politica di sicurezza del sito (CSP) vieta al browser di contattare qualsiasi altro dominio. Il codice è open source: verificalo tu stesso"
+          "title": "Verificabile da chiunque",
+          "text": "Il sito è bloccato per non comunicare con nessun altro servizio, e il suo codice è pubblico: qualsiasi esperto può verificarlo"
         },
         "backup": {
-          "title": "I tuoi backup, i tuoi file",
-          "text": "Esporta tutti i tuoi dati in un file JSON e reimportali su qualsiasi dispositivo"
+          "title": "Una copia quando vuoi",
+          "text": "Scarica con un clic un backup di tutti i tuoi CV e ritrovali su un altro dispositivo"
         }
       }
     },
     "features": {
       "eyebrow": "Funzionalità",
-      "title": "Tutto ciò che serve per ottenere il colloquio",
+      "title": "Tutto per una candidatura vincente",
       "items": {
+        "templates": {
+          "title": "30 modelli curati",
+          "text": "Sobri, moderni o colorati, con o senza foto. Cambia modello o colore con un clic, il tuo testo segue"
+        },
+        "letter": {
+          "title": "Lettera di presentazione abbinata",
+          "text": "Scrivi la tua lettera nello stesso stile del CV, per una candidatura che fa colpo"
+        },
         "master": {
-          "title": "Master CV e versioni mirate",
-          "text": "Un CV completo, tante varianti quante sono le candidature. Seleziona, deseleziona: nulla va mai perso"
+          "title": "Una versione per ogni offerta",
+          "text": "Conserva il tuo CV completo e crea tante versioni quante sono le candidature. Spunta, togli la spunta: non si perde mai nulla"
         },
         "score": {
           "title": "Punteggio di corrispondenza",
-          "text": "Incolla l'annuncio: parole chiave trovate, parole chiave mancanti e punteggio su 100 in tempo reale"
+          "text": "Incolla un annuncio: vedi le parole trovate, quelle mancanti e un punteggio su 100, aggiornato in tempo reale"
         },
         "weak": {
-          "title": "Rilevatore di frasi deboli",
-          "text": "«Responsabile di», «ho partecipato a»… vengono individuate automaticamente, con una banca di verbi d'azione per sostituirle"
+          "title": "Consigli di scrittura",
+          "text": "Le espressioni che non ti valorizzano, come «Responsabile di», vengono segnalate, con verbi più incisivi per sostituirle"
         },
         "analyzer": {
-          "title": "Analizzatore di CV esistenti",
-          "text": "Carica un CV creato altrove: scopri cosa legge davvero il robot e cosa correggere"
+          "title": "Metti alla prova il tuo CV attuale",
+          "text": "Carica un CV creato altrove: scopri cosa leggono davvero i software di selezione e cosa correggere"
         },
-        "linkedin": {
-          "title": "Importazione da LinkedIn",
-          "text": "Precompila il tuo Master CV a partire dal PDF gratuito esportato dal tuo profilo LinkedIn"
+        "import": {
+          "title": "Niente da ribattere",
+          "text": "Riprendi il tuo CV attuale (PDF o Word) o il tuo profilo LinkedIn: tutto viene sistemato automaticamente nell'editor"
         },
         "languages": {
           "title": "5 lingue per il CV",
           "text": "Francese, inglese, italiano, spagnolo e tedesco. In inglese foto e data di nascita vengono nascoste, secondo le consuetudini anglosassoni"
-        },
-        "pdf": {
-          "title": "Export PDF compatibile con gli ATS",
-          "text": "Testo vero e una struttura chiara: leggibile dai robot, piacevole per i selezionatori"
-        },
-        "offline": {
-          "title": "Installabile e offline",
-          "text": "Aggiungi LocalATSCV alla schermata home e continua a lavorare senza connessione"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Che cos'è un ATS?",
-          "a": "Un Applicant Tracking System è il software che i selezionatori usano per ricevere, smistare e cercare le candidature. Converte il tuo CV in testo e lo indicizza: se il testo viene estratto male o mancano le parole chiave giuste, la tua candidatura diventa difficile da trovare"
+          "a": "È il software che molte aziende, agenzie per il lavoro e siti di annunci usano per ricevere e smistare le candidature. Trasforma il tuo CV in testo e permette al selezionatore di cercare parole chiave. Se il tuo CV viene letto male o gli mancano le parole giuste, finisce nel dimenticatoio"
         },
         "storage": {
           "q": "Dove vengono salvati i miei dati?",
-          "a": "Solo nel tuo browser, grazie a IndexedDB, un database integrato in tutti i browser moderni. Non passano mai dai nostri server, che sanno solo distribuire i file dell'applicazione"
+          "a": "Solo sul tuo dispositivo, nel tuo browser. Non passano mai dai nostri server: nessuno tranne te può accedervi"
         },
         "clear": {
           "q": "Cosa succede se cancello i dati del browser?",
-          "a": "I tuoi CV vengono cancellati, perché non esistono da nessun'altra parte. Esporta regolarmente un backup in formato JSON: potrai reimportarlo in qualsiasi momento, su qualsiasi dispositivo"
+          "a": "I tuoi CV vengono cancellati, perché non esistono da nessun'altra parte. Scarica ogni tanto un backup: potrai riaprirlo in qualsiasi momento, su qualsiasi dispositivo"
         },
         "score": {
           "q": "Il punteggio garantisce che il mio CV venga selezionato?",
-          "a": "No. Ogni ATS ha le sue regole e la decisione finale resta umana. Il punteggio è un indicatore: verifica che il tuo CV riprenda il lessico dell'annuncio e che una macchina possa leggerlo correttamente"
+          "a": "No. Ogni azienda ha i propri strumenti e la decisione finale spetta sempre a una persona. Il punteggio ti aiuta a riprendere le parole dell'annuncio e a verificare che il tuo CV venga letto bene: così metti tutte le possibilità dalla tua parte"
         },
         "photo": {
           "q": "Perché la foto scompare in inglese?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "È davvero gratuito?",
-          "a": "Sì. LocalATSCV è un progetto open source con licenza MIT, senza pubblicità né abbonamento. Ospitarlo non costa quasi nulla, perché tutto il lavoro lo fa il tuo browser"
+          "a": "Sì, del tutto: niente abbonamento, niente pubblicità, nessuna filigrana sui tuoi PDF. LocalATSCV è un progetto open source (il suo codice è pubblico) che non costa quasi nulla da gestire, perché tutto avviene sul tuo dispositivo"
         },
         "templates": {
-          "q": "I modelli grafici superano gli ATS?",
-          "a": "Sì. Tutti i modelli stampano testo reale, nell'ordine di lettura, con titoli di sezione standard: forme, indicatori e icone sono disegni che i robot ignorano. I modelli a una colonna restano i più sicuri e il controllo ATS dell'editor verifica la tua impaginazione dal vivo"
+          "q": "I modelli colorati superano i software di selezione?",
+          "a": "Sì. Tutti i modelli contengono vero testo, nell'ordine giusto, con titoli classici come «Esperienza» o «Formazione». Forme, colori e icone sono semplici decorazioni che i software ignorano. I modelli a una colonna restano i più sicuri, e l'editor controlla il tuo layout in tempo reale"
         },
         "import": {
           "q": "Posso riprendere il mio CV attuale o il mio profilo LinkedIn?",
-          "a": "Sì. Importa un CV in PDF o Word (.docx), il PDF del tuo profilo LinkedIn (da computer) o l'archivio dei tuoi dati LinkedIn (dall'app mobile): il contenuto viene letto nel browser e sistemato nell'editor"
+          "a": "Sì. Importa il tuo CV in PDF o Word, oppure il tuo profilo LinkedIn: il contenuto viene letto sul tuo dispositivo e sistemato automaticamente nell'editor. Ti resta solo da rileggere e scegliere un modello"
         },
         "offline": {
-          "q": "LocalATSCV funziona offline?",
-          "a": "Sì. È un'app web installabile: dopo la prima visita tutto funziona senza connessione, esportazione PDF compresa"
+          "q": "Funziona senza internet?",
+          "a": "Sì. Dopo la prima visita puoi modificare e scaricare i tuoi CV senza connessione. Puoi persino aggiungere LocalATSCV alla schermata Home del telefono o del computer, come un'app"
         }
       }
     },
     "cta": {
-      "title": "Pronto a superare il filtro?",
-      "text": "Crea il tuo Master CV in pochi minuti. Nulla lascerà questo dispositivo",
+      "title": "Il tuo prossimo colloquio inizia qui",
+      "text": "Crea il tuo CV gratis in pochi minuti, senza registrazione. Niente lascia il tuo dispositivo",
       "button": "Inizia ora"
     },
     "demo": {
-      "role": "Sviluppatrice Front-end",
+      "role": "Panettiera e pasticciera",
       "contact": "Lione · camille.martin@esempio.it",
       "experience": "Esperienza",
-      "jobTitle": "Sviluppatrice Angular",
-      "jobMeta": "Società Esempio · 2022 – oggi",
+      "jobTitle": "Panettiera",
+      "jobMeta": "Panificio Esempio · 2021 – oggi",
       "bullets": {
-        "migration": "Migrazione di 40 schermate verso <k>Angular</k> e <k>TypeScript</k>, tempi di caricamento ridotti del 35%",
-        "testing": "<w>Responsabile di</w> la strategia di test end-to-end",
-        "delivery": "Rilascio continuo con <k>GitLab CI</k> per 3 team di prodotto"
+        "production": "Produzione ogni mattina di 300 <k>lievitati</k> e pani con <k>lievito madre</k>, vendite +18 %",
+        "opening": "<w>Responsabile di</w> apertura del negozio e allestimento della vetrina",
+        "hygiene": "Rispetto delle norme igieniche <k>HACCP</k> e formazione di 2 apprendisti"
       },
       "weakLabel": "Frase debole",
       "weakReplacement": "« Guidato »",
       "skills": "Competenze",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibilità",
+      "skillList": "Lievitati · Pane con lievito madre · Pasticceria · HACCP · Vendita al banco",
+      "keywords": {
+        "pastry": "Lievitati",
+        "sourdough": "Lievito madre",
+        "hygiene": "HACCP",
+        "license": "Patente B"
+      },
       "score": "Corrispondenza con l’annuncio",
-      "sent": "0 byte inviati",
-      "robot": "COMPETENZE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Sviluppatrice Front-end Angular <n>●●●●○</n> ESPERIENZA <n>� camille.mar</n> Sviluppatrice Angular <n>tin@esempio.it</n> 2022 – oggi TypeScript <n>●●●○○</n> Società Esempio LINGUE Inglese Migrazione di 40 schermate verso…"
+      "sent": "Nessun dato inviato",
+      "robot": "COMPETENZE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Panettiera e pasticciera Lievitati <n>●●●●○</n> ESPERIENZA <n>� camille.mar</n> Panettiera <n>tin@esempio.it</n> 2021 – oggi Pasticceria <n>●●●○○</n> Panificio Esempio LINGUE Inglese Produzione ogni mattina di…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizzatore",
-    "title": "Il tuo CV supera i robot?",
-    "subtitle": "Carica un CV in PDF, creato con qualsiasi strumento: LocalATSCV lo legge come un ATS e ti dice cosa correggere",
+    "eyebrow": "Test del CV gratuito",
+    "title": "Il tuo CV supera la selezione dei recruiter?",
+    "subtitle": "Carica il tuo CV in PDF, che venga da Word, da Canva o da un altro strumento: LocalATSCV lo legge come i software di selezione e ti dice cosa correggere, in pochi secondi",
     "drop": "Trascina qui il tuo CV",
     "dropActive": "Rilascia il file per avviare l'analisi",
     "hint": "Solo PDF, massimo 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Il testo nell'ordine in cui è scritto nel file: è così che lo leggono gli ATS che non ricostruiscono l'impaginazione. Deve seguire l'ordine di lettura del tuo CV"
     },
     "cta": {
-      "title": "Riparti con basi solide",
-      "text": "Crea un CV ottimizzato per gli ATS nell'editor, poi adattalo a ogni offerta",
+      "title": "Passa a un CV impeccabile",
+      "text": "Scegli uno dei nostri 30 modelli, ben letti dai software di selezione, e adattalo a ogni offerta",
       "button": "Apri l'editor",
       "import": "Porta questo CV nei nostri modelli"
     },

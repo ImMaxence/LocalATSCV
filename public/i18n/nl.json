@@ -4,7 +4,7 @@
     "main": "Hoofdnavigatie",
     "how": "Hoe het werkt",
     "privacy": "Privacy",
-    "analyze": "Een cv analyseren",
+    "analyze": "Mijn cv testen",
     "editor": "Mijn cv maken",
     "skipToContent": "Naar de inhoud"
   },
@@ -22,7 +22,7 @@
     "noResult": "Geen taal gevonden"
   },
   "pages": {
-    "home": "ATS-vriendelijke cv's, 100% lokaal",
+    "home": "Gratis ATS-proof cv, zonder account",
     "editor": "Editor",
     "analyze": "Cv-analyse",
     "changelog": "Nieuw",
@@ -31,7 +31,7 @@
     "privacy": "Privacybeleid"
   },
   "seo": {
-    "home": "Gratis ATS-vriendelijke cv-maker: 30 grafische sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-score. Open source, je gegevens blijven in je browser",
+    "home": "Maak gratis een cv dat je het gesprek oplevert: 30 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
     "editor": "Cv-editor met live voorbeeld, Master-cv en gerichte versies, ATS-controle en pdf-export met echte tekst. Alles blijft in je browser",
     "analyze": "Analyseer gratis een pdf-cv: ATS-score op 100, verbeterpunten en de tekst zoals een sollicitatiesysteem die leest. Het bestand verlaat je browser nooit",
     "changelog": "Nieuw in LocalATSCV, versie per versie: nieuwe cv-sjablonen, functies en oplossingen",
@@ -40,7 +40,7 @@
     "privacy": "Privacybeleid van LocalATSCV: geen gegevens verzameld, je cv's blijven in je browser"
   },
   "footer": {
-    "tagline": "De ATS-vriendelijke cv-maker die je gegevens nooit ziet",
+    "tagline": "De gratis cv-maker die je gegevens nooit ziet",
     "product": "Product",
     "legal": "Juridisch",
     "project": "Project",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% lokaal · Gratis · Open source",
-      "titleLine1": "Een cv dat langs de robots komt",
-      "titleLine2": "Gegevens die bij jou blijven",
-      "subtitle": "Met LocalATSCV maak je een cv dat geoptimaliseerd is voor sollicitatiesystemen (ATS) en stem je het in een paar klikken af op elke vacature. Alles gebeurt in je browser: geen account, er worden geen gegevens verstuurd",
-      "ctaPrimary": "Mijn cv maken",
-      "ctaSecondary": "Een bestaand cv analyseren",
+      "badge": "Gratis · Zonder account · Zonder reclame",
+      "titleLine1": "Het cv dat je het gesprek oplevert",
+      "titleLine2": "Klaar in een paar minuten",
+      "subtitle": "Vul je loopbaan in, kies een van de 30 sjablonen en download een cv dat klaar is om te versturen. LocalATSCV helpt je ook om het op elke vacature af te stemmen en controleert of de software die sollicitaties sorteert het goed leest",
+      "ctaPrimary": "Gratis mijn cv maken",
+      "ctaSecondary": "Mijn huidige cv testen",
       "points": {
-        "noAccount": "Zonder registratie",
-        "offline": "Werkt offline",
-        "atsPdf": "Pdf leesbaar voor ATS"
+        "templates": "30 sjablonen om uit te kiezen",
+        "letter": "Bijpassende sollicitatiebrief",
+        "private": "Je gegevens blijven bij jou"
       }
     },
     "ats": {
-      "eyebrow": "Het probleem",
-      "title": "Je cv wordt eerst door een machine gelezen",
-      "text": "De meeste grote bedrijven en recruitmentbureaus sorteren sollicitaties met een ATS (Applicant Tracking System). Dat haalt de tekst uit je cv, slaat die op in een database en laat recruiters kandidaten zoeken op trefwoord",
+      "eyebrow": "Wist je dat?",
+      "title": "Vóór de recruiter leest vaak software je cv",
+      "text": "Veel bedrijven, uitzendbureaus en vacaturesites sorteren sollicitaties met software, een zogeheten ATS. Die leest de tekst van je cv en slaat die op in een database. Wordt je cv verkeerd gelezen, of staan de woorden uit de vacature er niet in, dan komt het misschien nooit bij de recruiter terecht",
       "pitfalls": {
         "layout": {
           "title": "Ingewikkelde opmaak",
-          "text": "Kolommen, tabellen en tekstvakken gooien de leesvolgorde door elkaar: je gegevens komen er rommelig uit"
+          "text": "Kolommen, tabellen en kaders gooien de leesvolgorde in de war: de software leest je cv door elkaar"
         },
         "image": {
           "title": "Onleesbare tekst",
-          "text": "Iconen, vaardigheidsbalken en sommige exports uit ontwerptools worden onzintekens, of helemaal geen tekst"
+          "text": "Pictogrammen, bolletjesschalen en cv's uit sommige ontwerpapps worden onleesbare tekens, of verdwijnen helemaal"
         },
         "keywords": {
           "title": "Ontbrekende trefwoorden",
-          "text": "Komt de woordenschat van de vacature niet voor in je cv, dan verschijnt je profiel niet in de zoekresultaten van recruiters"
+          "text": "Zoekt de recruiter op “verkoopmedewerker”, “HACCP” of “rijbewijs B”? Staan die woorden niet in je cv, dan komt je sollicitatie niet naar boven"
         }
       },
       "seen": "Wat jij ziet",
       "read": "Wat de robot leest",
-      "fix": "LocalATSCV doet het omgekeerde: één kolom, echte tekst en standaard sectiekoppen die robots in de juiste volgorde lezen"
+      "fix": "Met LocalATSCV geen nare verrassingen: je cv's vallen in de smaak bij recruiters en worden door de software in de juiste volgorde gelezen"
     },
     "how": {
       "eyebrow": "Hoe het werkt",
-      "title": "Eén keer schrijven, eindeloos aanpassen",
-      "text": "Vier stappen om van je Master-cv een gerichte sollicitatie voor elke vacature te maken",
+      "title": "Eén cv, afgestemd op elke vacature",
+      "text": "Vul je loopbaan één keer in en maak met een paar klikken een versie op maat voor elke sollicitatie",
       "steps": {
         "profile": {
-          "title": "Vul je Master-cv in",
-          "text": "Voer al je ervaring één keer in, of importeer de pdf van je LinkedIn-profiel om tijd te winnen"
+          "title": "Vertel je verhaal",
+          "text": "Voer je ervaring, opleidingen en vaardigheden in, voor eens en altijd. Heb je al een cv of een LinkedIn-profiel? Importeer het om tijd te besparen"
         },
         "offer": {
           "title": "Plak de vacature",
-          "text": "LocalATSCV haalt de trefwoorden eruit en berekent een matchscore op 100, die meeloopt terwijl je typt"
+          "text": "LocalATSCV vindt de belangrijke woorden in de vacature, laat zien welke in je cv ontbreken en geeft je een score op 100"
         },
         "compose": {
-          "title": "Stel een gerichte versie samen",
-          "text": "Vink de relevante ervaringen en punten aan en zet ze in volgorde met slepen en neerzetten. Er verdwijnt niets uit je Master"
+          "title": "Houd het essentiële",
+          "text": "Vink aan wat telt voor deze functie en verander de volgorde met slepen en neerzetten. Je volledige cv blijft intact"
         },
         "export": {
-          "title": "Exporteer naar pdf",
-          "text": "Een pdf met echte tekst, gestructureerd en in één kolom, even leesbaar voor robots als voor recruiters"
+          "title": "Downloaden en solliciteren",
+          "text": "Kies je sjabloon en kleur en download je cv als pdf, klaar om te versturen of af te drukken"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacy",
-      "title": "Nul gegevens op onze servers. Letterlijk",
-      "text": "Er is geen database om te hacken: onze server stuurt je alleen de applicatie. Daarna gebeurt alles in je browser, zelfs offline",
+      "title": "Je cv blijft bij jou. Echt waar",
+      "text": "Geen account aanmaken, geen bestand dat over internet wordt verstuurd. De site laadt één keer, daarna gebeurt alles op je computer of telefoon, zelfs offline. Niemand behalve jij ziet je cv, wij ook niet",
       "browser": {
         "title": "Je browser",
         "tag": "Je apparaat",
         "items": {
-          "master": "Master-cv",
+          "cvs": "Je cv's",
           "photo": "Profielfoto",
-          "versions": "Gerichte versies",
+          "letters": "Sollicitatiebrieven",
           "settings": "Voorkeuren"
         },
-        "note": "Opgeslagen in IndexedDB, alleen op dit apparaat"
+        "note": "Opgeslagen in je browser, alleen op dit apparaat"
       },
       "flow": {
-        "app": "De applicatie, bij het eerste bezoek",
+        "app": "De site, bij je eerste bezoek",
         "data": "Je gegevens",
         "never": "nooit"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Levert de bestanden van de applicatie (HTML, CSS, JavaScript), meer niet",
+        "text": "Stuurt de pagina's van de site, meer niet",
         "items": {
-          "noDb": "Geen database",
+          "noDb": "Geen cv's opgeslagen",
           "noAccount": "Geen gebruikersaccounts",
           "noLogs": "Geen bezoekerslogs"
         }
@@ -152,54 +152,54 @@
           "text": "Geen registratie, geen e-mail, geen wachtwoord. Open de pagina en ga aan de slag"
         },
         "trackers": {
-          "title": "Geen trackers",
-          "text": "Geen statistieken, geen advertenties, geen trackingcookies. Zelfs de lettertypen staan op onze eigen server"
+          "title": "Geen reclame, geen tracking",
+          "text": "Geen advertenties, geen trackingcookies, niets doorverkocht: we hebben je gegevens gewoon niet"
         },
         "csp": {
-          "title": "Technisch afgeschermd",
-          "text": "Het beveiligingsbeleid van de site (CSP) verbiedt de browser contact op te nemen met een ander domein. De code is open source: controleer het zelf"
+          "title": "Voor iedereen controleerbaar",
+          "text": "De site is zo vergrendeld dat hij met geen enkele andere dienst praat, en de code is openbaar: elke expert kan het nagaan"
         },
         "backup": {
-          "title": "Jouw back-ups, jouw bestanden",
-          "text": "Exporteer al je gegevens naar een JSON-bestand en importeer ze weer op elk apparaat"
+          "title": "Een kopie wanneer je wilt",
+          "text": "Download met één klik een back-up van al je cv's en open ze op een ander apparaat"
         }
       }
     },
     "features": {
       "eyebrow": "Functies",
-      "title": "Alles wat je nodig hebt voor dat sollicitatiegesprek",
+      "title": "Alles voor een geslaagde sollicitatie",
       "items": {
+        "templates": {
+          "title": "30 verzorgde sjablonen",
+          "text": "Sober, modern of kleurrijk, met of zonder foto. Wissel met één klik van sjabloon of kleur, je tekst gaat mee"
+        },
+        "letter": {
+          "title": "Bijpassende sollicitatiebrief",
+          "text": "Schrijf je brief in dezelfde stijl als je cv, voor een sollicitatie die er verzorgd uitziet"
+        },
         "master": {
-          "title": "Master-cv en gerichte versies",
-          "text": "Eén volledig cv, zoveel varianten als sollicitaties. Aanvinken, uitvinken: er gaat nooit iets verloren"
+          "title": "Eén versie per vacature",
+          "text": "Bewaar je volledige cv en maak zoveel versies als je sollicitaties hebt. Aanvinken, uitvinken: er gaat nooit iets verloren"
         },
         "score": {
           "title": "Matchscore",
-          "text": "Plak de vacature: gevonden trefwoorden, ontbrekende trefwoorden en een score op 100 in realtime"
+          "text": "Plak een vacature: je ziet de gevonden woorden, de ontbrekende woorden en een score op 100, live bijgewerkt"
         },
         "weak": {
-          "title": "Detector voor zwakke formuleringen",
-          "text": "“Verantwoordelijk voor”, “geholpen bij”… worden automatisch gemarkeerd, met een lijst actiewerkwoorden om ze te vervangen"
+          "title": "Schrijftips",
+          "text": "Formuleringen die je tekortdoen, zoals “Verantwoordelijk voor”, worden gemarkeerd, met krachtigere werkwoorden als vervanging"
         },
         "analyzer": {
-          "title": "Analyse van bestaande cv's",
-          "text": "Zet een elders gemaakt cv neer: zie wat de robot echt leest en wat je moet verbeteren"
+          "title": "Test je huidige cv",
+          "text": "Upload een cv dat je ergens anders hebt gemaakt: ontdek wat selectiesoftware er echt van leest en wat je moet verbeteren"
         },
-        "linkedin": {
-          "title": "LinkedIn-import",
-          "text": "Vul je Master-cv vooraf in met de gratis pdf die je van je LinkedIn-profiel kunt exporteren"
+        "import": {
+          "title": "Niets overtypen",
+          "text": "Neem je huidige cv (pdf of Word) of je LinkedIn-profiel over: alles wordt automatisch in de editor geordend"
         },
         "languages": {
           "title": "5 cv-talen",
           "text": "Frans, Engels, Italiaans, Spaans en Duits. In het Engels worden foto en geboortedatum verborgen, volgens de Engelstalige normen"
-        },
-        "pdf": {
-          "title": "ATS-vriendelijke pdf-export",
-          "text": "Echte tekst en een duidelijke structuur: leesbaar voor robots, prettig voor recruiters"
-        },
-        "offline": {
-          "title": "Installeerbaar en offline",
-          "text": "Zet LocalATSCV op je startscherm en werk verder zonder verbinding"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Wat is een ATS?",
-          "a": "Een Applicant Tracking System is de software waarmee recruiters sollicitaties ontvangen, sorteren en doorzoeken. Het zet je cv om in tekst en indexeert die: wordt de tekst slecht uitgelezen of ontbreken de juiste trefwoorden, dan is je sollicitatie moeilijk te vinden"
+          "a": "Dat is de software waarmee veel bedrijven, uitzendbureaus en vacaturesites sollicitaties ontvangen en sorteren. Hij zet je cv om in tekst en laat recruiters zoeken op trefwoorden. Wordt je cv verkeerd gelezen of ontbreken de juiste woorden, dan valt het buiten de boot"
         },
         "storage": {
           "q": "Waar worden mijn gegevens opgeslagen?",
-          "a": "Alleen in je browser, in IndexedDB, een database die in elke moderne browser zit. Ze gaan nooit via onze servers, die alleen de bestanden van de applicatie kunnen leveren"
+          "a": "Alleen op je apparaat, in je browser. Ze gaan nooit via onze servers: niemand behalve jij heeft er toegang toe"
         },
         "clear": {
           "q": "Wat gebeurt er als ik mijn browsergegevens wis?",
-          "a": "Je cv's worden gewist, want ze staan nergens anders. Exporteer regelmatig een JSON-back-up: je kunt die altijd weer importeren, op elk apparaat"
+          "a": "Je cv's worden gewist, want ze staan nergens anders. Download af en toe een back-up: je kunt die altijd weer openen, op elk apparaat"
         },
         "score": {
           "q": "Garandeert de score dat mijn cv wordt geselecteerd?",
-          "a": "Nee. Elk ATS heeft zijn eigen regels en de uiteindelijke beslissing neemt een mens. De score is een indicator: hij controleert of je cv de woordenschat van de vacature gebruikt en of een machine het goed kan lezen"
+          "a": "Nee. Elk bedrijf heeft zijn eigen tools en de uiteindelijke beslissing neemt altijd een mens. De score helpt je de woorden uit de vacature over te nemen en te controleren of je cv goed gelezen wordt: zo vergroot je je kansen"
         },
         "photo": {
           "q": "Waarom verdwijnt de foto in het Engels?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Is het echt gratis?",
-          "a": "Ja. LocalATSCV is een open source project onder de MIT-licentie, zonder advertenties of abonnement. Hosten kost bijna niets, want je browser doet al het werk"
+          "a": "Ja, helemaal: geen abonnement, geen reclame, geen watermerk op je pdf's. LocalATSCV is een opensourceproject (de code is openbaar) dat bijna niets kost om te draaien, omdat alles op je apparaat gebeurt"
         },
         "templates": {
-          "q": "Komen de grafische sjablonen door een ATS?",
-          "a": "Ja. Elk sjabloon drukt echte tekst af, in leesvolgorde, met standaard sectiekoppen: vormen, balken en iconen zijn tekeningen die robots negeren. Sjablonen met één kolom blijven het veiligst, en de ATS-controle in de editor test je opmaak live"
+          "q": "Komen de kleurrijke sjablonen door selectiesoftware?",
+          "a": "Ja. Alle sjablonen bevatten echte tekst, in de juiste volgorde, met gangbare kopjes zoals “Werkervaring” of “Opleiding”. Vormen, kleuren en pictogrammen zijn gewoon versiering die de software negeert. Sjablonen met één kolom blijven het veiligst, en de editor controleert je opmaak live"
         },
         "import": {
           "q": "Kan ik mijn huidige cv of mijn LinkedIn-profiel hergebruiken?",
-          "a": "Ja. Importeer een cv in pdf of Word (.docx), de pdf van je LinkedIn-profiel (op een computer) of je LinkedIn-gegevensarchief (via de mobiele app): de inhoud wordt in je browser gelezen en in de editor ingedeeld"
+          "a": "Ja. Importeer je cv als pdf of Word-bestand, of je LinkedIn-profiel: de inhoud wordt op je apparaat gelezen en automatisch in de editor geordend. Je hoeft alleen nog na te lezen en een sjabloon te kiezen"
         },
         "offline": {
-          "q": "Werkt LocalATSCV offline?",
-          "a": "Ja. Het is een installeerbare webapp: na het eerste bezoek werkt alles zonder verbinding, ook de pdf-export"
+          "q": "Werkt het zonder internet?",
+          "a": "Ja. Na je eerste bezoek kun je je cv's offline bewerken en downloaden. Je kunt LocalATSCV zelfs als app op het beginscherm van je telefoon of computer zetten"
         }
       }
     },
     "cta": {
-      "title": "Klaar om door de filter te komen?",
-      "text": "Maak je Master-cv in een paar minuten. Er verlaat niets dit apparaat",
+      "title": "Je volgende sollicitatiegesprek begint hier",
+      "text": "Maak gratis je cv in een paar minuten, zonder account. Niets verlaat je apparaat",
       "button": "Aan de slag"
     },
     "demo": {
-      "role": "Front-end developer",
+      "role": "Bakker en banketbakker",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Werkervaring",
-      "jobTitle": "Angular-developer",
-      "jobMeta": "Voorbeeld BV · 2022 – heden",
+      "jobTitle": "Bakker",
+      "jobMeta": "Bakkerij Voorbeeld · 2021 – heden",
       "bullets": {
-        "migration": "40 schermen gemigreerd naar <k>Angular</k> en <k>TypeScript</k>, laadtijd 35% korter",
-        "testing": "<w>Verantwoordelijk voor</w> de end-to-end-teststrategie",
-        "delivery": "Continuous delivery met <k>GitLab CI</k> voor 3 productteams"
+        "production": "Elke ochtend 300 stuks <k>banket</k> en broden op <k>zuurdesem</k> gebakken, omzet +18%",
+        "opening": "<w>Verantwoordelijk voor</w> het openen van de winkel en de etalage",
+        "hygiene": "Naleving van de <k>HACCP</k>-hygiëneregels en begeleiding van 2 leerlingen"
       },
       "weakLabel": "Zwakke formulering",
       "weakReplacement": "“Geleid”",
       "skills": "Vaardigheden",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Toegankelijkheid",
+      "skillList": "Banket · Zuurdesembrood · Gebak · HACCP · Verkoop in de winkel",
+      "keywords": {
+        "pastry": "Banket",
+        "sourdough": "Zuurdesem",
+        "hygiene": "HACCP",
+        "license": "Rijbewijs B"
+      },
       "score": "Match met de vacature",
-      "sent": "0 bytes verstuurd",
-      "robot": "VAARDIGHEDEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end developer Angular <n>●●●●○</n> WERKERVARING <n>� camille.mar</n> Angular-developer <n>tin@example.com</n> 2022 – heden TypeScript <n>●●●○○</n> Voorbeeld BV TALEN Engels 40 schermen gemigreerd naar…"
+      "sent": "Niets verstuurd",
+      "robot": "VAARDIGHEDEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Bakker en banketbakker Banket <n>●●●●○</n> WERKERVARING <n>� camille.mar</n> Bakker <n>tin@example.com</n> 2021 – heden Gebak <n>●●●○○</n> Bakkerij Voorbeeld TALEN Engels Elke ochtend 300 stuks banket…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analyse",
-    "title": "Komt je cv langs de robots?",
-    "subtitle": "Zet een pdf-cv neer dat met welke tool dan ook is gemaakt: LocalATSCV leest het zoals een ATS en vertelt je wat je moet verbeteren",
+    "eyebrow": "Gratis cv-check",
+    "title": "Komt je cv door de selectie van recruiters?",
+    "subtitle": "Upload je cv als pdf, of het nu uit Word, Canva of een andere tool komt: LocalATSCV leest het zoals selectiesoftware dat doet en vertelt je binnen enkele seconden wat je moet verbeteren",
     "drop": "Sleep je cv hierheen",
     "dropActive": "Laat het bestand los om de analyse te starten",
     "hint": "Alleen pdf, max. 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "De tekst in de volgorde waarin hij in het bestand staat: zo lezen ATS die de opmaak niet reconstrueren hem. Hij moet de leesvolgorde van je cv volgen"
     },
     "cta": {
-      "title": "Begin met een schone lei",
-      "text": "Maak een ATS-vriendelijk cv in de editor en stem het af op elke vacature",
+      "title": "Stap over op een foutloos cv",
+      "text": "Kies een van onze 30 sjablonen, die selectiesoftware goed leest, en stem het af op elke vacature",
       "button": "De editor openen",
       "import": "Dit cv overbrengen naar onze sjablonen"
     },

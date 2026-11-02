@@ -4,7 +4,7 @@
     "main": "Hauptnavigation",
     "how": "So funktioniert's",
     "privacy": "Datenschutz",
-    "analyze": "Lebenslauf analysieren",
+    "analyze": "Lebenslauf testen",
     "editor": "Lebenslauf erstellen",
     "skipToContent": "Zum Inhalt springen"
   },
@@ -22,7 +22,7 @@
     "noResult": "Keine Sprache gefunden"
   },
   "pages": {
-    "home": "ATS-optimierte Lebensläufe, 100 % lokal",
+    "home": "Kostenloser ATS-tauglicher Lebenslauf, ohne Anmeldung",
     "editor": "Editor",
     "analyze": "Lebenslauf-Analyse",
     "changelog": "Neuigkeiten",
@@ -31,7 +31,7 @@
     "privacy": "Datenschutzerklärung"
   },
   "seo": {
-    "home": "Kostenloser ATS-optimierter Lebenslauf: 30 grafische Vorlagen, passendes Anschreiben, Anpassung an jede Stellenanzeige und ATS-Score. Open Source, deine Daten bleiben in deinem Browser",
+    "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 30 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
     "editor": "Lebenslauf-Editor mit Live-Vorschau, Master-CV und gezielten Versionen, ATS-Prüfung und PDF-Export mit echtem Text. Alles bleibt in deinem Browser",
     "analyze": "Analysiere einen PDF-Lebenslauf kostenlos: ATS-Score von 100, Verbesserungspunkte und der Text, wie ihn ein Bewerbermanagementsystem liest. Die Datei verlässt deinen Browser nie",
     "changelog": "Die Neuerungen von LocalATSCV, Version für Version: neue Lebenslauf-Vorlagen, Funktionen und Korrekturen",
@@ -40,7 +40,7 @@
     "privacy": "Datenschutzerklärung von LocalATSCV: keine Datenerhebung, deine Lebensläufe bleiben in deinem Browser"
   },
   "footer": {
-    "tagline": "Der Generator für ATS-optimierte Lebensläufe, der deine Daten nie zu sehen bekommt",
+    "tagline": "Der kostenlose Lebenslauf-Generator, der deine Daten nie sieht",
     "product": "Produkt",
     "legal": "Rechtliches",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % lokal · Kostenlos · Open Source",
-      "titleLine1": "Ein Lebenslauf, der an den Robotern vorbeikommt",
-      "titleLine2": "Daten, die bei dir bleiben",
-      "subtitle": "LocalATSCV hilft dir, einen Lebenslauf für Bewerbermanagementsysteme (ATS) zu optimieren und ihn mit wenigen Klicks an jede Stelle anzupassen. Alles passiert in deinem Browser: kein Konto, keine Datenübertragung",
-      "ctaPrimary": "Lebenslauf erstellen",
-      "ctaSecondary": "Bestehenden Lebenslauf analysieren",
+      "badge": "Kostenlos · Ohne Anmeldung · Ohne Werbung",
+      "titleLine1": "Der Lebenslauf, der Türen öffnet",
+      "titleLine2": "In wenigen Minuten fertig",
+      "subtitle": "Trag deinen Werdegang ein, wähle eine von 30 Vorlagen und lade einen versandfertigen Lebenslauf herunter. LocalATSCV hilft dir außerdem, ihn an jede Stellenanzeige anzupassen, und prüft, ob die Programme, die Bewerbungen sortieren, ihn richtig lesen",
+      "ctaPrimary": "Kostenlos Lebenslauf erstellen",
+      "ctaSecondary": "Meinen Lebenslauf testen",
       "points": {
-        "noAccount": "Ohne Anmeldung",
-        "offline": "Funktioniert offline",
-        "atsPdf": "ATS-lesbares PDF"
+        "templates": "30 Vorlagen zur Auswahl",
+        "letter": "Passendes Anschreiben",
+        "private": "Deine Daten bleiben bei dir"
       }
     },
     "ats": {
-      "eyebrow": "Das Problem",
-      "title": "Dein Lebenslauf wird zuerst von einer Maschine gelesen",
-      "text": "Die meisten großen Unternehmen und Personalagenturen sortieren Bewerbungen mit einem ATS (Applicant Tracking System). Die Software extrahiert den Text deines Lebenslaufs, speichert ihn in einer Datenbank und ermöglicht es Recruitern, Profile nach Schlüsselwörtern zu durchsuchen",
+      "eyebrow": "Schon gewusst?",
+      "title": "Vor dem Recruiter liest oft eine Software deinen Lebenslauf",
+      "text": "Viele Unternehmen, Zeitarbeitsfirmen und Jobbörsen sortieren Bewerbungen mit einer Software, einem sogenannten ATS. Sie liest den Text deines Lebenslaufs und legt ihn in einer Datenbank ab. Wird dein Lebenslauf falsch gelesen oder fehlen die Begriffe aus der Anzeige, landet er womöglich nie beim Recruiter",
       "pitfalls": {
         "layout": {
           "title": "Komplexes Layout",
-          "text": "Spalten, Tabellen und Textfelder bringen die Lesereihenfolge durcheinander: Deine Angaben kommen ungeordnet an"
+          "text": "Spalten, Tabellen und Textkästen bringen die Lesereihenfolge durcheinander: Die Software liest deinen Lebenslauf kreuz und quer"
         },
         "image": {
           "title": "Unlesbarer Text",
-          "text": "Icons, Skill-Balken und manche Exporte aus Designtools erzeugen unverständliche Zeichen oder gar keinen Text"
+          "text": "Symbole, Punkte-Skalen und Lebensläufe aus manchen Design-Apps werden zu unlesbaren Zeichen oder verschwinden ganz"
         },
         "keywords": {
           "title": "Fehlende Schlüsselwörter",
-          "text": "Wenn das Vokabular der Stellenanzeige nicht in deinem Lebenslauf vorkommt, taucht dein Profil in den Suchen der Recruiter nicht auf"
+          "text": "Sucht der Recruiter nach „Verkäuferin“, „HACCP“ oder „Führerschein Klasse B“? Stehen diese Wörter nicht in deinem Lebenslauf, taucht deine Bewerbung nicht auf"
         }
       },
       "seen": "Was du siehst",
       "read": "Was der Roboter liest",
-      "fix": "LocalATSCV macht es umgekehrt: eine Spalte, echter Text und Standard-Abschnittstitel, die Roboter in der richtigen Reihenfolge lesen"
+      "fix": "Mit LocalATSCV gibt es keine bösen Überraschungen: Deine Lebensläufe gefallen Recruitern und werden von der Software in der richtigen Reihenfolge gelesen"
     },
     "how": {
       "eyebrow": "So funktioniert's",
-      "title": "Einmal schreiben, beliebig oft anpassen",
-      "text": "Vier Schritte, und dein Master-Lebenslauf wird zur maßgeschneiderten Bewerbung für jede Stelle",
+      "title": "Ein Lebenslauf, passend für jede Stelle",
+      "text": "Trag deinen Werdegang einmal ein und erstelle mit wenigen Klicks eine maßgeschneiderte Version für jede Bewerbung",
       "steps": {
         "profile": {
-          "title": "Fülle deinen Master-Lebenslauf aus",
-          "text": "Erfasse alle deine Erfahrungen ein einziges Mal oder importiere das PDF deines LinkedIn-Profils, um Zeit zu sparen"
+          "title": "Erzähl deinen Werdegang",
+          "text": "Gib deine Erfahrungen, Abschlüsse und Kenntnisse ein für alle Mal ein. Du hast schon einen Lebenslauf oder ein LinkedIn-Profil? Importiere es, um Zeit zu sparen"
         },
         "offer": {
           "title": "Füge die Stellenanzeige ein",
-          "text": "LocalATSCV extrahiert die Schlüsselwörter und berechnet einen Übereinstimmungswert von 0 bis 100, der sich beim Schreiben aktualisiert"
+          "text": "LocalATSCV erkennt die wichtigen Begriffe der Anzeige, zeigt dir, welche in deinem Lebenslauf fehlen, und gibt dir eine Punktzahl von 0 bis 100"
         },
         "compose": {
-          "title": "Stelle eine gezielte Version zusammen",
-          "text": "Hake die passenden Erfahrungen und Stichpunkte an und ordne sie per Drag-and-drop. Aus deinem Master wird nichts gelöscht"
+          "title": "Behalte das Wesentliche",
+          "text": "Hak an, was für diese Stelle zählt, und ändere die Reihenfolge per Drag-and-drop. Dein vollständiger Lebenslauf bleibt unverändert"
         },
         "export": {
-          "title": "Als PDF exportieren",
-          "text": "Ein textbasiertes, strukturiertes, einspaltiges PDF, das für Roboter genauso gut lesbar ist wie für Recruiter"
+          "title": "Herunterladen und bewerben",
+          "text": "Wähle Vorlage und Farbe und lade deinen Lebenslauf als PDF herunter, bereit zum Versenden oder Drucken"
         }
       }
     },
     "privacy": {
       "eyebrow": "Datenschutz",
-      "title": "Null Daten auf unseren Servern. Buchstäblich",
-      "text": "Es gibt keine Datenbank, die gehackt werden könnte: Unser Server schickt dir nur die Anwendung. Danach läuft alles in deinem Browser, sogar offline",
+      "title": "Dein Lebenslauf bleibt bei dir. Wirklich",
+      "text": "Kein Konto, keine Datei, die übers Internet geschickt wird. Die Seite lädt einmal, danach passiert alles auf deinem Computer oder Handy, sogar offline. Niemand außer dir sieht deinen Lebenslauf, nicht einmal wir",
       "browser": {
         "title": "Dein Browser",
         "tag": "Dein Gerät",
         "items": {
-          "master": "Master-Lebenslauf",
+          "cvs": "Deine Lebensläufe",
           "photo": "Profilfoto",
-          "versions": "Gezielte Versionen",
+          "letters": "Anschreiben",
           "settings": "Einstellungen"
         },
-        "note": "Gespeichert in IndexedDB, nur auf diesem Gerät"
+        "note": "In deinem Browser gespeichert, nur auf diesem Gerät"
       },
       "flow": {
-        "app": "Die Anwendung, beim ersten Laden",
+        "app": "Die Seite, beim ersten Besuch",
         "data": "Deine Daten",
         "never": "niemals"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Liefert die Dateien der Anwendung aus (HTML, CSS, JavaScript), sonst nichts",
+        "text": "Liefert die Seiten der Website aus, mehr nicht",
         "items": {
-          "noDb": "Keine Datenbank",
+          "noDb": "Keine gespeicherten Lebensläufe",
           "noAccount": "Keine Benutzerkonten",
           "noLogs": "Keine Besucherprotokolle"
         }
@@ -152,54 +152,54 @@
           "text": "Keine Registrierung, keine E-Mail, kein Passwort. Seite öffnen und loslegen"
         },
         "trackers": {
-          "title": "Keine Tracker",
-          "text": "Keine Statistiken, keine Werbung, keine Tracking-Cookies. Sogar die Schriften werden selbst gehostet"
+          "title": "Keine Werbung, kein Tracking",
+          "text": "Keine Werbung, keine Tracking-Cookies, kein Weiterverkauf: Wir haben deine Daten schlicht nicht"
         },
         "csp": {
-          "title": "Technisch abgesichert",
-          "text": "Die Sicherheitsrichtlinie der Website (CSP) verbietet dem Browser, eine andere Domain zu kontaktieren. Der Code ist Open Source: Überprüfe es selbst"
+          "title": "Für alle überprüfbar",
+          "text": "Die Seite ist so abgesichert, dass sie mit keinem anderen Dienst kommuniziert, und ihr Code ist öffentlich: Jeder Experte kann es überprüfen"
         },
         "backup": {
-          "title": "Deine Backups, deine Dateien",
-          "text": "Exportiere alle deine Daten in eine JSON-Datei und importiere sie auf jedem beliebigen Gerät wieder"
+          "title": "Eine Kopie, wann immer du willst",
+          "text": "Lade mit einem Klick eine Sicherung all deiner Lebensläufe herunter und öffne sie auf einem anderen Gerät"
         }
       }
     },
     "features": {
       "eyebrow": "Funktionen",
-      "title": "Alles, was du für das Vorstellungsgespräch brauchst",
+      "title": "Alles für eine erfolgreiche Bewerbung",
       "items": {
+        "templates": {
+          "title": "30 sorgfältig gestaltete Vorlagen",
+          "text": "Schlicht, modern oder farbenfroh, mit oder ohne Foto. Wechsle Vorlage oder Farbe mit einem Klick, dein Text zieht mit"
+        },
+        "letter": {
+          "title": "Passendes Anschreiben",
+          "text": "Schreib dein Anschreiben im gleichen Stil wie deinen Lebenslauf, für eine Bewerbung aus einem Guss"
+        },
         "master": {
-          "title": "Master-Lebenslauf und gezielte Versionen",
-          "text": "Ein vollständiger Lebenslauf, so viele Varianten wie Bewerbungen. An- und abhaken: Es geht nie etwas verloren"
+          "title": "Eine Version pro Stelle",
+          "text": "Behalte deinen vollständigen Lebenslauf und erstelle so viele Versionen wie Bewerbungen. Anhaken, abhaken: Nichts geht verloren"
         },
         "score": {
           "title": "Übereinstimmungswert",
-          "text": "Füge die Anzeige ein: gefundene und fehlende Schlüsselwörter sowie ein Wert von 0 bis 100 in Echtzeit"
+          "text": "Füge eine Anzeige ein: Du siehst gefundene und fehlende Begriffe und eine Punktzahl von 0 bis 100, live aktualisiert"
         },
         "weak": {
-          "title": "Erkennung schwacher Formulierungen",
-          "text": "„Zuständig für“, „mitgewirkt bei“ … werden automatisch erkannt, mit einer Sammlung von Aktionsverben als Ersatz"
+          "title": "Schreibtipps",
+          "text": "Formulierungen, die dich unter Wert verkaufen, wie „Zuständig für“, werden erkannt, mit stärkeren Verben als Ersatz"
         },
         "analyzer": {
-          "title": "Analyse bestehender Lebensläufe",
-          "text": "Lade einen anderswo erstellten Lebenslauf hoch: Sieh, was der Roboter wirklich liest und was du korrigieren solltest"
+          "title": "Teste deinen jetzigen Lebenslauf",
+          "text": "Lade einen anderswo erstellten Lebenslauf hoch: Sieh, was Bewerbungssoftware wirklich liest und was du verbessern solltest"
         },
-        "linkedin": {
-          "title": "LinkedIn-Import",
-          "text": "Fülle deinen Master-Lebenslauf mit dem kostenlosen PDF vor, das du aus deinem LinkedIn-Profil exportieren kannst"
+        "import": {
+          "title": "Nichts abtippen",
+          "text": "Übernimm deinen jetzigen Lebenslauf (PDF oder Word) oder dein LinkedIn-Profil: Alles wird automatisch im Editor einsortiert"
         },
         "languages": {
           "title": "5 Sprachen für den Lebenslauf",
           "text": "Französisch, Englisch, Italienisch, Spanisch und Deutsch. Auf Englisch werden Foto und Geburtsdatum ausgeblendet, wie im angelsächsischen Raum üblich"
-        },
-        "pdf": {
-          "title": "ATS-kompatibler PDF-Export",
-          "text": "Echter Text und eine klare Struktur: lesbar für Roboter, angenehm für Recruiter"
-        },
-        "offline": {
-          "title": "Installierbar und offline",
-          "text": "Füge LocalATSCV zu deinem Startbildschirm hinzu und arbeite ohne Verbindung weiter"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Was ist ein ATS?",
-          "a": "Ein Applicant Tracking System ist die Software, mit der Recruiter Bewerbungen empfangen, sortieren und durchsuchen. Es wandelt deinen Lebenslauf in Text um und indexiert ihn: Wird der Text schlecht extrahiert oder fehlen die richtigen Schlüsselwörter, ist deine Bewerbung schwer zu finden"
+          "a": "Das ist die Software, mit der viele Unternehmen, Zeitarbeitsfirmen und Jobbörsen Bewerbungen empfangen und sortieren. Sie wandelt deinen Lebenslauf in Text um und lässt Recruiter nach Stichwörtern suchen. Wird dein Lebenslauf falsch gelesen oder fehlen die richtigen Begriffe, fällt er durchs Raster"
         },
         "storage": {
           "q": "Wo werden meine Daten gespeichert?",
-          "a": "Nur in deinem Browser, mithilfe von IndexedDB, einer Datenbank, die in alle modernen Browser integriert ist. Sie laufen nie über unsere Server, die nur die Dateien der Anwendung ausliefern"
+          "a": "Nur auf deinem Gerät, in deinem Browser. Sie laufen nie über unsere Server: Niemand außer dir hat Zugriff darauf"
         },
         "clear": {
           "q": "Was passiert, wenn ich meine Browserdaten lösche?",
-          "a": "Deine Lebensläufe werden gelöscht, da sie nirgendwo sonst existieren. Exportiere regelmäßig ein Backup im JSON-Format: Du kannst es jederzeit und auf jedem Gerät wieder importieren"
+          "a": "Deine Lebensläufe werden gelöscht, da sie nirgendwo sonst existieren. Lade ab und zu eine Sicherung herunter: Du kannst sie jederzeit und auf jedem Gerät wieder öffnen"
         },
         "score": {
           "q": "Garantiert der Wert, dass mein Lebenslauf ausgewählt wird?",
-          "a": "Nein. Jedes ATS hat eigene Regeln, und die endgültige Entscheidung trifft ein Mensch. Der Wert ist ein Indikator: Er prüft, ob dein Lebenslauf das Vokabular der Anzeige aufgreift und von einer Maschine korrekt gelesen werden kann"
+          "a": "Nein. Jedes Unternehmen hat eigene Werkzeuge, und die endgültige Entscheidung trifft immer ein Mensch. Die Punktzahl hilft dir, die Begriffe der Anzeige aufzugreifen und zu prüfen, ob dein Lebenslauf richtig gelesen wird: So verbesserst du deine Chancen"
         },
         "photo": {
           "q": "Warum verschwindet das Foto auf Englisch?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Ist das wirklich kostenlos?",
-          "a": "Ja. LocalATSCV ist ein Open-Source-Projekt unter MIT-Lizenz, ohne Werbung und ohne Abo. Das Hosting kostet fast nichts, da dein Browser die ganze Arbeit erledigt"
+          "a": "Ja, komplett: kein Abo, keine Werbung, kein Wasserzeichen auf deinen PDFs. LocalATSCV ist ein Open-Source-Projekt (der Code ist öffentlich), das fast nichts kostet, weil alles auf deinem Gerät passiert"
         },
         "templates": {
-          "q": "Bestehen die grafischen Vorlagen ATS-Systeme?",
-          "a": "Ja. Alle Vorlagen drucken echten Text in Lesereihenfolge mit Standard-Abschnittstiteln: Formen, Anzeigen und Icons sind Zeichnungen, die Roboter ignorieren. Einspaltige Vorlagen bleiben die sicherste Wahl, und die ATS-Prüfung im Editor testet dein Layout live"
+          "q": "Kommen die farbigen Vorlagen durch Bewerbungssoftware?",
+          "a": "Ja. Alle Vorlagen enthalten echten Text in der richtigen Reihenfolge, mit üblichen Überschriften wie „Berufserfahrung“ oder „Ausbildung“. Formen, Farben und Symbole sind reine Dekoration, die die Software ignoriert. Einspaltige Vorlagen bleiben die sicherste Wahl, und der Editor prüft dein Layout live"
         },
         "import": {
           "q": "Kann ich meinen aktuellen Lebenslauf oder mein LinkedIn-Profil übernehmen?",
-          "a": "Ja. Importiere einen Lebenslauf als PDF oder Word (.docx), das PDF deines LinkedIn-Profils (am Computer) oder das Archiv deiner LinkedIn-Daten (aus der mobilen App): Der Inhalt wird in deinem Browser gelesen und im Editor eingeordnet"
+          "a": "Ja. Importiere deinen Lebenslauf als PDF oder Word-Datei oder dein LinkedIn-Profil: Der Inhalt wird auf deinem Gerät gelesen und automatisch im Editor einsortiert. Du musst nur noch Korrektur lesen und eine Vorlage wählen"
         },
         "offline": {
-          "q": "Funktioniert LocalATSCV offline?",
-          "a": "Ja. Es ist eine installierbare Web-App: Nach dem ersten Besuch funktioniert alles ohne Verbindung, auch der PDF-Export"
+          "q": "Funktioniert das ohne Internet?",
+          "a": "Ja. Nach dem ersten Besuch kannst du deine Lebensläufe offline bearbeiten und herunterladen. Du kannst LocalATSCV sogar wie eine App auf den Startbildschirm deines Handys oder Computers legen"
         }
       }
     },
     "cta": {
-      "title": "Bereit, den Filter zu passieren?",
-      "text": "Erstelle deinen Master-Lebenslauf in wenigen Minuten. Nichts verlässt dieses Gerät",
+      "title": "Dein nächstes Vorstellungsgespräch beginnt hier",
+      "text": "Erstelle deinen Lebenslauf kostenlos in wenigen Minuten, ohne Anmeldung. Nichts verlässt dein Gerät",
       "button": "Jetzt starten"
     },
     "demo": {
-      "role": "Front-End-Entwicklerin",
+      "role": "Bäckerin und Konditorin",
       "contact": "Lyon · camille.martin@beispiel.de",
       "experience": "Berufserfahrung",
-      "jobTitle": "Angular-Entwicklerin",
-      "jobMeta": "Beispiel GmbH · 2022 – heute",
+      "jobTitle": "Bäckerin",
+      "jobMeta": "Bäckerei Beispiel · 2021 – heute",
       "bullets": {
-        "migration": "Migration von 40 Ansichten auf <k>Angular</k> und <k>TypeScript</k>, Ladezeit um 35 % verkürzt",
-        "testing": "<w>Zuständig für</w> die End-to-End-Teststrategie",
-        "delivery": "Continuous Delivery mit <k>GitLab CI</k> für 3 Produktteams"
+        "production": "Täglich 300 Stück <k>Feingebäck</k> und Brote mit <k>Sauerteig</k> hergestellt, Umsatz +18 %",
+        "opening": "<w>Zuständig für</w> die Ladenöffnung und die Schaufenstergestaltung",
+        "hygiene": "Einhaltung der <k>HACCP</k>-Hygieneregeln und Ausbildung von 2 Azubis"
       },
       "weakLabel": "Schwache Formulierung",
       "weakReplacement": "„Eingeführt“",
       "skills": "Kenntnisse",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Barrierefreiheit",
+      "skillList": "Feingebäck · Sauerteigbrot · Konditorei · HACCP · Verkauf",
+      "keywords": {
+        "pastry": "Feingebäck",
+        "sourdough": "Sauerteig",
+        "hygiene": "HACCP",
+        "license": "Führerschein B"
+      },
       "score": "Übereinstimmung mit der Anzeige",
-      "sent": "0 Byte gesendet",
-      "robot": "KENNTNISSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-End-Entwicklerin Angular <n>●●●●○</n> BERUFSERFAHRUNG <n>� camille.mar</n> Angular-Entwicklerin <n>tin@beispiel.de</n> 2022 – heute TypeScript <n>●●●○○</n> Beispiel GmbH SPRACHEN Englisch Migration von 40 Ansichten auf…"
+      "sent": "Nichts gesendet",
+      "robot": "KENNTNISSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Bäckerin und Konditorin Feingebäck <n>●●●●○</n> BERUFSERFAHRUNG <n>� camille.mar</n> Bäckerin <n>tin@beispiel.de</n> 2021 – heute Konditorei <n>●●●○○</n> Bäckerei Beispiel SPRACHEN Englisch Täglich 300 Stück Feingebäck…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analyse",
-    "title": "Kommt dein Lebenslauf an den Robotern vorbei?",
-    "subtitle": "Lade einen Lebenslauf als PDF hoch, egal mit welchem Programm erstellt: LocalATSCV liest ihn wie ein ATS und zeigt dir, was du verbessern solltest",
+    "eyebrow": "Kostenloser Lebenslauf-Check",
+    "title": "Kommt dein Lebenslauf durch die Vorauswahl?",
+    "subtitle": "Lade deinen Lebenslauf als PDF hoch, egal ob aus Word, Canva oder einem anderen Tool: LocalATSCV liest ihn wie Bewerbungssoftware und sagt dir in Sekunden, was du verbessern solltest",
     "drop": "Lebenslauf hierher ziehen",
     "dropActive": "Datei loslassen, um die Analyse zu starten",
     "hint": "Nur PDF, maximal 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Der Text in der Reihenfolge, in der er in der Datei steht: So lesen ihn ATS, die das Layout nicht rekonstruieren. Er sollte der Lesereihenfolge deines Lebenslaufs folgen"
     },
     "cta": {
-      "title": "Starte auf einer soliden Basis",
-      "text": "Erstelle im Editor einen ATS-optimierten Lebenslauf und passe ihn dann an jede Stelle an",
+      "title": "Wechsle zu einem fehlerfreien Lebenslauf",
+      "text": "Wähle eine unserer 30 Vorlagen, die Bewerbungssoftware zuverlässig liest, und passe sie an jede Stelle an",
       "button": "Editor öffnen",
       "import": "Diesen Lebenslauf in unsere Vorlagen übernehmen"
     },

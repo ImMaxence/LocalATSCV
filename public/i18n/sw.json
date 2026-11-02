@@ -4,7 +4,7 @@
     "main": "Urambazaji mkuu",
     "how": "Jinsi inavyofanya kazi",
     "privacy": "Faragha",
-    "analyze": "Chambua CV",
+    "analyze": "Jaribu CV yangu",
     "editor": "Tengeneza CV yangu",
     "skipToContent": "Ruka hadi maudhui"
   },
@@ -22,7 +22,7 @@
     "noResult": "Hakuna lugha iliyopatikana"
   },
   "pages": {
-    "home": "CV inayofaa ATS, 100% ndani ya kifaa",
+    "home": "CV ya bure inayofaa ATS, bila kujisajili",
     "editor": "Kihariri",
     "analyze": "Kichanganuzi cha CV",
     "changelog": "Mapya",
@@ -31,7 +31,7 @@
     "privacy": "Sera ya faragha"
   },
   "seo": {
-    "home": "Kitengeneza CV cha bure kinachofaa ATS: violezo 30 vya michoro, barua ya maombi inayolingana, kurekebisha kwa kila tangazo la kazi na alama ya ATS. Chanzo huria, na data yako inabaki kwenye kivinjari chako",
+    "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 30, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
     "editor": "Kihariri cha CV chenye onyesho la moja kwa moja, CV Kuu na matoleo yaliyolengwa, ukaguzi wa ATS na usafirishaji wa PDF yenye maandishi halisi. Kila kitu kinabaki kwenye kivinjari chako",
     "analyze": "Uchambuzi wa bure wa CV ya PDF: alama ya ATS kati ya 100, mambo ya kurekebisha na maandishi kama mifumo ya uajiri inavyoyasoma. Faili haitoki kamwe kwenye kivinjari chako",
     "changelog": "Mapya ya LocalATSCV kwa kila toleo: violezo vipya vya CV, vipengele na marekebisho",
@@ -40,7 +40,7 @@
     "privacy": "Sera ya faragha ya LocalATSCV: hakuna data inayokusanywa, CV yako inabaki kwenye kivinjari chako"
   },
   "footer": {
-    "tagline": "Kitengeneza CV kinachofaa ATS ambacho hakioni data yako kamwe",
+    "tagline": "Kitengeneza CV cha bure kisichoona data yako kamwe",
     "product": "Bidhaa",
     "legal": "Kisheria",
     "project": "Mradi",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% ndani ya kifaa · Bure · Chanzo huria",
-      "titleLine1": "CV zinazopita roboti",
-      "titleLine2": "Data inayobaki kwako",
-      "subtitle": "LocalATSCV inakusaidia kutengeneza CV iliyoboreshwa kwa mifumo ya kufuatilia waombaji (ATS) na kuirekebisha kwa kila kazi kwa mibofyo michache. Kila kitu hufanyika kwenye kivinjari chako: hakuna akaunti, hakuna data inayotumwa",
-      "ctaPrimary": "Tengeneza CV yangu",
-      "ctaSecondary": "Chambua CV iliyopo",
+      "badge": "Bure · Bila kujisajili · Bila matangazo",
+      "titleLine1": "CV inayokufikisha kwenye usaili",
+      "titleLine2": "Tayari kwa dakika chache",
+      "subtitle": "Jaza historia yako, chagua kiolezo kimoja kati ya 30 na upakue CV iliyo tayari kutumwa. LocalATSCV pia inakusaidia kuirekebisha kwa kila tangazo la kazi na inakagua kama programu zinazochuja maombi zinaisoma ipasavyo",
+      "ctaPrimary": "Tengeneza CV yangu bure",
+      "ctaSecondary": "Jaribu CV yangu ya sasa",
       "points": {
-        "noAccount": "Hakuna usajili",
-        "offline": "Inafanya kazi bila mtandao",
-        "atsPdf": "PDF inayosomeka na ATS"
+        "templates": "Violezo 30 vya kuchagua",
+        "letter": "Barua ya maombi inayolingana",
+        "private": "Data yako inabaki kwako"
       }
     },
     "ats": {
-      "eyebrow": "Tatizo",
-      "title": "CV yako husomwa kwanza na mashine",
-      "text": "Kampuni nyingi kubwa na mashirika ya uajiri huchuja maombi kwa ATS (Applicant Tracking System). Mfumo huu hutoa maandishi ya CV yako, huyahifadhi kwenye hifadhidata na humwezesha mwajiri kutafuta waombaji kwa maneno muhimu",
+      "eyebrow": "Je, unajua?",
+      "title": "Kabla ya mwajiri, mara nyingi programu ndiyo husoma CV yako",
+      "text": "Kampuni nyingi, mawakala wa ajira na tovuti za kazi huchuja maombi kwa programu inayoitwa ATS. Programu hiyo husoma maandishi ya CV yako na kuyahifadhi kwenye hifadhidata. CV yako ikisomwa vibaya, au ikikosa maneno ya tangazo, huenda isimfikie mwajiri kamwe",
       "pitfalls": {
         "layout": {
           "title": "Mpangilio tata",
-          "text": "Safu, majedwali na visanduku vya maandishi huvuruga mpangilio wa usomaji: taarifa zako huchanganyika"
+          "text": "Safu, majedwali na visanduku huvuruga mpangilio wa kusoma: programu husoma CV yako ovyoovyo"
         },
         "image": {
           "title": "Maandishi yasiyosomeka",
-          "text": "Aikoni, pau za ujuzi na baadhi ya faili kutoka zana za usanifu hugeuka alama za ajabu, au maandishi hupotea kabisa"
+          "text": "Aikoni, vipimo vya nukta na CV zilizotengenezwa kwenye baadhi ya programu za usanifu hugeuka herufi zisizosomeka, au hupotea kabisa"
         },
         "keywords": {
           "title": "Maneno muhimu yanayokosekana",
-          "text": "Ikiwa CV yako haina maneno ya tangazo la kazi, wasifu wako hautaonekana kwenye utafutaji wa mwajiri"
+          "text": "Je, mwajiri anatafuta “muuzaji dukani”, “HACCP” au “leseni ya udereva”? Maneno hayo yasipokuwemo kwenye CV yako, ombi lako halitaonekana"
         }
       },
       "seen": "Unachokiona",
       "read": "Kile roboti inasoma",
-      "fix": "LocalATSCV hufanya kinyume: safu moja, maandishi halisi na vichwa vya kawaida vya sehemu ambavyo roboti husoma kwa mpangilio sahihi"
+      "fix": "Ukiwa na LocalATSCV, hakuna mshangao mbaya: CV zako zinawavutia waajiri na programu huzisoma kwa mpangilio sahihi"
     },
     "how": {
       "eyebrow": "Jinsi inavyofanya kazi",
-      "title": "Andika mara moja, rekebisha bila kikomo",
-      "text": "Hatua nne za kugeuza CV Kuu yako kuwa ombi linalofaa kila kazi",
+      "title": "CV moja, inayofaa kila kazi",
+      "text": "Jaza historia yako mara moja, kisha tengeneza toleo maalum kwa kila ombi kwa mibofyo michache",
       "steps": {
         "profile": {
-          "title": "Jaza CV Kuu",
-          "text": "Weka uzoefu wako wote mara moja tu, au leta PDF ya wasifu wako wa LinkedIn ili kuokoa muda"
+          "title": "Simulia safari yako",
+          "text": "Weka uzoefu, elimu na ujuzi wako mara moja tu. Tayari una CV au wasifu wa LinkedIn? Uingize ili kuokoa muda"
         },
         "offer": {
           "title": "Bandika tangazo la kazi",
-          "text": "LocalATSCV hutoa maneno muhimu na kukokotoa alama ya ulinganifu kati ya 100, wakati unaandika"
+          "text": "LocalATSCV hutambua maneno muhimu ya tangazo, hukuonyesha yale yanayokosekana kwenye CV yako na hukupa alama kati ya 100"
         },
         "compose": {
-          "title": "Tengeneza toleo lililolengwa",
-          "text": "Weka alama kwenye uzoefu na vipengele vinavyofaa, kisha buruta ili kupanga upya. Hakuna kinachofutwa kwenye CV Kuu"
+          "title": "Baki na muhimu",
+          "text": "Weka alama kwenye kilicho muhimu kwa nafasi hii na ubadilishe mpangilio kwa kuburuta. CV yako kamili inabaki vilevile"
         },
         "export": {
-          "title": "Hamisha kama PDF",
-          "text": "PDF yenye maandishi halisi yaliyopangwa kwenye safu moja, rahisi kusomwa na roboti na waajiri"
+          "title": "Pakua na utume ombi",
+          "text": "Chagua kiolezo na rangi, kisha pakua CV yako kama PDF, tayari kutumwa au kuchapishwa"
         }
       }
     },
     "privacy": {
       "eyebrow": "Faragha",
-      "title": "Hakuna data kwenye seva zetu. Kihalisi kabisa",
-      "text": "Hakuna hifadhidata ya kudukuliwa: seva inakutumia programu tu. Baada ya hapo kila kitu hufanyika kwenye kivinjari chako, hata bila mtandao",
+      "title": "CV yako inabaki kwako. Kweli kabisa",
+      "text": "Hakuna akaunti ya kufungua, hakuna faili linalotumwa kupitia intaneti. Tovuti hupakiwa mara moja, kisha kila kitu hufanyika kwenye kompyuta au simu yako, hata bila intaneti. Hakuna mtu mwingine anayeona CV yako isipokuwa wewe, hata sisi",
       "browser": {
         "title": "Kivinjari chako",
         "tag": "Kifaa chako",
         "items": {
-          "master": "CV Kuu",
+          "cvs": "CV zako",
           "photo": "Picha ya wasifu",
-          "versions": "Matoleo yaliyolengwa",
+          "letters": "Barua za maombi",
           "settings": "Mapendeleo"
         },
-        "note": "Imehifadhiwa kwenye IndexedDB, kwenye kifaa hiki tu"
+        "note": "Imehifadhiwa kwenye kivinjari chako, kwenye kifaa hiki pekee"
       },
       "flow": {
-        "app": "Programu, inapopakiwa mara ya kwanza",
+        "app": "Tovuti, katika ziara ya kwanza",
         "data": "Data yako",
         "never": "kamwe"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Seva",
-        "text": "Inatuma tu faili za programu (HTML, CSS, JavaScript), basi",
+        "text": "Hutuma kurasa za tovuti, basi",
         "items": {
-          "noDb": "Hakuna hifadhidata",
+          "noDb": "Hakuna CV inayohifadhiwa",
           "noAccount": "Hakuna akaunti za watumiaji",
           "noLogs": "Hakuna kumbukumbu za ufikiaji"
         }
@@ -152,54 +152,54 @@
           "text": "Hakuna usajili, hakuna barua pepe, hakuna nenosiri. Fungua ukurasa na uanze"
         },
         "trackers": {
-          "title": "Hakuna vifuatiliaji",
-          "text": "Hakuna takwimu, hakuna matangazo, hakuna vidakuzi vya ufuatiliaji. Hata fonti zimepangishwa kwenye seva yetu"
+          "title": "Hakuna matangazo wala ufuatiliaji",
+          "text": "Hakuna matangazo, hakuna vidakuzi vya ufuatiliaji, hakuna uuzaji wa data: hatuna data yako kabisa"
         },
         "csp": {
-          "title": "Imefungwa kiufundi",
-          "text": "Sera ya usalama ya tovuti (CSP) inakataza kivinjari kuunganisha na kikoa kingine chochote. Msimbo ni chanzo huria: unaweza kuukagua mwenyewe"
+          "title": "Yeyote anaweza kukagua",
+          "text": "Tovuti imefungwa isiweze kuwasiliana na huduma nyingine yoyote, na msimbo wake uko wazi: mtaalamu yeyote anaweza kuthibitisha"
         },
         "backup": {
-          "title": "Nakala yako, faili yako",
-          "text": "Hamisha data yako yote kwenye faili ya JSON na uilete tena kwenye kifaa chochote"
+          "title": "Nakala wakati wowote",
+          "text": "Pakua nakala ya akiba ya CV zako zote kwa mbofyo mmoja na uzifungue kwenye kifaa kingine"
         }
       }
     },
     "features": {
       "eyebrow": "Vipengele",
-      "title": "Kila unachohitaji ili kuitwa kwenye usaili",
+      "title": "Kila kitu kwa ombi la kazi lenye mafanikio",
       "items": {
+        "templates": {
+          "title": "Violezo 30 vilivyoboreshwa",
+          "text": "Rahisi, vya kisasa au vya rangi, vikiwa na picha au bila. Badilisha kiolezo au rangi kwa mbofyo mmoja, maandishi yako yanafuata"
+        },
+        "letter": {
+          "title": "Barua ya maombi inayolingana",
+          "text": "Andika barua yako kwa mtindo uleule wa CV yako, kwa ombi linalovutia"
+        },
         "master": {
-          "title": "CV Kuu na matoleo yaliyolengwa",
-          "text": "CV moja kamili, na matoleo mengi kama maombi yako. Weka alama, ondoa alama: hakuna kinachopotea"
+          "title": "Toleo moja kwa kila kazi",
+          "text": "Hifadhi CV yako kamili na utengeneze matoleo mengi kadiri ya maombi yako. Weka alama, ondoa alama: hakuna kinachopotea"
         },
         "score": {
           "title": "Alama ya ulinganifu",
-          "text": "Bandika tangazo la kazi: maneno muhimu uliyonayo, yanayokosekana na alama kati ya 100 papo hapo"
+          "text": "Bandika tangazo: ona maneno yaliyopatikana, yanayokosekana na alama kati ya 100 inayosasishwa papo hapo"
         },
         "weak": {
-          "title": "Kugundua misemo dhaifu",
-          "text": "“Nilihusika na”, “Nilisaidia katika”… huwekwa alama kiotomatiki, pamoja na orodha ya vitenzi vya vitendo vya kubadilisha"
+          "title": "Vidokezo vya uandishi",
+          "text": "Vishazi visivyokuonyesha vizuri, kama “Nilihusika na”, hutambuliwa, pamoja na vitenzi vyenye nguvu zaidi vya kuvibadilisha"
         },
         "analyzer": {
-          "title": "Kichanganuzi cha CV iliyopo",
-          "text": "Weka CV iliyotengenezwa kwingine: ona kile roboti zinasoma kweli na kinachohitaji kurekebishwa"
+          "title": "Jaribu CV yako ya sasa",
+          "text": "Pakia CV iliyotengenezwa kwingine: gundua kile ambacho programu za kuchuja zinasoma kweli na unachopaswa kurekebisha"
         },
-        "linkedin": {
-          "title": "Leta kutoka LinkedIn",
-          "text": "Jaza CV Kuu yako mapema kutoka kwa PDF ya bure ambayo wasifu wako wa LinkedIn huhamisha"
+        "import": {
+          "title": "Hakuna haja ya kuandika upya",
+          "text": "Leta CV yako ya sasa (PDF au Word) au wasifu wako wa LinkedIn: kila kitu kinapangwa kiotomatiki kwenye kihariri"
         },
         "languages": {
           "title": "Lugha 5 za CV",
           "text": "Kifaransa, Kiingereza, Kiitaliano, Kihispania na Kijerumani. Kwa Kiingereza, picha na tarehe ya kuzaliwa hufichwa kulingana na desturi za nchi zinazozungumza Kiingereza"
-        },
-        "pdf": {
-          "title": "PDF inayofaa ATS",
-          "text": "Maandishi halisi na muundo wazi: yanasomeka na roboti, yanapendeza kwa waajiri"
-        },
-        "offline": {
-          "title": "Inasakinishwa na kutumika bila mtandao",
-          "text": "Ongeza LocalATSCV kwenye skrini yako ya mwanzo na uendelee kufanya kazi bila muunganisho"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "ATS ni nini?",
-          "a": "Applicant Tracking System ni programu ambayo waajiri hutumia kupokea, kuchuja na kutafuta maombi. Hugeuza CV yako kuwa maandishi na kuiorodhesha: ikiwa maandishi yametolewa vibaya au hayana maneno muhimu yanayofaa, wasifu wako ni vigumu kupatikana"
+          "a": "Ni programu ambayo kampuni nyingi, mawakala wa ajira na tovuti za kazi hutumia kupokea na kuchuja maombi. Hugeuza CV yako kuwa maandishi na humruhusu mwajiri kutafuta kwa maneno muhimu. CV yako ikisomwa vibaya au ikikosa maneno sahihi, huachwa nyuma"
         },
         "storage": {
           "q": "Data yangu huhifadhiwa wapi?",
-          "a": "Kwenye kivinjari chako tu, ndani ya IndexedDB, hifadhidata iliyojengwa ndani ya kila kivinjari cha kisasa. Haipiti kamwe kwenye seva zetu, ambazo zinajua tu kutuma faili za programu"
+          "a": "Kwenye kifaa chako pekee, ndani ya kivinjari chako. Haipiti kamwe kwenye seva zetu: hakuna mtu mwingine anayeweza kuifikia isipokuwa wewe"
         },
         "clear": {
           "q": "Nini kitatokea nikifuta data ya kivinjari changu?",
-          "a": "CV zako zitafutwa, kwa sababu hazipo mahali pengine popote. Hamisha nakala ya JSON mara kwa mara: unaweza kuileta tena wakati wowote, kwenye kifaa chochote"
+          "a": "CV zako zitafutwa, kwa sababu hazipo mahali pengine popote. Pakua nakala ya akiba mara kwa mara: unaweza kuifungua wakati wowote, kwenye kifaa chochote"
         },
         "score": {
           "q": "Je, alama inahakikisha CV yangu itachaguliwa?",
-          "a": "Hapana. Kila ATS ina sheria zake na uamuzi wa mwisho hufanywa na binadamu. Alama ni kiashiria tu: hukagua kama CV yako inatumia maneno ya tangazo la kazi na kama mashine zinaisoma kwa usahihi"
+          "a": "Hapana. Kila kampuni ina zana zake na uamuzi wa mwisho hufanywa na binadamu kila wakati. Alama hukusaidia kutumia maneno ya tangazo na kuhakikisha CV yako inasomwa ipasavyo: hivyo unaongeza nafasi zako"
         },
         "photo": {
           "q": "Kwa nini picha hupotea kwa Kiingereza?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Je, ni bure kweli?",
-          "a": "Ndiyo. LocalATSCV ni mradi wa chanzo huria chini ya leseni ya MIT, bila matangazo wala usajili wa malipo. Upangishaji hauna gharama karibu kabisa, kwa sababu kivinjari chako hufanya kazi yote"
+          "a": "Ndiyo, kabisa: hakuna usajili wa malipo, hakuna matangazo, hakuna alama-maji kwenye PDF zako. LocalATSCV ni mradi wa programu huria (msimbo wake uko wazi) ambao karibu haugharimu chochote kuendesha, kwa sababu kila kitu hufanyika kwenye kifaa chako"
         },
         "templates": {
-          "q": "Je, violezo vya michoro vinapita ATS?",
-          "a": "Ndiyo. Kila kiolezo huchapisha maandishi halisi kwa mpangilio wa usomaji, pamoja na vichwa vya kawaida vya sehemu: maumbo, pau na aikoni ni michoro ambayo roboti hupuuza. Violezo vya safu moja bado ndivyo salama zaidi, na ukaguzi wa ATS wa kihariri hujaribu mpangilio wako papo hapo"
+          "q": "Je, violezo vya rangi hupita programu za kuchuja?",
+          "a": "Ndiyo. Violezo vyote vina maandishi halisi kwa mpangilio sahihi, yenye vichwa vya kawaida kama “Uzoefu” au “Elimu”. Maumbo, rangi na aikoni ni mapambo tu ambayo programu huyapuuza. Violezo vya safu moja bado ndivyo salama zaidi, na kihariri hukagua mpangilio wako papo hapo"
         },
         "import": {
           "q": "Je, naweza kutumia tena CV yangu ya sasa au wasifu wangu wa LinkedIn?",
-          "a": "Ndiyo. Leta CV ya PDF au Word (.docx), PDF ya wasifu wako wa LinkedIn (kwenye kompyuta) au kumbukumbu ya data yako ya LinkedIn (kutoka programu ya simu): maudhui husomwa kwenye kivinjari chako na kupangwa kwenye kihariri"
+          "a": "Ndiyo. Ingiza CV yako kama PDF au Word, au wasifu wako wa LinkedIn: maudhui husomwa kwenye kifaa chako na kupangwa kiotomatiki kwenye kihariri. Kilichobaki ni kupitia na kuchagua kiolezo"
         },
         "offline": {
-          "q": "Je, LocalATSCV inafanya kazi bila mtandao?",
-          "a": "Ndiyo. Ni programu ya wavuti inayosakinishwa: baada ya ziara ya kwanza, kila kitu hufanya kazi bila muunganisho, ikiwemo kuhamisha PDF"
+          "q": "Je, inafanya kazi bila intaneti?",
+          "a": "Ndiyo. Baada ya ziara ya kwanza, unaweza kuhariri na kupakua CV zako bila intaneti. Unaweza hata kuongeza LocalATSCV kwenye skrini ya mwanzo ya simu au kompyuta yako, kama programu"
         }
       }
     },
     "cta": {
-      "title": "Uko tayari kupita vichujio?",
-      "text": "Tengeneza CV Kuu yako kwa dakika chache. Hakuna kinachotoka kwenye kifaa hiki",
+      "title": "Usaili wako unaofuata unaanzia hapa",
+      "text": "Tengeneza CV yako bure kwa dakika chache, bila kujisajili. Hakuna kinachotoka kwenye kifaa chako",
       "button": "Anza"
     },
     "demo": {
-      "role": "Msanidi programu wa front-end",
+      "role": "Mwokaji mikate na keki",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Uzoefu",
-      "jobTitle": "Msanidi programu wa Angular",
-      "jobMeta": "Kampuni ya Mfano · 2022 – sasa",
+      "jobTitle": "Mwokaji mikate",
+      "jobMeta": "Duka la Mikate la Mfano · 2021 – sasa",
       "bullets": {
-        "migration": "Nilihamisha skrini 40 kwenda <k>Angular</k> na <k>TypeScript</k>, muda wa kupakia ukapungua kwa 35%",
-        "testing": "<w>Nilihusika na</w> mkakati wa majaribio ya mwanzo hadi mwisho",
-        "delivery": "Usambazaji endelevu kwa <k>GitLab CI</k> kwa timu 3 za bidhaa"
+        "production": "Nilioka <k>keki za tabaka</k> 300 na mikate ya <k>chachu asilia</k> kila asubuhi, mauzo yaliongezeka 18%",
+        "opening": "<w>Nilihusika na</w> kufungua duka na kupanga dirisha la maonyesho",
+        "hygiene": "Nilifuata kanuni za usafi za <k>HACCP</k> na kufundisha wanafunzi 2"
       },
       "weakLabel": "Msemo dhaifu",
       "weakReplacement": "“Niliongoza”",
       "skills": "Ujuzi",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Ufikivu",
+      "skillList": "Keki za tabaka · Mkate wa chachu asilia · Keki · HACCP · Mauzo dukani",
+      "keywords": {
+        "pastry": "Keki za tabaka",
+        "sourdough": "Chachu asilia",
+        "hygiene": "HACCP",
+        "license": "Leseni ya udereva"
+      },
       "score": "Ulinganifu na tangazo la kazi",
-      "sent": "Baiti 0 zimetumwa",
-      "robot": "UJUZI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Msanidi programu wa front-end Angular <n>●●●●○</n> UZOEFU <n>� camille.mar</n> Msanidi programu wa Angular <n>tin@example.com</n> 2022 – sasa TypeScript <n>●●●○○</n> Kampuni ya Mfano LUGHA Kiingereza Nilihamisha skrini 40 kwenda…"
+      "sent": "Hakuna kinachotumwa",
+      "robot": "UJUZI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Mwokaji mikate na keki Keki za tabaka <n>●●●●○</n> UZOEFU <n>� camille.mar</n> Mwokaji mikate <n>tin@example.com</n> 2021 – sasa Keki <n>●●●○○</n> Duka la Mikate la Mfano LUGHA Kiingereza Nilioka keki za tabaka…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Kichanganuzi",
-    "title": "Je, CV yako inapita roboti?",
-    "subtitle": "Weka CV ya PDF iliyotengenezwa kwa zana yoyote: LocalATSCV huisoma kama ATS na kukuambia cha kurekebisha",
+    "eyebrow": "Ukaguzi wa CV bure",
+    "title": "Je, CV yako inapita uchujaji wa waajiri?",
+    "subtitle": "Pakia CV yako kama PDF, iwe imetengenezwa kwa Word, Canva au zana nyingine: LocalATSCV huisoma kama programu za uajiri na hukuambia kwa sekunde chache cha kurekebisha",
     "drop": "Weka CV yako hapa",
     "dropActive": "Achilia faili ili kuanza uchambuzi",
     "hint": "PDF tu, hadi MB 15",
@@ -833,8 +839,8 @@
       "fileText": "Maandishi kwa mpangilio yalivyoandikwa kwenye faili: hivi ndivyo ATS zisizojenga upya mpangilio zinavyoyasoma. Yanapaswa kufuata mpangilio wa usomaji wa CV yako"
     },
     "cta": {
-      "title": "Anza upya kwa msingi imara",
-      "text": "Tengeneza CV inayofaa ATS kwenye kihariri, kisha uirekebishe kwa kila kazi",
+      "title": "Hamia kwenye CV isiyo na dosari",
+      "text": "Chagua kimoja kati ya violezo vyetu 30, ambavyo programu za kuchuja huvisoma ipasavyo, na ukirekebishe kwa kila tangazo",
       "button": "Fungua kihariri",
       "import": "Hamishia CV hii kwenye violezo vyetu"
     },

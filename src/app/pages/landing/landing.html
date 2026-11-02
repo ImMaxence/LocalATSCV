@@ -141,7 +141,7 @@
           <div class="min-w-0">
             <p class="text-xs font-semibold text-muted">{{ t('demo.score') }}</p>
             <ul class="mt-2 flex flex-wrap gap-1">
-              @for (keyword of demoKeywords; track keyword.label) {
+              @for (keyword of demoKeywords; track keyword.key) {
                 <li
                   class="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium"
                   [class]="
@@ -154,7 +154,7 @@
                     class="size-3"
                     [name]="keyword.found ? 'check' : 'x'"
                     [strokeWidth]="2.5"
-                  />{{ keyword.label }}
+                  />{{ t('demo.keywords.' + keyword.key) }}
                 </li>
               }
             </ul>

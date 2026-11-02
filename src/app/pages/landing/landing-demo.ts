@@ -35,11 +35,12 @@ export class DemoSegmentsPipe implements PipeTransform {
 /** Parties de l'illustration identiques dans toutes les langues (CV fictif, score). */
 export const DEMO_NAME = 'Camille Martin';
 export const DEMO_SCORE = 86;
+/** Mots-clés de l'annonce fictive (clés `landing.demo.keywords.*`) : un métier que tout le monde connaît. */
 export const DEMO_KEYWORDS = [
-  { label: 'Angular', found: true },
-  { label: 'TypeScript', found: true },
-  { label: 'GitLab CI', found: true },
-  { label: 'Docker', found: false },
+  { key: 'pastry', found: true },
+  { key: 'sourdough', found: true },
+  { key: 'hygiene', found: true },
+  { key: 'license', found: false },
 ];
 /** Puces du CV fictif, dans l'ordre (clés `landing.demo.bullets.*`). */
-export const DEMO_BULLETS = ['migration', 'testing', 'delivery'] as const;
+export const DEMO_BULLETS = ['production', 'opening', 'hygiene'] as const;

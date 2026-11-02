@@ -149,9 +149,9 @@ describe('style des textes', () => {
 // Balises de surlignage de l'illustration de l'accueil (voir landing-demo.ts).
 describe("textes de l'illustration de l'accueil", () => {
   const MARKED: [string, string][] = [
-    ['landing.demo.bullets.migration', '<k>'],
-    ['landing.demo.bullets.testing', '<w>'],
-    ['landing.demo.bullets.delivery', '<k>'],
+    ['landing.demo.bullets.production', '<k>'],
+    ['landing.demo.bullets.opening', '<w>'],
+    ['landing.demo.bullets.hygiene', '<k>'],
     ['landing.demo.robot', '<n>'],
   ];
 

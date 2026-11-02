@@ -193,8 +193,8 @@ const shots = [
           .og .card-3 { top: 140px; left: 900px; transform: rotate(9deg); z-index: 2; }
         </style><div class="og"><div class="text">
           <div class="brand"><img src="/favicon.svg" alt="" /><span>Local<b>ATS</b>CV</span></div>
-          <h1>Un CV qui passe les robots, des données qui restent chez vous</h1>
-          <ul><li>Gratuit et open source</li><li>30 modèles</li><li>Score ATS</li><li>100 % local</li></ul>
+          <h1>Le CV qui décroche l'entretien, prêt en quelques minutes</h1>
+          <ul><li>Gratuit</li><li>Sans inscription</li><li>30 modèles</li><li>100 % privé</li></ul>
         </div>${cvs.map((html, i) => `<div class="card card-${i + 1}">${html}</div>`).join('')}</div>`;
         },
         { css, cvs },

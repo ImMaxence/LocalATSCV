@@ -4,7 +4,7 @@
     "main": "Main navigation",
     "how": "How it works",
     "privacy": "Privacy",
-    "analyze": "Analyze a resume",
+    "analyze": "Test my resume",
     "editor": "Build my resume",
     "skipToContent": "Skip to content"
   },
@@ -22,7 +22,7 @@
     "noResult": "No language found"
   },
   "pages": {
-    "home": "ATS-friendly resumes, 100% local",
+    "home": "Free ATS-friendly resume builder, no sign-up",
     "editor": "Editor",
     "analyze": "Resume analyzer",
     "changelog": "What's new",
@@ -31,7 +31,7 @@
     "privacy": "Privacy policy"
   },
   "seo": {
-    "home": "Free ATS-friendly resume builder: 30 graphic templates, matching cover letter, tailoring to each job ad and ATS score. Open source, your data stays in your browser",
+    "home": "Build a free resume that lands the interview: 30 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
     "editor": "Resume editor with live preview, Master CV and tailored versions, ATS check and real-text PDF export. Everything stays in your browser",
     "analyze": "Analyze a PDF resume for free: ATS score out of 100, issues to fix and the text as an applicant tracking system reads it. The file never leaves your browser",
     "changelog": "What's new in LocalATSCV, release by release: new resume templates, features and fixes",
@@ -40,7 +40,7 @@
     "privacy": "LocalATSCV privacy policy: no data collected, your resumes stay in your browser"
   },
   "footer": {
-    "tagline": "The ATS-friendly resume builder that never sees your data",
+    "tagline": "The free resume builder that never sees your data",
     "product": "Product",
     "legal": "Legal",
     "project": "Project",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% local · Free · Open source",
-      "titleLine1": "A resume that gets past the bots",
-      "titleLine2": "Data that stays with you",
-      "subtitle": "LocalATSCV helps you build a resume optimized for applicant tracking systems (ATS) and tailor it to every job in a few clicks. Everything happens in your browser: no account, no data sent anywhere",
-      "ctaPrimary": "Build my resume",
-      "ctaSecondary": "Analyze an existing resume",
+      "badge": "Free · No sign-up · No ads",
+      "titleLine1": "The resume that lands the interview",
+      "titleLine2": "Ready in minutes",
+      "subtitle": "Fill in your background, pick one of 30 templates and download a resume ready to send. LocalATSCV also helps you tailor it to every job ad and checks that it will be read correctly by the software that sorts applications",
+      "ctaPrimary": "Build my resume for free",
+      "ctaSecondary": "Test my current resume",
       "points": {
-        "noAccount": "No sign-up",
-        "offline": "Works offline",
-        "atsPdf": "ATS-readable PDF"
+        "templates": "30 templates to choose from",
+        "letter": "Matching cover letter",
+        "private": "Your data stays with you"
       }
     },
     "ats": {
-      "eyebrow": "The problem",
-      "title": "Your resume is read by a machine first",
-      "text": "Most large companies and recruiting agencies sort applications with an ATS (Applicant Tracking System). It extracts the text of your resume, stores it in a database and lets recruiters search candidates by keyword",
+      "eyebrow": "Did you know?",
+      "title": "Before a recruiter, software often reads your resume",
+      "text": "Many companies, staffing agencies and job sites sort applications with software called an ATS. It reads the text of your resume and files it in a database. If your resume is misread, or if it lacks the words from the job ad, it may never reach a recruiter",
       "pitfalls": {
         "layout": {
           "title": "Complex layouts",
-          "text": "Columns, tables and text boxes scramble the reading order: your information comes out jumbled"
+          "text": "Columns, tables and boxes scramble the reading order: the software reads your resume all jumbled up"
         },
         "image": {
           "title": "Unreadable text",
-          "text": "Icons, skill gauges and some design-tool exports turn into gibberish characters, or no text at all"
+          "text": "Icons, dot ratings and resumes made in some design apps turn into unreadable characters, or vanish completely"
         },
         "keywords": {
           "title": "Missing keywords",
-          "text": "If the job ad's vocabulary doesn't appear in your resume, your profile won't show up in recruiters' searches"
+          "text": "Is the recruiter searching for “sales assistant”, “HACCP” or “driver's license”? If those words aren't in your resume, your application doesn't show up"
         }
       },
       "seen": "What you see",
       "read": "What the bot reads",
-      "fix": "LocalATSCV does the opposite: a single column, real text and standard section headings that bots read in the right order"
+      "fix": "With LocalATSCV, no nasty surprises: your resumes appeal to recruiters and are read in the right order by the software"
     },
     "how": {
       "eyebrow": "How it works",
-      "title": "Write it once, tailor it endlessly",
-      "text": "Four steps turn your Master resume into a tailored application for every job",
+      "title": "One resume, tailored to every job",
+      "text": "Fill in your background once, then create a custom version for each application in a few clicks",
       "steps": {
         "profile": {
-          "title": "Fill in your Master resume",
-          "text": "Enter all your experience once and for all, or import your LinkedIn profile PDF to save time"
+          "title": "Tell your story",
+          "text": "Enter your experience, education and skills once and for all. Already have a resume or a LinkedIn profile? Import it to save time"
         },
         "offer": {
           "title": "Paste the job ad",
-          "text": "LocalATSCV extracts its keywords and computes a match score out of 100, updated as you type"
+          "text": "LocalATSCV spots the key words in the ad, shows you which ones are missing from your resume and gives you a score out of 100"
         },
         "compose": {
-          "title": "Build a tailored version",
-          "text": "Tick the relevant experiences and bullet points, reorder them with drag and drop. Nothing is deleted from your Master"
+          "title": "Keep what matters",
+          "text": "Tick what counts for this job and reorder it with a simple drag and drop. Your full resume stays intact"
         },
         "export": {
-          "title": "Export to PDF",
-          "text": "A text-based, structured, single-column PDF that reads as well for bots as it does for recruiters"
+          "title": "Download and apply",
+          "text": "Choose your template and color, then download your resume as a PDF, ready to send or print"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacy",
-      "title": "Zero data on our servers. Literally",
-      "text": "There is no database to hack: our server only sends you the application. After that, everything happens in your browser, even offline",
+      "title": "Your resume stays with you. For real",
+      "text": "No account to create, no file sent over the internet. The site loads once, then everything happens on your computer or phone, even offline. Nobody but you sees your resume, not even us",
       "browser": {
         "title": "Your browser",
         "tag": "Your device",
         "items": {
-          "master": "Master resume",
+          "cvs": "Your resumes",
           "photo": "Profile photo",
-          "versions": "Tailored versions",
+          "letters": "Cover letters",
           "settings": "Preferences"
         },
-        "note": "Stored in IndexedDB, on this device only"
+        "note": "Saved in your browser, on this device only"
       },
       "flow": {
-        "app": "The application, on first load",
+        "app": "The site, on your first visit",
         "data": "Your data",
         "never": "never"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Serves the application files (HTML, CSS, JavaScript), nothing more",
+        "text": "Sends the site's pages, nothing more",
         "items": {
-          "noDb": "No database",
+          "noDb": "No resumes stored",
           "noAccount": "No user accounts",
           "noLogs": "No visitor logs"
         }
@@ -152,54 +152,54 @@
           "text": "No sign-up, no email, no password. Open the page and get started"
         },
         "trackers": {
-          "title": "No trackers",
-          "text": "No analytics, no ads, no tracking cookies. Even the fonts are self-hosted"
+          "title": "No ads, no tracking",
+          "text": "No advertising, no tracking cookies, nothing resold: we simply don't have your data"
         },
         "csp": {
-          "title": "Technically locked down",
-          "text": "The site's security policy (CSP) forbids the browser from contacting any other domain. The code is open source: check it yourself"
+          "title": "Anyone can check",
+          "text": "The site is locked so it can't talk to any other service, and its code is public: any expert can verify it"
         },
         "backup": {
-          "title": "Your backups, your files",
-          "text": "Export all your data to a JSON file and import it back on any device"
+          "title": "A copy whenever you want",
+          "text": "Download a backup of all your resumes in one click and pick them up again on another device"
         }
       }
     },
     "features": {
       "eyebrow": "Features",
-      "title": "Everything you need to land the interview",
+      "title": "Everything for a winning application",
       "items": {
+        "templates": {
+          "title": "30 polished templates",
+          "text": "Simple, modern or colorful, with or without a photo. Switch template or color in one click, your text follows"
+        },
+        "letter": {
+          "title": "Matching cover letter",
+          "text": "Write your letter in the same style as your resume, for an application that looks the part"
+        },
         "master": {
-          "title": "Master resume and tailored versions",
-          "text": "One complete resume, as many variants as applications. Tick, untick: nothing is ever lost"
+          "title": "One version per job",
+          "text": "Keep your full resume and create as many versions as you have applications. Tick, untick: nothing is ever lost"
         },
         "score": {
           "title": "Match score",
-          "text": "Paste the job ad: matched keywords, missing keywords and a score out of 100 in real time"
+          "text": "Paste a job ad: see the words found, the ones missing and a score out of 100, updated live"
         },
         "weak": {
-          "title": "Weak phrase detector",
-          "text": "“Responsible for”, “helped with”… are flagged automatically, with a bank of action verbs to replace them"
+          "title": "Writing tips",
+          "text": "Phrases that undersell you, like “Responsible for”, are flagged, with punchier verbs to replace them"
         },
         "analyzer": {
-          "title": "Existing resume analyzer",
-          "text": "Drop in a resume made elsewhere: see what the bot actually reads and what to fix"
+          "title": "Test your current resume",
+          "text": "Drop in a resume made elsewhere: see what screening software really reads and what to fix"
         },
-        "linkedin": {
-          "title": "LinkedIn import",
-          "text": "Pre-fill your Master resume from the free PDF you can export from your LinkedIn profile"
+        "import": {
+          "title": "Nothing to retype",
+          "text": "Bring in your current resume (PDF or Word) or your LinkedIn profile: everything is sorted into the editor automatically"
         },
         "languages": {
           "title": "5 resume languages",
           "text": "French, English, Italian, Spanish and German. In English, photo and date of birth are hidden, following English-speaking norms"
-        },
-        "pdf": {
-          "title": "ATS-friendly PDF export",
-          "text": "Real text and a clear structure: readable by bots, pleasant for recruiters"
-        },
-        "offline": {
-          "title": "Installable and offline",
-          "text": "Add LocalATSCV to your home screen and keep working without a connection"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "What is an ATS?",
-          "a": "An Applicant Tracking System is the software recruiters use to receive, sort and search applications. It converts your resume to text and indexes it: if the text is badly extracted or the right keywords are missing, your application becomes hard to find"
+          "a": "It's the software many companies, staffing agencies and job sites use to receive and sort applications. It turns your resume into text and lets recruiters search it by keyword. If your resume is misread or lacks the right words, it falls through the cracks"
         },
         "storage": {
           "q": "Where is my data stored?",
-          "a": "Only in your browser, using IndexedDB, a database built into every modern browser. It never goes through our servers, which only know how to serve the application files"
+          "a": "Only on your device, in your browser. It never goes through our servers: nobody but you can access it"
         },
         "clear": {
           "q": "What happens if I clear my browser data?",
-          "a": "Your resumes are erased, since they exist nowhere else. Export a JSON backup regularly: you can import it back at any time, on any device"
+          "a": "Your resumes are deleted, since they exist nowhere else. Download a backup now and then: you can reopen it anytime, on any device"
         },
         "score": {
           "q": "Does the score guarantee my resume will be shortlisted?",
-          "a": "No. Every ATS has its own rules and the final decision is made by a human. The score is an indicator: it checks that your resume uses the job ad's vocabulary and that a machine can read it correctly"
+          "a": "No. Every company has its own tools and the final decision is always made by a person. The score helps you reuse the words from the ad and check that your resume reads correctly: you put the odds in your favor"
         },
         "photo": {
           "q": "Why does the photo disappear in English?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Is it really free?",
-          "a": "Yes. LocalATSCV is an open source project under the MIT license, with no ads or subscription. It costs almost nothing to host, since your browser does all the work"
+          "a": "Yes, completely: no subscription, no ads, no watermark on your PDFs. LocalATSCV is an open source project (its code is public) that costs almost nothing to run, since everything happens on your device"
         },
         "templates": {
-          "q": "Do the graphic templates pass ATS?",
-          "a": "Yes. Every template prints real text, in reading order, with standard section headings: shapes, gauges and icons are drawings that robots ignore. Single-column templates remain the safest, and the editor's ATS check tests your layout live"
+          "q": "Do the colorful templates get past screening software?",
+          "a": "Yes. Every template contains real text, in the right order, with standard headings like “Experience” or “Education”. Shapes, colors and icons are mere decoration that software ignores. Single-column templates remain the safest, and the editor checks your layout live"
         },
         "import": {
           "q": "Can I reuse my current resume or my LinkedIn profile?",
-          "a": "Yes. Import a PDF or Word (.docx) resume, your LinkedIn profile PDF (on a computer) or your LinkedIn data archive (from the mobile app): the content is read in your browser and sorted into the editor"
+          "a": "Yes. Import your resume as a PDF or Word file, or your LinkedIn profile: the content is read on your device and sorted into the editor automatically. All that's left is to proofread it and pick a template"
         },
         "offline": {
-          "q": "Does LocalATSCV work offline?",
-          "a": "Yes. It's an installable web app: after the first visit, everything works without a connection, including PDF export"
+          "q": "Does it work without internet?",
+          "a": "Yes. After your first visit, you can edit and download your resumes offline. You can even add LocalATSCV to the home screen of your phone or computer, like an app"
         }
       }
     },
     "cta": {
-      "title": "Ready to get past the filter?",
-      "text": "Create your Master resume in minutes. Nothing will leave this device",
+      "title": "Your next interview starts here",
+      "text": "Build your resume for free in minutes, no sign-up. Nothing leaves your device",
       "button": "Get started"
     },
     "demo": {
-      "role": "Front-end Developer",
+      "role": "Baker & Pastry Cook",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Experience",
-      "jobTitle": "Angular Developer",
-      "jobMeta": "Example Corp · 2022 – present",
+      "jobTitle": "Baker",
+      "jobMeta": "Example Bakery · 2021 – present",
       "bullets": {
-        "migration": "Migrated 40 screens to <k>Angular</k> and <k>TypeScript</k>, cutting load time by 35%",
-        "testing": "<w>Responsible for</w> the end-to-end testing strategy",
-        "delivery": "Continuous delivery with <k>GitLab CI</k> for 3 product teams"
+        "production": "Baked 300 <k>pastries</k> and <k>sourdough</k> loaves every morning, sales up 18%",
+        "opening": "<w>Responsible for</w> opening the shop and the window display",
+        "hygiene": "Applied <k>HACCP</k> food safety rules and trained 2 apprentices"
       },
       "weakLabel": "Weak phrase",
       "weakReplacement": "“Led”",
       "skills": "Skills",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibility",
+      "skillList": "Pastries · Sourdough bread · Cakes · HACCP · Customer service",
+      "keywords": {
+        "pastry": "Pastries",
+        "sourdough": "Sourdough",
+        "hygiene": "HACCP",
+        "license": "Driver's license"
+      },
       "score": "Match with the job ad",
-      "sent": "0 bytes sent",
-      "robot": "SKILLS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end Developer Angular <n>●●●●○</n> EXPERIENCE <n>� camille.mar</n> Angular Developer <n>tin@example.com</n> 2022 – present TypeScript <n>●●●○○</n> Example Corp LANGUAGES French Migrated 40 screens to…"
+      "sent": "Nothing sent",
+      "robot": "SKILLS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Baker & Pastry Cook Pastries <n>●●●●○</n> EXPERIENCE <n>� camille.mar</n> Baker <n>tin@example.com</n> 2021 – present Cakes <n>●●●○○</n> Example Bakery LANGUAGES French Baked 300 pastries and…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analyzer",
-    "title": "Does your resume get past the bots?",
-    "subtitle": "Drop in a PDF resume made with any tool: LocalATSCV reads it like an ATS and tells you what to fix",
+    "eyebrow": "Free resume check",
+    "title": "Will your resume get past recruiters' screening?",
+    "subtitle": "Drop your resume as a PDF, whether it comes from Word, Canva or any other tool: LocalATSCV reads it like recruiting software does and tells you what to fix, in seconds",
     "drop": "Drag your resume here",
     "dropActive": "Drop the file to start the analysis",
     "hint": "PDF only, 15 MB max",
@@ -833,8 +839,8 @@
       "fileText": "The text in the order it is written in the file: this is how ATS that don't rebuild the layout read it. It should follow your resume's reading order"
     },
     "cta": {
-      "title": "Start from a clean slate",
-      "text": "Build an ATS-friendly resume in the editor, then tailor it for every job",
+      "title": "Switch to a flawless resume",
+      "text": "Pick one of our 30 templates, read correctly by screening software, and tailor it to every job ad",
       "button": "Open the editor",
       "import": "Bring this resume into our templates"
     },

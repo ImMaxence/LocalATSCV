@@ -4,7 +4,7 @@
     "main": "Ana gezinme",
     "how": "Nasıl çalışır",
     "privacy": "Gizlilik",
-    "analyze": "CV analiz et",
+    "analyze": "CV'mi test et",
     "editor": "CV'mi oluştur",
     "skipToContent": "İçeriğe geç"
   },
@@ -22,7 +22,7 @@
     "noResult": "Dil bulunamadı"
   },
   "pages": {
-    "home": "ATS uyumlu CV'ler, %100 yerel",
+    "home": "Ücretsiz, ATS uyumlu CV, kayıt olmadan",
     "editor": "Düzenleyici",
     "analyze": "CV analizcisi",
     "changelog": "Yenilikler",
@@ -31,7 +31,7 @@
     "privacy": "Gizlilik politikası"
   },
   "seo": {
-    "home": "Ücretsiz ATS uyumlu CV oluşturucu: 30 grafik şablon, uyumlu ön yazı, her iş ilanına uyarlama ve ATS puanı. Açık kaynak, verileriniz tarayıcınızda kalır",
+    "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 30 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
     "editor": "Canlı önizlemeli CV düzenleyici, Master CV ve hedefli sürümler, ATS kontrolü ve gerçek metinli PDF dışa aktarma. Her şey tarayıcınızda kalır",
     "analyze": "PDF CV'nizi ücretsiz analiz edin: 100 üzerinden ATS puanı, düzeltilecek noktalar ve bir işe alım sisteminin okuduğu hâliyle metin. Dosya tarayıcınızdan asla çıkmaz",
     "changelog": "LocalATSCV'deki yenilikler, sürüm sürüm: yeni CV şablonları, özellikler ve düzeltmeler",
@@ -40,7 +40,7 @@
     "privacy": "LocalATSCV gizlilik politikası: hiçbir veri toplanmaz, CV'leriniz tarayıcınızda kalır"
   },
   "footer": {
-    "tagline": "Verilerinizi asla görmeyen ATS uyumlu CV oluşturucu",
+    "tagline": "Verilerinizi asla görmeyen ücretsiz CV oluşturucu",
     "product": "Ürün",
     "legal": "Yasal",
     "project": "Proje",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "%100 yerel · Ücretsiz · Açık kaynak",
-      "titleLine1": "Robotlardan geçen bir CV",
-      "titleLine2": "Sizde kalan veriler",
-      "subtitle": "LocalATSCV, işe alım sistemleri (ATS) için optimize edilmiş bir CV oluşturmanıza ve onu birkaç tıklamayla her ilana uyarlamanıza yardımcı olur. Her şey tarayıcınızda gerçekleşir: hesap yok, hiçbir veri gönderilmez",
-      "ctaPrimary": "CV'mi oluştur",
-      "ctaSecondary": "Mevcut bir CV'yi analiz et",
+      "badge": "Ücretsiz · Kayıt yok · Reklam yok",
+      "titleLine1": "Sizi mülakata taşıyan CV",
+      "titleLine2": "Birkaç dakikada hazır",
+      "subtitle": "Geçmişinizi doldurun, 30 şablondan birini seçin ve gönderime hazır bir CV indirin. LocalATSCV ayrıca CV'nizi her ilana uyarlamanıza yardımcı olur ve başvuruları ayıklayan programların onu doğru okuduğunu kontrol eder",
+      "ctaPrimary": "Ücretsiz CV'mi oluştur",
+      "ctaSecondary": "Mevcut CV'mi test et",
       "points": {
-        "noAccount": "Kayıt yok",
-        "offline": "Çevrimdışı çalışır",
-        "atsPdf": "ATS'nin okuyabildiği PDF"
+        "templates": "Seçebileceğiniz 30 şablon",
+        "letter": "Uyumlu ön yazı",
+        "private": "Verileriniz sizde kalır"
       }
     },
     "ats": {
-      "eyebrow": "Sorun",
-      "title": "CV'nizi önce bir makine okur",
-      "text": "Büyük şirketlerin ve işe alım ajanslarının çoğu başvuruları bir ATS (Applicant Tracking System) ile sıralar. ATS, CV'nizin metnini çıkarır, bir veritabanına kaydeder ve işe alım uzmanlarının adayları anahtar kelimeyle aramasını sağlar",
+      "eyebrow": "Biliyor muydunuz?",
+      "title": "İşe alım uzmanından önce CV'nizi çoğu zaman bir program okur",
+      "text": "Birçok şirket, istihdam ajansı ve iş ilanı sitesi başvuruları ATS denen bir programla ayıklar. Bu program CV'nizin metnini okur ve bir veritabanına kaydeder. CV'niz yanlış okunursa ya da ilandaki kelimeleri içermezse işe alım uzmanına hiç ulaşmayabilir",
       "pitfalls": {
         "layout": {
           "title": "Karmaşık düzenler",
-          "text": "Sütunlar, tablolar ve metin kutuları okuma sırasını karıştırır: bilgileriniz birbirine girmiş hâlde çıkar"
+          "text": "Sütunlar, tablolar ve kutular okuma sırasını karıştırır: program CV'nizi karmakarışık okur"
         },
         "image": {
           "title": "Okunamayan metin",
-          "text": "Simgeler, beceri çubukları ve bazı tasarım aracı çıktıları anlamsız karakterlere dönüşür ya da hiç metin kalmaz"
+          "text": "Simgeler, noktalı seviye göstergeleri ve bazı tasarım uygulamalarıyla yapılmış CV'ler okunamaz karakterlere dönüşür ya da tamamen kaybolur"
         },
         "keywords": {
           "title": "Eksik anahtar kelimeler",
-          "text": "İlanın kelimeleri CV'nizde geçmiyorsa profiliniz işe alım uzmanlarının aramalarında çıkmaz"
+          "text": "İşe alım uzmanı “satış danışmanı”, “HACCP” ya da “B sınıfı ehliyet” mi arıyor? Bu kelimeler CV'nizde yoksa başvurunuz sonuçlarda çıkmaz"
         }
       },
       "seen": "Sizin gördüğünüz",
       "read": "Robotun okuduğu",
-      "fix": "LocalATSCV tam tersini yapar: tek sütun, gerçek metin ve robotların doğru sırayla okuduğu standart bölüm başlıkları"
+      "fix": "LocalATSCV ile tatsız sürpriz yok: CV'leriniz işe alım uzmanlarının hoşuna gider ve programlar tarafından doğru sırayla okunur"
     },
     "how": {
       "eyebrow": "Nasıl çalışır",
-      "title": "Bir kez yazın, sonsuza dek uyarlayın",
-      "text": "Master CV'nizi her iş ilanına özel bir başvuruya dönüştürmek için dört adım",
+      "title": "Tek CV, her ilana uyarlanmış",
+      "text": "Geçmişinizi bir kez doldurun, ardından birkaç tıklamayla her başvuruya özel bir sürüm oluşturun",
       "steps": {
         "profile": {
-          "title": "Master CV'nizi doldurun",
-          "text": "Tüm deneyiminizi bir kez ve kalıcı olarak girin ya da zaman kazanmak için LinkedIn profilinizin PDF'sini içe aktarın"
+          "title": "Hikâyenizi anlatın",
+          "text": "Deneyimlerinizi, eğitiminizi ve yetkinliklerinizi bir kez girin. Zaten bir CV'niz ya da LinkedIn profiliniz mi var? Zaman kazanmak için içe aktarın"
         },
         "offer": {
           "title": "İş ilanını yapıştırın",
-          "text": "LocalATSCV anahtar kelimeleri çıkarır ve siz yazdıkça güncellenen, 100 üzerinden bir eşleşme puanı hesaplar"
+          "text": "LocalATSCV ilandaki önemli kelimeleri bulur, CV'nizde hangilerinin eksik olduğunu gösterir ve size 100 üzerinden bir puan verir"
         },
         "compose": {
-          "title": "Hedefli bir sürüm oluşturun",
-          "text": "İlgili deneyimleri ve maddeleri işaretleyin, sürükle-bırak ile yeniden sıralayın. Master'ınızdan hiçbir şey silinmez"
+          "title": "Önemli olanı tutun",
+          "text": "Bu pozisyon için önemli olanları işaretleyin ve sürükleyip bırakarak sırayı değiştirin. Tam CV'niz olduğu gibi kalır"
         },
         "export": {
-          "title": "PDF olarak dışa aktarın",
-          "text": "Gerçek metinli, yapılandırılmış, tek sütunlu bir PDF: robotlar için de işe alım uzmanları için de aynı derecede okunaklı"
+          "title": "İndirin ve başvurun",
+          "text": "Şablonunuzu ve renginizi seçin, ardından CV'nizi göndermeye ya da yazdırmaya hazır PDF olarak indirin"
         }
       }
     },
     "privacy": {
       "eyebrow": "Gizlilik",
-      "title": "Sunucularımızda sıfır veri. Kelimenin tam anlamıyla",
-      "text": "Saldırıya açık bir veritabanı yok: sunucumuz size yalnızca uygulamayı gönderir. Sonrasında her şey tarayıcınızda gerçekleşir, çevrimdışıyken bile",
+      "title": "CV'niz sizde kalır. Gerçekten",
+      "text": "Oluşturulacak hesap yok, internet üzerinden gönderilen dosya yok. Site bir kez yüklenir, sonra her şey bilgisayarınızda ya da telefonunuzda gerçekleşir, bağlantı olmadan bile. Sizden başka kimse CV'nizi göremez, biz bile",
       "browser": {
         "title": "Tarayıcınız",
         "tag": "Cihazınız",
         "items": {
-          "master": "Master CV",
+          "cvs": "CV'leriniz",
           "photo": "Profil fotoğrafı",
-          "versions": "Hedefli sürümler",
+          "letters": "Ön yazılar",
           "settings": "Tercihler"
         },
-        "note": "IndexedDB'de, yalnızca bu cihazda saklanır"
+        "note": "Tarayıcınıza kaydedilir, yalnızca bu cihazda"
       },
       "flow": {
-        "app": "Uygulama, ilk yüklemede",
+        "app": "Site, ilk ziyarette",
         "data": "Verileriniz",
         "never": "asla"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Sunucu",
-        "text": "Uygulamanın dosyalarını (HTML, CSS, JavaScript) sunar, başka hiçbir şey",
+        "text": "Sitenin sayfalarını gönderir, fazlasını değil",
         "items": {
-          "noDb": "Veritabanı yok",
+          "noDb": "Saklanan CV yok",
           "noAccount": "Kullanıcı hesabı yok",
           "noLogs": "Ziyaret kaydı yok"
         }
@@ -152,54 +152,54 @@
           "text": "Kayıt, e-posta ya da parola yok. Sayfayı açın ve başlayın"
         },
         "trackers": {
-          "title": "İzleyici yok",
-          "text": "İstatistik, reklam ya da izleme çerezi yok. Yazı tipleri bile kendi sunucumuzda barındırılıyor"
+          "title": "Reklam ve takip yok",
+          "text": "Reklam yok, takip çerezi yok, veri satışı yok: verileriniz zaten bizde değil"
         },
         "csp": {
-          "title": "Teknik olarak kilitli",
-          "text": "Sitenin güvenlik politikası (CSP), tarayıcının başka herhangi bir alan adıyla iletişim kurmasını yasaklar. Kod açık: kendiniz kontrol edin"
+          "title": "Herkes kontrol edebilir",
+          "text": "Site başka hiçbir hizmetle iletişim kuramayacak şekilde kilitlidir ve kodu herkese açıktır: her uzman bunu doğrulayabilir"
         },
         "backup": {
-          "title": "Yedekleriniz, dosyalarınız",
-          "text": "Tüm verilerinizi bir JSON dosyasına aktarın ve istediğiniz cihazda geri yükleyin"
+          "title": "İstediğiniz zaman bir kopya",
+          "text": "Tek tıkla tüm CV'lerinizin yedeğini indirin ve başka bir cihazda açın"
         }
       }
     },
     "features": {
       "eyebrow": "Özellikler",
-      "title": "Mülakata ulaşmak için ihtiyacınız olan her şey",
+      "title": "Başarılı bir başvuru için her şey",
       "items": {
+        "templates": {
+          "title": "Özenle hazırlanmış 30 şablon",
+          "text": "Sade, modern ya da renkli, fotoğraflı veya fotoğrafsız. Tek tıkla şablonu ya da rengi değiştirin, metniniz uyum sağlar"
+        },
+        "letter": {
+          "title": "Uyumlu ön yazı",
+          "text": "Ön yazınızı CV'nizle aynı tarzda yazın, başvurunuz iz bıraksın"
+        },
         "master": {
-          "title": "Master CV ve hedefli sürümler",
-          "text": "Tek bir eksiksiz CV ve başvuru sayısı kadar sürüm. İşaretleyin, kaldırın: hiçbir şey kaybolmaz"
+          "title": "Her ilana ayrı sürüm",
+          "text": "Tam CV'nizi saklayın ve başvurunuz kadar sürüm oluşturun. İşaretleyin, kaldırın: hiçbir şey kaybolmaz"
         },
         "score": {
           "title": "Eşleşme puanı",
-          "text": "İlanı yapıştırın: bulunan ve eksik anahtar kelimeler ile gerçek zamanlı 100 üzerinden puan"
+          "text": "Bir ilan yapıştırın: bulunan ve eksik kelimeleri ve 100 üzerinden anlık güncellenen bir puanı görün"
         },
         "weak": {
-          "title": "Zayıf ifade dedektörü",
-          "text": "“Sorumluydum”, “yardımcı oldum”… gibi ifadeler otomatik işaretlenir, yerlerine koymanız için eylem fiilleri sunulur"
+          "title": "Yazım ipuçları",
+          "text": "Sizi olduğunuzdan küçük gösteren ifadeler, örneğin “Sorumluydum”, işaretlenir ve yerine daha güçlü fiiller önerilir"
         },
         "analyzer": {
-          "title": "Mevcut CV analizcisi",
-          "text": "Başka bir yerde hazırlanmış bir CV bırakın: robotun gerçekte ne okuduğunu ve neyi düzeltmeniz gerektiğini görün"
+          "title": "Mevcut CV'nizi test edin",
+          "text": "Başka bir yerde hazırlanmış bir CV yükleyin: eleme programlarının gerçekte ne okuduğunu ve neyi düzeltmeniz gerektiğini görün"
         },
-        "linkedin": {
-          "title": "LinkedIn'den içe aktarma",
-          "text": "Master CV'nizi LinkedIn profilinizden dışa aktarabileceğiniz ücretsiz PDF ile önceden doldurun"
+        "import": {
+          "title": "Yeniden yazacak bir şey yok",
+          "text": "Mevcut CV'nizi (PDF veya Word) ya da LinkedIn profilinizi aktarın: her şey düzenleyicide otomatik olarak yerine yerleşir"
         },
         "languages": {
           "title": "5 CV dili",
           "text": "Fransızca, İngilizce, İtalyanca, İspanyolca ve Almanca. İngilizcede fotoğraf ve doğum tarihi, İngilizce konuşulan ülkelerin normlarına uygun olarak gizlenir"
-        },
-        "pdf": {
-          "title": "ATS uyumlu PDF dışa aktarma",
-          "text": "Gerçek metin ve net bir yapı: robotlar için okunaklı, işe alım uzmanları için hoş"
-        },
-        "offline": {
-          "title": "Yüklenebilir ve çevrimdışı",
-          "text": "LocalATSCV'yi ana ekranınıza ekleyin, bağlantı olmadan çalışmaya devam edin"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "ATS nedir?",
-          "a": "Applicant Tracking System, işe alım uzmanlarının başvuruları almak, sıralamak ve aramak için kullandığı yazılımdır. CV'nizi metne dönüştürür ve dizine ekler: metin kötü çıkarılırsa ya da doğru anahtar kelimeler eksikse başvurunuzu bulmak zorlaşır"
+          "a": "Birçok şirketin, istihdam ajansının ve iş ilanı sitesinin başvuruları almak ve ayıklamak için kullandığı programdır. CV'nizi metne dönüştürür ve işe alım uzmanının anahtar kelimelerle arama yapmasını sağlar. CV'niz yanlış okunursa ya da doğru kelimeleri içermezse elenir"
         },
         "storage": {
           "q": "Verilerim nerede saklanıyor?",
-          "a": "Yalnızca tarayıcınızda, her modern tarayıcıda yerleşik bir veritabanı olan IndexedDB'de. Verileriniz hiçbir zaman yalnızca uygulama dosyalarını sunabilen sunucularımızdan geçmez"
+          "a": "Yalnızca cihazınızda, tarayıcınızda. Asla sunucularımızdan geçmez: sizden başka kimse erişemez"
         },
         "clear": {
           "q": "Tarayıcı verilerimi temizlersem ne olur?",
-          "a": "CV'leriniz silinir, çünkü başka hiçbir yerde bulunmazlar. Düzenli olarak bir JSON yedeği alın: istediğiniz zaman, istediğiniz cihazda geri yükleyebilirsiniz"
+          "a": "CV'leriniz silinir, çünkü başka hiçbir yerde bulunmazlar. Arada bir yedek indirin: istediğiniz zaman, istediğiniz cihazda açabilirsiniz"
         },
         "score": {
           "q": "Puan, CV'min seçileceğini garanti eder mi?",
-          "a": "Hayır. Her ATS'nin kendi kuralları vardır ve son kararı bir insan verir. Puan bir göstergedir: CV'nizin ilanın kelimelerini kullandığını ve bir makinenin onu doğru okuyabildiğini kontrol eder"
+          "a": "Hayır. Her şirketin kendi araçları vardır ve son kararı her zaman bir insan verir. Puan, ilandaki kelimeleri kullanmanıza ve CV'nizin doğru okunduğunu kontrol etmenize yardımcı olur: böylece şansınızı artırırsınız"
         },
         "photo": {
           "q": "İngilizcede fotoğraf neden kayboluyor?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Gerçekten ücretsiz mi?",
-          "a": "Evet. LocalATSCV, MIT lisanslı, reklamsız ve aboneliksiz açık kaynaklı bir projedir. Tüm işi tarayıcınız yaptığı için barındırma maliyeti neredeyse sıfırdır"
+          "a": "Evet, tamamen: abonelik yok, reklam yok, PDF'lerinizde filigran yok. LocalATSCV açık kaynaklı bir projedir (kodu herkese açık) ve her şey cihazınızda gerçekleştiği için işletmesi neredeyse hiçbir şeye mal olmaz"
         },
         "templates": {
-          "q": "Grafik şablonlar ATS'den geçer mi?",
-          "a": "Evet. Her şablon, okuma sırasına uygun ve standart bölüm başlıklarıyla gerçek metin basar: şekiller, çubuklar ve simgeler robotların görmezden geldiği çizimlerdir. Tek sütunlu şablonlar hâlâ en güvenli seçenektir ve düzenleyicideki ATS kontrolü düzeninizi canlı olarak test eder"
+          "q": "Renkli şablonlar eleme programlarından geçer mi?",
+          "a": "Evet. Tüm şablonlar doğru sırada gerçek metin ve “Deneyim” ya da “Eğitim” gibi standart başlıklar içerir. Şekiller, renkler ve simgeler programların görmezden geldiği süslerden ibarettir. Tek sütunlu şablonlar hâlâ en güvenli seçenektir ve düzenleyici sayfa düzeninizi anlık olarak kontrol eder"
         },
         "import": {
           "q": "Mevcut CV'mi veya LinkedIn profilimi kullanabilir miyim?",
-          "a": "Evet. PDF ya da Word (.docx) bir CV'yi, LinkedIn profilinizin PDF'sini (bilgisayarda) veya LinkedIn veri arşivinizi (mobil uygulamadan) içe aktarın: içerik tarayıcınızda okunur ve düzenleyiciye yerleştirilir"
+          "a": "Evet. CV'nizi PDF ya da Word olarak veya LinkedIn profilinizi içe aktarın: içerik cihazınızda okunur ve düzenleyicide otomatik olarak yerleştirilir. Size yalnızca gözden geçirip bir şablon seçmek kalır"
         },
         "offline": {
-          "q": "LocalATSCV çevrimdışı çalışır mı?",
-          "a": "Evet. Yüklenebilir bir web uygulamasıdır: ilk ziyaretten sonra PDF dışa aktarma dahil her şey bağlantısız çalışır"
+          "q": "İnternetsiz çalışır mı?",
+          "a": "Evet. İlk ziyaretten sonra CV'lerinizi bağlantı olmadan düzenleyip indirebilirsiniz. LocalATSCV'yi bir uygulama gibi telefonunuzun ya da bilgisayarınızın ana ekranına bile ekleyebilirsiniz"
         }
       }
     },
     "cta": {
-      "title": "Filtreyi geçmeye hazır mısınız?",
-      "text": "Master CV'nizi birkaç dakikada oluşturun. Hiçbir şey bu cihazdan çıkmayacak",
+      "title": "Bir sonraki mülakatınız burada başlıyor",
+      "text": "CV'nizi birkaç dakikada ücretsiz oluşturun, kayıt olmadan. Hiçbir şey cihazınızdan çıkmaz",
       "button": "Başlayın"
     },
     "demo": {
-      "role": "Front-end Geliştirici",
+      "role": "Fırıncı ve pastacı",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Deneyim",
-      "jobTitle": "Angular Geliştirici",
-      "jobMeta": "Örnek A.Ş. · 2022 – günümüz",
+      "jobTitle": "Fırıncı",
+      "jobMeta": "Örnek Fırın · 2021 – günümüz",
       "bullets": {
-        "migration": "40 ekranı <k>Angular</k> ve <k>TypeScript</k>'e taşıdım, yükleme süresi %35 kısaldı",
-        "testing": "Uçtan uca test stratejisinden <w>sorumluydum</w>",
-        "delivery": "3 ürün ekibi için <k>GitLab CI</k> ile sürekli teslimat"
+        "production": "Her sabah 300 adet <k>milföy</k> hamurişi ve <k>ekşi mayalı</k> ekmek ürettim, satışlar %18 arttı",
+        "opening": "Dükkânın açılışından ve vitrinden <w>sorumluydum</w>",
+        "hygiene": "<k>HACCP</k> hijyen kurallarını uyguladım ve 2 çırak yetiştirdim"
       },
       "weakLabel": "Zayıf ifade",
       "weakReplacement": "“Yönettim”",
       "skills": "Yetkinlikler",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Erişilebilirlik",
+      "skillList": "Milföy · Ekşi mayalı ekmek · Pastacılık · HACCP · Mağaza satışı",
+      "keywords": {
+        "pastry": "Milföy",
+        "sourdough": "Ekşi maya",
+        "hygiene": "HACCP",
+        "license": "B sınıfı ehliyet"
+      },
       "score": "İlanla eşleşme",
-      "sent": "0 bayt gönderildi",
-      "robot": "YETKİNLİKLER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end Geliştirici Angular <n>●●●●○</n> DENEYİM <n>� camille.mar</n> Angular Geliştirici <n>tin@example.com</n> 2022 – günümüz TypeScript <n>●●●○○</n> Örnek A.Ş. DİLLER İngilizce 40 ekranı Angular ve…"
+      "sent": "Hiçbir şey gönderilmez",
+      "robot": "YETKİNLİKLER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Fırıncı ve pastacı Milföy <n>●●●●○</n> DENEYİM <n>� camille.mar</n> Fırıncı <n>tin@example.com</n> 2021 – günümüz Pastacılık <n>●●●○○</n> Örnek Fırın DİLLER İngilizce Her sabah 300 adet…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizci",
-    "title": "CV'niz robotlardan geçiyor mu?",
-    "subtitle": "Herhangi bir araçla hazırlanmış bir PDF CV bırakın: LocalATSCV onu bir ATS gibi okur ve neyi düzeltmeniz gerektiğini söyler",
+    "eyebrow": "Ücretsiz CV testi",
+    "title": "CV'niz işe alımcıların elemesini geçiyor mu?",
+    "subtitle": "CV'nizi PDF olarak yükleyin, ister Word'den ister Canva'dan ya da başka bir araçtan gelsin: LocalATSCV onu işe alım programları gibi okur ve birkaç saniyede neyi düzeltmeniz gerektiğini söyler",
     "drop": "CV'nizi buraya sürükleyin",
     "dropActive": "Analizi başlatmak için dosyayı bırakın",
     "hint": "Yalnızca PDF, en fazla 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Metin, dosyaya yazıldığı sırayla: düzeni yeniden oluşturmayan ATS'ler onu böyle okur. CV'nizin okuma sırasını izlemelidir"
     },
     "cta": {
-      "title": "Sağlam temellerle yeniden başlayın",
-      "text": "Düzenleyicide ATS uyumlu bir CV oluşturun, ardından onu her ilana uyarlayın",
+      "title": "Kusursuz bir CV'ye geçin",
+      "text": "Eleme programlarının doğru okuduğu 30 şablonumuzdan birini seçin ve her ilana uyarlayın",
       "button": "Düzenleyiciyi aç",
       "import": "Bu CV'yi şablonlarımıza taşı"
     },

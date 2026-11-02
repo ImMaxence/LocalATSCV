@@ -87,7 +87,7 @@ function toMarkdown(lang: UiLanguage, page: string): PageMarkdown {
   if (!main) throw new Error(`${path} : pas de <main> dans le HTML pré-généré`);
   prepare(document);
 
-  // Le titre de la page en tête, ses lignes séparées (« Un CV qui passe les robots · Des données… »).
+  // Le titre de la page en tête, ses lignes séparées (« Le CV qui décroche l'entretien · Prêt en… »).
   const h1 = main.querySelector('h1');
   h1?.querySelectorAll('.block').forEach((line) => line.before(' · '));
   const title = text(h1) || document.title;

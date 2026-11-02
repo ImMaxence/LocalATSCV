@@ -4,7 +4,7 @@
     "main": "Navegação principal",
     "how": "Como funciona",
     "privacy": "Privacidade",
-    "analyze": "Analisar um currículo",
+    "analyze": "Testar meu currículo",
     "editor": "Criar meu currículo",
     "skipToContent": "Ir para o conteúdo"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nenhum idioma encontrado"
   },
   "pages": {
-    "home": "Currículos compatíveis com ATS, 100% locais",
+    "home": "Currículo grátis compatível com ATS, sem cadastro",
     "editor": "Editor",
     "analyze": "Analisador de currículo",
     "changelog": "Novidades",
@@ -31,7 +31,7 @@
     "privacy": "Política de privacidade"
   },
   "seo": {
-    "home": "Gerador de currículo grátis e compatível com ATS: 30 modelos visuais, carta de apresentação combinando, adaptação a cada vaga e nota ATS. Código aberto, seus dados ficam no seu navegador",
+    "home": "Crie grátis um currículo que conquista entrevistas: 30 modelos, carta de apresentação combinando, adaptação a cada vaga e verificação ATS. Sem cadastro, seus dados ficam no seu dispositivo",
     "editor": "Editor de currículo com pré-visualização em tempo real, currículo Master e versões direcionadas, verificação ATS e exportação em PDF com texto real. Tudo fica no seu navegador",
     "analyze": "Analise grátis um currículo em PDF: nota ATS de 0 a 100, pontos a corrigir e o texto como um sistema de recrutamento o lê. O arquivo nunca sai do seu navegador",
     "changelog": "Novidades do LocalATSCV, versão por versão: novos modelos de currículo, recursos e correções",
@@ -40,7 +40,7 @@
     "privacy": "Política de privacidade do LocalATSCV: nenhum dado coletado, seus currículos ficam no seu navegador"
   },
   "footer": {
-    "tagline": "O gerador de currículo compatível com ATS que nunca vê seus dados",
+    "tagline": "O gerador de currículo grátis que nunca vê seus dados",
     "product": "Produto",
     "legal": "Informações legais",
     "project": "Projeto",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% local · Grátis · Código aberto",
-      "titleLine1": "Um currículo que passa pelos robôs",
-      "titleLine2": "Dados que ficam com você",
-      "subtitle": "O LocalATSCV ajuda você a criar um currículo otimizado para os sistemas de recrutamento (ATS) e a adaptá-lo a cada vaga em poucos cliques. Tudo acontece no seu navegador: sem conta e sem nenhum dado enviado",
-      "ctaPrimary": "Criar meu currículo",
-      "ctaSecondary": "Analisar um currículo existente",
+      "badge": "Grátis · Sem cadastro · Sem anúncios",
+      "titleLine1": "O currículo que conquista a entrevista",
+      "titleLine2": "Pronto em poucos minutos",
+      "subtitle": "Preencha sua trajetória, escolha entre 30 modelos e baixe um currículo pronto para enviar. O LocalATSCV também ajuda você a adaptá-lo a cada vaga e verifica se ele será bem lido pelos sistemas que fazem a triagem das candidaturas",
+      "ctaPrimary": "Criar meu currículo grátis",
+      "ctaSecondary": "Testar meu currículo atual",
       "points": {
-        "noAccount": "Sem cadastro",
-        "offline": "Funciona off-line",
-        "atsPdf": "PDF legível por ATS"
+        "templates": "30 modelos à escolha",
+        "letter": "Carta de apresentação combinando",
+        "private": "Seus dados ficam com você"
       }
     },
     "ats": {
-      "eyebrow": "O problema",
-      "title": "Seu currículo é lido primeiro por uma máquina",
-      "text": "A maioria das grandes empresas e consultorias de RH filtra as candidaturas com um ATS (Applicant Tracking System). Ele extrai o texto do seu currículo, guarda em um banco de dados e permite que os recrutadores busquem candidatos por palavra-chave",
+      "eyebrow": "Você sabia?",
+      "title": "Antes do recrutador, muitas vezes é um software que lê seu currículo",
+      "text": "Muitas empresas, agências de emprego e sites de vagas fazem a triagem das candidaturas com um software chamado ATS. Ele lê o texto do seu currículo e o guarda em um banco de dados. Se o currículo for mal lido, ou se não tiver as palavras da vaga, ele pode nunca chegar às mãos do recrutador",
       "pitfalls": {
         "layout": {
           "title": "Layouts complexos",
-          "text": "Colunas, tabelas e caixas de texto bagunçam a ordem de leitura: suas informações saem embaralhadas"
+          "text": "Colunas, tabelas e caixas de texto embaralham a ordem de leitura: o software lê seu currículo fora de ordem"
         },
         "image": {
           "title": "Texto ilegível",
-          "text": "Ícones, barras de habilidade e algumas exportações de ferramentas de design viram caracteres estranhos, ou nenhum texto"
+          "text": "Ícones, barrinhas de nível e currículos feitos em alguns aplicativos de design viram caracteres ilegíveis, ou somem por completo"
         },
         "keywords": {
           "title": "Palavras-chave ausentes",
-          "text": "Se o vocabulário da vaga não aparece no seu currículo, seu perfil não surge nas buscas dos recrutadores"
+          "text": "O recrutador está procurando “atendente”, “APPCC” ou “CNH”? Se essas palavras não estão no seu currículo, sua candidatura não aparece"
         }
       },
       "seen": "O que você vê",
       "read": "O que o robô lê",
-      "fix": "O LocalATSCV faz o contrário: uma coluna, texto real e títulos de seção padrão, que os robôs leem na ordem certa"
+      "fix": "Com o LocalATSCV, nada de surpresas: seus currículos agradam aos recrutadores e são lidos na ordem certa pelos sistemas"
     },
     "how": {
       "eyebrow": "Como funciona",
-      "title": "Escreva uma vez, adapte sem limites",
-      "text": "Quatro etapas para transformar seu currículo Master em uma candidatura sob medida para cada vaga",
+      "title": "Um só currículo, adaptado a cada vaga",
+      "text": "Preencha sua trajetória uma vez e crie, em poucos cliques, uma versão sob medida para cada candidatura",
       "steps": {
         "profile": {
-          "title": "Preencha seu currículo Master",
-          "text": "Informe todas as suas experiências de uma vez por todas, ou importe o PDF do seu perfil do LinkedIn para ganhar tempo"
+          "title": "Conte sua trajetória",
+          "text": "Informe suas experiências, formação e competências de uma vez por todas. Já tem um currículo ou um perfil no LinkedIn? Importe para ganhar tempo"
         },
         "offer": {
           "title": "Cole a descrição da vaga",
-          "text": "O LocalATSCV extrai as palavras-chave e calcula uma nota de compatibilidade de 0 a 100, atualizada enquanto você digita"
+          "text": "O LocalATSCV identifica as palavras importantes da vaga, mostra quais faltam no seu currículo e dá uma pontuação de 0 a 100"
         },
         "compose": {
-          "title": "Monte uma versão direcionada",
-          "text": "Marque as experiências e os tópicos relevantes e reorganize-os arrastando e soltando. Nada é apagado do seu Master"
+          "title": "Fique com o essencial",
+          "text": "Marque o que importa para esta vaga e mude a ordem arrastando e soltando. Seu currículo completo continua intacto"
         },
         "export": {
-          "title": "Exporte em PDF",
-          "text": "Um PDF com texto real, estruturado e em uma coluna, tão legível para os robôs quanto para os recrutadores"
+          "title": "Baixe e candidate-se",
+          "text": "Escolha seu modelo e sua cor e baixe o currículo em PDF, pronto para enviar ou imprimir"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacidade",
-      "title": "Zero dados nos nossos servidores. Literalmente",
-      "text": "Não existe banco de dados para invadir: nosso servidor só envia o aplicativo. Depois disso, tudo acontece no seu navegador, mesmo off-line",
+      "title": "Seu currículo fica com você. De verdade",
+      "text": "Nenhuma conta para criar, nenhum arquivo enviado pela internet. O site carrega uma vez e depois tudo acontece no seu computador ou celular, mesmo sem conexão. Ninguém além de você vê seu currículo, nem mesmo nós",
       "browser": {
         "title": "Seu navegador",
         "tag": "Seu dispositivo",
         "items": {
-          "master": "Currículo Master",
+          "cvs": "Seus currículos",
           "photo": "Foto de perfil",
-          "versions": "Versões direcionadas",
+          "letters": "Cartas de apresentação",
           "settings": "Preferências"
         },
-        "note": "Guardado no IndexedDB, somente neste dispositivo"
+        "note": "Salvo no seu navegador, apenas neste dispositivo"
       },
       "flow": {
-        "app": "O aplicativo, no primeiro acesso",
+        "app": "O site, na primeira visita",
         "data": "Seus dados",
         "never": "nunca"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Servidor",
-        "text": "Entrega os arquivos do aplicativo (HTML, CSS, JavaScript), nada mais",
+        "text": "Envia as páginas do site, nada mais",
         "items": {
-          "noDb": "Nenhum banco de dados",
+          "noDb": "Nenhum currículo armazenado",
           "noAccount": "Nenhuma conta de usuário",
           "noLogs": "Nenhum registro de visitas"
         }
@@ -152,54 +152,54 @@
           "text": "Sem cadastro, sem e-mail, sem senha. Abra a página e comece"
         },
         "trackers": {
-          "title": "Sem rastreadores",
-          "text": "Sem estatísticas, sem anúncios, sem cookies de rastreamento. Até as fontes são hospedadas no próprio site"
+          "title": "Sem anúncios nem rastreamento",
+          "text": "Sem publicidade, sem cookies de rastreamento, sem revenda: simplesmente não temos seus dados"
         },
         "csp": {
-          "title": "Bloqueado tecnicamente",
-          "text": "A política de segurança do site (CSP) proíbe o navegador de contatar qualquer outro domínio. O código é aberto: confira você mesmo"
+          "title": "Qualquer um pode verificar",
+          "text": "O site é travado para não se comunicar com nenhum outro serviço, e o código é público: qualquer especialista pode conferir"
         },
         "backup": {
-          "title": "Seus backups, seus arquivos",
-          "text": "Exporte todos os seus dados em um arquivo JSON e importe-os de volta em qualquer dispositivo"
+          "title": "Uma cópia quando quiser",
+          "text": "Baixe um backup de todos os seus currículos com um clique e recupere-os em outro dispositivo"
         }
       }
     },
     "features": {
       "eyebrow": "Recursos",
-      "title": "Tudo o que você precisa para chegar à entrevista",
+      "title": "Tudo para uma candidatura de sucesso",
       "items": {
+        "templates": {
+          "title": "30 modelos caprichados",
+          "text": "Sóbrios, modernos ou coloridos, com ou sem foto. Troque de modelo ou de cor com um clique, seu texto acompanha"
+        },
+        "letter": {
+          "title": "Carta de apresentação combinando",
+          "text": "Escreva sua carta no mesmo estilo do currículo, para uma candidatura que causa boa impressão"
+        },
         "master": {
-          "title": "Currículo Master e versões direcionadas",
-          "text": "Um currículo completo e quantas variações você tiver candidaturas. Marque, desmarque: nada se perde"
+          "title": "Uma versão por vaga",
+          "text": "Mantenha seu currículo completo e crie quantas versões quiser, uma para cada candidatura. Marque, desmarque: nada se perde"
         },
         "score": {
           "title": "Nota de compatibilidade",
-          "text": "Cole a vaga: palavras-chave encontradas, ausentes e uma nota de 0 a 100 em tempo real"
+          "text": "Cole uma vaga: veja as palavras encontradas, as que faltam e uma pontuação de 0 a 100, atualizada em tempo real"
         },
         "weak": {
-          "title": "Detector de frases fracas",
-          "text": "“Responsável por”, “auxiliei em”… são sinalizadas automaticamente, com um banco de verbos de ação para substituí-las"
+          "title": "Dicas de redação",
+          "text": "Expressões que não valorizam você, como “Responsável por”, são identificadas, com verbos mais fortes para substituí-las"
         },
         "analyzer": {
-          "title": "Analisador de currículos existentes",
-          "text": "Envie um currículo feito em outro lugar: veja o que o robô realmente lê e o que corrigir"
+          "title": "Teste seu currículo atual",
+          "text": "Envie um currículo feito em outro lugar: descubra o que os sistemas de triagem realmente leem e o que corrigir"
         },
-        "linkedin": {
-          "title": "Importação do LinkedIn",
-          "text": "Preencha seu currículo Master a partir do PDF gratuito que o LinkedIn gera do seu perfil"
+        "import": {
+          "title": "Nada para redigitar",
+          "text": "Aproveite seu currículo atual (PDF ou Word) ou seu perfil do LinkedIn: tudo é organizado automaticamente no editor"
         },
         "languages": {
           "title": "5 idiomas de currículo",
           "text": "Francês, inglês, italiano, espanhol e alemão. Em inglês, a foto e a data de nascimento ficam ocultas, seguindo as normas dos países anglófonos"
-        },
-        "pdf": {
-          "title": "Exportação PDF compatível com ATS",
-          "text": "Texto real e estrutura clara: legível pelos robôs, agradável para os recrutadores"
-        },
-        "offline": {
-          "title": "Instalável e off-line",
-          "text": "Adicione o LocalATSCV à tela inicial e continue trabalhando sem conexão"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "O que é um ATS?",
-          "a": "Um Applicant Tracking System é o software que os recrutadores usam para receber, filtrar e pesquisar candidaturas. Ele converte seu currículo em texto e o indexa: se o texto for mal extraído ou faltarem as palavras-chave certas, sua candidatura fica difícil de encontrar"
+          "a": "É o software que muitas empresas, agências de emprego e sites de vagas usam para receber e fazer a triagem das candidaturas. Ele transforma seu currículo em texto e permite que o recrutador busque palavras-chave. Se o currículo for mal lido ou não tiver as palavras certas, ele fica pelo caminho"
         },
         "storage": {
           "q": "Onde ficam guardados meus dados?",
-          "a": "Apenas no seu navegador, no IndexedDB, um banco de dados presente em todos os navegadores modernos. Eles nunca passam pelos nossos servidores, que só sabem entregar os arquivos do aplicativo"
+          "a": "Apenas no seu dispositivo, no seu navegador. Eles nunca passam pelos nossos servidores: ninguém além de você tem acesso"
         },
         "clear": {
           "q": "O que acontece se eu limpar os dados do navegador?",
-          "a": "Seus currículos são apagados, pois não existem em nenhum outro lugar. Exporte um backup JSON regularmente: você pode importá-lo de volta a qualquer momento, em qualquer dispositivo"
+          "a": "Seus currículos são apagados, já que não existem em nenhum outro lugar. Baixe um backup de vez em quando: você poderá abri-lo a qualquer momento, em qualquer dispositivo"
         },
         "score": {
           "q": "A nota garante que meu currículo será selecionado?",
-          "a": "Não. Cada ATS tem suas próprias regras e a decisão final é de uma pessoa. A nota é um indicador: ela verifica se o seu currículo usa o vocabulário da vaga e se uma máquina consegue lê-lo corretamente"
+          "a": "Não. Cada empresa tem as próprias ferramentas e a decisão final é sempre de uma pessoa. A pontuação ajuda você a usar as palavras da vaga e a verificar se o currículo é bem lido: assim você aumenta suas chances"
         },
         "photo": {
           "q": "Por que a foto some em inglês?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "É realmente grátis?",
-          "a": "Sim. O LocalATSCV é um projeto de código aberto sob licença MIT, sem anúncios nem assinatura. Hospedá-lo custa quase nada, já que é o seu navegador que faz todo o trabalho"
+          "a": "Sim, totalmente: sem assinatura, sem anúncios, sem marca d'água nos seus PDFs. O LocalATSCV é um projeto de código aberto (o código é público) que quase não custa nada para manter, já que tudo acontece no seu dispositivo"
         },
         "templates": {
-          "q": "Os modelos visuais passam pelos ATS?",
-          "a": "Sim. Todos os modelos imprimem texto real, na ordem de leitura, com títulos de seção padrão: formas, barras e ícones são desenhos que os robôs ignoram. Os modelos de uma coluna continuam sendo os mais seguros, e a verificação ATS do editor testa seu layout em tempo real"
+          "q": "Os modelos coloridos passam pelos sistemas de triagem?",
+          "a": "Sim. Todos os modelos têm texto de verdade, na ordem certa, com títulos clássicos como “Experiência” ou “Formação”. Formas, cores e ícones são simples enfeites que os sistemas ignoram. Os modelos de uma coluna continuam sendo os mais seguros, e o editor verifica seu layout em tempo real"
         },
         "import": {
           "q": "Posso reaproveitar meu currículo atual ou meu perfil do LinkedIn?",
-          "a": "Sim. Importe um currículo em PDF ou Word (.docx), o PDF do seu perfil do LinkedIn (no computador) ou o arquivo de dados do LinkedIn (pelo aplicativo móvel): o conteúdo é lido no seu navegador e organizado no editor"
+          "a": "Sim. Importe seu currículo em PDF ou Word, ou seu perfil do LinkedIn: o conteúdo é lido no seu dispositivo e organizado automaticamente no editor. Só falta revisar e escolher um modelo"
         },
         "offline": {
-          "q": "O LocalATSCV funciona off-line?",
-          "a": "Sim. É um aplicativo web instalável: depois da primeira visita, tudo funciona sem conexão, inclusive a exportação em PDF"
+          "q": "Funciona sem internet?",
+          "a": "Sim. Depois da primeira visita, você pode editar e baixar seus currículos sem conexão. Dá até para adicionar o LocalATSCV à tela inicial do celular ou do computador, como um aplicativo"
         }
       }
     },
     "cta": {
-      "title": "Pronto para passar pelo filtro?",
-      "text": "Crie seu currículo Master em poucos minutos. Nada sairá deste dispositivo",
+      "title": "Sua próxima entrevista começa aqui",
+      "text": "Crie seu currículo grátis em poucos minutos, sem cadastro. Nada sai do seu dispositivo",
       "button": "Começar"
     },
     "demo": {
-      "role": "Desenvolvedora Front-end",
+      "role": "Padeira e confeiteira",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Experiência",
-      "jobTitle": "Desenvolvedora Angular",
-      "jobMeta": "Empresa Exemplo · 2022 – atual",
+      "jobTitle": "Padeira",
+      "jobMeta": "Padaria Exemplo · 2021 – atual",
       "bullets": {
-        "migration": "Migração de 40 telas para <k>Angular</k> e <k>TypeScript</k>, com tempo de carregamento 35% menor",
-        "testing": "<w>Responsável pela</w> estratégia de testes de ponta a ponta",
-        "delivery": "Entrega contínua com <k>GitLab CI</k> para 3 equipes de produto"
+        "production": "Produção diária de 300 <k>folhados</k> e pães de <k>fermentação natural</k>, vendas 18% maiores",
+        "opening": "<w>Responsável pela</w> abertura da loja e pela vitrine",
+        "hygiene": "Aplicação das normas de higiene <k>APPCC</k> e treinamento de 2 aprendizes"
       },
       "weakLabel": "Frase fraca",
       "weakReplacement": "“Liderei”",
       "skills": "Competências",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Acessibilidade",
+      "skillList": "Folhados · Pão de fermentação natural · Confeitaria · APPCC · Atendimento ao cliente",
+      "keywords": {
+        "pastry": "Folhados",
+        "sourdough": "Fermentação natural",
+        "hygiene": "APPCC",
+        "license": "CNH"
+      },
       "score": "Compatibilidade com a vaga",
-      "sent": "0 byte enviado",
-      "robot": "COMPETÊNCIAS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Desenvolvedora Front-end Angular <n>●●●●○</n> EXPERIÊNCIA <n>� camille.mar</n> Desenvolvedora Angular <n>tin@example.com</n> 2022 – atual TypeScript <n>●●●○○</n> Empresa Exemplo IDIOMAS Inglês Migração de 40 telas para…"
+      "sent": "Nada enviado",
+      "robot": "COMPETÊNCIAS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Padeira e confeiteira Folhados <n>●●●●○</n> EXPERIÊNCIA <n>� camille.mar</n> Padeira <n>tin@example.com</n> 2021 – atual Confeitaria <n>●●●○○</n> Padaria Exemplo IDIOMAS Inglês Produção diária de…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analisador",
-    "title": "Seu currículo passa pelos robôs?",
-    "subtitle": "Envie um currículo em PDF feito com qualquer ferramenta: o LocalATSCV o lê como um ATS e mostra o que corrigir",
+    "eyebrow": "Teste de currículo grátis",
+    "title": "Seu currículo passa na triagem dos recrutadores?",
+    "subtitle": "Envie seu currículo em PDF, feito no Word, no Canva ou em qualquer outra ferramenta: o LocalATSCV lê como os sistemas de recrutamento e diz o que corrigir, em segundos",
     "drop": "Arraste seu currículo para cá",
     "dropActive": "Solte o arquivo para iniciar a análise",
     "hint": "Somente PDF, até 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "O texto na ordem em que está gravado no arquivo: é assim que o leem os ATS que não reconstroem o layout. Ele deve seguir a ordem de leitura do seu currículo"
     },
     "cta": {
-      "title": "Comece do zero com o pé direito",
-      "text": "Crie um currículo compatível com ATS no editor e adapte-o a cada vaga",
+      "title": "Mude para um currículo impecável",
+      "text": "Escolha um dos nossos 30 modelos, bem lidos pelos sistemas de triagem, e adapte-o a cada vaga",
       "button": "Abrir o editor",
       "import": "Trazer este currículo para os nossos modelos"
     },

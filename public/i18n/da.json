@@ -4,7 +4,7 @@
     "main": "Hovednavigation",
     "how": "Sådan virker det",
     "privacy": "Privatliv",
-    "analyze": "Analysér et CV",
+    "analyze": "Test mit CV",
     "editor": "Lav mit CV",
     "skipToContent": "Gå til indholdet"
   },
@@ -22,7 +22,7 @@
     "noResult": "Intet sprog fundet"
   },
   "pages": {
-    "home": "ATS-venlige CV'er, 100 % lokalt",
+    "home": "Gratis ATS-venligt CV, uden tilmelding",
     "editor": "Editor",
     "analyze": "CV-analyse",
     "changelog": "Nyheder",
@@ -31,7 +31,7 @@
     "privacy": "Privatlivspolitik"
   },
   "seo": {
-    "home": "Gratis ATS-venligt CV-værktøj: 30 grafiske skabeloner, matchende ansøgning, tilpasning til hvert jobopslag og ATS-score. Open source, dine data bliver i din browser",
+    "home": "Lav gratis et CV, der giver dig samtalen: 30 skabeloner, matchende ansøgning, tilpasning til hvert opslag og ATS-tjek. Uden tilmelding, dine data bliver på din enhed",
     "editor": "CV-editor med live-visning, Master-CV og målrettede versioner, ATS-tjek og PDF-eksport med ægte tekst. Alt bliver i din browser",
     "analyze": "Analysér et CV i PDF gratis: ATS-score ud af 100, ting der skal rettes, og teksten sådan som et rekrutteringssystem læser den. Filen forlader aldrig din browser",
     "changelog": "Nyheder i LocalATSCV, version for version: nye CV-skabeloner, funktioner og rettelser",
@@ -40,7 +40,7 @@
     "privacy": "Privatlivspolitik for LocalATSCV: ingen data indsamles, dine CV'er bliver i din browser"
   },
   "footer": {
-    "tagline": "Det ATS-venlige CV-værktøj, der aldrig ser dine data",
+    "tagline": "Den gratis CV-bygger, der aldrig ser dine data",
     "product": "Produkt",
     "legal": "Juridisk",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % lokalt · Gratis · Open source",
-      "titleLine1": "Et CV, der kommer forbi robotterne",
-      "titleLine2": "Data, der bliver hos dig",
-      "subtitle": "LocalATSCV hjælper dig med at lave et CV, der er optimeret til rekrutteringssystemer (ATS), og tilpasse det til hvert job med få klik. Alt foregår i din browser: ingen konto, ingen data sendes",
-      "ctaPrimary": "Lav mit CV",
-      "ctaSecondary": "Analysér et eksisterende CV",
+      "badge": "Gratis · Uden tilmelding · Uden reklamer",
+      "titleLine1": "CV'et, der giver dig samtalen",
+      "titleLine2": "Klar på få minutter",
+      "subtitle": "Udfyld din baggrund, vælg mellem 30 skabeloner, og download et CV, der er klar til at sende. LocalATSCV hjælper dig også med at tilpasse det til hvert opslag og tjekker, at de programmer, der sorterer ansøgninger, læser det korrekt",
+      "ctaPrimary": "Lav mit CV gratis",
+      "ctaSecondary": "Test mit nuværende CV",
       "points": {
-        "noAccount": "Ingen tilmelding",
-        "offline": "Virker offline",
-        "atsPdf": "PDF, som ATS kan læse"
+        "templates": "30 skabeloner at vælge imellem",
+        "letter": "Matchende ansøgning",
+        "private": "Dine data bliver hos dig"
       }
     },
     "ats": {
-      "eyebrow": "Problemet",
-      "title": "Dit CV bliver først læst af en maskine",
-      "text": "De fleste store virksomheder og rekrutteringsbureauer sorterer ansøgninger med et ATS (Applicant Tracking System). Det trækker teksten ud af dit CV, gemmer den i en database og lader rekrutteringsfolk søge kandidater på nøgleord",
+      "eyebrow": "Vidste du det?",
+      "title": "Før rekruttereren læser et program ofte dit CV",
+      "text": "Mange virksomheder, vikarbureauer og jobsider sorterer ansøgninger med et program, der kaldes et ATS. Det læser teksten i dit CV og gemmer den i en database. Hvis dit CV bliver læst forkert, eller hvis ordene fra opslaget mangler, når det måske aldrig frem til rekruttereren",
       "pitfalls": {
         "layout": {
           "title": "Komplekst layout",
-          "text": "Kolonner, tabeller og tekstbokse blander læserækkefølgen: dine oplysninger kommer ud hulter til bulter"
+          "text": "Kolonner, tabeller og tekstbokse blander læserækkefølgen sammen: programmet læser dit CV hulter til bulter"
         },
         "image": {
           "title": "Ulæselig tekst",
-          "text": "Ikoner, kompetencebjælker og nogle eksporter fra designværktøjer bliver til mærkelige tegn eller slet ingen tekst"
+          "text": "Ikoner, prikskalaer og CV'er lavet i visse designapps bliver til ulæselige tegn eller forsvinder helt"
         },
         "keywords": {
           "title": "Manglende nøgleord",
-          "text": "Hvis jobopslagets ord ikke står i dit CV, dukker din profil ikke op, når rekrutteringsfolk søger"
+          "text": "Søger rekruttereren efter »butiksassistent«, »HACCP« eller »kørekort B«? Står de ord ikke i dit CV, dukker din ansøgning ikke op"
         }
       },
       "seen": "Det, du ser",
       "read": "Det, robotten læser",
-      "fix": "LocalATSCV gør det modsatte: én kolonne, ægte tekst og standardoverskrifter, som robotterne læser i den rigtige rækkefølge"
+      "fix": "Med LocalATSCV slipper du for ubehagelige overraskelser: dine CV'er falder i rekrutterernes smag og læses i den rigtige rækkefølge af programmerne"
     },
     "how": {
       "eyebrow": "Sådan virker det",
-      "title": "Skriv én gang, tilpas uendeligt",
-      "text": "Fire trin gør dit Master-CV til en skræddersyet ansøgning til hvert job",
+      "title": "Ét CV, tilpasset hvert job",
+      "text": "Udfyld din baggrund én gang, og lav derefter med få klik en skræddersyet version til hver ansøgning",
       "steps": {
         "profile": {
-          "title": "Udfyld dit Master-CV",
-          "text": "Indtast al din erfaring én gang for alle, eller importér PDF'en af din LinkedIn-profil for at spare tid"
+          "title": "Fortæl din historie",
+          "text": "Indtast dine erfaringer, uddannelser og kompetencer én gang for alle. Har du allerede et CV eller en LinkedIn-profil? Importér det for at spare tid"
         },
         "offer": {
           "title": "Indsæt jobopslaget",
-          "text": "LocalATSCV trækker nøgleordene ud og beregner en matchscore ud af 100, som opdateres, mens du skriver"
+          "text": "LocalATSCV finder de vigtige ord i opslaget, viser dig, hvilke der mangler i dit CV, og giver dig en score ud af 100"
         },
         "compose": {
-          "title": "Byg en målrettet version",
-          "text": "Sæt flueben ved de relevante erfaringer og punkter, og flyt dem med træk og slip. Intet slettes fra dit Master"
+          "title": "Behold det vigtigste",
+          "text": "Sæt flueben ved det, der tæller for stillingen, og skift rækkefølgen med træk og slip. Dit fulde CV forbliver uændret"
         },
         "export": {
-          "title": "Eksportér til PDF",
-          "text": "En PDF med ægte tekst, struktureret og i én kolonne, lige så læsbar for robotter som for rekrutteringsfolk"
+          "title": "Download og søg",
+          "text": "Vælg skabelon og farve, og download dit CV som PDF, klar til at sende eller printe"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privatliv",
-      "title": "Nul data på vores servere. Bogstaveligt talt",
-      "text": "Der er ingen database at hacke: vores server sender dig kun applikationen. Derefter foregår alt i din browser, også offline",
+      "title": "Dit CV bliver hos dig. For alvor",
+      "text": "Ingen konto at oprette, ingen fil sendt over internettet. Siden indlæses én gang, og derefter sker alt på din computer eller telefon, også offline. Ingen andre end dig ser dit CV, ikke engang os",
       "browser": {
         "title": "Din browser",
         "tag": "Din enhed",
         "items": {
-          "master": "Master-CV",
+          "cvs": "Dine CV'er",
           "photo": "Profilbillede",
-          "versions": "Målrettede versioner",
+          "letters": "Ansøgninger",
           "settings": "Indstillinger"
         },
-        "note": "Gemt i IndexedDB, kun på denne enhed"
+        "note": "Gemt i din browser, kun på denne enhed"
       },
       "flow": {
-        "app": "Applikationen, ved første besøg",
+        "app": "Siden, ved første besøg",
         "data": "Dine data",
         "never": "aldrig"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Leverer applikationens filer (HTML, CSS, JavaScript), intet andet",
+        "text": "Leverer sidens sider, intet mere",
         "items": {
-          "noDb": "Ingen database",
+          "noDb": "Ingen gemte CV'er",
           "noAccount": "Ingen brugerkonti",
           "noLogs": "Ingen besøgslogge"
         }
@@ -152,54 +152,54 @@
           "text": "Ingen tilmelding, ingen e-mail, ingen adgangskode. Åbn siden og gå i gang"
         },
         "trackers": {
-          "title": "Ingen sporing",
-          "text": "Ingen statistik, ingen reklamer, ingen sporingscookies. Selv skrifttyperne ligger på vores egen server"
+          "title": "Ingen reklamer, ingen sporing",
+          "text": "Ingen reklamer, ingen sporingscookies, intet videresalg: vi har simpelthen ikke dine data"
         },
         "csp": {
-          "title": "Teknisk låst",
-          "text": "Sidens sikkerhedspolitik (CSP) forbyder browseren at kontakte noget andet domæne. Koden er åben: tjek det selv"
+          "title": "Alle kan tjekke det",
+          "text": "Siden er låst, så den ikke kan tale med nogen anden tjeneste, og koden er offentlig: enhver ekspert kan efterprøve det"
         },
         "backup": {
-          "title": "Dine sikkerhedskopier, dine filer",
-          "text": "Eksportér alle dine data til en JSON-fil, og importér dem igen på en hvilken som helst enhed"
+          "title": "En kopi, når du vil",
+          "text": "Download en sikkerhedskopi af alle dine CV'er med ét klik, og åbn dem på en anden enhed"
         }
       }
     },
     "features": {
       "eyebrow": "Funktioner",
-      "title": "Alt, hvad du behøver for at komme til samtale",
+      "title": "Alt til en vellykket ansøgning",
       "items": {
+        "templates": {
+          "title": "30 gennemarbejdede skabeloner",
+          "text": "Enkle, moderne eller farverige, med eller uden foto. Skift skabelon eller farve med ét klik, din tekst følger med"
+        },
+        "letter": {
+          "title": "Matchende ansøgning",
+          "text": "Skriv din ansøgning i samme stil som dit CV, så det hele hænger flot sammen"
+        },
         "master": {
-          "title": "Master-CV og målrettede versioner",
-          "text": "Ét komplet CV og lige så mange varianter som ansøgninger. Sæt og fjern flueben: intet går tabt"
+          "title": "Én version pr. job",
+          "text": "Behold dit fulde CV, og lav lige så mange versioner, som du har ansøgninger. Flueben til, flueben fra: intet går tabt"
         },
         "score": {
           "title": "Matchscore",
-          "text": "Indsæt jobopslaget: fundne og manglende nøgleord og en score ud af 100 i realtid"
+          "text": "Indsæt et opslag: se de fundne ord, de manglende og en score ud af 100, opdateret live"
         },
         "weak": {
-          "title": "Svage formuleringer fanges",
-          "text": "»Ansvarlig for«, »hjalp med«… markeres automatisk, med en bank af handlingsverber at erstatte dem med"
+          "title": "Skrivetips",
+          "text": "Formuleringer, der undersælger dig, som »Ansvarlig for«, bliver markeret, med stærkere verber til at erstatte dem"
         },
         "analyzer": {
-          "title": "Analyse af eksisterende CV'er",
-          "text": "Slip et CV, der er lavet et andet sted: se, hvad robotten faktisk læser, og hvad der skal rettes"
+          "title": "Test dit nuværende CV",
+          "text": "Upload et CV lavet et andet sted: se, hvad screeningsprogrammer virkelig læser, og hvad du skal rette"
         },
-        "linkedin": {
-          "title": "Import fra LinkedIn",
-          "text": "Udfyld dit Master-CV på forhånd med den gratis PDF, du kan eksportere fra din LinkedIn-profil"
+        "import": {
+          "title": "Intet at skrive om",
+          "text": "Hent dit nuværende CV (PDF eller Word) eller din LinkedIn-profil ind: alt sorteres automatisk i editoren"
         },
         "languages": {
           "title": "5 CV-sprog",
           "text": "Fransk, engelsk, italiensk, spansk og tysk. På engelsk skjules foto og fødselsdato efter normerne i engelsktalende lande"
-        },
-        "pdf": {
-          "title": "ATS-venlig PDF-eksport",
-          "text": "Ægte tekst og en klar struktur: læsbar for robotter, behagelig for rekrutteringsfolk"
-        },
-        "offline": {
-          "title": "Kan installeres og virker offline",
-          "text": "Føj LocalATSCV til din startskærm, og arbejd videre uden forbindelse"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Hvad er et ATS?",
-          "a": "Et Applicant Tracking System er den software, rekrutteringsfolk bruger til at modtage, sortere og søge i ansøgninger. Det omdanner dit CV til tekst og indekserer det: hvis teksten trækkes dårligt ud, eller de rigtige nøgleord mangler, bliver din ansøgning svær at finde"
+          "a": "Det er det program, mange virksomheder, vikarbureauer og jobsider bruger til at modtage og sortere ansøgninger. Det gør dit CV til tekst og lader rekruttereren søge på nøgleord. Hvis dit CV læses forkert eller mangler de rigtige ord, ryger det ud"
         },
         "storage": {
           "q": "Hvor gemmes mine data?",
-          "a": "Kun i din browser, i IndexedDB, en database der findes i alle moderne browsere. De går aldrig gennem vores servere, som kun kan levere applikationens filer"
+          "a": "Kun på din enhed, i din browser. De går aldrig gennem vores servere: ingen andre end dig har adgang til dem"
         },
         "clear": {
           "q": "Hvad sker der, hvis jeg rydder mine browserdata?",
-          "a": "Dine CV'er slettes, for de findes ingen andre steder. Eksportér jævnligt en JSON-sikkerhedskopi: du kan importere den igen når som helst, på enhver enhed"
+          "a": "Dine CV'er bliver slettet, da de ikke findes andre steder. Download en sikkerhedskopi en gang imellem: du kan åbne den når som helst, på enhver enhed"
         },
         "score": {
           "q": "Garanterer scoren, at mit CV bliver udvalgt?",
-          "a": "Nej. Hvert ATS har sine egne regler, og den endelige beslutning træffes af et menneske. Scoren er en indikator: den tjekker, at dit CV bruger jobopslagets ord, og at en maskine kan læse det korrekt"
+          "a": "Nej. Hver virksomhed har sine egne værktøjer, og den endelige beslutning træffes altid af et menneske. Scoren hjælper dig med at bruge ordene fra opslaget og tjekke, at dit CV læses korrekt: sådan øger du dine chancer"
         },
         "photo": {
           "q": "Hvorfor forsvinder billedet på engelsk?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Er det virkelig gratis?",
-          "a": "Ja. LocalATSCV er et open source-projekt under MIT-licensen, uden reklamer eller abonnement. Det koster næsten intet at drive, fordi det er din browser, der gør alt arbejdet"
+          "a": "Ja, helt: intet abonnement, ingen reklamer, intet vandmærke på dine PDF'er. LocalATSCV er et open source-projekt (koden er offentlig), der næsten ikke koster noget at drive, fordi alt sker på din enhed"
         },
         "templates": {
-          "q": "Kommer de grafiske skabeloner igennem et ATS?",
-          "a": "Ja. Alle skabeloner udskriver ægte tekst, i læserækkefølge, med standardoverskrifter: former, bjælker og ikoner er tegninger, som robotterne ignorerer. Skabeloner med én kolonne er stadig de sikreste, og editorens ATS-tjek tester dit layout direkte"
+          "q": "Kommer de farverige skabeloner igennem screeningsprogrammerne?",
+          "a": "Ja. Alle skabeloner indeholder ægte tekst i den rigtige rækkefølge, med almindelige overskrifter som »Erhvervserfaring« eller »Uddannelse«. Former, farver og ikoner er blot pynt, som programmerne ignorerer. Skabeloner med én kolonne er stadig de sikreste, og editoren tjekker dit layout live"
         },
         "import": {
           "q": "Kan jeg genbruge mit nuværende CV eller min LinkedIn-profil?",
-          "a": "Ja. Importér et CV i PDF eller Word (.docx), PDF'en af din LinkedIn-profil (på en computer) eller dit LinkedIn-dataarkiv (fra mobilappen): indholdet læses i din browser og sorteres ind i editoren"
+          "a": "Ja. Importér dit CV som PDF eller Word, eller din LinkedIn-profil: indholdet læses på din enhed og sorteres automatisk i editoren. Du skal kun læse korrektur og vælge en skabelon"
         },
         "offline": {
-          "q": "Virker LocalATSCV offline?",
-          "a": "Ja. Det er en webapp, der kan installeres: efter første besøg virker alt uden forbindelse, også PDF-eksporten"
+          "q": "Virker det uden internet?",
+          "a": "Ja. Efter første besøg kan du redigere og downloade dine CV'er offline. Du kan endda lægge LocalATSCV på hjemmeskærmen på din telefon eller computer, som en app"
         }
       }
     },
     "cta": {
-      "title": "Klar til at komme gennem filteret?",
-      "text": "Lav dit Master-CV på få minutter. Intet forlader denne enhed",
+      "title": "Din næste jobsamtale starter her",
+      "text": "Lav dit CV gratis på få minutter, uden tilmelding. Intet forlader din enhed",
       "button": "Kom i gang"
     },
     "demo": {
-      "role": "Frontendudvikler",
+      "role": "Bager og konditor",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Erhvervserfaring",
-      "jobTitle": "Angular-udvikler",
-      "jobMeta": "Eksempel A/S · 2022 – nu",
+      "jobTitle": "Bager",
+      "jobMeta": "Eksempel Bageri · 2021 – nu",
       "bullets": {
-        "migration": "Migrerede 40 skærmbilleder til <k>Angular</k> og <k>TypeScript</k>, indlæsningstiden faldt med 35 %",
-        "testing": "<w>Ansvarlig for</w> strategien for end-to-end-test",
-        "delivery": "Continuous delivery med <k>GitLab CI</k> for 3 produktteams"
+        "production": "Bagte 300 stk. <k>wienerbrød</k> og brød med <k>surdej</k> hver morgen, salget steg 18 %",
+        "opening": "<w>Ansvarlig for</w> åbning af butikken og udstillingsvinduet",
+        "hygiene": "Overholdt <k>HACCP</k>-reglerne for fødevarehygiejne og oplærte 2 lærlinge"
       },
       "weakLabel": "Svag formulering",
       "weakReplacement": "»Ledte«",
       "skills": "Kompetencer",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Tilgængelighed",
+      "skillList": "Wienerbrød · Surdejsbrød · Konditori · HACCP · Butikssalg",
+      "keywords": {
+        "pastry": "Wienerbrød",
+        "sourdough": "Surdej",
+        "hygiene": "HACCP",
+        "license": "Kørekort B"
+      },
       "score": "Match med jobopslaget",
-      "sent": "0 byte sendt",
-      "robot": "KOMPETENCER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Frontendudvikler Angular <n>●●●●○</n> ERHVERVSERFARING <n>� camille.mar</n> Angular-udvikler <n>tin@example.com</n> 2022 – nu TypeScript <n>●●●○○</n> Eksempel A/S SPROG Engelsk Migrerede 40 skærmbilleder til…"
+      "sent": "Intet sendt",
+      "robot": "KOMPETENCER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Bager og konditor Wienerbrød <n>●●●●○</n> ERHVERVSERFARING <n>� camille.mar</n> Bager <n>tin@example.com</n> 2021 – nu Konditori <n>●●●○○</n> Eksempel Bageri SPROG Engelsk Bagte 300 stk. wienerbrød…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analyse",
-    "title": "Kommer dit CV forbi robotterne?",
-    "subtitle": "Slip et CV i PDF, lavet med et hvilket som helst værktøj: LocalATSCV læser det som et ATS og fortæller dig, hvad der skal rettes",
+    "eyebrow": "Gratis CV-tjek",
+    "title": "Kommer dit CV gennem rekrutterernes sortering?",
+    "subtitle": "Upload dit CV som PDF, uanset om det kommer fra Word, Canva eller et andet værktøj: LocalATSCV læser det som rekrutteringsprogrammer og fortæller dig på få sekunder, hvad du skal rette",
     "drop": "Træk dit CV herhen",
     "dropActive": "Slip filen for at starte analysen",
     "hint": "Kun PDF, højst 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Teksten i den rækkefølge, den står i filen: sådan læser ATS, der ikke genopbygger layoutet, den. Den bør følge dit CV's læserækkefølge"
     },
     "cta": {
-      "title": "Start forfra på det rigtige grundlag",
-      "text": "Lav et ATS-venligt CV i editoren, og tilpas det derefter til hvert job",
+      "title": "Skift til et fejlfrit CV",
+      "text": "Vælg en af vores 30 skabeloner, som screeningsprogrammer læser korrekt, og tilpas den til hvert opslag",
       "button": "Åbn editoren",
       "import": "Overfør dette CV til vores skabeloner"
     },

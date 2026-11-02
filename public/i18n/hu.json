@@ -4,7 +4,7 @@
     "main": "Fő navigáció",
     "how": "Hogyan működik",
     "privacy": "Adatvédelem",
-    "analyze": "Önéletrajz elemzése",
+    "analyze": "Önéletrajz tesztelése",
     "editor": "Önéletrajzom elkészítése",
     "skipToContent": "Ugrás a tartalomra"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nincs ilyen nyelv"
   },
   "pages": {
-    "home": "ATS-barát önéletrajzok, 100%-ban helyben",
+    "home": "Ingyenes, ATS-barát önéletrajz regisztráció nélkül",
     "editor": "Szerkesztő",
     "analyze": "Önéletrajz-elemző",
     "changelog": "Újdonságok",
@@ -31,7 +31,7 @@
     "privacy": "Adatvédelmi irányelvek"
   },
   "seo": {
-    "home": "Ingyenes ATS-barát önéletrajz-készítő: 30 grafikus sablon, hozzáillő motivációs levél, igazítás minden álláshirdetéshez és ATS-pontszám. Nyílt forráskód, adatai a böngészőjében maradnak",
+    "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 30 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
     "editor": "Önéletrajz-szerkesztő élő előnézettel, Master önéletrajzzal és célzott változatokkal, ATS-ellenőrzéssel és valódi szöveges PDF-exporttal. Minden a böngészőjében marad",
     "analyze": "Elemezzen ingyen egy PDF önéletrajzot: ATS-pontszám 100-ból, javítandó pontok és a szöveg úgy, ahogy egy toborzórendszer olvassa. A fájl sosem hagyja el a böngészőjét",
     "changelog": "A LocalATSCV újdonságai verzióról verzióra: új önéletrajzsablonok, funkciók és javítások",
@@ -40,7 +40,7 @@
     "privacy": "A LocalATSCV adatvédelmi irányelvei: semmilyen adatot nem gyűjtünk, önéletrajzai a böngészőjében maradnak"
   },
   "footer": {
-    "tagline": "Az ATS-barát önéletrajz-készítő, amely sosem látja az adatait",
+    "tagline": "Az ingyenes önéletrajz-készítő, amely soha nem látja az adatait",
     "product": "Termék",
     "legal": "Jogi információk",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100%-ban helyben · Ingyenes · Nyílt forráskód",
-      "titleLine1": "Önéletrajz, amely átjut a robotokon",
-      "titleLine2": "Adatok, amelyek Önnél maradnak",
-      "subtitle": "A LocalATSCV segít a toborzórendszerekre (ATS) optimalizált önéletrajzot készíteni, és néhány kattintással minden álláshoz igazítani. Minden a böngészőjében történik: nincs fiók, és semmilyen adatot nem küldünk el",
-      "ctaPrimary": "Önéletrajzom elkészítése",
-      "ctaSecondary": "Meglévő önéletrajz elemzése",
+      "badge": "Ingyenes · Regisztráció nélkül · Reklám nélkül",
+      "titleLine1": "Az önéletrajz, amellyel behívják interjúra",
+      "titleLine2": "Néhány perc alatt kész",
+      "subtitle": "Töltse ki a pályafutását, válasszon 30 sablon közül, és töltsön le egy küldésre kész önéletrajzot. A LocalATSCV abban is segít, hogy minden hirdetéshez igazítsa, és ellenőrzi, hogy a jelentkezéseket szűrő programok helyesen olvassák-e",
+      "ctaPrimary": "Önéletrajz készítése ingyen",
+      "ctaSecondary": "Jelenlegi önéletrajzom tesztelése",
       "points": {
-        "noAccount": "Regisztráció nélkül",
-        "offline": "Offline is működik",
-        "atsPdf": "ATS által olvasható PDF"
+        "templates": "30 sablon közül választhat",
+        "letter": "Hozzáillő motivációs levél",
+        "private": "Adatai Önnél maradnak"
       }
     },
     "ats": {
-      "eyebrow": "A probléma",
-      "title": "Az önéletrajzát először egy gép olvassa",
-      "text": "A legtöbb nagyvállalat és fejvadász cég ATS-sel (Applicant Tracking System) szűri a jelentkezéseket. Ez kinyeri a szöveget az önéletrajzából, adatbázisban tárolja, és lehetővé teszi, hogy a toborzók kulcsszavak alapján keressenek jelölteket",
+      "eyebrow": "Tudta?",
+      "title": "A toborzó előtt gyakran egy program olvassa el az önéletrajzát",
+      "text": "Sok cég, munkaerő-kölcsönző és állásportál egy ATS nevű programmal szűri a jelentkezéseket. Ez kiolvassa az önéletrajz szövegét, és egy adatbázisba menti. Ha az önéletrajzát rosszul olvassa ki, vagy hiányoznak belőle a hirdetés szavai, lehet, hogy soha nem jut el a toborzóhoz",
       "pitfalls": {
         "layout": {
           "title": "Összetett elrendezés",
-          "text": "A hasábok, táblázatok és szövegdobozok összekeverik az olvasási sorrendet: az adatai összevissza jönnek ki"
+          "text": "Az oszlopok, táblázatok és szövegdobozok összekeverik az olvasási sorrendet: a program összevissza olvassa az önéletrajzát"
         },
         "image": {
           "title": "Olvashatatlan szöveg",
-          "text": "Az ikonok, készségsávok és egyes tervezőeszközös exportok értelmetlen karakterekké válnak, vagy teljesen eltűnnek"
+          "text": "Az ikonok, pöttyös skálák és egyes tervezőalkalmazásokkal készült önéletrajzok olvashatatlan karakterekké válnak, vagy teljesen eltűnnek"
         },
         "keywords": {
           "title": "Hiányzó kulcsszavak",
-          "text": "Ha a hirdetés szókincse nem szerepel az önéletrajzában, a profilja nem jelenik meg a toborzók kereséseiben"
+          "text": "A toborzó a „bolti eladó”, „HACCP” vagy „B kategóriás jogosítvány” szavakra keres? Ha ezek nincsenek az önéletrajzában, a jelentkezése nem jelenik meg"
         }
       },
       "seen": "Amit Ön lát",
       "read": "Amit a robot olvas",
-      "fix": "A LocalATSCV az ellenkezőjét teszi: egy hasáb, valódi szöveg és szabványos szakaszcímek, amelyeket a robotok a helyes sorrendben olvasnak"
+      "fix": "A LocalATSCV-vel nincsenek kellemetlen meglepetések: önéletrajzai tetszenek a toborzóknak, és a programok a helyes sorrendben olvassák őket"
     },
     "how": {
       "eyebrow": "Hogyan működik",
-      "title": "Írja meg egyszer, igazítsa végtelenszer",
-      "text": "Négy lépésben lesz a Master önéletrajzából minden álláshoz szabott jelentkezés",
+      "title": "Egy önéletrajz, minden álláshoz igazítva",
+      "text": "Töltse ki a pályafutását egyszer, majd néhány kattintással készítsen testre szabott változatot minden jelentkezéshez",
       "steps": {
         "profile": {
-          "title": "Töltse ki a Master önéletrajzát",
-          "text": "Adja meg egyszer és mindenkorra az összes tapasztalatát, vagy időt spórolva importálja a LinkedIn-profilja PDF-jét"
+          "title": "Mesélje el a pályafutását",
+          "text": "Adja meg tapasztalatait, végzettségeit és készségeit egyszer s mindenkorra. Van már önéletrajza vagy LinkedIn-profilja? Importálja, hogy időt spóroljon"
         },
         "offer": {
           "title": "Illessze be az álláshirdetést",
-          "text": "A LocalATSCV kinyeri a kulcsszavakat, és 100-as egyezési pontszámot számol, amely gépelés közben frissül"
+          "text": "A LocalATSCV megtalálja a hirdetés fontos szavait, megmutatja, melyek hiányoznak az önéletrajzából, és 100 pontos skálán értékeli"
         },
         "compose": {
-          "title": "Állítson össze célzott változatot",
-          "text": "Jelölje be a releváns tapasztalatokat és pontokat, és rendezze át őket húzással. A Masterből semmi sem törlődik"
+          "title": "Tartsa meg a lényeget",
+          "text": "Jelölje be, ami ennél az állásnál számít, és húzással módosítsa a sorrendet. A teljes önéletrajza érintetlen marad"
         },
         "export": {
-          "title": "Exportálás PDF-be",
-          "text": "Valódi szöveges, strukturált, egyhasábos PDF, amely a robotok számára ugyanolyan olvasható, mint a toborzóknak"
+          "title": "Töltse le és jelentkezzen",
+          "text": "Válasszon sablont és színt, majd töltse le önéletrajzát PDF-ben, küldésre vagy nyomtatásra készen"
         }
       }
     },
     "privacy": {
       "eyebrow": "Adatvédelem",
-      "title": "Nulla adat a szervereinken. Szó szerint",
-      "text": "Nincs feltörhető adatbázis: a szerverünk csak az alkalmazást küldi el. Utána minden a böngészőjében történik, akár offline is",
+      "title": "Az önéletrajza Önnél marad. Tényleg",
+      "text": "Nincs létrehozandó fiók, egyetlen fájl sem megy az interneten. Az oldal egyszer betöltődik, utána minden a számítógépén vagy telefonján történik, akár internet nélkül is. Önön kívül senki sem látja az önéletrajzát, még mi sem",
       "browser": {
         "title": "Az Ön böngészője",
         "tag": "Az Ön eszköze",
         "items": {
-          "master": "Master önéletrajz",
+          "cvs": "Önéletrajzai",
           "photo": "Profilkép",
-          "versions": "Célzott változatok",
+          "letters": "Motivációs levelek",
           "settings": "Beállítások"
         },
-        "note": "Az IndexedDB-ben tárolva, csak ezen az eszközön"
+        "note": "A böngészőjében tárolva, csak ezen az eszközön"
       },
       "flow": {
-        "app": "Az alkalmazás, az első betöltéskor",
+        "app": "Az oldal, az első látogatáskor",
         "data": "Az Ön adatai",
         "never": "soha"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Szerver",
-        "text": "Az alkalmazás fájljait szolgálja ki (HTML, CSS, JavaScript), semmi mást",
+        "text": "Elküldi az oldal lapjait, semmi többet",
         "items": {
-          "noDb": "Nincs adatbázis",
+          "noDb": "Nincs tárolt önéletrajz",
           "noAccount": "Nincsenek felhasználói fiókok",
           "noLogs": "Nincsenek látogatási naplók"
         }
@@ -152,54 +152,54 @@
           "text": "Nincs regisztráció, e-mail vagy jelszó. Nyissa meg az oldalt, és kezdjen hozzá"
         },
         "trackers": {
-          "title": "Követők nélkül",
-          "text": "Nincs statisztika, hirdetés és követő süti. Még a betűtípusok is a saját szerverünkön vannak"
+          "title": "Nincs reklám, nincs követés",
+          "text": "Nincs hirdetés, nincsenek követő sütik, nincs továbbértékesítés: egyszerűen nincsenek meg nálunk az adatai"
         },
         "csp": {
-          "title": "Technikailag lezárva",
-          "text": "Az oldal biztonsági szabályzata (CSP) megtiltja a böngészőnek, hogy bármilyen más tartományhoz kapcsolódjon. A kód nyílt: ellenőrizze maga"
+          "title": "Bárki ellenőrizheti",
+          "text": "Az oldal úgy van lezárva, hogy semmilyen más szolgáltatással ne kommunikálhasson, és a kódja nyilvános: bármely szakértő ellenőrizheti"
         },
         "backup": {
-          "title": "Az Ön mentései, az Ön fájljai",
-          "text": "Exportálja az összes adatát egy JSON-fájlba, és importálja vissza bármelyik eszközön"
+          "title": "Másolat, amikor csak akarja",
+          "text": "Egy kattintással töltsön le biztonsági mentést az összes önéletrajzáról, és nyissa meg őket egy másik eszközön"
         }
       }
     },
     "features": {
       "eyebrow": "Funkciók",
-      "title": "Minden, ami az állásinterjúhoz kell",
+      "title": "Minden a sikeres jelentkezéshez",
       "items": {
+        "templates": {
+          "title": "30 igényes sablon",
+          "text": "Visszafogott, modern vagy színes, fotóval vagy anélkül. Egy kattintással válthat sablont vagy színt, a szöveg követi"
+        },
+        "letter": {
+          "title": "Hozzáillő motivációs levél",
+          "text": "Írja meg levelét az önéletrajzzal azonos stílusban, hogy a jelentkezése egységes és igényes legyen"
+        },
         "master": {
-          "title": "Master önéletrajz és célzott változatok",
-          "text": "Egy teljes önéletrajz, és annyi változat, ahány jelentkezés. Bejelöl, kivesz: semmi sem vész el"
+          "title": "Külön változat minden álláshoz",
+          "text": "Őrizze meg teljes önéletrajzát, és készítsen annyi változatot, ahány jelentkezése van. Bejelöl, kivesz: semmi sem vész el"
         },
         "score": {
           "title": "Egyezési pontszám",
-          "text": "Illessze be a hirdetést: megtalált és hiányzó kulcsszavak, valamint 100-as pontszám valós időben"
+          "text": "Illesszen be egy hirdetést: látja a megtalált és a hiányzó szavakat, valamint egy 100 pontos értékelést, élőben frissítve"
         },
         "weak": {
-          "title": "Gyenge megfogalmazások felismerése",
-          "text": "A „felelős voltam”, „segítettem” és hasonlók automatikusan megjelölődnek, cseréjükhöz cselekvő igék tárát kapja"
+          "title": "Fogalmazási tippek",
+          "text": "Az Önt alulértékelő megfogalmazásokat, mint a „Felelős voltam”, a program megjelöli, és erősebb igéket javasol helyettük"
         },
         "analyzer": {
-          "title": "Meglévő önéletrajzok elemzése",
-          "text": "Húzzon be egy máshol készült önéletrajzot: lássa, mit olvas valójában a robot, és min kell javítani"
+          "title": "Tesztelje jelenlegi önéletrajzát",
+          "text": "Töltsön fel egy máshol készült önéletrajzot: nézze meg, mit olvasnak ki belőle valójában a szűrőprogramok, és mit kell javítani"
         },
-        "linkedin": {
-          "title": "LinkedIn-import",
-          "text": "Töltse ki előre a Master önéletrajzát az ingyenes PDF-ből, amelyet a LinkedIn-profiljából exportálhat"
+        "import": {
+          "title": "Semmit sem kell újragépelni",
+          "text": "Hozza át jelenlegi önéletrajzát (PDF vagy Word) vagy LinkedIn-profilját: minden automatikusan a helyére kerül a szerkesztőben"
         },
         "languages": {
           "title": "5 önéletrajz-nyelv",
           "text": "Francia, angol, olasz, spanyol és német. Angolul a fénykép és a születési dátum rejtve marad az angolszász szokások szerint"
-        },
-        "pdf": {
-          "title": "ATS-barát PDF-export",
-          "text": "Valódi szöveg és átlátható szerkezet: a robotoknak olvasható, a toborzóknak kellemes"
-        },
-        "offline": {
-          "title": "Telepíthető és offline",
-          "text": "Tegye a LocalATSCV-t a kezdőképernyőre, és dolgozzon tovább kapcsolat nélkül"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Mi az ATS?",
-          "a": "Az Applicant Tracking System az a szoftver, amellyel a toborzók fogadják, szűrik és keresik a jelentkezéseket. Szöveggé alakítja és indexeli az önéletrajzát: ha a szöveget rosszul nyeri ki, vagy hiányoznak a megfelelő kulcsszavak, a jelentkezését nehéz lesz megtalálni"
+          "a": "Ez az a program, amellyel sok cég, munkaerő-kölcsönző és állásportál fogadja és szűri a jelentkezéseket. Szöveggé alakítja az önéletrajzát, és lehetővé teszi, hogy a toborzó kulcsszavakra keressen. Ha az önéletrajzát rosszul olvassa ki, vagy hiányoznak belőle a megfelelő szavak, kiesik a rostán"
         },
         "storage": {
           "q": "Hol tárolódnak az adataim?",
-          "a": "Csak a böngészőjében, az IndexedDB-ben, amely minden modern böngészőbe beépített adatbázis. Soha nem haladnak át a szervereinken, amelyek csak az alkalmazás fájljait tudják kiszolgálni"
+          "a": "Csak az Ön eszközén, a böngészőjében. Soha nem mennek át a szervereinken: Önön kívül senki sem fér hozzájuk"
         },
         "clear": {
           "q": "Mi történik, ha törlöm a böngésző adatait?",
-          "a": "Az önéletrajzai törlődnek, mert máshol nem léteznek. Rendszeresen exportáljon JSON-mentést: bármikor, bármelyik eszközön visszaimportálhatja"
+          "a": "Önéletrajzai törlődnek, mivel máshol nem léteznek. Időnként töltsön le egy biztonsági mentést: bármikor, bármilyen eszközön újra megnyithatja"
         },
         "score": {
           "q": "A pontszám garantálja, hogy kiválasztják az önéletrajzomat?",
-          "a": "Nem. Minden ATS-nek saját szabályai vannak, és a végső döntést ember hozza meg. A pontszám tájékoztató jellegű: azt ellenőrzi, hogy az önéletrajza a hirdetés szókincsét használja-e, és hogy egy gép helyesen el tudja-e olvasni"
+          "a": "Nem. Minden cégnek saját eszközei vannak, és a végső döntést mindig egy ember hozza meg. A pontszám segít átvenni a hirdetés szavait, és ellenőrizni, hogy önéletrajzát helyesen olvassák-e: így növeli az esélyeit"
         },
         "photo": {
           "q": "Miért tűnik el a fénykép angolul?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Tényleg ingyenes?",
-          "a": "Igen. A LocalATSCV MIT-licencű, nyílt forráskódú projekt, hirdetések és előfizetés nélkül. Az üzemeltetése szinte semmibe sem kerül, mert minden munkát a böngészője végez"
+          "a": "Igen, teljesen: nincs előfizetés, nincs reklám, nincs vízjel a PDF-jein. A LocalATSCV nyílt forráskódú projekt (a kód nyilvános), amelynek működtetése szinte semmibe sem kerül, mert minden az Ön eszközén történik"
         },
         "templates": {
-          "q": "Átjutnak a grafikus sablonok az ATS-en?",
-          "a": "Igen. Minden sablon valódi szöveget nyomtat, olvasási sorrendben, szabványos szakaszcímekkel: az alakzatok, sávok és ikonok rajzok, amelyeket a robotok figyelmen kívül hagynak. Az egyhasábos sablonok továbbra is a legbiztonságosabbak, a szerkesztő ATS-ellenőrzése pedig élőben teszteli az elrendezést"
+          "q": "Átmennek a színes sablonok a szűrőprogramokon?",
+          "a": "Igen. Minden sablon valódi szöveget tartalmaz, helyes sorrendben, szokásos címekkel, mint a „Szakmai tapasztalat” vagy a „Tanulmányok”. A formák, színek és ikonok csak díszítések, amelyeket a programok figyelmen kívül hagynak. Az egyoszlopos sablonok maradnak a legbiztosabbak, és a szerkesztő élőben ellenőrzi az elrendezést"
         },
         "import": {
           "q": "Felhasználhatom a jelenlegi önéletrajzomat vagy a LinkedIn-profilomat?",
-          "a": "Igen. Importáljon PDF vagy Word (.docx) önéletrajzot, a LinkedIn-profilja PDF-jét (számítógépen) vagy a LinkedIn-adatarchívumát (a mobilalkalmazásból): a tartalmat a böngészője olvassa be, és a szerkesztőbe rendezi"
+          "a": "Igen. Importálja önéletrajzát PDF-ben vagy Wordben, vagy LinkedIn-profilját: a tartalmat az eszköze olvassa be, és automatikusan a helyére kerül a szerkesztőben. Már csak át kell néznie és sablont kell választania"
         },
         "offline": {
-          "q": "Működik a LocalATSCV offline?",
-          "a": "Igen. Telepíthető webalkalmazás: az első látogatás után minden működik kapcsolat nélkül, a PDF-exportot is beleértve"
+          "q": "Működik internet nélkül?",
+          "a": "Igen. Az első látogatás után internet nélkül is szerkesztheti és letöltheti önéletrajzait. A LocalATSCV-t akár alkalmazásként is felteheti telefonja vagy számítógépe kezdőképernyőjére"
         }
       }
     },
     "cta": {
-      "title": "Készen áll, hogy átjusson a szűrőn?",
-      "text": "Készítse el a Master önéletrajzát néhány perc alatt. Semmi sem hagyja el ezt az eszközt",
+      "title": "A következő állásinterjúja itt kezdődik",
+      "text": "Készítse el önéletrajzát ingyen, néhány perc alatt, regisztráció nélkül. Semmi sem hagyja el az eszközét",
       "button": "Kezdjük"
     },
     "demo": {
-      "role": "Front-end fejlesztő",
+      "role": "Pék és cukrász",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Szakmai tapasztalat",
-      "jobTitle": "Angular-fejlesztő",
-      "jobMeta": "Példa Kft. · 2022 – jelenleg",
+      "jobTitle": "Pék",
+      "jobMeta": "Példa Pékség · 2021 – jelenleg",
       "bullets": {
-        "migration": "40 képernyő migrálása <k>Angular</k> és <k>TypeScript</k> alapokra, 35%-kal rövidebb betöltési idő",
-        "testing": "<w>Felelős voltam</w> a végponttól végpontig tartó tesztelési stratégiáért",
-        "delivery": "Folyamatos szállítás <k>GitLab CI</k> segítségével 3 termékcsapatnak"
+        "production": "Minden reggel 300 <k>leveles tésztás</k> péksütemény és <k>kovászos</k> kenyér sütése, 18%-os forgalomnövekedés",
+        "opening": "<w>Felelős voltam</w> az üzlet nyitásáért és a kirakatért",
+        "hygiene": "A <k>HACCP</k> higiéniai szabályok betartása és 2 tanuló betanítása"
       },
       "weakLabel": "Gyenge megfogalmazás",
       "weakReplacement": "„Irányítottam”",
       "skills": "Készségek",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Akadálymentesség",
+      "skillList": "Leveles tészta · Kovászos kenyér · Cukrászat · HACCP · Bolti eladás",
+      "keywords": {
+        "pastry": "Leveles tészta",
+        "sourdough": "Kovász",
+        "hygiene": "HACCP",
+        "license": "B kategóriás jogosítvány"
+      },
       "score": "Egyezés a hirdetéssel",
-      "sent": "0 bájt elküldve",
-      "robot": "KÉSZSÉGEK CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end fejlesztő Angular <n>●●●●○</n> SZAKMAI TAPASZTALAT <n>� camille.mar</n> Angular-fejlesztő <n>tin@example.com</n> 2022 – jelenleg TypeScript <n>●●●○○</n> Példa Kft. NYELVEK Angol 40 képernyő migrálása…"
+      "sent": "Semmi sem kerül elküldésre",
+      "robot": "KÉSZSÉGEK CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pék és cukrász Leveles tészta <n>●●●●○</n> SZAKMAI TAPASZTALAT <n>� camille.mar</n> Pék <n>tin@example.com</n> 2021 – jelenleg Cukrászat <n>●●●○○</n> Példa Pékség NYELVEK Angol Minden reggel 300…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Elemző",
-    "title": "Átjut az önéletrajza a robotokon?",
-    "subtitle": "Húzzon be egy bármilyen eszközzel készült PDF önéletrajzot: a LocalATSCV úgy olvassa el, mint egy ATS, és megmondja, min kell javítani",
+    "eyebrow": "Ingyenes önéletrajz-teszt",
+    "title": "Átjut az önéletrajza a toborzók szűrésén?",
+    "subtitle": "Töltse fel önéletrajzát PDF-ben, akár Wordben, Canvában vagy más eszközzel készült: a LocalATSCV úgy olvassa, mint a toborzóprogramok, és másodpercek alatt megmondja, mit kell javítani",
     "drop": "Húzza ide az önéletrajzát",
     "dropActive": "Engedje el a fájlt az elemzés indításához",
     "hint": "Csak PDF, legfeljebb 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "A szöveg abban a sorrendben, ahogy a fájlban szerepel: így olvassák az elrendezést nem rekonstruáló ATS-ek. Követnie kell az önéletrajza olvasási sorrendjét"
     },
     "cta": {
-      "title": "Kezdje újra szilárd alapokon",
-      "text": "Készítsen ATS-barát önéletrajzot a szerkesztőben, majd igazítsa minden álláshoz",
+      "title": "Váltson hibátlan önéletrajzra",
+      "text": "Válasszon egyet 30 sablonunk közül, amelyeket a szűrőprogramok helyesen olvasnak, és igazítsa minden hirdetéshez",
       "button": "A szerkesztő megnyitása",
       "import": "Az önéletrajz áthozása a sablonjainkba"
     },

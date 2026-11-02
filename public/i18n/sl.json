@@ -4,7 +4,7 @@
     "main": "Glavna navigacija",
     "how": "Kako deluje",
     "privacy": "Zasebnost",
-    "analyze": "Analiziraj življenjepis",
+    "analyze": "Preizkusi življenjepis",
     "editor": "Ustvari moj življenjepis",
     "skipToContent": "Preskoči na vsebino"
   },
@@ -22,7 +22,7 @@
     "noResult": "Ni najdenega jezika"
   },
   "pages": {
-    "home": "Življenjepisi, prilagojeni ATS, 100 % lokalno",
+    "home": "Brezplačen življenjepis, prilagojen ATS, brez registracije",
     "editor": "Urejevalnik",
     "analyze": "Analizator življenjepisa",
     "changelog": "Novosti",
@@ -31,7 +31,7 @@
     "privacy": "Pravilnik o zasebnosti"
   },
   "seo": {
-    "home": "Brezplačno orodje za življenjepis, prilagojen ATS: 30 grafičnih predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in ocena ATS. Odprta koda, vaši podatki ostanejo v brskalniku",
+    "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 30 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
     "editor": "Urejevalnik življenjepisa s predogledom v živo, Master življenjepisom in ciljnimi različicami, preverjanjem ATS in izvozom v PDF s pravim besedilom. Vse ostane v vašem brskalniku",
     "analyze": "Brezplačno analizirajte življenjepis v PDF: ocena ATS od 100, točke za popravek in besedilo, kot ga prebere sistem za zaposlovanje. Datoteka nikoli ne zapusti vašega brskalnika",
     "changelog": "Novosti v LocalATSCV po različicah: nove predloge življenjepisov, funkcije in popravki",
@@ -40,7 +40,7 @@
     "privacy": "Pravilnik o zasebnosti LocalATSCV: podatkov ne zbiramo, vaši življenjepisi ostanejo v brskalniku"
   },
   "footer": {
-    "tagline": "Orodje za življenjepise, prilagojene ATS, ki nikoli ne vidi vaših podatkov",
+    "tagline": "Brezplačno orodje za življenjepis, ki nikoli ne vidi vaših podatkov",
     "product": "Izdelek",
     "legal": "Pravno",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % lokalno · Brezplačno · Odprta koda",
-      "titleLine1": "Življenjepis, ki pride mimo robotov",
-      "titleLine2": "Podatki, ki ostanejo pri vas",
-      "subtitle": "LocalATSCV vam pomaga ustvariti življenjepis, optimiziran za sisteme za zaposlovanje (ATS), in ga z nekaj kliki prilagoditi vsakemu delovnemu mestu. Vse se zgodi v vašem brskalniku: brez računa in brez pošiljanja kakršnih koli podatkov",
-      "ctaPrimary": "Ustvari moj življenjepis",
-      "ctaSecondary": "Analiziraj obstoječi življenjepis",
+      "badge": "Brezplačno · Brez registracije · Brez oglasov",
+      "titleLine1": "Življenjepis, ki vas pripelje do razgovora",
+      "titleLine2": "Pripravljeno v nekaj minutah",
+      "subtitle": "Izpolnite svoje izkušnje, izberite eno od 30 predlog in prenesite življenjepis, pripravljen za pošiljanje. LocalATSCV vam pomaga tudi prilagoditi ga vsakemu oglasu in preveri, ali ga programi, ki razvrščajo prijave, pravilno preberejo",
+      "ctaPrimary": "Ustvari življenjepis brezplačno",
+      "ctaSecondary": "Preizkusi moj trenutni življenjepis",
       "points": {
-        "noAccount": "Brez registracije",
-        "offline": "Deluje brez povezave",
-        "atsPdf": "PDF, berljiv za ATS"
+        "templates": "30 predlog na izbiro",
+        "letter": "Usklajeno motivacijsko pismo",
+        "private": "Vaši podatki ostanejo pri vas"
       }
     },
     "ats": {
-      "eyebrow": "Težava",
-      "title": "Vaš življenjepis najprej prebere stroj",
-      "text": "Večina velikih podjetij in kadrovskih agencij razvršča prijave s sistemom ATS (Applicant Tracking System). Ta izlušči besedilo vašega življenjepisa, ga shrani v podatkovno zbirko in kadrovikom omogoči iskanje kandidatov po ključnih besedah",
+      "eyebrow": "Ste vedeli?",
+      "title": "Pred kadrovikom vaš življenjepis pogosto prebere program",
+      "text": "Številna podjetja, zaposlitvene agencije in zaposlitveni portali razvrščajo prijave s programom, ki se imenuje ATS. Ta prebere besedilo vašega življenjepisa in ga shrani v zbirko podatkov. Če je življenjepis napačno prebran ali v njem ni besed iz oglasa, morda nikoli ne pride do kadrovika",
       "pitfalls": {
         "layout": {
           "title": "Zapletene postavitve",
-          "text": "Stolpci, tabele in polja z besedilom pomešajo vrstni red branja: vaši podatki pridejo ven pomešani"
+          "text": "Stolpci, tabele in okvirji premešajo vrstni red branja: program bere vaš življenjepis vse povprek"
         },
         "image": {
           "title": "Neberljivo besedilo",
-          "text": "Ikone, vrstice veščin in nekateri izvozi iz oblikovalskih orodij se spremenijo v čudne znake ali povsem izginejo"
+          "text": "Ikone, lestvice s pikami in življenjepisi iz nekaterih oblikovalskih aplikacij se spremenijo v neberljive znake ali povsem izginejo"
         },
         "keywords": {
           "title": "Manjkajoče ključne besede",
-          "text": "Če se besede iz oglasa ne pojavijo v vašem življenjepisu, se vaš profil ne prikaže v iskanjih kadrovikov"
+          "text": "Ali kadrovik išče »prodajalka«, »HACCP« ali »vozniško dovoljenje B«? Če teh besed ni v vašem življenjepisu, se vaša prijava ne prikaže"
         }
       },
       "seen": "Kaj vidite vi",
       "read": "Kaj prebere robot",
-      "fix": "LocalATSCV naredi nasprotno: en stolpec, pravo besedilo in standardni naslovi razdelkov, ki jih roboti preberejo v pravem vrstnem redu"
+      "fix": "Z LocalATSCV ni neprijetnih presenečenj: vaši življenjepisi so všeč kadrovikom, programi pa jih preberejo v pravem vrstnem redu"
     },
     "how": {
       "eyebrow": "Kako deluje",
-      "title": "Napišite enkrat, prilagajajte v nedogled",
-      "text": "Štirje koraki, da svoj Master življenjepis spremenite v prijavo po meri vsakega delovnega mesta",
+      "title": "En življenjepis, prilagojen vsakemu oglasu",
+      "text": "Izpolnite svoje izkušnje enkrat, nato pa z nekaj kliki ustvarite različico po meri za vsako prijavo",
       "steps": {
         "profile": {
-          "title": "Izpolnite svoj Master življenjepis",
-          "text": "Vnesite vse svoje izkušnje enkrat za vselej ali uvozite PDF svojega profila na LinkedInu, da prihranite čas"
+          "title": "Povejte svojo zgodbo",
+          "text": "Vnesite svoje izkušnje, izobrazbo in veščine enkrat za vselej. Že imate življenjepis ali profil na LinkedInu? Uvozite ga in prihranite čas"
         },
         "offer": {
           "title": "Prilepite oglas",
-          "text": "LocalATSCV izlušči ključne besede in izračuna oceno ujemanja od 100, ki se posodablja med tipkanjem"
+          "text": "LocalATSCV poišče pomembne besede v oglasu, pokaže, katere manjkajo v vašem življenjepisu, in vam da oceno od 100"
         },
         "compose": {
-          "title": "Sestavite ciljno različico",
-          "text": "Označite ustrezne izkušnje in točke ter jih preuredite z vlečenjem. Iz vašega Mastra se nič ne izbriše"
+          "title": "Obdržite bistveno",
+          "text": "Označite, kar šteje za to delovno mesto, in spreminjajte vrstni red z vlečenjem. Vaš celotni življenjepis ostane nedotaknjen"
         },
         "export": {
-          "title": "Izvozite v PDF",
-          "text": "PDF s pravim besedilom, strukturiran in v enem stolpcu, enako berljiv za robote kot za kadrovike"
+          "title": "Prenesite in se prijavite",
+          "text": "Izberite predlogo in barvo ter prenesite življenjepis v PDF, pripravljen za pošiljanje ali tiskanje"
         }
       }
     },
     "privacy": {
       "eyebrow": "Zasebnost",
-      "title": "Nič podatkov na naših strežnikih. Dobesedno",
-      "text": "Ni podatkovne zbirke, ki bi jo lahko vdrli: naš strežnik vam pošlje le aplikacijo. Nato se vse dogaja v vašem brskalniku, tudi brez povezave",
+      "title": "Vaš življenjepis ostane pri vas. Res",
+      "text": "Brez računa, nobena datoteka se ne pošlje po internetu. Stran se naloži enkrat, nato pa se vse dogaja na vašem računalniku ali telefonu, tudi brez povezave. Nihče razen vas ne vidi vašega življenjepisa, niti mi",
       "browser": {
         "title": "Vaš brskalnik",
         "tag": "Vaša naprava",
         "items": {
-          "master": "Master življenjepis",
+          "cvs": "Vaši življenjepisi",
           "photo": "Profilna fotografija",
-          "versions": "Ciljne različice",
+          "letters": "Motivacijska pisma",
           "settings": "Nastavitve"
         },
-        "note": "Shranjeno v IndexedDB, samo v tej napravi"
+        "note": "Shranjeno v vašem brskalniku, samo na tej napravi"
       },
       "flow": {
-        "app": "Aplikacija, ob prvem nalaganju",
+        "app": "Stran, ob prvem obisku",
         "data": "Vaši podatki",
         "never": "nikoli"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Strežnik",
-        "text": "Streže datoteke aplikacije (HTML, CSS, JavaScript), nič drugega",
+        "text": "Pošilja strani spletnega mesta, nič več",
         "items": {
-          "noDb": "Brez podatkovne zbirke",
+          "noDb": "Noben življenjepis ni shranjen",
           "noAccount": "Brez uporabniških računov",
           "noLogs": "Brez dnevnikov obiskov"
         }
@@ -152,54 +152,54 @@
           "text": "Brez registracije, e-pošte in gesla. Odprite stran in začnite"
         },
         "trackers": {
-          "title": "Brez sledenja",
-          "text": "Brez statistike, oglasov in piškotkov za sledenje. Celo pisave gostujejo na našem lastnem strežniku"
+          "title": "Brez oglasov in sledenja",
+          "text": "Brez oglasov, brez piškotkov za sledenje, brez preprodaje: vaših podatkov preprosto nimamo"
         },
         "csp": {
-          "title": "Tehnično zaklenjeno",
-          "text": "Varnostni pravilnik spletnega mesta (CSP) brskalniku prepoveduje, da bi se povezal s katero koli drugo domeno. Koda je odprta: preverite sami"
+          "title": "Vsak lahko preveri",
+          "text": "Stran je zaklenjena tako, da ne more komunicirati z nobeno drugo storitvijo, njena koda pa je javna: vsak strokovnjak lahko to preveri"
         },
         "backup": {
-          "title": "Vaše varnostne kopije, vaše datoteke",
-          "text": "Izvozite vse svoje podatke v datoteko JSON in jih znova uvozite v kateri koli napravi"
+          "title": "Kopija, kadar želite",
+          "text": "Z enim klikom prenesite varnostno kopijo vseh svojih življenjepisov in jih odprite na drugi napravi"
         }
       }
     },
     "features": {
       "eyebrow": "Funkcije",
-      "title": "Vse, kar potrebujete, da pridete do razgovora",
+      "title": "Vse za uspešno prijavo",
       "items": {
+        "templates": {
+          "title": "30 dodelanih predlog",
+          "text": "Preproste, sodobne ali barvite, s fotografijo ali brez. Zamenjajte predlogo ali barvo z enim klikom, vaše besedilo sledi"
+        },
+        "letter": {
+          "title": "Usklajeno motivacijsko pismo",
+          "text": "Napišite pismo v istem slogu kot življenjepis, za prijavo, ki pusti vtis"
+        },
         "master": {
-          "title": "Master življenjepis in ciljne različice",
-          "text": "En popoln življenjepis in toliko različic, kolikor je prijav. Označite, odznačite: nič se ne izgubi"
+          "title": "Posebna različica za vsak oglas",
+          "text": "Obdržite celotni življenjepis in ustvarite toliko različic, kolikor imate prijav. Označite, odznačite: nič se ne izgubi"
         },
         "score": {
           "title": "Ocena ujemanja",
-          "text": "Prilepite oglas: najdene in manjkajoče ključne besede ter ocena od 100 v realnem času"
+          "text": "Prilepite oglas: vidite najdene in manjkajoče besede ter oceno od 100, posodobljeno v živo"
         },
         "weak": {
-          "title": "Zaznavanje šibkih formulacij",
-          "text": "»Odgovoren za«, »pomagal pri«… se samodejno označijo, z zbirko glagolov dejanja, s katerimi jih zamenjate"
+          "title": "Nasveti za pisanje",
+          "text": "Izrazi, ki vas ne postavijo v ospredje, kot je »Odgovoren za«, so označeni, z močnejšimi glagoli za zamenjavo"
         },
         "analyzer": {
-          "title": "Analizator obstoječih življenjepisov",
-          "text": "Spustite življenjepis, ustvarjen drugje: oglejte si, kaj robot zares prebere in kaj je treba popraviti"
+          "title": "Preizkusite svoj trenutni življenjepis",
+          "text": "Naložite življenjepis, narejen drugje: odkrijte, kaj programi za izbor iz njega dejansko preberejo in kaj popraviti"
         },
-        "linkedin": {
-          "title": "Uvoz iz LinkedIna",
-          "text": "Vnaprej izpolnite svoj Master življenjepis iz brezplačnega PDF-ja, ki ga lahko izvozite iz svojega profila na LinkedInu"
+        "import": {
+          "title": "Nič vam ni treba pretipkati",
+          "text": "Prenesite svoj trenutni življenjepis (PDF ali Word) ali profil LinkedIn: vse se samodejno razvrsti v urejevalniku"
         },
         "languages": {
           "title": "5 jezikov življenjepisa",
           "text": "Francoščina, angleščina, italijanščina, španščina in nemščina. V angleščini sta fotografija in datum rojstva skrita, v skladu z navadami angleško govorečih držav"
-        },
-        "pdf": {
-          "title": "Izvoz v PDF, prilagojen ATS",
-          "text": "Pravo besedilo in jasna struktura: berljivo za robote, prijetno za kadrovike"
-        },
-        "offline": {
-          "title": "Namestljivo in brez povezave",
-          "text": "Dodajte LocalATSCV na začetni zaslon in delajte naprej brez povezave"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Kaj je ATS?",
-          "a": "Applicant Tracking System je programska oprema, s katero kadroviki prejemajo, razvrščajo in iščejo prijave. Vaš življenjepis pretvori v besedilo in ga indeksira: če je besedilo slabo izluščeno ali manjkajo prave ključne besede, je vašo prijavo težko najti"
+          "a": "To je program, s katerim številna podjetja, zaposlitvene agencije in zaposlitveni portali sprejemajo in razvrščajo prijave. Vaš življenjepis spremeni v besedilo in kadroviku omogoči iskanje po ključnih besedah. Če je življenjepis napačno prebran ali mu manjkajo prave besede, ostane neopažen"
         },
         "storage": {
           "q": "Kje so shranjeni moji podatki?",
-          "a": "Samo v vašem brskalniku, v IndexedDB, podatkovni zbirki, ki je vgrajena v vsak sodoben brskalnik. Nikoli ne gredo skozi naše strežnike, ki znajo le streči datoteke aplikacije"
+          "a": "Samo na vaši napravi, v vašem brskalniku. Nikoli ne gredo prek naših strežnikov: nihče razen vas nima dostopa do njih"
         },
         "clear": {
           "q": "Kaj se zgodi, če izbrišem podatke brskalnika?",
-          "a": "Vaši življenjepisi se izbrišejo, saj ne obstajajo nikjer drugje. Redno izvažajte varnostno kopijo JSON: kadar koli jo lahko znova uvozite, v kateri koli napravi"
+          "a": "Vaši življenjepisi se izbrišejo, saj ne obstajajo nikjer drugje. Občasno prenesite varnostno kopijo: odprete jo lahko kadar koli, na kateri koli napravi"
         },
         "score": {
           "q": "Ali ocena zagotavlja, da bo moj življenjepis izbran?",
-          "a": "Ne. Vsak ATS ima svoja pravila, končno odločitev pa sprejme človek. Ocena je kazalnik: preveri, ali vaš življenjepis uporablja besede iz oglasa in ali ga stroj lahko pravilno prebere"
+          "a": "Ne. Vsako podjetje ima svoja orodja, končno odločitev pa vedno sprejme človek. Ocena vam pomaga uporabiti besede iz oglasa in preveriti, ali je vaš življenjepis pravilno prebran: tako povečate svoje možnosti"
         },
         "photo": {
           "q": "Zakaj v angleščini fotografija izgine?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Je res brezplačno?",
-          "a": "Da. LocalATSCV je odprtokodni projekt pod licenco MIT, brez oglasov in naročnine. Njegovo gostovanje skoraj nič ne stane, ker vse delo opravi vaš brskalnik"
+          "a": "Da, povsem: brez naročnine, brez oglasov, brez vodnega žiga na vaših PDF-jih. LocalATSCV je odprtokodni projekt (koda je javna), katerega delovanje skoraj nič ne stane, saj se vse dogaja na vaši napravi"
         },
         "templates": {
-          "q": "Ali grafične predloge prestanejo ATS?",
-          "a": "Da. Vsaka predloga natisne pravo besedilo v vrstnem redu branja in s standardnimi naslovi razdelkov: oblike, vrstice in ikone so risbe, ki jih roboti prezrejo. Predloge z enim stolpcem ostajajo najvarnejše, preverjanje ATS v urejevalniku pa vašo postavitev preizkuša sproti"
+          "q": "Ali barvite predloge prestanejo programe za izbor?",
+          "a": "Da. Vse predloge vsebujejo pravo besedilo v pravem vrstnem redu in običajne naslove, kot sta »Delovne izkušnje« ali »Izobrazba«. Oblike, barve in ikone so le okraski, ki jih programi prezrejo. Predloge z enim stolpcem ostajajo najvarnejše, urejevalnik pa vašo postavitev preverja v živo"
         },
         "import": {
           "q": "Ali lahko znova uporabim svoj trenutni življenjepis ali profil na LinkedInu?",
-          "a": "Da. Uvozite življenjepis v PDF ali Wordu (.docx), PDF svojega profila na LinkedInu (v računalniku) ali arhiv podatkov LinkedIna (iz mobilne aplikacije): vsebina se prebere v vašem brskalniku in razvrsti v urejevalnik"
+          "a": "Da. Uvozite svoj življenjepis v PDF ali Word ali svoj profil LinkedIn: vsebina se prebere na vaši napravi in samodejno razvrsti v urejevalniku. Ostane vam le, da pregledate in izberete predlogo"
         },
         "offline": {
-          "q": "Ali LocalATSCV deluje brez povezave?",
-          "a": "Da. Je namestljiva spletna aplikacija: po prvem obisku vse deluje brez povezave, tudi izvoz v PDF"
+          "q": "Ali deluje brez interneta?",
+          "a": "Da. Po prvem obisku lahko svoje življenjepise urejate in prenašate brez povezave. LocalATSCV lahko celo dodate na začetni zaslon telefona ali računalnika, kot aplikacijo"
         }
       }
     },
     "cta": {
-      "title": "Pripravljeni, da pridete skozi filter?",
-      "text": "Ustvarite svoj Master življenjepis v nekaj minutah. Nič ne bo zapustilo te naprave",
+      "title": "Vaš naslednji zaposlitveni razgovor se začne tukaj",
+      "text": "Ustvarite življenjepis brezplačno v nekaj minutah, brez registracije. Nič ne zapusti vaše naprave",
       "button": "Začnite"
     },
     "demo": {
-      "role": "Front-end razvijalka",
+      "role": "Pekarka in slaščičarka",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Delovne izkušnje",
-      "jobTitle": "Razvijalka Angular",
-      "jobMeta": "Primer d.o.o. · 2022 – danes",
+      "jobTitle": "Pekarka",
+      "jobMeta": "Pekarna Primer · 2021 – danes",
       "bullets": {
-        "migration": "Migracija 40 zaslonov na <k>Angular</k> in <k>TypeScript</k>, čas nalaganja krajši za 35 %",
-        "testing": "<w>Odgovorna za</w> strategijo testiranja end-to-end",
-        "delivery": "Neprekinjena dostava z <k>GitLab CI</k> za 3 produktne ekipe"
+        "production": "Vsako jutro 300 kosov <k>listnatega peciva</k> in kruha iz <k>kislega testa</k>, prodaja se je povečala za 18 %",
+        "opening": "<w>Odgovorna za</w> odpiranje trgovine in izložbo",
+        "hygiene": "Upoštevanje higienskih pravil <k>HACCP</k> in uvajanje 2 vajencev"
       },
       "weakLabel": "Šibka formulacija",
       "weakReplacement": "»Vodila sem«",
       "skills": "Veščine",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Dostopnost",
+      "skillList": "Listnato pecivo · Kruh iz kislega testa · Slaščičarstvo · HACCP · Prodaja v trgovini",
+      "keywords": {
+        "pastry": "Listnato pecivo",
+        "sourdough": "Kislo testo",
+        "hygiene": "HACCP",
+        "license": "Vozniško B"
+      },
       "score": "Ujemanje z oglasom",
-      "sent": "Poslanih 0 bajtov",
-      "robot": "VEŠČINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end razvijalka Angular <n>●●●●○</n> DELOVNE IZKUŠNJE <n>� camille.mar</n> Razvijalka Angular <n>tin@example.com</n> 2022 – danes TypeScript <n>●●●○○</n> Primer d.o.o. JEZIKI Angleščina Migracija 40 zaslonov na…"
+      "sent": "Nič se ne pošlje",
+      "robot": "VEŠČINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekarka in slaščičarka Listnato pecivo <n>●●●●○</n> DELOVNE IZKUŠNJE <n>� camille.mar</n> Pekarka <n>tin@example.com</n> 2021 – danes Slaščičarstvo <n>●●●○○</n> Pekarna Primer JEZIKI Angleščina Vsako jutro 300 kosov…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizator",
-    "title": "Ali vaš življenjepis pride mimo robotov?",
-    "subtitle": "Spustite življenjepis v PDF, ustvarjen s katerim koli orodjem: LocalATSCV ga prebere kot ATS in vam pove, kaj popraviti",
+    "eyebrow": "Brezplačen preizkus življenjepisa",
+    "title": "Ali vaš življenjepis prestane izbor kadrovikov?",
+    "subtitle": "Naložite svoj življenjepis v PDF, ne glede na to, ali je iz Worda, Canve ali drugega orodja: LocalATSCV ga prebere kot zaposlitveni programi in vam v nekaj sekundah pove, kaj popraviti",
     "drop": "Povlecite življenjepis sem",
     "dropActive": "Spustite datoteko, da se analiza začne",
     "hint": "Samo PDF, največ 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Besedilo v vrstnem redu, v katerem je zapisano v datoteki: tako ga berejo ATS, ki ne rekonstruirajo postavitve. Slediti mora vrstnemu redu branja vašega življenjepisa"
     },
     "cta": {
-      "title": "Začnite znova na trdnih temeljih",
-      "text": "Ustvarite življenjepis, prilagojen ATS, v urejevalniku in ga nato prilagodite vsakemu delovnemu mestu",
+      "title": "Preidite na brezhiben življenjepis",
+      "text": "Izberite eno od naših 30 predlog, ki jih programi za izbor pravilno preberejo, in jo prilagodite vsakemu oglasu",
       "button": "Odpri urejevalnik",
       "import": "Prenesi ta življenjepis v naše predloge"
     },

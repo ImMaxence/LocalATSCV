@@ -4,7 +4,7 @@
     "main": "Navigasi utama",
     "how": "Cara ia berfungsi",
     "privacy": "Privasi",
-    "analyze": "Analisis resume",
+    "analyze": "Uji resume saya",
     "editor": "Bina resume saya",
     "skipToContent": "Langkau ke kandungan"
   },
@@ -22,7 +22,7 @@
     "noResult": "Tiada bahasa ditemui"
   },
   "pages": {
-    "home": "Resume mesra ATS, 100% setempat",
+    "home": "Resume percuma mesra ATS, tanpa pendaftaran",
     "editor": "Editor",
     "analyze": "Penganalisis resume",
     "changelog": "Apa yang baharu",
@@ -31,7 +31,7 @@
     "privacy": "Dasar privasi"
   },
   "seo": {
-    "home": "Pembina resume mesra ATS percuma: 30 templat grafik, surat iringan yang sepadan, penyesuaian untuk setiap iklan jawatan dan skor ATS. Sumber terbuka, data anda kekal dalam pelayar",
+    "home": "Bina resume percuma yang membawa anda ke temu duga: 30 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
     "editor": "Editor resume dengan pratonton langsung, resume Master dan versi sasaran, semakan ATS dan eksport PDF dengan teks sebenar. Semuanya kekal dalam pelayar anda",
     "analyze": "Analisis resume PDF secara percuma: skor ATS daripada 100, perkara untuk dibaiki dan teks seperti yang dibaca sistem pengambilan. Fail tidak pernah meninggalkan pelayar anda",
     "changelog": "Apa yang baharu dalam LocalATSCV, versi demi versi: templat resume baharu, ciri dan pembaikan",
@@ -40,7 +40,7 @@
     "privacy": "Dasar privasi LocalATSCV: tiada data dikumpul, resume anda kekal dalam pelayar"
   },
   "footer": {
-    "tagline": "Pembina resume mesra ATS yang tidak pernah melihat data anda",
+    "tagline": "Pembina resume percuma yang tidak pernah melihat data anda",
     "product": "Produk",
     "legal": "Undang-undang",
     "project": "Projek",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% setempat · Percuma · Sumber terbuka",
-      "titleLine1": "Resume yang melepasi robot",
-      "titleLine2": "Data yang kekal bersama anda",
-      "subtitle": "LocalATSCV membantu anda membina resume yang dioptimumkan untuk sistem pengesanan pemohon (ATS) dan menyesuaikannya untuk setiap jawatan dengan beberapa klik. Semuanya berlaku dalam pelayar anda: tiada akaun, tiada data dihantar",
-      "ctaPrimary": "Bina resume saya",
-      "ctaSecondary": "Analisis resume sedia ada",
+      "badge": "Percuma · Tanpa pendaftaran · Tanpa iklan",
+      "titleLine1": "Resume yang membawa anda ke temu duga",
+      "titleLine2": "Siap dalam beberapa minit",
+      "subtitle": "Isikan latar belakang anda, pilih satu daripada 30 templat dan muat turun resume yang sedia dihantar. LocalATSCV juga membantu anda menyesuaikannya untuk setiap iklan dan menyemak sama ada perisian yang menapis permohonan membacanya dengan betul",
+      "ctaPrimary": "Bina resume saya secara percuma",
+      "ctaSecondary": "Uji resume saya sekarang",
       "points": {
-        "noAccount": "Tanpa pendaftaran",
-        "offline": "Berfungsi luar talian",
-        "atsPdf": "PDF boleh dibaca ATS"
+        "templates": "30 templat untuk dipilih",
+        "letter": "Surat iringan yang sepadan",
+        "private": "Data anda kekal bersama anda"
       }
     },
     "ats": {
-      "eyebrow": "Masalahnya",
-      "title": "Resume anda dibaca oleh mesin dahulu",
-      "text": "Kebanyakan syarikat besar dan agensi pengambilan menapis permohonan dengan ATS (Applicant Tracking System). Ia mengekstrak teks resume anda, menyimpannya dalam pangkalan data dan membolehkan perekrut mencari calon mengikut kata kunci",
+      "eyebrow": "Tahukah anda?",
+      "title": "Sebelum perekrut, selalunya perisian yang membaca resume anda",
+      "text": "Banyak syarikat, agensi pekerjaan dan laman kerja menapis permohonan dengan perisian yang dipanggil ATS. Perisian ini membaca teks resume anda dan menyimpannya dalam pangkalan data. Jika resume anda tersalah baca atau tiada perkataan daripada iklan, ia mungkin tidak sampai kepada perekrut",
       "pitfalls": {
         "layout": {
           "title": "Susun atur rumit",
-          "text": "Lajur, jadual dan kotak teks mengacau susunan bacaan: maklumat anda keluar bercampur aduk"
+          "text": "Lajur, jadual dan kotak teks mengelirukan susunan bacaan: perisian membaca resume anda bercelaru"
         },
         "image": {
           "title": "Teks tidak terbaca",
-          "text": "Ikon, bar kemahiran dan sesetengah eksport alat reka bentuk menjadi aksara pelik, atau langsung tiada teks"
+          "text": "Ikon, skala titik dan resume yang dibuat dalam sesetengah aplikasi reka bentuk bertukar menjadi aksara yang tidak boleh dibaca, atau hilang sepenuhnya"
         },
         "keywords": {
           "title": "Kata kunci tiada",
-          "text": "Jika perbendaharaan kata iklan jawatan tiada dalam resume anda, profil anda tidak akan muncul dalam carian perekrut"
+          "text": "Perekrut mencari “pembantu jualan”, “HACCP” atau “lesen memandu”? Jika perkataan itu tiada dalam resume anda, permohonan anda tidak akan muncul"
         }
       },
       "seen": "Apa yang anda lihat",
       "read": "Apa yang dibaca robot",
-      "fix": "LocalATSCV melakukan sebaliknya: satu lajur, teks sebenar dan tajuk bahagian standard yang dibaca robot dalam susunan yang betul"
+      "fix": "Dengan LocalATSCV, tiada kejutan buruk: resume anda disukai perekrut dan dibaca dalam susunan yang betul oleh perisian"
     },
     "how": {
       "eyebrow": "Cara ia berfungsi",
-      "title": "Tulis sekali, sesuaikan tanpa had",
-      "text": "Empat langkah untuk menjadikan resume Master anda permohonan yang dipadankan untuk setiap jawatan",
+      "title": "Satu resume, disesuaikan untuk setiap jawatan",
+      "text": "Isikan latar belakang anda sekali, kemudian bina versi khas untuk setiap permohonan dengan beberapa klik",
       "steps": {
         "profile": {
-          "title": "Isi resume Master anda",
-          "text": "Masukkan semua pengalaman anda sekali sahaja, atau import PDF profil LinkedIn anda untuk menjimatkan masa"
+          "title": "Ceritakan perjalanan anda",
+          "text": "Masukkan pengalaman, pendidikan dan kemahiran anda sekali sahaja. Sudah ada resume atau profil LinkedIn? Importnya untuk menjimatkan masa"
         },
         "offer": {
           "title": "Tampal iklan jawatan",
-          "text": "LocalATSCV mengekstrak kata kunci dan mengira skor padanan daripada 100 yang dikemas kini semasa anda menaip"
+          "text": "LocalATSCV mengesan perkataan penting dalam iklan, menunjukkan yang tiada dalam resume anda dan memberikan skor daripada 100"
         },
         "compose": {
-          "title": "Susun versi sasaran",
-          "text": "Tandakan pengalaman dan butiran yang berkaitan, kemudian susun semula dengan seret dan lepas. Tiada apa yang dipadam daripada Master anda"
+          "title": "Simpan yang penting",
+          "text": "Tandakan apa yang penting untuk jawatan ini dan ubah susunan dengan seret dan lepas. Resume penuh anda kekal utuh"
         },
         "export": {
-          "title": "Eksport ke PDF",
-          "text": "PDF dengan teks sebenar, berstruktur dan satu lajur, sama mudah dibaca oleh robot dan perekrut"
+          "title": "Muat turun dan mohon",
+          "text": "Pilih templat dan warna, kemudian muat turun resume anda dalam PDF, sedia untuk dihantar atau dicetak"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privasi",
-      "title": "Sifar data di pelayan kami. Secara literal",
-      "text": "Tiada pangkalan data untuk digodam: pelayan kami hanya menghantar aplikasi. Selepas itu, semuanya berlaku dalam pelayar anda, malah ketika luar talian",
+      "title": "Resume anda kekal bersama anda. Betul-betul",
+      "text": "Tiada akaun perlu dibuat, tiada fail dihantar melalui internet. Laman ini dimuatkan sekali, kemudian semuanya berlaku pada komputer atau telefon anda, walaupun tanpa sambungan. Tiada sesiapa selain anda melihat resume anda, termasuk kami",
       "browser": {
         "title": "Pelayar anda",
         "tag": "Peranti anda",
         "items": {
-          "master": "Resume Master",
+          "cvs": "Resume anda",
           "photo": "Foto profil",
-          "versions": "Versi sasaran",
+          "letters": "Surat iringan",
           "settings": "Keutamaan"
         },
-        "note": "Disimpan dalam IndexedDB, hanya pada peranti ini"
+        "note": "Disimpan dalam pelayar anda, pada peranti ini sahaja"
       },
       "flow": {
-        "app": "Aplikasi, semasa muatan pertama",
+        "app": "Laman, semasa lawatan pertama",
         "data": "Data anda",
         "never": "tidak pernah"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Pelayan",
-        "text": "Menyediakan fail aplikasi (HTML, CSS, JavaScript), tidak lebih daripada itu",
+        "text": "Menghantar halaman laman web, tidak lebih",
         "items": {
-          "noDb": "Tiada pangkalan data",
+          "noDb": "Tiada resume disimpan",
           "noAccount": "Tiada akaun pengguna",
           "noLogs": "Tiada log lawatan"
         }
@@ -152,54 +152,54 @@
           "text": "Tanpa pendaftaran, e-mel atau kata laluan. Buka halaman dan mula"
         },
         "trackers": {
-          "title": "Tanpa penjejak",
-          "text": "Tiada statistik, iklan atau kuki penjejakan. Malah fon pun dihoskan di pelayan kami sendiri"
+          "title": "Tiada iklan, tiada penjejakan",
+          "text": "Tiada iklan, tiada kuki penjejak, tiada penjualan semula: kami memang tidak mempunyai data anda"
         },
         "csp": {
-          "title": "Dikunci secara teknikal",
-          "text": "Dasar keselamatan laman (CSP) melarang pelayar menghubungi domain lain. Kodnya terbuka: semak sendiri"
+          "title": "Sesiapa pun boleh menyemak",
+          "text": "Laman ini dikunci supaya tidak boleh berhubung dengan perkhidmatan lain, dan kodnya terbuka: mana-mana pakar boleh mengesahkannya"
         },
         "backup": {
-          "title": "Sandaran anda, fail anda",
-          "text": "Eksport semua data anda ke fail JSON dan import semula pada mana-mana peranti"
+          "title": "Salinan bila-bila masa",
+          "text": "Muat turun sandaran semua resume anda dengan satu klik dan bukanya pada peranti lain"
         }
       }
     },
     "features": {
       "eyebrow": "Ciri",
-      "title": "Semua yang anda perlukan untuk ke temu duga",
+      "title": "Segala yang anda perlukan untuk permohonan yang berjaya",
       "items": {
+        "templates": {
+          "title": "30 templat yang kemas",
+          "text": "Ringkas, moden atau berwarna-warni, dengan atau tanpa foto. Tukar templat atau warna dengan satu klik, teks anda ikut sekali"
+        },
+        "letter": {
+          "title": "Surat iringan yang sepadan",
+          "text": "Tulis surat anda dalam gaya yang sama dengan resume, untuk permohonan yang meninggalkan kesan"
+        },
         "master": {
-          "title": "Resume Master dan versi sasaran",
-          "text": "Satu resume lengkap, dan versi sebanyak permohonan anda. Tanda, nyahtanda: tiada apa yang hilang"
+          "title": "Satu versi untuk setiap jawatan",
+          "text": "Simpan resume penuh anda dan bina seberapa banyak versi mengikut permohonan anda. Tanda, nyahtanda: tiada yang hilang"
         },
         "score": {
           "title": "Skor padanan",
-          "text": "Tampal iklan jawatan: kata kunci ditemui, kata kunci tiada dan skor daripada 100 secara masa nyata"
+          "text": "Tampal iklan: lihat perkataan yang dijumpai, yang tiada dan skor daripada 100 yang dikemas kini secara langsung"
         },
         "weak": {
-          "title": "Pengesan frasa lemah",
-          "text": "“Bertanggungjawab atas”, “membantu dalam”… ditanda secara automatik, bersama senarai kata kerja tindakan sebagai pengganti"
+          "title": "Petua menulis",
+          "text": "Frasa yang tidak menonjolkan anda, seperti “Bertanggungjawab atas”, ditandakan, bersama kata kerja yang lebih kuat sebagai ganti"
         },
         "analyzer": {
-          "title": "Penganalisis resume sedia ada",
-          "text": "Letakkan resume yang dibuat di tempat lain: lihat apa yang benar-benar dibaca robot dan apa yang perlu dibaiki"
+          "title": "Uji resume semasa anda",
+          "text": "Muat naik resume yang dibuat di tempat lain: ketahui apa yang benar-benar dibaca oleh perisian penapis dan apa yang perlu dibetulkan"
         },
-        "linkedin": {
-          "title": "Import dari LinkedIn",
-          "text": "Isi awal resume Master anda daripada PDF percuma yang boleh dieksport daripada profil LinkedIn anda"
+        "import": {
+          "title": "Tiada apa yang perlu ditaip semula",
+          "text": "Bawa resume semasa anda (PDF atau Word) atau profil LinkedIn anda: semuanya disusun secara automatik dalam editor"
         },
         "languages": {
           "title": "5 bahasa resume",
           "text": "Perancis, Inggeris, Itali, Sepanyol dan Jerman. Dalam bahasa Inggeris, foto dan tarikh lahir disembunyikan mengikut amalan negara berbahasa Inggeris"
-        },
-        "pdf": {
-          "title": "Eksport PDF mesra ATS",
-          "text": "Teks sebenar dan struktur jelas: boleh dibaca robot, menyenangkan perekrut"
-        },
-        "offline": {
-          "title": "Boleh dipasang dan luar talian",
-          "text": "Tambah LocalATSCV ke skrin utama dan terus bekerja tanpa sambungan"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Apakah itu ATS?",
-          "a": "Applicant Tracking System ialah perisian yang digunakan perekrut untuk menerima, menapis dan mencari permohonan. Ia menukar resume anda kepada teks dan mengindeksnya: jika teks diekstrak dengan buruk atau kata kunci yang betul tiada, permohonan anda sukar ditemui"
+          "a": "Ia ialah perisian yang digunakan oleh banyak syarikat, agensi pekerjaan dan laman kerja untuk menerima dan menapis permohonan. Ia menukar resume anda kepada teks dan membolehkan perekrut mencari menggunakan kata kunci. Jika resume anda tersalah baca atau tiada perkataan yang tepat, ia akan terlepas pandang"
         },
         "storage": {
           "q": "Di manakah data saya disimpan?",
-          "a": "Hanya dalam pelayar anda, dalam IndexedDB, pangkalan data yang terbina dalam setiap pelayar moden. Data tidak pernah melalui pelayan kami, yang hanya tahu menyediakan fail aplikasi"
+          "a": "Hanya pada peranti anda, dalam pelayar anda. Ia tidak pernah melalui pelayan kami: tiada sesiapa selain anda boleh mengaksesnya"
         },
         "clear": {
           "q": "Apakah yang berlaku jika saya mengosongkan data pelayar?",
-          "a": "Resume anda akan dipadam, kerana ia tidak wujud di tempat lain. Eksport sandaran JSON secara berkala: anda boleh mengimportnya semula bila-bila masa, pada mana-mana peranti"
+          "a": "Resume anda akan dipadam, kerana ia tidak wujud di tempat lain. Muat turun sandaran sekali-sekala: anda boleh membukanya bila-bila masa, pada mana-mana peranti"
         },
         "score": {
           "q": "Adakah skor menjamin resume saya akan dipilih?",
-          "a": "Tidak. Setiap ATS ada peraturannya sendiri dan keputusan akhir dibuat oleh manusia. Skor ialah penunjuk: ia menyemak sama ada resume anda menggunakan perbendaharaan kata iklan jawatan dan sama ada mesin boleh membacanya dengan betul"
+          "a": "Tidak. Setiap syarikat ada alatnya sendiri dan keputusan akhir sentiasa dibuat oleh manusia. Skor membantu anda menggunakan perkataan daripada iklan dan memastikan resume anda dibaca dengan betul: begitulah anda meningkatkan peluang"
         },
         "photo": {
           "q": "Mengapa foto hilang dalam bahasa Inggeris?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Adakah ia benar-benar percuma?",
-          "a": "Ya. LocalATSCV ialah projek sumber terbuka di bawah lesen MIT, tanpa iklan atau langganan. Kos pengehosannya hampir sifar, kerana pelayar anda yang melakukan semua kerja"
+          "a": "Ya, sepenuhnya: tiada langganan, tiada iklan, tiada tera air pada PDF anda. LocalATSCV ialah projek sumber terbuka (kodnya terbuka) yang hampir tidak memerlukan kos untuk dijalankan, kerana semuanya berlaku pada peranti anda"
         },
         "templates": {
-          "q": "Adakah templat grafik melepasi ATS?",
-          "a": "Ya. Setiap templat mencetak teks sebenar mengikut susunan bacaan, dengan tajuk bahagian standard: bentuk, bar dan ikon ialah lukisan yang diabaikan robot. Templat satu lajur kekal paling selamat, dan semakan ATS dalam editor menguji susun atur anda secara langsung"
+          "q": "Adakah templat berwarna lepas perisian penapis?",
+          "a": "Ya. Semua templat mengandungi teks sebenar dalam susunan yang betul, dengan tajuk biasa seperti “Pengalaman” atau “Pendidikan”. Bentuk, warna dan ikon hanyalah hiasan yang diabaikan perisian. Templat satu lajur kekal paling selamat, dan editor menyemak susun atur anda secara langsung"
         },
         "import": {
           "q": "Bolehkah saya menggunakan semula resume semasa atau profil LinkedIn saya?",
-          "a": "Boleh. Import resume PDF atau Word (.docx), PDF profil LinkedIn anda (di komputer) atau arkib data LinkedIn anda (dari aplikasi mudah alih): kandungan dibaca dalam pelayar anda dan disusun dalam editor"
+          "a": "Ya. Import resume anda dalam PDF atau Word, atau profil LinkedIn anda: kandungannya dibaca pada peranti anda dan disusun secara automatik dalam editor. Anda hanya perlu menyemak semula dan memilih templat"
         },
         "offline": {
-          "q": "Adakah LocalATSCV berfungsi luar talian?",
-          "a": "Ya. Ia aplikasi web yang boleh dipasang: selepas lawatan pertama, semuanya berfungsi tanpa sambungan, termasuk eksport PDF"
+          "q": "Boleh digunakan tanpa internet?",
+          "a": "Ya. Selepas lawatan pertama, anda boleh mengedit dan memuat turun resume anda tanpa sambungan. Anda juga boleh menambah LocalATSCV pada skrin utama telefon atau komputer anda, seperti aplikasi"
         }
       }
     },
     "cta": {
-      "title": "Bersedia untuk melepasi penapis?",
-      "text": "Bina resume Master anda dalam beberapa minit. Tiada apa yang akan meninggalkan peranti ini",
+      "title": "Temu duga anda yang seterusnya bermula di sini",
+      "text": "Bina resume anda secara percuma dalam beberapa minit, tanpa pendaftaran. Tiada apa yang keluar dari peranti anda",
       "button": "Mula"
     },
     "demo": {
-      "role": "Pembangun Front-end",
+      "role": "Pembuat roti dan pastri",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Pengalaman",
-      "jobTitle": "Pembangun Angular",
-      "jobMeta": "Contoh Sdn Bhd · 2022 – kini",
+      "jobTitle": "Pembuat roti",
+      "jobMeta": "Kedai Roti Contoh · 2021 – kini",
       "bullets": {
-        "migration": "Memindahkan 40 skrin ke <k>Angular</k> dan <k>TypeScript</k>, masa muat berkurang 35%",
-        "testing": "<w>Bertanggungjawab atas</w> strategi ujian hujung ke hujung",
-        "delivery": "Penghantaran berterusan dengan <k>GitLab CI</k> untuk 3 pasukan produk"
+        "production": "Menghasilkan 300 <k>pastri</k> dan roti <k>sourdough</k> setiap pagi, jualan meningkat 18%",
+        "opening": "<w>Bertanggungjawab atas</w> pembukaan kedai dan susunan pameran",
+        "hygiene": "Mematuhi peraturan kebersihan <k>HACCP</k> dan melatih 2 perantis"
       },
       "weakLabel": "Frasa lemah",
       "weakReplacement": "“Mengetuai”",
       "skills": "Kemahiran",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Kebolehcapaian",
+      "skillList": "Pastri · Roti sourdough · Kek · HACCP · Jualan di kedai",
+      "keywords": {
+        "pastry": "Pastri",
+        "sourdough": "Sourdough",
+        "hygiene": "HACCP",
+        "license": "Lesen memandu"
+      },
       "score": "Padanan dengan iklan",
-      "sent": "0 bait dihantar",
-      "robot": "KEMAHIRAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pembangun Front-end Angular <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pembangun Angular <n>tin@example.com</n> 2022 – kini TypeScript <n>●●●○○</n> Contoh Sdn Bhd BAHASA Inggeris Memindahkan 40 skrin ke…"
+      "sent": "Tiada apa dihantar",
+      "robot": "KEMAHIRAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pembuat roti dan pastri Pastri <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pembuat roti <n>tin@example.com</n> 2021 – kini Kek <n>●●●○○</n> Kedai Roti Contoh BAHASA Inggeris Menghasilkan 300 pastri…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Penganalisis",
-    "title": "Adakah resume anda melepasi robot?",
-    "subtitle": "Letakkan resume PDF yang dibuat dengan mana-mana alat: LocalATSCV membacanya seperti ATS dan memberitahu anda apa yang perlu dibaiki",
+    "eyebrow": "Semakan resume percuma",
+    "title": "Adakah resume anda lepas tapisan perekrut?",
+    "subtitle": "Muat naik resume anda dalam PDF, sama ada dibuat dengan Word, Canva atau alat lain: LocalATSCV membacanya seperti perisian pengambilan dan memberitahu apa yang perlu dibetulkan dalam beberapa saat",
     "drop": "Seret resume anda ke sini",
     "dropActive": "Lepaskan fail untuk memulakan analisis",
     "hint": "PDF sahaja, maksimum 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Teks mengikut susunan ia ditulis dalam fail: begitulah ATS yang tidak membina semula susun atur membacanya. Ia sepatutnya mengikut susunan bacaan resume anda"
     },
     "cta": {
-      "title": "Mula semula dengan asas yang kukuh",
-      "text": "Bina resume mesra ATS dalam editor, kemudian sesuaikannya untuk setiap jawatan",
+      "title": "Beralih kepada resume yang sempurna",
+      "text": "Pilih satu daripada 30 templat kami yang dibaca dengan betul oleh perisian penapis, dan sesuaikan untuk setiap iklan",
       "button": "Buka editor",
       "import": "Bawa resume ini ke dalam templat kami"
     },

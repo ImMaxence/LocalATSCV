@@ -4,7 +4,7 @@
     "main": "Pangunahing nabigasyon",
     "how": "Paano ito gumagana",
     "privacy": "Privacy",
-    "analyze": "Suriin ang resume",
+    "analyze": "Subukan ang resume ko",
     "editor": "Gawin ang resume ko",
     "skipToContent": "Lumaktaw sa nilalaman"
   },
@@ -22,7 +22,7 @@
     "noResult": "Walang nahanap na wika"
   },
   "pages": {
-    "home": "Resume na pasado sa ATS, 100% lokal",
+    "home": "Libreng ATS-friendly na resume, walang sign-up",
     "editor": "Editor",
     "analyze": "Tagasuri ng resume",
     "changelog": "Mga bago",
@@ -31,7 +31,7 @@
     "privacy": "Patakaran sa privacy"
   },
   "seo": {
-    "home": "Libreng resume builder na pasado sa ATS: 30 graphic template, katugmang cover letter, pag-angkop sa bawat job posting at ATS score. Open source, at nananatili sa browser mo ang iyong data",
+    "home": "Gumawa nang libre ng resume na magdadala sa iyo sa interview: 30 template, katugmang cover letter, pag-angkop sa bawat job posting at ATS check. Walang sign-up, nananatili sa device mo ang data mo",
     "editor": "Resume editor na may live preview, Master na resume at mga naka-target na bersyon, ATS check at PDF export na may tunay na teksto. Lahat ay nananatili sa browser mo",
     "analyze": "Libreng pagsusuri ng PDF na resume: ATS score mula 100, mga dapat ayusin at ang eksaktong tekstong nababasa ng mga recruitment system. Hindi umaalis sa browser mo ang file",
     "changelog": "Ang mga bago sa LocalATSCV bawat bersyon: mga bagong template ng resume, feature at pag-aayos",
@@ -40,7 +40,7 @@
     "privacy": "Patakaran sa privacy ng LocalATSCV: walang kinokolektang data, nananatili sa browser mo ang resume mo"
   },
   "footer": {
-    "tagline": "Ang resume builder na pasado sa ATS na hindi kailanman nakikita ang data mo",
+    "tagline": "Ang libreng resume builder na hindi kailanman nakakakita ng data mo",
     "product": "Produkto",
     "legal": "Legal",
     "project": "Proyekto",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% lokal · Libre · Open source",
-      "titleLine1": "Resume na lumalampas sa mga robot",
-      "titleLine2": "Data na nananatili sa iyo",
-      "subtitle": "Tinutulungan ka ng LocalATSCV na gumawa ng resume na naka-optimize para sa mga applicant tracking system (ATS) at iangkop ito sa bawat trabaho sa ilang click lang. Lahat ay nangyayari sa browser mo: walang account, walang ipinapadalang data",
-      "ctaPrimary": "Gawin ang resume ko",
-      "ctaSecondary": "Suriin ang kasalukuyang resume",
+      "badge": "Libre · Walang sign-up · Walang ads",
+      "titleLine1": "Ang resume na magdadala sa iyo sa interview",
+      "titleLine2": "Handa sa loob ng ilang minuto",
+      "subtitle": "Ilagay ang iyong karanasan, pumili sa 30 template at i-download ang resume na handa nang ipadala. Tinutulungan ka rin ng LocalATSCV na iangkop ito sa bawat job posting at sinusuri kung tama ang pagbasa rito ng mga software na nagsasala ng aplikasyon",
+      "ctaPrimary": "Gawin ang resume ko nang libre",
+      "ctaSecondary": "Subukan ang kasalukuyang resume ko",
       "points": {
-        "noAccount": "Walang sign-up",
-        "offline": "Gumagana kahit offline",
-        "atsPdf": "PDF na nababasa ng ATS"
+        "templates": "30 template na mapagpipilian",
+        "letter": "Katugmang cover letter",
+        "private": "Sa iyo lang ang data mo"
       }
     },
     "ats": {
-      "eyebrow": "Ang problema",
-      "title": "Makina muna ang bumabasa ng resume mo",
-      "text": "Karamihan ng malalaking kumpanya at recruitment agency ay nagsasala ng mga aplikasyon gamit ang ATS (Applicant Tracking System). Kinukuha nito ang teksto ng resume mo, iniimbak sa database at hinahayaan ang recruiter na maghanap ng kandidato gamit ang mga keyword",
+      "eyebrow": "Alam mo ba?",
+      "title": "Bago ang recruiter, kadalasang software muna ang bumabasa ng resume mo",
+      "text": "Maraming kumpanya, ahensya sa trabaho at job site ang nagsasala ng aplikasyon gamit ang software na tinatawag na ATS. Binabasa nito ang teksto ng resume mo at itinatago sa isang database. Kapag mali ang pagbasa sa resume mo o wala rito ang mga salita mula sa job posting, baka hindi ito umabot kailanman sa recruiter",
       "pitfalls": {
         "layout": {
           "title": "Komplikadong layout",
-          "text": "Ginugulo ng mga column, table at text box ang pagkakasunod-sunod ng pagbasa: nagkakahalo-halo ang impormasyon mo"
+          "text": "Ginugulo ng mga column, table at text box ang pagkakasunod ng pagbasa: nababasa ng software ang resume mo nang magulo"
         },
         "image": {
           "title": "Tekstong hindi mabasa",
-          "text": "Nagiging kakaibang simbolo ang mga icon, skill bar at ilang export mula sa design tool, o tuluyang nawawala ang teksto"
+          "text": "Ang mga icon, dot rating at resume na gawa sa ilang design app ay nagiging hindi mabasang karakter, o tuluyang nawawala"
         },
         "keywords": {
           "title": "Kulang na keyword",
-          "text": "Kung wala sa resume mo ang mga salita sa job posting, hindi lalabas ang profile mo sa mga paghahanap ng recruiter"
+          "text": "Naghahanap ba ang recruiter ng “sales associate”, “HACCP” o “driver's license”? Kung wala ang mga salitang iyon sa resume mo, hindi lalabas ang aplikasyon mo"
         }
       },
       "seen": "Ang nakikita mo",
       "read": "Ang binabasa ng robot",
-      "fix": "Kabaligtaran ang ginagawa ng LocalATSCV: isang column, tunay na teksto at karaniwang mga heading ng seksyon na binabasa ng robot sa tamang pagkakasunod-sunod"
+      "fix": "Sa LocalATSCV, walang masamang sorpresa: nagugustuhan ng mga recruiter ang mga resume mo at nababasa ito ng software sa tamang pagkakasunod"
     },
     "how": {
       "eyebrow": "Paano ito gumagana",
-      "title": "Isulat nang minsan, iangkop nang walang hanggan",
-      "text": "Apat na hakbang para gawing aplikasyong akma sa bawat trabaho ang Master na resume mo",
+      "title": "Isang resume, iniangkop sa bawat trabaho",
+      "text": "Ilagay ang karanasan mo nang isang beses, saka gumawa ng sariling bersyon para sa bawat aplikasyon sa ilang click lang",
       "steps": {
         "profile": {
-          "title": "Punan ang Master na resume",
-          "text": "Ilagay nang minsanan ang lahat ng karanasan mo, o i-import ang PDF ng LinkedIn profile mo para makatipid ng oras"
+          "title": "Ikuwento ang iyong karanasan",
+          "text": "Ilagay ang iyong karanasan, edukasyon at kasanayan nang minsanan. May resume o LinkedIn profile ka na? I-import ito para makatipid ng oras"
         },
         "offer": {
           "title": "I-paste ang job posting",
-          "text": "Kinukuha ng LocalATSCV ang mga keyword at kinakalkula ang match score mula 100, habang nagta-type ka"
+          "text": "Hinahanap ng LocalATSCV ang mahahalagang salita sa job posting, ipinapakita kung alin ang kulang sa resume mo at binibigyan ka ng score mula 100"
         },
         "compose": {
-          "title": "Gumawa ng naka-target na bersyon",
-          "text": "Lagyan ng check ang mga angkop na karanasan at bullet, at i-drag para ayusin ang pagkakasunod-sunod. Walang nabubura sa Master"
+          "title": "Panatilihin ang mahalaga",
+          "text": "I-tsek ang mahalaga para sa posisyong ito at baguhin ang pagkakasunod sa pamamagitan ng drag and drop. Buo pa rin ang kumpletong resume mo"
         },
         "export": {
-          "title": "I-export bilang PDF",
-          "text": "PDF na may tunay at nakaayos na teksto sa isang column, madaling basahin ng robot at ng recruiter"
+          "title": "I-download at mag-apply",
+          "text": "Pumili ng template at kulay, saka i-download ang resume mo bilang PDF, handa nang ipadala o i-print"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privacy",
-      "title": "Walang data sa mga server namin. Literal",
-      "text": "Walang database na puwedeng ma-hack: ang tanging ipinapadala ng server ay ang app. Pagkatapos noon, lahat ay nangyayari sa browser mo, kahit offline",
+      "title": "Sa iyo lang ang resume mo. Totoo",
+      "text": "Walang account na kailangang gawin, walang file na ipinapadala sa internet. Isang beses lang naglo-load ang site, pagkatapos ay nangyayari ang lahat sa computer o phone mo, kahit walang internet. Walang ibang nakakakita ng resume mo kundi ikaw, kahit kami",
       "browser": {
         "title": "Ang browser mo",
         "tag": "Ang device mo",
         "items": {
-          "master": "Master na resume",
+          "cvs": "Mga resume mo",
           "photo": "Larawan sa profile",
-          "versions": "Mga naka-target na bersyon",
+          "letters": "Mga cover letter",
           "settings": "Mga kagustuhan"
         },
-        "note": "Naka-imbak sa IndexedDB, sa device na ito lang"
+        "note": "Naka-save sa browser mo, sa device na ito lang"
       },
       "flow": {
-        "app": "Ang app, sa unang pag-load",
+        "app": "Ang site, sa unang pagbisita",
         "data": "Ang data mo",
         "never": "hindi kailanman"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Ipinapadala lang ang mga file ng app (HTML, CSS, JavaScript), wala nang iba",
+        "text": "Ipinapadala ang mga pahina ng site, wala nang iba",
         "items": {
-          "noDb": "Walang database",
+          "noDb": "Walang naka-save na resume",
           "noAccount": "Walang user account",
           "noLogs": "Walang access log"
         }
@@ -152,54 +152,54 @@
           "text": "Walang sign-up, walang email, walang password. Buksan ang pahina at magsimula"
         },
         "trackers": {
-          "title": "Walang tracker",
-          "text": "Walang analytics, walang ad, walang tracking cookie. Kahit ang mga font ay naka-host sa sarili naming server"
+          "title": "Walang ads, walang tracking",
+          "text": "Walang advertisement, walang tracking cookie, walang pagbebenta ng data: wala talaga sa amin ang data mo"
         },
         "csp": {
-          "title": "Teknikal na naka-lock",
-          "text": "Ipinagbabawal ng security policy ng site (CSP) na kumonekta ang browser sa ibang domain. Open source ang code: puwede mo itong suriin mismo"
+          "title": "Puwedeng suriin ng kahit sino",
+          "text": "Naka-lock ang site para hindi ito makipag-ugnayan sa ibang serbisyo, at pampubliko ang code nito: kahit sinong eksperto ay puwedeng mag-verify"
         },
         "backup": {
-          "title": "Backup mo, file mo",
-          "text": "I-export ang lahat ng data mo sa isang JSON file at i-import ito sa kahit anong device"
+          "title": "Kopya kahit kailan mo gusto",
+          "text": "I-download ang backup ng lahat ng resume mo sa isang click at buksan ang mga ito sa ibang device"
         }
       }
     },
     "features": {
       "eyebrow": "Mga feature",
-      "title": "Lahat ng kailangan mo para maimbitahan sa interview",
+      "title": "Lahat ng kailangan para sa matagumpay na aplikasyon",
       "items": {
+        "templates": {
+          "title": "30 maayos na template",
+          "text": "Simple, moderno o makulay, may litrato man o wala. Palitan ang template o kulay sa isang click, sumusunod ang teksto mo"
+        },
+        "letter": {
+          "title": "Katugmang cover letter",
+          "text": "Isulat ang cover letter mo sa parehong estilo ng resume, para sa aplikasyong tumatatak"
+        },
         "master": {
-          "title": "Master na resume at mga naka-target na bersyon",
-          "text": "Isang kumpletong resume, at kasindami ng bersyon ng mga aplikasyon mo. Mag-check, mag-uncheck: walang nawawala"
+          "title": "Isang bersyon kada trabaho",
+          "text": "Itago ang kumpletong resume mo at gumawa ng kasindaming bersyon ng iyong mga aplikasyon. I-tsek, i-uncheck: walang nawawala"
         },
         "score": {
           "title": "Match score",
-          "text": "I-paste ang job posting: mga keyword na mayroon ka, mga kulang, at score mula 100 nang real time"
+          "text": "I-paste ang job posting: makikita mo ang mga salitang nakita, ang mga kulang at ang score mula 100, na nag-a-update agad"
         },
         "weak": {
-          "title": "Pagtukoy sa mahihinang parirala",
-          "text": "Awtomatikong namamarkahan ang “Responsable sa”, “Tumulong sa”… kasama ang listahan ng action verb na ipapalit"
+          "title": "Mga tip sa pagsulat",
+          "text": "Minamarkahan ang mga pariralang hindi nagpapakita ng galing mo, gaya ng “Responsable sa”, kasama ang mas malalakas na pandiwang ipapalit"
         },
         "analyzer": {
-          "title": "Tagasuri ng kasalukuyang resume",
-          "text": "Mag-drop ng resume na ginawa sa ibang lugar: tingnan kung ano talaga ang nababasa ng robot at kung ano ang dapat ayusin"
+          "title": "Subukan ang kasalukuyang resume mo",
+          "text": "Mag-upload ng resume na ginawa sa ibang lugar: alamin kung ano talaga ang nababasa ng screening software at ano ang dapat ayusin"
         },
-        "linkedin": {
-          "title": "Import mula sa LinkedIn",
-          "text": "Paunang punan ang Master na resume mo mula sa libreng PDF na ine-export ng LinkedIn profile mo"
+        "import": {
+          "title": "Walang kailangang i-type ulit",
+          "text": "Dalhin ang kasalukuyang resume mo (PDF o Word) o ang LinkedIn profile mo: awtomatikong naaayos ang lahat sa editor"
         },
         "languages": {
           "title": "5 wika ng resume",
           "text": "French, English, Italian, Spanish at German. Sa English, itinatago ang larawan at petsa ng kapanganakan ayon sa kaugalian sa mga bansang nagsasalita ng English"
-        },
-        "pdf": {
-          "title": "PDF export na pasado sa ATS",
-          "text": "Tunay na teksto at malinaw na istruktura: nababasa ng robot, magaan sa mata ng recruiter"
-        },
-        "offline": {
-          "title": "Puwedeng i-install at gamitin offline",
-          "text": "Idagdag ang LocalATSCV sa home screen mo at magpatuloy kahit walang koneksyon"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Ano ang ATS?",
-          "a": "Ang Applicant Tracking System ay software na ginagamit ng mga recruiter para tumanggap, magsala at maghanap ng mga aplikasyon. Ginagawa nitong teksto ang resume mo at ini-index ito: kung mali ang pagkuha ng teksto o kulang ang tamang keyword, mahirap mahanap ang profile mo"
+          "a": "Ito ang software na ginagamit ng maraming kumpanya, ahensya sa trabaho at job site para tumanggap at magsala ng aplikasyon. Ginagawa nitong teksto ang resume mo at hinahayaan ang recruiter na maghanap gamit ang keyword. Kapag mali ang pagbasa sa resume mo o kulang ito sa tamang salita, nalalaktawan ito"
         },
         "storage": {
           "q": "Saan naka-imbak ang data ko?",
-          "a": "Sa browser mo lang, sa IndexedDB, ang database na nakapaloob sa lahat ng modernong browser. Hindi ito kailanman dumadaan sa mga server namin, na tanging mga file ng app ang kayang ipadala"
+          "a": "Sa device mo lang, sa browser mo. Hindi ito kailanman dumaraan sa mga server namin: walang ibang makaka-access dito kundi ikaw"
         },
         "clear": {
           "q": "Ano ang mangyayari kung buburahin ko ang data ng browser ko?",
-          "a": "Mabubura ang mga resume mo, dahil wala silang kopya sa ibang lugar. Regular na mag-export ng JSON backup: puwede mo itong i-import muli anumang oras, sa kahit anong device"
+          "a": "Mabubura ang mga resume mo, dahil wala silang kopya sa ibang lugar. Mag-download ng backup paminsan-minsan: mabubuksan mo ito anumang oras, sa kahit anong device"
         },
         "score": {
           "q": "Garantiya ba ng score na mapipili ang resume ko?",
-          "a": "Hindi. May sariling patakaran ang bawat ATS at tao pa rin ang gumagawa ng huling desisyon. Indicator lang ang score: sinusuri nito kung ginagamit ng resume mo ang mga salita ng job posting at kung tama itong nababasa ng mga makina"
+          "a": "Hindi. May sariling tool ang bawat kumpanya at tao pa rin ang laging nagpapasya sa huli. Tinutulungan ka ng score na gamitin ang mga salita mula sa job posting at tiyaking tama ang pagbasa sa resume mo: sa ganitong paraan, lumalaki ang tsansa mo"
         },
         "photo": {
           "q": "Bakit nawawala ang larawan sa English?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Libre ba talaga ito?",
-          "a": "Oo. Ang LocalATSCV ay open-source na proyekto sa ilalim ng MIT License, walang ad at walang subscription. Halos walang gastos ang hosting dahil ang browser mo ang gumagawa ng lahat ng trabaho"
+          "a": "Oo, buong-buo: walang subscription, walang ads, walang watermark sa mga PDF mo. Ang LocalATSCV ay isang open source na proyekto (pampubliko ang code) na halos walang gastos patakbuhin, dahil nangyayari ang lahat sa device mo"
         },
         "templates": {
-          "q": "Pasado ba sa ATS ang mga graphic template?",
-          "a": "Oo. Bawat template ay nagpi-print ng tunay na teksto sa pagkakasunod-sunod ng pagbasa, na may karaniwang mga heading ng seksyon: ang mga hugis, bar at icon ay mga drawing na hindi pinapansin ng robot. Ang mga template na may isang column pa rin ang pinakaligtas, at sinusubok ng ATS check ng editor ang layout mo nang real time"
+          "q": "Nakakalusot ba sa screening software ang makukulay na template?",
+          "a": "Oo. Lahat ng template ay may tunay na teksto sa tamang pagkakasunod, na may karaniwang heading gaya ng “Karanasan” o “Edukasyon”. Ang mga hugis, kulay at icon ay palamuti lang na hindi pinapansin ng software. Ang mga template na may isang column pa rin ang pinakaligtas, at sinusuri ng editor ang layout mo nang live"
         },
         "import": {
           "q": "Puwede ko bang gamitin muli ang kasalukuyang resume ko o ang LinkedIn profile ko?",
-          "a": "Oo. Mag-import ng PDF o Word (.docx) na resume, ng PDF ng LinkedIn profile mo (sa computer) o ng LinkedIn data archive mo (mula sa mobile app): binabasa ang nilalaman sa browser mo at inaayos sa editor"
+          "a": "Oo. I-import ang resume mo bilang PDF o Word, o ang LinkedIn profile mo: binabasa ang nilalaman sa device mo at awtomatikong inaayos sa editor. Ang natitira na lang ay basahin ito ulit at pumili ng template"
         },
         "offline": {
-          "q": "Gumagana ba ang LocalATSCV nang offline?",
-          "a": "Oo. Isa itong web app na puwedeng i-install: pagkatapos ng unang pagbisita, gumagana ang lahat nang walang koneksyon, kasama ang PDF export"
+          "q": "Gumagana ba ito kahit walang internet?",
+          "a": "Oo. Pagkatapos ng unang pagbisita, puwede mong i-edit at i-download ang mga resume mo kahit walang internet. Puwede mo pang idagdag ang LocalATSCV sa home screen ng phone o computer mo, parang app"
         }
       }
     },
     "cta": {
-      "title": "Handa ka na bang lampasan ang mga filter?",
-      "text": "Gawin ang Master na resume mo sa loob ng ilang minuto. Walang umaalis sa device na ito",
+      "title": "Dito nagsisimula ang susunod mong interview",
+      "text": "Gawin ang resume mo nang libre sa ilang minuto, walang sign-up. Walang lumalabas sa device mo",
       "button": "Magsimula"
     },
     "demo": {
-      "role": "Front-end developer",
+      "role": "Panadera at pastry cook",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Karanasan",
-      "jobTitle": "Angular developer",
-      "jobMeta": "Halimbawang Kumpanya · 2022 – kasalukuyan",
+      "jobTitle": "Panadera",
+      "jobMeta": "Halimbawang Panaderya · 2021 – kasalukuyan",
       "bullets": {
-        "migration": "Inilipat ang 40 screen sa <k>Angular</k> at <k>TypeScript</k>, at nabawasan nang 35% ang loading time",
-        "testing": "<w>Responsable sa</w> end-to-end na estratehiya sa testing",
-        "delivery": "Tuloy-tuloy na deployment gamit ang <k>GitLab CI</k> para sa 3 product team"
+        "production": "Gumawa ng 300 <k>pastry</k> at tinapay na <k>sourdough</k> tuwing umaga, tumaas ng 18% ang benta",
+        "opening": "<w>Responsable sa</w> pagbubukas ng tindahan at pag-aayos ng display",
+        "hygiene": "Sinunod ang mga patakaran sa kalinisan ng <k>HACCP</k> at nagsanay ng 2 apprentice"
       },
       "weakLabel": "Mahinang parirala",
       "weakReplacement": "“Pinamunuan”",
       "skills": "Mga kasanayan",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Accessibility",
+      "skillList": "Pastry · Sourdough na tinapay · Cake · HACCP · Pagbebenta sa tindahan",
+      "keywords": {
+        "pastry": "Pastry",
+        "sourdough": "Sourdough",
+        "hygiene": "HACCP",
+        "license": "Lisensya sa pagmamaneho"
+      },
       "score": "Pagtutugma sa job posting",
-      "sent": "0 byte ang naipadala",
-      "robot": "MGA KASANAYAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end developer Angular <n>●●●●○</n> KARANASAN <n>� camille.mar</n> Angular developer <n>tin@example.com</n> 2022 – kasalukuyan TypeScript <n>●●●○○</n> Halimbawang Kumpanya MGA WIKA English Inilipat ang 40 screen sa…"
+      "sent": "Walang ipinapadala",
+      "robot": "MGA KASANAYAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Panadera at pastry cook Pastry <n>●●●●○</n> KARANASAN <n>� camille.mar</n> Panadera <n>tin@example.com</n> 2021 – kasalukuyan Cake <n>●●●○○</n> Halimbawang Panaderya MGA WIKA English Gumawa ng 300 pastry…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Tagasuri",
-    "title": "Lumalampas ba sa mga robot ang resume mo?",
-    "subtitle": "Mag-drop ng PDF na resume na ginawa sa kahit anong tool: binabasa ito ng LocalATSCV gaya ng ATS at sinasabi sa iyo kung ano ang dapat ayusin",
+    "eyebrow": "Libreng resume check",
+    "title": "Nakakalusot ba ang resume mo sa pagsasala ng mga recruiter?",
+    "subtitle": "I-upload ang resume mo bilang PDF, gawa man ito sa Word, Canva o ibang tool: binabasa ito ng LocalATSCV gaya ng recruiting software at sinasabi sa iyo sa loob ng ilang segundo kung ano ang aayusin",
     "drop": "I-drop dito ang resume mo",
     "dropActive": "Bitawan ang file para simulan ang pagsusuri",
     "hint": "PDF lang, hanggang 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Ang teksto sa pagkakasunod-sunod kung paano ito nakasulat sa file: ganito ito binabasa ng mga ATS na hindi bumubuo muli ng layout. Dapat itong sumunod sa pagkakasunod-sunod ng pagbasa ng resume mo"
     },
     "cta": {
-      "title": "Magsimulang muli sa matibay na pundasyon",
-      "text": "Gumawa ng resume na pasado sa ATS sa editor, at iangkop ito sa bawat trabaho",
+      "title": "Lumipat sa walang kapintasang resume",
+      "text": "Pumili ng isa sa aming 30 template, na tama ang pagbasa ng screening software, at iangkop ito sa bawat job posting",
       "button": "Buksan ang editor",
       "import": "Ilipat ang resume na ito sa mga template namin"
     },

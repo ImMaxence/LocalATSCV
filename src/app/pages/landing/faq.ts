@@ -3,13 +3,13 @@
  * données structurées FAQPage (voir TranslatedTitleStrategy) : elles doivent refléter la page.
  */
 export const FAQ_ITEMS = [
+  'free',
   'ats',
   'templates',
-  'storage',
   'import',
-  'score',
+  'storage',
   'clear',
+  'score',
   'photo',
   'offline',
-  'free',
 ] as const;

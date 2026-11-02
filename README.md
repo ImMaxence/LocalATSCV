@@ -1,6 +1,8 @@
 # LocalATSCV
 
-Générateur de CV optimisé pour les ATS (logiciels de recrutement), **100 % local** : aucune donnée ne quitte le navigateur de l'utilisateur.
+**Le CV qui décroche l'entretien, prêt en quelques minutes.** Générateur de CV gratuit, sans inscription et sans publicité : 30 modèles, lettre de motivation assortie, adaptation à chaque offre d'emploi et vérification que le CV est bien lu par les logiciels qui trient les candidatures (ATS).
+
+**100 % local** : tout se passe dans le navigateur, aucune donnée n'est envoyée sur un serveur.
 
 🌐 [localatscv.mbonnici.fr](https://localatscv.mbonnici.fr)
 
@@ -34,7 +36,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 
 ## Fonctionnalités
 
-- [x] Landing page, thème clair/sombre, interface en 44 langues (dont 4 de droite à gauche), une URL par langue avec hreflang et sitemap
+- [x] Page d'accueil grand public, sans jargon (CV d'exemple de boulangère adapté à chaque pays), thème clair/sombre, interface en 44 langues (dont 4 de droite à gauche), une URL par langue avec hreflang et sitemap
 - [x] Master CV stocké dans IndexedDB, photo comprise, enregistrement automatique
 - [x] Sauvegarde et restauration au format JSON
 - [x] Éditeur avec aperçu A4 en direct, repères de sauts de page
@@ -66,7 +68,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 
 - Angular 22 (standalone, signals, zoneless), build statique : les pages publiques sont pré-générées au build (SSG), l'éditeur est rendu dans le navigateur, aucun serveur applicatif
 - Tailwind CSS 4, polices auto-hébergées via Fontsource (Inter, Fraunces, Poppins, Montserrat…)
-- Transloco pour la traduction de l'interface (FR, EN, IT, ES, DE)
+- Transloco pour la traduction de l'interface (44 langues)
 - Angular CDK (menus accessibles, puis glisser-déposer)
 - Dexie (IndexedDB) pour le stockage local
 - pdf.js pour lire les PDF (chargé uniquement à la demande), fflate pour l'archive LinkedIn, uqr pour les QR codes
@@ -78,7 +80,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 ```bash
 npm install
 npm start          # http://localhost:4200
-npm run test:ci    # tests unitaires (dont la cohérence des 5 fichiers de traduction)
+npm run test:ci    # tests unitaires (dont la cohérence des 44 fichiers de traduction)
 npm run build      # build de production (pages publiques pré-générées) dans dist/localatscv/browser
 ```
 

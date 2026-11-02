@@ -4,7 +4,7 @@
     "main": "Peamenüü",
     "how": "Kuidas see töötab",
     "privacy": "Privaatsus",
-    "analyze": "Analüüsi CV-d",
+    "analyze": "Testi oma CV-d",
     "editor": "Loo oma CV",
     "skipToContent": "Liigu sisu juurde"
   },
@@ -22,7 +22,7 @@
     "noResult": "Keelt ei leitud"
   },
   "pages": {
-    "home": "ATS-sõbralikud CV-d, 100% kohalikult",
+    "home": "Tasuta ATS-sõbralik CV, ilma registreerumata",
     "editor": "Redaktor",
     "analyze": "CV analüsaator",
     "changelog": "Uudised",
@@ -31,7 +31,7 @@
     "privacy": "Privaatsuspoliitika"
   },
   "seo": {
-    "home": "Tasuta ATS-sõbralik CV koostaja: 30 graafilist malli, sobiv kaaskiri, kohandamine iga töökuulutuse jaoks ja ATS-skoor. Avatud lähtekood, sinu andmed jäävad brauserisse",
+    "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 30 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
     "editor": "CV redaktor reaalajas eelvaate, Master-CV ja sihitud versioonide, ATS-kontrolli ja päris tekstiga PDF-ekspordiga. Kõik jääb sinu brauserisse",
     "analyze": "Analüüsi PDF-vormingus CV-d tasuta: ATS-skoor 100-st, parandamist vajavad kohad ja tekst nii, nagu värbamissüsteem seda loeb. Fail ei lahku kunagi sinu brauserist",
     "changelog": "LocalATSCV uudised versioonide kaupa: uued CV mallid, funktsioonid ja parandused",
@@ -40,7 +40,7 @@
     "privacy": "LocalATSCV privaatsuspoliitika: andmeid ei koguta, sinu CV-d jäävad brauserisse"
   },
   "footer": {
-    "tagline": "ATS-sõbralik CV koostaja, mis ei näe kunagi sinu andmeid",
+    "tagline": "Tasuta CV koostaja, mis ei näe kunagi sinu andmeid",
     "product": "Toode",
     "legal": "Õiguslik",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% kohalik · Tasuta · Avatud lähtekood",
-      "titleLine1": "CV, mis pääseb robotitest läbi",
-      "titleLine2": "Andmed, mis jäävad sinu juurde",
-      "subtitle": "LocalATSCV aitab sul luua värbamissüsteemide (ATS) jaoks optimeeritud CV ja kohandada seda paari klikiga iga töökoha jaoks. Kõik toimub sinu brauseris: kontot pole vaja ja andmeid ei saadeta kuhugi",
-      "ctaPrimary": "Loo oma CV",
-      "ctaSecondary": "Analüüsi olemasolevat CV-d",
+      "badge": "Tasuta · Ilma registreerumata · Ilma reklaamita",
+      "titleLine1": "CV, mis toob sulle tööintervjuu",
+      "titleLine2": "Valmis mõne minutiga",
+      "subtitle": "Täida oma taust, vali 30 mallist sobiv ja laadi alla saatmiseks valmis CV. LocalATSCV aitab sul seda ka iga kuulutuse jaoks kohandada ja kontrollib, et kandideerimisi sorteerivad programmid loeksid seda õigesti",
+      "ctaPrimary": "Loo oma CV tasuta",
+      "ctaSecondary": "Testi oma praegust CV-d",
       "points": {
-        "noAccount": "Registreerumata",
-        "offline": "Töötab võrguta",
-        "atsPdf": "ATS-ile loetav PDF"
+        "templates": "30 malli valikus",
+        "letter": "Sobiv kaaskiri",
+        "private": "Sinu andmed jäävad sinu juurde"
       }
     },
     "ats": {
-      "eyebrow": "Probleem",
-      "title": "Sinu CV-d loeb kõigepealt masin",
-      "text": "Enamik suurettevõtteid ja värbamisagentuure sorteerib kandideerimisi ATS-iga (Applicant Tracking System). See võtab sinu CV-st teksti, salvestab selle andmebaasi ja laseb värbajatel kandidaate märksõnade järgi otsida",
+      "eyebrow": "Kas teadsid?",
+      "title": "Enne värbajat loeb sinu CV-d sageli programm",
+      "text": "Paljud ettevõtted, renditööfirmad ja tööportaalid sorteerivad kandideerimisi programmiga, mida nimetatakse ATS-iks. See loeb sinu CV teksti ja salvestab selle andmebaasi. Kui sinu CV-d loetakse valesti või sellest puuduvad kuulutuse sõnad, ei pruugi see kunagi värbajani jõuda",
       "pitfalls": {
         "layout": {
           "title": "Keeruline paigutus",
-          "text": "Veerud, tabelid ja tekstikastid ajavad lugemisjärjekorra sassi: sinu andmed tulevad välja segamini"
+          "text": "Veerud, tabelid ja tekstikastid ajavad lugemisjärjekorra sassi: programm loeb sinu CV-d segamini"
         },
         "image": {
           "title": "Loetamatu tekst",
-          "text": "Ikoonid, oskuste ribad ja mõned disainitööriistade ekspordid muutuvad arusaamatuteks märkideks või kaovad üldse"
+          "text": "Ikoonid, täpiskaalad ja mõne disainirakendusega tehtud CV-d muutuvad loetamatuteks märkideks või kaovad täielikult"
         },
         "keywords": {
           "title": "Puuduvad märksõnad",
-          "text": "Kui kuulutuse sõnavara sinu CV-s ei esine, ei ilmu sinu profiil värbajate otsingutesse"
+          "text": "Kas värbaja otsib sõnu „müüja”, „HACCP” või „B-kategooria juhiluba”? Kui neid sõnu sinu CV-s pole, ei tule sinu kandideerimine esile"
         }
       },
       "seen": "Mida sina näed",
       "read": "Mida robot loeb",
-      "fix": "LocalATSCV teeb vastupidi: üks veerg, päris tekst ja standardsed jaotiste pealkirjad, mida robotid õiges järjekorras loevad"
+      "fix": "LocalATSCV-ga pole ebameeldivaid üllatusi: sinu CV-d meeldivad värbajatele ja programmid loevad neid õiges järjekorras"
     },
     "how": {
       "eyebrow": "Kuidas see töötab",
-      "title": "Kirjuta üks kord, kohanda lõputult",
-      "text": "Neli sammu, et muuta oma Master-CV iga töökoha jaoks rätsepatööna valminud kandideerimiseks",
+      "title": "Üks CV, kohandatud iga töökoha jaoks",
+      "text": "Täida oma taust üks kord ja loo mõne klikiga iga kandideerimise jaoks eraldi versioon",
       "steps": {
         "profile": {
-          "title": "Täida oma Master-CV",
-          "text": "Sisesta kogu oma kogemus ühe korraga või impordi aja säästmiseks oma LinkedIni profiili PDF"
+          "title": "Räägi oma loost",
+          "text": "Sisesta oma töökogemus, haridus ja oskused ühe korraga. Sul on juba CV või LinkedIni profiil? Impordi see ja säästa aega"
         },
         "offer": {
           "title": "Kleebi töökuulutus",
-          "text": "LocalATSCV võtab välja märksõnad ja arvutab vastavusskoori 100-st, mis uueneb kirjutamise ajal"
+          "text": "LocalATSCV leiab kuulutuse olulised sõnad, näitab, millised sinu CV-st puuduvad, ja annab sulle skoori 100-st"
         },
         "compose": {
-          "title": "Koosta sihitud versioon",
-          "text": "Märgi asjakohased kogemused ja punktid ning muuda nende järjekorda lohistades. Sinu Masterist ei kustutata midagi"
+          "title": "Jäta alles oluline",
+          "text": "Märgi, mis selle ametikoha jaoks loeb, ja muuda järjekorda lohistades. Sinu täielik CV jääb puutumata"
         },
         "export": {
-          "title": "Ekspordi PDF-i",
-          "text": "Päris tekstiga, struktureeritud ja ühe veeruga PDF, mis on robotitele sama loetav kui värbajatele"
+          "title": "Laadi alla ja kandideeri",
+          "text": "Vali mall ja värv ning laadi oma CV alla PDF-ina, saatmiseks või printimiseks valmis"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privaatsus",
-      "title": "Meie serverites null andmeid. Sõna otseses mõttes",
-      "text": "Pole andmebaasi, mida häkkida: meie server saadab sulle ainult rakenduse. Seejärel toimub kõik sinu brauseris, isegi võrguta",
+      "title": "Sinu CV jääb sinu juurde. Päriselt",
+      "text": "Pole kontot, mida luua, ega faile, mida internetti saata. Sait laaditakse üks kord, siis toimub kõik sinu arvutis või telefonis, isegi ilma internetita. Keegi peale sinu ei näe sinu CV-d, isegi mitte meie",
       "browser": {
         "title": "Sinu brauser",
         "tag": "Sinu seade",
         "items": {
-          "master": "Master-CV",
+          "cvs": "Sinu CV-d",
           "photo": "Profiilifoto",
-          "versions": "Sihitud versioonid",
+          "letters": "Kaaskirjad",
           "settings": "Eelistused"
         },
-        "note": "Salvestatud IndexedDB-sse, ainult selles seadmes"
+        "note": "Salvestatud sinu brauserisse, ainult selles seadmes"
       },
       "flow": {
-        "app": "Rakendus, esimesel laadimisel",
+        "app": "Sait, esimesel külastusel",
         "data": "Sinu andmed",
         "never": "mitte kunagi"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Edastab rakenduse faile (HTML, CSS, JavaScript), ei midagi muud",
+        "text": "Saadab saidi lehed, mitte midagi enamat",
         "items": {
-          "noDb": "Andmebaasi pole",
+          "noDb": "Ühtegi CV-d ei salvestata",
           "noAccount": "Kasutajakontosid pole",
           "noLogs": "Külastuslogisid pole"
         }
@@ -152,54 +152,54 @@
           "text": "Ei registreerumist, e-posti ega parooli. Ava leht ja alusta"
         },
         "trackers": {
-          "title": "Jälgijaid pole",
-          "text": "Ei statistikat, reklaame ega jälgimisküpsiseid. Isegi fondid on meie enda serveris"
+          "title": "Ei reklaame ega jälgimist",
+          "text": "Ei reklaame, ei jälgimisküpsiseid, ei edasimüüki: meil lihtsalt pole sinu andmeid"
         },
         "csp": {
-          "title": "Tehniliselt lukustatud",
-          "text": "Saidi turvapoliitika (CSP) keelab brauseril ühendust võtta ühegi teise domeeniga. Kood on avatud: kontrolli ise"
+          "title": "Igaüks saab kontrollida",
+          "text": "Sait on lukustatud nii, et see ei saa suhelda ühegi teise teenusega, ja selle kood on avalik: iga ekspert saab seda kontrollida"
         },
         "backup": {
-          "title": "Sinu varukoopiad, sinu failid",
-          "text": "Ekspordi kõik oma andmed JSON-faili ja impordi need uuesti mis tahes seadmes"
+          "title": "Koopia, millal iganes soovid",
+          "text": "Laadi ühe klikiga alla kõigi oma CV-de varukoopia ja ava need teises seadmes"
         }
       }
     },
     "features": {
       "eyebrow": "Funktsioonid",
-      "title": "Kõik, mida vajad tööintervjuule jõudmiseks",
+      "title": "Kõik eduka kandideerimise jaoks",
       "items": {
+        "templates": {
+          "title": "30 viimistletud malli",
+          "text": "Lihtsad, moodsad või värvikad, fotoga või ilma. Vaheta malli või värvi ühe klikiga, sinu tekst liigub kaasa"
+        },
+        "letter": {
+          "title": "Sobiv kaaskiri",
+          "text": "Kirjuta kaaskiri CV-ga samas stiilis, et kandideerimine jätaks viimistletud mulje"
+        },
         "master": {
-          "title": "Master-CV ja sihitud versioonid",
-          "text": "Üks täielik CV ja nii palju variante kui kandideerimisi. Märgi, eemalda märge: midagi ei lähe kaduma"
+          "title": "Üks versioon iga töökoha jaoks",
+          "text": "Hoia alles oma täielik CV ja loo nii palju versioone, kui sul on kandideerimisi. Märgi, eemalda märge: midagi ei lähe kaduma"
         },
         "score": {
           "title": "Vastavusskoor",
-          "text": "Kleebi kuulutus: leitud ja puuduvad märksõnad ning skoor 100-st reaalajas"
+          "text": "Kleebi kuulutus: näed leitud ja puuduvaid sõnu ning skoori 100-st, mis uueneb reaalajas"
         },
         "weak": {
-          "title": "Nõrkade sõnastuste tuvastamine",
-          "text": "„Vastutasin”, „aitasin kaasa”… märgitakse automaatselt ja nende asendamiseks on tegusõnade pank"
+          "title": "Kirjutamisnõuanded",
+          "text": "Sõnastused, mis sind alahindavad, nagu „Vastutasin”, märgitakse ära ja nende asemele pakutakse jõulisemaid tegusõnu"
         },
         "analyzer": {
-          "title": "Olemasolevate CV-de analüsaator",
-          "text": "Lohista mujal tehtud CV: vaata, mida robot tegelikult loeb ja mida parandada"
+          "title": "Testi oma praegust CV-d",
+          "text": "Laadi üles mujal tehtud CV: vaata, mida värbamisprogrammid sellest tegelikult loevad ja mida parandada"
         },
-        "linkedin": {
-          "title": "Import LinkedInist",
-          "text": "Täida oma Master-CV eelnevalt tasuta PDF-iga, mille saad oma LinkedIni profiilist eksportida"
+        "import": {
+          "title": "Midagi pole vaja ümber trükkida",
+          "text": "Too sisse oma praegune CV (PDF või Word) või LinkedIni profiil: kõik paigutatakse redaktoris automaatselt õigesse kohta"
         },
         "languages": {
           "title": "5 CV keelt",
           "text": "Prantsuse, inglise, itaalia, hispaania ja saksa keel. Ingliskeelses CV-s peidetakse foto ja sünniaeg vastavalt ingliskeelsete riikide tavadele"
-        },
-        "pdf": {
-          "title": "ATS-sõbralik PDF-eksport",
-          "text": "Päris tekst ja selge struktuur: robotitele loetav, värbajatele meeldiv"
-        },
-        "offline": {
-          "title": "Paigaldatav ja võrguta",
-          "text": "Lisa LocalATSCV avakuvale ja jätka tööd ilma ühenduseta"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Mis on ATS?",
-          "a": "Applicant Tracking System on tarkvara, millega värbajad kandideerimisi vastu võtavad, sorteerivad ja otsivad. See teisendab sinu CV tekstiks ja indekseerib selle: kui tekst on halvasti välja võetud või õiged märksõnad puuduvad, on sinu kandideerimist raske leida"
+          "a": "See on programm, millega paljud ettevõtted, renditööfirmad ja tööportaalid kandideerimisi vastu võtavad ja sorteerivad. See muudab sinu CV tekstiks ja laseb värbajal otsida märksõnade järgi. Kui sinu CV-d loetakse valesti või sellest puuduvad õiged sõnad, jääb see kõrvale"
         },
         "storage": {
           "q": "Kus mu andmeid hoitakse?",
-          "a": "Ainult sinu brauseris, IndexedDB-s, andmebaasis, mis on olemas igas tänapäevases brauseris. Need ei lähe kunagi läbi meie serverite, mis oskavad ainult rakenduse faile edastada"
+          "a": "Ainult sinu seadmes, sinu brauseris. Need ei liigu kunagi läbi meie serverite: keegi peale sinu ei pääse neile ligi"
         },
         "clear": {
           "q": "Mis juhtub, kui kustutan brauseri andmed?",
-          "a": "Sinu CV-d kustutatakse, sest neid pole kusagil mujal. Ekspordi regulaarselt JSON-varukoopia: saad selle igal ajal ja mis tahes seadmes uuesti importida"
+          "a": "Sinu CV-d kustutatakse, sest neid pole kusagil mujal. Laadi aeg-ajalt alla varukoopia: saad selle igal ajal avada, mis tahes seadmes"
         },
         "score": {
           "q": "Kas skoor tagab, et mu CV valitakse välja?",
-          "a": "Ei. Igal ATS-il on oma reeglid ja lõpliku otsuse teeb inimene. Skoor on näitaja: see kontrollib, et sinu CV kasutab kuulutuse sõnavara ja et masin suudab seda õigesti lugeda"
+          "a": "Ei. Igal ettevõttel on oma tööriistad ja lõpliku otsuse teeb alati inimene. Skoor aitab sul kasutada kuulutuse sõnu ja kontrollida, et sinu CV-d loetakse õigesti: nii suurendad oma võimalusi"
         },
         "photo": {
           "q": "Miks foto inglise keeles kaob?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Kas see on tõesti tasuta?",
-          "a": "Jah. LocalATSCV on MIT-litsentsiga avatud lähtekoodiga projekt, ilma reklaamide ja tellimuseta. Selle majutamine ei maksa peaaegu midagi, sest kogu töö teeb sinu brauser"
+          "a": "Jah, täiesti: ei tellimust, ei reklaame ega vesimärki sinu PDF-idel. LocalATSCV on avatud lähtekoodiga projekt (kood on avalik), mille ülalpidamine ei maksa peaaegu midagi, sest kõik toimub sinu seadmes"
         },
         "templates": {
-          "q": "Kas graafilised mallid läbivad ATS-i?",
-          "a": "Jah. Iga mall prindib päris teksti lugemisjärjekorras ja standardsete jaotiste pealkirjadega: kujundid, ribad ja ikoonid on joonised, mida robotid eiravad. Ühe veeruga mallid on endiselt kõige kindlamad ja redaktori ATS-kontroll testib sinu paigutust reaalajas"
+          "q": "Kas värvikad mallid läbivad värbamisprogrammid?",
+          "a": "Jah. Kõik mallid sisaldavad päris teksti õiges järjekorras ja tavapäraseid pealkirju nagu „Töökogemus” või „Haridus”. Kujundid, värvid ja ikoonid on vaid kaunistused, mida programmid eiravad. Ühe veeruga mallid on endiselt kõige kindlamad ja redaktor kontrollib sinu paigutust reaalajas"
         },
         "import": {
           "q": "Kas saan kasutada oma praegust CV-d või LinkedIni profiili?",
-          "a": "Jah. Impordi PDF- või Word-vormingus (.docx) CV, oma LinkedIni profiili PDF (arvutis) või LinkedIni andmearhiiv (mobiilirakendusest): sisu loetakse sinu brauseris ja jaotatakse redaktorisse"
+          "a": "Jah. Impordi oma CV PDF- või Word-failina või oma LinkedIni profiil: sisu loetakse sinu seadmes ja paigutatakse redaktoris automaatselt. Jääb vaid üle läbi lugeda ja mall valida"
         },
         "offline": {
-          "q": "Kas LocalATSCV töötab võrguta?",
-          "a": "Jah. See on paigaldatav veebirakendus: pärast esimest külastust töötab kõik ilma ühenduseta, ka PDF-eksport"
+          "q": "Kas see töötab ilma internetita?",
+          "a": "Jah. Pärast esimest külastust saad oma CV-sid muuta ja alla laadida ilma internetita. Võid LocalATSCV isegi lisada oma telefoni või arvuti avakuvale nagu rakenduse"
         }
       }
     },
     "cta": {
-      "title": "Valmis filtrist läbi minema?",
-      "text": "Loo oma Master-CV mõne minutiga. Midagi ei lahku sellest seadmest",
+      "title": "Sinu järgmine tööintervjuu algab siit",
+      "text": "Loo oma CV tasuta mõne minutiga, ilma registreerumata. Midagi ei lahku sinu seadmest",
       "button": "Alusta"
     },
     "demo": {
-      "role": "Front-end-arendaja",
+      "role": "Pagar-kondiiter",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Töökogemus",
-      "jobTitle": "Angulari arendaja",
-      "jobMeta": "Näidis OÜ · 2022 – praegu",
+      "jobTitle": "Pagar",
+      "jobMeta": "Näidis Pagariäri · 2021 – praegu",
       "bullets": {
-        "migration": "40 vaate üleviimine <k>Angular</k>ile ja <k>TypeScript</k>ile, laadimisaeg lühenes 35%",
-        "testing": "<w>Vastutasin</w> otsast lõpuni testimise strateegia eest",
-        "delivery": "Pidev tarnimine <k>GitLab CI</k> abil 3 tootemeeskonnale"
+        "production": "Küpsetasin igal hommikul 300 <k>saiakest</k> ja <k>juuretisega</k> leiba, müük kasvas 18%",
+        "opening": "<w>Vastutasin</w> poe avamise ja vaateakna eest",
+        "hygiene": "Järgisin <k>HACCP</k> hügieeninõudeid ja juhendasin 2 õpipoissi"
       },
       "weakLabel": "Nõrk sõnastus",
       "weakReplacement": "„Juhtisin”",
       "skills": "Oskused",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Ligipääsetavus",
+      "skillList": "Saiakesed · Juuretisega leib · Kondiitritooted · HACCP · Müük poes",
+      "keywords": {
+        "pastry": "Saiakesed",
+        "sourdough": "Juuretis",
+        "hygiene": "HACCP",
+        "license": "Juhiluba B"
+      },
       "score": "Vastavus kuulutusele",
-      "sent": "0 baiti saadetud",
-      "robot": "OSKUSED CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end-arendaja Angular <n>●●●●○</n> TÖÖKOGEMUS <n>� camille.mar</n> Angulari arendaja <n>tin@example.com</n> 2022 – praegu TypeScript <n>●●●○○</n> Näidis OÜ KEELED Inglise 40 vaate üleviimine…"
+      "sent": "Midagi ei saadeta",
+      "robot": "OSKUSED CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pagar-kondiiter Saiakesed <n>●●●●○</n> TÖÖKOGEMUS <n>� camille.mar</n> Pagar <n>tin@example.com</n> 2021 – praegu Kondiitritooted <n>●●●○○</n> Näidis Pagariäri KEELED Inglise Küpsetasin igal hommikul…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analüsaator",
-    "title": "Kas sinu CV pääseb robotitest läbi?",
-    "subtitle": "Lohista mis tahes tööriistaga tehtud PDF-vormingus CV: LocalATSCV loeb seda nagu ATS ja ütleb, mida parandada",
+    "eyebrow": "Tasuta CV test",
+    "title": "Kas sinu CV läbib värbajate sõela?",
+    "subtitle": "Laadi üles oma CV PDF-ina, olgu see tehtud Wordis, Canvas või mõnes muus tööriistas: LocalATSCV loeb seda nagu värbamisprogrammid ja ütleb sekunditega, mida parandada",
     "drop": "Lohista oma CV siia",
     "dropActive": "Lase fail lahti, et analüüs alustada",
     "hint": "Ainult PDF, kuni 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Tekst selles järjekorras, nagu see failis kirjas on: nii loevad seda ATS-id, mis paigutust ei taasta. See peaks järgima sinu CV lugemisjärjekorda"
     },
     "cta": {
-      "title": "Alusta puhtalt lehelt",
-      "text": "Loo redaktoris ATS-sõbralik CV ja kohanda seda seejärel iga töökoha jaoks",
+      "title": "Vali veatu CV",
+      "text": "Vali üks meie 30 mallist, mida värbamisprogrammid õigesti loevad, ja kohanda see iga kuulutuse jaoks",
       "button": "Ava redaktor",
       "import": "Too see CV meie mallidesse"
     },

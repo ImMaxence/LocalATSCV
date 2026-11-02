@@ -4,7 +4,7 @@
     "main": "Điều hướng chính",
     "how": "Cách hoạt động",
     "privacy": "Quyền riêng tư",
-    "analyze": "Phân tích CV",
+    "analyze": "Kiểm tra CV",
     "editor": "Tạo CV của tôi",
     "skipToContent": "Chuyển đến nội dung"
   },
@@ -22,7 +22,7 @@
     "noResult": "Không tìm thấy ngôn ngữ nào"
   },
   "pages": {
-    "home": "CV thân thiện với ATS, 100% cục bộ",
+    "home": "CV miễn phí chuẩn ATS, không cần đăng ký",
     "editor": "Trình soạn thảo",
     "analyze": "Trình phân tích CV",
     "changelog": "Có gì mới",
@@ -31,7 +31,7 @@
     "privacy": "Chính sách quyền riêng tư"
   },
   "seo": {
-    "home": "Công cụ tạo CV miễn phí, thân thiện với ATS: 30 mẫu đồ họa, thư xin việc đồng bộ, tùy chỉnh theo từng tin tuyển dụng và điểm ATS. Mã nguồn mở, dữ liệu của bạn luôn ở trong trình duyệt",
+    "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 30 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
     "editor": "Trình soạn CV với xem trước trực tiếp, CV Master và các phiên bản nhắm mục tiêu, kiểm tra ATS và xuất PDF bằng văn bản thật. Mọi thứ đều ở trong trình duyệt của bạn",
     "analyze": "Phân tích CV PDF miễn phí: điểm ATS trên thang 100, các điểm cần sửa và văn bản đúng như hệ thống tuyển dụng đọc được. Tệp không bao giờ rời khỏi trình duyệt của bạn",
     "changelog": "Có gì mới trong LocalATSCV qua từng phiên bản: mẫu CV mới, tính năng và bản sửa lỗi",
@@ -40,7 +40,7 @@
     "privacy": "Chính sách quyền riêng tư của LocalATSCV: không thu thập dữ liệu nào, CV của bạn ở lại trong trình duyệt"
   },
   "footer": {
-    "tagline": "Công cụ tạo CV thân thiện với ATS không bao giờ nhìn thấy dữ liệu của bạn",
+    "tagline": "Công cụ tạo CV miễn phí không bao giờ nhìn thấy dữ liệu của bạn",
     "product": "Sản phẩm",
     "legal": "Pháp lý",
     "project": "Dự án",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% cục bộ · Miễn phí · Mã nguồn mở",
-      "titleLine1": "CV vượt qua vòng lọc của robot",
-      "titleLine2": "Dữ liệu luôn ở bên bạn",
-      "subtitle": "LocalATSCV giúp bạn tạo CV được tối ưu cho hệ thống quản lý ứng viên (ATS) và điều chỉnh cho từng vị trí chỉ với vài cú nhấp. Mọi thứ diễn ra trong trình duyệt: không cần tài khoản, không gửi đi bất kỳ dữ liệu nào",
-      "ctaPrimary": "Tạo CV của tôi",
-      "ctaSecondary": "Phân tích CV có sẵn",
+      "badge": "Miễn phí · Không cần đăng ký · Không quảng cáo",
+      "titleLine1": "CV giúp bạn có buổi phỏng vấn",
+      "titleLine2": "Xong chỉ trong vài phút",
+      "subtitle": "Điền quá trình làm việc, chọn một trong 30 mẫu và tải về CV sẵn sàng gửi đi. LocalATSCV còn giúp bạn điều chỉnh CV cho từng tin tuyển dụng và kiểm tra xem phần mềm lọc hồ sơ có đọc đúng không",
+      "ctaPrimary": "Tạo CV miễn phí",
+      "ctaSecondary": "Kiểm tra CV hiện tại",
       "points": {
-        "noAccount": "Không cần đăng ký",
-        "offline": "Dùng được khi ngoại tuyến",
-        "atsPdf": "PDF mà ATS đọc được"
+        "templates": "30 mẫu để lựa chọn",
+        "letter": "Thư xin việc đồng bộ",
+        "private": "Dữ liệu ở lại với bạn"
       }
     },
     "ats": {
-      "eyebrow": "Vấn đề",
-      "title": "CV của bạn được máy đọc trước tiên",
-      "text": "Hầu hết các công ty lớn và đơn vị tuyển dụng đều sàng lọc hồ sơ bằng ATS (Applicant Tracking System). Hệ thống này trích xuất văn bản trong CV, lưu vào cơ sở dữ liệu và cho phép nhà tuyển dụng tìm ứng viên theo từ khóa",
+      "eyebrow": "Bạn có biết?",
+      "title": "Trước nhà tuyển dụng, thường là phần mềm đọc CV của bạn",
+      "text": "Nhiều công ty, trung tâm giới thiệu việc làm và trang tuyển dụng lọc hồ sơ bằng một phần mềm gọi là ATS. Phần mềm này đọc chữ trong CV và lưu vào cơ sở dữ liệu. Nếu CV bị đọc sai hoặc thiếu những từ trong tin tuyển dụng, nó có thể không bao giờ đến tay nhà tuyển dụng",
       "pitfalls": {
         "layout": {
           "title": "Bố cục phức tạp",
-          "text": "Cột, bảng và hộp văn bản làm rối thứ tự đọc: thông tin của bạn bị xáo trộn"
+          "text": "Cột, bảng và khung chữ làm rối thứ tự đọc: phần mềm đọc CV của bạn lộn xộn"
         },
         "image": {
           "title": "Văn bản không đọc được",
-          "text": "Biểu tượng, thanh kỹ năng và một số tệp xuất từ công cụ thiết kế biến thành ký tự lạ, hoặc mất hẳn văn bản"
+          "text": "Biểu tượng, thang điểm bằng chấm và CV làm từ một số ứng dụng thiết kế biến thành ký tự không đọc được, hoặc biến mất hoàn toàn"
         },
         "keywords": {
           "title": "Thiếu từ khóa",
-          "text": "Nếu CV không có các từ trong tin tuyển dụng, hồ sơ của bạn sẽ không xuất hiện trong kết quả tìm kiếm của nhà tuyển dụng"
+          "text": "Nhà tuyển dụng tìm “nhân viên bán hàng”, “HACCP” hay “bằng lái xe”? Nếu những từ này không có trong CV, hồ sơ của bạn sẽ không hiện ra"
         }
       },
       "seen": "Điều bạn thấy",
       "read": "Điều robot đọc",
-      "fix": "LocalATSCV làm ngược lại: một cột, văn bản thật và tiêu đề mục chuẩn mà robot đọc đúng thứ tự"
+      "fix": "Với LocalATSCV, không còn bất ngờ khó chịu: CV của bạn vừa lòng nhà tuyển dụng và được phần mềm đọc đúng thứ tự"
     },
     "how": {
       "eyebrow": "Cách hoạt động",
-      "title": "Viết một lần, điều chỉnh không giới hạn",
-      "text": "Bốn bước để biến CV Master thành hồ sơ ứng tuyển phù hợp với từng vị trí",
+      "title": "Một CV, phù hợp với mọi vị trí",
+      "text": "Điền quá trình làm việc một lần, rồi chỉ vài cú nhấp là có phiên bản riêng cho từng hồ sơ ứng tuyển",
       "steps": {
         "profile": {
-          "title": "Điền CV Master",
-          "text": "Nhập toàn bộ kinh nghiệm một lần cho tất cả, hoặc nhập PDF hồ sơ LinkedIn để tiết kiệm thời gian"
+          "title": "Kể câu chuyện của bạn",
+          "text": "Nhập kinh nghiệm, học vấn và kỹ năng một lần là xong. Đã có CV hoặc hồ sơ LinkedIn? Nhập vào để tiết kiệm thời gian"
         },
         "offer": {
           "title": "Dán tin tuyển dụng",
-          "text": "LocalATSCV trích xuất từ khóa và tính điểm phù hợp trên thang 100, cập nhật ngay khi bạn gõ"
+          "text": "LocalATSCV tìm các từ quan trọng trong tin tuyển dụng, cho biết CV của bạn còn thiếu từ nào và chấm điểm trên thang 100"
         },
         "compose": {
-          "title": "Tạo phiên bản nhắm mục tiêu",
-          "text": "Đánh dấu các kinh nghiệm và ý phù hợp, kéo thả để sắp xếp lại. Không có gì bị xóa khỏi Master"
+          "title": "Giữ lại điều quan trọng",
+          "text": "Đánh dấu những gì phù hợp với vị trí này và kéo thả để sắp xếp. CV đầy đủ của bạn vẫn còn nguyên"
         },
         "export": {
-          "title": "Xuất ra PDF",
-          "text": "PDF bằng văn bản thật, có cấu trúc, một cột, dễ đọc với cả robot lẫn nhà tuyển dụng"
+          "title": "Tải về và ứng tuyển",
+          "text": "Chọn mẫu và màu, rồi tải CV dưới dạng PDF, sẵn sàng gửi đi hoặc in ra"
         }
       }
     },
     "privacy": {
       "eyebrow": "Quyền riêng tư",
-      "title": "Không có dữ liệu nào trên máy chủ của chúng tôi. Đúng theo nghĩa đen",
-      "text": "Không có cơ sở dữ liệu nào để bị tấn công: máy chủ chỉ gửi cho bạn ứng dụng. Sau đó mọi thứ diễn ra trong trình duyệt của bạn, kể cả khi ngoại tuyến",
+      "title": "CV ở lại với bạn. Thật sự",
+      "text": "Không cần tạo tài khoản, không có tệp nào gửi qua internet. Trang web chỉ tải một lần, sau đó mọi thứ diễn ra trên máy tính hoặc điện thoại của bạn, kể cả khi không có mạng. Không ai ngoài bạn thấy CV của bạn, kể cả chúng tôi",
       "browser": {
         "title": "Trình duyệt của bạn",
         "tag": "Thiết bị của bạn",
         "items": {
-          "master": "CV Master",
+          "cvs": "CV của bạn",
           "photo": "Ảnh hồ sơ",
-          "versions": "Phiên bản nhắm mục tiêu",
+          "letters": "Thư xin việc",
           "settings": "Tùy chọn"
         },
-        "note": "Lưu trong IndexedDB, chỉ trên thiết bị này"
+        "note": "Lưu trong trình duyệt, chỉ trên thiết bị này"
       },
       "flow": {
-        "app": "Ứng dụng, ở lần tải đầu tiên",
+        "app": "Trang web, ở lần truy cập đầu",
         "data": "Dữ liệu của bạn",
         "never": "không bao giờ"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Máy chủ",
-        "text": "Chỉ phân phối các tệp của ứng dụng (HTML, CSS, JavaScript), không hơn",
+        "text": "Gửi các trang của website, không gì hơn",
         "items": {
-          "noDb": "Không có cơ sở dữ liệu",
+          "noDb": "Không lưu CV nào",
           "noAccount": "Không có tài khoản người dùng",
           "noLogs": "Không ghi nhật ký truy cập"
         }
@@ -152,54 +152,54 @@
           "text": "Không đăng ký, không email, không mật khẩu. Mở trang và bắt đầu"
         },
         "trackers": {
-          "title": "Không theo dõi",
-          "text": "Không thống kê, không quảng cáo, không cookie theo dõi. Ngay cả phông chữ cũng được lưu trên máy chủ của chúng tôi"
+          "title": "Không quảng cáo, không theo dõi",
+          "text": "Không quảng cáo, không cookie theo dõi, không bán lại dữ liệu: đơn giản là chúng tôi không có dữ liệu của bạn"
         },
         "csp": {
-          "title": "Khóa chặt về kỹ thuật",
-          "text": "Chính sách bảo mật của trang (CSP) cấm trình duyệt kết nối tới bất kỳ tên miền nào khác. Mã nguồn mở: bạn có thể tự kiểm tra"
+          "title": "Ai cũng kiểm chứng được",
+          "text": "Trang web bị khóa để không thể liên lạc với bất kỳ dịch vụ nào khác, và mã nguồn công khai: chuyên gia nào cũng có thể kiểm chứng"
         },
         "backup": {
-          "title": "Bản sao lưu của bạn, tệp của bạn",
-          "text": "Xuất toàn bộ dữ liệu ra tệp JSON và nhập lại trên bất kỳ thiết bị nào"
+          "title": "Sao lưu bất cứ lúc nào",
+          "text": "Tải bản sao lưu toàn bộ CV chỉ với một cú nhấp và mở chúng trên thiết bị khác"
         }
       }
     },
     "features": {
       "eyebrow": "Tính năng",
-      "title": "Mọi thứ bạn cần để được mời phỏng vấn",
+      "title": "Mọi thứ cho một hồ sơ ứng tuyển thành công",
       "items": {
+        "templates": {
+          "title": "30 mẫu được chăm chút",
+          "text": "Tối giản, hiện đại hay nhiều màu sắc, có hoặc không có ảnh. Đổi mẫu hay màu chỉ với một cú nhấp, nội dung vẫn giữ nguyên"
+        },
+        "letter": {
+          "title": "Thư xin việc đồng bộ",
+          "text": "Viết thư xin việc cùng phong cách với CV, để hồ sơ thật ấn tượng"
+        },
         "master": {
-          "title": "CV Master và các phiên bản nhắm mục tiêu",
-          "text": "Một CV đầy đủ, và bao nhiêu phiên bản tùy số lần ứng tuyển. Đánh dấu, bỏ đánh dấu: không mất gì cả"
+          "title": "Mỗi vị trí một phiên bản",
+          "text": "Giữ CV đầy đủ và tạo bao nhiêu phiên bản tùy số hồ sơ bạn nộp. Đánh dấu, bỏ đánh dấu: không mất gì cả"
         },
         "score": {
           "title": "Điểm phù hợp",
-          "text": "Dán tin tuyển dụng: từ khóa đã có, từ khóa còn thiếu và điểm trên thang 100 theo thời gian thực"
+          "text": "Dán tin tuyển dụng: xem từ đã có, từ còn thiếu và điểm trên thang 100, cập nhật tức thì"
         },
         "weak": {
-          "title": "Phát hiện cụm từ yếu",
-          "text": "“Chịu trách nhiệm”, “hỗ trợ”… được đánh dấu tự động, kèm kho động từ hành động để thay thế"
+          "title": "Mẹo viết",
+          "text": "Những cụm từ chưa làm nổi bật bạn, như “Chịu trách nhiệm”, sẽ được đánh dấu, kèm động từ mạnh hơn để thay thế"
         },
         "analyzer": {
-          "title": "Phân tích CV có sẵn",
-          "text": "Thả vào một CV làm ở nơi khác: xem robot thực sự đọc được gì và cần sửa gì"
+          "title": "Kiểm tra CV hiện tại",
+          "text": "Tải lên CV làm ở nơi khác: xem phần mềm lọc hồ sơ thực sự đọc được gì và cần sửa gì"
         },
-        "linkedin": {
-          "title": "Nhập từ LinkedIn",
-          "text": "Điền sẵn CV Master từ tệp PDF miễn phí mà bạn xuất được từ hồ sơ LinkedIn"
+        "import": {
+          "title": "Không cần gõ lại",
+          "text": "Đưa CV hiện tại (PDF hoặc Word) hoặc hồ sơ LinkedIn vào: mọi thứ được tự động sắp xếp trong trình soạn thảo"
         },
         "languages": {
           "title": "5 ngôn ngữ CV",
           "text": "Tiếng Pháp, Anh, Ý, Tây Ban Nha và Đức. Với tiếng Anh, ảnh và ngày sinh được ẩn theo thông lệ của các nước nói tiếng Anh"
-        },
-        "pdf": {
-          "title": "Xuất PDF thân thiện với ATS",
-          "text": "Văn bản thật và cấu trúc rõ ràng: robot đọc được, nhà tuyển dụng dễ chịu"
-        },
-        "offline": {
-          "title": "Cài đặt được và dùng ngoại tuyến",
-          "text": "Thêm LocalATSCV vào màn hình chính và tiếp tục làm việc khi không có mạng"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "ATS là gì?",
-          "a": "Applicant Tracking System là phần mềm mà nhà tuyển dụng dùng để nhận, sàng lọc và tìm kiếm hồ sơ. Nó chuyển CV của bạn thành văn bản và lập chỉ mục: nếu văn bản bị trích xuất sai hoặc thiếu từ khóa phù hợp, hồ sơ của bạn sẽ khó được tìm thấy"
+          "a": "Đó là phần mềm mà nhiều công ty, trung tâm giới thiệu việc làm và trang tuyển dụng dùng để nhận và lọc hồ sơ. Nó chuyển CV của bạn thành văn bản và cho phép nhà tuyển dụng tìm kiếm theo từ khóa. Nếu CV bị đọc sai hoặc thiếu từ phù hợp, nó sẽ bị bỏ qua"
         },
         "storage": {
           "q": "Dữ liệu của tôi được lưu ở đâu?",
-          "a": "Chỉ trong trình duyệt của bạn, trong IndexedDB, cơ sở dữ liệu có sẵn trong mọi trình duyệt hiện đại. Dữ liệu không bao giờ đi qua máy chủ của chúng tôi, vốn chỉ biết phân phối các tệp của ứng dụng"
+          "a": "Chỉ trên thiết bị của bạn, trong trình duyệt. Dữ liệu không bao giờ đi qua máy chủ của chúng tôi: không ai ngoài bạn truy cập được"
         },
         "clear": {
           "q": "Điều gì xảy ra nếu tôi xóa dữ liệu trình duyệt?",
-          "a": "CV của bạn sẽ bị xóa, vì chúng không tồn tại ở nơi nào khác. Hãy thường xuyên xuất bản sao lưu JSON: bạn có thể nhập lại bất cứ lúc nào, trên bất kỳ thiết bị nào"
+          "a": "CV của bạn sẽ bị xóa, vì chúng không tồn tại ở nơi nào khác. Thỉnh thoảng hãy tải bản sao lưu: bạn có thể mở lại bất cứ lúc nào, trên bất kỳ thiết bị nào"
         },
         "score": {
           "q": "Điểm số có bảo đảm CV của tôi được chọn không?",
-          "a": "Không. Mỗi ATS có quy tắc riêng và quyết định cuối cùng do con người đưa ra. Điểm số chỉ là chỉ báo: nó kiểm tra xem CV có dùng từ ngữ của tin tuyển dụng không và máy có đọc đúng không"
+          "a": "Không. Mỗi công ty có công cụ riêng và quyết định cuối cùng luôn do con người đưa ra. Điểm số giúp bạn dùng đúng từ trong tin tuyển dụng và kiểm tra CV được đọc chính xác: nhờ vậy cơ hội của bạn tăng lên"
         },
         "photo": {
           "q": "Vì sao ảnh biến mất khi chọn tiếng Anh?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Có thật sự miễn phí không?",
-          "a": "Có. LocalATSCV là dự án mã nguồn mở theo giấy phép MIT, không quảng cáo, không thuê bao. Chi phí lưu trữ gần như bằng không, vì trình duyệt của bạn làm toàn bộ công việc"
+          "a": "Đúng vậy, hoàn toàn: không thuê bao, không quảng cáo, không hình mờ trên PDF. LocalATSCV là dự án mã nguồn mở (mã công khai) gần như không tốn chi phí vận hành, vì mọi thứ diễn ra trên thiết bị của bạn"
         },
         "templates": {
-          "q": "Các mẫu đồ họa có qua được ATS không?",
-          "a": "Có. Mỗi mẫu đều in văn bản thật theo thứ tự đọc, với tiêu đề mục chuẩn: hình khối, thanh và biểu tượng là hình vẽ mà robot bỏ qua. Mẫu một cột vẫn là lựa chọn an toàn nhất, và tính năng kiểm tra ATS trong trình soạn thảo sẽ thử bố cục của bạn theo thời gian thực"
+          "q": "Mẫu nhiều màu có vượt qua phần mềm lọc hồ sơ không?",
+          "a": "Có. Mọi mẫu đều chứa chữ thật, đúng thứ tự, với tiêu đề quen thuộc như “Kinh nghiệm” hay “Học vấn”. Hình khối, màu sắc và biểu tượng chỉ là trang trí mà phần mềm bỏ qua. Mẫu một cột vẫn an toàn nhất, và trình soạn thảo kiểm tra bố cục của bạn theo thời gian thực"
         },
         "import": {
           "q": "Tôi có thể dùng lại CV hiện tại hoặc hồ sơ LinkedIn không?",
-          "a": "Có. Nhập CV PDF hoặc Word (.docx), PDF hồ sơ LinkedIn (trên máy tính) hoặc kho dữ liệu LinkedIn (từ ứng dụng di động): nội dung được đọc trong trình duyệt của bạn và sắp xếp vào trình soạn thảo"
+          "a": "Có. Nhập CV dạng PDF hoặc Word, hoặc hồ sơ LinkedIn của bạn: nội dung được đọc ngay trên thiết bị và tự động sắp xếp trong trình soạn thảo. Bạn chỉ cần xem lại và chọn mẫu"
         },
         "offline": {
-          "q": "LocalATSCV có dùng được khi ngoại tuyến không?",
-          "a": "Có. Đây là ứng dụng web có thể cài đặt: sau lần truy cập đầu tiên, mọi thứ hoạt động không cần kết nối, kể cả xuất PDF"
+          "q": "Dùng được khi không có mạng không?",
+          "a": "Được. Sau lần truy cập đầu, bạn có thể sửa và tải CV mà không cần mạng. Bạn còn có thể thêm LocalATSCV vào màn hình chính của điện thoại hoặc máy tính, như một ứng dụng"
         }
       }
     },
     "cta": {
-      "title": "Sẵn sàng vượt qua vòng lọc?",
-      "text": "Tạo CV Master chỉ trong vài phút. Không có gì rời khỏi thiết bị này",
+      "title": "Buổi phỏng vấn tiếp theo bắt đầu từ đây",
+      "text": "Tạo CV miễn phí chỉ trong vài phút, không cần đăng ký. Không có gì rời khỏi thiết bị của bạn",
       "button": "Bắt đầu"
     },
     "demo": {
-      "role": "Lập trình viên Front-end",
+      "role": "Thợ làm bánh mì và bánh ngọt",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Kinh nghiệm",
-      "jobTitle": "Lập trình viên Angular",
-      "jobMeta": "Công ty Ví Dụ · 2022 – nay",
+      "jobTitle": "Thợ làm bánh mì",
+      "jobMeta": "Tiệm bánh Ví Dụ · 2021 – nay",
       "bullets": {
-        "migration": "Chuyển 40 màn hình sang <k>Angular</k> và <k>TypeScript</k>, giảm 35% thời gian tải",
-        "testing": "<w>Chịu trách nhiệm</w> chiến lược kiểm thử end-to-end",
-        "delivery": "Triển khai liên tục với <k>GitLab CI</k> cho 3 nhóm sản phẩm"
+        "production": "Làm 300 chiếc <k>bánh ngàn lớp</k> và bánh mì <k>men tự nhiên</k> mỗi sáng, doanh số tăng 18%",
+        "opening": "<w>Chịu trách nhiệm</w> mở cửa tiệm và trưng bày tủ kính",
+        "hygiene": "Tuân thủ quy chuẩn vệ sinh <k>HACCP</k> và hướng dẫn 2 học việc"
       },
       "weakLabel": "Cụm từ yếu",
       "weakReplacement": "“Dẫn dắt”",
       "skills": "Kỹ năng",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Khả năng tiếp cận",
+      "skillList": "Bánh ngàn lớp · Bánh mì men tự nhiên · Bánh ngọt · HACCP · Bán hàng tại tiệm",
+      "keywords": {
+        "pastry": "Bánh ngàn lớp",
+        "sourdough": "Men tự nhiên",
+        "hygiene": "HACCP",
+        "license": "Bằng lái xe"
+      },
       "score": "Mức phù hợp với tin tuyển dụng",
-      "sent": "0 byte được gửi",
-      "robot": "KỸ NĂNG CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Lập trình viên Front-end Angular <n>●●●●○</n> KINH NGHIỆM <n>� camille.mar</n> Lập trình viên Angular <n>tin@example.com</n> 2022 – nay TypeScript <n>●●●○○</n> Công ty Ví Dụ NGÔN NGỮ Tiếng Anh Chuyển 40 màn hình sang…"
+      "sent": "Không gửi dữ liệu nào",
+      "robot": "KỸ NĂNG CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Thợ làm bánh mì và bánh ngọt Bánh ngàn lớp <n>●●●●○</n> KINH NGHIỆM <n>� camille.mar</n> Thợ làm bánh mì <n>tin@example.com</n> 2021 – nay Bánh ngọt <n>●●●○○</n> Tiệm bánh Ví Dụ NGÔN NGỮ Tiếng Anh Làm 300 chiếc bánh…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Trình phân tích",
-    "title": "CV của bạn có vượt qua robot không?",
-    "subtitle": "Thả vào một CV PDF làm bằng bất kỳ công cụ nào: LocalATSCV đọc nó như ATS và cho bạn biết cần sửa gì",
+    "eyebrow": "Kiểm tra CV miễn phí",
+    "title": "CV của bạn có vượt qua vòng lọc của nhà tuyển dụng?",
+    "subtitle": "Tải lên CV dạng PDF, dù làm bằng Word, Canva hay công cụ nào khác: LocalATSCV đọc nó như phần mềm tuyển dụng và cho bạn biết cần sửa gì chỉ trong vài giây",
     "drop": "Kéo CV của bạn vào đây",
     "dropActive": "Thả tệp để bắt đầu phân tích",
     "hint": "Chỉ PDF, tối đa 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Văn bản theo thứ tự được ghi trong tệp: các ATS không dựng lại bố cục sẽ đọc như vậy. Nó cần theo đúng thứ tự đọc của CV"
     },
     "cta": {
-      "title": "Bắt đầu lại trên nền tảng vững chắc",
-      "text": "Tạo CV thân thiện với ATS trong trình soạn thảo, rồi điều chỉnh cho từng vị trí",
+      "title": "Chuyển sang một CV hoàn hảo",
+      "text": "Chọn một trong 30 mẫu của chúng tôi, được phần mềm lọc hồ sơ đọc chính xác, và điều chỉnh cho từng tin tuyển dụng",
       "button": "Mở trình soạn thảo",
       "import": "Đưa CV này vào các mẫu của chúng tôi"
     },

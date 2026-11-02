@@ -4,7 +4,7 @@
     "main": "Hlavná navigácia",
     "how": "Ako to funguje",
     "privacy": "Súkromie",
-    "analyze": "Analyzovať životopis",
+    "analyze": "Otestovať životopis",
     "editor": "Vytvoriť môj životopis",
     "skipToContent": "Prejsť na obsah"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nenašiel sa žiadny jazyk"
   },
   "pages": {
-    "home": "Životopisy vhodné pre ATS, 100 % lokálne",
+    "home": "Bezplatný životopis vhodný pre ATS, bez registrácie",
     "editor": "Editor",
     "analyze": "Analyzátor životopisu",
     "changelog": "Novinky",
@@ -31,7 +31,7 @@
     "privacy": "Zásady ochrany súkromia"
   },
   "seo": {
-    "home": "Bezplatný tvorca životopisov vhodných pre ATS: 30 grafických šablón, ladiaci motivačný list, prispôsobenie každému inzerátu a skóre ATS. Open source, vaše údaje zostávajú v prehliadači",
+    "home": "Vytvorte si zadarmo životopis, ktorý vám otvorí dvere k pohovoru: 30 šablón, zladený motivačný list, prispôsobenie každej ponuke a kontrola ATS. Bez registrácie, vaše údaje zostávajú vo vašom zariadení",
     "editor": "Editor životopisu so živým náhľadom, Master životopisom a cielenými verziami, kontrolou ATS a exportom do PDF so skutočným textom. Všetko zostáva vo vašom prehliadači",
     "analyze": "Zadarmo analyzujte životopis v PDF: skóre ATS zo 100, body na opravu a text tak, ako ho číta náborový systém. Súbor nikdy neopustí váš prehliadač",
     "changelog": "Novinky v LocalATSCV verziu po verzii: nové šablóny životopisov, funkcie a opravy",
@@ -40,7 +40,7 @@
     "privacy": "Zásady ochrany súkromia LocalATSCV: nezbierajú sa žiadne údaje, vaše životopisy zostávajú v prehliadači"
   },
   "footer": {
-    "tagline": "Tvorca životopisov vhodných pre ATS, ktorý nikdy nevidí vaše údaje",
+    "tagline": "Bezplatný tvorca životopisov, ktorý nikdy nevidí vaše údaje",
     "product": "Produkt",
     "legal": "Právne informácie",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % lokálne · Zadarmo · Open source",
-      "titleLine1": "Životopis, ktorý prejde cez robotov",
-      "titleLine2": "Údaje, ktoré zostanú u vás",
-      "subtitle": "LocalATSCV vám pomôže vytvoriť životopis optimalizovaný pre náborové systémy (ATS) a niekoľkými kliknutiami ho prispôsobiť každej pozícii. Všetko prebieha vo vašom prehliadači: bez účtu a bez odosielania akýchkoľvek údajov",
-      "ctaPrimary": "Vytvoriť môj životopis",
-      "ctaSecondary": "Analyzovať existujúci životopis",
+      "badge": "Zadarmo · Bez registrácie · Bez reklám",
+      "titleLine1": "Životopis, ktorý vám otvorí dvere",
+      "titleLine2": "Hotové za pár minút",
+      "subtitle": "Vyplňte svoju prax, vyberte si z 30 šablón a stiahnite si životopis pripravený na odoslanie. LocalATSCV vám tiež pomôže prispôsobiť ho každému inzerátu a overí, že ho programy, ktoré triedia žiadosti, prečítajú správne",
+      "ctaPrimary": "Vytvoriť životopis zadarmo",
+      "ctaSecondary": "Otestovať môj súčasný životopis",
       "points": {
-        "noAccount": "Bez registrácie",
-        "offline": "Funguje offline",
-        "atsPdf": "PDF čitateľné pre ATS"
+        "templates": "30 šablón na výber",
+        "letter": "Zladený motivačný list",
+        "private": "Vaše údaje zostávajú u vás"
       }
     },
     "ats": {
-      "eyebrow": "Problém",
-      "title": "Váš životopis najprv číta stroj",
-      "text": "Väčšina veľkých firiem a personálnych agentúr triedi žiadosti pomocou ATS (Applicant Tracking System). Ten vytiahne text z vášho životopisu, uloží ho do databázy a umožní náborárom hľadať kandidátov podľa kľúčových slov",
+      "eyebrow": "Vedeli ste, že…",
+      "title": "Skôr než personalista váš životopis často číta program",
+      "text": "Mnohé firmy, personálne agentúry a pracovné portály triedia žiadosti pomocou programu, ktorý sa nazýva ATS. Prečíta text vášho životopisu a uloží ho do databázy. Ak sa životopis prečíta zle alebo v ňom chýbajú slová z inzerátu, nemusí sa k personalistovi nikdy dostať",
       "pitfalls": {
         "layout": {
           "title": "Zložité rozloženie",
-          "text": "Stĺpce, tabuľky a textové polia pomiešajú poradie čítania: vaše údaje vyjdú ako guláš"
+          "text": "Stĺpce, tabuľky a textové polia miešajú poradie čítania: program číta váš životopis horeznačky"
         },
         "image": {
           "title": "Nečitateľný text",
-          "text": "Ikony, ukazovatele zručností a niektoré exporty z grafických nástrojov sa zmenia na zhluky čudných znakov, alebo úplne zmiznú"
+          "text": "Ikony, bodkové stupnice a životopisy z niektorých grafických aplikácií sa menia na nečitateľné znaky alebo úplne zmiznú"
         },
         "keywords": {
           "title": "Chýbajúce kľúčové slová",
-          "text": "Ak sa slová z inzerátu vo vašom životopise neobjavia, váš profil sa vo vyhľadávaní náborárov nezobrazí"
+          "text": "Hľadá personalista „predavačka“, „HACCP“ alebo „vodičský preukaz sk. B“? Ak tieto slová vo vašom životopise nie sú, vaša žiadosť sa nezobrazí"
         }
       },
       "seen": "Čo vidíte vy",
       "read": "Čo číta robot",
-      "fix": "LocalATSCV robí opak: jeden stĺpec, skutočný text a štandardné nadpisy sekcií, ktoré roboti čítajú v správnom poradí"
+      "fix": "S LocalATSCV žiadne nepríjemné prekvapenia: vaše životopisy sa páčia personalistom a programy ich čítajú v správnom poradí"
     },
     "how": {
       "eyebrow": "Ako to funguje",
-      "title": "Napíšte raz, prispôsobujte donekonečna",
-      "text": "Štyri kroky, ako z Master životopisu urobiť žiadosť na mieru každej pozícii",
+      "title": "Jeden životopis, prispôsobený každej ponuke",
+      "text": "Vyplňte svoju prax raz a potom niekoľkými kliknutiami vytvorte verziu na mieru pre každú žiadosť",
       "steps": {
         "profile": {
-          "title": "Vyplňte svoj Master životopis",
-          "text": "Zadajte všetky svoje skúsenosti raz a navždy, alebo pre úsporu času importujte PDF svojho profilu na LinkedIne"
+          "title": "Opíšte svoju cestu",
+          "text": "Zadajte svoje skúsenosti, vzdelanie a zručnosti raz a navždy. Máte už životopis alebo profil na LinkedIn? Importujte ho a ušetrite čas"
         },
         "offer": {
           "title": "Vložte inzerát",
-          "text": "LocalATSCV z neho vytiahne kľúčové slová a vypočíta skóre zhody zo 100, ktoré sa aktualizuje počas písania"
+          "text": "LocalATSCV nájde dôležité slová z inzerátu, ukáže vám, ktoré vo vašom životopise chýbajú, a dá vám skóre zo 100"
         },
         "compose": {
-          "title": "Zostavte cielenú verziu",
-          "text": "Začiarknite relevantné skúsenosti a body a zoraďte ich presúvaním. Z vášho Mastera sa nič nemaže"
+          "title": "Nechajte len to podstatné",
+          "text": "Zaškrtnite, čo je pre túto pozíciu dôležité, a meňte poradie presúvaním. Váš úplný životopis zostane nedotknutý"
         },
         "export": {
-          "title": "Exportujte do PDF",
-          "text": "PDF so skutočným textom, štruktúrované a v jednom stĺpci, rovnako čitateľné pre robotov ako pre náborárov"
+          "title": "Stiahnite a pošlite",
+          "text": "Vyberte šablónu a farbu a stiahnite si životopis v PDF, pripravený na odoslanie alebo tlač"
         }
       }
     },
     "privacy": {
       "eyebrow": "Súkromie",
-      "title": "Nula údajov na našich serveroch. Doslova",
-      "text": "Neexistuje databáza, ktorú by bolo možné hacknúť: náš server vám pošle iba aplikáciu. Potom sa všetko deje vo vašom prehliadači, aj offline",
+      "title": "Váš životopis zostáva u vás. Naozaj",
+      "text": "Žiadny účet na založenie, žiadny súbor odoslaný cez internet. Web sa načíta raz a potom sa všetko deje vo vašom počítači alebo telefóne, aj bez pripojenia. Nikto okrem vás váš životopis nevidí, ani my",
       "browser": {
         "title": "Váš prehliadač",
         "tag": "Vaše zariadenie",
         "items": {
-          "master": "Master životopis",
+          "cvs": "Vaše životopisy",
           "photo": "Profilová fotka",
-          "versions": "Cielené verzie",
+          "letters": "Motivačné listy",
           "settings": "Predvoľby"
         },
-        "note": "Uložené v IndexedDB, iba v tomto zariadení"
+        "note": "Uložené vo vašom prehliadači, len na tomto zariadení"
       },
       "flow": {
-        "app": "Aplikácia, pri prvom načítaní",
+        "app": "Web, pri prvej návšteve",
         "data": "Vaše údaje",
         "never": "nikdy"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Poskytuje súbory aplikácie (HTML, CSS, JavaScript), nič viac",
+        "text": "Posiela stránky webu, nič viac",
         "items": {
-          "noDb": "Žiadna databáza",
+          "noDb": "Žiadne uložené životopisy",
           "noAccount": "Žiadne používateľské účty",
           "noLogs": "Žiadne záznamy o návštevách"
         }
@@ -152,54 +152,54 @@
           "text": "Bez registrácie, e-mailu a hesla. Otvorte stránku a začnite"
         },
         "trackers": {
-          "title": "Bez sledovania",
-          "text": "Bez štatistík, reklám a sledovacích cookies. Aj písma sú hostované na našom vlastnom serveri"
+          "title": "Bez reklám a sledovania",
+          "text": "Žiadna reklama, žiadne sledovacie cookies, žiadny ďalší predaj: vaše údaje jednoducho nemáme"
         },
         "csp": {
-          "title": "Technicky uzamknuté",
-          "text": "Bezpečnostné zásady webu (CSP) zakazujú prehliadaču kontaktovať akúkoľvek inú doménu. Kód je otvorený: overte si to sami"
+          "title": "Overiteľné kýmkoľvek",
+          "text": "Web je zamknutý tak, aby nekomunikoval so žiadnou inou službou, a jeho kód je verejný: každý odborník si to môže overiť"
         },
         "backup": {
-          "title": "Vaše zálohy, vaše súbory",
-          "text": "Exportujte všetky svoje údaje do súboru JSON a importujte ich späť na akomkoľvek zariadení"
+          "title": "Kópia, kedykoľvek chcete",
+          "text": "Stiahnite si jedným kliknutím zálohu všetkých svojich životopisov a otvorte ich na inom zariadení"
         }
       }
     },
     "features": {
       "eyebrow": "Funkcie",
-      "title": "Všetko, čo potrebujete, aby ste sa dostali na pohovor",
+      "title": "Všetko pre úspešnú žiadosť",
       "items": {
+        "templates": {
+          "title": "30 prepracovaných šablón",
+          "text": "Striedme, moderné alebo farebné, s fotkou aj bez. Zmeňte šablónu alebo farbu jedným kliknutím, váš text sa prispôsobí"
+        },
+        "letter": {
+          "title": "Zladený motivačný list",
+          "text": "Napíšte list v rovnakom štýle ako životopis, aby celá žiadosť pôsobila dobrým dojmom"
+        },
         "master": {
-          "title": "Master životopis a cielené verzie",
-          "text": "Jeden úplný životopis a toľko variantov, koľko máte žiadostí. Začiarknite, zrušte: nič sa nestratí"
+          "title": "Jedna verzia pre každú ponuku",
+          "text": "Ponechajte si úplný životopis a vytvorte toľko verzií, koľko máte žiadostí. Zaškrtnúť, odškrtnúť: nič sa nestratí"
         },
         "score": {
           "title": "Skóre zhody",
-          "text": "Vložte inzerát: nájdené a chýbajúce kľúčové slová a skóre zo 100 v reálnom čase"
+          "text": "Vložte inzerát: uvidíte nájdené slová, chýbajúce slová a skóre zo 100, aktualizované v reálnom čase"
         },
         "weak": {
-          "title": "Odhaľovanie slabých formulácií",
-          "text": "„Zodpovedný za“, „pomáhal som pri“… sa označia automaticky a na ich nahradenie je k dispozícii zásobník akčných slovies"
+          "title": "Tipy na písanie",
+          "text": "Formulácie, ktoré vás neukazujú v najlepšom svetle, ako „Zodpovedný za“, sa označia, spolu s výstižnejšími slovesami na nahradenie"
         },
         "analyzer": {
-          "title": "Analyzátor existujúcich životopisov",
-          "text": "Pretiahnite životopis vytvorený inde: uvidíte, čo robot naozaj číta a čo opraviť"
+          "title": "Otestujte svoj súčasný životopis",
+          "text": "Nahrajte životopis vytvorený inde: zistite, čo z neho náborové programy skutočne prečítajú a čo opraviť"
         },
-        "linkedin": {
-          "title": "Import z LinkedInu",
-          "text": "Predvyplňte svoj Master životopis z bezplatného PDF, ktoré môžete exportovať zo svojho profilu na LinkedIne"
+        "import": {
+          "title": "Nič nemusíte prepisovať",
+          "text": "Prevezmite svoj súčasný životopis (PDF alebo Word) alebo profil z LinkedIn: všetko sa automaticky roztriedi v editore"
         },
         "languages": {
           "title": "5 jazykov životopisu",
           "text": "Francúzština, angličtina, taliančina, španielčina a nemčina. V angličtine sa fotka a dátum narodenia skryjú podľa zvyklostí anglicky hovoriacich krajín"
-        },
-        "pdf": {
-          "title": "Export do PDF vhodný pre ATS",
-          "text": "Skutočný text a jasná štruktúra: čitateľné pre robotov, príjemné pre náborárov"
-        },
-        "offline": {
-          "title": "Inštalovateľné a offline",
-          "text": "Pridajte LocalATSCV na plochu a pracujte ďalej bez pripojenia"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Čo je ATS?",
-          "a": "Applicant Tracking System je softvér, ktorým náborári prijímajú, triedia a prehľadávajú žiadosti. Prevedie váš životopis na text a zaindexuje ho: ak je text zle vytiahnutý alebo chýbajú správne kľúčové slová, vašu žiadosť bude ťažké nájsť"
+          "a": "Je to program, ktorým mnohé firmy, personálne agentúry a pracovné portály prijímajú a triedia žiadosti. Prevedie váš životopis na text a umožní personalistovi hľadať podľa kľúčových slov. Ak sa životopis prečíta zle alebo mu chýbajú správne slová, prepadne sitom"
         },
         "storage": {
           "q": "Kde sú uložené moje údaje?",
-          "a": "Iba vo vašom prehliadači, v IndexedDB, databáze, ktorú má každý moderný prehliadač. Nikdy neprechádzajú našimi servermi, ktoré vedia iba poskytovať súbory aplikácie"
+          "a": "Len vo vašom zariadení, vo vašom prehliadači. Nikdy neprechádzajú našimi servermi: nikto okrem vás k nim nemá prístup"
         },
         "clear": {
           "q": "Čo sa stane, keď vymažem údaje prehliadača?",
-          "a": "Vaše životopisy sa vymažú, pretože nikde inde neexistujú. Pravidelne exportujte zálohu JSON: kedykoľvek ju môžete importovať späť, na akomkoľvek zariadení"
+          "a": "Vaše životopisy sa vymažú, pretože nikde inde neexistujú. Občas si stiahnite zálohu: môžete ju kedykoľvek otvoriť, na akomkoľvek zariadení"
         },
         "score": {
           "q": "Zaručuje skóre, že môj životopis prejde výberom?",
-          "a": "Nie. Každý ATS má svoje pravidlá a konečné rozhodnutie robí človek. Skóre je ukazovateľ: overuje, že váš životopis používa slovník inzerátu a že ho stroj dokáže správne prečítať"
+          "a": "Nie. Každá firma má svoje nástroje a konečné rozhodnutie vždy robí človek. Skóre vám pomôže použiť slová z inzerátu a overiť, že sa váš životopis číta správne: tak zvýšite svoje šance"
         },
         "photo": {
           "q": "Prečo v angličtine zmizne fotka?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Je to naozaj zadarmo?",
-          "a": "Áno. LocalATSCV je open source projekt pod licenciou MIT, bez reklám a predplatného. Jeho prevádzka nestojí takmer nič, pretože všetku prácu odvedie váš prehliadač"
+          "a": "Áno, úplne: žiadne predplatné, žiadne reklamy, žiadny vodoznak vo vašich PDF. LocalATSCV je open source projekt (kód je verejný), ktorého prevádzka nestojí takmer nič, pretože všetko beží vo vašom zariadení"
         },
         "templates": {
-          "q": "Prejdú grafické šablóny cez ATS?",
-          "a": "Áno. Každá šablóna tlačí skutočný text v poradí čítania so štandardnými nadpismi sekcií: tvary, ukazovatele a ikony sú kresby, ktoré roboti ignorujú. Jednostĺpcové šablóny zostávajú najbezpečnejšie a kontrola ATS v editore testuje vaše rozloženie naživo"
+          "q": "Prejdú farebné šablóny náborovými programami?",
+          "a": "Áno. Všetky šablóny obsahujú skutočný text v správnom poradí a bežné nadpisy ako „Pracovné skúsenosti“ alebo „Vzdelanie“. Tvary, farby a ikony sú len ozdoby, ktoré programy ignorujú. Jednostĺpcové šablóny zostávajú najbezpečnejšie a editor kontroluje vaše rozloženie v reálnom čase"
         },
         "import": {
           "q": "Môžem znova použiť svoj súčasný životopis alebo profil na LinkedIne?",
-          "a": "Áno. Importujte životopis v PDF alebo Worde (.docx), PDF svojho profilu na LinkedIne (na počítači) alebo archív údajov z LinkedInu (z mobilnej aplikácie): obsah sa prečíta vo vašom prehliadači a roztriedi v editore"
+          "a": "Áno. Importujte svoj životopis v PDF alebo Worde, prípadne profil z LinkedIn: obsah sa prečíta vo vašom zariadení a automaticky roztriedi v editore. Zostáva len všetko skontrolovať a vybrať šablónu"
         },
         "offline": {
-          "q": "Funguje LocalATSCV offline?",
-          "a": "Áno. Je to inštalovateľná webová aplikácia: po prvej návšteve všetko funguje bez pripojenia, vrátane exportu do PDF"
+          "q": "Funguje to bez internetu?",
+          "a": "Áno. Po prvej návšteve môžete svoje životopisy upravovať a sťahovať bez pripojenia. LocalATSCV si dokonca môžete pridať na plochu telefónu alebo počítača ako aplikáciu"
         }
       }
     },
     "cta": {
-      "title": "Pripravení prejsť filtrom?",
-      "text": "Vytvorte si Master životopis za pár minút. Nič neopustí toto zariadenie",
+      "title": "Váš ďalší pohovor sa začína tu",
+      "text": "Vytvorte si životopis zadarmo za pár minút, bez registrácie. Nič neopustí vaše zariadenie",
       "button": "Začať"
     },
     "demo": {
-      "role": "Front-end vývojárka",
+      "role": "Pekárka a cukrárka",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Pracovné skúsenosti",
-      "jobTitle": "Vývojárka Angular",
-      "jobMeta": "Príklad s.r.o. · 2022 – doteraz",
+      "jobTitle": "Pekárka",
+      "jobMeta": "Pekáreň Príklad · 2021 – doteraz",
       "bullets": {
-        "migration": "Migrácia 40 obrazoviek na <k>Angular</k> a <k>TypeScript</k>, čas načítania kratší o 35 %",
-        "testing": "<w>Zodpovedná za</w> stratégiu end-to-end testov",
-        "delivery": "Priebežné nasadzovanie s <k>GitLab CI</k> pre 3 produktové tímy"
+        "production": "Každé ráno 300 kusov <k>jemného pečiva</k> a chlebov z <k>kvasu</k>, tržby vzrástli o 18 %",
+        "opening": "<w>Zodpovedná za</w> otváranie predajne a výklad",
+        "hygiene": "Dodržiavanie hygienických pravidiel <k>HACCP</k> a zaškolenie 2 učňov"
       },
       "weakLabel": "Slabá formulácia",
       "weakReplacement": "„Viedla som“",
       "skills": "Zručnosti",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Prístupnosť",
+      "skillList": "Jemné pečivo · Kváskový chlieb · Cukrárstvo · HACCP · Predaj v predajni",
+      "keywords": {
+        "pastry": "Jemné pečivo",
+        "sourdough": "Kvas",
+        "hygiene": "HACCP",
+        "license": "Vodičský preukaz B"
+      },
       "score": "Zhoda s inzerátom",
-      "sent": "Odoslaných 0 bajtov",
-      "robot": "ZRUČNOSTI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end vývojárka Angular <n>●●●●○</n> PRACOVNÉ SKÚSENOSTI <n>� camille.mar</n> Vývojárka Angular <n>tin@example.com</n> 2022 – doteraz TypeScript <n>●●●○○</n> Príklad s.r.o. JAZYKY Angličtina Migrácia 40 obrazoviek na…"
+      "sent": "Nič sa neodosiela",
+      "robot": "ZRUČNOSTI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekárka a cukrárka Jemné pečivo <n>●●●●○</n> PRACOVNÉ SKÚSENOSTI <n>� camille.mar</n> Pekárka <n>tin@example.com</n> 2021 – doteraz Cukrárstvo <n>●●●○○</n> Pekáreň Príklad JAZYKY Angličtina Každé ráno 300 kusov…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analyzátor",
-    "title": "Prejde váš životopis cez robotov?",
-    "subtitle": "Pretiahnite životopis v PDF vytvorený akýmkoľvek nástrojom: LocalATSCV ho prečíta ako ATS a povie vám, čo opraviť",
+    "eyebrow": "Bezplatný test životopisu",
+    "title": "Prejde váš životopis sitom personalistov?",
+    "subtitle": "Nahrajte svoj životopis v PDF, či už je z Wordu, Canvy alebo iného nástroja: LocalATSCV ho prečíta ako náborové programy a za pár sekúnd vám povie, čo opraviť",
     "drop": "Pretiahnite sem svoj životopis",
     "dropActive": "Pustite súbor a analýza sa začne",
     "hint": "Iba PDF, max. 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Text v poradí, v akom je zapísaný v súbore: takto ho čítajú ATS, ktoré rozloženie nerekonštruujú. Mal by zodpovedať poradiu čítania vášho životopisu"
     },
     "cta": {
-      "title": "Začnite znova na pevných základoch",
-      "text": "Vytvorte v editore životopis vhodný pre ATS a potom ho prispôsobte každej pozícii",
+      "title": "Prejdite na bezchybný životopis",
+      "text": "Vyberte si jednu z našich 30 šablón, ktoré náborové programy čítajú správne, a prispôsobte ju každej ponuke",
       "button": "Otvoriť editor",
       "import": "Preniesť tento životopis do našich šablón"
     },

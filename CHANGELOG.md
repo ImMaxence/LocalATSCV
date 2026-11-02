@@ -4,6 +4,14 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.8.0] - 2026-11-02
+
+### Modifié
+
+- Accueil réécrit pour tout le monde, dans les 44 langues : moins de jargon technique, des bénéfices concrets (gratuit, sans inscription, 30 modèles, lettre de motivation assortie) et un CV d'exemple de boulangère au lieu d'un profil de développeuse
+- Analyseur : titre et introduction plus clairs, menu « Tester mon CV »
+- Titre et description dans les moteurs de recherche, et image d'aperçu des liens partagés, mis à jour
+
 ## [0.7.0] - 2026-11-02
 
 ### Ajouté
@@ -163,6 +171,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.8.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.0
 [0.7.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.7.0
 [0.6.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.6.0
 [0.5.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.5.0

@@ -41,7 +41,7 @@ export class Landing {
   protected readonly scoreCircumference = 2 * Math.PI * SCORE_RADIUS;
   protected readonly scoreOffset = this.scoreCircumference * (1 - DEMO_SCORE / 100);
 
-  protected readonly heroPoints = ['noAccount', 'offline', 'atsPdf'];
+  protected readonly heroPoints = ['templates', 'letter', 'private'];
 
   protected readonly pitfalls: IconItem[] = [
     { key: 'layout', icon: 'layers' },
@@ -56,7 +56,7 @@ export class Landing {
     { key: 'export', icon: 'printer' },
   ];
 
-  protected readonly storedItems = ['master', 'photo', 'versions', 'settings'];
+  protected readonly storedItems = ['cvs', 'photo', 'letters', 'settings'];
   protected readonly serverAbsences = ['noDb', 'noAccount', 'noLogs'];
 
   protected readonly privacyPoints: IconItem[] = [
@@ -67,14 +67,14 @@ export class Landing {
   ];
 
   protected readonly features: IconItem[] = [
+    { key: 'templates', icon: 'layout' },
+    { key: 'letter', icon: 'mail' },
     { key: 'master', icon: 'layers' },
     { key: 'score', icon: 'target' },
     { key: 'weak', icon: 'highlighter' },
     { key: 'analyzer', icon: 'scan' },
-    { key: 'linkedin', icon: 'import' },
+    { key: 'import', icon: 'import' },
     { key: 'languages', icon: 'globe' },
-    { key: 'pdf', icon: 'printer' },
-    { key: 'offline', icon: 'device' },
   ];
 
   protected readonly faq = FAQ_ITEMS;

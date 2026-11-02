@@ -4,7 +4,7 @@
     "main": "Navigasi utama",
     "how": "Cara kerja",
     "privacy": "Privasi",
-    "analyze": "Analisis CV",
+    "analyze": "Uji CV saya",
     "editor": "Buat CV saya",
     "skipToContent": "Langsung ke konten"
   },
@@ -22,7 +22,7 @@
     "noResult": "Bahasa tidak ditemukan"
   },
   "pages": {
-    "home": "CV ramah ATS, 100% lokal",
+    "home": "CV gratis ramah ATS, tanpa daftar",
     "editor": "Editor",
     "analyze": "Penganalisis CV",
     "changelog": "Yang baru",
@@ -31,7 +31,7 @@
     "privacy": "Kebijakan privasi"
   },
   "seo": {
-    "home": "Pembuat CV ramah ATS gratis: 30 template grafis, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan skor ATS. Sumber terbuka, data Anda tetap di browser",
+    "home": "Buat gratis CV yang membawa Anda ke wawancara: 30 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
     "editor": "Editor CV dengan pratinjau langsung, CV Master dan versi tertarget, pemeriksaan ATS, serta ekspor PDF dengan teks asli. Semuanya tetap di browser Anda",
     "analyze": "Analisis CV PDF secara gratis: skor ATS dari 100, hal yang perlu diperbaiki, dan teks seperti yang dibaca sistem rekrutmen. File tidak pernah keluar dari browser Anda",
     "changelog": "Yang baru di LocalATSCV, versi demi versi: template CV baru, fitur, dan perbaikan",
@@ -40,7 +40,7 @@
     "privacy": "Kebijakan privasi LocalATSCV: tidak ada data yang dikumpulkan, CV Anda tetap di browser"
   },
   "footer": {
-    "tagline": "Pembuat CV ramah ATS yang tidak pernah melihat data Anda",
+    "tagline": "Pembuat CV gratis yang tidak pernah melihat data Anda",
     "product": "Produk",
     "legal": "Hukum",
     "project": "Proyek",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100% lokal · Gratis · Sumber terbuka",
-      "titleLine1": "CV yang lolos dari robot",
-      "titleLine2": "Data yang tetap bersama Anda",
-      "subtitle": "LocalATSCV membantu Anda membuat CV yang dioptimalkan untuk sistem pelacakan pelamar (ATS) dan menyesuaikannya untuk setiap lowongan dalam beberapa klik. Semuanya terjadi di browser Anda: tanpa akun, tanpa data yang dikirim",
-      "ctaPrimary": "Buat CV saya",
-      "ctaSecondary": "Analisis CV yang sudah ada",
+      "badge": "Gratis · Tanpa daftar · Tanpa iklan",
+      "titleLine1": "CV yang membawa Anda ke wawancara",
+      "titleLine2": "Siap dalam hitungan menit",
+      "subtitle": "Isi riwayat Anda, pilih salah satu dari 30 template, lalu unduh CV yang siap dikirim. LocalATSCV juga membantu Anda menyesuaikannya untuk setiap lowongan dan memeriksa apakah software penyaring lamaran membacanya dengan benar",
+      "ctaPrimary": "Buat CV saya gratis",
+      "ctaSecondary": "Uji CV saya sekarang",
       "points": {
-        "noAccount": "Tanpa daftar",
-        "offline": "Bisa offline",
-        "atsPdf": "PDF terbaca ATS"
+        "templates": "30 template pilihan",
+        "letter": "Surat lamaran yang serasi",
+        "private": "Data Anda tetap di tangan Anda"
       }
     },
     "ats": {
-      "eyebrow": "Masalahnya",
-      "title": "CV Anda dibaca mesin lebih dulu",
-      "text": "Sebagian besar perusahaan besar dan agen rekrutmen menyaring lamaran dengan ATS (Applicant Tracking System). Sistem ini mengekstrak teks CV Anda, menyimpannya di basis data, dan memungkinkan perekrut mencari kandidat berdasarkan kata kunci",
+      "eyebrow": "Tahukah Anda?",
+      "title": "Sebelum perekrut, sering kali software yang membaca CV Anda",
+      "text": "Banyak perusahaan, agen penyalur kerja, dan situs lowongan menyaring lamaran dengan software bernama ATS. Software ini membaca teks CV Anda dan menyimpannya di database. Jika CV Anda salah terbaca atau tidak memuat kata-kata dari lowongan, CV itu mungkin tak pernah sampai ke perekrut",
       "pitfalls": {
         "layout": {
           "title": "Tata letak rumit",
-          "text": "Kolom, tabel, dan kotak teks mengacaukan urutan baca: informasi Anda keluar campur aduk"
+          "text": "Kolom, tabel, dan kotak teks mengacak urutan baca: software membaca CV Anda secara berantakan"
         },
         "image": {
           "title": "Teks tak terbaca",
-          "text": "Ikon, bilah keahlian, dan sebagian ekspor alat desain berubah menjadi karakter aneh, atau tidak ada teks sama sekali"
+          "text": "Ikon, skala titik, dan CV yang dibuat di beberapa aplikasi desain berubah menjadi karakter tak terbaca, atau hilang sama sekali"
         },
         "keywords": {
           "title": "Kata kunci hilang",
-          "text": "Jika kosakata lowongan tidak muncul di CV Anda, profil Anda tidak akan muncul di pencarian perekrut"
+          "text": "Perekrut mencari “pramuniaga”, “HACCP”, atau “SIM A”? Jika kata-kata itu tidak ada di CV Anda, lamaran Anda tidak muncul"
         }
       },
       "seen": "Yang Anda lihat",
       "read": "Yang dibaca robot",
-      "fix": "LocalATSCV melakukan sebaliknya: satu kolom, teks asli, dan judul bagian standar yang dibaca robot dalam urutan yang benar"
+      "fix": "Dengan LocalATSCV, tak ada kejutan buruk: CV Anda disukai perekrut dan dibaca dalam urutan yang benar oleh software"
     },
     "how": {
       "eyebrow": "Cara kerja",
-      "title": "Tulis sekali, sesuaikan tanpa batas",
-      "text": "Empat langkah untuk mengubah CV Master Anda menjadi lamaran yang pas untuk setiap lowongan",
+      "title": "Satu CV, disesuaikan untuk setiap lowongan",
+      "text": "Isi riwayat Anda sekali, lalu buat versi khusus untuk setiap lamaran hanya dengan beberapa klik",
       "steps": {
         "profile": {
-          "title": "Isi CV Master Anda",
-          "text": "Masukkan semua pengalaman Anda sekali saja, atau impor PDF profil LinkedIn Anda untuk menghemat waktu"
+          "title": "Ceritakan perjalanan Anda",
+          "text": "Masukkan pengalaman, pendidikan, dan keahlian Anda sekali untuk selamanya. Sudah punya CV atau profil LinkedIn? Impor saja agar lebih cepat"
         },
         "offer": {
           "title": "Tempel lowongan kerja",
-          "text": "LocalATSCV mengekstrak kata kunci dan menghitung skor kecocokan dari 100 yang diperbarui saat Anda mengetik"
+          "text": "LocalATSCV menemukan kata-kata penting di lowongan, menunjukkan mana yang belum ada di CV Anda, dan memberi skor dari 100"
         },
         "compose": {
-          "title": "Susun versi tertarget",
-          "text": "Centang pengalaman dan poin yang relevan, lalu atur ulang dengan seret dan lepas. Tidak ada yang terhapus dari Master Anda"
+          "title": "Simpan yang penting",
+          "text": "Centang yang relevan untuk posisi ini dan ubah urutannya dengan seret dan lepas. CV lengkap Anda tetap utuh"
         },
         "export": {
-          "title": "Ekspor ke PDF",
-          "text": "PDF dengan teks asli, terstruktur, dan satu kolom, sama mudah dibaca oleh robot maupun perekrut"
+          "title": "Unduh dan lamar",
+          "text": "Pilih template dan warna, lalu unduh CV Anda dalam PDF, siap dikirim atau dicetak"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privasi",
-      "title": "Nol data di server kami. Secara harfiah",
-      "text": "Tidak ada basis data untuk diretas: server kami hanya mengirim aplikasinya. Setelah itu semuanya terjadi di browser Anda, bahkan saat offline",
+      "title": "CV Anda tetap di tangan Anda. Sungguh",
+      "text": "Tanpa akun, tanpa file yang dikirim lewat internet. Situs dimuat sekali, lalu semuanya berjalan di komputer atau ponsel Anda, bahkan tanpa koneksi. Tak ada yang melihat CV Anda selain Anda, termasuk kami",
       "browser": {
         "title": "Browser Anda",
         "tag": "Perangkat Anda",
         "items": {
-          "master": "CV Master",
+          "cvs": "CV Anda",
           "photo": "Foto profil",
-          "versions": "Versi tertarget",
+          "letters": "Surat lamaran",
           "settings": "Preferensi"
         },
-        "note": "Disimpan di IndexedDB, hanya di perangkat ini"
+        "note": "Disimpan di browser Anda, hanya di perangkat ini"
       },
       "flow": {
-        "app": "Aplikasi, saat pertama dimuat",
+        "app": "Situs, saat kunjungan pertama",
         "data": "Data Anda",
         "never": "tidak pernah"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Server",
-        "text": "Menyajikan file aplikasi (HTML, CSS, JavaScript), tidak lebih",
+        "text": "Mengirim halaman situs, tidak lebih",
         "items": {
-          "noDb": "Tanpa basis data",
+          "noDb": "Tidak ada CV yang disimpan",
           "noAccount": "Tanpa akun pengguna",
           "noLogs": "Tanpa log kunjungan"
         }
@@ -152,54 +152,54 @@
           "text": "Tanpa pendaftaran, email, atau kata sandi. Buka halamannya dan mulai"
         },
         "trackers": {
-          "title": "Tanpa pelacak",
-          "text": "Tanpa statistik, iklan, atau cookie pelacak. Bahkan fontnya di-hosting di server kami sendiri"
+          "title": "Tanpa iklan dan pelacakan",
+          "text": "Tanpa iklan, tanpa cookie pelacak, tanpa jual-beli data: kami memang tidak punya data Anda"
         },
         "csp": {
-          "title": "Terkunci secara teknis",
-          "text": "Kebijakan keamanan situs (CSP) melarang browser menghubungi domain lain mana pun. Kodenya terbuka: periksa sendiri"
+          "title": "Siapa pun bisa memeriksa",
+          "text": "Situs dikunci agar tidak bisa berkomunikasi dengan layanan lain, dan kodenya terbuka: ahli mana pun bisa memverifikasinya"
         },
         "backup": {
-          "title": "Cadangan Anda, file Anda",
-          "text": "Ekspor semua data Anda ke file JSON dan impor kembali di perangkat mana pun"
+          "title": "Salinan kapan saja",
+          "text": "Unduh cadangan semua CV Anda dengan satu klik dan buka di perangkat lain"
         }
       }
     },
     "features": {
       "eyebrow": "Fitur",
-      "title": "Semua yang Anda butuhkan untuk sampai ke wawancara",
+      "title": "Semua yang Anda butuhkan untuk lamaran yang sukses",
       "items": {
+        "templates": {
+          "title": "30 template yang rapi",
+          "text": "Sederhana, modern, atau berwarna, dengan atau tanpa foto. Ganti template atau warna dengan satu klik, teks Anda ikut menyesuaikan"
+        },
+        "letter": {
+          "title": "Surat lamaran yang serasi",
+          "text": "Tulis surat lamaran dengan gaya yang sama seperti CV Anda, untuk lamaran yang berkesan"
+        },
         "master": {
-          "title": "CV Master dan versi tertarget",
-          "text": "Satu CV lengkap, dan versi sebanyak lamaran Anda. Centang, hapus centang: tidak ada yang hilang"
+          "title": "Satu versi untuk tiap lowongan",
+          "text": "Simpan CV lengkap Anda dan buat versi sebanyak lamaran Anda. Centang, hapus centang: tidak ada yang hilang"
         },
         "score": {
           "title": "Skor kecocokan",
-          "text": "Tempel lowongan: kata kunci yang ditemukan, yang hilang, dan skor dari 100 secara langsung"
+          "text": "Tempel lowongan: lihat kata yang ditemukan, kata yang kurang, dan skor dari 100 yang diperbarui langsung"
         },
         "weak": {
-          "title": "Pendeteksi frasa lemah",
-          "text": "“Bertanggung jawab atas”, “membantu dalam”… ditandai otomatis, lengkap dengan daftar kata kerja aksi sebagai penggantinya"
+          "title": "Tips menulis",
+          "text": "Frasa yang kurang menonjolkan Anda, seperti “Bertanggung jawab atas”, ditandai, lengkap dengan kata kerja yang lebih kuat sebagai gantinya"
         },
         "analyzer": {
-          "title": "Penganalisis CV yang ada",
-          "text": "Letakkan CV yang dibuat di tempat lain: lihat apa yang benar-benar dibaca robot dan apa yang perlu diperbaiki"
+          "title": "Uji CV Anda saat ini",
+          "text": "Unggah CV yang dibuat di tempat lain: lihat apa yang benar-benar dibaca software penyaring dan apa yang perlu diperbaiki"
         },
-        "linkedin": {
-          "title": "Impor dari LinkedIn",
-          "text": "Isi CV Master Anda dari PDF gratis yang bisa diekspor dari profil LinkedIn Anda"
+        "import": {
+          "title": "Tak perlu mengetik ulang",
+          "text": "Bawa CV Anda saat ini (PDF atau Word) atau profil LinkedIn Anda: semuanya otomatis tertata di editor"
         },
         "languages": {
           "title": "5 bahasa CV",
           "text": "Prancis, Inggris, Italia, Spanyol, dan Jerman. Dalam bahasa Inggris, foto dan tanggal lahir disembunyikan sesuai kebiasaan negara berbahasa Inggris"
-        },
-        "pdf": {
-          "title": "Ekspor PDF ramah ATS",
-          "text": "Teks asli dan struktur jelas: terbaca oleh robot, nyaman bagi perekrut"
-        },
-        "offline": {
-          "title": "Bisa dipasang dan offline",
-          "text": "Tambahkan LocalATSCV ke layar utama dan tetap bekerja tanpa koneksi"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Apa itu ATS?",
-          "a": "Applicant Tracking System adalah perangkat lunak yang dipakai perekrut untuk menerima, menyaring, dan mencari lamaran. Sistem ini mengubah CV Anda menjadi teks dan mengindeksnya: jika teks diekstrak dengan buruk atau kata kunci yang tepat tidak ada, lamaran Anda sulit ditemukan"
+          "a": "Ini adalah software yang dipakai banyak perusahaan, agen penyalur kerja, dan situs lowongan untuk menerima dan menyaring lamaran. Software ini mengubah CV Anda menjadi teks dan memungkinkan perekrut mencari dengan kata kunci. Jika CV Anda salah terbaca atau tidak memuat kata yang tepat, CV itu akan tersisih"
         },
         "storage": {
           "q": "Di mana data saya disimpan?",
-          "a": "Hanya di browser Anda, di IndexedDB, basis data yang ada di setiap browser modern. Data tidak pernah melewati server kami, yang hanya bisa menyajikan file aplikasi"
+          "a": "Hanya di perangkat Anda, di browser Anda. Data tidak pernah melewati server kami: tidak ada orang lain selain Anda yang bisa mengaksesnya"
         },
         "clear": {
           "q": "Apa yang terjadi jika saya menghapus data browser?",
-          "a": "CV Anda akan terhapus, karena tidak tersimpan di tempat lain. Ekspor cadangan JSON secara berkala: Anda bisa mengimpornya kembali kapan saja, di perangkat mana pun"
+          "a": "CV Anda akan terhapus, karena tidak tersimpan di tempat lain. Unduh cadangan sesekali: Anda bisa membukanya kapan saja, di perangkat mana pun"
         },
         "score": {
           "q": "Apakah skor menjamin CV saya akan lolos seleksi?",
-          "a": "Tidak. Setiap ATS punya aturan sendiri dan keputusan akhir diambil oleh manusia. Skor adalah indikator: ia memeriksa apakah CV Anda memakai kosakata lowongan dan apakah mesin bisa membacanya dengan benar"
+          "a": "Tidak. Setiap perusahaan punya alatnya sendiri dan keputusan akhir selalu dibuat oleh manusia. Skor membantu Anda memakai kata-kata dari lowongan dan memastikan CV Anda terbaca dengan benar: begitulah peluang Anda meningkat"
         },
         "photo": {
           "q": "Mengapa foto hilang dalam bahasa Inggris?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Apakah benar-benar gratis?",
-          "a": "Ya. LocalATSCV adalah proyek sumber terbuka berlisensi MIT, tanpa iklan atau langganan. Biaya hostingnya hampir nol, karena browser Anda yang mengerjakan semuanya"
+          "a": "Ya, sepenuhnya: tanpa langganan, tanpa iklan, tanpa watermark di PDF Anda. LocalATSCV adalah proyek open source (kodenya terbuka) yang hampir tidak memakan biaya untuk dijalankan, karena semuanya berlangsung di perangkat Anda"
         },
         "templates": {
-          "q": "Apakah template grafis lolos ATS?",
-          "a": "Ya. Setiap template mencetak teks asli sesuai urutan baca, dengan judul bagian standar: bentuk, bilah, dan ikon adalah gambar yang diabaikan robot. Template satu kolom tetap yang paling aman, dan pemeriksaan ATS di editor menguji tata letak Anda secara langsung"
+          "q": "Apakah template berwarna lolos software penyaring?",
+          "a": "Ya. Semua template berisi teks asli dengan urutan yang benar dan judul umum seperti “Pengalaman” atau “Pendidikan”. Bentuk, warna, dan ikon hanyalah hiasan yang diabaikan software. Template satu kolom tetap yang paling aman, dan editor memeriksa tata letak Anda secara langsung"
         },
         "import": {
           "q": "Bisakah saya memakai CV saya yang sekarang atau profil LinkedIn saya?",
-          "a": "Bisa. Impor CV PDF atau Word (.docx), PDF profil LinkedIn Anda (di komputer), atau arsip data LinkedIn Anda (dari aplikasi seluler): isinya dibaca di browser Anda dan ditata ke dalam editor"
+          "a": "Ya. Impor CV Anda dalam PDF atau Word, atau profil LinkedIn Anda: isinya dibaca di perangkat Anda dan otomatis tertata di editor. Anda tinggal memeriksa ulang dan memilih template"
         },
         "offline": {
-          "q": "Apakah LocalATSCV bisa dipakai offline?",
-          "a": "Ya. Ini aplikasi web yang bisa dipasang: setelah kunjungan pertama, semuanya berjalan tanpa koneksi, termasuk ekspor PDF"
+          "q": "Bisa dipakai tanpa internet?",
+          "a": "Ya. Setelah kunjungan pertama, Anda bisa mengedit dan mengunduh CV tanpa koneksi. Anda bahkan bisa menambahkan LocalATSCV ke layar utama ponsel atau komputer, seperti aplikasi"
         }
       }
     },
     "cta": {
-      "title": "Siap lolos dari penyaringan?",
-      "text": "Buat CV Master Anda dalam hitungan menit. Tidak ada yang meninggalkan perangkat ini",
+      "title": "Wawancara Anda berikutnya dimulai di sini",
+      "text": "Buat CV gratis dalam hitungan menit, tanpa daftar. Tidak ada yang keluar dari perangkat Anda",
       "button": "Mulai"
     },
     "demo": {
-      "role": "Pengembang Front-end",
+      "role": "Pembuat roti dan kue",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Pengalaman",
-      "jobTitle": "Pengembang Angular",
-      "jobMeta": "PT Contoh · 2022 – sekarang",
+      "jobTitle": "Pembuat roti",
+      "jobMeta": "Toko Roti Contoh · 2021 – sekarang",
       "bullets": {
-        "migration": "Memigrasikan 40 layar ke <k>Angular</k> dan <k>TypeScript</k>, waktu muat berkurang 35%",
-        "testing": "<w>Bertanggung jawab atas</w> strategi pengujian end-to-end",
-        "delivery": "Continuous delivery dengan <k>GitLab CI</k> untuk 3 tim produk"
+        "production": "Membuat 300 <k>pastry</k> dan roti <k>sourdough</k> setiap pagi, penjualan naik 18%",
+        "opening": "<w>Bertanggung jawab atas</w> pembukaan toko dan penataan etalase",
+        "hygiene": "Menerapkan standar kebersihan <k>HACCP</k> dan melatih 2 peserta magang"
       },
       "weakLabel": "Frasa lemah",
       "weakReplacement": "“Memimpin”",
       "skills": "Keahlian",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Aksesibilitas",
+      "skillList": "Pastry · Roti sourdough · Kue · HACCP · Penjualan di toko",
+      "keywords": {
+        "pastry": "Pastry",
+        "sourdough": "Sourdough",
+        "hygiene": "HACCP",
+        "license": "SIM A"
+      },
       "score": "Kecocokan dengan lowongan",
-      "sent": "0 byte terkirim",
-      "robot": "KEAHLIAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pengembang Front-end Angular <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pengembang Angular <n>tin@example.com</n> 2022 – sekarang TypeScript <n>●●●○○</n> PT Contoh BAHASA Inggris Memigrasikan 40 layar ke…"
+      "sent": "Tidak ada yang dikirim",
+      "robot": "KEAHLIAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pembuat roti dan kue Pastry <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pembuat roti <n>tin@example.com</n> 2021 – sekarang Kue <n>●●●○○</n> Toko Roti Contoh BAHASA Inggris Membuat 300 pastry…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Penganalisis",
-    "title": "Apakah CV Anda lolos dari robot?",
-    "subtitle": "Letakkan CV PDF yang dibuat dengan alat apa pun: LocalATSCV membacanya seperti ATS dan memberi tahu apa yang perlu diperbaiki",
+    "eyebrow": "Cek CV gratis",
+    "title": "Apakah CV Anda lolos penyaringan perekrut?",
+    "subtitle": "Unggah CV Anda dalam PDF, baik dibuat dengan Word, Canva, atau alat lain: LocalATSCV membacanya seperti software rekrutmen dan memberi tahu apa yang perlu diperbaiki dalam hitungan detik",
     "drop": "Seret CV Anda ke sini",
     "dropActive": "Lepaskan file untuk memulai analisis",
     "hint": "Hanya PDF, maks. 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Teks dalam urutan penulisannya di file: begitulah ATS yang tidak menyusun ulang tata letak membacanya. Seharusnya mengikuti urutan baca CV Anda"
     },
     "cta": {
-      "title": "Mulai lagi dengan dasar yang benar",
-      "text": "Buat CV ramah ATS di editor, lalu sesuaikan untuk setiap lowongan",
+      "title": "Beralih ke CV tanpa cela",
+      "text": "Pilih salah satu dari 30 template kami yang terbaca dengan benar oleh software penyaring, lalu sesuaikan untuk setiap lowongan",
       "button": "Buka editor",
       "import": "Bawa CV ini ke template kami"
     },

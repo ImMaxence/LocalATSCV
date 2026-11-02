@@ -4,7 +4,7 @@
     "main": "Pagrindinė navigacija",
     "how": "Kaip tai veikia",
     "privacy": "Privatumas",
-    "analyze": "Analizuoti CV",
+    "analyze": "Išbandyti mano CV",
     "editor": "Kurti mano CV",
     "skipToContent": "Pereiti prie turinio"
   },
@@ -22,7 +22,7 @@
     "noResult": "Kalba nerasta"
   },
   "pages": {
-    "home": "ATS draugiški CV, 100 % vietoje",
+    "home": "Nemokamas ATS draugiškas CV, be registracijos",
     "editor": "Redaktorius",
     "analyze": "CV analizatorius",
     "changelog": "Naujienos",
@@ -31,7 +31,7 @@
     "privacy": "Privatumo politika"
   },
   "seo": {
-    "home": "Nemokamas ATS draugiškas CV kūrėjas: 30 grafinių šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam darbo skelbimui ir ATS įvertinimas. Atvirasis kodas, jūsų duomenys lieka naršyklėje",
+    "home": "Nemokamai sukurkite CV, kuris atveria duris į pokalbį: 30 šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam skelbimui ir ATS patikra. Be registracijos, jūsų duomenys lieka jūsų įrenginyje",
     "editor": "CV redaktorius su tiesiogine peržiūra, Master CV ir tikslinėmis versijomis, ATS patikra ir PDF eksportu su tikru tekstu. Viskas lieka jūsų naršyklėje",
     "analyze": "Nemokamai išanalizuokite PDF formato CV: ATS įvertinimas iš 100, taisytinos vietos ir tekstas taip, kaip jį perskaito atrankos sistema. Failas niekada nepalieka jūsų naršyklės",
     "changelog": "LocalATSCV naujienos pagal versijas: nauji CV šablonai, funkcijos ir pataisymai",
@@ -40,7 +40,7 @@
     "privacy": "LocalATSCV privatumo politika: jokie duomenys nerenkami, jūsų CV lieka naršyklėje"
   },
   "footer": {
-    "tagline": "ATS draugiškas CV kūrėjas, kuris niekada nemato jūsų duomenų",
+    "tagline": "Nemokamas CV kūrimo įrankis, kuris niekada nemato jūsų duomenų",
     "product": "Produktas",
     "legal": "Teisinė informacija",
     "project": "Projektas",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % vietoje · Nemokamai · Atvirasis kodas",
-      "titleLine1": "CV, kuris praeina pro robotus",
-      "titleLine2": "Duomenys, kurie lieka pas jus",
-      "subtitle": "LocalATSCV padeda sukurti CV, optimizuotą atrankos sistemoms (ATS), ir keliais paspaudimais pritaikyti jį kiekvienai darbo vietai. Viskas vyksta jūsų naršyklėje: jokios paskyros, jokie duomenys niekur nesiunčiami",
-      "ctaPrimary": "Kurti mano CV",
-      "ctaSecondary": "Analizuoti esamą CV",
+      "badge": "Nemokama · Be registracijos · Be reklamų",
+      "titleLine1": "CV, kuris atveria duris į pokalbį",
+      "titleLine2": "Paruošta per kelias minutes",
+      "subtitle": "Užpildykite savo patirtį, pasirinkite vieną iš 30 šablonų ir atsisiųskite siųsti paruoštą CV. LocalATSCV taip pat padeda jį pritaikyti kiekvienam skelbimui ir patikrina, ar paraiškas rūšiuojančios programos jį perskaito teisingai",
+      "ctaPrimary": "Kurti mano CV nemokamai",
+      "ctaSecondary": "Išbandyti dabartinį CV",
       "points": {
-        "noAccount": "Be registracijos",
-        "offline": "Veikia neprisijungus",
-        "atsPdf": "ATS nuskaitomas PDF"
+        "templates": "30 šablonų pasirinkimui",
+        "letter": "Derantis motyvacinis laiškas",
+        "private": "Jūsų duomenys lieka pas jus"
       }
     },
     "ats": {
-      "eyebrow": "Problema",
-      "title": "Jūsų CV pirmiausia skaito mašina",
-      "text": "Dauguma didelių įmonių ir įdarbinimo agentūrų rūšiuoja paraiškas su ATS (Applicant Tracking System). Ji ištraukia tekstą iš jūsų CV, išsaugo jį duomenų bazėje ir leidžia atrankos specialistams ieškoti kandidatų pagal raktinius žodžius",
+      "eyebrow": "Ar žinojote?",
+      "title": "Prieš atrankos specialistą jūsų CV dažnai skaito programa",
+      "text": "Daugelis įmonių, įdarbinimo agentūrų ir darbo skelbimų svetainių rūšiuoja paraiškas programa, vadinama ATS. Ji perskaito jūsų CV tekstą ir išsaugo jį duomenų bazėje. Jei jūsų CV perskaitomas neteisingai arba jame nėra skelbimo žodžių, jis gali niekada nepasiekti atrankos specialisto",
       "pitfalls": {
         "layout": {
           "title": "Sudėtingas maketas",
-          "text": "Stulpeliai, lentelės ir teksto laukeliai sujaukia skaitymo tvarką: jūsų informacija išeina sumaišyta"
+          "text": "Stulpeliai, lentelės ir teksto laukeliai sumaišo skaitymo tvarką: programa jūsų CV perskaito padrikai"
         },
         "image": {
           "title": "Neįskaitomas tekstas",
-          "text": "Piktogramos, įgūdžių juostos ir kai kurie dizaino įrankių eksportai virsta keistais simboliais arba visai dingsta"
+          "text": "Piktogramos, taškų skalės ir kai kuriomis dizaino programėlėmis sukurti CV virsta neįskaitomais simboliais arba visai dingsta"
         },
         "keywords": {
           "title": "Trūkstami raktiniai žodžiai",
-          "text": "Jei skelbimo žodžių nėra jūsų CV, jūsų profilis neatsiras atrankos specialistų paieškose"
+          "text": "Ar atrankos specialistas ieško „pardavėja“, „HACCP“ ar „B kategorijos vairuotojo pažymėjimas“? Jei šių žodžių jūsų CV nėra, jūsų paraiška neiškyla"
         }
       },
       "seen": "Ką matote jūs",
       "read": "Ką perskaito robotas",
-      "fix": "LocalATSCV daro priešingai: vienas stulpelis, tikras tekstas ir standartinės skilčių antraštės, kurias robotai perskaito teisinga tvarka"
+      "fix": "Su LocalATSCV jokių nemalonių staigmenų: jūsų CV patinka atrankos specialistams, o programos juos perskaito teisinga tvarka"
     },
     "how": {
       "eyebrow": "Kaip tai veikia",
-      "title": "Parašykite kartą, pritaikykite be galo",
-      "text": "Keturi žingsniai, kad jūsų Master CV taptų kiekvienai darbo vietai pritaikyta paraiška",
+      "title": "Vienas CV, pritaikytas kiekvienam darbui",
+      "text": "Užpildykite savo patirtį vieną kartą ir keliais paspaudimais sukurkite atskirą versiją kiekvienai paraiškai",
       "steps": {
         "profile": {
-          "title": "Užpildykite savo Master CV",
-          "text": "Įveskite visą savo patirtį kartą ir visiems laikams arba importuokite savo LinkedIn profilio PDF ir sutaupykite laiko"
+          "title": "Papasakokite savo istoriją",
+          "text": "Įveskite savo patirtį, išsilavinimą ir įgūdžius vieną kartą visam laikui. Jau turite CV ar LinkedIn profilį? Importuokite jį ir sutaupykite laiko"
         },
         "offer": {
           "title": "Įklijuokite darbo skelbimą",
-          "text": "LocalATSCV ištraukia raktinius žodžius ir apskaičiuoja atitikties įvertinimą iš 100, kuris atnaujinamas jums rašant"
+          "text": "LocalATSCV suranda svarbiausius skelbimo žodžius, parodo, kurių trūksta jūsų CV, ir suteikia balą iš 100"
         },
         "compose": {
-          "title": "Sukurkite tikslinę versiją",
-          "text": "Pažymėkite tinkamą patirtį ir punktus, pertvarkykite juos vilkdami. Iš jūsų Master niekas neištrinama"
+          "title": "Palikite tai, kas svarbiausia",
+          "text": "Pažymėkite, kas svarbu šiai pareigybei, ir keiskite tvarką tempdami. Visas jūsų CV lieka nepakitęs"
         },
         "export": {
-          "title": "Eksportuokite į PDF",
-          "text": "PDF su tikru tekstu, struktūruotas ir viename stulpelyje, robotams toks pat įskaitomas kaip ir atrankos specialistams"
+          "title": "Atsisiųskite ir teikite paraišką",
+          "text": "Pasirinkite šabloną ir spalvą, tada atsisiųskite savo CV PDF formatu, paruoštą siųsti ar spausdinti"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privatumas",
-      "title": "Nulis duomenų mūsų serveriuose. Tiesiogine prasme",
-      "text": "Nėra duomenų bazės, kurią būtų galima įsilaužti: mūsų serveris jums siunčia tik programėlę. Po to viskas vyksta jūsų naršyklėje, net neprisijungus",
+      "title": "Jūsų CV lieka pas jus. Tikrai",
+      "text": "Nereikia kurti paskyros, joks failas nesiunčiamas internetu. Svetainė įkeliama vieną kartą, o paskui viskas vyksta jūsų kompiuteryje ar telefone, net be interneto. Niekas, išskyrus jus, nemato jūsų CV, net ir mes",
       "browser": {
         "title": "Jūsų naršyklė",
         "tag": "Jūsų įrenginys",
         "items": {
-          "master": "Master CV",
+          "cvs": "Jūsų CV",
           "photo": "Profilio nuotrauka",
-          "versions": "Tikslinės versijos",
+          "letters": "Motyvaciniai laiškai",
           "settings": "Nuostatos"
         },
-        "note": "Saugoma IndexedDB, tik šiame įrenginyje"
+        "note": "Išsaugota jūsų naršyklėje, tik šiame įrenginyje"
       },
       "flow": {
-        "app": "Programėlė, pirmą kartą įkeliant",
+        "app": "Svetainė, pirmojo apsilankymo metu",
         "data": "Jūsų duomenys",
         "never": "niekada"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Serveris",
-        "text": "Pateikia programėlės failus (HTML, CSS, JavaScript), nieko daugiau",
+        "text": "Siunčia svetainės puslapius, nieko daugiau",
         "items": {
-          "noDb": "Jokios duomenų bazės",
+          "noDb": "Nesaugomas joks CV",
           "noAccount": "Jokių naudotojų paskyrų",
           "noLogs": "Jokių lankymosi žurnalų"
         }
@@ -152,54 +152,54 @@
           "text": "Be registracijos, el. pašto ir slaptažodžio. Atidarykite puslapį ir pradėkite"
         },
         "trackers": {
-          "title": "Be sekiklių",
-          "text": "Jokios statistikos, reklamų ar sekimo slapukų. Net šriftai laikomi mūsų pačių serveryje"
+          "title": "Jokių reklamų ir sekimo",
+          "text": "Jokios reklamos, jokių sekimo slapukų, jokio perpardavimo: mes paprasčiausiai neturime jūsų duomenų"
         },
         "csp": {
-          "title": "Techniškai užrakinta",
-          "text": "Svetainės saugumo politika (CSP) draudžia naršyklei jungtis prie bet kurio kito domeno. Kodas atviras: patikrinkite patys"
+          "title": "Gali patikrinti kiekvienas",
+          "text": "Svetainė užrakinta taip, kad negalėtų bendrauti su jokia kita paslauga, o jos kodas viešas: bet kuris ekspertas gali tai patikrinti"
         },
         "backup": {
-          "title": "Jūsų atsarginės kopijos, jūsų failai",
-          "text": "Eksportuokite visus savo duomenis į JSON failą ir importuokite juos bet kuriame įrenginyje"
+          "title": "Kopija, kada tik norite",
+          "text": "Vienu paspaudimu atsisiųskite visų savo CV atsarginę kopiją ir atidarykite juos kitame įrenginyje"
         }
       }
     },
     "features": {
       "eyebrow": "Funkcijos",
-      "title": "Viskas, ko reikia, kad patektumėte į pokalbį",
+      "title": "Viskas sėkmingai paraiškai",
       "items": {
+        "templates": {
+          "title": "30 kruopščiai sukurtų šablonų",
+          "text": "Santūrūs, modernūs ar spalvingi, su nuotrauka arba be jos. Keiskite šabloną ar spalvą vienu paspaudimu, jūsų tekstas prisitaiko"
+        },
+        "letter": {
+          "title": "Derantis motyvacinis laiškas",
+          "text": "Parašykite laišką tokiu pat stiliumi kaip CV, kad paraiška atrodytų išbaigta"
+        },
         "master": {
-          "title": "Master CV ir tikslinės versijos",
-          "text": "Vienas išsamus CV ir tiek variantų, kiek paraiškų. Pažymėkite, atžymėkite: niekas nepradingsta"
+          "title": "Atskira versija kiekvienam darbui",
+          "text": "Išsaugokite visą CV ir sukurkite tiek versijų, kiek turite paraiškų. Pažymėkite, atžymėkite: niekas nedingsta"
         },
         "score": {
           "title": "Atitikties įvertinimas",
-          "text": "Įklijuokite skelbimą: rasti ir trūkstami raktiniai žodžiai bei įvertinimas iš 100 realiuoju laiku"
+          "text": "Įklijuokite skelbimą: matote rastus ir trūkstamus žodžius bei balą iš 100, atnaujinamą realiuoju laiku"
         },
         "weak": {
-          "title": "Silpnų formuluočių aptikimas",
-          "text": "„Atsakingas už“, „padėjau“… pažymimi automatiškai, o jiems pakeisti siūlomas veiksmažodžių bankas"
+          "title": "Rašymo patarimai",
+          "text": "Formuluotės, kurios jūsų neišryškina, pavyzdžiui, „Atsakingas už“, pažymimos, o vietoj jų siūlomi stipresni veiksmažodžiai"
         },
         "analyzer": {
-          "title": "Esamų CV analizatorius",
-          "text": "Įmeskite kitur sukurtą CV: pamatykite, ką robotas iš tikrųjų perskaito ir ką reikia taisyti"
+          "title": "Išbandykite dabartinį CV",
+          "text": "Įkelkite kitur sukurtą CV: sužinokite, ką atrankos programos iš jo iš tikrųjų perskaito ir ką reikia pataisyti"
         },
-        "linkedin": {
-          "title": "Importas iš LinkedIn",
-          "text": "Iš anksto užpildykite savo Master CV nemokamu PDF, kurį galite eksportuoti iš savo LinkedIn profilio"
+        "import": {
+          "title": "Nieko nereikia perrašinėti",
+          "text": "Perkelkite dabartinį CV (PDF ar Word) arba LinkedIn profilį: viskas automatiškai sudėliojama redaktoriuje"
         },
         "languages": {
           "title": "5 CV kalbos",
           "text": "Prancūzų, anglų, italų, ispanų ir vokiečių. Anglų kalba nuotrauka ir gimimo data paslepiamos pagal angliškai kalbančių šalių normas"
-        },
-        "pdf": {
-          "title": "ATS draugiškas PDF eksportas",
-          "text": "Tikras tekstas ir aiški struktūra: įskaitoma robotams, maloni atrankos specialistams"
-        },
-        "offline": {
-          "title": "Įdiegiama ir veikia neprisijungus",
-          "text": "Pridėkite LocalATSCV prie pradžios ekrano ir dirbkite toliau be ryšio"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Kas yra ATS?",
-          "a": "Applicant Tracking System yra programinė įranga, kuria atrankos specialistai priima, rūšiuoja ir ieško paraiškų. Ji paverčia jūsų CV tekstu ir jį indeksuoja: jei tekstas ištrauktas prastai arba trūksta tinkamų raktinių žodžių, jūsų paraišką sunku rasti"
+          "a": "Tai programa, kuria daugelis įmonių, įdarbinimo agentūrų ir darbo skelbimų svetainių priima ir rūšiuoja paraiškas. Ji paverčia jūsų CV tekstu ir leidžia atrankos specialistui ieškoti pagal raktinius žodžius. Jei jūsų CV perskaitomas neteisingai arba jame trūksta tinkamų žodžių, jis lieka nepastebėtas"
         },
         "storage": {
           "q": "Kur saugomi mano duomenys?",
-          "a": "Tik jūsų naršyklėje, IndexedDB, duomenų bazėje, kuri yra kiekvienoje šiuolaikinėje naršyklėje. Jie niekada nekeliauja per mūsų serverius, kurie moka tik pateikti programėlės failus"
+          "a": "Tik jūsų įrenginyje, jūsų naršyklėje. Jie niekada nekeliauja per mūsų serverius: niekas, išskyrus jus, neturi prie jų prieigos"
         },
         "clear": {
           "q": "Kas nutiks, jei išvalysiu naršyklės duomenis?",
-          "a": "Jūsų CV bus ištrinti, nes jų niekur kitur nėra. Reguliariai eksportuokite JSON atsarginę kopiją: ją galėsite bet kada importuoti bet kuriame įrenginyje"
+          "a": "Jūsų CV ištrinami, nes jų niekur kitur nėra. Retkarčiais atsisiųskite atsarginę kopiją: galėsite ją atidaryti bet kada, bet kuriame įrenginyje"
         },
         "score": {
           "q": "Ar įvertinimas garantuoja, kad mano CV bus atrinktas?",
-          "a": "Ne. Kiekviena ATS turi savo taisykles, o galutinį sprendimą priima žmogus. Įvertinimas yra rodiklis: jis patikrina, ar jūsų CV vartoja skelbimo žodžius ir ar mašina gali jį teisingai perskaityti"
+          "a": "Ne. Kiekviena įmonė turi savo įrankius, o galutinį sprendimą visada priima žmogus. Balas padeda panaudoti skelbimo žodžius ir patikrinti, ar jūsų CV perskaitomas teisingai: taip padidinate savo galimybes"
         },
         "photo": {
           "q": "Kodėl anglų kalba dingsta nuotrauka?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Ar tikrai nemokama?",
-          "a": "Taip. LocalATSCV yra atvirojo kodo projektas su MIT licencija, be reklamų ir prenumeratos. Jo talpinimas beveik nieko nekainuoja, nes visą darbą atlieka jūsų naršyklė"
+          "a": "Taip, visiškai: jokios prenumeratos, jokios reklamos, jokio vandenženklio jūsų PDF failuose. LocalATSCV yra atvirojo kodo projektas (kodas viešas), kurio išlaikymas beveik nieko nekainuoja, nes viskas vyksta jūsų įrenginyje"
         },
         "templates": {
-          "q": "Ar grafiniai šablonai praeina ATS?",
-          "a": "Taip. Kiekvienas šablonas spausdina tikrą tekstą skaitymo tvarka su standartinėmis skilčių antraštėmis: formos, juostos ir piktogramos yra piešiniai, kurių robotai nepaiso. Vieno stulpelio šablonai vis dar saugiausi, o redaktoriaus ATS patikra realiuoju laiku tikrina jūsų maketą"
+          "q": "Ar spalvingi šablonai įveikia atrankos programas?",
+          "a": "Taip. Visuose šablonuose yra tikras tekstas teisinga tvarka ir įprastos antraštės, pavyzdžiui, „Darbo patirtis“ ar „Išsilavinimas“. Formos, spalvos ir piktogramos yra tik puošmenos, kurių programos nepaiso. Vieno stulpelio šablonai išlieka patikimiausi, o redaktorius tikrina jūsų maketą realiuoju laiku"
         },
         "import": {
           "q": "Ar galiu panaudoti dabartinį CV arba LinkedIn profilį?",
-          "a": "Taip. Importuokite CV PDF arba Word (.docx) formatu, savo LinkedIn profilio PDF (kompiuteryje) arba LinkedIn duomenų archyvą (iš programėlės telefone): turinys perskaitomas jūsų naršyklėje ir suskirstomas redaktoriuje"
+          "a": "Taip. Importuokite savo CV PDF ar Word formatu arba LinkedIn profilį: turinys perskaitomas jūsų įrenginyje ir automatiškai sudėliojamas redaktoriuje. Belieka peržiūrėti ir pasirinkti šabloną"
         },
         "offline": {
-          "q": "Ar LocalATSCV veikia neprisijungus?",
-          "a": "Taip. Tai įdiegiama interneto programėlė: po pirmo apsilankymo viskas veikia be ryšio, įskaitant PDF eksportą"
+          "q": "Ar veikia be interneto?",
+          "a": "Taip. Po pirmojo apsilankymo galite redaguoti ir atsisiųsti savo CV be interneto. Galite net pridėti LocalATSCV prie telefono ar kompiuterio pagrindinio ekrano kaip programėlę"
         }
       }
     },
     "cta": {
-      "title": "Pasiruošę praeiti pro filtrą?",
-      "text": "Sukurkite savo Master CV per kelias minutes. Niekas nepaliks šio įrenginio",
+      "title": "Jūsų kitas darbo pokalbis prasideda čia",
+      "text": "Sukurkite savo CV nemokamai per kelias minutes, be registracijos. Niekas nepalieka jūsų įrenginio",
       "button": "Pradėti"
     },
     "demo": {
-      "role": "Front-end programuotoja",
+      "role": "Kepėja ir konditerė",
       "contact": "Lionas · camille.martin@example.com",
       "experience": "Darbo patirtis",
-      "jobTitle": "Angular programuotoja",
-      "jobMeta": "UAB Pavyzdys · 2022 – dabar",
+      "jobTitle": "Kepėja",
+      "jobMeta": "UAB Pavyzdžio kepykla · 2021 – dabar",
       "bullets": {
-        "migration": "40 ekranų perkėlimas į <k>Angular</k> ir <k>TypeScript</k>, įkėlimo laikas sutrumpėjo 35 %",
-        "testing": "<w>Atsakinga už</w> visapusio testavimo strategiją",
-        "delivery": "Nuolatinis diegimas su <k>GitLab CI</k> 3 produktų komandoms"
+        "production": "Kiekvieną rytą iškepdavau 300 <k>sluoksniuotų bandelių</k> ir <k>raugo</k> duonos kepalų, pardavimai +18 %",
+        "opening": "<w>Atsakinga už</w> parduotuvės atidarymą ir vitriną",
+        "hygiene": "Laikiausi <k>HACCP</k> higienos reikalavimų ir apmokiau 2 mokinius"
       },
       "weakLabel": "Silpna formuluotė",
       "weakReplacement": "„Vadovavau“",
       "skills": "Įgūdžiai",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Prieinamumas",
+      "skillList": "Sluoksniuotos bandelės · Raugo duona · Konditerija · HACCP · Prekyba parduotuvėje",
+      "keywords": {
+        "pastry": "Sluoksniuotos bandelės",
+        "sourdough": "Raugas",
+        "hygiene": "HACCP",
+        "license": "B kategorija"
+      },
       "score": "Atitiktis skelbimui",
-      "sent": "Išsiųsta 0 baitų",
-      "robot": "ĮGŪDŽIAI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end programuotoja Angular <n>●●●●○</n> DARBO PATIRTIS <n>� camille.mar</n> Angular programuotoja <n>tin@example.com</n> 2022 – dabar TypeScript <n>●●●○○</n> UAB Pavyzdys KALBOS Anglų 40 ekranų perkėlimas į…"
+      "sent": "Niekas nesiunčiama",
+      "robot": "ĮGŪDŽIAI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Kepėja ir konditerė Sluoksniuotos bandelės <n>●●●●○</n> DARBO PATIRTIS <n>� camille.mar</n> Kepėja <n>tin@example.com</n> 2021 – dabar Konditerija <n>●●●○○</n> UAB Pavyzdžio kepykla KALBOS Anglų Kiekvieną rytą iškepdavau…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizatorius",
-    "title": "Ar jūsų CV praeina pro robotus?",
-    "subtitle": "Įmeskite bet kuriuo įrankiu sukurtą PDF formato CV: LocalATSCV jį perskaito kaip ATS ir pasako, ką taisyti",
+    "eyebrow": "Nemokama CV patikra",
+    "title": "Ar jūsų CV įveiks atrankos filtrą?",
+    "subtitle": "Įkelkite savo CV PDF formatu, nesvarbu, ar jis sukurtas su Word, Canva ar kitu įrankiu: LocalATSCV perskaito jį kaip atrankos programos ir per kelias sekundes pasako, ką pataisyti",
     "drop": "Vilkite savo CV čia",
     "dropActive": "Paleiskite failą, kad pradėtumėte analizę",
     "hint": "Tik PDF, iki 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Tekstas ta tvarka, kuria jis įrašytas faile: taip jį perskaito ATS, kurios neatkuria maketo. Jis turėtų sekti jūsų CV skaitymo tvarką"
     },
     "cta": {
-      "title": "Pradėkite iš naujo tvirtais pagrindais",
-      "text": "Sukurkite ATS draugišką CV redaktoriuje, tada pritaikykite jį kiekvienai darbo vietai",
+      "title": "Pereikite prie nepriekaištingo CV",
+      "text": "Pasirinkite vieną iš mūsų 30 šablonų, kuriuos atrankos programos perskaito teisingai, ir pritaikykite jį kiekvienam skelbimui",
       "button": "Atidaryti redaktorių",
       "import": "Perkelti šį CV į mūsų šablonus"
     },

@@ -4,7 +4,7 @@
     "main": "Glavna navigacija",
     "how": "Kako funkcionira",
     "privacy": "Privatnost",
-    "analyze": "Analiziraj životopis",
+    "analyze": "Testiraj životopis",
     "editor": "Izradi moj životopis",
     "skipToContent": "Prijeđi na sadržaj"
   },
@@ -22,7 +22,7 @@
     "noResult": "Nije pronađen nijedan jezik"
   },
   "pages": {
-    "home": "Životopisi prilagođeni ATS-u, 100 % lokalno",
+    "home": "Besplatan životopis prilagođen ATS-u, bez registracije",
     "editor": "Uređivač",
     "analyze": "Analizator životopisa",
     "changelog": "Novosti",
@@ -31,7 +31,7 @@
     "privacy": "Pravila privatnosti"
   },
   "seo": {
-    "home": "Besplatan alat za izradu životopisa prilagođenog ATS-u: 30 grafičkih predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS ocjena. Otvoreni kod, vaši podaci ostaju u pregledniku",
+    "home": "Izradite besplatno životopis koji vas vodi do razgovora: 30 predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS provjera. Bez registracije, vaši podaci ostaju na vašem uređaju",
     "editor": "Uređivač životopisa s pregledom uživo, Master životopisom i ciljanim verzijama, ATS provjerom i izvozom u PDF sa stvarnim tekstom. Sve ostaje u vašem pregledniku",
     "analyze": "Besplatno analizirajte životopis u PDF-u: ATS ocjena od 100, stavke za ispravak i tekst onako kako ga čita sustav za zapošljavanje. Datoteka nikad ne napušta vaš preglednik",
     "changelog": "Novosti u LocalATSCV-u, verziju po verziju: novi predlošci životopisa, značajke i ispravci",
@@ -40,7 +40,7 @@
     "privacy": "Pravila privatnosti LocalATSCV-a: ne prikupljaju se podaci, vaši životopisi ostaju u pregledniku"
   },
   "footer": {
-    "tagline": "Alat za životopise prilagođene ATS-u koji nikad ne vidi vaše podatke",
+    "tagline": "Besplatan alat za životopis koji nikad ne vidi vaše podatke",
     "product": "Proizvod",
     "legal": "Pravno",
     "project": "Projekt",
@@ -59,89 +59,89 @@
   },
   "landing": {
     "hero": {
-      "badge": "100 % lokalno · Besplatno · Otvoreni kod",
-      "titleLine1": "Životopis koji prolazi kroz robote",
-      "titleLine2": "Podaci koji ostaju kod vas",
-      "subtitle": "LocalATSCV vam pomaže izraditi životopis optimiziran za sustave za zapošljavanje (ATS) i u nekoliko klikova ga prilagoditi svakom radnom mjestu. Sve se događa u vašem pregledniku: bez računa i bez slanja ikakvih podataka",
-      "ctaPrimary": "Izradi moj životopis",
-      "ctaSecondary": "Analiziraj postojeći životopis",
+      "badge": "Besplatno · Bez registracije · Bez oglasa",
+      "titleLine1": "Životopis koji vas vodi do razgovora",
+      "titleLine2": "Gotovo za nekoliko minuta",
+      "subtitle": "Ispunite svoje iskustvo, odaberite jedan od 30 predložaka i preuzmite životopis spreman za slanje. LocalATSCV vam pomaže i da ga prilagodite svakom oglasu te provjerava čitaju li ga programi koji razvrstavaju prijave ispravno",
+      "ctaPrimary": "Izradi životopis besplatno",
+      "ctaSecondary": "Testiraj moj trenutačni životopis",
       "points": {
-        "noAccount": "Bez registracije",
-        "offline": "Radi izvan mreže",
-        "atsPdf": "PDF čitljiv ATS-u"
+        "templates": "30 predložaka na izbor",
+        "letter": "Usklađeno motivacijsko pismo",
+        "private": "Vaši podaci ostaju kod vas"
       }
     },
     "ats": {
-      "eyebrow": "Problem",
-      "title": "Vaš životopis najprije čita stroj",
-      "text": "Većina velikih tvrtki i agencija za zapošljavanje razvrstava prijave pomoću ATS-a (Applicant Tracking System). On izvlači tekst iz vašeg životopisa, sprema ga u bazu podataka i omogućuje regruterima da traže kandidate po ključnim riječima",
+      "eyebrow": "Jeste li znali?",
+      "title": "Prije poslodavca vaš životopis često čita program",
+      "text": "Mnoge tvrtke, agencije za zapošljavanje i portali za posao razvrstavaju prijave programom koji se zove ATS. On pročita tekst vašeg životopisa i spremi ga u bazu podataka. Ako se vaš životopis pogrešno pročita ili u njemu nema riječi iz oglasa, možda nikad ne stigne do poslodavca",
       "pitfalls": {
         "layout": {
           "title": "Složeni rasporedi",
-          "text": "Stupci, tablice i tekstni okviri miješaju redoslijed čitanja: vaši podaci izlaze ispremetani"
+          "text": "Stupci, tablice i okviri miješaju redoslijed čitanja: program čita vaš životopis ispreturano"
         },
         "image": {
           "title": "Nečitljiv tekst",
-          "text": "Ikone, trake vještina i neki izvozi iz alata za dizajn pretvaraju se u čudne znakove ili potpuno nestaju"
+          "text": "Ikone, ljestvice s točkicama i životopisi iz nekih aplikacija za dizajn pretvaraju se u nečitljive znakove ili potpuno nestaju"
         },
         "keywords": {
           "title": "Ključne riječi koje nedostaju",
-          "text": "Ako se riječi iz oglasa ne pojavljuju u vašem životopisu, vaš se profil ne prikazuje u pretragama regrutera"
+          "text": "Traži li poslodavac „prodavačica”, „HACCP” ili „vozačka dozvola B kategorije”? Ako tih riječi nema u vašem životopisu, vaša se prijava ne pojavljuje"
         }
       },
       "seen": "Što vidite vi",
       "read": "Što čita robot",
-      "fix": "LocalATSCV radi suprotno: jedan stupac, stvaran tekst i standardni naslovi odjeljaka koje roboti čitaju pravilnim redoslijedom"
+      "fix": "Uz LocalATSCV nema neugodnih iznenađenja: vaši se životopisi sviđaju poslodavcima, a programi ih čitaju pravilnim redoslijedom"
     },
     "how": {
       "eyebrow": "Kako funkcionira",
-      "title": "Napišite jednom, prilagođavajte beskonačno",
-      "text": "Četiri koraka da svoj Master životopis pretvorite u prijavu po mjeri svakog radnog mjesta",
+      "title": "Jedan životopis, prilagođen svakom oglasu",
+      "text": "Ispunite svoje iskustvo jednom, a zatim s nekoliko klikova izradite verziju po mjeri za svaku prijavu",
       "steps": {
         "profile": {
-          "title": "Ispunite svoj Master životopis",
-          "text": "Unesite sva svoja iskustva jednom zauvijek ili uvezite PDF svog LinkedIn profila da uštedite vrijeme"
+          "title": "Ispričajte svoju priču",
+          "text": "Unesite svoje iskustvo, obrazovanje i vještine jednom zauvijek. Već imate životopis ili LinkedIn profil? Uvezite ga i uštedite vrijeme"
         },
         "offer": {
           "title": "Zalijepite oglas",
-          "text": "LocalATSCV izdvaja ključne riječi i izračunava ocjenu podudarnosti od 100 koja se ažurira dok tipkate"
+          "text": "LocalATSCV pronalazi važne riječi u oglasu, pokazuje vam koje nedostaju u vašem životopisu i daje vam ocjenu od 100"
         },
         "compose": {
-          "title": "Složite ciljanu verziju",
-          "text": "Označite relevantna iskustva i stavke i presložite ih povlačenjem. Iz vašeg Mastera ništa se ne briše"
+          "title": "Zadržite bitno",
+          "text": "Označite što je važno za ovo radno mjesto i mijenjajte redoslijed povlačenjem. Vaš potpuni životopis ostaje netaknut"
         },
         "export": {
-          "title": "Izvezite u PDF",
-          "text": "PDF sa stvarnim tekstom, strukturiran i u jednom stupcu, jednako čitljiv robotima kao i regruterima"
+          "title": "Preuzmite i prijavite se",
+          "text": "Odaberite predložak i boju te preuzmite životopis u PDF-u, spreman za slanje ili ispis"
         }
       }
     },
     "privacy": {
       "eyebrow": "Privatnost",
-      "title": "Nula podataka na našim poslužiteljima. Doslovno",
-      "text": "Nema baze podataka koju bi se moglo hakirati: naš poslužitelj vam šalje samo aplikaciju. Nakon toga sve se događa u vašem pregledniku, čak i izvan mreže",
+      "title": "Vaš životopis ostaje kod vas. Zaista",
+      "text": "Nema računa za otvaranje, nijedna datoteka ne šalje se internetom. Stranica se učita jednom, a zatim se sve odvija na vašem računalu ili mobitelu, čak i bez veze. Nitko osim vas ne vidi vaš životopis, čak ni mi",
       "browser": {
         "title": "Vaš preglednik",
         "tag": "Vaš uređaj",
         "items": {
-          "master": "Master životopis",
+          "cvs": "Vaši životopisi",
           "photo": "Profilna fotografija",
-          "versions": "Ciljane verzije",
+          "letters": "Motivacijska pisma",
           "settings": "Postavke"
         },
-        "note": "Spremljeno u IndexedDB, samo na ovom uređaju"
+        "note": "Spremljeno u vašem pregledniku, samo na ovom uređaju"
       },
       "flow": {
-        "app": "Aplikacija, pri prvom učitavanju",
+        "app": "Stranica, pri prvom posjetu",
         "data": "Vaši podaci",
         "never": "nikad"
       },
       "server": {
         "title": "localatscv.mbonnici.fr",
         "tag": "Poslužitelj",
-        "text": "Poslužuje datoteke aplikacije (HTML, CSS, JavaScript), ništa više",
+        "text": "Šalje stranice weba, ništa više",
         "items": {
-          "noDb": "Nema baze podataka",
+          "noDb": "Nema spremljenih životopisa",
           "noAccount": "Nema korisničkih računa",
           "noLogs": "Nema zapisa o posjetima"
         }
@@ -152,54 +152,54 @@
           "text": "Bez registracije, e-pošte i lozinke. Otvorite stranicu i počnite"
         },
         "trackers": {
-          "title": "Bez praćenja",
-          "text": "Bez statistike, oglasa i kolačića za praćenje. Čak su i fontovi na našem vlastitom poslužitelju"
+          "title": "Bez oglasa i praćenja",
+          "text": "Bez oglasa, bez kolačića za praćenje, bez preprodaje: vaše podatke jednostavno nemamo"
         },
         "csp": {
-          "title": "Tehnički zaključano",
-          "text": "Sigurnosna pravila stranice (CSP) zabranjuju pregledniku da kontaktira bilo koju drugu domenu. Kod je otvoren: provjerite sami"
+          "title": "Svatko može provjeriti",
+          "text": "Stranica je zaključana tako da ne može komunicirati ni s jednom drugom uslugom, a njezin je kod javan: svaki stručnjak to može provjeriti"
         },
         "backup": {
-          "title": "Vaše sigurnosne kopije, vaše datoteke",
-          "text": "Izvezite sve svoje podatke u JSON datoteku i ponovno ih uvezite na bilo kojem uređaju"
+          "title": "Kopija kad god želite",
+          "text": "Jednim klikom preuzmite sigurnosnu kopiju svih svojih životopisa i otvorite ih na drugom uređaju"
         }
       }
     },
     "features": {
       "eyebrow": "Značajke",
-      "title": "Sve što vam treba da dođete do razgovora za posao",
+      "title": "Sve za uspješnu prijavu",
       "items": {
+        "templates": {
+          "title": "30 dotjeranih predložaka",
+          "text": "Jednostavni, moderni ili šareni, sa slikom ili bez nje. Promijenite predložak ili boju jednim klikom, vaš tekst prati"
+        },
+        "letter": {
+          "title": "Usklađeno motivacijsko pismo",
+          "text": "Napišite pismo u istom stilu kao životopis, za prijavu koja ostavlja dojam"
+        },
         "master": {
-          "title": "Master životopis i ciljane verzije",
-          "text": "Jedan potpuni životopis i onoliko inačica koliko prijava. Označite, odznačite: ništa se ne gubi"
+          "title": "Posebna verzija za svaki oglas",
+          "text": "Zadržite potpuni životopis i izradite onoliko verzija koliko imate prijava. Označite, odznačite: ništa se ne gubi"
         },
         "score": {
           "title": "Ocjena podudarnosti",
-          "text": "Zalijepite oglas: pronađene i nedostajuće ključne riječi te ocjena od 100 u stvarnom vremenu"
+          "text": "Zalijepite oglas: vidite pronađene i nedostajuće riječi te ocjenu od 100, ažuriranu uživo"
         },
         "weak": {
-          "title": "Otkrivanje slabih formulacija",
-          "text": "„Odgovoran za”, „pomagao u”… označavaju se automatski, uz zbirku glagola radnje kojima ih zamijenite"
+          "title": "Savjeti za pisanje",
+          "text": "Izrazi koji vas ne ističu, poput „Odgovoran za”, označavaju se, uz snažnije glagole kao zamjenu"
         },
         "analyzer": {
-          "title": "Analizator postojećih životopisa",
-          "text": "Ubacite životopis izrađen negdje drugdje: pogledajte što robot stvarno čita i što treba ispraviti"
+          "title": "Testirajte svoj trenutačni životopis",
+          "text": "Učitajte životopis izrađen negdje drugdje: saznajte što programi za odabir zaista pročitaju i što treba ispraviti"
         },
-        "linkedin": {
-          "title": "Uvoz s LinkedIna",
-          "text": "Unaprijed ispunite svoj Master životopis iz besplatnog PDF-a koji možete izvesti sa svog LinkedIn profila"
+        "import": {
+          "title": "Ništa ne treba pretipkavati",
+          "text": "Preuzmite svoj trenutačni životopis (PDF ili Word) ili LinkedIn profil: sve se automatski razvrstava u uređivaču"
         },
         "languages": {
           "title": "5 jezika životopisa",
           "text": "Francuski, engleski, talijanski, španjolski i njemački. Na engleskom se fotografija i datum rođenja skrivaju, prema običajima engleskog govornog područja"
-        },
-        "pdf": {
-          "title": "Izvoz u PDF prilagođen ATS-u",
-          "text": "Stvaran tekst i jasna struktura: čitljivo robotima, ugodno regruterima"
-        },
-        "offline": {
-          "title": "Može se instalirati i radi izvan mreže",
-          "text": "Dodajte LocalATSCV na početni zaslon i nastavite raditi bez veze"
         }
       }
     },
@@ -210,19 +210,19 @@
       "items": {
         "ats": {
           "q": "Što je ATS?",
-          "a": "Applicant Tracking System je softver kojim regruteri primaju, razvrstavaju i pretražuju prijave. Pretvara vaš životopis u tekst i indeksira ga: ako je tekst loše izvučen ili nedostaju prave ključne riječi, vašu je prijavu teško pronaći"
+          "a": "To je program kojim mnoge tvrtke, agencije za zapošljavanje i portali za posao primaju i razvrstavaju prijave. Pretvara vaš životopis u tekst i omogućuje poslodavcu pretraživanje po ključnim riječima. Ako se vaš životopis pogrešno pročita ili mu nedostaju prave riječi, ostaje nezapažen"
         },
         "storage": {
           "q": "Gdje se spremaju moji podaci?",
-          "a": "Samo u vašem pregledniku, u IndexedDB-u, bazi podataka ugrađenoj u svaki moderni preglednik. Nikad ne prolaze kroz naše poslužitelje, koji znaju samo posluživati datoteke aplikacije"
+          "a": "Samo na vašem uređaju, u vašem pregledniku. Nikad ne prolaze kroz naše poslužitelje: nitko osim vas nema pristup njima"
         },
         "clear": {
           "q": "Što se događa ako izbrišem podatke preglednika?",
-          "a": "Vaši se životopisi brišu jer ne postoje nigdje drugdje. Redovito izvozite JSON sigurnosnu kopiju: možete je ponovno uvesti u bilo kojem trenutku, na bilo kojem uređaju"
+          "a": "Vaši se životopisi brišu jer ne postoje nigdje drugdje. Povremeno preuzmite sigurnosnu kopiju: možete je otvoriti u bilo kojem trenutku, na bilo kojem uređaju"
         },
         "score": {
           "q": "Jamči li ocjena da će moj životopis biti odabran?",
-          "a": "Ne. Svaki ATS ima svoja pravila, a konačnu odluku donosi čovjek. Ocjena je pokazatelj: provjerava koristi li vaš životopis riječi iz oglasa i može li ga stroj ispravno pročitati"
+          "a": "Ne. Svaka tvrtka ima svoje alate, a konačnu odluku uvijek donosi čovjek. Ocjena vam pomaže iskoristiti riječi iz oglasa i provjeriti čita li se vaš životopis ispravno: tako povećavate svoje šanse"
         },
         "photo": {
           "q": "Zašto fotografija nestaje na engleskom?",
@@ -230,45 +230,51 @@
         },
         "free": {
           "q": "Je li stvarno besplatno?",
-          "a": "Da. LocalATSCV je projekt otvorenog koda pod licencom MIT, bez oglasa i pretplate. Njegov hosting gotovo ništa ne košta jer sav posao obavlja vaš preglednik"
+          "a": "Da, potpuno: bez pretplate, bez oglasa, bez vodenog žiga na vašim PDF-ovima. LocalATSCV je projekt otvorenog koda (kod je javan) čije održavanje gotovo ništa ne košta jer se sve odvija na vašem uređaju"
         },
         "templates": {
-          "q": "Prolaze li grafički predlošci kroz ATS?",
-          "a": "Da. Svaki predložak ispisuje stvaran tekst, redoslijedom čitanja, sa standardnim naslovima odjeljaka: oblici, trake i ikone su crteži koje roboti zanemaruju. Predlošci s jednim stupcem i dalje su najsigurniji, a ATS provjera u uređivaču testira vaš raspored uživo"
+          "q": "Prolaze li šareni predlošci kroz programe za odabir?",
+          "a": "Da. Svi predlošci sadrže pravi tekst, pravilnim redoslijedom, s uobičajenim naslovima poput „Radno iskustvo” ili „Obrazovanje”. Oblici, boje i ikone samo su ukrasi koje programi zanemaruju. Predlošci s jednim stupcem ostaju najsigurniji, a uređivač provjerava vaš raspored uživo"
         },
         "import": {
           "q": "Mogu li ponovno upotrijebiti svoj sadašnji životopis ili LinkedIn profil?",
-          "a": "Da. Uvezite životopis u PDF-u ili Wordu (.docx), PDF svog LinkedIn profila (na računalu) ili arhivu podataka s LinkedIna (iz mobilne aplikacije): sadržaj se čita u vašem pregledniku i razvrstava u uređivaču"
+          "a": "Da. Uvezite svoj životopis u PDF-u ili Wordu, ili svoj LinkedIn profil: sadržaj se čita na vašem uređaju i automatski razvrstava u uređivaču. Preostaje samo pregledati i odabrati predložak"
         },
         "offline": {
-          "q": "Radi li LocalATSCV izvan mreže?",
-          "a": "Da. To je web-aplikacija koja se može instalirati: nakon prvog posjeta sve radi bez veze, uključujući izvoz u PDF"
+          "q": "Radi li bez interneta?",
+          "a": "Da. Nakon prvog posjeta možete uređivati i preuzimati svoje životopise bez veze. LocalATSCV možete čak dodati na početni zaslon mobitela ili računala, kao aplikaciju"
         }
       }
     },
     "cta": {
-      "title": "Spremni proći kroz filtar?",
-      "text": "Izradite svoj Master životopis za nekoliko minuta. Ništa neće napustiti ovaj uređaj",
+      "title": "Vaš sljedeći razgovor za posao počinje ovdje",
+      "text": "Izradite životopis besplatno za nekoliko minuta, bez registracije. Ništa ne napušta vaš uređaj",
       "button": "Započnite"
     },
     "demo": {
-      "role": "Front-end programerka",
+      "role": "Pekarica i slastičarka",
       "contact": "Lyon · camille.martin@example.com",
       "experience": "Radno iskustvo",
-      "jobTitle": "Angular programerka",
-      "jobMeta": "Primjer d.o.o. · 2022 – danas",
+      "jobTitle": "Pekarica",
+      "jobMeta": "Pekara Primjer · 2021 – danas",
       "bullets": {
-        "migration": "Migracija 40 zaslona na <k>Angular</k> i <k>TypeScript</k>, vrijeme učitavanja kraće za 35 %",
-        "testing": "<w>Odgovorna za</w> strategiju end-to-end testiranja",
-        "delivery": "Kontinuirana isporuka uz <k>GitLab CI</k> za 3 produktna tima"
+        "production": "Svako jutro 300 komada <k>lisnatog tijesta</k> i kruha od <k>kiselog tijesta</k>, prodaja porasla 18 %",
+        "opening": "<w>Odgovorna za</w> otvaranje trgovine i izlog",
+        "hygiene": "Pridržavanje higijenskih pravila <k>HACCP</k> i obuka 2 naučnika"
       },
       "weakLabel": "Slaba formulacija",
       "weakReplacement": "„Vodila sam”",
       "skills": "Vještine",
-      "skillList": "Angular · TypeScript · RxJS · GitLab CI · Pristupačnost",
+      "skillList": "Lisnato tijesto · Kruh od kiselog tijesta · Slastičarstvo · HACCP · Prodaja u trgovini",
+      "keywords": {
+        "pastry": "Lisnato tijesto",
+        "sourdough": "Kiselo tijesto",
+        "hygiene": "HACCP",
+        "license": "Vozačka B kategorije"
+      },
       "score": "Podudarnost s oglasom",
-      "sent": "Poslano 0 bajtova",
-      "robot": "VJEŠTINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Front-end programerka Angular <n>●●●●○</n> RADNO ISKUSTVO <n>� camille.mar</n> Angular programerka <n>tin@example.com</n> 2022 – danas TypeScript <n>●●●○○</n> Primjer d.o.o. JEZICI Engleski Migracija 40 zaslona na…"
+      "sent": "Ništa se ne šalje",
+      "robot": "VJEŠTINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekarica i slastičarka Lisnato tijesto <n>●●●●○</n> RADNO ISKUSTVO <n>� camille.mar</n> Pekarica <n>tin@example.com</n> 2021 – danas Slastičarstvo <n>●●●○○</n> Pekara Primjer JEZICI Engleski Svako jutro 300 komada…"
     }
   },
   "dialog": {
@@ -722,9 +728,9 @@
     }
   },
   "analyze": {
-    "eyebrow": "Analizator",
-    "title": "Prolazi li vaš životopis kroz robote?",
-    "subtitle": "Ubacite životopis u PDF-u izrađen bilo kojim alatom: LocalATSCV ga čita kao ATS i kaže vam što ispraviti",
+    "eyebrow": "Besplatna provjera životopisa",
+    "title": "Prolazi li vaš životopis odabir poslodavaca?",
+    "subtitle": "Učitajte svoj životopis u PDF-u, bilo da je iz Worda, Canve ili nekog drugog alata: LocalATSCV ga čita kao programi za zapošljavanje i za nekoliko sekundi kaže vam što ispraviti",
     "drop": "Povucite životopis ovamo",
     "dropActive": "Ispustite datoteku za početak analize",
     "hint": "Samo PDF, najviše 15 MB",
@@ -833,8 +839,8 @@
       "fileText": "Tekst redoslijedom kojim je zapisan u datoteci: tako ga čitaju ATS-ovi koji ne rekonstruiraju raspored. Trebao bi pratiti redoslijed čitanja vašeg životopisa"
     },
     "cta": {
-      "title": "Krenite ispočetka na čvrstim temeljima",
-      "text": "Izradite životopis prilagođen ATS-u u uređivaču, a zatim ga prilagodite svakom radnom mjestu",
+      "title": "Prijeđite na besprijekoran životopis",
+      "text": "Odaberite jedan od naših 30 predložaka, koje programi za odabir ispravno čitaju, i prilagodite ga svakom oglasu",
       "button": "Otvori uređivač",
       "import": "Prenesi ovaj životopis u naše predloške"
     },

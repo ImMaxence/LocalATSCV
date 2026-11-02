@@ -28,7 +28,8 @@
     "changelog": "Uutta",
     "legalNotice": "Oikeudelliset tiedot",
     "terms": "Käyttöehdot",
-    "privacy": "Tietosuojaseloste"
+    "privacy": "Tietosuojaseloste",
+    "accessibility": "Saavutettavuusseloste"
   },
   "seo": {
     "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 72 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV:n uutuudet versio versiolta: uudet CV-pohjat, ominaisuudet ja korjaukset",
     "legalNotice": "LocalATSCV:n oikeudelliset tiedot: julkaisija, ylläpito ja yhteystiedot",
     "terms": "LocalATSCV:n käyttöehdot, ilmainen ja avoimen lähdekoodin CV-työkalu",
-    "privacy": "LocalATSCV:n tietosuojaseloste: tietoja ei kerätä, CV:si pysyvät selaimessasi"
+    "privacy": "LocalATSCV:n tietosuojaseloste: tietoja ei kerätä, CV:si pysyvät selaimessasi",
+    "accessibility": "LocalATSCV:n saavutettavuus: näppäimistökäyttö, ruudunlukijat, näyttöasetukset, ääneen luku ja tunnetut rajoitukset"
   },
   "footer": {
     "tagline": "Ilmainen CV-työkalu, joka ei koskaan näe tietojasi",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Toimiiko se ilman internetiä?",
           "a": "Kyllä. Ensimmäisen käynnin jälkeen voit muokata ja ladata CV:itäsi ilman yhteyttä. Voit jopa lisätä LocalATSCV:n puhelimesi tai tietokoneesi aloitusnäytölle sovelluksen tavoin"
+        },
+        "disability": {
+          "q": "Pitääkö minun mainita vammani?",
+          "a": "Se ei ole koskaan pakollista. Halutessasi editori ehdottaa ansioluettelon maassa tunnustettua muotoilua (RQTH Ranskassa, categorie protette Italiassa…), yhteystietojen yhteyteen, ansioluettelon loppuun tai vain kirjeeseen. Voit myös pitää sen joissakin versioissa mutta ei toisissa"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Vastaavuus ilmoitukseen",
       "sent": "Mitään ei lähetetä",
       "robot": "OSAAMINEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Leipuri-kondiittori Viinerit <n>●●●●○</n> TYÖKOKEMUS <n>� camille.mar</n> Leipuri <n>tin@example.com</n> 2021 – nyt Konditoriatuotteet <n>●●●○○</n> Esimerkki Leipomo KIELET Englanti Leivoin joka aamu…"
+    },
+    "inclusive": {
+      "eyebrow": "Saavutettava kaikille",
+      "title": "Ansioluettelo jokaiselle, myös vammaiselle",
+      "text": "Mainitse tunnustettu vamma tai älä, säädä näyttöä, kuuntele ansioluettelosi ääneen, etene vaihe kerrallaan: LocalATSCV mukautuu sinuun, ei päinvastoin",
+      "countries": "Oikea muotoilu jokaiseen maahan",
+      "private": "Terveystiedot eivät kuulu palvelimelle: sinun tietosi pysyvät laitteellasi ja tulostetaan vain, jos itse päätät",
+      "points": {
+        "disclosure": {
+          "title": "Kertoa vai ei",
+          "text": "Vapaaehtoinen maininta yhteystietojen yhteydessä, ansioluettelon lopussa tai vain kirjeessä, hyvät ja huonot puolet selitettyinä"
+        },
+        "display": {
+          "title": "Sinulle sopiva näyttö",
+          "text": "Suurempi teksti, helppolukuinen fontti lukihäiriöön tai heikkonäköisyyteen, vahvempi kontrasti, vähemmän animaatioita"
+        },
+        "listen": {
+          "title": "Ansioluettelosi ääneen luettuna",
+          "text": "Tarkista ansioluettelo ja kirje korvalla, laitteesi äänellä. Loistava tapa huomata kirjoitusvirhe tai liian pitkä lause"
+        },
+        "guided": {
+          "title": "Vaihe vaiheelta, eksymättä",
+          "text": "Yksi osio kerrallaan, selkokielisen vinkin kera, PDF:n lataamiseen asti"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Tyhjä rivi erottaa kaksi kappaletta · **lihavointi** avainsanalle",
       "outline": "Lisää runko",
       "closing": "Lopputervehdys",
-      "fileName": "Saatekirje"
+      "fileName": "Saatekirje",
+      "addDisability": "Lisää lause vammastani"
     },
     "fit": {
       "pages": "{{count}} sivua",
@@ -376,7 +408,13 @@
       "settingsHint": "Teksti pysyy oikeana tekstinä: vain asettelu muuttuu",
       "reset": "Pohjan asettelu",
       "grayscale": "Näytä mustavalkoisena",
-      "grayscaleHint": "Simuloi mustavalkotulostusta: viety PDF säilyttää värinsä"
+      "grayscaleHint": "Simuloi mustavalkotulostusta: viety PDF säilyttää värinsä",
+      "listen": "Kuuntele asiakirja",
+      "stopListening": "Lopeta lukeminen",
+      "dates": "Päivämäärät",
+      "datesMonth": "Kuukausi ja vuosi",
+      "datesYear": "Vain vuodet",
+      "datesHint": "Pelkillä vuosiluvuilla lyhyt tauko urassa ei enää näy"
     },
     "versions": {
       "label": "Näytettävä versio",
@@ -424,7 +462,30 @@
       "drivingLicense": "Ajokortti",
       "drivingLicensePlaceholder": "Esim. B-ajokortti, oma auto",
       "qrToggle": "Näytä linkki QR-koodina",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) lisätään automaattisesti. QR-painike näyttää linkin QR-koodina useimmissa graafisissa pohjissa"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) lisätään automaattisesti. QR-painike näyttää linkin QR-koodina useimmissa graafisissa pohjissa",
+      "disability": {
+        "title": "Vamma",
+        "subtitle": "Vapaaehtoinen, vain jos haluat",
+        "intro": "Mainitsetko sen, on täysin oma valintasi: mikään ei velvoita sinua. Tieto ei koskaan poistu laitteeltasi",
+        "country": {
+          "fr": "Ranskassa RQTH kiinnostaa vähintään 20 hengen yrityksiä, joiden on työllistettävä 6 % vammaisia työntekijöitä",
+          "en": "Isossa-Britanniassa ja Yhdysvalloissa se ilmoitetaan yleensä työnantajan hakulomakkeella eikä ansioluettelossa",
+          "it": "Italiassa maininta ”categorie protette (L. 68/99)” on yleinen ansioluetteloissa ja avaa pääsyn varattuihin tehtäviin",
+          "es": "Espanjassa ilmoitetaan usein vähintään 33 %:n tunnustettu vamma: vähintään 50 hengen yritykset varaavat 2 % tehtävistään",
+          "de": "Saksassa julkisten työnantajien on kutsuttava haastatteluun hakijat, jotka on tunnustettu ”schwerbehindert” ja sopivat tehtävään"
+        },
+        "label": "Maininta ansioluettelossa",
+        "suggestions": "Yleisiä muotoiluja:",
+        "placement": "Missä näytetään",
+        "placements": {
+          "contact": "Yhteystietojeni kanssa",
+          "section": "Ansioluettelon lopussa",
+          "letter": "Vain hakemuskirjeessä"
+        },
+        "letterHint": "Maininta ei näy ansioluettelossa. Kirje-välilehdellä painike lisää valmiin lauseen",
+        "pros": "Puolesta: sitoutuneet työnantajat (monimuotoisuusohjelmat, kiintiöt) löytävät sinut nopeammin, ja mukautuksista on helpompi puhua",
+        "cons": "Vastaan: joillakin rekrytoijilla on yhä ennakkoluuloja. Voit ottaa asian puheeksi myöhemmin, haastattelussa tai palkkauksen jälkeen, tai et koskaan"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Kirjoituskonetyyli",
         "paper": "Paperi",
         "colorful": "Värikäs",
-        "minimal": "Minimalistinen"
+        "minimal": "Minimalistinen",
+        "readable": "Erittäin luettava"
       },
       "favorite": "Lisää suosikkeihin",
       "unfavorite": "Poista suosikeista",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Avainsanat",
       "createVersion": "Luo kohdennettu versio tähän työpaikkaan",
       "createVersionHint": "Työhön liittymättömistä kokemuksista ja kohdista poistetaan valinta: voit säätää niitä",
-      "savedInVersion": "Ilmoitus tallennettu versioon ”{{name}}”"
+      "savedInVersion": "Ilmoitus tallennettu versioon ”{{name}}”",
+      "inclusive": "Ilmoitus toivottaa vammaiset hakijat tervetulleiksi. Halutessasi lisää maininta kohtaan ”Vamma” profiilin alaosassa"
     },
     "weak": {
       "hint": "”{{phrase}}” kuvaa tehtävää: aloita toimintaverbillä"
@@ -906,6 +969,29 @@
       "body": "Leipäteksti",
       "default": "Pohjan oma",
       "hint": "ATS:t lukevat kaikkia näitä fontteja hyvin: teksti pysyy oikeana tekstinä"
+    },
+    "health": {
+      "hint": "Lääketieteellistä syytä ei tarvita, korvaa ”{{phrase}}” tällä:"
+    },
+    "guided": {
+      "toggle": "Vaihe vaiheelta",
+      "toggleHint": "Yksi osio kerrallaan, yksinkertaisen vinkin kera",
+      "step": "Vaihe {{n}}/{{total}}",
+      "previous": "Edellinen",
+      "next": "Seuraava",
+      "finishTitle": "Viimeinen vaihe",
+      "tips": {
+        "profile": "Kirjoita nimesi, ammattisi ja miten sinut tavoittaa. Yhteenveto: 2 tai 3 lausetta siitä, mitä osaat",
+        "experience": "Luettele työpaikat, harjoittelut ja toimeksiannot uusimmasta alkaen. Jokaisesta 2 tai 3 lyhyttä lausetta siitä, mitä teit",
+        "education": "Luettele tutkinnot ja koulutukset uusimmasta alkaen",
+        "projects": "Esittele yksi tai kaksi onnistunutta projektia konkreettisen tuloksen kera",
+        "certifications": "Lisää tehtävässä hyödylliset sertifikaatit ja pätevyydet päivämäärineen",
+        "custom": "Lisää se, mikä ei sovi muualle: vapaaehtoistyö, sitoumukset, hyödyllinen tieto",
+        "skills": "Luettele, mitä osaat: työkalut, ohjelmat, osaaminen. Erota ne pilkuilla",
+        "languages": "Luettele puhumasi kielet ja tasosi",
+        "interests": "Lisää 2 tai 3 harrastusta: ne auttavat aloittamaan keskustelun haastattelussa",
+        "finish": "Valitse mieleisesi pohja ja lataa ansioluettelo PDF-muodossa. Voit aina palata muokkaamaan sitä"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Asiakirja näytetään englanniksi. Vain ranskankielinen versio on oikeudellisesti sitova.",
     "error": "Asiakirjaa ei voitu ladata."
+  },
+  "display": {
+    "label": "Näyttö ja saavutettavuus",
+    "textSize": "Tekstin koko",
+    "sizes": {
+      "normal": "Normaali",
+      "large": "Suuri",
+      "xlarge": "Hyvin suuri"
+    },
+    "options": {
+      "readableFont": "Helppolukuinen fontti",
+      "spacing": "Väljempi teksti",
+      "contrast": "Vahvempi kontrasti",
+      "reduceMotion": "Vähennä animaatioita"
+    },
+    "reset": "Oletusnäyttö",
+    "note": "Asetukset muuttavat käyttöliittymää, eivät koskaan tulostettua ansioluetteloasi"
   }
 }

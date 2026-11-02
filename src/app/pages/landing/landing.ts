@@ -12,6 +12,7 @@ import {
   DemoSegment,
   DemoSegmentsPipe,
 } from './landing-demo';
+import { DISABILITY_LABELS } from '../../cv/model/disability';
 import { FAQ_ITEMS } from './faq';
 
 interface IconItem {
@@ -78,6 +79,19 @@ export class Landing {
   ];
 
   protected readonly faq = FAQ_ITEMS;
+
+  protected readonly inclusivePoints: IconItem[] = [
+    { key: 'disclosure', icon: 'access' },
+    { key: 'display', icon: 'type' },
+    { key: 'listen', icon: 'volume' },
+    { key: 'guided', icon: 'footprints' },
+  ];
+
+  /** Formulation reconnue dans chaque pays, telle qu'elle s'imprime sur le CV. */
+  protected readonly disabilityMentions = (['fr', 'it', 'es', 'de'] as const).map((lang) => ({
+    lang,
+    text: DISABILITY_LABELS[lang].suggestions[0],
+  }));
 
   /** Une puce qui contient une phrase faible affiche la suggestion de verbe d'action. */
   protected hasWeak(segments: DemoSegment[]): boolean {

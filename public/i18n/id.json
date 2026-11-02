@@ -28,7 +28,8 @@
     "changelog": "Yang baru",
     "legalNotice": "Informasi hukum",
     "terms": "Ketentuan penggunaan",
-    "privacy": "Kebijakan privasi"
+    "privacy": "Kebijakan privasi",
+    "accessibility": "Pernyataan aksesibilitas"
   },
   "seo": {
     "home": "Buat gratis CV yang membawa Anda ke wawancara: 72 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
@@ -37,7 +38,8 @@
     "changelog": "Yang baru di LocalATSCV, versi demi versi: template CV baru, fitur, dan perbaikan",
     "legalNotice": "Informasi hukum LocalATSCV: penerbit, hosting, dan kontak",
     "terms": "Ketentuan penggunaan LocalATSCV, pembuat CV gratis dan sumber terbuka",
-    "privacy": "Kebijakan privasi LocalATSCV: tidak ada data yang dikumpulkan, CV Anda tetap di browser"
+    "privacy": "Kebijakan privasi LocalATSCV: tidak ada data yang dikumpulkan, CV Anda tetap di browser",
+    "accessibility": "Aksesibilitas LocalATSCV: navigasi papan ketik, pembaca layar, pengaturan tampilan, baca keras dan keterbatasan yang diketahui"
   },
   "footer": {
     "tagline": "Pembuat CV gratis yang tidak pernah melihat data Anda",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Bisa dipakai tanpa internet?",
           "a": "Ya. Setelah kunjungan pertama, Anda bisa mengedit dan mengunduh CV tanpa koneksi. Anda bahkan bisa menambahkan LocalATSCV ke layar utama ponsel atau komputer, seperti aplikasi"
+        },
+        "disability": {
+          "q": "Apakah saya harus menyebutkan disabilitas saya?",
+          "a": "Tidak pernah wajib. Jika mau, editor menyarankan rumusan yang diakui di negara CV Anda (RQTH di Prancis, categorie protette di Italia…), bersama kontak, di akhir CV, atau hanya di surat. Anda juga bisa menyimpannya di sebagian versi saja"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Kecocokan dengan lowongan",
       "sent": "Tidak ada yang dikirim",
       "robot": "KEAHLIAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pembuat roti dan kue Pastry <n>●●●●○</n> PENGALAMAN <n>� camille.mar</n> Pembuat roti <n>tin@example.com</n> 2021 – sekarang Kue <n>●●●○○</n> Toko Roti Contoh BAHASA Inggris Membuat 300 pastry…"
+    },
+    "inclusive": {
+      "eyebrow": "Dapat diakses semua orang",
+      "title": "CV untuk semua orang, termasuk penyandang disabilitas",
+      "text": "Menyebutkan disabilitas yang diakui atau tidak, mengatur tampilan, mendengarkan CV, maju selangkah demi selangkah: LocalATSCV menyesuaikan diri dengan Anda, bukan sebaliknya",
+      "countries": "Rumusan yang tepat untuk setiap negara",
+      "private": "Informasi kesehatan tidak pantas ada di server: milik Anda tetap di perangkat Anda dan hanya dicetak jika Anda memutuskan",
+      "points": {
+        "disclosure": {
+          "title": "Mengatakannya, atau tidak",
+          "text": "Keterangan opsional bersama kontak, di akhir CV, atau hanya di surat, dengan kelebihan dan batasan yang dijelaskan sederhana"
+        },
+        "display": {
+          "title": "Tampilan sesuai Anda",
+          "text": "Teks lebih besar, huruf mudah dibaca untuk penyandang disleksia atau low vision, kontras lebih kuat, animasi berkurang"
+        },
+        "listen": {
+          "title": "CV Anda dibacakan",
+          "text": "Periksa CV dan surat dengan telinga, dengan suara perangkat Anda. Pas untuk menemukan salah ketik atau kalimat yang terlalu panjang"
+        },
+        "guided": {
+          "title": "Langkah demi langkah, tanpa tersesat",
+          "text": "Satu bagian sekaligus, dengan saran berbahasa sederhana, hingga PDF diunduh"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Baris kosong memisahkan dua paragraf · **tebal** untuk kata kunci",
       "outline": "Sisipkan kerangka",
       "closing": "Salam penutup",
-      "fileName": "Surat lamaran"
+      "fileName": "Surat lamaran",
+      "addDisability": "Tambahkan kalimat tentang disabilitas saya"
     },
     "fit": {
       "pages": "{{count}} halaman",
@@ -376,7 +408,13 @@
       "settingsHint": "Teks tetap teks asli: hanya tata letaknya yang berubah",
       "reset": "Tata letak template",
       "grayscale": "Lihat hitam putih",
-      "grayscaleHint": "Mensimulasikan cetakan hitam putih: PDF yang diekspor tetap berwarna"
+      "grayscaleHint": "Mensimulasikan cetakan hitam putih: PDF yang diekspor tetap berwarna",
+      "listen": "Dengarkan dokumen",
+      "stopListening": "Hentikan pembacaan",
+      "dates": "Tanggal",
+      "datesMonth": "Bulan dan tahun",
+      "datesYear": "Tahun saja",
+      "datesHint": "Dengan tahun saja, jeda singkat dalam karier tidak lagi terlihat"
     },
     "versions": {
       "label": "Versi yang ditampilkan",
@@ -424,7 +462,30 @@
       "drivingLicense": "SIM",
       "drivingLicensePlaceholder": "Mis. SIM A, punya kendaraan sendiri",
       "qrToggle": "Tampilkan tautan ini sebagai kode QR",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) ditambahkan otomatis. Tombol QR menampilkan tautan sebagai kode QR di sebagian besar template grafis"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) ditambahkan otomatis. Tombol QR menampilkan tautan sebagai kode QR di sebagian besar template grafis",
+      "disability": {
+        "title": "Disabilitas",
+        "subtitle": "Opsional, hanya jika Anda mau",
+        "intro": "Menyebutkannya atau tidak sepenuhnya pilihan Anda: tidak ada yang mewajibkan. Informasi ini tidak pernah keluar dari perangkat Anda",
+        "country": {
+          "fr": "Di Prancis, RQTH menarik bagi perusahaan dengan 20 karyawan atau lebih, yang wajib mempekerjakan 6 % pekerja penyandang disabilitas",
+          "en": "Di Inggris dan Amerika Serikat, biasanya disebutkan di formulir lamaran pemberi kerja, bukan di CV",
+          "it": "Di Italia, keterangan «categorie protette (L. 68/99)» umum di CV dan membuka akses ke posisi yang dicadangkan",
+          "es": "Di Spanyol, disabilitas yang diakui minimal 33 % sering dicantumkan: perusahaan dengan 50 karyawan atau lebih mencadangkan 2 % posisi",
+          "de": "Di Jerman, pemberi kerja sektor publik wajib mengundang wawancara pelamar yang diakui «schwerbehindert» dan sesuai dengan posisinya"
+        },
+        "label": "Keterangan di CV",
+        "suggestions": "Rumusan umum:",
+        "placement": "Tempat menampilkan",
+        "placements": {
+          "contact": "Bersama kontak saya",
+          "section": "Di akhir CV",
+          "letter": "Hanya di surat"
+        },
+        "letterHint": "Keterangan tidak muncul di CV. Di tab Surat, sebuah tombol menambahkan kalimat siap pakai",
+        "pros": "Kelebihan: pemberi kerja yang peduli (program inklusi, kuota) menemukan Anda lebih cepat dan penyesuaian lebih mudah dibicarakan",
+        "cons": "Kekurangan: sebagian perekrut masih berprasangka. Anda juga bisa membahasnya nanti, saat wawancara atau setelah diterima, atau tidak sama sekali"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Gaya mesin tik",
         "paper": "Kertas",
         "colorful": "Berwarna",
-        "minimal": "Minimalis"
+        "minimal": "Minimalis",
+        "readable": "Sangat mudah dibaca"
       },
       "favorite": "Tambahkan ke favorit",
       "unfavorite": "Hapus dari favorit",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Kata kunci",
       "createVersion": "Buat versi tertarget untuk lowongan ini",
       "createVersionHint": "Pengalaman dan poin yang tidak berkaitan dengan lowongan akan dihapus centangnya: Anda bisa menyesuaikannya",
-      "savedInVersion": "Lowongan disimpan bersama versi “{{name}}”"
+      "savedInVersion": "Lowongan disimpan bersama versi “{{name}}”",
+      "inclusive": "Lowongan ini menyambut pelamar penyandang disabilitas. Jika mau, tambahkan keterangan di «Disabilitas», di bagian bawah profil"
     },
     "weak": {
       "hint": "“{{phrase}}” menggambarkan tugas: mulai dengan kata kerja aksi"
@@ -906,6 +969,29 @@
       "body": "Teks isi",
       "default": "Bawaan template",
       "hint": "ATS membaca semua font ini dengan baik: teks tetap teks asli"
+    },
+    "health": {
+      "hint": "Tidak perlu alasan medis, ganti «{{phrase}}» dengan:"
+    },
+    "guided": {
+      "toggle": "Mode langkah demi langkah",
+      "toggleHint": "Satu bagian sekaligus, dengan saran sederhana",
+      "step": "Langkah {{n}} dari {{total}}",
+      "previous": "Sebelumnya",
+      "next": "Berikutnya",
+      "finishTitle": "Langkah terakhir",
+      "tips": {
+        "profile": "Tulis nama, profesi, dan cara menghubungi Anda. Ringkasan: 2 atau 3 kalimat tentang apa yang Anda kuasai",
+        "experience": "Tulis pekerjaan, magang, dan tugas Anda, dari yang terbaru. Untuk masing-masing, 2 atau 3 kalimat singkat tentang apa yang Anda kerjakan",
+        "education": "Tulis gelar dan pelatihan Anda, dari yang terbaru",
+        "projects": "Tampilkan satu atau dua proyek yang berhasil, dengan hasil nyata",
+        "certifications": "Tambahkan sertifikat dan lisensi yang berguna untuk posisi itu, beserta tanggalnya",
+        "custom": "Tambahkan yang tidak cocok di tempat lain: relawan, kegiatan, informasi berguna",
+        "skills": "Sebutkan apa yang Anda kuasai: alat, perangkat lunak, keahlian. Pisahkan dengan koma",
+        "languages": "Sebutkan bahasa yang Anda kuasai dan tingkatnya",
+        "interests": "Tambahkan 2 atau 3 hobi: membantu membuka percakapan saat wawancara",
+        "finish": "Pilih templat yang Anda suka, lalu unduh CV dalam PDF. Anda selalu bisa kembali untuk mengubahnya"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Dokumen ini ditampilkan dalam bahasa Inggris. Hanya versi bahasa Prancis yang berkekuatan hukum.",
     "error": "Dokumen ini tidak dapat dimuat."
+  },
+  "display": {
+    "label": "Tampilan dan aksesibilitas",
+    "textSize": "Ukuran teks",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Besar",
+      "xlarge": "Sangat besar"
+    },
+    "options": {
+      "readableFont": "Huruf yang sangat mudah dibaca",
+      "spacing": "Teks lebih renggang",
+      "contrast": "Kontras lebih kuat",
+      "reduceMotion": "Kurangi animasi"
+    },
+    "reset": "Tampilan bawaan",
+    "note": "Pengaturan ini mengubah antarmuka, tidak pernah CV cetak Anda"
   }
 }

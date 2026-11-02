@@ -28,7 +28,8 @@
     "changelog": "Jaunumi",
     "legalNotice": "Juridiskā informācija",
     "terms": "Lietošanas noteikumi",
-    "privacy": "Privātuma politika"
+    "privacy": "Privātuma politika",
+    "accessibility": "Piekļūstamības paziņojums"
   },
   "seo": {
     "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 72 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV jaunumi pa versijām: jaunas CV veidnes, funkcijas un labojumi",
     "legalNotice": "LocalATSCV juridiskā informācija: izdevējs, mitināšana un kontakti",
     "terms": "LocalATSCV lietošanas noteikumi: bezmaksas atvērtā koda CV veidotājs",
-    "privacy": "LocalATSCV privātuma politika: dati netiek vākti, jūsu CV paliek pārlūkā"
+    "privacy": "LocalATSCV privātuma politika: dati netiek vākti, jūsu CV paliek pārlūkā",
+    "accessibility": "LocalATSCV piekļūstamība: navigācija ar tastatūru, ekrāna lasītāji, attēlojuma iestatījumi, nolasīšana skaļi un zināmie ierobežojumi"
   },
   "footer": {
     "tagline": "Bezmaksas CV veidotājs, kas nekad neredz jūsu datus",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Vai tas darbojas bez interneta?",
           "a": "Jā. Pēc pirmā apmeklējuma varat rediģēt un lejupielādēt savus CV bez interneta. Varat pat pievienot LocalATSCV sava tālruņa vai datora sākuma ekrānam kā lietotni"
+        },
+        "disability": {
+          "q": "Vai man jānorāda sava invaliditāte?",
+          "a": "Tas nekad nav obligāti. Ja vēlaties, redaktors piedāvā CV valstī atzītu formulējumu (RQTH Francijā, categorie protette Itālijā…), pie kontaktinformācijas, CV beigās vai tikai vēstulē. Varat to arī paturēt dažās versijās un citās ne"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Atbilstība sludinājumam",
       "sent": "Nekas netiek sūtīts",
       "robot": "PRASMES CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Maizniece un konditore Kārtainā mīkla <n>●●●●○</n> DARBA PIEREDZE <n>� camille.mar</n> Maizniece <n>tin@example.com</n> 2021 – šobrīd Konditoreja <n>●●●○○</n> Ceptuve Piemērs VALODAS Angļu Katru rītu izcepu…"
+    },
+    "inclusive": {
+      "eyebrow": "Pieejams ikvienam",
+      "title": "CV ikvienam, arī cilvēkam ar invaliditāti",
+      "text": "Pieminēt atzītu invaliditāti vai ne, pielāgot attēlojumu, ļaut nolasīt CV skaļi, virzīties soli pa solim: LocalATSCV pielāgojas jums, nevis otrādi",
+      "countries": "Pareizais formulējums katrai valstij",
+      "private": "Veselības datiem nav vietas serverī: jūsējie paliek jūsu ierīcē un tiek izdrukāti tikai tad, ja jūs tā izlemjat",
+      "points": {
+        "disclosure": {
+          "title": "Teikt vai ne",
+          "text": "Neobligāta norāde pie kontaktinformācijas, CV beigās vai tikai vēstulē, ar priekšrocībām un ierobežojumiem vienkārši izskaidrotiem"
+        },
+        "display": {
+          "title": "Jums piemērots attēlojums",
+          "text": "Lielāks teksts, viegli lasāms fonts disleksijas vai vājredzības gadījumā, pastiprināts kontrasts, mazāk animāciju"
+        },
+        "listen": {
+          "title": "Jūsu CV nolasīts skaļi",
+          "text": "Pārbaudiet CV un vēstuli ar dzirdi, ar ierīces balsi. Lieliski, lai pamanītu drukas kļūdu vai pārāk garu teikumu"
+        },
+        "guided": {
+          "title": "Soli pa solim, neapmaldoties",
+          "text": "Viena sadaļa vienlaikus, ar padomu vienkāršā valodā, līdz pat PDF lejupielādei"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Tukša rinda atdala divas rindkopas · **treknraksts** atslēgvārdam",
       "outline": "Ievietot plānu",
       "closing": "Noslēgums",
-      "fileName": "Pieteikuma vēstule"
+      "fileName": "Pieteikuma vēstule",
+      "addDisability": "Pievienot teikumu par manu invaliditāti"
     },
     "fit": {
       "pages": "{{count}} lappuses",
@@ -376,7 +408,13 @@
       "settingsHint": "Teksts paliek īsts teksts: mainās tikai izkārtojums",
       "reset": "Veidnes izkārtojums",
       "grayscale": "Skatīt melnbaltu",
-      "grayscaleHint": "Simulē melnbaltu izdruku: eksportētais PDF saglabā krāsas"
+      "grayscaleHint": "Simulē melnbaltu izdruku: eksportētais PDF saglabā krāsas",
+      "listen": "Klausīties dokumentu",
+      "stopListening": "Apturēt lasīšanu",
+      "dates": "Datumi",
+      "datesMonth": "Mēnesis un gads",
+      "datesYear": "Tikai gadi",
+      "datesHint": "Ar gadiem vien īss pārtraukums karjerā vairs nav redzams"
     },
     "versions": {
       "label": "Rādītā versija",
@@ -424,7 +462,30 @@
       "drivingLicense": "Vadītāja apliecība",
       "drivingLicensePlaceholder": "Piem., B kategorijas vadītāja apliecība, savs auto",
       "qrToggle": "Rādīt šo saiti kā QR kodu",
-      "linksHint": "Logotips (LinkedIn, GitHub, YouTube…) tiek pievienots automātiski. QR poga lielākajā daļā grafisko veidņu rāda saiti kā QR kodu"
+      "linksHint": "Logotips (LinkedIn, GitHub, YouTube…) tiek pievienots automātiski. QR poga lielākajā daļā grafisko veidņu rāda saiti kā QR kodu",
+      "disability": {
+        "title": "Invaliditāte",
+        "subtitle": "Neobligāti, tikai ja vēlaties",
+        "intro": "Pieminēt to vai ne, ir jūsu izvēle: nekas jūs neuzliek par pienākumu. Šī informācija nekad nepamet jūsu ierīci",
+        "country": {
+          "fr": "Francijā RQTH interesē uzņēmumus ar vismaz 20 darbiniekiem, kuriem jānodarbina 6 % darbinieku ar invaliditāti",
+          "en": "Apvienotajā Karalistē un ASV to parasti norāda darba devēja pieteikuma veidlapā, nevis CV",
+          "it": "Itālijā norāde „categorie protette (L. 68/99)” ir izplatīta CV un dod piekļuvi rezervētiem amatiem",
+          "es": "Spānijā bieži norāda atzītu invaliditāti vismaz 33 % apmērā: uzņēmumi ar vismaz 50 darbiniekiem rezervē 2 % amatu",
+          "de": "Vācijā valsts darba devējiem uz interviju jāaicina kandidāti, kas atzīti par „schwerbehindert” un atbilst amatam"
+        },
+        "label": "Norāde CV",
+        "suggestions": "Izplatīti formulējumi:",
+        "placement": "Kur rādīt",
+        "placements": {
+          "contact": "Pie kontaktinformācijas",
+          "section": "CV beigās",
+          "letter": "Tikai vēstulē"
+        },
+        "letterHint": "Norāde CV neparādās. Cilnē Vēstule poga pievieno gatavu teikumu",
+        "pros": "Par: iesaistīti darba devēji (iekļaušanas programmas, kvotas) jūs pamana ātrāk, un pielāgojumus vieglāk apspriest",
+        "cons": "Pret: dažiem atlases speciālistiem joprojām ir aizspriedumi. Varat par to runāt arī vēlāk, intervijā vai pēc pieņemšanas darbā, vai nekad"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Rakstāmmašīnas stils",
         "paper": "Papīrs",
         "colorful": "Krāsaina",
-        "minimal": "Minimālistiska"
+        "minimal": "Minimālistiska",
+        "readable": "Ļoti labi lasāms"
       },
       "favorite": "Pievienot izlasei",
       "unfavorite": "Noņemt no izlases",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Atslēgvārdi",
       "createVersion": "Izveidot mērķētu versiju šim amatam",
       "createVersionHint": "No pieredzes un punktiem, kas nav saistīti ar amatu, atzīme tiks noņemta: tos varat pielāgot",
-      "savedInVersion": "Sludinājums saglabāts ar versiju „{{name}}”"
+      "savedInVersion": "Sludinājums saglabāts ar versiju „{{name}}”",
+      "inclusive": "Šī vakance aicina pieteikties arī cilvēkus ar invaliditāti. Ja vēlaties, pievienojiet norādi sadaļā „Invaliditāte” profila beigās"
     },
     "weak": {
       "hint": "„{{phrase}}” apraksta pienākumu: sāciet ar darbības vārdu"
@@ -906,6 +969,29 @@
       "body": "Pamatteksts",
       "default": "Veidnes",
       "hint": "ATS labi nolasa visus šos fontus: teksts paliek īsts teksts"
+    },
+    "health": {
+      "hint": "Medicīnisks iemesls nav vajadzīgs, aizstājiet „{{phrase}}” ar:"
+    },
+    "guided": {
+      "toggle": "Soli pa solim",
+      "toggleHint": "Viena sadaļa vienlaikus, ar vienkāršu padomu",
+      "step": "{{n}}. solis no {{total}}",
+      "previous": "Iepriekšējais",
+      "next": "Nākamais",
+      "finishTitle": "Pēdējais solis",
+      "tips": {
+        "profile": "Uzrakstiet savu vārdu, profesiju un kā ar jums sazināties. Kopsavilkums: 2 vai 3 teikumi par to, ko protat",
+        "experience": "Norādiet darba vietas, prakses un uzdevumus, jaunāko vispirms. Katram 2 vai 3 īsus teikumus par paveikto",
+        "education": "Norādiet grādus un mācības, jaunāko vispirms",
+        "projects": "Parādiet vienu vai divus veiksmīgus projektus ar konkrētu rezultātu",
+        "certifications": "Pievienojiet amatam noderīgus sertifikātus un atļaujas ar datumu",
+        "custom": "Pievienojiet to, kas neiederas citur: brīvprātīgais darbs, iesaiste, noderīga informācija",
+        "skills": "Uzskaitiet, ko protat: rīki, programmas, prasmes. Atdaliet tās ar komatiem",
+        "languages": "Norādiet valodas, kurās runājat, un savu līmeni",
+        "interests": "Pievienojiet 2 vai 3 vaļaspriekus: tie palīdz uzsākt sarunu intervijā",
+        "finish": "Izvēlieties sev tīkamu veidni un lejupielādējiet CV PDF formātā. Vienmēr varēsiet atgriezties un to labot"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Šis dokuments tiek rādīts angļu valodā. Juridiski saistoša ir tikai franču valodas versija.",
     "error": "Šo dokumentu neizdevās ielādēt."
+  },
+  "display": {
+    "label": "Attēlojums un piekļūstamība",
+    "textSize": "Teksta izmērs",
+    "sizes": {
+      "normal": "Parasts",
+      "large": "Liels",
+      "xlarge": "Ļoti liels"
+    },
+    "options": {
+      "readableFont": "Viegli lasāms fonts",
+      "spacing": "Plašāks teksts",
+      "contrast": "Pastiprināts kontrasts",
+      "reduceMotion": "Mazāk animāciju"
+    },
+    "reset": "Noklusējuma attēlojums",
+    "note": "Šie iestatījumi maina saskarni, nekad jūsu izdrukāto CV"
   }
 }

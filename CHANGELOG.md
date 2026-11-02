@@ -4,10 +4,34 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
-## [0.11.0] - 2026-11-02
+## [0.12.0] - 2026-11-02
+
+### Ajouté
+
+- Mention facultative d'une situation de handicap dans le profil, avec les formulations reconnues dans le pays du CV (RQTH en France, categorie protette en Italie, certificado de discapacidad en Espagne, Schwerbehinderung en Allemagne). Elle s'affiche avec les coordonnées, en fin de CV ou seulement dans la lettre de motivation, avec les avantages et les limites expliqués simplement, et une version ciblée peut la masquer
+- Lettre de motivation : une phrase toute prête sur la situation de handicap, dans la langue du CV
+- Adapter à une offre : l'éditeur signale les annonces qui disent accueillir les personnes en situation de handicap
+- Réglages d'affichage depuis le bouton d'accessibilité de l'en-tête : texte plus grand, police très lisible (Atkinson Hyperlegible), texte plus espacé, contraste renforcé et animations réduites. Ils changent l'interface, jamais le CV imprimé
+- Lecture à voix haute du CV et de la lettre, avec la voix de votre appareil
+- Mode pas à pas dans l'éditeur : une rubrique à la fois, avec un conseil en langage simple, jusqu'au téléchargement du PDF
+- Dates en années seulement (réglages de mise en page) : une courte interruption de parcours ne se voit plus
+- Les motifs médicaux (« Arrêt maladie », « Sick leave »…) sont repérés dans les intitulés et les puces, avec un intitulé neutre proposé en un clic (« Pause professionnelle »)
+- Filtre « Très lisible » dans la galerie : 9 modèles à une colonne, en grands caractères et à fort contraste
+- Page « Déclaration d'accessibilité », section « Accessible à tous » sur l'accueil et nouvelle question dans la FAQ
 
 ### Modifié
 
+- Politique de confidentialité : la mention de handicap, donnée de santé, reste sur votre appareil comme le reste du CV
+
+## [0.11.0] - 2026-11-02
+
+### Ajouté
+
+- Galerie des modèles : choix de 4, 3, 2 ou 1 modèle par ligne, mémorisé sur l'appareil
+
+### Modifié
+
+- Galerie des modèles : l'icône orange des modèles à deux colonnes est expliquée au survol et dans le volet d'aperçu
 - Les pages publiques ne sautent plus au chargement : la page pré-générée est reprise telle quelle au démarrage au lieu d'être redessinée, et le pied de page ne remonte plus sous les yeux (décalage de mise en page divisé par plus de 50)
 - Galerie des modèles sur téléphone : filtres sur une seule ligne qui défile, texte d'aide masqué, presque deux fois plus de place pour les vignettes
 - Textes plus clairs, sans jargon : filtres « Style livre » et « Style machine à écrire », descriptions des modèles sans noms de polices, « Télécharger une sauvegarde » au lieu de « Exporter (JSON) »

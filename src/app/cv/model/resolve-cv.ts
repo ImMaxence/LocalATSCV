@@ -4,23 +4,35 @@ import {
   CvTemplateId,
   CvVersion,
   DEFAULT_LAYOUT,
+  DISABILITY_ID,
+  DateStyle,
   Entry,
+  EntrySection,
   MasterCv,
   Profile,
   SectionItem,
   isEntrySection,
 } from './cv.model';
 
-/** CV prêt à afficher : version appliquée, éléments vides retirés, règle EN appliquée. */
+/**
+ * CV prêt à afficher : version appliquée, éléments vides retirés, règle EN appliquée.
+ * `profile.disability` n'est rempli que si la mention va avec les coordonnées ; placée en fin
+ * de CV, elle devient une entrée de la rubrique « Autres informations ».
+ */
 export interface ResolvedCv {
   language: CvLanguage;
   template: CvTemplateId;
   fonts: MasterCv['fonts'];
   accentColor: string;
   layout: MasterCv['layout'];
+  dateStyle: DateStyle;
   profile: Profile;
   sections: CvSection[];
 }
+
+/** Identifiants fixes de la rubrique créée pour la mention placée en fin de CV. */
+const DISABILITY_SECTION_ID = `${DISABILITY_ID}-section`;
+const DISABILITY_ENTRY_ID = `${DISABILITY_ID}-entry`;
 
 /**
  * Langues où la photo, la date de naissance et la nationalité n'ont pas leur place
@@ -65,13 +77,49 @@ export function resolveCv(cv: MasterCv, version: CvVersion | null): ResolvedCv {
     ? { ...cv.profile, photoId: null, birthDate: '', nationality: '' }
     : cv.profile;
 
+  const disability = hidden.has(DISABILITY_ID) ? '' : (profile.disability ?? '').trim();
+  const placement = profile.disabilityPlacement ?? 'contact';
+  if (disability && placement === 'section') appendDisability(sections, disability);
+
   return {
     language: cv.language,
     template: cv.template,
     fonts: cv.fonts,
     accentColor: cv.accentColor,
     layout: cv.layout ?? DEFAULT_LAYOUT,
-    profile: { ...profile, links: profile.links.filter((link) => filled(link.url)) },
+    dateStyle: cv.dateStyle ?? 'month',
+    profile: {
+      ...profile,
+      disability: placement === 'contact' ? disability : '',
+      links: profile.links.filter((link) => filled(link.url)),
+    },
     sections,
   };
+}
+
+/**
+ * Mention de handicap en fin de CV : ajoutée à une rubrique « Autres informations » qui garde
+ * son titre par défaut, sinon dans une rubrique de ce nom créée pour l'occasion.
+ */
+function appendDisability(sections: CvSection[], text: string): void {
+  const entry: Entry = {
+    id: DISABILITY_ENTRY_ID,
+    title: text,
+    subtitle: '',
+    location: '',
+    start: '',
+    end: '',
+    current: false,
+    url: '',
+    bullets: [],
+  };
+  const index = sections
+    .map((section) => section.kind === 'custom' && !section.title.trim())
+    .lastIndexOf(true);
+  if (index >= 0) {
+    const section = sections[index] as EntrySection;
+    sections[index] = { ...section, items: [...section.items, entry] };
+  } else {
+    sections.push({ id: DISABILITY_SECTION_ID, kind: 'custom', title: '', items: [entry] });
+  }
 }

@@ -28,7 +28,8 @@
     "changelog": "Uudised",
     "legalNotice": "Õiguslik teave",
     "terms": "Kasutustingimused",
-    "privacy": "Privaatsuspoliitika"
+    "privacy": "Privaatsuspoliitika",
+    "accessibility": "Ligipääsetavuse teatis"
   },
   "seo": {
     "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 72 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV uudised versioonide kaupa: uued CV mallid, funktsioonid ja parandused",
     "legalNotice": "LocalATSCV õiguslik teave: väljaandja, majutus ja kontakt",
     "terms": "LocalATSCV kasutustingimused: tasuta ja avatud lähtekoodiga CV koostaja",
-    "privacy": "LocalATSCV privaatsuspoliitika: andmeid ei koguta, sinu CV-d jäävad brauserisse"
+    "privacy": "LocalATSCV privaatsuspoliitika: andmeid ei koguta, sinu CV-d jäävad brauserisse",
+    "accessibility": "LocalATSCV ligipääsetavus: klaviatuuriga kasutamine, ekraanilugejad, kuvaseaded, ettelugemine ja teadaolevad piirangud"
   },
   "footer": {
     "tagline": "Tasuta CV koostaja, mis ei näe kunagi sinu andmeid",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Kas see töötab ilma internetita?",
           "a": "Jah. Pärast esimest külastust saad oma CV-sid muuta ja alla laadida ilma internetita. Võid LocalATSCV isegi lisada oma telefoni või arvuti avakuvale nagu rakenduse"
+        },
+        "disability": {
+          "q": "Kas pean oma puudest teatama?",
+          "a": "See pole kunagi kohustuslik. Soovi korral pakub redaktor CV riigis tunnustatud sõnastust (RQTH Prantsusmaal, categorie protette Itaalias…), kontaktandmete juurde, CV lõppu või ainult kaaskirja. Võid selle ka mõnes versioonis alles jätta ja teises mitte"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Vastavus kuulutusele",
       "sent": "Midagi ei saadeta",
       "robot": "OSKUSED CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pagar-kondiiter Saiakesed <n>●●●●○</n> TÖÖKOGEMUS <n>� camille.mar</n> Pagar <n>tin@example.com</n> 2021 – praegu Kondiitritooted <n>●●●○○</n> Näidis Pagariäri KEELED Inglise Küpsetasin igal hommikul…"
+    },
+    "inclusive": {
+      "eyebrow": "Ligipääsetav kõigile",
+      "title": "CV igaühele, ka puudega inimesele",
+      "text": "Mainida tunnustatud puuet või mitte, kohandada kuva, lasta CV ette lugeda, liikuda samm-sammult: LocalATSCV kohandub sinuga, mitte vastupidi",
+      "countries": "Õige sõnastus igas riigis",
+      "private": "Terviseandmetel pole serveris midagi teha: sinu omad jäävad sinu seadmesse ja prinditakse ainult siis, kui sina nii otsustad",
+      "points": {
+        "disclosure": {
+          "title": "Öelda või mitte",
+          "text": "Vabatahtlik märge kontaktandmete juures, CV lõpus või ainult kaaskirjas, plussid ja miinused lihtsalt lahti seletatud"
+        },
+        "display": {
+          "title": "Sinule sobiv kuva",
+          "text": "Suurem tekst, hästi loetav font düsleksia või nõrga nägemise korral, tugevam kontrast, vähem animatsioone"
+        },
+        "listen": {
+          "title": "Sinu CV ette loetud",
+          "text": "Kontrolli CV-d ja kirja kõrva järgi, oma seadme häälega. Suurepärane viis leida kirjaviga või liiga pikk lause"
+        },
+        "guided": {
+          "title": "Samm-sammult, ära eksimata",
+          "text": "Üks jaotis korraga, lihtsas keeles nõuandega, kuni PDF-i allalaadimiseni"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Tühi rida eraldab kaht lõiku · **paks kiri** märksõna jaoks",
       "outline": "Lisa kava",
       "closing": "Lõpetus",
-      "fileName": "Kaaskiri"
+      "fileName": "Kaaskiri",
+      "addDisability": "Lisa lause oma puude kohta"
     },
     "fit": {
       "pages": "{{count}} lehekülge",
@@ -376,7 +408,13 @@
       "settingsHint": "Tekst jääb päris tekstiks: muutub ainult paigutus",
       "reset": "Malli paigutus",
       "grayscale": "Vaata mustvalgena",
-      "grayscaleHint": "Simuleerib mustvalget printimist: eksporditud PDF säilitab värvid"
+      "grayscaleHint": "Simuleerib mustvalget printimist: eksporditud PDF säilitab värvid",
+      "listen": "Kuula dokumenti",
+      "stopListening": "Lõpeta lugemine",
+      "dates": "Kuupäevad",
+      "datesMonth": "Kuu ja aasta",
+      "datesYear": "Ainult aastad",
+      "datesHint": "Ainult aastatega ei paista lühike paus karjääris enam välja"
     },
     "versions": {
       "label": "Kuvatav versioon",
@@ -424,7 +462,30 @@
       "drivingLicense": "Juhiluba",
       "drivingLicensePlaceholder": "Nt B-kategooria juhiluba, oma auto",
       "qrToggle": "Näita seda linki QR-koodina",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) lisatakse automaatselt. QR-nupp näitab linki QR-koodina enamikus graafilistes mallides"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) lisatakse automaatselt. QR-nupp näitab linki QR-koodina enamikus graafilistes mallides",
+      "disability": {
+        "title": "Puue",
+        "subtitle": "Vabatahtlik, ainult kui soovid",
+        "intro": "Selle mainimine on sinu valik: miski ei kohusta sind. See teave ei lahku kunagi sinu seadmest",
+        "country": {
+          "fr": "Prantsusmaal huvitab RQTH vähemalt 20 töötajaga ettevõtteid, kes peavad tööle võtma 6 % puudega töötajaid",
+          "en": "Ühendkuningriigis ja USA-s märgitakse see pigem tööandja avaldusvormil kui CV-s",
+          "it": "Itaalias on märge „categorie protette (L. 68/99)” CV-des tavaline ja avab tee reserveeritud ametikohtadele",
+          "es": "Hispaanias märgitakse sageli vähemalt 33 % tunnustatud puue: vähemalt 50 töötajaga ettevõtted reserveerivad 2 % kohtadest",
+          "de": "Saksamaal peavad avaliku sektori tööandjad kutsuma vestlusele kandidaadid, kes on tunnistatud „schwerbehindert” ja sobivad ametikohale"
+        },
+        "label": "Märge CV-s",
+        "suggestions": "Levinud sõnastused:",
+        "placement": "Kus näidata",
+        "placements": {
+          "contact": "Koos kontaktandmetega",
+          "section": "CV lõpus",
+          "letter": "Ainult kaaskirjas"
+        },
+        "letterHint": "Märget CV-s ei kuvata. Vahekaardil Kiri lisab nupp valmis lause",
+        "pros": "Poolt: pühendunud tööandjad (kaasamisprogrammid, kvoodid) leiavad sind kiiremini ja kohandustest on lihtsam rääkida",
+        "cons": "Vastu: mõnel värbajal on endiselt eelarvamusi. Võid sellest rääkida ka hiljem, vestlusel või pärast töölevõtmist, või mitte kunagi"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Kirjutusmasina stiil",
         "paper": "Paber",
         "colorful": "Värviline",
-        "minimal": "Minimalistlik"
+        "minimal": "Minimalistlik",
+        "readable": "Väga hästi loetav"
       },
       "favorite": "Lisa lemmikutesse",
       "unfavorite": "Eemalda lemmikutest",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Märksõnad",
       "createVersion": "Loo selle töökoha jaoks sihitud versioon",
       "createVersionHint": "Töökohaga mitteseotud kogemustelt ja punktidelt eemaldatakse märge: saad neid kohandada",
-      "savedInVersion": "Kuulutus salvestati koos versiooniga „{{name}}”"
+      "savedInVersion": "Kuulutus salvestati koos versiooniga „{{name}}”",
+      "inclusive": "See kuulutus ootab ka puudega kandidaate. Soovi korral lisa märge jaotisesse „Puue” profiili lõpus"
     },
     "weak": {
       "hint": "„{{phrase}}” kirjeldab ülesannet: alusta tegusõnaga"
@@ -906,6 +969,29 @@
       "body": "Põhitekst",
       "default": "Malli oma",
       "hint": "ATS-id loevad kõiki neid fonte hästi: tekst jääb päris tekstiks"
+    },
+    "health": {
+      "hint": "Meditsiinilist põhjust pole vaja, asenda „{{phrase}}” sõnadega:"
+    },
+    "guided": {
+      "toggle": "Samm-sammult režiim",
+      "toggleHint": "Üks jaotis korraga, lihtsa nõuandega",
+      "step": "Samm {{n}}/{{total}}",
+      "previous": "Eelmine",
+      "next": "Järgmine",
+      "finishTitle": "Viimane samm",
+      "tips": {
+        "profile": "Kirjuta oma nimi, amet ja kuidas sinuga ühendust võtta. Kokkuvõte: 2 või 3 lauset sellest, mida oskad",
+        "experience": "Too välja töökohad, praktikad ja ülesanded, uusim esimesena. Iga kohta 2 või 3 lühikest lauset sellest, mida tegid",
+        "education": "Too välja kraadid ja koolitused, uusim esimesena",
+        "projects": "Esitle üht või kaht õnnestunud projekti konkreetse tulemusega",
+        "certifications": "Lisa ametikohale kasulikud sertifikaadid ja load koos kuupäevaga",
+        "custom": "Lisa see, mis mujale ei sobi: vabatahtlik töö, ühiskondlik tegevus, kasulik teave",
+        "skills": "Loetle, mida oskad: tööriistad, tarkvara, oskused. Eralda need komadega",
+        "languages": "Too välja keeled, mida räägid, ja oma tase",
+        "interests": "Lisa 2 või 3 hobi: need aitavad vestlusel juttu alustada",
+        "finish": "Vali meeldiv mall ja laadi CV alla PDF-ina. Saad alati tagasi tulla ja seda muuta"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "See dokument kuvatakse inglise keeles. Õiguslikult siduv on ainult prantsuskeelne versioon.",
     "error": "Seda dokumenti ei õnnestunud laadida."
+  },
+  "display": {
+    "label": "Kuva ja ligipääsetavus",
+    "textSize": "Teksti suurus",
+    "sizes": {
+      "normal": "Tavaline",
+      "large": "Suur",
+      "xlarge": "Väga suur"
+    },
+    "options": {
+      "readableFont": "Hästi loetav font",
+      "spacing": "Hõredam tekst",
+      "contrast": "Tugevam kontrast",
+      "reduceMotion": "Vähem animatsioone"
+    },
+    "reset": "Vaikekuva",
+    "note": "Need seaded muudavad liidest, mitte kunagi sinu prinditud CV-d"
   }
 }

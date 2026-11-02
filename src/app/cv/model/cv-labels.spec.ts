@@ -31,4 +31,10 @@ describe('formatage des dates du CV', () => {
     expect(labelSeparator('fr')).toBe(' : ');
     expect(labelSeparator('en')).toBe(': ');
   });
+
+  it('garde seulement les années en style « années seules »', () => {
+    expect(formatCvDate('2022-03', 'fr', 'year')).toBe('2022');
+    expect(formatDateRange('2019-09', '2022-02', false, 'fr', 'year')).toBe('2019 – 2022');
+    expect(formatDateRange('2022-03', '', true, 'fr', 'year')).toBe('2022 – aujourd’hui');
+  });
 });

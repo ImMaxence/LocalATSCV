@@ -16,7 +16,7 @@ import { TextField } from '../../../../shared/form/text-field';
 import { Icon } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
 import { BulletList } from './bullet-list';
-import { IncludeToggle, ItemMenu } from './editor-controls';
+import { HealthHint, IncludeToggle, ItemMenu } from './editor-controls';
 
 /** Une entrée datée (expérience, formation, projet…), repliable pour faciliter le tri. */
 @Component({
@@ -29,6 +29,7 @@ import { IncludeToggle, ItemMenu } from './editor-controls';
     MonthYearField,
     BulletList,
     IncludeToggle,
+    HealthHint,
     ItemMenu,
     CdkDragHandle,
   ],
@@ -81,11 +82,14 @@ import { IncludeToggle, ItemMenu } from './editor-controls';
 
       @if (expanded()) {
         <div class="grid gap-3 border-t border-line p-3 sm:grid-cols-2">
-          <app-text-field
-            [label]="t('entry.fields.' + kind() + '.title')"
-            [value]="entry().title"
-            (valueChange)="update({ title: $event })"
-          />
+          <div>
+            <app-text-field
+              [label]="t('entry.fields.' + kind() + '.title')"
+              [value]="entry().title"
+              (valueChange)="update({ title: $event })"
+            />
+            <app-health-hint [text]="entry().title" (replaced)="update({ title: $event })" />
+          </div>
           <app-text-field
             [label]="t('entry.fields.' + kind() + '.subtitle')"
             [value]="entry().subtitle"
@@ -155,8 +159,14 @@ export class EntryEditor implements OnInit {
   );
   protected readonly summary = computed(() => {
     const entry = this.entry();
-    const language = this.store.cv()?.language ?? 'fr';
-    const dates = formatDateRange(entry.start, entry.end, entry.current, language);
+    const cv = this.store.cv();
+    const dates = formatDateRange(
+      entry.start,
+      entry.end,
+      entry.current,
+      cv?.language ?? 'fr',
+      cv?.dateStyle,
+    );
     return [entry.subtitle, dates].filter(Boolean).join(' · ');
   });
 

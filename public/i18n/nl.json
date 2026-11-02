@@ -28,7 +28,8 @@
     "changelog": "Nieuw",
     "legalNotice": "Colofon",
     "terms": "Gebruiksvoorwaarden",
-    "privacy": "Privacybeleid"
+    "privacy": "Privacybeleid",
+    "accessibility": "Toegankelijkheidsverklaring"
   },
   "seo": {
     "home": "Maak gratis een cv dat je het gesprek oplevert: 72 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
@@ -37,7 +38,8 @@
     "changelog": "Nieuw in LocalATSCV, versie per versie: nieuwe cv-sjablonen, functies en oplossingen",
     "legalNotice": "Colofon van LocalATSCV: uitgever, hosting en contact",
     "terms": "Gebruiksvoorwaarden van LocalATSCV, de gratis en open source cv-maker",
-    "privacy": "Privacybeleid van LocalATSCV: geen gegevens verzameld, je cv's blijven in je browser"
+    "privacy": "Privacybeleid van LocalATSCV: geen gegevens verzameld, je cv's blijven in je browser",
+    "accessibility": "Toegankelijkheid van LocalATSCV: toetsenbordbediening, schermlezers, weergave-instellingen, voorlezen en bekende beperkingen"
   },
   "footer": {
     "tagline": "De gratis cv-maker die je gegevens nooit ziet",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Werkt het zonder internet?",
           "a": "Ja. Na je eerste bezoek kun je je cv's offline bewerken en downloaden. Je kunt LocalATSCV zelfs als app op het beginscherm van je telefoon of computer zetten"
+        },
+        "disability": {
+          "q": "Moet ik mijn beperking vermelden?",
+          "a": "Dat is nooit verplicht. Wil je het wel, dan stelt de editor de erkende formulering voor van het land van je cv (RQTH in Frankrijk, categorie protette in Italië…), bij je contactgegevens, onderaan het cv of alleen in de brief. Je kunt haar ook in sommige versies houden en in andere niet"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Match met de vacature",
       "sent": "Niets verstuurd",
       "robot": "VAARDIGHEDEN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Bakker en banketbakker Banket <n>●●●●○</n> WERKERVARING <n>� camille.mar</n> Bakker <n>tin@example.com</n> 2021 – heden Gebak <n>●●●○○</n> Bakkerij Voorbeeld TALEN Engels Elke ochtend 300 stuks banket…"
+    },
+    "inclusive": {
+      "eyebrow": "Toegankelijk voor iedereen",
+      "title": "Een cv voor iedereen, met of zonder beperking",
+      "text": "Een erkende beperking vermelden of niet, de weergave aanpassen, je cv laten voorlezen, stap voor stap verder: LocalATSCV past zich aan jou aan, niet andersom",
+      "countries": "De juiste formulering voor elk land",
+      "private": "Gezondheidsgegevens horen niet op een server: de jouwe blijven op je apparaat en worden alleen afgedrukt als jij dat wilt",
+      "points": {
+        "disclosure": {
+          "title": "Het zeggen, of niet",
+          "text": "Optionele vermelding bij je contactgegevens, onderaan het cv of alleen in de brief, met voor- en nadelen eenvoudig uitgelegd"
+        },
+        "display": {
+          "title": "Een weergave op maat",
+          "text": "Grotere tekst, een goed leesbaar lettertype bij dyslexie of slechtziendheid, sterker contrast, minder animaties"
+        },
+        "listen": {
+          "title": "Je cv voorgelezen",
+          "text": "Controleer je cv en brief op het gehoor, met de stem van je apparaat. Ideaal om een tikfout of een te lange zin te vinden"
+        },
+        "guided": {
+          "title": "Stap voor stap, zonder te verdwalen",
+          "text": "Eén onderdeel tegelijk, met een tip in eenvoudige taal, tot het downloaden van de pdf"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Een lege regel scheidt twee alinea's · **vet** voor een trefwoord",
       "outline": "Een opzet invoegen",
       "closing": "Afsluiting",
-      "fileName": "Sollicitatiebrief"
+      "fileName": "Sollicitatiebrief",
+      "addDisability": "Een zin over mijn beperking toevoegen"
     },
     "fit": {
       "pages": "{{count}} pagina's",
@@ -376,7 +408,13 @@
       "settingsHint": "De tekst blijft echte tekst: alleen de opmaak verandert",
       "reset": "Opmaak van het sjabloon",
       "grayscale": "In zwart-wit bekijken",
-      "grayscaleHint": "Simuleert een zwart-witafdruk: de geëxporteerde pdf houdt zijn kleuren"
+      "grayscaleHint": "Simuleert een zwart-witafdruk: de geëxporteerde pdf houdt zijn kleuren",
+      "listen": "Document beluisteren",
+      "stopListening": "Voorlezen stoppen",
+      "dates": "Datums",
+      "datesMonth": "Maand en jaar",
+      "datesYear": "Alleen jaren",
+      "datesHint": "Met alleen jaartallen valt een korte onderbreking in je loopbaan niet meer op"
     },
     "versions": {
       "label": "Getoonde versie",
@@ -424,7 +462,30 @@
       "drivingLicense": "Rijbewijs",
       "drivingLicensePlaceholder": "Bijv. Rijbewijs B, eigen auto",
       "qrToggle": "Deze link als QR-code tonen",
-      "linksHint": "Het logo (LinkedIn, GitHub, YouTube…) wordt automatisch toegevoegd. De QR-knop toont de link als QR-code in de meeste grafische sjablonen"
+      "linksHint": "Het logo (LinkedIn, GitHub, YouTube…) wordt automatisch toegevoegd. De QR-knop toont de link als QR-code in de meeste grafische sjablonen",
+      "disability": {
+        "title": "Beperking",
+        "subtitle": "Optioneel, alleen als je dat wilt",
+        "intro": "Of je het vermeldt, kies je zelf: niets verplicht je. Deze informatie verlaat nooit je apparaat",
+        "country": {
+          "fr": "In Frankrijk is de RQTH interessant voor bedrijven met 20 of meer werknemers, die 6 % werknemers met een beperking moeten hebben",
+          "en": "In het Verenigd Koninkrijk en de VS vermeld je het meestal in het sollicitatieformulier van de werkgever, niet op het cv",
+          "it": "In Italië is „categorie protette (L. 68/99)” gebruikelijk op cv's en geeft het toegang tot gereserveerde functies",
+          "es": "In Spanje wordt een erkende beperking van minstens 33 % vaak vermeld: bedrijven met 50 of meer werknemers reserveren 2 % van hun functies",
+          "de": "In Duitsland moeten publieke werkgevers kandidaten die als „schwerbehindert” erkend zijn en bij de functie passen, uitnodigen voor een gesprek"
+        },
+        "label": "Vermelding op het cv",
+        "suggestions": "Gangbare formuleringen:",
+        "placement": "Waar tonen",
+        "placements": {
+          "contact": "Bij mijn contactgegevens",
+          "section": "Onderaan het cv",
+          "letter": "Alleen in de brief"
+        },
+        "letterHint": "De vermelding staat niet op het cv. In het tabblad Brief voegt een knop een kant-en-klare zin toe",
+        "pros": "Voor: betrokken werkgevers (inclusiebeleid, quota) vinden je sneller en aanpassingen zijn makkelijker te bespreken",
+        "cons": "Tegen: sommige recruiters hebben nog vooroordelen. Je kunt het ook later ter sprake brengen, in het gesprek of na de aanname, of nooit"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Typemachinestijl",
         "paper": "Papier",
         "colorful": "Kleurrijk",
-        "minimal": "Minimalistisch"
+        "minimal": "Minimalistisch",
+        "readable": "Zeer leesbaar"
       },
       "favorite": "Aan favorieten toevoegen",
       "unfavorite": "Uit favorieten verwijderen",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Trefwoorden",
       "createVersion": "Een gerichte versie voor deze vacature maken",
       "createVersionHint": "Ervaring en punten die niets met de vacature te maken hebben, worden uitgevinkt: je kunt ze aanpassen",
-      "savedInVersion": "Vacature opgeslagen bij de versie “{{name}}”"
+      "savedInVersion": "Vacature opgeslagen bij de versie “{{name}}”",
+      "inclusive": "Deze vacature verwelkomt mensen met een beperking. Wil je, voeg dan een vermelding toe bij „Beperking”, onderaan het profiel"
     },
     "weak": {
       "hint": "“{{phrase}}” beschrijft een taak: begin met een actiewerkwoord"
@@ -906,6 +969,29 @@
       "body": "Lopende tekst",
       "default": "Die van het sjabloon",
       "hint": "ATS-software leest al deze lettertypen goed: de tekst blijft echte tekst"
+    },
+    "health": {
+      "hint": "Een medische reden is niet nodig, vervang „{{phrase}}” door:"
+    },
+    "guided": {
+      "toggle": "Stap-voor-stapmodus",
+      "toggleHint": "Eén onderdeel tegelijk, met een eenvoudige tip",
+      "step": "Stap {{n}} van {{total}}",
+      "previous": "Vorige",
+      "next": "Volgende",
+      "finishTitle": "Laatste stap",
+      "tips": {
+        "profile": "Schrijf je naam, je beroep en hoe men je bereikt. De samenvatting: 2 of 3 zinnen over wat je kunt",
+        "experience": "Noem je banen, stages en opdrachten, de recentste eerst. Per baan 2 of 3 korte zinnen over wat je deed",
+        "education": "Noem je diploma's en opleidingen, de recentste eerst",
+        "projects": "Laat een of twee geslaagde projecten zien, met een concreet resultaat",
+        "certifications": "Voeg certificaten en bevoegdheden toe die nuttig zijn voor de functie, met datum",
+        "custom": "Voeg toe wat nergens anders past: vrijwilligerswerk, engagement, nuttige informatie",
+        "skills": "Noem wat je kunt: tools, software, vakkennis. Scheid ze met komma's",
+        "languages": "Noem de talen die je spreekt en je niveau",
+        "interests": "Voeg 2 of 3 hobby's toe: ze helpen het gesprek op gang te brengen",
+        "finish": "Kies een sjabloon dat je mooi vindt en download je cv als pdf. Je kunt het altijd nog aanpassen"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Dit document wordt in het Engels getoond. Alleen de Franse versie is juridisch bindend.",
     "error": "Dit document kon niet worden geladen."
+  },
+  "display": {
+    "label": "Weergave en toegankelijkheid",
+    "textSize": "Tekstgrootte",
+    "sizes": {
+      "normal": "Normaal",
+      "large": "Groot",
+      "xlarge": "Zeer groot"
+    },
+    "options": {
+      "readableFont": "Goed leesbaar lettertype",
+      "spacing": "Ruimere tekst",
+      "contrast": "Sterker contrast",
+      "reduceMotion": "Minder animaties"
+    },
+    "reset": "Standaardweergave",
+    "note": "Deze instellingen veranderen de interface, nooit je afgedrukte cv"
   }
 }

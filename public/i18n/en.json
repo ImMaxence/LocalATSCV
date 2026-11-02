@@ -28,7 +28,8 @@
     "changelog": "What's new",
     "legalNotice": "Legal notice",
     "terms": "Terms of use",
-    "privacy": "Privacy policy"
+    "privacy": "Privacy policy",
+    "accessibility": "Accessibility statement"
   },
   "seo": {
     "home": "Build a free resume that lands the interview: 72 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
@@ -37,7 +38,8 @@
     "changelog": "What's new in LocalATSCV, release by release: new resume templates, features and fixes",
     "legalNotice": "LocalATSCV legal notice: publisher, hosting and contact",
     "terms": "Terms of use of LocalATSCV, the free and open source resume builder",
-    "privacy": "LocalATSCV privacy policy: no data collected, your resumes stay in your browser"
+    "privacy": "LocalATSCV privacy policy: no data collected, your resumes stay in your browser",
+    "accessibility": "LocalATSCV accessibility: keyboard navigation, screen readers, display settings, read aloud and known limitations"
   },
   "footer": {
     "tagline": "The free resume builder that never sees your data",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Does it work without internet?",
           "a": "Yes. After your first visit, you can edit and download your resumes offline. You can even add LocalATSCV to the home screen of your phone or computer, like an app"
+        },
+        "disability": {
+          "q": "Should I mention my disability?",
+          "a": "It is never mandatory. If you wish, the editor suggests the wording recognized in your resume's country (RQTH in France, categorie protette in Italy…), placed with your contact details, at the end of the resume or only in the cover letter. You can also keep it in some versions and not in others"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Match with the job ad",
       "sent": "Nothing sent",
       "robot": "SKILLS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Baker & Pastry Cook Pastries <n>●●●●○</n> EXPERIENCE <n>� camille.mar</n> Baker <n>tin@example.com</n> 2021 – present Cakes <n>●●●○○</n> Example Bakery LANGUAGES French Baked 300 pastries and…"
+    },
+    "inclusive": {
+      "eyebrow": "Accessible to everyone",
+      "title": "A resume for everyone, disability included",
+      "text": "Mention a recognized disability or not, adjust the display, have your resume read aloud, move forward one step at a time: LocalATSCV adapts to you, not the other way around",
+      "countries": "The right wording for each country",
+      "private": "Health information has no business on a server: yours stays on your device, and is only printed if you decide so",
+      "points": {
+        "disclosure": {
+          "title": "Say it, or not",
+          "text": "An optional mention with your contact details, at the end of the resume or only in the cover letter, with the pros and cons explained simply"
+        },
+        "display": {
+          "title": "A display that fits you",
+          "text": "Larger text, a highly legible font for people with dyslexia or low vision, stronger contrast, reduced motion"
+        },
+        "listen": {
+          "title": "Your resume read aloud",
+          "text": "Proofread your resume and cover letter by ear, with your device's voice. Great for catching a typo or an overly long sentence"
+        },
+        "guided": {
+          "title": "Step by step, without getting lost",
+          "text": "One section at a time, with a tip in plain language, all the way to the PDF download"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "A blank line separates two paragraphs · **bold** for a keyword",
       "outline": "Insert an outline",
       "closing": "Closing",
-      "fileName": "Cover letter"
+      "fileName": "Cover letter",
+      "addDisability": "Add a sentence about my disability"
     },
     "fit": {
       "pages": "{{count}} pages",
@@ -376,7 +408,13 @@
       "settingsHint": "The text stays real text: only its layout changes",
       "reset": "Template layout",
       "grayscale": "View in black and white",
-      "grayscaleHint": "Simulates a black and white print: the exported PDF keeps its colors"
+      "grayscaleHint": "Simulates a black and white print: the exported PDF keeps its colors",
+      "listen": "Listen to the document",
+      "stopListening": "Stop reading",
+      "dates": "Dates",
+      "datesMonth": "Month and year",
+      "datesYear": "Years only",
+      "datesHint": "With years only, a short career break no longer shows"
     },
     "versions": {
       "label": "Displayed version",
@@ -424,7 +462,30 @@
       "drivingLicense": "Driver's license",
       "drivingLicensePlaceholder": "E.g. Full driving licence, own car",
       "qrToggle": "Show this link as a QR code",
-      "linksHint": "The logo (LinkedIn, GitHub, YouTube…) is added automatically. The QR button shows the link as a QR code in most graphic templates"
+      "linksHint": "The logo (LinkedIn, GitHub, YouTube…) is added automatically. The QR button shows the link as a QR code in most graphic templates",
+      "disability": {
+        "title": "Disability",
+        "subtitle": "Optional, only if you want to",
+        "intro": "Whether you mention it is entirely your choice: nothing requires you to. This information never leaves your device",
+        "country": {
+          "fr": "In France, the RQTH status interests companies with 20 or more employees, which must employ 6% disabled workers",
+          "en": "In the UK and the US, it is usually declared in the employer's application form rather than on the resume",
+          "it": "In Italy, \"categorie protette (L. 68/99)\" is common on resumes and opens access to reserved positions",
+          "es": "In Spain, a recognized disability of at least 33% is often stated: companies with 50 or more employees reserve 2% of their positions",
+          "de": "In Germany, public employers must invite applicants recognized as \"schwerbehindert\" who match the job to an interview"
+        },
+        "label": "Mention on the resume",
+        "suggestions": "Common wordings:",
+        "placement": "Where to show it",
+        "placements": {
+          "contact": "With my contact details",
+          "section": "At the end of the resume",
+          "letter": "Only in the cover letter"
+        },
+        "letterHint": "The mention does not appear on the resume. In the Letter tab, a button adds a ready-made sentence",
+        "pros": "Pros: committed employers (disability programs, hiring quotas) spot you faster and adjustments are easier to discuss",
+        "cons": "Cons: some recruiters are still biased. You can also bring it up later, at interview or after hiring, or never"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Typewriter style",
         "paper": "Paper",
         "colorful": "Colorful",
-        "minimal": "Minimalist"
+        "minimal": "Minimalist",
+        "readable": "Very readable"
       },
       "favorite": "Add to favorites",
       "unfavorite": "Remove from favorites",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Keywords",
       "createVersion": "Create a tailored version for this job",
       "createVersionHint": "Experience and bullet points unrelated to the job will be unticked: you can adjust them",
-      "savedInVersion": "Job ad saved with the version “{{name}}”"
+      "savedInVersion": "Job ad saved with the version “{{name}}”",
+      "inclusive": "This job ad welcomes applicants with disabilities. If you wish, add a mention in \"Disability\", at the bottom of the profile"
     },
     "weak": {
       "hint": "“{{phrase}}” describes a duty: start with an action verb"
@@ -906,6 +969,29 @@
       "body": "Body text",
       "default": "Template's own",
       "hint": "ATS software reads all of these fonts well: the text stays real text"
+    },
+    "health": {
+      "hint": "No need to give a medical reason, replace \"{{phrase}}\" with:"
+    },
+    "guided": {
+      "toggle": "Step by step mode",
+      "toggleHint": "One section at a time, with a simple tip",
+      "step": "Step {{n}} of {{total}}",
+      "previous": "Previous",
+      "next": "Next",
+      "finishTitle": "Last step",
+      "tips": {
+        "profile": "Write your name, your job and how to reach you. The summary: 2 or 3 sentences about what you can do",
+        "experience": "List your jobs, internships and assignments, most recent first. For each one, 2 or 3 short sentences about what you did",
+        "education": "List your degrees and training, most recent first",
+        "projects": "Show one or two successful projects, with a concrete result",
+        "certifications": "Add the certificates and licenses useful for the job, with their date",
+        "custom": "Add what does not fit elsewhere: volunteering, commitments, useful information",
+        "skills": "List what you can do: tools, software, know-how. Separate them with commas",
+        "languages": "List the languages you speak and your level",
+        "interests": "Add 2 or 3 hobbies: they help start the conversation at interview",
+        "finish": "Pick a template you like, then download your resume as a PDF. You can always come back and edit it"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "This document is a translation. Only the French version is legally binding.",
     "error": "This document could not be loaded."
+  },
+  "display": {
+    "label": "Display and accessibility",
+    "textSize": "Text size",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Large",
+      "xlarge": "Extra large"
+    },
+    "options": {
+      "readableFont": "Highly legible font",
+      "spacing": "Wider text spacing",
+      "contrast": "Stronger contrast",
+      "reduceMotion": "Reduce motion"
+    },
+    "reset": "Default display",
+    "note": "These settings change the interface, never your printed resume"
   }
 }

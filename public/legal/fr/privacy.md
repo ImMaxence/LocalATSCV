@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-Dernière mise à jour : 1er novembre 2026.
+Dernière mise à jour : 2 novembre 2026.
 
 ## En résumé
 
@@ -12,8 +12,8 @@ Maxence Bonnici, éditeur du site, joignable à [maxence.bonnici@outlook.fr](mai
 
 ## Données stockées sur votre appareil
 
-- **CV, versions ciblées, lettres de motivation, annonces et photo** : enregistrés dans IndexedDB, la base de données intégrée à votre navigateur.
-- **Préférences** (thème, langue de l'interface, conseils d'impression) : enregistrées dans le stockage local du navigateur, sous des clés commençant par « localatscv. ». Demandées par vous, elles ne nécessitent pas de consentement.
+- **CV, versions ciblées, lettres de motivation, annonces et photo** : enregistrés dans IndexedDB, la base de données intégrée à votre navigateur. La mention facultative d'une situation de handicap est une donnée de santé : comme le reste du CV, elle reste sur votre appareil et n'est imprimée que si vous le choisissez.
+- **Préférences** (thème, langue de l'interface, réglages d'affichage, mode pas à pas, conseils d'impression) : enregistrées dans le stockage local du navigateur, sous des clés commençant par « localatscv. ». Demandées par vous, elles ne nécessitent pas de consentement.
 - **Application installée** : les fichiers de l'application sont mis en cache pour fonctionner hors ligne. Ce cache ne contient aucune donnée personnelle.
 
 Ces données ne quittent votre appareil que si vous les exportez vous-même (sauvegarde JSON, PDF). Vous pouvez les supprimer à tout moment depuis l'application ou en effaçant les données du site dans votre navigateur.

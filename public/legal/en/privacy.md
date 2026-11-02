@@ -1,6 +1,6 @@
 # Privacy policy
 
-Last updated: November 1, 2026. This is a translation: only the French version is legally binding.
+Last updated: November 2, 2026. This is a translation: only the French version is legally binding.
 
 ## In short
 
@@ -12,8 +12,8 @@ Maxence Bonnici, publisher of the site, reachable at [maxence.bonnici@outlook.fr
 
 ## Data stored on your device
 
-- **Resumes, tailored versions, cover letters, job ads and photo**: stored in IndexedDB, the database built into your browser.
-- **Preferences** (theme, interface language, print tips): stored in your browser's local storage, under keys starting with "localatscv.". Requested by you, they require no consent.
+- **Resumes, tailored versions, cover letters, job ads and photo**: stored in IndexedDB, the database built into your browser. The optional mention of a disability is health data: like the rest of your resume, it stays on your device and is only printed if you choose so.
+- **Preferences** (theme, interface language, display settings, step by step mode, print tips): stored in your browser's local storage, under keys starting with "localatscv.". Requested by you, they require no consent.
 - **Installed app**: the application files are cached so the app works offline. This cache contains no personal data.
 
 This data only leaves your device if you export it yourself (JSON backup, PDF). You can delete it at any time from the app or by clearing the site data in your browser.

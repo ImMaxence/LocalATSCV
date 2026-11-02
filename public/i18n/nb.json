@@ -28,7 +28,8 @@
     "changelog": "Nyheter",
     "legalNotice": "Juridisk informasjon",
     "terms": "Bruksvilkår",
-    "privacy": "Personvernerklæring"
+    "privacy": "Personvernerklæring",
+    "accessibility": "Tilgjengelighetserklæring"
   },
   "seo": {
     "home": "Lag gratis en CV som gir deg intervjuet: 72 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
@@ -37,7 +38,8 @@
     "changelog": "Nyheter i LocalATSCV, versjon for versjon: nye CV-maler, funksjoner og rettelser",
     "legalNotice": "Juridisk informasjon om LocalATSCV: utgiver, hosting og kontakt",
     "terms": "Bruksvilkår for LocalATSCV, det gratis CV-verktøyet med åpen kildekode",
-    "privacy": "Personvernerklæring for LocalATSCV: ingen data samles inn, CV-ene dine blir i nettleseren"
+    "privacy": "Personvernerklæring for LocalATSCV: ingen data samles inn, CV-ene dine blir i nettleseren",
+    "accessibility": "Tilgjengelighet i LocalATSCV: tastaturnavigasjon, skjermlesere, visningsinnstillinger, opplesning og kjente begrensninger"
   },
   "footer": {
     "tagline": "Den gratis CV-byggeren som aldri ser dataene dine",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Fungerer det uten internett?",
           "a": "Ja. Etter første besøk kan du redigere og laste ned CV-ene dine uten nett. Du kan til og med legge LocalATSCV på startskjermen på telefonen eller datamaskinen, som en app"
+        },
+        "disability": {
+          "q": "Må jeg nevne funksjonsnedsettelsen min?",
+          "a": "Det er aldri obligatorisk. Hvis du vil, foreslår redigeringsverktøyet formuleringen som brukes i CV-ens land (RQTH i Frankrike, categorie protette i Italia…), ved kontaktinformasjonen, til slutt i CV-en eller bare i brevet. Du kan også beholde den i noen versjoner og ikke i andre"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Match med annonsen",
       "sent": "Ingenting sendt",
       "robot": "KOMPETANSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Baker og konditor Wienerbrød <n>●●●●○</n> ARBEIDSERFARING <n>� camille.mar</n> Baker <n>tin@example.com</n> 2021 – nå Konditorvarer <n>●●●○○</n> Eksempel Bakeri SPRÅK Engelsk Bakte 300 wienerbrød…"
+    },
+    "inclusive": {
+      "eyebrow": "Tilgjengelig for alle",
+      "title": "En CV for alle, også med funksjonsnedsettelse",
+      "text": "Nevne en anerkjent funksjonsnedsettelse eller ikke, tilpasse visningen, få CV-en lest opp, ta ett steg om gangen: LocalATSCV tilpasser seg deg, ikke omvendt",
+      "countries": "Riktig formulering for hvert land",
+      "private": "Helseopplysninger hører ikke hjemme på en server: dine blir på enheten din og skrives bare ut hvis du bestemmer det",
+      "points": {
+        "disclosure": {
+          "title": "Si det, eller ikke",
+          "text": "Valgfri opplysning ved kontaktinformasjonen, til slutt i CV-en eller bare i brevet, med fordeler og ulemper enkelt forklart"
+        },
+        "display": {
+          "title": "En visning som passer deg",
+          "text": "Større tekst, lettlest skrift ved dysleksi eller nedsatt syn, forsterket kontrast, færre animasjoner"
+        },
+        "listen": {
+          "title": "CV-en din lest opp",
+          "text": "Gå gjennom CV og brev med øret, med enhetens stemme. Perfekt for å finne en skrivefeil eller en for lang setning"
+        },
+        "guided": {
+          "title": "Steg for steg, uten å gå seg vill",
+          "text": "Én del om gangen, med et råd på enkelt språk, helt til nedlastingen av PDF-en"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "En tom linje skiller to avsnitt · **fet** for et nøkkelord",
       "outline": "Sett inn et utkast",
       "closing": "Avslutning",
-      "fileName": "Søknadsbrev"
+      "fileName": "Søknadsbrev",
+      "addDisability": "Legg til en setning om funksjonsnedsettelsen min"
     },
     "fit": {
       "pages": "{{count}} sider",
@@ -376,7 +408,13 @@
       "settingsHint": "Teksten forblir ekte tekst: bare layouten endres",
       "reset": "Malens layout",
       "grayscale": "Vis i svart-hvitt",
-      "grayscaleHint": "Simulerer en svart-hvitt-utskrift: den eksporterte PDF-en beholder fargene"
+      "grayscaleHint": "Simulerer en svart-hvitt-utskrift: den eksporterte PDF-en beholder fargene",
+      "listen": "Lytt til dokumentet",
+      "stopListening": "Stopp opplesningen",
+      "dates": "Datoer",
+      "datesMonth": "Måned og år",
+      "datesYear": "Bare år",
+      "datesHint": "Med bare årstall synes ikke et kort opphold i karrieren lenger"
     },
     "versions": {
       "label": "Vist versjon",
@@ -424,7 +462,30 @@
       "drivingLicense": "Førerkort",
       "drivingLicensePlaceholder": "F.eks. Førerkort klasse B, egen bil",
       "qrToggle": "Vis lenken som QR-kode",
-      "linksHint": "Logoen (LinkedIn, GitHub, YouTube …) legges til automatisk. QR-knappen viser lenken som QR-kode i de fleste grafiske maler"
+      "linksHint": "Logoen (LinkedIn, GitHub, YouTube …) legges til automatisk. QR-knappen viser lenken som QR-kode i de fleste grafiske maler",
+      "disability": {
+        "title": "Funksjonsnedsettelse",
+        "subtitle": "Valgfritt, bare hvis du vil",
+        "intro": "Om du nevner det, er helt ditt valg: ingenting forplikter deg. Opplysningen forlater aldri enheten din",
+        "country": {
+          "fr": "I Frankrike er RQTH interessant for bedrifter med minst 20 ansatte, som må ha 6 % ansatte med funksjonsnedsettelse",
+          "en": "I Storbritannia og USA oppgis det helst i arbeidsgiverens søknadsskjema heller enn i CV-en",
+          "it": "I Italia er «categorie protette (L. 68/99)» vanlig i CV-er og gir tilgang til reserverte stillinger",
+          "es": "I Spania oppgis ofte en anerkjent funksjonsnedsettelse på minst 33 %: bedrifter med minst 50 ansatte reserverer 2 % av stillingene",
+          "de": "I Tyskland må offentlige arbeidsgivere kalle inn søkere som er anerkjent som «schwerbehindert» og passer til stillingen, til intervju"
+        },
+        "label": "Opplysning i CV-en",
+        "suggestions": "Vanlige formuleringer:",
+        "placement": "Hvor den skal vises",
+        "placements": {
+          "contact": "Med kontaktinformasjonen min",
+          "section": "Til slutt i CV-en",
+          "letter": "Bare i brevet"
+        },
+        "letterHint": "Opplysningen vises ikke i CV-en. Under fanen Brev legger en knapp til en ferdig setning",
+        "pros": "For: engasjerte arbeidsgivere (inkluderingsarbeid, kvoter) finner deg raskere, og tilrettelegging er lettere å snakke om",
+        "cons": "Imot: noen rekrutterere har fortsatt fordommer. Du kan også ta det opp senere, på intervjuet eller etter ansettelsen, eller aldri"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Skrivemaskinstil",
         "paper": "Papir",
         "colorful": "Fargerik",
-        "minimal": "Minimalistisk"
+        "minimal": "Minimalistisk",
+        "readable": "Svært lettlest"
       },
       "favorite": "Legg til i favoritter",
       "unfavorite": "Fjern fra favoritter",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Nøkkelord",
       "createVersion": "Lag en målrettet versjon for denne stillingen",
       "createVersionHint": "Erfaringer og punkter uten tilknytning til stillingen får fjernet krysset: du kan justere dem",
-      "savedInVersion": "Annonsen er lagret med versjonen «{{name}}»"
+      "savedInVersion": "Annonsen er lagret med versjonen «{{name}}»",
+      "inclusive": "Annonsen ønsker søkere med funksjonsnedsettelse velkommen. Hvis du vil, kan du legge til en opplysning under «Funksjonsnedsettelse» nederst i profilen"
     },
     "weak": {
       "hint": "«{{phrase}}» beskriver en oppgave: start med et handlingsverb"
@@ -906,6 +969,29 @@
       "body": "Brødtekst",
       "default": "Malens egen",
       "hint": "ATS-systemer leser alle disse skrifttypene godt: teksten forblir ekte tekst"
+    },
+    "health": {
+      "hint": "Du trenger ingen medisinsk grunn, erstatt «{{phrase}}» med:"
+    },
+    "guided": {
+      "toggle": "Steg for steg",
+      "toggleHint": "Én del om gangen, med et enkelt råd",
+      "step": "Steg {{n}} av {{total}}",
+      "previous": "Forrige",
+      "next": "Neste",
+      "finishTitle": "Siste steg",
+      "tips": {
+        "profile": "Skriv navnet ditt, yrket ditt og hvordan man når deg. Sammendraget: 2 eller 3 setninger om hva du kan",
+        "experience": "Oppgi jobber, praksisplasser og oppdrag, den nyeste først. For hver, 2 eller 3 korte setninger om hva du gjorde",
+        "education": "Oppgi grader og utdanninger, den nyeste først",
+        "projects": "Vis ett eller to vellykkede prosjekter, med et konkret resultat",
+        "certifications": "Legg til sertifikater og godkjenninger som er nyttige for stillingen, med dato",
+        "custom": "Legg til det som ikke passer andre steder: frivillig arbeid, engasjement, nyttig informasjon",
+        "skills": "List opp hva du kan: verktøy, programmer, fagkunnskap. Skill dem med komma",
+        "languages": "Oppgi språkene du snakker og nivået ditt",
+        "interests": "Legg til 2 eller 3 fritidsinteresser: de hjelper med å starte samtalen på intervjuet",
+        "finish": "Velg en mal du liker, og last ned CV-en som PDF. Du kan alltid komme tilbake og endre den"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Dokumentet vises på engelsk. Bare den franske versjonen er juridisk bindende.",
     "error": "Kunne ikke laste inn dokumentet."
+  },
+  "display": {
+    "label": "Visning og tilgjengelighet",
+    "textSize": "Tekststørrelse",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Stor",
+      "xlarge": "Svært stor"
+    },
+    "options": {
+      "readableFont": "Lettlest skrift",
+      "spacing": "Luftigere tekst",
+      "contrast": "Forsterket kontrast",
+      "reduceMotion": "Færre animasjoner"
+    },
+    "reset": "Standardvisning",
+    "note": "Innstillingene endrer grensesnittet, aldri den utskrevne CV-en din"
   }
 }

@@ -1,7 +1,9 @@
 import { CdkMenu, CdkMenuItem, CdkMenuTrigger } from '@angular/cdk/menu';
-import { ChangeDetectionStrategy, Component, inject, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { findHealthMention } from '../../../../cv/analysis/inclusion';
 import { SectionKind } from '../../../../cv/model/cv.model';
+import { DISABILITY_LABELS } from '../../../../cv/model/disability';
 import { Icon, IconName } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
 
@@ -113,4 +115,51 @@ export class ItemMenu {
   readonly moveDown = output<void>();
   readonly duplicate = output<void>();
   readonly remove = output<void>();
+}
+
+/**
+ * Motif médical repéré dans un intitulé ou une puce (« Arrêt maladie ») : un CV n'a pas à le
+ * donner. Un clic le remplace par un intitulé neutre dans la langue du CV.
+ */
+@Component({
+  selector: 'app-health-hint',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [TranslocoDirective],
+  template: `
+    @if (phrase(); as phrase) {
+      <p *transloco="let t" class="mt-1 flex flex-wrap items-center gap-1.5 text-xs">
+        <span class="text-amber-700 dark:text-amber-300">{{
+          t('editor.health.hint', { phrase })
+        }}</span>
+        <button
+          type="button"
+          class="rounded-full border border-line bg-surface px-2 py-0.5 font-medium hover:border-accent hover:text-accent"
+          (click)="replaced.emit(replace(phrase))"
+        >
+          {{ neutral() }}
+        </button>
+      </p>
+    }
+  `,
+})
+export class HealthHint {
+  readonly text = input.required<string>();
+  /** Texte corrigé, à enregistrer à la place de l'original. */
+  readonly replaced = output<string>();
+
+  private readonly store = inject(CvEditorStore);
+  protected readonly phrase = computed(() => findHealthMention(this.text()));
+  protected readonly neutral = computed(
+    () => DISABILITY_LABELS[this.store.cv()?.language ?? 'fr'].careerBreak,
+  );
+
+  protected replace(phrase: string): string {
+    const text = this.text().normalize('NFC');
+    const start = text.indexOf(phrase);
+    if (start < 0) return text;
+    // En milieu de phrase, l'intitulé perd sa majuscule (« après une pause professionnelle »).
+    const neutral = this.neutral();
+    const label = start > 0 ? neutral.charAt(0).toLowerCase() + neutral.slice(1) : neutral;
+    return text.slice(0, start) + label + text.slice(start + phrase.length);
+  }
 }

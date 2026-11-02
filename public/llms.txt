@@ -5,7 +5,7 @@
 
 LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible par les robots de recrutement. Points clés :
 
-- 72 modèles de CV, dont 53 graphiques (Bento, Memphis, Bauhaus, Brutal, Duotone, Éditorial, Prisme, Nocturne, Sorbet, Vague, Origami, Hexa, Blueprint, Typo, Suisse, Fil, Ruban, Zen, Prestige, Horizon, Polaroid, Terminal, Rétro, Mosaïque, Cosmos, Botanique, Ticket, BD, Postal, Arcade, Cahier, Circuit, Gazette, Relief, Aquarelle, Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 19 sobres (Classique, Moderne, Élégant, Registre, Compact, Académique, Monochrome, Douceur, Contour, Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire…) : tous impriment du vrai texte, dans l'ordre de lecture, avec des titres de sections standards. La galerie propose des filtres par style (fond sombre, deux colonnes, style livre, style machine à écrire, papier, coloré, minimaliste), des favoris, les modèles récents et des suggestions selon l'offre d'emploi
+- 72 modèles de CV, dont 53 graphiques (Bento, Memphis, Bauhaus, Brutal, Duotone, Éditorial, Prisme, Nocturne, Sorbet, Vague, Origami, Hexa, Blueprint, Typo, Suisse, Fil, Ruban, Zen, Prestige, Horizon, Polaroid, Terminal, Rétro, Mosaïque, Cosmos, Botanique, Ticket, BD, Postal, Arcade, Cahier, Circuit, Gazette, Relief, Aquarelle, Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 19 sobres (Classique, Moderne, Élégant, Registre, Compact, Académique, Monochrome, Douceur, Contour, Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire…) : tous impriment du vrai texte, dans l'ordre de lecture, avec des titres de sections standards. La galerie propose des filtres par style (très lisible, fond sombre, deux colonnes, style livre, style machine à écrire, papier, coloré, minimaliste), des favoris, les modèles récents et des suggestions selon l'offre d'emploi
 - Lettre de motivation reprenant le design du CV choisi, propre à chaque version ciblée
 - Bouton « Tenir sur une page » : espacements puis taille du texte ajustés automatiquement
 - Master CV : toutes les expériences au même endroit, puis des versions ciblées par offre à l'aide de cases à cocher, sans rien supprimer
@@ -14,6 +14,7 @@ LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible p
 - Import d'un CV PDF ou Word (.docx), du PDF de profil LinkedIn ou de l'archive de données LinkedIn
 - Export PDF en texte réel, couleurs et polices au choix, QR code vers un lien, permis de conduire
 - Langue du CV (français, anglais, italien, espagnol, allemand) ; en anglais, photo, date de naissance et nationalité sont masquées
+- Accessible à tous : mention facultative d'une situation de handicap avec la formulation reconnue dans chaque pays (RQTH, categorie protette, certificado de discapacidad, Schwerbehinderung), placée avec les coordonnées, en fin de CV ou seulement dans la lettre ; réglages d'affichage (texte plus grand, police très lisible, contraste renforcé, animations réduites), lecture à voix haute du CV, mode pas à pas, dates en années seulement
 - Application web installable qui fonctionne hors ligne ; stockage local (IndexedDB) et sauvegarde JSON
 
 ## Pages (français)
@@ -27,6 +28,7 @@ LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible p
 
 - [Home](https://localatscv.mbonnici.fr/en): what it does, how it works, privacy and FAQ
 - [Resume analyzer](https://localatscv.mbonnici.fr/en/analyze): ATS score of a PDF resume made with any tool, published scoring scale, fixes and the text as an ATS reads it
+- [Accessibility statement](https://localatscv.mbonnici.fr/en/legal/accessibility): keyboard, screen readers, display settings, read aloud and known limitations
 - [Privacy policy](https://localatscv.mbonnici.fr/en/legal/privacy), [Terms of use](https://localatscv.mbonnici.fr/en/legal/terms), [Legal notice](https://localatscv.mbonnici.fr/en/legal/notice)
 
 ## Autres langues / Other languages
@@ -48,3 +50,4 @@ Chaque page publique existe dans les 44 langues de l'interface, sous un préfixe
 - [Code source sur GitHub](https://github.com/ImMaxence/LocalATSCV)
 - [Conditions d'utilisation](https://localatscv.mbonnici.fr/legal/terms)
 - [Mentions légales](https://localatscv.mbonnici.fr/legal/notice)
+- [Déclaration d'accessibilité](https://localatscv.mbonnici.fr/legal/accessibility)

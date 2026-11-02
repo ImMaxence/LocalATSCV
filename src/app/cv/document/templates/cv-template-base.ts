@@ -24,7 +24,15 @@ const stripProtocol = (url: string): string =>
 const SIDE_KINDS: readonly SectionKind[] = ['skills', 'languages', 'interests'];
 
 export interface ContactItem {
-  kind: 'location' | 'email' | 'phone' | 'license' | 'link' | 'birthDate' | 'nationality';
+  kind:
+    | 'location'
+    | 'email'
+    | 'phone'
+    | 'license'
+    | 'link'
+    | 'birthDate'
+    | 'nationality'
+    | 'disability';
   text: string;
   /** Icône SVG (invisible pour un ATS) : pictogramme, ou logo pour les liens connus. */
   icon: IconName;
@@ -37,6 +45,7 @@ const CONTACT_ICONS: Record<Exclude<ContactItem['kind'], 'link'>, IconName> = {
   license: 'car',
   birthDate: 'calendar',
   nationality: 'flag',
+  disability: 'access',
 };
 
 /** Logo affiché devant un lien, selon son adresse. */
@@ -99,6 +108,7 @@ export abstract class CvTemplateBase {
         'nationality',
         profile.nationality && `${labels.nationality}${this.separator()}${profile.nationality}`,
       ),
+      item('disability', profile.disability ?? ''),
     ];
     return items.map((i) => ({ ...i, text: i.text.trim() })).filter((i) => i.text);
   });
@@ -153,7 +163,8 @@ export abstract class CvTemplateBase {
   }
 
   protected dates(entry: Entry): string {
-    return formatDateRange(entry.start, entry.end, entry.current, this.cv().language);
+    const { language, dateStyle } = this.cv();
+    return formatDateRange(entry.start, entry.end, entry.current, language, dateStyle);
   }
 
   protected meta(entry: Entry): string {

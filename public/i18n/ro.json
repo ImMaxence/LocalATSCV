@@ -28,7 +28,8 @@
     "changelog": "Noutăți",
     "legalNotice": "Mențiuni legale",
     "terms": "Condiții de utilizare",
-    "privacy": "Politica de confidențialitate"
+    "privacy": "Politica de confidențialitate",
+    "accessibility": "Declarație de accesibilitate"
   },
   "seo": {
     "home": "Creează gratuit un CV care îți aduce interviul: 72 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
@@ -37,7 +38,8 @@
     "changelog": "Noutățile LocalATSCV, versiune cu versiune: șabloane noi de CV, funcții și corecturi",
     "legalNotice": "Mențiunile legale LocalATSCV: editor, găzduire și contact",
     "terms": "Condițiile de utilizare LocalATSCV, generatorul de CV gratuit și open source",
-    "privacy": "Politica de confidențialitate LocalATSCV: nu colectăm date, CV-urile tale rămân în browser"
+    "privacy": "Politica de confidențialitate LocalATSCV: nu colectăm date, CV-urile tale rămân în browser",
+    "accessibility": "Accesibilitatea LocalATSCV: navigare din tastatură, cititoare de ecran, setări de afișare, citire cu voce tare și limite cunoscute"
   },
   "footer": {
     "tagline": "Generatorul de CV gratuit care nu îți vede niciodată datele",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Funcționează fără internet?",
           "a": "Da. După prima vizită, îți poți edita și descărca CV-urile fără conexiune. Poți chiar să adaugi LocalATSCV pe ecranul de pornire al telefonului sau calculatorului, ca pe o aplicație"
+        },
+        "disability": {
+          "q": "Trebuie să-mi menționez dizabilitatea?",
+          "a": "Nu e niciodată obligatoriu. Dacă vrei, editorul propune formularea recunoscută în țara CV-ului (RQTH în Franța, categorie protette în Italia…), lângă datele de contact, la finalul CV-ului sau doar în scrisoare. O poți păstra și doar în unele versiuni"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Potrivire cu anunțul",
       "sent": "Nimic nu este trimis",
       "robot": "COMPETENȚE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Brutăriță și cofetăriță Patiserie <n>●●●●○</n> EXPERIENȚĂ <n>� camille.mar</n> Brutăriță <n>tin@example.com</n> 2021 – prezent Cofetărie <n>●●●○○</n> Brutăria Exemplu LIMBI Engleză Producerea în fiecare dimineață a…"
+    },
+    "inclusive": {
+      "eyebrow": "Accesibil tuturor",
+      "title": "Un CV pentru fiecare, inclusiv cu dizabilitate",
+      "text": "Să menționezi sau nu o dizabilitate recunoscută, să ajustezi afișarea, să-ți asculți CV-ul, să avansezi pas cu pas: LocalATSCV se adaptează la tine, nu invers",
+      "countries": "Formularea potrivită pentru fiecare țară",
+      "private": "O informație de sănătate nu are ce căuta pe un server: a ta rămâne pe dispozitivul tău și se tipărește doar dacă decizi tu",
+      "points": {
+        "disclosure": {
+          "title": "S-o spui sau nu",
+          "text": "Mențiune opțională lângă datele de contact, la finalul CV-ului sau doar în scrisoare, cu avantajele și limitele explicate simplu"
+        },
+        "display": {
+          "title": "O afișare pe măsura ta",
+          "text": "Text mai mare, font foarte lizibil pentru persoanele cu dislexie sau vedere slabă, contrast întărit, animații reduse"
+        },
+        "listen": {
+          "title": "CV-ul tău citit cu voce tare",
+          "text": "Verifică CV-ul și scrisoarea după ureche, cu vocea dispozitivului. Ideal pentru a prinde o greșeală sau o frază prea lungă"
+        },
+        "guided": {
+          "title": "Pas cu pas, fără să te pierzi",
+          "text": "O secțiune pe rând, cu un sfat în limbaj simplu, până la descărcarea PDF-ului"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Un rând gol separă două paragrafe · **îngroșat** pentru un cuvânt-cheie",
       "outline": "Inserează o schiță",
       "closing": "Formulă de încheiere",
-      "fileName": "Scrisoare de intenție"
+      "fileName": "Scrisoare de intenție",
+      "addDisability": "Adaugă o frază despre dizabilitatea mea"
     },
     "fit": {
       "pages": "{{count}} pagini",
@@ -376,7 +408,13 @@
       "settingsHint": "Textul rămâne text real: se schimbă doar macheta",
       "reset": "Macheta șablonului",
       "grayscale": "Vezi alb-negru",
-      "grayscaleHint": "Simulează o tipărire alb-negru: PDF-ul exportat își păstrează culorile"
+      "grayscaleHint": "Simulează o tipărire alb-negru: PDF-ul exportat își păstrează culorile",
+      "listen": "Ascultă documentul",
+      "stopListening": "Oprește citirea",
+      "dates": "Date",
+      "datesMonth": "Lună și an",
+      "datesYear": "Doar anii",
+      "datesHint": "Doar cu anii, o scurtă pauză în carieră nu se mai vede"
     },
     "versions": {
       "label": "Versiune afișată",
@@ -424,7 +462,30 @@
       "drivingLicense": "Permis de conducere",
       "drivingLicensePlaceholder": "Ex.: Permis categoria B, mașină proprie",
       "qrToggle": "Afișează acest link drept cod QR",
-      "linksHint": "Logoul (LinkedIn, GitHub, YouTube…) este adăugat automat. Butonul QR afișează linkul drept cod QR în majoritatea șabloanelor grafice"
+      "linksHint": "Logoul (LinkedIn, GitHub, YouTube…) este adăugat automat. Butonul QR afișează linkul drept cod QR în majoritatea șabloanelor grafice",
+      "disability": {
+        "title": "Dizabilitate",
+        "subtitle": "Opțional, doar dacă vrei",
+        "intro": "Dacă o menționezi sau nu e alegerea ta: nimic nu te obligă. Această informație nu părăsește niciodată dispozitivul tău",
+        "country": {
+          "fr": "În Franța, RQTH interesează companiile cu cel puțin 20 de angajați, obligate să angajeze 6 % persoane cu dizabilități",
+          "en": "În Regatul Unit și în SUA se menționează de obicei în formularul de aplicare al angajatorului, nu în CV",
+          "it": "În Italia, mențiunea „categorie protette (L. 68/99)” e frecventă în CV-uri și dă acces la posturi rezervate",
+          "es": "În Spania se indică des o dizabilitate recunoscută de cel puțin 33 %: companiile cu cel puțin 50 de angajați rezervă 2 % din posturi",
+          "de": "În Germania, angajatorii publici trebuie să invite la interviu candidații recunoscuți „schwerbehindert” care corespund postului"
+        },
+        "label": "Mențiune în CV",
+        "suggestions": "Formulări uzuale:",
+        "placement": "Unde să apară",
+        "placements": {
+          "contact": "Lângă datele de contact",
+          "section": "La finalul CV-ului",
+          "letter": "Doar în scrisoare"
+        },
+        "letterHint": "Mențiunea nu apare în CV. În fila Scrisoare, un buton adaugă o frază gata făcută",
+        "pros": "Pentru: angajatorii implicați (programe de incluziune, cote) te găsesc mai repede, iar adaptările se discută mai ușor",
+        "cons": "Contra: unii recrutori încă au prejudecăți. Poți vorbi despre asta și mai târziu, la interviu sau după angajare, ori niciodată"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Stil mașină de scris",
         "paper": "Hârtie",
         "colorful": "Colorat",
-        "minimal": "Minimalist"
+        "minimal": "Minimalist",
+        "readable": "Foarte lizibil"
       },
       "favorite": "Adaugă la favorite",
       "unfavorite": "Elimină din favorite",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Cuvinte-cheie",
       "createVersion": "Creează o versiune țintită pentru acest post",
       "createVersionHint": "Experiențele și punctele fără legătură cu postul vor fi debifate: le poți ajusta",
-      "savedInVersion": "Anunț salvat cu versiunea „{{name}}”"
+      "savedInVersion": "Anunț salvat cu versiunea „{{name}}”",
+      "inclusive": "Acest anunț primește candidați cu dizabilități. Dacă vrei, adaugă o mențiune la „Dizabilitate”, la finalul profilului"
     },
     "weak": {
       "hint": "„{{phrase}}” descrie o sarcină: începe cu un verb de acțiune"
@@ -906,6 +969,29 @@
       "body": "Text",
       "default": "A șablonului",
       "hint": "ATS-urile citesc bine toate aceste fonturi: textul rămâne text real"
+    },
+    "health": {
+      "hint": "Nu e nevoie de un motiv medical, înlocuiește „{{phrase}}” cu:"
+    },
+    "guided": {
+      "toggle": "Mod pas cu pas",
+      "toggleHint": "O secțiune pe rând, cu un sfat simplu",
+      "step": "Pasul {{n}} din {{total}}",
+      "previous": "Înapoi",
+      "next": "Înainte",
+      "finishTitle": "Ultimul pas",
+      "tips": {
+        "profile": "Scrie-ți numele, meseria și cum poți fi contactat. Rezumatul: 2 sau 3 fraze despre ce știi să faci",
+        "experience": "Trece locurile de muncă, stagiile și misiunile, de la cea mai recentă. Pentru fiecare, 2 sau 3 fraze scurte despre ce ai făcut",
+        "education": "Trece diplomele și cursurile, de la cea mai recentă",
+        "projects": "Prezintă unul sau două proiecte reușite, cu un rezultat concret",
+        "certifications": "Adaugă certificatele și autorizațiile utile pentru post, cu data lor",
+        "custom": "Adaugă ce nu se potrivește în altă parte: voluntariat, implicare, informații utile",
+        "skills": "Enumeră ce știi să faci: unelte, programe, competențe. Separă-le prin virgule",
+        "languages": "Trece limbile pe care le vorbești și nivelul tău",
+        "interests": "Adaugă 2 sau 3 pasiuni: ajută la pornirea conversației la interviu",
+        "finish": "Alege un șablon care îți place, apoi descarcă CV-ul în PDF. Poți reveni oricând să-l modifici"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Acest document este afișat în engleză. Doar versiunea în franceză are valoare juridică.",
     "error": "Acest document nu a putut fi încărcat."
+  },
+  "display": {
+    "label": "Afișare și accesibilitate",
+    "textSize": "Mărimea textului",
+    "sizes": {
+      "normal": "Normală",
+      "large": "Mare",
+      "xlarge": "Foarte mare"
+    },
+    "options": {
+      "readableFont": "Font foarte lizibil",
+      "spacing": "Text mai aerisit",
+      "contrast": "Contrast întărit",
+      "reduceMotion": "Mai puține animații"
+    },
+    "reset": "Afișare implicită",
+    "note": "Aceste setări schimbă interfața, niciodată CV-ul tău tipărit"
   }
 }

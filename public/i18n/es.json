@@ -28,7 +28,8 @@
     "changelog": "Novedades",
     "legalNotice": "Aviso legal",
     "terms": "Condiciones de uso",
-    "privacy": "Política de privacidad"
+    "privacy": "Política de privacidad",
+    "accessibility": "Declaración de accesibilidad"
   },
   "seo": {
     "home": "Crea gratis un CV que consigue entrevistas: 72 plantillas, carta de presentación a juego, adaptación a cada oferta y revisión ATS. Sin registro, tus datos se quedan en tu dispositivo",
@@ -37,7 +38,8 @@
     "changelog": "Las novedades de LocalATSCV, versión a versión: nuevas plantillas de CV, funciones y correcciones",
     "legalNotice": "Aviso legal de LocalATSCV: editor, alojamiento y contacto",
     "terms": "Condiciones de uso de LocalATSCV, generador de CV gratuito y de código abierto",
-    "privacy": "Política de privacidad de LocalATSCV: no se recoge ningún dato, tus CV se quedan en tu navegador"
+    "privacy": "Política de privacidad de LocalATSCV: no se recoge ningún dato, tus CV se quedan en tu navegador",
+    "accessibility": "Accesibilidad de LocalATSCV: navegación con teclado, lectores de pantalla, ajustes de visualización, lectura en voz alta y limitaciones conocidas"
   },
   "footer": {
     "tagline": "El creador de CV gratuito que nunca ve tus datos",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "¿Funciona sin internet?",
           "a": "Sí. Después de la primera visita, puedes editar y descargar tus CV sin conexión. Incluso puedes añadir LocalATSCV a la pantalla de inicio de tu móvil o de tu ordenador, como una aplicación"
+        },
+        "disability": {
+          "q": "¿Debo mencionar mi discapacidad?",
+          "a": "Nunca es obligatorio. Si lo deseas, el editor propone la fórmula reconocida en el país de tu CV (certificado de discapacidad en España, RQTH en Francia…), para colocarla con tus datos de contacto, al final del CV o solo en la carta. También puedes mantenerla en algunas versiones y no en otras"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Coincidencia con la oferta",
       "sent": "Nada enviado",
       "robot": "COMPETENCIAS CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Panadera y pastelera Bollería <n>●●●●○</n> EXPERIENCIA <n>� camille.mar</n> Panadera <n>tin@ejemplo.es</n> 2021 – actualidad Pastelería <n>●●●○○</n> Panadería Ejemplo IDIOMAS Inglés Elaboración cada mañana de…"
+    },
+    "inclusive": {
+      "eyebrow": "Accesible para todos",
+      "title": "Un CV para cada persona, discapacidad incluida",
+      "text": "Mencionar o no tu discapacidad reconocida, ajustar la visualización, escuchar tu CV en voz alta, avanzar paso a paso: LocalATSCV se adapta a ti, y no al revés",
+      "countries": "La fórmula adecuada para cada país",
+      "private": "Un dato de salud no tiene nada que hacer en un servidor: el tuyo se queda en tu dispositivo y solo se imprime si tú lo decides",
+      "points": {
+        "disclosure": {
+          "title": "Decirlo, o no",
+          "text": "Mención opcional junto a tus datos de contacto, al final del CV o solo en la carta, con las ventajas y los límites explicados con sencillez"
+        },
+        "display": {
+          "title": "Una visualización a tu medida",
+          "text": "Texto más grande, fuente muy legible para personas con dislexia o baja visión, contraste reforzado, animaciones reducidas"
+        },
+        "listen": {
+          "title": "Tu CV leído en voz alta",
+          "text": "Revisa tu CV y tu carta de oído, con la voz de tu dispositivo. Ideal para detectar una errata o una frase demasiado larga"
+        },
+        "guided": {
+          "title": "Paso a paso, sin perderse",
+          "text": "Una sección cada vez, con un consejo en lenguaje sencillo, hasta la descarga del PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Una línea vacía separa dos párrafos · **negrita** para una palabra clave",
       "outline": "Insertar un esquema",
       "closing": "Despedida",
-      "fileName": "Carta de presentación"
+      "fileName": "Carta de presentación",
+      "addDisability": "Añadir una frase sobre mi discapacidad"
     },
     "fit": {
       "pages": "{{count}} páginas",
@@ -376,7 +408,13 @@
       "settingsHint": "El texto sigue siendo texto real: solo cambia su diseño",
       "reset": "Diseño de la plantilla",
       "grayscale": "Ver en blanco y negro",
-      "grayscaleHint": "Simulación de una impresión en blanco y negro: el PDF exportado conserva sus colores"
+      "grayscaleHint": "Simulación de una impresión en blanco y negro: el PDF exportado conserva sus colores",
+      "listen": "Escuchar el documento",
+      "stopListening": "Detener la lectura",
+      "dates": "Fechas",
+      "datesMonth": "Mes y año",
+      "datesYear": "Solo años",
+      "datesHint": "Con solo los años, una breve pausa en tu trayectoria deja de verse"
     },
     "versions": {
       "label": "Versión mostrada",
@@ -424,7 +462,30 @@
       "drivingLicense": "Carné de conducir",
       "drivingLicensePlaceholder": "Ej. Carné B, vehículo propio",
       "qrToggle": "Mostrar este enlace como código QR",
-      "linksHint": "El logotipo (LinkedIn, GitHub, YouTube…) se añade automáticamente. El botón QR muestra el enlace como código QR en la mayoría de las plantillas gráficas"
+      "linksHint": "El logotipo (LinkedIn, GitHub, YouTube…) se añade automáticamente. El botón QR muestra el enlace como código QR en la mayoría de las plantillas gráficas",
+      "disability": {
+        "title": "Discapacidad",
+        "subtitle": "Opcional, solo si lo deseas",
+        "intro": "Mencionarlo o no es decisión tuya: nada te obliga. Esta información nunca sale de tu dispositivo",
+        "country": {
+          "fr": "En Francia, la RQTH interesa a las empresas de 20 o más empleados, obligadas a emplear un 6 % de trabajadores con discapacidad",
+          "en": "En el Reino Unido y Estados Unidos se suele indicar en el formulario de candidatura del empleador, no en el CV",
+          "it": "En Italia, la mención «categorie protette (L. 68/99)» es habitual en los CV y da acceso a puestos reservados",
+          "es": "En España se suele indicar una discapacidad reconocida de al menos el 33 %: las empresas de 50 o más empleados reservan el 2 % de sus puestos",
+          "de": "En Alemania, los empleadores públicos deben invitar a entrevista a los candidatos reconocidos como «schwerbehindert» que encajan con el puesto"
+        },
+        "label": "Mención en el CV",
+        "suggestions": "Fórmulas habituales:",
+        "placement": "Dónde mostrarla",
+        "placements": {
+          "contact": "Con mis datos de contacto",
+          "section": "Al final del CV",
+          "letter": "Solo en la carta"
+        },
+        "letterHint": "La mención no aparece en el CV. En la pestaña Carta, un botón añade una frase lista para usar",
+        "pros": "A favor: las empresas comprometidas (programas de inclusión, cuota de reserva) te detectan antes y las adaptaciones se hablan con más facilidad",
+        "cons": "En contra: algunos reclutadores aún tienen prejuicios. También puedes hablarlo más tarde, en la entrevista o tras la contratación, o nunca"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Estilo máquina de escribir",
         "paper": "Papel",
         "colorful": "Colorida",
-        "minimal": "Minimalista"
+        "minimal": "Minimalista",
+        "readable": "Muy legible"
       },
       "favorite": "Añadir a favoritas",
       "unfavorite": "Quitar de favoritas",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Palabras clave",
       "createVersion": "Crear una versión a medida para esta oferta",
       "createVersionHint": "Las experiencias y los puntos sin relación con la oferta se desmarcarán: podrás ajustarlos",
-      "savedInVersion": "Oferta guardada con la versión «{{name}}»"
+      "savedInVersion": "Oferta guardada con la versión «{{name}}»",
+      "inclusive": "Esta oferta dice acoger a personas con discapacidad. Si lo deseas, añade una mención en «Discapacidad», al final del perfil"
     },
     "weak": {
       "hint": "«{{phrase}}» describe una tarea: empieza con un verbo de acción"
@@ -906,6 +969,29 @@
       "body": "Texto",
       "default": "La de la plantilla",
       "hint": "Los ATS leen bien todas estas fuentes: el texto sigue siendo texto real"
+    },
+    "health": {
+      "hint": "No hace falta dar un motivo médico, sustituye «{{phrase}}» por:"
+    },
+    "guided": {
+      "toggle": "Modo paso a paso",
+      "toggleHint": "Una sección cada vez, con un consejo sencillo",
+      "step": "Paso {{n}} de {{total}}",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "finishTitle": "Último paso",
+      "tips": {
+        "profile": "Escribe tu nombre, tu profesión y cómo contactarte. El resumen: 2 o 3 frases sobre lo que sabes hacer",
+        "experience": "Indica tus empleos, prácticas y misiones, del más reciente al más antiguo. Para cada uno, 2 o 3 frases cortas sobre lo que hiciste",
+        "education": "Indica tus títulos y formaciones, del más reciente al más antiguo",
+        "projects": "Presenta uno o dos proyectos logrados, con un resultado concreto",
+        "certifications": "Añade los certificados y habilitaciones útiles para el puesto, con su fecha",
+        "custom": "Añade lo que no encaja en otro sitio: voluntariado, compromisos, información útil",
+        "skills": "Enumera lo que sabes hacer: herramientas, programas, saber hacer. Sepáralos con comas",
+        "languages": "Indica los idiomas que hablas y tu nivel",
+        "interests": "Añade 2 o 3 aficiones: ayudan a iniciar la conversación en la entrevista",
+        "finish": "Elige una plantilla que te guste y descarga tu CV en PDF. Siempre podrás volver a modificarlo"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Este documento se muestra en inglés. Solo la versión francesa tiene validez legal.",
     "error": "No se ha podido cargar este documento."
+  },
+  "display": {
+    "label": "Visualización y accesibilidad",
+    "textSize": "Tamaño del texto",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Grande",
+      "xlarge": "Muy grande"
+    },
+    "options": {
+      "readableFont": "Fuente muy legible",
+      "spacing": "Texto más espaciado",
+      "contrast": "Contraste reforzado",
+      "reduceMotion": "Reducir animaciones"
+    },
+    "reset": "Visualización predeterminada",
+    "note": "Estos ajustes cambian la interfaz, nunca tu CV impreso"
   }
 }

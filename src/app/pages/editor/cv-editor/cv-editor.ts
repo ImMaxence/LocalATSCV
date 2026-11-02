@@ -25,13 +25,14 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
 import { CvDocument } from '../../../cv/document/cv-document';
 import { CvPreview } from '../../../cv/document/cv-preview';
-import { readSetting } from '../../../core/storage/local-settings';
+import { readSetting, writeSetting } from '../../../core/storage/local-settings';
 import {
   ACCENT_COLORS,
   CV_LANGUAGES,
   CV_TEMPLATES,
   CvTemplateId,
   SECTION_KINDS,
+  SectionKind,
 } from '../../../cv/model/cv.model';
 import { hidesPersonalDetails } from '../../../cv/model/resolve-cv';
 import { CV_FONTS, CvFontId } from '../../../cv/model/cv-fonts';
@@ -48,6 +49,15 @@ import { SectionPanel } from './parts/section-panel';
 import { TemplatePicker, TemplatePickerData } from './parts/template-picker';
 import { templateThumbnailUrl } from '../../../cv/model/template-thumbnails';
 import { VersionSwitcher } from './parts/version-switcher';
+
+const GUIDED_SETTING = 'editor.guided';
+
+interface GuidedStep {
+  kind: 'profile' | 'finish' | SectionKind;
+  sectionId?: string;
+  /** Titre personnalisé de la rubrique ; vide = titre par défaut. */
+  title?: string;
+}
 
 const NATIVE_NAMES: Record<string, string> = {
   fr: 'Français',
@@ -116,6 +126,50 @@ export class CvEditor {
 
   protected readonly fonts = CV_FONTS;
   protected readonly fontRoles = ['heading', 'body'] as const;
+
+  // --- Mode pas à pas ---
+
+  /** Une rubrique à la fois avec un conseil en langage simple ; choix mémorisé sur l'appareil. */
+  protected readonly guided = signal(readSetting(GUIDED_SETTING) === '1');
+  private readonly guidedTop = viewChild<ElementRef<HTMLElement>>('guidedTop');
+  private readonly requestedStep = signal(0);
+
+  /** Le profil, chaque rubrique du CV dans l'ordre, puis le choix du modèle et l'export. */
+  protected readonly steps = computed((): GuidedStep[] => [
+    { kind: 'profile' },
+    ...(this.store.cv()?.sections ?? []).map((section) => ({
+      kind: section.kind,
+      sectionId: section.id,
+      title: section.title.trim(),
+    })),
+    { kind: 'finish' },
+  ]);
+  /** Borné : supprimer une rubrique ne laisse pas l'étape en cours hors de la liste. */
+  protected readonly stepIndex = computed(() =>
+    Math.min(this.requestedStep(), this.steps().length - 1),
+  );
+  protected readonly currentStep = computed(() => this.steps()[this.stepIndex()]);
+
+  protected toggleGuided(): void {
+    const guided = !this.guided();
+    this.guided.set(guided);
+    this.requestedStep.set(0);
+    writeSetting(GUIDED_SETTING, guided ? '1' : '0');
+  }
+
+  protected goToStep(index: number): void {
+    this.requestedStep.set(Math.max(0, Math.min(index, this.steps().length - 1)));
+    // Le haut de l'étape (titre et conseil) revient sous les yeux.
+    afterNextRender(() => this.guidedTop()?.nativeElement.scrollIntoView({ block: 'start' }), {
+      injector: this.injector,
+    });
+  }
+
+  /** En mode pas à pas, la rubrique ajoutée devient l'étape affichée. */
+  protected addSection(kind: SectionKind): void {
+    this.store.addSection(kind);
+    if (this.guided()) this.goToStep(this.steps().length - 2);
+  }
 
   protected fontLabel(id: CvFontId | null): string {
     return CV_FONTS.find((font) => font.id === id)?.label ?? 'Aa';

@@ -150,6 +150,7 @@ export const PUBLIC_PAGES = [
   '/legal/notice',
   '/legal/terms',
   '/legal/privacy',
+  '/legal/accessibility',
 ] as const;
 
 /**

@@ -28,7 +28,8 @@
     "changelog": "Neuigkeiten",
     "legalNotice": "Impressum",
     "terms": "Nutzungsbedingungen",
-    "privacy": "Datenschutzerklärung"
+    "privacy": "Datenschutzerklärung",
+    "accessibility": "Erklärung zur Barrierefreiheit"
   },
   "seo": {
     "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 72 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
@@ -37,7 +38,8 @@
     "changelog": "Die Neuerungen von LocalATSCV, Version für Version: neue Lebenslauf-Vorlagen, Funktionen und Korrekturen",
     "legalNotice": "Impressum von LocalATSCV: Herausgeber, Hosting und Kontakt",
     "terms": "Nutzungsbedingungen von LocalATSCV, dem kostenlosen Open-Source-Lebenslaufgenerator",
-    "privacy": "Datenschutzerklärung von LocalATSCV: keine Datenerhebung, deine Lebensläufe bleiben in deinem Browser"
+    "privacy": "Datenschutzerklärung von LocalATSCV: keine Datenerhebung, deine Lebensläufe bleiben in deinem Browser",
+    "accessibility": "Barrierefreiheit von LocalATSCV: Tastaturbedienung, Screenreader, Anzeigeeinstellungen, Vorlesefunktion und bekannte Einschränkungen"
   },
   "footer": {
     "tagline": "Der kostenlose Lebenslauf-Generator, der deine Daten nie sieht",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Funktioniert das ohne Internet?",
           "a": "Ja. Nach dem ersten Besuch kannst du deine Lebensläufe offline bearbeiten und herunterladen. Du kannst LocalATSCV sogar wie eine App auf den Startbildschirm deines Handys oder Computers legen"
+        },
+        "disability": {
+          "q": "Muss ich meine Behinderung angeben?",
+          "a": "Das ist nie Pflicht. Wenn Sie möchten, schlägt der Editor die im Land Ihres Lebenslaufs anerkannte Formulierung vor (Schwerbehinderung in Deutschland, RQTH in Frankreich…), bei den Kontaktdaten, am Ende des Lebenslaufs oder nur im Anschreiben. Sie können sie auch nur in einigen Versionen behalten"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Übereinstimmung mit der Anzeige",
       "sent": "Nichts gesendet",
       "robot": "KENNTNISSE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Bäckerin und Konditorin Feingebäck <n>●●●●○</n> BERUFSERFAHRUNG <n>� camille.mar</n> Bäckerin <n>tin@beispiel.de</n> 2021 – heute Konditorei <n>●●●○○</n> Bäckerei Beispiel SPRACHEN Englisch Täglich 300 Stück Feingebäck…"
+    },
+    "inclusive": {
+      "eyebrow": "Für alle zugänglich",
+      "title": "Ein Lebenslauf für alle, mit Behinderung oder ohne",
+      "text": "Eine anerkannte Behinderung erwähnen oder nicht, die Anzeige anpassen, den Lebenslauf vorlesen lassen, Schritt für Schritt vorgehen: LocalATSCV passt sich Ihnen an, nicht umgekehrt",
+      "countries": "Die richtige Formulierung für jedes Land",
+      "private": "Gesundheitsdaten haben auf einem Server nichts zu suchen: Ihre bleiben auf Ihrem Gerät und werden nur gedruckt, wenn Sie es wollen",
+      "points": {
+        "disclosure": {
+          "title": "Sagen oder nicht",
+          "text": "Freiwillige Angabe bei den Kontaktdaten, am Ende des Lebenslaufs oder nur im Anschreiben, mit Vor- und Nachteilen einfach erklärt"
+        },
+        "display": {
+          "title": "Eine Anzeige nach Maß",
+          "text": "Größerer Text, gut lesbare Schrift bei Legasthenie oder Sehschwäche, verstärkter Kontrast, weniger Animationen"
+        },
+        "listen": {
+          "title": "Ihr Lebenslauf vorgelesen",
+          "text": "Prüfen Sie Lebenslauf und Anschreiben mit dem Ohr, mit der Stimme Ihres Geräts. Ideal, um Tippfehler oder zu lange Sätze zu finden"
+        },
+        "guided": {
+          "title": "Schritt für Schritt, ohne sich zu verlieren",
+          "text": "Ein Abschnitt nach dem anderen, mit einem Tipp in einfacher Sprache, bis zum PDF-Download"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Eine Leerzeile trennt zwei Absätze · **fett** für ein Schlüsselwort",
       "outline": "Gliederung einfügen",
       "closing": "Grußformel",
-      "fileName": "Anschreiben"
+      "fileName": "Anschreiben",
+      "addDisability": "Einen Satz zu meiner Behinderung hinzufügen"
     },
     "fit": {
       "pages": "{{count}} Seiten",
@@ -376,7 +408,13 @@
       "settingsHint": "Der Text bleibt echter Text: Nur das Layout ändert sich",
       "reset": "Layout der Vorlage",
       "grayscale": "In Schwarz-Weiß ansehen",
-      "grayscaleHint": "Simulation eines Schwarz-Weiß-Drucks: Das exportierte PDF behält seine Farben"
+      "grayscaleHint": "Simulation eines Schwarz-Weiß-Drucks: Das exportierte PDF behält seine Farben",
+      "listen": "Dokument anhören",
+      "stopListening": "Vorlesen beenden",
+      "dates": "Datumsangaben",
+      "datesMonth": "Monat und Jahr",
+      "datesYear": "Nur Jahre",
+      "datesHint": "Mit Jahren allein fällt eine kurze Lücke im Lebenslauf nicht mehr auf"
     },
     "versions": {
       "label": "Angezeigte Version",
@@ -424,7 +462,30 @@
       "drivingLicense": "Führerschein",
       "drivingLicensePlaceholder": "z. B. Führerschein Klasse B, eigenes Auto",
       "qrToggle": "Diesen Link als QR-Code anzeigen",
-      "linksHint": "Das Logo (LinkedIn, GitHub, YouTube…) wird automatisch ergänzt. Die QR-Schaltfläche zeigt den Link in den meisten grafischen Vorlagen als QR-Code an"
+      "linksHint": "Das Logo (LinkedIn, GitHub, YouTube…) wird automatisch ergänzt. Die QR-Schaltfläche zeigt den Link in den meisten grafischen Vorlagen als QR-Code an",
+      "disability": {
+        "title": "Behinderung",
+        "subtitle": "Freiwillig, nur wenn Sie möchten",
+        "intro": "Ob Sie es erwähnen, entscheiden allein Sie: Nichts verpflichtet Sie dazu. Diese Angabe verlässt nie Ihr Gerät",
+        "country": {
+          "fr": "In Frankreich interessiert die RQTH Unternehmen ab 20 Beschäftigten, die 6 % schwerbehinderte Menschen beschäftigen müssen",
+          "en": "Im Vereinigten Königreich und in den USA gibt man es eher im Bewerbungsformular des Arbeitgebers an als im Lebenslauf",
+          "it": "In Italien ist der Hinweis „categorie protette (L. 68/99)“ in Lebensläufen üblich und öffnet den Zugang zu reservierten Stellen",
+          "es": "In Spanien wird eine anerkannte Behinderung ab 33 % oft angegeben: Unternehmen ab 50 Beschäftigten reservieren 2 % ihrer Stellen",
+          "de": "In Deutschland müssen öffentliche Arbeitgeber schwerbehinderte Bewerber, die das Stellenprofil erfüllen, zum Vorstellungsgespräch einladen"
+        },
+        "label": "Angabe im Lebenslauf",
+        "suggestions": "Übliche Formulierungen:",
+        "placement": "Wo anzeigen",
+        "placements": {
+          "contact": "Bei meinen Kontaktdaten",
+          "section": "Am Ende des Lebenslaufs",
+          "letter": "Nur im Anschreiben"
+        },
+        "letterHint": "Die Angabe erscheint nicht im Lebenslauf. Im Reiter Anschreiben fügt eine Schaltfläche einen fertigen Satz ein",
+        "pros": "Dafür: Engagierte Arbeitgeber (Inklusionsprogramme, Beschäftigungsquote) finden Sie schneller, und Anpassungen lassen sich leichter besprechen",
+        "cons": "Dagegen: Manche Personaler haben noch Vorurteile. Sie können es auch später ansprechen, im Gespräch, nach der Einstellung oder nie"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Schreibmaschinenstil",
         "paper": "Papier",
         "colorful": "Bunt",
-        "minimal": "Minimalistisch"
+        "minimal": "Minimalistisch",
+        "readable": "Sehr gut lesbar"
       },
       "favorite": "Zu Favoriten hinzufügen",
       "unfavorite": "Aus Favoriten entfernen",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Schlüsselwörter",
       "createVersion": "Gezielte Version für diese Stelle erstellen",
       "createVersionHint": "Erfahrungen und Stichpunkte ohne Bezug zur Stelle werden abgewählt: Du kannst sie anpassen",
-      "savedInVersion": "Anzeige mit der Version „{{name}}“ gespeichert"
+      "savedInVersion": "Anzeige mit der Version „{{name}}“ gespeichert",
+      "inclusive": "Diese Stellenanzeige begrüßt Bewerbungen von Menschen mit Behinderung. Wenn Sie möchten, ergänzen Sie eine Angabe unter „Behinderung“ am Ende des Profils"
     },
     "weak": {
       "hint": "„{{phrase}}“ beschreibt eine Aufgabe: Beginne mit einem Aktionsverb"
@@ -906,6 +969,29 @@
       "body": "Text",
       "default": "Die der Vorlage",
       "hint": "ATS lesen alle diese Schriften problemlos: Der Text bleibt echter Text"
+    },
+    "health": {
+      "hint": "Ein medizinischer Grund ist unnötig, ersetzen Sie „{{phrase}}“ durch:"
+    },
+    "guided": {
+      "toggle": "Schritt-für-Schritt-Modus",
+      "toggleHint": "Ein Abschnitt nach dem anderen, mit einem einfachen Tipp",
+      "step": "Schritt {{n}} von {{total}}",
+      "previous": "Zurück",
+      "next": "Weiter",
+      "finishTitle": "Letzter Schritt",
+      "tips": {
+        "profile": "Schreiben Sie Ihren Namen, Ihren Beruf und wie man Sie erreicht. Die Zusammenfassung: 2 oder 3 Sätze zu dem, was Sie können",
+        "experience": "Nennen Sie Ihre Stellen, Praktika und Einsätze, die neueste zuerst. Zu jeder 2 oder 3 kurze Sätze, was Sie getan haben",
+        "education": "Nennen Sie Ihre Abschlüsse und Weiterbildungen, die neueste zuerst",
+        "projects": "Stellen Sie ein oder zwei gelungene Projekte vor, mit einem konkreten Ergebnis",
+        "certifications": "Fügen Sie Zertifikate und Befähigungen hinzu, die für die Stelle nützlich sind, mit Datum",
+        "custom": "Fügen Sie hinzu, was nirgends sonst passt: Ehrenamt, Engagement, nützliche Angaben",
+        "skills": "Zählen Sie auf, was Sie können: Werkzeuge, Programme, Fachwissen. Trennen Sie sie mit Kommas",
+        "languages": "Nennen Sie die Sprachen, die Sie sprechen, und Ihr Niveau",
+        "interests": "Fügen Sie 2 oder 3 Hobbys hinzu: Sie helfen, im Gespräch ins Plaudern zu kommen",
+        "finish": "Wählen Sie eine Vorlage, die Ihnen gefällt, und laden Sie Ihren Lebenslauf als PDF herunter. Sie können ihn jederzeit wieder bearbeiten"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Dieses Dokument wird auf Englisch angezeigt. Rechtsverbindlich ist nur die französische Fassung.",
     "error": "Dieses Dokument konnte nicht geladen werden."
+  },
+  "display": {
+    "label": "Anzeige und Barrierefreiheit",
+    "textSize": "Textgröße",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Groß",
+      "xlarge": "Sehr groß"
+    },
+    "options": {
+      "readableFont": "Gut lesbare Schrift",
+      "spacing": "Größere Abstände",
+      "contrast": "Verstärkter Kontrast",
+      "reduceMotion": "Animationen reduzieren"
+    },
+    "reset": "Standardanzeige",
+    "note": "Diese Einstellungen ändern die Oberfläche, nie Ihren gedruckten Lebenslauf"
   }
 }

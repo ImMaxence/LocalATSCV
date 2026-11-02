@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { CoverLetter } from '../../../../cv/model/cv.model';
+import { DISABILITY_LABELS } from '../../../../cv/model/disability';
 import { LETTER_LABELS } from '../../../../cv/model/letter-labels';
 import { TextField } from '../../../../shared/form/text-field';
 import { Icon } from '../../../../shared/icon/icon';
@@ -92,15 +93,27 @@ import { CvEditorStore } from '../cv-editor.store';
           />
           <div class="mt-1.5 flex flex-wrap items-start justify-between gap-2">
             <p class="text-xs text-muted">{{ t('bodyHint') }}</p>
-            @if (!letter.body.trim()) {
-              <button
-                type="button"
-                class="btn btn-ghost px-3! py-1! text-xs"
-                (click)="update({ body: defaults().outline })"
-              >
-                <app-icon class="size-3.5" name="wand" />{{ t('outline') }}
-              </button>
-            }
+            <div class="flex flex-wrap gap-2">
+              @if (!letter.body.trim()) {
+                <button
+                  type="button"
+                  class="btn btn-ghost px-3! py-1! text-xs"
+                  (click)="update({ body: defaults().outline })"
+                >
+                  <app-icon class="size-3.5" name="wand" />{{ t('outline') }}
+                </button>
+              }
+              <!-- Proposé dès qu'une mention de handicap est saisie dans le profil -->
+              @if (canAddDisability()) {
+                <button
+                  type="button"
+                  class="btn btn-ghost px-3! py-1! text-xs"
+                  (click)="addDisabilitySentence()"
+                >
+                  <app-icon class="size-3.5" name="access" />{{ t('addDisability') }}
+                </button>
+              }
+            </div>
           </div>
         </div>
         <app-text-field
@@ -121,7 +134,23 @@ export class LetterPanel {
   /** Formules par défaut dans la langue du CV (affichées en indication). */
   protected readonly defaults = computed(() => LETTER_LABELS[this.store.cv()?.language ?? 'fr']);
 
+  private readonly disabilitySentence = computed(
+    () => DISABILITY_LABELS[this.store.cv()?.language ?? 'fr'].letterSentence,
+  );
+  protected readonly canAddDisability = computed(
+    () =>
+      !!this.store.cv()?.profile.disability.trim() &&
+      !this.store.shownLetter().body.includes(this.disabilitySentence()),
+  );
+
   protected update(patch: Partial<CoverLetter>): void {
     this.store.updateLetter(patch);
+  }
+
+  /** Ajoute la phrase toute prête en fin de lettre, modifiable ensuite comme le reste. */
+  protected addDisabilitySentence(): void {
+    const body = this.store.shownLetter().body.trimEnd();
+    const sentence = this.disabilitySentence();
+    this.update({ body: body ? `${body}\n\n${sentence}` : sentence });
   }
 }

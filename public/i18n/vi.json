@@ -28,7 +28,8 @@
     "changelog": "Có gì mới",
     "legalNotice": "Thông tin pháp lý",
     "terms": "Điều khoản sử dụng",
-    "privacy": "Chính sách quyền riêng tư"
+    "privacy": "Chính sách quyền riêng tư",
+    "accessibility": "Tuyên bố trợ năng"
   },
   "seo": {
     "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 72 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
@@ -37,7 +38,8 @@
     "changelog": "Có gì mới trong LocalATSCV qua từng phiên bản: mẫu CV mới, tính năng và bản sửa lỗi",
     "legalNotice": "Thông tin pháp lý của LocalATSCV: đơn vị phát hành, lưu trữ và liên hệ",
     "terms": "Điều khoản sử dụng LocalATSCV, công cụ tạo CV miễn phí và mã nguồn mở",
-    "privacy": "Chính sách quyền riêng tư của LocalATSCV: không thu thập dữ liệu nào, CV của bạn ở lại trong trình duyệt"
+    "privacy": "Chính sách quyền riêng tư của LocalATSCV: không thu thập dữ liệu nào, CV của bạn ở lại trong trình duyệt",
+    "accessibility": "Trợ năng của LocalATSCV: điều hướng bằng bàn phím, trình đọc màn hình, cài đặt hiển thị, đọc to và các giới hạn đã biết"
   },
   "footer": {
     "tagline": "Công cụ tạo CV miễn phí không bao giờ nhìn thấy dữ liệu của bạn",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Dùng được khi không có mạng không?",
           "a": "Được. Sau lần truy cập đầu, bạn có thể sửa và tải CV mà không cần mạng. Bạn còn có thể thêm LocalATSCV vào màn hình chính của điện thoại hoặc máy tính, như một ứng dụng"
+        },
+        "disability": {
+          "q": "Tôi có cần nêu khuyết tật của mình không?",
+          "a": "Không bao giờ bắt buộc. Nếu muốn, trình soạn thảo đề xuất cách diễn đạt được công nhận ở quốc gia của CV (RQTH ở Pháp, categorie protette ở Ý…), cùng thông tin liên hệ, ở cuối CV hoặc chỉ trong thư. Bạn cũng có thể chỉ giữ nó ở một số phiên bản"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Mức phù hợp với tin tuyển dụng",
       "sent": "Không gửi dữ liệu nào",
       "robot": "KỸ NĂNG CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Thợ làm bánh mì và bánh ngọt Bánh ngàn lớp <n>●●●●○</n> KINH NGHIỆM <n>� camille.mar</n> Thợ làm bánh mì <n>tin@example.com</n> 2021 – nay Bánh ngọt <n>●●●○○</n> Tiệm bánh Ví Dụ NGÔN NGỮ Tiếng Anh Làm 300 chiếc bánh…"
+    },
+    "inclusive": {
+      "eyebrow": "Ai cũng dùng được",
+      "title": "CV cho mọi người, kể cả người khuyết tật",
+      "text": "Nêu khuyết tật được công nhận hay không, chỉnh hiển thị, nghe đọc CV, đi từng bước: LocalATSCV thích nghi với bạn, chứ không phải ngược lại",
+      "countries": "Cách diễn đạt phù hợp cho từng quốc gia",
+      "private": "Thông tin sức khỏe không nên nằm trên máy chủ: thông tin của bạn ở lại trên thiết bị và chỉ được in khi bạn quyết định",
+      "points": {
+        "disclosure": {
+          "title": "Nói ra, hay không",
+          "text": "Ghi chú không bắt buộc cùng thông tin liên hệ, ở cuối CV hoặc chỉ trong thư, kèm ưu nhược điểm giải thích đơn giản"
+        },
+        "display": {
+          "title": "Hiển thị vừa với bạn",
+          "text": "Chữ lớn hơn, phông dễ đọc cho người mắc chứng khó đọc hoặc thị lực kém, tương phản mạnh hơn, ít hiệu ứng động"
+        },
+        "listen": {
+          "title": "Nghe đọc CV của bạn",
+          "text": "Kiểm tra CV và thư bằng tai, với giọng của thiết bị. Lý tưởng để phát hiện lỗi chính tả hoặc câu quá dài"
+        },
+        "guided": {
+          "title": "Từng bước, không lạc lối",
+          "text": "Mỗi lần một phần, kèm lời khuyên bằng ngôn ngữ dễ hiểu, cho đến khi tải PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Một dòng trống phân tách hai đoạn · **in đậm** cho từ khóa",
       "outline": "Chèn dàn ý",
       "closing": "Lời kết",
-      "fileName": "Thư xin việc"
+      "fileName": "Thư xin việc",
+      "addDisability": "Thêm một câu về khuyết tật của tôi"
     },
     "fit": {
       "pages": "{{count}} trang",
@@ -376,7 +408,13 @@
       "settingsHint": "Văn bản vẫn là văn bản thật: chỉ bố cục thay đổi",
       "reset": "Bố cục của mẫu",
       "grayscale": "Xem đen trắng",
-      "grayscaleHint": "Mô phỏng bản in đen trắng: PDF xuất ra vẫn giữ màu"
+      "grayscaleHint": "Mô phỏng bản in đen trắng: PDF xuất ra vẫn giữ màu",
+      "listen": "Nghe tài liệu",
+      "stopListening": "Dừng đọc",
+      "dates": "Ngày tháng",
+      "datesMonth": "Tháng và năm",
+      "datesYear": "Chỉ năm",
+      "datesHint": "Chỉ hiển thị năm thì khoảng nghỉ ngắn trong sự nghiệp không còn lộ ra"
     },
     "versions": {
       "label": "Phiên bản đang hiển thị",
@@ -424,7 +462,30 @@
       "drivingLicense": "Giấy phép lái xe",
       "drivingLicensePlaceholder": "VD: Bằng lái B2, có xe riêng",
       "qrToggle": "Hiển thị liên kết này dưới dạng mã QR",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) được thêm tự động. Nút QR hiển thị liên kết dưới dạng mã QR trong hầu hết các mẫu đồ họa"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) được thêm tự động. Nút QR hiển thị liên kết dưới dạng mã QR trong hầu hết các mẫu đồ họa",
+      "disability": {
+        "title": "Khuyết tật",
+        "subtitle": "Không bắt buộc, chỉ khi bạn muốn",
+        "intro": "Có nêu hay không hoàn toàn do bạn quyết định: không gì bắt buộc bạn. Thông tin này không bao giờ rời khỏi thiết bị của bạn",
+        "country": {
+          "fr": "Ở Pháp, RQTH được các công ty từ 20 nhân viên trở lên quan tâm, vì họ phải tuyển 6 % người lao động khuyết tật",
+          "en": "Ở Anh và Mỹ, thông tin này thường được khai trong mẫu đơn ứng tuyển của nhà tuyển dụng thay vì trên CV",
+          "it": "Ở Ý, ghi chú «categorie protette (L. 68/99)» rất phổ biến trên CV và mở ra các vị trí dành riêng",
+          "es": "Ở Tây Ban Nha, khuyết tật được công nhận từ 33 % thường được ghi: công ty từ 50 nhân viên dành 2 % vị trí",
+          "de": "Ở Đức, nhà tuyển dụng khu vực công phải mời phỏng vấn ứng viên được công nhận «schwerbehindert» và phù hợp với vị trí"
+        },
+        "label": "Ghi chú trên CV",
+        "suggestions": "Cách diễn đạt thường dùng:",
+        "placement": "Nơi hiển thị",
+        "placements": {
+          "contact": "Cùng thông tin liên hệ",
+          "section": "Ở cuối CV",
+          "letter": "Chỉ trong thư"
+        },
+        "letterHint": "Ghi chú không xuất hiện trên CV. Trong thẻ Thư, một nút sẽ thêm câu soạn sẵn",
+        "pros": "Ưu điểm: các nhà tuyển dụng tận tâm (chương trình hòa nhập, hạn ngạch) tìm thấy bạn nhanh hơn và việc điều chỉnh dễ trao đổi hơn",
+        "cons": "Nhược điểm: một số nhà tuyển dụng vẫn còn định kiến. Bạn có thể nói sau, khi phỏng vấn hoặc sau khi được nhận, hoặc không bao giờ"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Kiểu máy đánh chữ",
         "paper": "Giấy",
         "colorful": "Nhiều màu",
-        "minimal": "Tối giản"
+        "minimal": "Tối giản",
+        "readable": "Rất dễ đọc"
       },
       "favorite": "Thêm vào yêu thích",
       "unfavorite": "Bỏ khỏi yêu thích",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Từ khóa",
       "createVersion": "Tạo phiên bản nhắm mục tiêu cho vị trí này",
       "createVersionHint": "Các kinh nghiệm và ý không liên quan đến vị trí sẽ bị bỏ đánh dấu: bạn có thể điều chỉnh lại",
-      "savedInVersion": "Đã lưu tin tuyển dụng cùng phiên bản “{{name}}”"
+      "savedInVersion": "Đã lưu tin tuyển dụng cùng phiên bản “{{name}}”",
+      "inclusive": "Tin tuyển dụng này chào đón người khuyết tật. Nếu muốn, hãy thêm ghi chú ở mục «Khuyết tật» cuối hồ sơ"
     },
     "weak": {
       "hint": "“{{phrase}}” mô tả nhiệm vụ: hãy bắt đầu bằng động từ hành động"
@@ -906,6 +969,29 @@
       "body": "Nội dung",
       "default": "Theo mẫu",
       "hint": "ATS đọc tốt tất cả các phông này: văn bản vẫn là văn bản thật"
+    },
+    "health": {
+      "hint": "Không cần nêu lý do y tế, thay «{{phrase}}» bằng:"
+    },
+    "guided": {
+      "toggle": "Chế độ từng bước",
+      "toggleHint": "Mỗi lần một phần, kèm lời khuyên đơn giản",
+      "step": "Bước {{n}} / {{total}}",
+      "previous": "Trước",
+      "next": "Tiếp",
+      "finishTitle": "Bước cuối",
+      "tips": {
+        "profile": "Ghi tên, nghề nghiệp và cách liên hệ với bạn. Phần tóm tắt: 2 hoặc 3 câu về những gì bạn làm được",
+        "experience": "Liệt kê công việc, thực tập và nhiệm vụ, mới nhất trước. Mỗi mục 2 hoặc 3 câu ngắn về việc bạn đã làm",
+        "education": "Liệt kê bằng cấp và khóa đào tạo, mới nhất trước",
+        "projects": "Giới thiệu một hoặc hai dự án thành công, kèm kết quả cụ thể",
+        "certifications": "Thêm chứng chỉ và giấy phép hữu ích cho vị trí, kèm ngày cấp",
+        "custom": "Thêm những gì không thuộc phần khác: tình nguyện, hoạt động, thông tin hữu ích",
+        "skills": "Liệt kê những gì bạn làm được: công cụ, phần mềm, kỹ năng. Ngăn cách bằng dấu phẩy",
+        "languages": "Ghi các ngôn ngữ bạn nói và trình độ",
+        "interests": "Thêm 2 hoặc 3 sở thích: chúng giúp mở đầu câu chuyện khi phỏng vấn",
+        "finish": "Chọn một mẫu bạn thích rồi tải CV dưới dạng PDF. Bạn luôn có thể quay lại chỉnh sửa"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Tài liệu này được hiển thị bằng tiếng Anh. Chỉ bản tiếng Pháp có giá trị pháp lý.",
     "error": "Không tải được tài liệu này."
+  },
+  "display": {
+    "label": "Hiển thị và trợ năng",
+    "textSize": "Cỡ chữ",
+    "sizes": {
+      "normal": "Bình thường",
+      "large": "Lớn",
+      "xlarge": "Rất lớn"
+    },
+    "options": {
+      "readableFont": "Phông chữ rất dễ đọc",
+      "spacing": "Chữ thưa hơn",
+      "contrast": "Tăng độ tương phản",
+      "reduceMotion": "Giảm hiệu ứng động"
+    },
+    "reset": "Hiển thị mặc định",
+    "note": "Các cài đặt này chỉ thay đổi giao diện, không bao giờ thay đổi CV bạn in ra"
   }
 }

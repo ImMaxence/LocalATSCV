@@ -7,6 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
+import { mentionsDisabilityInclusion } from '../../../../cv/analysis/inclusion';
 import { suggestVersionName } from '../../../../cv/analysis/job-match';
 import { DialogService } from '../../../../shared/dialog/dialog.service';
 import { Icon } from '../../../../shared/icon/icon';
@@ -70,6 +71,14 @@ import { CvEditorStore } from '../cv-editor.store';
 
           @if (store.jobAd().trim() && !store.jobKeywords().length) {
             <p class="text-sm text-muted">{{ t('empty') }}</p>
+          }
+
+          @if (inclusive()) {
+            <p class="flex gap-2 rounded-xl bg-accent-soft/60 p-3 text-sm">
+              <app-icon class="mt-0.5 size-4 shrink-0 text-accent" name="access" />{{
+                t('inclusive')
+              }}
+            </p>
           }
 
           @if (store.jobMatch(); as match) {
@@ -178,6 +187,8 @@ export class JobPanel {
   protected readonly looksLikeUrl = computed(() =>
     /^\s*https?:\/\/\S+\s*$/i.test(this.store.jobAd()),
   );
+  /** L'annonce dit accueillir les candidats en situation de handicap (information seulement). */
+  protected readonly inclusive = computed(() => mentionsDisabilityInclusion(this.store.jobAd()));
 
   protected tone(score: number): string {
     return score >= 70

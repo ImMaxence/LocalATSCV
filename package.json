@@ -1,6 +1,6 @@
 {
   "name": "localatscv",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Générateur de CV optimisé ATS, 100 % local : aucune donnée ne quitte le navigateur.",
   "license": "MIT",
   "author": "Maxence Bonnici",
@@ -52,6 +52,7 @@
     "@fontsource-variable/playfair-display": "^5.3.0",
     "@fontsource-variable/space-grotesk": "^5.3.0",
     "@fontsource-variable/syne": "^5.3.0",
+    "@fontsource/atkinson-hyperlegible": "^5.3.0",
     "@fontsource/poppins": "^5.3.0",
     "@jsverse/transloco": "^8.4.0",
     "dexie": "^4.4.7",

@@ -231,6 +231,24 @@ const shots = [
     },
   },
   {
+    file: 'accessibility.png',
+    context: { ...desktop, colorScheme: 'light' },
+    target: (page) => page.locator('#inclusive'),
+  },
+  {
+    file: 'disability.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      const block = page.getByRole('button', { name: /Situation de handicap/ });
+      await block.click();
+      await page.getByRole('button', { name: 'RQTH', exact: true }).click();
+      await block.evaluate((element) => element.scrollIntoView({ block: 'start' }));
+      await page.mouse.wheel(0, -150);
+      await page.waitForTimeout(500);
+    },
+  },
+  {
     file: 'analyze.png',
     context: { viewport: { width: 1440, height: 1250 }, colorScheme: 'light' },
     prepare: async (page) => {

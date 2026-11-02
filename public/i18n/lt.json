@@ -28,7 +28,8 @@
     "changelog": "Naujienos",
     "legalNotice": "Teisinė informacija",
     "terms": "Naudojimo sąlygos",
-    "privacy": "Privatumo politika"
+    "privacy": "Privatumo politika",
+    "accessibility": "Prieinamumo pareiškimas"
   },
   "seo": {
     "home": "Nemokamai sukurkite CV, kuris atveria duris į pokalbį: 72 šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam skelbimui ir ATS patikra. Be registracijos, jūsų duomenys lieka jūsų įrenginyje",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV naujienos pagal versijas: nauji CV šablonai, funkcijos ir pataisymai",
     "legalNotice": "LocalATSCV teisinė informacija: leidėjas, talpinimas ir kontaktai",
     "terms": "LocalATSCV naudojimo sąlygos: nemokamas atvirojo kodo CV kūrėjas",
-    "privacy": "LocalATSCV privatumo politika: jokie duomenys nerenkami, jūsų CV lieka naršyklėje"
+    "privacy": "LocalATSCV privatumo politika: jokie duomenys nerenkami, jūsų CV lieka naršyklėje",
+    "accessibility": "LocalATSCV prieinamumas: valdymas klaviatūra, ekrano skaitytuvai, rodymo nustatymai, skaitymas balsu ir žinomi apribojimai"
   },
   "footer": {
     "tagline": "Nemokamas CV kūrimo įrankis, kuris niekada nemato jūsų duomenų",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Ar veikia be interneto?",
           "a": "Taip. Po pirmojo apsilankymo galite redaguoti ir atsisiųsti savo CV be interneto. Galite net pridėti LocalATSCV prie telefono ar kompiuterio pagrindinio ekrano kaip programėlę"
+        },
+        "disability": {
+          "q": "Ar turiu nurodyti savo negalią?",
+          "a": "Tai niekada nėra privaloma. Jei norite, redaktorius pasiūlo CV šalyje pripažintą formuluotę (RQTH Prancūzijoje, categorie protette Italijoje…), prie kontaktų, CV pabaigoje arba tik laiške. Taip pat galite ją palikti vienose versijose, o kitose ne"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Atitiktis skelbimui",
       "sent": "Niekas nesiunčiama",
       "robot": "ĮGŪDŽIAI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Kepėja ir konditerė Sluoksniuotos bandelės <n>●●●●○</n> DARBO PATIRTIS <n>� camille.mar</n> Kepėja <n>tin@example.com</n> 2021 – dabar Konditerija <n>●●●○○</n> UAB Pavyzdžio kepykla KALBOS Anglų Kiekvieną rytą iškepdavau…"
+    },
+    "inclusive": {
+      "eyebrow": "Prieinama visiems",
+      "title": "CV kiekvienam, ir turinčiam negalią",
+      "text": "Paminėti pripažintą negalią ar ne, pritaikyti rodymą, išklausyti savo CV, eiti žingsnis po žingsnio: LocalATSCV prisitaiko prie jūsų, o ne atvirkščiai",
+      "countries": "Tinkama formuluotė kiekvienai šaliai",
+      "private": "Sveikatos duomenims ne vieta serveryje: jūsų duomenys lieka jūsų įrenginyje ir spausdinami tik jums nusprendus",
+      "points": {
+        "disclosure": {
+          "title": "Sakyti ar ne",
+          "text": "Neprivaloma nuoroda prie kontaktų, CV pabaigoje arba tik laiške, su paprastai paaiškintais privalumais ir trūkumais"
+        },
+        "display": {
+          "title": "Jums tinkamas rodymas",
+          "text": "Didesnis tekstas, lengvai skaitomas šriftas esant disleksijai ar silpnaregystei, sustiprintas kontrastas, mažiau animacijų"
+        },
+        "listen": {
+          "title": "Jūsų CV perskaitytas balsu",
+          "text": "Patikrinkite CV ir laišką klausydami, savo įrenginio balsu. Puiku, norint pastebėti rašybos klaidą ar per ilgą sakinį"
+        },
+        "guided": {
+          "title": "Žingsnis po žingsnio, nepasiklystant",
+          "text": "Po vieną skyrių, su patarimu paprasta kalba, iki pat PDF atsisiuntimo"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Tuščia eilutė skiria dvi pastraipas · **paryškinta** raktiniam žodžiui",
       "outline": "Įterpti planą",
       "closing": "Atsisveikinimas",
-      "fileName": "Motyvacinis laiškas"
+      "fileName": "Motyvacinis laiškas",
+      "addDisability": "Pridėti sakinį apie mano negalią"
     },
     "fit": {
       "pages": "Puslapių: {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Tekstas lieka tikru tekstu: keičiasi tik maketas",
       "reset": "Šablono maketas",
       "grayscale": "Rodyti nespalvotai",
-      "grayscaleHint": "Imituoja nespalvotą spaudinį: eksportuotas PDF išlaiko spalvas"
+      "grayscaleHint": "Imituoja nespalvotą spaudinį: eksportuotas PDF išlaiko spalvas",
+      "listen": "Klausytis dokumento",
+      "stopListening": "Sustabdyti skaitymą",
+      "dates": "Datos",
+      "datesMonth": "Mėnuo ir metai",
+      "datesYear": "Tik metai",
+      "datesHint": "Rodant tik metus trumpa karjeros pertrauka nebematoma"
     },
     "versions": {
       "label": "Rodoma versija",
@@ -424,7 +462,30 @@
       "drivingLicense": "Vairuotojo pažymėjimas",
       "drivingLicensePlaceholder": "Pvz., B kategorija, nuosavas automobilis",
       "qrToggle": "Rodyti šią nuorodą kaip QR kodą",
-      "linksHint": "Logotipas (LinkedIn, GitHub, YouTube…) pridedamas automatiškai. QR mygtukas daugumoje grafinių šablonų rodo nuorodą kaip QR kodą"
+      "linksHint": "Logotipas (LinkedIn, GitHub, YouTube…) pridedamas automatiškai. QR mygtukas daugumoje grafinių šablonų rodo nuorodą kaip QR kodą",
+      "disability": {
+        "title": "Negalia",
+        "subtitle": "Neprivaloma, tik jei norite",
+        "intro": "Ar tai paminėti, sprendžiate jūs: niekas jūsų neįpareigoja. Ši informacija niekada nepalieka jūsų įrenginio",
+        "country": {
+          "fr": "Prancūzijoje RQTH domina įmones, turinčias bent 20 darbuotojų, kurios privalo įdarbinti 6 % darbuotojų su negalia",
+          "en": "Jungtinėje Karalystėje ir JAV tai paprastai nurodoma darbdavio paraiškos formoje, o ne CV",
+          "it": "Italijoje nuoroda „categorie protette (L. 68/99)“ CV dažna ir suteikia prieigą prie rezervuotų vietų",
+          "es": "Ispanijoje dažnai nurodoma pripažinta bent 33 % negalia: įmonės, turinčios bent 50 darbuotojų, rezervuoja 2 % vietų",
+          "de": "Vokietijoje viešieji darbdaviai privalo pakviesti į pokalbį kandidatus, pripažintus „schwerbehindert“ ir atitinkančius pareigas"
+        },
+        "label": "Nuoroda CV",
+        "suggestions": "Įprastos formuluotės:",
+        "placement": "Kur rodyti",
+        "placements": {
+          "contact": "Prie kontaktų",
+          "section": "CV pabaigoje",
+          "letter": "Tik laiške"
+        },
+        "letterHint": "Nuoroda CV nerodoma. Skirtuke Laiškas mygtukas prideda paruoštą sakinį",
+        "pros": "Už: įsipareigoję darbdaviai (įtraukties programos, kvotos) jus pastebi greičiau, o pritaikymus aptarti paprasčiau",
+        "cons": "Prieš: kai kurie atrankos specialistai vis dar turi išankstinių nuostatų. Apie tai galite kalbėti ir vėliau, pokalbyje ar po įdarbinimo, arba niekada"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Rašomosios mašinėlės stilius",
         "paper": "Popierius",
         "colorful": "Spalvingas",
-        "minimal": "Minimalistinis"
+        "minimal": "Minimalistinis",
+        "readable": "Labai lengvai skaitomas"
       },
       "favorite": "Pridėti prie mėgstamiausių",
       "unfavorite": "Pašalinti iš mėgstamiausių",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Raktiniai žodžiai",
       "createVersion": "Sukurti tikslinę versiją šiai darbo vietai",
       "createVersionHint": "Su darbo vieta nesusijusi patirtis ir punktai bus atžymėti: galėsite juos pakoreguoti",
-      "savedInVersion": "Skelbimas išsaugotas su versija „{{name}}“"
+      "savedInVersion": "Skelbimas išsaugotas su versija „{{name}}“",
+      "inclusive": "Šiame skelbime kviečiami ir žmonės su negalia. Jei norite, pridėkite nuorodą skiltyje „Negalia“ profilio apačioje"
     },
     "weak": {
       "hint": "„{{phrase}}“ apibūdina pareigas: pradėkite veiksmažodžiu"
@@ -906,6 +969,29 @@
       "body": "Pagrindinis tekstas",
       "default": "Šablono",
       "hint": "ATS gerai perskaito visus šiuos šriftus: tekstas lieka tikru tekstu"
+    },
+    "health": {
+      "hint": "Medicininės priežasties nereikia, pakeiskite „{{phrase}}“ į:"
+    },
+    "guided": {
+      "toggle": "Žingsnis po žingsnio",
+      "toggleHint": "Po vieną skyrių, su paprastu patarimu",
+      "step": "{{n}} žingsnis iš {{total}}",
+      "previous": "Atgal",
+      "next": "Toliau",
+      "finishTitle": "Paskutinis žingsnis",
+      "tips": {
+        "profile": "Įrašykite vardą, profesiją ir kaip su jumis susisiekti. Santrauka: 2 ar 3 sakiniai apie tai, ką mokate",
+        "experience": "Nurodykite darbus, praktikas ir užduotis, naujausią pirmiausia. Kiekvienam 2 ar 3 trumpus sakinius apie tai, ką darėte",
+        "education": "Nurodykite diplomus ir mokymus, naujausią pirmiausia",
+        "projects": "Pristatykite vieną ar du sėkmingus projektus su konkrečiu rezultatu",
+        "certifications": "Pridėkite pareigoms naudingus sertifikatus ir leidimus su data",
+        "custom": "Pridėkite tai, kas netelpa kitur: savanorystę, veiklą, naudingą informaciją",
+        "skills": "Išvardykite, ką mokate: įrankius, programas, įgūdžius. Atskirkite juos kableliais",
+        "languages": "Nurodykite, kokiomis kalbomis kalbate, ir savo lygį",
+        "interests": "Pridėkite 2 ar 3 pomėgius: jie padeda pradėti pokalbį",
+        "finish": "Pasirinkite patinkantį šabloną ir atsisiųskite CV PDF formatu. Visada galėsite grįžti ir jį pataisyti"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Šis dokumentas rodomas anglų kalba. Teisiškai privaloma tik prancūziška versija.",
     "error": "Nepavyko įkelti šio dokumento."
+  },
+  "display": {
+    "label": "Rodymas ir prieinamumas",
+    "textSize": "Teksto dydis",
+    "sizes": {
+      "normal": "Įprastas",
+      "large": "Didelis",
+      "xlarge": "Labai didelis"
+    },
+    "options": {
+      "readableFont": "Lengvai skaitomas šriftas",
+      "spacing": "Retesnis tekstas",
+      "contrast": "Sustiprintas kontrastas",
+      "reduceMotion": "Mažiau animacijų"
+    },
+    "reset": "Numatytasis rodymas",
+    "note": "Šie nustatymai keičia sąsają, bet niekada jūsų atspausdinto CV"
   }
 }

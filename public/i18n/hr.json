@@ -28,7 +28,8 @@
     "changelog": "Novosti",
     "legalNotice": "Pravne napomene",
     "terms": "Uvjeti korištenja",
-    "privacy": "Pravila privatnosti"
+    "privacy": "Pravila privatnosti",
+    "accessibility": "Izjava o pristupačnosti"
   },
   "seo": {
     "home": "Izradite besplatno životopis koji vas vodi do razgovora: 72 predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS provjera. Bez registracije, vaši podaci ostaju na vašem uređaju",
@@ -37,7 +38,8 @@
     "changelog": "Novosti u LocalATSCV-u, verziju po verziju: novi predlošci životopisa, značajke i ispravci",
     "legalNotice": "Pravne napomene LocalATSCV-a: izdavač, hosting i kontakt",
     "terms": "Uvjeti korištenja LocalATSCV-a, besplatnog alata za izradu životopisa otvorenog koda",
-    "privacy": "Pravila privatnosti LocalATSCV-a: ne prikupljaju se podaci, vaši životopisi ostaju u pregledniku"
+    "privacy": "Pravila privatnosti LocalATSCV-a: ne prikupljaju se podaci, vaši životopisi ostaju u pregledniku",
+    "accessibility": "Pristupačnost LocalATSCV-a: upravljanje tipkovnicom, čitači zaslona, postavke prikaza, čitanje naglas i poznata ograničenja"
   },
   "footer": {
     "tagline": "Besplatan alat za životopis koji nikad ne vidi vaše podatke",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Radi li bez interneta?",
           "a": "Da. Nakon prvog posjeta možete uređivati i preuzimati svoje životopise bez veze. LocalATSCV možete čak dodati na početni zaslon mobitela ili računala, kao aplikaciju"
+        },
+        "disability": {
+          "q": "Moram li navesti svoj invaliditet?",
+          "a": "Nikada nije obavezno. Ako želite, uređivač predlaže formulaciju priznatu u zemlji životopisa (RQTH u Francuskoj, categorie protette u Italiji…), uz kontakte, na kraju životopisa ili samo u pismu. Možete je zadržati i samo u nekim verzijama"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Podudarnost s oglasom",
       "sent": "Ništa se ne šalje",
       "robot": "VJEŠTINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekarica i slastičarka Lisnato tijesto <n>●●●●○</n> RADNO ISKUSTVO <n>� camille.mar</n> Pekarica <n>tin@example.com</n> 2021 – danas Slastičarstvo <n>●●●○○</n> Pekara Primjer JEZICI Engleski Svako jutro 300 komada…"
+    },
+    "inclusive": {
+      "eyebrow": "Pristupačno svima",
+      "title": "Životopis za svakoga, i s invaliditetom",
+      "text": "Spomenuti priznati invaliditet ili ne, prilagoditi prikaz, poslušati životopis naglas, napredovati korak po korak: LocalATSCV se prilagođava vama, a ne obrnuto",
+      "countries": "Prava formulacija za svaku zemlju",
+      "private": "Zdravstveni podaci nemaju što tražiti na poslužitelju: vaši ostaju na vašem uređaju i ispisuju se samo ako vi tako odlučite",
+      "points": {
+        "disclosure": {
+          "title": "Reći ili ne",
+          "text": "Neobavezan navod uz kontakte, na kraju životopisa ili samo u pismu, s jednostavno objašnjenim prednostima i ograničenjima"
+        },
+        "display": {
+          "title": "Prikaz po vašoj mjeri",
+          "text": "Veći tekst, vrlo čitljiv font za osobe s disleksijom ili slabim vidom, pojačani kontrast, manje animacija"
+        },
+        "listen": {
+          "title": "Vaš životopis naglas",
+          "text": "Provjerite životopis i pismo na sluh, glasom svog uređaja. Idealno za uočavanje tipfelera ili predugačke rečenice"
+        },
+        "guided": {
+          "title": "Korak po korak, bez lutanja",
+          "text": "Jedan odjeljak odjednom, uz savjet jednostavnim jezikom, sve do preuzimanja PDF-a"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Prazan redak odvaja dva odlomka · **podebljano** za ključnu riječ",
       "outline": "Umetni nacrt",
       "closing": "Završni pozdrav",
-      "fileName": "Motivacijsko pismo"
+      "fileName": "Motivacijsko pismo",
+      "addDisability": "Dodaj rečenicu o svom invaliditetu"
     },
     "fit": {
       "pages": "Stranica: {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Tekst ostaje stvaran tekst: mijenja se samo raspored",
       "reset": "Raspored predloška",
       "grayscale": "Prikaži crno-bijelo",
-      "grayscaleHint": "Simulira crno-bijeli ispis: izvezeni PDF zadržava boje"
+      "grayscaleHint": "Simulira crno-bijeli ispis: izvezeni PDF zadržava boje",
+      "listen": "Poslušaj dokument",
+      "stopListening": "Zaustavi čitanje",
+      "dates": "Datumi",
+      "datesMonth": "Mjesec i godina",
+      "datesYear": "Samo godine",
+      "datesHint": "Samo s godinama kratka stanka u karijeri više se ne vidi"
     },
     "versions": {
       "label": "Prikazana verzija",
@@ -424,7 +462,30 @@
       "drivingLicense": "Vozačka dozvola",
       "drivingLicensePlaceholder": "Npr. Vozačka dozvola B kategorije, vlastiti automobil",
       "qrToggle": "Prikaži ovu poveznicu kao QR kôd",
-      "linksHint": "Logotip (LinkedIn, GitHub, YouTube…) dodaje se automatski. Gumb QR prikazuje poveznicu kao QR kôd u većini grafičkih predložaka"
+      "linksHint": "Logotip (LinkedIn, GitHub, YouTube…) dodaje se automatski. Gumb QR prikazuje poveznicu kao QR kôd u većini grafičkih predložaka",
+      "disability": {
+        "title": "Invaliditet",
+        "subtitle": "Neobavezno, samo ako želite",
+        "intro": "Hoćete li ga spomenuti, isključivo je vaš izbor: ništa vas ne obvezuje. Ova informacija nikada ne napušta vaš uređaj",
+        "country": {
+          "fr": "U Francuskoj RQTH zanima tvrtke s najmanje 20 zaposlenih, koje moraju zapošljavati 6 % radnika s invaliditetom",
+          "en": "U Ujedinjenom Kraljevstvu i SAD-u obično se navodi u obrascu za prijavu poslodavca, a ne u životopisu",
+          "it": "U Italiji je oznaka „categorie protette (L. 68/99)” česta u životopisima i otvara pristup rezerviranim mjestima",
+          "es": "U Španjolskoj se često navodi priznati invaliditet od najmanje 33 %: tvrtke s najmanje 50 zaposlenih rezerviraju 2 % mjesta",
+          "de": "U Njemačkoj javni poslodavci moraju pozvati na razgovor kandidate priznate kao „schwerbehindert” koji odgovaraju radnom mjestu"
+        },
+        "label": "Navod u životopisu",
+        "suggestions": "Uobičajene formulacije:",
+        "placement": "Gdje prikazati",
+        "placements": {
+          "contact": "Uz moje kontakte",
+          "section": "Na kraju životopisa",
+          "letter": "Samo u pismu"
+        },
+        "letterHint": "Navod se ne prikazuje u životopisu. Na kartici Pismo gumb dodaje gotovu rečenicu",
+        "pros": "Za: angažirani poslodavci (programi uključivanja, kvote) brže vas pronalaze, a prilagodbe se lakše dogovaraju",
+        "cons": "Protiv: neki regruteri i dalje imaju predrasude. O tome možete govoriti i kasnije, na razgovoru ili nakon zapošljavanja, ili nikada"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Stil pisaćeg stroja",
         "paper": "Papir",
         "colorful": "Šareni",
-        "minimal": "Minimalistički"
+        "minimal": "Minimalistički",
+        "readable": "Vrlo čitljivo"
       },
       "favorite": "Dodaj u favorite",
       "unfavorite": "Ukloni iz favorita",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Ključne riječi",
       "createVersion": "Izradi ciljanu verziju za ovo radno mjesto",
       "createVersionHint": "Iskustva i stavke koje nisu povezane s poslom bit će odznačene: možete ih prilagoditi",
-      "savedInVersion": "Oglas spremljen uz verziju „{{name}}”"
+      "savedInVersion": "Oglas spremljen uz verziju „{{name}}”",
+      "inclusive": "Ovaj oglas poziva i osobe s invaliditetom. Ako želite, dodajte navod u „Invaliditet”, na dnu profila"
     },
     "weak": {
       "hint": "„{{phrase}}” opisuje zaduženje: počnite glagolom radnje"
@@ -906,6 +969,29 @@
       "body": "Tekst",
       "default": "Iz predloška",
       "hint": "ATS-ovi dobro čitaju sve ove fontove: tekst ostaje stvaran tekst"
+    },
+    "health": {
+      "hint": "Medicinski razlog nije potreban, zamijenite „{{phrase}}” s:"
+    },
+    "guided": {
+      "toggle": "Način korak po korak",
+      "toggleHint": "Jedan odjeljak odjednom, uz jednostavan savjet",
+      "step": "Korak {{n}} od {{total}}",
+      "previous": "Natrag",
+      "next": "Dalje",
+      "finishTitle": "Posljednji korak",
+      "tips": {
+        "profile": "Upišite ime, zanimanje i kako vas kontaktirati. Sažetak: 2 ili 3 rečenice o tome što znate raditi",
+        "experience": "Navedite poslove, prakse i zadatke, od najnovijeg. Za svaki 2 ili 3 kratke rečenice o tome što ste radili",
+        "education": "Navedite diplome i edukacije, od najnovije",
+        "projects": "Predstavite jedan ili dva uspješna projekta s konkretnim rezultatom",
+        "certifications": "Dodajte certifikate i ovlaštenja korisna za radno mjesto, s datumom",
+        "custom": "Dodajte ono što ne pripada drugdje: volontiranje, angažman, korisne informacije",
+        "skills": "Nabrojite što znate: alate, programe, vještine. Odvojite ih zarezima",
+        "languages": "Navedite jezike koje govorite i svoju razinu",
+        "interests": "Dodajte 2 ili 3 hobija: pomažu započeti razgovor na intervjuu",
+        "finish": "Odaberite predložak koji vam se sviđa i preuzmite životopis kao PDF. Uvijek se možete vratiti i urediti ga"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Ovaj dokument prikazan je na engleskom. Pravno obvezujuća je samo francuska verzija.",
     "error": "Ovaj dokument nije moguće učitati."
+  },
+  "display": {
+    "label": "Prikaz i pristupačnost",
+    "textSize": "Veličina teksta",
+    "sizes": {
+      "normal": "Normalna",
+      "large": "Velika",
+      "xlarge": "Vrlo velika"
+    },
+    "options": {
+      "readableFont": "Vrlo čitljiv font",
+      "spacing": "Prozračniji tekst",
+      "contrast": "Pojačani kontrast",
+      "reduceMotion": "Manje animacija"
+    },
+    "reset": "Zadani prikaz",
+    "note": "Ove postavke mijenjaju sučelje, nikada vaš ispisani životopis"
   }
 }

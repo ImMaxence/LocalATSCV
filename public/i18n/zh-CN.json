@@ -28,7 +28,8 @@
     "changelog": "新功能",
     "legalNotice": "法律声明",
     "terms": "使用条款",
-    "privacy": "隐私政策"
+    "privacy": "隐私政策",
+    "accessibility": "无障碍声明"
   },
   "seo": {
     "home": "免费制作让你拿到面试的简历：72 款模板、风格统一的求职信、针对每个职位调整以及 ATS 检查。无需注册，数据只留在你的设备上",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV 各版本更新：新的简历模板、功能与修复",
     "legalNotice": "LocalATSCV 法律声明：发布者、托管与联系方式",
     "terms": "LocalATSCV 使用条款：免费开源的简历制作工具",
-    "privacy": "LocalATSCV 隐私政策：不收集任何数据，你的简历保存在浏览器中"
+    "privacy": "LocalATSCV 隐私政策：不收集任何数据，你的简历保存在浏览器中",
+    "accessibility": "LocalATSCV 的无障碍：键盘操作、读屏软件、显示设置、朗读功能及已知限制"
   },
   "footer": {
     "tagline": "从不查看你数据的免费简历制作工具",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "没有网络也能用吗？",
           "a": "能。首次访问后，你可以离线编辑和下载简历，甚至可以像应用一样把 LocalATSCV 添加到手机或电脑的主屏幕"
+        },
+        "disability": {
+          "q": "我需要注明残障情况吗？",
+          "a": "从来都不是必须的。如果你愿意，编辑器会提供简历所在国家认可的表述（法国的 RQTH、意大利的 categorie protette 等），可放在联系方式旁、简历末尾或仅在求职信中。你也可以只在部分版本中保留"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "职位匹配度",
       "sent": "不发送任何数据",
       "robot": "专业技能 CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> 面包师兼甜点师 酥皮点心 <n>●●●●○</n> 工作经历 <n>� camille.mar</n> 面包师 <n>tin@example.com</n> 2021 – 至今 西点 <n>●●●○○</n> 示例烘焙坊 语言能力 英语 每天早上制作 300 个…"
+    },
+    "inclusive": {
+      "eyebrow": "人人可用",
+      "title": "一份人人适用的简历，残障人士也不例外",
+      "text": "是否注明认定的残障、调整显示、收听简历、一步一步完成：LocalATSCV 适应你，而不是让你适应它",
+      "countries": "每个国家的恰当表述",
+      "private": "健康信息不该放在服务器上：你的信息留在你的设备里，只有你决定时才会打印",
+      "points": {
+        "disclosure": {
+          "title": "说，或不说",
+          "text": "可选的说明，放在联系方式旁、简历末尾或仅在求职信中，并用简单的话讲清利弊"
+        },
+        "display": {
+          "title": "适合你的显示",
+          "text": "更大的文字，为阅读障碍或低视力人士准备的易读字体，增强对比度，减少动画"
+        },
+        "listen": {
+          "title": "朗读你的简历",
+          "text": "用设备的声音听一遍简历和求职信。非常适合发现错别字或过长的句子"
+        },
+        "guided": {
+          "title": "一步一步，不迷路",
+          "text": "一次一个部分，配有通俗易懂的建议，直到下载 PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "空一行分隔两个段落 · 用 **加粗** 突出关键词",
       "outline": "插入框架",
       "closing": "结束语",
-      "fileName": "求职信"
+      "fileName": "求职信",
+      "addDisability": "添加一句关于我残障情况的话"
     },
     "fit": {
       "pages": "{{count}} 页",
@@ -376,7 +408,13 @@
       "settingsHint": "文本始终是真实文本：只有版式会改变",
       "reset": "模板默认版式",
       "grayscale": "黑白查看",
-      "grayscaleHint": "模拟黑白打印效果：导出的 PDF 仍保留颜色"
+      "grayscaleHint": "模拟黑白打印效果：导出的 PDF 仍保留颜色",
+      "listen": "收听文档",
+      "stopListening": "停止朗读",
+      "dates": "日期",
+      "datesMonth": "年月",
+      "datesYear": "仅年份",
+      "datesHint": "只显示年份时，职业中的短暂空档就不再显眼"
     },
     "versions": {
       "label": "当前显示的版本",
@@ -424,7 +462,30 @@
       "drivingLicense": "驾驶证",
       "drivingLicensePlaceholder": "例如：C1 驾照，自有车辆",
       "qrToggle": "将此链接显示为二维码",
-      "linksHint": "标志（LinkedIn、GitHub、YouTube 等）会自动添加。点二维码按钮后，大多数设计模板会以二维码显示该链接"
+      "linksHint": "标志（LinkedIn、GitHub、YouTube 等）会自动添加。点二维码按钮后，大多数设计模板会以二维码显示该链接",
+      "disability": {
+        "title": "残障情况",
+        "subtitle": "可选，仅在你愿意时填写",
+        "intro": "是否注明完全由你决定，没有任何义务。这条信息永远不会离开你的设备",
+        "country": {
+          "fr": "在法国，RQTH 受到员工 20 人以上企业的关注，这些企业必须雇用 6 % 的残障员工",
+          "en": "在英国和美国，通常在雇主的申请表中说明，而不是写在简历上",
+          "it": "在意大利，简历上常注明 «categorie protette (L. 68/99)»，可申请为残障人士保留的岗位",
+          "es": "在西班牙，常会注明认定程度至少 33 % 的残障：员工 50 人以上的企业会保留 2 % 的岗位",
+          "de": "在德国，公共部门雇主必须邀请被认定为 «schwerbehindert» 且符合岗位要求的求职者参加面试"
+        },
+        "label": "简历上的说明",
+        "suggestions": "常用表述：",
+        "placement": "显示位置",
+        "placements": {
+          "contact": "与联系方式一起",
+          "section": "在简历末尾",
+          "letter": "仅在求职信中"
+        },
+        "letterHint": "该说明不会出现在简历上。在“求职信”标签页中，一个按钮可添加现成的句子",
+        "pros": "好处：重视多元的雇主（包容计划、残障就业比例）更快注意到你，工作上的调整也更容易沟通",
+        "cons": "顾虑：部分招聘人员仍有偏见。你也可以之后再说，在面试时或入职后，或者不说"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "打字机风格",
         "paper": "纸张质感",
         "colorful": "多彩",
-        "minimal": "极简"
+        "minimal": "极简",
+        "readable": "非常易读"
       },
       "favorite": "加入收藏",
       "unfavorite": "取消收藏",
@@ -895,7 +957,8 @@
       "keywordsGroup": "关键词",
       "createVersion": "为此职位创建定向版本",
       "createVersionHint": "与职位无关的经历和要点会被取消勾选：你可以再调整",
-      "savedInVersion": "职位描述已随版本“{{name}}”保存"
+      "savedInVersion": "职位描述已随版本“{{name}}”保存",
+      "inclusive": "该职位欢迎残障人士应聘。如果愿意，可在个人资料底部的“残障情况”中添加说明"
     },
     "weak": {
       "hint": "“{{phrase}}”描述的是职责：请以动作动词开头"
@@ -906,6 +969,29 @@
       "body": "正文",
       "default": "模板默认",
       "hint": "ATS 都能很好地读取这些字体：文本始终是真实文本"
+    },
+    "health": {
+      "hint": "无需说明医疗原因，将“{{phrase}}”替换为："
+    },
+    "guided": {
+      "toggle": "分步模式",
+      "toggleHint": "一次一个部分，并附简单建议",
+      "step": "第 {{n}} 步，共 {{total}} 步",
+      "previous": "上一步",
+      "next": "下一步",
+      "finishTitle": "最后一步",
+      "tips": {
+        "profile": "写下你的姓名、职业和联系方式。简介：用 2 到 3 句话说明你会做什么",
+        "experience": "按从新到旧列出工作、实习和项目经历。每段用 2 到 3 句短句说明你做了什么",
+        "education": "按从新到旧列出学历和培训",
+        "projects": "展示一两个成功的项目，并写出具体成果",
+        "certifications": "添加对该职位有用的证书和资质，并注明日期",
+        "custom": "添加放不进其他部分的内容：志愿服务、社会活动、有用的信息",
+        "skills": "列出你会的东西：工具、软件、技能。用逗号分隔",
+        "languages": "写出你会说的语言和水平",
+        "interests": "添加 2 到 3 个爱好：它们有助于在面试中打开话题",
+        "finish": "选择一个你喜欢的模板，然后下载 PDF 简历。之后随时可以回来修改"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "本文件以英文显示。仅法文版本具有法律效力。",
     "error": "无法加载此文件。"
+  },
+  "display": {
+    "label": "显示与无障碍",
+    "textSize": "文字大小",
+    "sizes": {
+      "normal": "标准",
+      "large": "大",
+      "xlarge": "特大"
+    },
+    "options": {
+      "readableFont": "易读字体",
+      "spacing": "加大文字间距",
+      "contrast": "增强对比度",
+      "reduceMotion": "减少动画"
+    },
+    "reset": "默认显示",
+    "note": "这些设置只改变界面，绝不会改变打印出来的简历"
   }
 }

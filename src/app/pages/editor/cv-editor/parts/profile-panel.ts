@@ -2,16 +2,18 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
 import { linkIcon } from '../../../../cv/document/templates/cv-template-base';
 import { hidesPersonalDetails } from '../../../../cv/model/resolve-cv';
-import { Profile } from '../../../../cv/model/cv.model';
+import { DISABILITY_ID, DISABILITY_PLACEMENTS, Profile } from '../../../../cv/model/cv.model';
+import { DISABILITY_LABELS } from '../../../../cv/model/disability';
 import { TextField } from '../../../../shared/form/text-field';
 import { Icon } from '../../../../shared/icon/icon';
 import { ToastService } from '../../../../shared/toast/toast';
 import { CvEditorStore } from '../cv-editor.store';
+import { IncludeToggle } from './editor-controls';
 
 @Component({
   selector: 'app-profile-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TranslocoDirective, TextField, Icon],
+  imports: [TranslocoDirective, TextField, Icon, IncludeToggle],
   template: `
     @if (store.cv(); as cv) {
       <section *transloco="let t; prefix: 'editor.profile'" class="panel">
@@ -184,6 +186,98 @@ import { CvEditorStore } from '../cv-editor.store';
             </button>
             <p class="mt-1 text-xs text-muted">{{ t('linksHint') }}</p>
           </div>
+
+          <!-- Mention facultative d'un handicap : repliée par défaut, jamais pré-remplie -->
+          <div class="rounded-xl border border-line sm:col-span-2">
+            <div class="flex items-center gap-2 ps-3">
+              @if (cv.profile.disability.trim()) {
+                <app-include-toggle [itemId]="disabilityId" />
+              }
+              <button
+                type="button"
+                class="flex min-w-0 flex-1 items-center gap-3 py-2.5 pe-3 text-start"
+                [attr.aria-expanded]="disabilityOpen()"
+                (click)="disabilityOpen.set(!disabilityOpen())"
+              >
+                <span
+                  class="grid size-7 shrink-0 place-items-center rounded-lg bg-accent-soft text-accent"
+                >
+                  <app-icon class="size-4" name="access" />
+                </span>
+                <span class="min-w-0 flex-1">
+                  <span class="block text-sm font-semibold">{{ t('disability.title') }}</span>
+                  <span class="block truncate text-xs text-muted">{{
+                    cv.profile.disability.trim() || t('disability.subtitle')
+                  }}</span>
+                </span>
+                <app-icon
+                  class="size-4 shrink-0 text-muted transition-transform"
+                  name="chevronDown"
+                  [class.rotate-180]="disabilityOpen()"
+                />
+              </button>
+            </div>
+            @if (disabilityOpen()) {
+              <div class="space-y-3 border-t border-line p-3">
+                <p class="text-sm leading-relaxed text-muted">{{ t('disability.intro') }}</p>
+                <p class="flex gap-2 rounded-lg bg-surface-2 p-2.5 text-xs leading-relaxed">
+                  <app-icon class="mt-px size-3.5 shrink-0 text-accent" name="globe" />
+                  {{ t('disability.country.' + cv.language) }}
+                </p>
+                <app-text-field
+                  [label]="t('disability.label')"
+                  [placeholder]="disabilityLabels().suggestions[0]"
+                  [value]="cv.profile.disability"
+                  (valueChange)="update({ disability: $event })"
+                />
+                <div class="flex flex-wrap items-center gap-1.5 text-xs">
+                  <span class="text-muted">{{ t('disability.suggestions') }}</span>
+                  @for (suggestion of disabilityLabels().suggestions; track suggestion) {
+                    <button
+                      type="button"
+                      class="rounded-full border border-line bg-surface px-2 py-0.5 font-medium hover:border-accent hover:text-accent"
+                      [attr.lang]="cv.language"
+                      (click)="update({ disability: suggestion })"
+                    >
+                      {{ suggestion }}
+                    </button>
+                  }
+                </div>
+                <fieldset>
+                  <legend class="field-label">{{ t('disability.placement') }}</legend>
+                  <div class="grid gap-1.5 sm:grid-cols-3">
+                    @for (placement of placements; track placement) {
+                      <label
+                        class="flex cursor-pointer items-center gap-2 rounded-lg border border-line px-2.5 py-2 text-sm has-checked:border-accent has-checked:bg-accent-soft/50"
+                      >
+                        <input
+                          type="radio"
+                          name="disability-placement"
+                          class="size-4 shrink-0 accent-accent"
+                          [checked]="cv.profile.disabilityPlacement === placement"
+                          (change)="update({ disabilityPlacement: placement })"
+                        />
+                        {{ t('disability.placements.' + placement) }}
+                      </label>
+                    }
+                  </div>
+                  @if (cv.profile.disabilityPlacement === 'letter') {
+                    <p class="mt-1.5 text-xs text-muted">{{ t('disability.letterHint') }}</p>
+                  }
+                </fieldset>
+                <ul class="space-y-1.5 text-xs leading-relaxed text-muted">
+                  <li class="flex gap-2">
+                    <app-icon class="mt-px size-3.5 shrink-0 text-accent" name="plus" />
+                    {{ t('disability.pros') }}
+                  </li>
+                  <li class="flex gap-2">
+                    <app-icon class="mt-px size-3.5 shrink-0" name="alert" />
+                    {{ t('disability.cons') }}
+                  </li>
+                </ul>
+              </div>
+            }
+          </div>
         </div>
       </section>
     }
@@ -198,6 +292,14 @@ export class ProfilePanel {
   protected readonly linkIcon = linkIcon;
   protected readonly hidesDetails = computed(() =>
     hidesPersonalDetails(this.store.cv()?.language ?? 'fr'),
+  );
+
+  protected readonly disabilityId = DISABILITY_ID;
+  protected readonly placements = DISABILITY_PLACEMENTS;
+  protected readonly disabilityOpen = signal(false);
+  /** Formulations reconnues dans le pays de la langue du CV. */
+  protected readonly disabilityLabels = computed(
+    () => DISABILITY_LABELS[this.store.cv()?.language ?? 'fr'],
   );
 
   protected update(patch: Partial<Profile>): void {

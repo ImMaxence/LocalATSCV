@@ -1,11 +1,33 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  computed,
+  inject,
+  input,
+  signal,
+} from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { CvPreview } from '../../../../cv/document/cv-preview';
-import { DEFAULT_LAYOUT, LAYOUT_LIMITS } from '../../../../cv/model/cv.model';
+import {
+  CvLanguage,
+  DATE_STYLES,
+  DEFAULT_LAYOUT,
+  LAYOUT_LIMITS,
+} from '../../../../cv/model/cv.model';
 import { Icon } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
 
 const nextFrame = () => new Promise((resolve) => requestAnimationFrame(() => resolve(null)));
+
+/** Voix de synthèse cherchée pour chaque langue de CV. */
+const SPEECH_LANGS: Record<CvLanguage, string> = {
+  fr: 'fr-FR',
+  en: 'en-GB',
+  it: 'it-IT',
+  es: 'es-ES',
+  de: 'de-DE',
+};
 
 /**
  * Faire tenir le CV sur une page : nombre de pages, ajustement automatique (espacements d'abord,
@@ -62,6 +84,18 @@ const nextFrame = () => new Promise((resolve) => requestAnimationFrame(() => res
             {{ t('fit') }}
           </button>
         }
+        @if (canSpeak) {
+          <button
+            type="button"
+            class="icon-btn aria-pressed:bg-ink aria-pressed:text-paper"
+            [attr.aria-pressed]="speaking()"
+            [attr.aria-label]="speaking() ? t('stopListening') : t('listen')"
+            [title]="speaking() ? t('stopListening') : t('listen')"
+            (click)="toggleSpeech()"
+          >
+            <app-icon class="size-4" [name]="speaking() ? 'stop' : 'volume'" />
+          </button>
+        }
         <button
           type="button"
           class="icon-btn aria-pressed:bg-ink aria-pressed:text-paper"
@@ -115,6 +149,27 @@ const nextFrame = () => new Promise((resolve) => requestAnimationFrame(() => res
               (input)="store.setLayout({ scale: $any($event.target).valueAsNumber / 100 })"
             />
           </label>
+          <div class="sm:col-span-2">
+            <p class="text-sm font-medium">{{ t('dates') }}</p>
+            <div
+              role="radiogroup"
+              class="mt-2 inline-flex rounded-full border border-line bg-surface p-0.5 text-xs font-semibold"
+              [attr.aria-label]="t('dates')"
+            >
+              @for (style of dateStyles; track style) {
+                <button
+                  type="button"
+                  role="radio"
+                  class="rounded-full px-3 py-1 text-muted transition-colors hover:text-ink aria-checked:bg-accent-soft aria-checked:text-accent"
+                  [attr.aria-checked]="dateStyle() === style"
+                  (click)="store.setDateStyle(style)"
+                >
+                  {{ t(style === 'month' ? 'datesMonth' : 'datesYear') }}
+                </button>
+              }
+            </div>
+            <p class="mt-1.5 text-xs text-muted">{{ t('datesHint') }}</p>
+          </div>
           <div class="flex flex-wrap items-center justify-between gap-2 sm:col-span-2">
             <p class="text-xs text-muted">{{ t('settingsHint') }}</p>
             <button
@@ -150,8 +205,50 @@ export class PageFit {
     () => this.layout().spacing === 1 && this.layout().scale === 1,
   );
 
+  protected readonly dateStyles = DATE_STYLES;
+  protected readonly dateStyle = computed(() => this.store.cv()?.dateStyle ?? 'month');
+
+  /** Lecture à voix haute par la synthèse vocale du navigateur : rien ne quitte l'appareil. */
+  protected readonly canSpeak = typeof speechSynthesis !== 'undefined';
+  protected readonly speaking = signal(false);
+
+  constructor() {
+    inject(DestroyRef).onDestroy(() => this.speaking() && speechSynthesis.cancel());
+  }
+
   protected percent(value: number): string {
     return `${Math.round(value * 100)} %`;
+  }
+
+  /**
+   * Lit le document affiché (CV ou lettre), ligne par ligne : Chrome coupe les énoncés trop
+   * longs, et les pauses entre les lignes aident à suivre.
+   */
+  protected toggleSpeech(): void {
+    if (this.speaking()) {
+      speechSynthesis.cancel();
+      this.speaking.set(false);
+      return;
+    }
+    const lines = (this.preview().documentElement()?.innerText ?? '')
+      .split(/\n+/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+    if (!lines.length) return;
+    const lang = SPEECH_LANGS[this.store.cv()?.language ?? 'fr'];
+    const voices = speechSynthesis.getVoices();
+    const voice =
+      voices.find((v) => v.lang === lang) ??
+      voices.find((v) => v.lang.startsWith(lang.slice(0, 2)));
+    speechSynthesis.cancel();
+    lines.forEach((line, index) => {
+      const utterance = new SpeechSynthesisUtterance(line);
+      utterance.lang = lang;
+      if (voice) utterance.voice = voice;
+      if (index === lines.length - 1) utterance.onend = () => this.speaking.set(false);
+      speechSynthesis.speak(utterance);
+    });
+    this.speaking.set(true);
   }
 
   protected reset(): void {

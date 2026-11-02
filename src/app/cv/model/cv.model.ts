@@ -87,6 +87,19 @@ export interface ProfileLink {
   url: string;
 }
 
+/**
+ * Emplacement de la mention de handicap : avec les coordonnées, dans la rubrique
+ * « Autres informations » en fin de CV, ou seulement dans la lettre de motivation.
+ */
+export const DISABILITY_PLACEMENTS = ['contact', 'section', 'letter'] as const;
+export type DisabilityPlacement = (typeof DISABILITY_PLACEMENTS)[number];
+/** Identifiant de la mention dans `CvVersion.hiddenIds` : une version peut la masquer. */
+export const DISABILITY_ID = 'profile-disability';
+
+/** Dates des entrées : mois et année (« Mars 2022 ») ou années seules (« 2022 »). */
+export const DATE_STYLES = ['month', 'year'] as const;
+export type DateStyle = (typeof DATE_STYLES)[number];
+
 export interface Profile {
   firstName: string;
   lastName: string;
@@ -99,6 +112,9 @@ export interface Profile {
   nationality: string;
   /** Permis de conduire, en texte libre (« Permis B, véhiculé »). */
   drivingLicense: string;
+  /** Mention facultative d'une situation de handicap (« RQTH »…) ; vide = rien n'est imprimé. */
+  disability: string;
+  disabilityPlacement: DisabilityPlacement;
   summary: string;
   /** Référence vers la table `photos` d'IndexedDB. */
   photoId: string | null;
@@ -148,6 +164,7 @@ export interface MasterCv {
   fonts: { heading: CvFontId | null; body: CvFontId | null };
   accentColor: string;
   layout: CvLayout;
+  dateStyle: DateStyle;
   profile: Profile;
   sections: CvSection[];
   /** Lettre de motivation du Master ; une version ciblée peut avoir la sienne. */
@@ -185,22 +202,22 @@ export const CV_TEMPLATES = [
   { id: 'memphis', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
   { id: 'bauhaus', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
   { id: 'brutal', ats: 'excellent', family: 'graphic', tags: ['paper'] },
-  { id: 'duotone', ats: 'excellent', family: 'graphic', tags: [] },
+  { id: 'duotone', ats: 'excellent', family: 'graphic', tags: ['readable'] },
   { id: 'editorial', ats: 'excellent', family: 'graphic', tags: ['serif'] },
   { id: 'prism', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
   { id: 'nocturne', ats: 'excellent', family: 'graphic', tags: ['dark'] },
   { id: 'sorbet', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
-  { id: 'wave', ats: 'excellent', family: 'graphic', tags: [] },
+  { id: 'wave', ats: 'excellent', family: 'graphic', tags: ['readable'] },
   { id: 'origami', ats: 'excellent', family: 'graphic', tags: ['paper'] },
   { id: 'hexa', ats: 'excellent', family: 'graphic', tags: [] },
   { id: 'blueprint', ats: 'excellent', family: 'graphic', tags: ['mono', 'paper'] },
-  { id: 'typo', ats: 'excellent', family: 'graphic', tags: ['minimal'] },
-  { id: 'swiss', ats: 'excellent', family: 'graphic', tags: [] },
-  { id: 'thread', ats: 'excellent', family: 'graphic', tags: [] },
+  { id: 'typo', ats: 'excellent', family: 'graphic', tags: ['readable', 'minimal'] },
+  { id: 'swiss', ats: 'excellent', family: 'graphic', tags: ['readable'] },
+  { id: 'thread', ats: 'excellent', family: 'graphic', tags: ['readable'] },
   { id: 'ribbon', ats: 'excellent', family: 'graphic', tags: [] },
   { id: 'zen', ats: 'excellent', family: 'graphic', tags: ['paper', 'minimal'] },
   { id: 'prestige', ats: 'excellent', family: 'graphic', tags: ['serif', 'paper'] },
-  { id: 'impact', ats: 'excellent', family: 'graphic', tags: [] },
+  { id: 'impact', ats: 'excellent', family: 'graphic', tags: ['readable'] },
   { id: 'horizon', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
   { id: 'polaroid', ats: 'excellent', family: 'graphic', tags: ['serif', 'paper'] },
   { id: 'terminal', ats: 'excellent', family: 'graphic', tags: ['dark', 'mono'] },
@@ -232,8 +249,8 @@ export const CV_TEMPLATES = [
   { id: 'metro', ats: 'excellent', family: 'graphic', tags: ['colorful'] },
   { id: 'stained', ats: 'excellent', family: 'graphic', tags: ['serif', 'colorful'] },
   { id: 'executive', ats: 'excellent', family: 'sober', tags: ['serif'] },
-  { id: 'modern', ats: 'excellent', family: 'sober', tags: [] },
-  { id: 'classic', ats: 'excellent', family: 'sober', tags: ['minimal'] },
+  { id: 'modern', ats: 'excellent', family: 'sober', tags: ['readable'] },
+  { id: 'classic', ats: 'excellent', family: 'sober', tags: ['readable', 'minimal'] },
   { id: 'elegant', ats: 'excellent', family: 'sober', tags: ['serif'] },
   { id: 'tech', ats: 'excellent', family: 'sober', tags: ['mono'] },
   { id: 'minimal', ats: 'good', family: 'sober', tags: ['columns', 'minimal'] },
@@ -246,7 +263,7 @@ export const CV_TEMPLATES = [
   { id: 'outline', ats: 'excellent', family: 'sober', tags: [] },
   { id: 'finance', ats: 'excellent', family: 'sober', tags: ['serif', 'minimal'] },
   { id: 'split', ats: 'good', family: 'sober', tags: ['columns'] },
-  { id: 'airy', ats: 'excellent', family: 'sober', tags: ['minimal'] },
+  { id: 'airy', ats: 'excellent', family: 'sober', tags: ['readable', 'minimal'] },
   { id: 'cards', ats: 'excellent', family: 'sober', tags: [] },
   { id: 'linear', ats: 'excellent', family: 'sober', tags: ['minimal'] },
   { id: 'typewriter', ats: 'excellent', family: 'sober', tags: ['mono', 'paper'] },
@@ -255,7 +272,7 @@ export type CvTemplateId = (typeof CV_TEMPLATES)[number]['id'];
 export type CvTemplateFamily = (typeof CV_TEMPLATES)[number]['family'];
 /** Traits de style filtrables dans la galerie (fond sombre, deux colonnes, serif, chasse fixe…). */
 export type CvTemplateTag = (typeof CV_TEMPLATES)[number]['tags'][number];
-export const CV_TEMPLATE_TAGS = ['dark', 'columns', 'serif', 'mono', 'paper', 'colorful', 'minimal'] as const satisfies readonly CvTemplateTag[];
+export const CV_TEMPLATE_TAGS = ['readable', 'dark', 'columns', 'serif', 'mono', 'paper', 'colorful', 'minimal'] as const satisfies readonly CvTemplateTag[];
 /** Note de compatibilité ATS d'un modèle, d'après les risques de lecture connus (colonnes, etc.). */
 export type AtsCompatibility = 'excellent' | 'good' | 'fair';
 export const DEFAULT_TEMPLATE: CvTemplateId = 'classic';
@@ -345,6 +362,8 @@ export function createProfile(): Profile {
     birthDate: '',
     nationality: '',
     drivingLicense: '',
+    disability: '',
+    disabilityPlacement: 'contact',
     summary: '',
     photoId: null,
     qrLinkId: null,
@@ -362,6 +381,7 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     fonts: { heading: null, body: null },
     accentColor: ACCENT_COLORS[0],
     layout: { ...DEFAULT_LAYOUT },
+    dateStyle: 'month',
     profile: createProfile(),
     sections: (['experience', 'education', 'skills', 'languages'] as const).map(createSection),
     letter: null,

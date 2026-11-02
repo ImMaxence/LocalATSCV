@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LanguageService } from '../../core/i18n/language.service';
+import { DisplayMenu } from '../display-menu/display-menu';
 import { LanguageSelect } from '../language-select/language-select';
 import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
@@ -10,7 +11,14 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
   changeDetection: ChangeDetectionStrategy.OnPush,
   // L'hôte ne crée pas de boîte : le sticky de <header> s'applique à toute la hauteur de la page.
   host: { class: 'contents' },
-  imports: [RouterLink, RouterLinkActive, TranslocoDirective, LanguageSelect, ThemeToggle],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    TranslocoDirective,
+    LanguageSelect,
+    DisplayMenu,
+    ThemeToggle,
+  ],
   template: `
     <header
       *transloco="let t"
@@ -45,6 +53,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
         <div class="ms-auto flex items-center gap-2">
           <app-language-select />
+          <app-display-menu />
           <app-theme-toggle />
           <a routerLink="/editor" class="btn btn-primary hidden py-2! sm:inline-flex">
             {{ t('nav.editor') }}

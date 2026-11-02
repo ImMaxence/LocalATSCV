@@ -28,7 +28,8 @@
     "changelog": "新功能",
     "legalNotice": "法律聲明",
     "terms": "使用條款",
-    "privacy": "隱私權政策"
+    "privacy": "隱私權政策",
+    "accessibility": "無障礙聲明"
   },
   "seo": {
     "home": "免費製作幫你拿到面試的履歷：72 款範本、風格一致的求職信、針對每個職缺調整以及 ATS 檢查。免註冊，資料只留在你的裝置上",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV 各版本更新：新的履歷範本、功能與修正",
     "legalNotice": "LocalATSCV 法律聲明：發布者、主機代管與聯絡方式",
     "terms": "LocalATSCV 使用條款：免費且開放原始碼的履歷製作工具",
-    "privacy": "LocalATSCV 隱私權政策：不蒐集任何資料，你的履歷留在瀏覽器中"
+    "privacy": "LocalATSCV 隱私權政策：不蒐集任何資料，你的履歷留在瀏覽器中",
+    "accessibility": "LocalATSCV 的無障礙：鍵盤操作、螢幕閱讀器、顯示設定、朗讀功能及已知限制"
   },
   "footer": {
     "tagline": "從不查看你資料的免費履歷製作工具",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "沒有網路也能用嗎？",
           "a": "可以。首次造訪後，你可以離線編輯和下載履歷，甚至能像 App 一樣把 LocalATSCV 加到手機或電腦的主畫面"
+        },
+        "disability": {
+          "q": "我需要註明身心障礙嗎？",
+          "a": "從來都不是必須的。如果你願意，編輯器會提供履歷所在國家認可的說法（法國的 RQTH、義大利的 categorie protette 等），可放在聯絡資訊旁、履歷末尾或僅在求職信中。你也可以只在部分版本中保留"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "職缺契合度",
       "sent": "不傳送任何資料",
       "robot": "專業技能 CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> 麵包師兼甜點師 酥皮點心 <n>●●●●○</n> 工作經歷 <n>� camille.mar</n> 麵包師 <n>tin@example.com</n> 2021 – 至今 西點 <n>●●●○○</n> 範例烘焙坊 語言能力 英文 每天早上製作 300 個…"
+    },
+    "inclusive": {
+      "eyebrow": "人人可用",
+      "title": "一份人人適用的履歷，身心障礙者也一樣",
+      "text": "是否註明認定的障礙、調整顯示、聆聽履歷、一步一步完成：LocalATSCV 配合你，而不是讓你配合它",
+      "countries": "每個國家的合適說法",
+      "private": "健康資訊不該放在伺服器上：你的資訊留在你的裝置裡，只有你決定時才會列印",
+      "points": {
+        "disclosure": {
+          "title": "說，或不說",
+          "text": "選填的註明，放在聯絡資訊旁、履歷末尾或僅在求職信中，並用簡單的話說明利弊"
+        },
+        "display": {
+          "title": "適合你的顯示",
+          "text": "更大的文字，為閱讀障礙或低視能者準備的易讀字型，增強對比，減少動畫"
+        },
+        "listen": {
+          "title": "朗讀你的履歷",
+          "text": "用裝置的聲音聽一遍履歷和求職信。非常適合找出錯字或過長的句子"
+        },
+        "guided": {
+          "title": "一步一步，不迷路",
+          "text": "一次一個區塊，配上淺白的建議，直到下載 PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "空一行分隔兩個段落 · 用 **粗體** 標出關鍵字",
       "outline": "插入架構",
       "closing": "結語",
-      "fileName": "求職信"
+      "fileName": "求職信",
+      "addDisability": "加入一句關於我身心障礙的話"
     },
     "fit": {
       "pages": "{{count}} 頁",
@@ -376,7 +408,13 @@
       "settingsHint": "文字始終是真實文字：只有版面會改變",
       "reset": "範本預設版面",
       "grayscale": "以黑白檢視",
-      "grayscaleHint": "模擬黑白列印效果：匯出的 PDF 仍保留顏色"
+      "grayscaleHint": "模擬黑白列印效果：匯出的 PDF 仍保留顏色",
+      "listen": "聆聽文件",
+      "stopListening": "停止朗讀",
+      "dates": "日期",
+      "datesMonth": "年月",
+      "datesYear": "僅年份",
+      "datesHint": "只顯示年份時，職涯中的短暫空白就不再明顯"
     },
     "versions": {
       "label": "目前顯示的版本",
@@ -424,7 +462,30 @@
       "drivingLicense": "駕照",
       "drivingLicensePlaceholder": "例如：普通小型車駕照，有自用車",
       "qrToggle": "將此連結顯示為 QR 碼",
-      "linksHint": "標誌（LinkedIn、GitHub、YouTube 等）會自動加上。按下 QR 按鈕後，多數設計範本會以 QR 碼顯示此連結"
+      "linksHint": "標誌（LinkedIn、GitHub、YouTube 等）會自動加上。按下 QR 按鈕後，多數設計範本會以 QR 碼顯示此連結",
+      "disability": {
+        "title": "身心障礙",
+        "subtitle": "選填，只在你願意時填寫",
+        "intro": "是否註明完全由你決定，沒有任何義務。這項資訊永遠不會離開你的裝置",
+        "country": {
+          "fr": "在法國，RQTH 受到員工 20 人以上企業的關注，這些企業必須僱用 6 % 的身障員工",
+          "en": "在英國和美國，通常在雇主的申請表中說明，而不是寫在履歷上",
+          "it": "在義大利，履歷上常註明 «categorie protette (L. 68/99)»，可申請保留給身障者的職缺",
+          "es": "在西班牙，常會註明認定程度至少 33 % 的障礙：員工 50 人以上的企業會保留 2 % 的職缺",
+          "de": "在德國，公部門雇主必須邀請被認定為 «schwerbehindert» 且符合職缺條件的求職者參加面試"
+        },
+        "label": "履歷上的註明",
+        "suggestions": "常用說法：",
+        "placement": "顯示位置",
+        "placements": {
+          "contact": "與聯絡資訊一起",
+          "section": "在履歷末尾",
+          "letter": "僅在求職信中"
+        },
+        "letterHint": "該註明不會出現在履歷上。在「求職信」分頁中，一個按鈕可加入現成的句子",
+        "pros": "好處：重視多元的雇主（共融計畫、身障就業比例）更快注意到你，工作上的調整也更容易溝通",
+        "cons": "顧慮：部分招募人員仍有偏見。你也可以之後再說，在面試時或錄取後，或者不說"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "打字機風格",
         "paper": "紙張質感",
         "colorful": "多彩",
-        "minimal": "極簡"
+        "minimal": "極簡",
+        "readable": "非常易讀"
       },
       "favorite": "加入收藏",
       "unfavorite": "取消收藏",
@@ -895,7 +957,8 @@
       "keywordsGroup": "關鍵字",
       "createVersion": "為此職缺建立目標版本",
       "createVersionHint": "與職缺無關的經歷和要點會被取消勾選：你可以再調整",
-      "savedInVersion": "職缺說明已隨版本「{{name}}」儲存"
+      "savedInVersion": "職缺說明已隨版本「{{name}}」儲存",
+      "inclusive": "這個職缺歡迎身心障礙者應徵。如果願意，可在個人資料底部的「身心障礙」中加入註明"
     },
     "weak": {
       "hint": "「{{phrase}}」描述的是職責：請以行動動詞開頭"
@@ -906,6 +969,29 @@
       "body": "內文",
       "default": "範本預設",
       "hint": "ATS 都能順利讀取這些字型：文字始終是真實文字"
+    },
+    "health": {
+      "hint": "不需說明醫療原因，將「{{phrase}}」換成："
+    },
+    "guided": {
+      "toggle": "逐步模式",
+      "toggleHint": "一次一個區塊，附簡單建議",
+      "step": "第 {{n}} 步，共 {{total}} 步",
+      "previous": "上一步",
+      "next": "下一步",
+      "finishTitle": "最後一步",
+      "tips": {
+        "profile": "寫下你的姓名、職業和聯絡方式。簡介：用 2 到 3 句話說明你會做什麼",
+        "experience": "由新到舊列出工作、實習和專案經歷。每段用 2 到 3 句短句說明你做了什麼",
+        "education": "由新到舊列出學歷和訓練",
+        "projects": "展示一兩個成功的專案，並寫出具體成果",
+        "certifications": "加入對職缺有用的證照和資格，並註明日期",
+        "custom": "加入放不進其他區塊的內容：志工服務、社會參與、實用資訊",
+        "skills": "列出你會的東西：工具、軟體、技能。用逗號分隔",
+        "languages": "寫出你會說的語言和程度",
+        "interests": "加入 2 到 3 個興趣：有助於在面試中開啟話題",
+        "finish": "選一個你喜歡的範本，然後下載 PDF 履歷。之後隨時可以回來修改"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "本文件以英文顯示。僅法文版本具有法律效力。",
     "error": "無法載入此文件。"
+  },
+  "display": {
+    "label": "顯示與無障礙",
+    "textSize": "文字大小",
+    "sizes": {
+      "normal": "標準",
+      "large": "大",
+      "xlarge": "特大"
+    },
+    "options": {
+      "readableFont": "易讀字型",
+      "spacing": "加大文字間距",
+      "contrast": "增強對比",
+      "reduceMotion": "減少動畫"
+    },
+    "reset": "預設顯示",
+    "note": "這些設定只改變介面，絕不會改變列印出來的履歷"
   }
 }

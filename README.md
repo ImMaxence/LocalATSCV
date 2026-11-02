@@ -40,6 +40,7 @@ Most online resume builders, on the other hand, want your email, your phone numb
 | Tailor one master resume to every job   |     ✅     |         Rarely         |
 | Works offline                           |     ✅     |           ❌           |
 | Open source                             |     ✅     |           ❌           |
+| Accessible, disability-friendly         |     ✅     |         Rarely         |
 
 ## Everything you need to land the job
 
@@ -47,7 +48,7 @@ Most online resume builders, on the other hand, want your email, your phone numb
 
 53 graphic designs (Bento, Memphis, Bauhaus, Brutal, Editorial, Nocturne, Sorbet, Origami, Polaroid, Terminal, Retro, Cosmos, Ticket, Comic, Gazette, Watercolor, Art Deco, Glass, Y2K, Riso, Collage, Marble, Stickers, Kraft, Linocut, Candy, Metro, Stained glass…) and 19 classic ones (Classic, Executive, Elegant, Ledger, Academic, Compact, Finance, Split, Airy, Cards, Linear, Typewriter…). Every single template prints real, selectable text, in reading order, with standard section titles.
 
-Pick them in a gallery that stays fast with 72 entries: static thumbnails, a live preview of *your* CV in the selected template, filters by family and style (dark, two columns, book style, typewriter style, paper, colorful, minimalist), search, favorites, recently used, suggestions based on the job ad you are tailoring to, and keyboard navigation. From the toolbar, flip through templates with the previous / next arrows or `Ctrl+Shift+←/→`.
+Pick them in a gallery that stays fast with 72 entries: static thumbnails, a live preview of *your* CV in the selected template, filters by family and style (very readable, dark, two columns, book style, typewriter style, paper, colorful, minimalist), search, favorites, recently used, suggestions based on the job ad you are tailoring to, keyboard navigation, and 4, 3, 2 or 1 templates per row. From the toolbar, flip through templates with the previous / next arrows or `Ctrl+Shift+←/→`.
 
 ![Eight of the graphic templates: Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo and Ribbon](docs/screenshots/templates-showcase.png)
 
@@ -84,6 +85,20 @@ Import an existing resume (**PDF or Word .docx**), your **LinkedIn profile PDF**
 - Resume content in English, French, Italian, Spanish or German
 - In English, photo, date of birth and nationality are hidden automatically, as recruiters expect
 
+### ♿ Accessible to everyone, disability included
+
+Whether to mention a recognized disability is a personal choice, and the right wording depends on the country. LocalATSCV makes both easy:
+
+- **Optional disability mention** with the wording recruiters recognize in your resume's country: RQTH in France, *categorie protette (L. 68/99)* in Italy, *certificado de discapacidad* in Spain, *Schwerbehinderung* in Germany. Show it with your contact details, at the end of the resume or only in the cover letter, with the pros and cons explained simply. Each targeted version can keep it or hide it
+- **A ready-made sentence** for the cover letter, and a heads-up when a job ad welcomes applicants with disabilities
+- **Career breaks without explanations**: years-only dates, and medical reasons ("sick leave"…) spotted and replaced with a neutral "Career break" in one click
+- **Display settings** for the whole interface: larger text, the highly legible Atkinson Hyperlegible font, wider spacing, stronger contrast, reduced motion. Your printed resume never changes
+- **Read aloud** for your resume and cover letter, with your device's own voice
+- **Step by step mode**: one section at a time, with a tip in plain language, all the way to the PDF
+- **"Very readable" filter** in the gallery: single-column templates with large type and strong contrast
+
+Health information is sensitive: like everything else, it stays on your device. See the [accessibility statement](https://localatscv.mbonnici.fr/en/legal/accessibility).
+
 ### 💡 And all the small things that matter
 
 Live A4 preview with page-break markers · drag and drop for sections, entries and bullets (keyboard accessible) · Undo / Redo everywhere (Ctrl+Z / Ctrl+Y) · guided language levels (A1 to C2, fluent, native…) · auto-save · JSON backup and restore · light and dark themes · installable app.
@@ -103,6 +118,8 @@ Live A4 preview with page-break markers · drag and drop for sections, entries a
 | ![Editor in dark theme](docs/screenshots/editor-dark.png)       | ![Home page](docs/screenshots/landing-light.png)           |
 | **What an ATS reads**                                           | **Privacy**                                                |
 | ![ATS robot view](docs/screenshots/ats-robot-view.png)          | ![Privacy](docs/screenshots/privacy.png)                   |
+| **Optional disability mention**                                 | **Accessible to everyone**                                 |
+| ![Disability mention](docs/screenshots/disability.png)          | ![Accessible to everyone](docs/screenshots/accessibility.png) |
 
 <p align="center">
   <img src="docs/screenshots/mobile-light.png" alt="Mobile version, light theme" width="260" />

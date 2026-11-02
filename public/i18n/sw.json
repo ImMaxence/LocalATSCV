@@ -28,7 +28,8 @@
     "changelog": "Mapya",
     "legalNotice": "Taarifa za kisheria",
     "terms": "Masharti ya matumizi",
-    "privacy": "Sera ya faragha"
+    "privacy": "Sera ya faragha",
+    "accessibility": "Taarifa ya ufikivu"
   },
   "seo": {
     "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 72, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
@@ -37,7 +38,8 @@
     "changelog": "Mapya ya LocalATSCV kwa kila toleo: violezo vipya vya CV, vipengele na marekebisho",
     "legalNotice": "Taarifa za kisheria za LocalATSCV: mchapishaji, upangishaji na mawasiliano",
     "terms": "Masharti ya matumizi ya LocalATSCV, kitengeneza CV cha bure na chanzo huria",
-    "privacy": "Sera ya faragha ya LocalATSCV: hakuna data inayokusanywa, CV yako inabaki kwenye kivinjari chako"
+    "privacy": "Sera ya faragha ya LocalATSCV: hakuna data inayokusanywa, CV yako inabaki kwenye kivinjari chako",
+    "accessibility": "Ufikivu wa LocalATSCV: kusogea kwa kibodi, visoma skrini, mipangilio ya onyesho, kusoma kwa sauti na mipaka inayojulikana"
   },
   "footer": {
     "tagline": "Kitengeneza CV cha bure kisichoona data yako kamwe",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Je, inafanya kazi bila intaneti?",
           "a": "Ndiyo. Baada ya ziara ya kwanza, unaweza kuhariri na kupakua CV zako bila intaneti. Unaweza hata kuongeza LocalATSCV kwenye skrini ya mwanzo ya simu au kompyuta yako, kama programu"
+        },
+        "disability": {
+          "q": "Je, lazima nitaje ulemavu wangu?",
+          "a": "Si lazima kamwe. Ukitaka, kihariri kinapendekeza maneno yanayotambuliwa katika nchi ya CV yako (RQTH Ufaransa, categorie protette Italia…), pamoja na mawasiliano, mwishoni mwa CV au kwenye barua tu. Unaweza pia kuyaacha katika baadhi ya matoleo tu"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Ulinganifu na tangazo la kazi",
       "sent": "Hakuna kinachotumwa",
       "robot": "UJUZI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Mwokaji mikate na keki Keki za tabaka <n>●●●●○</n> UZOEFU <n>� camille.mar</n> Mwokaji mikate <n>tin@example.com</n> 2021 – sasa Keki <n>●●●○○</n> Duka la Mikate la Mfano LUGHA Kiingereza Nilioka keki za tabaka…"
+    },
+    "inclusive": {
+      "eyebrow": "Inafikika kwa wote",
+      "title": "CV kwa kila mtu, pamoja na wenye ulemavu",
+      "text": "Kutaja ulemavu unaotambuliwa au la, kurekebisha onyesho, kusikiliza CV yako, kusonga hatua kwa hatua: LocalATSCV inajirekebisha kwako, si kinyume chake",
+      "countries": "Maneno sahihi kwa kila nchi",
+      "private": "Taarifa za afya hazina kazi kwenye seva: zako zinabaki kwenye kifaa chako na huchapishwa tu ukiamua",
+      "points": {
+        "disclosure": {
+          "title": "Kusema, au la",
+          "text": "Maelezo ya hiari pamoja na mawasiliano, mwishoni mwa CV au kwenye barua tu, faida na mipaka zikielezwa kwa urahisi"
+        },
+        "display": {
+          "title": "Onyesho linalokufaa",
+          "text": "Maandishi makubwa, fonti rahisi kusoma kwa wenye disleksia au uoni hafifu, utofautishaji ulioimarishwa, uhuishaji mdogo"
+        },
+        "listen": {
+          "title": "CV yako ikisomwa kwa sauti",
+          "text": "Kagua CV na barua kwa kusikiliza, kwa sauti ya kifaa chako. Bora kwa kugundua kosa la kuchapa au sentensi ndefu mno"
+        },
+        "guided": {
+          "title": "Hatua kwa hatua, bila kupotea",
+          "text": "Sehemu moja kwa wakati, na ushauri kwa lugha rahisi, hadi kupakua PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Mstari mtupu hutenganisha aya mbili · **herufi nzito** kwa maneno muhimu",
       "outline": "Weka muundo",
       "closing": "Hitimisho",
-      "fileName": "Barua ya maombi"
+      "fileName": "Barua ya maombi",
+      "addDisability": "Ongeza sentensi kuhusu ulemavu wangu"
     },
     "fit": {
       "pages": "Kurasa {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Maandishi yanabaki maandishi halisi: mpangilio tu ndio unabadilika",
       "reset": "Mpangilio wa kiolezo",
       "grayscale": "Onyesho la nyeusi na nyeupe",
-      "grayscaleHint": "Huiga uchapishaji wa nyeusi na nyeupe: PDF iliyohamishwa inabaki na rangi"
+      "grayscaleHint": "Huiga uchapishaji wa nyeusi na nyeupe: PDF iliyohamishwa inabaki na rangi",
+      "listen": "Sikiliza hati",
+      "stopListening": "Acha kusoma",
+      "dates": "Tarehe",
+      "datesMonth": "Mwezi na mwaka",
+      "datesYear": "Miaka tu",
+      "datesHint": "Kwa miaka pekee, pengo fupi kwenye taaluma halionekani tena"
     },
     "versions": {
       "label": "Toleo linaloonyeshwa",
@@ -424,7 +462,30 @@
       "drivingLicense": "Leseni ya udereva",
       "drivingLicensePlaceholder": "Mfano: Leseni daraja B, nina gari",
       "qrToggle": "Onyesha kiungo hiki kama msimbo wa QR",
-      "linksHint": "Nembo (LinkedIn, GitHub, YouTube…) huongezwa kiotomatiki. Kitufe cha QR huonyesha kiungo kama msimbo wa QR kwenye violezo vingi vya michoro"
+      "linksHint": "Nembo (LinkedIn, GitHub, YouTube…) huongezwa kiotomatiki. Kitufe cha QR huonyesha kiungo kama msimbo wa QR kwenye violezo vingi vya michoro",
+      "disability": {
+        "title": "Ulemavu",
+        "subtitle": "Si lazima, ukitaka tu",
+        "intro": "Kutaja au kutotaja ni uamuzi wako peke yako: hakuna kinachokulazimisha. Taarifa hii haitoki kamwe kwenye kifaa chako",
+        "country": {
+          "fr": "Nchini Ufaransa, RQTH inavutia kampuni zenye wafanyakazi 20 au zaidi, ambazo lazima ziajiri 6 % ya wafanyakazi wenye ulemavu",
+          "en": "Uingereza na Marekani, kwa kawaida hutajwa kwenye fomu ya maombi ya mwajiri badala ya kwenye CV",
+          "it": "Nchini Italia, maelezo «categorie protette (L. 68/99)» ni ya kawaida kwenye CV na hufungua nafasi zilizotengwa",
+          "es": "Nchini Uhispania, ulemavu unaotambuliwa wa angalau 33 % hutajwa mara nyingi: kampuni zenye wafanyakazi 50 au zaidi hutenga 2 % ya nafasi",
+          "de": "Nchini Ujerumani, waajiri wa umma lazima wawaite kwenye mahojiano waombaji wanaotambuliwa kama «schwerbehindert» wanaofaa nafasi"
+        },
+        "label": "Maelezo kwenye CV",
+        "suggestions": "Maneno ya kawaida:",
+        "placement": "Mahali pa kuonyesha",
+        "placements": {
+          "contact": "Pamoja na mawasiliano yangu",
+          "section": "Mwishoni mwa CV",
+          "letter": "Kwenye barua tu"
+        },
+        "letterHint": "Maelezo hayaonekani kwenye CV. Kwenye kichupo cha Barua, kitufe kinaongeza sentensi iliyo tayari",
+        "pros": "Faida: waajiri waliojitolea (mipango ya ujumuishaji, viwango) wanakupata haraka na marekebisho yanajadiliwa kwa urahisi zaidi",
+        "cons": "Hasara: baadhi ya waajiri bado wana chuki. Unaweza pia kulizungumzia baadaye, kwenye mahojiano au baada ya kuajiriwa, au kamwe"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Mtindo wa taipureta",
         "paper": "Karatasi",
         "colorful": "Rangi nyingi",
-        "minimal": "Rahisi"
+        "minimal": "Rahisi",
+        "readable": "Rahisi sana kusoma"
       },
       "favorite": "Ongeza kwenye vipendwa",
       "unfavorite": "Ondoa kwenye vipendwa",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Maneno muhimu",
       "createVersion": "Tengeneza toleo lililolengwa kwa kazi hii",
       "createVersionHint": "Uzoefu na vipengele visivyohusiana na kazi vitaondolewa alama: bado unaweza kurekebisha",
-      "savedInVersion": "Tangazo la kazi limehifadhiwa pamoja na toleo “{{name}}”"
+      "savedInVersion": "Tangazo la kazi limehifadhiwa pamoja na toleo “{{name}}”",
+      "inclusive": "Tangazo hili linakaribisha waombaji wenye ulemavu. Ukitaka, ongeza maelezo kwenye «Ulemavu», chini ya wasifu"
     },
     "weak": {
       "hint": "“{{phrase}}” inaeleza jukumu: anza na kitenzi cha kitendo"
@@ -906,6 +969,29 @@
       "body": "Maandishi",
       "default": "Kulingana na kiolezo",
       "hint": "ATS husoma fonti hizi zote vizuri: maandishi yanabaki maandishi halisi"
+    },
+    "health": {
+      "hint": "Hakuna haja ya sababu ya kitabibu, badilisha «{{phrase}}» kwa:"
+    },
+    "guided": {
+      "toggle": "Hali ya hatua kwa hatua",
+      "toggleHint": "Sehemu moja kwa wakati, na ushauri rahisi",
+      "step": "Hatua {{n}} kati ya {{total}}",
+      "previous": "Iliyotangulia",
+      "next": "Inayofuata",
+      "finishTitle": "Hatua ya mwisho",
+      "tips": {
+        "profile": "Andika jina lako, kazi yako na jinsi ya kukufikia. Muhtasari: sentensi 2 au 3 kuhusu unachoweza kufanya",
+        "experience": "Orodhesha kazi, mafunzo kazini na majukumu, ya karibuni kwanza. Kwa kila moja, sentensi fupi 2 au 3 kuhusu ulichofanya",
+        "education": "Orodhesha vyeti vya elimu na mafunzo, ya karibuni kwanza",
+        "projects": "Onyesha mradi mmoja au miwili iliyofanikiwa, yenye matokeo halisi",
+        "certifications": "Ongeza vyeti na leseni zinazofaa kwa nafasi, pamoja na tarehe",
+        "custom": "Ongeza kisichofaa mahali pengine: kujitolea, ushiriki, taarifa muhimu",
+        "skills": "Orodhesha unachoweza: zana, programu, ujuzi. Zitenganishe kwa koma",
+        "languages": "Taja lugha unazozungumza na kiwango chako",
+        "interests": "Ongeza mambo 2 au 3 unayopenda: husaidia kuanzisha mazungumzo kwenye mahojiano",
+        "finish": "Chagua kiolezo unachopenda, kisha pakua CV yako kama PDF. Unaweza kurudi wakati wowote kuibadilisha"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Hati hii inaonyeshwa kwa Kiingereza. Toleo la Kifaransa pekee ndilo lenye nguvu ya kisheria.",
     "error": "Hati hii haikuweza kupakiwa."
+  },
+  "display": {
+    "label": "Onyesho na ufikivu",
+    "textSize": "Ukubwa wa maandishi",
+    "sizes": {
+      "normal": "Kawaida",
+      "large": "Kubwa",
+      "xlarge": "Kubwa sana"
+    },
+    "options": {
+      "readableFont": "Fonti rahisi sana kusoma",
+      "spacing": "Maandishi yenye nafasi zaidi",
+      "contrast": "Utofautishaji ulioimarishwa",
+      "reduceMotion": "Punguza uhuishaji"
+    },
+    "reset": "Onyesho chaguomsingi",
+    "note": "Mipangilio hii inabadilisha kiolesura tu, kamwe si CV yako iliyochapishwa"
   }
 }

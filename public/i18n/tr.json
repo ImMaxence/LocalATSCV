@@ -28,7 +28,8 @@
     "changelog": "Yenilikler",
     "legalNotice": "Yasal bildirim",
     "terms": "Kullanım koşulları",
-    "privacy": "Gizlilik politikası"
+    "privacy": "Gizlilik politikası",
+    "accessibility": "Erişilebilirlik beyanı"
   },
   "seo": {
     "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 72 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
@@ -37,7 +38,8 @@
     "changelog": "LocalATSCV'deki yenilikler, sürüm sürüm: yeni CV şablonları, özellikler ve düzeltmeler",
     "legalNotice": "LocalATSCV yasal bildirimi: yayıncı, barındırma ve iletişim",
     "terms": "Ücretsiz ve açık kaynaklı CV oluşturucu LocalATSCV'nin kullanım koşulları",
-    "privacy": "LocalATSCV gizlilik politikası: hiçbir veri toplanmaz, CV'leriniz tarayıcınızda kalır"
+    "privacy": "LocalATSCV gizlilik politikası: hiçbir veri toplanmaz, CV'leriniz tarayıcınızda kalır",
+    "accessibility": "LocalATSCV erişilebilirliği: klavyeyle gezinme, ekran okuyucular, görünüm ayarları, sesli okuma ve bilinen sınırlamalar"
   },
   "footer": {
     "tagline": "Verilerinizi asla görmeyen ücretsiz CV oluşturucu",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "İnternetsiz çalışır mı?",
           "a": "Evet. İlk ziyaretten sonra CV'lerinizi bağlantı olmadan düzenleyip indirebilirsiniz. LocalATSCV'yi bir uygulama gibi telefonunuzun ya da bilgisayarınızın ana ekranına bile ekleyebilirsiniz"
+        },
+        "disability": {
+          "q": "Engelliliğimi belirtmeli miyim?",
+          "a": "Asla zorunlu değildir. İsterseniz düzenleyici, özgeçmişinizin ülkesinde tanınan ifadeyi önerir (Fransa'da RQTH, İtalya'da categorie protette…); iletişim bilgilerinizle, özgeçmişin sonunda ya da yalnızca mektupta. Bazı sürümlerde tutup diğerlerinde kaldırabilirsiniz"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "İlanla eşleşme",
       "sent": "Hiçbir şey gönderilmez",
       "robot": "YETKİNLİKLER CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Fırıncı ve pastacı Milföy <n>●●●●○</n> DENEYİM <n>� camille.mar</n> Fırıncı <n>tin@example.com</n> 2021 – günümüz Pastacılık <n>●●●○○</n> Örnek Fırın DİLLER İngilizce Her sabah 300 adet…"
+    },
+    "inclusive": {
+      "eyebrow": "Herkes için erişilebilir",
+      "title": "Herkese bir özgeçmiş, engellilik dahil",
+      "text": "Tanınmış bir engelliliği belirtmek ya da belirtmemek, görünümü ayarlamak, özgeçmişinizi dinlemek, adım adım ilerlemek: LocalATSCV size uyum sağlar, tersi değil",
+      "countries": "Her ülke için doğru ifade",
+      "private": "Sağlık bilgisinin bir sunucuda işi yok: sizinki cihazınızda kalır ve yalnızca siz karar verirseniz basılır",
+      "points": {
+        "disclosure": {
+          "title": "Söylemek ya da söylememek",
+          "text": "İletişim bilgileriyle, özgeçmişin sonunda ya da yalnızca mektupta isteğe bağlı ibare; artıları ve sınırları sade bir dille açıklanır"
+        },
+        "display": {
+          "title": "Size göre bir görünüm",
+          "text": "Daha büyük metin, disleksi veya az görme durumları için çok okunaklı yazı tipi, güçlendirilmiş kontrast, daha az animasyon"
+        },
+        "listen": {
+          "title": "Özgeçmişiniz sesli okunur",
+          "text": "Özgeçmişinizi ve mektubunuzu cihazınızın sesiyle kulaktan kontrol edin. Bir yazım hatasını veya fazla uzun bir cümleyi yakalamak için ideal"
+        },
+        "guided": {
+          "title": "Adım adım, kaybolmadan",
+          "text": "Her seferinde bir bölüm, sade dilde bir ipucuyla, PDF indirmeye kadar"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Boş bir satır iki paragrafı ayırır · anahtar kelime için **kalın**",
       "outline": "Taslak ekle",
       "closing": "Kapanış",
-      "fileName": "Ön yazı"
+      "fileName": "Ön yazı",
+      "addDisability": "Engelliliğim hakkında bir cümle ekle"
     },
     "fit": {
       "pages": "{{count}} sayfa",
@@ -376,7 +408,13 @@
       "settingsHint": "Metin gerçek metin olarak kalır: yalnızca düzen değişir",
       "reset": "Şablonun düzeni",
       "grayscale": "Siyah beyaz görüntüle",
-      "grayscaleHint": "Siyah beyaz baskıyı taklit eder: dışa aktarılan PDF renklerini korur"
+      "grayscaleHint": "Siyah beyaz baskıyı taklit eder: dışa aktarılan PDF renklerini korur",
+      "listen": "Belgeyi dinle",
+      "stopListening": "Okumayı durdur",
+      "dates": "Tarihler",
+      "datesMonth": "Ay ve yıl",
+      "datesYear": "Yalnızca yıllar",
+      "datesHint": "Yalnızca yıllarla kariyerdeki kısa bir ara artık görünmez"
     },
     "versions": {
       "label": "Görüntülenen sürüm",
@@ -424,7 +462,30 @@
       "drivingLicense": "Sürücü belgesi",
       "drivingLicensePlaceholder": "Örn. B sınıfı ehliyet, kendi aracı var",
       "qrToggle": "Bu bağlantıyı QR kod olarak göster",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) otomatik eklenir. QR düğmesi, grafik şablonların çoğunda bağlantıyı QR kod olarak gösterir"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) otomatik eklenir. QR düğmesi, grafik şablonların çoğunda bağlantıyı QR kod olarak gösterir",
+      "disability": {
+        "title": "Engellilik",
+        "subtitle": "İsteğe bağlı, yalnızca isterseniz",
+        "intro": "Belirtip belirtmemek tamamen sizin seçiminiz: hiçbir şey sizi zorlamaz. Bu bilgi cihazınızdan asla çıkmaz",
+        "country": {
+          "fr": "Fransa'da RQTH, %6 engelli çalışan istihdam etmek zorunda olan 20 ve üzeri çalışanlı şirketlerin ilgisini çeker",
+          "en": "Birleşik Krallık ve ABD'de genellikle özgeçmişte değil, işverenin başvuru formunda belirtilir",
+          "it": "İtalya'da «categorie protette (L. 68/99)» ibaresi özgeçmişlerde yaygındır ve ayrılmış kadrolara erişim sağlar",
+          "es": "İspanya'da en az %33 tanınmış engellilik sıkça belirtilir: 50 ve üzeri çalışanlı şirketler kadrolarının %2'sini ayırır",
+          "de": "Almanya'da kamu işverenleri, «schwerbehindert» olarak tanınan ve pozisyona uygun adayları mülakata çağırmak zorundadır"
+        },
+        "label": "Özgeçmişteki ibare",
+        "suggestions": "Yaygın ifadeler:",
+        "placement": "Nerede gösterilsin",
+        "placements": {
+          "contact": "İletişim bilgilerimle",
+          "section": "Özgeçmişin sonunda",
+          "letter": "Yalnızca mektupta"
+        },
+        "letterHint": "İbare özgeçmişte görünmez. Mektup sekmesinde bir düğme hazır bir cümle ekler",
+        "pros": "Artısı: kararlı işverenler (kapsayıcılık programları, kotalar) sizi daha hızlı fark eder ve uyarlamalar daha kolay konuşulur",
+        "cons": "Eksisi: bazı işe alımcıların hâlâ önyargıları var. Bunu daha sonra, mülakatta ya da işe alındıktan sonra da konuşabilirsiniz, ya da hiç"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Daktilo stili",
         "paper": "Kâğıt",
         "colorful": "Renkli",
-        "minimal": "Minimalist"
+        "minimal": "Minimalist",
+        "readable": "Çok okunaklı"
       },
       "favorite": "Favorilere ekle",
       "unfavorite": "Favorilerden çıkar",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Anahtar kelimeler",
       "createVersion": "Bu ilan için hedefli bir sürüm oluştur",
       "createVersionHint": "İlanla ilgisi olmayan deneyim ve maddelerin işareti kaldırılacak: bunları ayarlayabilirsiniz",
-      "savedInVersion": "İlan “{{name}}” sürümüyle kaydedildi"
+      "savedInVersion": "İlan “{{name}}” sürümüyle kaydedildi",
+      "inclusive": "Bu ilan engelli adayları memnuniyetle karşılıyor. İsterseniz profilin altındaki «Engellilik» bölümüne bir ibare ekleyin"
     },
     "weak": {
       "hint": "“{{phrase}}” bir görevi tanımlıyor: bir eylem fiiliyle başlayın"
@@ -906,6 +969,29 @@
       "body": "Metin",
       "default": "Şablonunki",
       "hint": "ATS'ler bu yazı tiplerinin hepsini iyi okur: metin gerçek metin olarak kalır"
+    },
+    "health": {
+      "hint": "Tıbbi bir neden gerekmez, «{{phrase}}» yerine şunu yazın:"
+    },
+    "guided": {
+      "toggle": "Adım adım modu",
+      "toggleHint": "Her seferinde bir bölüm, basit bir ipucuyla",
+      "step": "Adım {{n}} / {{total}}",
+      "previous": "Geri",
+      "next": "İleri",
+      "finishTitle": "Son adım",
+      "tips": {
+        "profile": "Adınızı, mesleğinizi ve size nasıl ulaşılacağını yazın. Özet: neler yapabildiğinizi anlatan 2 ya da 3 cümle",
+        "experience": "İşlerinizi, stajlarınızı ve görevlerinizi en yeniden başlayarak yazın. Her biri için ne yaptığınızı anlatan 2 ya da 3 kısa cümle",
+        "education": "Diplomalarınızı ve eğitimlerinizi en yeniden başlayarak yazın",
+        "projects": "Somut bir sonuçla bir ya da iki başarılı proje gösterin",
+        "certifications": "Pozisyon için yararlı sertifika ve yetkinlikleri tarihleriyle ekleyin",
+        "custom": "Başka yere uymayanları ekleyin: gönüllülük, taahhütler, yararlı bilgiler",
+        "skills": "Neler yapabildiğinizi sıralayın: araçlar, yazılımlar, beceriler. Virgülle ayırın",
+        "languages": "Konuştuğunuz dilleri ve seviyenizi yazın",
+        "interests": "2 ya da 3 hobi ekleyin: mülakatta sohbeti başlatmaya yardımcı olur",
+        "finish": "Beğendiğiniz bir şablon seçin ve özgeçmişinizi PDF olarak indirin. Dilediğiniz zaman geri dönüp düzenleyebilirsiniz"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Bu belge İngilizce gösteriliyor. Yalnızca Fransızca sürüm hukuken bağlayıcıdır.",
     "error": "Bu belge yüklenemedi."
+  },
+  "display": {
+    "label": "Görünüm ve erişilebilirlik",
+    "textSize": "Metin boyutu",
+    "sizes": {
+      "normal": "Normal",
+      "large": "Büyük",
+      "xlarge": "Çok büyük"
+    },
+    "options": {
+      "readableFont": "Çok okunaklı yazı tipi",
+      "spacing": "Daha aralıklı metin",
+      "contrast": "Güçlendirilmiş kontrast",
+      "reduceMotion": "Daha az animasyon"
+    },
+    "reset": "Varsayılan görünüm",
+    "note": "Bu ayarlar arayüzü değiştirir, basılı özgeçmişinizi asla"
   }
 }

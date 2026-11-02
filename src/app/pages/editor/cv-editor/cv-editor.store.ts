@@ -9,6 +9,7 @@ import {
   CvSection,
   CvTemplateId,
   CvVersion,
+  DateStyle,
   Entry,
   MasterCv,
   Profile,
@@ -223,6 +224,10 @@ export class CvEditorStore {
 
   setAccent(color: string): void {
     this.mutate((cv) => (cv.accentColor = color));
+  }
+
+  setDateStyle(style: DateStyle): void {
+    this.mutate((cv) => (cv.dateStyle = style));
   }
 
   /** `record: false` pour les étapes intermédiaires de l'ajustement automatique. */

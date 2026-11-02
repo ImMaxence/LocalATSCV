@@ -28,7 +28,8 @@
     "changelog": "Nowości",
     "legalNotice": "Nota prawna",
     "terms": "Warunki korzystania",
-    "privacy": "Polityka prywatności"
+    "privacy": "Polityka prywatności",
+    "accessibility": "Deklaracja dostępności"
   },
   "seo": {
     "home": "Utwórz za darmo CV, które zaprowadzi cię na rozmowę: 72 szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i kontrola ATS. Bez rejestracji, twoje dane zostają na twoim urządzeniu",
@@ -37,7 +38,8 @@
     "changelog": "Nowości w LocalATSCV, wersja po wersji: nowe szablony CV, funkcje i poprawki",
     "legalNotice": "Nota prawna LocalATSCV: wydawca, hosting i kontakt",
     "terms": "Warunki korzystania z LocalATSCV, darmowego kreatora CV o otwartym kodzie",
-    "privacy": "Polityka prywatności LocalATSCV: żadne dane nie są zbierane, Twoje CV zostają w przeglądarce"
+    "privacy": "Polityka prywatności LocalATSCV: żadne dane nie są zbierane, Twoje CV zostają w przeglądarce",
+    "accessibility": "Dostępność LocalATSCV: obsługa klawiaturą, czytniki ekranu, ustawienia wyświetlania, czytanie na głos i znane ograniczenia"
   },
   "footer": {
     "tagline": "Darmowy kreator CV, który nigdy nie widzi twoich danych",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Czy działa bez internetu?",
           "a": "Tak. Po pierwszej wizycie możesz edytować i pobierać swoje CV bez internetu. Możesz nawet dodać LocalATSCV do ekranu głównego telefonu lub komputera, jak aplikację"
+        },
+        "disability": {
+          "q": "Czy muszę wspomnieć o niepełnosprawności?",
+          "a": "Nigdy nie jest to obowiązkowe. Jeśli chcesz, edytor podpowie sformułowanie uznawane w kraju twojego CV (RQTH we Francji, categorie protette we Włoszech…), przy danych kontaktowych, na końcu CV lub tylko w liście. Możesz też zostawić je w niektórych wersjach, a w innych nie"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Dopasowanie do oferty",
       "sent": "Nic nie jest wysyłane",
       "robot": "UMIEJĘTNOŚCI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Piekarka i cukierniczka Rogaliki <n>●●●●○</n> DOŚWIADCZENIE <n>� camille.mar</n> Piekarka <n>tin@example.com</n> 2021 – obecnie Cukiernictwo <n>●●●○○</n> Piekarnia Przykład JĘZYKI Angielski Wypiek 300 rogalików…"
+    },
+    "inclusive": {
+      "eyebrow": "Dostępne dla wszystkich",
+      "title": "CV dla każdego, także z niepełnosprawnością",
+      "text": "Wspomnieć o orzeczonej niepełnosprawności lub nie, dostosować wyświetlanie, odsłuchać CV, iść krok po kroku: LocalATSCV dopasowuje się do ciebie, a nie odwrotnie",
+      "countries": "Właściwe sformułowanie dla każdego kraju",
+      "private": "Dane o zdrowiu nie mają czego szukać na serwerze: twoje zostają na twoim urządzeniu i drukują się tylko wtedy, gdy tak zdecydujesz",
+      "points": {
+        "disclosure": {
+          "title": "Powiedzieć czy nie",
+          "text": "Opcjonalna wzmianka przy danych kontaktowych, na końcu CV lub tylko w liście, z prosto wyjaśnionymi zaletami i ograniczeniami"
+        },
+        "display": {
+          "title": "Wyświetlanie na twoją miarę",
+          "text": "Większy tekst, bardzo czytelna czcionka przy dysleksji lub słabym wzroku, wzmocniony kontrast, mniej animacji"
+        },
+        "listen": {
+          "title": "Twoje CV czytane na głos",
+          "text": "Sprawdź CV i list na słuch, głosem swojego urządzenia. Idealne, by wyłapać literówkę lub zbyt długie zdanie"
+        },
+        "guided": {
+          "title": "Krok po kroku, bez gubienia się",
+          "text": "Jedna sekcja naraz, ze wskazówką prostym językiem, aż do pobrania PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Pusta linia oddziela dwa akapity · **pogrubienie** dla słowa kluczowego",
       "outline": "Wstaw szkic",
       "closing": "Zakończenie",
-      "fileName": "List motywacyjny"
+      "fileName": "List motywacyjny",
+      "addDisability": "Dodaj zdanie o mojej niepełnosprawności"
     },
     "fit": {
       "pages": "Stron: {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Tekst pozostaje prawdziwym tekstem: zmienia się tylko układ",
       "reset": "Układ szablonu",
       "grayscale": "Pokaż w czerni i bieli",
-      "grayscaleHint": "Symuluje wydruk czarno-biały: wyeksportowany PDF zachowuje kolory"
+      "grayscaleHint": "Symuluje wydruk czarno-biały: wyeksportowany PDF zachowuje kolory",
+      "listen": "Odsłuchaj dokument",
+      "stopListening": "Zatrzymaj czytanie",
+      "dates": "Daty",
+      "datesMonth": "Miesiąc i rok",
+      "datesYear": "Tylko lata",
+      "datesHint": "Przy samych latach krótka przerwa w karierze przestaje być widoczna"
     },
     "versions": {
       "label": "Wyświetlana wersja",
@@ -424,7 +462,30 @@
       "drivingLicense": "Prawo jazdy",
       "drivingLicensePlaceholder": "Np. Prawo jazdy kat. B, własny samochód",
       "qrToggle": "Pokaż ten link jako kod QR",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) jest dodawane automatycznie. Przycisk QR pokazuje link jako kod QR w większości szablonów graficznych"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) jest dodawane automatycznie. Przycisk QR pokazuje link jako kod QR w większości szablonów graficznych",
+      "disability": {
+        "title": "Niepełnosprawność",
+        "subtitle": "Opcjonalnie, tylko jeśli chcesz",
+        "intro": "To, czy o tym wspomnisz, zależy wyłącznie od ciebie: nic cię do tego nie zobowiązuje. Ta informacja nigdy nie opuszcza twojego urządzenia",
+        "country": {
+          "fr": "We Francji RQTH interesuje firmy zatrudniające co najmniej 20 osób, które muszą mieć 6 % pracowników z niepełnosprawnością",
+          "en": "W Wielkiej Brytanii i USA zwykle podaje się to w formularzu aplikacyjnym pracodawcy, a nie w CV",
+          "it": "We Włoszech zapis „categorie protette (L. 68/99)” jest częsty w CV i daje dostęp do stanowisk zarezerwowanych",
+          "es": "W Hiszpanii często podaje się uznaną niepełnosprawność co najmniej 33 %: firmy zatrudniające co najmniej 50 osób rezerwują 2 % stanowisk",
+          "de": "W Niemczech pracodawcy publiczni muszą zaprosić na rozmowę kandydatów uznanych za „schwerbehindert”, którzy pasują do stanowiska"
+        },
+        "label": "Wzmianka w CV",
+        "suggestions": "Typowe sformułowania:",
+        "placement": "Gdzie pokazać",
+        "placements": {
+          "contact": "Przy danych kontaktowych",
+          "section": "Na końcu CV",
+          "letter": "Tylko w liście"
+        },
+        "letterHint": "Wzmianka nie pojawia się w CV. W karcie List przycisk dodaje gotowe zdanie",
+        "pros": "Za: zaangażowani pracodawcy (programy włączające, wskaźniki zatrudnienia) szybciej cię zauważą, a dostosowania łatwiej omówić",
+        "cons": "Przeciw: niektórzy rekruterzy wciąż mają uprzedzenia. Możesz też wspomnieć o tym później, na rozmowie lub po zatrudnieniu, albo wcale"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Styl maszyny do pisania",
         "paper": "Papier",
         "colorful": "Kolorowy",
-        "minimal": "Minimalistyczny"
+        "minimal": "Minimalistyczny",
+        "readable": "Bardzo czytelny"
       },
       "favorite": "Dodaj do ulubionych",
       "unfavorite": "Usuń z ulubionych",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Słowa kluczowe",
       "createVersion": "Utwórz wersję docelową dla tej oferty",
       "createVersionHint": "Doświadczenia i punkty niezwiązane z ofertą zostaną odznaczone: możesz je dostosować",
-      "savedInVersion": "Oferta zapisana z wersją „{{name}}”"
+      "savedInVersion": "Oferta zapisana z wersją „{{name}}”",
+      "inclusive": "To ogłoszenie zaprasza osoby z niepełnosprawnością. Jeśli chcesz, dodaj wzmiankę w sekcji „Niepełnosprawność” na dole profilu"
     },
     "weak": {
       "hint": "„{{phrase}}” opisuje obowiązek: zacznij od czasownika akcji"
@@ -906,6 +969,29 @@
       "body": "Tekst główny",
       "default": "Z szablonu",
       "hint": "ATS dobrze odczytują wszystkie te czcionki: tekst pozostaje prawdziwym tekstem"
+    },
+    "health": {
+      "hint": "Powód medyczny jest zbędny, zastąp „{{phrase}}” tym:"
+    },
+    "guided": {
+      "toggle": "Tryb krok po kroku",
+      "toggleHint": "Jedna sekcja naraz, z prostą wskazówką",
+      "step": "Krok {{n}} z {{total}}",
+      "previous": "Wstecz",
+      "next": "Dalej",
+      "finishTitle": "Ostatni krok",
+      "tips": {
+        "profile": "Wpisz imię i nazwisko, zawód i jak się z tobą skontaktować. Podsumowanie: 2 lub 3 zdania o tym, co potrafisz",
+        "experience": "Podaj prace, staże i zlecenia, od najnowszych. Przy każdej 2 lub 3 krótkie zdania o tym, co robiłeś lub robiłaś",
+        "education": "Podaj dyplomy i szkolenia, od najnowszych",
+        "projects": "Pokaż jeden lub dwa udane projekty z konkretnym wynikiem",
+        "certifications": "Dodaj certyfikaty i uprawnienia przydatne na stanowisku, z datą",
+        "custom": "Dodaj to, co nie pasuje gdzie indziej: wolontariat, zaangażowanie, przydatne informacje",
+        "skills": "Wypisz, co potrafisz: narzędzia, programy, umiejętności. Oddziel je przecinkami",
+        "languages": "Podaj języki, którymi mówisz, i swój poziom",
+        "interests": "Dodaj 2 lub 3 zainteresowania: pomagają rozpocząć rozmowę kwalifikacyjną",
+        "finish": "Wybierz szablon, który ci się podoba, i pobierz CV jako PDF. Zawsze możesz wrócić i je poprawić"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Ten dokument jest wyświetlany po angielsku. Moc prawną ma wyłącznie wersja francuska.",
     "error": "Nie udało się wczytać tego dokumentu."
+  },
+  "display": {
+    "label": "Wyświetlanie i dostępność",
+    "textSize": "Rozmiar tekstu",
+    "sizes": {
+      "normal": "Normalny",
+      "large": "Duży",
+      "xlarge": "Bardzo duży"
+    },
+    "options": {
+      "readableFont": "Bardzo czytelna czcionka",
+      "spacing": "Większe odstępy",
+      "contrast": "Wzmocniony kontrast",
+      "reduceMotion": "Mniej animacji"
+    },
+    "reset": "Domyślne wyświetlanie",
+    "note": "Te ustawienia zmieniają interfejs, nigdy wydrukowane CV"
   }
 }

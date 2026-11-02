@@ -34,6 +34,12 @@ const publicRoutes: Routes = [
     title: 'pages.privacy',
     data: { doc: 'privacy' },
   },
+  {
+    path: 'legal/accessibility',
+    loadComponent: legalPage,
+    title: 'pages.accessibility',
+    data: { doc: 'accessibility' },
+  },
   // Adresse inconnue : accueil de la même langue.
   { path: '**', redirectTo: '' },
 ];

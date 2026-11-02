@@ -28,7 +28,8 @@
     "changelog": "Mga bago",
     "legalNotice": "Legal na abiso",
     "terms": "Mga tuntunin ng paggamit",
-    "privacy": "Patakaran sa privacy"
+    "privacy": "Patakaran sa privacy",
+    "accessibility": "Pahayag sa accessibility"
   },
   "seo": {
     "home": "Gumawa nang libre ng resume na magdadala sa iyo sa interview: 72 template, katugmang cover letter, pag-angkop sa bawat job posting at ATS check. Walang sign-up, nananatili sa device mo ang data mo",
@@ -37,7 +38,8 @@
     "changelog": "Ang mga bago sa LocalATSCV bawat bersyon: mga bagong template ng resume, feature at pag-aayos",
     "legalNotice": "Legal na abiso ng LocalATSCV: publisher, hosting at contact",
     "terms": "Mga tuntunin ng paggamit ng LocalATSCV, ang libre at open-source na resume builder",
-    "privacy": "Patakaran sa privacy ng LocalATSCV: walang kinokolektang data, nananatili sa browser mo ang resume mo"
+    "privacy": "Patakaran sa privacy ng LocalATSCV: walang kinokolektang data, nananatili sa browser mo ang resume mo",
+    "accessibility": "Accessibility ng LocalATSCV: pag-navigate gamit ang keyboard, mga screen reader, mga setting ng display, pagbasa nang malakas at mga kilalang limitasyon"
   },
   "footer": {
     "tagline": "Ang libreng resume builder na hindi kailanman nakakakita ng data mo",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Gumagana ba ito kahit walang internet?",
           "a": "Oo. Pagkatapos ng unang pagbisita, puwede mong i-edit at i-download ang mga resume mo kahit walang internet. Puwede mo pang idagdag ang LocalATSCV sa home screen ng phone o computer mo, parang app"
+        },
+        "disability": {
+          "q": "Kailangan ko bang banggitin ang aking kapansanan?",
+          "a": "Hindi ito kailanman obligado. Kung gusto mo, magmumungkahi ang editor ng pananalitang kinikilala sa bansa ng CV mo (RQTH sa France, categorie protette sa Italy…), kasama ng contact details, sa dulo ng CV o sa liham lang. Puwede mo rin itong panatilihin sa ilang bersyon lang"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Pagtutugma sa job posting",
       "sent": "Walang ipinapadala",
       "robot": "MGA KASANAYAN CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Panadera at pastry cook Pastry <n>●●●●○</n> KARANASAN <n>� camille.mar</n> Panadera <n>tin@example.com</n> 2021 – kasalukuyan Cake <n>●●●○○</n> Halimbawang Panaderya MGA WIKA English Gumawa ng 300 pastry…"
+    },
+    "inclusive": {
+      "eyebrow": "Bukas sa lahat",
+      "title": "CV para sa lahat, kasama ang may kapansanan",
+      "text": "Banggitin o hindi ang kinikilalang kapansanan, ayusin ang display, pakinggan ang CV mo, umusad nang hakbang-hakbang: ang LocalATSCV ang umaangkop sa iyo, hindi ang kabaligtaran",
+      "countries": "Tamang pananalita para sa bawat bansa",
+      "private": "Walang lugar sa server ang impormasyong pangkalusugan: nananatili sa device mo ang sa iyo at ipi-print lang kung ikaw ang magpasya",
+      "points": {
+        "disclosure": {
+          "title": "Sabihin, o hindi",
+          "text": "Opsyonal na banggit kasama ng contact details, sa dulo ng CV o sa liham lang, may simpleng paliwanag ng mga pakinabang at limitasyon"
+        },
+        "display": {
+          "title": "Display na akma sa iyo",
+          "text": "Mas malaking teksto, napakadaling basahing font para sa may dyslexia o mahinang paningin, mas malakas na contrast, mas kaunting animation"
+        },
+        "listen": {
+          "title": "Binabasa nang malakas ang CV mo",
+          "text": "Suriin ang CV at liham sa pakikinig, gamit ang boses ng device mo. Mainam para mahuli ang typo o masyadong mahabang pangungusap"
+        },
+        "guided": {
+          "title": "Hakbang-hakbang, hindi naliligaw",
+          "text": "Isang seksyon bawat oras, may payo sa simpleng wika, hanggang sa pag-download ng PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Isang blangkong linya ang naghihiwalay sa dalawang talata · **bold** para sa mga keyword",
       "outline": "Maglagay ng balangkas",
       "closing": "Pangwakas",
-      "fileName": "Cover letter"
+      "fileName": "Cover letter",
+      "addDisability": "Magdagdag ng pangungusap tungkol sa aking kapansanan"
     },
     "fit": {
       "pages": "{{count}} pahina",
@@ -376,7 +408,13 @@
       "settingsHint": "Nananatiling tunay na teksto ang teksto: ang layout lang ang nagbabago",
       "reset": "Layout ng template",
       "grayscale": "Preview na black and white",
-      "grayscaleHint": "Ginagaya ang black and white na printout: may kulay pa rin ang na-export na PDF"
+      "grayscaleHint": "Ginagaya ang black and white na printout: may kulay pa rin ang na-export na PDF",
+      "listen": "Pakinggan ang dokumento",
+      "stopListening": "Itigil ang pagbasa",
+      "dates": "Mga petsa",
+      "datesMonth": "Buwan at taon",
+      "datesYear": "Taon lang",
+      "datesHint": "Kapag taon lang, hindi na halata ang maikling pahinga sa karera"
     },
     "versions": {
       "label": "Ipinapakitang bersyon",
@@ -424,7 +462,30 @@
       "drivingLicense": "Lisensya sa pagmamaneho",
       "drivingLicensePlaceholder": "Hal: Professional driver's license, may sariling sasakyan",
       "qrToggle": "Ipakita ang link na ito bilang QR code",
-      "linksHint": "Awtomatikong idinadagdag ang mga logo (LinkedIn, GitHub, YouTube…). Ipinapakita ng QR button ang link bilang QR code sa karamihan ng mga graphic template"
+      "linksHint": "Awtomatikong idinadagdag ang mga logo (LinkedIn, GitHub, YouTube…). Ipinapakita ng QR button ang link bilang QR code sa karamihan ng mga graphic template",
+      "disability": {
+        "title": "Kapansanan",
+        "subtitle": "Opsyonal, kung gusto mo lang",
+        "intro": "Ikaw lang ang magpapasya kung babanggitin ito: walang pumipilit sa iyo. Hindi kailanman lumalabas sa device mo ang impormasyong ito",
+        "country": {
+          "fr": "Sa France, interesado sa RQTH ang mga kumpanyang may 20 o higit pang empleyado, na obligadong mag-empleyo ng 6 % na manggagawang may kapansanan",
+          "en": "Sa United Kingdom at United States, karaniwang isinasaad ito sa application form ng employer, hindi sa CV",
+          "it": "Sa Italy, karaniwan sa CV ang «categorie protette (L. 68/99)» at nagbubukas ito ng mga nakalaang posisyon",
+          "es": "Sa Spain, madalas isinasaad ang kinikilalang kapansanan na hindi bababa sa 33 %: naglalaan ng 2 % ng posisyon ang mga kumpanyang may 50 o higit pang empleyado",
+          "de": "Sa Germany, kailangang imbitahan ng mga pampublikong employer sa interview ang mga aplikanteng kinikilalang «schwerbehindert» na tugma sa posisyon"
+        },
+        "label": "Banggit sa CV",
+        "suggestions": "Karaniwang pananalita:",
+        "placement": "Saan ipapakita",
+        "placements": {
+          "contact": "Kasama ng aking contact details",
+          "section": "Sa dulo ng CV",
+          "letter": "Sa liham lang"
+        },
+        "letterHint": "Hindi lumalabas ang banggit sa CV. Sa tab na Liham, may button na nagdadagdag ng handang pangungusap",
+        "pros": "Pabor: mas mabilis kang mapapansin ng mga employer na may malasakit (inclusion program, quota) at mas madaling pag-usapan ang mga adjustment",
+        "cons": "Laban: may mga recruiter pang may pagkiling. Puwede mo rin itong banggitin mamaya, sa interview o pagkatapos matanggap, o hindi kailanman"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Istilong makinilya",
         "paper": "Papel",
         "colorful": "Makulay",
-        "minimal": "Minimalist"
+        "minimal": "Minimalist",
+        "readable": "Napakadaling basahin"
       },
       "favorite": "Idagdag sa mga paborito",
       "unfavorite": "Alisin sa mga paborito",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Mga keyword",
       "createVersion": "Gumawa ng naka-target na bersyon para sa trabahong ito",
       "createVersionHint": "Ia-uncheck ang mga karanasan at bullet na walang kaugnayan sa trabaho: puwede mo pa itong ayusin",
-      "savedInVersion": "Na-save ang job posting kasama ng bersyong “{{name}}”"
+      "savedInVersion": "Na-save ang job posting kasama ng bersyong “{{name}}”",
+      "inclusive": "Tinatanggap ng job ad na ito ang mga aplikanteng may kapansanan. Kung gusto mo, magdagdag ng banggit sa «Kapansanan», sa ibaba ng profile"
     },
     "weak": {
       "hint": "Gawain ang inilalarawan ng “{{phrase}}”: magsimula sa action verb"
@@ -906,6 +969,29 @@
       "body": "Teksto",
       "default": "Ayon sa template",
       "hint": "Mahusay na nababasa ng ATS ang lahat ng font na ito: nananatiling tunay na teksto ang teksto"
+    },
+    "health": {
+      "hint": "Hindi kailangan ng medikal na dahilan, palitan ang «{{phrase}}» ng:"
+    },
+    "guided": {
+      "toggle": "Hakbang-hakbang na mode",
+      "toggleHint": "Isang seksyon bawat oras, may simpleng payo",
+      "step": "Hakbang {{n}} sa {{total}}",
+      "previous": "Nakaraan",
+      "next": "Susunod",
+      "finishTitle": "Huling hakbang",
+      "tips": {
+        "profile": "Isulat ang pangalan mo, trabaho, at paano ka makokontak. Ang buod: 2 o 3 pangungusap tungkol sa kaya mong gawin",
+        "experience": "Ilista ang mga trabaho, internship at gawain, simula sa pinakabago. Sa bawat isa, 2 o 3 maiikling pangungusap tungkol sa ginawa mo",
+        "education": "Ilista ang mga diploma at training, simula sa pinakabago",
+        "projects": "Ipakita ang isa o dalawang matagumpay na proyekto, may konkretong resulta",
+        "certifications": "Idagdag ang mga sertipiko at lisensyang kapaki-pakinabang sa posisyon, kasama ang petsa",
+        "custom": "Idagdag ang hindi bagay sa ibang seksyon: volunteer work, mga adbokasiya, kapaki-pakinabang na impormasyon",
+        "skills": "Ilista ang kaya mong gawin: tools, software, kasanayan. Paghiwalayin gamit ang kuwit",
+        "languages": "Ilista ang mga wikang sinasalita mo at ang antas",
+        "interests": "Magdagdag ng 2 o 3 libangan: nakatutulong ang mga ito sa pagsisimula ng usapan sa interview",
+        "finish": "Pumili ng template na gusto mo, saka i-download ang CV bilang PDF. Puwede kang bumalik anumang oras para baguhin ito"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Ipinapakita ang dokumentong ito sa English. Ang bersyong French lang ang may bisang legal.",
     "error": "Hindi ma-load ang dokumentong ito."
+  },
+  "display": {
+    "label": "Display at accessibility",
+    "textSize": "Laki ng teksto",
+    "sizes": {
+      "normal": "Karaniwan",
+      "large": "Malaki",
+      "xlarge": "Napakalaki"
+    },
+    "options": {
+      "readableFont": "Napakadaling basahing font",
+      "spacing": "Mas maluwag na teksto",
+      "contrast": "Mas malakas na contrast",
+      "reduceMotion": "Bawasan ang animation"
+    },
+    "reset": "Default na display",
+    "note": "Binabago ng mga setting na ito ang interface, hindi kailanman ang naka-print mong CV"
   }
 }

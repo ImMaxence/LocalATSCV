@@ -28,7 +28,8 @@
     "changelog": "Novosti",
     "legalNotice": "Pravno obvestilo",
     "terms": "Pogoji uporabe",
-    "privacy": "Pravilnik o zasebnosti"
+    "privacy": "Pravilnik o zasebnosti",
+    "accessibility": "Izjava o dostopnosti"
   },
   "seo": {
     "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 72 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
@@ -37,7 +38,8 @@
     "changelog": "Novosti v LocalATSCV po različicah: nove predloge življenjepisov, funkcije in popravki",
     "legalNotice": "Pravno obvestilo LocalATSCV: izdajatelj, gostovanje in stik",
     "terms": "Pogoji uporabe LocalATSCV, brezplačnega orodja za življenjepise z odprto kodo",
-    "privacy": "Pravilnik o zasebnosti LocalATSCV: podatkov ne zbiramo, vaši življenjepisi ostanejo v brskalniku"
+    "privacy": "Pravilnik o zasebnosti LocalATSCV: podatkov ne zbiramo, vaši življenjepisi ostanejo v brskalniku",
+    "accessibility": "Dostopnost LocalATSCV: upravljanje s tipkovnico, bralniki zaslona, nastavitve prikaza, branje na glas in znane omejitve"
   },
   "footer": {
     "tagline": "Brezplačno orodje za življenjepis, ki nikoli ne vidi vaših podatkov",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Ali deluje brez interneta?",
           "a": "Da. Po prvem obisku lahko svoje življenjepise urejate in prenašate brez povezave. LocalATSCV lahko celo dodate na začetni zaslon telefona ali računalnika, kot aplikacijo"
+        },
+        "disability": {
+          "q": "Ali moram navesti svojo invalidnost?",
+          "a": "Nikoli ni obvezno. Če želite, urejevalnik predlaga formulacijo, priznano v državi življenjepisa (RQTH v Franciji, categorie protette v Italiji…), ob kontaktih, na koncu življenjepisa ali samo v pismu. Ohranite jo lahko tudi le v nekaterih različicah"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Ujemanje z oglasom",
       "sent": "Nič se ne pošlje",
       "robot": "VEŠČINE CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekarka in slaščičarka Listnato pecivo <n>●●●●○</n> DELOVNE IZKUŠNJE <n>� camille.mar</n> Pekarka <n>tin@example.com</n> 2021 – danes Slaščičarstvo <n>●●●○○</n> Pekarna Primer JEZIKI Angleščina Vsako jutro 300 kosov…"
+    },
+    "inclusive": {
+      "eyebrow": "Dostopno vsem",
+      "title": "Življenjepis za vsakogar, tudi z invalidnostjo",
+      "text": "Omeniti priznano invalidnost ali ne, prilagoditi prikaz, poslušati življenjepis na glas, napredovati korak za korakom: LocalATSCV se prilagodi vam, ne obratno",
+      "countries": "Prava formulacija za vsako državo",
+      "private": "Zdravstveni podatki nimajo kaj iskati na strežniku: vaši ostanejo na vaši napravi in se natisnejo le, če se tako odločite",
+      "points": {
+        "disclosure": {
+          "title": "Povedati ali ne",
+          "text": "Neobvezna navedba ob kontaktih, na koncu življenjepisa ali samo v pismu, s preprosto razloženimi prednostmi in omejitvami"
+        },
+        "display": {
+          "title": "Prikaz po vaši meri",
+          "text": "Večje besedilo, zelo berljiva pisava za ljudi z disleksijo ali slabim vidom, okrepljen kontrast, manj animacij"
+        },
+        "listen": {
+          "title": "Vaš življenjepis na glas",
+          "text": "Preverite življenjepis in pismo na posluh, z glasom svoje naprave. Odlično za tipkarske napake ali predolge stavke"
+        },
+        "guided": {
+          "title": "Korak za korakom, brez tavanja",
+          "text": "En razdelek naenkrat, z nasvetom v preprostem jeziku, vse do prenosa PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Prazna vrstica loči dva odstavka · **krepko** za ključno besedo",
       "outline": "Vstavi osnutek",
       "closing": "Zaključni pozdrav",
-      "fileName": "Motivacijsko pismo"
+      "fileName": "Motivacijsko pismo",
+      "addDisability": "Dodaj stavek o moji invalidnosti"
     },
     "fit": {
       "pages": "Strani: {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Besedilo ostane pravo besedilo: spremeni se le postavitev",
       "reset": "Postavitev predloge",
       "grayscale": "Prikaži črno-belo",
-      "grayscaleHint": "Simulira črno-belo tiskanje: izvoženi PDF ohrani barve"
+      "grayscaleHint": "Simulira črno-belo tiskanje: izvoženi PDF ohrani barve",
+      "listen": "Poslušaj dokument",
+      "stopListening": "Ustavi branje",
+      "dates": "Datumi",
+      "datesMonth": "Mesec in leto",
+      "datesYear": "Samo leta",
+      "datesHint": "Samo z leti se kratek premor v karieri ne vidi več"
     },
     "versions": {
       "label": "Prikazana različica",
@@ -424,7 +462,30 @@
       "drivingLicense": "Vozniško dovoljenje",
       "drivingLicensePlaceholder": "Npr. Vozniško dovoljenje kategorije B, lasten avto",
       "qrToggle": "Prikaži to povezavo kot kodo QR",
-      "linksHint": "Logotip (LinkedIn, GitHub, YouTube …) se doda samodejno. Gumb QR v večini grafičnih predlog prikaže povezavo kot kodo QR"
+      "linksHint": "Logotip (LinkedIn, GitHub, YouTube …) se doda samodejno. Gumb QR v večini grafičnih predlog prikaže povezavo kot kodo QR",
+      "disability": {
+        "title": "Invalidnost",
+        "subtitle": "Neobvezno, samo če želite",
+        "intro": "Ali jo boste omenili, je povsem vaša odločitev: nič vas ne zavezuje. Ta podatek nikoli ne zapusti vaše naprave",
+        "country": {
+          "fr": "V Franciji RQTH zanima podjetja z vsaj 20 zaposlenimi, ki morajo zaposlovati 6 % invalidov",
+          "en": "V Združenem kraljestvu in ZDA se navadno navede v prijavnem obrazcu delodajalca, ne v življenjepisu",
+          "it": "V Italiji je oznaka »categorie protette (L. 68/99)« v življenjepisih pogosta in odpira dostop do rezerviranih delovnih mest",
+          "es": "V Španiji se pogosto navede priznana invalidnost najmanj 33 %: podjetja z vsaj 50 zaposlenimi rezervirajo 2 % delovnih mest",
+          "de": "V Nemčiji morajo javni delodajalci povabiti na razgovor kandidate, priznane kot »schwerbehindert«, ki ustrezajo delovnemu mestu"
+        },
+        "label": "Navedba v življenjepisu",
+        "suggestions": "Pogoste formulacije:",
+        "placement": "Kje prikazati",
+        "placements": {
+          "contact": "Ob mojih kontaktih",
+          "section": "Na koncu življenjepisa",
+          "letter": "Samo v pismu"
+        },
+        "letterHint": "Navedba se v življenjepisu ne prikaže. Na zavihku Pismo gumb doda pripravljen stavek",
+        "pros": "Za: zavzeti delodajalci (programi vključevanja, kvote) vas hitreje opazijo, prilagoditve pa se lažje dogovorijo",
+        "cons": "Proti: nekateri kadroviki imajo še vedno predsodke. O tem lahko govorite tudi pozneje, na razgovoru ali po zaposlitvi, ali nikoli"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Slog pisalnega stroja",
         "paper": "Papir",
         "colorful": "Pisana",
-        "minimal": "Minimalistična"
+        "minimal": "Minimalistična",
+        "readable": "Zelo berljivo"
       },
       "favorite": "Dodaj med priljubljene",
       "unfavorite": "Odstrani iz priljubljenih",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Ključne besede",
       "createVersion": "Ustvari ciljno različico za to delovno mesto",
       "createVersionHint": "Izkušnje in točke, ki niso povezane z delovnim mestom, bodo odznačene: lahko jih prilagodite",
-      "savedInVersion": "Oglas shranjen z različico »{{name}}«"
+      "savedInVersion": "Oglas shranjen z različico »{{name}}«",
+      "inclusive": "Ta oglas vabi tudi invalide. Če želite, dodajte navedbo v »Invalidnost« na dnu profila"
     },
     "weak": {
       "hint": "»{{phrase}}« opisuje nalogo: začnite z glagolom dejanja"
@@ -906,6 +969,29 @@
       "body": "Besedilo",
       "default": "Iz predloge",
       "hint": "ATS dobro preberejo vse te pisave: besedilo ostane pravo besedilo"
+    },
+    "health": {
+      "hint": "Zdravstveni razlog ni potreben, zamenjajte »{{phrase}}« z:"
+    },
+    "guided": {
+      "toggle": "Način korak za korakom",
+      "toggleHint": "En razdelek naenkrat, s preprostim nasvetom",
+      "step": "Korak {{n}} od {{total}}",
+      "previous": "Nazaj",
+      "next": "Naprej",
+      "finishTitle": "Zadnji korak",
+      "tips": {
+        "profile": "Vpišite ime, poklic in kako vas dosežejo. Povzetek: 2 ali 3 stavki o tem, kaj znate",
+        "experience": "Navedite zaposlitve, prakse in naloge, od najnovejše. Za vsako 2 ali 3 kratke stavke o tem, kaj ste delali",
+        "education": "Navedite diplome in izobraževanja, od najnovejšega",
+        "projects": "Predstavite enega ali dva uspešna projekta s konkretnim rezultatom",
+        "certifications": "Dodajte certifikate in dovoljenja, koristna za delovno mesto, z datumom",
+        "custom": "Dodajte, kar ne sodi drugam: prostovoljstvo, angažma, koristne informacije",
+        "skills": "Naštejte, kaj znate: orodja, programe, veščine. Ločite jih z vejicami",
+        "languages": "Navedite jezike, ki jih govorite, in svojo raven",
+        "interests": "Dodajte 2 ali 3 hobije: pomagajo začeti pogovor na razgovoru",
+        "finish": "Izberite predlogo, ki vam je všeč, in prenesite življenjepis kot PDF. Vedno se lahko vrnete in ga uredite"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Ta dokument je prikazan v angleščini. Pravno zavezujoča je samo francoska različica.",
     "error": "Tega dokumenta ni bilo mogoče naložiti."
+  },
+  "display": {
+    "label": "Prikaz in dostopnost",
+    "textSize": "Velikost besedila",
+    "sizes": {
+      "normal": "Običajna",
+      "large": "Velika",
+      "xlarge": "Zelo velika"
+    },
+    "options": {
+      "readableFont": "Zelo berljiva pisava",
+      "spacing": "Bolj razprto besedilo",
+      "contrast": "Okrepljen kontrast",
+      "reduceMotion": "Manj animacij"
+    },
+    "reset": "Privzeti prikaz",
+    "note": "Te nastavitve spremenijo vmesnik, nikoli vašega natisnjenega življenjepisa"
   }
 }

@@ -3,6 +3,9 @@
 @import '@fontsource-variable/fraunces/wght.css';
 @import '@fontsource-variable/fraunces/wght-italic.css';
 @import '@fontsource-variable/space-grotesk/wght.css';
+/* Police « très lisible » des réglages d'affichage : téléchargée seulement si elle est choisie. */
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/atkinson-hyperlegible/700.css';
 @import '@angular/cdk/overlay-prebuilt.css';
 
 /* Le mode sombre est piloté par la classe .dark posée sur <html> (voir ThemeService). */
@@ -19,13 +22,13 @@
   --ink: #15171c;
   --muted: #5b606d;
   --line: #e2ddd2;
-  --accent: #11795a;
+  --accent: #0f7457;
   --accent-strong: #0c5f46;
   --accent-ink: #ffffff;
   --accent-soft: #d6efe3;
   --marker: #fde68a;
   --marker-ink: #6b4e00;
-  --danger: #c2410c;
+  --danger: #b03a0a;
   --inverse: #15171c;
   --inverse-ink: #f6f4ee;
   --inverse-accent: #4fd89d;
@@ -192,6 +195,69 @@
     opacity: 0;
     transform: translateY(-4px) scale(0.97);
   }
+}
+
+/*
+ * Réglages d'affichage (DisplayService, appliqués aussi par theme-init.js). Ils touchent
+ * l'interface seulement : le CV (.cv) garde sa mise en page, puisqu'il s'imprime tel que le
+ * recruteur le recevra. Hors couche (@layer), ces règles l'emportent sur les utilitaires.
+ */
+html[data-text-size='large'] {
+  font-size: 112.5%;
+}
+
+html[data-text-size='xlarge'] {
+  font-size: 125%;
+}
+
+html.a11y-font body,
+html.a11y-font :is(.font-sans, .font-display, .font-grotesk):not(.cv *) {
+  font-family: 'Atkinson Hyperlegible', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Espacements du critère WCAG 1.4.12 (interligne, lettres, mots). */
+html.a11y-spacing body :where(:not(.cv, .cv *, svg, svg *)) {
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+  word-spacing: 0.12em;
+}
+
+html.a11y-contrast:not(.dark) {
+  --ink: #000000;
+  --muted: #34383f;
+  --line: #a39b89;
+  --accent: #0a5a42;
+  --accent-strong: #06402f;
+}
+
+html.a11y-contrast.dark {
+  --ink: #ffffff;
+  --muted: #d6dae0;
+  --line: #5d6571;
+  --accent: #5ee0a8;
+}
+
+html.a11y-contrast :focus-visible {
+  outline-width: 3px;
+}
+
+html.a11y-motion {
+  scroll-behavior: auto;
+}
+
+html.a11y-motion *,
+html.a11y-motion *::before,
+html.a11y-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+html.a11y-motion::view-transition-group(*),
+html.a11y-motion::view-transition-old(*),
+html.a11y-motion::view-transition-new(*) {
+  animation: none !important;
 }
 
 /*

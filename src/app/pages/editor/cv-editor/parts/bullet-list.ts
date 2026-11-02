@@ -15,13 +15,21 @@ import { findWeakOpener } from '../../../../cv/analysis/weak-phrases';
 import { Entry } from '../../../../cv/model/cv.model';
 import { Icon } from '../../../../shared/icon/icon';
 import { CvEditorStore } from '../cv-editor.store';
-import { IncludeToggle } from './editor-controls';
+import { HealthHint, IncludeToggle } from './editor-controls';
 
 /** Puces d'une entrée : glisser-déposer, Entrée pour en créer une, Retour arrière pour supprimer une puce vide. */
 @Component({
   selector: 'app-bullet-list',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TranslocoDirective, Icon, IncludeToggle, CdkDropList, CdkDrag, CdkDragHandle],
+  imports: [
+    TranslocoDirective,
+    Icon,
+    IncludeToggle,
+    HealthHint,
+    CdkDropList,
+    CdkDrag,
+    CdkDragHandle,
+  ],
   template: `
     <div *transloco="let t; prefix: 'editor'">
       <p class="field-label">{{ t('entry.bullets') }}</p>
@@ -70,6 +78,10 @@ import { IncludeToggle } from './editor-controls';
                   }
                 </div>
               }
+              <app-health-hint
+                [text]="bullet.text"
+                (replaced)="store.updateBullet(sectionId(), entry().id, bullet.id, $event)"
+              />
             </div>
             <button
               type="button"

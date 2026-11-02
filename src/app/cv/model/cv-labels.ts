@@ -1,4 +1,4 @@
-import { CvLanguage, SectionKind } from './cv.model';
+import { CvLanguage, DateStyle, SectionKind } from './cv.model';
 
 /**
  * Libellés imprimés sur le CV, dans la langue du CV (indépendante de la langue de l'interface).
@@ -154,12 +154,15 @@ export function labelSeparator(language: CvLanguage): string {
 
 const capitalize = (text: string): string => text.charAt(0).toLocaleUpperCase() + text.slice(1);
 
-/** `2022` → `2022` ; `2022-03` → `Mars 2022` / `Mar 2022` selon la langue. */
-export function formatCvDate(value: string, language: CvLanguage): string {
+/**
+ * `2022` → `2022` ; `2022-03` → `Mars 2022` / `Mar 2022` selon la langue, ou `2022` en style
+ * « années seules » (une courte interruption de parcours n'apparaît alors plus).
+ */
+export function formatCvDate(value: string, language: CvLanguage, style: DateStyle = 'month'): string {
   const match = /^(\d{4})(?:-(\d{2}))?$/.exec(value.trim());
   if (!match) return value.trim();
   const [, year, month] = match;
-  if (!month) return year;
+  if (!month || style === 'year') return year;
   const date = new Date(Date.UTC(Number(year), Number(month) - 1, 1));
   const formatted = new Intl.DateTimeFormat(language, {
     month: 'short',
@@ -174,9 +177,10 @@ export function formatDateRange(
   end: string,
   current: boolean,
   language: CvLanguage,
+  style: DateStyle = 'month',
 ): string {
-  const from = formatCvDate(start, language);
-  const to = current ? CV_LABELS[language].present : formatCvDate(end, language);
+  const from = formatCvDate(start, language, style);
+  const to = current ? CV_LABELS[language].present : formatCvDate(end, language, style);
   if (from && to) return from === to ? from : `${from} – ${to}`;
   return from || to;
 }

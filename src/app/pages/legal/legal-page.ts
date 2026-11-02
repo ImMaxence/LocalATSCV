@@ -8,7 +8,7 @@ import { LanguageService } from '../../core/i18n/language.service';
 import { MdBlock, parseMarkdown } from '../../shared/markdown';
 import { Icon } from '../../shared/icon/icon';
 
-/** Mentions légales, CGU et confidentialité, rédigées en Markdown dans public/legal. */
+/** Mentions légales, CGU, confidentialité et accessibilité, rédigées en Markdown dans public/legal. */
 @Component({
   selector: 'app-legal-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -105,7 +105,7 @@ import { Icon } from '../../shared/icon/icon';
 })
 export class LegalPage {
   /** Donnée de route : document à afficher. */
-  readonly doc = input.required<'notice' | 'terms' | 'privacy'>();
+  readonly doc = input.required<'notice' | 'terms' | 'privacy' | 'accessibility'>();
 
   protected readonly language = inject(LanguageService);
   private readonly http = inject(HttpClient);

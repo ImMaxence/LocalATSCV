@@ -16,9 +16,10 @@ import { CvEditorStore } from '../cv-editor.store';
         type="button"
         class="flex h-9 max-w-64 items-center gap-2 rounded-full border border-line bg-surface ps-3 pe-2.5 text-sm font-medium transition-colors hover:border-ink/25 aria-expanded:border-ink/25"
         [cdkMenuTriggerFor]="menu"
-        [attr.aria-label]="t('label')"
       >
         <app-icon class="size-4 shrink-0 text-accent" name="layers" />
+        <!-- Nom lu = libellé masqué + texte visible : il contient ce qu'on voit (WCAG 2.5.3). -->
+        <span class="sr-only">{{ t('label') }} :</span>
         <span class="truncate">{{ store.activeVersion()?.name ?? t('master') }}</span>
         <app-icon class="size-3.5 shrink-0 text-muted" name="chevronDown" [strokeWidth]="2" />
       </button>

@@ -1,4 +1,4 @@
-import { CvVersion, EntrySection, createVersion } from './cv.model';
+import { CvVersion, DISABILITY_ID, EntrySection, MasterCv, createVersion } from './cv.model';
 import { resolveCv } from './resolve-cv';
 import { createSampleCv } from './sample-cv';
 
@@ -56,5 +56,61 @@ describe('resolveCv', () => {
     const empty = createSampleCv('fr');
     empty.sections = [{ id: 's', kind: 'experience', title: '', items: [] }];
     expect(resolveCv(empty, null).sections).toEqual([]);
+  });
+
+  describe('mention de handicap', () => {
+    const withMention = (placement: MasterCv['profile']['disabilityPlacement']): MasterCv => ({
+      ...cv,
+      profile: { ...cv.profile, disability: ' RQTH ', disabilityPlacement: placement },
+    });
+    const customTitles = (resolved: ReturnType<typeof resolveCv>) =>
+      resolved.sections.filter((section) => section.kind === 'custom');
+
+    it('rejoint les coordonnées par défaut', () => {
+      const resolved = resolveCv(withMention('contact'), null);
+      expect(resolved.profile.disability).toBe('RQTH');
+      expect(customTitles(resolved)).toEqual([]);
+    });
+
+    it('crée une rubrique « Autres informations » en fin de CV', () => {
+      const resolved = resolveCv(withMention('section'), null);
+      const last = resolved.sections.at(-1) as EntrySection;
+      expect(resolved.profile.disability).toBe('');
+      expect(last.kind).toBe('custom');
+      expect(last.title).toBe('');
+      expect(last.items.map((item) => item.title)).toEqual(['RQTH']);
+    });
+
+    it('rejoint une rubrique « Autres informations » existante au titre par défaut', () => {
+      const master = withMention('section');
+      master.sections = [
+        ...master.sections,
+        {
+          id: 'other',
+          kind: 'custom',
+          title: '',
+          items: [{ ...experience.items[0], id: 'volunteer', title: 'Bénévolat' }],
+        },
+      ];
+      const custom = customTitles(resolveCv(master, null)) as EntrySection[];
+      expect(custom.length).toBe(1);
+      expect(custom[0].items.map((item) => item.title)).toEqual(['Bénévolat', 'RQTH']);
+    });
+
+    it('reste hors du CV quand elle est réservée à la lettre', () => {
+      const resolved = resolveCv(withMention('letter'), null);
+      expect(resolved.profile.disability).toBe('');
+      expect(customTitles(resolved)).toEqual([]);
+    });
+
+    it('disparaît des versions qui la masquent', () => {
+      expect(resolveCv(withMention('contact'), hiding(DISABILITY_ID)).profile.disability).toBe('');
+      expect(customTitles(resolveCv(withMention('section'), hiding(DISABILITY_ID)))).toEqual([]);
+    });
+  });
+
+  it('transmet le style des dates, mois et année par défaut', () => {
+    expect(resolveCv(cv, null).dateStyle).toBe('month');
+    expect(resolveCv({ ...cv, dateStyle: 'year' }, null).dateStyle).toBe('year');
   });
 });

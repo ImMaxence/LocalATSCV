@@ -6,8 +6,10 @@ import {
   CvLayout,
   DEFAULT_LAYOUT,
   DEFAULT_TEMPLATE,
+  DISABILITY_PLACEMENTS,
   CvSection,
   CvVersion,
+  DisabilityPlacement,
   LAYOUT_LIMITS,
   Entry,
   MasterCv,
@@ -115,6 +117,12 @@ function normalizeProfile(raw: unknown): Profile {
     birthDate: string(profile['birthDate']),
     nationality: string(profile['nationality']),
     drivingLicense: string(profile['drivingLicense']),
+    disability: string(profile['disability']),
+    disabilityPlacement: DISABILITY_PLACEMENTS.includes(
+      profile['disabilityPlacement'] as DisabilityPlacement,
+    )
+      ? (profile['disabilityPlacement'] as DisabilityPlacement)
+      : 'contact',
     summary: string(profile['summary']),
     photoId: string(profile['photoId']) || null,
     qrLinkId: string(profile['qrLinkId']) || null,
@@ -220,6 +228,7 @@ export function normalizeCv(raw: unknown): MasterCv | null {
       ? string(raw['accentColor'])
       : ACCENT_COLORS[0],
     layout: normalizeLayout(raw['layout']),
+    dateStyle: raw['dateStyle'] === 'year' ? 'year' : 'month',
     profile: normalizeProfile(raw['profile']),
     sections: array(raw['sections'])
       .map(normalizeSection)

@@ -10,8 +10,8 @@ import { ChangeType, Release, parseChangelog } from './changelog-parser';
 
 const TYPE_STYLES: Record<ChangeType, { icon: IconName; classes: string }> = {
   added: { icon: 'plus', classes: 'bg-accent-soft text-accent' },
-  changed: { icon: 'refresh', classes: 'bg-sky-500/12 text-sky-600 dark:text-sky-400' },
-  fixed: { icon: 'hammer', classes: 'bg-amber-500/15 text-amber-700 dark:text-amber-300' },
+  changed: { icon: 'refresh', classes: 'bg-sky-500/12 text-sky-700 dark:text-sky-300' },
+  fixed: { icon: 'hammer', classes: 'bg-amber-500/15 text-amber-800 dark:text-amber-300' },
   removed: { icon: 'trash', classes: 'bg-danger/12 text-danger' },
   deprecated: { icon: 'alert', classes: 'bg-surface-2 text-muted' },
   security: { icon: 'shield', classes: 'bg-violet-500/12 text-violet-600 dark:text-violet-300' },

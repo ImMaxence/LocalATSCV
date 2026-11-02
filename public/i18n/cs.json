@@ -28,7 +28,8 @@
     "changelog": "Novinky",
     "legalNotice": "Právní informace",
     "terms": "Podmínky použití",
-    "privacy": "Zásady ochrany soukromí"
+    "privacy": "Zásady ochrany soukromí",
+    "accessibility": "Prohlášení o přístupnosti"
   },
   "seo": {
     "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 72 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
@@ -37,7 +38,8 @@
     "changelog": "Novinky v LocalATSCV verzi po verzi: nové šablony životopisů, funkce a opravy",
     "legalNotice": "Právní informace LocalATSCV: vydavatel, hosting a kontakt",
     "terms": "Podmínky použití LocalATSCV, bezplatného tvůrce životopisů s otevřeným kódem",
-    "privacy": "Zásady ochrany soukromí LocalATSCV: žádná data se neshromažďují, vaše životopisy zůstávají v prohlížeči"
+    "privacy": "Zásady ochrany soukromí LocalATSCV: žádná data se neshromažďují, vaše životopisy zůstávají v prohlížeči",
+    "accessibility": "Přístupnost LocalATSCV: ovládání klávesnicí, čtečky obrazovky, nastavení zobrazení, předčítání a známá omezení"
   },
   "footer": {
     "tagline": "Bezplatný tvůrce životopisů, který nikdy nevidí vaše data",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Funguje to bez internetu?",
           "a": "Ano. Po první návštěvě můžete své životopisy upravovat a stahovat bez připojení. LocalATSCV si dokonce můžete přidat na plochu telefonu nebo počítače jako aplikaci"
+        },
+        "disability": {
+          "q": "Musím uvést své zdravotní postižení?",
+          "a": "Nikdy to není povinné. Pokud chcete, editor nabídne formulaci uznávanou v zemi vašeho životopisu (RQTH ve Francii, categorie protette v Itálii…), u kontaktů, na konci životopisu nebo jen v dopise. Můžete ji také ponechat jen v některých verzích"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Shoda s inzerátem",
       "sent": "Nic se neodesílá",
       "robot": "DOVEDNOSTI CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pekařka a cukrářka Jemné pečivo <n>●●●●○</n> PRACOVNÍ ZKUŠENOSTI <n>� camille.mar</n> Pekařka <n>tin@example.com</n> 2021 – dosud Cukrařina <n>●●●○○</n> Pekárna Příklad JAZYKY Angličtina Každé ráno 300 kusů…"
+    },
+    "inclusive": {
+      "eyebrow": "Přístupné všem",
+      "title": "Životopis pro každého, i se zdravotním postižením",
+      "text": "Uvést uznané postižení, nebo ne, upravit zobrazení, nechat si životopis přečíst, postupovat krok za krokem: LocalATSCV se přizpůsobí vám, ne naopak",
+      "countries": "Správná formulace pro každou zemi",
+      "private": "Zdravotní údaje na server nepatří: vaše zůstávají ve vašem zařízení a vytisknou se jen tehdy, když se tak rozhodnete",
+      "points": {
+        "disclosure": {
+          "title": "Říct to, nebo ne",
+          "text": "Nepovinný údaj u kontaktů, na konci životopisu nebo jen v dopise, s výhodami a nevýhodami jednoduše vysvětlenými"
+        },
+        "display": {
+          "title": "Zobrazení na míru",
+          "text": "Větší text, dobře čitelné písmo při dyslexii nebo slabozrakosti, zvýšený kontrast, méně animací"
+        },
+        "listen": {
+          "title": "Váš životopis nahlas",
+          "text": "Zkontrolujte životopis a dopis poslechem, hlasem svého zařízení. Ideální k odhalení překlepu nebo příliš dlouhé věty"
+        },
+        "guided": {
+          "title": "Krok za krokem, bez bloudění",
+          "text": "Jedna část po druhé, s radou v jednoduché řeči, až ke stažení PDF"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Prázdný řádek odděluje dva odstavce · **tučně** pro klíčové slovo",
       "outline": "Vložit osnovu",
       "closing": "Závěrečný pozdrav",
-      "fileName": "Motivační dopis"
+      "fileName": "Motivační dopis",
+      "addDisability": "Přidat větu o mém zdravotním postižení"
     },
     "fit": {
       "pages": "Stran: {{count}}",
@@ -376,7 +408,13 @@
       "settingsHint": "Text zůstává skutečným textem: mění se jen rozvržení",
       "reset": "Rozvržení šablony",
       "grayscale": "Zobrazit černobíle",
-      "grayscaleHint": "Simuluje černobílý tisk: exportované PDF si zachová barvy"
+      "grayscaleHint": "Simuluje černobílý tisk: exportované PDF si zachová barvy",
+      "listen": "Poslechnout dokument",
+      "stopListening": "Zastavit předčítání",
+      "dates": "Data",
+      "datesMonth": "Měsíc a rok",
+      "datesYear": "Jen roky",
+      "datesHint": "Se samotnými roky už krátká přestávka v kariéře není vidět"
     },
     "versions": {
       "label": "Zobrazená verze",
@@ -424,7 +462,30 @@
       "drivingLicense": "Řidičský průkaz",
       "drivingLicensePlaceholder": "Např. Řidičský průkaz sk. B, vlastní auto",
       "qrToggle": "Zobrazit tento odkaz jako QR kód",
-      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) se přidá automaticky. Tlačítko QR zobrazí odkaz jako QR kód ve většině grafických šablon"
+      "linksHint": "Logo (LinkedIn, GitHub, YouTube…) se přidá automaticky. Tlačítko QR zobrazí odkaz jako QR kód ve většině grafických šablon",
+      "disability": {
+        "title": "Zdravotní postižení",
+        "subtitle": "Nepovinné, jen pokud chcete",
+        "intro": "Zda ho uvedete, je jen na vás: nic vás k tomu nenutí. Tato informace nikdy neopustí vaše zařízení",
+        "country": {
+          "fr": "Ve Francii zajímá RQTH firmy s nejméně 20 zaměstnanci, které musejí zaměstnávat 6 % lidí se zdravotním postižením",
+          "en": "Ve Spojeném království a v USA se uvádí spíš ve formuláři zaměstnavatele než v životopise",
+          "it": "V Itálii je údaj „categorie protette (L. 68/99)“ v životopisech běžný a otevírá přístup k vyhrazeným místům",
+          "es": "Ve Španělsku se často uvádí uznané postižení nejméně 33 %: firmy s nejméně 50 zaměstnanci vyhrazují 2 % míst",
+          "de": "V Německu musejí veřejní zaměstnavatelé pozvat k pohovoru uchazeče uznané jako „schwerbehindert“, kteří odpovídají pozici"
+        },
+        "label": "Údaj v životopise",
+        "suggestions": "Běžné formulace:",
+        "placement": "Kde zobrazit",
+        "placements": {
+          "contact": "U mých kontaktů",
+          "section": "Na konci životopisu",
+          "letter": "Jen v dopise"
+        },
+        "letterHint": "Údaj se v životopise nezobrazí. Na kartě Dopis přidá tlačítko hotovou větu",
+        "pros": "Pro: angažovaní zaměstnavatelé (programy inkluze, povinný podíl) si vás všimnou dřív a úpravy se snáz domlouvají",
+        "cons": "Proti: někteří personalisté mají stále předsudky. Můžete o tom mluvit i později, u pohovoru nebo po nástupu, nebo nikdy"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Styl psacího stroje",
         "paper": "Papír",
         "colorful": "Barevné",
-        "minimal": "Minimalistické"
+        "minimal": "Minimalistické",
+        "readable": "Velmi čitelné"
       },
       "favorite": "Přidat do oblíbených",
       "unfavorite": "Odebrat z oblíbených",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Klíčová slova",
       "createVersion": "Vytvořit cílenou verzi pro tuto pozici",
       "createVersionHint": "Zkušenosti a body, které s pozicí nesouvisí, se odškrtnou: můžete je upravit",
-      "savedInVersion": "Inzerát uložen s verzí „{{name}}“"
+      "savedInVersion": "Inzerát uložen s verzí „{{name}}“",
+      "inclusive": "Tento inzerát vítá uchazeče se zdravotním postižením. Pokud chcete, přidejte údaj v části „Zdravotní postižení“ na konci profilu"
     },
     "weak": {
       "hint": "„{{phrase}}“ popisuje povinnost: začněte akčním slovesem"
@@ -906,6 +969,29 @@
       "body": "Text",
       "default": "Podle šablony",
       "hint": "ATS čtou všechna tato písma dobře: text zůstává skutečným textem"
+    },
+    "health": {
+      "hint": "Lékařský důvod není potřeba, nahraďte „{{phrase}}“ tímto:"
+    },
+    "guided": {
+      "toggle": "Režim krok za krokem",
+      "toggleHint": "Jedna část po druhé, s jednoduchou radou",
+      "step": "Krok {{n}} z {{total}}",
+      "previous": "Zpět",
+      "next": "Další",
+      "finishTitle": "Poslední krok",
+      "tips": {
+        "profile": "Napište své jméno, profesi a jak vás zastihnout. Shrnutí: 2 nebo 3 věty o tom, co umíte",
+        "experience": "Uveďte zaměstnání, stáže a zakázky od nejnovějších. U každého 2 nebo 3 krátké věty o tom, co jste dělali",
+        "education": "Uveďte diplomy a kurzy od nejnovějších",
+        "projects": "Představte jeden či dva úspěšné projekty s konkrétním výsledkem",
+        "certifications": "Přidejte certifikáty a oprávnění užitečná pro pozici, s datem",
+        "custom": "Přidejte, co se nehodí jinam: dobrovolnictví, angažmá, užitečné informace",
+        "skills": "Vypište, co umíte: nástroje, programy, dovednosti. Oddělte je čárkami",
+        "languages": "Uveďte jazyky, kterými mluvíte, a svou úroveň",
+        "interests": "Přidejte 2 nebo 3 koníčky: pomáhají rozproudit rozhovor u pohovoru",
+        "finish": "Vyberte šablonu, která se vám líbí, a stáhněte životopis jako PDF. Vždy se k němu můžete vrátit"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Tento dokument je zobrazen v angličtině. Právně závazná je pouze francouzská verze.",
     "error": "Tento dokument se nepodařilo načíst."
+  },
+  "display": {
+    "label": "Zobrazení a přístupnost",
+    "textSize": "Velikost textu",
+    "sizes": {
+      "normal": "Normální",
+      "large": "Velká",
+      "xlarge": "Velmi velká"
+    },
+    "options": {
+      "readableFont": "Dobře čitelné písmo",
+      "spacing": "Volnější text",
+      "contrast": "Zvýšený kontrast",
+      "reduceMotion": "Omezit animace"
+    },
+    "reset": "Výchozí zobrazení",
+    "note": "Tato nastavení mění rozhraní, nikdy váš vytištěný životopis"
   }
 }

@@ -11,5 +11,6 @@ export const FAQ_ITEMS = [
   'clear',
   'score',
   'photo',
+  'disability',
   'offline',
 ] as const;

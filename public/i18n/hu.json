@@ -28,7 +28,8 @@
     "changelog": "Újdonságok",
     "legalNotice": "Jogi nyilatkozat",
     "terms": "Felhasználási feltételek",
-    "privacy": "Adatvédelmi irányelvek"
+    "privacy": "Adatvédelmi irányelvek",
+    "accessibility": "Akadálymentességi nyilatkozat"
   },
   "seo": {
     "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 72 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
@@ -37,7 +38,8 @@
     "changelog": "A LocalATSCV újdonságai verzióról verzióra: új önéletrajzsablonok, funkciók és javítások",
     "legalNotice": "A LocalATSCV jogi nyilatkozata: kiadó, tárhely és kapcsolat",
     "terms": "A LocalATSCV, az ingyenes, nyílt forráskódú önéletrajz-készítő felhasználási feltételei",
-    "privacy": "A LocalATSCV adatvédelmi irányelvei: semmilyen adatot nem gyűjtünk, önéletrajzai a böngészőjében maradnak"
+    "privacy": "A LocalATSCV adatvédelmi irányelvei: semmilyen adatot nem gyűjtünk, önéletrajzai a böngészőjében maradnak",
+    "accessibility": "A LocalATSCV akadálymentessége: billentyűzetes használat, képernyőolvasók, megjelenítési beállítások, felolvasás és ismert korlátok"
   },
   "footer": {
     "tagline": "Az ingyenes önéletrajz-készítő, amely soha nem látja az adatait",
@@ -243,6 +245,10 @@
         "offline": {
           "q": "Működik internet nélkül?",
           "a": "Igen. Az első látogatás után internet nélkül is szerkesztheti és letöltheti önéletrajzait. A LocalATSCV-t akár alkalmazásként is felteheti telefonja vagy számítógépe kezdőképernyőjére"
+        },
+        "disability": {
+          "q": "Meg kell említenem a fogyatékosságomat?",
+          "a": "Soha nem kötelező. Ha szeretné, a szerkesztő felajánlja az önéletrajz országában elfogadott megfogalmazást (RQTH Franciaországban, categorie protette Olaszországban…), az elérhetőségeknél, az önéletrajz végén vagy csak a levélben. Egyes változatokban megtarthatja, másokban nem"
         }
       }
     },
@@ -275,6 +281,31 @@
       "score": "Egyezés a hirdetéssel",
       "sent": "Semmi sem kerül elküldésre",
       "robot": "KÉSZSÉGEK CAMILLE MARTIN <n>� +33 6 12 34 56 78</n> Pék és cukrász Leveles tészta <n>●●●●○</n> SZAKMAI TAPASZTALAT <n>� camille.mar</n> Pék <n>tin@example.com</n> 2021 – jelenleg Cukrászat <n>●●●○○</n> Példa Pékség NYELVEK Angol Minden reggel 300…"
+    },
+    "inclusive": {
+      "eyebrow": "Mindenki számára elérhető",
+      "title": "Önéletrajz mindenkinek, fogyatékossággal is",
+      "text": "Megemlíteni egy elismert fogyatékosságot vagy sem, beállítani a megjelenítést, felolvastatni az önéletrajzot, lépésről lépésre haladni: a LocalATSCV Önhöz igazodik, nem fordítva",
+      "countries": "A megfelelő megfogalmazás minden országban",
+      "private": "Az egészségügyi adatoknak semmi keresnivalójuk egy szerveren: az Öné az eszközén marad, és csak akkor kerül nyomtatásra, ha Ön úgy dönt",
+      "points": {
+        "disclosure": {
+          "title": "Elmondani, vagy sem",
+          "text": "Nem kötelező megjelölés az elérhetőségeknél, az önéletrajz végén vagy csak a levélben, előnyökkel és korlátokkal egyszerűen elmagyarázva"
+        },
+        "display": {
+          "title": "Önre szabott megjelenítés",
+          "text": "Nagyobb szöveg, jól olvasható betűtípus diszlexia vagy gyengénlátás esetén, erősebb kontraszt, kevesebb animáció"
+        },
+        "listen": {
+          "title": "Önéletrajza felolvasva",
+          "text": "Ellenőrizze önéletrajzát és levelét hallás alapján, az eszköze hangján. Ideális egy elírás vagy túl hosszú mondat kiszúrására"
+        },
+        "guided": {
+          "title": "Lépésről lépésre, eltévedés nélkül",
+          "text": "Egyszerre egy rész, egyszerű nyelvű tanáccsal, egészen a PDF letöltéséig"
+        }
+      }
     }
   },
   "dialog": {
@@ -361,7 +392,8 @@
       "bodyHint": "Egy üres sor választ el két bekezdést · **félkövér** egy kulcsszóhoz",
       "outline": "Vázlat beszúrása",
       "closing": "Elköszönés",
-      "fileName": "Motivációs levél"
+      "fileName": "Motivációs levél",
+      "addDisability": "Mondat hozzáadása a fogyatékosságomról"
     },
     "fit": {
       "pages": "{{count}} oldal",
@@ -376,7 +408,13 @@
       "settingsHint": "A szöveg valódi szöveg marad: csak az elrendezés változik",
       "reset": "A sablon elrendezése",
       "grayscale": "Fekete-fehér nézet",
-      "grayscaleHint": "Fekete-fehér nyomtatást szimulál: az exportált PDF megtartja a színeit"
+      "grayscaleHint": "Fekete-fehér nyomtatást szimulál: az exportált PDF megtartja a színeit",
+      "listen": "Dokumentum meghallgatása",
+      "stopListening": "Felolvasás leállítása",
+      "dates": "Dátumok",
+      "datesMonth": "Hónap és év",
+      "datesYear": "Csak évek",
+      "datesHint": "Csak évszámokkal egy rövid kihagyás a pályán már nem látszik"
     },
     "versions": {
       "label": "Megjelenített változat",
@@ -424,7 +462,30 @@
       "drivingLicense": "Jogosítvány",
       "drivingLicensePlaceholder": "Pl. B kategóriás jogosítvány, saját autó",
       "qrToggle": "A hivatkozás megjelenítése QR-kódként",
-      "linksHint": "A logó (LinkedIn, GitHub, YouTube…) automatikusan megjelenik. A QR gomb a legtöbb grafikus sablonban QR-kódként mutatja a hivatkozást"
+      "linksHint": "A logó (LinkedIn, GitHub, YouTube…) automatikusan megjelenik. A QR gomb a legtöbb grafikus sablonban QR-kódként mutatja a hivatkozást",
+      "disability": {
+        "title": "Fogyatékosság",
+        "subtitle": "Nem kötelező, csak ha szeretné",
+        "intro": "Hogy megemlíti-e, kizárólag az Ön döntése: semmi sem kötelezi rá. Ez az információ soha nem hagyja el az eszközét",
+        "country": {
+          "fr": "Franciaországban az RQTH a legalább 20 fős cégeket érdekli, amelyeknek 6 % fogyatékos munkavállalót kell foglalkoztatniuk",
+          "en": "Az Egyesült Királyságban és az USA-ban inkább a munkáltató jelentkezési űrlapján szokás jelezni, nem az önéletrajzban",
+          "it": "Olaszországban a „categorie protette (L. 68/99)” megjelölés gyakori az önéletrajzokban, és fenntartott állásokhoz nyit utat",
+          "es": "Spanyolországban gyakran feltüntetik a legalább 33 %-os elismert fogyatékosságot: a legalább 50 fős cégek az állások 2 %-át fenntartják",
+          "de": "Németországban a közszféra munkáltatóinak interjúra kell hívniuk a „schwerbehindert” státuszú, az állásnak megfelelő jelentkezőket"
+        },
+        "label": "Megjelölés az önéletrajzban",
+        "suggestions": "Gyakori megfogalmazások:",
+        "placement": "Hol jelenjen meg",
+        "placements": {
+          "contact": "Az elérhetőségeimnél",
+          "section": "Az önéletrajz végén",
+          "letter": "Csak a levélben"
+        },
+        "letterHint": "A megjelölés nem jelenik meg az önéletrajzban. A Levél fülön egy gomb kész mondatot illeszt be",
+        "pros": "Mellette: az elkötelezett munkáltatók (befogadási programok, kvóták) hamarabb észreveszik, és könnyebb az alkalmazkodásról beszélni",
+        "cons": "Ellene: egyes toborzóknak még vannak előítéleteik. Később is szóba hozhatja, az interjún vagy a felvétel után, vagy soha"
+      }
     },
     "sections": {
       "kinds": {
@@ -566,7 +627,8 @@
         "mono": "Írógépes stílus",
         "paper": "Papír",
         "colorful": "Színes",
-        "minimal": "Minimalista"
+        "minimal": "Minimalista",
+        "readable": "Nagyon jól olvasható"
       },
       "favorite": "Hozzáadás a kedvencekhez",
       "unfavorite": "Eltávolítás a kedvencekből",
@@ -895,7 +957,8 @@
       "keywordsGroup": "Kulcsszavak",
       "createVersion": "Célzott változat létrehozása ehhez az álláshoz",
       "createVersionHint": "Az álláshoz nem kapcsolódó tapasztalatok és pontok jelölése kikerül: módosíthatja őket",
-      "savedInVersion": "A hirdetés mentve a(z) „{{name}}” változattal"
+      "savedInVersion": "A hirdetés mentve a(z) „{{name}}” változattal",
+      "inclusive": "Ez a hirdetés várja a fogyatékossággal élő jelentkezőket. Ha szeretné, adjon hozzá megjelölést a profil alján, a „Fogyatékosság” résznél"
     },
     "weak": {
       "hint": "A(z) „{{phrase}}” feladatot ír le: kezdje cselekvő igével"
@@ -906,6 +969,29 @@
       "body": "Szövegtörzs",
       "default": "A sablon sajátja",
       "hint": "Az ATS-ek mindezeket a betűtípusokat jól olvassák: a szöveg valódi szöveg marad"
+    },
+    "health": {
+      "hint": "Nincs szükség orvosi okra, cserélje le ezt: „{{phrase}}”, erre:"
+    },
+    "guided": {
+      "toggle": "Lépésről lépésre mód",
+      "toggleHint": "Egyszerre egy rész, egyszerű tanáccsal",
+      "step": "{{n}}. lépés / {{total}}",
+      "previous": "Előző",
+      "next": "Következő",
+      "finishTitle": "Utolsó lépés",
+      "tips": {
+        "profile": "Írja be a nevét, a szakmáját és az elérhetőségét. Az összefoglaló: 2-3 mondat arról, mihez ért",
+        "experience": "Sorolja fel munkahelyeit, gyakorlatait és megbízásait, a legújabbal kezdve. Mindegyiknél 2-3 rövid mondat arról, mit csinált",
+        "education": "Sorolja fel végzettségeit és képzéseit, a legújabbal kezdve",
+        "projects": "Mutasson be egy-két sikeres projektet konkrét eredménnyel",
+        "certifications": "Adja hozzá az állásnál hasznos tanúsítványokat és jogosultságokat, dátummal",
+        "custom": "Adja hozzá, ami máshová nem fér: önkéntesség, vállalások, hasznos információk",
+        "skills": "Sorolja fel, mihez ért: eszközök, programok, szaktudás. Vesszővel válassza el őket",
+        "languages": "Adja meg, milyen nyelveken beszél és milyen szinten",
+        "interests": "Adjon meg 2-3 hobbit: segítenek beszélgetést kezdeni az interjún",
+        "finish": "Válasszon egy tetsző sablont, majd töltse le az önéletrajzot PDF-ben. Bármikor visszatérhet módosítani"
+      }
     }
   },
   "changelog": {
@@ -1093,5 +1179,22 @@
   "legal": {
     "translationNote": "Ez a dokumentum angolul jelenik meg. Jogilag csak a francia változat kötelező érvényű.",
     "error": "Nem sikerült betölteni ezt a dokumentumot."
+  },
+  "display": {
+    "label": "Megjelenítés és akadálymentesség",
+    "textSize": "Szövegméret",
+    "sizes": {
+      "normal": "Normál",
+      "large": "Nagy",
+      "xlarge": "Nagyon nagy"
+    },
+    "options": {
+      "readableFont": "Jól olvasható betűtípus",
+      "spacing": "Lazább szöveg",
+      "contrast": "Erősebb kontraszt",
+      "reduceMotion": "Kevesebb animáció"
+    },
+    "reset": "Alapértelmezett megjelenítés",
+    "note": "Ezek a beállítások a felületet változtatják, soha a kinyomtatott önéletrajzot"
   }
 }

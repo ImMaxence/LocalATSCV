@@ -137,7 +137,7 @@ function readIds(key: string): CvTemplateId[] {
                   <app-icon class="size-3.5" name="history" />
                 }
                 {{ t('filters.' + option) }}
-                <span class="text-xs opacity-70">{{ count(option) }}</span>
+                <span class="text-xs font-normal">{{ count(option) }}</span>
               </button>
             }
           </div>
@@ -354,7 +354,13 @@ function readIds(key: string): CvTemplateId[] {
               {{ isFavorite(selected()) ? t('unfavorite') : t('favorite') }}
             </button>
           </div>
-          <div class="min-h-0 flex-1 overflow-y-auto px-4 py-3">
+          <!-- Zone qui défile sans élément focalisable : elle prend le focus pour défiler au clavier -->
+          <div
+            class="min-h-0 flex-1 overflow-y-auto px-4 py-3"
+            tabindex="0"
+            role="region"
+            [attr.aria-label]="t('names.' + selected() + '.name')"
+          >
             <div class="overflow-hidden rounded-lg border border-line bg-white shadow-md">
               <app-cv-preview
                 class="pointer-events-none"

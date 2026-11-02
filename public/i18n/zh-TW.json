@@ -31,7 +31,7 @@
     "privacy": "隱私權政策"
   },
   "seo": {
-    "home": "免費製作幫你拿到面試的履歷：52 款範本、風格一致的求職信、針對每個職缺調整以及 ATS 檢查。免註冊，資料只留在你的裝置上",
+    "home": "免費製作幫你拿到面試的履歷：72 款範本、風格一致的求職信、針對每個職缺調整以及 ATS 檢查。免註冊，資料只留在你的裝置上",
     "editor": "履歷編輯器：即時預覽、主履歷與目標版本、ATS 檢查、匯出真實文字的 PDF。所有內容都留在你的瀏覽器",
     "analyze": "免費分析 PDF 履歷：滿分 100 的 ATS 評分、需要修正的地方，以及招募系統讀到的文字。檔案絕不會離開你的瀏覽器",
     "changelog": "LocalATSCV 各版本更新：新的履歷範本、功能與修正",
@@ -62,11 +62,11 @@
       "badge": "免費 · 免註冊 · 無廣告",
       "titleLine1": "幫你拿到面試的履歷",
       "titleLine2": "幾分鐘就能完成",
-      "subtitle": "填寫你的經歷，從 52 款範本中任選其一，就能下載一份可直接投遞的履歷。LocalATSCV 也能幫你針對每個職缺調整履歷，並檢查篩選履歷的軟體能否正確讀取",
+      "subtitle": "填寫你的經歷，從 72 款範本中任選其一，就能下載一份可直接投遞的履歷。LocalATSCV 也能幫你針對每個職缺調整履歷，並檢查篩選履歷的軟體能否正確讀取",
       "ctaPrimary": "免費製作我的履歷",
       "ctaSecondary": "測試我現在的履歷",
       "points": {
-        "templates": "52 款範本任你選",
+        "templates": "72 款範本任你選",
         "letter": "風格一致的求職信",
         "private": "資料只留在你身邊"
       }
@@ -170,7 +170,7 @@
       "title": "成功應徵所需的一切",
       "items": {
         "templates": {
-          "title": "52 款精美範本",
+          "title": "72 款精美範本",
           "text": "簡約、現代或繽紛，有無照片皆可。一鍵切換範本或顏色，內容自動跟上"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "範本",
       "title": "選擇範本",
-      "subtitle": "所有範本都能以完整的範例履歷或你自己的履歷預覽。強調色會套用到所有範本",
+      "subtitle": "在左側選擇範本：右側預覽會套用你的顏色與字型",
       "close": "關閉",
       "filter": "篩選範本",
       "filters": {
         "all": "全部",
         "graphic": "設計型",
-        "sober": "簡約型"
+        "sober": "簡約型",
+        "favorites": "收藏",
+        "recent": "最近"
       },
       "ats": "ATS 相容性",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "上一款範本",
       "next": "下一款範本",
       "open": "開啟範本庫",
+      "tagsLabel": "風格",
+      "tags": {
+        "dark": "深色背景",
+        "columns": "雙欄",
+        "serif": "襯線",
+        "mono": "等寬",
+        "paper": "紙張質感",
+        "colorful": "多彩",
+        "minimal": "極簡"
+      },
+      "favorite": "加入收藏",
+      "unfavorite": "取消收藏",
+      "use": "使用此範本",
+      "suggested": "為此職缺推薦",
+      "noFavorites": "點擊範本的星號，就能在這裡找到它",
+      "noRecent": "你使用過的範本會顯示在這裡",
+      "shortcuts": "方向鍵瀏覽，Enter 選擇，Esc 關閉",
       "names": {
         "classic": {
           "name": "經典",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "線框",
           "description": "細線與直角，標題如標籤貼在每個區塊的邊框上"
+        },
+        "artdeco": {
+          "name": "裝飾藝術",
+          "description": "放射扇形、雙重邊框、金色人字紋與菱形、加寬字距的大寫字母"
+        },
+        "glass": {
+          "name": "玻璃",
+          "description": "模糊色斑之上的白邊半透明卡片"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "虹彩鍍鉻橫幅、閃光、亮面膠囊與鼓起的藥丸形標籤"
+        },
+        "riso": {
+          "name": "孔版",
+          "description": "套印錯位的雙色印刷、網點顆粒、粗重的無襯線體"
+        },
+        "collage": {
+          "name": "拼貼",
+          "description": "邊緣不規則的紙片、膠帶、傾斜的照片與斜體襯線"
+        },
+        "marble": {
+          "name": "大理石",
+          "description": "帶紋理的大理石橫幅、金色細線、Cormorant 與金環照片"
+        },
+        "sticker": {
+          "name": "貼紙",
+          "description": "刀模貼紙樣式的標題與標籤、圓形照片、圓點背景"
+        },
+        "kraft": {
+          "name": "牛皮紙",
+          "description": "棕色牛皮紙、白色標籤、虛線框內蓋章式標題"
+        },
+        "wireframe": {
+          "name": "線框",
+          "description": "介面草圖：虛線、角標、灰色色塊、等寬字型"
+        },
+        "chrono": {
+          "name": "時序",
+          "description": "左側加粗大號日期，每個項目一個圓點的垂直軸"
+        },
+        "linocut": {
+          "name": "油氈版畫",
+          "description": "雕刻感的粗黑線條、單一色塊、雕花飾帶"
+        },
+        "candy": {
+          "name": "糖果",
+          "description": "拐杖糖條紋、光亮的糖球、圓潤清新的造型"
+        },
+        "metro": {
+          "name": "捷運",
+          "description": "每個區塊一條彩色路線，每個項目一個站點，角落有路線圖"
+        },
+        "stained": {
+          "name": "彩繪玻璃",
+          "description": "頁面頂部的鉛條彩色玻璃、鉛線、Cormorant"
+        },
+        "finance": {
+          "name": "金融",
+          "description": "銀行經典風：襯線、加寬字距的大寫、雙線、午夜藍墨色"
+        },
+        "split": {
+          "name": "分欄",
+          "description": "左側寬主欄，右側窄淺灰欄"
+        },
+        "airy": {
+          "name": "疏朗",
+          "description": "寬頁邊、較大的文字與充足留白，適合資歷較短者"
+        },
+        "cards": {
+          "name": "卡片",
+          "description": "淺灰背景上，每個區塊放在細邊白色卡片中"
+        },
+        "linear": {
+          "name": "線性",
+          "description": "細線、灰色小型大寫標題、靠右對齊的日期"
+        },
+        "typewriter": {
+          "name": "打字機",
+          "description": "米白紙張上全部等寬字型、底線標題、紅黑色帶"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "換一份無可挑剔的履歷",
-      "text": "從 52 款能被篩選軟體正確讀取的範本中任選其一，並針對每個職缺調整",
+      "text": "從 72 款能被篩選軟體正確讀取的範本中任選其一，並針對每個職缺調整",
       "button": "開啟編輯器",
       "import": "把這份履歷轉進我們的範本"
     },

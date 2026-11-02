@@ -31,7 +31,7 @@
     "privacy": "Zásady ochrany soukromí"
   },
   "seo": {
-    "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 52 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
+    "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 72 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
     "editor": "Editor životopisu s živým náhledem, Master životopisem a cílenými verzemi, kontrolou ATS a exportem do PDF se skutečným textem. Vše zůstává ve vašem prohlížeči",
     "analyze": "Zdarma analyzujte životopis v PDF: skóre ATS ze 100, body k opravě a text tak, jak ho čte náborový systém. Soubor nikdy neopustí váš prohlížeč",
     "changelog": "Novinky v LocalATSCV verzi po verzi: nové šablony životopisů, funkce a opravy",
@@ -62,11 +62,11 @@
       "badge": "Zdarma · Bez registrace · Bez reklam",
       "titleLine1": "Životopis, který vám otevře dveře",
       "titleLine2": "Hotovo za pár minut",
-      "subtitle": "Vyplňte svou praxi, vyberte si z 52 šablon a stáhněte si životopis připravený k odeslání. LocalATSCV vám také pomůže ho přizpůsobit každému inzerátu a ověří, že ho programy, které třídí přihlášky, přečtou správně",
+      "subtitle": "Vyplňte svou praxi, vyberte si z 72 šablon a stáhněte si životopis připravený k odeslání. LocalATSCV vám také pomůže ho přizpůsobit každému inzerátu a ověří, že ho programy, které třídí přihlášky, přečtou správně",
       "ctaPrimary": "Vytvořit životopis zdarma",
       "ctaSecondary": "Otestovat můj současný životopis",
       "points": {
-        "templates": "52 šablon na výběr",
+        "templates": "72 šablon na výběr",
         "letter": "Sladěný motivační dopis",
         "private": "Vaše data zůstávají u vás"
       }
@@ -170,7 +170,7 @@
       "title": "Vše pro úspěšnou přihlášku",
       "items": {
         "templates": {
-          "title": "52 propracovaných šablon",
+          "title": "72 propracovaných šablon",
           "text": "Střídmé, moderní nebo barevné, s fotkou i bez. Změňte šablonu nebo barvu jedním kliknutím, váš text se přizpůsobí"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Šablona",
       "title": "Vyberte šablonu",
-      "subtitle": "Všechny šablony s úplným ukázkovým životopisem, nebo s vaším. Barva zvýraznění platí pro všechny šablony",
+      "subtitle": "Vyberte šablonu vlevo: náhled vpravo používá vaši barvu a písma",
       "close": "Zavřít",
       "filter": "Filtrovat šablony",
       "filters": {
         "all": "Všechny",
         "graphic": "Grafické",
-        "sober": "Střídmé"
+        "sober": "Střídmé",
+        "favorites": "Oblíbené",
+        "recent": "Nedávné"
       },
       "ats": "Kompatibilita s ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Předchozí šablona",
       "next": "Další šablona",
       "open": "Otevřít galerii šablon",
+      "tagsLabel": "Styl",
+      "tags": {
+        "dark": "Tmavé pozadí",
+        "columns": "Dva sloupce",
+        "serif": "Patkové",
+        "mono": "Neproporcionální",
+        "paper": "Papír",
+        "colorful": "Barevné",
+        "minimal": "Minimalistické"
+      },
+      "favorite": "Přidat do oblíbených",
+      "unfavorite": "Odebrat z oblíbených",
+      "use": "Použít tuto šablonu",
+      "suggested": "Doporučené pro tento inzerát",
+      "noFavorites": "Klikněte na hvězdičku šablony a najdete ji zde",
+      "noRecent": "Šablony, které použijete, se zobrazí zde",
+      "shortcuts": "Šipky pro procházení, Enter pro výběr, Esc pro zavření",
       "names": {
         "classic": {
           "name": "Klasická",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Obrys",
           "description": "Tenké linky a pravé úhly, nadpisy jako záložky přiléhající k rámečku každé sekce"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Vějíř paprsků, dvojitý rám, zlaté šipky a kosočtverce, prostrkané verzálky"
+        },
+        "glass": {
+          "name": "Sklo",
+          "description": "Průsvitné karty s bílým okrajem nad rozmazanými barevnými skvrnami"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Duhový chromový pás, jiskry, lesklé kapsle a vypouklé pilulky"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Dvoubarevný tisk s posunutým soutiskem, tečkované zrno, tučný grotesk"
+        },
+        "collage": {
+          "name": "Koláž",
+          "description": "Útržky papíru s nerovnými okraji, lepicí páska, nakloněná fotka a kurzívní patkové písmo"
+        },
+        "marble": {
+          "name": "Mramor",
+          "description": "Žilkovaný mramorový pás, zlaté linky, Cormorant a fotka se zlatým kroužkem"
+        },
+        "sticker": {
+          "name": "Samolepky",
+          "description": "Nadpisy a štítky jako vyseknuté samolepky, kulatá fotka, puntíkované pozadí"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Hnědý kraftový papír, bílé štítky, nadpisy jako razítka v čárkovaných rámečcích"
+        },
+        "wireframe": {
+          "name": "Drátěný model",
+          "description": "Návrh rozhraní: čárkované linky, rohové značky, šedé pruhy, neproporcionální písmo"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Velká tučná data vlevo, svislá osa s tečkou u každé položky"
+        },
+        "linocut": {
+          "name": "Linoryt",
+          "description": "Silné vyřezané černé tahy, jedna barevná plocha, ryté vlysy"
+        },
+        "candy": {
+          "name": "Bonbon",
+          "description": "Pruhy cukrové hole, lesklé kuličky, vše zaoblené a svěží"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Jedna barevná linka na sekci se stanicí u každé položky, plánek v rohu"
+        },
+        "stained": {
+          "name": "Vitráž",
+          "description": "Barevná skla v olovu v záhlaví stránky, olověné linky, Cormorant"
+        },
+        "finance": {
+          "name": "Finance",
+          "description": "Bankovní klasika: patkové písmo, prostrkané verzálky, dvojitá linka, půlnoční inkoust"
+        },
+        "split": {
+          "name": "Rozdělený",
+          "description": "Široký hlavní sloupec vlevo, úzký světle šedý sloupec vpravo"
+        },
+        "airy": {
+          "name": "Vzdušný",
+          "description": "Široké okraje, větší text a hodně vzduchu, pro krátké kariéry"
+        },
+        "cards": {
+          "name": "Karty",
+          "description": "Každá sekce v bílé kartě s tenkým okrajem na světle šedém pozadí"
+        },
+        "linear": {
+          "name": "Lineární",
+          "description": "Vlasové linky, šedé kapitálky v nadpisech, data zarovnaná vpravo"
+        },
+        "typewriter": {
+          "name": "Psací stroj",
+          "description": "Vše neproporcionálním písmem na krémovém papíře, podtržené nadpisy, červenočerná páska"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Přejděte na bezchybný životopis",
-      "text": "Vyberte si jednu z našich 52 šablon, které náborové programy čtou správně, a přizpůsobte ji každé nabídce",
+      "text": "Vyberte si jednu z našich 72 šablon, které náborové programy čtou správně, a přizpůsobte ji každé nabídce",
       "button": "Otevřít editor",
       "import": "Převést tento životopis do našich šablon"
     },

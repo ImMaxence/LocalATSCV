@@ -31,7 +31,7 @@
     "privacy": "Zásady ochrany súkromia"
   },
   "seo": {
-    "home": "Vytvorte si zadarmo životopis, ktorý vám otvorí dvere k pohovoru: 52 šablón, zladený motivačný list, prispôsobenie každej ponuke a kontrola ATS. Bez registrácie, vaše údaje zostávajú vo vašom zariadení",
+    "home": "Vytvorte si zadarmo životopis, ktorý vám otvorí dvere k pohovoru: 72 šablón, zladený motivačný list, prispôsobenie každej ponuke a kontrola ATS. Bez registrácie, vaše údaje zostávajú vo vašom zariadení",
     "editor": "Editor životopisu so živým náhľadom, Master životopisom a cielenými verziami, kontrolou ATS a exportom do PDF so skutočným textom. Všetko zostáva vo vašom prehliadači",
     "analyze": "Zadarmo analyzujte životopis v PDF: skóre ATS zo 100, body na opravu a text tak, ako ho číta náborový systém. Súbor nikdy neopustí váš prehliadač",
     "changelog": "Novinky v LocalATSCV verziu po verzii: nové šablóny životopisov, funkcie a opravy",
@@ -62,11 +62,11 @@
       "badge": "Zadarmo · Bez registrácie · Bez reklám",
       "titleLine1": "Životopis, ktorý vám otvorí dvere",
       "titleLine2": "Hotové za pár minút",
-      "subtitle": "Vyplňte svoju prax, vyberte si z 52 šablón a stiahnite si životopis pripravený na odoslanie. LocalATSCV vám tiež pomôže prispôsobiť ho každému inzerátu a overí, že ho programy, ktoré triedia žiadosti, prečítajú správne",
+      "subtitle": "Vyplňte svoju prax, vyberte si z 72 šablón a stiahnite si životopis pripravený na odoslanie. LocalATSCV vám tiež pomôže prispôsobiť ho každému inzerátu a overí, že ho programy, ktoré triedia žiadosti, prečítajú správne",
       "ctaPrimary": "Vytvoriť životopis zadarmo",
       "ctaSecondary": "Otestovať môj súčasný životopis",
       "points": {
-        "templates": "52 šablón na výber",
+        "templates": "72 šablón na výber",
         "letter": "Zladený motivačný list",
         "private": "Vaše údaje zostávajú u vás"
       }
@@ -170,7 +170,7 @@
       "title": "Všetko pre úspešnú žiadosť",
       "items": {
         "templates": {
-          "title": "52 prepracovaných šablón",
+          "title": "72 prepracovaných šablón",
           "text": "Striedme, moderné alebo farebné, s fotkou aj bez. Zmeňte šablónu alebo farbu jedným kliknutím, váš text sa prispôsobí"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Šablóna",
       "title": "Vyberte šablónu",
-      "subtitle": "Všetky šablóny s úplným ukážkovým životopisom, alebo s vaším. Farba zvýraznenia platí pre všetky šablóny",
+      "subtitle": "Vyberte šablónu vľavo: náhľad vpravo používa vašu farbu a písma",
       "close": "Zavrieť",
       "filter": "Filtrovať šablóny",
       "filters": {
         "all": "Všetky",
         "graphic": "Grafické",
-        "sober": "Striedme"
+        "sober": "Striedme",
+        "favorites": "Obľúbené",
+        "recent": "Nedávne"
       },
       "ats": "Kompatibilita s ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Predchádzajúca šablóna",
       "next": "Ďalšia šablóna",
       "open": "Otvoriť galériu šablón",
+      "tagsLabel": "Štýl",
+      "tags": {
+        "dark": "Tmavé pozadie",
+        "columns": "Dva stĺpce",
+        "serif": "Pätkové",
+        "mono": "Neproporcionálne",
+        "paper": "Papier",
+        "colorful": "Farebné",
+        "minimal": "Minimalistické"
+      },
+      "favorite": "Pridať medzi obľúbené",
+      "unfavorite": "Odstrániť z obľúbených",
+      "use": "Použiť túto šablónu",
+      "suggested": "Odporúčané pre tento inzerát",
+      "noFavorites": "Kliknite na hviezdičku šablóny a nájdete ju tu",
+      "noRecent": "Šablóny, ktoré použijete, sa zobrazia tu",
+      "shortcuts": "Šípky na prechádzanie, Enter na výber, Esc na zatvorenie",
       "names": {
         "classic": {
           "name": "Klasická",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Obrys",
           "description": "Tenké linky a pravé uhly, nadpisy ako záložky priliehajúce k rámu každej sekcie"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Vejár lúčov, dvojitý rám, zlaté šípky a kosoštvorce, preriedené verzálky"
+        },
+        "glass": {
+          "name": "Sklo",
+          "description": "Priesvitné karty s bielym okrajom nad rozmazanými farebnými škvrnami"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Dúhový chrómový pás, iskry, lesklé kapsuly a vypuklé pilulky"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Dvojfarebná tlač s posunutou sútlačou, bodkované zrno, tučný grotesk"
+        },
+        "collage": {
+          "name": "Koláž",
+          "description": "Útržky papiera s nerovnými okrajmi, lepiaca páska, naklonená fotka a kurzívne pätkové písmo"
+        },
+        "marble": {
+          "name": "Mramor",
+          "description": "Žilkovaný mramorový pás, zlaté linky, Cormorant a fotka so zlatým krúžkom"
+        },
+        "sticker": {
+          "name": "Nálepky",
+          "description": "Nadpisy a štítky ako vysekané nálepky, okrúhla fotka, bodkované pozadie"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Hnedý kraftový papier, biele štítky, nadpisy ako pečiatky v čiarkovaných rámikoch"
+        },
+        "wireframe": {
+          "name": "Drôtený model",
+          "description": "Návrh rozhrania: čiarkované linky, rohové značky, sivé pruhy, neproporcionálne písmo"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Veľké tučné dátumy vľavo, zvislá os s bodkou pri každej položke"
+        },
+        "linocut": {
+          "name": "Linoryt",
+          "description": "Hrubé vyrezané čierne ťahy, jedna farebná plocha, ryté vlysy"
+        },
+        "candy": {
+          "name": "Cukrík",
+          "description": "Pruhy cukrovej palice, lesklé guľôčky, všetko zaoblené a svieže"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Jedna farebná linka na sekciu so stanicou pri každej položke, plánik v rohu"
+        },
+        "stained": {
+          "name": "Vitráž",
+          "description": "Farebné sklá v olove v záhlaví strany, olovené linky, Cormorant"
+        },
+        "finance": {
+          "name": "Financie",
+          "description": "Banková klasika: pätkové písmo, preriedené verzálky, dvojitá linka, polnočný atrament"
+        },
+        "split": {
+          "name": "Rozdelený",
+          "description": "Široký hlavný stĺpec vľavo, úzky svetlosivý stĺpec vpravo"
+        },
+        "airy": {
+          "name": "Vzdušný",
+          "description": "Široké okraje, väčší text a veľa vzduchu, pre krátke kariéry"
+        },
+        "cards": {
+          "name": "Karty",
+          "description": "Každá sekcia v bielej karte s tenkým okrajom na svetlosivom pozadí"
+        },
+        "linear": {
+          "name": "Lineárny",
+          "description": "Vlasové linky, sivé kapitálky v nadpisoch, dátumy zarovnané vpravo"
+        },
+        "typewriter": {
+          "name": "Písací stroj",
+          "description": "Všetko neproporcionálnym písmom na krémovom papieri, podčiarknuté nadpisy, červeno-čierna páska"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Prejdite na bezchybný životopis",
-      "text": "Vyberte si jednu z našich 52 šablón, ktoré náborové programy čítajú správne, a prispôsobte ju každej ponuke",
+      "text": "Vyberte si jednu z našich 72 šablón, ktoré náborové programy čítajú správne, a prispôsobte ju každej ponuke",
       "button": "Otvoriť editor",
       "import": "Preniesť tento životopis do našich šablón"
     },

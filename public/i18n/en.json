@@ -31,7 +31,7 @@
     "privacy": "Privacy policy"
   },
   "seo": {
-    "home": "Build a free resume that lands the interview: 52 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
+    "home": "Build a free resume that lands the interview: 72 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
     "editor": "Resume editor with live preview, Master CV and tailored versions, ATS check and real-text PDF export. Everything stays in your browser",
     "analyze": "Analyze a PDF resume for free: ATS score out of 100, issues to fix and the text as an applicant tracking system reads it. The file never leaves your browser",
     "changelog": "What's new in LocalATSCV, release by release: new resume templates, features and fixes",
@@ -62,11 +62,11 @@
       "badge": "Free · No sign-up · No ads",
       "titleLine1": "The resume that lands the interview",
       "titleLine2": "Ready in minutes",
-      "subtitle": "Fill in your background, pick one of 52 templates and download a resume ready to send. LocalATSCV also helps you tailor it to every job ad and checks that it will be read correctly by the software that sorts applications",
+      "subtitle": "Fill in your background, pick one of 72 templates and download a resume ready to send. LocalATSCV also helps you tailor it to every job ad and checks that it will be read correctly by the software that sorts applications",
       "ctaPrimary": "Build my resume for free",
       "ctaSecondary": "Test my current resume",
       "points": {
-        "templates": "52 templates to choose from",
+        "templates": "72 templates to choose from",
         "letter": "Matching cover letter",
         "private": "Your data stays with you"
       }
@@ -170,7 +170,7 @@
       "title": "Everything for a winning application",
       "items": {
         "templates": {
-          "title": "52 polished templates",
+          "title": "72 polished templates",
           "text": "Simple, modern or colorful, with or without a photo. Switch template or color in one click, your text follows"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Template",
       "title": "Choose a template",
-      "subtitle": "Every template with a full example resume, or with yours. The accent color applies to all templates",
+      "subtitle": "Pick a template on the left: the preview on the right uses your accent color and fonts",
       "close": "Close",
       "filter": "Filter templates",
       "filters": {
         "all": "All",
         "graphic": "Graphic",
-        "sober": "Understated"
+        "sober": "Understated",
+        "favorites": "Favorites",
+        "recent": "Recent"
       },
       "ats": "ATS compatibility",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Previous template",
       "next": "Next template",
       "open": "Open the template gallery",
+      "tagsLabel": "Style",
+      "tags": {
+        "dark": "Dark background",
+        "columns": "Two columns",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Paper",
+        "colorful": "Colorful",
+        "minimal": "Minimalist"
+      },
+      "favorite": "Add to favorites",
+      "unfavorite": "Remove from favorites",
+      "use": "Use this template",
+      "suggested": "Suggested for this job",
+      "noFavorites": "Click a template's star to find it here",
+      "noRecent": "Templates you use will appear here",
+      "shortcuts": "Arrow keys to browse, Enter to choose, Esc to close",
       "names": {
         "classic": {
           "name": "Classic",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Outline",
           "description": "Thin rules and square corners, headings as tabs attached to each section frame"
+        },
+        "artdeco": {
+          "name": "Art Deco",
+          "description": "Fan of rays, double frame, golden chevrons and diamonds, spaced capitals"
+        },
+        "glass": {
+          "name": "Glass",
+          "description": "Translucent white-edged cards over blurred color blotches"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Iridescent chrome banner, sparkles, glossy capsules and bubbly pills"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Two-ink print with offset registration, dotted grain, heavy grotesque"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Irregular paper scraps, tape, tilted photo and an italic serif"
+        },
+        "marble": {
+          "name": "Marble",
+          "description": "Veined marble banner, gold rules, Cormorant and a gold-ringed photo"
+        },
+        "sticker": {
+          "name": "Stickers",
+          "description": "Headings and labels as die-cut stickers, round photo, dotted background"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Brown kraft paper, white labels, headings stamped in dashed boxes"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Interface mock-up: dashed outlines, corner marks, grey bars, monospace"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Large bold dates on the left, vertical axis with a dot per entry"
+        },
+        "linocut": {
+          "name": "Linocut",
+          "description": "Thick carved black strokes, one color block and engraved friezes"
+        },
+        "candy": {
+          "name": "Candy",
+          "description": "Candy-cane stripes, glossy gumballs and tangy rounded shapes"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "One colored line per section with a station per entry, map in the corner"
+        },
+        "stained": {
+          "name": "Stained glass",
+          "description": "Lead-lined colored glass panes at the top, lead rules, Cormorant"
+        },
+        "finance": {
+          "name": "Finance",
+          "description": "Banking classic: serif, spaced capitals, double rule, midnight ink"
+        },
+        "split": {
+          "name": "Split",
+          "description": "Wide main column on the left, narrow light-grey column on the right"
+        },
+        "airy": {
+          "name": "Airy",
+          "description": "Wide margins, larger text and lots of air, for short careers"
+        },
+        "cards": {
+          "name": "Cards",
+          "description": "Each section in a thin-edged white card on a light grey background"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Hairlines, small grey capital headings, right-aligned dates"
+        },
+        "typewriter": {
+          "name": "Typewriter",
+          "description": "All monospace on off-white paper, underlined headings, red-and-black ribbon"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Switch to a flawless resume",
-      "text": "Pick one of our 52 templates, read correctly by screening software, and tailor it to every job ad",
+      "text": "Pick one of our 72 templates, read correctly by screening software, and tailor it to every job ad",
       "button": "Open the editor",
       "import": "Bring this resume into our templates"
     },

@@ -31,7 +31,7 @@
     "privacy": "Privacybeleid"
   },
   "seo": {
-    "home": "Maak gratis een cv dat je het gesprek oplevert: 52 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
+    "home": "Maak gratis een cv dat je het gesprek oplevert: 72 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
     "editor": "Cv-editor met live voorbeeld, Master-cv en gerichte versies, ATS-controle en pdf-export met echte tekst. Alles blijft in je browser",
     "analyze": "Analyseer gratis een pdf-cv: ATS-score op 100, verbeterpunten en de tekst zoals een sollicitatiesysteem die leest. Het bestand verlaat je browser nooit",
     "changelog": "Nieuw in LocalATSCV, versie per versie: nieuwe cv-sjablonen, functies en oplossingen",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Zonder account · Zonder reclame",
       "titleLine1": "Het cv dat je het gesprek oplevert",
       "titleLine2": "Klaar in een paar minuten",
-      "subtitle": "Vul je loopbaan in, kies een van de 52 sjablonen en download een cv dat klaar is om te versturen. LocalATSCV helpt je ook om het op elke vacature af te stemmen en controleert of de software die sollicitaties sorteert het goed leest",
+      "subtitle": "Vul je loopbaan in, kies een van de 72 sjablonen en download een cv dat klaar is om te versturen. LocalATSCV helpt je ook om het op elke vacature af te stemmen en controleert of de software die sollicitaties sorteert het goed leest",
       "ctaPrimary": "Gratis mijn cv maken",
       "ctaSecondary": "Mijn huidige cv testen",
       "points": {
-        "templates": "52 sjablonen om uit te kiezen",
+        "templates": "72 sjablonen om uit te kiezen",
         "letter": "Bijpassende sollicitatiebrief",
         "private": "Je gegevens blijven bij jou"
       }
@@ -170,7 +170,7 @@
       "title": "Alles voor een geslaagde sollicitatie",
       "items": {
         "templates": {
-          "title": "52 verzorgde sjablonen",
+          "title": "72 verzorgde sjablonen",
           "text": "Sober, modern of kleurrijk, met of zonder foto. Wissel met één klik van sjabloon of kleur, je tekst gaat mee"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Sjabloon",
       "title": "Kies een sjabloon",
-      "subtitle": "Elk sjabloon met een volledig voorbeeld-cv, of met dat van jou. De accentkleur geldt voor alle sjablonen",
+      "subtitle": "Kies links een sjabloon: het voorbeeld rechts gebruikt jouw kleur en lettertypen",
       "close": "Sluiten",
       "filter": "Sjablonen filteren",
       "filters": {
         "all": "Alle",
         "graphic": "Grafisch",
-        "sober": "Sober"
+        "sober": "Sober",
+        "favorites": "Favorieten",
+        "recent": "Recent"
       },
       "ats": "ATS-compatibiliteit",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Vorig sjabloon",
       "next": "Volgend sjabloon",
       "open": "Sjabloongalerij openen",
+      "tagsLabel": "Stijl",
+      "tags": {
+        "dark": "Donkere achtergrond",
+        "columns": "Twee kolommen",
+        "serif": "Schreef",
+        "mono": "Monospace",
+        "paper": "Papier",
+        "colorful": "Kleurrijk",
+        "minimal": "Minimalistisch"
+      },
+      "favorite": "Aan favorieten toevoegen",
+      "unfavorite": "Uit favorieten verwijderen",
+      "use": "Dit sjabloon gebruiken",
+      "suggested": "Aanbevolen voor deze vacature",
+      "noFavorites": "Klik op de ster van een sjabloon om het hier terug te vinden",
+      "noRecent": "Sjablonen die je gebruikt verschijnen hier",
+      "shortcuts": "Pijltjes om te bladeren, Enter om te kiezen, Esc om te sluiten",
       "names": {
         "classic": {
           "name": "Klassiek",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Contour",
           "description": "Dunne lijnen en rechte hoeken, koppen als tabs tegen het kader van elke sectie"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Waaier van stralen, dubbel kader, gouden chevrons en ruiten, gespatieerde kapitalen"
+        },
+        "glass": {
+          "name": "Glas",
+          "description": "Doorschijnende kaarten met witte rand over vervaagde kleurvlekken"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Iriserende chroomband, glinsteringen, glanzende capsules en bolle pillen"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tweekleurendruk met verschoven register, puntenkorrel, zware grotesk"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Papiersnippers met grillige randen, plakband, scheve foto en cursieve schreef"
+        },
+        "marble": {
+          "name": "Marmer",
+          "description": "Geaderde marmerband, gouden lijnen, Cormorant en foto met gouden ring"
+        },
+        "sticker": {
+          "name": "Stickers",
+          "description": "Koppen en labels als uitgesneden stickers, ronde foto, stippelachtergrond"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Bruin kraftpapier, witte etiketten, koppen gestempeld in gestippelde vakken"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Interface-schets: stippellijnen, hoekmarkeringen, grijze balken, monospace"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Grote vette data links, verticale as met een stip per item"
+        },
+        "linocut": {
+          "name": "Linosnede",
+          "description": "Dikke gesneden zwarte lijnen, één kleurvlak, gegraveerde friezen"
+        },
+        "candy": {
+          "name": "Snoep",
+          "description": "Zuurstokstrepen, glanzende kauwgomballen, alles rond en fris"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Eén gekleurde lijn per sectie met een station per item, netkaart in de hoek"
+        },
+        "stained": {
+          "name": "Glas-in-lood",
+          "description": "Gekleurde glaspanelen in lood bovenaan, loodlijnen, Cormorant"
+        },
+        "finance": {
+          "name": "Financiën",
+          "description": "Bankklassieker: schreef, gespatieerde kapitalen, dubbele lijn, nachtblauwe inkt"
+        },
+        "split": {
+          "name": "Gesplitst",
+          "description": "Brede hoofdkolom links, smalle lichtgrijze kolom rechts"
+        },
+        "airy": {
+          "name": "Luchtig",
+          "description": "Brede marges, grotere tekst en veel lucht, voor korte loopbanen"
+        },
+        "cards": {
+          "name": "Kaarten",
+          "description": "Elke sectie in een witte kaart met dunne rand op lichtgrijze achtergrond"
+        },
+        "linear": {
+          "name": "Lineair",
+          "description": "Haarlijnen, grijze kleinkapitale koppen, rechts uitgelijnde data"
+        },
+        "typewriter": {
+          "name": "Schrijfmachine",
+          "description": "Alles in monospace op gebroken wit papier, onderstreepte koppen, rood-zwart lint"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Stap over op een foutloos cv",
-      "text": "Kies een van onze 52 sjablonen, die selectiesoftware goed leest, en stem het af op elke vacature",
+      "text": "Kies een van onze 72 sjablonen, die selectiesoftware goed leest, en stem het af op elke vacature",
       "button": "De editor openen",
       "import": "Dit cv overbrengen naar onze sjablonen"
     },

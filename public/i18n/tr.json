@@ -31,7 +31,7 @@
     "privacy": "Gizlilik politikası"
   },
   "seo": {
-    "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 52 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
+    "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 72 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
     "editor": "Canlı önizlemeli CV düzenleyici, Master CV ve hedefli sürümler, ATS kontrolü ve gerçek metinli PDF dışa aktarma. Her şey tarayıcınızda kalır",
     "analyze": "PDF CV'nizi ücretsiz analiz edin: 100 üzerinden ATS puanı, düzeltilecek noktalar ve bir işe alım sisteminin okuduğu hâliyle metin. Dosya tarayıcınızdan asla çıkmaz",
     "changelog": "LocalATSCV'deki yenilikler, sürüm sürüm: yeni CV şablonları, özellikler ve düzeltmeler",
@@ -62,11 +62,11 @@
       "badge": "Ücretsiz · Kayıt yok · Reklam yok",
       "titleLine1": "Sizi mülakata taşıyan CV",
       "titleLine2": "Birkaç dakikada hazır",
-      "subtitle": "Geçmişinizi doldurun, 52 şablondan birini seçin ve gönderime hazır bir CV indirin. LocalATSCV ayrıca CV'nizi her ilana uyarlamanıza yardımcı olur ve başvuruları ayıklayan programların onu doğru okuduğunu kontrol eder",
+      "subtitle": "Geçmişinizi doldurun, 72 şablondan birini seçin ve gönderime hazır bir CV indirin. LocalATSCV ayrıca CV'nizi her ilana uyarlamanıza yardımcı olur ve başvuruları ayıklayan programların onu doğru okuduğunu kontrol eder",
       "ctaPrimary": "Ücretsiz CV'mi oluştur",
       "ctaSecondary": "Mevcut CV'mi test et",
       "points": {
-        "templates": "Seçebileceğiniz 52 şablon",
+        "templates": "Seçebileceğiniz 72 şablon",
         "letter": "Uyumlu ön yazı",
         "private": "Verileriniz sizde kalır"
       }
@@ -170,7 +170,7 @@
       "title": "Başarılı bir başvuru için her şey",
       "items": {
         "templates": {
-          "title": "Özenle hazırlanmış 52 şablon",
+          "title": "Özenle hazırlanmış 72 şablon",
           "text": "Sade, modern ya da renkli, fotoğraflı veya fotoğrafsız. Tek tıkla şablonu ya da rengi değiştirin, metniniz uyum sağlar"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Şablon",
       "title": "Şablon seçin",
-      "subtitle": "Tüm şablonlar eksiksiz bir örnek CV ile ya da sizinkiyle. Vurgu rengi tüm şablonlara uygulanır",
+      "subtitle": "Soldan bir şablon seçin: sağdaki önizleme renginizi ve yazı tiplerinizi kullanır",
       "close": "Kapat",
       "filter": "Şablonları filtrele",
       "filters": {
         "all": "Tümü",
         "graphic": "Grafik",
-        "sober": "Sade"
+        "sober": "Sade",
+        "favorites": "Favoriler",
+        "recent": "Son kullanılanlar"
       },
       "ats": "ATS uyumluluğu",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Önceki şablon",
       "next": "Sonraki şablon",
       "open": "Şablon galerisini aç",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Koyu arka plan",
+        "columns": "İki sütun",
+        "serif": "Serif",
+        "mono": "Eş aralıklı",
+        "paper": "Kâğıt",
+        "colorful": "Renkli",
+        "minimal": "Minimalist"
+      },
+      "favorite": "Favorilere ekle",
+      "unfavorite": "Favorilerden çıkar",
+      "use": "Bu şablonu kullan",
+      "suggested": "Bu ilan için önerilenler",
+      "noFavorites": "Bir şablonun yıldızına tıklayın, burada bulursunuz",
+      "noRecent": "Kullandığınız şablonlar burada görünecek",
+      "shortcuts": "Gezinmek için oklar, seçmek için Enter, kapatmak için Esc",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "İnce çizgiler ve dik açılar, her bölümün çerçevesine bitişik sekme biçiminde başlıklar"
+        },
+        "artdeco": {
+          "name": "Art deko",
+          "description": "Işın yelpazesi, çift çerçeve, altın şevronlar ve baklavalar, aralıklı büyük harfler"
+        },
+        "glass": {
+          "name": "Cam",
+          "description": "Bulanık renk lekeleri üzerinde beyaz kenarlı yarı saydam kartlar"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Yanardöner krom şerit, pırıltılar, parlak kapsüller ve bombeli haplar"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Kaymış hizalı iki mürekkepli baskı, nokta dokusu, kalın grotesk"
+        },
+        "collage": {
+          "name": "Kolaj",
+          "description": "Düzensiz kenarlı kâğıt parçaları, bant, eğik fotoğraf ve italik serif"
+        },
+        "marble": {
+          "name": "Mermer",
+          "description": "Damarlı mermer şerit, altın çizgiler, Cormorant ve altın halkalı fotoğraf"
+        },
+        "sticker": {
+          "name": "Çıkartmalar",
+          "description": "Kesilmiş çıkartma gibi başlıklar ve etiketler, yuvarlak fotoğraf, puantiyeli arka plan"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Kahverengi kraft kâğıdı, beyaz etiketler, kesik çizgili kutularda damgalanmış başlıklar"
+        },
+        "wireframe": {
+          "name": "Tel kafes",
+          "description": "Arayüz taslağı: kesik çizgiler, köşe işaretleri, gri çubuklar, eş aralıklı yazı"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Solda büyük kalın tarihler, her kayıtta bir noktalı dikey eksen"
+        },
+        "linocut": {
+          "name": "Linol baskı",
+          "description": "Oyulmuş kalın siyah çizgiler, tek renk bloğu, kazınmış frizler"
+        },
+        "candy": {
+          "name": "Şeker",
+          "description": "Baston şeker çizgileri, parlak toplar, her şey yuvarlak ve ekşi"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Her bölüm için renkli bir hat, her kayıt için bir durak, köşede hat haritası"
+        },
+        "stained": {
+          "name": "Vitray",
+          "description": "Sayfa başında kurşunlu renkli camlar, kurşun çizgiler, Cormorant"
+        },
+        "finance": {
+          "name": "Finans",
+          "description": "Banka klasiği: serif, aralıklı büyük harfler, çift çizgi, gece mavisi mürekkep"
+        },
+        "split": {
+          "name": "Bölünmüş",
+          "description": "Solda geniş ana sütun, sağda dar açık gri sütun"
+        },
+        "airy": {
+          "name": "Ferah",
+          "description": "Geniş kenar boşlukları, daha büyük metin ve bol boşluk, kısa kariyerler için"
+        },
+        "cards": {
+          "name": "Kartlar",
+          "description": "Her bölüm açık gri zemin üzerinde ince kenarlı beyaz bir kartta"
+        },
+        "linear": {
+          "name": "Doğrusal",
+          "description": "İnce çizgiler, gri küçük büyük harfli başlıklar, sağa hizalı tarihler"
+        },
+        "typewriter": {
+          "name": "Daktilo",
+          "description": "Kırık beyaz kâğıt üzerinde hepsi eş aralıklı, altı çizili başlıklar, kırmızı-siyah şerit"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Kusursuz bir CV'ye geçin",
-      "text": "Eleme programlarının doğru okuduğu 52 şablonumuzdan birini seçin ve her ilana uyarlayın",
+      "text": "Eleme programlarının doğru okuduğu 72 şablonumuzdan birini seçin ve her ilana uyarlayın",
       "button": "Düzenleyiciyi aç",
       "import": "Bu CV'yi şablonlarımıza taşı"
     },

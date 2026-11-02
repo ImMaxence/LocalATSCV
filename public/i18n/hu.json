@@ -31,7 +31,7 @@
     "privacy": "Adatvédelmi irányelvek"
   },
   "seo": {
-    "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 52 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
+    "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 72 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
     "editor": "Önéletrajz-szerkesztő élő előnézettel, Master önéletrajzzal és célzott változatokkal, ATS-ellenőrzéssel és valódi szöveges PDF-exporttal. Minden a böngészőjében marad",
     "analyze": "Elemezzen ingyen egy PDF önéletrajzot: ATS-pontszám 100-ból, javítandó pontok és a szöveg úgy, ahogy egy toborzórendszer olvassa. A fájl sosem hagyja el a böngészőjét",
     "changelog": "A LocalATSCV újdonságai verzióról verzióra: új önéletrajzsablonok, funkciók és javítások",
@@ -62,11 +62,11 @@
       "badge": "Ingyenes · Regisztráció nélkül · Reklám nélkül",
       "titleLine1": "Az önéletrajz, amellyel behívják interjúra",
       "titleLine2": "Néhány perc alatt kész",
-      "subtitle": "Töltse ki a pályafutását, válasszon 52 sablon közül, és töltsön le egy küldésre kész önéletrajzot. A LocalATSCV abban is segít, hogy minden hirdetéshez igazítsa, és ellenőrzi, hogy a jelentkezéseket szűrő programok helyesen olvassák-e",
+      "subtitle": "Töltse ki a pályafutását, válasszon 72 sablon közül, és töltsön le egy küldésre kész önéletrajzot. A LocalATSCV abban is segít, hogy minden hirdetéshez igazítsa, és ellenőrzi, hogy a jelentkezéseket szűrő programok helyesen olvassák-e",
       "ctaPrimary": "Önéletrajz készítése ingyen",
       "ctaSecondary": "Jelenlegi önéletrajzom tesztelése",
       "points": {
-        "templates": "52 sablon közül választhat",
+        "templates": "72 sablon közül választhat",
         "letter": "Hozzáillő motivációs levél",
         "private": "Adatai Önnél maradnak"
       }
@@ -170,7 +170,7 @@
       "title": "Minden a sikeres jelentkezéshez",
       "items": {
         "templates": {
-          "title": "52 igényes sablon",
+          "title": "72 igényes sablon",
           "text": "Visszafogott, modern vagy színes, fotóval vagy anélkül. Egy kattintással válthat sablont vagy színt, a szöveg követi"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Sablon",
       "title": "Válasszon sablont",
-      "subtitle": "Minden sablon egy teljes minta-önéletrajzzal vagy a sajátjával. A kiemelőszín minden sablonra érvényes",
+      "subtitle": "Válassz sablont bal oldalt: a jobb oldali előnézet a te színedet és betűidet használja",
       "close": "Bezárás",
       "filter": "Sablonok szűrése",
       "filters": {
         "all": "Összes",
         "graphic": "Grafikus",
-        "sober": "Visszafogott"
+        "sober": "Visszafogott",
+        "favorites": "Kedvencek",
+        "recent": "Legutóbbiak"
       },
       "ats": "ATS-kompatibilitás",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Előző sablon",
       "next": "Következő sablon",
       "open": "Sablongaléria megnyitása",
+      "tagsLabel": "Stílus",
+      "tags": {
+        "dark": "Sötét háttér",
+        "columns": "Két hasáb",
+        "serif": "Talpas",
+        "mono": "Rögzített szélességű",
+        "paper": "Papír",
+        "colorful": "Színes",
+        "minimal": "Minimalista"
+      },
+      "favorite": "Hozzáadás a kedvencekhez",
+      "unfavorite": "Eltávolítás a kedvencekből",
+      "use": "Ezt a sablont használom",
+      "suggested": "Ehhez az álláshoz ajánlott",
+      "noFavorites": "Kattints egy sablon csillagára, hogy itt megtaláld",
+      "noRecent": "A használt sablonok itt jelennek meg",
+      "shortcuts": "Nyilak a böngészéshez, Enter a választáshoz, Esc a bezáráshoz",
       "names": {
         "classic": {
           "name": "Klasszikus",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontúr",
           "description": "Vékony vonalak és derékszögek, címek fülként minden szakasz keretéhez illesztve"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Sugárlegyező, dupla keret, arany cikcakkok és rombuszok, ritkított nagybetűk"
+        },
+        "glass": {
+          "name": "Üveg",
+          "description": "Áttetsző, fehér szegélyű kártyák elmosott színfoltok fölött"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Irizáló krómsáv, szikrák, fényes kapszulák és domború pirulák"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Kétszínű nyomat elcsúszott illesztéssel, pontszemcse, kövér groteszk"
+        },
+        "collage": {
+          "name": "Kollázs",
+          "description": "Szabálytalan szélű papírfecnik, ragasztószalag, ferde fotó és dőlt talpas betű"
+        },
+        "marble": {
+          "name": "Márvány",
+          "description": "Erezett márványsáv, arany vonalak, Cormorant és aranykeretes fotó"
+        },
+        "sticker": {
+          "name": "Matricák",
+          "description": "Címek és címkék kivágott matricaként, kerek fotó, pöttyös háttér"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Barna kraftpapír, fehér címkék, szaggatott keretbe pecsételt címek"
+        },
+        "wireframe": {
+          "name": "Drótváz",
+          "description": "Felületvázlat: szaggatott vonalak, sarokjelek, szürke sávok, rögzített szélesség"
+        },
+        "chrono": {
+          "name": "Kronó",
+          "description": "Nagy, félkövér dátumok bal oldalt, függőleges tengely egy ponttal minden tételnél"
+        },
+        "linocut": {
+          "name": "Linómetszet",
+          "description": "Vastag, faragott fekete vonalak, egyetlen színfolt, vésett frízek"
+        },
+        "candy": {
+          "name": "Cukorka",
+          "description": "Cukorbot-csíkok, fényes golyók, minden lekerekített és üdítő"
+        },
+        "metro": {
+          "name": "Metró",
+          "description": "Szakaszonként egy színes vonal, tételenként egy állomás, hálózati térkép a sarokban"
+        },
+        "stained": {
+          "name": "Ólomüveg",
+          "description": "Ólomkeretes színes üvegek a lap tetején, ólomvonalak, Cormorant"
+        },
+        "finance": {
+          "name": "Pénzügy",
+          "description": "Banki klasszikus: talpas betű, ritkított nagybetűk, dupla vonal, éjkék tinta"
+        },
+        "split": {
+          "name": "Osztott",
+          "description": "Széles főhasáb bal oldalt, keskeny világosszürke hasáb jobb oldalt"
+        },
+        "airy": {
+          "name": "Levegős",
+          "description": "Széles margók, nagyobb szöveg és sok levegő, rövid pályafutásokhoz"
+        },
+        "cards": {
+          "name": "Kártyák",
+          "description": "Minden szakasz vékony szegélyű fehér kártyán, világosszürke háttéren"
+        },
+        "linear": {
+          "name": "Lineáris",
+          "description": "Hajszálvonalak, szürke kiskapitális címek, jobbra zárt dátumok"
+        },
+        "typewriter": {
+          "name": "Írógép",
+          "description": "Minden rögzített szélességgel törtfehér papíron, aláhúzott címek, piros-fekete szalag"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Váltson hibátlan önéletrajzra",
-      "text": "Válasszon egyet 52 sablonunk közül, amelyeket a szűrőprogramok helyesen olvasnak, és igazítsa minden hirdetéshez",
+      "text": "Válasszon egyet 72 sablonunk közül, amelyeket a szűrőprogramok helyesen olvasnak, és igazítsa minden hirdetéshez",
       "button": "A szerkesztő megnyitása",
       "import": "Az önéletrajz áthozása a sablonjainkba"
     },

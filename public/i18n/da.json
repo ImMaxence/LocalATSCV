@@ -31,7 +31,7 @@
     "privacy": "Privatlivspolitik"
   },
   "seo": {
-    "home": "Lav gratis et CV, der giver dig samtalen: 52 skabeloner, matchende ansøgning, tilpasning til hvert opslag og ATS-tjek. Uden tilmelding, dine data bliver på din enhed",
+    "home": "Lav gratis et CV, der giver dig samtalen: 72 skabeloner, matchende ansøgning, tilpasning til hvert opslag og ATS-tjek. Uden tilmelding, dine data bliver på din enhed",
     "editor": "CV-editor med live-visning, Master-CV og målrettede versioner, ATS-tjek og PDF-eksport med ægte tekst. Alt bliver i din browser",
     "analyze": "Analysér et CV i PDF gratis: ATS-score ud af 100, ting der skal rettes, og teksten sådan som et rekrutteringssystem læser den. Filen forlader aldrig din browser",
     "changelog": "Nyheder i LocalATSCV, version for version: nye CV-skabeloner, funktioner og rettelser",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Uden tilmelding · Uden reklamer",
       "titleLine1": "CV'et, der giver dig samtalen",
       "titleLine2": "Klar på få minutter",
-      "subtitle": "Udfyld din baggrund, vælg mellem 52 skabeloner, og download et CV, der er klar til at sende. LocalATSCV hjælper dig også med at tilpasse det til hvert opslag og tjekker, at de programmer, der sorterer ansøgninger, læser det korrekt",
+      "subtitle": "Udfyld din baggrund, vælg mellem 72 skabeloner, og download et CV, der er klar til at sende. LocalATSCV hjælper dig også med at tilpasse det til hvert opslag og tjekker, at de programmer, der sorterer ansøgninger, læser det korrekt",
       "ctaPrimary": "Lav mit CV gratis",
       "ctaSecondary": "Test mit nuværende CV",
       "points": {
-        "templates": "52 skabeloner at vælge imellem",
+        "templates": "72 skabeloner at vælge imellem",
         "letter": "Matchende ansøgning",
         "private": "Dine data bliver hos dig"
       }
@@ -170,7 +170,7 @@
       "title": "Alt til en vellykket ansøgning",
       "items": {
         "templates": {
-          "title": "52 gennemarbejdede skabeloner",
+          "title": "72 gennemarbejdede skabeloner",
           "text": "Enkle, moderne eller farverige, med eller uden foto. Skift skabelon eller farve med ét klik, din tekst følger med"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Skabelon",
       "title": "Vælg en skabelon",
-      "subtitle": "Alle skabeloner med et komplet eksempel-CV, eller med dit eget. Accentfarven gælder for alle skabeloner",
+      "subtitle": "Vælg en skabelon til venstre: forhåndsvisningen til højre bruger din farve og dine skrifttyper",
       "close": "Luk",
       "filter": "Filtrér skabelonerne",
       "filters": {
         "all": "Alle",
         "graphic": "Grafiske",
-        "sober": "Enkle"
+        "sober": "Enkle",
+        "favorites": "Favoritter",
+        "recent": "Seneste"
       },
       "ats": "ATS-kompatibilitet",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Forrige skabelon",
       "next": "Næste skabelon",
       "open": "Åbn skabelongalleriet",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Mørk baggrund",
+        "columns": "To kolonner",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Papir",
+        "colorful": "Farverig",
+        "minimal": "Minimalistisk"
+      },
+      "favorite": "Føj til favoritter",
+      "unfavorite": "Fjern fra favoritter",
+      "use": "Brug denne skabelon",
+      "suggested": "Foreslået til dette opslag",
+      "noFavorites": "Klik på en skabelons stjerne for at finde den her",
+      "noRecent": "Skabeloner, du bruger, vises her",
+      "shortcuts": "Piletaster for at bladre, Enter for at vælge, Esc for at lukke",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "Tynde linjer og rette vinkler, overskrifter som faner fæstnet til hvert afsnits ramme"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Vifte af stråler, dobbelt ramme, gyldne vinkler og romber, spatierede versaler"
+        },
+        "glass": {
+          "name": "Glas",
+          "description": "Gennemsigtige kort med hvid kant over slørede farvepletter"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Skinnende krombånd, glimt, blanke kapsler og hvælvede piller"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tofarvetryk med forskudt pasning, prikket korn, fed grotesk"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Papirstumper med ujævne kanter, tape, skævt foto og kursiv serif"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Året marmorbånd, guldlinjer, Cormorant og foto med guldring"
+        },
+        "sticker": {
+          "name": "Klistermærker",
+          "description": "Overskrifter og etiketter som udstansede klistermærker, rundt foto, prikket baggrund"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Brunt kraftpapir, hvide etiketter, overskrifter stemplet i stiplede felter"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Skitse af en brugerflade: stiplede streger, hjørnemærker, grå bjælker, monospace"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Store fede datoer til venstre, lodret akse med en prik pr. post"
+        },
+        "linocut": {
+          "name": "Linoleumssnit",
+          "description": "Tykke skårne sorte streger, én farveflade, graverede friser"
+        },
+        "candy": {
+          "name": "Slik",
+          "description": "Sukkerstokstriber, blanke kugler, alt rundt og syrligt"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Én farvet linje pr. afsnit med en station pr. post, linjekort i hjørnet"
+        },
+        "stained": {
+          "name": "Glasmosaik",
+          "description": "Blyindfattede farvede glasruder øverst, blylinjer, Cormorant"
+        },
+        "finance": {
+          "name": "Finans",
+          "description": "Bankklassiker: serif, spatierede versaler, dobbelt linje, natteblåt blæk"
+        },
+        "split": {
+          "name": "Delt",
+          "description": "Bred hovedkolonne til venstre, smal lysegrå kolonne til højre"
+        },
+        "airy": {
+          "name": "Luftig",
+          "description": "Brede margener, større tekst og masser af luft, til korte karrierer"
+        },
+        "cards": {
+          "name": "Kort",
+          "description": "Hvert afsnit i et hvidt kort med tynd kant på lysegrå baggrund"
+        },
+        "linear": {
+          "name": "Lineær",
+          "description": "Hårlinjer, grå kapitæler som overskrifter, højrestillede datoer"
+        },
+        "typewriter": {
+          "name": "Skrivemaskine",
+          "description": "Alt i monospace på råhvidt papir, understregede overskrifter, rødt og sort farvebånd"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Skift til et fejlfrit CV",
-      "text": "Vælg en af vores 52 skabeloner, som screeningsprogrammer læser korrekt, og tilpas den til hvert opslag",
+      "text": "Vælg en af vores 72 skabeloner, som screeningsprogrammer læser korrekt, og tilpas den til hvert opslag",
       "button": "Åbn editoren",
       "import": "Overfør dette CV til vores skabeloner"
     },

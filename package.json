@@ -1,6 +1,6 @@
 {
   "name": "localatscv",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Générateur de CV optimisé ATS, 100 % local : aucune donnée ne quitte le navigateur.",
   "license": "MIT",
   "author": "Maxence Bonnici",
@@ -23,6 +23,7 @@
     "docker:local": "docker compose -f docker-compose.yml -f docker-compose.local.yml up --build -d",
     "docker:down": "docker compose -f docker-compose.yml -f docker-compose.local.yml down",
     "screenshots": "node scripts/screenshots.mjs",
+    "thumbnails": "node scripts/thumbnails.mjs",
     "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/sitemap.ts",
     "markdown": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/markdown.ts"
   },
@@ -67,6 +68,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@types/turndown": "^5.0.6",
     "jsdom": "^30.0.0",
+    "lighthouse": "^13.6.0",
     "playwright-core": "^1.64.1",
     "postcss": "^8.5.32",
     "prettier": "^3.8.1",

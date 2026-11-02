@@ -31,7 +31,7 @@
     "privacy": "Personvernerklæring"
   },
   "seo": {
-    "home": "Lag gratis en CV som gir deg intervjuet: 52 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
+    "home": "Lag gratis en CV som gir deg intervjuet: 72 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
     "editor": "CV-redigering med direkte forhåndsvisning, Master-CV og målrettede versjoner, ATS-sjekk og PDF-eksport med ekte tekst. Alt blir i nettleseren din",
     "analyze": "Analyser en CV i PDF gratis: ATS-poengsum av 100, ting å rette og teksten slik et rekrutteringssystem leser den. Filen forlater aldri nettleseren din",
     "changelog": "Nyheter i LocalATSCV, versjon for versjon: nye CV-maler, funksjoner og rettelser",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Uten registrering · Uten reklame",
       "titleLine1": "CV-en som gir deg intervjuet",
       "titleLine2": "Klar på få minutter",
-      "subtitle": "Fyll inn bakgrunnen din, velg blant 52 maler og last ned en CV som er klar til å sendes. LocalATSCV hjelper deg også med å tilpasse den til hver annonse og sjekker at programmene som sorterer søknader, leser den riktig",
+      "subtitle": "Fyll inn bakgrunnen din, velg blant 72 maler og last ned en CV som er klar til å sendes. LocalATSCV hjelper deg også med å tilpasse den til hver annonse og sjekker at programmene som sorterer søknader, leser den riktig",
       "ctaPrimary": "Lag min CV gratis",
       "ctaSecondary": "Test CV-en jeg har",
       "points": {
-        "templates": "52 maler å velge mellom",
+        "templates": "72 maler å velge mellom",
         "letter": "Søknadsbrev som matcher",
         "private": "Dataene dine blir hos deg"
       }
@@ -170,7 +170,7 @@
       "title": "Alt for en vellykket søknad",
       "items": {
         "templates": {
-          "title": "52 gjennomarbeidede maler",
+          "title": "72 gjennomarbeidede maler",
           "text": "Enkle, moderne eller fargerike, med eller uten bilde. Bytt mal eller farge med ett klikk, teksten din følger med"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Mal",
       "title": "Velg en mal",
-      "subtitle": "Alle maler med en komplett eksempel-CV, eller med din egen. Aksentfargen gjelder for alle maler",
+      "subtitle": "Velg en mal til venstre: forhåndsvisningen til høyre bruker fargen og skriftene dine",
       "close": "Lukk",
       "filter": "Filtrer malene",
       "filters": {
         "all": "Alle",
         "graphic": "Grafiske",
-        "sober": "Nøkterne"
+        "sober": "Nøkterne",
+        "favorites": "Favoritter",
+        "recent": "Nylige"
       },
       "ats": "ATS-kompatibilitet",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Forrige mal",
       "next": "Neste mal",
       "open": "Åpne malgalleriet",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Mørk bakgrunn",
+        "columns": "To kolonner",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Papir",
+        "colorful": "Fargerik",
+        "minimal": "Minimalistisk"
+      },
+      "favorite": "Legg til i favoritter",
+      "unfavorite": "Fjern fra favoritter",
+      "use": "Bruk denne malen",
+      "suggested": "Foreslått for denne stillingen",
+      "noFavorites": "Klikk på stjernen til en mal for å finne den her",
+      "noRecent": "Maler du bruker, vises her",
+      "shortcuts": "Piltaster for å bla, Enter for å velge, Esc for å lukke",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "Tynne linjer og rette vinkler, overskrifter som faner festet til hver seksjons ramme"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Vifte av stråler, dobbel ramme, gylne vinkler og ruter, sperrede versaler"
+        },
+        "glass": {
+          "name": "Glass",
+          "description": "Gjennomskinnelige kort med hvit kant over uskarpe fargeflekker"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Skimrende krombånd, glimt, blanke kapsler og buede piller"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tofargetrykk med forskjøvet pass, prikkete korn, fet grotesk"
+        },
+        "collage": {
+          "name": "Kollasj",
+          "description": "Papirbiter med ujevne kanter, teip, skjevt bilde og kursiv serif"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Året marmorbånd, gull-linjer, Cormorant og bilde med gullring"
+        },
+        "sticker": {
+          "name": "Klistremerker",
+          "description": "Overskrifter og etiketter som utstansede klistremerker, rundt bilde, prikkete bakgrunn"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Brunt kraftpapir, hvite etiketter, overskrifter stemplet i stiplede bokser"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Skisse av et grensesnitt: stiplede streker, hjørnemerker, grå stolper, monospace"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Store fete datoer til venstre, loddrett akse med en prikk per oppføring"
+        },
+        "linocut": {
+          "name": "Linosnitt",
+          "description": "Tykke skårne svarte streker, én fargeflate, graverte friser"
+        },
+        "candy": {
+          "name": "Godteri",
+          "description": "Sukkerstangstriper, blanke kuler, alt rundt og syrlig"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Én farget linje per seksjon med en stasjon per oppføring, linjekart i hjørnet"
+        },
+        "stained": {
+          "name": "Glassmaleri",
+          "description": "Blyinnfattede fargede glassruter øverst, blylinjer, Cormorant"
+        },
+        "finance": {
+          "name": "Finans",
+          "description": "Bankklassiker: serif, sperrede versaler, dobbel linje, nattblått blekk"
+        },
+        "split": {
+          "name": "Delt",
+          "description": "Bred hovedkolonne til venstre, smal lysegrå kolonne til høyre"
+        },
+        "airy": {
+          "name": "Luftig",
+          "description": "Brede marger, større tekst og mye luft, for korte karrierer"
+        },
+        "cards": {
+          "name": "Kort",
+          "description": "Hver seksjon i et hvitt kort med tynn kant på lysegrå bakgrunn"
+        },
+        "linear": {
+          "name": "Lineær",
+          "description": "Hårlinjer, grå kapiteler som overskrifter, høyrestilte datoer"
+        },
+        "typewriter": {
+          "name": "Skrivemaskin",
+          "description": "Alt i monospace på offwhite papir, understrekede overskrifter, rødt og svart fargebånd"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Bytt til en feilfri CV",
-      "text": "Velg en av våre 52 maler, som utvelgelsesprogrammer leser riktig, og tilpass den til hver annonse",
+      "text": "Velg en av våre 72 maler, som utvelgelsesprogrammer leser riktig, og tilpass den til hver annonse",
       "button": "Åpne redigeringen",
       "import": "Overfør denne CV-en til malene våre"
     },

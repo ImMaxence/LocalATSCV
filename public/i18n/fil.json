@@ -31,7 +31,7 @@
     "privacy": "Patakaran sa privacy"
   },
   "seo": {
-    "home": "Gumawa nang libre ng resume na magdadala sa iyo sa interview: 52 template, katugmang cover letter, pag-angkop sa bawat job posting at ATS check. Walang sign-up, nananatili sa device mo ang data mo",
+    "home": "Gumawa nang libre ng resume na magdadala sa iyo sa interview: 72 template, katugmang cover letter, pag-angkop sa bawat job posting at ATS check. Walang sign-up, nananatili sa device mo ang data mo",
     "editor": "Resume editor na may live preview, Master na resume at mga naka-target na bersyon, ATS check at PDF export na may tunay na teksto. Lahat ay nananatili sa browser mo",
     "analyze": "Libreng pagsusuri ng PDF na resume: ATS score mula 100, mga dapat ayusin at ang eksaktong tekstong nababasa ng mga recruitment system. Hindi umaalis sa browser mo ang file",
     "changelog": "Ang mga bago sa LocalATSCV bawat bersyon: mga bagong template ng resume, feature at pag-aayos",
@@ -62,11 +62,11 @@
       "badge": "Libre · Walang sign-up · Walang ads",
       "titleLine1": "Ang resume na magdadala sa iyo sa interview",
       "titleLine2": "Handa sa loob ng ilang minuto",
-      "subtitle": "Ilagay ang iyong karanasan, pumili sa 52 template at i-download ang resume na handa nang ipadala. Tinutulungan ka rin ng LocalATSCV na iangkop ito sa bawat job posting at sinusuri kung tama ang pagbasa rito ng mga software na nagsasala ng aplikasyon",
+      "subtitle": "Ilagay ang iyong karanasan, pumili sa 72 template at i-download ang resume na handa nang ipadala. Tinutulungan ka rin ng LocalATSCV na iangkop ito sa bawat job posting at sinusuri kung tama ang pagbasa rito ng mga software na nagsasala ng aplikasyon",
       "ctaPrimary": "Gawin ang resume ko nang libre",
       "ctaSecondary": "Subukan ang kasalukuyang resume ko",
       "points": {
-        "templates": "52 template na mapagpipilian",
+        "templates": "72 template na mapagpipilian",
         "letter": "Katugmang cover letter",
         "private": "Sa iyo lang ang data mo"
       }
@@ -170,7 +170,7 @@
       "title": "Lahat ng kailangan para sa matagumpay na aplikasyon",
       "items": {
         "templates": {
-          "title": "52 maayos na template",
+          "title": "72 maayos na template",
           "text": "Simple, moderno o makulay, may litrato man o wala. Palitan ang template o kulay sa isang click, sumusunod ang teksto mo"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Template",
       "title": "Pumili ng template",
-      "subtitle": "Bawat template ay may kumpletong halimbawang resume, o ang resume mo. Ginagamit ng lahat ng template ang accent color",
+      "subtitle": "Pumili ng template sa kaliwa: ginagamit ng preview sa kanan ang iyong kulay at mga font",
       "close": "Isara",
       "filter": "I-filter ang mga template",
       "filters": {
         "all": "Lahat",
         "graphic": "Graphic",
-        "sober": "Simple"
+        "sober": "Simple",
+        "favorites": "Mga paborito",
+        "recent": "Kamakailan"
       },
       "ats": "Pagkakatugma sa ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Nakaraang template",
       "next": "Susunod na template",
       "open": "Buksan ang gallery ng mga template",
+      "tagsLabel": "Istilo",
+      "tags": {
+        "dark": "Madilim na background",
+        "columns": "Dalawang column",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Papel",
+        "colorful": "Makulay",
+        "minimal": "Minimalist"
+      },
+      "favorite": "Idagdag sa mga paborito",
+      "unfavorite": "Alisin sa mga paborito",
+      "use": "Gamitin ang template na ito",
+      "suggested": "Iminumungkahi para sa trabahong ito",
+      "noFavorites": "I-click ang bituin ng isang template para mahanap ito rito",
+      "noRecent": "Lalabas dito ang mga template na ginagamit mo",
+      "shortcuts": "Mga arrow para mag-browse, Enter para pumili, Esc para isara",
       "names": {
         "classic": {
           "name": "Klasiko",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Balangkas",
           "description": "Maninipis na linya at mga tuwid na sulok, mga heading na parang tab na nakakabit sa frame ng bawat seksyon"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Pamaypay ng mga sinag, dobleng frame, gintong chevron at diyamante, malalaking titik na may espasyo"
+        },
+        "glass": {
+          "name": "Salamin",
+          "description": "Mga translucent na card na may puting gilid sa ibabaw ng malabong mga batik ng kulay"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Kumikinang na chrome na banner, mga kislap, makintab na kapsula at umbok na pildoras"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Dalawang-tintang print na may lihis na pagkakahanay, butil ng mga tuldok, makapal na grotesque"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Mga piraso ng papel na hindi pantay ang gilid, tape, nakatagilid na larawan at italic na serif"
+        },
+        "marble": {
+          "name": "Marmol",
+          "description": "Banner ng marmol na may ugat, gintong linya, Cormorant at larawang may gintong singsing"
+        },
+        "sticker": {
+          "name": "Mga sticker",
+          "description": "Mga heading at label na parang pinutol na sticker, bilog na larawan, tuldok-tuldok na background"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Kayumangging kraft na papel, puting label, mga heading na parang selyo sa kahong putol-putol ang guhit"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Balangkas ng interface: putol-putol na linya, marka sa sulok, abuhing bar, monospace"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Malalaking makapal na petsa sa kaliwa, patayong aksis na may tuldok bawat entry"
+        },
+        "linocut": {
+          "name": "Linocut",
+          "description": "Makakapal na inukit na itim na guhit, isang bloke ng kulay, inukit na mga palamuti"
+        },
+        "candy": {
+          "name": "Kendi",
+          "description": "Mga guhit ng candy cane, makintab na bola, lahat bilog at sariwa"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Isang kulay na linya bawat seksyon na may istasyon bawat entry, mapa sa sulok"
+        },
+        "stained": {
+          "name": "Stained glass",
+          "description": "Mga kulay na salamin na may tingga sa itaas ng pahina, mga linyang tingga, Cormorant"
+        },
+        "finance": {
+          "name": "Pinansya",
+          "description": "Klasikong pambangko: serif, malalaking titik na may espasyo, dobleng linya, tintang asul ng gabi"
+        },
+        "split": {
+          "name": "Hati",
+          "description": "Malapad na pangunahing column sa kaliwa, makitid na mapusyaw na abuhing column sa kanan"
+        },
+        "airy": {
+          "name": "Maaliwalas",
+          "description": "Malalapad na margin, mas malaking teksto at maraming espasyo, para sa maiikling karera"
+        },
+        "cards": {
+          "name": "Mga card",
+          "description": "Bawat seksyon sa puting card na manipis ang gilid sa mapusyaw na abuhing background"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Maninipis na linya, abuhing maliliit na malalaking titik sa heading, mga petsang nakahanay sa kanan"
+        },
+        "typewriter": {
+          "name": "Makinilya",
+          "description": "Lahat monospace sa papel na off-white, may salungguhit na heading, pula at itim na ribbon"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Lumipat sa walang kapintasang resume",
-      "text": "Pumili ng isa sa aming 52 template, na tama ang pagbasa ng screening software, at iangkop ito sa bawat job posting",
+      "text": "Pumili ng isa sa aming 72 template, na tama ang pagbasa ng screening software, at iangkop ito sa bawat job posting",
       "button": "Buksan ang editor",
       "import": "Ilipat ang resume na ito sa mga template namin"
     },

@@ -31,7 +31,7 @@
     "privacy": "Politica de confidențialitate"
   },
   "seo": {
-    "home": "Creează gratuit un CV care îți aduce interviul: 52 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
+    "home": "Creează gratuit un CV care îți aduce interviul: 72 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
     "editor": "Editor de CV cu previzualizare live, CV Master și versiuni țintite, verificare ATS și export PDF cu text real. Totul rămâne în browserul tău",
     "analyze": "Analizează gratuit un CV în PDF: scor ATS din 100, puncte de corectat și textul așa cum îl citește un sistem de recrutare. Fișierul nu părăsește niciodată browserul tău",
     "changelog": "Noutățile LocalATSCV, versiune cu versiune: șabloane noi de CV, funcții și corecturi",
@@ -62,11 +62,11 @@
       "badge": "Gratuit · Fără cont · Fără reclame",
       "titleLine1": "CV-ul care îți aduce interviul",
       "titleLine2": "Gata în câteva minute",
-      "subtitle": "Completează-ți parcursul, alege unul dintre cele 52 de șabloane și descarcă un CV gata de trimis. LocalATSCV te ajută și să-l adaptezi fiecărui anunț și verifică dacă programele care triază candidaturile îl citesc corect",
+      "subtitle": "Completează-ți parcursul, alege unul dintre cele 72 de șabloane și descarcă un CV gata de trimis. LocalATSCV te ajută și să-l adaptezi fiecărui anunț și verifică dacă programele care triază candidaturile îl citesc corect",
       "ctaPrimary": "Creează-mi CV-ul gratuit",
       "ctaSecondary": "Testează-mi CV-ul actual",
       "points": {
-        "templates": "52 de șabloane la alegere",
+        "templates": "72 de șabloane la alegere",
         "letter": "Scrisoare de intenție asortată",
         "private": "Datele tale rămân la tine"
       }
@@ -170,7 +170,7 @@
       "title": "Tot ce trebuie pentru o candidatură reușită",
       "items": {
         "templates": {
-          "title": "52 de șabloane îngrijite",
+          "title": "72 de șabloane îngrijite",
           "text": "Sobre, moderne sau colorate, cu sau fără fotografie. Schimbă șablonul sau culoarea dintr-un clic, textul tău se adaptează"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Șablon",
       "title": "Alege un șablon",
-      "subtitle": "Toate șabloanele cu un CV de exemplu complet, sau cu al tău. Culoarea de accent se aplică tuturor șabloanelor",
+      "subtitle": "Alege un șablon în stânga: previzualizarea din dreapta folosește culoarea și fonturile tale",
       "close": "Închide",
       "filter": "Filtrează șabloanele",
       "filters": {
         "all": "Toate",
         "graphic": "Grafice",
-        "sober": "Sobre"
+        "sober": "Sobre",
+        "favorites": "Favorite",
+        "recent": "Recente"
       },
       "ats": "Compatibilitate ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Șablonul anterior",
       "next": "Șablonul următor",
       "open": "Deschide galeria de șabloane",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Fundal închis",
+        "columns": "Două coloane",
+        "serif": "Serif",
+        "mono": "Monospațiat",
+        "paper": "Hârtie",
+        "colorful": "Colorat",
+        "minimal": "Minimalist"
+      },
+      "favorite": "Adaugă la favorite",
+      "unfavorite": "Elimină din favorite",
+      "use": "Folosește acest șablon",
+      "suggested": "Sugerate pentru acest anunț",
+      "noFavorites": "Apasă steaua unui șablon ca să-l regăsești aici",
+      "noRecent": "Șabloanele pe care le folosești vor apărea aici",
+      "shortcuts": "Săgeți pentru a răsfoi, Enter pentru a alege, Esc pentru a închide",
       "names": {
         "classic": {
           "name": "Clasic",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Contur",
           "description": "Linii fine și unghiuri drepte, titluri ca file lipite de chenarul fiecărei secțiuni"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Evantai de raze, cadru dublu, chevroane și romburi aurii, majuscule spațiate"
+        },
+        "glass": {
+          "name": "Sticlă",
+          "description": "Carduri translucide cu margine albă peste pete de culoare estompate"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Bandă cromată irizată, sclipiri, capsule lucioase și pastile bombate"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tipar cu două cerneluri și registru decalat, granulație cu puncte, grotesc gros"
+        },
+        "collage": {
+          "name": "Colaj",
+          "description": "Bucăți de hârtie cu margini neregulate, bandă adezivă, fotografie înclinată și serif cursiv"
+        },
+        "marble": {
+          "name": "Marmură",
+          "description": "Bandă de marmură cu vinișoare, linii aurii, Cormorant și fotografie cu inel auriu"
+        },
+        "sticker": {
+          "name": "Stickere",
+          "description": "Titluri și etichete ca stickere decupate, fotografie rotundă, fundal cu buline"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Hârtie kraft maro, etichete albe, titluri ștampilate în casete punctate"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Schiță de interfață: linii punctate, repere de colț, bare gri, monospațiat"
+        },
+        "chrono": {
+          "name": "Crono",
+          "description": "Date mari, aldine, în stânga, axă verticală cu un punct la fiecare intrare"
+        },
+        "linocut": {
+          "name": "Linogravură",
+          "description": "Trăsături negre groase, tăiate, un bloc de culoare, frize gravate"
+        },
+        "candy": {
+          "name": "Bomboană",
+          "description": "Dungi de baston de zahăr, bile lucioase, totul rotunjit și acidulat"
+        },
+        "metro": {
+          "name": "Metrou",
+          "description": "O linie colorată pe secțiune cu o stație la fiecare intrare, hartă în colț"
+        },
+        "stained": {
+          "name": "Vitraliu",
+          "description": "Sticlă colorată în plumb în capul paginii, linii de plumb, Cormorant"
+        },
+        "finance": {
+          "name": "Finanțe",
+          "description": "Clasic bancar: serif, majuscule spațiate, linie dublă, cerneală albastru de noapte"
+        },
+        "split": {
+          "name": "Împărțit",
+          "description": "Coloană principală lată în stânga, coloană îngustă gri deschis în dreapta"
+        },
+        "airy": {
+          "name": "Aerisit",
+          "description": "Margini largi, text mai mare și mult aer, pentru parcursuri scurte"
+        },
+        "cards": {
+          "name": "Fișe",
+          "description": "Fiecare secțiune într-un card alb cu margine fină pe fundal gri deschis"
+        },
+        "linear": {
+          "name": "Liniar",
+          "description": "Linii fine, titluri în capităluțe gri, date aliniate la dreapta"
+        },
+        "typewriter": {
+          "name": "Mașină de scris",
+          "description": "Totul monospațiat pe hârtie ivoriu, titluri subliniate, panglică roșu-negru"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Treci la un CV impecabil",
-      "text": "Alege unul dintre cele 52 de șabloane ale noastre, citite corect de programele de recrutare, și adaptează-l fiecărei oferte",
+      "text": "Alege unul dintre cele 72 de șabloane ale noastre, citite corect de programele de recrutare, și adaptează-l fiecărei oferte",
       "button": "Deschide editorul",
       "import": "Adu acest CV în șabloanele noastre"
     },

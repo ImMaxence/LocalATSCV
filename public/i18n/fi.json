@@ -31,7 +31,7 @@
     "privacy": "Tietosuojaseloste"
   },
   "seo": {
-    "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 52 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
+    "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 72 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
     "editor": "CV-editori, jossa on reaaliaikainen esikatselu, Master-CV ja kohdennetut versiot, ATS-tarkistus ja PDF-vienti oikeana tekstinä. Kaikki pysyy selaimessasi",
     "analyze": "Analysoi PDF-muotoinen CV ilmaiseksi: ATS-pisteet asteikolla 0–100, korjattavat kohdat ja teksti sellaisena kuin rekrytointijärjestelmä sen lukee. Tiedosto ei koskaan poistu selaimestasi",
     "changelog": "LocalATSCV:n uutuudet versio versiolta: uudet CV-pohjat, ominaisuudet ja korjaukset",
@@ -62,11 +62,11 @@
       "badge": "Ilmainen · Ei rekisteröitymistä · Ei mainoksia",
       "titleLine1": "CV, joka vie sinut haastatteluun",
       "titleLine2": "Valmis muutamassa minuutissa",
-      "subtitle": "Täytä taustasi, valitse 52 pohjasta ja lataa lähetysvalmis CV. LocalATSCV auttaa myös muokkaamaan sen jokaiseen ilmoitukseen sopivaksi ja tarkistaa, että hakemuksia lajittelevat ohjelmat lukevat sen oikein",
+      "subtitle": "Täytä taustasi, valitse 72 pohjasta ja lataa lähetysvalmis CV. LocalATSCV auttaa myös muokkaamaan sen jokaiseen ilmoitukseen sopivaksi ja tarkistaa, että hakemuksia lajittelevat ohjelmat lukevat sen oikein",
       "ctaPrimary": "Luo CV:ni ilmaiseksi",
       "ctaSecondary": "Testaa nykyinen CV:ni",
       "points": {
-        "templates": "52 pohjaa valittavana",
+        "templates": "72 pohjaa valittavana",
         "letter": "Yhteensopiva hakemuskirje",
         "private": "Tietosi pysyvät sinulla"
       }
@@ -170,7 +170,7 @@
       "title": "Kaikki onnistuneeseen hakemukseen",
       "items": {
         "templates": {
-          "title": "52 viimeisteltyä pohjaa",
+          "title": "72 viimeisteltyä pohjaa",
           "text": "Hillittyjä, moderneja tai värikkäitä, kuvalla tai ilman. Vaihda pohjaa tai väriä yhdellä klikkauksella, tekstisi seuraa mukana"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Pohja",
       "title": "Valitse pohja",
-      "subtitle": "Kaikki pohjat täydellisellä esimerkki-CV:llä tai omallasi. Korostusväri koskee kaikkia pohjia",
+      "subtitle": "Valitse malli vasemmalta: oikealla oleva esikatselu käyttää väriäsi ja fonttejasi",
       "close": "Sulje",
       "filter": "Suodata pohjia",
       "filters": {
         "all": "Kaikki",
         "graphic": "Graafiset",
-        "sober": "Hillityt"
+        "sober": "Hillityt",
+        "favorites": "Suosikit",
+        "recent": "Viimeisimmät"
       },
       "ats": "ATS-yhteensopivuus",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Edellinen malli",
       "next": "Seuraava malli",
       "open": "Avaa malligalleria",
+      "tagsLabel": "Tyyli",
+      "tags": {
+        "dark": "Tumma tausta",
+        "columns": "Kaksi palstaa",
+        "serif": "Antiikva",
+        "mono": "Tasalevyinen",
+        "paper": "Paperi",
+        "colorful": "Värikäs",
+        "minimal": "Minimalistinen"
+      },
+      "favorite": "Lisää suosikkeihin",
+      "unfavorite": "Poista suosikeista",
+      "use": "Käytä tätä mallia",
+      "suggested": "Ehdotetut tähän ilmoitukseen",
+      "noFavorites": "Napsauta mallin tähteä löytääksesi sen täältä",
+      "noRecent": "Käyttämäsi mallit näkyvät täällä",
+      "shortcuts": "Nuolinäppäimillä selaat, Enterillä valitset, Esc sulkee",
       "names": {
         "classic": {
           "name": "Klassinen",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Ääriviiva",
           "description": "Ohuet viivat ja suorat kulmat, otsikot välilehtinä kunkin osion kehyksessä"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Säteiden viuhka, kaksoiskehys, kultaiset nuolikuviot ja vinoneliöt, harvennetut suuraakkoset"
+        },
+        "glass": {
+          "name": "Lasi",
+          "description": "Läpikuultavat valkoreunaiset kortit sumennettujen väriläikkien päällä"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Hohtava kromipalkki, kimalluksia, kiiltäviä kapseleita ja pulleita pillereitä"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Kaksivärinen painatus siirtyneellä kohdistuksella, pisterasteri, lihava groteski"
+        },
+        "collage": {
+          "name": "Kollaasi",
+          "description": "Epätasaisia paperinpaloja, teippiä, vino kuva ja kursiivinen antiikva"
+        },
+        "marble": {
+          "name": "Marmori",
+          "description": "Suonikas marmoripalkki, kultaviivat, Cormorant ja kultarenkainen kuva"
+        },
+        "sticker": {
+          "name": "Tarrat",
+          "description": "Otsikot ja tunnisteet stanssattuina tarroina, pyöreä kuva, pilkkutausta"
+        },
+        "kraft": {
+          "name": "Voimapaperi",
+          "description": "Ruskea voimapaperi, valkoiset etiketit, katkoviivalaatikoihin leimatut otsikot"
+        },
+        "wireframe": {
+          "name": "Rautalanka",
+          "description": "Käyttöliittymäluonnos: katkoviivat, kulmamerkit, harmaat palkit, tasalevyinen kirjasin"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Suuret lihavat päivämäärät vasemmalla, pystyakseli ja piste jokaista kohtaa kohti"
+        },
+        "linocut": {
+          "name": "Linoleikkaus",
+          "description": "Paksut kaiverretut mustat viivat, yksi väripinta, kaiverretut friisit"
+        },
+        "candy": {
+          "name": "Karkki",
+          "description": "Karkkikepin raidat, kiiltävät kuulat, kaikki pyöreää ja kirpeää"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Yksi värillinen linja osiota kohti ja asema jokaista kohtaa kohti, linjakartta kulmassa"
+        },
+        "stained": {
+          "name": "Lasimaalaus",
+          "description": "Lyijypuitteiset värilasit sivun yläosassa, lyijyviivat, Cormorant"
+        },
+        "finance": {
+          "name": "Rahoitus",
+          "description": "Pankkiklassikko: antiikva, harvennetut suuraakkoset, kaksoisviiva, yönsininen muste"
+        },
+        "split": {
+          "name": "Jaettu",
+          "description": "Leveä pääpalsta vasemmalla, kapea vaaleanharmaa palsta oikealla"
+        },
+        "airy": {
+          "name": "Ilmava",
+          "description": "Leveät marginaalit, suurempi teksti ja paljon ilmaa, lyhyille urille"
+        },
+        "cards": {
+          "name": "Kortit",
+          "description": "Jokainen osio ohutreunaisessa valkoisessa kortissa vaaleanharmaalla taustalla"
+        },
+        "linear": {
+          "name": "Lineaarinen",
+          "description": "Hiusviivat, harmaat kapiteeliotsikot, oikealle tasatut päivämäärät"
+        },
+        "typewriter": {
+          "name": "Kirjoituskone",
+          "description": "Kaikki tasalevyisellä kirjasimella luonnonvalkoisella paperilla, alleviivatut otsikot, puna-musta värinauha"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Vaihda virheettömään CV:hen",
-      "text": "Valitse yksi 52 pohjastamme, jotka hakemuksia lajittelevat ohjelmat lukevat oikein, ja muokkaa se jokaiseen ilmoitukseen",
+      "text": "Valitse yksi 72 pohjastamme, jotka hakemuksia lajittelevat ohjelmat lukevat oikein, ja muokkaa se jokaiseen ilmoitukseen",
       "button": "Avaa editori",
       "import": "Siirrä tämä CV pohjiimme"
     },

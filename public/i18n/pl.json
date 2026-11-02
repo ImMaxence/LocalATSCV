@@ -31,7 +31,7 @@
     "privacy": "Polityka prywatności"
   },
   "seo": {
-    "home": "Utwórz za darmo CV, które zaprowadzi cię na rozmowę: 52 szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i kontrola ATS. Bez rejestracji, twoje dane zostają na twoim urządzeniu",
+    "home": "Utwórz za darmo CV, które zaprowadzi cię na rozmowę: 72 szablonów, dopasowany list motywacyjny, dostosowanie do każdej oferty i kontrola ATS. Bez rejestracji, twoje dane zostają na twoim urządzeniu",
     "editor": "Edytor CV z podglądem na żywo, CV Master i wersjami docelowymi, kontrolą ATS i eksportem PDF z prawdziwym tekstem. Wszystko zostaje w Twojej przeglądarce",
     "analyze": "Przeanalizuj za darmo CV w PDF: wynik ATS na 100, punkty do poprawy i tekst tak, jak odczytuje go system rekrutacyjny. Plik nigdy nie opuszcza Twojej przeglądarki",
     "changelog": "Nowości w LocalATSCV, wersja po wersji: nowe szablony CV, funkcje i poprawki",
@@ -62,11 +62,11 @@
       "badge": "Za darmo · Bez rejestracji · Bez reklam",
       "titleLine1": "CV, które zaprowadzi cię na rozmowę",
       "titleLine2": "Gotowe w kilka minut",
-      "subtitle": "Uzupełnij swoje doświadczenie, wybierz jeden z 52 szablonów i pobierz CV gotowe do wysłania. LocalATSCV pomoże ci też dopasować je do każdego ogłoszenia i sprawdzi, czy programy sortujące zgłoszenia odczytają je poprawnie",
+      "subtitle": "Uzupełnij swoje doświadczenie, wybierz jeden z 72 szablonów i pobierz CV gotowe do wysłania. LocalATSCV pomoże ci też dopasować je do każdego ogłoszenia i sprawdzi, czy programy sortujące zgłoszenia odczytają je poprawnie",
       "ctaPrimary": "Utwórz CV za darmo",
       "ctaSecondary": "Sprawdź swoje obecne CV",
       "points": {
-        "templates": "52 szablonów do wyboru",
+        "templates": "72 szablonów do wyboru",
         "letter": "Dopasowany list motywacyjny",
         "private": "Twoje dane zostają u ciebie"
       }
@@ -170,7 +170,7 @@
       "title": "Wszystko do udanej rekrutacji",
       "items": {
         "templates": {
-          "title": "52 dopracowanych szablonów",
+          "title": "72 dopracowanych szablonów",
           "text": "Stonowane, nowoczesne lub kolorowe, ze zdjęciem lub bez. Zmieniaj szablon lub kolor jednym kliknięciem, tekst się dopasuje"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Szablon",
       "title": "Wybierz szablon",
-      "subtitle": "Wszystkie szablony z pełnym przykładowym CV albo z Twoim. Kolor akcentu dotyczy wszystkich szablonów",
+      "subtitle": "Wybierz szablon po lewej: podgląd po prawej używa Twojego koloru i czcionek",
       "close": "Zamknij",
       "filter": "Filtruj szablony",
       "filters": {
         "all": "Wszystkie",
         "graphic": "Graficzne",
-        "sober": "Stonowane"
+        "sober": "Stonowane",
+        "favorites": "Ulubione",
+        "recent": "Ostatnie"
       },
       "ats": "Zgodność z ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Poprzedni szablon",
       "next": "Następny szablon",
       "open": "Otwórz galerię szablonów",
+      "tagsLabel": "Styl",
+      "tags": {
+        "dark": "Ciemne tło",
+        "columns": "Dwie kolumny",
+        "serif": "Szeryfowy",
+        "mono": "Stała szerokość",
+        "paper": "Papier",
+        "colorful": "Kolorowy",
+        "minimal": "Minimalistyczny"
+      },
+      "favorite": "Dodaj do ulubionych",
+      "unfavorite": "Usuń z ulubionych",
+      "use": "Użyj tego szablonu",
+      "suggested": "Sugerowane do tej oferty",
+      "noFavorites": "Kliknij gwiazdkę szablonu, aby znaleźć go tutaj",
+      "noRecent": "Szablony, których używasz, pojawią się tutaj",
+      "shortcuts": "Strzałki, aby przeglądać, Enter, aby wybrać, Esc, aby zamknąć",
       "names": {
         "classic": {
           "name": "Klasyczny",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "Cienkie linie i proste kąty, nagłówki jako zakładki przy ramce każdej sekcji"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Wachlarz promieni, podwójna ramka, złote szewrony i romby, rozstrzelone wersaliki"
+        },
+        "glass": {
+          "name": "Szkło",
+          "description": "Półprzezroczyste karty z białą krawędzią na rozmytych plamach koloru"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Mieniący się chromowany pas, iskierki, błyszczące kapsułki i wypukłe pigułki"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Druk dwoma tuszami z przesuniętym pasowaniem, ziarno z kropek, gruby grotesk"
+        },
+        "collage": {
+          "name": "Kolaż",
+          "description": "Skrawki papieru o nierównych brzegach, taśma klejąca, przekrzywione zdjęcie i kursywa szeryfowa"
+        },
+        "marble": {
+          "name": "Marmur",
+          "description": "Żyłkowany pas marmuru, złote linie, Cormorant i zdjęcie w złotej obwódce"
+        },
+        "sticker": {
+          "name": "Naklejki",
+          "description": "Nagłówki i etykiety jak wycinane naklejki, okrągłe zdjęcie, tło w kropki"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Brązowy papier kraft, białe etykiety, nagłówki jak stemple w kreskowanych ramkach"
+        },
+        "wireframe": {
+          "name": "Makieta",
+          "description": "Szkic interfejsu: kreskowane linie, znaczniki narożników, szare paski, stała szerokość"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Duże pogrubione daty po lewej, pionowa oś z kropką przy każdym wpisie"
+        },
+        "linocut": {
+          "name": "Linoryt",
+          "description": "Grube wycięte czarne kreski, jedna plama koloru, grawerowane fryzy"
+        },
+        "candy": {
+          "name": "Cukierek",
+          "description": "Paski laski cukrowej, błyszczące kulki, wszystko zaokrąglone i kwaskowe"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Jedna kolorowa linia na sekcję ze stacją przy każdym wpisie, schemat w rogu"
+        },
+        "stained": {
+          "name": "Witraż",
+          "description": "Kolorowe szkła w ołowiu u góry strony, ołowiane linie, Cormorant"
+        },
+        "finance": {
+          "name": "Finanse",
+          "description": "Bankowa klasyka: szeryfy, rozstrzelone wersaliki, podwójna linia, granatowy tusz"
+        },
+        "split": {
+          "name": "Podzielony",
+          "description": "Szeroka główna kolumna po lewej, wąska jasnoszara kolumna po prawej"
+        },
+        "airy": {
+          "name": "Przestronny",
+          "description": "Szerokie marginesy, większy tekst i dużo powietrza, dla krótkich karier"
+        },
+        "cards": {
+          "name": "Karty",
+          "description": "Każda sekcja w białej karcie z cienką krawędzią na jasnoszarym tle"
+        },
+        "linear": {
+          "name": "Liniowy",
+          "description": "Cienkie linie, szare kapitaliki w nagłówkach, daty wyrównane do prawej"
+        },
+        "typewriter": {
+          "name": "Maszyna do pisania",
+          "description": "Wszystko stałą szerokością na kremowym papierze, podkreślone nagłówki, czerwono-czarna taśma"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Przejdź na CV bez zarzutu",
-      "text": "Wybierz jeden z naszych 52 szablonów, dobrze odczytywanych przez programy rekrutacyjne, i dopasuj go do każdej oferty",
+      "text": "Wybierz jeden z naszych 72 szablonów, dobrze odczytywanych przez programy rekrutacyjne, i dopasuj go do każdej oferty",
       "button": "Otwórz edytor",
       "import": "Przenieś to CV do naszych szablonów"
     },

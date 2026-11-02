@@ -31,7 +31,7 @@
     "privacy": "Sera ya faragha"
   },
   "seo": {
-    "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 52, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
+    "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 72, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
     "editor": "Kihariri cha CV chenye onyesho la moja kwa moja, CV Kuu na matoleo yaliyolengwa, ukaguzi wa ATS na usafirishaji wa PDF yenye maandishi halisi. Kila kitu kinabaki kwenye kivinjari chako",
     "analyze": "Uchambuzi wa bure wa CV ya PDF: alama ya ATS kati ya 100, mambo ya kurekebisha na maandishi kama mifumo ya uajiri inavyoyasoma. Faili haitoki kamwe kwenye kivinjari chako",
     "changelog": "Mapya ya LocalATSCV kwa kila toleo: violezo vipya vya CV, vipengele na marekebisho",
@@ -62,11 +62,11 @@
       "badge": "Bure · Bila kujisajili · Bila matangazo",
       "titleLine1": "CV inayokufikisha kwenye usaili",
       "titleLine2": "Tayari kwa dakika chache",
-      "subtitle": "Jaza historia yako, chagua kiolezo kimoja kati ya 52 na upakue CV iliyo tayari kutumwa. LocalATSCV pia inakusaidia kuirekebisha kwa kila tangazo la kazi na inakagua kama programu zinazochuja maombi zinaisoma ipasavyo",
+      "subtitle": "Jaza historia yako, chagua kiolezo kimoja kati ya 72 na upakue CV iliyo tayari kutumwa. LocalATSCV pia inakusaidia kuirekebisha kwa kila tangazo la kazi na inakagua kama programu zinazochuja maombi zinaisoma ipasavyo",
       "ctaPrimary": "Tengeneza CV yangu bure",
       "ctaSecondary": "Jaribu CV yangu ya sasa",
       "points": {
-        "templates": "Violezo 52 vya kuchagua",
+        "templates": "Violezo 72 vya kuchagua",
         "letter": "Barua ya maombi inayolingana",
         "private": "Data yako inabaki kwako"
       }
@@ -170,7 +170,7 @@
       "title": "Kila kitu kwa ombi la kazi lenye mafanikio",
       "items": {
         "templates": {
-          "title": "Violezo 52 vilivyoboreshwa",
+          "title": "Violezo 72 vilivyoboreshwa",
           "text": "Rahisi, vya kisasa au vya rangi, vikiwa na picha au bila. Badilisha kiolezo au rangi kwa mbofyo mmoja, maandishi yako yanafuata"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Kiolezo",
       "title": "Chagua kiolezo",
-      "subtitle": "Kila kiolezo kina CV kamili ya mfano, au CV yako. Rangi ya msisitizo hutumika kwenye violezo vyote",
+      "subtitle": "Chagua kiolezo upande wa kushoto: onyesho la kulia linatumia rangi na fonti zako",
       "close": "Funga",
       "filter": "Chuja violezo",
       "filters": {
         "all": "Vyote",
         "graphic": "Vya michoro",
-        "sober": "Rahisi"
+        "sober": "Rahisi",
+        "favorites": "Vipendwa",
+        "recent": "Vya hivi karibuni"
       },
       "ats": "Ulinganifu na ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Kiolezo kilichotangulia",
       "next": "Kiolezo kinachofuata",
       "open": "Fungua maktaba ya violezo",
+      "tagsLabel": "Mtindo",
+      "tags": {
+        "dark": "Mandharinyuma meusi",
+        "columns": "Safu mbili",
+        "serif": "Serifu",
+        "mono": "Upana sawa",
+        "paper": "Karatasi",
+        "colorful": "Rangi nyingi",
+        "minimal": "Rahisi"
+      },
+      "favorite": "Ongeza kwenye vipendwa",
+      "unfavorite": "Ondoa kwenye vipendwa",
+      "use": "Tumia kiolezo hiki",
+      "suggested": "Vinavyopendekezwa kwa tangazo hili",
+      "noFavorites": "Bofya nyota ya kiolezo ili ukipate hapa",
+      "noRecent": "Violezo unavyotumia vitaonekana hapa",
+      "shortcuts": "Mishale kuvinjari, Enter kuchagua, Esc kufunga",
       "names": {
         "classic": {
           "name": "Classic",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Muhtasari",
           "description": "Mistari myembamba na pembe za mraba, vichwa kama vichupo vilivyoambatishwa kwenye fremu ya kila sehemu"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Feni ya miale, fremu maradufu, chevroni na almasi za dhahabu, herufi kubwa zilizotenganishwa"
+        },
+        "glass": {
+          "name": "Kioo",
+          "description": "Kadi zinazopitisha mwanga zenye ukingo mweupe juu ya madoa ya rangi yaliyofifishwa"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Ukanda wa kromu unaong'aa, cheche, kapsuli zinazong'aa na vidonge vilivyobinuka"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Uchapishaji wa wino mbili ulioachana kidogo, chembe za nukta, grotesque nzito"
+        },
+        "collage": {
+          "name": "Kolaji",
+          "description": "Vipande vya karatasi vyenye kingo zisizo sawa, utepe, picha iliyoinama na serifu ya italiki"
+        },
+        "marble": {
+          "name": "Marumaru",
+          "description": "Ukanda wa marumaru yenye mishipa, mistari ya dhahabu, Cormorant na picha yenye pete ya dhahabu"
+        },
+        "sticker": {
+          "name": "Stika",
+          "description": "Vichwa na lebo kama stika zilizokatwa, picha ya duara, mandharinyuma ya nukta"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Karatasi ya kraft ya kahawia, lebo nyeupe, vichwa vilivyopigwa muhuri ndani ya visanduku vya mistari iliyokatika"
+        },
+        "wireframe": {
+          "name": "Fremu ya waya",
+          "description": "Mchoro wa kiolesura: mistari iliyokatika, alama za pembe, pau za kijivu, fonti ya upana sawa"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Tarehe kubwa nzito upande wa kushoto, mhimili wima wenye nukta kwa kila ingizo"
+        },
+        "linocut": {
+          "name": "Linocut",
+          "description": "Mistari myeusi minene iliyochongwa, kizuizi kimoja cha rangi, mapambo yaliyochongwa"
+        },
+        "candy": {
+          "name": "Peremende",
+          "description": "Mistari ya fimbo ya peremende, mipira inayong'aa, kila kitu cha mviringo na kichangamfu"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Mstari mmoja wa rangi kwa kila sehemu na kituo kwa kila ingizo, ramani pembeni"
+        },
+        "stained": {
+          "name": "Vioo vya rangi",
+          "description": "Vioo vya rangi vyenye risasi juu ya ukurasa, mistari ya risasi, Cormorant"
+        },
+        "finance": {
+          "name": "Fedha",
+          "description": "Mtindo wa kibenki: serifu, herufi kubwa zilizotenganishwa, mstari maradufu, wino wa buluu ya usiku"
+        },
+        "split": {
+          "name": "Iliyogawanywa",
+          "description": "Safu kuu pana upande wa kushoto, safu nyembamba ya kijivu hafifu upande wa kulia"
+        },
+        "airy": {
+          "name": "Yenye nafasi",
+          "description": "Pambizo pana, maandishi makubwa zaidi na nafasi nyingi, kwa taaluma fupi"
+        },
+        "cards": {
+          "name": "Kadi",
+          "description": "Kila sehemu ndani ya kadi nyeupe yenye ukingo mwembamba kwenye mandharinyuma ya kijivu hafifu"
+        },
+        "linear": {
+          "name": "Mstari",
+          "description": "Mistari myembamba, vichwa vya kijivu vya herufi kubwa ndogo, tarehe zilizopangwa kulia"
+        },
+        "typewriter": {
+          "name": "Taipureta",
+          "description": "Yote kwa fonti ya upana sawa kwenye karatasi nyeupe hafifu, vichwa vilivyopigiwa mstari, utepe mwekundu na mweusi"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Hamia kwenye CV isiyo na dosari",
-      "text": "Chagua kimoja kati ya violezo vyetu 52, ambavyo programu za kuchuja huvisoma ipasavyo, na ukirekebishe kwa kila tangazo",
+      "text": "Chagua kimoja kati ya violezo vyetu 72, ambavyo programu za kuchuja huvisoma ipasavyo, na ukirekebishe kwa kila tangazo",
       "button": "Fungua kihariri",
       "import": "Hamishia CV hii kwenye violezo vyetu"
     },

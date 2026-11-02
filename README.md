@@ -12,7 +12,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![100% local](https://img.shields.io/badge/data-100%25%20local-success)
-![52 templates](https://img.shields.io/badge/templates-52-ff6b6b)
+![72 templates](https://img.shields.io/badge/templates-72-ff6b6b)
 ![44 languages](https://img.shields.io/badge/interface-44%20languages-orange)
 ![Works offline](https://img.shields.io/badge/PWA-works%20offline-purple)
 ![Angular 22](https://img.shields.io/badge/Angular-22-dd0031)
@@ -43,11 +43,11 @@ Most online resume builders, on the other hand, want your email, your phone numb
 
 ## Everything you need to land the job
 
-### ✨ 52 templates that look great *and* pass the robots
+### ✨ 72 templates that look great *and* pass the robots
 
-39 graphic designs (Bento, Memphis, Bauhaus, Brutal, Duotone, Editorial, Prism, Nocturne, Sorbet, Origami, Hexa, Typo, Ribbon, Zen, Polaroid, Terminal, Retro, Cosmos, Botanical, Ticket, Comic, Arcade, Notebook, Gazette, Watercolor…) and 13 classic ones (Classic, Executive, Elegant, Ledger, Academic, Compact, Monochrome…). Every single template prints real, selectable text, in reading order, with standard section titles.
+53 graphic designs (Bento, Memphis, Bauhaus, Brutal, Editorial, Nocturne, Sorbet, Origami, Polaroid, Terminal, Retro, Cosmos, Ticket, Comic, Gazette, Watercolor, Art Deco, Glass, Y2K, Riso, Collage, Marble, Stickers, Kraft, Linocut, Candy, Metro, Stained glass…) and 19 classic ones (Classic, Executive, Elegant, Ledger, Academic, Compact, Finance, Split, Airy, Cards, Linear, Typewriter…). Every single template prints real, selectable text, in reading order, with standard section titles.
 
-Browse them in a gallery with search and a "Surprise me" button, or flip through them with the previous / next arrows right from the toolbar.
+Pick them in a gallery that stays fast with 72 entries: static thumbnails, a live preview of *your* CV in the selected template, filters by family and style (dark, two columns, serif, monospace, paper, colorful, minimalist), search, favorites, recently used, suggestions based on the job ad you are tailoring to, and keyboard navigation. From the toolbar, flip through templates with the previous / next arrows or `Ctrl+Shift+←/→`.
 
 ![Eight of the graphic templates: Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo and Ribbon](docs/screenshots/templates-showcase.png)
 
@@ -165,9 +165,13 @@ npm run docker:down    # stop
 2. On the `web` service, set your domain (for example `https://localatscv.mbonnici.fr`). The container listens on port 80.
 3. Deploy. Coolify handles the TLS certificate; the container exposes a healthcheck on `/healthz`.
 
-### Screenshots
+### Screenshots and template thumbnails
 
 Regenerate the screenshots in `docs/screenshots` and the link preview image `public/og-image.png` with `npm run screenshots` (app running through `npm run docker:local`, Edge or Chrome installed).
+
+The gallery shows static thumbnails of every template (`public/templates/<id>.<fr|en>.webp`), generated the same way with `npm run thumbnails`. Run it after adding or restyling a template: a unit test checks that every template has both thumbnails.
+
+Each template is compiled into its own lazy chunk (`@defer` in `cv-document.ts`), so the editor only downloads the template in use; the service worker still caches them all for offline use.
 
 ### Versioning
 

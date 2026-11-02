@@ -31,7 +31,7 @@
     "privacy": "Datenschutzerklärung"
   },
   "seo": {
-    "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 52 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
+    "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 72 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
     "editor": "Lebenslauf-Editor mit Live-Vorschau, Master-CV und gezielten Versionen, ATS-Prüfung und PDF-Export mit echtem Text. Alles bleibt in deinem Browser",
     "analyze": "Analysiere einen PDF-Lebenslauf kostenlos: ATS-Score von 100, Verbesserungspunkte und der Text, wie ihn ein Bewerbermanagementsystem liest. Die Datei verlässt deinen Browser nie",
     "changelog": "Die Neuerungen von LocalATSCV, Version für Version: neue Lebenslauf-Vorlagen, Funktionen und Korrekturen",
@@ -62,11 +62,11 @@
       "badge": "Kostenlos · Ohne Anmeldung · Ohne Werbung",
       "titleLine1": "Der Lebenslauf, der Türen öffnet",
       "titleLine2": "In wenigen Minuten fertig",
-      "subtitle": "Trag deinen Werdegang ein, wähle eine von 52 Vorlagen und lade einen versandfertigen Lebenslauf herunter. LocalATSCV hilft dir außerdem, ihn an jede Stellenanzeige anzupassen, und prüft, ob die Programme, die Bewerbungen sortieren, ihn richtig lesen",
+      "subtitle": "Trag deinen Werdegang ein, wähle eine von 72 Vorlagen und lade einen versandfertigen Lebenslauf herunter. LocalATSCV hilft dir außerdem, ihn an jede Stellenanzeige anzupassen, und prüft, ob die Programme, die Bewerbungen sortieren, ihn richtig lesen",
       "ctaPrimary": "Kostenlos Lebenslauf erstellen",
       "ctaSecondary": "Meinen Lebenslauf testen",
       "points": {
-        "templates": "52 Vorlagen zur Auswahl",
+        "templates": "72 Vorlagen zur Auswahl",
         "letter": "Passendes Anschreiben",
         "private": "Deine Daten bleiben bei dir"
       }
@@ -170,7 +170,7 @@
       "title": "Alles für eine erfolgreiche Bewerbung",
       "items": {
         "templates": {
-          "title": "52 sorgfältig gestaltete Vorlagen",
+          "title": "72 sorgfältig gestaltete Vorlagen",
           "text": "Schlicht, modern oder farbenfroh, mit oder ohne Foto. Wechsle Vorlage oder Farbe mit einem Klick, dein Text zieht mit"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Vorlage",
       "title": "Vorlage wählen",
-      "subtitle": "Jede Vorlage mit einem vollständigen Beispiel-Lebenslauf oder mit deinem. Die Akzentfarbe gilt für alle Vorlagen",
+      "subtitle": "Wähle links eine Vorlage: die Vorschau rechts übernimmt deine Farbe und deine Schriften",
       "close": "Schließen",
       "filter": "Vorlagen filtern",
       "filters": {
         "all": "Alle",
         "graphic": "Grafisch",
-        "sober": "Schlicht"
+        "sober": "Schlicht",
+        "favorites": "Favoriten",
+        "recent": "Zuletzt"
       },
       "ats": "ATS-Kompatibilität",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Vorherige Vorlage",
       "next": "Nächste Vorlage",
       "open": "Vorlagengalerie öffnen",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Dunkler Hintergrund",
+        "columns": "Zwei Spalten",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Papier",
+        "colorful": "Bunt",
+        "minimal": "Minimalistisch"
+      },
+      "favorite": "Zu Favoriten hinzufügen",
+      "unfavorite": "Aus Favoriten entfernen",
+      "use": "Diese Vorlage verwenden",
+      "suggested": "Für diese Stelle empfohlen",
+      "noFavorites": "Klicke auf den Stern einer Vorlage, um sie hier wiederzufinden",
+      "noRecent": "Vorlagen, die du verwendest, erscheinen hier",
+      "shortcuts": "Pfeiltasten zum Blättern, Enter zum Wählen, Esc zum Schließen",
       "names": {
         "classic": {
           "name": "Klassisch",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "Feine Linien und rechte Winkel, Überschriften als Reiter am Rahmen jedes Abschnitts"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Strahlenfächer, Doppelrahmen, goldene Winkel und Rauten, gesperrte Versalien"
+        },
+        "glass": {
+          "name": "Glas",
+          "description": "Durchscheinende Karten mit weißem Rand über verwischten Farbflecken"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Schillerndes Chromband, Glanzpunkte, glänzende Kapseln und gewölbte Pillen"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Zweifarbendruck mit versetzter Passung, Punktraster, fette Grotesk"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Papierfetzen mit unregelmäßigen Rändern, Klebeband, schiefes Foto, kursive Serif"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Geädertes Marmorband, goldene Linien, Cormorant und goldgerahmtes Foto"
+        },
+        "sticker": {
+          "name": "Sticker",
+          "description": "Überschriften und Etiketten als gestanzte Aufkleber, rundes Foto, Punktehintergrund"
+        },
+        "kraft": {
+          "name": "Kraftpapier",
+          "description": "Braunes Kraftpapier, weiße Etiketten, in gestrichelten Kästen gestempelte Überschriften"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Oberflächen-Entwurf: gestrichelte Linien, Eckmarken, graue Balken, Monospace"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Große fette Daten links, senkrechte Achse mit einem Punkt je Eintrag"
+        },
+        "linocut": {
+          "name": "Linolschnitt",
+          "description": "Dicke geschnitzte schwarze Striche, eine Farbfläche, gravierte Friese"
+        },
+        "candy": {
+          "name": "Bonbon",
+          "description": "Zuckerstangenstreifen, glänzende Kugeln, alles rund und spritzig"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Eine farbige Linie je Abschnitt mit einer Station je Eintrag, Netzplan in der Ecke"
+        },
+        "stained": {
+          "name": "Glasfenster",
+          "description": "Bleiverglaste Farbscheiben am Seitenkopf, Bleilinien, Cormorant"
+        },
+        "finance": {
+          "name": "Finanzen",
+          "description": "Bankklassiker: Serif, gesperrte Versalien, Doppellinie, nachtblaue Tinte"
+        },
+        "split": {
+          "name": "Geteilt",
+          "description": "Breite Hauptspalte links, schmale hellgraue Spalte rechts"
+        },
+        "airy": {
+          "name": "Luftig",
+          "description": "Breite Ränder, größere Schrift und viel Luft, für kurze Laufbahnen"
+        },
+        "cards": {
+          "name": "Karten",
+          "description": "Jeder Abschnitt in einer weißen Karte mit feinem Rand auf hellgrauem Grund"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Haarlinien, graue Kapitälchen als Überschriften, rechtsbündige Daten"
+        },
+        "typewriter": {
+          "name": "Schreibmaschine",
+          "description": "Alles in Monospace auf cremefarbenem Papier, unterstrichene Überschriften, rot-schwarzes Farbband"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Wechsle zu einem fehlerfreien Lebenslauf",
-      "text": "Wähle eine unserer 52 Vorlagen, die Bewerbungssoftware zuverlässig liest, und passe sie an jede Stelle an",
+      "text": "Wähle eine unserer 72 Vorlagen, die Bewerbungssoftware zuverlässig liest, und passe sie an jede Stelle an",
       "button": "Editor öffnen",
       "import": "Diesen Lebenslauf in unsere Vorlagen übernehmen"
     },

@@ -31,7 +31,7 @@
     "privacy": "Pravilnik o zasebnosti"
   },
   "seo": {
-    "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 52 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
+    "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 72 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
     "editor": "Urejevalnik življenjepisa s predogledom v živo, Master življenjepisom in ciljnimi različicami, preverjanjem ATS in izvozom v PDF s pravim besedilom. Vse ostane v vašem brskalniku",
     "analyze": "Brezplačno analizirajte življenjepis v PDF: ocena ATS od 100, točke za popravek in besedilo, kot ga prebere sistem za zaposlovanje. Datoteka nikoli ne zapusti vašega brskalnika",
     "changelog": "Novosti v LocalATSCV po različicah: nove predloge življenjepisov, funkcije in popravki",
@@ -62,11 +62,11 @@
       "badge": "Brezplačno · Brez registracije · Brez oglasov",
       "titleLine1": "Življenjepis, ki vas pripelje do razgovora",
       "titleLine2": "Pripravljeno v nekaj minutah",
-      "subtitle": "Izpolnite svoje izkušnje, izberite eno od 52 predlog in prenesite življenjepis, pripravljen za pošiljanje. LocalATSCV vam pomaga tudi prilagoditi ga vsakemu oglasu in preveri, ali ga programi, ki razvrščajo prijave, pravilno preberejo",
+      "subtitle": "Izpolnite svoje izkušnje, izberite eno od 72 predlog in prenesite življenjepis, pripravljen za pošiljanje. LocalATSCV vam pomaga tudi prilagoditi ga vsakemu oglasu in preveri, ali ga programi, ki razvrščajo prijave, pravilno preberejo",
       "ctaPrimary": "Ustvari življenjepis brezplačno",
       "ctaSecondary": "Preizkusi moj trenutni življenjepis",
       "points": {
-        "templates": "52 predlog na izbiro",
+        "templates": "72 predlog na izbiro",
         "letter": "Usklajeno motivacijsko pismo",
         "private": "Vaši podatki ostanejo pri vas"
       }
@@ -170,7 +170,7 @@
       "title": "Vse za uspešno prijavo",
       "items": {
         "templates": {
-          "title": "52 dodelanih predlog",
+          "title": "72 dodelanih predlog",
           "text": "Preproste, sodobne ali barvite, s fotografijo ali brez. Zamenjajte predlogo ali barvo z enim klikom, vaše besedilo sledi"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Predloga",
       "title": "Izberite predlogo",
-      "subtitle": "Vse predloge s popolnim primerom življenjepisa ali z vašim. Poudarna barva velja za vse predloge",
+      "subtitle": "Izberite predlogo na levi: predogled na desni uporablja vašo barvo in pisave",
       "close": "Zapri",
       "filter": "Filtriraj predloge",
       "filters": {
         "all": "Vse",
         "graphic": "Grafične",
-        "sober": "Preproste"
+        "sober": "Preproste",
+        "favorites": "Priljubljene",
+        "recent": "Nedavne"
       },
       "ats": "Združljivost z ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Prejšnja predloga",
       "next": "Naslednja predloga",
       "open": "Odpri galerijo predlog",
+      "tagsLabel": "Slog",
+      "tags": {
+        "dark": "Temno ozadje",
+        "columns": "Dva stolpca",
+        "serif": "Serifna",
+        "mono": "Enotne širine",
+        "paper": "Papir",
+        "colorful": "Pisana",
+        "minimal": "Minimalistična"
+      },
+      "favorite": "Dodaj med priljubljene",
+      "unfavorite": "Odstrani iz priljubljenih",
+      "use": "Uporabi to predlogo",
+      "suggested": "Predlagane za ta oglas",
+      "noFavorites": "Kliknite zvezdico predloge, da jo najdete tukaj",
+      "noRecent": "Predloge, ki jih uporabljate, se bodo pojavile tukaj",
+      "shortcuts": "Puščice za brskanje, Enter za izbiro, Esc za zapiranje",
       "names": {
         "classic": {
           "name": "Klasična",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Obris",
           "description": "Tanke črte in pravi koti, naslovi kot zavihki ob okvirju vsakega razdelka"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Pahljača žarkov, dvojni okvir, zlati ševroni in rombi, razprte velike črke"
+        },
+        "glass": {
+          "name": "Steklo",
+          "description": "Prosojne kartice z belim robom nad zabrisanimi barvnimi madeži"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Prelivajoč kromiran trak, iskrice, bleščeče kapsule in izbočene tabletke"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tisk z dvema barvama in zamaknjenim prekrivanjem, pikčasto zrno, krepki grotesk"
+        },
+        "collage": {
+          "name": "Kolaž",
+          "description": "Koščki papirja z neravnimi robovi, lepilni trak, nagnjena fotografija in ležeča serifna pisava"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Trak žilastega marmorja, zlate črte, Cormorant in fotografija v zlatem obroču"
+        },
+        "sticker": {
+          "name": "Nalepke",
+          "description": "Naslovi in oznake kot izrezane nalepke, okrogla fotografija, pikčasto ozadje"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Rjav kraft papir, bele etikete, naslovi kot žigi v črtkanih okvirjih"
+        },
+        "wireframe": {
+          "name": "Žični model",
+          "description": "Skica vmesnika: črtkane črte, kotne oznake, sivi trakovi, enotna širina"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Veliki krepki datumi na levi, navpična os s piko ob vsakem vnosu"
+        },
+        "linocut": {
+          "name": "Linorez",
+          "description": "Debele izrezane črne poteze, ena barvna ploskev, gravirani frizi"
+        },
+        "candy": {
+          "name": "Bonbon",
+          "description": "Črte sladkorne palčke, bleščeče kroglice, vse zaobljeno in sveže"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Ena barvna proga na razdelek s postajo ob vsakem vnosu, zemljevid v kotu"
+        },
+        "stained": {
+          "name": "Vitraž",
+          "description": "Barvna stekla v svincu na vrhu strani, svinčene črte, Cormorant"
+        },
+        "finance": {
+          "name": "Finance",
+          "description": "Bančna klasika: serif, razprte velike črke, dvojna črta, nočno modro črnilo"
+        },
+        "split": {
+          "name": "Deljena",
+          "description": "Širok glavni stolpec na levi, ozek svetlo siv stolpec na desni"
+        },
+        "airy": {
+          "name": "Zračna",
+          "description": "Široki robovi, večje besedilo in veliko zraka, za kratke kariere"
+        },
+        "cards": {
+          "name": "Kartice",
+          "description": "Vsak razdelek v beli kartici s tankim robom na svetlo sivem ozadju"
+        },
+        "linear": {
+          "name": "Linearna",
+          "description": "Tanke črte, sivi naslovi v pomanjšanih velikih črkah, desno poravnani datumi"
+        },
+        "typewriter": {
+          "name": "Pisalni stroj",
+          "description": "Vse z enotno širino na umazano belem papirju, podčrtani naslovi, rdeče-črn trak"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Preidite na brezhiben življenjepis",
-      "text": "Izberite eno od naših 52 predlog, ki jih programi za izbor pravilno preberejo, in jo prilagodite vsakemu oglasu",
+      "text": "Izberite eno od naših 72 predlog, ki jih programi za izbor pravilno preberejo, in jo prilagodite vsakemu oglasu",
       "button": "Odpri urejevalnik",
       "import": "Prenesi ta življenjepis v naše predloge"
     },

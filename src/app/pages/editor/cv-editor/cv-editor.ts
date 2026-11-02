@@ -46,6 +46,7 @@ import { PRINT_TIPS_SETTING, PrintTips } from './parts/print-tips';
 import { ProfilePanel } from './parts/profile-panel';
 import { SectionPanel } from './parts/section-panel';
 import { TemplatePicker, TemplatePickerData } from './parts/template-picker';
+import { templateThumbnailUrl } from '../../../cv/model/template-thumbnails';
 import { VersionSwitcher } from './parts/version-switcher';
 
 const NATIVE_NAMES: Record<string, string> = {
@@ -142,9 +143,17 @@ export class CvEditor {
    */
   protected onKeydown(event: KeyboardEvent): void {
     if (!(event.ctrlKey || event.metaKey) || event.altKey) return;
+    const target = event.target as HTMLElement | null;
+    if (target?.closest('.cdk-overlay-container')) return;
+    // Ctrl+Maj+← / → : modèle précédent ou suivant, hors des champs (où ces touches sélectionnent du texte).
+    if (event.shiftKey && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+      if (target?.closest('input, textarea, select, [contenteditable]')) return;
+      event.preventDefault();
+      this.shiftTemplate(event.key === 'ArrowRight' ? 1 : -1);
+      return;
+    }
     const key = event.key.toLowerCase();
     if (key !== 'z' && key !== 'y') return;
-    if ((event.target as HTMLElement | null)?.closest('.cdk-overlay-container')) return;
     event.preventDefault();
     if (key === 'y' || event.shiftKey) this.store.redo();
     else this.store.undo();
@@ -193,6 +202,12 @@ export class CvEditor {
     () => CV_TEMPLATES.findIndex((template) => template.id === this.store.cv()?.template) + 1,
   );
 
+  /** Vignette statique du modèle en cours (voir scripts/thumbnails.mjs), dans la langue du CV. */
+  protected readonly templateThumbnail = computed(() => {
+    const cv = this.store.cv();
+    return cv ? templateThumbnailUrl(cv.template, cv.language) : '';
+  });
+
   /** Passe au modèle précédent ou suivant de la galerie, sans l'ouvrir (en boucle). */
   protected shiftTemplate(step: 1 | -1): void {
     const cv = this.store.cv();
@@ -209,7 +224,11 @@ export class CvEditor {
     // Une image pour afficher l'indicateur, puis la galerie (dont le premier rendu est lourd).
     requestAnimationFrame(() => {
       const ref = this.dialog.open<CvTemplateId, TemplatePickerData>(TemplatePicker, {
-        data: { cv, photoUrl: cv.profile.photoId ? this.store.photoUrl() : null },
+        data: {
+          cv,
+          photoUrl: cv.profile.photoId ? this.store.photoUrl() : null,
+          jobAd: this.store.jobAd(),
+        },
         backdropClass: ['cdk-overlay-dark-backdrop', 'backdrop-blur-[2px]'],
         panelClass: 'dialog-in',
       });

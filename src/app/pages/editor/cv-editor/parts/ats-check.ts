@@ -155,10 +155,16 @@ export class AtsCheck {
     });
   }
 
-  private measure(): void {
+  private measure(attempt = 0): void {
     const preview = this.preview();
     const root = preview.documentElement();
     if (!root || root.offsetParent === null) return;
+    // Le modèle est chargé à la demande (@defer) : au premier affichage, il peut ne pas être
+    // encore rendu. On réessaie un peu plus tard plutôt que de noter une page vide.
+    if (!root.querySelector('.cv') && attempt < 20) {
+      setTimeout(() => this.measure(attempt + 1), 100);
+      return;
+    }
     const pdf = extractLayoutText(root, preview.scale(), PAGE_WIDTH, PAGE_HEIGHT);
     this.analysis.set(analyzeCv(pdf));
   }

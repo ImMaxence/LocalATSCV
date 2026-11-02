@@ -73,12 +73,12 @@ async function renderTemplates(page, names) {
   const styles = new Set();
   const cvs = [];
   for (const name of names) {
-    await page.locator('button:has(app-icon[name=layout])').click();
-    await page
-      .getByRole('dialog')
-      .getByRole('button', { name: new RegExp(`^${name}`) })
-      .click();
-    await page.getByRole('dialog').waitFor({ state: 'detached' });
+    await page.getByRole('button', { name: /^Ouvrir la galerie des modèles/ }).click();
+    const dialog = page.getByRole('dialog');
+    // Un clic sélectionne le modèle dans le volet d'aperçu ; « Utiliser ce modèle » l'applique.
+    await dialog.getByRole('button', { name: new RegExp(`^${name}$`) }).click();
+    await dialog.getByRole('button', { name: 'Utiliser ce modèle' }).click();
+    await dialog.waitFor({ state: 'detached' });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(300);
     const rendered = await page.evaluate(() => ({
@@ -134,9 +134,9 @@ const shots = [
     context: { ...desktop, colorScheme: 'light' },
     prepare: async (page) => {
       await openSampleCv(page);
-      await page.locator('button:has(app-icon[name=layout])').click();
+      await page.getByRole('button', { name: /^Ouvrir la galerie des modèles/ }).click();
       await page.getByRole('dialog').waitFor();
-      await page.waitForTimeout(400);
+      await page.waitForTimeout(800);
     },
   },
   {
@@ -145,13 +145,13 @@ const shots = [
     prepare: async (page) => {
       const { css, cvs } = await renderTemplates(page, [
         'Memphis',
-        'Duotone',
+        'Cosmos',
         'Nocturne',
-        'Origami',
+        'Art déco',
         'Sorbet',
-        'Hexa',
-        'Typo',
-        'Ruban',
+        'Gazette',
+        'Vitrail',
+        'Terminal',
       ]);
       await page.evaluate(
         ({ css, cvs }) => {
@@ -194,7 +194,7 @@ const shots = [
         </style><div class="og"><div class="text">
           <div class="brand"><img src="/favicon.svg" alt="" /><span>Local<b>ATS</b>CV</span></div>
           <h1>Le CV qui décroche l'entretien, prêt en quelques minutes</h1>
-          <ul><li>Gratuit</li><li>Sans inscription</li><li>52 modèles</li><li>100 % privé</li></ul>
+          <ul><li>Gratuit</li><li>Sans inscription</li><li>72 modèles</li><li>100 % privé</li></ul>
         </div>${cvs.map((html, i) => `<div class="card card-${i + 1}">${html}</div>`).join('')}</div>`;
         },
         { css, cvs },

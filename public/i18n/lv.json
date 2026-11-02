@@ -31,7 +31,7 @@
     "privacy": "Privātuma politika"
   },
   "seo": {
-    "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 52 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
+    "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 72 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
     "editor": "CV redaktors ar tiešo priekšskatījumu, Master CV un mērķētām versijām, ATS pārbaudi un PDF eksportu ar īstu tekstu. Viss paliek jūsu pārlūkā",
     "analyze": "Bez maksas analizējiet CV PDF formātā: ATS vērtējums no 100, labojamās vietas un teksts tā, kā to nolasa atlases sistēma. Fails nekad nepamet jūsu pārlūku",
     "changelog": "LocalATSCV jaunumi pa versijām: jaunas CV veidnes, funkcijas un labojumi",
@@ -62,11 +62,11 @@
       "badge": "Bez maksas · Bez reģistrācijas · Bez reklāmām",
       "titleLine1": "CV, kas atver durvis uz darba interviju",
       "titleLine2": "Gatavs dažās minūtēs",
-      "subtitle": "Aizpildiet savu pieredzi, izvēlieties kādu no 52 veidnēm un lejupielādējiet nosūtīšanai gatavu CV. LocalATSCV arī palīdz to pielāgot katram sludinājumam un pārbauda, vai pieteikumus šķirojošās programmas to nolasa pareizi",
+      "subtitle": "Aizpildiet savu pieredzi, izvēlieties kādu no 72 veidnēm un lejupielādējiet nosūtīšanai gatavu CV. LocalATSCV arī palīdz to pielāgot katram sludinājumam un pārbauda, vai pieteikumus šķirojošās programmas to nolasa pareizi",
       "ctaPrimary": "Izveidot manu CV bez maksas",
       "ctaSecondary": "Pārbaudīt manu pašreizējo CV",
       "points": {
-        "templates": "52 veidnes izvēlei",
+        "templates": "72 veidnes izvēlei",
         "letter": "Saskaņota motivācijas vēstule",
         "private": "Jūsu dati paliek pie jums"
       }
@@ -170,7 +170,7 @@
       "title": "Viss veiksmīgam pieteikumam",
       "items": {
         "templates": {
-          "title": "52 rūpīgi veidotas veidnes",
+          "title": "72 rūpīgi veidotas veidnes",
           "text": "Vienkāršas, modernas vai krāsainas, ar vai bez foto. Mainiet veidni vai krāsu ar vienu klikšķi, jūsu teksts seko līdzi"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Veidne",
       "title": "Izvēlieties veidni",
-      "subtitle": "Visas veidnes ar pilnu CV piemēru vai ar jūsējo. Akcenta krāsa attiecas uz visām veidnēm",
+      "subtitle": "Izvēlieties veidni kreisajā pusē: priekšskatījums labajā pusē izmanto jūsu krāsu un fontus",
       "close": "Aizvērt",
       "filter": "Filtrēt veidnes",
       "filters": {
         "all": "Visas",
         "graphic": "Grafiskas",
-        "sober": "Atturīgas"
+        "sober": "Atturīgas",
+        "favorites": "Izlase",
+        "recent": "Nesenās"
       },
       "ats": "ATS saderība",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Iepriekšējā veidne",
       "next": "Nākamā veidne",
       "open": "Atvērt veidņu galeriju",
+      "tagsLabel": "Stils",
+      "tags": {
+        "dark": "Tumšs fons",
+        "columns": "Divas kolonnas",
+        "serif": "Serifa",
+        "mono": "Vienplatuma",
+        "paper": "Papīrs",
+        "colorful": "Krāsaina",
+        "minimal": "Minimālistiska"
+      },
+      "favorite": "Pievienot izlasei",
+      "unfavorite": "Noņemt no izlases",
+      "use": "Izmantot šo veidni",
+      "suggested": "Ieteiktās šim sludinājumam",
+      "noFavorites": "Noklikšķiniet uz veidnes zvaigznītes, lai to atrastu šeit",
+      "noRecent": "Jūsu izmantotās veidnes parādīsies šeit",
+      "shortcuts": "Bultiņas pārlūkošanai, Enter izvēlei, Esc aizvēršanai",
       "names": {
         "classic": {
           "name": "Klasiskā",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontūra",
           "description": "Smalkas līnijas un taisni stūri, virsraksti kā cilnes pie katras sadaļas rāmja"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Staru vēdeklis, dubults rāmis, zelta šķautnes un rombi, izretināti lielie burti"
+        },
+        "glass": {
+          "name": "Stikls",
+          "description": "Caurspīdīgas kartītes ar baltu malu uz izplūdušiem krāsu traipiem"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Mirdzoša hroma josla, dzirksteles, spīdīgas kapsulas un izliektas tabletes"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Divu tinšu druka ar nobīdītu savietojumu, punktu grauds, biezs grotesks"
+        },
+        "collage": {
+          "name": "Kolāža",
+          "description": "Papīra gabali ar nelīdzenām malām, līmlente, sašķiebts foto un slīps serifa raksts"
+        },
+        "marble": {
+          "name": "Marmors",
+          "description": "Dzīslaina marmora josla, zelta līnijas, Cormorant un foto zelta gredzenā"
+        },
+        "sticker": {
+          "name": "Uzlīmes",
+          "description": "Virsraksti un etiķetes kā izgrieztas uzlīmes, apaļš foto, punktots fons"
+        },
+        "kraft": {
+          "name": "Krafts",
+          "description": "Brūns krafta papīrs, baltas etiķetes, virsraksti kā zīmogi pārtrauktās līnijas rāmjos"
+        },
+        "wireframe": {
+          "name": "Stiepļu rāmis",
+          "description": "Saskarnes skice: pārtrauktas līnijas, stūru atzīmes, pelēkas joslas, vienplatuma raksts"
+        },
+        "chrono": {
+          "name": "Hrono",
+          "description": "Lieli treknraksta datumi kreisajā pusē, vertikāla ass ar punktu katram ierakstam"
+        },
+        "linocut": {
+          "name": "Linogriezums",
+          "description": "Biezas grieztas melnas līnijas, viens krāsas laukums, gravētas frīzes"
+        },
+        "candy": {
+          "name": "Konfekte",
+          "description": "Konfekšu spieķa svītras, spīdīgas bumbiņas, viss noapaļots un sulīgs"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Viena krāsaina līnija katrai sadaļai ar staciju katram ierakstam, shēma stūrī"
+        },
+        "stained": {
+          "name": "Vitrāža",
+          "description": "Svinā ietvertas krāsainas stikla rūtis lapas augšpusē, svina līnijas, Cormorant"
+        },
+        "finance": {
+          "name": "Finanses",
+          "description": "Banku klasika: serifs, izretināti lielie burti, dubultlīnija, nakts zila tinte"
+        },
+        "split": {
+          "name": "Dalīts",
+          "description": "Plata galvenā kolonna kreisajā pusē, šaura gaiši pelēka kolonna labajā"
+        },
+        "airy": {
+          "name": "Gaisīgs",
+          "description": "Platas malas, lielāks teksts un daudz gaisa, īsām karjerām"
+        },
+        "cards": {
+          "name": "Kartītes",
+          "description": "Katra sadaļa baltā kartītē ar plānu malu uz gaiši pelēka fona"
+        },
+        "linear": {
+          "name": "Lineārs",
+          "description": "Smalkas līnijas, pelēki kapiteļu virsraksti, pa labi līdzināti datumi"
+        },
+        "typewriter": {
+          "name": "Rakstāmmašīna",
+          "description": "Viss vienplatuma rakstā uz krēmkrāsas papīra, pasvītroti virsraksti, sarkanmelna lente"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Pārejiet uz nevainojamu CV",
-      "text": "Izvēlieties vienu no mūsu 52 veidnēm, ko atlases programmas nolasa pareizi, un pielāgojiet to katram sludinājumam",
+      "text": "Izvēlieties vienu no mūsu 72 veidnēm, ko atlases programmas nolasa pareizi, un pielāgojiet to katram sludinājumam",
       "button": "Atvērt redaktoru",
       "import": "Pārnest šo CV mūsu veidnēs"
     },

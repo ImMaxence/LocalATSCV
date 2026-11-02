@@ -31,7 +31,7 @@
     "privacy": "Integritetspolicy"
   },
   "seo": {
-    "home": "Skapa gratis ett CV som ger dig intervjun: 52 mallar, matchande personligt brev, anpassning till varje annons och ATS-kontroll. Utan registrering, dina uppgifter stannar på din enhet",
+    "home": "Skapa gratis ett CV som ger dig intervjun: 72 mallar, matchande personligt brev, anpassning till varje annons och ATS-kontroll. Utan registrering, dina uppgifter stannar på din enhet",
     "editor": "CV-redigerare med live-förhandsvisning, Master-CV och riktade versioner, ATS-kontroll och PDF-export med riktig text. Allt stannar i din webbläsare",
     "analyze": "Analysera ett CV i PDF gratis: ATS-poäng av 100, saker att åtgärda och texten så som ett rekryteringssystem läser den. Filen lämnar aldrig din webbläsare",
     "changelog": "Nyheter i LocalATSCV, version för version: nya CV-mallar, funktioner och rättningar",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Utan registrering · Utan reklam",
       "titleLine1": "CV:t som ger dig intervjun",
       "titleLine2": "Klart på några minuter",
-      "subtitle": "Fyll i din bakgrund, välj bland 52 mallar och ladda ner ett CV som är klart att skicka. LocalATSCV hjälper dig också att anpassa det till varje annons och kontrollerar att programmen som sorterar ansökningar läser det rätt",
+      "subtitle": "Fyll i din bakgrund, välj bland 72 mallar och ladda ner ett CV som är klart att skicka. LocalATSCV hjälper dig också att anpassa det till varje annons och kontrollerar att programmen som sorterar ansökningar läser det rätt",
       "ctaPrimary": "Skapa mitt CV gratis",
       "ctaSecondary": "Testa mitt nuvarande CV",
       "points": {
-        "templates": "52 mallar att välja mellan",
+        "templates": "72 mallar att välja mellan",
         "letter": "Matchande personligt brev",
         "private": "Dina uppgifter stannar hos dig"
       }
@@ -170,7 +170,7 @@
       "title": "Allt för en lyckad ansökan",
       "items": {
         "templates": {
-          "title": "52 genomarbetade mallar",
+          "title": "72 genomarbetade mallar",
           "text": "Stilrena, moderna eller färgglada, med eller utan foto. Byt mall eller färg med ett klick, din text följer med"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Mall",
       "title": "Välj en mall",
-      "subtitle": "Alla mallar med ett komplett exempel-CV, eller med ditt. Accentfärgen gäller för alla mallar",
+      "subtitle": "Välj en mall till vänster: förhandsvisningen till höger använder din färg och dina typsnitt",
       "close": "Stäng",
       "filter": "Filtrera mallarna",
       "filters": {
         "all": "Alla",
         "graphic": "Grafiska",
-        "sober": "Stilrena"
+        "sober": "Stilrena",
+        "favorites": "Favoriter",
+        "recent": "Senaste"
       },
       "ats": "ATS-kompatibilitet",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Föregående mall",
       "next": "Nästa mall",
       "open": "Öppna mallgalleriet",
+      "tagsLabel": "Stil",
+      "tags": {
+        "dark": "Mörk bakgrund",
+        "columns": "Två kolumner",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Papper",
+        "colorful": "Färgglad",
+        "minimal": "Minimalistisk"
+      },
+      "favorite": "Lägg till i favoriter",
+      "unfavorite": "Ta bort från favoriter",
+      "use": "Använd den här mallen",
+      "suggested": "Föreslagna för den här annonsen",
+      "noFavorites": "Klicka på en malls stjärna för att hitta den här",
+      "noRecent": "Mallar du använder visas här",
+      "shortcuts": "Piltangenter för att bläddra, Enter för att välja, Esc för att stänga",
       "names": {
         "classic": {
           "name": "Klassisk",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontur",
           "description": "Tunna linjer och räta hörn, rubriker som flikar fästa på varje avsnitts ram"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Solfjäder av strålar, dubbel ram, gyllene vinklar och romber, spärrade versaler"
+        },
+        "glass": {
+          "name": "Glas",
+          "description": "Genomskinliga kort med vit kant över suddiga färgfläckar"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Skimrande kromband, gnistor, blanka kapslar och kupiga piller"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Tvåfärgstryck med förskjuten passning, punktraster, fet grotesk"
+        },
+        "collage": {
+          "name": "Kollage",
+          "description": "Pappersbitar med ojämna kanter, tejp, lutande bild och kursiv serif"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Ådrat marmorband, guldlinjer, Cormorant och bild med guldring"
+        },
+        "sticker": {
+          "name": "Klistermärken",
+          "description": "Rubriker och etiketter som stansade klistermärken, rund bild, prickig bakgrund"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Brunt kraftpapper, vita etiketter, rubriker stämplade i streckade rutor"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Gränssnittsskiss: streckade linjer, hörnmarkeringar, grå staplar, monospace"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Stora feta datum till vänster, lodrät axel med en punkt per post"
+        },
+        "linocut": {
+          "name": "Linoleumsnitt",
+          "description": "Tjocka skurna svarta streck, en färgyta, graverade friser"
+        },
+        "candy": {
+          "name": "Godis",
+          "description": "Polkagrisränder, blanka kulor, allt runt och syrligt"
+        },
+        "metro": {
+          "name": "Tunnelbana",
+          "description": "En färgad linje per avsnitt med en station per post, linjekarta i hörnet"
+        },
+        "stained": {
+          "name": "Glasmålning",
+          "description": "Blyinfattade färgade glasrutor överst, blylinjer, Cormorant"
+        },
+        "finance": {
+          "name": "Finans",
+          "description": "Bankklassiker: serif, spärrade versaler, dubbel linje, nattblått bläck"
+        },
+        "split": {
+          "name": "Delad",
+          "description": "Bred huvudkolumn till vänster, smal ljusgrå kolumn till höger"
+        },
+        "airy": {
+          "name": "Luftig",
+          "description": "Breda marginaler, större text och mycket luft, för korta karriärer"
+        },
+        "cards": {
+          "name": "Kort",
+          "description": "Varje avsnitt i ett vitt kort med tunn kant på ljusgrå bakgrund"
+        },
+        "linear": {
+          "name": "Linjär",
+          "description": "Hårlinjer, grå kapitäler som rubriker, högerställda datum"
+        },
+        "typewriter": {
+          "name": "Skrivmaskin",
+          "description": "Allt i monospace på benvitt papper, understrukna rubriker, rött och svart färgband"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Byt till ett felfritt CV",
-      "text": "Välj en av våra 52 mallar, som urvalsprogram läser rätt, och anpassa den till varje annons",
+      "text": "Välj en av våra 72 mallar, som urvalsprogram läser rätt, och anpassa den till varje annons",
       "button": "Öppna redigeraren",
       "import": "För över det här CV:t till våra mallar"
     },

@@ -31,7 +31,7 @@
     "privacy": "Dasar privasi"
   },
   "seo": {
-    "home": "Bina resume percuma yang membawa anda ke temu duga: 52 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
+    "home": "Bina resume percuma yang membawa anda ke temu duga: 72 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
     "editor": "Editor resume dengan pratonton langsung, resume Master dan versi sasaran, semakan ATS dan eksport PDF dengan teks sebenar. Semuanya kekal dalam pelayar anda",
     "analyze": "Analisis resume PDF secara percuma: skor ATS daripada 100, perkara untuk dibaiki dan teks seperti yang dibaca sistem pengambilan. Fail tidak pernah meninggalkan pelayar anda",
     "changelog": "Apa yang baharu dalam LocalATSCV, versi demi versi: templat resume baharu, ciri dan pembaikan",
@@ -62,11 +62,11 @@
       "badge": "Percuma · Tanpa pendaftaran · Tanpa iklan",
       "titleLine1": "Resume yang membawa anda ke temu duga",
       "titleLine2": "Siap dalam beberapa minit",
-      "subtitle": "Isikan latar belakang anda, pilih satu daripada 52 templat dan muat turun resume yang sedia dihantar. LocalATSCV juga membantu anda menyesuaikannya untuk setiap iklan dan menyemak sama ada perisian yang menapis permohonan membacanya dengan betul",
+      "subtitle": "Isikan latar belakang anda, pilih satu daripada 72 templat dan muat turun resume yang sedia dihantar. LocalATSCV juga membantu anda menyesuaikannya untuk setiap iklan dan menyemak sama ada perisian yang menapis permohonan membacanya dengan betul",
       "ctaPrimary": "Bina resume saya secara percuma",
       "ctaSecondary": "Uji resume saya sekarang",
       "points": {
-        "templates": "52 templat untuk dipilih",
+        "templates": "72 templat untuk dipilih",
         "letter": "Surat iringan yang sepadan",
         "private": "Data anda kekal bersama anda"
       }
@@ -170,7 +170,7 @@
       "title": "Segala yang anda perlukan untuk permohonan yang berjaya",
       "items": {
         "templates": {
-          "title": "52 templat yang kemas",
+          "title": "72 templat yang kemas",
           "text": "Ringkas, moden atau berwarna-warni, dengan atau tanpa foto. Tukar templat atau warna dengan satu klik, teks anda ikut sekali"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Templat",
       "title": "Pilih templat",
-      "subtitle": "Setiap templat dengan contoh resume lengkap, atau dengan resume anda. Warna aksen digunakan pada semua templat",
+      "subtitle": "Pilih templat di kiri: pratonton di kanan menggunakan warna dan fon anda",
       "close": "Tutup",
       "filter": "Tapis templat",
       "filters": {
         "all": "Semua",
         "graphic": "Grafik",
-        "sober": "Ringkas"
+        "sober": "Ringkas",
+        "favorites": "Kegemaran",
+        "recent": "Terkini"
       },
       "ats": "Keserasian ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Templat sebelumnya",
       "next": "Templat seterusnya",
       "open": "Buka galeri templat",
+      "tagsLabel": "Gaya",
+      "tags": {
+        "dark": "Latar gelap",
+        "columns": "Dua lajur",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Kertas",
+        "colorful": "Berwarna-warni",
+        "minimal": "Minimalis"
+      },
+      "favorite": "Tambah ke kegemaran",
+      "unfavorite": "Buang daripada kegemaran",
+      "use": "Gunakan templat ini",
+      "suggested": "Dicadangkan untuk iklan ini",
+      "noFavorites": "Klik bintang templat untuk menemuinya di sini",
+      "noRecent": "Templat yang anda gunakan akan muncul di sini",
+      "shortcuts": "Anak panah untuk melayari, Enter untuk memilih, Esc untuk menutup",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Garis luar",
           "description": "Garis halus dan sudut tepat, tajuk sebagai tab yang melekat pada bingkai setiap bahagian"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Kipas sinar, bingkai berganda, chevron dan berlian emas, huruf besar berjarak"
+        },
+        "glass": {
+          "name": "Kaca",
+          "description": "Kad lut cahaya bertepi putih di atas tompok warna kabur"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Jalur krom berkilauan, kerlipan, kapsul berkilat dan pil cembung"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Cetakan dua dakwat dengan pendaftaran teranjak, bintik butiran, grotesk tebal"
+        },
+        "collage": {
+          "name": "Kolaj",
+          "description": "Cebisan kertas bertepi tidak sekata, pita pelekat, foto condong dan serif condong"
+        },
+        "marble": {
+          "name": "Marmar",
+          "description": "Jalur marmar berurat, garis emas, Cormorant dan foto bergelang emas"
+        },
+        "sticker": {
+          "name": "Pelekat",
+          "description": "Tajuk dan label seperti pelekat terpotong, foto bulat, latar bertitik"
+        },
+        "kraft": {
+          "name": "Kraf",
+          "description": "Kertas kraf perang, label putih, tajuk bercop dalam kotak putus-putus"
+        },
+        "wireframe": {
+          "name": "Rangka dawai",
+          "description": "Lakaran antara muka: garis putus-putus, tanda sudut, bar kelabu, monospace"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Tarikh besar tebal di kiri, paksi menegak dengan satu titik setiap entri"
+        },
+        "linocut": {
+          "name": "Ukiran lino",
+          "description": "Garis hitam tebal terukir, satu blok warna, jalur hiasan terukir"
+        },
+        "candy": {
+          "name": "Gula-gula",
+          "description": "Jalur tongkat gula, bebola berkilat, semuanya bulat dan segar"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Satu laluan berwarna setiap bahagian dengan satu stesen setiap entri, peta di sudut"
+        },
+        "stained": {
+          "name": "Kaca berwarna",
+          "description": "Panel kaca berwarna berbingkai plumbum di atas halaman, garis plumbum, Cormorant"
+        },
+        "finance": {
+          "name": "Kewangan",
+          "description": "Klasik perbankan: serif, huruf besar berjarak, garis berganda, dakwat biru malam"
+        },
+        "split": {
+          "name": "Terbahagi",
+          "description": "Lajur utama lebar di kiri, lajur sempit kelabu muda di kanan"
+        },
+        "airy": {
+          "name": "Lapang",
+          "description": "Jidar lebar, teks lebih besar dan banyak ruang, untuk kerjaya singkat"
+        },
+        "cards": {
+          "name": "Kad",
+          "description": "Setiap bahagian dalam kad putih bertepi nipis di latar kelabu muda"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Garis halus, tajuk huruf besar kecil kelabu, tarikh jajar kanan"
+        },
+        "typewriter": {
+          "name": "Mesin taip",
+          "description": "Semua monospace di atas kertas putih gading, tajuk bergaris bawah, pita merah-hitam"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Beralih kepada resume yang sempurna",
-      "text": "Pilih satu daripada 52 templat kami yang dibaca dengan betul oleh perisian penapis, dan sesuaikan untuk setiap iklan",
+      "text": "Pilih satu daripada 72 templat kami yang dibaca dengan betul oleh perisian penapis, dan sesuaikan untuk setiap iklan",
       "button": "Buka editor",
       "import": "Bawa resume ini ke dalam templat kami"
     },

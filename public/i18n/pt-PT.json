@@ -31,7 +31,7 @@
     "privacy": "Política de privacidade"
   },
   "seo": {
-    "home": "Crie grátis um CV que conquista entrevistas: 52 modelos, carta de apresentação a condizer, adaptação a cada oferta e verificação ATS. Sem registo, os seus dados ficam no seu dispositivo",
+    "home": "Crie grátis um CV que conquista entrevistas: 72 modelos, carta de apresentação a condizer, adaptação a cada oferta e verificação ATS. Sem registo, os seus dados ficam no seu dispositivo",
     "editor": "Editor de CV com pré-visualização em direto, CV Master e versões direcionadas, verificação ATS e exportação em PDF com texto real. Tudo fica no seu navegador",
     "analyze": "Analise gratuitamente um CV em PDF: pontuação ATS de 0 a 100, pontos a corrigir e o texto tal como um sistema de recrutamento o lê. O ficheiro nunca sai do seu navegador",
     "changelog": "Novidades do LocalATSCV, versão a versão: novos modelos de CV, funcionalidades e correções",
@@ -62,11 +62,11 @@
       "badge": "Gratuito · Sem registo · Sem anúncios",
       "titleLine1": "O CV que conquista a entrevista",
       "titleLine2": "Pronto em poucos minutos",
-      "subtitle": "Preencha o seu percurso, escolha entre 52 modelos e descarregue um CV pronto a enviar. O LocalATSCV também o ajuda a adaptá-lo a cada oferta e verifica se será bem lido pelos programas que fazem a triagem das candidaturas",
+      "subtitle": "Preencha o seu percurso, escolha entre 72 modelos e descarregue um CV pronto a enviar. O LocalATSCV também o ajuda a adaptá-lo a cada oferta e verifica se será bem lido pelos programas que fazem a triagem das candidaturas",
       "ctaPrimary": "Criar o meu CV grátis",
       "ctaSecondary": "Testar o meu CV atual",
       "points": {
-        "templates": "52 modelos à escolha",
+        "templates": "72 modelos à escolha",
         "letter": "Carta de apresentação a condizer",
         "private": "Os seus dados ficam consigo"
       }
@@ -170,7 +170,7 @@
       "title": "Tudo para uma candidatura de sucesso",
       "items": {
         "templates": {
-          "title": "52 modelos cuidados",
+          "title": "72 modelos cuidados",
           "text": "Sóbrios, modernos ou coloridos, com ou sem fotografia. Mude de modelo ou de cor num clique, o seu texto acompanha"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Modelo",
       "title": "Escolher um modelo",
-      "subtitle": "Todos os modelos com um CV de exemplo completo, ou com o seu. A cor de destaque aplica-se a todos os modelos",
+      "subtitle": "Escolha um modelo à esquerda: a pré-visualização à direita usa a sua cor e as suas fontes",
       "close": "Fechar",
       "filter": "Filtrar os modelos",
       "filters": {
         "all": "Todos",
         "graphic": "Gráficos",
-        "sober": "Sóbrios"
+        "sober": "Sóbrios",
+        "favorites": "Favoritos",
+        "recent": "Recentes"
       },
       "ats": "Compatibilidade ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Modelo anterior",
       "next": "Modelo seguinte",
       "open": "Abrir a galeria de modelos",
+      "tagsLabel": "Estilo",
+      "tags": {
+        "dark": "Fundo escuro",
+        "columns": "Duas colunas",
+        "serif": "Serifa",
+        "mono": "Monoespaçada",
+        "paper": "Papel",
+        "colorful": "Colorido",
+        "minimal": "Minimalista"
+      },
+      "favorite": "Adicionar aos favoritos",
+      "unfavorite": "Remover dos favoritos",
+      "use": "Usar este modelo",
+      "suggested": "Sugeridos para esta oferta",
+      "noFavorites": "Clique na estrela de um modelo para o encontrar aqui",
+      "noRecent": "Os modelos que utilizar aparecerão aqui",
+      "shortcuts": "Setas para percorrer, Enter para escolher, Esc para fechar",
       "names": {
         "classic": {
           "name": "Clássico",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Contorno",
           "description": "Filetes finos e cantos retos, títulos em separadores colados à moldura de cada secção"
+        },
+        "artdeco": {
+          "name": "Arte déco",
+          "description": "Leque de raios, moldura dupla, chevrons e losangos dourados, maiúsculas espaçadas"
+        },
+        "glass": {
+          "name": "Vidro",
+          "description": "Cartões translúcidos com rebordo branco sobre manchas de cor desfocadas"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Faixa cromada iridescente, brilhos, cápsulas lustrosas e pílulas arredondadas"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Impressão a duas tintas com registo desalinhado, grão de pontos, grotesca pesada"
+        },
+        "collage": {
+          "name": "Colagem",
+          "description": "Pedaços de papel de bordas irregulares, fita adesiva, fotografia inclinada e serifa itálica"
+        },
+        "marble": {
+          "name": "Mármore",
+          "description": "Faixa de mármore com veios, filetes dourados, Cormorant e fotografia com aro dourado"
+        },
+        "sticker": {
+          "name": "Autocolantes",
+          "description": "Títulos e etiquetas como autocolantes recortados, fotografia redonda, fundo às bolinhas"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Papel kraft castanho, etiquetas brancas, títulos carimbados em caixas tracejadas"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Esboço de interface: traços ponteados, marcas de canto, barras cinzentas, monoespaçada"
+        },
+        "chrono": {
+          "name": "Crono",
+          "description": "Datas grandes a negrito à esquerda, eixo vertical com um ponto por entrada"
+        },
+        "linocut": {
+          "name": "Linogravura",
+          "description": "Traços pretos grossos entalhados, um bloco de cor, frisos gravados"
+        },
+        "candy": {
+          "name": "Rebuçado",
+          "description": "Riscas de bengala doce, berlindes brilhantes, tudo arredondado e ácido"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Uma linha de cor por secção com uma estação por entrada, mapa no canto"
+        },
+        "stained": {
+          "name": "Vitral",
+          "description": "Vidros coloridos com chumbo no topo da página, filetes de chumbo, Cormorant"
+        },
+        "finance": {
+          "name": "Finanças",
+          "description": "Clássico bancário: serifa, maiúsculas espaçadas, filete duplo, tinta azul-noite"
+        },
+        "split": {
+          "name": "Dividido",
+          "description": "Coluna principal larga à esquerda, coluna estreita cinzento-claro à direita"
+        },
+        "airy": {
+          "name": "Arejado",
+          "description": "Margens largas, texto maior e muito espaço, para percursos curtos"
+        },
+        "cards": {
+          "name": "Fichas",
+          "description": "Cada secção num cartão branco de rebordo fino sobre fundo cinzento-claro"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Filetes finos, títulos em versaletes cinzentos, datas alinhadas à direita"
+        },
+        "typewriter": {
+          "name": "Máquina de escrever",
+          "description": "Tudo em monoespaçada sobre papel creme, títulos sublinhados, fita vermelha e preta"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Mude para um CV impecável",
-      "text": "Escolha um dos nossos 52 modelos, bem lidos pelos programas de triagem, e adapte-o a cada oferta",
+      "text": "Escolha um dos nossos 72 modelos, bem lidos pelos programas de triagem, e adapte-o a cada oferta",
       "button": "Abrir o editor",
       "import": "Trazer este CV para os nossos modelos"
     },

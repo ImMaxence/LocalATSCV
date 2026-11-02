@@ -31,7 +31,7 @@
     "privacy": "隐私政策"
   },
   "seo": {
-    "home": "免费制作让你拿到面试的简历：52 款模板、风格统一的求职信、针对每个职位调整以及 ATS 检查。无需注册，数据只留在你的设备上",
+    "home": "免费制作让你拿到面试的简历：72 款模板、风格统一的求职信、针对每个职位调整以及 ATS 检查。无需注册，数据只留在你的设备上",
     "editor": "简历编辑器：实时预览、主简历与定向版本、ATS 检查、导出真实文本的 PDF。所有内容都留在你的浏览器中",
     "analyze": "免费分析 PDF 简历：满分 100 的 ATS 评分、需要修改的地方，以及招聘系统读取到的文本。文件绝不会离开你的浏览器",
     "changelog": "LocalATSCV 各版本更新：新的简历模板、功能与修复",
@@ -62,11 +62,11 @@
       "badge": "免费 · 无需注册 · 无广告",
       "titleLine1": "让你拿到面试的简历",
       "titleLine2": "几分钟就能完成",
-      "subtitle": "填写你的经历，从 52 款模板中任选其一，即可下载一份可直接投递的简历。LocalATSCV 还能帮你针对每个职位调整简历，并检查筛选简历的软件能否正确读取",
+      "subtitle": "填写你的经历，从 72 款模板中任选其一，即可下载一份可直接投递的简历。LocalATSCV 还能帮你针对每个职位调整简历，并检查筛选简历的软件能否正确读取",
       "ctaPrimary": "免费制作我的简历",
       "ctaSecondary": "测试我现在的简历",
       "points": {
-        "templates": "52 款模板任选",
+        "templates": "72 款模板任选",
         "letter": "风格统一的求职信",
         "private": "数据只留在你身边"
       }
@@ -170,7 +170,7 @@
       "title": "成功求职所需的一切",
       "items": {
         "templates": {
-          "title": "52 款精美模板",
+          "title": "72 款精美模板",
           "text": "简约、现代或多彩，有无照片皆可。一键切换模板或颜色，内容自动跟随"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "模板",
       "title": "选择模板",
-      "subtitle": "所有模板均可用完整的示例简历或你自己的简历预览。强调色会应用到所有模板",
+      "subtitle": "在左侧选择模板：右侧预览会使用你的颜色和字体",
       "close": "关闭",
       "filter": "筛选模板",
       "filters": {
         "all": "全部",
         "graphic": "设计型",
-        "sober": "简约型"
+        "sober": "简约型",
+        "favorites": "收藏",
+        "recent": "最近"
       },
       "ats": "ATS 兼容性",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "上一款模板",
       "next": "下一款模板",
       "open": "打开模板库",
+      "tagsLabel": "风格",
+      "tags": {
+        "dark": "深色背景",
+        "columns": "双栏",
+        "serif": "衬线",
+        "mono": "等宽",
+        "paper": "纸张质感",
+        "colorful": "多彩",
+        "minimal": "极简"
+      },
+      "favorite": "加入收藏",
+      "unfavorite": "取消收藏",
+      "use": "使用此模板",
+      "suggested": "为此职位推荐",
+      "noFavorites": "点击模板的星标，即可在此找到它",
+      "noRecent": "你使用过的模板会显示在这里",
+      "shortcuts": "方向键浏览，Enter 选择，Esc 关闭",
       "names": {
         "classic": {
           "name": "经典",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "线框",
           "description": "细线与直角，标题如标签贴在每个板块的边框上"
+        },
+        "artdeco": {
+          "name": "装饰艺术",
+          "description": "放射扇形、双重边框、金色人字纹和菱形、加宽字距的大写字母"
+        },
+        "glass": {
+          "name": "玻璃",
+          "description": "模糊色斑之上的白边半透明卡片"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "虹彩镀铬横幅、闪光、亮面胶囊和鼓起的药丸形标签"
+        },
+        "riso": {
+          "name": "孔版",
+          "description": "套印错位的双色印刷、网点颗粒、粗重的无衬线体"
+        },
+        "collage": {
+          "name": "拼贴",
+          "description": "边缘不规则的纸片、胶带、倾斜的照片和斜体衬线"
+        },
+        "marble": {
+          "name": "大理石",
+          "description": "带纹理的大理石横幅、金色细线、Cormorant 和金环照片"
+        },
+        "sticker": {
+          "name": "贴纸",
+          "description": "模切贴纸样式的标题和标签、圆形照片、圆点背景"
+        },
+        "kraft": {
+          "name": "牛皮纸",
+          "description": "棕色牛皮纸、白色标签、虚线框内盖章式标题"
+        },
+        "wireframe": {
+          "name": "线框",
+          "description": "界面草图：虚线、角标、灰色色块、等宽字体"
+        },
+        "chrono": {
+          "name": "时序",
+          "description": "左侧加粗大号日期，每个条目一个圆点的垂直轴"
+        },
+        "linocut": {
+          "name": "麻胶版画",
+          "description": "雕刻感的粗黑线条、单一色块、雕花饰带"
+        },
+        "candy": {
+          "name": "糖果",
+          "description": "拐杖糖条纹、光亮的糖球、圆润清新的造型"
+        },
+        "metro": {
+          "name": "地铁",
+          "description": "每个板块一条彩色线路，每个条目一个站点，角落有线路图"
+        },
+        "stained": {
+          "name": "彩绘玻璃",
+          "description": "页面顶部的铅条彩色玻璃、铅线、Cormorant"
+        },
+        "finance": {
+          "name": "金融",
+          "description": "银行经典风：衬线、加宽字距的大写、双线、午夜蓝墨色"
+        },
+        "split": {
+          "name": "分栏",
+          "description": "左侧宽主栏，右侧窄浅灰栏"
+        },
+        "airy": {
+          "name": "疏朗",
+          "description": "宽页边距、更大的文字和充足留白，适合资历较短者"
+        },
+        "cards": {
+          "name": "卡片",
+          "description": "浅灰背景上，每个板块放在细边白色卡片中"
+        },
+        "linear": {
+          "name": "线性",
+          "description": "细线、灰色小型大写标题、右对齐日期"
+        },
+        "typewriter": {
+          "name": "打字机",
+          "description": "米白纸张上全部等宽字体、下划线标题、红黑色带"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "换一份无可挑剔的简历",
-      "text": "从 52 款能被筛选软件正确读取的模板中任选其一，并针对每个职位调整",
+      "text": "从 72 款能被筛选软件正确读取的模板中任选其一，并针对每个职位调整",
       "button": "打开编辑器",
       "import": "把这份简历转入我们的模板"
     },

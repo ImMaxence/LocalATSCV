@@ -66,6 +66,7 @@ export class CvEditorStore {
   private readonly past = signal<Snapshot[]>([]);
   private readonly future = signal<Snapshot[]>([]);
   private lastRecordAt = 0;
+  private lastGroup: string | null = null;
   readonly canUndo = computed(() => this.past().length > 0);
   readonly canRedo = computed(() => this.future().length > 0);
 
@@ -106,10 +107,18 @@ export class CvEditorStore {
 
   // --- Enregistrement ---
 
-  private mutate(change: (draft: MasterCv) => void, record = true): void {
+  /**
+   * `group` : modifications consécutives de même nature (changements de modèle à la suite, par
+   * exemple) regroupées en une seule étape d'annulation, quel que soit leur écart dans le temps.
+   */
+  private mutate(
+    change: (draft: MasterCv) => void,
+    record = true,
+    group: string | null = null,
+  ): void {
     const current = this.cv();
     if (!current) return;
-    if (record) this.record();
+    if (record) this.record(group);
     const draft = structuredClone(current);
     change(draft);
     this.schedule(draft);
@@ -126,13 +135,15 @@ export class CvEditorStore {
   // --- Annuler / Rétablir ---
 
   /** Mémorise l'état avant une modification ; une frappe continue ne crée qu'une étape. */
-  private record(): void {
+  private record(group: string | null): void {
     const now = Date.now();
-    if (now - this.lastRecordAt > HISTORY_GROUP_MS && this.cv()) {
+    const sameGroup = group !== null && group === this.lastGroup;
+    if (!sameGroup && now - this.lastRecordAt > HISTORY_GROUP_MS && this.cv()) {
       this.past.update((past) => [...past.slice(1 - HISTORY_LIMIT), this.snapshot()]);
       this.future.set([]);
     }
     this.lastRecordAt = now;
+    this.lastGroup = group;
   }
 
   undo(): void {
@@ -163,6 +174,7 @@ export class CvEditorStore {
     const current = this.cv();
     if (!current) return;
     this.lastRecordAt = 0;
+    this.lastGroup = null;
     // La photo n'est pas rejouée : l'image remplacée a déjà été supprimée du navigateur.
     const cv = structuredClone(snapshot.cv);
     cv.profile.photoId = current.profile.photoId;
@@ -202,7 +214,7 @@ export class CvEditorStore {
   }
 
   setTemplate(template: CvTemplateId): void {
-    this.mutate((cv) => (cv.template = template));
+    this.mutate((cv) => (cv.template = template), true, 'template');
   }
 
   setFont(role: 'heading' | 'body', font: CvFontId | null): void {
@@ -221,7 +233,7 @@ export class CvEditorStore {
   /** Point de retour unique avant une série de modifications non enregistrées dans l'historique. */
   checkpoint(): void {
     this.lastRecordAt = 0;
-    this.record();
+    this.record(null);
   }
 
   // --- Lettre de motivation ---
@@ -515,7 +527,7 @@ export class CvEditorStore {
   ): Promise<void> {
     const current = this.versions().find((version) => version.id === id);
     if (!current) return;
-    if (record) this.record();
+    if (record) this.record(null);
     const draft = structuredClone(current);
     change(draft);
     draft.updatedAt = new Date().toISOString();

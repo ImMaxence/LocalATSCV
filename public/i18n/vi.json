@@ -31,7 +31,7 @@
     "privacy": "Chính sách quyền riêng tư"
   },
   "seo": {
-    "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 52 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
+    "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 72 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
     "editor": "Trình soạn CV với xem trước trực tiếp, CV Master và các phiên bản nhắm mục tiêu, kiểm tra ATS và xuất PDF bằng văn bản thật. Mọi thứ đều ở trong trình duyệt của bạn",
     "analyze": "Phân tích CV PDF miễn phí: điểm ATS trên thang 100, các điểm cần sửa và văn bản đúng như hệ thống tuyển dụng đọc được. Tệp không bao giờ rời khỏi trình duyệt của bạn",
     "changelog": "Có gì mới trong LocalATSCV qua từng phiên bản: mẫu CV mới, tính năng và bản sửa lỗi",
@@ -62,11 +62,11 @@
       "badge": "Miễn phí · Không cần đăng ký · Không quảng cáo",
       "titleLine1": "CV giúp bạn có buổi phỏng vấn",
       "titleLine2": "Xong chỉ trong vài phút",
-      "subtitle": "Điền quá trình làm việc, chọn một trong 52 mẫu và tải về CV sẵn sàng gửi đi. LocalATSCV còn giúp bạn điều chỉnh CV cho từng tin tuyển dụng và kiểm tra xem phần mềm lọc hồ sơ có đọc đúng không",
+      "subtitle": "Điền quá trình làm việc, chọn một trong 72 mẫu và tải về CV sẵn sàng gửi đi. LocalATSCV còn giúp bạn điều chỉnh CV cho từng tin tuyển dụng và kiểm tra xem phần mềm lọc hồ sơ có đọc đúng không",
       "ctaPrimary": "Tạo CV miễn phí",
       "ctaSecondary": "Kiểm tra CV hiện tại",
       "points": {
-        "templates": "52 mẫu để lựa chọn",
+        "templates": "72 mẫu để lựa chọn",
         "letter": "Thư xin việc đồng bộ",
         "private": "Dữ liệu ở lại với bạn"
       }
@@ -170,7 +170,7 @@
       "title": "Mọi thứ cho một hồ sơ ứng tuyển thành công",
       "items": {
         "templates": {
-          "title": "52 mẫu được chăm chút",
+          "title": "72 mẫu được chăm chút",
           "text": "Tối giản, hiện đại hay nhiều màu sắc, có hoặc không có ảnh. Đổi mẫu hay màu chỉ với một cú nhấp, nội dung vẫn giữ nguyên"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Mẫu",
       "title": "Chọn mẫu",
-      "subtitle": "Mọi mẫu đều có CV ví dụ đầy đủ, hoặc CV của bạn. Màu nhấn được áp dụng cho tất cả các mẫu",
+      "subtitle": "Chọn mẫu ở bên trái: bản xem trước bên phải dùng màu và phông chữ của bạn",
       "close": "Đóng",
       "filter": "Lọc mẫu",
       "filters": {
         "all": "Tất cả",
         "graphic": "Đồ họa",
-        "sober": "Tối giản"
+        "sober": "Tối giản",
+        "favorites": "Yêu thích",
+        "recent": "Gần đây"
       },
       "ats": "Khả năng tương thích ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Mẫu trước",
       "next": "Mẫu tiếp theo",
       "open": "Mở thư viện mẫu",
+      "tagsLabel": "Phong cách",
+      "tags": {
+        "dark": "Nền tối",
+        "columns": "Hai cột",
+        "serif": "Có chân",
+        "mono": "Đơn cách",
+        "paper": "Giấy",
+        "colorful": "Nhiều màu",
+        "minimal": "Tối giản"
+      },
+      "favorite": "Thêm vào yêu thích",
+      "unfavorite": "Bỏ khỏi yêu thích",
+      "use": "Dùng mẫu này",
+      "suggested": "Gợi ý cho tin tuyển dụng này",
+      "noFavorites": "Nhấn vào ngôi sao của một mẫu để tìm lại ở đây",
+      "noRecent": "Các mẫu bạn dùng sẽ hiện ở đây",
+      "shortcuts": "Phím mũi tên để duyệt, Enter để chọn, Esc để đóng",
       "names": {
         "classic": {
           "name": "Cổ điển",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Viền",
           "description": "Đường kẻ mảnh và góc vuông, tiêu đề dạng thẻ gắn vào khung của mỗi phần"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Quạt tia sáng, khung đôi, hoa văn chữ V và hình thoi vàng, chữ in hoa giãn cách"
+        },
+        "glass": {
+          "name": "Kính",
+          "description": "Thẻ mờ viền trắng trên các vệt màu nhòe"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Dải crôm ánh cầu vồng, tia lấp lánh, viên nang bóng và viên thuốc phồng"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "In hai mực lệch chồng, hạt chấm, chữ grotesque đậm"
+        },
+        "collage": {
+          "name": "Cắt dán",
+          "description": "Mảnh giấy mép lởm chởm, băng dính, ảnh nghiêng và chữ có chân in nghiêng"
+        },
+        "marble": {
+          "name": "Cẩm thạch",
+          "description": "Dải cẩm thạch vân, đường kẻ vàng, Cormorant và ảnh viền vàng"
+        },
+        "sticker": {
+          "name": "Nhãn dán",
+          "description": "Tiêu đề và nhãn như sticker cắt sẵn, ảnh tròn, nền chấm bi"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Giấy kraft nâu, nhãn trắng, tiêu đề đóng dấu trong khung nét đứt"
+        },
+        "wireframe": {
+          "name": "Khung dây",
+          "description": "Phác thảo giao diện: nét đứt, dấu góc, thanh xám, phông đơn cách"
+        },
+        "chrono": {
+          "name": "Chrono",
+          "description": "Ngày tháng lớn in đậm bên trái, trục dọc với một chấm cho mỗi mục"
+        },
+        "linocut": {
+          "name": "Khắc lino",
+          "description": "Nét đen dày khắc chạm, một mảng màu, dải hoa văn khắc"
+        },
+        "candy": {
+          "name": "Kẹo",
+          "description": "Sọc kẹo gậy, viên bi bóng, mọi thứ bo tròn và tươi mát"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Mỗi phần một tuyến màu với một ga cho mỗi mục, sơ đồ ở góc"
+        },
+        "stained": {
+          "name": "Kính màu",
+          "description": "Các ô kính màu viền chì ở đầu trang, đường kẻ chì, Cormorant"
+        },
+        "finance": {
+          "name": "Tài chính",
+          "description": "Cổ điển ngân hàng: chữ có chân, in hoa giãn cách, kẻ đôi, mực xanh đêm"
+        },
+        "split": {
+          "name": "Chia cột",
+          "description": "Cột chính rộng bên trái, cột hẹp xám nhạt bên phải"
+        },
+        "airy": {
+          "name": "Thoáng",
+          "description": "Lề rộng, chữ lớn hơn và nhiều khoảng trống, cho sự nghiệp ngắn"
+        },
+        "cards": {
+          "name": "Thẻ",
+          "description": "Mỗi phần trong một thẻ trắng viền mảnh trên nền xám nhạt"
+        },
+        "linear": {
+          "name": "Tuyến tính",
+          "description": "Đường kẻ mảnh, tiêu đề chữ hoa nhỏ màu xám, ngày tháng canh phải"
+        },
+        "typewriter": {
+          "name": "Máy đánh chữ",
+          "description": "Toàn bộ phông đơn cách trên giấy trắng ngà, tiêu đề gạch chân, ruy băng đỏ đen"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Chuyển sang một CV hoàn hảo",
-      "text": "Chọn một trong 52 mẫu của chúng tôi, được phần mềm lọc hồ sơ đọc chính xác, và điều chỉnh cho từng tin tuyển dụng",
+      "text": "Chọn một trong 72 mẫu của chúng tôi, được phần mềm lọc hồ sơ đọc chính xác, và điều chỉnh cho từng tin tuyển dụng",
       "button": "Mở trình soạn thảo",
       "import": "Đưa CV này vào các mẫu của chúng tôi"
     },

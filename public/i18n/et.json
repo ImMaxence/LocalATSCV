@@ -31,7 +31,7 @@
     "privacy": "Privaatsuspoliitika"
   },
   "seo": {
-    "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 52 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
+    "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 72 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
     "editor": "CV redaktor reaalajas eelvaate, Master-CV ja sihitud versioonide, ATS-kontrolli ja päris tekstiga PDF-ekspordiga. Kõik jääb sinu brauserisse",
     "analyze": "Analüüsi PDF-vormingus CV-d tasuta: ATS-skoor 100-st, parandamist vajavad kohad ja tekst nii, nagu värbamissüsteem seda loeb. Fail ei lahku kunagi sinu brauserist",
     "changelog": "LocalATSCV uudised versioonide kaupa: uued CV mallid, funktsioonid ja parandused",
@@ -62,11 +62,11 @@
       "badge": "Tasuta · Ilma registreerumata · Ilma reklaamita",
       "titleLine1": "CV, mis toob sulle tööintervjuu",
       "titleLine2": "Valmis mõne minutiga",
-      "subtitle": "Täida oma taust, vali 52 mallist sobiv ja laadi alla saatmiseks valmis CV. LocalATSCV aitab sul seda ka iga kuulutuse jaoks kohandada ja kontrollib, et kandideerimisi sorteerivad programmid loeksid seda õigesti",
+      "subtitle": "Täida oma taust, vali 72 mallist sobiv ja laadi alla saatmiseks valmis CV. LocalATSCV aitab sul seda ka iga kuulutuse jaoks kohandada ja kontrollib, et kandideerimisi sorteerivad programmid loeksid seda õigesti",
       "ctaPrimary": "Loo oma CV tasuta",
       "ctaSecondary": "Testi oma praegust CV-d",
       "points": {
-        "templates": "52 malli valikus",
+        "templates": "72 malli valikus",
         "letter": "Sobiv kaaskiri",
         "private": "Sinu andmed jäävad sinu juurde"
       }
@@ -170,7 +170,7 @@
       "title": "Kõik eduka kandideerimise jaoks",
       "items": {
         "templates": {
-          "title": "52 viimistletud malli",
+          "title": "72 viimistletud malli",
           "text": "Lihtsad, moodsad või värvikad, fotoga või ilma. Vaheta malli või värvi ühe klikiga, sinu tekst liigub kaasa"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Mall",
       "title": "Vali mall",
-      "subtitle": "Kõik mallid täieliku näidis-CV-ga või sinu omaga. Rõhuvärv kehtib kõigile mallidele",
+      "subtitle": "Vali vasakult mall: paremal olev eelvaade kasutab sinu värvi ja kirjatüüpe",
       "close": "Sulge",
       "filter": "Filtreeri malle",
       "filters": {
         "all": "Kõik",
         "graphic": "Graafilised",
-        "sober": "Lihtsad"
+        "sober": "Lihtsad",
+        "favorites": "Lemmikud",
+        "recent": "Hiljutised"
       },
       "ats": "ATS-ühilduvus",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Eelmine mall",
       "next": "Järgmine mall",
       "open": "Ava mallide galerii",
+      "tagsLabel": "Stiil",
+      "tags": {
+        "dark": "Tume taust",
+        "columns": "Kaks veergu",
+        "serif": "Seriifkiri",
+        "mono": "Püsisammkiri",
+        "paper": "Paber",
+        "colorful": "Värviline",
+        "minimal": "Minimalistlik"
+      },
+      "favorite": "Lisa lemmikutesse",
+      "unfavorite": "Eemalda lemmikutest",
+      "use": "Kasuta seda malli",
+      "suggested": "Soovitatud selle kuulutuse jaoks",
+      "noFavorites": "Klõpsa malli tähel, et see siit leida",
+      "noRecent": "Sinu kasutatud mallid ilmuvad siia",
+      "shortcuts": "Nooleklahvid sirvimiseks, Enter valimiseks, Esc sulgemiseks",
       "names": {
         "classic": {
           "name": "Klassikaline",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Kontuur",
           "description": "Peened jooned ja täisnurgad, pealkirjad sakkidena iga jaotise raami küljes"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Kiirte lehvik, topeltraam, kuldsed sakid ja rombid, harvendatud suurtähed"
+        },
+        "glass": {
+          "name": "Klaas",
+          "description": "Poolläbipaistvad valge äärega kaardid hägustatud värvilaikude peal"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Sillerdav kroomriba, sädemed, läikivad kapslid ja kumerad pillid"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Kahe tindiga trükk nihkes kohakuti, punktraster, raske grotesk"
+        },
+        "collage": {
+          "name": "Kollaaž",
+          "description": "Ebaühtlaste servadega paberitükid, teip, viltune foto ja kaldkirjas seriifkiri"
+        },
+        "marble": {
+          "name": "Marmor",
+          "description": "Soontega marmorriba, kuldjooned, Cormorant ja kuldse rõngaga foto"
+        },
+        "sticker": {
+          "name": "Kleepsud",
+          "description": "Pealkirjad ja sildid väljalõigatud kleepsudena, ümar foto, täpiline taust"
+        },
+        "kraft": {
+          "name": "Jõupaber",
+          "description": "Pruun jõupaber, valged sildid, katkendjoonega kastidesse tembeldatud pealkirjad"
+        },
+        "wireframe": {
+          "name": "Traatraam",
+          "description": "Liidese visand: katkendjooned, nurgamärgid, hallid ribad, püsisammkiri"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Suured paksud kuupäevad vasakul, püsttelg punktiga iga kirje kohta"
+        },
+        "linocut": {
+          "name": "Linoollõige",
+          "description": "Paksud lõigatud mustad jooned, üks värvipind, graveeritud friisid"
+        },
+        "candy": {
+          "name": "Komm",
+          "description": "Kommikepi triibud, läikivad kuulid, kõik ümar ja hapukas"
+        },
+        "metro": {
+          "name": "Metroo",
+          "description": "Üks värviline liin jaotise kohta ja peatus iga kirje kohta, liinikaart nurgas"
+        },
+        "stained": {
+          "name": "Vitraaž",
+          "description": "Tinaraamis värvilised klaasid lehe ülaosas, tinajooned, Cormorant"
+        },
+        "finance": {
+          "name": "Rahandus",
+          "description": "Pangaklassika: seriifkiri, harvendatud suurtähed, topeltjoon, öösinine tint"
+        },
+        "split": {
+          "name": "Jagatud",
+          "description": "Lai põhiveerg vasakul, kitsas helehall veerg paremal"
+        },
+        "airy": {
+          "name": "Õhuline",
+          "description": "Laiad veerised, suurem tekst ja palju õhku, lühikese karjääri jaoks"
+        },
+        "cards": {
+          "name": "Kaardid",
+          "description": "Iga jaotis õhukese äärega valgel kaardil helehallil taustal"
+        },
+        "linear": {
+          "name": "Lineaarne",
+          "description": "Peenjooned, hallid kapiteelkirjas pealkirjad, paremale joondatud kuupäevad"
+        },
+        "typewriter": {
+          "name": "Kirjutusmasin",
+          "description": "Kõik püsisammkirjas kreemikal paberil, allajoonitud pealkirjad, puna-must lint"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Vali veatu CV",
-      "text": "Vali üks meie 52 mallist, mida värbamisprogrammid õigesti loevad, ja kohanda see iga kuulutuse jaoks",
+      "text": "Vali üks meie 72 mallist, mida värbamisprogrammid õigesti loevad, ja kohanda see iga kuulutuse jaoks",
       "button": "Ava redaktor",
       "import": "Too see CV meie mallidesse"
     },

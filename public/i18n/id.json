@@ -31,7 +31,7 @@
     "privacy": "Kebijakan privasi"
   },
   "seo": {
-    "home": "Buat gratis CV yang membawa Anda ke wawancara: 52 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
+    "home": "Buat gratis CV yang membawa Anda ke wawancara: 72 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
     "editor": "Editor CV dengan pratinjau langsung, CV Master dan versi tertarget, pemeriksaan ATS, serta ekspor PDF dengan teks asli. Semuanya tetap di browser Anda",
     "analyze": "Analisis CV PDF secara gratis: skor ATS dari 100, hal yang perlu diperbaiki, dan teks seperti yang dibaca sistem rekrutmen. File tidak pernah keluar dari browser Anda",
     "changelog": "Yang baru di LocalATSCV, versi demi versi: template CV baru, fitur, dan perbaikan",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Tanpa daftar · Tanpa iklan",
       "titleLine1": "CV yang membawa Anda ke wawancara",
       "titleLine2": "Siap dalam hitungan menit",
-      "subtitle": "Isi riwayat Anda, pilih salah satu dari 52 template, lalu unduh CV yang siap dikirim. LocalATSCV juga membantu Anda menyesuaikannya untuk setiap lowongan dan memeriksa apakah software penyaring lamaran membacanya dengan benar",
+      "subtitle": "Isi riwayat Anda, pilih salah satu dari 72 template, lalu unduh CV yang siap dikirim. LocalATSCV juga membantu Anda menyesuaikannya untuk setiap lowongan dan memeriksa apakah software penyaring lamaran membacanya dengan benar",
       "ctaPrimary": "Buat CV saya gratis",
       "ctaSecondary": "Uji CV saya sekarang",
       "points": {
-        "templates": "52 template pilihan",
+        "templates": "72 template pilihan",
         "letter": "Surat lamaran yang serasi",
         "private": "Data Anda tetap di tangan Anda"
       }
@@ -170,7 +170,7 @@
       "title": "Semua yang Anda butuhkan untuk lamaran yang sukses",
       "items": {
         "templates": {
-          "title": "52 template yang rapi",
+          "title": "72 template yang rapi",
           "text": "Sederhana, modern, atau berwarna, dengan atau tanpa foto. Ganti template atau warna dengan satu klik, teks Anda ikut menyesuaikan"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Template",
       "title": "Pilih template",
-      "subtitle": "Semua template dengan contoh CV lengkap, atau dengan CV Anda. Warna aksen berlaku untuk semua template",
+      "subtitle": "Pilih templat di kiri: pratinjau di kanan memakai warna dan font Anda",
       "close": "Tutup",
       "filter": "Filter template",
       "filters": {
         "all": "Semua",
         "graphic": "Grafis",
-        "sober": "Sederhana"
+        "sober": "Sederhana",
+        "favorites": "Favorit",
+        "recent": "Terbaru"
       },
       "ats": "Kompatibilitas ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Templat sebelumnya",
       "next": "Templat berikutnya",
       "open": "Buka galeri templat",
+      "tagsLabel": "Gaya",
+      "tags": {
+        "dark": "Latar gelap",
+        "columns": "Dua kolom",
+        "serif": "Serif",
+        "mono": "Monospace",
+        "paper": "Kertas",
+        "colorful": "Berwarna",
+        "minimal": "Minimalis"
+      },
+      "favorite": "Tambahkan ke favorit",
+      "unfavorite": "Hapus dari favorit",
+      "use": "Gunakan templat ini",
+      "suggested": "Disarankan untuk lowongan ini",
+      "noFavorites": "Klik bintang pada templat untuk menemukannya di sini",
+      "noRecent": "Templat yang Anda gunakan akan muncul di sini",
+      "shortcuts": "Panah untuk menjelajah, Enter untuk memilih, Esc untuk menutup",
       "names": {
         "classic": {
           "name": "Klasik",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Garis luar",
           "description": "Garis tipis dan sudut siku, judul berupa tab yang menempel pada bingkai tiap bagian"
+        },
+        "artdeco": {
+          "name": "Art deco",
+          "description": "Kipas sinar, bingkai ganda, chevron dan belah ketupat emas, huruf kapital berjarak"
+        },
+        "glass": {
+          "name": "Kaca",
+          "description": "Kartu tembus pandang bertepi putih di atas bercak warna yang dikaburkan"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Pita krom warna-warni, kilau, kapsul mengilap, dan pil cembung"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Cetak dua tinta dengan registrasi bergeser, butiran titik, grotesk tebal"
+        },
+        "collage": {
+          "name": "Kolase",
+          "description": "Sobekan kertas bertepi tak beraturan, selotip, foto miring, dan serif miring"
+        },
+        "marble": {
+          "name": "Marmer",
+          "description": "Pita marmer berurat, garis emas, Cormorant, dan foto berlingkar emas"
+        },
+        "sticker": {
+          "name": "Stiker",
+          "description": "Judul dan label seperti stiker potong, foto bulat, latar bertitik"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Kertas kraft cokelat, label putih, judul bercap dalam kotak putus-putus"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Sketsa antarmuka: garis putus-putus, tanda sudut, batang abu-abu, monospace"
+        },
+        "chrono": {
+          "name": "Krono",
+          "description": "Tanggal besar tebal di kiri, sumbu vertikal dengan satu titik per entri"
+        },
+        "linocut": {
+          "name": "Cukil lino",
+          "description": "Goresan hitam tebal terukir, satu blok warna, hiasan berukir"
+        },
+        "candy": {
+          "name": "Permen",
+          "description": "Garis tongkat permen, bola mengilap, semuanya bulat dan segar"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Satu jalur berwarna per bagian dengan satu stasiun per entri, peta di sudut"
+        },
+        "stained": {
+          "name": "Kaca patri",
+          "description": "Panel kaca berwarna bertimah di atas halaman, garis timah, Cormorant"
+        },
+        "finance": {
+          "name": "Keuangan",
+          "description": "Klasik perbankan: serif, kapital berjarak, garis ganda, tinta biru malam"
+        },
+        "split": {
+          "name": "Terbagi",
+          "description": "Kolom utama lebar di kiri, kolom sempit abu-abu muda di kanan"
+        },
+        "airy": {
+          "name": "Lapang",
+          "description": "Margin lebar, teks lebih besar, dan banyak ruang, untuk karier singkat"
+        },
+        "cards": {
+          "name": "Kartu",
+          "description": "Setiap bagian dalam kartu putih bertepi tipis di latar abu-abu muda"
+        },
+        "linear": {
+          "name": "Linear",
+          "description": "Garis tipis, judul kapital kecil abu-abu, tanggal rata kanan"
+        },
+        "typewriter": {
+          "name": "Mesin tik",
+          "description": "Semua monospace di kertas putih gading, judul bergaris bawah, pita merah-hitam"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Beralih ke CV tanpa cela",
-      "text": "Pilih salah satu dari 52 template kami yang terbaca dengan benar oleh software penyaring, lalu sesuaikan untuk setiap lowongan",
+      "text": "Pilih salah satu dari 72 template kami yang terbaca dengan benar oleh software penyaring, lalu sesuaikan untuk setiap lowongan",
       "button": "Buka editor",
       "import": "Bawa CV ini ke template kami"
     },

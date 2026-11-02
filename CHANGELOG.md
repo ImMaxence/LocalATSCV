@@ -4,6 +4,20 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.10.0] - 2026-11-02
+
+### Ajouté
+
+- 20 nouveaux modèles de CV, soit 72 au total : 14 graphiques (Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 6 sobres (Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire)
+- Galerie des modèles repensée : un volet d'aperçu rend le modèle sélectionné avec votre CV ou un CV d'exemple, filtres par style (fond sombre, deux colonnes, serif, chasse fixe, papier, coloré, minimaliste), favoris, modèles récents, suggestions selon l'offre d'emploi en cours d'adaptation, navigation au clavier (flèches, Entrée, Échap)
+- Raccourcis Ctrl+Maj+← et Ctrl+Maj+→ pour changer de modèle sans ouvrir la galerie ; la vignette du modèle en cours s'affiche dans le bouton de la barre d'outils
+
+### Modifié
+
+- La galerie s'ouvre et défile sans à-coups : les vignettes sont des images, un seul modèle est rendu à la fois (l'aperçu), et taper dans la recherche ne redessine plus les vignettes
+- Chaque modèle n'est téléchargé que lorsqu'il est affiché (environ 10 Ko au lieu d'un bloc de 700 Ko pour tous les modèles) ; le mode hors ligne les garde tous en cache
+- Changer plusieurs fois de modèle à la suite ne compte que pour une seule étape d'annulation
+
 ## [0.9.0] - 2026-11-02
 
 ### Ajouté
@@ -186,6 +200,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.10.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.10.0
 [0.9.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.9.0
 [0.8.1]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.1
 [0.8.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.8.0

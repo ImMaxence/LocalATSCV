@@ -68,22 +68,33 @@
                 type="button"
                 class="grid w-8 place-items-center text-muted transition-colors hover:bg-surface-2 hover:text-ink"
                 [attr.aria-label]="t('templates.previous')"
-                [title]="t('templates.previous')"
+                [title]="t('templates.previous') + ' (Ctrl+Shift+←)'"
                 (click)="shiftTemplate(-1)"
               >
                 <app-icon class="size-4 rtl:-scale-x-100" name="chevronLeft" />
               </button>
               <button
                 type="button"
-                class="flex items-center gap-2 border-x border-line px-3 transition-colors hover:bg-surface-2"
+                class="flex items-center gap-2 border-x border-line px-2.5 transition-colors hover:bg-surface-2"
                 [attr.aria-busy]="openingTemplates()"
+                [attr.aria-label]="
+                  t('templates.open') + ' : ' + t('templates.names.' + cv.template + '.name')
+                "
                 [title]="t('templates.open')"
                 (click)="openTemplates()"
               >
                 @if (openingTemplates()) {
                   <app-icon class="size-4 animate-spin text-accent" name="loader" />
                 } @else {
-                  <app-icon class="size-4 text-accent" name="layout" />
+                  <!-- Vignette du modèle en cours ; l'icône prend le relais si l'image manque -->
+                  <img
+                    class="h-6 w-[17px] rounded-[2px] border border-line bg-white object-cover object-top"
+                    [src]="templateThumbnail()"
+                    alt=""
+                    width="17"
+                    height="24"
+                    (error)="$any($event.target).hidden = true"
+                  />
                 }
                 <span class="hidden sm:inline">{{
                   t('templates.names.' + cv.template + '.name')
@@ -97,7 +108,7 @@
                 type="button"
                 class="grid w-8 place-items-center text-muted transition-colors hover:bg-surface-2 hover:text-ink"
                 [attr.aria-label]="t('templates.next')"
-                [title]="t('templates.next')"
+                [title]="t('templates.next') + ' (Ctrl+Shift+→)'"
                 (click)="shiftTemplate(1)"
               >
                 <app-icon class="size-4 rtl:-scale-x-100" name="chevronRight" />

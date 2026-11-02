@@ -31,7 +31,7 @@
     "privacy": "Informativa sulla privacy"
   },
   "seo": {
-    "home": "Crea gratis un CV che ti porta al colloquio: 52 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
+    "home": "Crea gratis un CV che ti porta al colloquio: 72 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
     "editor": "Editor di CV con anteprima dal vivo, CV master e versioni mirate, controllo ATS ed esportazione PDF in testo reale. Tutto resta nel tuo browser",
     "analyze": "Analizza gratis un CV in PDF: punteggio ATS su 100, punti da correggere e testo come lo legge un software di selezione. Il file non lascia il tuo browser",
     "changelog": "Le novità di LocalATSCV, versione per versione: nuovi modelli di CV, funzionalità e correzioni",
@@ -62,11 +62,11 @@
       "badge": "Gratis · Senza registrazione · Senza pubblicità",
       "titleLine1": "Il CV che ti porta al colloquio",
       "titleLine2": "Pronto in pochi minuti",
-      "subtitle": "Inserisci il tuo percorso, scegli tra 52 modelli e scarica un CV pronto da inviare. LocalATSCV ti aiuta anche ad adattarlo a ogni annuncio e controlla che venga letto bene dai software che smistano le candidature",
+      "subtitle": "Inserisci il tuo percorso, scegli tra 72 modelli e scarica un CV pronto da inviare. LocalATSCV ti aiuta anche ad adattarlo a ogni annuncio e controlla che venga letto bene dai software che smistano le candidature",
       "ctaPrimary": "Crea il mio CV gratis",
       "ctaSecondary": "Testa il mio CV attuale",
       "points": {
-        "templates": "52 modelli tra cui scegliere",
+        "templates": "72 modelli tra cui scegliere",
         "letter": "Lettera di presentazione abbinata",
         "private": "I tuoi dati restano a casa tua"
       }
@@ -170,7 +170,7 @@
       "title": "Tutto per una candidatura vincente",
       "items": {
         "templates": {
-          "title": "52 modelli curati",
+          "title": "72 modelli curati",
           "text": "Sobri, moderni o colorati, con o senza foto. Cambia modello o colore con un clic, il tuo testo segue"
         },
         "letter": {
@@ -525,13 +525,15 @@
     "templates": {
       "button": "Modello",
       "title": "Scegli un modello",
-      "subtitle": "Ogni modello con un CV di esempio completo, o con il tuo. Il colore d'accento si applica a tutti i modelli",
+      "subtitle": "Scegli un modello a sinistra: l'anteprima a destra usa il tuo colore e i tuoi caratteri",
       "close": "Chiudi",
       "filter": "Filtra i modelli",
       "filters": {
         "all": "Tutti",
         "graphic": "Grafici",
-        "sober": "Sobri"
+        "sober": "Sobri",
+        "favorites": "Preferiti",
+        "recent": "Recenti"
       },
       "ats": "Compatibilità ATS",
       "levels": {
@@ -554,6 +556,23 @@
       "previous": "Modello precedente",
       "next": "Modello successivo",
       "open": "Apri la galleria dei modelli",
+      "tagsLabel": "Stile",
+      "tags": {
+        "dark": "Sfondo scuro",
+        "columns": "Due colonne",
+        "serif": "Serif",
+        "mono": "Spaziatura fissa",
+        "paper": "Carta",
+        "colorful": "Colorato",
+        "minimal": "Minimalista"
+      },
+      "favorite": "Aggiungi ai preferiti",
+      "unfavorite": "Rimuovi dai preferiti",
+      "use": "Usa questo modello",
+      "suggested": "Suggeriti per questa offerta",
+      "noFavorites": "Clicca sulla stella di un modello per ritrovarlo qui",
+      "noRecent": "I modelli che usi appariranno qui",
+      "shortcuts": "Frecce per scorrere, Invio per scegliere, Esc per chiudere",
       "names": {
         "classic": {
           "name": "Classico",
@@ -762,6 +781,86 @@
         "outline": {
           "name": "Contorno",
           "description": "Filetti sottili e angoli retti, titoli a linguetta attaccata alla cornice di ogni sezione"
+        },
+        "artdeco": {
+          "name": "Art déco",
+          "description": "Ventaglio di raggi, doppia cornice, chevron e rombi dorati, maiuscole spaziate"
+        },
+        "glass": {
+          "name": "Vetro",
+          "description": "Schede traslucide con bordo bianco su macchie di colore sfocate"
+        },
+        "y2k": {
+          "name": "Y2K",
+          "description": "Fascia cromata iridescente, scintille, capsule lucide e pillole bombate"
+        },
+        "riso": {
+          "name": "Riso",
+          "description": "Stampa a due inchiostri con registro sfalsato, grana a punti, grottesca pesante"
+        },
+        "collage": {
+          "name": "Collage",
+          "description": "Ritagli di carta dai bordi irregolari, nastro adesivo, foto inclinata e serif corsivo"
+        },
+        "marble": {
+          "name": "Marmo",
+          "description": "Fascia di marmo venato, filetti dorati, Cormorant e foto cerchiata d'oro"
+        },
+        "sticker": {
+          "name": "Adesivi",
+          "description": "Titoli ed etichette come adesivi fustellati, foto rotonda, sfondo a pois"
+        },
+        "kraft": {
+          "name": "Kraft",
+          "description": "Carta kraft marrone, etichette bianche, titoli timbrati in riquadri tratteggiati"
+        },
+        "wireframe": {
+          "name": "Wireframe",
+          "description": "Bozza di interfaccia: tratti punteggiati, segni d'angolo, barre grigie, spaziatura fissa"
+        },
+        "chrono": {
+          "name": "Crono",
+          "description": "Grandi date in grassetto a sinistra, asse verticale con un punto per voce"
+        },
+        "linocut": {
+          "name": "Linoleografia",
+          "description": "Tratti neri spessi incisi nella gomma, una campitura di colore, fregi incisi"
+        },
+        "candy": {
+          "name": "Caramella",
+          "description": "Righe di zucchero d'orzo, palline lucide, tutto arrotondato e acidulo"
+        },
+        "metro": {
+          "name": "Metro",
+          "description": "Una linea colorata per sezione con una fermata per voce, mappa nell'angolo"
+        },
+        "stained": {
+          "name": "Vetrata",
+          "description": "Vetri colorati legati a piombo in testa alla pagina, filetti di piombo, Cormorant"
+        },
+        "finance": {
+          "name": "Finanza",
+          "description": "Classico bancario: serif, maiuscole spaziate, filetto doppio, inchiostro blu notte"
+        },
+        "split": {
+          "name": "Diviso",
+          "description": "Colonna principale larga a sinistra, colonna stretta grigio chiaro a destra"
+        },
+        "airy": {
+          "name": "Arioso",
+          "description": "Margini ampi, testo più grande e molta aria, per percorsi brevi"
+        },
+        "cards": {
+          "name": "Schede",
+          "description": "Ogni sezione in una scheda bianca dal bordo sottile su fondo grigio chiaro"
+        },
+        "linear": {
+          "name": "Lineare",
+          "description": "Filetti sottili, titoli in maiuscoletto grigio, date allineate a destra"
+        },
+        "typewriter": {
+          "name": "Macchina da scrivere",
+          "description": "Tutto a spaziatura fissa su carta avorio, titoli sottolineati, nastro rosso e nero"
         }
       }
     },
@@ -937,7 +1036,7 @@
     },
     "cta": {
       "title": "Passa a un CV impeccabile",
-      "text": "Scegli uno dei nostri 52 modelli, ben letti dai software di selezione, e adattalo a ogni offerta",
+      "text": "Scegli uno dei nostri 72 modelli, ben letti dai software di selezione, e adattalo a ogni offerta",
       "button": "Apri l'editor",
       "import": "Porta questo CV nei nostri modelli"
     },

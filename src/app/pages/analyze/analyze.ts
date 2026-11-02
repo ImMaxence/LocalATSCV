@@ -1,7 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
-import { CheckCategory, CheckStatus, CvAnalysis, analyzeCv } from '../../cv/analysis/cv-analyzer';
+import {
+  CHECK_SCALE,
+  CheckCategory,
+  CheckStatus,
+  CvAnalysis,
+  analyzeCv,
+} from '../../cv/analysis/cv-analyzer';
 import { ExtractedPdf, PdfReadError, extractPdfText } from '../../cv/analysis/pdf-text';
 import { CvRepository } from '../../cv/data/cv-repository';
 import { importCv } from '../../cv/import/cv-import';
@@ -64,6 +70,12 @@ export class Analyze {
 
   protected checksOf(category: CheckCategory) {
     return this.analysis()?.checks.filter((check) => check.category === category) ?? [];
+  }
+
+  /** Le barème d'une catégorie, affiché avant toute analyse. */
+  protected scaleOf(category: CheckCategory) {
+    const checks = CHECK_SCALE.filter((check) => check.category === category);
+    return { checks, max: checks.reduce((sum, check) => sum + check.max, 0) };
   }
 
   protected categoryScore(category: CheckCategory) {

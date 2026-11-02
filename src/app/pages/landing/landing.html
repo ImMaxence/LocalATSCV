@@ -284,7 +284,10 @@
         @for (step of steps; track step.key; let i = $index) {
           <li class="rounded-2xl border border-line bg-surface p-6">
             <div class="flex items-center justify-between">
-              <span class="font-display text-5xl leading-none font-semibold text-accent/30">
+              <span
+                class="font-display text-5xl leading-none font-semibold text-accent/30"
+                aria-hidden="true"
+              >
                 0{{ i + 1 }}
               </span>
               <span class="grid size-10 place-items-center rounded-xl bg-accent-soft text-accent">
@@ -366,7 +369,7 @@
               <span class="line-through decoration-inverse-danger decoration-2">{{
                 t('privacy.flow.data')
               }}</span>
-              <strong class="ms-1 text-inverse-danger">{{ t('privacy.flow.never') }}</strong>
+              <strong class="text-inverse-danger"> {{ t('privacy.flow.never') }}</strong>
             </span>
           </p>
         </div>

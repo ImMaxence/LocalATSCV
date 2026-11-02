@@ -50,6 +50,34 @@
     <p class="mt-6 flex items-center gap-2 text-sm text-muted">
       <app-icon class="size-4 text-accent" name="lock" />{{ t('privacy') }}
     </p>
+
+    <!-- Méthode : le barème publié, lisible avant toute analyse (et par les moteurs de recherche) -->
+    <section class="mt-16" aria-labelledby="method-title">
+      <h2 id="method-title" class="font-display text-2xl font-semibold tracking-tight">
+        {{ t('method.title') }}
+      </h2>
+      <p class="mt-3 max-w-3xl leading-relaxed text-muted">{{ t('method.intro') }}</p>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        @for (category of categories; track category) {
+          @let scale = scaleOf(category);
+          <section class="panel p-5">
+            <h3 class="flex items-baseline justify-between gap-3 font-semibold">
+              <span>{{ t('categories.' + category) }}</span>
+              <span class="text-sm text-muted tabular-nums"> {{ scale.max }} pts</span>
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-muted">
+              @for (check of scale.checks; track check.id) {
+                <li class="flex justify-between gap-3">
+                  <span>{{ t('checks.' + check.id + '.title') }}</span>
+                  <span class="tabular-nums"> {{ check.max }} pts</span>
+                </li>
+              }
+            </ul>
+          </section>
+        }
+      </div>
+      <p class="mt-6 max-w-3xl text-sm leading-relaxed text-muted">{{ t('method.disclaimer') }}</p>
+    </section>
   }
 
   @if (state() === 'done' && analysis(); as result) {
@@ -187,7 +215,7 @@
               @for (check of result.checks; track check.id) {
                 <li class="flex justify-between gap-3">
                   <span>{{ t('checks.' + check.id + '.title') }}</span>
-                  <span class="tabular-nums">{{ check.max }} pts</span>
+                  <span class="tabular-nums"> {{ check.max }} pts</span>
                 </li>
               }
             </ul>

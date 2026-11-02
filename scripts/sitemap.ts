@@ -3,7 +3,7 @@
  * avec ses versions dans les autres langues (hreflang). Lancé avant chaque build (prebuild) ;
  * à relancer avec `npm run sitemap` après l'ajout d'une langue ou d'une page.
  */
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import {
   LANGUAGE_INFO,
   PUBLIC_PAGES,
@@ -14,6 +14,11 @@ import {
 const SITE_URL = 'https://localatscv.mbonnici.fr';
 const url = (page: string, lang: Parameters<typeof localizedPath>[1]) =>
   `${SITE_URL}${localizedPath(page, lang)}`;
+
+// Date de la dernière version publiée : les pages ne changent qu'avec une nouvelle version.
+const changelog = readFileSync(new URL('../CHANGELOG.md', import.meta.url), 'utf8');
+const lastmod = changelog.match(/^## \[\d+\.\d+\.\d+\] - (\d{4}-\d{2}-\d{2})/m)?.[1];
+if (!lastmod) throw new Error('CHANGELOG.md : aucune version datée');
 
 const entries = PUBLIC_PAGES.flatMap((page) => {
   const languages = indexedLanguages(page);
@@ -28,7 +33,13 @@ const entries = PUBLIC_PAGES.flatMap((page) => {
             `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`,
         );
   return languages.map((lang) =>
-    [`  <url>`, `    <loc>${url(page, lang)}</loc>`, ...alternates, `  </url>`].join('\n'),
+    [
+      `  <url>`,
+      `    <loc>${url(page, lang)}</loc>`,
+      `    <lastmod>${lastmod}</lastmod>`,
+      ...alternates,
+      `  </url>`,
+    ].join('\n'),
   );
 });
 

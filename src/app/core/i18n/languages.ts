@@ -175,11 +175,20 @@ export function localizedPath(page: string, lang: UiLanguage): string {
   return page === '/' ? `/${segment}` : `/${segment}${page}`;
 }
 
+/** Version Markdown d'une page, écrite au build à côté de son HTML : '/' → '/index.md', '/ja' → '/ja/index.md'. */
+export function markdownPath(path: string): string {
+  return `${path.replace(/\/$/, '')}/index.md`;
+}
+
 /** Langue portée par le préfixe d'un chemin (/pt-br/analyze → pt-BR), ou null. */
 export function languageFromPath(path: string): UiLanguage | null {
   const segment = path.split(/[/?#]/)[1]?.toLowerCase();
   if (!segment) return null;
-  return UI_LANGUAGES.find((lang) => lang !== DEFAULT_UI_LANGUAGE && languageSegment(lang) === segment) ?? null;
+  return (
+    UI_LANGUAGES.find(
+      (lang) => lang !== DEFAULT_UI_LANGUAGE && languageSegment(lang) === segment,
+    ) ?? null
+  );
 }
 
 /**

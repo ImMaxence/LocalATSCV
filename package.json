@@ -1,6 +1,6 @@
 {
   "name": "localatscv",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Générateur de CV optimisé ATS, 100 % local : aucune donnée ne quitte le navigateur.",
   "license": "MIT",
   "author": "Maxence Bonnici",
@@ -16,13 +16,15 @@
     "start": "ng serve",
     "prebuild": "npm run sitemap",
     "build": "ng build",
+    "postbuild": "npm run markdown",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false",
     "docker:local": "docker compose -f docker-compose.yml -f docker-compose.local.yml up --build -d",
     "docker:down": "docker compose -f docker-compose.yml -f docker-compose.local.yml down",
     "screenshots": "node scripts/screenshots.mjs",
-    "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/sitemap.ts"
+    "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/sitemap.ts",
+    "markdown": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/markdown.ts"
   },
   "dependencies": {
     "@angular/cdk": "^22.2.5",
@@ -63,11 +65,13 @@
     "@angular/cli": "^22.2.5",
     "@angular/compiler-cli": "^22.2.0",
     "@tailwindcss/postcss": "^4.3.3",
+    "@types/turndown": "^5.0.6",
     "jsdom": "^30.0.0",
     "playwright-core": "^1.64.1",
     "postcss": "^8.5.32",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.3.3",
+    "turndown": "^7.2.4",
     "typescript": "~6.0.2",
     "vitest": "^5.0.0"
   }

@@ -16,12 +16,27 @@ LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible p
 - Langue du CV (français, anglais, italien, espagnol, allemand) ; en anglais, photo, date de naissance et nationalité sont masquées
 - Application web installable qui fonctionne hors ligne ; stockage local (IndexedDB) et sauvegarde JSON
 
-## Pages
+## Pages (français)
 
 - [Accueil](https://localatscv.mbonnici.fr/) : présentation, fonctionnement, confidentialité et questions fréquentes
-- [Analyseur de CV](https://localatscv.mbonnici.fr/analyze) : note ATS d'un CV PDF créé avec n'importe quel outil, points à corriger et texte tel que le lit un ATS
+- [Analyseur de CV](https://localatscv.mbonnici.fr/analyze) : note ATS d'un CV PDF créé avec n'importe quel outil, barème publié, points à corriger et texte tel que le lit un ATS
 - [Nouveautés](https://localatscv.mbonnici.fr/changelog) : historique des versions, aussi disponible en [Markdown](https://localatscv.mbonnici.fr/CHANGELOG.md)
 - [Éditeur](https://localatscv.mbonnici.fr/editor) : création et modification des CV (application, nécessite JavaScript)
+
+## Pages (English)
+
+- [Home](https://localatscv.mbonnici.fr/en): what it does, how it works, privacy and FAQ
+- [Resume analyzer](https://localatscv.mbonnici.fr/en/analyze): ATS score of a PDF resume made with any tool, published scoring scale, fixes and the text as an ATS reads it
+- [Privacy policy](https://localatscv.mbonnici.fr/en/legal/privacy), [Terms of use](https://localatscv.mbonnici.fr/en/legal/terms), [Legal notice](https://localatscv.mbonnici.fr/en/legal/notice)
+
+## Autres langues / Other languages
+
+Chaque page publique existe dans les 44 langues de l'interface, sous un préfixe de langue (/es, /pt-br, /de, /ja, /zh-tw, /ar…) : la liste complète, avec les versions de chaque page (hreflang), est dans le [plan du site](https://localatscv.mbonnici.fr/sitemap.xml). / Every public page exists in all 44 interface languages under a language prefix; the sitemap lists them all with their hreflang alternates.
+
+## Pour les assistants / For assistants
+
+- Chaque page existe aussi en Markdown : son adresse suivie de index.md ([accueil](https://localatscv.mbonnici.fr/index.md), [analyzer in English](https://localatscv.mbonnici.fr/en/analyze/index.md), https://localatscv.mbonnici.fr/ja/index.md…), ou la même adresse demandée avec l'en-tête « Accept: text/markdown ». / Every page is also available as Markdown at its address followed by index.md, or at the same address requested with « Accept: text/markdown ».
+- [Texte intégral](https://localatscv.mbonnici.fr/llms-full.txt) : toutes les pages en français puis en anglais, en un seul fichier / the whole text of the site in one file
 
 ## Confidentialité
 

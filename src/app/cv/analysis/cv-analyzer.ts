@@ -362,16 +362,31 @@ function fileOrderLines(pdf: ExtractedPdf): string[] {
   return lines.map((line) => line.replace(/\s+/g, ' ').trim()).filter(Boolean);
 }
 
+/** Barème publié : chaque contrôle, sa catégorie et ses points, dans l'ordre d'affichage. */
+export const CHECK_SCALE: readonly { id: CheckId; category: CheckCategory; max: number }[] = [
+  { id: 'textLayer', category: 'readability', max: 15 },
+  { id: 'columns', category: 'readability', max: 8 },
+  { id: 'order', category: 'readability', max: 10 },
+  { id: 'unreadable', category: 'readability', max: 7 },
+  { id: 'contact', category: 'structure', max: 10 },
+  { id: 'sections', category: 'structure', max: 15 },
+  { id: 'length', category: 'structure', max: 10 },
+  { id: 'quantified', category: 'content', max: 10 },
+  { id: 'weakPhrases', category: 'content', max: 8 },
+  { id: 'dates', category: 'content', max: 7 },
+];
+
 const check = (
   id: CheckId,
-  category: CheckCategory,
-  max: number,
   status: CheckStatus,
   points: number,
   message: string = status,
   params: Record<string, string | number> = {},
   items: string[] = [],
-): CvCheck => ({ id, category, status, points, max, message, params, items });
+): CvCheck => {
+  const { category, max } = CHECK_SCALE.find((item) => item.id === id)!;
+  return { id, category, status, points, max, message, params, items };
+};
 
 export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   const lines = buildLines(pdf);
@@ -390,7 +405,7 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     (page) => page.items.reduce((sum, item) => sum + item.text.trim().length, 0) >= 40,
   ).length;
   if (characters < 200) {
-    const textLayer = check('textLayer', 'readability', 15, 'fail', 0);
+    const textLayer = check('textLayer', 'fail', 0);
     return {
       score: 0,
       categories: summarize([textLayer]),
@@ -401,16 +416,14 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     };
   }
   const checks: CvCheck[] = [
-    pagesWithText < pages
-      ? check('textLayer', 'readability', 15, 'warn', 8)
-      : check('textLayer', 'readability', 15, 'pass', 15),
+    pagesWithText < pages ? check('textLayer', 'warn', 8) : check('textLayer', 'pass', 15),
   ];
 
   const columnLines = countColumnLines(lines, pdf);
   checks.push(
     (columnLines >= 4 && columnLines / lines.length >= 0.12) || hasStackedColumns(lines, pdf)
-      ? check('columns', 'readability', 8, 'warn', 3)
-      : check('columns', 'readability', 8, 'pass', 8),
+      ? check('columns', 'warn', 3)
+      : check('columns', 'pass', 8),
   );
 
   const order = readingOrder(pdf);
@@ -420,8 +433,6 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   checks.push(
     check(
       'order',
-      'readability',
-      10,
       orderStatus,
       { pass: 10, warn: 5, fail: 0 }[orderStatus],
       orderStatus === 'warn' && order.headerLate ? 'warnHeader' : orderStatus,
@@ -435,11 +446,9 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
     (text.match(RATING_GLYPHS)?.length ?? 0);
   checks.push(
     unreadable === 0
-      ? check('unreadable', 'readability', 7, 'pass', 7)
+      ? check('unreadable', 'pass', 7)
       : check(
           'unreadable',
-          'readability',
-          7,
           unreadable > 5 ? 'fail' : 'warn',
           unreadable > 5 ? 0 : 3,
           unreadable > 5 ? 'fail' : 'warn',
@@ -452,10 +461,10 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   const hasPhone = (text.match(PHONE) ?? []).some((match) => match.replace(/\D/g, '').length >= 9);
   checks.push(
     hasEmail && hasPhone
-      ? check('contact', 'structure', 10, 'pass', 10)
+      ? check('contact', 'pass', 10)
       : hasEmail || hasPhone
-        ? check('contact', 'structure', 10, 'warn', 5, hasEmail ? 'warnNoPhone' : 'warnNoEmail')
-        : check('contact', 'structure', 10, 'fail', 0),
+        ? check('contact', 'warn', 5, hasEmail ? 'warnNoPhone' : 'warnNoEmail')
+        : check('contact', 'fail', 0),
   );
 
   const headings = contentLines
@@ -476,11 +485,9 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   );
   checks.push(
     missing.length === 0
-      ? check('sections', 'structure', 15, 'pass', 15)
+      ? check('sections', 'pass', 15)
       : check(
           'sections',
-          'structure',
-          15,
           missing.length === 3 ? 'fail' : 'warn',
           (3 - missing.length) * 5,
           missing.length === 3 ? 'fail' : 'warn',
@@ -496,15 +503,10 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
         ? 'fail'
         : 'warn';
   checks.push(
-    check(
-      'length',
-      'structure',
-      10,
-      lengthStatus,
-      { pass: 10, warn: 5, fail: 0 }[lengthStatus],
-      lengthStatus,
-      { pages, words },
-    ),
+    check('length', lengthStatus, { pass: 10, warn: 5, fail: 0 }[lengthStatus], lengthStatus, {
+      pages,
+      words,
+    }),
   );
 
   // 3. Contenu
@@ -519,8 +521,6 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   checks.push(
     check(
       'quantified',
-      'content',
-      10,
       quantifiedStatus,
       { pass: 10, warn: 5, fail: 0 }[quantifiedStatus],
       quantifiedStatus,
@@ -535,11 +535,9 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   ];
   checks.push(
     weak.length === 0
-      ? check('weakPhrases', 'content', 8, 'pass', 8)
+      ? check('weakPhrases', 'pass', 8)
       : check(
           'weakPhrases',
-          'content',
-          8,
           weak.length > 3 ? 'fail' : 'warn',
           weak.length > 3 ? 0 : 4,
           weak.length > 3 ? 'fail' : 'warn',
@@ -551,8 +549,8 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   const years = new Set(text.match(YEAR) ?? []).size;
   checks.push(
     years >= 2
-      ? check('dates', 'content', 7, 'pass', 7)
-      : check('dates', 'content', 7, years === 1 ? 'warn' : 'fail', years === 1 ? 3 : 0),
+      ? check('dates', 'pass', 7)
+      : check('dates', years === 1 ? 'warn' : 'fail', years === 1 ? 3 : 0),
   );
 
   return {
@@ -565,12 +563,15 @@ export function analyzeCv(pdf: ExtractedPdf): CvAnalysis {
   };
 }
 
-const CATEGORY_MAX: Record<CheckCategory, number> = { readability: 40, structure: 35, content: 25 };
+const CATEGORIES: CheckCategory[] = ['readability', 'structure', 'content'];
 
 function summarize(checks: CvCheck[]): CvAnalysis['categories'] {
-  return (Object.keys(CATEGORY_MAX) as CheckCategory[]).map((id) => ({
+  return CATEGORIES.map((id) => ({
     id,
-    max: CATEGORY_MAX[id],
+    max: CHECK_SCALE.filter((item) => item.category === id).reduce(
+      (sum, item) => sum + item.max,
+      0,
+    ),
     points: checks
       .filter((item) => item.category === id)
       .reduce((sum, item) => sum + item.points, 0),

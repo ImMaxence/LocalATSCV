@@ -54,7 +54,7 @@ Les captures se régénèrent avec `npm run screenshots` (application lancée vi
 - [x] **Import d'un CV existant (PDF ou Word .docx)**, du **PDF de profil LinkedIn** (ordinateur) ou de l'**archive de données LinkedIn** (application mobile)
 - [x] Analyseur de CV existant (PDF lu dans le navigateur) : score sur 100 avec une méthode de calcul expliquée, points à corriger, texte tel que le lit un ATS, et détection des PDF dont le texte est écrit dans le désordre (piège des CV faits avec des blocs libres, type Canva)
 - [x] Pages Nouveautés (générée à partir de `CHANGELOG.md`), mentions légales, CGU et confidentialité
-- [x] **SEO et référencement IA** : pages publiques pré-générées en HTML, balises propres à chaque page, image d'aperçu, données structurées, sitemap, `robots.txt` et `llms.txt`
+- [x] **SEO et référencement IA** : pages publiques pré-générées en HTML, balises propres à chaque page, image d'aperçu, données structurées (WebSite, WebPage, WebApplication, FAQ), sitemap daté, `robots.txt` ouvert aux robots des IA, `llms.txt` et `llms-full.txt`, version Markdown de chaque page (`index.md`, aussi servie aux requêtes `Accept: text/markdown`)
 
 ## Principes
 

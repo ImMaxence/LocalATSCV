@@ -4,6 +4,24 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.7.0] - 2026-11-02
+
+### Ajouté
+
+- Version Markdown de chaque page publique dans chaque langue (/index.md, /en/analyze/index.md…), aussi servie à la même adresse aux assistants qui demandent du Markdown (Accept: text/markdown)
+- Fichier llms-full.txt : tout le texte du site en français et en anglais, pour les assistants
+- Analyseur : le barème (critères et points) est affiché avant même de déposer un CV
+
+### Modifié
+
+- robots.txt : les robots des moteurs de recherche et des assistants IA y sont listés explicitement
+- Plan du site daté (lastmod) et données structurées sur chaque page publique (site, page, application, FAQ)
+- Texte servi en UTF-8 explicite et compressé, Markdown compris
+
+### Corrigé
+
+- Accueil : « Vos données jamais » n'était pas séparé d'une espace pour les lecteurs d'écran, et les numéros d'étapes décoratifs y étaient lus
+
 ## [0.6.0] - 2026-11-02
 
 ### Ajouté
@@ -145,6 +163,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Notification lorsqu'une nouvelle version de l'application est disponible
 - Image Docker (nginx) avec politique de sécurité stricte (CSP), cache adapté au service worker et aucun journal d'accès
 
+[0.7.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.7.0
 [0.6.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.6.0
 [0.5.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ImMaxence/LocalATSCV/releases/tag/v0.4.0

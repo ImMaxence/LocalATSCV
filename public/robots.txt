@@ -1,6 +1,25 @@
-# LocalATSCV : toutes les pages publiques sont indexables, y compris par les robots des IA
-# (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…). Les pages de l'éditeur portent noindex.
+# LocalATSCV : toutes les pages publiques sont indexables. Les pages de l'éditeur portent noindex.
+# Chaque page existe aussi en Markdown (adresse + index.md) ; texte intégral dans /llms-full.txt.
 User-agent: *
+Allow: /
+
+# Les assistants et les moteurs de recherche des IA sont les bienvenus.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://localatscv.mbonnici.fr/sitemap.xml

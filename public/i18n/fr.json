@@ -561,7 +561,7 @@
         "dark": "Fond sombre",
         "columns": "Deux colonnes",
         "serif": "Serif",
-        "mono": "Chasse fixe",
+        "mono": "Style machine à écrire",
         "paper": "Papier",
         "colorful": "Coloré",
         "minimal": "Minimaliste"
@@ -588,7 +588,7 @@
         },
         "tech": {
           "name": "Tech",
-          "description": "Liseré coloré, détails en chasse fixe et compétences façon code"
+          "description": "Liseré coloré, détails en police de code et compétences façon code"
         },
         "minimal": {
           "name": "Minimal",
@@ -652,7 +652,7 @@
         },
         "blueprint": {
           "name": "Blueprint",
-          "description": "Plan technique : papier quadrillé, repères d'angle, ligne de cote et libellés en chasse fixe"
+          "description": "Plan technique : papier quadrillé, repères d'angle, ligne de cote et libellés en police de code"
         },
         "memphis": {
           "name": "Memphis",
@@ -704,7 +704,7 @@
         },
         "terminal": {
           "name": "Terminal",
-          "description": "Console sombre en chasse fixe, curseur et chevrons devant les titres, étiquettes de code"
+          "description": "Console sombre en police de code, curseur et chevrons devant les titres, étiquettes de code"
         },
         "retro": {
           "name": "Rétro",
@@ -736,7 +736,7 @@
         },
         "arcade": {
           "name": "Arcade",
-          "description": "Jeu vidéo 8 bits : bandeau à marches, soulignés en blocs, jauges en cases, chasse fixe"
+          "description": "Jeu vidéo 8 bits : bandeau à marches, soulignés en blocs, jauges en cases, police de code"
         },
         "notebook": {
           "name": "Cahier",
@@ -744,7 +744,7 @@
         },
         "circuit": {
           "name": "Circuit",
-          "description": "Pistes de circuit imprimé dans l'angle, titres sur des puces à broches, détails en chasse fixe"
+          "description": "Pistes de circuit imprimé dans l'angle, titres sur des puces à broches, détails en police de code"
         },
         "gazette": {
           "name": "Gazette",
@@ -816,7 +816,7 @@
         },
         "wireframe": {
           "name": "Fil de fer",
-          "description": "Maquette d'interface : traits pointillés, repères d'angle, barres grises, chasse fixe"
+          "description": "Maquette d'interface : traits pointillés, repères d'angle, barres grises, police de code"
         },
         "chrono": {
           "name": "Chrono",
@@ -860,7 +860,7 @@
         },
         "typewriter": {
           "name": "Machine à écrire",
-          "description": "Tout en chasse fixe sur papier blanc cassé, titres soulignés, ruban rouge-noir"
+          "description": "Tout en police machine à écrire sur papier blanc cassé, titres soulignés, ruban rouge-noir"
         }
       }
     },

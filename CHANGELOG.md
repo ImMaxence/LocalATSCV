@@ -9,7 +9,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 ### Ajouté
 
 - 20 nouveaux modèles de CV, soit 72 au total : 14 graphiques (Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 6 sobres (Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire)
-- Galerie des modèles repensée : un volet d'aperçu rend le modèle sélectionné avec votre CV ou un CV d'exemple, filtres par style (fond sombre, deux colonnes, serif, chasse fixe, papier, coloré, minimaliste), favoris, modèles récents, suggestions selon l'offre d'emploi en cours d'adaptation, navigation au clavier (flèches, Entrée, Échap)
+- Galerie des modèles repensée : un volet d'aperçu rend le modèle sélectionné avec votre CV ou un CV d'exemple, filtres par style (fond sombre, deux colonnes, serif, style machine à écrire, papier, coloré, minimaliste), favoris, modèles récents, suggestions selon l'offre d'emploi en cours d'adaptation, navigation au clavier (flèches, Entrée, Échap)
 - Raccourcis Ctrl+Maj+← et Ctrl+Maj+→ pour changer de modèle sans ouvrir la galerie ; la vignette du modèle en cours s'affiche dans le bouton de la barre d'outils
 
 ### Modifié

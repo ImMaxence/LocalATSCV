@@ -6,7 +6,8 @@
     "privacy": "Zasebnost",
     "analyze": "Preizkusi življenjepis",
     "editor": "Ustvari moj življenjepis",
-    "skipToContent": "Preskoči na vsebino"
+    "skipToContent": "Preskoči na vsebino",
+    "studio": "Studio slogov"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Pravno obvestilo",
     "terms": "Pogoji uporabe",
     "privacy": "Pravilnik o zasebnosti",
-    "accessibility": "Izjava o dostopnosti"
+    "accessibility": "Izjava o dostopnosti",
+    "studio": "Studio slogov"
   },
   "seo": {
     "home": "Ustvarite brezplačno življenjepis, ki vas pripelje do razgovora: 72 predlog, usklajeno motivacijsko pismo, prilagoditev vsakemu oglasu in preverjanje ATS. Brez registracije, vaši podatki ostanejo na vaši napravi",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 predlog na izbiro",
         "letter": "Usklajeno motivacijsko pismo",
-        "private": "Vaši podatki ostanejo pri vas"
+        "private": "Vaši podatki ostanejo pri vas",
+        "studio": "Ali lasten dizajn"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Ali moram navesti svojo invalidnost?",
           "a": "Nikoli ni obvezno. Če želite, urejevalnik predlaga formulacijo, priznano v državi življenjepisa (RQTH v Franciji, categorie protette v Italiji…), ob kontaktih, na koncu življenjepisa ali samo v pismu. Ohranite jo lahko tudi le v nekaterih različicah"
+        },
+        "design": {
+          "q": "Ali lahko ustvarim lasten dizajn življenjepisa?",
+          "a": "Da. V studiu slogov sestavljate bloke (glavo, naslove, izkušnje, stolpce), postavljate okrasne oblike ter izbirate barve in pisave, brez kode. Če poznate CSS, lahko prilepite tudi svojega. Slog se deli s kopiranjem in lepljenjem, brez podatkov iz vašega življenjepisa. Če pa ne želite fotografije, jo lahko nadomesti ikona ali vaše začetnice"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "En razdelek naenkrat, z nasvetom v preprostem jeziku, vse do prenosa PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio slogov",
+      "title": "Nobena predloga vam ni pisana na kožo? Ustvarite svojo",
+      "text": "Sestavite dizajn kot iz kock: izberite bloke, postavite oblike, zamenjajte barve. Brez ene same vrstice kode in še vedno pravilno prebran v programih, ki razvrščajo prijave",
+      "points": {
+        "blocks": {
+          "title": "Bloki za sestavljanje",
+          "text": "Glava, naslovi, izkušnje, znanja, stolpci: vsak blok izberete z enim klikom po njegovi skici"
+        },
+        "shapes": {
+          "title": "Oblike za postavitev",
+          "text": "Krogi, madeži, valovi ali črte, ki jih vlečete po strani. Krasijo, ne da bi motile branje"
+        },
+        "css": {
+          "title": "Vaš CSS, če želite",
+          "text": "Poznate CSS? Prilepite svojega na platno studia ali na predlogo iz galerije: spremeni samo življenjepis"
+        },
+        "share": {
+          "title": "Deljenje s kopiranjem in lepljenjem",
+          "text": "Vaš slog gre v kratko kodo, ki jo lahko pošljete naprej. Ne vsebuje nobenega podatka iz vašega življenjepisa"
+        }
+      },
+      "icon": "Ikona namesto fotografije",
+      "cta": "Ustvari moj slog"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Navedba se v življenjepisu ne prikaže. Na zavihku Pismo gumb doda pripravljen stavek",
         "pros": "Za: zavzeti delodajalci (programi vključevanja, kvote) vas hitreje opazijo, prilagoditve pa se lažje dogovorijo",
         "cons": "Proti: nekateri kadroviki imajo še vedno predsodke. O tem lahko govorite tudi pozneje, na razgovoru ali po zaposlitvi, ali nikoli"
+      },
+      "photoIcon": "Ikona",
+      "photoIconTitle": "Ikona namesto fotografije",
+      "photoIconHint": "Narisana v poudarni barvi. O vas ne pove ničesar, zato ostane tudi na življenjepisih v angleščini",
+      "avatars": {
+        "user": "Silhueta",
+        "briefcase": "Aktovka",
+        "graduation": "Diplomska kapa",
+        "code": "Koda",
+        "palette": "Paleta",
+        "camera": "Fotoaparat",
+        "music": "Glasba",
+        "heart": "Srce",
+        "leaf": "List",
+        "rocket": "Raketa",
+        "chefHat": "Kuharska kapa",
+        "wrench": "Ključ",
+        "stethoscope": "Stetoskop",
+        "book": "Knjiga",
+        "lightbulb": "Žarnica",
+        "initials": "Začetnice"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Dodajte 2 ali 3 hobije: pomagajo začeti pogovor na razgovoru",
         "finish": "Izberite predlogo, ki vam je všeč, in prenesite življenjepis kot PDF. Vedno se lahko vrnete in ga uredite"
       }
+    },
+    "style": {
+      "button": "Moj slog",
+      "title": "Slog življenjepisa",
+      "gallery": "Predloga iz galerije: {{name}}",
+      "empty": "Ustvarjenega še ni nobenega sloga",
+      "css": "Prilagodi s CSS",
+      "cssHint": "Lasten CSS na trenutni predlogi",
+      "cssName": "{{name}} prilagojen",
+      "studio": "Studio slogov",
+      "studioHint": "Lasten dizajn iz blokov in oblik, brez kode"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Privzeti prikaz",
     "note": "Te nastavitve spremenijo vmesnik, nikoli vašega natisnjenega življenjepisa"
+  },
+  "studio": {
+    "title": "Studio slogov",
+    "subtitle": "Ustvarite lasten dizajn življenjepisa: bloki in oblike, ki jih sestavite brez kode, ali lasten CSS. Nato ga delite kot kodo JSON",
+    "backToCv": "Nazaj na življenjepis",
+    "notFound": "Ta slog ne obstaja ali je bil izbrisan",
+    "points": {
+      "blocks": "Bloki za sestavljanje",
+      "shapes": "Oblike za postavitev",
+      "css": "Lasten CSS",
+      "share": "Deljenje v JSON"
+    },
+    "list": {
+      "new": "Nov slog",
+      "emptyTitle": "Še ni slogov",
+      "emptyText": "Začnite s prazno stranjo ali izhodiščem, nato prilagodite vsak blok",
+      "open": "Odpri",
+      "actions": "Dejanja",
+      "duplicate": "Podvoji",
+      "delete": "Izbriši",
+      "deleteTitle": "Izbrišem slog »{{name}}«?",
+      "deleteText": "Življenjepisi, ki ga uporabljajo, ohranijo trenutni videz",
+      "copySuffix": "(kopija)",
+      "updated": "Urejeno {{date}}",
+      "usedBy": "Življenjepisi, ki ga uporabljajo: {{count}}",
+      "hint": "Vaši slogi ostanejo v tem brskalniku. Vsak življenjepis hrani kopijo svojega sloga, zato je v varnostnih kopijah popoln"
+    },
+    "presets": {
+      "blank": "Prazna stran",
+      "band": "Trak",
+      "sidebar": "Stranski stolpec",
+      "organic": "Mehke oblike",
+      "timeline": "Časovnica"
+    },
+    "toolbar": {
+      "back": "Moji slogi",
+      "name": "Ime sloga",
+      "share": "Deli",
+      "use": "Uporabi za življenjepis",
+      "applyBack": "Uporabi na življenjepisu",
+      "noCv": "Še ni življenjepisov",
+      "applied": "Slog uporabljen na »{{name}}«"
+    },
+    "tabs": {
+      "blocks": "Bloki",
+      "shapes": "Oblike",
+      "colors": "Barve",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Izhodišče",
+      "studio": "Platno studia",
+      "studioHint": "Sestavljajte bloke in postavljajte oblike",
+      "template": "Predloga iz galerije",
+      "templateHint": "Bloki in oblike so na voljo le na platnu studia. To predlogo prilagodite na zavihku CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Stolpci",
+        "single": "En stolpec",
+        "sidebarLeft": "Stranski stolpec"
+      },
+      "header": {
+        "label": "Glava",
+        "left": "Klasična",
+        "center": "Na sredini",
+        "band": "Trak",
+        "card": "Okvir s stiki"
+      },
+      "headings": {
+        "label": "Naslovi razdelkov",
+        "underline": "Podčrtano",
+        "bar": "Črta",
+        "pill": "Kapsula",
+        "caps": "Velike črke",
+        "boxed": "V okvirju",
+        "line": "Linija"
+      },
+      "entries": {
+        "label": "Izkušnje in izobrazba",
+        "classic": "Klasično",
+        "timeline": "Časovnica",
+        "cards": "Kartice",
+        "datesLeft": "Datumi levo"
+      },
+      "skills": {
+        "label": "Veščine",
+        "chips": "Oznake",
+        "inline": "V eni vrstici",
+        "grid": "Mreža"
+      },
+      "languages": {
+        "label": "Jeziki",
+        "meter": "Merilnik",
+        "text": "Besedilo"
+      },
+      "photo": {
+        "label": "Fotografija",
+        "circle": "Okrogla",
+        "rounded": "Zaobljena",
+        "square": "Kvadratna",
+        "hidden": "Skrita"
+      }
+    },
+    "shapes": {
+      "add": "Dodaj obliko",
+      "hint": "Oblike so za besedilom: krasijo, ne da bi motile branje ATS",
+      "drag": "Vlecite oblike po strani ali jih premikajte s puščicami",
+      "onPage": "Oblike na strani",
+      "empty": "Na strani še ni oblik",
+      "color": "Barva",
+      "size": "Velikost",
+      "rotate": "Vrtenje",
+      "alpha": "Intenzivnost",
+      "x": "Vodoravno",
+      "y": "Navpično",
+      "duplicate": "Podvoji",
+      "remove": "Izbriši",
+      "kinds": {
+        "circle": "Krog",
+        "blob": "Madež",
+        "square": "Kvadrat",
+        "triangle": "Trikotnik",
+        "ring": "Obroč",
+        "wave": "Valovi",
+        "stripes": "Črte",
+        "dots": "Pike"
+      },
+      "colors": {
+        "accent": "Poudarek",
+        "soft": "Svetel poudarek",
+        "ink": "Besedilo"
+      }
+    },
+    "colors": {
+      "accentCv": "Iz življenjepisa",
+      "accentFixed": "Stalna barva",
+      "paper": "Ozadje strani",
+      "background": "Ozadje",
+      "text": "Besedilo",
+      "contrast": "Nizek kontrast: besedilo je morda težko berljivo"
+    },
+    "css": {
+      "label": "Vaš CSS",
+      "hint": "Velja samo za življenjepis, takoj. Uvozi in zunanji naslovi se odstranijo. Dodajte !important, če prevlada pravilo predloge",
+      "rules": "Uporabljena pravila: {{count}}",
+      "removed": "Odstranjeno zaradi vaše varnosti: {{count}}",
+      "example": "Vstavi primer",
+      "warnings": "Pozor pri branju ATS",
+      "warning": {
+        "order": "{{property}}: besedilo se lahko prebere v napačnem vrstnem redu",
+        "shadow": "senca besedilo v PDF zapiše dvakrat",
+        "content": "besedilo, dodano s CSS, berejo roboti"
+      },
+      "reference": "Razpoložljivi razredi in spremenljivke",
+      "referenceStudio": "Stalni razredi platna studia:",
+      "referenceTemplate": "Pri predlogi iz galerije razrede najdete s pregledom predogleda. Skupne spremenljivke:"
+    },
+    "preview": {
+      "label": "Predogled z",
+      "sample": "Vzorčnim življenjepisom"
+    },
+    "share": {
+      "title": "Deli slog",
+      "text": "Ta koda JSON vsebuje celoten slog (bloke, oblike, barve in CSS), a nobenega podatka iz vašega življenjepisa. Uvozi se v studiu slogov",
+      "copy": "Kopiraj kodo",
+      "copied": "Koda je kopirana",
+      "copyError": "Kopiranje ni uspelo: označite kodo in jo kopirajte",
+      "download": "Prenesi (.json)",
+      "close": "Zapri",
+      "importTitle": "Uvozi slog",
+      "importText": "Prilepite kodo JSON sloga ali izberite datoteko .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Izberi datoteko",
+      "importAction": "Uvozi",
+      "imported": "Slog »{{name}}« je uvožen",
+      "error": {
+        "invalidJson": "To besedilo ni veljaven JSON",
+        "notAStyle": "Ta koda ni slog LocalATSCV",
+        "newerVersion": "Ta slog je iz novejše različice LocalATSCV: posodobite aplikacijo"
+      }
+    }
   }
 }

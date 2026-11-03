@@ -1,0 +1,690 @@
+<ng-container *transloco="let t">
+  @switch (status()) {
+    @case ('loading') {
+      <div class="grid place-items-center py-32 text-muted">
+        <app-icon class="size-6 animate-spin" name="loader" />
+      </div>
+    }
+    @case ('notFound') {
+      <section class="container-page grid place-items-center py-28 text-center">
+        <h1 class="font-display text-3xl font-semibold">{{ t('studio.notFound') }}</h1>
+        <a routerLink="/studio" class="btn btn-ghost mt-8">
+          <app-icon class="size-4 rtl:-scale-x-100" name="arrowLeft" />{{
+            t('studio.toolbar.back')
+          }}
+        </a>
+      </section>
+    }
+    @default {
+      @if (style(); as style) {
+        <!-- Barre d'outils -->
+        <div class="sticky top-16 z-30 border-b border-line bg-paper/90 backdrop-blur-md">
+          <div
+            class="mx-auto flex max-w-[1600px] flex-wrap items-center gap-2 px-4 py-2 sm:px-6 lg:h-14 lg:flex-nowrap lg:py-0"
+          >
+            <a
+              routerLink="/studio"
+              [queryParams]="cv() ? { cv: cv() } : {}"
+              class="icon-btn shrink-0"
+              [attr.aria-label]="t('studio.toolbar.back')"
+              [title]="t('studio.toolbar.back')"
+            >
+              <app-icon class="size-4 rtl:-scale-x-100" name="arrowLeft" />
+            </a>
+            <app-icon class="size-5 shrink-0 text-accent" name="palette" />
+            <input
+              class="h-9 min-w-0 flex-1 rounded-lg bg-transparent px-2 font-semibold outline-none hover:bg-surface-2 focus:bg-surface-2 lg:max-w-80"
+              [attr.aria-label]="t('studio.toolbar.name')"
+              [value]="style.name"
+              (input)="rename($any($event.target).value)"
+            />
+            <!-- Sur téléphone, les actions passent sur une seconde ligne : le nom garde sa place -->
+            <div class="flex w-full items-center gap-2 lg:ms-auto lg:w-auto">
+              <p
+                class="me-auto flex items-center gap-1.5 text-xs whitespace-nowrap text-muted lg:me-0"
+                role="status"
+              >
+                @switch (saveState()) {
+                  @case ('saving') {
+                    <app-icon class="size-3.5 animate-spin" name="loader" />
+                    <span class="hidden xl:inline">{{ t('editor.toolbar.saving') }}</span>
+                  }
+                  @case ('error') {
+                    <span class="flex items-center gap-1.5 text-danger">
+                      <app-icon class="size-3.5" name="alert" />{{ t('editor.toolbar.saveError') }}
+                    </span>
+                  }
+                  @default {
+                    <app-icon class="size-3.5 text-accent" name="check" [strokeWidth]="2.5" />
+                    <span class="hidden xl:inline">{{ t('editor.toolbar.saved') }}</span>
+                  }
+                }
+              </p>
+              <button type="button" class="btn btn-ghost shrink-0 px-4! py-2!" (click)="share()">
+                <app-icon class="size-4" name="share" />
+                <span class="hidden sm:inline">{{ t('studio.toolbar.share') }}</span>
+              </button>
+              @if (cv(); as cvId) {
+                <button
+                  type="button"
+                  class="btn btn-primary shrink-0 px-4! py-2!"
+                  (click)="applyTo(cvId)"
+                >
+                  <app-icon class="size-4" name="check" />{{ t('studio.toolbar.applyBack') }}
+                </button>
+              } @else {
+                <button
+                  type="button"
+                  class="btn btn-primary shrink-0 px-4! py-2!"
+                  [cdkMenuTriggerFor]="useMenu"
+                >
+                  <app-icon class="size-4" name="file" />{{ t('studio.toolbar.use') }}
+                </button>
+                <ng-template #useMenu>
+                  <div cdkMenu class="menu-panel menu-in max-h-80 w-72 overflow-y-auto">
+                    @for (item of cvs(); track item.id) {
+                      <button
+                        cdkMenuItem
+                        type="button"
+                        class="menu-item"
+                        (cdkMenuItemTriggered)="applyTo(item.id)"
+                      >
+                        <app-icon class="size-4 text-muted" name="file" />
+                        <span class="min-w-0 flex-1 truncate">{{ item.name }}</span>
+                        @if (item.style?.id === style.id) {
+                          <app-icon class="size-4 text-accent" name="check" [strokeWidth]="2.5" />
+                        }
+                      </button>
+                    } @empty {
+                      <p class="px-2.5 py-2 text-sm text-muted">{{ t('studio.toolbar.noCv') }}</p>
+                    }
+                  </div>
+                </ng-template>
+              }
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto grid max-w-[1600px] grid-cols-1 gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[minmax(0,27rem)_minmax(0,1fr)]"
+        >
+          <!-- Panneau latéral : blocs, formes, couleurs, CSS -->
+          <div
+            class="panel self-start lg:sticky lg:top-[8.5rem] lg:max-h-[calc(100dvh-10rem)] lg:overflow-y-auto"
+          >
+            <div
+              role="tablist"
+              class="sticky top-0 z-10 grid grid-cols-4 gap-1 border-b border-line bg-surface p-1.5"
+              [attr.aria-label]="t('studio.title')"
+            >
+              @for (item of tabs; track item.id) {
+                <button
+                  type="button"
+                  role="tab"
+                  class="flex flex-col items-center gap-0.5 rounded-xl py-1.5 text-xs font-semibold text-muted transition-colors hover:text-ink aria-selected:bg-accent-soft aria-selected:text-accent"
+                  [id]="'studio-tab-' + item.id"
+                  [attr.aria-selected]="activeTab() === item.id"
+                  [attr.aria-controls]="'studio-panel'"
+                  (click)="activeTab.set(item.id)"
+                >
+                  <app-icon class="size-4" [name]="item.icon" />{{ t('studio.tabs.' + item.id) }}
+                </button>
+              }
+            </div>
+
+            <div
+              id="studio-panel"
+              class="p-4"
+              role="tabpanel"
+              [attr.aria-labelledby]="'studio-tab-' + activeTab()"
+            >
+              @switch (activeTab()) {
+                @case ('blocks') {
+                  <fieldset>
+                    <legend class="field-label">{{ t('studio.base.label') }}</legend>
+                    <div class="grid gap-2">
+                      <label
+                        class="flex cursor-pointer items-start gap-2.5 rounded-xl border border-line p-3 has-checked:border-accent has-checked:bg-accent-soft/50"
+                      >
+                        <input
+                          type="radio"
+                          name="style-base"
+                          class="mt-0.5 size-4 shrink-0 accent-accent"
+                          [checked]="isStudio()"
+                          (change)="setBase('studio')"
+                        />
+                        <span>
+                          <span class="block text-sm font-semibold">{{
+                            t('studio.base.studio')
+                          }}</span>
+                          <span class="block text-xs text-muted">{{
+                            t('studio.base.studioHint')
+                          }}</span>
+                        </span>
+                      </label>
+                      <label
+                        class="flex cursor-pointer items-start gap-2.5 rounded-xl border border-line p-3 has-checked:border-accent has-checked:bg-accent-soft/50"
+                      >
+                        <input
+                          type="radio"
+                          name="style-base"
+                          class="mt-0.5 size-4 shrink-0 accent-accent"
+                          [checked]="!isStudio()"
+                          (change)="setBase(templateBase())"
+                        />
+                        <span class="min-w-0 flex-1">
+                          <span class="block text-sm font-semibold">{{
+                            t('studio.base.template')
+                          }}</span>
+                          <span class="block text-xs text-muted">{{
+                            t('studio.base.templateHint')
+                          }}</span>
+                        </span>
+                      </label>
+                      @if (!isStudio()) {
+                        <select
+                          class="field-input"
+                          [attr.aria-label]="t('studio.base.template')"
+                          (change)="setBase($any($event.target).value)"
+                        >
+                          @for (template of templates; track template.id) {
+                            <option [value]="template.id" [selected]="style.base === template.id">
+                              {{ t('editor.templates.names.' + template.id + '.name') }}
+                            </option>
+                          }
+                        </select>
+                      }
+                    </div>
+                  </fieldset>
+
+                  @if (isStudio()) {
+                    @for (key of blockKeys; track key) {
+                      <fieldset class="mt-5">
+                        <legend class="field-label">
+                          {{ t('studio.blocks.' + key + '.label') }}
+                        </legend>
+                        <div class="grid grid-cols-3 gap-2" role="radiogroup">
+                          @for (option of blockOptions(key); track option) {
+                            <button
+                              type="button"
+                              role="radio"
+                              class="rounded-xl border border-line p-1.5 text-center text-[11px] leading-tight font-medium text-muted transition-colors hover:border-ink/30 hover:text-ink aria-checked:border-accent aria-checked:bg-accent-soft/50 aria-checked:text-ink"
+                              [attr.aria-checked]="$any(style.blocks)[key] === option"
+                              (click)="setBlock(key, option)"
+                            >
+                              <svg
+                                viewBox="0 0 48 34"
+                                class="block w-full rounded-md border border-line bg-surface"
+                                aria-hidden="true"
+                              >
+                                @for (rect of sketch(key, option); track $index) {
+                                  <rect
+                                    [attr.x]="rect[0]"
+                                    [attr.y]="rect[1]"
+                                    [attr.width]="rect[2]"
+                                    [attr.height]="rect[3]"
+                                    [attr.rx]="rect[5] ?? 0.6"
+                                    [style.fill]="fills[rect[4]]"
+                                  />
+                                }
+                              </svg>
+                              <span class="mt-1 block">{{
+                                t('studio.blocks.' + key + '.' + option)
+                              }}</span>
+                            </button>
+                          }
+                        </div>
+                        @if (key === 'layout' && style.blocks.layout !== 'single') {
+                          <p class="mt-2 flex gap-2 text-xs leading-relaxed text-muted">
+                            <app-icon
+                              class="mt-px size-3.5 shrink-0 text-amber-600 dark:text-amber-400"
+                              name="alert"
+                            />{{ t('editor.templates.atsWarning') }}
+                          </p>
+                        }
+                      </fieldset>
+                    }
+                  }
+                }
+
+                @case ('shapes') {
+                  @if (!isStudio()) {
+                    <p class="flex gap-2 rounded-xl bg-surface-2 p-3 text-sm text-muted">
+                      <app-icon class="mt-0.5 size-4 shrink-0" name="info" />{{
+                        t('studio.base.templateHint')
+                      }}
+                    </p>
+                  } @else {
+                    <p class="field-label">{{ t('studio.shapes.add') }}</p>
+                    <div class="grid grid-cols-4 gap-2">
+                      @for (kind of shapeKinds; track kind) {
+                        <button
+                          type="button"
+                          class="flex flex-col items-center gap-1 rounded-xl border border-line p-2 text-[11px] font-medium text-muted transition-colors hover:border-accent hover:text-ink disabled:opacity-50"
+                          [disabled]="style.shapes.length >= maxShapes"
+                          (click)="addShape(kind)"
+                        >
+                          <svg
+                            viewBox="0 0 100 100"
+                            class="size-9 overflow-hidden"
+                            aria-hidden="true"
+                          >
+                            <path
+                              [attr.d]="geometry[kind].d"
+                              [attr.transform]="geometry[kind].transform ?? null"
+                              [attr.stroke-width]="geometry[kind].strokeWidth ?? null"
+                              [style.fill]="
+                                geometry[kind].mode === 'fill' ? 'var(--accent)' : 'none'
+                              "
+                              [style.stroke]="
+                                geometry[kind].mode === 'stroke' ? 'var(--accent)' : 'none'
+                              "
+                            />
+                          </svg>
+                          {{ t('studio.shapes.kinds.' + kind) }}
+                        </button>
+                      }
+                    </div>
+                    <p class="mt-2 text-xs leading-relaxed text-muted">
+                      {{ t('studio.shapes.hint') }}
+                    </p>
+
+                    @if (style.shapes.length) {
+                      <p class="field-label mt-5">{{ t('studio.shapes.onPage') }}</p>
+                      <div class="flex flex-wrap gap-1.5">
+                        @for (shape of style.shapes; track shape.id; let i = $index) {
+                          <button
+                            type="button"
+                            class="flex items-center gap-1.5 rounded-full border border-line py-0.5 ps-1 pe-2.5 text-xs font-medium transition-colors hover:border-ink/30 aria-pressed:border-accent aria-pressed:bg-accent-soft"
+                            [attr.aria-pressed]="selectedId() === shape.id"
+                            (click)="selectedId.set(shape.id)"
+                          >
+                            <svg viewBox="0 0 100 100" class="size-5" aria-hidden="true">
+                              <path
+                                [attr.d]="geometry[shape.kind].d"
+                                [attr.transform]="geometry[shape.kind].transform ?? null"
+                                [attr.stroke-width]="geometry[shape.kind].strokeWidth ?? null"
+                                [style.fill]="
+                                  geometry[shape.kind].mode === 'fill' ? 'var(--accent)' : 'none'
+                                "
+                                [style.stroke]="
+                                  geometry[shape.kind].mode === 'stroke' ? 'var(--accent)' : 'none'
+                                "
+                              />
+                            </svg>
+                            {{ t('studio.shapes.kinds.' + shape.kind) }} {{ i + 1 }}
+                          </button>
+                        }
+                      </div>
+
+                      @if (selectedShape(); as shape) {
+                        <div class="mt-4 space-y-3 rounded-xl border border-line p-3">
+                          <div>
+                            <p class="field-label">{{ t('studio.shapes.color') }}</p>
+                            <div class="flex flex-wrap items-center gap-2">
+                              @for (color of shapeColors; track color) {
+                                <button
+                                  type="button"
+                                  class="flex items-center gap-1.5 rounded-full border border-line py-0.5 ps-0.5 pe-2.5 text-xs font-medium aria-pressed:border-accent aria-pressed:bg-accent-soft"
+                                  [attr.aria-pressed]="shape.color === color"
+                                  (click)="updateShape(shape.id, { color })"
+                                >
+                                  <span
+                                    class="size-5 rounded-full border border-line"
+                                    [style.background]="
+                                      color === 'accent'
+                                        ? (style.colors.accent ?? 'var(--accent)')
+                                        : color === 'soft'
+                                          ? 'var(--accent-soft)'
+                                          : style.colors.ink
+                                    "
+                                  ></span>
+                                  {{ t('studio.shapes.colors.' + color) }}
+                                </button>
+                              }
+                              <label
+                                class="relative flex cursor-pointer items-center gap-1.5 rounded-full border border-line py-0.5 ps-0.5 pe-2.5 text-xs font-medium has-focus-visible:ring-2 has-focus-visible:ring-accent"
+                                [class.border-accent!]="shape.color.startsWith('#')"
+                              >
+                                <span
+                                  class="size-5 rounded-full border-2 border-dashed border-line"
+                                  [style.background]="
+                                    shape.color.startsWith('#') ? shape.color : null
+                                  "
+                                ></span>
+                                {{ t('editor.toolbar.customAccent') }}
+                                <input
+                                  type="color"
+                                  class="absolute inset-0 cursor-pointer opacity-0"
+                                  [value]="shape.color.startsWith('#') ? shape.color : '#888888'"
+                                  (input)="
+                                    updateShape(shape.id, { color: $any($event.target).value })
+                                  "
+                                />
+                              </label>
+                            </div>
+                          </div>
+                          @for (control of shapeControls; track control) {
+                            <label
+                              class="grid grid-cols-[6.5rem_1fr_3rem] items-center gap-2 text-xs"
+                            >
+                              <span class="font-medium text-muted">{{
+                                t('studio.shapes.' + control)
+                              }}</span>
+                              <input
+                                type="range"
+                                class="w-full accent-accent"
+                                step="1"
+                                [min]="limits[control].min"
+                                [max]="limits[control].max"
+                                [value]="shape[control]"
+                                (input)="setControl(shape.id, control, $any($event.target).value)"
+                              />
+                              <span class="text-end tabular-nums">{{
+                                control === 'rotate' ? shape[control] + '°' : shape[control] + ' %'
+                              }}</span>
+                            </label>
+                          }
+                          <div class="flex flex-wrap justify-end gap-2 pt-1">
+                            <button type="button" class="add-btn" (click)="duplicateShape(shape)">
+                              <app-icon class="size-4" name="copy" />{{
+                                t('studio.shapes.duplicate')
+                              }}
+                            </button>
+                            <button
+                              type="button"
+                              class="add-btn text-danger! hover:bg-danger/10!"
+                              (click)="removeShape(shape.id)"
+                            >
+                              <app-icon class="size-4" name="trash" />{{
+                                t('studio.shapes.remove')
+                              }}
+                            </button>
+                          </div>
+                        </div>
+                      }
+                    } @else {
+                      <p class="mt-5 text-sm text-muted">{{ t('studio.shapes.empty') }}</p>
+                    }
+                  }
+                }
+
+                @case ('colors') {
+                  <fieldset>
+                    <legend class="field-label">{{ t('editor.toolbar.accent') }}</legend>
+                    <div class="grid grid-cols-2 gap-2">
+                      <label
+                        class="flex cursor-pointer items-center gap-2 rounded-lg border border-line px-2.5 py-2 text-sm has-checked:border-accent has-checked:bg-accent-soft/50"
+                      >
+                        <input
+                          type="radio"
+                          name="style-accent"
+                          class="size-4 shrink-0 accent-accent"
+                          [checked]="style.colors.accent === null"
+                          (change)="setAccent(null)"
+                        />
+                        {{ t('studio.colors.accentCv') }}
+                      </label>
+                      <label
+                        class="flex cursor-pointer items-center gap-2 rounded-lg border border-line px-2.5 py-2 text-sm has-checked:border-accent has-checked:bg-accent-soft/50"
+                      >
+                        <input
+                          type="radio"
+                          name="style-accent"
+                          class="size-4 shrink-0 accent-accent"
+                          [checked]="style.colors.accent !== null"
+                          (change)="setAccent(accents[0])"
+                        />
+                        {{ t('studio.colors.accentFixed') }}
+                      </label>
+                    </div>
+                    @if (style.colors.accent !== null) {
+                      <div class="mt-3 grid grid-cols-8 gap-1.5">
+                        @for (color of accents; track color) {
+                          <button
+                            type="button"
+                            class="grid aspect-square place-items-center rounded-full outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                            [style.background]="color"
+                            [attr.aria-label]="color"
+                            [attr.aria-pressed]="style.colors.accent === color"
+                            (click)="setAccent(color)"
+                          >
+                            @if (style.colors.accent === color) {
+                              <app-icon class="size-4 text-white" name="check" [strokeWidth]="3" />
+                            }
+                          </button>
+                        }
+                      </div>
+                      <label class="mt-2 flex items-center gap-2 text-sm">
+                        <input
+                          type="color"
+                          class="h-8 w-12 cursor-pointer rounded border border-line bg-surface"
+                          [value]="style.colors.accent"
+                          (input)="setAccent($any($event.target).value)"
+                        />
+                        {{ t('editor.toolbar.customAccent') }}
+                      </label>
+                    }
+                  </fieldset>
+
+                  @if (isStudio()) {
+                    <fieldset class="mt-5">
+                      <legend class="field-label">{{ t('studio.colors.paper') }}</legend>
+                      <div class="flex flex-wrap gap-2">
+                        @for (preset of papers; track preset.paper) {
+                          <button
+                            type="button"
+                            class="grid size-10 place-items-center rounded-xl border border-line text-sm font-semibold aria-pressed:ring-2 aria-pressed:ring-accent aria-pressed:ring-offset-2"
+                            [style.background]="preset.paper"
+                            [style.color]="preset.ink"
+                            [attr.aria-label]="preset.paper"
+                            [attr.aria-pressed]="style.colors.paper === preset.paper"
+                            (click)="setPaper(preset)"
+                          >
+                            Aa
+                          </button>
+                        }
+                      </div>
+                      <div class="mt-3 grid grid-cols-2 gap-3">
+                        <label class="flex items-center gap-2 text-sm">
+                          <input
+                            type="color"
+                            class="h-8 w-12 cursor-pointer rounded border border-line bg-surface"
+                            [value]="style.colors.paper"
+                            (input)="setColor('paper', $any($event.target).value)"
+                          />
+                          {{ t('studio.colors.background') }}
+                        </label>
+                        <label class="flex items-center gap-2 text-sm">
+                          <input
+                            type="color"
+                            class="h-8 w-12 cursor-pointer rounded border border-line bg-surface"
+                            [value]="style.colors.ink"
+                            (input)="setColor('ink', $any($event.target).value)"
+                          />
+                          {{ t('studio.colors.text') }}
+                        </label>
+                      </div>
+                      @if (lowContrast()) {
+                        <p
+                          class="mt-2 flex gap-2 text-xs leading-relaxed text-danger"
+                          role="status"
+                        >
+                          <app-icon class="mt-px size-3.5 shrink-0" name="alert" />{{
+                            t('studio.colors.contrast')
+                          }}
+                        </p>
+                      }
+                    </fieldset>
+                  }
+
+                  <fieldset class="mt-5 grid gap-3">
+                    <legend class="field-label">{{ t('editor.fonts.title') }}</legend>
+                    @for (role of fontRoles; track role) {
+                      <label class="grid gap-1 text-sm">
+                        <span class="text-xs text-muted">{{ t('editor.fonts.' + role) }}</span>
+                        <select
+                          class="field-input"
+                          (change)="setFont(role, $any($event.target).value)"
+                        >
+                          <option value="" [selected]="!style.fonts[role]">
+                            {{ t('editor.fonts.default') }}
+                          </option>
+                          @for (font of fonts; track font.id) {
+                            <option [value]="font.id" [selected]="style.fonts[role] === font.id">
+                              {{ font.label }}
+                            </option>
+                          }
+                        </select>
+                      </label>
+                    }
+                    <p class="text-xs text-muted">{{ t('editor.fonts.hint') }}</p>
+                  </fieldset>
+                }
+
+                @case ('css') {
+                  <label class="field-label" for="style-css">{{ t('studio.css.label') }}</label>
+                  <textarea
+                    id="style-css"
+                    class="field-input min-h-80 resize-y font-mono text-xs leading-relaxed"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    autocomplete="off"
+                    [placeholder]="cssPlaceholder"
+                    [value]="style.css"
+                    (input)="setCss($any($event.target).value)"
+                  ></textarea>
+                  <div class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
+                    <span>{{ t('studio.css.rules', { count: diagnostics().rules }) }}</span>
+                    @if (diagnostics().removed) {
+                      <span class="text-danger">{{
+                        t('studio.css.removed', { count: diagnostics().removed })
+                      }}</span>
+                    }
+                    @if (!style.css.trim()) {
+                      <button type="button" class="add-btn ms-auto" (click)="insertExample()">
+                        <app-icon class="size-4" name="sparkles" />{{ t('studio.css.example') }}
+                      </button>
+                    }
+                  </div>
+                  <p class="mt-3 text-xs leading-relaxed text-muted">{{ t('studio.css.hint') }}</p>
+
+                  @if (diagnostics().warnings.length) {
+                    <div class="mt-3 rounded-xl border border-amber-500/40 bg-amber-500/10 p-3">
+                      <p class="flex items-center gap-2 text-sm font-semibold">
+                        <app-icon
+                          class="size-4 text-amber-600 dark:text-amber-400"
+                          name="alert"
+                        />{{ t('studio.css.warnings') }}
+                      </p>
+                      <ul class="mt-1.5 space-y-1 text-xs leading-relaxed">
+                        @for (warning of diagnostics().warnings; track $index) {
+                          <li>
+                            <code class="rounded bg-surface px-1 font-mono">{{
+                              warning.selector
+                            }}</code>
+                            {{
+                              t('studio.css.warning.' + warning.kind, {
+                                property: warning.property,
+                              })
+                            }}
+                          </li>
+                        }
+                      </ul>
+                    </div>
+                  }
+
+                  <details class="mt-4 rounded-xl border border-line">
+                    <summary class="cursor-pointer px-3 py-2 text-sm font-semibold">
+                      {{ t('studio.css.reference') }}
+                    </summary>
+                    <div class="border-t border-line p-3 text-xs leading-relaxed">
+                      <p class="text-muted">
+                        {{
+                          isStudio()
+                            ? t('studio.css.referenceStudio')
+                            : t('studio.css.referenceTemplate')
+                        }}
+                      </p>
+                      @if (isStudio()) {
+                        <ul class="mt-2 grid grid-cols-2 gap-1 font-mono">
+                          @for (name of cssClasses; track name) {
+                            <li>.{{ name }}</li>
+                          }
+                        </ul>
+                      }
+                      <ul class="mt-3 grid grid-cols-2 gap-1 font-mono">
+                        @for (name of cssVariables; track name) {
+                          <li>{{ name }}</li>
+                        }
+                      </ul>
+                    </div>
+                  </details>
+                }
+              }
+            </div>
+          </div>
+
+          <!-- Aperçu en direct -->
+          <div class="min-w-0 rounded-2xl border border-line bg-surface-2 p-3 sm:p-5">
+            <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+              <label class="flex min-w-0 items-center gap-2 text-sm">
+                <span class="shrink-0 font-medium text-muted">{{ t('studio.preview.label') }}</span>
+                <select
+                  class="field-input min-w-0 py-1.5!"
+                  (change)="source.set($any($event.target).value)"
+                >
+                  <option value="sample" [selected]="source() === 'sample'">
+                    {{ t('studio.preview.sample') }}
+                  </option>
+                  @for (item of cvs(); track item.id) {
+                    <option [value]="item.id" [selected]="source() === item.id">
+                      {{ item.name }}
+                    </option>
+                  }
+                </select>
+              </label>
+              @if (showHandles()) {
+                <p class="flex items-center gap-1.5 text-xs text-muted">
+                  <app-icon class="size-3.5 text-accent" name="shapes" />{{
+                    t('studio.shapes.drag')
+                  }}
+                </p>
+              }
+            </div>
+            <div
+              class="relative mx-auto max-w-[794px] shadow-[0_20px_50px_-25px_rgb(0_0_0/0.45)]"
+              dir="ltr"
+            >
+              <app-cv-preview [cv]="previewCv()" [photoUrl]="previewPhoto()" />
+              @if (showHandles()) {
+                <!-- Poignées des formes, à l'échelle de la première page -->
+                <div class="absolute inset-x-0 top-0 aspect-[794/1123] overflow-hidden">
+                  @for (shape of style.shapes; track shape.id; let i = $index) {
+                    <button
+                      type="button"
+                      class="absolute aspect-square cursor-move touch-none rounded-lg border-2 border-dashed outline-none focus-visible:border-solid"
+                      [class]="
+                        selectedId() === shape.id
+                          ? 'border-accent bg-accent/5'
+                          : 'border-transparent hover:border-accent/60'
+                      "
+                      [style.left.%]="shape.x"
+                      [style.top.%]="shape.y"
+                      [style.width.%]="shape.size"
+                      [attr.aria-label]="t('studio.shapes.kinds.' + shape.kind) + ' ' + (i + 1)"
+                      [attr.aria-pressed]="selectedId() === shape.id"
+                      (pointerdown)="startDrag($event, shape)"
+                      (keydown)="onHandleKeydown($event, shape)"
+                      (focus)="selectedId.set(shape.id)"
+                    ></button>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    }
+  }
+</ng-container>

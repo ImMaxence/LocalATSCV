@@ -6,6 +6,8 @@
 LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible par les robots de recrutement. Points clés :
 
 - 72 modèles de CV, dont 53 graphiques (Bento, Memphis, Bauhaus, Brutal, Duotone, Éditorial, Prisme, Nocturne, Sorbet, Vague, Origami, Hexa, Blueprint, Typo, Suisse, Fil, Ruban, Zen, Prestige, Horizon, Polaroid, Terminal, Rétro, Mosaïque, Cosmos, Botanique, Ticket, BD, Postal, Arcade, Cahier, Circuit, Gazette, Relief, Aquarelle, Art déco, Verre, Y2K, Riso, Collage, Marbre, Stickers, Kraft, Fil de fer, Chrono, Linogravure, Bonbon, Métro, Vitrail) et 19 sobres (Classique, Moderne, Élégant, Registre, Compact, Académique, Monochrome, Douceur, Contour, Finance, Partagé, Aéré, Fiches, Linéaire, Machine à écrire…) : tous impriment du vrai texte, dans l'ordre de lecture, avec des titres de sections standards. La galerie propose des filtres par style (très lisible, fond sombre, deux colonnes, style livre, style machine à écrire, papier, coloré, minimaliste), des favoris, les modèles récents et des suggestions selon l'offre d'emploi
+- Studio de styles : un design de CV personnel, sans code (blocs à assembler, formes à placer, couleurs et polices) ou en CSS (sur la toile du studio ou sur un modèle de la galerie), partageable en code JSON sans aucune donnée du CV
+- Icône ou initiales à la place de la photo
 - Lettre de motivation reprenant le design du CV choisi, propre à chaque version ciblée
 - Bouton « Tenir sur une page » : espacements puis taille du texte ajustés automatiquement
 - Master CV : toutes les expériences au même endroit, puis des versions ciblées par offre à l'aide de cases à cocher, sans rien supprimer

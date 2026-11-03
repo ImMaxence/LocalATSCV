@@ -1,8 +1,19 @@
-import { DOCUMENT } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  PLATFORM_ID,
+  computed,
+  effect,
+  inject,
+  input,
+} from '@angular/core';
 import { CoverLetter, DEFAULT_LAYOUT } from '../model/cv.model';
 import { fontStack } from '../model/cv-fonts';
 import { ResolvedCv } from '../model/resolve-cv';
+import { scopeCss } from './custom-css';
+import { avatarDataUrl } from './parts/avatar';
 import { CvAcademic } from './templates/academic/cv-academic';
 import { CvAiry } from './templates/airy/cv-airy';
 import { CvArcade } from './templates/arcade/cv-arcade';
@@ -62,6 +73,7 @@ import { CvSorbet } from './templates/sorbet/cv-sorbet';
 import { CvSplit } from './templates/split/cv-split';
 import { CvStained } from './templates/stained/cv-stained';
 import { CvSticker } from './templates/sticker/cv-sticker';
+import { CvStudio } from './templates/studio/cv-studio';
 import { CvSwiss } from './templates/swiss/cv-swiss';
 import { CvTech } from './templates/tech/cv-tech';
 import { CvTerminal } from './templates/terminal/cv-terminal';
@@ -79,6 +91,9 @@ import { CvZen } from './templates/zen/cv-zen';
 /** Largeur et hauteur d'une page A4 à 96 ppp. */
 export const PAGE_WIDTH = 794;
 export const PAGE_HEIGHT = 1123;
+
+/** Numéro de rendu : le CSS d'un style ne s'applique qu'au CV pour lequel il est injecté. */
+let nextScope = 0;
 
 /**
  * Ajoute une seule fois la feuille des polices de CV (bundle `cv-fonts` d'angular.json, non
@@ -98,10 +113,13 @@ function loadCvFonts(document: Document): void {
  * Avec `letter`, rend la lettre de motivation : même modèle (en-tête, coordonnées, décor),
  * le corps de la lettre à la place des sections.
  *
+ * Un style du studio remplace le modèle : la toile du studio (blocs et formes) ou un modèle de
+ * la galerie, avec son CSS personnalisé confiné à ce CV (voir custom-css.ts).
+ *
  * Chaque modèle est dans un bloc `@defer` : Angular en fait un fichier à part, chargé seulement
  * quand ce modèle est affiché (sinon les 72 modèles pèseraient plus de 700 Ko au premier
  * chargement). Le service worker les met tous en cache à l'installation, pour le hors-ligne.
- * Ce fichier est généré : la liste des modèles vient de CV_TEMPLATES (voir scripts/).
+ * Ce fichier est généré par scripts/cv-document.mjs à partir de CV_TEMPLATES.
  */
 @Component({
   selector: 'app-cv-document',
@@ -166,6 +184,7 @@ function loadCvFonts(document: Document): void {
     CvSplit,
     CvStained,
     CvSticker,
+    CvStudio,
     CvSwiss,
     CvTech,
     CvTerminal,
@@ -184,6 +203,7 @@ function loadCvFonts(document: Document): void {
     class: 'block',
     // Les langues des CV s'écrivent toutes de gauche à droite, même dans l'interface en arabe.
     dir: 'ltr',
+    '[attr.data-cv-scope]': 'scope',
     '[style.--cv-heading-font]': 'headingFont()',
     '[style.--cv-body-font]': 'bodyFont()',
     '[style.--cv-space]': 'layout().spacing',
@@ -191,365 +211,370 @@ function loadCvFonts(document: Document): void {
     '[style.--cv-zoom]': 'layout().scale',
   },
   template: `
-    @switch (cv().template) {
+    @switch (templateId()) {
+      @case ('studio') {
+        @defer (on immediate) {
+          <app-cv-studio [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
+        }
+      }
       @case ('aurora') {
         @defer (on immediate) {
-          <app-cv-aurora [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-aurora [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('signature') {
         @defer (on immediate) {
-          <app-cv-signature [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-signature [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('bento') {
         @defer (on immediate) {
-          <app-cv-bento [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-bento [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('pulse') {
         @defer (on immediate) {
-          <app-cv-pulse [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-pulse [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('memphis') {
         @defer (on immediate) {
-          <app-cv-memphis [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-memphis [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('bauhaus') {
         @defer (on immediate) {
-          <app-cv-bauhaus [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-bauhaus [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('brutal') {
         @defer (on immediate) {
-          <app-cv-brutal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-brutal [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('duotone') {
         @defer (on immediate) {
-          <app-cv-duotone [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-duotone [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('editorial') {
         @defer (on immediate) {
-          <app-cv-editorial [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-editorial [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('prism') {
         @defer (on immediate) {
-          <app-cv-prism [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-prism [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('nocturne') {
         @defer (on immediate) {
-          <app-cv-nocturne [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-nocturne [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('sorbet') {
         @defer (on immediate) {
-          <app-cv-sorbet [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-sorbet [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('wave') {
         @defer (on immediate) {
-          <app-cv-wave [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-wave [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('origami') {
         @defer (on immediate) {
-          <app-cv-origami [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-origami [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('hexa') {
         @defer (on immediate) {
-          <app-cv-hexa [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-hexa [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('blueprint') {
         @defer (on immediate) {
-          <app-cv-blueprint [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-blueprint [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('typo') {
         @defer (on immediate) {
-          <app-cv-typo [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-typo [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('swiss') {
         @defer (on immediate) {
-          <app-cv-swiss [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-swiss [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('thread') {
         @defer (on immediate) {
-          <app-cv-thread [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-thread [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('ribbon') {
         @defer (on immediate) {
-          <app-cv-ribbon [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-ribbon [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('zen') {
         @defer (on immediate) {
-          <app-cv-zen [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-zen [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('prestige') {
         @defer (on immediate) {
-          <app-cv-prestige [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-prestige [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('impact') {
         @defer (on immediate) {
-          <app-cv-impact [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-impact [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('horizon') {
         @defer (on immediate) {
-          <app-cv-horizon [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-horizon [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('polaroid') {
         @defer (on immediate) {
-          <app-cv-polaroid [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-polaroid [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('terminal') {
         @defer (on immediate) {
-          <app-cv-terminal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-terminal [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('retro') {
         @defer (on immediate) {
-          <app-cv-retro [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-retro [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('mosaic') {
         @defer (on immediate) {
-          <app-cv-mosaic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-mosaic [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('cosmos') {
         @defer (on immediate) {
-          <app-cv-cosmos [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-cosmos [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('botanical') {
         @defer (on immediate) {
-          <app-cv-botanical [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-botanical [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('ticket') {
         @defer (on immediate) {
-          <app-cv-ticket [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-ticket [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('comic') {
         @defer (on immediate) {
-          <app-cv-comic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-comic [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('postal') {
         @defer (on immediate) {
-          <app-cv-postal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-postal [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('arcade') {
         @defer (on immediate) {
-          <app-cv-arcade [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-arcade [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('notebook') {
         @defer (on immediate) {
-          <app-cv-notebook [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-notebook [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('circuit') {
         @defer (on immediate) {
-          <app-cv-circuit [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-circuit [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('gazette') {
         @defer (on immediate) {
-          <app-cv-gazette [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-gazette [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('topo') {
         @defer (on immediate) {
-          <app-cv-topo [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-topo [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('watercolor') {
         @defer (on immediate) {
-          <app-cv-watercolor [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-watercolor [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('artdeco') {
         @defer (on immediate) {
-          <app-cv-artdeco [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-artdeco [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('glass') {
         @defer (on immediate) {
-          <app-cv-glass [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-glass [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('y2k') {
         @defer (on immediate) {
-          <app-cv-y2k [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-y2k [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('riso') {
         @defer (on immediate) {
-          <app-cv-riso [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-riso [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('collage') {
         @defer (on immediate) {
-          <app-cv-collage [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-collage [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('marble') {
         @defer (on immediate) {
-          <app-cv-marble [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-marble [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('sticker') {
         @defer (on immediate) {
-          <app-cv-sticker [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-sticker [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('kraft') {
         @defer (on immediate) {
-          <app-cv-kraft [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-kraft [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('wireframe') {
         @defer (on immediate) {
-          <app-cv-wireframe [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-wireframe [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('chrono') {
         @defer (on immediate) {
-          <app-cv-chrono [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-chrono [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('linocut') {
         @defer (on immediate) {
-          <app-cv-linocut [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-linocut [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('candy') {
         @defer (on immediate) {
-          <app-cv-candy [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-candy [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('metro') {
         @defer (on immediate) {
-          <app-cv-metro [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-metro [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('stained') {
         @defer (on immediate) {
-          <app-cv-stained [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-stained [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('executive') {
         @defer (on immediate) {
-          <app-cv-executive [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-executive [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('modern') {
         @defer (on immediate) {
-          <app-cv-modern [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-modern [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('elegant') {
         @defer (on immediate) {
-          <app-cv-elegant [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-elegant [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('tech') {
         @defer (on immediate) {
-          <app-cv-tech [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-tech [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('minimal') {
         @defer (on immediate) {
-          <app-cv-minimal [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-minimal [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('sidebar') {
         @defer (on immediate) {
-          <app-cv-sidebar [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-sidebar [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('ledger') {
         @defer (on immediate) {
-          <app-cv-ledger [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-ledger [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('compact') {
         @defer (on immediate) {
-          <app-cv-compact [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-compact [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('academic') {
         @defer (on immediate) {
-          <app-cv-academic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-academic [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('mono') {
         @defer (on immediate) {
-          <app-cv-mono [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-mono [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('soft') {
         @defer (on immediate) {
-          <app-cv-soft [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-soft [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('outline') {
         @defer (on immediate) {
-          <app-cv-outline [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-outline [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('finance') {
         @defer (on immediate) {
-          <app-cv-finance [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-finance [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('split') {
         @defer (on immediate) {
-          <app-cv-split [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-split [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('airy') {
         @defer (on immediate) {
-          <app-cv-airy [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-airy [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('cards') {
         @defer (on immediate) {
-          <app-cv-cards [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-cards [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('linear') {
         @defer (on immediate) {
-          <app-cv-linear [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-linear [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @case ('typewriter') {
         @defer (on immediate) {
-          <app-cv-typewriter [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-typewriter [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
       @default {
         @defer (on immediate) {
-          <app-cv-classic [cv]="shown()" [photoUrl]="photoUrl()" [letter]="letter()" />
+          <app-cv-classic [cv]="shown()" [photoUrl]="shownPhoto()" [letter]="letter()" />
         }
       }
     }
@@ -560,10 +585,29 @@ export class CvDocument {
   readonly photoUrl = input<string | null>(null);
   readonly letter = input<CoverLetter | null>(null);
 
-  /** En mode lettre, le modèle ne garde que l'en-tête et les coordonnées. */
+  protected readonly scope = `s${++nextScope}`;
+  private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
+
+  /** Modèle affiché : celui du style s'il y en a un (toile du studio ou modèle de la galerie). */
+  protected readonly templateId = computed(() => this.cv().style?.base ?? this.cv().template);
+
+  /**
+   * En mode lettre, le modèle ne garde que l'en-tête et les coordonnées. Un style à couleur
+   * d'accent fixe l'impose au modèle.
+   */
   protected readonly shown = computed((): ResolvedCv => {
     const cv = this.cv();
-    return this.letter() ? { ...cv, sections: [], profile: { ...cv.profile, summary: '' } } : cv;
+    const accentColor = cv.style?.colors.accent ?? cv.accentColor;
+    return this.letter()
+      ? { ...cv, accentColor, sections: [], profile: { ...cv.profile, summary: '' } }
+      : { ...cv, accentColor };
+  });
+
+  /** Icône choisie à la place de la photo, dessinée à la couleur d'accent ; sinon la photo. */
+  protected readonly shownPhoto = computed(() => {
+    const { profile, accentColor } = this.shown();
+    if (!profile.photoIcon || !this.browser) return this.photoUrl();
+    return avatarDataUrl(profile.photoIcon, accentColor, profile.firstName, profile.lastName);
   });
 
   /** Espacements et taille du contenu (variables lues par tous les modèles). */
@@ -571,11 +615,26 @@ export class CvDocument {
   /** L'interligne suit les espacements, plus discrètement. */
   protected readonly leading = computed(() => 1 - (1 - this.layout().spacing) * 0.3);
 
+  /** CSS du style, analysé seulement quand il change (pas à chaque frappe dans le CV). */
+  private readonly customCss = computed(() => this.cv().style?.css ?? '');
+
   constructor() {
     loadCvFonts(inject(DOCUMENT));
+    if (this.browser) {
+      const host: HTMLElement = inject(ElementRef).nativeElement;
+      const element = inject(DOCUMENT).createElement('style');
+      effect(() => {
+        element.textContent = scopeCss(this.customCss(), `[data-cv-scope="${this.scope}"]`).css;
+        if (element.textContent && !element.isConnected) host.prepend(element);
+      });
+    }
   }
 
-  /** Polices choisies par l'utilisateur ; sinon chaque modèle garde les siennes. */
-  protected readonly headingFont = computed(() => fontStack(this.cv().fonts?.heading ?? null));
-  protected readonly bodyFont = computed(() => fontStack(this.cv().fonts?.body ?? null));
+  /** Polices choisies dans l'éditeur, sinon celles du style ; à défaut, celles du modèle. */
+  protected readonly headingFont = computed(() =>
+    fontStack(this.cv().fonts?.heading ?? this.cv().style?.fonts.heading ?? null),
+  );
+  protected readonly bodyFont = computed(() =>
+    fontStack(this.cv().fonts?.body ?? this.cv().style?.fonts.body ?? null),
+  );
 }

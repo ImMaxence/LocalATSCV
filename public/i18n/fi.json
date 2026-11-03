@@ -6,7 +6,8 @@
     "privacy": "Yksityisyys",
     "analyze": "Testaa CV:ni",
     "editor": "Luo CV:ni",
-    "skipToContent": "Siirry sisältöön"
+    "skipToContent": "Siirry sisältöön",
+    "studio": "Tyylistudio"
   },
   "theme": {
     "label": "Teema",
@@ -29,7 +30,8 @@
     "legalNotice": "Oikeudelliset tiedot",
     "terms": "Käyttöehdot",
     "privacy": "Tietosuojaseloste",
-    "accessibility": "Saavutettavuusseloste"
+    "accessibility": "Saavutettavuusseloste",
+    "studio": "Tyylistudio"
   },
   "seo": {
     "home": "Luo ilmaiseksi CV, joka vie sinut haastatteluun: 72 pohjaa, yhteensopiva hakemuskirje, muokkaus jokaiseen ilmoitukseen ja ATS-tarkistus. Ilman rekisteröitymistä, tietosi pysyvät laitteellasi",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 pohjaa valittavana",
         "letter": "Yhteensopiva hakemuskirje",
-        "private": "Tietosi pysyvät sinulla"
+        "private": "Tietosi pysyvät sinulla",
+        "studio": "Tai oma ulkoasusi"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Pitääkö minun mainita vammani?",
           "a": "Se ei ole koskaan pakollista. Halutessasi editori ehdottaa ansioluettelon maassa tunnustettua muotoilua (RQTH Ranskassa, categorie protette Italiassa…), yhteystietojen yhteyteen, ansioluettelon loppuun tai vain kirjeeseen. Voit myös pitää sen joissakin versioissa mutta ei toisissa"
+        },
+        "design": {
+          "q": "Voinko tehdä oman CV-ulkoasun?",
+          "a": "Kyllä. Tyylistudiossa yhdistelet lohkoja (ylätunniste, otsikot, kokemus, palstat), sijoitat koristemuotoja ja valitset värit ja fontit ilman koodia. Jos osaat CSS:ää, voit myös liittää omasi. Tyyli jaetaan kopioimalla ja liittämällä, ilman CV:si tietoja. Ja jos et halua näyttää kuvaa, kuvake tai nimikirjaimesi voivat korvata sen"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Yksi osio kerrallaan, selkokielisen vinkin kera, PDF:n lataamiseen asti"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Tyylistudio",
+      "title": "Eikö mikään pohja tunnu omalta? Tee oma",
+      "text": "Kokoa ulkoasusi kuin rakennuspalikoista: valitse lohkot, lisää muotoja, vaihda värejä. Ilman riviäkään koodia, ja hakemuksia lajittelevat ohjelmat lukevat sen silti oikein",
+      "points": {
+        "blocks": {
+          "title": "Yhdisteltäviä lohkoja",
+          "text": "Ylätunniste, otsikot, kokemus, osaaminen, palstat: jokainen lohko valitaan yhdellä napsautuksella luonnoksen perusteella"
+        },
+        "shapes": {
+          "title": "Sijoiteltavia muotoja",
+          "text": "Ympyröitä, läikkiä, aaltoja tai raitoja, joita vedät sivulla. Ne koristavat häiritsemättä lukemista"
+        },
+        "css": {
+          "title": "Oma CSS, jos haluat",
+          "text": "Osaatko CSS:ää? Liitä omasi studion pohjalle tai galleriapohjan päälle: se vaikuttaa vain CV:hen"
+        },
+        "share": {
+          "title": "Jaetaan kopioimalla ja liittämällä",
+          "text": "Tyylisi mahtuu lyhyeen koodiin, jonka voit lähettää eteenpäin. Siinä ei ole mitään CV:si tietoja"
+        }
+      },
+      "icon": "Kuvake kuvan sijaan",
+      "cta": "Luo oma tyyli"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Maininta ei näy ansioluettelossa. Kirje-välilehdellä painike lisää valmiin lauseen",
         "pros": "Puolesta: sitoutuneet työnantajat (monimuotoisuusohjelmat, kiintiöt) löytävät sinut nopeammin, ja mukautuksista on helpompi puhua",
         "cons": "Vastaan: joillakin rekrytoijilla on yhä ennakkoluuloja. Voit ottaa asian puheeksi myöhemmin, haastattelussa tai palkkauksen jälkeen, tai et koskaan"
+      },
+      "photoIcon": "Kuvake",
+      "photoIconTitle": "Kuvake kuvan sijaan",
+      "photoIconHint": "Piirretty korostusvärillä. Se ei kerro sinusta mitään, joten se näkyy myös englanninkielisissä CV:issä",
+      "avatars": {
+        "user": "Siluetti",
+        "briefcase": "Salkku",
+        "graduation": "Ylioppilaslakki",
+        "code": "Koodi",
+        "palette": "Paletti",
+        "camera": "Kamera",
+        "music": "Musiikki",
+        "heart": "Sydän",
+        "leaf": "Lehti",
+        "rocket": "Raketti",
+        "chefHat": "Kokin hattu",
+        "wrench": "Kiintoavain",
+        "stethoscope": "Stetoskooppi",
+        "book": "Kirja",
+        "lightbulb": "Hehkulamppu",
+        "initials": "Nimikirjaimet"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Lisää 2 tai 3 harrastusta: ne auttavat aloittamaan keskustelun haastattelussa",
         "finish": "Valitse mieleisesi pohja ja lataa ansioluettelo PDF-muodossa. Voit aina palata muokkaamaan sitä"
       }
+    },
+    "style": {
+      "button": "Oma tyyli",
+      "title": "CV:n tyyli",
+      "gallery": "Galleriapohja: {{name}}",
+      "empty": "Tyylejä ei ole vielä luotu",
+      "css": "Muokkaa CSS:llä",
+      "cssHint": "Oma CSS nykyisen pohjan päälle",
+      "cssName": "{{name}} muokattu",
+      "studio": "Tyylistudio",
+      "studioHint": "Oma ulkoasu lohkoista ja muodoista ilman koodia"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Oletusnäyttö",
     "note": "Asetukset muuttavat käyttöliittymää, eivät koskaan tulostettua ansioluetteloasi"
+  },
+  "studio": {
+    "title": "Tyylistudio",
+    "subtitle": "Luo oma CV-ulkoasusi: yhdistele lohkoja ja muotoja ilman koodia tai käytä omaa CSS:ää. Jaa se sitten JSON-koodina",
+    "backToCv": "Takaisin CV:hen",
+    "notFound": "Tätä tyyliä ei ole tai se on poistettu",
+    "points": {
+      "blocks": "Yhdisteltäviä lohkoja",
+      "shapes": "Sijoiteltavia muotoja",
+      "css": "Oma CSS",
+      "share": "Jakaminen JSON-muodossa"
+    },
+    "list": {
+      "new": "Uusi tyyli",
+      "emptyTitle": "Ei vielä tyylejä",
+      "emptyText": "Aloita tyhjästä sivusta tai valmiista pohjasta ja säädä sitten jokainen lohko",
+      "open": "Avaa",
+      "actions": "Toiminnot",
+      "duplicate": "Monista",
+      "delete": "Poista",
+      "deleteTitle": "Poistetaanko tyyli ”{{name}}”?",
+      "deleteText": "Sitä käyttävät CV:t säilyttävät nykyisen ulkoasunsa",
+      "copySuffix": "(kopio)",
+      "updated": "Muokattu {{date}}",
+      "usedBy": "Sitä käyttävät CV:t: {{count}}",
+      "hint": "Tyylisi pysyvät tässä selaimessa. Jokainen CV säilyttää kopion tyylistään, joten se on varmuuskopioissa kokonaisena"
+    },
+    "presets": {
+      "blank": "Tyhjä sivu",
+      "band": "Nauha",
+      "sidebar": "Sivupalsta",
+      "organic": "Pehmeät muodot",
+      "timeline": "Aikajana"
+    },
+    "toolbar": {
+      "back": "Omat tyylit",
+      "name": "Tyylin nimi",
+      "share": "Jaa",
+      "use": "Käytä CV:ssä",
+      "applyBack": "Käytä tässä CV:ssä",
+      "noCv": "Ei vielä CV:itä",
+      "applied": "Tyyli otettu käyttöön: ”{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Lohkot",
+      "shapes": "Muodot",
+      "colors": "Värit",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Lähtökohta",
+      "studio": "Studion pohja",
+      "studioHint": "Yhdistele lohkoja ja sijoita muotoja",
+      "template": "Pohja galleriasta",
+      "templateHint": "Lohkot ja muodot toimivat vain studion pohjalla. Muokkaa tätä pohjaa CSS-välilehdellä"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Palstat",
+        "single": "Yksi palsta",
+        "sidebarLeft": "Sivupalsta"
+      },
+      "header": {
+        "label": "Ylätunniste",
+        "left": "Perinteinen",
+        "center": "Keskitetty",
+        "band": "Nauha",
+        "card": "Yhteystietolaatikko"
+      },
+      "headings": {
+        "label": "Osioiden otsikot",
+        "underline": "Alleviivattu",
+        "bar": "Palkki",
+        "pill": "Pilleri",
+        "caps": "Isot kirjaimet",
+        "boxed": "Laatikko",
+        "line": "Viiva"
+      },
+      "entries": {
+        "label": "Kokemus ja koulutus",
+        "classic": "Perinteinen",
+        "timeline": "Aikajana",
+        "cards": "Kortit",
+        "datesLeft": "Päivämäärät vasemmalla"
+      },
+      "skills": {
+        "label": "Osaaminen",
+        "chips": "Tunnisteet",
+        "inline": "Rivinä",
+        "grid": "Ruudukko"
+      },
+      "languages": {
+        "label": "Kielitaito",
+        "meter": "Mittari",
+        "text": "Teksti"
+      },
+      "photo": {
+        "label": "Kuva",
+        "circle": "Pyöreä",
+        "rounded": "Pyöristetty",
+        "square": "Neliö",
+        "hidden": "Piilotettu"
+      }
+    },
+    "shapes": {
+      "add": "Lisää muoto",
+      "hint": "Muodot ovat tekstin takana: ne koristavat haittaamatta ATS-lukua",
+      "drag": "Vedä muotoja sivulla tai siirrä niitä nuolinäppäimillä",
+      "onPage": "Muodot sivulla",
+      "empty": "Sivulla ei ole vielä muotoja",
+      "color": "Väri",
+      "size": "Koko",
+      "rotate": "Kierto",
+      "alpha": "Voimakkuus",
+      "x": "Vaaka",
+      "y": "Pysty",
+      "duplicate": "Monista",
+      "remove": "Poista",
+      "kinds": {
+        "circle": "Ympyrä",
+        "blob": "Läikkä",
+        "square": "Neliö",
+        "triangle": "Kolmio",
+        "ring": "Rengas",
+        "wave": "Aallot",
+        "stripes": "Raidat",
+        "dots": "Pisteet"
+      },
+      "colors": {
+        "accent": "Korostus",
+        "soft": "Vaalea korostus",
+        "ink": "Teksti"
+      }
+    },
+    "colors": {
+      "accentCv": "CV:n oma",
+      "accentFixed": "Kiinteä väri",
+      "paper": "Sivun tausta",
+      "background": "Tausta",
+      "text": "Teksti",
+      "contrast": "Heikko kontrasti: tekstiä voi olla vaikea lukea"
+    },
+    "css": {
+      "label": "Oma CSS",
+      "hint": "Koskee vain CV:tä, heti. Tuonnit ja ulkoiset osoitteet poistetaan. Lisää !important, jos pohjan sääntö voittaa",
+      "rules": "Käytetyt säännöt: {{count}}",
+      "removed": "Poistettu turvallisuutesi vuoksi: {{count}}",
+      "example": "Lisää esimerkki",
+      "warnings": "Huomio ATS-lukuun",
+      "warning": {
+        "order": "{{property}}: teksti voidaan lukea väärässä järjestyksessä",
+        "shadow": "varjo kirjoittaa tekstin PDF:ään kahdesti",
+        "content": "CSS:llä lisätyn tekstin robotit lukevat"
+      },
+      "reference": "Käytettävissä olevat luokat ja muuttujat",
+      "referenceStudio": "Studion pohjan pysyvät luokat:",
+      "referenceTemplate": "Galleriapohjan luokat löydät tarkastelemalla esikatselua. Yhteiset muuttujat:"
+    },
+    "preview": {
+      "label": "Esikatselu",
+      "sample": "Esimerkki-CV"
+    },
+    "share": {
+      "title": "Jaa tyyli",
+      "text": "Tämä JSON-koodi sisältää koko tyylin (lohkot, muodot, värit ja CSS:n), mutta ei mitään CV:si tietoja. Se tuodaan tyylistudiossa",
+      "copy": "Kopioi koodi",
+      "copied": "Koodi kopioitu",
+      "copyError": "Kopiointi epäonnistui: valitse koodi ja kopioi se",
+      "download": "Lataa (.json)",
+      "close": "Sulje",
+      "importTitle": "Tuo tyyli",
+      "importText": "Liitä tyylin JSON-koodi tai valitse .json-tiedosto",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Valitse tiedosto",
+      "importAction": "Tuo",
+      "imported": "Tyyli ”{{name}}” tuotu",
+      "error": {
+        "invalidJson": "Tämä teksti ei ole kelvollista JSONia",
+        "notAStyle": "Tämä koodi ei ole LocalATSCV-tyyli",
+        "newerVersion": "Tyyli on LocalATSCV:n uudemmasta versiosta: päivitä sovellus"
+      }
+    }
   }
 }

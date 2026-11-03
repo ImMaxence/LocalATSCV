@@ -6,7 +6,8 @@
     "privacy": "Privacy",
     "analyze": "Test my resume",
     "editor": "Build my resume",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "studio": "Style studio"
   },
   "theme": {
     "label": "Theme",
@@ -29,7 +30,8 @@
     "legalNotice": "Legal notice",
     "terms": "Terms of use",
     "privacy": "Privacy policy",
-    "accessibility": "Accessibility statement"
+    "accessibility": "Accessibility statement",
+    "studio": "Style studio"
   },
   "seo": {
     "home": "Build a free resume that lands the interview: 72 templates, matching cover letter, tailoring to every job ad and an ATS check. No sign-up, your data stays on your device",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 templates to choose from",
         "letter": "Matching cover letter",
-        "private": "Your data stays with you"
+        "private": "Your data stays with you",
+        "studio": "Or your own design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Should I mention my disability?",
           "a": "It is never mandatory. If you wish, the editor suggests the wording recognized in your resume's country (RQTH in France, categorie protette in Italy…), placed with your contact details, at the end of the resume or only in the cover letter. You can also keep it in some versions and not in others"
+        },
+        "design": {
+          "q": "Can I create my own resume design?",
+          "a": "Yes. The style studio lets you assemble blocks (header, titles, experience, columns), place decorative shapes and pick colors and fonts, without code. If you know CSS, you can paste your own too. A style is shared with a simple copy-paste, without any of your resume data. And if you would rather not show a photo, an icon or your initials can take its place"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "One section at a time, with a tip in plain language, all the way to the PDF download"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Style studio",
+      "title": "No template feels like you? Make your own",
+      "text": "Put your design together like building blocks: pick the blocks, drop in shapes, change the colors. Not a line of code, and still read correctly by the software that screens applications",
+      "points": {
+        "blocks": {
+          "title": "Blocks to put together",
+          "text": "Header, titles, experience, skills, columns: pick each block in one click, from its sketch"
+        },
+        "shapes": {
+          "title": "Shapes to place",
+          "text": "Circles, blobs, waves or stripes to drag around the page. They decorate without getting in the way of reading"
+        },
+        "css": {
+          "title": "Your own CSS, if you like",
+          "text": "Know CSS? Paste yours on the studio canvas or on a gallery template: it only touches the resume"
+        },
+        "share": {
+          "title": "Shared with a copy-paste",
+          "text": "Your style fits in a short code you can send to a friend. It holds none of your resume data"
+        }
+      },
+      "icon": "An icon instead of a photo",
+      "cta": "Create my style"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "The mention does not appear on the resume. In the Letter tab, a button adds a ready-made sentence",
         "pros": "Pros: committed employers (disability programs, hiring quotas) spot you faster and adjustments are easier to discuss",
         "cons": "Cons: some recruiters are still biased. You can also bring it up later, at interview or after hiring, or never"
+      },
+      "photoIcon": "An icon",
+      "photoIconTitle": "An icon instead of a photo",
+      "photoIconHint": "Drawn in the accent color. It says nothing about you, so it stays on English resumes",
+      "avatars": {
+        "user": "Person",
+        "briefcase": "Briefcase",
+        "graduation": "Graduation cap",
+        "code": "Code",
+        "palette": "Palette",
+        "camera": "Camera",
+        "music": "Music",
+        "heart": "Heart",
+        "leaf": "Leaf",
+        "rocket": "Rocket",
+        "chefHat": "Chef's hat",
+        "wrench": "Wrench",
+        "stethoscope": "Stethoscope",
+        "book": "Book",
+        "lightbulb": "Light bulb",
+        "initials": "Initials"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Add 2 or 3 hobbies: they help start the conversation at interview",
         "finish": "Pick a template you like, then download your resume as a PDF. You can always come back and edit it"
       }
+    },
+    "style": {
+      "button": "My style",
+      "title": "Resume style",
+      "gallery": "Gallery template: {{name}}",
+      "empty": "No style created yet",
+      "css": "Customize with CSS",
+      "cssHint": "Your own CSS on the current template",
+      "cssName": "{{name}} custom",
+      "studio": "Style studio",
+      "studioHint": "Your own design with blocks and shapes, no code"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Default display",
     "note": "These settings change the interface, never your printed resume"
+  },
+  "studio": {
+    "title": "Style studio",
+    "subtitle": "Create your own resume design: blocks and shapes to put together without code, or your own CSS. Then share it as JSON code",
+    "backToCv": "Back to the resume",
+    "notFound": "This style does not exist or was deleted",
+    "points": {
+      "blocks": "Blocks to assemble",
+      "shapes": "Shapes to place",
+      "css": "Custom CSS",
+      "share": "Share as JSON"
+    },
+    "list": {
+      "new": "New style",
+      "emptyTitle": "No styles yet",
+      "emptyText": "Start from a blank page or a starting point, then adjust each block",
+      "open": "Open",
+      "actions": "Actions",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "deleteTitle": "Delete the style “{{name}}”?",
+      "deleteText": "Resumes that use it keep their current look",
+      "copySuffix": "(copy)",
+      "updated": "Updated {{date}}",
+      "usedBy": "Resumes using it: {{count}}",
+      "hint": "Your styles stay in this browser. Each resume keeps a copy of its style, so it stays complete in your backups"
+    },
+    "presets": {
+      "blank": "Blank page",
+      "band": "Banner",
+      "sidebar": "Sidebar",
+      "organic": "Soft shapes",
+      "timeline": "Timeline"
+    },
+    "toolbar": {
+      "back": "My styles",
+      "name": "Style name",
+      "share": "Share",
+      "use": "Use for a resume",
+      "applyBack": "Apply to the resume",
+      "noCv": "No resumes yet",
+      "applied": "Style applied to “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blocks",
+      "shapes": "Shapes",
+      "colors": "Colors",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Starting point",
+      "studio": "The studio canvas",
+      "studioHint": "Assemble blocks and place shapes",
+      "template": "A gallery template",
+      "templateHint": "Blocks and shapes are for the studio canvas only. Touch up this template in the CSS tab"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Columns",
+        "single": "One column",
+        "sidebarLeft": "Sidebar"
+      },
+      "header": {
+        "label": "Header",
+        "left": "Classic",
+        "center": "Centered",
+        "band": "Banner",
+        "card": "Contact card"
+      },
+      "headings": {
+        "label": "Section titles",
+        "underline": "Underlined",
+        "bar": "Bar",
+        "pill": "Pill",
+        "caps": "Capitals",
+        "boxed": "Boxed",
+        "line": "Rule"
+      },
+      "entries": {
+        "label": "Experience and education",
+        "classic": "Classic",
+        "timeline": "Timeline",
+        "cards": "Cards",
+        "datesLeft": "Dates on the left"
+      },
+      "skills": {
+        "label": "Skills",
+        "chips": "Chips",
+        "inline": "Inline",
+        "grid": "Grid"
+      },
+      "languages": {
+        "label": "Languages",
+        "meter": "Gauge",
+        "text": "Text"
+      },
+      "photo": {
+        "label": "Photo",
+        "circle": "Round",
+        "rounded": "Rounded",
+        "square": "Square",
+        "hidden": "Hidden"
+      }
+    },
+    "shapes": {
+      "add": "Add a shape",
+      "hint": "Shapes sit behind the text: they decorate without getting in the way of ATS reading",
+      "drag": "Drag shapes on the page, or move them with the arrow keys",
+      "onPage": "Shapes on the page",
+      "empty": "No shapes on the page yet",
+      "color": "Color",
+      "size": "Size",
+      "rotate": "Rotation",
+      "alpha": "Strength",
+      "x": "Horizontal",
+      "y": "Vertical",
+      "duplicate": "Duplicate",
+      "remove": "Delete",
+      "kinds": {
+        "circle": "Circle",
+        "blob": "Blob",
+        "square": "Square",
+        "triangle": "Triangle",
+        "ring": "Ring",
+        "wave": "Waves",
+        "stripes": "Stripes",
+        "dots": "Dots"
+      },
+      "colors": {
+        "accent": "Accent",
+        "soft": "Light accent",
+        "ink": "Text"
+      }
+    },
+    "colors": {
+      "accentCv": "The resume's",
+      "accentFixed": "Fixed color",
+      "paper": "Page background",
+      "background": "Background",
+      "text": "Text",
+      "contrast": "Low contrast: the text may be hard to read"
+    },
+    "css": {
+      "label": "Your CSS",
+      "hint": "It only applies to the resume, live. Imports and external addresses are removed. Add !important if a template rule wins",
+      "rules": "Rules applied: {{count}}",
+      "removed": "Removed for your safety: {{count}}",
+      "example": "Insert an example",
+      "warnings": "Watch out for ATS reading",
+      "warning": {
+        "order": "{{property}}: the text may be read out of order",
+        "shadow": "a shadow writes the text twice in the PDF",
+        "content": "text added with CSS is read by robots"
+      },
+      "reference": "Available classes and variables",
+      "referenceStudio": "Stable classes of the studio canvas:",
+      "referenceTemplate": "On a gallery template, inspect the preview to find its classes. Shared variables:"
+    },
+    "preview": {
+      "label": "Preview with",
+      "sample": "The sample resume"
+    },
+    "share": {
+      "title": "Share the style",
+      "text": "This JSON code holds the whole style (blocks, shapes, colors and CSS) but none of your resume data. It can be imported from the style studio",
+      "copy": "Copy the code",
+      "copied": "Code copied",
+      "copyError": "Could not copy: select the code and copy it",
+      "download": "Download (.json)",
+      "close": "Close",
+      "importTitle": "Import a style",
+      "importText": "Paste a style's JSON code or choose a .json file",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Choose a file",
+      "importAction": "Import",
+      "imported": "Style “{{name}}” imported",
+      "error": {
+        "invalidJson": "This text is not valid JSON",
+        "notAStyle": "This code is not a LocalATSCV style",
+        "newerVersion": "This style comes from a newer version of LocalATSCV: update the app"
+      }
+    }
   }
 }

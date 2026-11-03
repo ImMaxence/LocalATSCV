@@ -6,7 +6,8 @@
     "privacy": "Privātums",
     "analyze": "Pārbaudīt manu CV",
     "editor": "Izveidot manu CV",
-    "skipToContent": "Pāriet uz saturu"
+    "skipToContent": "Pāriet uz saturu",
+    "studio": "Stilu studija"
   },
   "theme": {
     "label": "Motīvs",
@@ -29,7 +30,8 @@
     "legalNotice": "Juridiskā informācija",
     "terms": "Lietošanas noteikumi",
     "privacy": "Privātuma politika",
-    "accessibility": "Piekļūstamības paziņojums"
+    "accessibility": "Piekļūstamības paziņojums",
+    "studio": "Stilu studija"
   },
   "seo": {
     "home": "Izveidojiet bez maksas CV, kas atver durvis uz darba interviju: 72 veidnes, saskaņota motivācijas vēstule, pielāgošana katram sludinājumam un ATS pārbaude. Bez reģistrācijas, jūsu dati paliek jūsu ierīcē",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 veidnes izvēlei",
         "letter": "Saskaņota motivācijas vēstule",
-        "private": "Jūsu dati paliek pie jums"
+        "private": "Jūsu dati paliek pie jums",
+        "studio": "Vai jūsu pašu dizains"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Vai man jānorāda sava invaliditāte?",
           "a": "Tas nekad nav obligāti. Ja vēlaties, redaktors piedāvā CV valstī atzītu formulējumu (RQTH Francijā, categorie protette Itālijā…), pie kontaktinformācijas, CV beigās vai tikai vēstulē. Varat to arī paturēt dažās versijās un citās ne"
+        },
+        "design": {
+          "q": "Vai varu izveidot savu CV dizainu?",
+          "a": "Jā. Stilu studijā varat salikt blokus (galvene, virsraksti, pieredze, kolonnas), novietot dekoratīvas formas un izvēlēties krāsas un fontus bez koda. Ja pārzināt CSS, varat ielīmēt arī savu. Stilu kopīgo ar kopēšanu un ielīmēšanu, bez jūsu CV datiem. Un, ja nevēlaties rādīt fotoattēlu, tā vietā var būt ikona vai jūsu iniciāļi"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Viena sadaļa vienlaikus, ar padomu vienkāršā valodā, līdz pat PDF lejupielādei"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stilu studija",
+      "title": "Neviena veidne jums neder? Izveidojiet savu",
+      "text": "Salieciet dizainu kā no klucīšiem: izvēlieties blokus, novietojiet formas, mainiet krāsas. Bez nevienas koda rindas un joprojām pareizi nolasāms programmām, kas šķiro pieteikumus",
+      "points": {
+        "blocks": {
+          "title": "Bloki salikšanai",
+          "text": "Galvene, virsraksti, pieredze, prasmes, kolonnas: katru bloku izvēlas ar vienu klikšķi pēc tā skices"
+        },
+        "shapes": {
+          "title": "Formas izvietošanai",
+          "text": "Apļi, traipi, viļņi vai svītras, ko velkat pa lapu. Tās rotā, netraucējot lasīšanu"
+        },
+        "css": {
+          "title": "Jūsu CSS, ja vēlaties",
+          "text": "Pārzināt CSS? Ielīmējiet savu studijas audeklā vai galerijas veidnē: tas maina tikai CV"
+        },
+        "share": {
+          "title": "Kopīgo ar kopēšanu un ielīmēšanu",
+          "text": "Jūsu stils ietilpst īsā kodā, ko varat nosūtīt. Tajā nav neviena jūsu CV datu"
+        }
+      },
+      "icon": "Ikona fotoattēla vietā",
+      "cta": "Izveidot savu stilu"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Norāde CV neparādās. Cilnē Vēstule poga pievieno gatavu teikumu",
         "pros": "Par: iesaistīti darba devēji (iekļaušanas programmas, kvotas) jūs pamana ātrāk, un pielāgojumus vieglāk apspriest",
         "cons": "Pret: dažiem atlases speciālistiem joprojām ir aizspriedumi. Varat par to runāt arī vēlāk, intervijā vai pēc pieņemšanas darbā, vai nekad"
+      },
+      "photoIcon": "Ikona",
+      "photoIconTitle": "Ikona fotoattēla vietā",
+      "photoIconHint": "Uzzīmēta akcenta krāsā. Tā neko par jums neatklāj, tāpēc paliek redzama arī angļu valodas CV",
+      "avatars": {
+        "user": "Siluets",
+        "briefcase": "Portfelis",
+        "graduation": "Absolventa cepure",
+        "code": "Kods",
+        "palette": "Palete",
+        "camera": "Kamera",
+        "music": "Mūzika",
+        "heart": "Sirds",
+        "leaf": "Lapa",
+        "rocket": "Raķete",
+        "chefHat": "Pavāra cepure",
+        "wrench": "Uzgriežņu atslēga",
+        "stethoscope": "Stetoskops",
+        "book": "Grāmata",
+        "lightbulb": "Spuldze",
+        "initials": "Iniciāļi"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Pievienojiet 2 vai 3 vaļaspriekus: tie palīdz uzsākt sarunu intervijā",
         "finish": "Izvēlieties sev tīkamu veidni un lejupielādējiet CV PDF formātā. Vienmēr varēsiet atgriezties un to labot"
       }
+    },
+    "style": {
+      "button": "Mans stils",
+      "title": "CV stils",
+      "gallery": "Galerijas veidne: {{name}}",
+      "empty": "Neviens stils vēl nav izveidots",
+      "css": "Pielāgot ar CSS",
+      "cssHint": "Jūsu CSS pašreizējai veidnei",
+      "cssName": "{{name}} pielāgots",
+      "studio": "Stilu studija",
+      "studioHint": "Savs dizains no blokiem un formām, bez koda"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Noklusējuma attēlojums",
     "note": "Šie iestatījumi maina saskarni, nekad jūsu izdrukāto CV"
+  },
+  "studio": {
+    "title": "Stilu studija",
+    "subtitle": "Izveidojiet savu CV dizainu: bloki un formas, ko salikt bez koda, vai jūsu CSS. Pēc tam kopīgojiet to kā JSON kodu",
+    "backToCv": "Atpakaļ uz CV",
+    "notFound": "Šis stils nepastāv vai ir izdzēsts",
+    "points": {
+      "blocks": "Bloki salikšanai",
+      "shapes": "Formas izvietošanai",
+      "css": "Savs CSS",
+      "share": "Kopīgošana JSON formātā"
+    },
+    "list": {
+      "new": "Jauns stils",
+      "emptyTitle": "Vēl nav stilu",
+      "emptyText": "Sāciet ar tukšu lapu vai sākumpunktu un pēc tam pielāgojiet katru bloku",
+      "open": "Atvērt",
+      "actions": "Darbības",
+      "duplicate": "Dublēt",
+      "delete": "Dzēst",
+      "deleteTitle": "Dzēst stilu “{{name}}”?",
+      "deleteText": "CV, kas to izmanto, saglabā pašreizējo izskatu",
+      "copySuffix": "(kopija)",
+      "updated": "Rediģēts {{date}}",
+      "usedBy": "CV, kas to izmanto: {{count}}",
+      "hint": "Jūsu stili paliek šajā pārlūkā. Katrs CV glabā sava stila kopiju, tāpēc rezerves kopijās tas ir pilnīgs"
+    },
+    "presets": {
+      "blank": "Tukša lapa",
+      "band": "Josla",
+      "sidebar": "Sānu kolonna",
+      "organic": "Maigas formas",
+      "timeline": "Laika josla"
+    },
+    "toolbar": {
+      "back": "Mani stili",
+      "name": "Stila nosaukums",
+      "share": "Kopīgot",
+      "use": "Izmantot CV",
+      "applyBack": "Lietot šim CV",
+      "noCv": "Vēl nav CV",
+      "applied": "Stils piemērots: “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Bloki",
+      "shapes": "Formas",
+      "colors": "Krāsas",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Sākumpunkts",
+      "studio": "Studijas audekls",
+      "studioHint": "Salieciet blokus un izvietojiet formas",
+      "template": "Galerijas veidne",
+      "templateHint": "Bloki un formas ir pieejami tikai studijas audeklā. Pielāgojiet šo veidni cilnē CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Kolonnas",
+        "single": "Viena kolonna",
+        "sidebarLeft": "Sānu kolonna"
+      },
+      "header": {
+        "label": "Galvene",
+        "left": "Klasiska",
+        "center": "Centrēta",
+        "band": "Josla",
+        "card": "Kontaktu rāmis"
+      },
+      "headings": {
+        "label": "Sadaļu virsraksti",
+        "underline": "Pasvītrots",
+        "bar": "Stabiņš",
+        "pill": "Kapsula",
+        "caps": "Lielie burti",
+        "boxed": "Rāmī",
+        "line": "Līnija"
+      },
+      "entries": {
+        "label": "Pieredze un izglītība",
+        "classic": "Klasisks",
+        "timeline": "Laika josla",
+        "cards": "Kartītes",
+        "datesLeft": "Datumi kreisajā pusē"
+      },
+      "skills": {
+        "label": "Prasmes",
+        "chips": "Birkas",
+        "inline": "Vienā rindā",
+        "grid": "Režģis"
+      },
+      "languages": {
+        "label": "Valodas",
+        "meter": "Rādītājs",
+        "text": "Teksts"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Apaļa",
+        "rounded": "Noapaļota",
+        "square": "Kvadrātveida",
+        "hidden": "Paslēpta"
+      }
+    },
+    "shapes": {
+      "add": "Pievienot formu",
+      "hint": "Formas atrodas aiz teksta: tās rotā, netraucējot ATS nolasīšanu",
+      "drag": "Velciet formas pa lapu vai pārvietojiet tās ar bulttaustiņiem",
+      "onPage": "Formas lapā",
+      "empty": "Lapā vēl nav formu",
+      "color": "Krāsa",
+      "size": "Izmērs",
+      "rotate": "Pagrieziens",
+      "alpha": "Intensitāte",
+      "x": "Horizontāli",
+      "y": "Vertikāli",
+      "duplicate": "Dublēt",
+      "remove": "Dzēst",
+      "kinds": {
+        "circle": "Aplis",
+        "blob": "Traips",
+        "square": "Kvadrāts",
+        "triangle": "Trijstūris",
+        "ring": "Gredzens",
+        "wave": "Viļņi",
+        "stripes": "Svītras",
+        "dots": "Punkti"
+      },
+      "colors": {
+        "accent": "Akcents",
+        "soft": "Gaišs akcents",
+        "ink": "Teksts"
+      }
+    },
+    "colors": {
+      "accentCv": "CV krāsa",
+      "accentFixed": "Fiksēta krāsa",
+      "paper": "Lapas fons",
+      "background": "Fons",
+      "text": "Teksts",
+      "contrast": "Zems kontrasts: tekstu var būt grūti izlasīt"
+    },
+    "css": {
+      "label": "Jūsu CSS",
+      "hint": "Attiecas tikai uz CV, uzreiz. Importi un ārējās adreses tiek noņemti. Pievienojiet !important, ja uzvar veidnes noteikums",
+      "rules": "Piemērotie noteikumi: {{count}}",
+      "removed": "Jūsu drošībai noņemts: {{count}}",
+      "example": "Ievietot piemēru",
+      "warnings": "Uzmanību ATS nolasīšanai",
+      "warning": {
+        "order": "{{property}}: tekstu var nolasīt nepareizā secībā",
+        "shadow": "ēna ieraksta tekstu PDF divreiz",
+        "content": "ar CSS pievienoto tekstu nolasa roboti"
+      },
+      "reference": "Pieejamās klases un mainīgie",
+      "referenceStudio": "Studijas audekla stabilās klases:",
+      "referenceTemplate": "Galerijas veidnes klases atradīsiet, apskatot priekšskatījumu. Kopīgie mainīgie:"
+    },
+    "preview": {
+      "label": "Priekšskatījums ar",
+      "sample": "Parauga CV"
+    },
+    "share": {
+      "title": "Kopīgot stilu",
+      "text": "Šis JSON kods satur visu stilu (blokus, formas, krāsas un CSS), bet nevienu jūsu CV datu. To var importēt stilu studijā",
+      "copy": "Kopēt kodu",
+      "copied": "Kods nokopēts",
+      "copyError": "Neizdevās nokopēt: atlasiet kodu un nokopējiet to",
+      "download": "Lejupielādēt (.json)",
+      "close": "Aizvērt",
+      "importTitle": "Importēt stilu",
+      "importText": "Ielīmējiet stila JSON kodu vai izvēlieties .json failu",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Izvēlēties failu",
+      "importAction": "Importēt",
+      "imported": "Stils “{{name}}” importēts",
+      "error": {
+        "invalidJson": "Šis teksts nav derīgs JSON",
+        "notAStyle": "Šis kods nav LocalATSCV stils",
+        "newerVersion": "Šis stils ir no jaunākas LocalATSCV versijas: atjauniniet lietotni"
+      }
+    }
   }
 }

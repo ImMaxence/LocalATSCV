@@ -6,7 +6,8 @@
     "privacy": "Privacidade",
     "analyze": "Testar meu currículo",
     "editor": "Criar meu currículo",
-    "skipToContent": "Ir para o conteúdo"
+    "skipToContent": "Ir para o conteúdo",
+    "studio": "Estúdio de estilos"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Aviso legal",
     "terms": "Termos de uso",
     "privacy": "Política de privacidade",
-    "accessibility": "Declaração de acessibilidade"
+    "accessibility": "Declaração de acessibilidade",
+    "studio": "Estúdio de estilos"
   },
   "seo": {
     "home": "Crie grátis um currículo que conquista entrevistas: 72 modelos, carta de apresentação combinando, adaptação a cada vaga e verificação ATS. Sem cadastro, seus dados ficam no seu dispositivo",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 modelos à escolha",
         "letter": "Carta de apresentação combinando",
-        "private": "Seus dados ficam com você"
+        "private": "Seus dados ficam com você",
+        "studio": "Ou o seu próprio design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Devo mencionar minha deficiência?",
           "a": "Nunca é obrigatório. Se quiser, o editor sugere a formulação reconhecida no país do currículo (RQTH na França, categorie protette na Itália…), para colocar com seus contatos, no fim do currículo ou só na carta. Você também pode mantê-la em algumas versões e não em outras"
+        },
+        "design": {
+          "q": "Posso criar o meu próprio design de currículo?",
+          "a": "Sim. O estúdio de estilos permite montar blocos (cabeçalho, títulos, experiências, colunas), posicionar formas decorativas e escolher cores e fontes, sem código. Se você conhece CSS, também pode colar o seu. Um estilo é compartilhado com um simples copiar e colar, sem nenhum dado do seu currículo. E se preferir não usar foto, um ícone ou suas iniciais podem ocupar o lugar dela"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Uma seção por vez, com uma dica em linguagem simples, até o download do PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Estúdio de estilos",
+      "title": "Nenhum modelo tem a sua cara? Crie o seu",
+      "text": "Monte o seu design como um jogo de montar: escolha os blocos, posicione formas, mude as cores. Sem uma linha de código e sempre bem lido pelos sistemas que fazem a triagem de candidaturas",
+      "points": {
+        "blocks": {
+          "title": "Blocos para montar",
+          "text": "Cabeçalho, títulos, experiências, competências, colunas: cada bloco é escolhido com um clique, vendo o esboço"
+        },
+        "shapes": {
+          "title": "Formas para posicionar",
+          "text": "Círculos, manchas, ondas ou listras para arrastar pela página. Elas enfeitam sem atrapalhar a leitura"
+        },
+        "css": {
+          "title": "Seu CSS, se quiser",
+          "text": "Conhece CSS? Cole o seu na tela do estúdio ou em um modelo da galeria: ele só altera o currículo"
+        },
+        "share": {
+          "title": "Compartilhado com copiar e colar",
+          "text": "Seu estilo cabe em um pequeno código para enviar a quem quiser. Ele não contém nenhum dado do seu currículo"
+        }
+      },
+      "icon": "Um ícone no lugar da foto",
+      "cta": "Criar meu estilo"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "A menção não aparece no currículo. Na aba Carta, um botão adiciona uma frase pronta",
         "pros": "A favor: empresas comprometidas (programas de inclusão, cotas) encontram você mais rápido e as adaptações são discutidas com mais facilidade",
         "cons": "Contra: alguns recrutadores ainda têm preconceitos. Você também pode falar disso depois, na entrevista ou após a contratação, ou nunca"
+      },
+      "photoIcon": "Um ícone",
+      "photoIconTitle": "Um ícone no lugar da foto",
+      "photoIconHint": "Desenhado na cor de destaque. Não diz nada sobre você, por isso continua nos currículos em inglês",
+      "avatars": {
+        "user": "Silhueta",
+        "briefcase": "Maleta",
+        "graduation": "Capelo",
+        "code": "Código",
+        "palette": "Paleta",
+        "camera": "Câmera",
+        "music": "Música",
+        "heart": "Coração",
+        "leaf": "Folha",
+        "rocket": "Foguete",
+        "chefHat": "Chapéu de chef",
+        "wrench": "Chave inglesa",
+        "stethoscope": "Estetoscópio",
+        "book": "Livro",
+        "lightbulb": "Lâmpada",
+        "initials": "Iniciais"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Adicione 2 ou 3 hobbies: eles ajudam a puxar conversa na entrevista",
         "finish": "Escolha um modelo de que você goste e baixe seu currículo em PDF. Você sempre poderá voltar e editá-lo"
       }
+    },
+    "style": {
+      "button": "Meu estilo",
+      "title": "Estilo do currículo",
+      "gallery": "Modelo da galeria: {{name}}",
+      "empty": "Nenhum estilo criado ainda",
+      "css": "Personalizar com CSS",
+      "cssHint": "Seu próprio CSS no modelo atual",
+      "cssName": "{{name}} personalizado",
+      "studio": "Estúdio de estilos",
+      "studioHint": "Um design só seu, com blocos e formas, sem código"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Exibição padrão",
     "note": "Esses ajustes mudam a interface, nunca o seu currículo impresso"
+  },
+  "studio": {
+    "title": "Estúdio de estilos",
+    "subtitle": "Crie o seu próprio design de currículo: blocos e formas para montar sem código, ou o seu CSS. Depois compartilhe como código JSON",
+    "backToCv": "Voltar ao currículo",
+    "notFound": "Este estilo não existe ou foi excluído",
+    "points": {
+      "blocks": "Blocos para montar",
+      "shapes": "Formas para posicionar",
+      "css": "CSS personalizado",
+      "share": "Compartilhamento em JSON"
+    },
+    "list": {
+      "new": "Novo estilo",
+      "emptyTitle": "Nenhum estilo ainda",
+      "emptyText": "Comece com uma página em branco ou um ponto de partida e ajuste cada bloco",
+      "open": "Abrir",
+      "actions": "Ações",
+      "duplicate": "Duplicar",
+      "delete": "Excluir",
+      "deleteTitle": "Excluir o estilo “{{name}}”?",
+      "deleteText": "Os currículos que o usam mantêm a aparência atual",
+      "copySuffix": "(cópia)",
+      "updated": "Editado em {{date}}",
+      "usedBy": "Currículos que o usam: {{count}}",
+      "hint": "Seus estilos ficam neste navegador. Cada currículo guarda uma cópia do seu estilo e continua completo nos seus backups"
+    },
+    "presets": {
+      "blank": "Página em branco",
+      "band": "Faixa",
+      "sidebar": "Coluna",
+      "organic": "Formas suaves",
+      "timeline": "Linha do tempo"
+    },
+    "toolbar": {
+      "back": "Meus estilos",
+      "name": "Nome do estilo",
+      "share": "Compartilhar",
+      "use": "Usar em um currículo",
+      "applyBack": "Aplicar ao currículo",
+      "noCv": "Nenhum currículo ainda",
+      "applied": "Estilo aplicado a “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blocos",
+      "shapes": "Formas",
+      "colors": "Cores",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Ponto de partida",
+      "studio": "A tela do estúdio",
+      "studioHint": "Monte blocos e posicione formas",
+      "template": "Um modelo da galeria",
+      "templateHint": "Blocos e formas são exclusivos da tela do estúdio. Ajuste este modelo na aba CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Colunas",
+        "single": "Uma coluna",
+        "sidebarLeft": "Coluna lateral"
+      },
+      "header": {
+        "label": "Cabeçalho",
+        "left": "Clássico",
+        "center": "Centralizado",
+        "band": "Faixa",
+        "card": "Contatos em quadro"
+      },
+      "headings": {
+        "label": "Títulos das seções",
+        "underline": "Sublinhado",
+        "bar": "Barra",
+        "pill": "Pílula",
+        "caps": "Maiúsculas",
+        "boxed": "Em quadro",
+        "line": "Filete"
+      },
+      "entries": {
+        "label": "Experiência e formação",
+        "classic": "Clássico",
+        "timeline": "Linha do tempo",
+        "cards": "Cartões",
+        "datesLeft": "Datas à esquerda"
+      },
+      "skills": {
+        "label": "Competências",
+        "chips": "Etiquetas",
+        "inline": "Em linha",
+        "grid": "Grade"
+      },
+      "languages": {
+        "label": "Idiomas",
+        "meter": "Indicador",
+        "text": "Texto"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Redonda",
+        "rounded": "Arredondada",
+        "square": "Quadrada",
+        "hidden": "Oculta"
+      }
+    },
+    "shapes": {
+      "add": "Adicionar uma forma",
+      "hint": "As formas ficam atrás do texto: decoram sem atrapalhar a leitura dos ATS",
+      "drag": "Arraste as formas na página ou mova-as com as setas do teclado",
+      "onPage": "Formas na página",
+      "empty": "Nenhuma forma na página ainda",
+      "color": "Cor",
+      "size": "Tamanho",
+      "rotate": "Rotação",
+      "alpha": "Intensidade",
+      "x": "Horizontal",
+      "y": "Vertical",
+      "duplicate": "Duplicar",
+      "remove": "Excluir",
+      "kinds": {
+        "circle": "Círculo",
+        "blob": "Mancha",
+        "square": "Quadrado",
+        "triangle": "Triângulo",
+        "ring": "Anel",
+        "wave": "Ondas",
+        "stripes": "Listras",
+        "dots": "Pontos"
+      },
+      "colors": {
+        "accent": "Destaque",
+        "soft": "Destaque claro",
+        "ink": "Texto"
+      }
+    },
+    "colors": {
+      "accentCv": "A do currículo",
+      "accentFixed": "Cor fixa",
+      "paper": "Fundo da página",
+      "background": "Fundo",
+      "text": "Texto",
+      "contrast": "Contraste baixo: o texto pode ficar difícil de ler"
+    },
+    "css": {
+      "label": "Seu CSS",
+      "hint": "Vale só para o currículo, ao vivo. Imports e endereços externos são removidos. Adicione !important se uma regra do modelo prevalecer",
+      "rules": "Regras aplicadas: {{count}}",
+      "removed": "Removidos para sua segurança: {{count}}",
+      "example": "Inserir um exemplo",
+      "warnings": "Atenção à leitura pelos ATS",
+      "warning": {
+        "order": "{{property}}: o texto pode ser lido fora de ordem",
+        "shadow": "uma sombra escreve o texto duas vezes no PDF",
+        "content": "o texto adicionado com CSS é lido pelos robôs"
+      },
+      "reference": "Classes e variáveis disponíveis",
+      "referenceStudio": "Classes estáveis da tela do estúdio:",
+      "referenceTemplate": "Em um modelo da galeria, inspecione a prévia para encontrar as classes. Variáveis comuns:"
+    },
+    "preview": {
+      "label": "Prévia com",
+      "sample": "O currículo de exemplo"
+    },
+    "share": {
+      "title": "Compartilhar o estilo",
+      "text": "Este código JSON contém todo o estilo (blocos, formas, cores e CSS), mas nenhum dado do seu currículo. Ele pode ser importado no estúdio de estilos",
+      "copy": "Copiar o código",
+      "copied": "Código copiado",
+      "copyError": "Não foi possível copiar: selecione o código e copie",
+      "download": "Baixar (.json)",
+      "close": "Fechar",
+      "importTitle": "Importar um estilo",
+      "importText": "Cole o código JSON de um estilo ou escolha um arquivo .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Escolher um arquivo",
+      "importAction": "Importar",
+      "imported": "Estilo “{{name}}” importado",
+      "error": {
+        "invalidJson": "Este texto não é um JSON válido",
+        "notAStyle": "Este código não é um estilo do LocalATSCV",
+        "newerVersion": "Este estilo vem de uma versão mais recente do LocalATSCV: atualize o aplicativo"
+      }
+    }
   }
 }

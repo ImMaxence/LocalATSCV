@@ -1,6 +1,9 @@
+import { CdkMenu, CdkMenuItemRadio, CdkMenuTrigger } from '@angular/cdk/menu';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
+import { avatarDataUrl } from '../../../../cv/document/parts/avatar';
 import { linkIcon } from '../../../../cv/document/templates/cv-template-base';
+import { AVATAR_ICONS, initials } from '../../../../cv/model/avatar';
 import { hidesPersonalDetails } from '../../../../cv/model/resolve-cv';
 import { DISABILITY_ID, DISABILITY_PLACEMENTS, Profile } from '../../../../cv/model/cv.model';
 import { DISABILITY_LABELS } from '../../../../cv/model/disability';
@@ -13,7 +16,15 @@ import { IncludeToggle } from './editor-controls';
 @Component({
   selector: 'app-profile-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [TranslocoDirective, TextField, Icon, IncludeToggle],
+  imports: [
+    TranslocoDirective,
+    TextField,
+    Icon,
+    IncludeToggle,
+    CdkMenuTrigger,
+    CdkMenu,
+    CdkMenuItemRadio,
+  ],
   template: `
     @if (store.cv(); as cv) {
       <section *transloco="let t; prefix: 'editor.profile'" class="panel">
@@ -25,11 +36,14 @@ import { IncludeToggle } from './editor-controls';
         </header>
 
         <div class="grid gap-4 p-4 sm:grid-cols-2">
-          <div class="flex items-center gap-4 sm:col-span-2" [class.opacity-50]="hidesDetails()">
+          <div
+            class="flex items-center gap-4 sm:col-span-2"
+            [class.opacity-50]="hidesDetails() && !cv.profile.photoIcon"
+          >
             <div
               class="grid size-20 shrink-0 place-items-center overflow-hidden rounded-xl border border-line bg-surface-2 text-muted"
             >
-              @if (store.photoUrl(); as url) {
+              @if (avatarUrl() ?? store.photoUrl(); as url) {
                 <img [src]="url" alt="" class="size-full object-cover" />
               } @else {
                 <app-icon class="size-7" name="image" />
@@ -38,7 +52,7 @@ import { IncludeToggle } from './editor-controls';
             <div class="min-w-0">
               <p class="field-label mb-1.5!">
                 {{ t('photo') }}
-                @if (hidesDetails()) {
+                @if (hidesDetails() && !cv.profile.photoIcon) {
                   <span class="ms-1 rounded bg-surface-2 px-1.5 py-px text-[10px] font-semibold">
                     {{ t('hiddenInEnglish') }}
                   </span>
@@ -54,7 +68,14 @@ import { IncludeToggle } from './editor-controls';
                   {{ cv.profile.photoId ? t('photoChange') : t('photoAdd') }}
                   <input type="file" accept="image/*" class="sr-only" (change)="onPhoto($event)" />
                 </label>
-                @if (cv.profile.photoId) {
+                <button
+                  type="button"
+                  class="btn btn-ghost px-3! py-1.5!"
+                  [cdkMenuTriggerFor]="iconMenu"
+                >
+                  <app-icon class="size-4" name="smile" />{{ t('photoIcon') }}
+                </button>
+                @if (cv.profile.photoId || cv.profile.photoIcon) {
                   <button
                     type="button"
                     class="btn btn-ghost px-3! py-1.5!"
@@ -64,9 +85,35 @@ import { IncludeToggle } from './editor-controls';
                   </button>
                 }
               </div>
-              <p class="mt-1.5 text-xs text-muted">{{ t('photoHint') }}</p>
+              <p class="mt-1.5 text-xs text-muted">
+                {{ cv.profile.photoIcon ? t('photoIconHint') : t('photoHint') }}
+              </p>
             </div>
           </div>
+          <ng-template #iconMenu>
+            <div cdkMenu class="menu-panel menu-in w-72 p-2!">
+              <p class="px-1 pb-2 text-xs font-semibold text-muted">{{ t('photoIconTitle') }}</p>
+              <div class="grid grid-cols-4 gap-1.5">
+                @for (icon of avatarIcons; track icon) {
+                  <button
+                    cdkMenuItemRadio
+                    type="button"
+                    class="grid aspect-square place-items-center rounded-xl border border-line text-accent outline-none hover:border-accent hover:bg-accent-soft focus-visible:ring-2 focus-visible:ring-accent aria-checked:border-accent aria-checked:bg-accent aria-checked:text-accent-ink"
+                    [cdkMenuItemChecked]="cv.profile.photoIcon === icon"
+                    [attr.aria-label]="avatarLabel(t('avatars.' + icon), icon)"
+                    [title]="t('avatars.' + icon)"
+                    (cdkMenuItemTriggered)="store.setPhotoIcon(icon)"
+                  >
+                    @if (icon === 'initials') {
+                      <span class="text-sm font-bold">{{ initialsText() }}</span>
+                    } @else {
+                      <app-icon class="size-6" [name]="$any(icon)" />
+                    }
+                  </button>
+                }
+              </div>
+            </div>
+          </ng-template>
 
           <app-text-field
             [label]="t('firstName')"
@@ -293,6 +340,24 @@ export class ProfilePanel {
   protected readonly hidesDetails = computed(() =>
     hidesPersonalDetails(this.store.cv()?.language ?? 'fr'),
   );
+
+  protected readonly avatarIcons = AVATAR_ICONS;
+  protected readonly initialsText = computed(() => {
+    const profile = this.store.cv()?.profile;
+    return (profile && initials(profile.firstName, profile.lastName)) || 'AB';
+  });
+  /** Les initiales affichent du texte : le nom lu le reprend (WCAG 2.5.3). */
+  protected avatarLabel(label: string, icon: string): string {
+    return icon === 'initials' ? `${label} ${this.initialsText()}` : label;
+  }
+
+  /** Icône choisie à la place de la photo, telle qu'imprimée (couleur d'accent du CV ou du style). */
+  protected readonly avatarUrl = computed(() => {
+    const cv = this.store.cv();
+    if (!cv?.profile.photoIcon) return null;
+    const { photoIcon, firstName, lastName } = cv.profile;
+    return avatarDataUrl(photoIcon, cv.style?.colors.accent ?? cv.accentColor, firstName, lastName);
+  });
 
   protected readonly disabilityId = DISABILITY_ID;
   protected readonly placements = DISABILITY_PLACEMENTS;

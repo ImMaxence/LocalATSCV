@@ -25,6 +25,8 @@ import {
   createVersion,
   newId,
 } from '../../../cv/model/cv.model';
+import { AvatarIcon } from '../../../cv/model/avatar';
+import { CvStyle } from '../../../cv/model/cv-style';
 import { resolveCv } from '../../../cv/model/resolve-cv';
 import { CvFontId } from '../../../cv/model/cv-fonts';
 import { extractKeywords, hiddenIdsForJob, matchCv } from '../../../cv/analysis/job-match';
@@ -214,8 +216,21 @@ export class CvEditorStore {
     this.mutate((cv) => (cv.language = language));
   }
 
+  /** Choisir un modèle de la galerie quitte le style personnel. */
   setTemplate(template: CvTemplateId): void {
-    this.mutate((cv) => (cv.template = template), true, 'template');
+    this.mutate(
+      (cv) => {
+        cv.template = template;
+        cv.style = null;
+      },
+      true,
+      'template',
+    );
+  }
+
+  /** Le CV garde une copie du style : il reste complet dans les sauvegardes. */
+  setStyle(style: CvStyle | null): void {
+    this.mutate((cv) => (cv.style = style && structuredClone(style)), true, 'template');
   }
 
   setFont(role: 'heading' | 'body', font: CvFontId | null): void {
@@ -281,13 +296,24 @@ export class CvEditorStore {
     const blob = await prepareProfilePhoto(file);
     const previous = this.cv()?.profile.photoId;
     const photoId = await this.repository.savePhoto(blob);
-    this.updateProfile({ photoId });
+    this.updateProfile({ photoId, photoIcon: null });
     await this.flush();
     if (previous) await this.repository.deletePhoto(previous);
     await this.refreshPhoto();
   }
 
+  /** L'icône remplace la photo, qui est supprimée du navigateur comme lors d'un changement de photo. */
+  async setPhotoIcon(photoIcon: AvatarIcon): Promise<void> {
+    const previous = this.cv()?.profile.photoId;
+    this.updateProfile({ photoIcon, photoId: null });
+    if (!previous) return;
+    await this.flush();
+    await this.repository.deletePhoto(previous);
+    await this.refreshPhoto();
+  }
+
   async removePhoto(): Promise<void> {
+    if (this.cv()?.profile.photoIcon) this.updateProfile({ photoIcon: null });
     const photoId = this.cv()?.profile.photoId;
     if (!photoId) return;
     this.updateProfile({ photoId: null });

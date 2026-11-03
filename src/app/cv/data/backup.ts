@@ -21,7 +21,9 @@ import {
   isTemplateId,
   newId,
 } from '../model/cv.model';
+import { isAvatarIcon } from '../model/avatar';
 import { isFontId } from '../model/cv-fonts';
+import { CvStyle, normalizeStyle } from '../model/cv-style';
 
 /**
  * Format du fichier de sauvegarde JSON. Incrémenter BACKUP_SCHEMA_VERSION à chaque
@@ -42,6 +44,8 @@ export interface Backup {
   cvs: MasterCv[];
   versions: CvVersion[];
   photos: BackupPhoto[];
+  /** Styles du studio (sauvegarde complète seulement ; absent des fichiers antérieurs à 0.13.0). */
+  styles: CvStyle[];
 }
 
 export type BackupErrorCode = 'invalidJson' | 'notABackup' | 'newerVersion';
@@ -56,6 +60,7 @@ export function createBackup(
   cvs: MasterCv[],
   versions: CvVersion[],
   photos: BackupPhoto[],
+  styles: CvStyle[] = [],
 ): Backup {
   return {
     app: APP_ID,
@@ -64,6 +69,7 @@ export function createBackup(
     cvs,
     versions,
     photos,
+    styles,
   };
 }
 
@@ -93,7 +99,11 @@ export function parseBackup(text: string): Backup {
     .map((photo) => ({ id: string(photo['id']), dataUrl: string(photo['dataUrl']) }))
     .filter((photo) => photoIds.has(photo.id) && photo.dataUrl.startsWith('data:image/'));
 
-  return createBackup(cvs, versions, photos);
+  const styles = array(raw['styles'])
+    .map(normalizeStyle)
+    .filter((style) => style !== null);
+
+  return createBackup(cvs, versions, photos, styles);
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -125,6 +135,7 @@ function normalizeProfile(raw: unknown): Profile {
       : 'contact',
     summary: string(profile['summary']),
     photoId: string(profile['photoId']) || null,
+    photoIcon: isAvatarIcon(profile['photoIcon']) ? profile['photoIcon'] : null,
     qrLinkId: string(profile['qrLinkId']) || null,
     links: array(profile['links'])
       .filter(isRecord)
@@ -227,6 +238,7 @@ export function normalizeCv(raw: unknown): MasterCv | null {
     accentColor: /^#[0-9a-f]{6}$/i.test(string(raw['accentColor']))
       ? string(raw['accentColor'])
       : ACCENT_COLORS[0],
+    style: raw['style'] ? normalizeStyle(raw['style']) : null,
     layout: normalizeLayout(raw['layout']),
     dateStyle: raw['dateStyle'] === 'year' ? 'year' : 'month',
     profile: normalizeProfile(raw['profile']),

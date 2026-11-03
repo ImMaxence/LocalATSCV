@@ -24,6 +24,7 @@ export interface ResolvedCv {
   template: CvTemplateId;
   fonts: MasterCv['fonts'];
   accentColor: string;
+  style: MasterCv['style'];
   layout: MasterCv['layout'];
   dateStyle: DateStyle;
   profile: Profile;
@@ -86,6 +87,7 @@ export function resolveCv(cv: MasterCv, version: CvVersion | null): ResolvedCv {
     template: cv.template,
     fonts: cv.fonts,
     accentColor: cv.accentColor,
+    style: cv.style ?? null,
     layout: cv.layout ?? DEFAULT_LAYOUT,
     dateStyle: cv.dateStyle ?? 'month',
     profile: {

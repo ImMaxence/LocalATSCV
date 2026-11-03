@@ -6,6 +6,7 @@ export const FAQ_ITEMS = [
   'free',
   'ats',
   'templates',
+  'design',
   'import',
   'storage',
   'clear',

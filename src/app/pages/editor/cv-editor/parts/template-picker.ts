@@ -246,7 +246,7 @@ function readIds(key: string): CvTemplateId[] {
                     "
                     [attr.data-id]="option.id"
                     [attr.aria-pressed]="selected() === option.id"
-                    [attr.aria-current]="option.id === data.cv.template ? 'true' : null"
+                    [attr.aria-current]="option.id === current ? 'true' : null"
                     (click)="select(option.id)"
                     (dblclick)="apply(option.id)"
                   >
@@ -264,7 +264,7 @@ function readIds(key: string): CvTemplateId[] {
                       <span class="min-w-0 flex-1 truncate text-sm font-semibold">{{
                         t('names.' + option.id + '.name')
                       }}</span>
-                      @if (option.id === data.cv.template) {
+                      @if (option.id === current) {
                         <app-icon class="size-3.5 text-accent" name="check" [strokeWidth]="3" />
                       }
                       @if (option.ats !== 'excellent') {
@@ -405,10 +405,10 @@ function readIds(key: string): CvTemplateId[] {
             <button
               type="button"
               class="btn btn-primary w-full disabled:opacity-60"
-              [disabled]="selected() === data.cv.template"
+              [disabled]="selected() === current"
               (click)="apply(selected())"
             >
-              @if (selected() === data.cv.template) {
+              @if (selected() === current) {
                 <app-icon class="size-4" name="check" [strokeWidth]="2.5" />{{ t('current') }}
               } @else {
                 {{ t('use') }}
@@ -457,6 +457,10 @@ export class TemplatePicker {
   protected readonly query = signal('');
   /** Modèle mis en avant dans le volet d'aperçu (le modèle en cours à l'ouverture). */
   protected readonly selected = signal<CvTemplateId>(this.data.cv.template);
+  /** Modèle en cours ; aucun quand un style personnel le remplace (le modèle reste réutilisable). */
+  protected readonly current: CvTemplateId | null = this.data.cv.style
+    ? null
+    : this.data.cv.template;
   protected readonly favorites = signal<CvTemplateId[]>(readIds(FAVORITES_KEY));
   private readonly recent = signal<CvTemplateId[]>(readIds(RECENT_KEY));
 
@@ -492,9 +496,11 @@ export class TemplatePicker {
     return hidesPersonalDetails(this.sample.language) ? null : SAMPLE_PHOTO_URL;
   });
 
+  /** Le modèle sélectionné, sans le style personnel éventuel du CV. */
   protected readonly previewCv = computed((): ResolvedCv => ({
     ...(this.source() === 'sample' ? this.sample : this.data.cv),
     template: this.selected(),
+    style: null,
   }));
 
   protected readonly selectedTemplate = computed(

@@ -6,7 +6,8 @@
     "privacy": "Datenschutz",
     "analyze": "Lebenslauf testen",
     "editor": "Lebenslauf erstellen",
-    "skipToContent": "Zum Inhalt springen"
+    "skipToContent": "Zum Inhalt springen",
+    "studio": "Stil-Studio"
   },
   "theme": {
     "label": "Design",
@@ -29,7 +30,8 @@
     "legalNotice": "Impressum",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung",
-    "accessibility": "Erklärung zur Barrierefreiheit"
+    "accessibility": "Erklärung zur Barrierefreiheit",
+    "studio": "Stil-Studio"
   },
   "seo": {
     "home": "Erstelle kostenlos einen Lebenslauf, der überzeugt: 72 Vorlagen, passendes Anschreiben, Anpassung an jede Stelle und ATS-Prüfung. Ohne Anmeldung, deine Daten bleiben auf deinem Gerät",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 Vorlagen zur Auswahl",
         "letter": "Passendes Anschreiben",
-        "private": "Deine Daten bleiben bei dir"
+        "private": "Deine Daten bleiben bei dir",
+        "studio": "Oder Ihr eigenes Design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Muss ich meine Behinderung angeben?",
           "a": "Das ist nie Pflicht. Wenn Sie möchten, schlägt der Editor die im Land Ihres Lebenslaufs anerkannte Formulierung vor (Schwerbehinderung in Deutschland, RQTH in Frankreich…), bei den Kontaktdaten, am Ende des Lebenslaufs oder nur im Anschreiben. Sie können sie auch nur in einigen Versionen behalten"
+        },
+        "design": {
+          "q": "Kann ich ein eigenes Lebenslauf-Design erstellen?",
+          "a": "Ja. Im Stil-Studio setzen Sie Blöcke zusammen (Kopfbereich, Titel, Berufserfahrung, Spalten), platzieren dekorative Formen und wählen Farben und Schriften, ohne Code. Wenn Sie CSS kennen, können Sie auch Ihr eigenes einfügen. Ein Stil wird per Kopieren und Einfügen geteilt, ohne Daten aus Ihrem Lebenslauf. Und wenn Sie kein Foto zeigen möchten, kann ein Symbol oder Ihre Initialen seinen Platz einnehmen"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Ein Abschnitt nach dem anderen, mit einem Tipp in einfacher Sprache, bis zum PDF-Download"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stil-Studio",
+      "title": "Keine Vorlage passt zu Ihnen? Gestalten Sie Ihre eigene",
+      "text": "Setzen Sie Ihr Design wie aus Bausteinen zusammen: Blöcke wählen, Formen platzieren, Farben ändern. Ohne eine Zeile Code und trotzdem richtig gelesen von der Software, die Bewerbungen sortiert",
+      "points": {
+        "blocks": {
+          "title": "Blöcke zum Zusammensetzen",
+          "text": "Kopfbereich, Titel, Berufserfahrung, Kenntnisse, Spalten: Jeder Block ist mit einem Klick gewählt, anhand seiner Skizze"
+        },
+        "shapes": {
+          "title": "Formen zum Platzieren",
+          "text": "Kreise, Kleckse, Wellen oder Streifen, die Sie über die Seite ziehen. Sie schmücken, ohne das Lesen zu stören"
+        },
+        "css": {
+          "title": "Ihr eigenes CSS, wenn Sie möchten",
+          "text": "Sie kennen CSS? Fügen Sie Ihres auf der Studio-Leinwand oder auf einer Galerie-Vorlage ein: Es betrifft nur den Lebenslauf"
+        },
+        "share": {
+          "title": "Geteilt per Kopieren und Einfügen",
+          "text": "Ihr Stil passt in einen kurzen Code, den Sie weitergeben können. Er enthält keine Daten aus Ihrem Lebenslauf"
+        }
+      },
+      "icon": "Ein Symbol statt eines Fotos",
+      "cta": "Meinen Stil gestalten"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Die Angabe erscheint nicht im Lebenslauf. Im Reiter Anschreiben fügt eine Schaltfläche einen fertigen Satz ein",
         "pros": "Dafür: Engagierte Arbeitgeber (Inklusionsprogramme, Beschäftigungsquote) finden Sie schneller, und Anpassungen lassen sich leichter besprechen",
         "cons": "Dagegen: Manche Personaler haben noch Vorurteile. Sie können es auch später ansprechen, im Gespräch, nach der Einstellung oder nie"
+      },
+      "photoIcon": "Ein Symbol",
+      "photoIconTitle": "Ein Symbol statt eines Fotos",
+      "photoIconHint": "In der Akzentfarbe gezeichnet. Es verrät nichts über Sie und bleibt daher auch auf englischen Lebensläufen sichtbar",
+      "avatars": {
+        "user": "Person",
+        "briefcase": "Aktentasche",
+        "graduation": "Doktorhut",
+        "code": "Code",
+        "palette": "Farbpalette",
+        "camera": "Kamera",
+        "music": "Musik",
+        "heart": "Herz",
+        "leaf": "Blatt",
+        "rocket": "Rakete",
+        "chefHat": "Kochmütze",
+        "wrench": "Schraubenschlüssel",
+        "stethoscope": "Stethoskop",
+        "book": "Buch",
+        "lightbulb": "Glühbirne",
+        "initials": "Initialen"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Fügen Sie 2 oder 3 Hobbys hinzu: Sie helfen, im Gespräch ins Plaudern zu kommen",
         "finish": "Wählen Sie eine Vorlage, die Ihnen gefällt, und laden Sie Ihren Lebenslauf als PDF herunter. Sie können ihn jederzeit wieder bearbeiten"
       }
+    },
+    "style": {
+      "button": "Mein Stil",
+      "title": "Stil des Lebenslaufs",
+      "gallery": "Vorlage aus der Galerie: {{name}}",
+      "empty": "Noch kein Stil erstellt",
+      "css": "Mit CSS anpassen",
+      "cssHint": "Eigenes CSS auf der aktuellen Vorlage",
+      "cssName": "{{name}} angepasst",
+      "studio": "Stil-Studio",
+      "studioHint": "Ihr eigenes Design aus Blöcken und Formen, ohne Code"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Standardanzeige",
     "note": "Diese Einstellungen ändern die Oberfläche, nie Ihren gedruckten Lebenslauf"
+  },
+  "studio": {
+    "title": "Stil-Studio",
+    "subtitle": "Gestalten Sie Ihr eigenes Lebenslauf-Design: Blöcke und Formen ohne Code zusammensetzen oder eigenes CSS nutzen. Teilen Sie es danach als JSON-Code",
+    "backToCv": "Zurück zum Lebenslauf",
+    "notFound": "Dieser Stil existiert nicht oder wurde gelöscht",
+    "points": {
+      "blocks": "Blöcke zum Zusammensetzen",
+      "shapes": "Formen zum Platzieren",
+      "css": "Eigenes CSS",
+      "share": "Teilen als JSON"
+    },
+    "list": {
+      "new": "Neuer Stil",
+      "emptyTitle": "Noch keine Stile",
+      "emptyText": "Beginnen Sie mit einer leeren Seite oder einem Ausgangspunkt und passen Sie dann jeden Block an",
+      "open": "Öffnen",
+      "actions": "Aktionen",
+      "duplicate": "Duplizieren",
+      "delete": "Löschen",
+      "deleteTitle": "Stil „{{name}}“ löschen?",
+      "deleteText": "Lebensläufe, die ihn verwenden, behalten ihr aktuelles Aussehen",
+      "copySuffix": "(Kopie)",
+      "updated": "Geändert am {{date}}",
+      "usedBy": "Verwendet in Lebensläufen: {{count}}",
+      "hint": "Ihre Stile bleiben in diesem Browser. Jeder Lebenslauf behält eine Kopie seines Stils und bleibt so in Ihren Sicherungen vollständig"
+    },
+    "presets": {
+      "blank": "Leere Seite",
+      "band": "Banner",
+      "sidebar": "Seitenspalte",
+      "organic": "Sanfte Formen",
+      "timeline": "Zeitleiste"
+    },
+    "toolbar": {
+      "back": "Meine Stile",
+      "name": "Name des Stils",
+      "share": "Teilen",
+      "use": "Für einen Lebenslauf verwenden",
+      "applyBack": "Auf den Lebenslauf anwenden",
+      "noCv": "Noch keine Lebensläufe",
+      "applied": "Stil auf „{{name}}“ angewendet"
+    },
+    "tabs": {
+      "blocks": "Blöcke",
+      "shapes": "Formen",
+      "colors": "Farben",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Ausgangspunkt",
+      "studio": "Die Studio-Leinwand",
+      "studioHint": "Blöcke zusammensetzen und Formen platzieren",
+      "template": "Eine Vorlage aus der Galerie",
+      "templateHint": "Blöcke und Formen gibt es nur auf der Studio-Leinwand. Passen Sie diese Vorlage im Tab CSS an"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Spalten",
+        "single": "Eine Spalte",
+        "sidebarLeft": "Seitenspalte"
+      },
+      "header": {
+        "label": "Kopfbereich",
+        "left": "Klassisch",
+        "center": "Zentriert",
+        "band": "Banner",
+        "card": "Kontaktkarte"
+      },
+      "headings": {
+        "label": "Abschnittstitel",
+        "underline": "Unterstrichen",
+        "bar": "Balken",
+        "pill": "Pille",
+        "caps": "Großbuchstaben",
+        "boxed": "Umrahmt",
+        "line": "Linie"
+      },
+      "entries": {
+        "label": "Berufserfahrung und Ausbildung",
+        "classic": "Klassisch",
+        "timeline": "Zeitleiste",
+        "cards": "Karten",
+        "datesLeft": "Daten links"
+      },
+      "skills": {
+        "label": "Kenntnisse",
+        "chips": "Etiketten",
+        "inline": "In einer Zeile",
+        "grid": "Raster"
+      },
+      "languages": {
+        "label": "Sprachen",
+        "meter": "Anzeige",
+        "text": "Text"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Rund",
+        "rounded": "Abgerundet",
+        "square": "Eckig",
+        "hidden": "Ausgeblendet"
+      }
+    },
+    "shapes": {
+      "add": "Form hinzufügen",
+      "hint": "Formen liegen hinter dem Text: Sie schmücken, ohne das Auslesen durch ATS zu stören",
+      "drag": "Ziehen Sie die Formen auf der Seite oder verschieben Sie sie mit den Pfeiltasten",
+      "onPage": "Formen auf der Seite",
+      "empty": "Noch keine Formen auf der Seite",
+      "color": "Farbe",
+      "size": "Größe",
+      "rotate": "Drehung",
+      "alpha": "Intensität",
+      "x": "Horizontal",
+      "y": "Vertikal",
+      "duplicate": "Duplizieren",
+      "remove": "Löschen",
+      "kinds": {
+        "circle": "Kreis",
+        "blob": "Klecks",
+        "square": "Quadrat",
+        "triangle": "Dreieck",
+        "ring": "Ring",
+        "wave": "Wellen",
+        "stripes": "Streifen",
+        "dots": "Punkte"
+      },
+      "colors": {
+        "accent": "Akzent",
+        "soft": "Heller Akzent",
+        "ink": "Text"
+      }
+    },
+    "colors": {
+      "accentCv": "Wie im Lebenslauf",
+      "accentFixed": "Feste Farbe",
+      "paper": "Seitenhintergrund",
+      "background": "Hintergrund",
+      "text": "Text",
+      "contrast": "Geringer Kontrast: Der Text ist womöglich schwer lesbar"
+    },
+    "css": {
+      "label": "Ihr CSS",
+      "hint": "Es gilt nur für den Lebenslauf, live. Importe und externe Adressen werden entfernt. Fügen Sie !important hinzu, wenn sich eine Regel der Vorlage durchsetzt",
+      "rules": "Angewendete Regeln: {{count}}",
+      "removed": "Zu Ihrer Sicherheit entfernt: {{count}}",
+      "example": "Beispiel einfügen",
+      "warnings": "Achtung beim Auslesen durch ATS",
+      "warning": {
+        "order": "{{property}}: Der Text wird womöglich in falscher Reihenfolge gelesen",
+        "shadow": "Ein Schatten schreibt den Text doppelt ins PDF",
+        "content": "Per CSS hinzugefügter Text wird von Robotern gelesen"
+      },
+      "reference": "Verfügbare Klassen und Variablen",
+      "referenceStudio": "Stabile Klassen der Studio-Leinwand:",
+      "referenceTemplate": "Untersuchen Sie bei einer Galerie-Vorlage die Vorschau, um ihre Klassen zu finden. Gemeinsame Variablen:"
+    },
+    "preview": {
+      "label": "Vorschau mit",
+      "sample": "Beispiel-Lebenslauf"
+    },
+    "share": {
+      "title": "Stil teilen",
+      "text": "Dieser JSON-Code enthält den gesamten Stil (Blöcke, Formen, Farben und CSS), aber keine Daten Ihres Lebenslaufs. Er lässt sich im Stil-Studio importieren",
+      "copy": "Code kopieren",
+      "copied": "Code kopiert",
+      "copyError": "Kopieren nicht möglich: Markieren Sie den Code und kopieren Sie ihn",
+      "download": "Herunterladen (.json)",
+      "close": "Schließen",
+      "importTitle": "Stil importieren",
+      "importText": "Fügen Sie den JSON-Code eines Stils ein oder wählen Sie eine .json-Datei",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Datei wählen",
+      "importAction": "Importieren",
+      "imported": "Stil „{{name}}“ importiert",
+      "error": {
+        "invalidJson": "Dieser Text ist kein gültiges JSON",
+        "notAStyle": "Dieser Code ist kein LocalATSCV-Stil",
+        "newerVersion": "Dieser Stil stammt aus einer neueren Version von LocalATSCV: Aktualisieren Sie die App"
+      }
+    }
   }
 }

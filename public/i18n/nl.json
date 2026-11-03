@@ -6,7 +6,8 @@
     "privacy": "Privacy",
     "analyze": "Mijn cv testen",
     "editor": "Mijn cv maken",
-    "skipToContent": "Naar de inhoud"
+    "skipToContent": "Naar de inhoud",
+    "studio": "Stijlstudio"
   },
   "theme": {
     "label": "Thema",
@@ -29,7 +30,8 @@
     "legalNotice": "Colofon",
     "terms": "Gebruiksvoorwaarden",
     "privacy": "Privacybeleid",
-    "accessibility": "Toegankelijkheidsverklaring"
+    "accessibility": "Toegankelijkheidsverklaring",
+    "studio": "Stijlstudio"
   },
   "seo": {
     "home": "Maak gratis een cv dat je het gesprek oplevert: 72 sjablonen, bijpassende sollicitatiebrief, afstemming op elke vacature en ATS-controle. Zonder account, je gegevens blijven op je apparaat",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 sjablonen om uit te kiezen",
         "letter": "Bijpassende sollicitatiebrief",
-        "private": "Je gegevens blijven bij jou"
+        "private": "Je gegevens blijven bij jou",
+        "studio": "Of je eigen ontwerp"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Moet ik mijn beperking vermelden?",
           "a": "Dat is nooit verplicht. Wil je het wel, dan stelt de editor de erkende formulering voor van het land van je cv (RQTH in Frankrijk, categorie protette in Italië…), bij je contactgegevens, onderaan het cv of alleen in de brief. Je kunt haar ook in sommige versies houden en in andere niet"
+        },
+        "design": {
+          "q": "Kan ik een eigen cv-ontwerp maken?",
+          "a": "Ja. In de stijlstudio stel je blokken samen (kop, titels, ervaring, kolommen), plaats je decoratieve vormen en kies je kleuren en lettertypen, zonder code. Ken je CSS, dan kun je ook je eigen code plakken. Een stijl deel je met kopiëren en plakken, zonder gegevens uit je cv. En wil je geen foto, dan kan een pictogram of je initialen die plek innemen"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Eén onderdeel tegelijk, met een tip in eenvoudige taal, tot het downloaden van de pdf"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stijlstudio",
+      "title": "Geen sjabloon dat bij je past? Maak je eigen",
+      "text": "Bouw je ontwerp als met blokken: kies de blokken, plaats vormen, verander de kleuren. Zonder één regel code en nog steeds goed gelezen door de software die sollicitaties sorteert",
+      "points": {
+        "blocks": {
+          "title": "Blokken om samen te stellen",
+          "text": "Kop, titels, ervaring, vaardigheden, kolommen: elk blok kies je met één klik, aan de hand van een schets"
+        },
+        "shapes": {
+          "title": "Vormen om te plaatsen",
+          "text": "Cirkels, vlekken, golven of strepen die je over de pagina sleept. Ze versieren zonder het lezen te hinderen"
+        },
+        "css": {
+          "title": "Je eigen CSS, als je wilt",
+          "text": "Ken je CSS? Plak je eigen code op het studiodoek of op een sjabloon uit de galerij: alleen het cv verandert"
+        },
+        "share": {
+          "title": "Delen met kopiëren en plakken",
+          "text": "Je stijl past in een korte code die je kunt doorsturen. Er staan geen gegevens uit je cv in"
+        }
+      },
+      "icon": "Een pictogram in plaats van een foto",
+      "cta": "Mijn stijl maken"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "De vermelding staat niet op het cv. In het tabblad Brief voegt een knop een kant-en-klare zin toe",
         "pros": "Voor: betrokken werkgevers (inclusiebeleid, quota) vinden je sneller en aanpassingen zijn makkelijker te bespreken",
         "cons": "Tegen: sommige recruiters hebben nog vooroordelen. Je kunt het ook later ter sprake brengen, in het gesprek of na de aanname, of nooit"
+      },
+      "photoIcon": "Een pictogram",
+      "photoIconTitle": "Een pictogram in plaats van een foto",
+      "photoIconHint": "Getekend in de accentkleur. Het zegt niets over jou en blijft dus ook op Engelstalige cv's staan",
+      "avatars": {
+        "user": "Silhouet",
+        "briefcase": "Aktetas",
+        "graduation": "Afstudeerhoed",
+        "code": "Code",
+        "palette": "Palet",
+        "camera": "Camera",
+        "music": "Muziek",
+        "heart": "Hart",
+        "leaf": "Blad",
+        "rocket": "Raket",
+        "chefHat": "Koksmuts",
+        "wrench": "Steeksleutel",
+        "stethoscope": "Stethoscoop",
+        "book": "Boek",
+        "lightbulb": "Gloeilamp",
+        "initials": "Initialen"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Voeg 2 of 3 hobby's toe: ze helpen het gesprek op gang te brengen",
         "finish": "Kies een sjabloon dat je mooi vindt en download je cv als pdf. Je kunt het altijd nog aanpassen"
       }
+    },
+    "style": {
+      "button": "Mijn stijl",
+      "title": "Stijl van het cv",
+      "gallery": "Sjabloon uit de galerij: {{name}}",
+      "empty": "Nog geen stijl gemaakt",
+      "css": "Aanpassen met CSS",
+      "cssHint": "Je eigen CSS op het huidige sjabloon",
+      "cssName": "{{name}} aangepast",
+      "studio": "Stijlstudio",
+      "studioHint": "Je eigen ontwerp met blokken en vormen, zonder code"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Standaardweergave",
     "note": "Deze instellingen veranderen de interface, nooit je afgedrukte cv"
+  },
+  "studio": {
+    "title": "Stijlstudio",
+    "subtitle": "Maak je eigen cv-ontwerp: blokken en vormen samenstellen zonder code, of je eigen CSS. Deel het daarna als JSON-code",
+    "backToCv": "Terug naar het cv",
+    "notFound": "Deze stijl bestaat niet of is verwijderd",
+    "points": {
+      "blocks": "Blokken om samen te stellen",
+      "shapes": "Vormen om te plaatsen",
+      "css": "Eigen CSS",
+      "share": "Delen als JSON"
+    },
+    "list": {
+      "new": "Nieuwe stijl",
+      "emptyTitle": "Nog geen stijlen",
+      "emptyText": "Begin met een lege pagina of een startpunt en pas daarna elk blok aan",
+      "open": "Openen",
+      "actions": "Acties",
+      "duplicate": "Dupliceren",
+      "delete": "Verwijderen",
+      "deleteTitle": "De stijl ‘{{name}}’ verwijderen?",
+      "deleteText": "Cv's die hem gebruiken, houden hun huidige uiterlijk",
+      "copySuffix": "(kopie)",
+      "updated": "Bewerkt op {{date}}",
+      "usedBy": "Cv's die hem gebruiken: {{count}}",
+      "hint": "Je stijlen blijven in deze browser. Elk cv bewaart een kopie van zijn stijl en blijft zo compleet in je back-ups"
+    },
+    "presets": {
+      "blank": "Lege pagina",
+      "band": "Band",
+      "sidebar": "Zijkolom",
+      "organic": "Zachte vormen",
+      "timeline": "Tijdlijn"
+    },
+    "toolbar": {
+      "back": "Mijn stijlen",
+      "name": "Naam van de stijl",
+      "share": "Delen",
+      "use": "Gebruiken voor een cv",
+      "applyBack": "Toepassen op het cv",
+      "noCv": "Nog geen cv's",
+      "applied": "Stijl toegepast op ‘{{name}}’"
+    },
+    "tabs": {
+      "blocks": "Blokken",
+      "shapes": "Vormen",
+      "colors": "Kleuren",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Startpunt",
+      "studio": "Het studiodoek",
+      "studioHint": "Stel blokken samen en plaats vormen",
+      "template": "Een sjabloon uit de galerij",
+      "templateHint": "Blokken en vormen zijn er alleen voor het studiodoek. Werk dit sjabloon bij op het tabblad CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Kolommen",
+        "single": "Eén kolom",
+        "sidebarLeft": "Zijkolom"
+      },
+      "header": {
+        "label": "Kop",
+        "left": "Klassiek",
+        "center": "Gecentreerd",
+        "band": "Band",
+        "card": "Contactkader"
+      },
+      "headings": {
+        "label": "Sectietitels",
+        "underline": "Onderstreept",
+        "bar": "Balk",
+        "pill": "Pil",
+        "caps": "Hoofdletters",
+        "boxed": "Kader",
+        "line": "Lijn"
+      },
+      "entries": {
+        "label": "Ervaring en opleiding",
+        "classic": "Klassiek",
+        "timeline": "Tijdlijn",
+        "cards": "Kaarten",
+        "datesLeft": "Datums links"
+      },
+      "skills": {
+        "label": "Vaardigheden",
+        "chips": "Labels",
+        "inline": "Op één regel",
+        "grid": "Raster"
+      },
+      "languages": {
+        "label": "Talen",
+        "meter": "Meter",
+        "text": "Tekst"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Rond",
+        "rounded": "Afgerond",
+        "square": "Vierkant",
+        "hidden": "Verborgen"
+      }
+    },
+    "shapes": {
+      "add": "Vorm toevoegen",
+      "hint": "Vormen staan achter de tekst: ze versieren zonder het lezen door ATS te hinderen",
+      "drag": "Sleep de vormen over de pagina of verplaats ze met de pijltjestoetsen",
+      "onPage": "Vormen op de pagina",
+      "empty": "Nog geen vormen op de pagina",
+      "color": "Kleur",
+      "size": "Grootte",
+      "rotate": "Draaiing",
+      "alpha": "Intensiteit",
+      "x": "Horizontaal",
+      "y": "Verticaal",
+      "duplicate": "Dupliceren",
+      "remove": "Verwijderen",
+      "kinds": {
+        "circle": "Cirkel",
+        "blob": "Vlek",
+        "square": "Vierkant",
+        "triangle": "Driehoek",
+        "ring": "Ring",
+        "wave": "Golven",
+        "stripes": "Strepen",
+        "dots": "Stippen"
+      },
+      "colors": {
+        "accent": "Accent",
+        "soft": "Licht accent",
+        "ink": "Tekst"
+      }
+    },
+    "colors": {
+      "accentCv": "Die van het cv",
+      "accentFixed": "Vaste kleur",
+      "paper": "Paginaachtergrond",
+      "background": "Achtergrond",
+      "text": "Tekst",
+      "contrast": "Laag contrast: de tekst is mogelijk moeilijk leesbaar"
+    },
+    "css": {
+      "label": "Jouw CSS",
+      "hint": "Geldt alleen voor het cv, live. Imports en externe adressen worden verwijderd. Voeg !important toe als een regel van het sjabloon voorgaat",
+      "rules": "Toegepaste regels: {{count}}",
+      "removed": "Verwijderd voor je veiligheid: {{count}}",
+      "example": "Voorbeeld invoegen",
+      "warnings": "Let op het lezen door ATS",
+      "warning": {
+        "order": "{{property}}: de tekst wordt mogelijk in de verkeerde volgorde gelezen",
+        "shadow": "een schaduw schrijft de tekst twee keer in de pdf",
+        "content": "tekst die met CSS is toegevoegd, wordt door robots gelezen"
+      },
+      "reference": "Beschikbare klassen en variabelen",
+      "referenceStudio": "Vaste klassen van het studiodoek:",
+      "referenceTemplate": "Bij een sjabloon uit de galerij vind je de klassen door het voorbeeld te inspecteren. Gedeelde variabelen:"
+    },
+    "preview": {
+      "label": "Voorbeeld met",
+      "sample": "Het voorbeeld-cv"
+    },
+    "share": {
+      "title": "Stijl delen",
+      "text": "Deze JSON-code bevat de hele stijl (blokken, vormen, kleuren en CSS), maar geen gegevens uit je cv. Je importeert hem in de stijlstudio",
+      "copy": "Code kopiëren",
+      "copied": "Code gekopieerd",
+      "copyError": "Kopiëren mislukt: selecteer de code en kopieer hem",
+      "download": "Downloaden (.json)",
+      "close": "Sluiten",
+      "importTitle": "Stijl importeren",
+      "importText": "Plak de JSON-code van een stijl of kies een .json-bestand",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Bestand kiezen",
+      "importAction": "Importeren",
+      "imported": "Stijl ‘{{name}}’ geïmporteerd",
+      "error": {
+        "invalidJson": "Deze tekst is geen geldige JSON",
+        "notAStyle": "Deze code is geen LocalATSCV-stijl",
+        "newerVersion": "Deze stijl komt uit een nieuwere versie van LocalATSCV: werk de app bij"
+      }
+    }
   }
 }

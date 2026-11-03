@@ -6,7 +6,8 @@
     "privacy": "Privatumas",
     "analyze": "Išbandyti mano CV",
     "editor": "Kurti mano CV",
-    "skipToContent": "Pereiti prie turinio"
+    "skipToContent": "Pereiti prie turinio",
+    "studio": "Stilių studija"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Teisinė informacija",
     "terms": "Naudojimo sąlygos",
     "privacy": "Privatumo politika",
-    "accessibility": "Prieinamumo pareiškimas"
+    "accessibility": "Prieinamumo pareiškimas",
+    "studio": "Stilių studija"
   },
   "seo": {
     "home": "Nemokamai sukurkite CV, kuris atveria duris į pokalbį: 72 šablonų, derantis motyvacinis laiškas, pritaikymas kiekvienam skelbimui ir ATS patikra. Be registracijos, jūsų duomenys lieka jūsų įrenginyje",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 šablonų pasirinkimui",
         "letter": "Derantis motyvacinis laiškas",
-        "private": "Jūsų duomenys lieka pas jus"
+        "private": "Jūsų duomenys lieka pas jus",
+        "studio": "Arba jūsų pačių dizainas"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Ar turiu nurodyti savo negalią?",
           "a": "Tai niekada nėra privaloma. Jei norite, redaktorius pasiūlo CV šalyje pripažintą formuluotę (RQTH Prancūzijoje, categorie protette Italijoje…), prie kontaktų, CV pabaigoje arba tik laiške. Taip pat galite ją palikti vienose versijose, o kitose ne"
+        },
+        "design": {
+          "q": "Ar galiu sukurti savo CV dizainą?",
+          "a": "Taip. Stilių studijoje dėliojate blokus (antraštę, pavadinimus, patirtį, stulpelius), dedate dekoratyvines formas ir renkatės spalvas bei šriftus be kodo. Jei išmanote CSS, galite įklijuoti ir savo. Stiliumi dalijamasi nukopijavus ir įklijavus, be jokių jūsų CV duomenų. O jei nenorite rodyti nuotraukos, jos vietą gali užimti piktograma arba jūsų inicialai"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Po vieną skyrių, su patarimu paprasta kalba, iki pat PDF atsisiuntimo"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stilių studija",
+      "title": "Joks šablonas jums netinka? Sukurkite savo",
+      "text": "Sudėkite dizainą kaip iš kaladėlių: pasirinkite blokus, padėkite formas, pakeiskite spalvas. Be jokios kodo eilutės ir vis tiek teisingai nuskaitomas programų, kurios rūšiuoja paraiškas",
+      "points": {
+        "blocks": {
+          "title": "Blokai dėliojimui",
+          "text": "Antraštė, pavadinimai, patirtis, įgūdžiai, stulpeliai: kiekvienas blokas pasirenkamas vienu spustelėjimu pagal jo eskizą"
+        },
+        "shapes": {
+          "title": "Formos išdėstymui",
+          "text": "Apskritimai, dėmės, bangos ar juostos, kurias tempiate puslapiu. Jos puošia netrukdydamos skaityti"
+        },
+        "css": {
+          "title": "Jūsų CSS, jei norite",
+          "text": "Išmanote CSS? Įklijuokite savo studijos drobėje arba galerijos šablone: jis keičia tik CV"
+        },
+        "share": {
+          "title": "Dalijamasi nukopijavus ir įklijavus",
+          "text": "Jūsų stilius telpa į trumpą kodą, kurį galite nusiųsti. Jame nėra jokių jūsų CV duomenų"
+        }
+      },
+      "icon": "Piktograma vietoj nuotraukos",
+      "cta": "Sukurti savo stilių"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Nuoroda CV nerodoma. Skirtuke Laiškas mygtukas prideda paruoštą sakinį",
         "pros": "Už: įsipareigoję darbdaviai (įtraukties programos, kvotos) jus pastebi greičiau, o pritaikymus aptarti paprasčiau",
         "cons": "Prieš: kai kurie atrankos specialistai vis dar turi išankstinių nuostatų. Apie tai galite kalbėti ir vėliau, pokalbyje ar po įdarbinimo, arba niekada"
+      },
+      "photoIcon": "Piktograma",
+      "photoIconTitle": "Piktograma vietoj nuotraukos",
+      "photoIconHint": "Nupiešta akcento spalva. Ji nieko apie jus nepasako, todėl lieka ir CV anglų kalba",
+      "avatars": {
+        "user": "Siluetas",
+        "briefcase": "Portfelis",
+        "graduation": "Absolvento kepurė",
+        "code": "Kodas",
+        "palette": "Paletė",
+        "camera": "Fotoaparatas",
+        "music": "Muzika",
+        "heart": "Širdis",
+        "leaf": "Lapas",
+        "rocket": "Raketa",
+        "chefHat": "Virėjo kepurė",
+        "wrench": "Veržliaraktis",
+        "stethoscope": "Stetoskopas",
+        "book": "Knyga",
+        "lightbulb": "Lemputė",
+        "initials": "Inicialai"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Pridėkite 2 ar 3 pomėgius: jie padeda pradėti pokalbį",
         "finish": "Pasirinkite patinkantį šabloną ir atsisiųskite CV PDF formatu. Visada galėsite grįžti ir jį pataisyti"
       }
+    },
+    "style": {
+      "button": "Mano stilius",
+      "title": "CV stilius",
+      "gallery": "Galerijos šablonas: {{name}}",
+      "empty": "Dar nesukūrėte stiliaus",
+      "css": "Pritaikyti su CSS",
+      "cssHint": "Jūsų CSS dabartiniam šablonui",
+      "cssName": "{{name}} pritaikytas",
+      "studio": "Stilių studija",
+      "studioHint": "Savas dizainas iš blokų ir formų, be kodo"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Numatytasis rodymas",
     "note": "Šie nustatymai keičia sąsają, bet niekada jūsų atspausdinto CV"
+  },
+  "studio": {
+    "title": "Stilių studija",
+    "subtitle": "Sukurkite savo CV dizainą: blokai ir formos, kuriuos galima sudėti be kodo, arba jūsų CSS. Tada pasidalykite juo kaip JSON kodu",
+    "backToCv": "Grįžti į CV",
+    "notFound": "Šio stiliaus nėra arba jis ištrintas",
+    "points": {
+      "blocks": "Blokai dėliojimui",
+      "shapes": "Formos išdėstymui",
+      "css": "Savas CSS",
+      "share": "Dalijimasis JSON"
+    },
+    "list": {
+      "new": "Naujas stilius",
+      "emptyTitle": "Dar nėra stilių",
+      "emptyText": "Pradėkite nuo tuščio lapo arba pradžios taško ir pakoreguokite kiekvieną bloką",
+      "open": "Atidaryti",
+      "actions": "Veiksmai",
+      "duplicate": "Dublikuoti",
+      "delete": "Ištrinti",
+      "deleteTitle": "Ištrinti stilių „{{name}}“?",
+      "deleteText": "Jį naudojantys CV išlaiko dabartinę išvaizdą",
+      "copySuffix": "(kopija)",
+      "updated": "Redaguota {{date}}",
+      "usedBy": "Jį naudojantys CV: {{count}}",
+      "hint": "Jūsų stiliai lieka šioje naršyklėje. Kiekvienas CV saugo savo stiliaus kopiją, todėl atsarginėse kopijose jis išlieka išsamus"
+    },
+    "presets": {
+      "blank": "Tuščias lapas",
+      "band": "Juosta",
+      "sidebar": "Šoninis stulpelis",
+      "organic": "Švelnios formos",
+      "timeline": "Laiko juosta"
+    },
+    "toolbar": {
+      "back": "Mano stiliai",
+      "name": "Stiliaus pavadinimas",
+      "share": "Bendrinti",
+      "use": "Naudoti CV",
+      "applyBack": "Taikyti šiam CV",
+      "noCv": "Dar nėra CV",
+      "applied": "Stilius pritaikytas „{{name}}“"
+    },
+    "tabs": {
+      "blocks": "Blokai",
+      "shapes": "Formos",
+      "colors": "Spalvos",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Pradžios taškas",
+      "studio": "Studijos drobė",
+      "studioHint": "Dėliokite blokus ir išdėstykite formas",
+      "template": "Galerijos šablonas",
+      "templateHint": "Blokai ir formos skirti tik studijos drobei. Šį šabloną koreguokite skirtuke CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Stulpeliai",
+        "single": "Vienas stulpelis",
+        "sidebarLeft": "Šoninis stulpelis"
+      },
+      "header": {
+        "label": "Antraštė",
+        "left": "Klasikinė",
+        "center": "Centruota",
+        "band": "Juosta",
+        "card": "Kontaktų rėmelis"
+      },
+      "headings": {
+        "label": "Skyrių pavadinimai",
+        "underline": "Pabrauktas",
+        "bar": "Juostelė",
+        "pill": "Piliulė",
+        "caps": "Didžiosios raidės",
+        "boxed": "Rėmelyje",
+        "line": "Linija"
+      },
+      "entries": {
+        "label": "Patirtis ir išsilavinimas",
+        "classic": "Klasikinis",
+        "timeline": "Laiko juosta",
+        "cards": "Kortelės",
+        "datesLeft": "Datos kairėje"
+      },
+      "skills": {
+        "label": "Įgūdžiai",
+        "chips": "Žymos",
+        "inline": "Vienoje eilutėje",
+        "grid": "Tinklelis"
+      },
+      "languages": {
+        "label": "Kalbos",
+        "meter": "Matuoklis",
+        "text": "Tekstas"
+      },
+      "photo": {
+        "label": "Nuotrauka",
+        "circle": "Apvali",
+        "rounded": "Užapvalinta",
+        "square": "Kvadratinė",
+        "hidden": "Paslėpta"
+      }
+    },
+    "shapes": {
+      "add": "Pridėti formą",
+      "hint": "Formos yra už teksto: jos puošia netrukdydamos ATS nuskaitymui",
+      "drag": "Tempkite formas puslapyje arba perkelkite jas rodyklių klavišais",
+      "onPage": "Formos puslapyje",
+      "empty": "Puslapyje dar nėra formų",
+      "color": "Spalva",
+      "size": "Dydis",
+      "rotate": "Pasukimas",
+      "alpha": "Intensyvumas",
+      "x": "Horizontaliai",
+      "y": "Vertikaliai",
+      "duplicate": "Dublikuoti",
+      "remove": "Ištrinti",
+      "kinds": {
+        "circle": "Apskritimas",
+        "blob": "Dėmė",
+        "square": "Kvadratas",
+        "triangle": "Trikampis",
+        "ring": "Žiedas",
+        "wave": "Bangos",
+        "stripes": "Juostos",
+        "dots": "Taškai"
+      },
+      "colors": {
+        "accent": "Akcentas",
+        "soft": "Šviesus akcentas",
+        "ink": "Tekstas"
+      }
+    },
+    "colors": {
+      "accentCv": "Kaip CV",
+      "accentFixed": "Fiksuota spalva",
+      "paper": "Puslapio fonas",
+      "background": "Fonas",
+      "text": "Tekstas",
+      "contrast": "Mažas kontrastas: tekstą gali būti sunku perskaityti"
+    },
+    "css": {
+      "label": "Jūsų CSS",
+      "hint": "Taikoma tik CV, iš karto. Importai ir išoriniai adresai pašalinami. Pridėkite !important, jei nugali šablono taisyklė",
+      "rules": "Pritaikytos taisyklės: {{count}}",
+      "removed": "Pašalinta jūsų saugumui: {{count}}",
+      "example": "Įterpti pavyzdį",
+      "warnings": "Dėmesio ATS nuskaitymui",
+      "warning": {
+        "order": "{{property}}: tekstas gali būti nuskaitytas netvarkingai",
+        "shadow": "šešėlis įrašo tekstą į PDF du kartus",
+        "content": "CSS pridėtą tekstą skaito robotai"
+      },
+      "reference": "Galimos klasės ir kintamieji",
+      "referenceStudio": "Pastovios studijos drobės klasės:",
+      "referenceTemplate": "Galerijos šablono klases rasite tyrinėdami peržiūrą. Bendri kintamieji:"
+    },
+    "preview": {
+      "label": "Peržiūra su",
+      "sample": "Pavyzdinis CV"
+    },
+    "share": {
+      "title": "Bendrinti stilių",
+      "text": "Šiame JSON kode yra visas stilius (blokai, formos, spalvos ir CSS), bet nėra jokių jūsų CV duomenų. Jį galima importuoti stilių studijoje",
+      "copy": "Kopijuoti kodą",
+      "copied": "Kodas nukopijuotas",
+      "copyError": "Nepavyko nukopijuoti: pažymėkite kodą ir nukopijuokite",
+      "download": "Atsisiųsti (.json)",
+      "close": "Uždaryti",
+      "importTitle": "Importuoti stilių",
+      "importText": "Įklijuokite stiliaus JSON kodą arba pasirinkite .json failą",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Pasirinkti failą",
+      "importAction": "Importuoti",
+      "imported": "Stilius „{{name}}“ importuotas",
+      "error": {
+        "invalidJson": "Šis tekstas nėra galiojantis JSON",
+        "notAStyle": "Šis kodas nėra LocalATSCV stilius",
+        "newerVersion": "Šis stilius yra iš naujesnės LocalATSCV versijos: atnaujinkite programėlę"
+      }
+    }
   }
 }

@@ -84,6 +84,8 @@
                 <span class="sr-only">{{ t('templates.open') }} :</span>
                 @if (openingTemplates()) {
                   <app-icon class="size-4 animate-spin text-accent" name="loader" />
+                } @else if (cv.style) {
+                  <app-icon class="size-4 text-accent" name="palette" />
                 } @else {
                   <!-- Vignette du modèle en cours ; l'icône prend le relais si l'image manque -->
                   <img
@@ -95,13 +97,15 @@
                     (error)="$any($event.target).hidden = true"
                   />
                 }
-                <span class="hidden sm:inline">{{
-                  t('templates.names.' + cv.template + '.name')
+                <span class="hidden max-w-40 truncate sm:inline">{{
+                  cv.style ? cv.style.name : t('templates.names.' + cv.template + '.name')
                 }}</span>
                 <span class="sm:hidden">{{ t('templates.button') }}</span>
-                <span class="hidden text-xs tabular-nums text-muted md:inline"
-                  >{{ templatePosition() }}/{{ templateCount }}</span
-                >
+                @if (!cv.style) {
+                  <span class="hidden text-xs tabular-nums text-muted md:inline"
+                    >{{ templatePosition() }}/{{ templateCount }}</span
+                  >
+                }
               </button>
               <button
                 type="button"
@@ -167,6 +171,83 @@
                 <p class="col-span-2 border-t border-line px-2.5 pt-2 pb-1 text-xs text-muted">
                   {{ t('fonts.hint') }}
                 </p>
+              </div>
+            </ng-template>
+
+            <!-- Style personnel du studio (blocs, formes, CSS) à la place du modèle -->
+            <button
+              type="button"
+              class="flex h-9 shrink-0 items-center gap-1.5 rounded-full border bg-surface px-3 text-sm font-medium transition-colors hover:border-ink/25"
+              [class]="cv.style ? 'border-accent/60' : 'border-line'"
+              [cdkMenuTriggerFor]="styleMenu"
+              [attr.aria-label]="t('style.button')"
+              [title]="t('style.title')"
+            >
+              <app-icon class="size-4 text-accent" name="palette" />
+              <span class="hidden xl:inline">{{ t('style.button') }}</span>
+            </button>
+            <ng-template #styleMenu>
+              <div cdkMenu class="menu-panel menu-in w-80">
+                <p
+                  class="px-2.5 pt-1.5 pb-1 text-[11px] font-semibold tracking-wider text-muted uppercase"
+                >
+                  {{ t('style.title') }}
+                </p>
+                <div cdkMenuGroup>
+                  <button
+                    cdkMenuItemRadio
+                    type="button"
+                    class="menu-item"
+                    [cdkMenuItemChecked]="!cv.style"
+                    (cdkMenuItemTriggered)="store.setStyle(null)"
+                  >
+                    <app-icon class="size-4 text-muted" name="layout" />
+                    <span class="min-w-0 flex-1 truncate">{{
+                      t('style.gallery', { name: t('templates.names.' + cv.template + '.name') })
+                    }}</span>
+                    @if (!cv.style) {
+                      <app-icon class="size-4 text-accent" name="check" [strokeWidth]="2.5" />
+                    }
+                  </button>
+                  @for (style of styles(); track style.id) {
+                    <button
+                      cdkMenuItemRadio
+                      type="button"
+                      class="menu-item"
+                      [cdkMenuItemChecked]="cv.style?.id === style.id"
+                      (cdkMenuItemTriggered)="store.setStyle(style)"
+                    >
+                      <app-icon class="size-4 text-accent" name="palette" />
+                      <span class="min-w-0 flex-1 truncate">{{ style.name }}</span>
+                      @if (cv.style?.id === style.id) {
+                        <app-icon class="size-4 text-accent" name="check" [strokeWidth]="2.5" />
+                      }
+                    </button>
+                  }
+                </div>
+                @if (!styles().length) {
+                  <p class="px-2.5 py-1.5 text-xs text-muted">{{ t('style.empty') }}</p>
+                }
+                <div class="my-1.5 border-t border-line"></div>
+                <button
+                  cdkMenuItem
+                  type="button"
+                  class="menu-item"
+                  (cdkMenuItemTriggered)="customizeCss()"
+                >
+                  <app-icon class="size-4 text-accent" name="code" />
+                  <span>
+                    <span class="block font-semibold">{{ t('style.css') }}</span>
+                    <span class="block text-xs text-muted">{{ t('style.cssHint') }}</span>
+                  </span>
+                </button>
+                <a cdkMenuItem class="menu-item" routerLink="/studio" [queryParams]="{ cv: cv.id }">
+                  <app-icon class="size-4 text-accent" name="shapes" />
+                  <span>
+                    <span class="block font-semibold">{{ t('style.studio') }}</span>
+                    <span class="block text-xs text-muted">{{ t('style.studioHint') }}</span>
+                  </span>
+                </a>
               </div>
             </ng-template>
 
@@ -443,7 +524,8 @@
                 </button>
                 @if (stepIndex() < steps().length - 1) {
                   <button type="button" class="btn btn-primary" (click)="goToStep(stepIndex() + 1)">
-                    {{ t('guided.next') }}<app-icon class="size-4 rtl:-scale-x-100" name="arrowRight" />
+                    {{ t('guided.next')
+                    }}<app-icon class="size-4 rtl:-scale-x-100" name="arrowRight" />
                   </button>
                 }
               </div>

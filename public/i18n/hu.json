@@ -6,7 +6,8 @@
     "privacy": "Adatvédelem",
     "analyze": "Önéletrajz tesztelése",
     "editor": "Önéletrajzom elkészítése",
-    "skipToContent": "Ugrás a tartalomra"
+    "skipToContent": "Ugrás a tartalomra",
+    "studio": "Stílusstúdió"
   },
   "theme": {
     "label": "Téma",
@@ -29,7 +30,8 @@
     "legalNotice": "Jogi nyilatkozat",
     "terms": "Felhasználási feltételek",
     "privacy": "Adatvédelmi irányelvek",
-    "accessibility": "Akadálymentességi nyilatkozat"
+    "accessibility": "Akadálymentességi nyilatkozat",
+    "studio": "Stílusstúdió"
   },
   "seo": {
     "home": "Készítsen ingyen önéletrajzot, amellyel behívják interjúra: 72 sablon, hozzáillő motivációs levél, igazítás minden hirdetéshez és ATS-ellenőrzés. Regisztráció nélkül, adatai az eszközén maradnak",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 sablon közül választhat",
         "letter": "Hozzáillő motivációs levél",
-        "private": "Adatai Önnél maradnak"
+        "private": "Adatai Önnél maradnak",
+        "studio": "Vagy saját design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Meg kell említenem a fogyatékosságomat?",
           "a": "Soha nem kötelező. Ha szeretné, a szerkesztő felajánlja az önéletrajz országában elfogadott megfogalmazást (RQTH Franciaországban, categorie protette Olaszországban…), az elérhetőségeknél, az önéletrajz végén vagy csak a levélben. Egyes változatokban megtarthatja, másokban nem"
+        },
+        "design": {
+          "q": "Készíthetek saját önéletrajz-designt?",
+          "a": "Igen. A stílusstúdióban blokkokat rakhat össze (fejléc, címek, tapasztalat, oszlopok), díszítő formákat helyezhet el, és színeket, betűtípusokat választhat, kód nélkül. Ha ismeri a CSS-t, a sajátját is beillesztheti. A stílus másolással és beillesztéssel osztható meg, az önéletrajz adatai nélkül. Ha pedig nem szeretne fényképet, egy ikon vagy a monogramja kerülhet a helyére"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Egyszerre egy rész, egyszerű nyelvű tanáccsal, egészen a PDF letöltéséig"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stílusstúdió",
+      "title": "Egyik sablon sem illik önhöz? Készítse el a sajátját",
+      "text": "Rakja össze a designját, mint egy építőjátékot: válasszon blokkokat, helyezzen el formákat, cserélje a színeket. Egyetlen sor kód nélkül, és a jelentkezéseket szűrő programok továbbra is helyesen olvassák",
+      "points": {
+        "blocks": {
+          "title": "Összerakható blokkok",
+          "text": "Fejléc, címek, tapasztalat, készségek, oszlopok: minden blokk egy kattintással kiválasztható a vázlata alapján"
+        },
+        "shapes": {
+          "title": "Elhelyezhető formák",
+          "text": "Körök, foltok, hullámok vagy csíkok, amelyeket az oldalon húzhat. Díszítenek, de nem zavarják az olvasást"
+        },
+        "css": {
+          "title": "Saját CSS, ha szeretné",
+          "text": "Ismeri a CSS-t? Illessze be a sajátját a stúdió vásznára vagy egy galériasablonra: csak az önéletrajzot érinti"
+        },
+        "share": {
+          "title": "Megosztás másolással és beillesztéssel",
+          "text": "A stílusa elfér egy rövid kódban, amelyet továbbküldhet. Nincs benne semmilyen adat az önéletrajzából"
+        }
+      },
+      "icon": "Ikon fénykép helyett",
+      "cta": "Saját stílus készítése"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "A megjelölés nem jelenik meg az önéletrajzban. A Levél fülön egy gomb kész mondatot illeszt be",
         "pros": "Mellette: az elkötelezett munkáltatók (befogadási programok, kvóták) hamarabb észreveszik, és könnyebb az alkalmazkodásról beszélni",
         "cons": "Ellene: egyes toborzóknak még vannak előítéleteik. Később is szóba hozhatja, az interjún vagy a felvétel után, vagy soha"
+      },
+      "photoIcon": "Ikon",
+      "photoIconTitle": "Ikon fénykép helyett",
+      "photoIconHint": "A kiemelőszínnel rajzolva. Semmit sem árul el önről, ezért az angol önéletrajzokon is megmarad",
+      "avatars": {
+        "user": "Sziluett",
+        "briefcase": "Aktatáska",
+        "graduation": "Diplomasapka",
+        "code": "Kód",
+        "palette": "Paletta",
+        "camera": "Fényképezőgép",
+        "music": "Zene",
+        "heart": "Szív",
+        "leaf": "Levél",
+        "rocket": "Rakéta",
+        "chefHat": "Szakácssapka",
+        "wrench": "Csavarkulcs",
+        "stethoscope": "Sztetoszkóp",
+        "book": "Könyv",
+        "lightbulb": "Villanykörte",
+        "initials": "Monogram"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Adjon meg 2-3 hobbit: segítenek beszélgetést kezdeni az interjún",
         "finish": "Válasszon egy tetsző sablont, majd töltse le az önéletrajzot PDF-ben. Bármikor visszatérhet módosítani"
       }
+    },
+    "style": {
+      "button": "Saját stílus",
+      "title": "Az önéletrajz stílusa",
+      "gallery": "Sablon a galériából: {{name}}",
+      "empty": "Még nincs saját stílus",
+      "css": "Testreszabás CSS-sel",
+      "cssHint": "Saját CSS a jelenlegi sablonon",
+      "cssName": "{{name}} testreszabva",
+      "studio": "Stílusstúdió",
+      "studioHint": "Saját design blokkokból és formákból, kód nélkül"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Alapértelmezett megjelenítés",
     "note": "Ezek a beállítások a felületet változtatják, soha a kinyomtatott önéletrajzot"
+  },
+  "studio": {
+    "title": "Stílusstúdió",
+    "subtitle": "Készítse el saját önéletrajz-designját: blokkok és formák, amelyeket kód nélkül rakhat össze, vagy saját CSS. Utána ossza meg JSON-kódként",
+    "backToCv": "Vissza az önéletrajzhoz",
+    "notFound": "Ez a stílus nem létezik, vagy törölték",
+    "points": {
+      "blocks": "Összerakható blokkok",
+      "shapes": "Elhelyezhető formák",
+      "css": "Saját CSS",
+      "share": "Megosztás JSON-ként"
+    },
+    "list": {
+      "new": "Új stílus",
+      "emptyTitle": "Még nincsenek stílusok",
+      "emptyText": "Kezdjen üres oldallal vagy egy kiindulóponttal, majd igazítsa az egyes blokkokat",
+      "open": "Megnyitás",
+      "actions": "Műveletek",
+      "duplicate": "Másolat készítése",
+      "delete": "Törlés",
+      "deleteTitle": "Törli a(z) „{{name}}” stílust?",
+      "deleteText": "Az ezt használó önéletrajzok megtartják mostani kinézetüket",
+      "copySuffix": "(másolat)",
+      "updated": "Szerkesztve: {{date}}",
+      "usedBy": "Ezt használó önéletrajzok: {{count}}",
+      "hint": "A stílusai ebben a böngészőben maradnak. Minden önéletrajz megőrzi stílusa másolatát, így a mentésekben is teljes"
+    },
+    "presets": {
+      "blank": "Üres oldal",
+      "band": "Sáv",
+      "sidebar": "Oldalsáv",
+      "organic": "Lágy formák",
+      "timeline": "Idővonal"
+    },
+    "toolbar": {
+      "back": "Saját stílusok",
+      "name": "A stílus neve",
+      "share": "Megosztás",
+      "use": "Használat önéletrajzhoz",
+      "applyBack": "Alkalmazás az önéletrajzra",
+      "noCv": "Még nincs önéletrajz",
+      "applied": "Stílus alkalmazva: „{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blokkok",
+      "shapes": "Formák",
+      "colors": "Színek",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Kiindulópont",
+      "studio": "A stúdió vászna",
+      "studioHint": "Rakjon össze blokkokat és helyezzen el formákat",
+      "template": "Sablon a galériából",
+      "templateHint": "A blokkok és formák csak a stúdió vásznán érhetők el. Ezt a sablont a CSS lapon alakíthatja"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Oszlopok",
+        "single": "Egy oszlop",
+        "sidebarLeft": "Oldalsáv"
+      },
+      "header": {
+        "label": "Fejléc",
+        "left": "Klasszikus",
+        "center": "Középre igazított",
+        "band": "Sáv",
+        "card": "Elérhetőségi doboz"
+      },
+      "headings": {
+        "label": "Szakaszcímek",
+        "underline": "Aláhúzott",
+        "bar": "Csík",
+        "pill": "Kapszula",
+        "caps": "Nagybetűs",
+        "boxed": "Keretes",
+        "line": "Vonal"
+      },
+      "entries": {
+        "label": "Tapasztalat és tanulmányok",
+        "classic": "Klasszikus",
+        "timeline": "Idővonal",
+        "cards": "Kártyák",
+        "datesLeft": "Dátumok balra"
+      },
+      "skills": {
+        "label": "Készségek",
+        "chips": "Címkék",
+        "inline": "Egy sorban",
+        "grid": "Rács"
+      },
+      "languages": {
+        "label": "Nyelvek",
+        "meter": "Mérő",
+        "text": "Szöveg"
+      },
+      "photo": {
+        "label": "Fénykép",
+        "circle": "Kerek",
+        "rounded": "Lekerekített",
+        "square": "Szögletes",
+        "hidden": "Rejtett"
+      }
+    },
+    "shapes": {
+      "add": "Forma hozzáadása",
+      "hint": "A formák a szöveg mögött vannak: díszítenek, de nem zavarják az ATS-olvasást",
+      "drag": "Húzza a formákat az oldalon, vagy mozgassa őket a nyílbillentyűkkel",
+      "onPage": "Formák az oldalon",
+      "empty": "Még nincs forma az oldalon",
+      "color": "Szín",
+      "size": "Méret",
+      "rotate": "Elforgatás",
+      "alpha": "Erősség",
+      "x": "Vízszintes",
+      "y": "Függőleges",
+      "duplicate": "Másolat készítése",
+      "remove": "Törlés",
+      "kinds": {
+        "circle": "Kör",
+        "blob": "Folt",
+        "square": "Négyzet",
+        "triangle": "Háromszög",
+        "ring": "Gyűrű",
+        "wave": "Hullámok",
+        "stripes": "Csíkok",
+        "dots": "Pöttyök"
+      },
+      "colors": {
+        "accent": "Kiemelés",
+        "soft": "Világos kiemelés",
+        "ink": "Szöveg"
+      }
+    },
+    "colors": {
+      "accentCv": "Az önéletrajzé",
+      "accentFixed": "Rögzített szín",
+      "paper": "Oldalháttér",
+      "background": "Háttér",
+      "text": "Szöveg",
+      "contrast": "Alacsony kontraszt: a szöveg nehezen olvasható lehet"
+    },
+    "css": {
+      "label": "Saját CSS",
+      "hint": "Csak az önéletrajzra vonatkozik, azonnal. Az importok és a külső címek törlődnek. Ha a sablon szabálya nyer, adja hozzá: !important",
+      "rules": "Alkalmazott szabályok: {{count}}",
+      "removed": "Biztonsága érdekében eltávolítva: {{count}}",
+      "example": "Példa beszúrása",
+      "warnings": "Figyelem az ATS-olvasásra",
+      "warning": {
+        "order": "{{property}}: a szöveg rossz sorrendben olvasható be",
+        "shadow": "az árnyék kétszer írja a szöveget a PDF-be",
+        "content": "a CSS-sel hozzáadott szöveget a robotok elolvassák"
+      },
+      "reference": "Elérhető osztályok és változók",
+      "referenceStudio": "A stúdió vásznának állandó osztályai:",
+      "referenceTemplate": "Galériasablonnál az előnézet vizsgálatával találja meg az osztályokat. Közös változók:"
+    },
+    "preview": {
+      "label": "Előnézet ezzel:",
+      "sample": "A minta-önéletrajz"
+    },
+    "share": {
+      "title": "Stílus megosztása",
+      "text": "Ez a JSON-kód a teljes stílust tartalmazza (blokkok, formák, színek és CSS), de semmilyen adatot az önéletrajzából. A stílusstúdióban importálható",
+      "copy": "Kód másolása",
+      "copied": "Kód kimásolva",
+      "copyError": "Nem sikerült másolni: jelölje ki a kódot, és másolja",
+      "download": "Letöltés (.json)",
+      "close": "Bezárás",
+      "importTitle": "Stílus importálása",
+      "importText": "Illessze be egy stílus JSON-kódját, vagy válasszon .json-fájlt",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Fájl kiválasztása",
+      "importAction": "Importálás",
+      "imported": "„{{name}}” stílus importálva",
+      "error": {
+        "invalidJson": "Ez a szöveg nem érvényes JSON",
+        "notAStyle": "Ez a kód nem LocalATSCV-stílus",
+        "newerVersion": "Ez a stílus a LocalATSCV egy újabb verziójából származik: frissítse az alkalmazást"
+      }
+    }
   }
 }

@@ -6,7 +6,8 @@
     "privacy": "隐私",
     "analyze": "测试我的简历",
     "editor": "制作我的简历",
-    "skipToContent": "跳到正文"
+    "skipToContent": "跳到正文",
+    "studio": "样式工作室"
   },
   "theme": {
     "label": "主题",
@@ -29,7 +30,8 @@
     "legalNotice": "法律声明",
     "terms": "使用条款",
     "privacy": "隐私政策",
-    "accessibility": "无障碍声明"
+    "accessibility": "无障碍声明",
+    "studio": "样式工作室"
   },
   "seo": {
     "home": "免费制作让你拿到面试的简历：72 款模板、风格统一的求职信、针对每个职位调整以及 ATS 检查。无需注册，数据只留在你的设备上",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 款模板任选",
         "letter": "风格统一的求职信",
-        "private": "数据只留在你身边"
+        "private": "数据只留在你身边",
+        "studio": "或你自己的设计"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "我需要注明残障情况吗？",
           "a": "从来都不是必须的。如果你愿意，编辑器会提供简历所在国家认可的表述（法国的 RQTH、意大利的 categorie protette 等），可放在联系方式旁、简历末尾或仅在求职信中。你也可以只在部分版本中保留"
+        },
+        "design": {
+          "q": "我可以自己设计简历吗？",
+          "a": "可以。在样式工作室里，你可以组合区块（页眉、标题、工作经历、分栏）、摆放装饰图形、选择颜色和字体，无需代码。如果你会 CSS，也可以粘贴自己的代码。样式通过简单的复制粘贴即可分享，不含任何简历数据。如果不想放照片，还可以用图标或姓名首字母代替"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "一次一个部分，配有通俗易懂的建议，直到下载 PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "样式工作室",
+      "title": "没有一款模板像你？自己做一个",
+      "text": "像搭积木一样拼出你的设计：选择区块、放置图形、更换颜色。无需写一行代码，筛选简历的软件依然能正确读取",
+      "points": {
+        "blocks": {
+          "title": "可组合的区块",
+          "text": "页眉、标题、工作经历、技能、分栏：每个区块都能看着草图一键选择"
+        },
+        "shapes": {
+          "title": "可摆放的图形",
+          "text": "在页面上拖动圆形、色块、波浪或条纹。它们只做装饰，不影响阅读"
+        },
+        "css": {
+          "title": "想用 CSS 也可以",
+          "text": "会写 CSS？把你的 CSS 粘贴到工作室画布或模板库中的模板上，只会改变简历本身"
+        },
+        "share": {
+          "title": "复制粘贴即可分享",
+          "text": "你的样式只是一小段代码，可以直接发给别人，其中不含任何简历数据"
+        }
+      },
+      "icon": "用图标代替照片",
+      "cta": "创建我的样式"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "该说明不会出现在简历上。在“求职信”标签页中，一个按钮可添加现成的句子",
         "pros": "好处：重视多元的雇主（包容计划、残障就业比例）更快注意到你，工作上的调整也更容易沟通",
         "cons": "顾虑：部分招聘人员仍有偏见。你也可以之后再说，在面试时或入职后，或者不说"
+      },
+      "photoIcon": "图标",
+      "photoIconTitle": "用图标代替照片",
+      "photoIconHint": "以强调色绘制。它不透露关于你的任何信息，因此在英文简历中也会保留",
+      "avatars": {
+        "user": "人像",
+        "briefcase": "公文包",
+        "graduation": "学位帽",
+        "code": "代码",
+        "palette": "调色板",
+        "camera": "相机",
+        "music": "音乐",
+        "heart": "爱心",
+        "leaf": "树叶",
+        "rocket": "火箭",
+        "chefHat": "厨师帽",
+        "wrench": "扳手",
+        "stethoscope": "听诊器",
+        "book": "书本",
+        "lightbulb": "灯泡",
+        "initials": "姓名首字母"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "添加 2 到 3 个爱好：它们有助于在面试中打开话题",
         "finish": "选择一个你喜欢的模板，然后下载 PDF 简历。之后随时可以回来修改"
       }
+    },
+    "style": {
+      "button": "我的样式",
+      "title": "简历样式",
+      "gallery": "模板库中的模板：{{name}}",
+      "empty": "还没有创建样式",
+      "css": "用 CSS 自定义",
+      "cssHint": "在当前模板上使用你自己的 CSS",
+      "cssName": "{{name}}（自定义）",
+      "studio": "样式工作室",
+      "studioHint": "用区块和图形打造自己的设计，无需代码"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "默认显示",
     "note": "这些设置只改变界面，绝不会改变打印出来的简历"
+  },
+  "studio": {
+    "title": "样式工作室",
+    "subtitle": "打造属于你的简历设计：无需代码即可组合区块和图形，或使用你自己的 CSS，然后以 JSON 代码分享",
+    "backToCv": "返回简历",
+    "notFound": "该样式不存在或已被删除",
+    "points": {
+      "blocks": "可组合的区块",
+      "shapes": "可摆放的图形",
+      "css": "自定义 CSS",
+      "share": "以 JSON 分享"
+    },
+    "list": {
+      "new": "新建样式",
+      "emptyTitle": "还没有样式",
+      "emptyText": "从空白页或起点开始，再逐一调整每个区块",
+      "open": "打开",
+      "actions": "操作",
+      "duplicate": "复制",
+      "delete": "删除",
+      "deleteTitle": "删除样式“{{name}}”？",
+      "deleteText": "使用它的简历会保留当前外观",
+      "copySuffix": "（副本）",
+      "updated": "编辑于 {{date}}",
+      "usedBy": "使用它的简历：{{count}}",
+      "hint": "你的样式保存在此浏览器中。每份简历都保留其样式的副本，因此在备份中也是完整的"
+    },
+    "presets": {
+      "blank": "空白页",
+      "band": "横幅",
+      "sidebar": "侧栏",
+      "organic": "柔和图形",
+      "timeline": "时间轴"
+    },
+    "toolbar": {
+      "back": "我的样式",
+      "name": "样式名称",
+      "share": "分享",
+      "use": "用于简历",
+      "applyBack": "应用到简历",
+      "noCv": "还没有简历",
+      "applied": "样式已应用到“{{name}}”"
+    },
+    "tabs": {
+      "blocks": "区块",
+      "shapes": "图形",
+      "colors": "颜色",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "起点",
+      "studio": "工作室画布",
+      "studioHint": "组合区块并摆放图形",
+      "template": "模板库中的模板",
+      "templateHint": "区块和图形仅适用于工作室画布。请在 CSS 标签页中调整此模板"
+    },
+    "blocks": {
+      "layout": {
+        "label": "分栏",
+        "single": "单栏",
+        "sidebarLeft": "侧栏"
+      },
+      "header": {
+        "label": "页眉",
+        "left": "经典",
+        "center": "居中",
+        "band": "横幅",
+        "card": "联系方式框"
+      },
+      "headings": {
+        "label": "章节标题",
+        "underline": "下划线",
+        "bar": "竖条",
+        "pill": "胶囊",
+        "caps": "大写",
+        "boxed": "方框",
+        "line": "细线"
+      },
+      "entries": {
+        "label": "工作经历与教育背景",
+        "classic": "经典",
+        "timeline": "时间轴",
+        "cards": "卡片",
+        "datesLeft": "日期在左"
+      },
+      "skills": {
+        "label": "专业技能",
+        "chips": "标签",
+        "inline": "单行",
+        "grid": "网格"
+      },
+      "languages": {
+        "label": "语言能力",
+        "meter": "指示条",
+        "text": "文字"
+      },
+      "photo": {
+        "label": "照片",
+        "circle": "圆形",
+        "rounded": "圆角",
+        "square": "方形",
+        "hidden": "隐藏"
+      }
+    },
+    "shapes": {
+      "add": "添加图形",
+      "hint": "图形位于文字后方：起装饰作用，不影响 ATS 读取",
+      "drag": "在页面上拖动图形，或用方向键移动",
+      "onPage": "页面上的图形",
+      "empty": "页面上还没有图形",
+      "color": "颜色",
+      "size": "大小",
+      "rotate": "旋转",
+      "alpha": "浓度",
+      "x": "水平",
+      "y": "垂直",
+      "duplicate": "复制",
+      "remove": "删除",
+      "kinds": {
+        "circle": "圆",
+        "blob": "色块",
+        "square": "正方形",
+        "triangle": "三角形",
+        "ring": "圆环",
+        "wave": "波浪",
+        "stripes": "条纹",
+        "dots": "圆点"
+      },
+      "colors": {
+        "accent": "强调色",
+        "soft": "浅强调色",
+        "ink": "文字"
+      }
+    },
+    "colors": {
+      "accentCv": "跟随简历",
+      "accentFixed": "固定颜色",
+      "paper": "页面背景",
+      "background": "背景",
+      "text": "文字",
+      "contrast": "对比度低：文字可能难以阅读"
+    },
+    "css": {
+      "label": "你的 CSS",
+      "hint": "仅对简历实时生效。导入和外部地址会被移除。如果模板规则优先，请添加 !important",
+      "rules": "已应用的规则：{{count}}",
+      "removed": "为安全已移除：{{count}}",
+      "example": "插入示例",
+      "warnings": "注意 ATS 读取",
+      "warning": {
+        "order": "{{property}}：文字可能被按错误顺序读取",
+        "shadow": "阴影会让文字在 PDF 中写入两次",
+        "content": "用 CSS 添加的文字会被机器人读取"
+      },
+      "reference": "可用的类和变量",
+      "referenceStudio": "工作室画布的固定类：",
+      "referenceTemplate": "对于模板库中的模板，请检查预览以找到其类。通用变量："
+    },
+    "preview": {
+      "label": "预览所用",
+      "sample": "示例简历"
+    },
+    "share": {
+      "title": "分享样式",
+      "text": "这段 JSON 代码包含完整样式（区块、图形、颜色和 CSS），但不含你简历中的任何数据。可在样式工作室中导入",
+      "copy": "复制代码",
+      "copied": "已复制代码",
+      "copyError": "无法复制：请选中代码后复制",
+      "download": "下载（.json）",
+      "close": "关闭",
+      "importTitle": "导入样式",
+      "importText": "粘贴样式的 JSON 代码，或选择一个 .json 文件",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "选择文件",
+      "importAction": "导入",
+      "imported": "已导入样式“{{name}}”",
+      "error": {
+        "invalidJson": "这段文本不是有效的 JSON",
+        "notAStyle": "这段代码不是 LocalATSCV 样式",
+        "newerVersion": "此样式来自更新版本的 LocalATSCV：请更新应用"
+      }
+    }
   }
 }

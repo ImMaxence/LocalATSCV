@@ -1,4 +1,5 @@
 import { CvVersion, DISABILITY_ID, EntrySection, MasterCv, createVersion } from './cv.model';
+import { createStyle } from './cv-style';
 import { resolveCv } from './resolve-cv';
 import { createSampleCv } from './sample-cv';
 
@@ -32,6 +33,22 @@ describe('resolveCv', () => {
     expect(resolved.sections.map((s) => s.kind)).not.toContain('interests');
     expect(resolvedExperience.items.map((e) => e.id)).toEqual([firstJob.id]);
     expect(resolvedExperience.items[0].bullets.length).toBe(firstJob.bullets.length - 1);
+  });
+
+  it('garde l’icône choisie à la place de la photo sur un CV en anglais', () => {
+    const english = {
+      ...cv,
+      language: 'en' as const,
+      profile: { ...cv.profile, photoIcon: 'leaf' as const },
+    };
+    const resolved = resolveCv(english, null);
+    expect(resolved.profile.photoId).toBeNull();
+    expect(resolved.profile.photoIcon).toBe('leaf');
+  });
+
+  it('transmet le style personnel du CV', () => {
+    const style = { ...createStyle('Test'), base: 'aurora' as const };
+    expect(resolveCv({ ...cv, style }, null).style).toBe(style);
   });
 
   it('ne modifie jamais le Master CV', () => {

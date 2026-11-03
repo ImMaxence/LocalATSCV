@@ -6,7 +6,8 @@
     "privacy": "개인정보 보호",
     "analyze": "이력서 테스트",
     "editor": "이력서 만들기",
-    "skipToContent": "본문으로 건너뛰기"
+    "skipToContent": "본문으로 건너뛰기",
+    "studio": "스타일 스튜디오"
   },
   "theme": {
     "label": "테마",
@@ -29,7 +30,8 @@
     "legalNotice": "법적 고지",
     "terms": "이용약관",
     "privacy": "개인정보 처리방침",
-    "accessibility": "접근성 선언문"
+    "accessibility": "접근성 선언문",
+    "studio": "스타일 스튜디오"
   },
   "seo": {
     "home": "면접으로 이어지는 이력서를 무료로 만드세요. 템플릿 72종, 디자인을 맞춘 자기소개서, 공고별 맞춤, ATS 점검까지. 가입 없이, 데이터는 내 기기에만 남습니다",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72가지 템플릿 선택",
         "letter": "디자인을 맞춘 자기소개서",
-        "private": "데이터는 내 기기에만"
+        "private": "데이터는 내 기기에만",
+        "studio": "나만의 디자인도"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "장애를 기재해야 하나요?",
           "a": "절대 의무가 아닙니다. 원하면 편집기가 이력서 국가에서 인정되는 표현(프랑스의 RQTH, 이탈리아의 categorie protette 등)을 제안하며, 연락처와 함께, 이력서 끝에, 또는 자기소개서에만 넣을 수 있습니다. 일부 버전에만 남길 수도 있습니다"
+        },
+        "design": {
+          "q": "이력서 디자인을 직접 만들 수 있나요?",
+          "a": "네. 스타일 스튜디오에서 블록(머리글, 제목, 경력, 단 구성)을 조합하고, 장식 도형을 놓고, 색과 글꼴을 코드 없이 고를 수 있습니다. CSS를 안다면 직접 쓴 CSS도 붙여 넣을 수 있습니다. 스타일은 간단한 복사와 붙여 넣기로 공유되며 이력서 데이터는 포함되지 않습니다. 사진을 넣고 싶지 않다면 아이콘이나 이니셜이 그 자리를 대신합니다"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "한 번에 한 항목씩, 쉬운 말로 된 조언과 함께 PDF 다운로드까지"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "스타일 스튜디오",
+      "title": "마음에 드는 템플릿이 없나요? 직접 만드세요",
+      "text": "블록 장난감처럼 디자인을 조립하세요. 블록을 고르고, 도형을 놓고, 색을 바꾸면 됩니다. 코드는 한 줄도 필요 없고, 지원서를 선별하는 프로그램도 여전히 올바르게 읽습니다",
+      "points": {
+        "blocks": {
+          "title": "조합할 블록",
+          "text": "머리글, 제목, 경력, 기술, 단 구성: 모든 블록을 스케치를 보며 한 번의 클릭으로 고릅니다"
+        },
+        "shapes": {
+          "title": "배치할 도형",
+          "text": "원, 얼룩, 물결, 줄무늬를 페이지 위에서 끌어 놓으세요. 읽기를 방해하지 않고 꾸며 줍니다"
+        },
+        "css": {
+          "title": "원한다면 나만의 CSS",
+          "text": "CSS를 아시나요? 스튜디오 캔버스나 갤러리 템플릿에 붙여 넣으세요. 이력서만 바뀝니다"
+        },
+        "share": {
+          "title": "복사해 붙여 넣어 공유",
+          "text": "스타일은 짧은 코드 하나에 담겨 바로 보낼 수 있습니다. 이력서 데이터는 전혀 들어 있지 않습니다"
+        }
+      },
+      "icon": "사진 대신 아이콘",
+      "cta": "내 스타일 만들기"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "이력서에는 표시되지 않습니다. 자기소개서 탭의 버튼으로 준비된 문장을 추가할 수 있습니다",
         "pros": "장점: 장애인 고용에 적극적인 기업(포용 프로그램, 의무고용률)이 더 빨리 찾아내고, 근무 조정도 더 쉽게 논의할 수 있습니다",
         "cons": "단점: 아직 편견을 가진 채용 담당자도 있습니다. 면접이나 입사 후에 말하거나, 말하지 않을 수도 있습니다"
+      },
+      "photoIcon": "아이콘",
+      "photoIconTitle": "사진 대신 아이콘",
+      "photoIconHint": "강조 색상으로 그려집니다. 당신에 대해 아무것도 드러내지 않으므로 영문 이력서에도 표시됩니다",
+      "avatars": {
+        "user": "사람",
+        "briefcase": "서류 가방",
+        "graduation": "학사모",
+        "code": "코드",
+        "palette": "팔레트",
+        "camera": "카메라",
+        "music": "음악",
+        "heart": "하트",
+        "leaf": "나뭇잎",
+        "rocket": "로켓",
+        "chefHat": "요리사 모자",
+        "wrench": "렌치",
+        "stethoscope": "청진기",
+        "book": "책",
+        "lightbulb": "전구",
+        "initials": "이니셜"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "취미 2~3개를 추가하세요: 면접에서 대화를 시작하는 데 도움이 됩니다",
         "finish": "마음에 드는 템플릿을 고르고 이력서를 PDF로 내려받으세요. 언제든 돌아와 수정할 수 있습니다"
       }
+    },
+    "style": {
+      "button": "내 스타일",
+      "title": "이력서 스타일",
+      "gallery": "갤러리 템플릿: {{name}}",
+      "empty": "아직 만든 스타일이 없습니다",
+      "css": "CSS로 꾸미기",
+      "cssHint": "현재 템플릿에 나만의 CSS",
+      "cssName": "{{name}} 사용자 지정",
+      "studio": "스타일 스튜디오",
+      "studioHint": "블록과 도형으로 만드는 나만의 디자인, 코드 없이"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "기본 화면",
     "note": "이 설정은 화면만 바꾸며, 인쇄되는 이력서는 바꾸지 않습니다"
+  },
+  "studio": {
+    "title": "스타일 스튜디오",
+    "subtitle": "나만의 이력서 디자인을 만드세요: 코드 없이 조합하는 블록과 도형, 또는 직접 쓴 CSS. 그런 다음 JSON 코드로 공유하세요",
+    "backToCv": "이력서로 돌아가기",
+    "notFound": "이 스타일이 없거나 삭제되었습니다",
+    "points": {
+      "blocks": "조합할 블록",
+      "shapes": "배치할 도형",
+      "css": "사용자 CSS",
+      "share": "JSON으로 공유"
+    },
+    "list": {
+      "new": "새 스타일",
+      "emptyTitle": "아직 스타일이 없습니다",
+      "emptyText": "빈 페이지나 시작점에서 출발해 블록을 하나씩 조정하세요",
+      "open": "열기",
+      "actions": "작업",
+      "duplicate": "복제",
+      "delete": "삭제",
+      "deleteTitle": "스타일 ‘{{name}}’을(를) 삭제할까요?",
+      "deleteText": "이 스타일을 쓰는 이력서는 현재 모습을 유지합니다",
+      "copySuffix": "(사본)",
+      "updated": "{{date}}에 수정됨",
+      "usedBy": "이 스타일을 쓰는 이력서: {{count}}",
+      "hint": "스타일은 이 브라우저에 저장됩니다. 각 이력서는 스타일 사본을 보관하므로 백업에서도 완전합니다"
+    },
+    "presets": {
+      "blank": "빈 페이지",
+      "band": "배너",
+      "sidebar": "사이드바",
+      "organic": "부드러운 도형",
+      "timeline": "타임라인"
+    },
+    "toolbar": {
+      "back": "내 스타일",
+      "name": "스타일 이름",
+      "share": "공유",
+      "use": "이력서에 사용",
+      "applyBack": "이력서에 적용",
+      "noCv": "아직 이력서가 없습니다",
+      "applied": "‘{{name}}’에 스타일을 적용했습니다"
+    },
+    "tabs": {
+      "blocks": "블록",
+      "shapes": "도형",
+      "colors": "색상",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "시작점",
+      "studio": "스튜디오 캔버스",
+      "studioHint": "블록을 조합하고 도형을 배치하세요",
+      "template": "갤러리 템플릿",
+      "templateHint": "블록과 도형은 스튜디오 캔버스에서만 쓸 수 있습니다. 이 템플릿은 CSS 탭에서 다듬으세요"
+    },
+    "blocks": {
+      "layout": {
+        "label": "단",
+        "single": "1단",
+        "sidebarLeft": "사이드바"
+      },
+      "header": {
+        "label": "머리글",
+        "left": "클래식",
+        "center": "가운데",
+        "band": "배너",
+        "card": "연락처 상자"
+      },
+      "headings": {
+        "label": "섹션 제목",
+        "underline": "밑줄",
+        "bar": "막대",
+        "pill": "알약형",
+        "caps": "대문자",
+        "boxed": "상자",
+        "line": "괘선"
+      },
+      "entries": {
+        "label": "경력과 학력",
+        "classic": "클래식",
+        "timeline": "타임라인",
+        "cards": "카드",
+        "datesLeft": "날짜 왼쪽"
+      },
+      "skills": {
+        "label": "보유 기술",
+        "chips": "태그",
+        "inline": "한 줄로",
+        "grid": "그리드"
+      },
+      "languages": {
+        "label": "외국어",
+        "meter": "게이지",
+        "text": "텍스트"
+      },
+      "photo": {
+        "label": "사진",
+        "circle": "원형",
+        "rounded": "둥근 모서리",
+        "square": "사각형",
+        "hidden": "숨김"
+      }
+    },
+    "shapes": {
+      "add": "도형 추가",
+      "hint": "도형은 글자 뒤에 놓여 ATS 읽기를 방해하지 않고 꾸며 줍니다",
+      "drag": "도형을 페이지에서 끌거나 화살표 키로 옮기세요",
+      "onPage": "페이지의 도형",
+      "empty": "아직 페이지에 도형이 없습니다",
+      "color": "색상",
+      "size": "크기",
+      "rotate": "회전",
+      "alpha": "강도",
+      "x": "가로",
+      "y": "세로",
+      "duplicate": "복제",
+      "remove": "삭제",
+      "kinds": {
+        "circle": "원",
+        "blob": "얼룩",
+        "square": "정사각형",
+        "triangle": "삼각형",
+        "ring": "고리",
+        "wave": "물결",
+        "stripes": "줄무늬",
+        "dots": "점"
+      },
+      "colors": {
+        "accent": "강조",
+        "soft": "옅은 강조",
+        "ink": "글자"
+      }
+    },
+    "colors": {
+      "accentCv": "이력서 색상",
+      "accentFixed": "고정 색상",
+      "paper": "페이지 배경",
+      "background": "배경",
+      "text": "글자",
+      "contrast": "대비가 낮아 글자를 읽기 어려울 수 있습니다"
+    },
+    "css": {
+      "label": "내 CSS",
+      "hint": "이력서에만 바로 적용됩니다. 가져오기와 외부 주소는 제거됩니다. 템플릿 규칙이 우선하면 !important를 붙이세요",
+      "rules": "적용된 규칙: {{count}}",
+      "removed": "보안을 위해 제거됨: {{count}}",
+      "example": "예시 넣기",
+      "warnings": "ATS 읽기에 주의",
+      "warning": {
+        "order": "{{property}}: 글자가 잘못된 순서로 읽힐 수 있습니다",
+        "shadow": "그림자는 PDF에 글자를 두 번 씁니다",
+        "content": "CSS로 추가한 글자는 로봇이 읽습니다"
+      },
+      "reference": "사용 가능한 클래스와 변수",
+      "referenceStudio": "스튜디오 캔버스의 고정 클래스:",
+      "referenceTemplate": "갤러리 템플릿에서는 미리 보기를 검사해 클래스를 찾으세요. 공통 변수:"
+    },
+    "preview": {
+      "label": "미리 보기 대상",
+      "sample": "예시 이력서"
+    },
+    "share": {
+      "title": "스타일 공유",
+      "text": "이 JSON 코드에는 스타일 전체(블록, 도형, 색상, CSS)가 담기지만 이력서 데이터는 전혀 없습니다. 스타일 스튜디오에서 가져올 수 있습니다",
+      "copy": "코드 복사",
+      "copied": "코드를 복사했습니다",
+      "copyError": "복사하지 못했습니다: 코드를 선택해 복사하세요",
+      "download": "다운로드(.json)",
+      "close": "닫기",
+      "importTitle": "스타일 가져오기",
+      "importText": "스타일의 JSON 코드를 붙여 넣거나 .json 파일을 고르세요",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "파일 선택",
+      "importAction": "가져오기",
+      "imported": "스타일 ‘{{name}}’을(를) 가져왔습니다",
+      "error": {
+        "invalidJson": "이 텍스트는 올바른 JSON이 아닙니다",
+        "notAStyle": "이 코드는 LocalATSCV 스타일이 아닙니다",
+        "newerVersion": "이 스타일은 더 새로운 LocalATSCV 버전에서 만들어졌습니다: 앱을 업데이트하세요"
+      }
+    }
   }
 }

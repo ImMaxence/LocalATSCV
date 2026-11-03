@@ -6,7 +6,8 @@
     "privacy": "Privacy",
     "analyze": "Testa il mio CV",
     "editor": "Crea il mio CV",
-    "skipToContent": "Vai al contenuto"
+    "skipToContent": "Vai al contenuto",
+    "studio": "Studio degli stili"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Note legali",
     "terms": "Condizioni d'uso",
     "privacy": "Informativa sulla privacy",
-    "accessibility": "Dichiarazione di accessibilità"
+    "accessibility": "Dichiarazione di accessibilità",
+    "studio": "Studio degli stili"
   },
   "seo": {
     "home": "Crea gratis un CV che ti porta al colloquio: 72 modelli, lettera di presentazione abbinata, adattamento a ogni offerta e controllo ATS. Senza registrazione, i tuoi dati restano sul tuo dispositivo",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 modelli tra cui scegliere",
         "letter": "Lettera di presentazione abbinata",
-        "private": "I tuoi dati restano a casa tua"
+        "private": "I tuoi dati restano a casa tua",
+        "studio": "O il tuo design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Devo indicare la mia disabilità?",
           "a": "Non è mai obbligatorio. Se lo desideri, l'editor propone la formula riconosciuta nel paese del CV (categorie protette in Italia, RQTH in Francia…), da mettere con i contatti, in fondo al CV o solo nella lettera. Puoi anche tenerla in alcune versioni e non in altre"
+        },
+        "design": {
+          "q": "Posso creare un design di CV tutto mio?",
+          "a": "Sì. Lo studio degli stili permette di combinare blocchi (intestazione, titoli, esperienze, colonne), aggiungere forme decorative e scegliere colori e caratteri, senza codice. Se conosci il CSS, puoi anche incollare il tuo. Uno stile si condivide con un semplice copia e incolla, senza alcun dato del tuo CV. E se preferisci non mettere la foto, un'icona o le tue iniziali possono prenderne il posto"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Una sezione alla volta, con un consiglio in linguaggio semplice, fino al download del PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio degli stili",
+      "title": "Nessun modello ti somiglia? Crea il tuo",
+      "text": "Componi il tuo design come un gioco di costruzioni: scegli i blocchi, aggiungi forme, cambia i colori. Senza una riga di codice e sempre letto correttamente dai software che selezionano le candidature",
+      "points": {
+        "blocks": {
+          "title": "Blocchi da combinare",
+          "text": "Intestazione, titoli, esperienze, competenze, colonne: ogni blocco si sceglie con un clic, guardandone lo schizzo"
+        },
+        "shapes": {
+          "title": "Forme da posizionare",
+          "text": "Cerchi, macchie, onde o righe da trascinare sulla pagina. Decorano senza disturbare la lettura"
+        },
+        "css": {
+          "title": "Il tuo CSS, se vuoi",
+          "text": "Conosci il CSS? Incolla il tuo sulla tela dello studio o su un modello della galleria: tocca solo il CV"
+        },
+        "share": {
+          "title": "Condiviso con un copia e incolla",
+          "text": "Il tuo stile sta in un piccolo codice da inviare a chi vuoi. Non contiene nessun dato del tuo CV"
+        }
+      },
+      "icon": "Un'icona al posto della foto",
+      "cta": "Crea il mio stile"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "La dicitura non compare nel CV. Nella scheda Lettera, un pulsante aggiunge una frase pronta",
         "pros": "A favore: le aziende attente (diversity, collocamento mirato) ti notano prima e gli adattamenti si discutono più facilmente",
         "cons": "Contro: alcuni selezionatori hanno ancora pregiudizi. Puoi anche parlarne più tardi, al colloquio o dopo l'assunzione, oppure mai"
+      },
+      "photoIcon": "Un'icona",
+      "photoIconTitle": "Un'icona al posto della foto",
+      "photoIconHint": "Disegnata nel colore d'accento. Non dice nulla di te, quindi resta visibile nei CV in inglese",
+      "avatars": {
+        "user": "Sagoma",
+        "briefcase": "Valigetta",
+        "graduation": "Tocco di laurea",
+        "code": "Codice",
+        "palette": "Tavolozza",
+        "camera": "Fotocamera",
+        "music": "Musica",
+        "heart": "Cuore",
+        "leaf": "Foglia",
+        "rocket": "Razzo",
+        "chefHat": "Cappello da chef",
+        "wrench": "Chiave inglese",
+        "stethoscope": "Stetoscopio",
+        "book": "Libro",
+        "lightbulb": "Lampadina",
+        "initials": "Iniziali"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Aggiungi 2 o 3 passioni: aiutano ad avviare la conversazione al colloquio",
         "finish": "Scegli un modello che ti piace, poi scarica il tuo CV in PDF. Potrai sempre tornare a modificarlo"
       }
+    },
+    "style": {
+      "button": "Il mio stile",
+      "title": "Stile del CV",
+      "gallery": "Modello della galleria: {{name}}",
+      "empty": "Nessuno stile creato per ora",
+      "css": "Personalizza con il CSS",
+      "cssHint": "Il tuo CSS sul modello attuale",
+      "cssName": "{{name}} personalizzato",
+      "studio": "Studio degli stili",
+      "studioHint": "Un design tutto tuo con blocchi e forme, senza codice"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Visualizzazione predefinita",
     "note": "Queste impostazioni cambiano l'interfaccia, mai il tuo CV stampato"
+  },
+  "studio": {
+    "title": "Studio degli stili",
+    "subtitle": "Crea il tuo design di CV: blocchi e forme da combinare senza codice, oppure il tuo CSS. Poi condividilo come codice JSON",
+    "backToCv": "Torna al CV",
+    "notFound": "Questo stile non esiste o è stato eliminato",
+    "points": {
+      "blocks": "Blocchi da combinare",
+      "shapes": "Forme da posizionare",
+      "css": "CSS personalizzato",
+      "share": "Condivisione in JSON"
+    },
+    "list": {
+      "new": "Nuovo stile",
+      "emptyTitle": "Ancora nessuno stile",
+      "emptyText": "Parti da una pagina bianca o da un punto di partenza, poi regola ogni blocco",
+      "open": "Apri",
+      "actions": "Azioni",
+      "duplicate": "Duplica",
+      "delete": "Elimina",
+      "deleteTitle": "Eliminare lo stile «{{name}}»?",
+      "deleteText": "I CV che lo usano mantengono l'aspetto attuale",
+      "copySuffix": "(copia)",
+      "updated": "Modificato il {{date}}",
+      "usedBy": "CV che lo usano: {{count}}",
+      "hint": "I tuoi stili restano in questo browser. Ogni CV conserva una copia del suo stile, così resta completo nei tuoi backup"
+    },
+    "presets": {
+      "blank": "Pagina bianca",
+      "band": "Fascia",
+      "sidebar": "Colonna",
+      "organic": "Forme morbide",
+      "timeline": "Cronologia"
+    },
+    "toolbar": {
+      "back": "I miei stili",
+      "name": "Nome dello stile",
+      "share": "Condividi",
+      "use": "Usa per un CV",
+      "applyBack": "Applica al CV",
+      "noCv": "Ancora nessun CV",
+      "applied": "Stile applicato a «{{name}}»"
+    },
+    "tabs": {
+      "blocks": "Blocchi",
+      "shapes": "Forme",
+      "colors": "Colori",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Punto di partenza",
+      "studio": "La tela dello studio",
+      "studioHint": "Combina blocchi e posiziona forme",
+      "template": "Un modello della galleria",
+      "templateHint": "Blocchi e forme sono riservati alla tela dello studio. Ritocca questo modello nella scheda CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Colonne",
+        "single": "Una colonna",
+        "sidebarLeft": "Colonna laterale"
+      },
+      "header": {
+        "label": "Intestazione",
+        "left": "Classica",
+        "center": "Centrata",
+        "band": "Fascia",
+        "card": "Contatti in riquadro"
+      },
+      "headings": {
+        "label": "Titoli delle sezioni",
+        "underline": "Sottolineato",
+        "bar": "Barra",
+        "pill": "Pillola",
+        "caps": "Maiuscole",
+        "boxed": "Riquadro",
+        "line": "Filetto"
+      },
+      "entries": {
+        "label": "Esperienze e formazione",
+        "classic": "Classico",
+        "timeline": "Cronologia",
+        "cards": "Schede",
+        "datesLeft": "Date a sinistra"
+      },
+      "skills": {
+        "label": "Competenze",
+        "chips": "Etichette",
+        "inline": "In linea",
+        "grid": "Griglia"
+      },
+      "languages": {
+        "label": "Lingue",
+        "meter": "Indicatore",
+        "text": "Testo"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Rotonda",
+        "rounded": "Arrotondata",
+        "square": "Quadrata",
+        "hidden": "Nascosta"
+      }
+    },
+    "shapes": {
+      "add": "Aggiungi una forma",
+      "hint": "Le forme stanno dietro il testo: decorano senza disturbare la lettura degli ATS",
+      "drag": "Trascina le forme sulla pagina o spostale con le frecce della tastiera",
+      "onPage": "Forme sulla pagina",
+      "empty": "Ancora nessuna forma sulla pagina",
+      "color": "Colore",
+      "size": "Dimensione",
+      "rotate": "Rotazione",
+      "alpha": "Intensità",
+      "x": "Orizzontale",
+      "y": "Verticale",
+      "duplicate": "Duplica",
+      "remove": "Elimina",
+      "kinds": {
+        "circle": "Cerchio",
+        "blob": "Macchia",
+        "square": "Quadrato",
+        "triangle": "Triangolo",
+        "ring": "Anello",
+        "wave": "Onde",
+        "stripes": "Righe",
+        "dots": "Punti"
+      },
+      "colors": {
+        "accent": "Accento",
+        "soft": "Accento chiaro",
+        "ink": "Testo"
+      }
+    },
+    "colors": {
+      "accentCv": "Quello del CV",
+      "accentFixed": "Colore fisso",
+      "paper": "Sfondo della pagina",
+      "background": "Sfondo",
+      "text": "Testo",
+      "contrast": "Contrasto basso: il testo potrebbe essere difficile da leggere"
+    },
+    "css": {
+      "label": "Il tuo CSS",
+      "hint": "Si applica solo al CV, in tempo reale. Import e indirizzi esterni vengono rimossi. Aggiungi !important se una regola del modello prevale",
+      "rules": "Regole applicate: {{count}}",
+      "removed": "Rimossi per la tua sicurezza: {{count}}",
+      "example": "Inserisci un esempio",
+      "warnings": "Attenzione alla lettura degli ATS",
+      "warning": {
+        "order": "{{property}}: il testo potrebbe essere letto in disordine",
+        "shadow": "un'ombra scrive il testo due volte nel PDF",
+        "content": "il testo aggiunto con il CSS viene letto dai robot"
+      },
+      "reference": "Classi e variabili disponibili",
+      "referenceStudio": "Classi stabili della tela dello studio:",
+      "referenceTemplate": "Su un modello della galleria, ispeziona l'anteprima per trovarne le classi. Variabili comuni:"
+    },
+    "preview": {
+      "label": "Anteprima con",
+      "sample": "Il CV di esempio"
+    },
+    "share": {
+      "title": "Condividi lo stile",
+      "text": "Questo codice JSON contiene tutto lo stile (blocchi, forme, colori e CSS), ma nessun dato del tuo CV. Si importa dallo studio degli stili",
+      "copy": "Copia il codice",
+      "copied": "Codice copiato",
+      "copyError": "Copia non riuscita: seleziona il codice e copialo",
+      "download": "Scarica (.json)",
+      "close": "Chiudi",
+      "importTitle": "Importa uno stile",
+      "importText": "Incolla il codice JSON di uno stile o scegli un file .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Scegli un file",
+      "importAction": "Importa",
+      "imported": "Stile «{{name}}» importato",
+      "error": {
+        "invalidJson": "Questo testo non è un JSON valido",
+        "notAStyle": "Questo codice non è uno stile di LocalATSCV",
+        "newerVersion": "Questo stile proviene da una versione più recente di LocalATSCV: aggiorna l'app"
+      }
+    }
   }
 }

@@ -6,7 +6,8 @@
     "privacy": "Gizlilik",
     "analyze": "CV'mi test et",
     "editor": "CV'mi oluştur",
-    "skipToContent": "İçeriğe geç"
+    "skipToContent": "İçeriğe geç",
+    "studio": "Stil stüdyosu"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Yasal bildirim",
     "terms": "Kullanım koşulları",
     "privacy": "Gizlilik politikası",
-    "accessibility": "Erişilebilirlik beyanı"
+    "accessibility": "Erişilebilirlik beyanı",
+    "studio": "Stil stüdyosu"
   },
   "seo": {
     "home": "Sizi mülakata taşıyan bir CV'yi ücretsiz oluşturun: 72 şablon, uyumlu ön yazı, her ilana uyarlama ve ATS kontrolü. Kayıt olmadan, verileriniz cihazınızda kalır",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "Seçebileceğiniz 72 şablon",
         "letter": "Uyumlu ön yazı",
-        "private": "Verileriniz sizde kalır"
+        "private": "Verileriniz sizde kalır",
+        "studio": "Ya da kendi tasarımınız"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Engelliliğimi belirtmeli miyim?",
           "a": "Asla zorunlu değildir. İsterseniz düzenleyici, özgeçmişinizin ülkesinde tanınan ifadeyi önerir (Fransa'da RQTH, İtalya'da categorie protette…); iletişim bilgilerinizle, özgeçmişin sonunda ya da yalnızca mektupta. Bazı sürümlerde tutup diğerlerinde kaldırabilirsiniz"
+        },
+        "design": {
+          "q": "Kendi CV tasarımımı oluşturabilir miyim?",
+          "a": "Evet. Stil stüdyosunda blokları (üst bilgi, başlıklar, deneyim, sütunlar) birleştirir, dekoratif şekiller yerleştirir, renk ve yazı tiplerini kod yazmadan seçersiniz. CSS biliyorsanız kendinizinkini de yapıştırabilirsiniz. Bir stil, CV'nizden hiçbir veri içermeden basit bir kopyala yapıştır ile paylaşılır. Fotoğraf koymak istemezseniz yerini bir simge ya da baş harfleriniz alabilir"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Her seferinde bir bölüm, sade dilde bir ipucuyla, PDF indirmeye kadar"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stil stüdyosu",
+      "title": "Hiçbir şablon size benzemiyor mu? Kendinizinkini yapın",
+      "text": "Tasarımınızı yapı taşlarıyla kurar gibi oluşturun: blokları seçin, şekiller yerleştirin, renkleri değiştirin. Tek satır kod olmadan ve başvuruları ayıklayan yazılımlar tarafından yine doğru okunarak",
+      "points": {
+        "blocks": {
+          "title": "Birleştirilecek bloklar",
+          "text": "Üst bilgi, başlıklar, deneyim, yetkinlikler, sütunlar: her blok taslağına bakarak tek tıkla seçilir"
+        },
+        "shapes": {
+          "title": "Yerleştirilecek şekiller",
+          "text": "Sayfada sürüklediğiniz daireler, lekeler, dalgalar ya da çizgiler. Okumayı engellemeden süslerler"
+        },
+        "css": {
+          "title": "İsterseniz kendi CSS'iniz",
+          "text": "CSS biliyor musunuz? Kendinizinkini stüdyo tuvaline ya da galerideki bir şablona yapıştırın: yalnızca CV'yi değiştirir"
+        },
+        "share": {
+          "title": "Kopyala yapıştır ile paylaşılır",
+          "text": "Stiliniz, gönderebileceğiniz kısa bir koda sığar. İçinde CV'nizden hiçbir veri yoktur"
+        }
+      },
+      "icon": "Fotoğraf yerine bir simge",
+      "cta": "Stilimi oluştur"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "İbare özgeçmişte görünmez. Mektup sekmesinde bir düğme hazır bir cümle ekler",
         "pros": "Artısı: kararlı işverenler (kapsayıcılık programları, kotalar) sizi daha hızlı fark eder ve uyarlamalar daha kolay konuşulur",
         "cons": "Eksisi: bazı işe alımcıların hâlâ önyargıları var. Bunu daha sonra, mülakatta ya da işe alındıktan sonra da konuşabilirsiniz, ya da hiç"
+      },
+      "photoIcon": "Bir simge",
+      "photoIconTitle": "Fotoğraf yerine bir simge",
+      "photoIconHint": "Vurgu renginde çizilir. Sizin hakkınızda hiçbir şey söylemez, bu yüzden İngilizce CV'lerde de kalır",
+      "avatars": {
+        "user": "Siluet",
+        "briefcase": "Evrak çantası",
+        "graduation": "Mezuniyet kepi",
+        "code": "Kod",
+        "palette": "Palet",
+        "camera": "Fotoğraf makinesi",
+        "music": "Müzik",
+        "heart": "Kalp",
+        "leaf": "Yaprak",
+        "rocket": "Roket",
+        "chefHat": "Aşçı şapkası",
+        "wrench": "İngiliz anahtarı",
+        "stethoscope": "Stetoskop",
+        "book": "Kitap",
+        "lightbulb": "Ampul",
+        "initials": "Baş harfler"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "2 ya da 3 hobi ekleyin: mülakatta sohbeti başlatmaya yardımcı olur",
         "finish": "Beğendiğiniz bir şablon seçin ve özgeçmişinizi PDF olarak indirin. Dilediğiniz zaman geri dönüp düzenleyebilirsiniz"
       }
+    },
+    "style": {
+      "button": "Stilim",
+      "title": "CV stili",
+      "gallery": "Galeri şablonu: {{name}}",
+      "empty": "Henüz stil oluşturulmadı",
+      "css": "CSS ile özelleştir",
+      "cssHint": "Geçerli şablon üzerinde kendi CSS'iniz",
+      "cssName": "{{name}} özel",
+      "studio": "Stil stüdyosu",
+      "studioHint": "Bloklar ve şekillerle kendi tasarımınız, kodsuz"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Varsayılan görünüm",
     "note": "Bu ayarlar arayüzü değiştirir, basılı özgeçmişinizi asla"
+  },
+  "studio": {
+    "title": "Stil stüdyosu",
+    "subtitle": "Kendi CV tasarımınızı oluşturun: kodsuz birleştirilen bloklar ve şekiller ya da kendi CSS'iniz. Ardından JSON kodu olarak paylaşın",
+    "backToCv": "CV'ye dön",
+    "notFound": "Bu stil yok ya da silinmiş",
+    "points": {
+      "blocks": "Birleştirilecek bloklar",
+      "shapes": "Yerleştirilecek şekiller",
+      "css": "Özel CSS",
+      "share": "JSON olarak paylaşım"
+    },
+    "list": {
+      "new": "Yeni stil",
+      "emptyTitle": "Henüz stil yok",
+      "emptyText": "Boş bir sayfadan ya da bir başlangıç noktasından başlayın, sonra her bloğu ayarlayın",
+      "open": "Aç",
+      "actions": "İşlemler",
+      "duplicate": "Çoğalt",
+      "delete": "Sil",
+      "deleteTitle": "“{{name}}” stili silinsin mi?",
+      "deleteText": "Onu kullanan CV'ler mevcut görünümlerini korur",
+      "copySuffix": "(kopya)",
+      "updated": "Düzenlendi: {{date}}",
+      "usedBy": "Onu kullanan CV'ler: {{count}}",
+      "hint": "Stilleriniz bu tarayıcıda kalır. Her CV stilinin bir kopyasını saklar, böylece yedeklerinizde eksiksiz kalır"
+    },
+    "presets": {
+      "blank": "Boş sayfa",
+      "band": "Bant",
+      "sidebar": "Yan sütun",
+      "organic": "Yumuşak şekiller",
+      "timeline": "Zaman çizelgesi"
+    },
+    "toolbar": {
+      "back": "Stillerim",
+      "name": "Stil adı",
+      "share": "Paylaş",
+      "use": "Bir CV için kullan",
+      "applyBack": "CV'ye uygula",
+      "noCv": "Henüz CV yok",
+      "applied": "Stil “{{name}}” CV'sine uygulandı"
+    },
+    "tabs": {
+      "blocks": "Bloklar",
+      "shapes": "Şekiller",
+      "colors": "Renkler",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Başlangıç noktası",
+      "studio": "Stüdyo tuvali",
+      "studioHint": "Blokları birleştirin ve şekilleri yerleştirin",
+      "template": "Galeriden bir şablon",
+      "templateHint": "Bloklar ve şekiller yalnızca stüdyo tuvalinde kullanılabilir. Bu şablonu CSS sekmesinde düzenleyin"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Sütunlar",
+        "single": "Tek sütun",
+        "sidebarLeft": "Yan sütun"
+      },
+      "header": {
+        "label": "Üst bilgi",
+        "left": "Klasik",
+        "center": "Ortalanmış",
+        "band": "Bant",
+        "card": "İletişim kutusu"
+      },
+      "headings": {
+        "label": "Bölüm başlıkları",
+        "underline": "Altı çizili",
+        "bar": "Çubuk",
+        "pill": "Hap",
+        "caps": "Büyük harf",
+        "boxed": "Kutulu",
+        "line": "Çizgi"
+      },
+      "entries": {
+        "label": "Deneyim ve eğitim",
+        "classic": "Klasik",
+        "timeline": "Zaman çizelgesi",
+        "cards": "Kartlar",
+        "datesLeft": "Tarihler solda"
+      },
+      "skills": {
+        "label": "Yetkinlikler",
+        "chips": "Etiketler",
+        "inline": "Tek satırda",
+        "grid": "Izgara"
+      },
+      "languages": {
+        "label": "Diller",
+        "meter": "Gösterge",
+        "text": "Metin"
+      },
+      "photo": {
+        "label": "Fotoğraf",
+        "circle": "Yuvarlak",
+        "rounded": "Köşeleri yuvarlatılmış",
+        "square": "Kare",
+        "hidden": "Gizli"
+      }
+    },
+    "shapes": {
+      "add": "Şekil ekle",
+      "hint": "Şekiller metnin arkasında durur: ATS okumasını engellemeden süsler",
+      "drag": "Şekilleri sayfada sürükleyin ya da ok tuşlarıyla taşıyın",
+      "onPage": "Sayfadaki şekiller",
+      "empty": "Sayfada henüz şekil yok",
+      "color": "Renk",
+      "size": "Boyut",
+      "rotate": "Döndürme",
+      "alpha": "Yoğunluk",
+      "x": "Yatay",
+      "y": "Dikey",
+      "duplicate": "Çoğalt",
+      "remove": "Sil",
+      "kinds": {
+        "circle": "Daire",
+        "blob": "Leke",
+        "square": "Kare",
+        "triangle": "Üçgen",
+        "ring": "Halka",
+        "wave": "Dalgalar",
+        "stripes": "Çizgiler",
+        "dots": "Noktalar"
+      },
+      "colors": {
+        "accent": "Vurgu",
+        "soft": "Açık vurgu",
+        "ink": "Metin"
+      }
+    },
+    "colors": {
+      "accentCv": "CV'nin rengi",
+      "accentFixed": "Sabit renk",
+      "paper": "Sayfa arka planı",
+      "background": "Arka plan",
+      "text": "Metin",
+      "contrast": "Düşük kontrast: metin zor okunabilir"
+    },
+    "css": {
+      "label": "CSS'iniz",
+      "hint": "Yalnızca CV'ye, anında uygulanır. İçe aktarmalar ve dış adresler kaldırılır. Şablon kuralı ağır basarsa !important ekleyin",
+      "rules": "Uygulanan kurallar: {{count}}",
+      "removed": "Güvenliğiniz için kaldırılanlar: {{count}}",
+      "example": "Örnek ekle",
+      "warnings": "ATS okumasına dikkat",
+      "warning": {
+        "order": "{{property}}: metin yanlış sırayla okunabilir",
+        "shadow": "gölge, metni PDF'e iki kez yazar",
+        "content": "CSS ile eklenen metni robotlar okur"
+      },
+      "reference": "Kullanılabilir sınıflar ve değişkenler",
+      "referenceStudio": "Stüdyo tuvalinin sabit sınıfları:",
+      "referenceTemplate": "Galeri şablonunda sınıfları bulmak için önizlemeyi inceleyin. Ortak değişkenler:"
+    },
+    "preview": {
+      "label": "Önizleme:",
+      "sample": "Örnek CV"
+    },
+    "share": {
+      "title": "Stili paylaş",
+      "text": "Bu JSON kodu stilin tamamını (bloklar, şekiller, renkler ve CSS) içerir ama CV'nizden hiçbir veri içermez. Stil stüdyosundan içe aktarılır",
+      "copy": "Kodu kopyala",
+      "copied": "Kod kopyalandı",
+      "copyError": "Kopyalanamadı: kodu seçip kopyalayın",
+      "download": "İndir (.json)",
+      "close": "Kapat",
+      "importTitle": "Stil içe aktar",
+      "importText": "Bir stilin JSON kodunu yapıştırın ya da bir .json dosyası seçin",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Dosya seç",
+      "importAction": "İçe aktar",
+      "imported": "“{{name}}” stili içe aktarıldı",
+      "error": {
+        "invalidJson": "Bu metin geçerli bir JSON değil",
+        "notAStyle": "Bu kod bir LocalATSCV stili değil",
+        "newerVersion": "Bu stil LocalATSCV'nin daha yeni bir sürümünden geliyor: uygulamayı güncelleyin"
+      }
+    }
   }
 }

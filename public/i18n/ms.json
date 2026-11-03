@@ -6,7 +6,8 @@
     "privacy": "Privasi",
     "analyze": "Uji resume saya",
     "editor": "Bina resume saya",
-    "skipToContent": "Langkau ke kandungan"
+    "skipToContent": "Langkau ke kandungan",
+    "studio": "Studio gaya"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Notis undang-undang",
     "terms": "Terma penggunaan",
     "privacy": "Dasar privasi",
-    "accessibility": "Penyata kebolehcapaian"
+    "accessibility": "Penyata kebolehcapaian",
+    "studio": "Studio gaya"
   },
   "seo": {
     "home": "Bina resume percuma yang membawa anda ke temu duga: 72 templat, surat iringan yang sepadan, penyesuaian untuk setiap iklan dan semakan ATS. Tanpa pendaftaran, data anda kekal pada peranti anda",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 templat untuk dipilih",
         "letter": "Surat iringan yang sepadan",
-        "private": "Data anda kekal bersama anda"
+        "private": "Data anda kekal bersama anda",
+        "studio": "Atau reka bentuk anda sendiri"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Perlukah saya menyebut kecacatan saya?",
           "a": "Ia tidak pernah wajib. Jika mahu, editor mencadangkan rumusan yang diiktiraf di negara CV anda (RQTH di Perancis, categorie protette di Itali…), bersama butiran hubungan, di hujung CV atau hanya dalam surat. Anda juga boleh mengekalkannya dalam sesetengah versi sahaja"
+        },
+        "design": {
+          "q": "Bolehkah saya mencipta reka bentuk resume sendiri?",
+          "a": "Boleh. Dalam studio gaya, anda menggabungkan blok (pengepala, tajuk, pengalaman, lajur), meletakkan bentuk hiasan serta memilih warna dan fon, tanpa kod. Jika anda tahu CSS, anda juga boleh menampal milik anda. Gaya dikongsi dengan salin dan tampal yang mudah, tanpa sebarang data resume. Dan jika tidak mahu foto, ikon atau huruf awal nama anda boleh menggantikannya"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Satu bahagian pada satu masa, dengan nasihat dalam bahasa mudah, sehingga PDF dimuat turun"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio gaya",
+      "title": "Tiada templat yang sesuai? Cipta sendiri",
+      "text": "Susun reka bentuk anda seperti blok mainan: pilih blok, letak bentuk, tukar warna. Tanpa sebaris kod pun, dan masih dibaca dengan betul oleh perisian yang menapis permohonan",
+      "points": {
+        "blocks": {
+          "title": "Blok untuk digabung",
+          "text": "Pengepala, tajuk, pengalaman, kemahiran, lajur: setiap blok dipilih dengan satu klik berdasarkan lakarannya"
+        },
+        "shapes": {
+          "title": "Bentuk untuk diletakkan",
+          "text": "Bulatan, tompok, ombak atau jalur yang anda seret pada halaman. Ia menghias tanpa mengganggu bacaan"
+        },
+        "css": {
+          "title": "CSS anda sendiri, jika mahu",
+          "text": "Tahu CSS? Tampal milik anda pada kanvas studio atau templat galeri: hanya resume yang berubah"
+        },
+        "share": {
+          "title": "Dikongsi dengan salin dan tampal",
+          "text": "Gaya anda muat dalam kod pendek yang boleh dihantar. Ia tidak mengandungi sebarang data resume anda"
+        }
+      },
+      "icon": "Ikon menggantikan foto",
+      "cta": "Cipta gaya saya"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Catatan tidak muncul dalam CV. Dalam tab Surat, satu butang menambah ayat sedia ada",
         "pros": "Kebaikan: majikan yang komited (program keterangkuman, kuota) menemui anda lebih cepat dan penyesuaian lebih mudah dibincangkan",
         "cons": "Keburukan: sesetengah perekrut masih berprasangka. Anda juga boleh membincangkannya kemudian, semasa temu duga atau selepas diambil bekerja, atau tidak langsung"
+      },
+      "photoIcon": "Ikon",
+      "photoIconTitle": "Ikon menggantikan foto",
+      "photoIconHint": "Dilukis dengan warna aksen. Ia tidak mendedahkan apa-apa tentang anda, jadi kekal pada resume bahasa Inggeris",
+      "avatars": {
+        "user": "Siluet",
+        "briefcase": "Beg bimbit",
+        "graduation": "Topi graduasi",
+        "code": "Kod",
+        "palette": "Palet",
+        "camera": "Kamera",
+        "music": "Muzik",
+        "heart": "Hati",
+        "leaf": "Daun",
+        "rocket": "Roket",
+        "chefHat": "Topi cef",
+        "wrench": "Sepana",
+        "stethoscope": "Stetoskop",
+        "book": "Buku",
+        "lightbulb": "Mentol",
+        "initials": "Huruf awal"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Tambah 2 atau 3 hobi: ia membantu memulakan perbualan semasa temu duga",
         "finish": "Pilih templat yang anda suka, kemudian muat turun CV dalam PDF. Anda sentiasa boleh kembali untuk mengubahnya"
       }
+    },
+    "style": {
+      "button": "Gaya saya",
+      "title": "Gaya resume",
+      "gallery": "Templat galeri: {{name}}",
+      "empty": "Belum ada gaya dicipta",
+      "css": "Ubah suai dengan CSS",
+      "cssHint": "CSS anda sendiri pada templat semasa",
+      "cssName": "{{name}} tersuai",
+      "studio": "Studio gaya",
+      "studioHint": "Reka bentuk anda sendiri dengan blok dan bentuk, tanpa kod"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Paparan lalai",
     "note": "Tetapan ini mengubah antara muka, tidak sekali-kali CV bercetak anda"
+  },
+  "studio": {
+    "title": "Studio gaya",
+    "subtitle": "Cipta reka bentuk resume anda sendiri: blok dan bentuk untuk digabungkan tanpa kod, atau CSS anda sendiri. Kemudian kongsikannya sebagai kod JSON",
+    "backToCv": "Kembali ke resume",
+    "notFound": "Gaya ini tidak wujud atau telah dipadam",
+    "points": {
+      "blocks": "Blok untuk digabung",
+      "shapes": "Bentuk untuk diletakkan",
+      "css": "CSS tersuai",
+      "share": "Perkongsian JSON"
+    },
+    "list": {
+      "new": "Gaya baharu",
+      "emptyTitle": "Belum ada gaya",
+      "emptyText": "Mulakan dengan halaman kosong atau titik permulaan, kemudian laraskan setiap blok",
+      "open": "Buka",
+      "actions": "Tindakan",
+      "duplicate": "Pendua",
+      "delete": "Padam",
+      "deleteTitle": "Padam gaya “{{name}}”?",
+      "deleteText": "Resume yang menggunakannya kekal dengan rupa semasa",
+      "copySuffix": "(salinan)",
+      "updated": "Disunting {{date}}",
+      "usedBy": "Resume yang menggunakannya: {{count}}",
+      "hint": "Gaya anda kekal dalam pelayar ini. Setiap resume menyimpan salinan gayanya, jadi ia lengkap dalam sandaran anda"
+    },
+    "presets": {
+      "blank": "Halaman kosong",
+      "band": "Jalur",
+      "sidebar": "Lajur sisi",
+      "organic": "Bentuk lembut",
+      "timeline": "Garis masa"
+    },
+    "toolbar": {
+      "back": "Gaya saya",
+      "name": "Nama gaya",
+      "share": "Kongsi",
+      "use": "Guna untuk resume",
+      "applyBack": "Guna pada resume",
+      "noCv": "Belum ada resume",
+      "applied": "Gaya digunakan pada “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blok",
+      "shapes": "Bentuk",
+      "colors": "Warna",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Titik permulaan",
+      "studio": "Kanvas studio",
+      "studioHint": "Gabungkan blok dan letakkan bentuk",
+      "template": "Templat dari galeri",
+      "templateHint": "Blok dan bentuk hanya untuk kanvas studio. Laraskan templat ini dalam tab CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Lajur",
+        "single": "Satu lajur",
+        "sidebarLeft": "Lajur sisi"
+      },
+      "header": {
+        "label": "Pengepala",
+        "left": "Klasik",
+        "center": "Di tengah",
+        "band": "Jalur",
+        "card": "Kotak hubungan"
+      },
+      "headings": {
+        "label": "Tajuk bahagian",
+        "underline": "Bergaris bawah",
+        "bar": "Bar",
+        "pill": "Kapsul",
+        "caps": "Huruf besar",
+        "boxed": "Berbingkai",
+        "line": "Garisan"
+      },
+      "entries": {
+        "label": "Pengalaman dan pendidikan",
+        "classic": "Klasik",
+        "timeline": "Garis masa",
+        "cards": "Kad",
+        "datesLeft": "Tarikh di kiri"
+      },
+      "skills": {
+        "label": "Kemahiran",
+        "chips": "Label",
+        "inline": "Sebaris",
+        "grid": "Grid"
+      },
+      "languages": {
+        "label": "Bahasa",
+        "meter": "Meter",
+        "text": "Teks"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Bulat",
+        "rounded": "Bucu bulat",
+        "square": "Segi empat",
+        "hidden": "Tersembunyi"
+      }
+    },
+    "shapes": {
+      "add": "Tambah bentuk",
+      "hint": "Bentuk berada di belakang teks: ia menghias tanpa mengganggu bacaan ATS",
+      "drag": "Seret bentuk pada halaman atau gerakkannya dengan kekunci anak panah",
+      "onPage": "Bentuk pada halaman",
+      "empty": "Belum ada bentuk pada halaman",
+      "color": "Warna",
+      "size": "Saiz",
+      "rotate": "Putaran",
+      "alpha": "Keamatan",
+      "x": "Mendatar",
+      "y": "Menegak",
+      "duplicate": "Pendua",
+      "remove": "Padam",
+      "kinds": {
+        "circle": "Bulatan",
+        "blob": "Tompok",
+        "square": "Segi empat sama",
+        "triangle": "Segi tiga",
+        "ring": "Gelang",
+        "wave": "Ombak",
+        "stripes": "Jalur-jalur",
+        "dots": "Titik-titik"
+      },
+      "colors": {
+        "accent": "Aksen",
+        "soft": "Aksen cerah",
+        "ink": "Teks"
+      }
+    },
+    "colors": {
+      "accentCv": "Warna resume",
+      "accentFixed": "Warna tetap",
+      "paper": "Latar halaman",
+      "background": "Latar",
+      "text": "Teks",
+      "contrast": "Kontras rendah: teks mungkin sukar dibaca"
+    },
+    "css": {
+      "label": "CSS anda",
+      "hint": "Hanya terpakai pada resume, serta-merta. Import dan alamat luaran dibuang. Tambah !important jika peraturan templat menang",
+      "rules": "Peraturan digunakan: {{count}}",
+      "removed": "Dibuang demi keselamatan anda: {{count}}",
+      "example": "Sisip contoh",
+      "warnings": "Awas bacaan ATS",
+      "warning": {
+        "order": "{{property}}: teks mungkin dibaca tidak mengikut urutan",
+        "shadow": "bayang menulis teks dua kali dalam PDF",
+        "content": "teks yang ditambah dengan CSS dibaca oleh robot"
+      },
+      "reference": "Kelas dan pemboleh ubah tersedia",
+      "referenceStudio": "Kelas tetap kanvas studio:",
+      "referenceTemplate": "Pada templat galeri, periksa pratonton untuk mencari kelasnya. Pemboleh ubah dikongsi:"
+    },
+    "preview": {
+      "label": "Pratonton dengan",
+      "sample": "Resume contoh"
+    },
+    "share": {
+      "title": "Kongsi gaya",
+      "text": "Kod JSON ini mengandungi keseluruhan gaya (blok, bentuk, warna dan CSS), tetapi tiada data resume anda. Ia diimport dari studio gaya",
+      "copy": "Salin kod",
+      "copied": "Kod disalin",
+      "copyError": "Tidak dapat menyalin: pilih kod dan salin",
+      "download": "Muat turun (.json)",
+      "close": "Tutup",
+      "importTitle": "Import gaya",
+      "importText": "Tampal kod JSON sesuatu gaya atau pilih fail .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Pilih fail",
+      "importAction": "Import",
+      "imported": "Gaya “{{name}}” diimport",
+      "error": {
+        "invalidJson": "Teks ini bukan JSON yang sah",
+        "notAStyle": "Kod ini bukan gaya LocalATSCV",
+        "newerVersion": "Gaya ini daripada versi LocalATSCV yang lebih baharu: kemas kini aplikasi"
+      }
+    }
   }
 }

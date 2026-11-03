@@ -6,7 +6,8 @@
     "privacy": "Privasi",
     "analyze": "Uji CV saya",
     "editor": "Buat CV saya",
-    "skipToContent": "Langsung ke konten"
+    "skipToContent": "Langsung ke konten",
+    "studio": "Studio gaya"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Informasi hukum",
     "terms": "Ketentuan penggunaan",
     "privacy": "Kebijakan privasi",
-    "accessibility": "Pernyataan aksesibilitas"
+    "accessibility": "Pernyataan aksesibilitas",
+    "studio": "Studio gaya"
   },
   "seo": {
     "home": "Buat gratis CV yang membawa Anda ke wawancara: 72 template, surat lamaran yang serasi, penyesuaian untuk setiap lowongan, dan pemeriksaan ATS. Tanpa daftar, data Anda tetap di perangkat Anda",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 template pilihan",
         "letter": "Surat lamaran yang serasi",
-        "private": "Data Anda tetap di tangan Anda"
+        "private": "Data Anda tetap di tangan Anda",
+        "studio": "Atau desain Anda sendiri"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Apakah saya harus menyebutkan disabilitas saya?",
           "a": "Tidak pernah wajib. Jika mau, editor menyarankan rumusan yang diakui di negara CV Anda (RQTH di Prancis, categorie protette di Italia…), bersama kontak, di akhir CV, atau hanya di surat. Anda juga bisa menyimpannya di sebagian versi saja"
+        },
+        "design": {
+          "q": "Bisakah saya membuat desain CV sendiri?",
+          "a": "Bisa. Di studio gaya, Anda merangkai blok (kepala, judul, pengalaman, kolom), menempatkan bentuk dekoratif, serta memilih warna dan font, tanpa kode. Jika paham CSS, Anda juga bisa menempelkan milik Anda. Gaya dibagikan dengan salin-tempel sederhana, tanpa data CV Anda. Dan jika tidak ingin memasang foto, ikon atau inisial Anda bisa menggantikannya"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Satu bagian sekaligus, dengan saran berbahasa sederhana, hingga PDF diunduh"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio gaya",
+      "title": "Tidak ada template yang cocok? Buat sendiri",
+      "text": "Rangkai desain Anda seperti balok mainan: pilih blok, letakkan bentuk, ganti warna. Tanpa satu baris kode pun, dan tetap terbaca dengan benar oleh software yang menyaring lamaran",
+      "points": {
+        "blocks": {
+          "title": "Blok untuk dirangkai",
+          "text": "Kepala, judul, pengalaman, keterampilan, kolom: setiap blok dipilih dengan sekali klik dari sketsanya"
+        },
+        "shapes": {
+          "title": "Bentuk untuk ditempatkan",
+          "text": "Lingkaran, noda, gelombang, atau garis yang Anda seret di halaman. Menghias tanpa mengganggu pembacaan"
+        },
+        "css": {
+          "title": "CSS Anda sendiri, jika mau",
+          "text": "Paham CSS? Tempel milik Anda di kanvas studio atau di template galeri: hanya CV yang berubah"
+        },
+        "share": {
+          "title": "Dibagikan dengan salin-tempel",
+          "text": "Gaya Anda muat dalam kode singkat yang bisa Anda kirim. Tidak ada data CV Anda di dalamnya"
+        }
+      },
+      "icon": "Ikon sebagai pengganti foto",
+      "cta": "Buat gaya saya"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Keterangan tidak muncul di CV. Di tab Surat, sebuah tombol menambahkan kalimat siap pakai",
         "pros": "Kelebihan: pemberi kerja yang peduli (program inklusi, kuota) menemukan Anda lebih cepat dan penyesuaian lebih mudah dibicarakan",
         "cons": "Kekurangan: sebagian perekrut masih berprasangka. Anda juga bisa membahasnya nanti, saat wawancara atau setelah diterima, atau tidak sama sekali"
+      },
+      "photoIcon": "Ikon",
+      "photoIconTitle": "Ikon sebagai pengganti foto",
+      "photoIconHint": "Digambar dengan warna aksen. Ikon ini tidak mengungkap apa pun tentang Anda, jadi tetap tampil di CV berbahasa Inggris",
+      "avatars": {
+        "user": "Siluet",
+        "briefcase": "Tas kerja",
+        "graduation": "Toga wisuda",
+        "code": "Kode",
+        "palette": "Palet",
+        "camera": "Kamera",
+        "music": "Musik",
+        "heart": "Hati",
+        "leaf": "Daun",
+        "rocket": "Roket",
+        "chefHat": "Topi koki",
+        "wrench": "Kunci pas",
+        "stethoscope": "Stetoskop",
+        "book": "Buku",
+        "lightbulb": "Bohlam",
+        "initials": "Inisial"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Tambahkan 2 atau 3 hobi: membantu membuka percakapan saat wawancara",
         "finish": "Pilih templat yang Anda suka, lalu unduh CV dalam PDF. Anda selalu bisa kembali untuk mengubahnya"
       }
+    },
+    "style": {
+      "button": "Gaya saya",
+      "title": "Gaya CV",
+      "gallery": "Template galeri: {{name}}",
+      "empty": "Belum ada gaya yang dibuat",
+      "css": "Sesuaikan dengan CSS",
+      "cssHint": "CSS Anda sendiri pada template saat ini",
+      "cssName": "{{name}} kustom",
+      "studio": "Studio gaya",
+      "studioHint": "Desain Anda sendiri dari blok dan bentuk, tanpa kode"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Tampilan bawaan",
     "note": "Pengaturan ini mengubah antarmuka, tidak pernah CV cetak Anda"
+  },
+  "studio": {
+    "title": "Studio gaya",
+    "subtitle": "Buat desain CV Anda sendiri: blok dan bentuk yang dirangkai tanpa kode, atau CSS Anda sendiri. Lalu bagikan sebagai kode JSON",
+    "backToCv": "Kembali ke CV",
+    "notFound": "Gaya ini tidak ada atau sudah dihapus",
+    "points": {
+      "blocks": "Blok untuk dirangkai",
+      "shapes": "Bentuk untuk ditempatkan",
+      "css": "CSS kustom",
+      "share": "Berbagi sebagai JSON"
+    },
+    "list": {
+      "new": "Gaya baru",
+      "emptyTitle": "Belum ada gaya",
+      "emptyText": "Mulai dari halaman kosong atau titik awal, lalu sesuaikan setiap blok",
+      "open": "Buka",
+      "actions": "Tindakan",
+      "duplicate": "Duplikat",
+      "delete": "Hapus",
+      "deleteTitle": "Hapus gaya “{{name}}”?",
+      "deleteText": "CV yang memakainya tetap dengan tampilan saat ini",
+      "copySuffix": "(salinan)",
+      "updated": "Diubah {{date}}",
+      "usedBy": "CV yang memakainya: {{count}}",
+      "hint": "Gaya Anda tetap di peramban ini. Setiap CV menyimpan salinan gayanya, jadi tetap lengkap di cadangan Anda"
+    },
+    "presets": {
+      "blank": "Halaman kosong",
+      "band": "Pita",
+      "sidebar": "Kolom samping",
+      "organic": "Bentuk lembut",
+      "timeline": "Linimasa"
+    },
+    "toolbar": {
+      "back": "Gaya saya",
+      "name": "Nama gaya",
+      "share": "Bagikan",
+      "use": "Pakai untuk CV",
+      "applyBack": "Terapkan ke CV",
+      "noCv": "Belum ada CV",
+      "applied": "Gaya diterapkan ke “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blok",
+      "shapes": "Bentuk",
+      "colors": "Warna",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Titik awal",
+      "studio": "Kanvas studio",
+      "studioHint": "Rangkai blok dan tempatkan bentuk",
+      "template": "Template dari galeri",
+      "templateHint": "Blok dan bentuk hanya ada di kanvas studio. Ubah template ini di tab CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Kolom",
+        "single": "Satu kolom",
+        "sidebarLeft": "Kolom samping"
+      },
+      "header": {
+        "label": "Kepala",
+        "left": "Klasik",
+        "center": "Di tengah",
+        "band": "Pita",
+        "card": "Kotak kontak"
+      },
+      "headings": {
+        "label": "Judul bagian",
+        "underline": "Bergaris bawah",
+        "bar": "Batang",
+        "pill": "Kapsul",
+        "caps": "Huruf kapital",
+        "boxed": "Berbingkai",
+        "line": "Garis"
+      },
+      "entries": {
+        "label": "Pengalaman dan pendidikan",
+        "classic": "Klasik",
+        "timeline": "Linimasa",
+        "cards": "Kartu",
+        "datesLeft": "Tanggal di kiri"
+      },
+      "skills": {
+        "label": "Keahlian",
+        "chips": "Label",
+        "inline": "Dalam satu baris",
+        "grid": "Kisi"
+      },
+      "languages": {
+        "label": "Bahasa",
+        "meter": "Meteran",
+        "text": "Teks"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Bulat",
+        "rounded": "Membulat",
+        "square": "Persegi",
+        "hidden": "Disembunyikan"
+      }
+    },
+    "shapes": {
+      "add": "Tambah bentuk",
+      "hint": "Bentuk berada di belakang teks: menghias tanpa mengganggu pembacaan ATS",
+      "drag": "Seret bentuk di halaman atau geser dengan tombol panah",
+      "onPage": "Bentuk di halaman",
+      "empty": "Belum ada bentuk di halaman",
+      "color": "Warna",
+      "size": "Ukuran",
+      "rotate": "Rotasi",
+      "alpha": "Intensitas",
+      "x": "Horizontal",
+      "y": "Vertikal",
+      "duplicate": "Duplikat",
+      "remove": "Hapus",
+      "kinds": {
+        "circle": "Lingkaran",
+        "blob": "Noda",
+        "square": "Persegi",
+        "triangle": "Segitiga",
+        "ring": "Cincin",
+        "wave": "Gelombang",
+        "stripes": "Garis-garis",
+        "dots": "Titik-titik"
+      },
+      "colors": {
+        "accent": "Aksen",
+        "soft": "Aksen terang",
+        "ink": "Teks"
+      }
+    },
+    "colors": {
+      "accentCv": "Warna CV",
+      "accentFixed": "Warna tetap",
+      "paper": "Latar halaman",
+      "background": "Latar",
+      "text": "Teks",
+      "contrast": "Kontras rendah: teks mungkin sulit dibaca"
+    },
+    "css": {
+      "label": "CSS Anda",
+      "hint": "Hanya berlaku untuk CV, langsung. Impor dan alamat eksternal dihapus. Tambahkan !important jika aturan template menang",
+      "rules": "Aturan diterapkan: {{count}}",
+      "removed": "Dihapus demi keamanan Anda: {{count}}",
+      "example": "Sisipkan contoh",
+      "warnings": "Perhatikan pembacaan ATS",
+      "warning": {
+        "order": "{{property}}: teks bisa terbaca tidak berurutan",
+        "shadow": "bayangan menulis teks dua kali di PDF",
+        "content": "teks yang ditambahkan dengan CSS dibaca robot"
+      },
+      "reference": "Kelas dan variabel yang tersedia",
+      "referenceStudio": "Kelas tetap kanvas studio:",
+      "referenceTemplate": "Pada template galeri, periksa pratinjau untuk menemukan kelasnya. Variabel bersama:"
+    },
+    "preview": {
+      "label": "Pratinjau dengan",
+      "sample": "CV contoh"
+    },
+    "share": {
+      "title": "Bagikan gaya",
+      "text": "Kode JSON ini memuat seluruh gaya (blok, bentuk, warna, dan CSS), tetapi tidak ada data CV Anda. Kode ini diimpor dari studio gaya",
+      "copy": "Salin kode",
+      "copied": "Kode disalin",
+      "copyError": "Gagal menyalin: pilih kode lalu salin",
+      "download": "Unduh (.json)",
+      "close": "Tutup",
+      "importTitle": "Impor gaya",
+      "importText": "Tempel kode JSON sebuah gaya atau pilih file .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Pilih file",
+      "importAction": "Impor",
+      "imported": "Gaya “{{name}}” diimpor",
+      "error": {
+        "invalidJson": "Teks ini bukan JSON yang valid",
+        "notAStyle": "Kode ini bukan gaya LocalATSCV",
+        "newerVersion": "Gaya ini berasal dari versi LocalATSCV yang lebih baru: perbarui aplikasi"
+      }
+    }
   }
 }

@@ -52,7 +52,25 @@ Pick them in a gallery that stays fast with 72 entries: static thumbnails, a liv
 
 ![Eight of the graphic templates: Memphis, Duotone, Nocturne, Origami, Sorbet, Hexa, Typo and Ribbon](docs/screenshots/templates-showcase.png)
 
-Make it yours with 16 accent colors (or any custom color), 15 fonts, link logos, a **QR code** to your portfolio or LinkedIn, and your driving licence.
+Make it yours with 16 accent colors (or any custom color), 15 fonts, link logos, a **QR code** to your portfolio or LinkedIn, and your driving licence. No photo? Pick one of 15 **icons** (or your initials) instead: it says nothing about you, so it stays on English resumes too.
+
+### 🎨 Design your own style, with or without code
+
+The **style studio** lets you build a resume design of your own:
+
+- **No code**: assemble blocks from a side panel (columns, header, section titles, experience, skills, languages, photo), each shown as a small sketch, then drop and drag shapes on the page (circles, blobs, rings, waves, stripes, dots…), and pick colors and fonts
+- **Your own CSS**: paste CSS on the studio canvas, which has stable, documented classes, or on top of any gallery template. It is scoped to the resume only, and flags the rules that would scramble the text for an ATS
+- **Share it as JSON**: copy or download the style's code, and import a style someone sent you. The code never contains your resume data
+
+Every block variant of the studio canvas scores at least 90 in the live ATS check, and shapes stay behind the text, out of the reading order.
+
+![Style studio: blocks panel on the left, each variant drawn as a sketch, live resume preview on the right](docs/screenshots/studio-blocks.png)
+
+| Shapes you drag on the page                                         | Your own CSS, scoped to the resume                                  |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Shapes tab and a selected ring on the page](docs/screenshots/studio-shapes.png) | ![CSS tab with a magazine-style stylesheet applied](docs/screenshots/studio-css.png) |
+| **Share a style as JSON**                                           | **My styles**                                                       |
+| ![Share dialog with the style's JSON code](docs/screenshots/studio-share.png)     | ![Style studio home with three styles](docs/screenshots/studio-list.png)             |
 
 ### 🎯 One master resume, a tailored version for every job
 
@@ -101,7 +119,7 @@ Health information is sensitive: like everything else, it stays on your device. 
 
 ### 💡 And all the small things that matter
 
-Live A4 preview with page-break markers · drag and drop for sections, entries and bullets (keyboard accessible) · Undo / Redo everywhere (Ctrl+Z / Ctrl+Y) · guided language levels (A1 to C2, fluent, native…) · auto-save · JSON backup and restore · light and dark themes · installable app.
+Live A4 preview with page-break markers · style studio and custom CSS · drag and drop for sections, entries and bullets (keyboard accessible) · Undo / Redo everywhere (Ctrl+Z / Ctrl+Y) · guided language levels (A1 to C2, fluent, native…) · auto-save · JSON backup and restore · light and dark themes · installable app.
 
 ## A closer look
 
@@ -120,6 +138,8 @@ Live A4 preview with page-break markers · drag and drop for sections, entries a
 | ![ATS robot view](docs/screenshots/ats-robot-view.png)          | ![Privacy](docs/screenshots/privacy.png)                   |
 | **Optional disability mention**                                 | **Accessible to everyone**                                 |
 | ![Disability mention](docs/screenshots/disability.png)          | ![Accessible to everyone](docs/screenshots/accessibility.png) |
+| **An icon instead of a photo**                                  | **Style studio on the home page**                          |
+| ![Icon picker in the profile](docs/screenshots/photo-icon.png)  | ![Style studio section of the home page](docs/screenshots/landing-studio.png) |
 
 <p align="center">
   <img src="docs/screenshots/mobile-light.png" alt="Mobile version, light theme" width="260" />

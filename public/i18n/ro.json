@@ -6,7 +6,8 @@
     "privacy": "Confidențialitate",
     "analyze": "Testează-mi CV-ul",
     "editor": "Creează-mi CV-ul",
-    "skipToContent": "Salt la conținut"
+    "skipToContent": "Salt la conținut",
+    "studio": "Studio de stiluri"
   },
   "theme": {
     "label": "Temă",
@@ -29,7 +30,8 @@
     "legalNotice": "Mențiuni legale",
     "terms": "Condiții de utilizare",
     "privacy": "Politica de confidențialitate",
-    "accessibility": "Declarație de accesibilitate"
+    "accessibility": "Declarație de accesibilitate",
+    "studio": "Studio de stiluri"
   },
   "seo": {
     "home": "Creează gratuit un CV care îți aduce interviul: 72 de șabloane, scrisoare de intenție asortată, adaptare la fiecare ofertă și verificare ATS. Fără cont, datele tale rămân pe dispozitivul tău",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 de șabloane la alegere",
         "letter": "Scrisoare de intenție asortată",
-        "private": "Datele tale rămân la tine"
+        "private": "Datele tale rămân la tine",
+        "studio": "Sau propriul tău design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Trebuie să-mi menționez dizabilitatea?",
           "a": "Nu e niciodată obligatoriu. Dacă vrei, editorul propune formularea recunoscută în țara CV-ului (RQTH în Franța, categorie protette în Italia…), lângă datele de contact, la finalul CV-ului sau doar în scrisoare. O poți păstra și doar în unele versiuni"
+        },
+        "design": {
+          "q": "Pot să-mi creez propriul design de CV?",
+          "a": "Da. Studioul de stiluri îți permite să asamblezi blocuri (antet, titluri, experiență, coloane), să plasezi forme decorative și să alegi culori și fonturi, fără cod. Dacă știi CSS, poți lipi și propriul cod. Un stil se distribuie prin copiere și lipire, fără nicio dată din CV-ul tău. Iar dacă nu vrei fotografie, locul ei îl poate lua o pictogramă sau inițialele tale"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "O secțiune pe rând, cu un sfat în limbaj simplu, până la descărcarea PDF-ului"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio de stiluri",
+      "title": "Niciun șablon nu ți se potrivește? Creează-l pe al tău",
+      "text": "Construiește-ți designul ca dintr-un joc de cuburi: alege blocurile, pune forme, schimbă culorile. Fără nicio linie de cod și citit corect de programele care triază candidaturile",
+      "points": {
+        "blocks": {
+          "title": "Blocuri de asamblat",
+          "text": "Antet, titluri, experiență, competențe, coloane: fiecare bloc se alege dintr-un clic, după schița lui"
+        },
+        "shapes": {
+          "title": "Forme de plasat",
+          "text": "Cercuri, pete, valuri sau dungi pe care le tragi pe pagină. Decorează fără să încurce citirea"
+        },
+        "css": {
+          "title": "CSS-ul tău, dacă vrei",
+          "text": "Știi CSS? Lipește-l pe al tău pe pânza studioului sau pe un șablon din galerie: schimbă doar CV-ul"
+        },
+        "share": {
+          "title": "Distribuit prin copiere și lipire",
+          "text": "Stilul tău încape într-un cod scurt pe care îl poți trimite. Nu conține nicio dată din CV-ul tău"
+        }
+      },
+      "icon": "O pictogramă în locul fotografiei",
+      "cta": "Creează-mi stilul"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Mențiunea nu apare în CV. În fila Scrisoare, un buton adaugă o frază gata făcută",
         "pros": "Pentru: angajatorii implicați (programe de incluziune, cote) te găsesc mai repede, iar adaptările se discută mai ușor",
         "cons": "Contra: unii recrutori încă au prejudecăți. Poți vorbi despre asta și mai târziu, la interviu sau după angajare, ori niciodată"
+      },
+      "photoIcon": "O pictogramă",
+      "photoIconTitle": "O pictogramă în locul fotografiei",
+      "photoIconHint": "Desenată în culoarea de accent. Nu spune nimic despre tine, așa că rămâne și pe CV-urile în engleză",
+      "avatars": {
+        "user": "Siluetă",
+        "briefcase": "Servietă",
+        "graduation": "Toc de absolvent",
+        "code": "Cod",
+        "palette": "Paletă",
+        "camera": "Aparat foto",
+        "music": "Muzică",
+        "heart": "Inimă",
+        "leaf": "Frunză",
+        "rocket": "Rachetă",
+        "chefHat": "Bonetă de bucătar",
+        "wrench": "Cheie fixă",
+        "stethoscope": "Stetoscop",
+        "book": "Carte",
+        "lightbulb": "Bec",
+        "initials": "Inițiale"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Adaugă 2 sau 3 pasiuni: ajută la pornirea conversației la interviu",
         "finish": "Alege un șablon care îți place, apoi descarcă CV-ul în PDF. Poți reveni oricând să-l modifici"
       }
+    },
+    "style": {
+      "button": "Stilul meu",
+      "title": "Stilul CV-ului",
+      "gallery": "Șablon din galerie: {{name}}",
+      "empty": "Niciun stil creat încă",
+      "css": "Personalizează cu CSS",
+      "cssHint": "Propriul CSS pe șablonul curent",
+      "cssName": "{{name}} personalizat",
+      "studio": "Studio de stiluri",
+      "studioHint": "Un design al tău, din blocuri și forme, fără cod"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Afișare implicită",
     "note": "Aceste setări schimbă interfața, niciodată CV-ul tău tipărit"
+  },
+  "studio": {
+    "title": "Studio de stiluri",
+    "subtitle": "Creează-ți propriul design de CV: blocuri și forme de asamblat fără cod sau propriul CSS. Apoi distribuie-l ca cod JSON",
+    "backToCv": "Înapoi la CV",
+    "notFound": "Acest stil nu există sau a fost șters",
+    "points": {
+      "blocks": "Blocuri de asamblat",
+      "shapes": "Forme de plasat",
+      "css": "CSS personalizat",
+      "share": "Partajare în JSON"
+    },
+    "list": {
+      "new": "Stil nou",
+      "emptyTitle": "Încă niciun stil",
+      "emptyText": "Pornește de la o pagină goală sau de la un punct de plecare, apoi ajustează fiecare bloc",
+      "open": "Deschide",
+      "actions": "Acțiuni",
+      "duplicate": "Duplică",
+      "delete": "Șterge",
+      "deleteTitle": "Ștergi stilul „{{name}}”?",
+      "deleteText": "CV-urile care îl folosesc își păstrează aspectul actual",
+      "copySuffix": "(copie)",
+      "updated": "Modificat la {{date}}",
+      "usedBy": "CV-uri care îl folosesc: {{count}}",
+      "hint": "Stilurile tale rămân în acest browser. Fiecare CV păstrează o copie a stilului său, deci rămâne complet în copiile de rezervă"
+    },
+    "presets": {
+      "blank": "Pagină goală",
+      "band": "Bandă",
+      "sidebar": "Coloană laterală",
+      "organic": "Forme blânde",
+      "timeline": "Cronologie"
+    },
+    "toolbar": {
+      "back": "Stilurile mele",
+      "name": "Numele stilului",
+      "share": "Distribuie",
+      "use": "Folosește pentru un CV",
+      "applyBack": "Aplică pe CV",
+      "noCv": "Încă niciun CV",
+      "applied": "Stil aplicat pe „{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blocuri",
+      "shapes": "Forme",
+      "colors": "Culori",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Punct de plecare",
+      "studio": "Pânza studioului",
+      "studioHint": "Asamblează blocuri și plasează forme",
+      "template": "Un șablon din galerie",
+      "templateHint": "Blocurile și formele sunt doar pentru pânza studioului. Ajustează acest șablon în fila CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Coloane",
+        "single": "O coloană",
+        "sidebarLeft": "Coloană laterală"
+      },
+      "header": {
+        "label": "Antet",
+        "left": "Clasic",
+        "center": "Centrat",
+        "band": "Bandă",
+        "card": "Casetă de contact"
+      },
+      "headings": {
+        "label": "Titlurile secțiunilor",
+        "underline": "Subliniat",
+        "bar": "Bară",
+        "pill": "Pastilă",
+        "caps": "Majuscule",
+        "boxed": "Încadrat",
+        "line": "Linie"
+      },
+      "entries": {
+        "label": "Experiență și studii",
+        "classic": "Clasic",
+        "timeline": "Cronologie",
+        "cards": "Carduri",
+        "datesLeft": "Date în stânga"
+      },
+      "skills": {
+        "label": "Competențe",
+        "chips": "Etichete",
+        "inline": "Pe un rând",
+        "grid": "Grilă"
+      },
+      "languages": {
+        "label": "Limbi",
+        "meter": "Indicator",
+        "text": "Text"
+      },
+      "photo": {
+        "label": "Fotografie",
+        "circle": "Rotundă",
+        "rounded": "Rotunjită",
+        "square": "Pătrată",
+        "hidden": "Ascunsă"
+      }
+    },
+    "shapes": {
+      "add": "Adaugă o formă",
+      "hint": "Formele stau în spatele textului: decorează fără să încurce citirea de către ATS",
+      "drag": "Trage formele pe pagină sau mută-le cu săgețile tastaturii",
+      "onPage": "Forme pe pagină",
+      "empty": "Încă nicio formă pe pagină",
+      "color": "Culoare",
+      "size": "Mărime",
+      "rotate": "Rotație",
+      "alpha": "Intensitate",
+      "x": "Orizontal",
+      "y": "Vertical",
+      "duplicate": "Duplică",
+      "remove": "Șterge",
+      "kinds": {
+        "circle": "Cerc",
+        "blob": "Pată",
+        "square": "Pătrat",
+        "triangle": "Triunghi",
+        "ring": "Inel",
+        "wave": "Valuri",
+        "stripes": "Dungi",
+        "dots": "Puncte"
+      },
+      "colors": {
+        "accent": "Accent",
+        "soft": "Accent deschis",
+        "ink": "Text"
+      }
+    },
+    "colors": {
+      "accentCv": "Cea a CV-ului",
+      "accentFixed": "Culoare fixă",
+      "paper": "Fundalul paginii",
+      "background": "Fundal",
+      "text": "Text",
+      "contrast": "Contrast scăzut: textul poate fi greu de citit"
+    },
+    "css": {
+      "label": "CSS-ul tău",
+      "hint": "Se aplică doar CV-ului, în timp real. Importurile și adresele externe sunt eliminate. Adaugă !important dacă o regulă a șablonului câștigă",
+      "rules": "Reguli aplicate: {{count}}",
+      "removed": "Eliminate pentru siguranța ta: {{count}}",
+      "example": "Inserează un exemplu",
+      "warnings": "Atenție la citirea de către ATS",
+      "warning": {
+        "order": "{{property}}: textul poate fi citit în altă ordine",
+        "shadow": "o umbră scrie textul de două ori în PDF",
+        "content": "textul adăugat cu CSS este citit de roboți"
+      },
+      "reference": "Clase și variabile disponibile",
+      "referenceStudio": "Clasele stabile ale pânzei studioului:",
+      "referenceTemplate": "La un șablon din galerie, inspectează previzualizarea ca să-i găsești clasele. Variabile comune:"
+    },
+    "preview": {
+      "label": "Previzualizare cu",
+      "sample": "CV-ul exemplu"
+    },
+    "share": {
+      "title": "Distribuie stilul",
+      "text": "Acest cod JSON conține tot stilul (blocuri, forme, culori și CSS), dar nicio dată din CV-ul tău. Se importă din studioul de stiluri",
+      "copy": "Copiază codul",
+      "copied": "Cod copiat",
+      "copyError": "Copierea nu a reușit: selectează codul și copiază-l",
+      "download": "Descarcă (.json)",
+      "close": "Închide",
+      "importTitle": "Importă un stil",
+      "importText": "Lipește codul JSON al unui stil sau alege un fișier .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Alege un fișier",
+      "importAction": "Importă",
+      "imported": "Stilul „{{name}}” a fost importat",
+      "error": {
+        "invalidJson": "Acest text nu este JSON valid",
+        "notAStyle": "Acest cod nu este un stil LocalATSCV",
+        "newerVersion": "Acest stil provine dintr-o versiune mai nouă a LocalATSCV: actualizează aplicația"
+      }
+    }
   }
 }

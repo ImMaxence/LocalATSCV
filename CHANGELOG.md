@@ -4,6 +4,25 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [0.13.0] - 2026-11-03
+
+### Ajouté
+
+- Studio de styles : créez votre propre design de CV sans code, avec un panneau de blocs à assembler (colonnes, en-tête, titres des rubriques, expériences, compétences, langues, photo), des formes à poser et à faire glisser sur la page (cercle, tache, carré, triangle, anneau, vagues, rayures, points), des couleurs et des polices. Chaque bloc est dessiné en miniature pour choisir d'un coup d'œil
+- CSS personnalisé : collez votre propre CSS sur la toile du studio ou sur n'importe quel modèle de la galerie (« Personnaliser en CSS » dans le menu Mon style). Il s'applique au seul CV, en direct, avec la liste des classes disponibles et une alerte quand une règle risque de gêner la lecture par les ATS (position, transparence, ombre de texte, texte ajouté en CSS)
+- Partage d'un style en code JSON : copier, télécharger, puis importer depuis le studio. Le code contient le style seul, jamais les données du CV
+- Menu « Mon style » dans l'éditeur pour passer d'un style personnel à un modèle de la galerie, et bouton « Utiliser pour un CV » dans le studio
+- Une icône à la place de la photo : 15 pictogrammes (mallette, toque, stéthoscope, fusée…) ou vos initiales, dessinés à la couleur d'accent. L'icône ne dit rien de vous : elle reste affichée sur les CV en anglais
+- Accueil : nouvelle section « Studio de styles », nouvelle question dans la FAQ (« Puis-je créer mon propre design de CV ? ») et lien vers le studio dans le pied de page
+
+### Modifié
+
+- Les sauvegardes complètes contiennent aussi les styles du studio, et chaque CV garde une copie de son style : il reste complet dans une sauvegarde ou un export individuel
+
+### Sécurité
+
+- Le CSS d'un style, même reçu d'un inconnu, est analysé par le navigateur puis réécrit règle par règle et confiné au CV : il ne peut ni modifier le reste de la page, ni charger de ressource externe (imports, polices et adresses retirés)
+
 ## [0.12.0] - 2026-11-02
 
 ### Ajouté

@@ -6,7 +6,8 @@
     "privacy": "Privaatsus",
     "analyze": "Testi oma CV-d",
     "editor": "Loo oma CV",
-    "skipToContent": "Liigu sisu juurde"
+    "skipToContent": "Liigu sisu juurde",
+    "studio": "Stiilistuudio"
   },
   "theme": {
     "label": "Teema",
@@ -29,7 +30,8 @@
     "legalNotice": "Õiguslik teave",
     "terms": "Kasutustingimused",
     "privacy": "Privaatsuspoliitika",
-    "accessibility": "Ligipääsetavuse teatis"
+    "accessibility": "Ligipääsetavuse teatis",
+    "studio": "Stiilistuudio"
   },
   "seo": {
     "home": "Loo tasuta CV, mis toob sulle tööintervjuu: 72 malli, sobiv kaaskiri, kohandamine iga kuulutuse jaoks ja ATS-kontroll. Ilma registreerumata, sinu andmed jäävad sinu seadmesse",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 malli valikus",
         "letter": "Sobiv kaaskiri",
-        "private": "Sinu andmed jäävad sinu juurde"
+        "private": "Sinu andmed jäävad sinu juurde",
+        "studio": "Või sinu enda kujundus"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Kas pean oma puudest teatama?",
           "a": "See pole kunagi kohustuslik. Soovi korral pakub redaktor CV riigis tunnustatud sõnastust (RQTH Prantsusmaal, categorie protette Itaalias…), kontaktandmete juurde, CV lõppu või ainult kaaskirja. Võid selle ka mõnes versioonis alles jätta ja teises mitte"
+        },
+        "design": {
+          "q": "Kas saan luua oma CV kujunduse?",
+          "a": "Jah. Stiilistuudios paned kokku plokke (päis, pealkirjad, kogemus, veerud), paigutad dekoratiivseid kujundeid ning valid värvid ja fondid ilma koodita. Kui oskad CSS-i, saad kleepida ka oma. Stiili jagatakse kopeeri-kleebi abil, ilma sinu CV andmeteta. Ja kui sa ei soovi fotot näidata, võib selle asemel olla ikoon või sinu initsiaalid"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Üks jaotis korraga, lihtsas keeles nõuandega, kuni PDF-i allalaadimiseni"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stiilistuudio",
+      "title": "Ükski mall ei sobi sulle? Loo oma",
+      "text": "Pane kujundus kokku nagu klotsidest: vali plokid, lisa kujundid, muuda värve. Ühegi koodireata ja ikka õigesti loetav programmidele, mis kandideerimisi sorteerivad",
+      "points": {
+        "blocks": {
+          "title": "Kokkupandavad plokid",
+          "text": "Päis, pealkirjad, kogemus, oskused, veerud: iga plokk valitakse ühe klõpsuga visandi järgi"
+        },
+        "shapes": {
+          "title": "Paigutatavad kujundid",
+          "text": "Ringid, laigud, lained või triibud, mida lohistad lehel. Need kaunistavad lugemist segamata"
+        },
+        "css": {
+          "title": "Sinu CSS, kui soovid",
+          "text": "Oskad CSS-i? Kleebi oma stuudio lõuendile või galerii mallile: see mõjutab ainult CV-d"
+        },
+        "share": {
+          "title": "Jagatakse kopeeri-kleebi abil",
+          "text": "Sinu stiil mahub lühikesse koodi, mille saad edasi saata. Selles pole ühtegi sinu CV andmetest"
+        }
+      },
+      "icon": "Ikoon foto asemel",
+      "cta": "Loo oma stiil"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Märget CV-s ei kuvata. Vahekaardil Kiri lisab nupp valmis lause",
         "pros": "Poolt: pühendunud tööandjad (kaasamisprogrammid, kvoodid) leiavad sind kiiremini ja kohandustest on lihtsam rääkida",
         "cons": "Vastu: mõnel värbajal on endiselt eelarvamusi. Võid sellest rääkida ka hiljem, vestlusel või pärast töölevõtmist, või mitte kunagi"
+      },
+      "photoIcon": "Ikoon",
+      "photoIconTitle": "Ikoon foto asemel",
+      "photoIconHint": "Joonistatud rõhuvärviga. See ei ütle sinu kohta midagi ja jääb seetõttu ka ingliskeelsetele CV-dele",
+      "avatars": {
+        "user": "Siluett",
+        "briefcase": "Portfell",
+        "graduation": "Lõpetajamüts",
+        "code": "Kood",
+        "palette": "Palett",
+        "camera": "Kaamera",
+        "music": "Muusika",
+        "heart": "Süda",
+        "leaf": "Leht",
+        "rocket": "Rakett",
+        "chefHat": "Kokamüts",
+        "wrench": "Mutrivõti",
+        "stethoscope": "Stetoskoop",
+        "book": "Raamat",
+        "lightbulb": "Lambipirn",
+        "initials": "Initsiaalid"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Lisa 2 või 3 hobi: need aitavad vestlusel juttu alustada",
         "finish": "Vali meeldiv mall ja laadi CV alla PDF-ina. Saad alati tagasi tulla ja seda muuta"
       }
+    },
+    "style": {
+      "button": "Minu stiil",
+      "title": "CV stiil",
+      "gallery": "Galerii mall: {{name}}",
+      "empty": "Stiile pole veel loodud",
+      "css": "Kohanda CSS-iga",
+      "cssHint": "Sinu enda CSS praegusel mallil",
+      "cssName": "{{name}} kohandatud",
+      "studio": "Stiilistuudio",
+      "studioHint": "Oma kujundus plokkidest ja kujunditest, ilma koodita"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Vaikekuva",
     "note": "Need seaded muudavad liidest, mitte kunagi sinu prinditud CV-d"
+  },
+  "studio": {
+    "title": "Stiilistuudio",
+    "subtitle": "Loo oma CV kujundus: plokid ja kujundid, mida saab kokku panna ilma koodita, või sinu enda CSS. Seejärel jaga seda JSON-koodina",
+    "backToCv": "Tagasi CV juurde",
+    "notFound": "Seda stiili pole olemas või see on kustutatud",
+    "points": {
+      "blocks": "Kokkupandavad plokid",
+      "shapes": "Paigutatavad kujundid",
+      "css": "Oma CSS",
+      "share": "Jagamine JSON-ina"
+    },
+    "list": {
+      "new": "Uus stiil",
+      "emptyTitle": "Stiile veel pole",
+      "emptyText": "Alusta tühjalt lehelt või lähtepunktist ja kohanda siis iga plokki",
+      "open": "Ava",
+      "actions": "Toimingud",
+      "duplicate": "Tee koopia",
+      "delete": "Kustuta",
+      "deleteTitle": "Kas kustutada stiil „{{name}}“?",
+      "deleteText": "Seda kasutavad CV-d säilitavad oma praeguse välimuse",
+      "copySuffix": "(koopia)",
+      "updated": "Muudetud {{date}}",
+      "usedBy": "Seda kasutavad CV-d: {{count}}",
+      "hint": "Sinu stiilid jäävad sellesse brauserisse. Iga CV hoiab oma stiili koopiat, nii et see on varukoopiates terviklik"
+    },
+    "presets": {
+      "blank": "Tühi leht",
+      "band": "Riba",
+      "sidebar": "Külgveerg",
+      "organic": "Pehmed kujundid",
+      "timeline": "Ajajoon"
+    },
+    "toolbar": {
+      "back": "Minu stiilid",
+      "name": "Stiili nimi",
+      "share": "Jaga",
+      "use": "Kasuta CV jaoks",
+      "applyBack": "Rakenda CV-le",
+      "noCv": "CV-sid veel pole",
+      "applied": "Stiil rakendatud: „{{name}}“"
+    },
+    "tabs": {
+      "blocks": "Plokid",
+      "shapes": "Kujundid",
+      "colors": "Värvid",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Lähtepunkt",
+      "studio": "Stuudio lõuend",
+      "studioHint": "Pane plokid kokku ja paiguta kujundid",
+      "template": "Galerii mall",
+      "templateHint": "Plokid ja kujundid on ainult stuudio lõuendil. Kohanda seda malli vahekaardil CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Veerud",
+        "single": "Üks veerg",
+        "sidebarLeft": "Külgveerg"
+      },
+      "header": {
+        "label": "Päis",
+        "left": "Klassikaline",
+        "center": "Keskel",
+        "band": "Riba",
+        "card": "Kontaktikast"
+      },
+      "headings": {
+        "label": "Jaotiste pealkirjad",
+        "underline": "Allajoonitud",
+        "bar": "Tulp",
+        "pill": "Pill",
+        "caps": "Suurtähed",
+        "boxed": "Kast",
+        "line": "Joon"
+      },
+      "entries": {
+        "label": "Kogemus ja haridus",
+        "classic": "Klassikaline",
+        "timeline": "Ajajoon",
+        "cards": "Kaardid",
+        "datesLeft": "Kuupäevad vasakul"
+      },
+      "skills": {
+        "label": "Oskused",
+        "chips": "Sildid",
+        "inline": "Ühel real",
+        "grid": "Ruudustik"
+      },
+      "languages": {
+        "label": "Keeled",
+        "meter": "Näidik",
+        "text": "Tekst"
+      },
+      "photo": {
+        "label": "Foto",
+        "circle": "Ümar",
+        "rounded": "Ümardatud",
+        "square": "Kandiline",
+        "hidden": "Peidetud"
+      }
+    },
+    "shapes": {
+      "add": "Lisa kujund",
+      "hint": "Kujundid on teksti taga: need kaunistavad, segamata ATS-i lugemist",
+      "drag": "Lohista kujundeid lehel või liiguta neid nooleklahvidega",
+      "onPage": "Kujundid lehel",
+      "empty": "Lehel pole veel kujundeid",
+      "color": "Värv",
+      "size": "Suurus",
+      "rotate": "Pööre",
+      "alpha": "Tugevus",
+      "x": "Horisontaalne",
+      "y": "Vertikaalne",
+      "duplicate": "Tee koopia",
+      "remove": "Kustuta",
+      "kinds": {
+        "circle": "Ring",
+        "blob": "Laik",
+        "square": "Ruut",
+        "triangle": "Kolmnurk",
+        "ring": "Rõngas",
+        "wave": "Lained",
+        "stripes": "Triibud",
+        "dots": "Täpid"
+      },
+      "colors": {
+        "accent": "Rõhk",
+        "soft": "Hele rõhk",
+        "ink": "Tekst"
+      }
+    },
+    "colors": {
+      "accentCv": "CV oma",
+      "accentFixed": "Fikseeritud värv",
+      "paper": "Lehe taust",
+      "background": "Taust",
+      "text": "Tekst",
+      "contrast": "Madal kontrast: teksti võib olla raske lugeda"
+    },
+    "css": {
+      "label": "Sinu CSS",
+      "hint": "Kehtib ainult CV kohta, kohe. Impordid ja välised aadressid eemaldatakse. Lisa !important, kui malli reegel võidab",
+      "rules": "Rakendatud reeglid: {{count}}",
+      "removed": "Sinu turvalisuse huvides eemaldatud: {{count}}",
+      "example": "Lisa näide",
+      "warnings": "Tähelepanu ATS-i lugemisele",
+      "warning": {
+        "order": "{{property}}: teksti võidakse lugeda vales järjekorras",
+        "shadow": "vari kirjutab teksti PDF-i kaks korda",
+        "content": "CSS-iga lisatud teksti loevad robotid"
+      },
+      "reference": "Saadaolevad klassid ja muutujad",
+      "referenceStudio": "Stuudio lõuendi püsivad klassid:",
+      "referenceTemplate": "Galerii mallil leiad klassid eelvaadet uurides. Ühised muutujad:"
+    },
+    "preview": {
+      "label": "Eelvaade koos",
+      "sample": "Näidis-CV"
+    },
+    "share": {
+      "title": "Jaga stiili",
+      "text": "See JSON-kood sisaldab kogu stiili (plokid, kujundid, värvid ja CSS), kuid mitte ühtegi sinu CV andmetest. Selle saab importida stiilistuudios",
+      "copy": "Kopeeri kood",
+      "copied": "Kood kopeeritud",
+      "copyError": "Kopeerimine ebaõnnestus: vali kood ja kopeeri see",
+      "download": "Laadi alla (.json)",
+      "close": "Sulge",
+      "importTitle": "Impordi stiil",
+      "importText": "Kleebi stiili JSON-kood või vali .json-fail",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Vali fail",
+      "importAction": "Impordi",
+      "imported": "Stiil „{{name}}“ imporditud",
+      "error": {
+        "invalidJson": "See tekst pole kehtiv JSON",
+        "notAStyle": "See kood pole LocalATSCV stiil",
+        "newerVersion": "See stiil pärineb LocalATSCV uuemast versioonist: uuenda rakendust"
+      }
+    }
   }
 }

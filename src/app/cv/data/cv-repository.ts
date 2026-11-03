@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { liveQuery } from 'dexie';
 import { Observable, from } from 'rxjs';
 import { CvVersion, MasterCv, newId } from '../model/cv.model';
+import { CvStyle, normalizeStyle } from '../model/cv-style';
 import { Backup, BackupPhoto, createBackup, normalizeCv } from './backup';
 import { LocalAtsCvDb } from './db';
 import { blobToDataUrl, dataUrlToBlob, prepareProfilePhoto } from './photo';
@@ -26,6 +27,14 @@ export class CvRepository {
         counts[version.masterId] = (counts[version.masterId] ?? 0) + 1;
       });
       return counts;
+    }),
+  );
+
+  /** Styles du studio, le plus récemment modifié en premier, mis à jour en direct. */
+  readonly styles$: Observable<CvStyle[]> = from(
+    liveQuery(async () => {
+      const styles = await this.db.styles.orderBy('updatedAt').reverse().toArray();
+      return styles.map(normalizeStyle).filter((style) => style !== null);
     }),
   );
 
@@ -100,6 +109,42 @@ export class CvRepository {
     await this.db.photos.delete(id);
   }
 
+  // --- Styles du studio ---
+
+  async getStyle(id: string): Promise<CvStyle | undefined> {
+    return normalizeStyle(await this.db.styles.get(id)) ?? undefined;
+  }
+
+  /**
+   * Chaque CV garde une copie du style qu'il utilise (sauvegardes et partages restent complets) :
+   * enregistrer le style met aussi à jour ces copies, sans toucher à leur date de modification.
+   */
+  async saveStyle(style: CvStyle): Promise<void> {
+    await this.db.transaction('rw', this.db.styles, this.db.cvs, async () => {
+      await this.db.styles.put(style);
+      await this.db.cvs
+        .filter((cv) => cv.style?.id === style.id)
+        .modify((cv) => void (cv.style = structuredClone(style)));
+    });
+    void this.requestPersistence();
+  }
+
+  /** Les CV qui l'utilisent gardent leur copie : leur apparence ne change pas. */
+  async deleteStyle(id: string): Promise<void> {
+    await this.db.styles.delete(id);
+  }
+
+  /** Nombre de CV qui utilisent chaque style. */
+  readonly styleUsage$: Observable<Record<string, number>> = from(
+    liveQuery(async () => {
+      const usage: Record<string, number> = {};
+      await this.db.cvs.each((cv) => {
+        if (cv.style?.id) usage[cv.style.id] = (usage[cv.style.id] ?? 0) + 1;
+      });
+      return usage;
+    }),
+  );
+
   /** Sauvegarde de tous les CV, ou seulement de ceux demandés. */
   async exportBackup(cvIds?: string[]): Promise<Backup> {
     const cvs = cvIds
@@ -112,7 +157,9 @@ export class CvRepository {
       const blob = cv.profile.photoId ? await this.getPhoto(cv.profile.photoId) : undefined;
       if (blob) photos.push({ id: cv.profile.photoId!, dataUrl: await blobToDataUrl(blob) });
     }
-    return createBackup(cvs, versions, photos);
+    // Les styles du studio ne sont joints qu'à la sauvegarde complète ; un CV seul garde sa copie.
+    const styles = cvIds ? [] : await this.db.styles.toArray();
+    return createBackup(cvs, versions, photos, styles);
   }
 
   /** Les CV de même identifiant sont remplacés, les autres sont conservés. */
@@ -131,8 +178,10 @@ export class CvRepository {
         // Photo illisible : ignorée.
       }
     }
-    await this.db.transaction('rw', this.db.cvs, this.db.versions, this.db.photos, async () => {
+    const tables = [this.db.cvs, this.db.versions, this.db.photos, this.db.styles];
+    await this.db.transaction('rw', tables, async () => {
       await this.db.photos.bulkPut(photos);
+      await this.db.styles.bulkPut(backup.styles ?? []);
       for (const cv of backup.cvs) await this.db.versions.where('masterId').equals(cv.id).delete();
       await this.db.versions.bulkPut(backup.versions);
       await this.db.cvs.bulkPut(backup.cvs);

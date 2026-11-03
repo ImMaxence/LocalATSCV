@@ -6,7 +6,8 @@
     "privacy": "Privatnost",
     "analyze": "Testiraj životopis",
     "editor": "Izradi moj životopis",
-    "skipToContent": "Prijeđi na sadržaj"
+    "skipToContent": "Prijeđi na sadržaj",
+    "studio": "Studio stilova"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Pravne napomene",
     "terms": "Uvjeti korištenja",
     "privacy": "Pravila privatnosti",
-    "accessibility": "Izjava o pristupačnosti"
+    "accessibility": "Izjava o pristupačnosti",
+    "studio": "Studio stilova"
   },
   "seo": {
     "home": "Izradite besplatno životopis koji vas vodi do razgovora: 72 predložaka, usklađeno motivacijsko pismo, prilagodba svakom oglasu i ATS provjera. Bez registracije, vaši podaci ostaju na vašem uređaju",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 predložaka na izbor",
         "letter": "Usklađeno motivacijsko pismo",
-        "private": "Vaši podaci ostaju kod vas"
+        "private": "Vaši podaci ostaju kod vas",
+        "studio": "Ili vlastiti dizajn"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Moram li navesti svoj invaliditet?",
           "a": "Nikada nije obavezno. Ako želite, uređivač predlaže formulaciju priznatu u zemlji životopisa (RQTH u Francuskoj, categorie protette u Italiji…), uz kontakte, na kraju životopisa ili samo u pismu. Možete je zadržati i samo u nekim verzijama"
+        },
+        "design": {
+          "q": "Mogu li izraditi vlastiti dizajn životopisa?",
+          "a": "Da. U studiju stilova slažete blokove (zaglavlje, naslove, iskustvo, stupce), postavljate ukrasne oblike i birate boje i fontove, bez koda. Ako znate CSS, možete zalijepiti i svoj. Stil se dijeli kopiranjem i lijepljenjem, bez podataka iz vašeg životopisa. A ako ne želite fotografiju, njezino mjesto može zauzeti ikona ili vaši inicijali"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Jedan odjeljak odjednom, uz savjet jednostavnim jezikom, sve do preuzimanja PDF-a"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio stilova",
+      "title": "Nijedan predložak vam ne odgovara? Izradite svoj",
+      "text": "Složite dizajn kao od kockica: odaberite blokove, postavite oblike, promijenite boje. Bez ijednog retka koda i i dalje ispravno čitljiv programima koji razvrstavaju prijave",
+      "points": {
+        "blocks": {
+          "title": "Blokovi za slaganje",
+          "text": "Zaglavlje, naslovi, iskustvo, vještine, stupci: svaki blok birate jednim klikom prema njegovoj skici"
+        },
+        "shapes": {
+          "title": "Oblici za postavljanje",
+          "text": "Krugovi, mrlje, valovi ili pruge koje povlačite po stranici. Ukrašavaju bez ometanja čitanja"
+        },
+        "css": {
+          "title": "Vaš CSS, ako želite",
+          "text": "Znate CSS? Zalijepite svoj na platno studija ili na predložak iz galerije: mijenja samo životopis"
+        },
+        "share": {
+          "title": "Dijeli se kopiranjem i lijepljenjem",
+          "text": "Vaš stil stane u kratak kod koji možete poslati. Ne sadrži nijedan podatak iz vašeg životopisa"
+        }
+      },
+      "icon": "Ikona umjesto fotografije",
+      "cta": "Izradi moj stil"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Navod se ne prikazuje u životopisu. Na kartici Pismo gumb dodaje gotovu rečenicu",
         "pros": "Za: angažirani poslodavci (programi uključivanja, kvote) brže vas pronalaze, a prilagodbe se lakše dogovaraju",
         "cons": "Protiv: neki regruteri i dalje imaju predrasude. O tome možete govoriti i kasnije, na razgovoru ili nakon zapošljavanja, ili nikada"
+      },
+      "photoIcon": "Ikona",
+      "photoIconTitle": "Ikona umjesto fotografije",
+      "photoIconHint": "Nacrtana bojom naglaska. Ništa ne otkriva o vama, pa ostaje i na životopisima na engleskom",
+      "avatars": {
+        "user": "Silueta",
+        "briefcase": "Aktovka",
+        "graduation": "Kapa za diplomu",
+        "code": "Kod",
+        "palette": "Paleta",
+        "camera": "Fotoaparat",
+        "music": "Glazba",
+        "heart": "Srce",
+        "leaf": "List",
+        "rocket": "Raketa",
+        "chefHat": "Kuharska kapa",
+        "wrench": "Ključ",
+        "stethoscope": "Stetoskop",
+        "book": "Knjiga",
+        "lightbulb": "Žarulja",
+        "initials": "Inicijali"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Dodajte 2 ili 3 hobija: pomažu započeti razgovor na intervjuu",
         "finish": "Odaberite predložak koji vam se sviđa i preuzmite životopis kao PDF. Uvijek se možete vratiti i urediti ga"
       }
+    },
+    "style": {
+      "button": "Moj stil",
+      "title": "Stil životopisa",
+      "gallery": "Predložak iz galerije: {{name}}",
+      "empty": "Još niste izradili stil",
+      "css": "Prilagodi pomoću CSS-a",
+      "cssHint": "Vlastiti CSS na trenutačnom predlošku",
+      "cssName": "{{name}} prilagođen",
+      "studio": "Studio stilova",
+      "studioHint": "Vlastiti dizajn od blokova i oblika, bez koda"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Zadani prikaz",
     "note": "Ove postavke mijenjaju sučelje, nikada vaš ispisani životopis"
+  },
+  "studio": {
+    "title": "Studio stilova",
+    "subtitle": "Izradite vlastiti dizajn životopisa: blokovi i oblici koje slažete bez koda ili vlastiti CSS. Zatim ga podijelite kao JSON kod",
+    "backToCv": "Natrag na životopis",
+    "notFound": "Ovaj stil ne postoji ili je izbrisan",
+    "points": {
+      "blocks": "Blokovi za slaganje",
+      "shapes": "Oblici za postavljanje",
+      "css": "Vlastiti CSS",
+      "share": "Dijeljenje u JSON-u"
+    },
+    "list": {
+      "new": "Novi stil",
+      "emptyTitle": "Još nema stilova",
+      "emptyText": "Krenite od prazne stranice ili polazišta, a zatim prilagodite svaki blok",
+      "open": "Otvori",
+      "actions": "Radnje",
+      "duplicate": "Dupliciraj",
+      "delete": "Izbriši",
+      "deleteTitle": "Izbrisati stil „{{name}}”?",
+      "deleteText": "Životopisi koji ga koriste zadržavaju sadašnji izgled",
+      "copySuffix": "(kopija)",
+      "updated": "Uređeno {{date}}",
+      "usedBy": "Životopisi koji ga koriste: {{count}}",
+      "hint": "Vaši stilovi ostaju u ovom pregledniku. Svaki životopis čuva kopiju svojeg stila pa je potpun u sigurnosnim kopijama"
+    },
+    "presets": {
+      "blank": "Prazna stranica",
+      "band": "Traka",
+      "sidebar": "Bočni stupac",
+      "organic": "Mekani oblici",
+      "timeline": "Vremenska crta"
+    },
+    "toolbar": {
+      "back": "Moji stilovi",
+      "name": "Naziv stila",
+      "share": "Podijeli",
+      "use": "Upotrijebi za životopis",
+      "applyBack": "Primijeni na životopis",
+      "noCv": "Još nema životopisa",
+      "applied": "Stil primijenjen na „{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Blokovi",
+      "shapes": "Oblici",
+      "colors": "Boje",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Polazište",
+      "studio": "Platno studija",
+      "studioHint": "Slažite blokove i postavljajte oblike",
+      "template": "Predložak iz galerije",
+      "templateHint": "Blokovi i oblici dostupni su samo na platnu studija. Ovaj predložak prilagodite na kartici CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Stupci",
+        "single": "Jedan stupac",
+        "sidebarLeft": "Bočni stupac"
+      },
+      "header": {
+        "label": "Zaglavlje",
+        "left": "Klasično",
+        "center": "Centrirano",
+        "band": "Traka",
+        "card": "Okvir s kontaktima"
+      },
+      "headings": {
+        "label": "Naslovi odjeljaka",
+        "underline": "Podcrtano",
+        "bar": "Traka",
+        "pill": "Pilula",
+        "caps": "Velika slova",
+        "boxed": "U okviru",
+        "line": "Linija"
+      },
+      "entries": {
+        "label": "Iskustvo i obrazovanje",
+        "classic": "Klasično",
+        "timeline": "Vremenska crta",
+        "cards": "Kartice",
+        "datesLeft": "Datumi lijevo"
+      },
+      "skills": {
+        "label": "Vještine",
+        "chips": "Oznake",
+        "inline": "U jednom retku",
+        "grid": "Rešetka"
+      },
+      "languages": {
+        "label": "Jezici",
+        "meter": "Pokazivač",
+        "text": "Tekst"
+      },
+      "photo": {
+        "label": "Fotografija",
+        "circle": "Okrugla",
+        "rounded": "Zaobljena",
+        "square": "Kvadratna",
+        "hidden": "Skrivena"
+      }
+    },
+    "shapes": {
+      "add": "Dodaj oblik",
+      "hint": "Oblici su iza teksta: ukrašavaju bez ometanja čitanja ATS-a",
+      "drag": "Povlačite oblike po stranici ili ih pomičite strelicama",
+      "onPage": "Oblici na stranici",
+      "empty": "Na stranici još nema oblika",
+      "color": "Boja",
+      "size": "Veličina",
+      "rotate": "Rotacija",
+      "alpha": "Intenzitet",
+      "x": "Vodoravno",
+      "y": "Okomito",
+      "duplicate": "Dupliciraj",
+      "remove": "Izbriši",
+      "kinds": {
+        "circle": "Krug",
+        "blob": "Mrlja",
+        "square": "Kvadrat",
+        "triangle": "Trokut",
+        "ring": "Prsten",
+        "wave": "Valovi",
+        "stripes": "Pruge",
+        "dots": "Točke"
+      },
+      "colors": {
+        "accent": "Naglasak",
+        "soft": "Svijetli naglasak",
+        "ink": "Tekst"
+      }
+    },
+    "colors": {
+      "accentCv": "Ona iz životopisa",
+      "accentFixed": "Fiksna boja",
+      "paper": "Pozadina stranice",
+      "background": "Pozadina",
+      "text": "Tekst",
+      "contrast": "Slab kontrast: tekst bi mogao biti teško čitljiv"
+    },
+    "css": {
+      "label": "Vaš CSS",
+      "hint": "Primjenjuje se samo na životopis, odmah. Uvozi i vanjske adrese uklanjaju se. Dodajte !important ako prevlada pravilo predloška",
+      "rules": "Primijenjena pravila: {{count}}",
+      "removed": "Uklonjeno radi vaše sigurnosti: {{count}}",
+      "example": "Umetni primjer",
+      "warnings": "Pozor na čitanje ATS-a",
+      "warning": {
+        "order": "{{property}}: tekst bi se mogao pročitati pogrešnim redoslijedom",
+        "shadow": "sjena dvaput upisuje tekst u PDF",
+        "content": "tekst dodan CSS-om čitaju roboti"
+      },
+      "reference": "Dostupne klase i varijable",
+      "referenceStudio": "Stalne klase platna studija:",
+      "referenceTemplate": "Kod predloška iz galerije klase ćete pronaći pregledom pretpregleda. Zajedničke varijable:"
+    },
+    "preview": {
+      "label": "Pretpregled sa",
+      "sample": "Oglednim životopisom"
+    },
+    "share": {
+      "title": "Podijeli stil",
+      "text": "Ovaj JSON kod sadrži cijeli stil (blokove, oblike, boje i CSS), ali nijedan podatak iz vašeg životopisa. Uvozi se u studiju stilova",
+      "copy": "Kopiraj kod",
+      "copied": "Kod je kopiran",
+      "copyError": "Kopiranje nije uspjelo: označite kod i kopirajte ga",
+      "download": "Preuzmi (.json)",
+      "close": "Zatvori",
+      "importTitle": "Uvezi stil",
+      "importText": "Zalijepite JSON kod stila ili odaberite .json datoteku",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Odaberi datoteku",
+      "importAction": "Uvezi",
+      "imported": "Stil „{{name}}” uvezen",
+      "error": {
+        "invalidJson": "Ovaj tekst nije valjan JSON",
+        "notAStyle": "Ovaj kod nije LocalATSCV stil",
+        "newerVersion": "Ovaj stil potječe iz novije inačice LocalATSCV-a: ažurirajte aplikaciju"
+      }
+    }
   }
 }

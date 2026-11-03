@@ -1,4 +1,6 @@
+import type { AvatarIcon } from './avatar';
 import { CvFontId } from './cv-fonts';
+import type { CvStyle } from './cv-style';
 
 /** Langues dans lesquelles un CV peut être rédigé (titres de sections, dates, règle EN). */
 export const CV_LANGUAGES = ['fr', 'en', 'it', 'es', 'de'] as const;
@@ -118,6 +120,11 @@ export interface Profile {
   summary: string;
   /** Référence vers la table `photos` d'IndexedDB. */
   photoId: string | null;
+  /**
+   * Icône (ou initiales) affichée à la place de la photo. Elle ne dit rien de la personne :
+   * contrairement à la photo, la règle EN ne la masque pas.
+   */
+  photoIcon: AvatarIcon | null;
   /** Lien à afficher en QR code dans les modèles qui le proposent. */
   qrLinkId: string | null;
   links: ProfileLink[];
@@ -163,6 +170,8 @@ export interface MasterCv {
   /** Polices choisies ; `null` = police prévue par le modèle. */
   fonts: { heading: CvFontId | null; body: CvFontId | null };
   accentColor: string;
+  /** Style personnel du studio (copie), affiché à la place du modèle ; `null` = modèle de la galerie. */
+  style: CvStyle | null;
   layout: CvLayout;
   dateStyle: DateStyle;
   profile: Profile;
@@ -366,6 +375,7 @@ export function createProfile(): Profile {
     disabilityPlacement: 'contact',
     summary: '',
     photoId: null,
+    photoIcon: null,
     qrLinkId: null,
     links: [],
   };
@@ -380,6 +390,7 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     template: 'aurora',
     fonts: { heading: null, body: null },
     accentColor: ACCENT_COLORS[0],
+    style: null,
     layout: { ...DEFAULT_LAYOUT },
     dateStyle: 'month',
     profile: createProfile(),

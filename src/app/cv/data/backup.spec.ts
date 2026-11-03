@@ -1,5 +1,6 @@
 import { BACKUP_SCHEMA_VERSION, BackupError, createBackup, parseBackup } from './backup';
 import { createVersion } from '../model/cv.model';
+import { createStyle } from '../model/cv-style';
 import { createSampleCv } from '../model/sample-cv';
 
 const codeOf = (fn: () => unknown): string | undefined => {
@@ -25,6 +26,27 @@ describe('parseBackup', () => {
     expect(parsed.photos).toEqual([photo]);
   });
 
+  it('relit les styles du studio et l’icône à la place de la photo', () => {
+    const style = createStyle('Mon style', 'band');
+    const styled = {
+      ...structuredClone(cv),
+      style,
+      profile: { ...cv.profile, photoIcon: 'rocket' as const },
+    };
+    const parsed = parseBackup(JSON.stringify(createBackup([styled], [], [], [style])));
+    expect(parsed.cvs[0].style).toEqual(style);
+    expect(parsed.cvs[0].profile.photoIcon).toBe('rocket');
+    expect(parsed.styles).toEqual([style]);
+  });
+
+  it('relit les sauvegardes antérieures aux styles', () => {
+    const { styles: _styles, ...old } = createBackup([cv], [], []);
+    const parsed = parseBackup(JSON.stringify(old));
+    expect(parsed.styles).toEqual([]);
+    expect(parsed.cvs[0].style).toBeNull();
+    expect(parsed.cvs[0].profile.photoIcon).toBeNull();
+  });
+
   it('refuse un fichier qui n’est pas du JSON', () => {
     expect(codeOf(() => parseBackup('pas du json'))).toBe('invalidJson');
   });
@@ -48,7 +70,8 @@ describe('parseBackup', () => {
           id: 'cv-1',
           language: 'xx',
           accentColor: 'rouge',
-          profile: { firstName: 'Ada' },
+          profile: { firstName: 'Ada', photoIcon: 'javascript' },
+          style: { base: 'studio', css: 42 },
           sections: [
             { kind: 'inconnu', items: [] },
             { kind: 'skills', items: [{ keywords: 'TS' }] },
@@ -67,6 +90,8 @@ describe('parseBackup', () => {
     expect(imported.accentColor).toMatch(/^#[0-9a-f]{6}$/i);
     expect(imported.profile.firstName).toBe('Ada');
     expect(imported.profile.links).toEqual([]);
+    expect(imported.profile.photoIcon).toBeNull();
+    expect(imported.style?.css).toBe('');
     expect(imported.sections.map((s) => s.kind)).toEqual(['skills']);
     expect(imported.sections[0].items[0].id).toBeTruthy();
     expect(parsed.versions).toEqual([]);

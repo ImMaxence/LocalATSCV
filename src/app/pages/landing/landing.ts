@@ -13,6 +13,8 @@ import {
   DemoSegmentsPipe,
 } from './landing-demo';
 import { DISABILITY_LABELS } from '../../cv/model/disability';
+import { SHAPES } from '../../cv/document/parts/shapes';
+import { BLOCK_SKETCHES, SKETCH_FILLS, SketchRect } from '../studio/block-previews';
 import { FAQ_ITEMS } from './faq';
 
 interface IconItem {
@@ -42,7 +44,7 @@ export class Landing {
   protected readonly scoreCircumference = 2 * Math.PI * SCORE_RADIUS;
   protected readonly scoreOffset = this.scoreCircumference * (1 - DEMO_SCORE / 100);
 
-  protected readonly heroPoints = ['templates', 'letter', 'private'];
+  protected readonly heroPoints = ['templates', 'studio', 'letter', 'private'];
 
   protected readonly pitfalls: IconItem[] = [
     { key: 'layout', icon: 'layers' },
@@ -79,6 +81,37 @@ export class Landing {
   ];
 
   protected readonly faq = FAQ_ITEMS;
+
+  // --- Studio de styles ---
+
+  protected readonly studioPoints: IconItem[] = [
+    { key: 'blocks', icon: 'layout' },
+    { key: 'shapes', icon: 'shapes' },
+    { key: 'css', icon: 'code' },
+    { key: 'share', icon: 'share' },
+  ];
+  protected readonly studioTabs: IconItem[] = [
+    { key: 'blocks', icon: 'layout' },
+    { key: 'shapes', icon: 'shapes' },
+    { key: 'colors', icon: 'palette' },
+    { key: 'css', icon: 'code' },
+  ];
+  /** Panneau « Blocs » de l'illustration : vrais croquis du studio, variante choisie en avant. */
+  protected readonly sketchGroups = (
+    [
+      { key: 'header', selected: 'band', options: ['left', 'center', 'band'] },
+      { key: 'headings', selected: 'pill', options: ['underline', 'bar', 'pill'] },
+      { key: 'entries', selected: 'timeline', options: ['classic', 'timeline', 'cards'] },
+    ] as const
+  ).map((group) => ({
+    ...group,
+    options: group.options.map((id) => ({
+      id,
+      rects: (BLOCK_SKETCHES[group.key] as Record<string, SketchRect[]>)[id],
+    })),
+  }));
+  protected readonly sketchFills = SKETCH_FILLS;
+  protected readonly shapes = SHAPES;
 
   protected readonly inclusivePoints: IconItem[] = [
     { key: 'disclosure', icon: 'access' },

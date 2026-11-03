@@ -6,7 +6,8 @@
     "privacy": "Privacy",
     "analyze": "Subukan ang resume ko",
     "editor": "Gawin ang resume ko",
-    "skipToContent": "Lumaktaw sa nilalaman"
+    "skipToContent": "Lumaktaw sa nilalaman",
+    "studio": "Style studio"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Legal na abiso",
     "terms": "Mga tuntunin ng paggamit",
     "privacy": "Patakaran sa privacy",
-    "accessibility": "Pahayag sa accessibility"
+    "accessibility": "Pahayag sa accessibility",
+    "studio": "Style studio"
   },
   "seo": {
     "home": "Gumawa nang libre ng resume na magdadala sa iyo sa interview: 72 template, katugmang cover letter, pag-angkop sa bawat job posting at ATS check. Walang sign-up, nananatili sa device mo ang data mo",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 template na mapagpipilian",
         "letter": "Katugmang cover letter",
-        "private": "Sa iyo lang ang data mo"
+        "private": "Sa iyo lang ang data mo",
+        "studio": "O sarili mong disenyo"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Kailangan ko bang banggitin ang aking kapansanan?",
           "a": "Hindi ito kailanman obligado. Kung gusto mo, magmumungkahi ang editor ng pananalitang kinikilala sa bansa ng CV mo (RQTH sa France, categorie protette sa Italy…), kasama ng contact details, sa dulo ng CV o sa liham lang. Puwede mo rin itong panatilihin sa ilang bersyon lang"
+        },
+        "design": {
+          "q": "Puwede ba akong gumawa ng sariling disenyo ng resume?",
+          "a": "Oo. Sa style studio, pinagsasama mo ang mga block (header, mga pamagat, karanasan, column), naglalagay ng mga pandekorasyong hugis at pumipili ng kulay at font, nang walang code. Kung marunong ka ng CSS, puwede mo ring i-paste ang sa iyo. Ibinabahagi ang istilo sa simpleng copy-paste, nang walang data ng resume mo. At kung ayaw mong maglagay ng larawan, puwedeng pumalit ang isang icon o ang iyong mga inisyal"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Isang seksyon bawat oras, may payo sa simpleng wika, hanggang sa pag-download ng PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Style studio",
+      "title": "Walang template na bagay sa iyo? Gumawa ng sarili mo",
+      "text": "Buuin ang disenyo mo na parang laruang block: pumili ng mga block, maglagay ng mga hugis, palitan ang mga kulay. Walang kahit isang linya ng code, at tama pa ring nababasa ng software na nagsasala ng mga aplikasyon",
+      "points": {
+        "blocks": {
+          "title": "Mga block na pagsasamahin",
+          "text": "Header, mga pamagat, karanasan, kasanayan, column: bawat block ay pinipili sa isang click mula sa sketch nito"
+        },
+        "shapes": {
+          "title": "Mga hugis na ilalagay",
+          "text": "Mga bilog, mantsa, alon o guhit na hinihila mo sa pahina. Nagpapaganda nang hindi nakakaabala sa pagbasa"
+        },
+        "css": {
+          "title": "Sarili mong CSS, kung gusto mo",
+          "text": "Marunong ng CSS? I-paste ang sa iyo sa canvas ng studio o sa template ng gallery: resume lang ang nababago"
+        },
+        "share": {
+          "title": "Ibinabahagi sa copy-paste",
+          "text": "Kasya ang istilo mo sa maikling code na maipapadala mo. Walang anumang data ng resume mo rito"
+        }
+      },
+      "icon": "Icon sa halip na larawan",
+      "cta": "Gawin ang istilo ko"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Hindi lumalabas ang banggit sa CV. Sa tab na Liham, may button na nagdadagdag ng handang pangungusap",
         "pros": "Pabor: mas mabilis kang mapapansin ng mga employer na may malasakit (inclusion program, quota) at mas madaling pag-usapan ang mga adjustment",
         "cons": "Laban: may mga recruiter pang may pagkiling. Puwede mo rin itong banggitin mamaya, sa interview o pagkatapos matanggap, o hindi kailanman"
+      },
+      "photoIcon": "Isang icon",
+      "photoIconTitle": "Icon sa halip na larawan",
+      "photoIconHint": "Iginuguhit sa accent color. Wala itong sinasabi tungkol sa iyo, kaya nananatili rin sa mga resume na Ingles",
+      "avatars": {
+        "user": "Silweta",
+        "briefcase": "Briefcase",
+        "graduation": "Sumbrero ng pagtatapos",
+        "code": "Code",
+        "palette": "Paleta",
+        "camera": "Kamera",
+        "music": "Musika",
+        "heart": "Puso",
+        "leaf": "Dahon",
+        "rocket": "Rocket",
+        "chefHat": "Sumbrero ng chef",
+        "wrench": "Liyabe",
+        "stethoscope": "Istetoskopyo",
+        "book": "Aklat",
+        "lightbulb": "Bombilya",
+        "initials": "Inisyal"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Magdagdag ng 2 o 3 libangan: nakatutulong ang mga ito sa pagsisimula ng usapan sa interview",
         "finish": "Pumili ng template na gusto mo, saka i-download ang CV bilang PDF. Puwede kang bumalik anumang oras para baguhin ito"
       }
+    },
+    "style": {
+      "button": "Aking istilo",
+      "title": "Istilo ng resume",
+      "gallery": "Template mula sa gallery: {{name}}",
+      "empty": "Wala pang nagawang istilo",
+      "css": "I-customize gamit ang CSS",
+      "cssHint": "Sariling CSS sa kasalukuyang template",
+      "cssName": "{{name}} na binago",
+      "studio": "Style studio",
+      "studioHint": "Sariling disenyo mula sa mga block at hugis, walang code"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Default na display",
     "note": "Binabago ng mga setting na ito ang interface, hindi kailanman ang naka-print mong CV"
+  },
+  "studio": {
+    "title": "Style studio",
+    "subtitle": "Gumawa ng sariling disenyo ng resume: mga block at hugis na pinagsasama nang walang code, o sarili mong CSS. Pagkatapos, ibahagi ito bilang JSON code",
+    "backToCv": "Bumalik sa resume",
+    "notFound": "Wala ang istilong ito o nabura na",
+    "points": {
+      "blocks": "Mga block na pagsasamahin",
+      "shapes": "Mga hugis na ilalagay",
+      "css": "Sariling CSS",
+      "share": "Pagbabahagi sa JSON"
+    },
+    "list": {
+      "new": "Bagong istilo",
+      "emptyTitle": "Wala pang istilo",
+      "emptyText": "Magsimula sa blangkong pahina o panimulang punto, saka ayusin ang bawat block",
+      "open": "Buksan",
+      "actions": "Mga aksyon",
+      "duplicate": "I-duplicate",
+      "delete": "Burahin",
+      "deleteTitle": "Burahin ang istilong “{{name}}”?",
+      "deleteText": "Mananatili ang kasalukuyang hitsura ng mga resume na gumagamit nito",
+      "copySuffix": "(kopya)",
+      "updated": "Binago noong {{date}}",
+      "usedBy": "Mga resume na gumagamit nito: {{count}}",
+      "hint": "Nananatili sa browser na ito ang mga istilo mo. May kopya ng istilo ang bawat resume, kaya buo ito sa mga backup mo"
+    },
+    "presets": {
+      "blank": "Blangkong pahina",
+      "band": "Banner",
+      "sidebar": "Gilid na column",
+      "organic": "Malalambot na hugis",
+      "timeline": "Timeline"
+    },
+    "toolbar": {
+      "back": "Aking mga istilo",
+      "name": "Pangalan ng istilo",
+      "share": "Ibahagi",
+      "use": "Gamitin sa isang resume",
+      "applyBack": "Ilapat sa resume",
+      "noCv": "Wala pang resume",
+      "applied": "Nailapat ang istilo sa “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Mga block",
+      "shapes": "Mga hugis",
+      "colors": "Mga kulay",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Panimulang punto",
+      "studio": "Canvas ng studio",
+      "studioHint": "Pagsamahin ang mga block at ilagay ang mga hugis",
+      "template": "Template mula sa gallery",
+      "templateHint": "Para lang sa canvas ng studio ang mga block at hugis. Ayusin ang template na ito sa tab na CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Mga column",
+        "single": "Isang column",
+        "sidebarLeft": "Gilid na column"
+      },
+      "header": {
+        "label": "Header",
+        "left": "Klasiko",
+        "center": "Nakagitna",
+        "band": "Banner",
+        "card": "Kahon ng contact"
+      },
+      "headings": {
+        "label": "Mga pamagat ng seksyon",
+        "underline": "May salungguhit",
+        "bar": "Bar",
+        "pill": "Pill",
+        "caps": "Malalaking titik",
+        "boxed": "May kahon",
+        "line": "Guhit"
+      },
+      "entries": {
+        "label": "Karanasan at edukasyon",
+        "classic": "Klasiko",
+        "timeline": "Timeline",
+        "cards": "Mga card",
+        "datesLeft": "Petsa sa kaliwa"
+      },
+      "skills": {
+        "label": "Mga kasanayan",
+        "chips": "Mga tag",
+        "inline": "Sa isang linya",
+        "grid": "Grid"
+      },
+      "languages": {
+        "label": "Mga wika",
+        "meter": "Gauge",
+        "text": "Teksto"
+      },
+      "photo": {
+        "label": "Larawan",
+        "circle": "Bilog",
+        "rounded": "Bilugan",
+        "square": "Parisukat",
+        "hidden": "Nakatago"
+      }
+    },
+    "shapes": {
+      "add": "Magdagdag ng hugis",
+      "hint": "Nasa likod ng teksto ang mga hugis: nagpapaganda nang hindi nakakaabala sa pagbasa ng ATS",
+      "drag": "I-drag ang mga hugis sa pahina o ilipat gamit ang mga arrow key",
+      "onPage": "Mga hugis sa pahina",
+      "empty": "Wala pang hugis sa pahina",
+      "color": "Kulay",
+      "size": "Laki",
+      "rotate": "Pag-ikot",
+      "alpha": "Tingkad",
+      "x": "Pahalang",
+      "y": "Patayo",
+      "duplicate": "I-duplicate",
+      "remove": "Burahin",
+      "kinds": {
+        "circle": "Bilog",
+        "blob": "Mantsa",
+        "square": "Parisukat",
+        "triangle": "Tatsulok",
+        "ring": "Singsing",
+        "wave": "Mga alon",
+        "stripes": "Mga guhit",
+        "dots": "Mga tuldok"
+      },
+      "colors": {
+        "accent": "Accent",
+        "soft": "Mapusyaw na accent",
+        "ink": "Teksto"
+      }
+    },
+    "colors": {
+      "accentCv": "Kulay ng resume",
+      "accentFixed": "Nakapirming kulay",
+      "paper": "Background ng pahina",
+      "background": "Background",
+      "text": "Teksto",
+      "contrast": "Mababang contrast: maaaring mahirap basahin ang teksto"
+    },
+    "css": {
+      "label": "Ang CSS mo",
+      "hint": "Sa resume lang ito inilalapat, agad-agad. Inaalis ang mga import at panlabas na address. Idagdag ang !important kung nananaig ang patakaran ng template",
+      "rules": "Mga patakarang nailapat: {{count}}",
+      "removed": "Inalis para sa kaligtasan mo: {{count}}",
+      "example": "Maglagay ng halimbawa",
+      "warnings": "Mag-ingat sa pagbasa ng ATS",
+      "warning": {
+        "order": "{{property}}: maaaring mabasa nang hindi sunod-sunod ang teksto",
+        "shadow": "dalawang beses isinusulat ng anino ang teksto sa PDF",
+        "content": "binabasa ng mga robot ang tekstong idinagdag sa CSS"
+      },
+      "reference": "Mga available na class at variable",
+      "referenceStudio": "Mga matatag na class ng canvas ng studio:",
+      "referenceTemplate": "Sa template mula sa gallery, siyasatin ang preview para makita ang mga class nito. Mga shared variable:"
+    },
+    "preview": {
+      "label": "Preview gamit ang",
+      "sample": "Halimbawang resume"
+    },
+    "share": {
+      "title": "Ibahagi ang istilo",
+      "text": "Nasa JSON code na ito ang buong istilo (mga block, hugis, kulay at CSS), pero walang anumang data ng resume mo. Ini-import ito mula sa style studio",
+      "copy": "Kopyahin ang code",
+      "copied": "Nakopya ang code",
+      "copyError": "Hindi makopya: piliin ang code at kopyahin ito",
+      "download": "I-download (.json)",
+      "close": "Isara",
+      "importTitle": "Mag-import ng istilo",
+      "importText": "I-paste ang JSON code ng isang istilo o pumili ng .json file",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Pumili ng file",
+      "importAction": "I-import",
+      "imported": "Na-import ang istilong “{{name}}”",
+      "error": {
+        "invalidJson": "Hindi valid na JSON ang tekstong ito",
+        "notAStyle": "Hindi istilo ng LocalATSCV ang code na ito",
+        "newerVersion": "Galing ang istilong ito sa mas bagong bersyon ng LocalATSCV: i-update ang app"
+      }
+    }
   }
 }

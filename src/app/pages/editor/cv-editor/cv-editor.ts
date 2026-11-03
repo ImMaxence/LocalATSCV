@@ -21,8 +21,10 @@ import {
   untracked,
   viewChild,
 } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
+import { CvRepository } from '../../../cv/data/cv-repository';
 import { CvDocument } from '../../../cv/document/cv-document';
 import { CvPreview } from '../../../cv/document/cv-preview';
 import { readSetting, writeSetting } from '../../../core/storage/local-settings';
@@ -36,6 +38,7 @@ import {
 } from '../../../cv/model/cv.model';
 import { hidesPersonalDetails } from '../../../cv/model/resolve-cv';
 import { CV_FONTS, CvFontId } from '../../../cv/model/cv-fonts';
+import { createTemplateStyle } from '../../../cv/model/cv-style';
 import { Icon } from '../../../shared/icon/icon';
 import { CvEditorStore } from './cv-editor.store';
 import { AtsCheck } from './parts/ats-check';
@@ -105,6 +108,10 @@ export class CvEditor {
   private readonly dialog = inject(Dialog);
   private readonly transloco = inject(TranslocoService);
   private readonly injector = inject(Injector);
+  private readonly repository = inject(CvRepository);
+
+  /** Styles créés dans le studio, proposés dans le menu « Mon style ». */
+  protected readonly styles = toSignal(this.repository.styles$, { initialValue: [] });
 
   protected readonly mobileTab = signal<'edit' | 'preview'>('edit');
   protected readonly languages = CV_LANGUAGES;
@@ -289,6 +296,26 @@ export class CvEditor {
       afterNextRender(() => this.openingTemplates.set(false), { injector: this.injector });
       ref.closed.subscribe((template) => template && this.store.setTemplate(template));
     });
+  }
+
+  /**
+   * Ouvre le CSS du style en cours dans le studio ; sans style, en crée un sur le modèle affiché
+   * (même apparence, prêt à être retouché). Le studio montre ce CV et y ramène.
+   */
+  protected async customizeCss(): Promise<void> {
+    const cv = this.store.cv();
+    if (!cv) return;
+    let style = cv.style;
+    if (!style) {
+      const name = this.transloco.translate('editor.style.cssName', {
+        name: this.transloco.translate(`editor.templates.names.${cv.template}.name`),
+      });
+      style = createTemplateStyle(name, cv.template);
+      this.store.setStyle(style);
+    }
+    if (!(await this.repository.getStyle(style.id))) await this.repository.saveStyle(style);
+    await this.store.flush();
+    await this.router.navigate(['/studio', style.id], { queryParams: { cv: cv.id, tab: 'css' } });
   }
 
   protected moveSection(event: CdkDragDrop<unknown>): void {

@@ -6,7 +6,8 @@
     "privacy": "Soukromí",
     "analyze": "Otestovat životopis",
     "editor": "Vytvořit můj životopis",
-    "skipToContent": "Přejít na obsah"
+    "skipToContent": "Přejít na obsah",
+    "studio": "Studio stylů"
   },
   "theme": {
     "label": "Motiv",
@@ -29,7 +30,8 @@
     "legalNotice": "Právní informace",
     "terms": "Podmínky použití",
     "privacy": "Zásady ochrany soukromí",
-    "accessibility": "Prohlášení o přístupnosti"
+    "accessibility": "Prohlášení o přístupnosti",
+    "studio": "Studio stylů"
   },
   "seo": {
     "home": "Vytvořte si zdarma životopis, který vám otevře dveře k pohovoru: 72 šablon, sladěný motivační dopis, přizpůsobení každé nabídce a kontrola ATS. Bez registrace, vaše data zůstávají ve vašem zařízení",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 šablon na výběr",
         "letter": "Sladěný motivační dopis",
-        "private": "Vaše data zůstávají u vás"
+        "private": "Vaše data zůstávají u vás",
+        "studio": "Nebo vlastní design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Musím uvést své zdravotní postižení?",
           "a": "Nikdy to není povinné. Pokud chcete, editor nabídne formulaci uznávanou v zemi vašeho životopisu (RQTH ve Francii, categorie protette v Itálii…), u kontaktů, na konci životopisu nebo jen v dopise. Můžete ji také ponechat jen v některých verzích"
+        },
+        "design": {
+          "q": "Mohu si vytvořit vlastní design životopisu?",
+          "a": "Ano. Ve studiu stylů skládáte bloky (záhlaví, nadpisy, praxe, sloupce), umisťujete dekorativní tvary a volíte barvy a písma, bez kódu. Pokud znáte CSS, můžete vložit i vlastní. Styl se sdílí přes kopírovat a vložit, bez údajů z vašeho životopisu. A pokud nechcete ukazovat fotku, může ji nahradit ikona nebo vaše iniciály"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Jedna část po druhé, s radou v jednoduché řeči, až ke stažení PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio stylů",
+      "title": "Žádná šablona vám nesedí? Vytvořte si vlastní",
+      "text": "Poskládejte si design jako ze stavebnice: vyberte bloky, přidejte tvary, změňte barvy. Bez jediného řádku kódu a stále správně čitelný pro programy, které třídí přihlášky",
+      "points": {
+        "blocks": {
+          "title": "Bloky ke skládání",
+          "text": "Záhlaví, nadpisy, praxe, dovednosti, sloupce: každý blok vyberete jedním kliknutím podle jeho náčrtu"
+        },
+        "shapes": {
+          "title": "Tvary k rozmístění",
+          "text": "Kruhy, skvrny, vlny nebo pruhy, které přetáhnete po stránce. Zdobí, aniž by rušily čtení"
+        },
+        "css": {
+          "title": "Vlastní CSS, pokud chcete",
+          "text": "Znáte CSS? Vložte své na plátno studia nebo na šablonu z galerie: změní jen životopis"
+        },
+        "share": {
+          "title": "Sdílení přes kopírovat a vložit",
+          "text": "Váš styl se vejde do krátkého kódu, který můžete poslat dál. Neobsahuje žádné údaje z vašeho životopisu"
+        }
+      },
+      "icon": "Ikona místo fotky",
+      "cta": "Vytvořit můj styl"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Údaj se v životopise nezobrazí. Na kartě Dopis přidá tlačítko hotovou větu",
         "pros": "Pro: angažovaní zaměstnavatelé (programy inkluze, povinný podíl) si vás všimnou dřív a úpravy se snáz domlouvají",
         "cons": "Proti: někteří personalisté mají stále předsudky. Můžete o tom mluvit i později, u pohovoru nebo po nástupu, nebo nikdy"
+      },
+      "photoIcon": "Ikona",
+      "photoIconTitle": "Ikona místo fotky",
+      "photoIconHint": "Nakreslená barvou zvýraznění. Nic o vás neprozrazuje, proto zůstává i v anglických životopisech",
+      "avatars": {
+        "user": "Silueta",
+        "briefcase": "Aktovka",
+        "graduation": "Absolventská čepice",
+        "code": "Kód",
+        "palette": "Paleta",
+        "camera": "Fotoaparát",
+        "music": "Hudba",
+        "heart": "Srdce",
+        "leaf": "List",
+        "rocket": "Raketa",
+        "chefHat": "Kuchařská čepice",
+        "wrench": "Klíč",
+        "stethoscope": "Stetoskop",
+        "book": "Kniha",
+        "lightbulb": "Žárovka",
+        "initials": "Iniciály"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Přidejte 2 nebo 3 koníčky: pomáhají rozproudit rozhovor u pohovoru",
         "finish": "Vyberte šablonu, která se vám líbí, a stáhněte životopis jako PDF. Vždy se k němu můžete vrátit"
       }
+    },
+    "style": {
+      "button": "Můj styl",
+      "title": "Styl životopisu",
+      "gallery": "Šablona z galerie: {{name}}",
+      "empty": "Zatím nemáte žádný styl",
+      "css": "Upravit pomocí CSS",
+      "cssHint": "Vlastní CSS na aktuální šabloně",
+      "cssName": "{{name}} upravený",
+      "studio": "Studio stylů",
+      "studioHint": "Vlastní design z bloků a tvarů, bez kódu"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Výchozí zobrazení",
     "note": "Tato nastavení mění rozhraní, nikdy váš vytištěný životopis"
+  },
+  "studio": {
+    "title": "Studio stylů",
+    "subtitle": "Vytvořte si vlastní design životopisu: bloky a tvary, které poskládáte bez kódu, nebo vlastní CSS. Pak ho sdílejte jako kód JSON",
+    "backToCv": "Zpět k životopisu",
+    "notFound": "Tento styl neexistuje nebo byl smazán",
+    "points": {
+      "blocks": "Bloky ke skládání",
+      "shapes": "Tvary k rozmístění",
+      "css": "Vlastní CSS",
+      "share": "Sdílení v JSON"
+    },
+    "list": {
+      "new": "Nový styl",
+      "emptyTitle": "Zatím žádné styly",
+      "emptyText": "Začněte prázdnou stránkou nebo výchozím bodem a pak upravte každý blok",
+      "open": "Otevřít",
+      "actions": "Akce",
+      "duplicate": "Duplikovat",
+      "delete": "Smazat",
+      "deleteTitle": "Smazat styl „{{name}}“?",
+      "deleteText": "Životopisy, které ho používají, si zachovají současný vzhled",
+      "copySuffix": "(kopie)",
+      "updated": "Upraveno {{date}}",
+      "usedBy": "Životopisy, které ho používají: {{count}}",
+      "hint": "Vaše styly zůstávají v tomto prohlížeči. Každý životopis si uchovává kopii svého stylu, takže je v zálohách úplný"
+    },
+    "presets": {
+      "blank": "Prázdná stránka",
+      "band": "Pruh",
+      "sidebar": "Boční sloupec",
+      "organic": "Měkké tvary",
+      "timeline": "Časová osa"
+    },
+    "toolbar": {
+      "back": "Moje styly",
+      "name": "Název stylu",
+      "share": "Sdílet",
+      "use": "Použít pro životopis",
+      "applyBack": "Použít na životopis",
+      "noCv": "Zatím žádné životopisy",
+      "applied": "Styl použit na „{{name}}“"
+    },
+    "tabs": {
+      "blocks": "Bloky",
+      "shapes": "Tvary",
+      "colors": "Barvy",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Výchozí bod",
+      "studio": "Plátno studia",
+      "studioHint": "Skládejte bloky a umisťujte tvary",
+      "template": "Šablona z galerie",
+      "templateHint": "Bloky a tvary jsou jen pro plátno studia. Tuto šablonu upravte na kartě CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Sloupce",
+        "single": "Jeden sloupec",
+        "sidebarLeft": "Boční sloupec"
+      },
+      "header": {
+        "label": "Záhlaví",
+        "left": "Klasické",
+        "center": "Na střed",
+        "band": "Pruh",
+        "card": "Kontakty v rámečku"
+      },
+      "headings": {
+        "label": "Nadpisy sekcí",
+        "underline": "Podtržené",
+        "bar": "Pruh",
+        "pill": "Pilulka",
+        "caps": "Verzálky",
+        "boxed": "V rámečku",
+        "line": "Linka"
+      },
+      "entries": {
+        "label": "Praxe a vzdělání",
+        "classic": "Klasické",
+        "timeline": "Časová osa",
+        "cards": "Karty",
+        "datesLeft": "Data vlevo"
+      },
+      "skills": {
+        "label": "Dovednosti",
+        "chips": "Štítky",
+        "inline": "Na jednom řádku",
+        "grid": "Mřížka"
+      },
+      "languages": {
+        "label": "Jazyky",
+        "meter": "Ukazatel",
+        "text": "Text"
+      },
+      "photo": {
+        "label": "Fotka",
+        "circle": "Kulatá",
+        "rounded": "Zaoblená",
+        "square": "Čtvercová",
+        "hidden": "Skrytá"
+      }
+    },
+    "shapes": {
+      "add": "Přidat tvar",
+      "hint": "Tvary leží za textem: zdobí, aniž by rušily čtení systémy ATS",
+      "drag": "Přetahujte tvary po stránce nebo je posouvejte šipkami",
+      "onPage": "Tvary na stránce",
+      "empty": "Na stránce zatím nejsou žádné tvary",
+      "color": "Barva",
+      "size": "Velikost",
+      "rotate": "Otočení",
+      "alpha": "Intenzita",
+      "x": "Vodorovně",
+      "y": "Svisle",
+      "duplicate": "Duplikovat",
+      "remove": "Smazat",
+      "kinds": {
+        "circle": "Kruh",
+        "blob": "Skvrna",
+        "square": "Čtverec",
+        "triangle": "Trojúhelník",
+        "ring": "Prstenec",
+        "wave": "Vlny",
+        "stripes": "Pruhy",
+        "dots": "Tečky"
+      },
+      "colors": {
+        "accent": "Zvýraznění",
+        "soft": "Světlé zvýraznění",
+        "ink": "Text"
+      }
+    },
+    "colors": {
+      "accentCv": "Podle životopisu",
+      "accentFixed": "Pevná barva",
+      "paper": "Pozadí stránky",
+      "background": "Pozadí",
+      "text": "Text",
+      "contrast": "Nízký kontrast: text může být špatně čitelný"
+    },
+    "css": {
+      "label": "Vaše CSS",
+      "hint": "Platí jen pro životopis, okamžitě. Importy a externí adresy se odstraní. Pokud vyhraje pravidlo šablony, přidejte !important",
+      "rules": "Použitá pravidla: {{count}}",
+      "removed": "Odstraněno kvůli vaší bezpečnosti: {{count}}",
+      "example": "Vložit příklad",
+      "warnings": "Pozor na čtení systémy ATS",
+      "warning": {
+        "order": "{{property}}: text se může načíst ve špatném pořadí",
+        "shadow": "stín zapíše text do PDF dvakrát",
+        "content": "text přidaný pomocí CSS čtou roboti"
+      },
+      "reference": "Dostupné třídy a proměnné",
+      "referenceStudio": "Stálé třídy plátna studia:",
+      "referenceTemplate": "U šablony z galerie najdete třídy prozkoumáním náhledu. Společné proměnné:"
+    },
+    "preview": {
+      "label": "Náhled s",
+      "sample": "Ukázkovým životopisem"
+    },
+    "share": {
+      "title": "Sdílet styl",
+      "text": "Tento kód JSON obsahuje celý styl (bloky, tvary, barvy a CSS), ale žádné údaje z vašeho životopisu. Importuje se ve studiu stylů",
+      "copy": "Kopírovat kód",
+      "copied": "Kód zkopírován",
+      "copyError": "Kopírování se nezdařilo: označte kód a zkopírujte ho",
+      "download": "Stáhnout (.json)",
+      "close": "Zavřít",
+      "importTitle": "Importovat styl",
+      "importText": "Vložte kód JSON stylu nebo vyberte soubor .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Vybrat soubor",
+      "importAction": "Importovat",
+      "imported": "Styl „{{name}}“ importován",
+      "error": {
+        "invalidJson": "Tento text není platný JSON",
+        "notAStyle": "Tento kód není styl LocalATSCV",
+        "newerVersion": "Tento styl pochází z novější verze LocalATSCV: aktualizujte aplikaci"
+      }
+    }
   }
 }

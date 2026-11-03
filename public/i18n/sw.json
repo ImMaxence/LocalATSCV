@@ -6,7 +6,8 @@
     "privacy": "Faragha",
     "analyze": "Jaribu CV yangu",
     "editor": "Tengeneza CV yangu",
-    "skipToContent": "Ruka hadi maudhui"
+    "skipToContent": "Ruka hadi maudhui",
+    "studio": "Studio ya mitindo"
   },
   "theme": {
     "label": "Mandhari",
@@ -29,7 +30,8 @@
     "legalNotice": "Taarifa za kisheria",
     "terms": "Masharti ya matumizi",
     "privacy": "Sera ya faragha",
-    "accessibility": "Taarifa ya ufikivu"
+    "accessibility": "Taarifa ya ufikivu",
+    "studio": "Studio ya mitindo"
   },
   "seo": {
     "home": "Tengeneza bure CV inayokufikisha kwenye usaili: violezo 72, barua ya maombi inayolingana, marekebisho kwa kila tangazo na ukaguzi wa ATS. Bila kujisajili, data yako inabaki kwenye kifaa chako",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "Violezo 72 vya kuchagua",
         "letter": "Barua ya maombi inayolingana",
-        "private": "Data yako inabaki kwako"
+        "private": "Data yako inabaki kwako",
+        "studio": "Au muundo wako mwenyewe"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Je, lazima nitaje ulemavu wangu?",
           "a": "Si lazima kamwe. Ukitaka, kihariri kinapendekeza maneno yanayotambuliwa katika nchi ya CV yako (RQTH Ufaransa, categorie protette Italia…), pamoja na mawasiliano, mwishoni mwa CV au kwenye barua tu. Unaweza pia kuyaacha katika baadhi ya matoleo tu"
+        },
+        "design": {
+          "q": "Je, ninaweza kuunda muundo wangu wa CV?",
+          "a": "Ndiyo. Katika studio ya mitindo unaunganisha vitalu (kichwa, vichwa vya sehemu, uzoefu, safu), unaweka maumbo ya mapambo na kuchagua rangi na fonti, bila msimbo. Ukijua CSS, unaweza pia kubandika yako. Mtindo hushirikiwa kwa kunakili na kubandika tu, bila data ya CV yako. Na usipotaka picha, aikoni au herufi za kwanza za jina lako zinaweza kuchukua nafasi yake"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Sehemu moja kwa wakati, na ushauri kwa lugha rahisi, hadi kupakua PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Studio ya mitindo",
+      "title": "Hakuna kiolezo kinachokufaa? Unda chako",
+      "text": "Unganisha muundo wako kama mchezo wa matofali: chagua vitalu, weka maumbo, badilisha rangi. Bila hata mstari mmoja wa msimbo, na bado unasomwa sawasawa na programu zinazochuja maombi",
+      "points": {
+        "blocks": {
+          "title": "Vitalu vya kuunganisha",
+          "text": "Kichwa, vichwa vya sehemu, uzoefu, ujuzi, safu: kila kitalu huchaguliwa kwa mbofyo mmoja kutokana na mchoro wake"
+        },
+        "shapes": {
+          "title": "Maumbo ya kuweka",
+          "text": "Duara, madoa, mawimbi au mistari unayoiburuta kwenye ukurasa. Yanapamba bila kuzuia usomaji"
+        },
+        "css": {
+          "title": "CSS yako, ukipenda",
+          "text": "Unajua CSS? Bandika yako kwenye turubai ya studio au kiolezo cha matunzio: inabadilisha CV pekee"
+        },
+        "share": {
+          "title": "Hushirikiwa kwa kunakili na kubandika",
+          "text": "Mtindo wako unatoshea katika msimbo mfupi unaoweza kutuma. Hauna data yoyote ya CV yako"
+        }
+      },
+      "icon": "Aikoni badala ya picha",
+      "cta": "Unda mtindo wangu"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Maelezo hayaonekani kwenye CV. Kwenye kichupo cha Barua, kitufe kinaongeza sentensi iliyo tayari",
         "pros": "Faida: waajiri waliojitolea (mipango ya ujumuishaji, viwango) wanakupata haraka na marekebisho yanajadiliwa kwa urahisi zaidi",
         "cons": "Hasara: baadhi ya waajiri bado wana chuki. Unaweza pia kulizungumzia baadaye, kwenye mahojiano au baada ya kuajiriwa, au kamwe"
+      },
+      "photoIcon": "Aikoni",
+      "photoIconTitle": "Aikoni badala ya picha",
+      "photoIconHint": "Imechorwa kwa rangi ya msisitizo. Haisemi chochote kukuhusu, hivyo inabaki pia kwenye CV za Kiingereza",
+      "avatars": {
+        "user": "Kivuli cha mtu",
+        "briefcase": "Mkoba wa ofisi",
+        "graduation": "Kofia ya mahafali",
+        "code": "Msimbo",
+        "palette": "Paleti",
+        "camera": "Kamera",
+        "music": "Muziki",
+        "heart": "Moyo",
+        "leaf": "Jani",
+        "rocket": "Roketi",
+        "chefHat": "Kofia ya mpishi",
+        "wrench": "Spana",
+        "stethoscope": "Stethoskopu",
+        "book": "Kitabu",
+        "lightbulb": "Balbu",
+        "initials": "Herufi za kwanza"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Ongeza mambo 2 au 3 unayopenda: husaidia kuanzisha mazungumzo kwenye mahojiano",
         "finish": "Chagua kiolezo unachopenda, kisha pakua CV yako kama PDF. Unaweza kurudi wakati wowote kuibadilisha"
       }
+    },
+    "style": {
+      "button": "Mtindo wangu",
+      "title": "Mtindo wa CV",
+      "gallery": "Kiolezo cha matunzio: {{name}}",
+      "empty": "Bado hujaunda mtindo",
+      "css": "Badilisha kwa CSS",
+      "cssHint": "CSS yako mwenyewe kwenye kiolezo cha sasa",
+      "cssName": "{{name}} kilichobadilishwa",
+      "studio": "Studio ya mitindo",
+      "studioHint": "Muundo wako mwenyewe kwa vitalu na maumbo, bila msimbo"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Onyesho chaguomsingi",
     "note": "Mipangilio hii inabadilisha kiolesura tu, kamwe si CV yako iliyochapishwa"
+  },
+  "studio": {
+    "title": "Studio ya mitindo",
+    "subtitle": "Unda muundo wako wa CV: vitalu na maumbo ya kuunganisha bila msimbo, au CSS yako mwenyewe. Kisha ushiriki kama msimbo wa JSON",
+    "backToCv": "Rudi kwenye CV",
+    "notFound": "Mtindo huu haupo au umefutwa",
+    "points": {
+      "blocks": "Vitalu vya kuunganisha",
+      "shapes": "Maumbo ya kuweka",
+      "css": "CSS maalum",
+      "share": "Kushiriki kwa JSON"
+    },
+    "list": {
+      "new": "Mtindo mpya",
+      "emptyTitle": "Bado hakuna mitindo",
+      "emptyText": "Anza na ukurasa mtupu au mahali pa kuanzia, kisha rekebisha kila kitalu",
+      "open": "Fungua",
+      "actions": "Vitendo",
+      "duplicate": "Nakili",
+      "delete": "Futa",
+      "deleteTitle": "Ufute mtindo “{{name}}”?",
+      "deleteText": "CV zinazoutumia zitabaki na mwonekano wa sasa",
+      "copySuffix": "(nakala)",
+      "updated": "Imehaririwa {{date}}",
+      "usedBy": "CV zinazoutumia: {{count}}",
+      "hint": "Mitindo yako inabaki kwenye kivinjari hiki. Kila CV huhifadhi nakala ya mtindo wake, hivyo inabaki kamili katika nakala zako za akiba"
+    },
+    "presets": {
+      "blank": "Ukurasa mtupu",
+      "band": "Utepe",
+      "sidebar": "Safu ya pembeni",
+      "organic": "Maumbo laini",
+      "timeline": "Ratiba ya matukio"
+    },
+    "toolbar": {
+      "back": "Mitindo yangu",
+      "name": "Jina la mtindo",
+      "share": "Shiriki",
+      "use": "Tumia kwa CV",
+      "applyBack": "Tumia kwenye CV",
+      "noCv": "Bado hakuna CV",
+      "applied": "Mtindo umetumika kwenye “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Vitalu",
+      "shapes": "Maumbo",
+      "colors": "Rangi",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Mahali pa kuanzia",
+      "studio": "Turubai ya studio",
+      "studioHint": "Unganisha vitalu na uweke maumbo",
+      "template": "Kiolezo cha matunzio",
+      "templateHint": "Vitalu na maumbo ni kwa turubai ya studio tu. Rekebisha kiolezo hiki kwenye kichupo cha CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Safu",
+        "single": "Safu moja",
+        "sidebarLeft": "Safu ya pembeni"
+      },
+      "header": {
+        "label": "Kichwa",
+        "left": "Cha kawaida",
+        "center": "Katikati",
+        "band": "Utepe",
+        "card": "Kisanduku cha mawasiliano"
+      },
+      "headings": {
+        "label": "Vichwa vya sehemu",
+        "underline": "Kimepigiwa mstari",
+        "bar": "Upau",
+        "pill": "Kidonge",
+        "caps": "Herufi kubwa",
+        "boxed": "Ndani ya kisanduku",
+        "line": "Mstari"
+      },
+      "entries": {
+        "label": "Uzoefu na elimu",
+        "classic": "Kawaida",
+        "timeline": "Ratiba ya matukio",
+        "cards": "Kadi",
+        "datesLeft": "Tarehe kushoto"
+      },
+      "skills": {
+        "label": "Ujuzi",
+        "chips": "Lebo",
+        "inline": "Kwa mstari mmoja",
+        "grid": "Gridi"
+      },
+      "languages": {
+        "label": "Lugha",
+        "meter": "Kipimo",
+        "text": "Maandishi"
+      },
+      "photo": {
+        "label": "Picha",
+        "circle": "Duara",
+        "rounded": "Kona za mviringo",
+        "square": "Mraba",
+        "hidden": "Imefichwa"
+      }
+    },
+    "shapes": {
+      "add": "Ongeza umbo",
+      "hint": "Maumbo yako nyuma ya maandishi: yanapamba bila kuzuia usomaji wa ATS",
+      "drag": "Buruta maumbo kwenye ukurasa au uyasogeze kwa vitufe vya mishale",
+      "onPage": "Maumbo kwenye ukurasa",
+      "empty": "Bado hakuna maumbo kwenye ukurasa",
+      "color": "Rangi",
+      "size": "Ukubwa",
+      "rotate": "Mzunguko",
+      "alpha": "Ukali",
+      "x": "Mlalo",
+      "y": "Wima",
+      "duplicate": "Nakili",
+      "remove": "Futa",
+      "kinds": {
+        "circle": "Duara",
+        "blob": "Doa",
+        "square": "Mraba",
+        "triangle": "Pembetatu",
+        "ring": "Pete",
+        "wave": "Mawimbi",
+        "stripes": "Mistari",
+        "dots": "Vitone"
+      },
+      "colors": {
+        "accent": "Msisitizo",
+        "soft": "Msisitizo hafifu",
+        "ink": "Maandishi"
+      }
+    },
+    "colors": {
+      "accentCv": "Ya CV",
+      "accentFixed": "Rangi isiyobadilika",
+      "paper": "Mandhari ya ukurasa",
+      "background": "Mandhari",
+      "text": "Maandishi",
+      "contrast": "Utofautishaji mdogo: maandishi yanaweza kuwa magumu kusoma"
+    },
+    "css": {
+      "label": "CSS yako",
+      "hint": "Inatumika kwa CV pekee, papo hapo. Uingizaji na anwani za nje huondolewa. Ongeza !important ikiwa kanuni ya kiolezo inashinda",
+      "rules": "Kanuni zilizotumika: {{count}}",
+      "removed": "Zimeondolewa kwa usalama wako: {{count}}",
+      "example": "Weka mfano",
+      "warnings": "Tahadhari na usomaji wa ATS",
+      "warning": {
+        "order": "{{property}}: maandishi yanaweza kusomwa bila mpangilio",
+        "shadow": "kivuli huandika maandishi mara mbili kwenye PDF",
+        "content": "maandishi yaliyoongezwa kwa CSS husomwa na roboti"
+      },
+      "reference": "Madarasa na vigeu vinavyopatikana",
+      "referenceStudio": "Madarasa thabiti ya turubai ya studio:",
+      "referenceTemplate": "Kwenye kiolezo cha matunzio, kagua onyesho la kukagua ili kupata madarasa yake. Vigeu vya pamoja:"
+    },
+    "preview": {
+      "label": "Onyesho la kukagua na",
+      "sample": "CV ya mfano"
+    },
+    "share": {
+      "title": "Shiriki mtindo",
+      "text": "Msimbo huu wa JSON una mtindo mzima (vitalu, maumbo, rangi na CSS), lakini hauna data yoyote ya CV yako. Unaingizwa kutoka studio ya mitindo",
+      "copy": "Nakili msimbo",
+      "copied": "Msimbo umenakiliwa",
+      "copyError": "Imeshindwa kunakili: chagua msimbo kisha uunakili",
+      "download": "Pakua (.json)",
+      "close": "Funga",
+      "importTitle": "Ingiza mtindo",
+      "importText": "Bandika msimbo wa JSON wa mtindo au chagua faili ya .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Chagua faili",
+      "importAction": "Leta",
+      "imported": "Mtindo “{{name}}” umeingizwa",
+      "error": {
+        "invalidJson": "Maandishi haya si JSON halali",
+        "notAStyle": "Msimbo huu si mtindo wa LocalATSCV",
+        "newerVersion": "Mtindo huu unatoka toleo jipya la LocalATSCV: sasisha programu"
+      }
+    }
   }
 }

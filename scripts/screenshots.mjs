@@ -5,6 +5,7 @@
 //
 //   npm run screenshots                          → http://localhost:8090
 //   npm run screenshots -- http://localhost:4200
+//   npm run screenshots -- http://localhost:8090 studio-blocks.png photo-icon.png   (seulement ces captures)
 
 import { mkdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -12,6 +13,7 @@ import { join } from 'node:path';
 import { chromium } from 'playwright-core';
 
 const baseUrl = process.argv[2] ?? 'http://localhost:8090';
+const only = new Set(process.argv.slice(3));
 const outDir = new URL('../docs/screenshots/', import.meta.url);
 const publicDir = new URL('../public/', import.meta.url);
 
@@ -89,6 +91,50 @@ async function renderTemplates(page, names) {
     cvs.push(rendered.html);
   }
   return { css: [...styles].join('\n'), cvs };
+}
+
+/** CSS d'exemple du studio (onglet CSS) : un style « magazine » sur la toile. */
+const SAMPLE_CSS = `.cv {
+  --soft: #fde68a;
+  --r: 2px;
+}
+
+.cv-name {
+  font-size: 40px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.cv-headline {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 10px;
+  background: #111;
+  color: #fde68a;
+}
+
+.cv-heading {
+  border-bottom: 3px solid #111;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cv-chip {
+  border: 1px solid #111;
+  background: transparent;
+}
+`;
+
+/** Crée un style depuis un point de départ du studio et ouvre le concepteur. */
+async function openStudio(page, preset) {
+  await page.goto(`${baseUrl}/studio`, { waitUntil: 'networkidle' });
+  await page.getByRole('button', { name: 'Nouveau style' }).click();
+  await page.getByRole('menuitem', { name: preset }).click();
+  await page.waitForURL((url) => url.pathname.startsWith('/studio/'));
+  await page.locator('app-style-studio app-cv-preview .cv').waitFor();
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForTimeout(500);
 }
 
 /** Chaque capture : contexte (thème, taille) + ce qu'il faut photographier. */
@@ -309,6 +355,85 @@ const shots = [
       await page.waitForTimeout(300);
     },
   },
+  {
+    file: 'landing-studio.png',
+    context: { ...desktop, colorScheme: 'light' },
+    target: (page) => page.locator('#studio'),
+  },
+  {
+    file: 'studio-blocks.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openStudio(page, 'Formes douces');
+      await page.getByRole('radio', { name: 'Frise' }).click();
+      // Le clic a fait défiler le panneau : il revient en haut, sur le point de départ.
+      await page.locator('app-style-studio .panel').evaluate((panel) => (panel.scrollTop = 0));
+      await page.waitForTimeout(400);
+    },
+  },
+  {
+    file: 'studio-shapes.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openStudio(page, 'Frise');
+      await page.getByRole('tab', { name: 'Formes' }).click();
+      await page.getByRole('button', { name: 'Anneau' }).click();
+      await page.getByRole('button', { name: 'Accent', exact: true }).click();
+      // Taille, rotation, intensité, position horizontale, position verticale.
+      for (const [index, value] of [
+        [0, '34'],
+        [2, '30'],
+        [3, '70'],
+        [4, '36'],
+      ]) {
+        await page.getByRole('slider').nth(index).fill(value);
+      }
+      await page.waitForTimeout(400);
+    },
+  },
+  {
+    file: 'studio-css.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openStudio(page, 'Page blanche');
+      await page.getByRole('tab', { name: 'CSS' }).click();
+      await page.locator('#style-css').fill(SAMPLE_CSS);
+      await page.locator('#style-css').evaluate((area) => (area.scrollTop = 0));
+      await page.waitForTimeout(600);
+    },
+  },
+  {
+    file: 'studio-share.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openStudio(page, 'Bandeau');
+      await page.getByRole('button', { name: 'Partager' }).click();
+      await page.getByRole('dialog').waitFor();
+      await page.waitForTimeout(300);
+    },
+  },
+  {
+    file: 'studio-list.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      for (const preset of ['Bandeau', 'Colonne', 'Formes douces']) await openStudio(page, preset);
+      await page.goto(`${baseUrl}/studio`, { waitUntil: 'networkidle' });
+      await page.locator('app-style-list app-cv-preview .cv').nth(2).waitFor();
+      await page.waitForTimeout(500);
+    },
+  },
+  {
+    file: 'photo-icon.png',
+    context: { ...desktop, colorScheme: 'light' },
+    prepare: async (page) => {
+      await openSampleCv(page);
+      await page.getByRole('button', { name: 'Une icône' }).click();
+      await page.getByRole('menuitemradio', { name: 'Fusée' }).click();
+      await page.waitForTimeout(300);
+      await page.getByRole('button', { name: 'Une icône' }).click();
+      await page.waitForTimeout(400);
+    },
+  },
   { file: 'mobile-light.png', context: { ...mobile, colorScheme: 'light' } },
   { file: 'mobile-dark.png', context: { ...mobile, colorScheme: 'dark' } },
 ];
@@ -317,6 +442,7 @@ await mkdir(outDir, { recursive: true });
 const browser = await launchBrowser();
 
 for (const shot of shots) {
+  if (only.size && !only.has(shot.file)) continue;
   const context = await browser.newContext({
     ...shot.context,
     locale: 'fr-FR',

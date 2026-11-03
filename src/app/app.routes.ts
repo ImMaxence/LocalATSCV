@@ -46,8 +46,8 @@ const publicRoutes: Routes = [
 
 /**
  * Les pages publiques existent dans chaque langue : à la racine en français, sous /en, /pt-br…
- * pour les autres (voir languages.ts). L'éditeur, qui ne travaille que sur des données locales,
- * garde une seule adresse et suit la langue choisie.
+ * pour les autres (voir languages.ts). L'éditeur et le studio de styles, qui ne travaillent que
+ * sur des données locales, gardent une seule adresse et suivent la langue choisie.
  */
 export const routes: Routes = [
   {
@@ -59,6 +59,16 @@ export const routes: Routes = [
     path: 'editor/:id',
     loadComponent: () => import('./pages/editor/cv-editor/cv-editor').then((m) => m.CvEditor),
     title: 'pages.editor',
+  },
+  {
+    path: 'studio',
+    loadComponent: () => import('./pages/studio/style-list').then((m) => m.StyleList),
+    title: 'pages.studio',
+  },
+  {
+    path: 'studio/:id',
+    loadComponent: () => import('./pages/studio/style-studio').then((m) => m.StyleStudio),
+    title: 'pages.studio',
   },
   ...UI_LANGUAGES.filter((lang) => lang !== DEFAULT_UI_LANGUAGE).map((lang) => ({
     path: languageSegment(lang),

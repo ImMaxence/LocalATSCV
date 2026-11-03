@@ -304,6 +304,212 @@
     </div>
   </section>
 
+  <!-- Studio de styles : son propre design, sans code ou en CSS -->
+  <section
+    id="studio"
+    class="mb-20 overflow-x-clip border-y border-line bg-surface/60 py-20 sm:mb-28 sm:py-24"
+  >
+    <div class="container-page grid items-center gap-16 lg:grid-cols-2">
+      <div class="lg:order-last">
+        <p class="eyebrow">{{ t('studio.eyebrow') }}</p>
+        <h2
+          class="mt-3 font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl"
+        >
+          {{ t('studio.title') }}
+        </h2>
+        <p class="mt-4 leading-relaxed text-muted">{{ t('studio.text') }}</p>
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-1 lg:gap-5">
+          @for (point of studioPoints; track point.key) {
+            <li class="flex gap-4">
+              <span
+                class="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent"
+              >
+                <app-icon class="size-5" [name]="point.icon" />
+              </span>
+              <div>
+                <h3 class="font-semibold">{{ t('studio.points.' + point.key + '.title') }}</h3>
+                <p class="mt-1 text-sm leading-relaxed text-muted">
+                  {{ t('studio.points.' + point.key + '.text') }}
+                </p>
+              </div>
+            </li>
+          }
+        </ul>
+        <a routerLink="/studio" class="btn btn-primary mt-9 px-6 py-3 text-base">
+          <app-icon class="size-4" name="palette" />{{ t('studio.cta') }}
+        </a>
+      </div>
+
+      <!-- Illustration : la fenêtre du studio, ses croquis de blocs et un CV décoré -->
+      <div
+        *transloco="let s; prefix: 'studio'"
+        class="relative mx-auto w-full max-w-xl"
+        aria-hidden="true"
+      >
+        <div
+          class="overflow-hidden rounded-2xl border border-line bg-surface shadow-[0_40px_80px_-40px_rgb(0_0_0/0.45)]"
+        >
+          <div class="flex items-center gap-2 border-b border-line px-4 py-2.5">
+            <span class="flex gap-1.5">
+              @for (dot of [1, 2, 3]; track dot) {
+                <span class="size-2.5 rounded-full bg-line"></span>
+              }
+            </span>
+            <app-icon class="ms-2 size-4 text-accent" name="palette" />
+            <span class="truncate text-sm font-semibold">{{ s('presets.band') }}</span>
+            <span
+              class="ms-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-[11px] font-semibold"
+            >
+              <app-icon class="size-3.5" name="share" />{{ s('toolbar.share') }}
+            </span>
+          </div>
+          <div class="grid grid-cols-[44%_1fr]">
+            <div class="border-e border-line p-3">
+              <div
+                class="grid grid-cols-4 gap-0.5 rounded-lg bg-surface-2 p-0.5 text-[9px] font-semibold text-muted"
+              >
+                @for (tab of studioTabs; track tab.key) {
+                  <span
+                    class="flex min-w-0 flex-col items-center gap-0.5 rounded-md px-0.5 py-1"
+                    [class]="$first ? 'bg-accent-soft text-accent' : ''"
+                  >
+                    <app-icon class="size-3" [name]="tab.icon" />
+                    <span class="hidden max-w-full truncate sm:block">{{
+                      s('tabs.' + tab.key)
+                    }}</span>
+                  </span>
+                }
+              </div>
+              @for (group of sketchGroups; track group.key) {
+                <p class="mt-3 truncate text-[10px] font-medium text-muted">
+                  {{ s('blocks.' + group.key + '.label') }}
+                </p>
+                <div class="mt-1.5 grid grid-cols-3 gap-1.5">
+                  @for (option of group.options; track option.id) {
+                    <svg
+                      viewBox="0 0 48 34"
+                      class="block w-full rounded-md border bg-paper"
+                      [class]="
+                        option.id === group.selected
+                          ? 'border-accent ring-2 ring-accent/25'
+                          : 'border-line'
+                      "
+                    >
+                      @for (rect of option.rects; track $index) {
+                        <rect
+                          [attr.x]="rect[0]"
+                          [attr.y]="rect[1]"
+                          [attr.width]="rect[2]"
+                          [attr.height]="rect[3]"
+                          [attr.rx]="rect[5] ?? 0.6"
+                          [style.fill]="sketchFills[rect[4]]"
+                        />
+                      }
+                    </svg>
+                  }
+                </div>
+              }
+            </div>
+
+            <div class="bg-surface-2 p-4">
+              <div
+                class="relative isolate aspect-[794/1123] overflow-hidden rounded-sm bg-white shadow-md"
+              >
+                <!-- Formes, derrière le contenu comme sur un vrai CV. La page reste blanche en thème
+                     sombre : teintes d'accent transparentes plutôt que accent-soft. -->
+                <svg class="absolute -start-[18%] top-[36%] -z-10 w-[64%]" viewBox="0 0 100 100">
+                  <path
+                    [attr.d]="shapes.blob.d"
+                    [attr.transform]="shapes.blob.transform"
+                    class="fill-accent/20"
+                  />
+                </svg>
+                <svg
+                  class="absolute end-[7%] top-[33%] -z-10 w-[16%] opacity-40"
+                  viewBox="0 0 100 100"
+                >
+                  <path [attr.d]="shapes.dots.d" class="fill-accent" />
+                </svg>
+                <svg class="absolute end-[5%] bottom-[5%] -z-10 w-[34%]" viewBox="0 0 100 100">
+                  <path
+                    [attr.d]="shapes.ring.d"
+                    class="fill-none stroke-accent/30"
+                    [attr.stroke-width]="shapes.ring.strokeWidth"
+                  />
+                </svg>
+
+                <div class="flex items-center gap-[7%] bg-accent px-[8%] py-[8%]">
+                  <span
+                    class="grid aspect-square w-[24%] shrink-0 place-items-center rounded-full border-2 border-white/85 bg-accent text-white"
+                  >
+                    <app-icon class="size-1/2" name="rocket" [strokeWidth]="1.6" />
+                  </span>
+                  <span class="flex-1 space-y-1.5">
+                    <span class="block h-2 w-4/5 rounded bg-white"></span>
+                    <span class="block h-1.5 w-1/2 rounded bg-white/70"></span>
+                    <span class="block h-1 w-full rounded bg-white/45"></span>
+                  </span>
+                </div>
+                <div class="px-[8%] pt-[7%]">
+                  <span class="block h-2.5 w-2/5 rounded-full bg-accent"></span>
+                  <div class="mt-2.5 space-y-3 border-s-2 border-accent/25 ps-3">
+                    @for (entry of [1, 2]; track entry) {
+                      <div class="space-y-1">
+                        <span class="block h-1.5 w-3/5 rounded bg-zinc-700"></span>
+                        <span class="block h-1 w-2/5 rounded bg-accent/60"></span>
+                        <span class="block h-1 w-full rounded bg-zinc-200"></span>
+                        <span class="block h-1 w-11/12 rounded bg-zinc-200"></span>
+                      </div>
+                    }
+                  </div>
+                  <span class="mt-4 block h-2.5 w-1/3 rounded-full bg-accent"></span>
+                  <span class="mt-2.5 flex flex-wrap gap-1">
+                    @for (chip of [10, 14, 8, 12]; track $index) {
+                      <span
+                        class="h-2.5 rounded-full bg-accent/20"
+                        [style.width.%]="chip * 1.6"
+                      ></span>
+                    }
+                  </span>
+                </div>
+
+                <!-- Forme sélectionnée, déplacée à la souris -->
+                <span
+                  class="absolute end-[5%] bottom-[5%] aspect-square w-[34%] rounded-md border-2 border-dashed border-accent"
+                >
+                  <svg viewBox="0 0 24 24" class="absolute -end-2 -bottom-3 size-5 drop-shadow">
+                    <path d="M5 3l14 7-6 2-2 6Z" class="fill-zinc-900 stroke-white" stroke-width="1.5" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS personnalisé -->
+        <pre
+          class="float absolute -bottom-10 -start-6 hidden rounded-xl bg-inverse px-4 py-3 font-mono text-[11px] leading-relaxed text-inverse-ink shadow-xl sm:block"
+          dir="ltr"
+        ><span class="text-inverse-accent">.cv-name</span> {{ '{' }}
+  color: var(--cv-accent);
+{{ '}' }}</pre>
+        <!-- Icône à la place de la photo -->
+        <span
+          class="absolute -top-4 start-[34%] hidden items-center gap-1.5 rounded-full bg-inverse px-3 py-1.5 text-xs font-semibold text-inverse-ink shadow-lg sm:inline-flex"
+        >
+          <app-icon class="size-3.5" name="rocket" [strokeWidth]="2.25" />{{ t('studio.icon') }}
+        </span>
+        <!-- Partage en JSON -->
+        <span
+          class="absolute -end-4 -bottom-5 hidden items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 font-mono text-xs font-semibold shadow-lg sm:inline-flex"
+          dir="ltr"
+        >
+          <app-icon class="size-3.5 text-accent" name="share" />style.json
+        </span>
+      </div>
+    </div>
+  </section>
+
   <!-- Confidentialité -->
   <section id="privacy" class="container-page">
     <div class="rounded-3xl bg-inverse px-5 py-14 text-inverse-ink sm:px-12 sm:py-20">

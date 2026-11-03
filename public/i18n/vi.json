@@ -6,7 +6,8 @@
     "privacy": "Quyền riêng tư",
     "analyze": "Kiểm tra CV",
     "editor": "Tạo CV của tôi",
-    "skipToContent": "Chuyển đến nội dung"
+    "skipToContent": "Chuyển đến nội dung",
+    "studio": "Xưởng kiểu dáng"
   },
   "theme": {
     "label": "Giao diện",
@@ -29,7 +30,8 @@
     "legalNotice": "Thông tin pháp lý",
     "terms": "Điều khoản sử dụng",
     "privacy": "Chính sách quyền riêng tư",
-    "accessibility": "Tuyên bố trợ năng"
+    "accessibility": "Tuyên bố trợ năng",
+    "studio": "Xưởng kiểu dáng"
   },
   "seo": {
     "home": "Tạo miễn phí CV giúp bạn có buổi phỏng vấn: 72 mẫu, thư xin việc đồng bộ, điều chỉnh theo từng tin tuyển dụng và kiểm tra ATS. Không cần đăng ký, dữ liệu ở lại trên thiết bị của bạn",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 mẫu để lựa chọn",
         "letter": "Thư xin việc đồng bộ",
-        "private": "Dữ liệu ở lại với bạn"
+        "private": "Dữ liệu ở lại với bạn",
+        "studio": "Hoặc thiết kế của riêng bạn"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Tôi có cần nêu khuyết tật của mình không?",
           "a": "Không bao giờ bắt buộc. Nếu muốn, trình soạn thảo đề xuất cách diễn đạt được công nhận ở quốc gia của CV (RQTH ở Pháp, categorie protette ở Ý…), cùng thông tin liên hệ, ở cuối CV hoặc chỉ trong thư. Bạn cũng có thể chỉ giữ nó ở một số phiên bản"
+        },
+        "design": {
+          "q": "Tôi có thể tự thiết kế CV không?",
+          "a": "Có. Trong xưởng kiểu dáng, bạn ghép các khối (phần đầu, tiêu đề, kinh nghiệm, cột), đặt hình trang trí và chọn màu, phông chữ mà không cần mã. Nếu biết CSS, bạn cũng có thể dán CSS của mình. Kiểu được chia sẻ bằng thao tác sao chép và dán đơn giản, không kèm dữ liệu CV. Và nếu không muốn đặt ảnh, một biểu tượng hoặc chữ cái đầu tên bạn có thể thế chỗ"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Mỗi lần một phần, kèm lời khuyên bằng ngôn ngữ dễ hiểu, cho đến khi tải PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Xưởng kiểu dáng",
+      "title": "Không mẫu nào giống bạn? Hãy tự tạo",
+      "text": "Lắp ráp thiết kế như chơi xếp hình: chọn khối, đặt hình, đổi màu. Không cần một dòng mã nào và vẫn được phần mềm lọc hồ sơ đọc đúng",
+      "points": {
+        "blocks": {
+          "title": "Khối để ghép",
+          "text": "Phần đầu, tiêu đề, kinh nghiệm, kỹ năng, cột: mỗi khối được chọn bằng một cú nhấp, nhìn theo bản phác"
+        },
+        "shapes": {
+          "title": "Hình để đặt",
+          "text": "Hình tròn, vệt màu, sóng hay sọc để bạn kéo trên trang. Chúng trang trí mà không cản trở việc đọc"
+        },
+        "css": {
+          "title": "CSS của bạn, nếu muốn",
+          "text": "Biết CSS? Dán CSS của bạn lên khung vẽ của xưởng hoặc một mẫu trong thư viện: chỉ CV thay đổi"
+        },
+        "share": {
+          "title": "Chia sẻ bằng sao chép và dán",
+          "text": "Kiểu của bạn nằm gọn trong một đoạn mã ngắn để gửi đi. Không chứa dữ liệu nào trong CV của bạn"
+        }
+      },
+      "icon": "Biểu tượng thay cho ảnh",
+      "cta": "Tạo kiểu của tôi"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Ghi chú không xuất hiện trên CV. Trong thẻ Thư, một nút sẽ thêm câu soạn sẵn",
         "pros": "Ưu điểm: các nhà tuyển dụng tận tâm (chương trình hòa nhập, hạn ngạch) tìm thấy bạn nhanh hơn và việc điều chỉnh dễ trao đổi hơn",
         "cons": "Nhược điểm: một số nhà tuyển dụng vẫn còn định kiến. Bạn có thể nói sau, khi phỏng vấn hoặc sau khi được nhận, hoặc không bao giờ"
+      },
+      "photoIcon": "Biểu tượng",
+      "photoIconTitle": "Biểu tượng thay cho ảnh",
+      "photoIconHint": "Được vẽ bằng màu nhấn. Nó không tiết lộ gì về bạn nên vẫn hiển thị trên CV tiếng Anh",
+      "avatars": {
+        "user": "Hình người",
+        "briefcase": "Cặp tài liệu",
+        "graduation": "Mũ tốt nghiệp",
+        "code": "Mã",
+        "palette": "Bảng màu",
+        "camera": "Máy ảnh",
+        "music": "Âm nhạc",
+        "heart": "Trái tim",
+        "leaf": "Chiếc lá",
+        "rocket": "Tên lửa",
+        "chefHat": "Mũ đầu bếp",
+        "wrench": "Cờ lê",
+        "stethoscope": "Ống nghe",
+        "book": "Sách",
+        "lightbulb": "Bóng đèn",
+        "initials": "Chữ cái đầu"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Thêm 2 hoặc 3 sở thích: chúng giúp mở đầu câu chuyện khi phỏng vấn",
         "finish": "Chọn một mẫu bạn thích rồi tải CV dưới dạng PDF. Bạn luôn có thể quay lại chỉnh sửa"
       }
+    },
+    "style": {
+      "button": "Kiểu của tôi",
+      "title": "Kiểu CV",
+      "gallery": "Mẫu trong thư viện: {{name}}",
+      "empty": "Chưa tạo kiểu nào",
+      "css": "Tùy chỉnh bằng CSS",
+      "cssHint": "CSS của riêng bạn trên mẫu hiện tại",
+      "cssName": "{{name}} tùy chỉnh",
+      "studio": "Xưởng kiểu dáng",
+      "studioHint": "Thiết kế riêng bằng khối và hình, không cần mã"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Hiển thị mặc định",
     "note": "Các cài đặt này chỉ thay đổi giao diện, không bao giờ thay đổi CV bạn in ra"
+  },
+  "studio": {
+    "title": "Xưởng kiểu dáng",
+    "subtitle": "Tạo thiết kế CV của riêng bạn: ghép khối và hình mà không cần mã, hoặc dùng CSS của bạn. Sau đó chia sẻ dưới dạng mã JSON",
+    "backToCv": "Quay lại CV",
+    "notFound": "Kiểu này không tồn tại hoặc đã bị xóa",
+    "points": {
+      "blocks": "Khối để ghép",
+      "shapes": "Hình để đặt",
+      "css": "CSS tùy chỉnh",
+      "share": "Chia sẻ bằng JSON"
+    },
+    "list": {
+      "new": "Kiểu mới",
+      "emptyTitle": "Chưa có kiểu nào",
+      "emptyText": "Bắt đầu từ trang trống hoặc một điểm xuất phát, rồi chỉnh từng khối",
+      "open": "Mở",
+      "actions": "Thao tác",
+      "duplicate": "Nhân bản",
+      "delete": "Xóa",
+      "deleteTitle": "Xóa kiểu “{{name}}”?",
+      "deleteText": "Các CV đang dùng kiểu này giữ nguyên giao diện hiện tại",
+      "copySuffix": "(bản sao)",
+      "updated": "Sửa lúc {{date}}",
+      "usedBy": "CV đang dùng kiểu này: {{count}}",
+      "hint": "Các kiểu của bạn nằm trong trình duyệt này. Mỗi CV giữ một bản sao kiểu của nó nên vẫn đầy đủ trong bản sao lưu"
+    },
+    "presets": {
+      "blank": "Trang trống",
+      "band": "Dải màu",
+      "sidebar": "Cột bên",
+      "organic": "Hình mềm mại",
+      "timeline": "Dòng thời gian"
+    },
+    "toolbar": {
+      "back": "Kiểu của tôi",
+      "name": "Tên kiểu",
+      "share": "Chia sẻ",
+      "use": "Dùng cho một CV",
+      "applyBack": "Áp dụng cho CV",
+      "noCv": "Chưa có CV nào",
+      "applied": "Đã áp dụng kiểu cho “{{name}}”"
+    },
+    "tabs": {
+      "blocks": "Khối",
+      "shapes": "Hình",
+      "colors": "Màu",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Điểm xuất phát",
+      "studio": "Khung vẽ của xưởng",
+      "studioHint": "Ghép khối và đặt hình",
+      "template": "Một mẫu trong thư viện",
+      "templateHint": "Khối và hình chỉ dùng trên khung vẽ của xưởng. Chỉnh mẫu này trong thẻ CSS"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Cột",
+        "single": "Một cột",
+        "sidebarLeft": "Cột bên"
+      },
+      "header": {
+        "label": "Phần đầu",
+        "left": "Cổ điển",
+        "center": "Căn giữa",
+        "band": "Dải màu",
+        "card": "Khung liên hệ"
+      },
+      "headings": {
+        "label": "Tiêu đề mục",
+        "underline": "Gạch chân",
+        "bar": "Thanh",
+        "pill": "Viên thuốc",
+        "caps": "Chữ in hoa",
+        "boxed": "Đóng khung",
+        "line": "Đường kẻ"
+      },
+      "entries": {
+        "label": "Kinh nghiệm và học vấn",
+        "classic": "Cổ điển",
+        "timeline": "Dòng thời gian",
+        "cards": "Thẻ",
+        "datesLeft": "Ngày bên trái"
+      },
+      "skills": {
+        "label": "Kỹ năng",
+        "chips": "Nhãn",
+        "inline": "Trên một dòng",
+        "grid": "Lưới"
+      },
+      "languages": {
+        "label": "Ngôn ngữ",
+        "meter": "Thanh đo",
+        "text": "Văn bản"
+      },
+      "photo": {
+        "label": "Ảnh",
+        "circle": "Tròn",
+        "rounded": "Bo góc",
+        "square": "Vuông",
+        "hidden": "Ẩn"
+      }
+    },
+    "shapes": {
+      "add": "Thêm hình",
+      "hint": "Các hình nằm sau chữ: trang trí mà không cản trở ATS đọc",
+      "drag": "Kéo các hình trên trang hoặc di chuyển bằng phím mũi tên",
+      "onPage": "Hình trên trang",
+      "empty": "Chưa có hình nào trên trang",
+      "color": "Màu",
+      "size": "Kích thước",
+      "rotate": "Xoay",
+      "alpha": "Độ đậm",
+      "x": "Ngang",
+      "y": "Dọc",
+      "duplicate": "Nhân bản",
+      "remove": "Xóa",
+      "kinds": {
+        "circle": "Hình tròn",
+        "blob": "Vệt màu",
+        "square": "Hình vuông",
+        "triangle": "Tam giác",
+        "ring": "Vòng",
+        "wave": "Sóng",
+        "stripes": "Sọc",
+        "dots": "Chấm"
+      },
+      "colors": {
+        "accent": "Màu nhấn",
+        "soft": "Màu nhấn nhạt",
+        "ink": "Chữ"
+      }
+    },
+    "colors": {
+      "accentCv": "Theo CV",
+      "accentFixed": "Màu cố định",
+      "paper": "Nền trang",
+      "background": "Nền",
+      "text": "Chữ",
+      "contrast": "Độ tương phản thấp: chữ có thể khó đọc"
+    },
+    "css": {
+      "label": "CSS của bạn",
+      "hint": "Chỉ áp dụng cho CV, ngay lập tức. Lệnh import và địa chỉ bên ngoài bị loại bỏ. Thêm !important nếu quy tắc của mẫu được ưu tiên",
+      "rules": "Quy tắc đã áp dụng: {{count}}",
+      "removed": "Đã loại bỏ để bảo vệ bạn: {{count}}",
+      "example": "Chèn ví dụ",
+      "warnings": "Lưu ý việc đọc của ATS",
+      "warning": {
+        "order": "{{property}}: chữ có thể bị đọc sai thứ tự",
+        "shadow": "bóng đổ ghi chữ hai lần vào PDF",
+        "content": "chữ thêm bằng CSS sẽ bị rô-bốt đọc"
+      },
+      "reference": "Lớp và biến có sẵn",
+      "referenceStudio": "Các lớp cố định của khung vẽ:",
+      "referenceTemplate": "Với mẫu trong thư viện, hãy kiểm tra bản xem trước để tìm các lớp. Biến dùng chung:"
+    },
+    "preview": {
+      "label": "Xem trước với",
+      "sample": "CV mẫu"
+    },
+    "share": {
+      "title": "Chia sẻ kiểu",
+      "text": "Mã JSON này chứa toàn bộ kiểu (khối, hình, màu và CSS) nhưng không có dữ liệu nào trong CV của bạn. Có thể nhập từ xưởng kiểu dáng",
+      "copy": "Sao chép mã",
+      "copied": "Đã sao chép mã",
+      "copyError": "Không sao chép được: hãy chọn mã rồi sao chép",
+      "download": "Tải xuống (.json)",
+      "close": "Đóng",
+      "importTitle": "Nhập kiểu",
+      "importText": "Dán mã JSON của một kiểu hoặc chọn tệp .json",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Chọn tệp",
+      "importAction": "Nhập",
+      "imported": "Đã nhập kiểu “{{name}}”",
+      "error": {
+        "invalidJson": "Văn bản này không phải JSON hợp lệ",
+        "notAStyle": "Mã này không phải kiểu của LocalATSCV",
+        "newerVersion": "Kiểu này đến từ phiên bản LocalATSCV mới hơn: hãy cập nhật ứng dụng"
+      }
+    }
   }
 }

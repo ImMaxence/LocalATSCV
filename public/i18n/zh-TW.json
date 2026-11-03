@@ -6,7 +6,8 @@
     "privacy": "隱私",
     "analyze": "測試我的履歷",
     "editor": "製作我的履歷",
-    "skipToContent": "跳至主要內容"
+    "skipToContent": "跳至主要內容",
+    "studio": "樣式工作室"
   },
   "theme": {
     "label": "主題",
@@ -29,7 +30,8 @@
     "legalNotice": "法律聲明",
     "terms": "使用條款",
     "privacy": "隱私權政策",
-    "accessibility": "無障礙聲明"
+    "accessibility": "無障礙聲明",
+    "studio": "樣式工作室"
   },
   "seo": {
     "home": "免費製作幫你拿到面試的履歷：72 款範本、風格一致的求職信、針對每個職缺調整以及 ATS 檢查。免註冊，資料只留在你的裝置上",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 款範本任你選",
         "letter": "風格一致的求職信",
-        "private": "資料只留在你身邊"
+        "private": "資料只留在你身邊",
+        "studio": "或你自己的設計"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "我需要註明身心障礙嗎？",
           "a": "從來都不是必須的。如果你願意，編輯器會提供履歷所在國家認可的說法（法國的 RQTH、義大利的 categorie protette 等），可放在聯絡資訊旁、履歷末尾或僅在求職信中。你也可以只在部分版本中保留"
+        },
+        "design": {
+          "q": "我可以自己設計履歷嗎？",
+          "a": "可以。在樣式工作室裡，你可以組合區塊（頁首、標題、工作經歷、分欄）、擺放裝飾圖形、選擇顏色和字型，不必寫程式。如果你會 CSS，也可以貼上自己的程式碼。樣式透過簡單的複製貼上即可分享，不含任何履歷資料。如果不想放照片，還可以用圖示或姓名縮寫取代"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "一次一個區塊，配上淺白的建議，直到下載 PDF"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "樣式工作室",
+      "title": "沒有一款範本像你？自己做一個",
+      "text": "像堆積木一樣拼出你的設計：選擇區塊、擺放圖形、更換顏色。不必寫一行程式碼，篩選履歷的軟體依然能正確讀取",
+      "points": {
+        "blocks": {
+          "title": "可組合的區塊",
+          "text": "頁首、標題、工作經歷、技能、分欄：每個區塊都能看著草圖一鍵選擇"
+        },
+        "shapes": {
+          "title": "可擺放的圖形",
+          "text": "在頁面上拖曳圓形、色塊、波浪或條紋。它們只做裝飾，不影響閱讀"
+        },
+        "css": {
+          "title": "想用 CSS 也可以",
+          "text": "會寫 CSS？把你的 CSS 貼到工作室畫布或範本庫的範本上，只會改變履歷本身"
+        },
+        "share": {
+          "title": "複製貼上即可分享",
+          "text": "你的樣式只是一小段程式碼，可以直接傳給別人，其中不含任何履歷資料"
+        }
+      },
+      "icon": "用圖示取代照片",
+      "cta": "建立我的樣式"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "該註明不會出現在履歷上。在「求職信」分頁中，一個按鈕可加入現成的句子",
         "pros": "好處：重視多元的雇主（共融計畫、身障就業比例）更快注意到你，工作上的調整也更容易溝通",
         "cons": "顧慮：部分招募人員仍有偏見。你也可以之後再說，在面試時或錄取後，或者不說"
+      },
+      "photoIcon": "圖示",
+      "photoIconTitle": "用圖示取代照片",
+      "photoIconHint": "以強調色繪製。它不會透露任何關於你的資訊，因此在英文履歷中也會保留",
+      "avatars": {
+        "user": "人像",
+        "briefcase": "公事包",
+        "graduation": "學士帽",
+        "code": "程式碼",
+        "palette": "調色盤",
+        "camera": "相機",
+        "music": "音樂",
+        "heart": "愛心",
+        "leaf": "葉子",
+        "rocket": "火箭",
+        "chefHat": "廚師帽",
+        "wrench": "扳手",
+        "stethoscope": "聽診器",
+        "book": "書本",
+        "lightbulb": "燈泡",
+        "initials": "姓名縮寫"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "加入 2 到 3 個興趣：有助於在面試中開啟話題",
         "finish": "選一個你喜歡的範本，然後下載 PDF 履歷。之後隨時可以回來修改"
       }
+    },
+    "style": {
+      "button": "我的樣式",
+      "title": "履歷樣式",
+      "gallery": "範本庫的範本：{{name}}",
+      "empty": "尚未建立任何樣式",
+      "css": "以 CSS 自訂",
+      "cssHint": "在目前範本上使用你自己的 CSS",
+      "cssName": "{{name}}（自訂）",
+      "studio": "樣式工作室",
+      "studioHint": "用區塊和圖形打造自己的設計，免寫程式"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "預設顯示",
     "note": "這些設定只改變介面，絕不會改變列印出來的履歷"
+  },
+  "studio": {
+    "title": "樣式工作室",
+    "subtitle": "打造你自己的履歷設計：免寫程式就能組合區塊和圖形，或使用你自己的 CSS，再以 JSON 程式碼分享",
+    "backToCv": "返回履歷",
+    "notFound": "此樣式不存在或已刪除",
+    "points": {
+      "blocks": "可組合的區塊",
+      "shapes": "可擺放的圖形",
+      "css": "自訂 CSS",
+      "share": "以 JSON 分享"
+    },
+    "list": {
+      "new": "新增樣式",
+      "emptyTitle": "尚無樣式",
+      "emptyText": "從空白頁或起點開始，再逐一調整每個區塊",
+      "open": "開啟",
+      "actions": "動作",
+      "duplicate": "複製",
+      "delete": "刪除",
+      "deleteTitle": "要刪除樣式「{{name}}」嗎？",
+      "deleteText": "使用它的履歷會保留目前的外觀",
+      "copySuffix": "（副本）",
+      "updated": "編輯於 {{date}}",
+      "usedBy": "使用它的履歷：{{count}}",
+      "hint": "你的樣式保存在此瀏覽器中。每份履歷都保留樣式的副本，因此在備份中也是完整的"
+    },
+    "presets": {
+      "blank": "空白頁",
+      "band": "橫幅",
+      "sidebar": "側欄",
+      "organic": "柔和圖形",
+      "timeline": "時間軸"
+    },
+    "toolbar": {
+      "back": "我的樣式",
+      "name": "樣式名稱",
+      "share": "分享",
+      "use": "用於履歷",
+      "applyBack": "套用到履歷",
+      "noCv": "尚無履歷",
+      "applied": "已將樣式套用到「{{name}}」"
+    },
+    "tabs": {
+      "blocks": "區塊",
+      "shapes": "圖形",
+      "colors": "顏色",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "起點",
+      "studio": "工作室畫布",
+      "studioHint": "組合區塊並擺放圖形",
+      "template": "範本庫的範本",
+      "templateHint": "區塊和圖形僅適用於工作室畫布。請在 CSS 分頁調整此範本"
+    },
+    "blocks": {
+      "layout": {
+        "label": "欄",
+        "single": "單欄",
+        "sidebarLeft": "側欄"
+      },
+      "header": {
+        "label": "頁首",
+        "left": "經典",
+        "center": "置中",
+        "band": "橫幅",
+        "card": "聯絡資訊框"
+      },
+      "headings": {
+        "label": "區段標題",
+        "underline": "底線",
+        "bar": "直條",
+        "pill": "膠囊",
+        "caps": "大寫",
+        "boxed": "方框",
+        "line": "細線"
+      },
+      "entries": {
+        "label": "工作經歷與學歷",
+        "classic": "經典",
+        "timeline": "時間軸",
+        "cards": "卡片",
+        "datesLeft": "日期在左"
+      },
+      "skills": {
+        "label": "專業技能",
+        "chips": "標籤",
+        "inline": "單行",
+        "grid": "格線"
+      },
+      "languages": {
+        "label": "語言能力",
+        "meter": "指示條",
+        "text": "文字"
+      },
+      "photo": {
+        "label": "照片",
+        "circle": "圓形",
+        "rounded": "圓角",
+        "square": "方形",
+        "hidden": "隱藏"
+      }
+    },
+    "shapes": {
+      "add": "新增圖形",
+      "hint": "圖形位於文字後方：只做裝飾，不影響 ATS 讀取",
+      "drag": "在頁面上拖曳圖形，或用方向鍵移動",
+      "onPage": "頁面上的圖形",
+      "empty": "頁面上還沒有圖形",
+      "color": "顏色",
+      "size": "大小",
+      "rotate": "旋轉",
+      "alpha": "濃度",
+      "x": "水平",
+      "y": "垂直",
+      "duplicate": "複製",
+      "remove": "刪除",
+      "kinds": {
+        "circle": "圓",
+        "blob": "色塊",
+        "square": "正方形",
+        "triangle": "三角形",
+        "ring": "圓環",
+        "wave": "波浪",
+        "stripes": "條紋",
+        "dots": "圓點"
+      },
+      "colors": {
+        "accent": "強調色",
+        "soft": "淺強調色",
+        "ink": "文字"
+      }
+    },
+    "colors": {
+      "accentCv": "依履歷",
+      "accentFixed": "固定顏色",
+      "paper": "頁面背景",
+      "background": "背景",
+      "text": "文字",
+      "contrast": "對比度低：文字可能不易閱讀"
+    },
+    "css": {
+      "label": "你的 CSS",
+      "hint": "只會即時套用到履歷。匯入和外部網址會被移除。若範本規則優先，請加上 !important",
+      "rules": "已套用的規則：{{count}}",
+      "removed": "為了安全已移除：{{count}}",
+      "example": "插入範例",
+      "warnings": "注意 ATS 讀取",
+      "warning": {
+        "order": "{{property}}：文字可能以錯誤順序被讀取",
+        "shadow": "陰影會讓文字在 PDF 中寫入兩次",
+        "content": "以 CSS 加入的文字會被機器人讀取"
+      },
+      "reference": "可用的類別與變數",
+      "referenceStudio": "工作室畫布的固定類別：",
+      "referenceTemplate": "若是範本庫的範本，請檢查預覽以找出其類別。共用變數："
+    },
+    "preview": {
+      "label": "預覽對象",
+      "sample": "範例履歷"
+    },
+    "share": {
+      "title": "分享樣式",
+      "text": "這段 JSON 程式碼包含完整樣式（區塊、圖形、顏色和 CSS），但不含任何履歷資料。可在樣式工作室中匯入",
+      "copy": "複製程式碼",
+      "copied": "已複製程式碼",
+      "copyError": "無法複製：請選取程式碼後複製",
+      "download": "下載（.json）",
+      "close": "關閉",
+      "importTitle": "匯入樣式",
+      "importText": "貼上樣式的 JSON 程式碼，或選擇 .json 檔案",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "選擇檔案",
+      "importAction": "匯入",
+      "imported": "已匯入樣式「{{name}}」",
+      "error": {
+        "invalidJson": "這段文字不是有效的 JSON",
+        "notAStyle": "這段程式碼不是 LocalATSCV 樣式",
+        "newerVersion": "此樣式來自較新版本的 LocalATSCV：請更新應用程式"
+      }
+    }
   }
 }

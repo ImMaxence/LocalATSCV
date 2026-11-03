@@ -6,7 +6,8 @@
     "privacy": "Personvern",
     "analyze": "Test CV-en min",
     "editor": "Lag min CV",
-    "skipToContent": "Gå til innholdet"
+    "skipToContent": "Gå til innholdet",
+    "studio": "Stilstudio"
   },
   "theme": {
     "label": "Tema",
@@ -29,7 +30,8 @@
     "legalNotice": "Juridisk informasjon",
     "terms": "Bruksvilkår",
     "privacy": "Personvernerklæring",
-    "accessibility": "Tilgjengelighetserklæring"
+    "accessibility": "Tilgjengelighetserklæring",
+    "studio": "Stilstudio"
   },
   "seo": {
     "home": "Lag gratis en CV som gir deg intervjuet: 72 maler, søknadsbrev som matcher, tilpasning til hver annonse og ATS-sjekk. Uten registrering, dataene dine blir på enheten din",
@@ -70,7 +72,8 @@
       "points": {
         "templates": "72 maler å velge mellom",
         "letter": "Søknadsbrev som matcher",
-        "private": "Dataene dine blir hos deg"
+        "private": "Dataene dine blir hos deg",
+        "studio": "Eller ditt eget design"
       }
     },
     "ats": {
@@ -249,6 +252,10 @@
         "disability": {
           "q": "Må jeg nevne funksjonsnedsettelsen min?",
           "a": "Det er aldri obligatorisk. Hvis du vil, foreslår redigeringsverktøyet formuleringen som brukes i CV-ens land (RQTH i Frankrike, categorie protette i Italia…), ved kontaktinformasjonen, til slutt i CV-en eller bare i brevet. Du kan også beholde den i noen versjoner og ikke i andre"
+        },
+        "design": {
+          "q": "Kan jeg lage mitt eget CV-design?",
+          "a": "Ja. I stilstudioet setter du sammen blokker (topptekst, titler, erfaring, kolonner), plasserer dekorative former og velger farger og skrifttyper, uten kode. Kan du CSS, kan du også lime inn din egen. En stil deles med kopier og lim inn, uten data fra CV-en din. Og vil du ikke vise et bilde, kan et ikon eller initialene dine ta plassen"
         }
       }
     },
@@ -306,6 +313,31 @@
           "text": "Én del om gangen, med et råd på enkelt språk, helt til nedlastingen av PDF-en"
         }
       }
+    },
+    "studio": {
+      "eyebrow": "Stilstudio",
+      "title": "Ingen mal som ligner deg? Lag din egen",
+      "text": "Bygg designet ditt som med byggeklosser: velg blokkene, plasser former, bytt farger. Uten en eneste kodelinje og fortsatt lest riktig av programmene som sorterer søknader",
+      "points": {
+        "blocks": {
+          "title": "Blokker å sette sammen",
+          "text": "Topptekst, titler, erfaring, kompetanse, kolonner: hver blokk velges med ett klikk, ut fra skissen"
+        },
+        "shapes": {
+          "title": "Former å plassere",
+          "text": "Sirkler, flekker, bølger eller striper som du drar rundt på siden. De pynter uten å forstyrre lesingen"
+        },
+        "css": {
+          "title": "Din egen CSS, om du vil",
+          "text": "Kan du CSS? Lim inn din egen på studioets lerret eller på en mal fra galleriet: den endrer bare CV-en"
+        },
+        "share": {
+          "title": "Delt med kopier og lim inn",
+          "text": "Stilen din får plass i en kort kode du kan sende videre. Den inneholder ingen data fra CV-en din"
+        }
+      },
+      "icon": "Et ikon i stedet for et bilde",
+      "cta": "Lag min stil"
     }
   },
   "dialog": {
@@ -485,6 +517,27 @@
         "letterHint": "Opplysningen vises ikke i CV-en. Under fanen Brev legger en knapp til en ferdig setning",
         "pros": "For: engasjerte arbeidsgivere (inkluderingsarbeid, kvoter) finner deg raskere, og tilrettelegging er lettere å snakke om",
         "cons": "Imot: noen rekrutterere har fortsatt fordommer. Du kan også ta det opp senere, på intervjuet eller etter ansettelsen, eller aldri"
+      },
+      "photoIcon": "Et ikon",
+      "photoIconTitle": "Et ikon i stedet for et bilde",
+      "photoIconHint": "Tegnet i aksentfargen. Det sier ingenting om deg og vises derfor også på engelske CV-er",
+      "avatars": {
+        "user": "Silhuett",
+        "briefcase": "Dokumentmappe",
+        "graduation": "Studentlue",
+        "code": "Kode",
+        "palette": "Palett",
+        "camera": "Kamera",
+        "music": "Musikk",
+        "heart": "Hjerte",
+        "leaf": "Blad",
+        "rocket": "Rakett",
+        "chefHat": "Kokkelue",
+        "wrench": "Skiftenøkkel",
+        "stethoscope": "Stetoskop",
+        "book": "Bok",
+        "lightbulb": "Lyspære",
+        "initials": "Initialer"
       }
     },
     "sections": {
@@ -992,6 +1045,17 @@
         "interests": "Legg til 2 eller 3 fritidsinteresser: de hjelper med å starte samtalen på intervjuet",
         "finish": "Velg en mal du liker, og last ned CV-en som PDF. Du kan alltid komme tilbake og endre den"
       }
+    },
+    "style": {
+      "button": "Min stil",
+      "title": "Stilen til CV-en",
+      "gallery": "Mal fra galleriet: {{name}}",
+      "empty": "Ingen stil opprettet ennå",
+      "css": "Tilpass med CSS",
+      "cssHint": "Din egen CSS på gjeldende mal",
+      "cssName": "{{name}} tilpasset",
+      "studio": "Stilstudio",
+      "studioHint": "Ditt eget design med blokker og former, uten kode"
     }
   },
   "changelog": {
@@ -1196,5 +1260,187 @@
     },
     "reset": "Standardvisning",
     "note": "Innstillingene endrer grensesnittet, aldri den utskrevne CV-en din"
+  },
+  "studio": {
+    "title": "Stilstudio",
+    "subtitle": "Lag ditt eget CV-design: blokker og former som settes sammen uten kode, eller din egen CSS. Del det deretter som JSON-kode",
+    "backToCv": "Tilbake til CV-en",
+    "notFound": "Denne stilen finnes ikke eller er slettet",
+    "points": {
+      "blocks": "Blokker å sette sammen",
+      "shapes": "Former å plassere",
+      "css": "Egen CSS",
+      "share": "Del som JSON"
+    },
+    "list": {
+      "new": "Ny stil",
+      "emptyTitle": "Ingen stiler ennå",
+      "emptyText": "Start med en tom side eller et utgangspunkt, og juster så hver blokk",
+      "open": "Åpne",
+      "actions": "Handlinger",
+      "duplicate": "Dupliser",
+      "delete": "Slett",
+      "deleteTitle": "Slette stilen «{{name}}»?",
+      "deleteText": "CV-er som bruker den, beholder utseendet sitt",
+      "copySuffix": "(kopi)",
+      "updated": "Endret {{date}}",
+      "usedBy": "CV-er som bruker den: {{count}}",
+      "hint": "Stilene dine blir i denne nettleseren. Hver CV lagrer en kopi av stilen sin og er derfor komplett i sikkerhetskopiene dine"
+    },
+    "presets": {
+      "blank": "Tom side",
+      "band": "Banner",
+      "sidebar": "Sidekolonne",
+      "organic": "Myke former",
+      "timeline": "Tidslinje"
+    },
+    "toolbar": {
+      "back": "Mine stiler",
+      "name": "Navn på stilen",
+      "share": "Del",
+      "use": "Bruk på en CV",
+      "applyBack": "Bruk på CV-en",
+      "noCv": "Ingen CV-er ennå",
+      "applied": "Stilen er brukt på «{{name}}»"
+    },
+    "tabs": {
+      "blocks": "Blokker",
+      "shapes": "Former",
+      "colors": "Farger",
+      "css": "CSS"
+    },
+    "base": {
+      "label": "Utgangspunkt",
+      "studio": "Studioets lerret",
+      "studioHint": "Sett sammen blokker og plasser former",
+      "template": "En mal fra galleriet",
+      "templateHint": "Blokker og former finnes bare på studioets lerret. Juster denne malen i CSS-fanen"
+    },
+    "blocks": {
+      "layout": {
+        "label": "Kolonner",
+        "single": "Én kolonne",
+        "sidebarLeft": "Sidekolonne"
+      },
+      "header": {
+        "label": "Topptekst",
+        "left": "Klassisk",
+        "center": "Sentrert",
+        "band": "Banner",
+        "card": "Kontaktboks"
+      },
+      "headings": {
+        "label": "Seksjonstitler",
+        "underline": "Understreket",
+        "bar": "Stolpe",
+        "pill": "Pille",
+        "caps": "Versaler",
+        "boxed": "Boks",
+        "line": "Strek"
+      },
+      "entries": {
+        "label": "Erfaring og utdanning",
+        "classic": "Klassisk",
+        "timeline": "Tidslinje",
+        "cards": "Kort",
+        "datesLeft": "Datoer til venstre"
+      },
+      "skills": {
+        "label": "Kompetanse",
+        "chips": "Etiketter",
+        "inline": "På én linje",
+        "grid": "Rutenett"
+      },
+      "languages": {
+        "label": "Språk",
+        "meter": "Måler",
+        "text": "Tekst"
+      },
+      "photo": {
+        "label": "Bilde",
+        "circle": "Rund",
+        "rounded": "Avrundet",
+        "square": "Firkantet",
+        "hidden": "Skjult"
+      }
+    },
+    "shapes": {
+      "add": "Legg til en form",
+      "hint": "Formene ligger bak teksten: de pynter uten å forstyrre ATS-lesingen",
+      "drag": "Dra formene rundt på siden, eller flytt dem med piltastene",
+      "onPage": "Former på siden",
+      "empty": "Ingen former på siden ennå",
+      "color": "Farge",
+      "size": "Størrelse",
+      "rotate": "Rotasjon",
+      "alpha": "Intensitet",
+      "x": "Vannrett",
+      "y": "Loddrett",
+      "duplicate": "Dupliser",
+      "remove": "Slett",
+      "kinds": {
+        "circle": "Sirkel",
+        "blob": "Flekk",
+        "square": "Kvadrat",
+        "triangle": "Trekant",
+        "ring": "Ring",
+        "wave": "Bølger",
+        "stripes": "Striper",
+        "dots": "Prikker"
+      },
+      "colors": {
+        "accent": "Aksent",
+        "soft": "Lys aksent",
+        "ink": "Tekst"
+      }
+    },
+    "colors": {
+      "accentCv": "CV-ens egen",
+      "accentFixed": "Fast farge",
+      "paper": "Sidebakgrunn",
+      "background": "Bakgrunn",
+      "text": "Tekst",
+      "contrast": "Lav kontrast: teksten kan bli vanskelig å lese"
+    },
+    "css": {
+      "label": "Din CSS",
+      "hint": "Gjelder bare CV-en, umiddelbart. Importer og eksterne adresser fjernes. Legg til !important hvis en regel i malen vinner",
+      "rules": "Brukte regler: {{count}}",
+      "removed": "Fjernet for din sikkerhet: {{count}}",
+      "example": "Sett inn et eksempel",
+      "warnings": "Pass på ATS-lesingen",
+      "warning": {
+        "order": "{{property}}: teksten kan bli lest i feil rekkefølge",
+        "shadow": "en skygge skriver teksten to ganger i PDF-en",
+        "content": "tekst lagt til med CSS leses av roboter"
+      },
+      "reference": "Tilgjengelige klasser og variabler",
+      "referenceStudio": "Faste klasser på studioets lerret:",
+      "referenceTemplate": "På en mal fra galleriet finner du klassene ved å inspisere forhåndsvisningen. Felles variabler:"
+    },
+    "preview": {
+      "label": "Forhåndsvisning med",
+      "sample": "Eksempel-CV-en"
+    },
+    "share": {
+      "title": "Del stilen",
+      "text": "Denne JSON-koden inneholder hele stilen (blokker, former, farger og CSS), men ingen data fra CV-en din. Den importeres i stilstudioet",
+      "copy": "Kopier koden",
+      "copied": "Koden er kopiert",
+      "copyError": "Kunne ikke kopiere: merk koden og kopier den",
+      "download": "Last ned (.json)",
+      "close": "Lukk",
+      "importTitle": "Importer en stil",
+      "importText": "Lim inn JSON-koden til en stil, eller velg en .json-fil",
+      "importPlaceholder": "{ \"app\": \"LocalATSCV\", \"type\": \"style\", … }",
+      "importFile": "Velg en fil",
+      "importAction": "Importer",
+      "imported": "Stilen «{{name}}» er importert",
+      "error": {
+        "invalidJson": "Denne teksten er ikke gyldig JSON",
+        "notAStyle": "Denne koden er ikke en LocalATSCV-stil",
+        "newerVersion": "Denne stilen kommer fra en nyere versjon av LocalATSCV: oppdater appen"
+      }
+    }
   }
 }

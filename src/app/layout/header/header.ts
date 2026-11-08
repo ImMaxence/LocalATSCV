@@ -51,7 +51,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
         </a>
 
         <nav
-          class="ms-6 hidden items-center gap-1 text-sm lg:flex"
+          class="ms-3 hidden items-center gap-1 text-sm xl:flex"
           [attr.aria-label]="t('nav.main')"
         >
           <a [routerLink]="language.link('/')" fragment="how" class="nav-link">{{ t('nav.how') }}</a>
@@ -62,6 +62,9 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
             class="nav-link"
           >
             {{ t('nav.analyze') }}
+          </a>
+          <a routerLink="/studio" routerLinkActive="text-ink!" class="nav-link">
+            {{ t('nav.studio') }}
           </a>
         </nav>
 
@@ -74,7 +77,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
           </a>
           <button
             type="button"
-            class="grid size-8 place-items-center rounded-full border border-line bg-surface text-muted transition-colors hover:border-ink/25 hover:text-ink aria-expanded:border-accent aria-expanded:text-accent lg:hidden"
+            class="grid size-8 place-items-center rounded-full border border-line bg-surface text-muted transition-colors hover:border-ink/25 hover:text-ink aria-expanded:border-accent aria-expanded:text-accent xl:hidden"
             [attr.aria-controls]="menuOpen() ? 'mobile-nav' : null"
             [attr.aria-expanded]="menuOpen()"
             [attr.aria-label]="t('nav.main')"
@@ -86,7 +89,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
         </div>
       </div>
 
-      <!-- Navigation sous 1024 px, à part : l'en-tête est dans le bundle initial -->
+      <!-- Navigation sous 1280 px, à part : l'en-tête est dans le bundle initial -->
       @if (menuOpen()) {
         @defer (on immediate) {
           <app-mobile-nav (navigated)="menuOpen.set(false)" />
@@ -97,8 +100,9 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
   styles: `
     .nav-link {
       border-radius: 9999px;
-      padding: 0.375rem 0.75rem;
+      padding: 0.375rem 0.5rem;
       color: var(--muted);
+      white-space: nowrap;
       transition: color 150ms;
     }
     .nav-link:hover {

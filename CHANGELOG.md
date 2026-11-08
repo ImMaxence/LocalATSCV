@@ -4,6 +4,16 @@ All notable changes to LocalATSCV are listed here
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project adheres to [Semantic Versioning](https://semver.org/)
 
+## [1.0.4] - 2026-11-08
+
+### Added
+
+- Style studio link in the main navigation bar
+
+### Changed
+
+- The navigation bar now collapses into the menu below 1280 px, so its links stay on one line in every language
+
 ## [1.0.3] - 2026-11-08
 
 ### Added

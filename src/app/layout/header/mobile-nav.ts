@@ -4,7 +4,7 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import { LanguageService } from '../../core/i18n/language.service';
 import { Icon, IconName } from '../../shared/icon/icon';
 
-/** Panneau de navigation sous 1024 px, chargé à la première ouverture (voir Header). */
+/** Panneau de navigation sous 1280 px, chargé à la première ouverture (voir Header). */
 @Component({
   selector: 'app-mobile-nav',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -14,7 +14,7 @@ import { Icon, IconName } from '../../shared/icon/icon';
     <nav
       *transloco="let t"
       id="mobile-nav"
-      class="menu-in absolute inset-x-0 top-full border-b border-line bg-paper shadow-xl shadow-black/10 lg:hidden"
+      class="menu-in absolute inset-x-0 top-full border-b border-line bg-paper shadow-xl shadow-black/10 xl:hidden"
       [attr.aria-label]="t('nav.main')"
     >
       <ul class="container-page grid gap-1 py-3 sm:grid-cols-2">

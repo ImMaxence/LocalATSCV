@@ -10,12 +10,25 @@ export async function prepareProfilePhoto(file: Blob): Promise<Blob> {
     throw new PhotoError('unreadable');
   });
   const scale = Math.min(1, MAX_PHOTO_SIZE / Math.max(bitmap.width, bitmap.height));
-  const canvas = document.createElement('canvas');
-  canvas.width = Math.round(bitmap.width * scale);
-  canvas.height = Math.round(bitmap.height * scale);
-  canvas.getContext('2d')?.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+  const jpeg = drawAsJpeg(bitmap, bitmap.width * scale, bitmap.height * scale);
   bitmap.close();
+  return jpeg;
+}
 
+/** Photo stockable à partir d'une image du site, SVG compris (que createImageBitmap refuse). */
+export async function rasterizePhoto(url: string): Promise<Blob> {
+  const image = new Image();
+  image.src = url;
+  await image.decode();
+  const scale = MAX_PHOTO_SIZE / Math.max(image.naturalWidth, image.naturalHeight);
+  return drawAsJpeg(image, image.naturalWidth * scale, image.naturalHeight * scale);
+}
+
+function drawAsJpeg(source: CanvasImageSource, width: number, height: number): Promise<Blob> {
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.round(width);
+  canvas.height = Math.round(height);
+  canvas.getContext('2d')?.drawImage(source, 0, 0, canvas.width, canvas.height);
   return new Promise((resolve, reject) =>
     canvas.toBlob(
       (blob) => (blob ? resolve(blob) : reject(new PhotoError('encoding'))),

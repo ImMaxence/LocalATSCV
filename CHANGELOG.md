@@ -4,6 +4,12 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [1.0.1] - 2026-11-08
+
+### Modifié
+
+- Un CV créé à partir d'un exemple comporte désormais une photo de profil fictive (une illustration), à remplacer ou supprimer comme n'importe quelle photo
+
 ## [1.0.0] - 2026-11-08
 
 ### Ajouté

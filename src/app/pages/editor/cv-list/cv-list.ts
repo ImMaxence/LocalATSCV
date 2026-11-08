@@ -6,10 +6,11 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
 import { BackupError, parseBackup } from '../../../cv/data/backup';
 import { CvRepository } from '../../../cv/data/cv-repository';
+import { rasterizePhoto } from '../../../cv/data/photo';
 import { CvPreview } from '../../../cv/document/cv-preview';
 import { CV_LANGUAGES, CvLanguage, MasterCv, createEmptyCv } from '../../../cv/model/cv.model';
 import { resolveCv } from '../../../cv/model/resolve-cv';
-import { createSampleCv } from '../../../cv/model/sample-cv';
+import { SAMPLE_PHOTO_URL, createSampleCv } from '../../../cv/model/sample-cv';
 import { LanguageService } from '../../../core/i18n/language.service';
 import { DialogService } from '../../../shared/dialog/dialog.service';
 import { downloadFile, slugify, today } from '../../../shared/download';
@@ -85,7 +86,18 @@ export class CvList {
   }
 
   protected async createSample(): Promise<void> {
-    await this.createAndOpen(createSampleCv(this.uiAsCvLanguage()));
+    const cv = createSampleCv(this.uiAsCvLanguage());
+    cv.profile.photoId = await this.savedSamplePhoto();
+    await this.createAndOpen(cv);
+  }
+
+  /** Si l'image ne peut pas être chargée, le CV d'exemple est simplement créé sans photo. */
+  private async savedSamplePhoto(): Promise<string | null> {
+    try {
+      return await this.repository.savePhoto(await rasterizePhoto(SAMPLE_PHOTO_URL));
+    } catch {
+      return null;
+    }
   }
 
   private async createAndOpen(cv: MasterCv): Promise<void> {

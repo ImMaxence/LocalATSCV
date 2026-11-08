@@ -224,7 +224,7 @@ export function createSampleCv(language: CvLanguage): MasterCv {
   return { ...cv, template: 'aurora', sections, letter: SAMPLE_LETTERS[cvLanguage] };
 }
 
-/** Photo d'exemple (une illustration, pas une vraie personne) pour la galerie de modèles. */
+/** Photo d'exemple (une illustration, pas une vraie personne) : galerie de modèles et CV d'exemple. */
 export const SAMPLE_PHOTO_URL = '/images/photo-exemple.svg';
 
 const SHOWCASE_EXTRAS = {

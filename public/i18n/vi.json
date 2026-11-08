@@ -73,7 +73,8 @@
         "templates": "72 mẫu để lựa chọn",
         "letter": "Thư xin việc đồng bộ",
         "private": "Dữ liệu ở lại với bạn",
-        "studio": "Hoặc thiết kế của riêng bạn"
+        "studio": "Hoặc thiết kế của riêng bạn",
+        "countries": "5 ngôn ngữ, theo thông lệ của quốc gia"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Chọn mẫu và màu, rồi tải CV dưới dạng PDF, sẵn sàng gửi đi hoặc in ra"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Ngôn ngữ và quốc gia",
+      "title": "CV tôn trọng thông lệ của quốc gia bạn nhắm đến",
+      "text": "Mỗi CV có ngôn ngữ riêng, độc lập với ngôn ngữ của trang. Tiêu đề, ngày tháng và câu chữ trong thư được viết đúng như mong đợi tại địa phương. Trên CV tiếng Anh, ảnh, ngày sinh và quốc tịch được bỏ đi theo thông lệ Anglo-Saxon",
+      "keeps": "Có thể có ảnh",
+      "hides": "Ẩn ảnh",
+      "freeTitle": "Cần tự do hơn?",
+      "freeText": "Chế độ tự do giữ ngôn ngữ đã chọn và không ẩn gì cả: bạn quyết định những gì xuất hiện trên CV"
     },
     "privacy": {
       "eyebrow": "Quyền riêng tư",
@@ -384,7 +394,12 @@
       "importPdf": "Nhập CV (PDF hoặc Word)",
       "importPdfHint": "Đưa CV có sẵn vào các mẫu của chúng tôi",
       "importLinkedin": "Nhập từ LinkedIn",
-      "importLinkedinHint": "Từ PDF hồ sơ của bạn"
+      "importLinkedinHint": "Từ PDF hồ sơ của bạn",
+      "selectCard": "Chọn \"{{name}}\"",
+      "selected": "Đã chọn: {{count}}",
+      "selectAll": "Chọn tất cả",
+      "deleteManyTitle": "Xóa mục đã chọn ({{count}})?",
+      "deleteManyText": "Các CV đã chọn và mọi phiên bản của chúng sẽ bị xóa vĩnh viễn khỏi trình duyệt này"
     },
     "toolbar": {
       "back": "CV của tôi",
@@ -399,7 +414,15 @@
       "preview": "Xem trước",
       "exportPdf": "Xuất ra PDF",
       "undo": "Hoàn tác (Ctrl+Z)",
-      "redo": "Làm lại (Ctrl+Y)"
+      "redo": "Làm lại (Ctrl+Y)",
+      "freeMode": "Tự do"
+    },
+    "languageInfo": {
+      "title": "Ngôn ngữ CV và thông lệ của quốc gia",
+      "site": "Lựa chọn này không đổi ngôn ngữ của trang, chỉ đổi ngôn ngữ của CV",
+      "labels": "Nó điều chỉnh những gì ứng dụng viết thay bạn: tiêu đề mục, ngày tháng, trình độ ngôn ngữ, câu chữ trong thư và các ghi chú riêng của từng quốc gia. Nội dung bạn tự viết không được dịch",
+      "rule": "Nó cũng áp dụng thông lệ của quốc gia: trên CV tiếng Anh, ảnh, ngày sinh và quốc tịch được ẩn",
+      "free": "Chế độ tự do: ngôn ngữ giữ nguyên nhưng không ẩn gì cả. Bạn quyết định những gì xuất hiện trên CV"
     },
     "modes": {
       "label": "Tài liệu cần chỉnh sửa",
@@ -565,7 +588,9 @@
         "interests": "Thêm sở thích"
       },
       "deleteTitle": "Xóa mục “{{name}}”?",
-      "deleteText": "Nội dung của mục sẽ bị gỡ khỏi CV Master và mọi phiên bản"
+      "deleteText": "Nội dung của mục sẽ bị gỡ khỏi CV Master và mọi phiên bản",
+      "collapse": "Thu gọn mục",
+      "expand": "Mở rộng mục"
     },
     "entry": {
       "fields": {

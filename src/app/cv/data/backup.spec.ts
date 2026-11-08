@@ -26,6 +26,13 @@ describe('parseBackup', () => {
     expect(parsed.photos).toEqual([photo]);
   });
 
+  it('relit le mode libre, absent des anciennes sauvegardes', () => {
+    const free = { ...structuredClone(cv), freeMode: true };
+    expect(parseBackup(JSON.stringify(createBackup([free], [], []))).cvs[0].freeMode).toBe(true);
+    const { freeMode: _, ...older } = structuredClone(cv);
+    expect(parseBackup(JSON.stringify(createBackup([older as typeof cv], [], []))).cvs[0].freeMode).toBe(false);
+  });
+
   it('relit les styles du studio et l’icône à la place de la photo', () => {
     const style = createStyle('Mon style', 'band');
     const styled = {

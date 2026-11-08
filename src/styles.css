@@ -275,8 +275,16 @@ app-cv-document .cv {
   opacity: 0.96;
 }
 
+/* Emplacement d'arrivée : un cadre vide, à sa taille réelle, qui se déplace pendant le glissé. */
 .cdk-drag-placeholder {
-  opacity: 0.25;
+  border-radius: 0.875rem;
+  outline: 2px dashed var(--color-accent);
+  outline-offset: -2px;
+  background: var(--color-accent-soft);
+}
+
+.cdk-drag-placeholder > * {
+  visibility: hidden;
 }
 
 .cdk-drag-animating,

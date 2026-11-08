@@ -3,7 +3,10 @@
   class="panel transition-opacity"
   [class.opacity-50]="store.isHidden(section().id)"
 >
-  <header class="flex items-center gap-1.5 border-b border-line px-2.5 py-2">
+  <header
+    class="flex items-center gap-1.5 border-line px-2.5 py-2"
+    [class.border-b]="!collapsed()"
+  >
     <button cdkDragHandle type="button" class="drag-handle" [attr.aria-label]="t('actions.drag')">
       <app-icon class="size-4" name="grip" />
     </button>
@@ -23,6 +26,24 @@
     <span class="hidden text-xs text-muted sm:inline">{{
       t('sections.kinds.' + section().kind)
     }}</span>
+    @if (collapsible()) {
+      @let label = t(collapsed() ? 'sections.expand' : 'sections.collapse');
+      <button
+        type="button"
+        class="icon-btn"
+        [attr.aria-expanded]="!collapsed()"
+        [attr.aria-controls]="'section-body-' + section().id"
+        [attr.aria-label]="label"
+        [title]="label"
+        (click)="store.toggleSectionCollapsed(section().id)"
+      >
+        <app-icon
+          class="size-4 transition-transform"
+          [class]="collapsed() ? '-rotate-90 rtl:rotate-90' : ''"
+          name="chevronDown"
+        />
+      </button>
+    }
     <app-item-menu
       [canMoveUp]="index() > 0"
       [canMoveDown]="!isLast()"
@@ -32,7 +53,7 @@
     />
   </header>
 
-  <div class="p-2.5 sm:p-3">
+  <div class="p-2.5 sm:p-3" [id]="'section-body-' + section().id" [hidden]="collapsed()">
     @if (entryKind(); as kind) {
       <div cdkDropList class="space-y-2" (cdkDropListDropped)="moveItem($event)">
         @for (entry of entries(); track entry.id; let i = $index, last = $last) {

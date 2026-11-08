@@ -49,11 +49,16 @@ export class CvRepository {
   }
 
   async deleteCv(id: string): Promise<void> {
+    await this.deleteCvs([id]);
+  }
+
+  /** Suppression groupée : tout ou rien, avec les versions et les photos de chaque CV. */
+  async deleteCvs(ids: string[]): Promise<void> {
     await this.db.transaction('rw', this.db.cvs, this.db.versions, this.db.photos, async () => {
-      const cv = await this.db.cvs.get(id);
-      if (cv?.profile.photoId) await this.db.photos.delete(cv.profile.photoId);
-      await this.db.versions.where('masterId').equals(id).delete();
-      await this.db.cvs.delete(id);
+      const cvs = await this.db.cvs.bulkGet(ids);
+      await this.db.photos.bulkDelete(cvs.flatMap((cv) => cv?.profile.photoId ?? []));
+      await this.db.versions.where('masterId').anyOf(ids).delete();
+      await this.db.cvs.bulkDelete(ids);
     });
   }
 

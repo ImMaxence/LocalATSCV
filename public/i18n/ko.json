@@ -73,7 +73,8 @@
         "templates": "72가지 템플릿 선택",
         "letter": "디자인을 맞춘 자기소개서",
         "private": "데이터는 내 기기에만",
-        "studio": "나만의 디자인도"
+        "studio": "나만의 디자인도",
+        "countries": "국가별 관행에 맞춘 5개 언어"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "템플릿과 색상을 고른 뒤, 보내거나 인쇄할 수 있는 PDF로 이력서를 내려받으세요"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "언어와 국가",
+      "title": "지원 국가의 관행을 따르는 이력서",
+      "text": "이력서마다 사이트 언어와 별개로 자체 언어를 가집니다. 제목, 날짜, 편지 문구는 현지에서 기대하는 방식으로 작성됩니다. 영어 이력서에서는 영미권 관행에 따라 사진, 생년월일, 국적이 제외됩니다",
+      "keeps": "사진 가능",
+      "hides": "사진 숨김",
+      "freeTitle": "더 자유롭게 하고 싶으세요?",
+      "freeText": "자유 모드는 선택한 언어를 유지하고 아무것도 숨기지 않습니다. 이력서에 넣을 내용은 직접 결정합니다"
     },
     "privacy": {
       "eyebrow": "개인정보 보호",
@@ -384,7 +394,12 @@
       "importPdf": "이력서 가져오기(PDF 또는 Word)",
       "importPdfHint": "기존 이력서를 템플릿으로 옮겨 오세요",
       "importLinkedin": "LinkedIn에서 가져오기",
-      "importLinkedinHint": "프로필 PDF에서"
+      "importLinkedinHint": "프로필 PDF에서",
+      "selectCard": "\"{{name}}\" 선택",
+      "selected": "선택됨: {{count}}",
+      "selectAll": "모두 선택",
+      "deleteManyTitle": "선택 항목을 삭제할까요 ({{count}})?",
+      "deleteManyText": "선택한 이력서와 모든 버전이 이 브라우저에서 영구적으로 삭제됩니다"
     },
     "toolbar": {
       "back": "내 이력서",
@@ -399,7 +414,15 @@
       "preview": "미리보기",
       "exportPdf": "PDF로 내보내기",
       "undo": "실행 취소(Ctrl+Z)",
-      "redo": "다시 실행(Ctrl+Y)"
+      "redo": "다시 실행(Ctrl+Y)",
+      "freeMode": "자유"
+    },
+    "languageInfo": {
+      "title": "이력서 언어와 국가별 관행",
+      "site": "이 선택은 사이트 언어가 아니라 이력서 언어만 바꿉니다",
+      "labels": "앱이 대신 작성하는 내용을 맞춥니다: 섹션 제목, 날짜, 언어 수준, 편지 문구, 국가별 표기. 직접 쓴 글은 번역되지 않습니다",
+      "rule": "국가별 관행도 적용합니다: 영어 이력서에서는 사진, 생년월일, 국적이 숨겨집니다",
+      "free": "자유 모드: 언어는 그대로이고 아무것도 숨기지 않습니다. 이력서에 넣을 내용은 직접 결정합니다"
     },
     "modes": {
       "label": "편집할 문서",
@@ -565,7 +588,9 @@
         "interests": "관심사 추가"
       },
       "deleteTitle": "'{{name}}' 섹션을 삭제할까요?",
-      "deleteText": "내용이 마스터 이력서와 모든 버전에서 삭제됩니다"
+      "deleteText": "내용이 마스터 이력서와 모든 버전에서 삭제됩니다",
+      "collapse": "섹션 접기",
+      "expand": "섹션 펼치기"
     },
     "entry": {
       "fields": {

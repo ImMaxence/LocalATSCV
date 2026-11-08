@@ -73,7 +73,8 @@
         "templates": "72 skabeloner at vælge imellem",
         "letter": "Matchende ansøgning",
         "private": "Dine data bliver hos dig",
-        "studio": "Eller dit eget design"
+        "studio": "Eller dit eget design",
+        "countries": "5 sprog, efter landets skikke"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Vælg skabelon og farve, og download dit CV som PDF, klar til at sende eller printe"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Sprog og lande",
+      "title": "Et CV, der følger skikkene i det land, du søger job i",
+      "text": "Hvert CV har sit eget sprog, uafhængigt af sidens. Titler, datoer og brevvendinger skrives, som man forventer det lokalt. På et CV på engelsk forsvinder foto, fødselsdato og nationalitet, efter angelsaksisk praksis",
+      "keeps": "Foto muligt",
+      "hides": "Foto skjult",
+      "freeTitle": "Brug for mere frihed?",
+      "freeText": "Fri tilstand beholder det valgte sprog og skjuler intet: du bestemmer, hvad der står på CV'et"
     },
     "privacy": {
       "eyebrow": "Privatliv",
@@ -384,7 +394,12 @@
       "importPdf": "Importér et CV (PDF eller Word)",
       "importPdfHint": "Overfør et eksisterende CV til vores skabeloner",
       "importLinkedin": "Importér fra LinkedIn",
-      "importLinkedinHint": "Fra PDF'en af din profil"
+      "importLinkedinHint": "Fra PDF'en af din profil",
+      "selectCard": "Vælg \"{{name}}\"",
+      "selected": "Valgt: {{count}}",
+      "selectAll": "Vælg alle",
+      "deleteManyTitle": "Slet det valgte ({{count}})?",
+      "deleteManyText": "De valgte CV'er og alle deres versioner slettes permanent fra denne browser"
     },
     "toolbar": {
       "back": "Mine CV'er",
@@ -399,7 +414,15 @@
       "preview": "Eksempel",
       "exportPdf": "Eksportér til PDF",
       "undo": "Fortryd (Ctrl+Z)",
-      "redo": "Gentag (Ctrl+Y)"
+      "redo": "Gentag (Ctrl+Y)",
+      "freeMode": "Fri"
+    },
+    "languageInfo": {
+      "title": "CV'ets sprog og landets skikke",
+      "site": "Dette valg ændrer ikke sidens sprog, kun CV'ets",
+      "labels": "Det tilpasser det, appen skriver for dig: afsnitstitler, datoer, sprogniveauer, brevvendinger og landespecifikke angivelser. Dine egne tekster oversættes ikke",
+      "rule": "Det anvender også landets skikke: på et CV på engelsk skjules foto, fødselsdato og nationalitet",
+      "free": "Fri tilstand: sproget forbliver det samme, men intet skjules. Du bestemmer, hvad der står på CV'et"
     },
     "modes": {
       "label": "Dokument, der redigeres",
@@ -565,7 +588,9 @@
         "interests": "Tilføj en interesse"
       },
       "deleteTitle": "Slet sektionen »{{name}}«?",
-      "deleteText": "Indholdet fjernes fra Master-CV'et og alle dets versioner"
+      "deleteText": "Indholdet fjernes fra Master-CV'et og alle dets versioner",
+      "collapse": "Fold afsnittet sammen",
+      "expand": "Fold afsnittet ud"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Min stil",
+      "button": "Mine stilarter",
       "title": "CV'ets stil",
       "gallery": "Skabelon fra galleriet: {{name}}",
       "empty": "Ingen stil oprettet endnu",

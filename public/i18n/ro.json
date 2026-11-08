@@ -73,7 +73,8 @@
         "templates": "72 de șabloane la alegere",
         "letter": "Scrisoare de intenție asortată",
         "private": "Datele tale rămân la tine",
-        "studio": "Sau propriul tău design"
+        "studio": "Sau propriul tău design",
+        "countries": "5 limbi, după uzanțele țării"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Alege șablonul și culoarea, apoi descarcă CV-ul în PDF, gata de trimis sau de tipărit"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Limbi și țări",
+      "title": "Un CV care respectă uzanțele țării vizate",
+      "text": "Fiecare CV are propria limbă, independentă de cea a site-ului. Titlurile, datele și formulele scrisorii sunt scrise așa cum se așteaptă la fața locului. Pe un CV în engleză, fotografia, data nașterii și naționalitatea dispar, conform uzanțelor anglo-saxone",
+      "keeps": "Fotografie posibilă",
+      "hides": "Fotografie ascunsă",
+      "freeTitle": "Ai nevoie de mai multă libertate?",
+      "freeText": "Modul liber păstrează limba aleasă și nu ascunde nimic: tu decizi ce apare pe CV"
     },
     "privacy": {
       "eyebrow": "Confidențialitate",
@@ -384,7 +394,12 @@
       "importPdf": "Importă un CV (PDF sau Word)",
       "importPdfHint": "Adu un CV existent în șabloanele noastre",
       "importLinkedin": "Importă din LinkedIn",
-      "importLinkedinHint": "Din PDF-ul profilului tău"
+      "importLinkedinHint": "Din PDF-ul profilului tău",
+      "selectCard": "Selectează „{{name}}”",
+      "selected": "Selecție: {{count}}",
+      "selectAll": "Selectează tot",
+      "deleteManyTitle": "Ștergi selecția ({{count}})?",
+      "deleteManyText": "CV-urile selectate și toate versiunile lor vor fi șterse definitiv din acest browser"
     },
     "toolbar": {
       "back": "CV-urile mele",
@@ -399,7 +414,15 @@
       "preview": "Previzualizare",
       "exportPdf": "Exportă în PDF",
       "undo": "Anulează (Ctrl+Z)",
-      "redo": "Refă (Ctrl+Y)"
+      "redo": "Refă (Ctrl+Y)",
+      "freeMode": "Liber"
+    },
+    "languageInfo": {
+      "title": "Limba CV-ului și uzanțele țării",
+      "site": "Această alegere nu schimbă limba site-ului, ci doar pe cea a CV-ului",
+      "labels": "Adaptează ceea ce aplicația scrie pentru tine: titlurile secțiunilor, datele, nivelurile de limbă, formulele scrisorii și mențiunile specifice țării. Textele tale nu sunt traduse",
+      "rule": "Aplică și uzanțele țării: pe un CV în engleză, fotografia, data nașterii și naționalitatea sunt ascunse",
+      "free": "Mod liber: limba rămâne aceeași, dar nimic nu este ascuns. Tu decizi ce apare pe CV"
     },
     "modes": {
       "label": "Document de editat",
@@ -565,7 +588,9 @@
         "interests": "Adaugă un interes"
       },
       "deleteTitle": "Ștergi secțiunea „{{name}}”?",
-      "deleteText": "Conținutul ei va fi eliminat din CV-ul Master și din toate versiunile"
+      "deleteText": "Conținutul ei va fi eliminat din CV-ul Master și din toate versiunile",
+      "collapse": "Restrânge secțiunea",
+      "expand": "Extinde secțiunea"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Stilul meu",
+      "button": "Stilurile mele",
       "title": "Stilul CV-ului",
       "gallery": "Șablon din galerie: {{name}}",
       "empty": "Niciun stil creat încă",

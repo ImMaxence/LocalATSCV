@@ -23,6 +23,8 @@ import { EntryEditor } from './entry-editor';
 @Component({
   selector: 'app-section-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  // Pas en ligne : les décalages (transform) du glisser-déposer et les marges n'y auraient aucun effet.
+  host: { class: 'block' },
   imports: [
     NgTemplateOutlet,
     TranslocoDirective,
@@ -40,11 +42,16 @@ export class SectionPanel {
   readonly section = input.required<CvSection>();
   readonly index = input.required<number>();
   readonly isLast = input.required<boolean>();
+  /** Le mode pas à pas montre une seule section à la fois : elle reste ouverte. */
+  readonly collapsible = input(true);
 
   protected readonly store = inject(CvEditorStore);
   private readonly dialog = inject(DialogService);
   private readonly transloco = inject(TranslocoService);
 
+  protected readonly collapsed = computed(
+    () => this.collapsible() && this.store.collapsedSections().has(this.section().id),
+  );
   protected readonly icon = computed(() => SECTION_ICONS[this.section().kind]);
   protected readonly defaultTitle = computed(
     () => CV_LABELS[this.store.cv()?.language ?? 'fr'].sections[this.section().kind],

@@ -44,6 +44,7 @@ import { CvEditorStore } from './cv-editor.store';
 import { AtsCheck } from './parts/ats-check';
 import { SECTION_ICONS } from './parts/editor-controls';
 import { JobPanel } from './parts/job-panel';
+import { LanguageInfo } from './parts/language-info';
 import { LetterPanel } from './parts/letter-panel';
 import { PageFit } from './parts/page-fit';
 import { PRINT_TIPS_SETTING, PrintTips } from './parts/print-tips';
@@ -83,6 +84,7 @@ const NATIVE_NAMES: Record<string, string> = {
     CvDocument,
     AtsCheck,
     JobPanel,
+    LanguageInfo,
     LetterPanel,
     PageFit,
     ProfilePanel,
@@ -110,7 +112,7 @@ export class CvEditor {
   private readonly injector = inject(Injector);
   private readonly repository = inject(CvRepository);
 
-  /** Styles créés dans le studio, proposés dans le menu « Mon style ». */
+  /** Styles créés dans le studio, proposés dans le menu « Mes styles ». */
   protected readonly styles = toSignal(this.repository.styles$, { initialValue: [] });
 
   protected readonly mobileTab = signal<'edit' | 'preview'>('edit');

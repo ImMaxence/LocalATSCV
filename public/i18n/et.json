@@ -73,7 +73,8 @@
         "templates": "72 malli valikus",
         "letter": "Sobiv kaaskiri",
         "private": "Sinu andmed jäävad sinu juurde",
-        "studio": "Või sinu enda kujundus"
+        "studio": "Või sinu enda kujundus",
+        "countries": "5 keelt, vastavalt riigi tavadele"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Vali mall ja värv ning laadi oma CV alla PDF-ina, saatmiseks või printimiseks valmis"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Keeled ja riigid",
+      "title": "CV, mis järgib sihtriigi tavasid",
+      "text": "Igal CV-l on oma keel, saidi keelest sõltumata. Pealkirjad, kuupäevad ja kirja väljendid kirjutatakse nii, nagu kohapeal oodatakse. Ingliskeelselt CV-lt kaovad foto, sünnikuupäev ja kodakondsus, nagu on ingliskeelsetes riikides tavaks",
+      "keeps": "Foto võimalik",
+      "hides": "Foto peidetud",
+      "freeTitle": "Vajad rohkem vabadust?",
+      "freeText": "Vaba režiim säilitab valitud keele ja ei peida midagi: sina otsustad, mis CV-l on"
     },
     "privacy": {
       "eyebrow": "Privaatsus",
@@ -384,7 +394,12 @@
       "importPdf": "Impordi CV (PDF või Word)",
       "importPdfHint": "Too olemasolev CV meie mallidesse",
       "importLinkedin": "Impordi LinkedInist",
-      "importLinkedinHint": "Sinu profiili PDF-ist"
+      "importLinkedinHint": "Sinu profiili PDF-ist",
+      "selectCard": "Vali „{{name}}”",
+      "selected": "Valitud: {{count}}",
+      "selectAll": "Vali kõik",
+      "deleteManyTitle": "Kas kustutada valik ({{count}})?",
+      "deleteManyText": "Valitud CV-d ja kõik nende versioonid kustutatakse sellest brauserist jäädavalt"
     },
     "toolbar": {
       "back": "Minu CV-d",
@@ -399,7 +414,15 @@
       "preview": "Eelvaade",
       "exportPdf": "Ekspordi PDF-i",
       "undo": "Võta tagasi (Ctrl+Z)",
-      "redo": "Tee uuesti (Ctrl+Y)"
+      "redo": "Tee uuesti (Ctrl+Y)",
+      "freeMode": "Vaba"
+    },
+    "languageInfo": {
+      "title": "CV keel ja riigi tavad",
+      "site": "See valik ei muuda saidi keelt, ainult CV keelt",
+      "labels": "See kohandab seda, mida rakendus sinu eest kirjutab: jaotiste pealkirjad, kuupäevad, keeletasemed, kirja väljendid ja riigipõhised märked. Sinu enda tekste ei tõlgita",
+      "rule": "See rakendab ka riigi tavasid: ingliskeelsel CV-l peidetakse foto, sünnikuupäev ja kodakondsus",
+      "free": "Vaba režiim: keel jääb samaks, kuid midagi ei peideta. Sina otsustad, mis CV-l on"
     },
     "modes": {
       "label": "Muudetav dokument",
@@ -565,7 +588,9 @@
         "interests": "Lisa huvi"
       },
       "deleteTitle": "Kas kustutada jaotis „{{name}}”?",
-      "deleteText": "Selle sisu eemaldatakse Master-CV-st ja kõigist selle versioonidest"
+      "deleteText": "Selle sisu eemaldatakse Master-CV-st ja kõigist selle versioonidest",
+      "collapse": "Ahenda jaotis",
+      "expand": "Laienda jaotis"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Minu stiil",
+      "button": "Minu stiilid",
       "title": "CV stiil",
       "gallery": "Galerii mall: {{name}}",
       "empty": "Stiile pole veel loodud",

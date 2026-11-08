@@ -73,7 +73,8 @@
         "templates": "72 veidnes izvēlei",
         "letter": "Saskaņota motivācijas vēstule",
         "private": "Jūsu dati paliek pie jums",
-        "studio": "Vai jūsu pašu dizains"
+        "studio": "Vai jūsu pašu dizains",
+        "countries": "5 valodas, atbilstoši valsts paražām"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Izvēlieties veidni un krāsu un lejupielādējiet savu CV PDF formātā, gatavu nosūtīšanai vai drukāšanai"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Valodas un valstis",
+      "title": "CV, kas ievēro mērķa valsts paražas",
+      "text": "Katram CV ir sava valoda, neatkarīga no vietnes valodas. Nosaukumi, datumi un vēstules frāzes ir rakstīti tā, kā to sagaida uz vietas. CV angļu valodā pazūd foto, dzimšanas datums un tautība, kā ierasts anglosakšu praksē",
+      "keeps": "Foto iespējams",
+      "hides": "Foto paslēpts",
+      "freeTitle": "Vajag vairāk brīvības?",
+      "freeText": "Brīvais režīms saglabā izvēlēto valodu un neko neslēpj: jūs izlemjat, kas ir CV"
     },
     "privacy": {
       "eyebrow": "Privātums",
@@ -384,7 +394,12 @@
       "importPdf": "Importēt CV (PDF vai Word)",
       "importPdfHint": "Pārnesiet esošu CV mūsu veidnēs",
       "importLinkedin": "Importēt no LinkedIn",
-      "importLinkedinHint": "No jūsu profila PDF"
+      "importLinkedinHint": "No jūsu profila PDF",
+      "selectCard": "Atlasīt “{{name}}”",
+      "selected": "Atlasīts: {{count}}",
+      "selectAll": "Atlasīt visu",
+      "deleteManyTitle": "Vai dzēst atlasi ({{count}})?",
+      "deleteManyText": "Atlasītie CV un visas to versijas tiks neatgriezeniski dzēstas no šīs pārlūkprogrammas"
     },
     "toolbar": {
       "back": "Mani CV",
@@ -399,7 +414,15 @@
       "preview": "Priekšskatīt",
       "exportPdf": "Eksportēt PDF",
       "undo": "Atsaukt (Ctrl+Z)",
-      "redo": "Atcelt atsaukšanu (Ctrl+Y)"
+      "redo": "Atcelt atsaukšanu (Ctrl+Y)",
+      "freeMode": "Brīvs"
+    },
+    "languageInfo": {
+      "title": "CV valoda un valsts paražas",
+      "site": "Šī izvēle nemaina vietnes valodu, tikai CV valodu",
+      "labels": "Tā pielāgo to, ko lietotne raksta jūsu vietā: sadaļu nosaukumus, datumus, valodu līmeņus, vēstules frāzes un valstij raksturīgas norādes. Jūsu pašu teksti netiek tulkoti",
+      "rule": "Tā piemēro arī valsts paražas: CV angļu valodā tiek paslēpts foto, dzimšanas datums un tautība",
+      "free": "Brīvais režīms: valoda paliek tā pati, bet nekas netiek paslēpts. Jūs izlemjat, kas ir CV"
     },
     "modes": {
       "label": "Rediģējamais dokuments",
@@ -565,7 +588,9 @@
         "interests": "Pievienot interesi"
       },
       "deleteTitle": "Dzēst sadaļu „{{name}}”?",
-      "deleteText": "Tās saturs tiks noņemts no Master CV un visām tā versijām"
+      "deleteText": "Tās saturs tiks noņemts no Master CV un visām tā versijām",
+      "collapse": "Sakļaut sadaļu",
+      "expand": "Izvērst sadaļu"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mans stils",
+      "button": "Mani stili",
       "title": "CV stils",
       "gallery": "Galerijas veidne: {{name}}",
       "empty": "Neviens stils vēl nav izveidots",

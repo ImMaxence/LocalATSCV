@@ -73,7 +73,8 @@
         "templates": "72 template pilihan",
         "letter": "Surat lamaran yang serasi",
         "private": "Data Anda tetap di tangan Anda",
-        "studio": "Atau desain Anda sendiri"
+        "studio": "Atau desain Anda sendiri",
+        "countries": "5 bahasa, sesuai kebiasaan negara"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Pilih template dan warna, lalu unduh CV Anda dalam PDF, siap dikirim atau dicetak"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Bahasa dan negara",
+      "title": "CV yang mengikuti kebiasaan negara tujuan",
+      "text": "Setiap CV memiliki bahasanya sendiri, terpisah dari bahasa situs. Judul, tanggal, dan frasa surat ditulis sesuai harapan setempat. Pada CV berbahasa Inggris, foto, tanggal lahir, dan kewarganegaraan dihilangkan, sesuai kebiasaan Anglo-Saxon",
+      "keeps": "Foto boleh",
+      "hides": "Foto disembunyikan",
+      "freeTitle": "Butuh lebih banyak kebebasan?",
+      "freeText": "Mode bebas mempertahankan bahasa pilihan dan tidak menyembunyikan apa pun: Anda yang menentukan isi CV"
     },
     "privacy": {
       "eyebrow": "Privasi",
@@ -384,7 +394,12 @@
       "importPdf": "Impor CV (PDF atau Word)",
       "importPdfHint": "Bawa CV yang sudah ada ke template kami",
       "importLinkedin": "Impor dari LinkedIn",
-      "importLinkedinHint": "Dari PDF profil Anda"
+      "importLinkedinHint": "Dari PDF profil Anda",
+      "selectCard": "Pilih \"{{name}}\"",
+      "selected": "Dipilih: {{count}}",
+      "selectAll": "Pilih semua",
+      "deleteManyTitle": "Hapus pilihan ({{count}})?",
+      "deleteManyText": "CV yang dipilih dan semua versinya akan dihapus permanen dari browser ini"
     },
     "toolbar": {
       "back": "CV saya",
@@ -399,7 +414,15 @@
       "preview": "Pratinjau",
       "exportPdf": "Ekspor ke PDF",
       "undo": "Urungkan (Ctrl+Z)",
-      "redo": "Ulangi (Ctrl+Y)"
+      "redo": "Ulangi (Ctrl+Y)",
+      "freeMode": "Bebas"
+    },
+    "languageInfo": {
+      "title": "Bahasa CV dan kebiasaan negara",
+      "site": "Pilihan ini tidak mengubah bahasa situs, hanya bahasa CV",
+      "labels": "Pilihan ini menyesuaikan yang ditulis aplikasi untuk Anda: judul bagian, tanggal, tingkat bahasa, frasa surat, dan keterangan khas negara. Teks Anda sendiri tidak diterjemahkan",
+      "rule": "Pilihan ini juga menerapkan kebiasaan negara: pada CV berbahasa Inggris, foto, tanggal lahir, dan kewarganegaraan disembunyikan",
+      "free": "Mode bebas: bahasanya tetap sama, tetapi tidak ada yang disembunyikan. Anda yang menentukan isi CV"
     },
     "modes": {
       "label": "Dokumen yang diedit",
@@ -565,7 +588,9 @@
         "interests": "Tambahkan minat"
       },
       "deleteTitle": "Hapus bagian “{{name}}”?",
-      "deleteText": "Isinya akan dihapus dari CV Master dan semua versinya"
+      "deleteText": "Isinya akan dihapus dari CV Master dan semua versinya",
+      "collapse": "Ciutkan bagian",
+      "expand": "Luaskan bagian"
     },
     "entry": {
       "fields": {

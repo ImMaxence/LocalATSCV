@@ -1,6 +1,6 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { CdkMenu, CdkMenuItem, CdkMenuTrigger } from '@angular/cdk/menu';
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, TranslocoService } from '@jsverse/transloco';
@@ -39,6 +39,15 @@ export class CvList {
   });
   protected readonly cards = computed(() =>
     (this.cvs() ?? []).map((cv) => ({ cv, resolved: resolveCv(cv, null) })),
+  );
+
+  /** CV cochés pour une suppression groupée. */
+  private readonly selection = signal<ReadonlySet<string>>(new Set());
+  /** Filtrée sur la liste réelle : un CV supprimé entre-temps quitte la sélection. */
+  protected readonly selectedIds = computed(() =>
+    this.cards()
+      .map((card) => card.cv.id)
+      .filter((id) => this.selection().has(id)),
   );
 
   private t(key: string, params?: Record<string, unknown>): string {
@@ -96,6 +105,33 @@ export class CvList {
       danger: true,
     });
     if (confirmed) await this.repository.deleteCv(cv.id);
+  }
+
+  protected toggleSelected(id: string): void {
+    const selection = new Set(this.selection());
+    if (!selection.delete(id)) selection.add(id);
+    this.selection.set(selection);
+  }
+
+  protected selectAll(): void {
+    this.selection.set(new Set(this.cards().map((card) => card.cv.id)));
+  }
+
+  protected clearSelection(): void {
+    this.selection.set(new Set());
+  }
+
+  protected async removeSelected(): Promise<void> {
+    const ids = this.selectedIds();
+    const confirmed = await this.dialog.confirm({
+      title: this.t('deleteManyTitle', { count: ids.length }),
+      message: this.t('deleteManyText'),
+      confirmLabel: this.transloco.translate('dialog.delete'),
+      danger: true,
+    });
+    if (!confirmed) return;
+    await this.repository.deleteCvs(ids);
+    this.clearSelection();
   }
 
   protected async exportAll(): Promise<void> {

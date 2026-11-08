@@ -73,7 +73,8 @@
         "templates": "72 šablonų pasirinkimui",
         "letter": "Derantis motyvacinis laiškas",
         "private": "Jūsų duomenys lieka pas jus",
-        "studio": "Arba jūsų pačių dizainas"
+        "studio": "Arba jūsų pačių dizainas",
+        "countries": "5 kalbos pagal šalies papročius"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Pasirinkite šabloną ir spalvą, tada atsisiųskite savo CV PDF formatu, paruoštą siųsti ar spausdinti"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Kalbos ir šalys",
+      "title": "CV, kuris atitinka tikslinės šalies papročius",
+      "text": "Kiekvienas CV turi savo kalbą, nepriklausomą nuo svetainės kalbos. Pavadinimai, datos ir laiško frazės rašomi taip, kaip tikimasi vietoje. CV anglų kalba dingsta nuotrauka, gimimo data ir pilietybė, kaip įprasta angliškai kalbančiose šalyse",
+      "keeps": "Nuotrauka galima",
+      "hides": "Nuotrauka paslėpta",
+      "freeTitle": "Reikia daugiau laisvės?",
+      "freeText": "Laisvas režimas išlaiko pasirinktą kalbą ir nieko neslepia: jūs sprendžiate, kas bus CV"
     },
     "privacy": {
       "eyebrow": "Privatumas",
@@ -384,7 +394,12 @@
       "importPdf": "Importuoti CV (PDF arba Word)",
       "importPdfHint": "Perkelkite esamą CV į mūsų šablonus",
       "importLinkedin": "Importuoti iš LinkedIn",
-      "importLinkedinHint": "Iš jūsų profilio PDF"
+      "importLinkedinHint": "Iš jūsų profilio PDF",
+      "selectCard": "Pasirinkti „{{name}}“",
+      "selected": "Pasirinkta: {{count}}",
+      "selectAll": "Pasirinkti viską",
+      "deleteManyTitle": "Ištrinti pasirinkimą ({{count}})?",
+      "deleteManyText": "Pasirinkti CV ir visos jų versijos bus visam laikui ištrinti iš šios naršyklės"
     },
     "toolbar": {
       "back": "Mano CV",
@@ -399,7 +414,15 @@
       "preview": "Peržiūrėti",
       "exportPdf": "Eksportuoti į PDF",
       "undo": "Anuliuoti (Ctrl+Z)",
-      "redo": "Grąžinti (Ctrl+Y)"
+      "redo": "Grąžinti (Ctrl+Y)",
+      "freeMode": "Laisva"
+    },
+    "languageInfo": {
+      "title": "CV kalba ir šalies papročiai",
+      "site": "Šis pasirinkimas nekeičia svetainės kalbos, tik CV kalbą",
+      "labels": "Jis pritaiko tai, ką programa rašo už jus: skilčių pavadinimus, datas, kalbų lygius, laiško frazes ir šaliai būdingas nuorodas. Jūsų pačių tekstai neverčiami",
+      "rule": "Jis taip pat taiko šalies papročius: CV anglų kalba paslepiama nuotrauka, gimimo data ir pilietybė",
+      "free": "Laisvas režimas: kalba lieka ta pati, bet niekas neslepiama. Jūs sprendžiate, kas bus CV"
     },
     "modes": {
       "label": "Redaguojamas dokumentas",
@@ -565,7 +588,9 @@
         "interests": "Pridėti pomėgį"
       },
       "deleteTitle": "Ištrinti skiltį „{{name}}“?",
-      "deleteText": "Jos turinys bus pašalintas iš Master CV ir visų jo versijų"
+      "deleteText": "Jos turinys bus pašalintas iš Master CV ir visų jo versijų",
+      "collapse": "Suskleisti skiltį",
+      "expand": "Išskleisti skiltį"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mano stilius",
+      "button": "Mano stiliai",
       "title": "CV stilius",
       "gallery": "Galerijos šablonas: {{name}}",
       "empty": "Dar nesukūrėte stiliaus",

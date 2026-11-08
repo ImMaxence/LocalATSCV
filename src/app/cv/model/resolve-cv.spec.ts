@@ -56,6 +56,13 @@ describe('resolveCv', () => {
     expect(experience.items.length).toBe(2);
   });
 
+  it('garde photo, date de naissance et nationalité en anglais en mode libre', () => {
+    const resolved = resolveCv({ ...cv, language: 'en', freeMode: true }, null);
+    expect(resolved.profile.photoId).toBe('photo-1');
+    expect(resolved.profile.birthDate).toBe('1995-03-12');
+    expect(resolved.profile.nationality).toBe('Française');
+  });
+
   it('masque photo, date de naissance et nationalité en anglais', () => {
     const resolved = resolveCv({ ...cv, language: 'en' }, null);
     expect(resolved.profile.photoId).toBeNull();

@@ -73,7 +73,8 @@
         "templates": "72 sjablonen om uit te kiezen",
         "letter": "Bijpassende sollicitatiebrief",
         "private": "Je gegevens blijven bij jou",
-        "studio": "Of je eigen ontwerp"
+        "studio": "Of je eigen ontwerp",
+        "countries": "5 talen, volgens de gebruiken van het land"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Kies je sjabloon en kleur en download je cv als pdf, klaar om te versturen of af te drukken"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Talen en landen",
+      "title": "Een cv dat de gebruiken van je doelland respecteert",
+      "text": "Elk cv heeft zijn eigen taal, los van die van de site. Titels, datums en briefformules worden geschreven zoals men dat ter plaatse verwacht. Op een Engelstalig cv verdwijnen foto, geboortedatum en nationaliteit, volgens de Angelsaksische gebruiken",
+      "keeps": "Foto mogelijk",
+      "hides": "Foto verborgen",
+      "freeTitle": "Meer vrijheid nodig?",
+      "freeText": "De vrije modus behoudt de gekozen taal en verbergt niets: jij bepaalt wat er op het cv staat"
     },
     "privacy": {
       "eyebrow": "Privacy",
@@ -384,7 +394,12 @@
       "importPdf": "Een cv importeren (pdf of Word)",
       "importPdfHint": "Breng een bestaand cv over naar onze sjablonen",
       "importLinkedin": "Importeren uit LinkedIn",
-      "importLinkedinHint": "Via de pdf van je profiel"
+      "importLinkedinHint": "Via de pdf van je profiel",
+      "selectCard": "\"{{name}}\" selecteren",
+      "selected": "Selectie: {{count}}",
+      "selectAll": "Alles selecteren",
+      "deleteManyTitle": "Selectie verwijderen ({{count}})?",
+      "deleteManyText": "De geselecteerde cv's en al hun versies worden definitief uit deze browser verwijderd"
     },
     "toolbar": {
       "back": "Mijn cv's",
@@ -399,7 +414,15 @@
       "preview": "Voorbeeld",
       "exportPdf": "Exporteren naar pdf",
       "undo": "Ongedaan maken (Ctrl+Z)",
-      "redo": "Opnieuw (Ctrl+Y)"
+      "redo": "Opnieuw (Ctrl+Y)",
+      "freeMode": "Vrij"
+    },
+    "languageInfo": {
+      "title": "Taal van het cv en gebruiken van het land",
+      "site": "Deze keuze verandert de taal van de site niet, alleen die van het cv",
+      "labels": "Ze past aan wat de app voor je schrijft: sectietitels, datums, taalniveaus, briefformules en landspecifieke vermeldingen. Je eigen teksten worden niet vertaald",
+      "rule": "Ze past ook de gebruiken van het land toe: op een Engelstalig cv worden foto, geboortedatum en nationaliteit verborgen",
+      "free": "Vrije modus: de taal blijft hetzelfde, maar er wordt niets verborgen. Jij bepaalt wat er op het cv staat"
     },
     "modes": {
       "label": "Te bewerken document",
@@ -565,7 +588,9 @@
         "interests": "Interesse toevoegen"
       },
       "deleteTitle": "De sectie “{{name}}” verwijderen?",
-      "deleteText": "De inhoud wordt verwijderd uit het Master-cv en al zijn versies"
+      "deleteText": "De inhoud wordt verwijderd uit het Master-cv en al zijn versies",
+      "collapse": "Sectie inklappen",
+      "expand": "Sectie uitklappen"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mijn stijl",
+      "button": "Mijn stijlen",
       "title": "Stijl van het cv",
       "gallery": "Sjabloon uit de galerij: {{name}}",
       "empty": "Nog geen stijl gemaakt",

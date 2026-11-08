@@ -166,6 +166,8 @@ export interface MasterCv {
   id: string;
   name: string;
   language: CvLanguage;
+  /** Mode libre : la langue reste, mais aucun usage du pays n'est appliqué (rien n'est masqué). */
+  freeMode: boolean;
   template: CvTemplateId;
   /** Polices choisies ; `null` = police prévue par le modèle. */
   fonts: { heading: CvFontId | null; body: CvFontId | null };
@@ -387,6 +389,7 @@ export function createEmptyCv(name: string, language: CvLanguage): MasterCv {
     id: newId(),
     name,
     language,
+    freeMode: false,
     template: 'aurora',
     fonts: { heading: null, body: null },
     accentColor: ACCENT_COLORS[0],

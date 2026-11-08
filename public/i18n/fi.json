@@ -73,7 +73,8 @@
         "templates": "72 pohjaa valittavana",
         "letter": "Yhteensopiva hakemuskirje",
         "private": "Tietosi pysyvät sinulla",
-        "studio": "Tai oma ulkoasusi"
+        "studio": "Tai oma ulkoasusi",
+        "countries": "5 kieltä maan käytäntöjen mukaan"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Valitse pohja ja väri ja lataa CV:si PDF-muodossa, valmiina lähetettäväksi tai tulostettavaksi"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Kielet ja maat",
+      "title": "CV, joka noudattaa kohdemaan käytäntöjä",
+      "text": "Jokaisella CV:llä on oma kielensä sivuston kielestä riippumatta. Otsikot, päivämäärät ja kirjeen fraasit kirjoitetaan paikallisten odotusten mukaan. Englanninkielisestä CV:stä poistuvat valokuva, syntymäaika ja kansalaisuus angloamerikkalaisen käytännön mukaisesti",
+      "keeps": "Kuva mahdollinen",
+      "hides": "Kuva piilotettu",
+      "freeTitle": "Kaipaatko lisää vapautta?",
+      "freeText": "Vapaa tila säilyttää valitun kielen eikä piilota mitään: sinä päätät, mitä CV:ssä lukee"
     },
     "privacy": {
       "eyebrow": "Yksityisyys",
@@ -384,7 +394,12 @@
       "importPdf": "Tuo CV (PDF tai Word)",
       "importPdfHint": "Siirrä olemassa oleva CV pohjiimme",
       "importLinkedin": "Tuo LinkedInistä",
-      "importLinkedinHint": "Profiilisi PDF:stä"
+      "importLinkedinHint": "Profiilisi PDF:stä",
+      "selectCard": "Valitse ”{{name}}”",
+      "selected": "Valittu: {{count}}",
+      "selectAll": "Valitse kaikki",
+      "deleteManyTitle": "Poistetaanko valinta ({{count}})?",
+      "deleteManyText": "Valitut CV:t ja kaikki niiden versiot poistetaan pysyvästi tästä selaimesta"
     },
     "toolbar": {
       "back": "Omat CV:t",
@@ -399,7 +414,15 @@
       "preview": "Esikatselu",
       "exportPdf": "Vie PDF-muotoon",
       "undo": "Kumoa (Ctrl+Z)",
-      "redo": "Tee uudelleen (Ctrl+Y)"
+      "redo": "Tee uudelleen (Ctrl+Y)",
+      "freeMode": "Vapaa"
+    },
+    "languageInfo": {
+      "title": "CV:n kieli ja maan käytännöt",
+      "site": "Tämä valinta ei muuta sivuston kieltä, vain CV:n kielen",
+      "labels": "Se mukauttaa sen, mitä sovellus kirjoittaa puolestasi: osioiden otsikot, päivämäärät, kielitasot, kirjeen fraasit ja maakohtaiset maininnat. Omia tekstejäsi ei käännetä",
+      "rule": "Se noudattaa myös maan käytäntöjä: englanninkielisestä CV:stä piilotetaan valokuva, syntymäaika ja kansalaisuus",
+      "free": "Vapaa tila: kieli pysyy samana, mutta mitään ei piiloteta. Sinä päätät, mitä CV:ssä lukee"
     },
     "modes": {
       "label": "Muokattava asiakirja",
@@ -565,7 +588,9 @@
         "interests": "Lisää harrastus"
       },
       "deleteTitle": "Poistetaanko osio ”{{name}}”?",
-      "deleteText": "Sen sisältö poistetaan Master-CV:stä ja kaikista sen versioista"
+      "deleteText": "Sen sisältö poistetaan Master-CV:stä ja kaikista sen versioista",
+      "collapse": "Pienennä osio",
+      "expand": "Laajenna osio"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Oma tyyli",
+      "button": "Omat tyylit",
       "title": "CV:n tyyli",
       "gallery": "Galleriapohja: {{name}}",
       "empty": "Tyylejä ei ole vielä luotu",

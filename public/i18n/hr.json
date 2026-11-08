@@ -73,7 +73,8 @@
         "templates": "72 predložaka na izbor",
         "letter": "Usklađeno motivacijsko pismo",
         "private": "Vaši podaci ostaju kod vas",
-        "studio": "Ili vlastiti dizajn"
+        "studio": "Ili vlastiti dizajn",
+        "countries": "5 jezika, prema običajima zemlje"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Odaberite predložak i boju te preuzmite životopis u PDF-u, spreman za slanje ili ispis"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Jezici i zemlje",
+      "title": "Životopis koji poštuje običaje ciljane zemlje",
+      "text": "Svaki životopis ima vlastiti jezik, neovisan o jeziku stranice. Naslovi, datumi i fraze u pismu pišu se onako kako se na mjestu očekuje. Na životopisu na engleskom nestaju fotografija, datum rođenja i državljanstvo, u skladu s anglosaksonskim običajima",
+      "keeps": "Fotografija moguća",
+      "hides": "Fotografija skrivena",
+      "freeTitle": "Trebate više slobode?",
+      "freeText": "Slobodni način zadržava odabrani jezik i ništa ne skriva: vi odlučujete što je na životopisu"
     },
     "privacy": {
       "eyebrow": "Privatnost",
@@ -384,7 +394,12 @@
       "importPdf": "Uvezi životopis (PDF ili Word)",
       "importPdfHint": "Prenesite postojeći životopis u naše predloške",
       "importLinkedin": "Uvezi s LinkedIna",
-      "importLinkedinHint": "Iz PDF-a vašeg profila"
+      "importLinkedinHint": "Iz PDF-a vašeg profila",
+      "selectCard": "Odaberi „{{name}}”",
+      "selected": "Odabrano: {{count}}",
+      "selectAll": "Odaberi sve",
+      "deleteManyTitle": "Izbrisati odabir ({{count}})?",
+      "deleteManyText": "Odabrani životopisi i sve njihove verzije trajno će se izbrisati iz ovog preglednika"
     },
     "toolbar": {
       "back": "Moji životopisi",
@@ -399,7 +414,15 @@
       "preview": "Pregled",
       "exportPdf": "Izvezi u PDF",
       "undo": "Poništi (Ctrl+Z)",
-      "redo": "Ponovi (Ctrl+Y)"
+      "redo": "Ponovi (Ctrl+Y)",
+      "freeMode": "Slobodno"
+    },
+    "languageInfo": {
+      "title": "Jezik životopisa i običaji zemlje",
+      "site": "Ovaj odabir ne mijenja jezik stranice, samo jezik životopisa",
+      "labels": "Prilagođava ono što aplikacija piše umjesto vas: naslove odjeljaka, datume, razine jezika, fraze u pismu i navode specifične za zemlju. Vaši vlastiti tekstovi se ne prevode",
+      "rule": "Primjenjuje i običaje zemlje: na životopisu na engleskom skriveni su fotografija, datum rođenja i državljanstvo",
+      "free": "Slobodni način: jezik ostaje isti, ali ništa se ne skriva. Vi odlučujete što je na životopisu"
     },
     "modes": {
       "label": "Dokument za uređivanje",
@@ -565,7 +588,9 @@
         "interests": "Dodaj interes"
       },
       "deleteTitle": "Izbrisati odjeljak „{{name}}”?",
-      "deleteText": "Njegov će se sadržaj ukloniti iz Master životopisa i iz svih njegovih verzija"
+      "deleteText": "Njegov će se sadržaj ukloniti iz Master životopisa i iz svih njegovih verzija",
+      "collapse": "Sažmi odjeljak",
+      "expand": "Proširi odjeljak"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Moj stil",
+      "button": "Moji stilovi",
       "title": "Stil životopisa",
       "gallery": "Predložak iz galerije: {{name}}",
       "empty": "Još niste izradili stil",

@@ -1,5 +1,6 @@
 import { moveItemInArray } from '@angular/cdk/drag-drop';
 import { DestroyRef, Injectable, computed, inject, signal } from '@angular/core';
+import { readSetting, writeSetting } from '../../../core/storage/local-settings';
 import { CvRepository } from '../../../cv/data/cv-repository';
 import { prepareProfilePhoto } from '../../../cv/data/photo';
 import {
@@ -35,6 +36,7 @@ const SAVE_DELAY_MS = 400;
 /** Modifications rapprochées (frappe continue) regroupées en une seule étape d'annulation. */
 const HISTORY_GROUP_MS = 1000;
 const HISTORY_LIMIT = 100;
+const COLLAPSED_SETTING = 'editor.collapsedSections';
 
 type SaveState = 'saved' | 'saving' | 'error';
 
@@ -65,6 +67,10 @@ export class CvEditorStore {
   readonly mode = signal<'cv' | 'letter'>('cv');
   /** Aperçu en niveaux de gris, pour juger d'une impression en noir et blanc (le PDF garde ses couleurs). */
   readonly grayscale = signal(false);
+  /** Sections repliées : confort d'affichage de cet appareil, hors du CV et de l'historique. */
+  readonly collapsedSections = signal<ReadonlySet<string>>(
+    new Set(readSetting(COLLAPSED_SETTING)?.split(',').filter(Boolean)),
+  );
 
   private readonly past = signal<Snapshot[]>([]);
   private readonly future = signal<Snapshot[]>([]);
@@ -216,6 +222,10 @@ export class CvEditorStore {
     this.mutate((cv) => (cv.language = language));
   }
 
+  setFreeMode(freeMode: boolean): void {
+    this.mutate((cv) => (cv.freeMode = freeMode));
+  }
+
   /** Choisir un modèle de la galerie quitte le style personnel. */
   setTemplate(template: CvTemplateId): void {
     this.mutate(
@@ -361,6 +371,13 @@ export class CvEditorStore {
 
   removeSection(sectionId: string): void {
     this.mutate((cv) => (cv.sections = cv.sections.filter((section) => section.id !== sectionId)));
+  }
+
+  toggleSectionCollapsed(sectionId: string): void {
+    const collapsed = new Set(this.collapsedSections());
+    if (!collapsed.delete(sectionId)) collapsed.add(sectionId);
+    this.collapsedSections.set(collapsed);
+    writeSetting(COLLAPSED_SETTING, [...collapsed].join(','));
   }
 
   moveSection(from: number, to: number): void {

@@ -73,7 +73,8 @@
         "templates": "72 Vorlagen zur Auswahl",
         "letter": "Passendes Anschreiben",
         "private": "Deine Daten bleiben bei dir",
-        "studio": "Oder Ihr eigenes Design"
+        "studio": "Oder Ihr eigenes Design",
+        "countries": "5 Sprachen, nach den Gepflogenheiten des Landes"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Wähle Vorlage und Farbe und lade deinen Lebenslauf als PDF herunter, bereit zum Versenden oder Drucken"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Sprachen und Länder",
+      "title": "Ein Lebenslauf, der die Gepflogenheiten des Ziellandes beachtet",
+      "text": "Jeder Lebenslauf hat seine eigene Sprache, unabhängig von der Website. Titel, Datumsangaben und Briefformeln werden so geschrieben, wie man es vor Ort erwartet. Bei einem englischen Lebenslauf entfallen Foto, Geburtsdatum und Staatsangehörigkeit, wie es im englischsprachigen Raum üblich ist",
+      "keeps": "Foto möglich",
+      "hides": "Foto ausgeblendet",
+      "freeTitle": "Mehr Freiheit gewünscht?",
+      "freeText": "Der freie Modus behält die gewählte Sprache bei und blendet nichts aus: Sie entscheiden, was im Lebenslauf steht"
     },
     "privacy": {
       "eyebrow": "Datenschutz",
@@ -384,7 +394,12 @@
       "importPdf": "Lebenslauf importieren (PDF oder Word)",
       "importPdfHint": "Einen bestehenden Lebenslauf in unsere Vorlagen übernehmen",
       "importLinkedin": "Von LinkedIn importieren",
-      "importLinkedinHint": "Aus dem PDF deines Profils"
+      "importLinkedinHint": "Aus dem PDF deines Profils",
+      "selectCard": "„{{name}}“ auswählen",
+      "selected": "Auswahl: {{count}}",
+      "selectAll": "Alle auswählen",
+      "deleteManyTitle": "Auswahl löschen ({{count}})?",
+      "deleteManyText": "Die ausgewählten Lebensläufe und alle ihre Versionen werden endgültig aus diesem Browser gelöscht"
     },
     "toolbar": {
       "back": "Meine Lebensläufe",
@@ -399,7 +414,15 @@
       "preview": "Vorschau",
       "exportPdf": "Als PDF exportieren",
       "undo": "Rückgängig (Strg+Z)",
-      "redo": "Wiederholen (Strg+Y)"
+      "redo": "Wiederholen (Strg+Y)",
+      "freeMode": "Frei"
+    },
+    "languageInfo": {
+      "title": "Sprache des Lebenslaufs und Landesgepflogenheiten",
+      "site": "Diese Auswahl ändert nicht die Sprache der Website, nur die des Lebenslaufs",
+      "labels": "Sie passt an, was die App für Sie schreibt: Abschnittstitel, Datumsangaben, Sprachniveaus, Briefformeln und landesspezifische Angaben. Ihre eigenen Texte werden nicht übersetzt",
+      "rule": "Sie wendet auch die Gepflogenheiten des Landes an: Bei einem englischen Lebenslauf werden Foto, Geburtsdatum und Staatsangehörigkeit ausgeblendet",
+      "free": "Freier Modus: Die Sprache bleibt gleich, aber nichts wird ausgeblendet. Sie entscheiden, was im Lebenslauf steht"
     },
     "modes": {
       "label": "Zu bearbeitendes Dokument",
@@ -565,7 +588,9 @@
         "interests": "Interesse hinzufügen"
       },
       "deleteTitle": "Abschnitt „{{name}}“ löschen?",
-      "deleteText": "Sein Inhalt wird aus dem Master-Lebenslauf und allen Versionen gelöscht"
+      "deleteText": "Sein Inhalt wird aus dem Master-Lebenslauf und allen Versionen gelöscht",
+      "collapse": "Abschnitt einklappen",
+      "expand": "Abschnitt ausklappen"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mein Stil",
+      "button": "Meine Stile",
       "title": "Stil des Lebenslaufs",
       "gallery": "Vorlage aus der Galerie: {{name}}",
       "empty": "Noch kein Stil erstellt",

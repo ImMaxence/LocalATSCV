@@ -73,7 +73,8 @@
         "templates": "72 template na mapagpipilian",
         "letter": "Katugmang cover letter",
         "private": "Sa iyo lang ang data mo",
-        "studio": "O sarili mong disenyo"
+        "studio": "O sarili mong disenyo",
+        "countries": "5 wika, ayon sa kaugalian ng bansa"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Pumili ng template at kulay, saka i-download ang resume mo bilang PDF, handa nang ipadala o i-print"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Mga wika at bansa",
+      "title": "Resume na sumusunod sa kaugalian ng target na bansa",
+      "text": "May sariling wika ang bawat resume, hiwalay sa wika ng site. Isinusulat ang mga pamagat, petsa at parirala sa liham ayon sa inaasahan doon. Sa resume na nasa Ingles, nawawala ang larawan, petsa ng kapanganakan at nasyonalidad, ayon sa kaugaliang Anglo-Saxon",
+      "keeps": "Puwede ang larawan",
+      "hides": "Nakatago ang larawan",
+      "freeTitle": "Kailangan ng higit na kalayaan?",
+      "freeText": "Pinapanatili ng malayang mode ang napiling wika at walang itinatago: ikaw ang magpapasya kung ano ang nasa resume"
     },
     "privacy": {
       "eyebrow": "Privacy",
@@ -384,7 +394,12 @@
       "importPdf": "Mag-import ng resume (PDF o Word)",
       "importPdfHint": "Ilipat ang kasalukuyang resume mo sa mga template namin",
       "importLinkedin": "Import mula sa LinkedIn",
-      "importLinkedinHint": "Mula sa PDF ng profile mo"
+      "importLinkedinHint": "Mula sa PDF ng profile mo",
+      "selectCard": "Piliin ang \"{{name}}\"",
+      "selected": "Napili: {{count}}",
+      "selectAll": "Piliin lahat",
+      "deleteManyTitle": "Burahin ang napili ({{count}})?",
+      "deleteManyText": "Permanenteng mabubura sa browser na ito ang mga napiling resume at lahat ng bersyon nila"
     },
     "toolbar": {
       "back": "Mga resume ko",
@@ -399,7 +414,15 @@
       "preview": "Preview",
       "exportPdf": "I-export bilang PDF",
       "undo": "I-undo (Ctrl+Z)",
-      "redo": "I-redo (Ctrl+Y)"
+      "redo": "I-redo (Ctrl+Y)",
+      "freeMode": "Malaya"
+    },
+    "languageInfo": {
+      "title": "Wika ng resume at kaugalian ng bansa",
+      "site": "Hindi binabago ng pagpiling ito ang wika ng site, wika lang ng resume",
+      "labels": "Inaangkop nito ang isinusulat ng app para sa iyo: mga pamagat ng seksyon, petsa, antas ng wika, mga parirala sa liham at mga tala na partikular sa bansa. Hindi isinasalin ang sarili mong teksto",
+      "rule": "Inilalapat din nito ang kaugalian ng bansa: sa resume na nasa Ingles, nakatago ang larawan, petsa ng kapanganakan at nasyonalidad",
+      "free": "Malayang mode: nananatili ang wika, pero walang itinatago. Ikaw ang magpapasya kung ano ang nasa resume"
     },
     "modes": {
       "label": "Dokumentong ie-edit",
@@ -565,7 +588,9 @@
         "interests": "Magdagdag ng interes"
       },
       "deleteTitle": "Burahin ang seksyong “{{name}}”?",
-      "deleteText": "Aalisin ang nilalaman nito sa Master na resume at sa lahat ng bersyon"
+      "deleteText": "Aalisin ang nilalaman nito sa Master na resume at sa lahat ng bersyon",
+      "collapse": "I-collapse ang seksyon",
+      "expand": "I-expand ang seksyon"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Aking istilo",
+      "button": "Aking mga istilo",
       "title": "Istilo ng resume",
       "gallery": "Template mula sa gallery: {{name}}",
       "empty": "Wala pang nagawang istilo",

@@ -73,7 +73,8 @@
         "templates": "Violezo 72 vya kuchagua",
         "letter": "Barua ya maombi inayolingana",
         "private": "Data yako inabaki kwako",
-        "studio": "Au muundo wako mwenyewe"
+        "studio": "Au muundo wako mwenyewe",
+        "countries": "Lugha 5, kulingana na desturi za nchi"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Chagua kiolezo na rangi, kisha pakua CV yako kama PDF, tayari kutumwa au kuchapishwa"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Lugha na nchi",
+      "title": "CV inayofuata desturi za nchi unayolenga",
+      "text": "Kila CV ina lugha yake, tofauti na lugha ya tovuti. Vichwa, tarehe na misemo ya barua huandikwa kama inavyotarajiwa huko. Kwenye CV ya Kiingereza, picha, tarehe ya kuzaliwa na uraia huondolewa, kulingana na desturi za Anglo-Saxon",
+      "keeps": "Picha inawezekana",
+      "hides": "Picha imefichwa",
+      "freeTitle": "Unahitaji uhuru zaidi?",
+      "freeText": "Hali huru hubakiza lugha uliyochagua na haifichi chochote: wewe ndiye unayeamua kilicho kwenye CV"
     },
     "privacy": {
       "eyebrow": "Faragha",
@@ -384,7 +394,12 @@
       "importPdf": "Leta CV (PDF au Word)",
       "importPdfHint": "Hamishia CV yako iliyopo kwenye violezo vyetu",
       "importLinkedin": "Leta kutoka LinkedIn",
-      "importLinkedinHint": "Kutoka kwa PDF ya wasifu wako"
+      "importLinkedinHint": "Kutoka kwa PDF ya wasifu wako",
+      "selectCard": "Chagua \"{{name}}\"",
+      "selected": "Zilizochaguliwa: {{count}}",
+      "selectAll": "Chagua zote",
+      "deleteManyTitle": "Futa zilizochaguliwa ({{count}})?",
+      "deleteManyText": "CV zilizochaguliwa na matoleo yake yote zitafutwa kabisa kutoka kwenye kivinjari hiki"
     },
     "toolbar": {
       "back": "CV zangu",
@@ -399,7 +414,15 @@
       "preview": "Onyesho",
       "exportPdf": "Hamisha kama PDF",
       "undo": "Tendua (Ctrl+Z)",
-      "redo": "Rudia (Ctrl+Y)"
+      "redo": "Rudia (Ctrl+Y)",
+      "freeMode": "Huru"
+    },
+    "languageInfo": {
+      "title": "Lugha ya CV na desturi za nchi",
+      "site": "Chaguo hili halibadilishi lugha ya tovuti, bali lugha ya CV tu",
+      "labels": "Hurekebisha kile programu inachokuandikia: vichwa vya sehemu, tarehe, viwango vya lugha, misemo ya barua na maelezo mahususi ya nchi. Maandishi yako mwenyewe hayatafsiriwi",
+      "rule": "Pia hutumia desturi za nchi: kwenye CV ya Kiingereza, picha, tarehe ya kuzaliwa na uraia hufichwa",
+      "free": "Hali huru: lugha inabaki ileile, lakini hakuna kinachofichwa. Wewe ndiye unayeamua kilicho kwenye CV"
     },
     "modes": {
       "label": "Hati ya kuhariri",
@@ -565,7 +588,9 @@
         "interests": "Ongeza jambo unalopenda"
       },
       "deleteTitle": "Futa sehemu “{{name}}”?",
-      "deleteText": "Maudhui yake yataondolewa kwenye CV Kuu na matoleo yote"
+      "deleteText": "Maudhui yake yataondolewa kwenye CV Kuu na matoleo yote",
+      "collapse": "Kunja sehemu",
+      "expand": "Panua sehemu"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mtindo wangu",
+      "button": "Mitindo yangu",
       "title": "Mtindo wa CV",
       "gallery": "Kiolezo cha matunzio: {{name}}",
       "empty": "Bado hujaunda mtindo",

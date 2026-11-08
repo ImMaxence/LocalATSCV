@@ -233,6 +233,7 @@ export function normalizeCv(raw: unknown): MasterCv | null {
     id: string(raw['id']),
     name: string(raw['name']) || 'CV',
     language,
+    freeMode: raw['freeMode'] === true,
     template: isTemplateId(raw['template']) ? raw['template'] : DEFAULT_TEMPLATE,
     fonts: normalizeFonts(raw['fonts']),
     accentColor: /^#[0-9a-f]{6}$/i.test(string(raw['accentColor']))

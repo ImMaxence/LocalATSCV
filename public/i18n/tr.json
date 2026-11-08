@@ -73,7 +73,8 @@
         "templates": "Seçebileceğiniz 72 şablon",
         "letter": "Uyumlu ön yazı",
         "private": "Verileriniz sizde kalır",
-        "studio": "Ya da kendi tasarımınız"
+        "studio": "Ya da kendi tasarımınız",
+        "countries": "Ülke geleneklerine uygun 5 dil"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Şablonunuzu ve renginizi seçin, ardından CV'nizi göndermeye ya da yazdırmaya hazır PDF olarak indirin"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Diller ve ülkeler",
+      "title": "Hedef ülkenin geleneklerine uyan bir CV",
+      "text": "Her CV'nin site dilinden bağımsız kendi dili vardır. Başlıklar, tarihler ve mektup kalıpları yerel beklentilere göre yazılır. İngilizce bir CV'de fotoğraf, doğum tarihi ve uyruk, Anglosakson geleneklerine uygun olarak kaldırılır",
+      "keeps": "Fotoğraf olabilir",
+      "hides": "Fotoğraf gizli",
+      "freeTitle": "Daha fazla özgürlük mü istiyorsunuz?",
+      "freeText": "Serbest mod seçilen dili korur ve hiçbir şeyi gizlemez: CV'de nelerin yer alacağına siz karar verirsiniz"
     },
     "privacy": {
       "eyebrow": "Gizlilik",
@@ -384,7 +394,12 @@
       "importPdf": "CV içe aktar (PDF veya Word)",
       "importPdfHint": "Mevcut bir CV'yi şablonlarımıza taşıyın",
       "importLinkedin": "LinkedIn'den içe aktar",
-      "importLinkedinHint": "Profilinizin PDF'sinden"
+      "importLinkedinHint": "Profilinizin PDF'sinden",
+      "selectCard": "\"{{name}}\" öğesini seç",
+      "selected": "Seçilen: {{count}}",
+      "selectAll": "Tümünü seç",
+      "deleteManyTitle": "Seçim silinsin mi ({{count}})?",
+      "deleteManyText": "Seçilen CV'ler ve tüm sürümleri bu tarayıcıdan kalıcı olarak silinecek"
     },
     "toolbar": {
       "back": "CV'lerim",
@@ -399,7 +414,15 @@
       "preview": "Önizleme",
       "exportPdf": "PDF olarak dışa aktar",
       "undo": "Geri al (Ctrl+Z)",
-      "redo": "Yinele (Ctrl+Y)"
+      "redo": "Yinele (Ctrl+Y)",
+      "freeMode": "Serbest"
+    },
+    "languageInfo": {
+      "title": "CV dili ve ülke gelenekleri",
+      "site": "Bu seçim sitenin dilini değil, yalnızca CV dilini değiştirir",
+      "labels": "Uygulamanın sizin için yazdıklarını uyarlar: bölüm başlıkları, tarihler, dil seviyeleri, mektup kalıpları ve ülkeye özgü ifadeler. Kendi metinleriniz çevrilmez",
+      "rule": "Ülke geleneklerini de uygular: İngilizce bir CV'de fotoğraf, doğum tarihi ve uyruk gizlenir",
+      "free": "Serbest mod: dil aynı kalır ama hiçbir şey gizlenmez. CV'de nelerin yer alacağına siz karar verirsiniz"
     },
     "modes": {
       "label": "Düzenlenecek belge",
@@ -565,7 +588,9 @@
         "interests": "İlgi alanı ekle"
       },
       "deleteTitle": "“{{name}}” bölümü silinsin mi?",
-      "deleteText": "İçeriği Master CV'den ve tüm sürümlerinden kaldırılacak"
+      "deleteText": "İçeriği Master CV'den ve tüm sürümlerinden kaldırılacak",
+      "collapse": "Bölümü daralt",
+      "expand": "Bölümü genişlet"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Stilim",
+      "button": "Stillerim",
       "title": "CV stili",
       "gallery": "Galeri şablonu: {{name}}",
       "empty": "Henüz stil oluşturulmadı",

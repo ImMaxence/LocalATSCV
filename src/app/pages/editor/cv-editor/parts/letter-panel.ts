@@ -14,6 +14,7 @@ import { CvEditorStore } from '../cv-editor.store';
 @Component({
   selector: 'app-letter-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'block' },
   imports: [TranslocoDirective, TextField, Icon],
   template: `
     @let letter = store.shownLetter();

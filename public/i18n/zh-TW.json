@@ -73,7 +73,8 @@
         "templates": "72 款範本任你選",
         "letter": "風格一致的求職信",
         "private": "資料只留在你身邊",
-        "studio": "或你自己的設計"
+        "studio": "或你自己的設計",
+        "countries": "5 種語言，符合各國慣例"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "選擇範本和顏色，將履歷下載為 PDF，直接寄出或列印"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "語言與國家",
+      "title": "符合目標國家慣例的履歷",
+      "text": "每份履歷都有自己的語言，與網站語言無關。標題、日期和求職信用語都依當地的習慣書寫。英文履歷依英語國家的慣例，不顯示照片、出生日期和國籍",
+      "keeps": "可放照片",
+      "hides": "隱藏照片",
+      "freeTitle": "需要更多自由？",
+      "freeText": "自由模式保留所選語言，不隱藏任何內容：履歷上顯示什麼由您決定"
     },
     "privacy": {
       "eyebrow": "隱私",
@@ -384,7 +394,12 @@
       "importPdf": "匯入履歷（PDF 或 Word）",
       "importPdfHint": "把現有履歷轉進我們的範本",
       "importLinkedin": "從 LinkedIn 匯入",
-      "importLinkedinHint": "透過個人檔案 PDF"
+      "importLinkedinHint": "透過個人檔案 PDF",
+      "selectCard": "選取「{{name}}」",
+      "selected": "已選取：{{count}}",
+      "selectAll": "全選",
+      "deleteManyTitle": "刪除所選內容（{{count}}）？",
+      "deleteManyText": "所選履歷及其所有版本將從此瀏覽器中永久刪除"
     },
     "toolbar": {
       "back": "我的履歷",
@@ -399,7 +414,15 @@
       "preview": "預覽",
       "exportPdf": "匯出 PDF",
       "undo": "復原（Ctrl+Z）",
-      "redo": "重做（Ctrl+Y）"
+      "redo": "重做（Ctrl+Y）",
+      "freeMode": "自由"
+    },
+    "languageInfo": {
+      "title": "履歷語言與各國慣例",
+      "site": "此選項不會變更網站語言，只會變更履歷語言",
+      "labels": "它會調整應用程式為您撰寫的內容：區塊標題、日期、語言程度、求職信用語和各國特有的說明。您自己寫的文字不會被翻譯",
+      "rule": "它也會套用各國慣例：英文履歷會隱藏照片、出生日期和國籍",
+      "free": "自由模式：語言維持不變，但不隱藏任何內容。履歷上顯示什麼由您決定"
     },
     "modes": {
       "label": "要編輯的文件",
@@ -565,7 +588,9 @@
         "interests": "新增興趣"
       },
       "deleteTitle": "要刪除區塊「{{name}}」嗎？",
-      "deleteText": "其內容將從主履歷及所有版本中移除"
+      "deleteText": "其內容將從主履歷及所有版本中移除",
+      "collapse": "收合區塊",
+      "expand": "展開區塊"
     },
     "entry": {
       "fields": {

@@ -73,7 +73,8 @@
         "templates": "72 templates to choose from",
         "letter": "Matching cover letter",
         "private": "Your data stays with you",
-        "studio": "Or your own design"
+        "studio": "Or your own design",
+        "countries": "5 languages, following local conventions"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Choose your template and color, then download your resume as a PDF, ready to send or print"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Languages and countries",
+      "title": "A resume that follows the conventions of your target country",
+      "text": "Each resume has its own language, separate from the site's. Titles, dates and letter phrases are written the way people expect locally. On a resume in English, the photo, date of birth and nationality are removed, in line with English-speaking hiring practices",
+      "keeps": "Photo allowed",
+      "hides": "Photo hidden",
+      "freeTitle": "Want more freedom?",
+      "freeText": "Custom mode keeps your chosen language and hides nothing: you decide what goes on the resume"
     },
     "privacy": {
       "eyebrow": "Privacy",
@@ -384,7 +394,12 @@
       "importPdf": "Import a resume (PDF or Word)",
       "importPdfHint": "Bring an existing resume into our templates",
       "importLinkedin": "Import from LinkedIn",
-      "importLinkedinHint": "From your profile PDF"
+      "importLinkedinHint": "From your profile PDF",
+      "selectCard": "Select \"{{name}}\"",
+      "selected": "Selected: {{count}}",
+      "selectAll": "Select all",
+      "deleteManyTitle": "Delete selection ({{count}})?",
+      "deleteManyText": "The selected resumes and all their versions will be permanently deleted from this browser"
     },
     "toolbar": {
       "back": "My resumes",
@@ -399,7 +414,15 @@
       "preview": "Preview",
       "exportPdf": "Export to PDF",
       "undo": "Undo (Ctrl+Z)",
-      "redo": "Redo (Ctrl+Y)"
+      "redo": "Redo (Ctrl+Y)",
+      "freeMode": "Custom"
+    },
+    "languageInfo": {
+      "title": "Resume language and country conventions",
+      "site": "This choice doesn't change the site language, only the resume's",
+      "labels": "It adapts what the app writes for you: section titles, dates, language levels, letter phrases and country-specific wording. Your own text is not translated",
+      "rule": "It also applies country conventions: on a resume in English, the photo, date of birth and nationality are hidden",
+      "free": "Custom mode: the language stays the same, but nothing is hidden. You decide what goes on the resume"
     },
     "modes": {
       "label": "Document to edit",
@@ -565,7 +588,9 @@
         "interests": "Add an interest"
       },
       "deleteTitle": "Delete the section “{{name}}”?",
-      "deleteText": "Its content will be removed from the Master resume and all its versions"
+      "deleteText": "Its content will be removed from the Master resume and all its versions",
+      "collapse": "Collapse section",
+      "expand": "Expand section"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "My style",
+      "button": "My styles",
       "title": "Resume style",
       "gallery": "Gallery template: {{name}}",
       "empty": "No style created yet",

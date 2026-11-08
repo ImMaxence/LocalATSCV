@@ -4,6 +4,23 @@ Toutes les évolutions notables de LocalATSCV sont listées ici
 
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/)
 
+## [1.0.0] - 2026-11-08
+
+### Ajouté
+
+- Mes CV : suppression groupée. Cochez plusieurs CV (ou tout sélectionner) puis supprimez-les en une fois, après confirmation
+- Éditeur : mode « Libre » à côté de la langue du CV. La langue reste, mais aucun usage du pays n'est appliqué : photo, date de naissance et nationalité restent affichées sur un CV en anglais
+- Éditeur : bouton d'information qui explique ce que change la langue du CV, et chaque section peut être repliée ou dépliée (l'état est mémorisé sur l'appareil)
+- Accueil : nouvelle section sur la langue du CV et les usages de chaque pays
+
+### Modifié
+
+- Le menu « Mon style » de l'éditeur s'appelle désormais « Mes styles »
+
+### Corrigé
+
+- Glisser-déposer des sections et des expériences : les autres blocs s'écartent en temps réel et un cadre montre l'emplacement d'arrivée. L'espacement entre les sections est rétabli
+
 ## [0.13.0] - 2026-11-03
 
 ### Ajouté

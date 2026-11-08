@@ -12,7 +12,10 @@ import {
   DemoSegment,
   DemoSegmentsPipe,
 } from './landing-demo';
+import { CV_LANGUAGES } from '../../cv/model/cv.model';
+import { CV_LABELS, formatCvDate } from '../../cv/model/cv-labels';
 import { DISABILITY_LABELS } from '../../cv/model/disability';
+import { hidesPersonalDetails } from '../../cv/model/resolve-cv';
 import { SHAPES } from '../../cv/document/parts/shapes';
 import { BLOCK_SKETCHES, SKETCH_FILLS, SketchRect } from '../studio/block-previews';
 import { FAQ_ITEMS } from './faq';
@@ -44,7 +47,7 @@ export class Landing {
   protected readonly scoreCircumference = 2 * Math.PI * SCORE_RADIUS;
   protected readonly scoreOffset = this.scoreCircumference * (1 - DEMO_SCORE / 100);
 
-  protected readonly heroPoints = ['templates', 'studio', 'letter', 'private'];
+  protected readonly heroPoints = ['templates', 'studio', 'letter', 'countries', 'private'];
 
   protected readonly pitfalls: IconItem[] = [
     { key: 'layout', icon: 'layers' },
@@ -124,6 +127,14 @@ export class Landing {
   protected readonly disabilityMentions = (['fr', 'it', 'es', 'de'] as const).map((lang) => ({
     lang,
     text: DISABILITY_LABELS[lang].suggestions[0],
+  }));
+
+  /** Ce qu'imprime réellement chaque langue de CV, tiré des mêmes données que les modèles. */
+  protected readonly cvCountries = CV_LANGUAGES.map((lang) => ({
+    lang,
+    heading: CV_LABELS[lang].sections.experience,
+    date: formatCvDate('2024-03', lang),
+    hides: hidesPersonalDetails(lang),
   }));
 
   /** Une puce qui contient une phrase faible affiche la suggestion de verbe d'action. */

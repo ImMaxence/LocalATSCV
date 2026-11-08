@@ -73,7 +73,8 @@
         "templates": "72 modelos à escolha",
         "letter": "Carta de apresentação combinando",
         "private": "Seus dados ficam com você",
-        "studio": "Ou o seu próprio design"
+        "studio": "Ou o seu próprio design",
+        "countries": "5 idiomas, de acordo com os costumes do país"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Escolha seu modelo e sua cor e baixe o currículo em PDF, pronto para enviar ou imprimir"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Idiomas e países",
+      "title": "Um currículo que respeita os costumes do país de destino",
+      "text": "Cada currículo tem seu próprio idioma, independente do idioma do site. Títulos, datas e fórmulas da carta são escritos como se espera no local. Em um currículo em inglês, a foto, a data de nascimento e a nacionalidade desaparecem, de acordo com os costumes anglo-saxões",
+      "keeps": "Foto possível",
+      "hides": "Foto oculta",
+      "freeTitle": "Precisa de mais liberdade?",
+      "freeText": "O modo livre mantém o idioma escolhido e não oculta nada: você decide o que aparece no currículo"
     },
     "privacy": {
       "eyebrow": "Privacidade",
@@ -384,7 +394,12 @@
       "importPdf": "Importar um currículo (PDF ou Word)",
       "importPdfHint": "Traga um currículo existente para os nossos modelos",
       "importLinkedin": "Importar do LinkedIn",
-      "importLinkedinHint": "A partir do PDF do seu perfil"
+      "importLinkedinHint": "A partir do PDF do seu perfil",
+      "selectCard": "Selecionar \"{{name}}\"",
+      "selected": "Seleção: {{count}}",
+      "selectAll": "Selecionar tudo",
+      "deleteManyTitle": "Excluir a seleção ({{count}})?",
+      "deleteManyText": "Os currículos selecionados e todas as suas versões serão excluídos definitivamente deste navegador"
     },
     "toolbar": {
       "back": "Meus currículos",
@@ -399,7 +414,15 @@
       "preview": "Pré-visualizar",
       "exportPdf": "Exportar em PDF",
       "undo": "Desfazer (Ctrl+Z)",
-      "redo": "Refazer (Ctrl+Y)"
+      "redo": "Refazer (Ctrl+Y)",
+      "freeMode": "Livre"
+    },
+    "languageInfo": {
+      "title": "Idioma do currículo e costumes do país",
+      "site": "Esta opção não muda o idioma do site, apenas o do currículo",
+      "labels": "Ela adapta o que o aplicativo escreve para você: títulos das seções, datas, níveis de idioma, fórmulas da carta e menções próprias do país. Seus textos não são traduzidos",
+      "rule": "Ela também aplica os costumes do país: em um currículo em inglês, a foto, a data de nascimento e a nacionalidade ficam ocultas",
+      "free": "Modo livre: o idioma continua o mesmo, mas nada fica oculto. Você decide o que aparece no currículo"
     },
     "modes": {
       "label": "Documento a editar",
@@ -565,7 +588,9 @@
         "interests": "Adicionar um interesse"
       },
       "deleteTitle": "Excluir a seção “{{name}}”?",
-      "deleteText": "O conteúdo dela será removido do currículo Master e de todas as versões"
+      "deleteText": "O conteúdo dela será removido do currículo Master e de todas as versões",
+      "collapse": "Recolher a seção",
+      "expand": "Expandir a seção"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Meu estilo",
+      "button": "Meus estilos",
       "title": "Estilo do currículo",
       "gallery": "Modelo da galeria: {{name}}",
       "empty": "Nenhum estilo criado ainda",

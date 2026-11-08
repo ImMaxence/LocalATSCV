@@ -16,6 +16,7 @@ import { IncludeToggle } from './editor-controls';
 @Component({
   selector: 'app-profile-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'block' },
   imports: [
     TranslocoDirective,
     TextField,
@@ -338,7 +339,7 @@ export class ProfilePanel {
   protected readonly uploading = signal(false);
   protected readonly linkIcon = linkIcon;
   protected readonly hidesDetails = computed(() =>
-    hidesPersonalDetails(this.store.cv()?.language ?? 'fr'),
+    hidesPersonalDetails(this.store.cv()?.language ?? 'fr', this.store.cv()?.freeMode),
   );
 
   protected readonly avatarIcons = AVATAR_ICONS;

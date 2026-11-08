@@ -208,7 +208,7 @@ const PRESET_ICONS: Record<StylePreset, 'file' | 'layout' | 'columns' | 'sparkle
   `,
 })
 export class StyleList {
-  /** CV d'où vient l'utilisateur (lien « Mon style » de l'éditeur), pour l'y ramener. */
+  /** CV d'où vient l'utilisateur (lien « Mes styles » de l'éditeur), pour l'y ramener. */
   readonly cv = input<string>();
 
   private readonly repository = inject(CvRepository);

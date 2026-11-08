@@ -73,7 +73,8 @@
         "templates": "72 款模板任选",
         "letter": "风格统一的求职信",
         "private": "数据只留在你身边",
-        "studio": "或你自己的设计"
+        "studio": "或你自己的设计",
+        "countries": "5 种语言，符合各国惯例"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "选择模板和颜色，将简历下载为 PDF，直接发送或打印"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "语言与国家",
+      "title": "符合目标国家惯例的简历",
+      "text": "每份简历都有自己的语言，与网站语言无关。标题、日期和求职信用语都按当地的习惯书写。英文简历按英语国家的惯例，不显示照片、出生日期和国籍",
+      "keeps": "可放照片",
+      "hides": "隐藏照片",
+      "freeTitle": "需要更多自由？",
+      "freeText": "自由模式保留所选语言，不隐藏任何内容：简历上显示什么由您决定"
     },
     "privacy": {
       "eyebrow": "隐私",
@@ -384,7 +394,12 @@
       "importPdf": "导入简历（PDF 或 Word）",
       "importPdfHint": "把现有简历转入我们的模板",
       "importLinkedin": "从 LinkedIn 导入",
-      "importLinkedinHint": "通过个人资料 PDF"
+      "importLinkedinHint": "通过个人资料 PDF",
+      "selectCard": "选择“{{name}}”",
+      "selected": "已选择：{{count}}",
+      "selectAll": "全选",
+      "deleteManyTitle": "删除所选内容（{{count}}）？",
+      "deleteManyText": "所选简历及其所有版本将从此浏览器中永久删除"
     },
     "toolbar": {
       "back": "我的简历",
@@ -399,7 +414,15 @@
       "preview": "预览",
       "exportPdf": "导出 PDF",
       "undo": "撤销（Ctrl+Z）",
-      "redo": "重做（Ctrl+Y）"
+      "redo": "重做（Ctrl+Y）",
+      "freeMode": "自由"
+    },
+    "languageInfo": {
+      "title": "简历语言与各国惯例",
+      "site": "此选项不会更改网站语言，只更改简历语言",
+      "labels": "它会调整应用为您写入的内容：栏目标题、日期、语言水平、求职信用语和各国特有的说明。您自己写的文字不会被翻译",
+      "rule": "它还会应用各国惯例：英文简历会隐藏照片、出生日期和国籍",
+      "free": "自由模式：语言保持不变，但不隐藏任何内容。简历上显示什么由您决定"
     },
     "modes": {
       "label": "要编辑的文档",
@@ -565,7 +588,9 @@
         "interests": "添加兴趣爱好"
       },
       "deleteTitle": "删除板块“{{name}}”？",
-      "deleteText": "其内容将从主简历及其所有版本中移除"
+      "deleteText": "其内容将从主简历及其所有版本中移除",
+      "collapse": "折叠栏目",
+      "expand": "展开栏目"
     },
     "entry": {
       "fields": {

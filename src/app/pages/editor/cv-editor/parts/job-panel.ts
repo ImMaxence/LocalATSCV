@@ -21,6 +21,7 @@ import { CvEditorStore } from '../cv-editor.store';
 @Component({
   selector: 'app-job-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'block' },
   imports: [TranslocoDirective, Icon],
   template: `
     <section *transloco="let t; prefix: 'editor.job'" class="panel overflow-hidden">

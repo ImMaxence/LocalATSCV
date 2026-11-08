@@ -73,7 +73,8 @@
         "templates": "72 szablonów do wyboru",
         "letter": "Dopasowany list motywacyjny",
         "private": "Twoje dane zostają u ciebie",
-        "studio": "Albo własny projekt"
+        "studio": "Albo własny projekt",
+        "countries": "5 języków, zgodnie ze zwyczajami kraju"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Wybierz szablon i kolor, a potem pobierz CV w PDF, gotowe do wysłania lub wydruku"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Języki i kraje",
+      "title": "CV zgodne ze zwyczajami kraju docelowego",
+      "text": "Każde CV ma własny język, niezależny od języka strony. Tytuły, daty i zwroty w liście są zapisywane tak, jak oczekuje się tego na miejscu. W CV po angielsku znikają zdjęcie, data urodzenia i obywatelstwo, zgodnie ze zwyczajami anglosaskimi",
+      "keeps": "Zdjęcie możliwe",
+      "hides": "Zdjęcie ukryte",
+      "freeTitle": "Potrzebujesz większej swobody?",
+      "freeText": "Tryb dowolny zachowuje wybrany język i niczego nie ukrywa: to Ty decydujesz, co znajdzie się w CV"
     },
     "privacy": {
       "eyebrow": "Prywatność",
@@ -384,7 +394,12 @@
       "importPdf": "Importuj CV (PDF lub Word)",
       "importPdfHint": "Przenieś istniejące CV do naszych szablonów",
       "importLinkedin": "Importuj z LinkedIn",
-      "importLinkedinHint": "Z PDF Twojego profilu"
+      "importLinkedinHint": "Z PDF Twojego profilu",
+      "selectCard": "Zaznacz „{{name}}”",
+      "selected": "Zaznaczono: {{count}}",
+      "selectAll": "Zaznacz wszystko",
+      "deleteManyTitle": "Usunąć zaznaczenie ({{count}})?",
+      "deleteManyText": "Zaznaczone CV i wszystkie ich wersje zostaną trwale usunięte z tej przeglądarki"
     },
     "toolbar": {
       "back": "Moje CV",
@@ -399,7 +414,15 @@
       "preview": "Podgląd",
       "exportPdf": "Eksportuj do PDF",
       "undo": "Cofnij (Ctrl+Z)",
-      "redo": "Ponów (Ctrl+Y)"
+      "redo": "Ponów (Ctrl+Y)",
+      "freeMode": "Dowolny"
+    },
+    "languageInfo": {
+      "title": "Język CV i zwyczaje kraju",
+      "site": "Ten wybór nie zmienia języka strony, tylko język CV",
+      "labels": "Dostosowuje to, co aplikacja pisze za Ciebie: tytuły sekcji, daty, poziomy języka, zwroty w liście i wzmianki właściwe dla kraju. Twoje teksty nie są tłumaczone",
+      "rule": "Stosuje też zwyczaje kraju: w CV po angielsku zdjęcie, data urodzenia i obywatelstwo są ukryte",
+      "free": "Tryb dowolny: język pozostaje ten sam, ale nic nie jest ukrywane. To Ty decydujesz, co znajdzie się w CV"
     },
     "modes": {
       "label": "Edytowany dokument",
@@ -565,7 +588,9 @@
         "interests": "Dodaj zainteresowanie"
       },
       "deleteTitle": "Usunąć sekcję „{{name}}”?",
-      "deleteText": "Jej treść zostanie usunięta z CV Master i wszystkich jego wersji"
+      "deleteText": "Jej treść zostanie usunięta z CV Master i wszystkich jego wersji",
+      "collapse": "Zwiń sekcję",
+      "expand": "Rozwiń sekcję"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mój styl",
+      "button": "Moje style",
       "title": "Styl CV",
       "gallery": "Szablon z galerii: {{name}}",
       "empty": "Nie utworzono jeszcze żadnego stylu",

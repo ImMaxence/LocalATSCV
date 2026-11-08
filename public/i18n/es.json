@@ -73,7 +73,8 @@
         "templates": "72 plantillas a elegir",
         "letter": "Carta de presentación a juego",
         "private": "Tus datos se quedan contigo",
-        "studio": "O tu propio diseño"
+        "studio": "O tu propio diseño",
+        "countries": "5 idiomas, según los usos del país"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Elige tu plantilla y tu color y descarga tu CV en PDF, listo para enviar o imprimir"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Idiomas y países",
+      "title": "Un CV que respeta los usos del país al que te diriges",
+      "text": "Cada CV tiene su propio idioma, independiente del idioma del sitio. Los títulos, las fechas y las fórmulas de la carta se escriben como se espera allí. En un CV en inglés, la foto, la fecha de nacimiento y la nacionalidad desaparecen, según los usos anglosajones",
+      "keeps": "Foto posible",
+      "hides": "Foto oculta",
+      "freeTitle": "¿Necesitas más libertad?",
+      "freeText": "El modo libre mantiene el idioma elegido y no oculta nada: tú decides qué aparece en el CV"
     },
     "privacy": {
       "eyebrow": "Privacidad",
@@ -384,7 +394,12 @@
       "importPdf": "Importar un CV (PDF o Word)",
       "importPdfHint": "Pasa un CV existente a nuestras plantillas",
       "importLinkedin": "Importar desde LinkedIn",
-      "importLinkedinHint": "A partir del PDF de tu perfil"
+      "importLinkedinHint": "A partir del PDF de tu perfil",
+      "selectCard": "Seleccionar «{{name}}»",
+      "selected": "Selección: {{count}}",
+      "selectAll": "Seleccionar todo",
+      "deleteManyTitle": "¿Eliminar la selección ({{count}})?",
+      "deleteManyText": "Los CV seleccionados y todas sus versiones se eliminarán definitivamente de este navegador"
     },
     "toolbar": {
       "back": "Mis CV",
@@ -399,7 +414,15 @@
       "preview": "Vista previa",
       "exportPdf": "Exportar a PDF",
       "undo": "Deshacer (Ctrl+Z)",
-      "redo": "Rehacer (Ctrl+Y)"
+      "redo": "Rehacer (Ctrl+Y)",
+      "freeMode": "Libre"
+    },
+    "languageInfo": {
+      "title": "Idioma del CV y usos del país",
+      "site": "Esta opción no cambia el idioma del sitio, solo el del CV",
+      "labels": "Adapta lo que la aplicación escribe por ti: títulos de las secciones, fechas, niveles de idioma, fórmulas de la carta y menciones propias del país. Tus propios textos no se traducen",
+      "rule": "También aplica los usos del país: en un CV en inglés se ocultan la foto, la fecha de nacimiento y la nacionalidad",
+      "free": "Modo libre: el idioma sigue siendo el mismo, pero no se oculta nada. Tú decides qué aparece en el CV"
     },
     "modes": {
       "label": "Documento que editar",
@@ -565,7 +588,9 @@
         "interests": "Añadir un interés"
       },
       "deleteTitle": "¿Eliminar la sección «{{name}}»?",
-      "deleteText": "Su contenido se eliminará del Master CV y de todas sus versiones"
+      "deleteText": "Su contenido se eliminará del Master CV y de todas sus versiones",
+      "collapse": "Contraer la sección",
+      "expand": "Desplegar la sección"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Mi estilo",
+      "button": "Mis estilos",
       "title": "Estilo del CV",
       "gallery": "Plantilla de la galería: {{name}}",
       "empty": "Aún no has creado ningún estilo",

@@ -73,7 +73,8 @@
         "templates": "72 modelli tra cui scegliere",
         "letter": "Lettera di presentazione abbinata",
         "private": "I tuoi dati restano a casa tua",
-        "studio": "O il tuo design"
+        "studio": "O il tuo design",
+        "countries": "5 lingue, secondo le usanze del Paese"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Scegli modello e colore, poi scarica il tuo CV in PDF, pronto da inviare o stampare"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Lingue e Paesi",
+      "title": "Un CV che rispetta le usanze del Paese di destinazione",
+      "text": "Ogni CV ha la propria lingua, indipendente da quella del sito. Titoli, date e formule della lettera sono scritti come ci si aspetta sul posto. Su un CV in inglese, foto, data di nascita e nazionalità scompaiono, secondo le usanze anglosassoni",
+      "keeps": "Foto possibile",
+      "hides": "Foto nascosta",
+      "freeTitle": "Serve più libertà?",
+      "freeText": "La modalità libera mantiene la lingua scelta e non nasconde nulla: decidi tu cosa compare sul CV"
     },
     "privacy": {
       "eyebrow": "Privacy",
@@ -384,7 +394,12 @@
       "importPdf": "Importa un CV (PDF o Word)",
       "importPdfHint": "Porta un CV esistente nei nostri modelli",
       "importLinkedin": "Importa da LinkedIn",
-      "importLinkedinHint": "Dal PDF del tuo profilo"
+      "importLinkedinHint": "Dal PDF del tuo profilo",
+      "selectCard": "Seleziona «{{name}}»",
+      "selected": "Selezione: {{count}}",
+      "selectAll": "Seleziona tutto",
+      "deleteManyTitle": "Eliminare la selezione ({{count}})?",
+      "deleteManyText": "I CV selezionati e tutte le loro versioni saranno eliminati definitivamente da questo browser"
     },
     "toolbar": {
       "back": "I miei CV",
@@ -399,7 +414,15 @@
       "preview": "Anteprima",
       "exportPdf": "Esporta in PDF",
       "undo": "Annulla (Ctrl+Z)",
-      "redo": "Ripristina (Ctrl+Y)"
+      "redo": "Ripristina (Ctrl+Y)",
+      "freeMode": "Libero"
+    },
+    "languageInfo": {
+      "title": "Lingua del CV e usanze del Paese",
+      "site": "Questa scelta non cambia la lingua del sito, solo quella del CV",
+      "labels": "Adatta ciò che l'applicazione scrive per te: titoli delle sezioni, date, livelli di lingua, formule della lettera e diciture proprie del Paese. I tuoi testi non vengono tradotti",
+      "rule": "Applica anche le usanze del Paese: su un CV in inglese, foto, data di nascita e nazionalità sono nascoste",
+      "free": "Modalità libera: la lingua resta la stessa, ma non viene nascosto nulla. Decidi tu cosa compare sul CV"
     },
     "modes": {
       "label": "Documento da modificare",
@@ -565,7 +588,9 @@
         "interests": "Aggiungi un interesse"
       },
       "deleteTitle": "Eliminare la sezione «{{name}}»?",
-      "deleteText": "Il suo contenuto verrà eliminato dal Master CV e da tutte le sue versioni"
+      "deleteText": "Il suo contenuto verrà eliminato dal Master CV e da tutte le sue versioni",
+      "collapse": "Comprimi la sezione",
+      "expand": "Espandi la sezione"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Il mio stile",
+      "button": "I miei stili",
       "title": "Stile del CV",
       "gallery": "Modello della galleria: {{name}}",
       "empty": "Nessuno stile creato per ora",

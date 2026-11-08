@@ -37,10 +37,10 @@ const DISABILITY_ENTRY_ID = `${DISABILITY_ID}-entry`;
 
 /**
  * Langues où la photo, la date de naissance et la nationalité n'ont pas leur place
- * (usages anglo-saxons, pour limiter les discriminations à l'embauche).
+ * (usages anglo-saxons, pour limiter les discriminations à l'embauche). Le mode libre lève la règle.
  */
-export function hidesPersonalDetails(language: CvLanguage): boolean {
-  return language === 'en';
+export function hidesPersonalDetails(language: CvLanguage, freeMode = false): boolean {
+  return language === 'en' && !freeMode;
 }
 
 const filled = (value: string): boolean => value.trim().length > 0;
@@ -74,7 +74,7 @@ export function resolveCv(cv: MasterCv, version: CvVersion | null): ResolvedCv {
     })
     .filter((section) => section.items.length > 0);
 
-  const profile = hidesPersonalDetails(cv.language)
+  const profile = hidesPersonalDetails(cv.language, cv.freeMode)
     ? { ...cv.profile, photoId: null, birthDate: '', nationality: '' }
     : cv.profile;
 

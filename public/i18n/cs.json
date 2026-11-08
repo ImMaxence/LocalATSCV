@@ -73,7 +73,8 @@
         "templates": "72 šablon na výběr",
         "letter": "Sladěný motivační dopis",
         "private": "Vaše data zůstávají u vás",
-        "studio": "Nebo vlastní design"
+        "studio": "Nebo vlastní design",
+        "countries": "5 jazyků podle zvyklostí země"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Vyberte šablonu a barvu a stáhněte si životopis v PDF, připravený k odeslání nebo tisku"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Jazyky a země",
+      "title": "Životopis, který respektuje zvyklosti cílové země",
+      "text": "Každý životopis má vlastní jazyk nezávislý na jazyku webu. Nadpisy, data a fráze v dopise se píší tak, jak se na místě očekává. V životopisu v angličtině zmizí fotografie, datum narození a státní příslušnost, jak je v anglosaských zemích zvykem",
+      "keeps": "Fotka možná",
+      "hides": "Fotka skrytá",
+      "freeTitle": "Potřebujete více volnosti?",
+      "freeText": "Volný režim zachová zvolený jazyk a nic neskrývá: o obsahu životopisu rozhodujete vy"
     },
     "privacy": {
       "eyebrow": "Soukromí",
@@ -384,7 +394,12 @@
       "importPdf": "Importovat životopis (PDF nebo Word)",
       "importPdfHint": "Převeďte existující životopis do našich šablon",
       "importLinkedin": "Importovat z LinkedInu",
-      "importLinkedinHint": "Z PDF vašeho profilu"
+      "importLinkedinHint": "Z PDF vašeho profilu",
+      "selectCard": "Vybrat „{{name}}“",
+      "selected": "Vybráno: {{count}}",
+      "selectAll": "Vybrat vše",
+      "deleteManyTitle": "Smazat výběr ({{count}})?",
+      "deleteManyText": "Vybrané životopisy a všechny jejich verze budou z tohoto prohlížeče trvale smazány"
     },
     "toolbar": {
       "back": "Moje životopisy",
@@ -399,7 +414,15 @@
       "preview": "Náhled",
       "exportPdf": "Exportovat do PDF",
       "undo": "Zpět (Ctrl+Z)",
-      "redo": "Znovu (Ctrl+Y)"
+      "redo": "Znovu (Ctrl+Y)",
+      "freeMode": "Volný"
+    },
+    "languageInfo": {
+      "title": "Jazyk životopisu a zvyklosti země",
+      "site": "Tato volba nemění jazyk webu, jen jazyk životopisu",
+      "labels": "Upravuje to, co aplikace píše za vás: názvy sekcí, data, jazykové úrovně, fráze v dopise a údaje specifické pro danou zemi. Vaše vlastní texty se nepřekládají",
+      "rule": "Uplatňuje také zvyklosti země: v životopisu v angličtině se skryje fotografie, datum narození a státní příslušnost",
+      "free": "Volný režim: jazyk zůstává stejný, ale nic se neskrývá. O obsahu životopisu rozhodujete vy"
     },
     "modes": {
       "label": "Upravovaný dokument",
@@ -565,7 +588,9 @@
         "interests": "Přidat zájem"
       },
       "deleteTitle": "Smazat sekci „{{name}}“?",
-      "deleteText": "Její obsah bude odstraněn z Master životopisu i ze všech jeho verzí"
+      "deleteText": "Její obsah bude odstraněn z Master životopisu i ze všech jeho verzí",
+      "collapse": "Sbalit sekci",
+      "expand": "Rozbalit sekci"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Můj styl",
+      "button": "Moje styly",
       "title": "Styl životopisu",
       "gallery": "Šablona z galerie: {{name}}",
       "empty": "Zatím nemáte žádný styl",

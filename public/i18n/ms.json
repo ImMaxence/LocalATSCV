@@ -73,7 +73,8 @@
         "templates": "72 templat untuk dipilih",
         "letter": "Surat iringan yang sepadan",
         "private": "Data anda kekal bersama anda",
-        "studio": "Atau reka bentuk anda sendiri"
+        "studio": "Atau reka bentuk anda sendiri",
+        "countries": "5 bahasa, mengikut adat negara"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Pilih templat dan warna, kemudian muat turun resume anda dalam PDF, sedia untuk dihantar atau dicetak"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Bahasa dan negara",
+      "title": "Resume yang mengikut adat negara sasaran",
+      "text": "Setiap resume mempunyai bahasanya sendiri, berasingan daripada bahasa laman. Tajuk, tarikh dan frasa surat ditulis seperti yang dijangka di sana. Pada resume bahasa Inggeris, foto, tarikh lahir dan kewarganegaraan dibuang, mengikut amalan Anglo-Saxon",
+      "keeps": "Foto boleh",
+      "hides": "Foto disembunyikan",
+      "freeTitle": "Perlukan lebih kebebasan?",
+      "freeText": "Mod bebas mengekalkan bahasa pilihan dan tidak menyembunyikan apa-apa: anda yang menentukan kandungan resume"
     },
     "privacy": {
       "eyebrow": "Privasi",
@@ -384,7 +394,12 @@
       "importPdf": "Import resume (PDF atau Word)",
       "importPdfHint": "Bawa resume sedia ada ke dalam templat kami",
       "importLinkedin": "Import dari LinkedIn",
-      "importLinkedinHint": "Daripada PDF profil anda"
+      "importLinkedinHint": "Daripada PDF profil anda",
+      "selectCard": "Pilih \"{{name}}\"",
+      "selected": "Dipilih: {{count}}",
+      "selectAll": "Pilih semua",
+      "deleteManyTitle": "Padam pilihan ({{count}})?",
+      "deleteManyText": "Resume yang dipilih dan semua versinya akan dipadam secara kekal daripada pelayar ini"
     },
     "toolbar": {
       "back": "Resume saya",
@@ -399,7 +414,15 @@
       "preview": "Pratonton",
       "exportPdf": "Eksport ke PDF",
       "undo": "Buat asal (Ctrl+Z)",
-      "redo": "Buat semula (Ctrl+Y)"
+      "redo": "Buat semula (Ctrl+Y)",
+      "freeMode": "Bebas"
+    },
+    "languageInfo": {
+      "title": "Bahasa resume dan adat negara",
+      "site": "Pilihan ini tidak menukar bahasa laman, hanya bahasa resume",
+      "labels": "Pilihan ini menyesuaikan perkara yang ditulis oleh aplikasi untuk anda: tajuk bahagian, tarikh, tahap bahasa, frasa surat dan catatan khusus negara. Teks anda sendiri tidak diterjemahkan",
+      "rule": "Pilihan ini juga menerapkan adat negara: pada resume bahasa Inggeris, foto, tarikh lahir dan kewarganegaraan disembunyikan",
+      "free": "Mod bebas: bahasa kekal sama, tetapi tiada apa yang disembunyikan. Anda yang menentukan kandungan resume"
     },
     "modes": {
       "label": "Dokumen untuk disunting",
@@ -565,7 +588,9 @@
         "interests": "Tambah minat"
       },
       "deleteTitle": "Padam bahagian “{{name}}”?",
-      "deleteText": "Kandungannya akan dibuang daripada resume Master dan semua versinya"
+      "deleteText": "Kandungannya akan dibuang daripada resume Master dan semua versinya",
+      "collapse": "Runtuhkan bahagian",
+      "expand": "Kembangkan bahagian"
     },
     "entry": {
       "fields": {

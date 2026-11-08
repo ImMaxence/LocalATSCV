@@ -73,7 +73,8 @@
         "templates": "72 sablon közül választhat",
         "letter": "Hozzáillő motivációs levél",
         "private": "Adatai Önnél maradnak",
-        "studio": "Vagy saját design"
+        "studio": "Vagy saját design",
+        "countries": "5 nyelv az ország szokásai szerint"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Válasszon sablont és színt, majd töltse le önéletrajzát PDF-ben, küldésre vagy nyomtatásra készen"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Nyelvek és országok",
+      "title": "Önéletrajz, amely tiszteletben tartja a célország szokásait",
+      "text": "Minden önéletrajznak saját nyelve van, a webhely nyelvétől függetlenül. A címek, a dátumok és a levél fordulatai úgy íródnak, ahogy helyben elvárják. Az angol nyelvű önéletrajzról eltűnik a fénykép, a születési dátum és az állampolgárság, az angolszász szokásoknak megfelelően",
+      "keeps": "Fotó lehetséges",
+      "hides": "Fotó elrejtve",
+      "freeTitle": "Több szabadságra vágyik?",
+      "freeText": "A szabad mód megtartja a választott nyelvet, és semmit sem rejt el: Ön dönti el, mi szerepel az önéletrajzon"
     },
     "privacy": {
       "eyebrow": "Adatvédelem",
@@ -384,7 +394,12 @@
       "importPdf": "Önéletrajz importálása (PDF vagy Word)",
       "importPdfHint": "Hozza át meglévő önéletrajzát a sablonjainkba",
       "importLinkedin": "Importálás a LinkedInről",
-      "importLinkedinHint": "A profilja PDF-jéből"
+      "importLinkedinHint": "A profilja PDF-jéből",
+      "selectCard": "„{{name}}” kijelölése",
+      "selected": "Kijelölve: {{count}}",
+      "selectAll": "Az összes kijelölése",
+      "deleteManyTitle": "Törli a kijelölést ({{count}})?",
+      "deleteManyText": "A kijelölt önéletrajzok és minden változatuk véglegesen törlődik ebből a böngészőből"
     },
     "toolbar": {
       "back": "Önéletrajzaim",
@@ -399,7 +414,15 @@
       "preview": "Előnézet",
       "exportPdf": "Exportálás PDF-be",
       "undo": "Visszavonás (Ctrl+Z)",
-      "redo": "Mégis (Ctrl+Y)"
+      "redo": "Mégis (Ctrl+Y)",
+      "freeMode": "Szabad"
+    },
+    "languageInfo": {
+      "title": "Az önéletrajz nyelve és az ország szokásai",
+      "site": "Ez a választás nem a webhely nyelvét módosítja, csak az önéletrajzét",
+      "labels": "Hozzáigazítja, amit az alkalmazás ír Ön helyett: szakaszcímek, dátumok, nyelvi szintek, a levél fordulatai és az országra jellemző megjegyzések. A saját szövegeit nem fordítja le",
+      "rule": "Az ország szokásait is alkalmazza: az angol nyelvű önéletrajzon a fénykép, a születési dátum és az állampolgárság rejtve marad",
+      "free": "Szabad mód: a nyelv ugyanaz marad, de semmi nem lesz elrejtve. Ön dönti el, mi szerepel az önéletrajzon"
     },
     "modes": {
       "label": "Szerkesztett dokumentum",
@@ -565,7 +588,9 @@
         "interests": "Érdeklődés hozzáadása"
       },
       "deleteTitle": "Törli ezt a szakaszt: „{{name}}”?",
-      "deleteText": "A tartalma törlődik a Master önéletrajzból és annak összes változatából"
+      "deleteText": "A tartalma törlődik a Master önéletrajzból és annak összes változatából",
+      "collapse": "Szakasz összecsukása",
+      "expand": "Szakasz kibontása"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Saját stílus",
+      "button": "Saját stílusok",
       "title": "Az önéletrajz stílusa",
       "gallery": "Sablon a galériából: {{name}}",
       "empty": "Még nincs saját stílus",

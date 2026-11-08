@@ -73,7 +73,8 @@
         "templates": "72 predlog na izbiro",
         "letter": "Usklajeno motivacijsko pismo",
         "private": "Vaši podatki ostanejo pri vas",
-        "studio": "Ali lasten dizajn"
+        "studio": "Ali lasten dizajn",
+        "countries": "5 jezikov, po običajih države"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Izberite predlogo in barvo ter prenesite življenjepis v PDF, pripravljen za pošiljanje ali tiskanje"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Jeziki in države",
+      "title": "Življenjepis, ki upošteva običaje ciljne države",
+      "text": "Vsak življenjepis ima svoj jezik, neodvisen od jezika spletnega mesta. Naslovi, datumi in fraze v pismu so zapisani tako, kot pričakujejo na mestu samem. V življenjepisu v angleščini izginejo fotografija, datum rojstva in državljanstvo, skladno z anglosaškimi običaji",
+      "keeps": "Fotografija mogoča",
+      "hides": "Fotografija skrita",
+      "freeTitle": "Potrebujete več svobode?",
+      "freeText": "Prosti način ohrani izbrani jezik in ničesar ne skrije: sami odločate, kaj je v življenjepisu"
     },
     "privacy": {
       "eyebrow": "Zasebnost",
@@ -384,7 +394,12 @@
       "importPdf": "Uvozi življenjepis (PDF ali Word)",
       "importPdfHint": "Prenesite obstoječi življenjepis v naše predloge",
       "importLinkedin": "Uvozi iz LinkedIna",
-      "importLinkedinHint": "Iz PDF-ja vašega profila"
+      "importLinkedinHint": "Iz PDF-ja vašega profila",
+      "selectCard": "Izberi »{{name}}«",
+      "selected": "Izbrano: {{count}}",
+      "selectAll": "Izberi vse",
+      "deleteManyTitle": "Izbrišem izbor ({{count}})?",
+      "deleteManyText": "Izbrani življenjepisi in vse njihove različice bodo trajno izbrisani iz tega brskalnika"
     },
     "toolbar": {
       "back": "Moji življenjepisi",
@@ -399,7 +414,15 @@
       "preview": "Predogled",
       "exportPdf": "Izvozi v PDF",
       "undo": "Razveljavi (Ctrl+Z)",
-      "redo": "Uveljavi (Ctrl+Y)"
+      "redo": "Uveljavi (Ctrl+Y)",
+      "freeMode": "Prosto"
+    },
+    "languageInfo": {
+      "title": "Jezik življenjepisa in običaji države",
+      "site": "Ta izbira ne spremeni jezika spletnega mesta, le jezik življenjepisa",
+      "labels": "Prilagodi to, kar aplikacija napiše namesto vas: naslove razdelkov, datume, ravni jezika, fraze v pismu in navedbe, značilne za državo. Vaših besedil ne prevaja",
+      "rule": "Upošteva tudi običaje države: v življenjepisu v angleščini so fotografija, datum rojstva in državljanstvo skriti",
+      "free": "Prosti način: jezik ostane enak, vendar se nič ne skrije. Sami odločate, kaj je v življenjepisu"
     },
     "modes": {
       "label": "Dokument za urejanje",
@@ -565,7 +588,9 @@
         "interests": "Dodaj interes"
       },
       "deleteTitle": "Izbrišem razdelek »{{name}}«?",
-      "deleteText": "Njegova vsebina bo odstranjena iz Master življenjepisa in iz vseh njegovih različic"
+      "deleteText": "Njegova vsebina bo odstranjena iz Master življenjepisa in iz vseh njegovih različic",
+      "collapse": "Strni razdelek",
+      "expand": "Razširi razdelek"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Moj slog",
+      "button": "Moji slogi",
       "title": "Slog življenjepisa",
       "gallery": "Predloga iz galerije: {{name}}",
       "empty": "Ustvarjenega še ni nobenega sloga",

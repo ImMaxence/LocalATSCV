@@ -73,7 +73,8 @@
         "templates": "72 maler å velge mellom",
         "letter": "Søknadsbrev som matcher",
         "private": "Dataene dine blir hos deg",
-        "studio": "Eller ditt eget design"
+        "studio": "Eller ditt eget design",
+        "countries": "5 språk, etter landets skikker"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Velg mal og farge, og last ned CV-en som PDF, klar til å sendes eller skrives ut"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Språk og land",
+      "title": "En CV som følger skikkene i landet du søker jobb i",
+      "text": "Hver CV har sitt eget språk, uavhengig av nettstedets. Titler, datoer og brevfraser skrives slik man forventer lokalt. På en CV på engelsk forsvinner bilde, fødselsdato og nasjonalitet, etter angelsaksisk praksis",
+      "keeps": "Bilde mulig",
+      "hides": "Bilde skjult",
+      "freeTitle": "Trenger du mer frihet?",
+      "freeText": "Fri modus beholder det valgte språket og skjuler ingenting: du bestemmer hva som står på CV-en"
     },
     "privacy": {
       "eyebrow": "Personvern",
@@ -384,7 +394,12 @@
       "importPdf": "Importer en CV (PDF eller Word)",
       "importPdfHint": "Overfør en eksisterende CV til malene våre",
       "importLinkedin": "Importer fra LinkedIn",
-      "importLinkedinHint": "Fra PDF-en av profilen din"
+      "importLinkedinHint": "Fra PDF-en av profilen din",
+      "selectCard": "Velg «{{name}}»",
+      "selected": "Valgt: {{count}}",
+      "selectAll": "Velg alle",
+      "deleteManyTitle": "Slette utvalget ({{count}})?",
+      "deleteManyText": "De valgte CV-ene og alle versjonene deres slettes permanent fra denne nettleseren"
     },
     "toolbar": {
       "back": "Mine CV-er",
@@ -399,7 +414,15 @@
       "preview": "Forhåndsvis",
       "exportPdf": "Eksporter til PDF",
       "undo": "Angre (Ctrl+Z)",
-      "redo": "Gjør om (Ctrl+Y)"
+      "redo": "Gjør om (Ctrl+Y)",
+      "freeMode": "Fri"
+    },
+    "languageInfo": {
+      "title": "CV-ens språk og landets skikker",
+      "site": "Dette valget endrer ikke språket på nettstedet, bare språket i CV-en",
+      "labels": "Det tilpasser det appen skriver for deg: seksjonstitler, datoer, språknivåer, brevfraser og landsspesifikke opplysninger. Dine egne tekster oversettes ikke",
+      "rule": "Det bruker også landets skikker: på en CV på engelsk skjules bilde, fødselsdato og nasjonalitet",
+      "free": "Fri modus: språket forblir det samme, men ingenting skjules. Du bestemmer hva som står på CV-en"
     },
     "modes": {
       "label": "Dokument som redigeres",
@@ -565,7 +588,9 @@
         "interests": "Legg til en interesse"
       },
       "deleteTitle": "Slette seksjonen «{{name}}»?",
-      "deleteText": "Innholdet fjernes fra Master-CV-en og alle versjonene av den"
+      "deleteText": "Innholdet fjernes fra Master-CV-en og alle versjonene av den",
+      "collapse": "Skjul seksjonen",
+      "expand": "Vis seksjonen"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Min stil",
+      "button": "Mine stiler",
       "title": "Stilen til CV-en",
       "gallery": "Mal fra galleriet: {{name}}",
       "empty": "Ingen stil opprettet ennå",

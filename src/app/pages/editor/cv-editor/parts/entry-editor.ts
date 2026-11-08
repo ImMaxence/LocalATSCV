@@ -22,6 +22,7 @@ import { HealthHint, IncludeToggle, ItemMenu } from './editor-controls';
 @Component({
   selector: 'app-entry-editor',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'block' },
   imports: [
     TranslocoDirective,
     Icon,

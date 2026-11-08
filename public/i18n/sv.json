@@ -73,7 +73,8 @@
         "templates": "72 mallar att välja mellan",
         "letter": "Matchande personligt brev",
         "private": "Dina uppgifter stannar hos dig",
-        "studio": "Eller din egen design"
+        "studio": "Eller din egen design",
+        "countries": "5 språk, enligt landets seder"
       }
     },
     "ats": {
@@ -120,6 +121,15 @@
           "text": "Välj mall och färg och ladda ner ditt CV som PDF, redo att skicka eller skriva ut"
         }
       }
+    },
+    "countries": {
+      "eyebrow": "Språk och länder",
+      "title": "Ett CV som följer sederna i landet du söker jobb i",
+      "text": "Varje CV har sitt eget språk, oberoende av webbplatsens. Rubriker, datum och brevfraser skrivs så som man förväntar sig på plats. På ett CV på engelska försvinner foto, födelsedatum och nationalitet, enligt anglosaxisk praxis",
+      "keeps": "Foto möjligt",
+      "hides": "Foto dolt",
+      "freeTitle": "Vill du ha mer frihet?",
+      "freeText": "Fritt läge behåller det valda språket och döljer inget: du bestämmer vad som står på CV:t"
     },
     "privacy": {
       "eyebrow": "Integritet",
@@ -384,7 +394,12 @@
       "importPdf": "Importera ett CV (PDF eller Word)",
       "importPdfHint": "För över ett befintligt CV till våra mallar",
       "importLinkedin": "Importera från LinkedIn",
-      "importLinkedinHint": "Från PDF:en av din profil"
+      "importLinkedinHint": "Från PDF:en av din profil",
+      "selectCard": "Välj ”{{name}}”",
+      "selected": "Markerade: {{count}}",
+      "selectAll": "Markera alla",
+      "deleteManyTitle": "Radera markeringen ({{count}})?",
+      "deleteManyText": "De markerade CV:na och alla deras versioner raderas permanent från den här webbläsaren"
     },
     "toolbar": {
       "back": "Mina CV",
@@ -399,7 +414,15 @@
       "preview": "Förhandsgranska",
       "exportPdf": "Exportera till PDF",
       "undo": "Ångra (Ctrl+Z)",
-      "redo": "Gör om (Ctrl+Y)"
+      "redo": "Gör om (Ctrl+Y)",
+      "freeMode": "Fritt"
+    },
+    "languageInfo": {
+      "title": "CV:ts språk och landets seder",
+      "site": "Det här valet ändrar inte webbplatsens språk, bara CV:ts",
+      "labels": "Det anpassar det som appen skriver åt dig: avsnittsrubriker, datum, språknivåer, brevfraser och landsspecifika uppgifter. Dina egna texter översätts inte",
+      "rule": "Det tillämpar också landets seder: på ett CV på engelska döljs foto, födelsedatum och nationalitet",
+      "free": "Fritt läge: språket förblir detsamma, men inget döljs. Du bestämmer vad som står på CV:t"
     },
     "modes": {
       "label": "Dokument att redigera",
@@ -565,7 +588,9 @@
         "interests": "Lägg till ett intresse"
       },
       "deleteTitle": "Radera sektionen ”{{name}}”?",
-      "deleteText": "Innehållet tas bort från Master-CV:t och alla dess versioner"
+      "deleteText": "Innehållet tas bort från Master-CV:t och alla dess versioner",
+      "collapse": "Fäll ihop avsnittet",
+      "expand": "Fäll ut avsnittet"
     },
     "entry": {
       "fields": {
@@ -1047,7 +1072,7 @@
       }
     },
     "style": {
-      "button": "Min stil",
+      "button": "Mina stilar",
       "title": "CV:ts stil",
       "gallery": "Mall från galleriet: {{name}}",
       "empty": "Ingen stil skapad än",

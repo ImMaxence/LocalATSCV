@@ -1,6 +1,6 @@
 {
   "name": "localatscv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Générateur de CV optimisé ATS, 100 % local : aucune donnée ne quitte le navigateur.",
   "license": "MIT",
   "author": "Maxence Bonnici",

@@ -4,6 +4,12 @@ All notable changes to LocalATSCV are listed here
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project adheres to [Semantic Versioning](https://semver.org/)
 
+## [1.0.3] - 2026-11-08
+
+### Added
+
+- Navigation menu on phones and tablets: My resumes, Test my resume, Style studio, How it works and Privacy are reachable from every page
+
 ## [1.0.2] - 2026-11-08
 
 ### Changed

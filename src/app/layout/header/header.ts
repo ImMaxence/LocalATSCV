@@ -1,23 +1,37 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  inject,
+  signal,
+} from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LanguageService } from '../../core/i18n/language.service';
+import { Icon } from '../../shared/icon/icon';
 import { DisplayMenu } from '../display-menu/display-menu';
 import { LanguageSelect } from '../language-select/language-select';
+import { MobileNav } from './mobile-nav';
 import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
 @Component({
   selector: 'app-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   // L'hôte ne crée pas de boîte : le sticky de <header> s'applique à toute la hauteur de la page.
-  host: { class: 'contents' },
+  host: {
+    class: 'contents',
+    '(document:click)': 'onDocumentClick($event)',
+    '(document:keydown.escape)': 'onEscape()',
+  },
   imports: [
     RouterLink,
     RouterLinkActive,
     TranslocoDirective,
+    Icon,
     LanguageSelect,
     DisplayMenu,
     ThemeToggle,
+    MobileNav,
   ],
   template: `
     <header
@@ -51,15 +65,33 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
           </a>
         </nav>
 
-        <div class="ms-auto flex items-center gap-2">
+        <div class="ms-auto flex items-center gap-1.5 sm:gap-2">
           <app-language-select />
           <app-display-menu />
           <app-theme-toggle />
           <a routerLink="/editor" class="btn btn-primary hidden py-2! sm:inline-flex">
             {{ t('nav.editor') }}
           </a>
+          <button
+            type="button"
+            class="grid size-8 place-items-center rounded-full border border-line bg-surface text-muted transition-colors hover:border-ink/25 hover:text-ink aria-expanded:border-accent aria-expanded:text-accent lg:hidden"
+            [attr.aria-controls]="menuOpen() ? 'mobile-nav' : null"
+            [attr.aria-expanded]="menuOpen()"
+            [attr.aria-label]="t('nav.main')"
+            [title]="t('nav.main')"
+            (click)="menuOpen.set(!menuOpen())"
+          >
+            <app-icon class="size-4" [name]="menuOpen() ? 'x' : 'menu'" />
+          </button>
         </div>
       </div>
+
+      <!-- Navigation sous 1024 px, à part : l'en-tête est dans le bundle initial -->
+      @if (menuOpen()) {
+        @defer (on immediate) {
+          <app-mobile-nav (navigated)="menuOpen.set(false)" />
+        }
+      }
     </header>
   `,
   styles: `
@@ -76,4 +108,18 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
 })
 export class Header {
   protected readonly language = inject(LanguageService);
+
+  protected readonly menuOpen = signal(false);
+  private readonly host: HTMLElement = inject(ElementRef).nativeElement;
+
+  /** Un clic hors de l'en-tête (barre et panneau) referme le menu. */
+  protected onDocumentClick(event: Event): void {
+    if (this.menuOpen() && !(event.target as Element).closest('header')) this.menuOpen.set(false);
+  }
+
+  protected onEscape(): void {
+    if (!this.menuOpen()) return;
+    this.menuOpen.set(false);
+    this.host.querySelector<HTMLElement>('[aria-controls]')?.focus();
+  }
 }

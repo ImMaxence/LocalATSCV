@@ -1088,7 +1088,7 @@
     "title": "Popis promjena",
     "subtitle": "Sve verzije LocalATSCV-a s novostima i ispravcima",
     "current": "Trenutačna verzija",
-    "frenchOnly": "Popis promjena napisan je na francuskom",
+    "englishOnly": "Popis promjena napisan je na engleskom",
     "error": "Popis promjena nije moguće učitati",
     "types": {
       "added": "Dodano",

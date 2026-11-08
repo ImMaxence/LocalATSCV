@@ -1088,7 +1088,7 @@
     "title": "Muudatuste logi",
     "subtitle": "Kõik LocalATSCV versioonid koos uute funktsioonide ja parandustega",
     "current": "Praegune versioon",
-    "frenchOnly": "Muudatuste logi on kirjutatud prantsuse keeles",
+    "englishOnly": "Muudatuste logi on kirjutatud inglise keeles",
     "error": "Muudatuste logi ei õnnestunud laadida",
     "types": {
       "added": "Lisatud",

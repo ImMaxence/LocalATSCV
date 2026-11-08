@@ -1088,7 +1088,7 @@
     "title": "Jurnalul modificărilor",
     "subtitle": "Toate versiunile LocalATSCV, cu noutățile și corecturile lor",
     "current": "Versiunea curentă",
-    "frenchOnly": "Jurnalul modificărilor este redactat în franceză",
+    "englishOnly": "Jurnalul modificărilor este redactat în engleză",
     "error": "Jurnalul modificărilor nu a putut fi încărcat",
     "types": {
       "added": "Adăugat",

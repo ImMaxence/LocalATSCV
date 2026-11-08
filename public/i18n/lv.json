@@ -1088,7 +1088,7 @@
     "title": "Izmaiņu žurnāls",
     "subtitle": "Visas LocalATSCV versijas ar jaunajām funkcijām un labojumiem",
     "current": "Pašreizējā versija",
-    "frenchOnly": "Izmaiņu žurnāls ir rakstīts franču valodā",
+    "englishOnly": "Izmaiņu žurnāls ir rakstīts angļu valodā",
     "error": "Neizdevās ielādēt izmaiņu žurnālu",
     "types": {
       "added": "Pievienots",

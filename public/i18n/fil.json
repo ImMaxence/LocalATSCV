@@ -1088,7 +1088,7 @@
     "title": "Changelog",
     "subtitle": "Lahat ng bersyon ng LocalATSCV, kasama ang mga bagong feature at pag-aayos",
     "current": "Kasalukuyang bersyon",
-    "frenchOnly": "Nakasulat sa French ang changelog",
+    "englishOnly": "Nakasulat sa English ang changelog",
     "error": "Hindi ma-load ang changelog",
     "types": {
       "added": "Idinagdag",

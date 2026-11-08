@@ -68,7 +68,7 @@ describe('adresses des pages publiques', () => {
 
   it("n'indexe que les pages qui ont un contenu propre dans la langue", () => {
     expect(indexedLanguages('/')).toEqual(UI_LANGUAGES);
-    expect(indexedLanguages('/changelog')).toEqual(['fr']);
+    expect(indexedLanguages('/changelog')).toEqual(['en']);
     expect(indexedLanguages('/legal/privacy')).toEqual(['fr', 'en']);
   });
 });

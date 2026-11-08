@@ -1088,7 +1088,7 @@
     "title": "Változásnapló",
     "subtitle": "A LocalATSCV összes verziója az újdonságokkal és javításokkal",
     "current": "Jelenlegi verzió",
-    "frenchOnly": "A változásnapló franciául készült",
+    "englishOnly": "A változásnapló angolul készült",
     "error": "Nem sikerült betölteni a változásnaplót",
     "types": {
       "added": "Hozzáadva",

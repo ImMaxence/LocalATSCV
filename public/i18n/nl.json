@@ -1088,7 +1088,7 @@
     "title": "Wijzigingslogboek",
     "subtitle": "Elke versie van LocalATSCV, met de nieuwe functies en oplossingen",
     "current": "Huidige versie",
-    "frenchOnly": "Het wijzigingslogboek is in het Frans geschreven",
+    "englishOnly": "Het wijzigingslogboek is in het Engels geschreven",
     "error": "Het wijzigingslogboek kon niet worden geladen",
     "types": {
       "added": "Toegevoegd",

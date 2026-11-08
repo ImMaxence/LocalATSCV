@@ -5,9 +5,9 @@
       {{ t('title') }}
     </h1>
     <p class="mt-4 text-muted">{{ t('subtitle') }}</p>
-    @if (language.current() !== 'fr') {
+    @if (language.current() !== 'en') {
       <p class="mt-4 flex items-center gap-2 text-sm text-muted">
-        <app-icon class="size-4" name="info" />{{ t('frenchOnly') }}
+        <app-icon class="size-4" name="info" />{{ t('englishOnly') }}
       </p>
     }
   </div>
@@ -59,7 +59,7 @@
                   />
                   {{ t('types.' + group.type) }}
                 </h3>
-                <ul class="mt-4 space-y-2.5 text-sm leading-relaxed">
+                <ul class="mt-4 space-y-2.5 text-sm leading-relaxed" lang="en">
                   @for (item of group.items; track $index) {
                     <li class="flex gap-2.5">
                       <span class="mt-2 size-1.5 shrink-0 rounded-full bg-line"></span>

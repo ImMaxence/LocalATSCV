@@ -1088,7 +1088,7 @@
     "title": "Log perubahan",
     "subtitle": "Setiap versi LocalATSCV, dengan ciri baharu dan pembaikannya",
     "current": "Versi semasa",
-    "frenchOnly": "Log perubahan ditulis dalam bahasa Perancis",
+    "englishOnly": "Log perubahan ditulis dalam bahasa Inggeris",
     "error": "Log perubahan tidak dapat dimuatkan",
     "types": {
       "added": "Ditambah",

@@ -1088,7 +1088,7 @@
     "title": "変更履歴",
     "subtitle": "LocalATSCVの全バージョンの新機能と修正",
     "current": "現在のバージョン",
-    "frenchOnly": "変更履歴はフランス語で書かれています",
+    "englishOnly": "変更履歴は英語で書かれています",
     "error": "変更履歴を読み込めませんでした",
     "types": {
       "added": "追加",

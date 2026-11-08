@@ -1088,7 +1088,7 @@
     "title": "Änderungsprotokoll",
     "subtitle": "Jede Version von LocalATSCV mit ihren Neuerungen und Korrekturen",
     "current": "Aktuelle Version",
-    "frenchOnly": "Das Änderungsprotokoll ist auf Französisch verfasst",
+    "englishOnly": "Das Änderungsprotokoll ist auf Englisch verfasst",
     "error": "Das Änderungsprotokoll konnte nicht geladen werden",
     "types": {
       "added": "Hinzugefügt",

@@ -1088,7 +1088,7 @@
     "title": "Ändringslogg",
     "subtitle": "Alla versioner av LocalATSCV, med nyheter och rättningar",
     "current": "Aktuell version",
-    "frenchOnly": "Ändringsloggen är skriven på franska",
+    "englishOnly": "Ändringsloggen är skriven på engelska",
     "error": "Ändringsloggen kunde inte läsas in",
     "types": {
       "added": "Tillagt",

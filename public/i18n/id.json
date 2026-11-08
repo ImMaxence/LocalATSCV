@@ -1088,7 +1088,7 @@
     "title": "Catatan perubahan",
     "subtitle": "Setiap versi LocalATSCV, dengan fitur baru dan perbaikannya",
     "current": "Versi saat ini",
-    "frenchOnly": "Catatan perubahan ditulis dalam bahasa Prancis",
+    "englishOnly": "Catatan perubahan ditulis dalam bahasa Inggris",
     "error": "Catatan perubahan tidak dapat dimuat",
     "types": {
       "added": "Ditambahkan",

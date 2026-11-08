@@ -1088,7 +1088,7 @@
     "title": "Kumbukumbu ya mabadiliko",
     "subtitle": "Matoleo yote ya LocalATSCV, pamoja na vipengele vipya na marekebisho",
     "current": "Toleo la sasa",
-    "frenchOnly": "Kumbukumbu ya mabadiliko imeandikwa kwa Kifaransa",
+    "englishOnly": "Kumbukumbu ya mabadiliko imeandikwa kwa Kiingereza",
     "error": "Kumbukumbu ya mabadiliko haikuweza kupakiwa",
     "types": {
       "added": "Imeongezwa",

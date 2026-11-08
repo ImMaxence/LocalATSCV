@@ -155,11 +155,11 @@ export const PUBLIC_PAGES = [
 
 /**
  * Langues dans lesquelles une page a un contenu propre, et donc indexé. Le journal des
- * modifications n'est rédigé qu'en français, les documents légaux en français et en anglais :
+ * modifications n'est rédigé qu'en anglais, les documents légaux en français et en anglais :
  * dans les autres langues, ces pages restent consultables mais portent noindex.
  */
 export function indexedLanguages(page: string): readonly UiLanguage[] {
-  if (page === '/changelog') return ['fr'];
+  if (page === '/changelog') return ['en'];
   if (page.startsWith('/legal/')) return ['fr', 'en'];
   return UI_LANGUAGES;
 }

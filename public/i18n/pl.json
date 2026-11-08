@@ -1088,7 +1088,7 @@
     "title": "Dziennik zmian",
     "subtitle": "Wszystkie wersje LocalATSCV z nowościami i poprawkami",
     "current": "Bieżąca wersja",
-    "frenchOnly": "Dziennik zmian jest napisany po francusku",
+    "englishOnly": "Dziennik zmian jest napisany po angielsku",
     "error": "Nie udało się wczytać dziennika zmian",
     "types": {
       "added": "Dodano",

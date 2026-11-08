@@ -1088,7 +1088,7 @@
     "title": "변경 내역",
     "subtitle": "LocalATSCV의 모든 버전과 새 기능, 수정 사항",
     "current": "현재 버전",
-    "frenchOnly": "변경 내역은 프랑스어로 작성되어 있습니다",
+    "englishOnly": "변경 내역은 영어로 작성되어 있습니다",
     "error": "변경 내역을 불러올 수 없습니다",
     "types": {
       "added": "추가",

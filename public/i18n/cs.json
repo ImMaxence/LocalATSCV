@@ -1088,7 +1088,7 @@
     "title": "Seznam změn",
     "subtitle": "Všechny verze LocalATSCV s novinkami a opravami",
     "current": "Aktuální verze",
-    "frenchOnly": "Seznam změn je napsán francouzsky",
+    "englishOnly": "Seznam změn je napsán anglicky",
     "error": "Seznam změn se nepodařilo načíst",
     "types": {
       "added": "Přidáno",

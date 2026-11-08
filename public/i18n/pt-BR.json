@@ -1088,7 +1088,7 @@
     "title": "Histórico de versões",
     "subtitle": "Todas as versões do LocalATSCV, com seus novos recursos e correções",
     "current": "Versão atual",
-    "frenchOnly": "O histórico de versões é escrito em francês",
+    "englishOnly": "O histórico de versões é escrito em inglês",
     "error": "Não foi possível carregar o histórico de versões",
     "types": {
       "added": "Adicionado",

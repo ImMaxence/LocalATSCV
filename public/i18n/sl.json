@@ -1088,7 +1088,7 @@
     "title": "Dnevnik sprememb",
     "subtitle": "Vse različice LocalATSCV z novostmi in popravki",
     "current": "Trenutna različica",
-    "frenchOnly": "Dnevnik sprememb je napisan v francoščini",
+    "englishOnly": "Dnevnik sprememb je napisan v angleščini",
     "error": "Dnevnika sprememb ni bilo mogoče naložiti",
     "types": {
       "added": "Dodano",

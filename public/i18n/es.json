@@ -1088,7 +1088,7 @@
     "title": "Registro de cambios",
     "subtitle": "Cada versión de LocalATSCV, con sus novedades y correcciones",
     "current": "Versión actual",
-    "frenchOnly": "El registro de cambios está redactado en francés",
+    "englishOnly": "El registro de cambios está redactado en inglés",
     "error": "No se ha podido cargar el registro de cambios",
     "types": {
       "added": "Añadido",

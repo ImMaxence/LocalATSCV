@@ -1088,7 +1088,7 @@
     "title": "Changelog",
     "subtitle": "Every LocalATSCV release, with its new features and fixes",
     "current": "Current version",
-    "frenchOnly": "The changelog is written in French",
+    "englishOnly": "The changelog is written in English",
     "error": "The changelog could not be loaded",
     "types": {
       "added": "Added",

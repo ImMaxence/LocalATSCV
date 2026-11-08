@@ -1088,7 +1088,7 @@
     "title": "Muutosloki",
     "subtitle": "Jokainen LocalATSCV:n versio uusine ominaisuuksineen ja korjauksineen",
     "current": "Nykyinen versio",
-    "frenchOnly": "Muutosloki on kirjoitettu ranskaksi",
+    "englishOnly": "Muutosloki on kirjoitettu englanniksi",
     "error": "Muutoslokia ei voitu ladata",
     "types": {
       "added": "Lisätty",

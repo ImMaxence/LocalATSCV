@@ -1088,7 +1088,7 @@
     "title": "Journal des modifications",
     "subtitle": "Chaque version de LocalATSCV, ses nouveautés et ses corrections",
     "current": "Version actuelle",
-    "frenchOnly": "Le journal des modifications est rédigé en français",
+    "englishOnly": "Le journal des modifications est rédigé en anglais",
     "error": "Impossible de charger le journal des modifications",
     "types": {
       "added": "Ajouté",

@@ -1088,7 +1088,7 @@
     "title": "Nhật ký thay đổi",
     "subtitle": "Mọi phiên bản của LocalATSCV, cùng tính năng mới và bản sửa lỗi",
     "current": "Phiên bản hiện tại",
-    "frenchOnly": "Nhật ký thay đổi được viết bằng tiếng Pháp",
+    "englishOnly": "Nhật ký thay đổi được viết bằng tiếng Anh",
     "error": "Không tải được nhật ký thay đổi",
     "types": {
       "added": "Thêm mới",

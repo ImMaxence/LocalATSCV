@@ -23,7 +23,6 @@ LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible p
 
 - [Accueil](https://localatscv.mbonnici.fr/) : présentation, fonctionnement, confidentialité et questions fréquentes
 - [Analyseur de CV](https://localatscv.mbonnici.fr/analyze) : note ATS d'un CV PDF créé avec n'importe quel outil, barème publié, points à corriger et texte tel que le lit un ATS
-- [Nouveautés](https://localatscv.mbonnici.fr/changelog) : historique des versions, aussi disponible en [Markdown](https://localatscv.mbonnici.fr/CHANGELOG.md)
 - [Éditeur](https://localatscv.mbonnici.fr/editor) : création et modification des CV (application, nécessite JavaScript)
 
 ## Pages (English)
@@ -32,6 +31,7 @@ LocalATSCV aide à créer un CV à la fois visuel pour le recruteur et lisible p
 - [Resume analyzer](https://localatscv.mbonnici.fr/en/analyze): ATS score of a PDF resume made with any tool, published scoring scale, fixes and the text as an ATS reads it
 - [Accessibility statement](https://localatscv.mbonnici.fr/en/legal/accessibility): keyboard, screen readers, display settings, read aloud and known limitations
 - [Privacy policy](https://localatscv.mbonnici.fr/en/legal/privacy), [Terms of use](https://localatscv.mbonnici.fr/en/legal/terms), [Legal notice](https://localatscv.mbonnici.fr/en/legal/notice)
+- [What's new](https://localatscv.mbonnici.fr/en/changelog): version history, also available as [Markdown](https://localatscv.mbonnici.fr/CHANGELOG.md)
 
 ## Autres langues / Other languages
 

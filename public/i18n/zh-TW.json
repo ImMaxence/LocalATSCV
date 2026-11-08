@@ -1088,7 +1088,7 @@
     "title": "更新紀錄",
     "subtitle": "LocalATSCV 的每個版本及其新功能與修正",
     "current": "目前版本",
-    "frenchOnly": "更新紀錄以法文撰寫",
+    "englishOnly": "更新紀錄以英文撰寫",
     "error": "無法載入更新紀錄",
     "types": {
       "added": "新增",

@@ -1,4 +1,4 @@
-/** Types de changements du format Keep a Changelog (titres français du fichier). */
+/** Types de changements du format Keep a Changelog (titres anglais du fichier, français acceptés). */
 export const CHANGE_TYPES = [
   'added',
   'changed',

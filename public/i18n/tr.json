@@ -1088,7 +1088,7 @@
     "title": "Değişiklik günlüğü",
     "subtitle": "Yeni özellikleri ve düzeltmeleriyle tüm LocalATSCV sürümleri",
     "current": "Geçerli sürüm",
-    "frenchOnly": "Değişiklik günlüğü Fransızca yazılmıştır",
+    "englishOnly": "Değişiklik günlüğü İngilizce yazılmıştır",
     "error": "Değişiklik günlüğü yüklenemedi",
     "types": {
       "added": "Eklendi",

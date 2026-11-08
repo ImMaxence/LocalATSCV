@@ -1088,7 +1088,7 @@
     "title": "Pakeitimų žurnalas",
     "subtitle": "Visos LocalATSCV versijos su naujomis funkcijomis ir pataisymais",
     "current": "Dabartinė versija",
-    "frenchOnly": "Pakeitimų žurnalas parašytas prancūzų kalba",
+    "englishOnly": "Pakeitimų žurnalas parašytas anglų kalba",
     "error": "Nepavyko įkelti pakeitimų žurnalo",
     "types": {
       "added": "Pridėta",
